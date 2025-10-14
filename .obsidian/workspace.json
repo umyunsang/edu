@@ -11,14 +11,16 @@
             "id": "69b8ed413d1b00d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/융합전공/프로젝트 주제.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[3-2] 빅데이터분석/pdf/4-2 아파치 스파크-Basics.pdf",
+                "page": 4,
+                "left": -9,
+                "top": 110,
+                "zoom": 1.593329596412556
               },
-              "icon": "lucide-file",
-              "title": "프로젝트 주제"
+              "icon": "lucide-file-text",
+              "title": "4-2 아파치 스파크-Basics"
             }
           }
         ]
@@ -186,8 +188,13 @@
   },
   "active": "69b8ed413d1b00d8",
   "lastOpenFiles": [
-    "프로젝트/오픈소스.md",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/4-1 아파치 스파크-History.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/4-2 아파치 스파크-Basics.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/5 데이터 통계 기초.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/Converted_MD/07-PandasSeries.md",
+    "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "ComputerScience/융합전공/프로젝트 주제.md",
+    "프로젝트/오픈소스.md",
     "ComputerScience/[3-2] 빅데이터분석/md/과제.md",
     "ComputerScience/[3-2] 빅데이터분석/md/architecture_text.md",
     "ComputerScience/[3-2] 빅데이터분석/md/architecture_diagram.md",
@@ -209,9 +216,6 @@
     "ComputerScience/[3-1] AI시스템개발및설계/README.md",
     "ComputerScience/[2-2] 컴퓨터 네트워트/README.md",
     "ComputerScience/[2-2] 이산수학/README.md",
-    "ComputerScience/[2-2] 운영체제/README.md",
-    "ComputerScience/[2-2] 데이터베이스/README.md",
-    "ComputerScience/[2-2] OSS/README.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD",
     "Pasted image 20250924155841.png",
     "ComputerScience/[3-2] 뉴럴네트워크/pdf/3장_인공신경망.pdf",
@@ -229,8 +233,6 @@
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1장_행렬_v2.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/2 하둡 및 분산 아키텍쳐.pdf",
     "image/과제1.pdf",
-    "ComputerScience/융합전공/image",
-    "ComputerScience/융합전공",
-    "ComputerScience/무제 폴더"
+    "ComputerScience/융합전공/image"
   ]
 }
