@@ -28,17 +28,31 @@
               "type": "pdf",
               "state": {
                 "file": "ComputerScience/[3-2] 빅데이터분석/pdf/2 하둡 및 분산 아키텍쳐.pdf",
-                "page": 33,
+                "page": 37,
                 "left": -17,
-                "top": 329,
+                "top": 419,
                 "zoom": 0.88828125
               },
               "icon": "lucide-file-text",
               "title": "2 하둡 및 분산 아키텍쳐"
             }
+          },
+          {
+            "id": "3d805c1368baf570",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "고ㅏ제.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "고ㅏ제"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -201,8 +215,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e661c7fe1eb353cc",
+  "active": "3d805c1368baf570",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 빅데이터분석/pdf/2 하둡 및 분산 아키텍쳐.pdf",
+    "고ㅏ제.md",
     "ComputerScience/[3-2] 빅데이터분석/pdf/3 아파치 스파크-Preview.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/4-2 아파치 스파크-Basics.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/5 데이터 통계 기초.pdf",
@@ -231,7 +247,6 @@
     "ComputerScience/[3-1] 머신러닝/README.md",
     "ComputerScience/[3-1] AI시스템개발및설계/README.md",
     "ComputerScience/[2-2] 컴퓨터 네트워트/README.md",
-    "ComputerScience/[2-2] 이산수학/README.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD",
     "Pasted image 20250924155841.png",
     "ComputerScience/[3-2] 뉴럴네트워크/pdf/3장_인공신경망.pdf",
@@ -246,8 +261,6 @@
     "image/Pasted image 20250919184828.png",
     "image/Pasted image 20250919184557.png",
     "image/Pasted image 20250919183131.png",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/1장_행렬_v2.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/2 하둡 및 분산 아키텍쳐.pdf",
-    "image/과제1.pdf"
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/1장_행렬_v2.pdf"
   ]
 }
