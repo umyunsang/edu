@@ -14,16 +14,31 @@
               "type": "pdf",
               "state": {
                 "file": "ComputerScience/[3-2] 빅데이터분석/pdf/4-2 아파치 스파크-Basics.pdf",
-                "page": 4,
-                "left": -9,
-                "top": 110,
-                "zoom": 1.593329596412556
+                "page": 1,
+                "zoom": 1
               },
               "icon": "lucide-file-text",
               "title": "4-2 아파치 스파크-Basics"
             }
+          },
+          {
+            "id": "e661c7fe1eb353cc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/pdf/2 하둡 및 분산 아키텍쳐.pdf",
+                "page": 33,
+                "left": -17,
+                "top": 329,
+                "zoom": 0.88828125
+              },
+              "icon": "lucide-file-text",
+              "title": "2 하둡 및 분산 아키텍쳐"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,11 +201,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "69b8ed413d1b00d8",
+  "active": "e661c7fe1eb353cc",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 빅데이터분석/pdf/4-1 아파치 스파크-History.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/3 아파치 스파크-Preview.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/4-2 아파치 스파크-Basics.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/5 데이터 통계 기초.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/4-1 아파치 스파크-History.pdf",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/07-PandasSeries.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "ComputerScience/융합전공/프로젝트 주제.md",
@@ -232,7 +248,6 @@
     "image/Pasted image 20250919183131.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1장_행렬_v2.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/2 하둡 및 분산 아키텍쳐.pdf",
-    "image/과제1.pdf",
-    "ComputerScience/융합전공/image"
+    "image/과제1.pdf"
   ]
 }
