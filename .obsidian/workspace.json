@@ -11,14 +11,12 @@
             "id": "e661c7fe1eb353cc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
-                "mode": "source",
-                "source": false
+                "file": "스크린샷 2025-05-07 091243.png"
               },
-              "icon": "lucide-file",
-              "title": "1. Matrix"
+              "icon": "lucide-image",
+              "title": "스크린샷 2025-05-07 091243"
             }
           }
         ]
@@ -150,16 +148,6 @@
               "icon": "lucide-list",
               "title": "1. IPAT 기출문제 지식재산권_답안통합 의 개요"
             }
-          },
-          {
-            "id": "9315e9647a85ac57",
-            "type": "leaf",
-            "state": {
-              "type": "mermaid-toolbar-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "mermaid-toolbar-view"
-            }
           }
         ],
         "currentTab": 3
@@ -181,11 +169,16 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e661c7fe1eb353cc",
+  "active": "ba9e23474eb62275",
   "lastOpenFiles": [
+    "[공지용]+2024-2+기말고사+시간표.pdf",
+    "2024-2+중간고사+시간표_업로드용_변동.pdf",
+    "스크린샷 2025-05-07 091243.png",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "Obsidian/KR_history/고대/남북국시대/통일신라.md",
     "Obsidian/KR_history/고대/삼국시대/백제.md",
     "Obsidian/KR_history/고대/삼국시대/신라.md",
@@ -209,9 +202,7 @@
     "Obsidian/constellation",
     "Obsidian",
     "ComputerScience/[3-2] 뉴럴네트워크/pdf/2장_퍼셉트론.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/3장_인공신경망.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "AGENTS.md",
     "ComputerScience/[3-1] 프로그래밍언어론/과제/5장 연습문제 (제출용).md",
     "Pasted image 20250924155841.png",
@@ -223,14 +214,12 @@
     "ComputerScience/[3-2] 빅데이터분석/md/과제.md",
     "ComputerScience/[3-2] 빅데이터분석/md/architecture_text.md",
     "ComputerScience/[3-2] 빅데이터분석/md/architecture_diagram.md",
-    "ComputerScience/[3-2] 빅데이터분석/Converted_MD/01-WordCount.md",
     "image/IMG_1555.jpg",
     "image/Pasted image 20250919191502.png",
     "image/Pasted image 20250919191005.png",
     "image/Pasted image 20250919190544.png",
     "image/Pasted image 20250919190047.png",
     "image/Pasted image 20250919185534.png",
-    "image/Pasted image 20250919184828.png",
-    "image/Pasted image 20250919184557.png"
+    "image/Pasted image 20250919184828.png"
   ]
 }
