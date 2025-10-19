@@ -1,8 +1,6 @@
 [
   "obsidian-git",
-  "obsidian-latex",
-  "quick-latex",
-  "pdf-plus",
   "mermaid-tools",
-  "better-export-pdf"
+  "better-export-pdf",
+  "pdf-plus"
 ]

@@ -11,12 +11,14 @@
             "id": "e661c7fe1eb353cc",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "스크린샷 2025-05-07 091243.png"
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "스크린샷 2025-05-07 091243"
+              "icon": "lucide-file",
+              "title": "middle exam"
             }
           }
         ]
@@ -175,9 +177,10 @@
   },
   "active": "e661c7fe1eb353cc",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/0. 소개.md",
+    "스크린샷 2025-05-07 091243.png",
     "2024-2+중간고사+시간표_업로드용_변동.pdf",
     "[공지용]+2024-2+기말고사+시간표.pdf",
-    "스크린샷 2025-05-07 091243.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "Obsidian/KR_history/고대/남북국시대/통일신라.md",
     "Obsidian/KR_history/고대/삼국시대/백제.md",
@@ -201,7 +204,6 @@
     "Obsidian/KR_history",
     "Obsidian/constellation",
     "Obsidian",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/2장_퍼셉트론.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "AGENTS.md",
     "ComputerScience/[3-1] 프로그래밍언어론/과제/5장 연습문제 (제출용).md",
