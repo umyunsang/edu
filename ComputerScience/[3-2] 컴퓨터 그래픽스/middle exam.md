@@ -67,7 +67,7 @@ void RenderScene(void) {
 - `glFlush`는 명령을 GPU 큐로 즉시 밀어 넣으며, **단일 버퍼(GLUT_SINGLE)** 에서 결과를 바로 보고 싶을 때 필요하다.
 - 이중 버퍼를 사용하는 경우 `glutSwapBuffers()`를 호출해야 하며, 시험에서 "깜빡임(flickering) 원인"으로 연결되는 단골 소재다.
 
-#### 2. **ChangeSize()** - 창 크기 변경 처리
+#### 2. ==**ChangeSize()** - 창 크기 변경 처리==
 ```cpp
 void ChangeSize(GLsizei w, GLsizei h) {
     if (h == 0) h = 1;  // ==0으로 나누기 방지==
@@ -393,7 +393,7 @@ GLUT_RGB      // **RGB 컬러 모드**
 
 ---
 
-## 시험 빈출 문제
+## ==시험 빈출 문제==
 
 ### 1. **고정 좌표계 문제**
 Q: `glViewport(0,0,680,480)`와 `glOrtho(0,640,0,480,-1,1)`를 고정했을 때, 창 크기를 800x600으로 바꾸면?
