@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "신경망_핵심이론_시험정리"
+              "title": "middle exam"
             }
           }
         ]
@@ -158,5 +158,7 @@
     }
   },
   "active": "bb44e7ba71794da1",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md"
+  ]
 }
