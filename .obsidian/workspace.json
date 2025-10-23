@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "39a9dd0084e7ac7c",
+        "id": "86b329acbd101617",
         "type": "tabs",
         "children": [
           {
-            "id": "e661c7fe1eb353cc",
+            "id": "f92f644eb0450314",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/1. Matrix/선형대수_연습문제_풀이.md",
-                "mode": "source",
+                "file": "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "선형대수_연습문제_풀이"
+              "title": "연습문제 풀이"
             }
           }
         ]
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/1. Matrix/선형대수_연습문제_풀이.md",
+                "file": "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "선형대수_연습문제_풀이 의 개요"
+              "title": "연습문제 풀이 의 개요"
             }
           }
         ],
@@ -157,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,13 +176,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e661c7fe1eb353cc",
+  "active": "f92f644eb0450314",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 002.png",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 003.png",
+    "Pasted image 20251023141235.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-48 001.png",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/선형대수_연습문제_풀이.md",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
+    "Pasted image 20251023141056.png",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 002.png",
+    "Pasted image 20251023141013.png",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 003.png",
+    "Pasted image 20251023140932.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 004.png",
+    "Pasted image 20251023140907.png",
+    "Pasted image 20251023140848.png",
+    "Pasted image 20251023140752.png",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/MSC087_1장_행렬_v3.pdf",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/선형대수_연습문제_풀이.md.tmp.43647.1761195895157",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "ComputerScience/[2-1] 인공지능/1. Perceptron/이론/Perceptron (이론).pdf",
     "ComputerScience/[2-1] 인공지능/1. Perceptron/실습/AND, NAND, OR 게이트 실습.md",
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/이론/MLP(이론).pdf",
@@ -192,17 +203,13 @@
     "ComputerScience/[2-1] 인공지능/5. CNN/이론/CNN Backpropagation(이론).pdf",
     "ComputerScience/[2-1] 인공지능/5. CNN/이론/CNN 주요설계모듈(이론).pdf",
     "ComputerScience/[2-1] 인공지능/4. Optimization/이론/Optimization(이론).pdf",
-    "ComputerScience/[2-1] 인공지능/3. Backpropagation/실습/CIFAR10/CIFAR10 (실습).pdf",
-    "ComputerScience/[2-1] 인공지능/3. Backpropagation/이론/Backpropagation (이론).pdf",
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/실습/MLP (Multi Layer Perceptron).md",
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/이론/MLP theorm.md",
     "ComputerScience/[2-1] 인공지능/1. Perceptron/이론/AND, NAND, OR 게이트.md",
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/실습/SLP (Single Layer Perceptron).md",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/0. 소개.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/README.md",
-    "스크린샷 2025-05-07 091243.png",
     "Obsidian/KR_history/고대/남북국시대/통일신라.md",
     "Obsidian/KR_history/고대/삼국시대/백제.md",
     "Obsidian/KR_history/고대/삼국시대/신라.md",
@@ -216,11 +223,6 @@
     "Obsidian/KR_history/고대/경제 + 사회.md",
     "Obsidian/KR_history/선사시대.md",
     "Obsidian/KR_history/고대 이전.md",
-    "Obsidian/constellation/출생천도궁.png",
-    "AGENTS.md",
-    "Pasted image 20250924155841.png",
-    "image/IMG_1555.jpg",
-    "image/Pasted image 20250919191502.png",
-    "image/Pasted image 20250919191005.png"
+    "AGENTS.md"
   ]
 }
