@@ -11,14 +11,16 @@
             "id": "e661c7fe1eb353cc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/이론/MLP(이론).pdf",
+                "page": 20,
+                "left": -15,
+                "top": 483,
+                "zoom": 1.0128634068384927
               },
-              "icon": "lucide-file",
-              "title": "신경망_핵심이론_시험정리"
+              "icon": "lucide-file-text",
+              "title": "MLP(이론)"
             }
           }
         ]
@@ -142,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+                "file": "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/이론/MLP(이론).pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "신경망_핵심이론_시험정리 의 개요"
+              "title": "MLP(이론) 의 개요"
             }
           }
         ],
@@ -177,6 +179,9 @@
   },
   "active": "e661c7fe1eb353cc",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_4장_신경망학습.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/3장_인공신경망.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[2-1] 인공지능/5. CNN/이론/CNN (이론).pdf",
     "ComputerScience/[2-1] 인공지능/5. CNN/이론/CNN Backpropagation(이론).pdf",
     "ComputerScience/[2-1] 인공지능/5. CNN/이론/CNN 주요설계모듈(이론).pdf",
@@ -190,10 +195,7 @@
     "ComputerScience/[2-1] 인공지능/1. Perceptron/이론/Perceptron (이론).pdf",
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/실습/SLP (Single Layer Perceptron).md",
     "ComputerScience/[2-1] 인공지능/1. Perceptron/실습/AND, NAND, OR 게이트 실습.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/3장_인공신경망.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/pdf/2장_퍼셉트론.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_4장_신경망학습.pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/0. 소개.md",
