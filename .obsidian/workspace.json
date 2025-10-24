@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/README.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "연습문제 풀이"
+              "title": "README"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5041847229004,
-    "collapsed": true
+    "width": 219.5041847229004
   },
   "right": {
     "id": "67c0be972fb46913",
@@ -178,9 +177,9 @@
   },
   "active": "f92f644eb0450314",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
     "Pasted image 20251023141235.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-48 001.png",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
     "Pasted image 20251023141056.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 002.png",
     "Pasted image 20251023141013.png",
@@ -189,7 +188,6 @@
     "ComputerScience/[3-2] 최적화수학/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 004.png",
     "Pasted image 20251023140907.png",
     "Pasted image 20251023140848.png",
-    "Pasted image 20251023140752.png",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/MSC087_1장_행렬_v3.pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/선형대수_연습문제_풀이.md.tmp.43647.1761195895157",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
