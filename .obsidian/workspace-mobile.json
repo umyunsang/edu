@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "efba116233189637",
+        "id": "18b2e529ee18a380",
         "type": "tabs",
         "children": [
           {
-            "id": "ad84c84f605257a9",
+            "id": "a6cad7e86650ed4a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
-                "mode": "preview",
-                "source": false
+                "file": "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf"
               },
-              "icon": "lucide-file",
-              "title": "middle exam"
+              "icon": "lucide-file-text",
+              "title": "MSC087_3장_볼록최적화"
             }
           }
         ]
@@ -98,7 +96,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+            "file": "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -143,11 +141,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -157,8 +150,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "bb44e7ba71794da1",
+  "active": "a6cad7e86650ed4a",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
+    "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md"
   ]
 }

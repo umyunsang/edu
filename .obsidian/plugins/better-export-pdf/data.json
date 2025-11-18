@@ -11,21 +11,22 @@
   "debug": true,
   "isTimestamp": false,
   "enabledCss": false,
+  "concurrency": "5",
   "prevConfig": {
     "pageSize": "Custom",
     "marginType": "3",
     "showTitle": false,
     "open": true,
-    "scale": 75,
+    "scale": 80,
     "landscape": false,
-    "marginTop": "10",
-    "marginBottom": "10",
-    "marginLeft": "15",
-    "marginRight": "15",
+    "marginTop": "5",
+    "marginBottom": "5",
+    "marginLeft": "30",
+    "marginRight": "30",
     "displayHeader": false,
     "displayFooter": false,
     "cssSnippet": "0",
-    "pageHeight": "1500",
+    "pageHeight": "350",
     "pageWidth": "200"
   }
 }
