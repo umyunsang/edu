@@ -11,12 +11,14 @@
             "id": "a6cad7e86650ed4a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf"
+                "file": "졸업학점.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MSC087_3장_볼록최적화"
+              "icon": "lucide-file",
+              "title": "졸업학점"
             }
           }
         ]
@@ -152,6 +154,7 @@
   },
   "active": "a6cad7e86650ed4a",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
