@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "86b329acbd101617",
+        "id": "c76c98ac0c140d6d",
         "type": "tabs",
         "children": [
           {
-            "id": "f92f644eb0450314",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/MSC087_HW2.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "MSC087_HW2"
-            }
-          }
-        ]
-      },
-      {
-        "id": "9edd18d296a76651",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "366599971e981774",
+            "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -189,11 +171,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "f92f644eb0450314",
+  "active": "ba9e23474eb62275",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
-    "ComputerScience/[3-2] 최적화수학/MSC087_HW2_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
+    "ComputerScience/[3-2] 최적화수학/MSC087_HW2_풀이.md",
+    "ComputerScience/[3-2] 최적화수학/MSC087_HW2.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
     "Pasted image 20251127132714.png",
     "Pasted image 20251127132702.png",
     "Pasted image 20251127132649.png",
@@ -204,7 +187,6 @@
     "Pasted image 20251127132350.png",
     "Pasted image 20251127132336.png",
     "Pasted image 20251127132311.png",
-    "ComputerScience/[3-2] 최적화수학/MSC087_HW2.pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
     "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/6 변수 선택 (Variable Selection).pdf",
