@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "18b2e529ee18a380",
+        "id": "a95b7da31eb26aa2",
         "type": "tabs",
         "children": [
           {
-            "id": "a6cad7e86650ed4a",
+            "id": "d6f32455e11d2f8c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "졸업학점.md",
+                "file": "ComputerScience/[3-2] 최적화수학/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "졸업학점"
+              "title": "README"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
+            "file": "ComputerScience/[3-2] 최적화수학/README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -149,11 +149,16 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false
+      "bases:새 베이스 생성하기": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6cad7e86650ed4a",
+  "active": "d6f32455e11d2f8c",
   "lastOpenFiles": [
+    "무제.base",
+    "무제 1.md",
+    "졸업학점.md",
+    "무제.md",
     "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
