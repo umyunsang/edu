@@ -11,12 +11,14 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf"
+                "file": "ComputerScience/[3-2] 뉴럴네트워크/무제.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "과제"
+              "icon": "lucide-file",
+              "title": "무제"
             }
           }
         ]
@@ -169,14 +171,15 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/무제.md",
     "무제 1.md",
     "무제.md",
     "무제.base",
     "ComputerScience/[3-2] 최적화수학/과제.pdf",
     "ComputerScience/[3-2] 최적화수학/MSC087_HW2_풀이.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 최적화수학/MSC087_HW2.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
@@ -214,8 +217,6 @@
     "Obsidian/KR_history/고대/삼국시대/백제.md",
     "Obsidian/KR_history/고대/삼국시대/신라.md",
     "Obsidian/KR_history/고대/삼국시대/고구려.md",
-    "Obsidian/KR_history/고대/삼국시대/가야.md",
-    "Obsidian/KR_history/고대/남북국시대/발해.md",
-    "Obsidian/KR_history/고려/초기 정치.md"
+    "Obsidian/KR_history/고대/삼국시대/가야.md"
   ]
 }
