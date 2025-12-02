@@ -11,12 +11,14 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/2. 미적분/MSC087_2장_미적분_v3.pdf"
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MSC087_2장_미적분_v3"
+              "icon": "lucide-file",
+              "title": "middle exam"
             }
           }
         ]
@@ -92,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "middle exam 의 백링크"
             }
           },
           {
@@ -110,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "middle exam 의 나가는 링크"
             }
           },
           {
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 최적화수학/2. 미적분/MSC087_2장_미적분_v3.pdf",
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MSC087_2장_미적분_v3 의 개요"
+              "title": "middle exam 의 개요"
             }
           },
           {
@@ -183,9 +187,19 @@
               "icon": "terminal",
               "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
             }
+          },
+          {
+            "id": "e794c3ac963c1388",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -205,10 +219,22 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
     "ComputerScience/[3-2] 최적화수학/과제.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/3 아파치 스파크-Preview.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/5 데이터 통계 기초.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/6 변수 선택 (Variable Selection).pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/7 스트리밍 알고리즘.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/MLFlow 설치 및 실행.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/architecture_diagram.md",
+    "ComputerScience/[3-2] 빅데이터분석/md/과제.md",
+    "ComputerScience/[3-2] 빅데이터분석/md/2. hadoop.md",
+    "ComputerScience/[3-2] 빅데이터분석/md/1. 빅테이터란.md",
+    "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
+    "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
+    "ComputerScience/[3-2] 최적화수학/2. 미적분/MSC087_2장_미적분_v3.pdf",
     "README.md",
     "ComputerScience/[3-1] 프로그래밍언어론/필기/5. 이름, 바인딩, 영역.md",
     "무제.md",
@@ -225,21 +251,12 @@
     "image/Pasted image 20251127132649.png",
     "image/Pasted image 20251127132702.png",
     "ComputerScience/[3-2] 최적화수학/MSC087_HW2_풀이.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/무제.md",
-    "ComputerScience/[3-2] 최적화수학/MSC087_HW2.pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
-    "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/6 변수 선택 (Variable Selection).pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/7 스트리밍 알고리즘.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
     "ComputerScience/[3-1] 프로그래밍언어론/과제/3장 연습문제 (과제).md",
     "ComputerScience/[3-1] 프로그래밍언어론/과제/4장 연습문제.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/과제.md",
     "ComputerScience/[3-2] 빅데이터분석/README.md",
-    "ComputerScience/[3-2] 최적화수학/1. Matrix/MSC087_1장_행렬_v3.pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "ComputerScience/[2-1] 인공지능/1. Perceptron/실습/AND, NAND, OR 게이트 실습.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
@@ -249,9 +266,6 @@
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/실습/SLP (Single Layer Perceptron).md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/0. 소개.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/README.md",
-    "Obsidian/KR_history/고대/남북국시대/통일신라.md",
-    "Obsidian/KR_history/고대/삼국시대/백제.md",
-    "Obsidian/KR_history/고대/삼국시대/신라.md"
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/README.md"
   ]
 }
