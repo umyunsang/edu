@@ -11,12 +11,14 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/pdf/MLFlow 설치 및 실행.pdf"
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MLFlow 설치 및 실행"
+              "icon": "lucide-file",
+              "title": "MLFlow 과제"
             }
           }
         ]
@@ -92,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "MLFlow 과제 의 백링크"
             }
           },
           {
@@ -110,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "MLFlow 과제 의 나가는 링크"
             }
           },
           {
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "MLFlow 과제 의 개요"
             }
           },
           {
@@ -180,7 +185,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: codex"
+              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
             }
           },
           {
@@ -214,8 +219,13 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
+    "Pasted image 20251202160528.png",
+    "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
+    "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
+    "ComputerScience/[3-2] 빅데이터분석/images/터미널_실행결과_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/pdf/MLFlow 설치 및 실행.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "ComputerScience/[3-2] 빅데이터분석/pdf/8 다목적 최적화.pdf",
@@ -241,10 +251,6 @@
     "image/Pasted image 20251127132604.png",
     "image/Pasted image 20251127132350.png",
     "image/Pasted image 20251127132311.png",
-    "image/Pasted image 20251127132336.png",
-    "image/Pasted image 20251127132547.png",
-    "image/Pasted image 20251127132649.png",
-    "image/Pasted image 20251127132702.png",
     "ComputerScience/[3-2] 최적화수학/MSC087_HW2_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/무제.md",
@@ -259,7 +265,6 @@
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/이론/MLP theorm.md",
     "ComputerScience/[2-1] 인공지능/1. Perceptron/이론/AND, NAND, OR 게이트.md",
     "ComputerScience/[2-1] 인공지능/2. MLP(Multi Layer Perceptron)/실습/SLP (Single Layer Perceptron).md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/0. 소개.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/README.md"
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/0. 소개.md"
   ]
 }
