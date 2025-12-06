@@ -11,14 +11,12 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf"
               },
-              "icon": "lucide-file",
-              "title": "MLFlow 과제"
+              "icon": "lucide-file-text",
+              "title": "MCS087_2장_미적분_v3"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
+                "file": "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "MLFlow 과제 의 백링크"
+              "title": "MCS087_2장_미적분_v3 의 백링크"
             }
           },
           {
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
+                "file": "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "MLFlow 과제 의 나가는 링크"
+              "title": "MCS087_2장_미적분_v3 의 나가는 링크"
             }
           },
           {
@@ -142,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
+                "file": "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "MLFlow 과제 의 개요"
+              "title": "MCS087_2장_미적분_v3 의 개요"
             }
           },
           {
@@ -185,7 +183,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
+              "title": "터미널: Gemini - edu"
             }
           },
           {
@@ -221,6 +219,7 @@
   },
   "active": "915310f4663e824d",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
@@ -240,7 +239,6 @@
     "ComputerScience/[3-2] 빅데이터분석/md/2. hadoop.md",
     "ComputerScience/[3-2] 빅데이터분석/md/1. 빅테이터란.md",
     "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
-    "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
     "README.md",
     "ComputerScience/[3-1] 프로그래밍언어론/필기/5. 이름, 바인딩, 영역.md",
     "무제.md",
