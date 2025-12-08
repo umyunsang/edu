@@ -11,12 +11,14 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf"
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "AIE309_6장_학습기술들"
+              "icon": "lucide-file",
+              "title": "연습문제_풀이"
             }
           }
         ]
@@ -92,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "AIE309_6장_학습기술들 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -111,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "AIE309_6장_학습기술들 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -140,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AIE309_6장_학습기술들 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -216,21 +215,21 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "915310f4663e824d",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
+    "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
     "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_5장_오차역전파.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_4장_신경망학습.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/08-PandaDataframes.md",
