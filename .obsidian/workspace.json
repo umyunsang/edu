@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "연습문제_풀이 의 백링크"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "연습문제_풀이 의 나가는 링크"
             }
           },
           {
@@ -140,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "연습문제_풀이 의 개요"
             }
           },
           {
@@ -215,10 +218,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "16e311407b4b94a0",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
+    "스크린샷 2025-12-08 17.37.28.png",
+    "ComputerScience/[3-2] 빅데이터분석/pdf/6 변수 선택 (Variable Selection).pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
@@ -240,7 +245,6 @@
     "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
     "ComputerScience/[3-2] 빅데이터분석/md/2. hadoop.md",
     "ComputerScience/[3-2] 빅데이터분석/md/1. 빅테이터란.md",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
     "빅데이터분석_연습문제_풀이.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
@@ -256,7 +260,6 @@
     "image/Pasted image 20251127132637.png",
     "image/Pasted image 20251127132604.png",
     "image/Pasted image 20251127132350.png",
-    "image/Pasted image 20251127132311.png",
     "ComputerScience/[3-2] 최적화수학/MSC087_HW2_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/무제.md",
