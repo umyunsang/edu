@@ -11,14 +11,12 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf"
               },
-              "icon": "lucide-file",
-              "title": "신경망_핵심이론_시험정리"
+              "icon": "lucide-file-text",
+              "title": "AIE309_6장_학습기술들"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "신경망_핵심이론_시험정리 의 백링크"
+              "title": "AIE309_6장_학습기술들 의 백링크"
             }
           },
           {
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "신경망_핵심이론_시험정리 의 나가는 링크"
+              "title": "AIE309_6장_학습기술들 의 나가는 링크"
             }
           },
           {
@@ -142,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+                "file": "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "신경망_핵심이론_시험정리 의 개요"
+              "title": "AIE309_6장_학습기술들 의 개요"
             }
           },
           {
@@ -220,7 +218,13 @@
   },
   "active": "915310f4663e824d",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
+    "ComputerScience/[3-2] 최적화수학/2. 미적분/MCS087_2장_미적분_v3.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_5장_오차역전파.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_4장_신경망학습.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
@@ -237,12 +241,7 @@
     "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
     "ComputerScience/[3-2] 빅데이터분석/md/2. hadoop.md",
     "ComputerScience/[3-2] 빅데이터분석/md/1. 빅테이터란.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_4장_신경망학습.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_5장_오차역전파.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/7 스트리밍 알고리즘.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/8 다목적 최적화.pdf",
     "빅데이터분석_연습문제_풀이.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
@@ -263,8 +262,6 @@
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/무제.md",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
-    "ComputerScience/[3-1] 프로그래밍언어론/과제/3장 연습문제 (과제).md",
-    "ComputerScience/[3-1] 프로그래밍언어론/과제/4장 연습문제.md",
-    "ComputerScience/[3-2] 빅데이터분석/README.md"
+    "ComputerScience/[3-1] 프로그래밍언어론/과제/3장 연습문제 (과제).md"
   ]
 }
