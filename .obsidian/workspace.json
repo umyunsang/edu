@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "지오매트리"
+              "title": "기말시험"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "기말시험 의 백링크"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "기말시험 의 나가는 링크"
             }
           },
           {
@@ -140,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "기말시험 의 개요"
             }
           },
           {
@@ -215,9 +218,15 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
+    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오메트리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/code/view(2-2-2).cpp",
@@ -227,17 +236,12 @@
     "ComputerScience/[3-2] 컴퓨터 그래픽스/code/quiz.cpp",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/code/4-1-a.cpp",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/code/3-7.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/3-7-a-1.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/3-7-2.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/3-7-1.cpp",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/polygon.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/깊이-버퍼와-투영.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "스크린샷 2025-12-08 17.37.28.png",
-    "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
@@ -256,8 +260,6 @@
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/images/터미널_실행결과_1705817_엄윤상.png",
     "README.md",
-    "ComputerScience/[3-1] 프로그래밍언어론/필기/5. 이름, 바인딩, 영역.md",
-    "무제.md",
     "image/Pasted image 20251127132714.png",
     "image/Pasted image 20251127132626.png",
     "image/Pasted image 20251127132637.png",
