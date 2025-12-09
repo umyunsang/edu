@@ -11,14 +11,12 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf"
               },
-              "icon": "lucide-file",
-              "title": "기말시험"
+              "icon": "lucide-file-text",
+              "title": "시험정리"
             }
           }
         ]
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "기말시험 의 백링크"
+              "title": "시험정리 의 백링크"
             }
           },
           {
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "기말시험 의 나가는 링크"
+              "title": "시험정리 의 나가는 링크"
             }
           },
           {
@@ -142,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "기말시험 의 개요"
+              "title": "시험정리 의 개요"
             }
           },
           {
@@ -220,22 +218,26 @@
   },
   "active": "915310f4663e824d",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/기말시험.pdf",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
+    "시험기간 체크리스트.md",
+    "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_5장_오차역전파.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_4장_신경망학습.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/pdf/3장_인공신경망.pdf",
+    "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
+    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오메트리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/view(2-2-2).cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/triangle-basic.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/shademodel.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/quiz2.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/quiz.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/4-1-a.cpp",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/code/3-7.cpp",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/polygon.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
@@ -243,8 +245,6 @@
     "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/08-PandaDataframes.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/DAU_CSE408_Pandas,_Geopandas.md",
@@ -254,12 +254,10 @@
     "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
     "ComputerScience/[3-2] 빅데이터분석/md/2. hadoop.md",
     "ComputerScience/[3-2] 빅데이터분석/md/1. 빅테이터란.md",
-    "빅데이터분석_연습문제_풀이.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/images/터미널_실행결과_1705817_엄윤상.png",
-    "README.md",
     "image/Pasted image 20251127132714.png",
     "image/Pasted image 20251127132626.png",
     "image/Pasted image 20251127132637.png",
