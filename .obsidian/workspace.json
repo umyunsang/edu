@@ -11,13 +11,11 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-file-text",
               "title": "개념문제_풀이"
             }
           }
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -142,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
+                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,7 +201,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 434.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,22 +219,22 @@
   },
   "active": "915310f4663e824d",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
     "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
+    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/연습문제_빅데이터분석.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/기본 개념문제-빅데이터분석.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/기말시험.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf",
-    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "시험기간 체크리스트.md",
     "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/pdf/AIE309_6장_학습기술들.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
