@@ -185,7 +185,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: Gemini - edu"
+              "title": "터미널: ✳ 시험 예상문제 추가"
             }
           },
           {
@@ -203,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,8 +220,14 @@
   },
   "active": "915310f4663e824d",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/final exam.pdf",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/깊이-버퍼와-투영.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
+    "ComputerScience/[3-2] 고전읽기/멋진신세계pdf.pdf",
+    "ComputerScience/[3-2] 고전읽기/멋진신세계.md",
+    "ComputerScience/[3-2] 고전읽기",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/기말시험.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
@@ -236,8 +241,6 @@
     "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf",
     "시험기간 체크리스트.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
-    "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
@@ -247,8 +250,6 @@
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/polygon.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/깊이-버퍼와-투영.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/08-PandaDataframes.md",
@@ -256,8 +257,6 @@
     "ComputerScience/[3-2] 빅데이터분석/md/과제.md",
     "ComputerScience/[3-2] 빅데이터분석/md/architecture_diagram.md",
     "ComputerScience/[3-2] 빅데이터분석/md/architecture_text.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/MLFlow 과제.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/2. hadoop.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
