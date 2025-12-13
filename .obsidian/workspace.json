@@ -92,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "개념문제_풀이 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -111,12 +110,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "개념문제_풀이 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -140,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개념문제_풀이 의 개요"
+              "title": "기말시험 의 개요"
             }
           },
           {
@@ -217,10 +215,11 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "915310f4663e824d",
+  "active": "ba9e23474eb62275",
   "lastOpenFiles": [
-    "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/기말시험.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
+    "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
@@ -229,7 +228,6 @@
     "ComputerScience/[3-2] 빅데이터분석/pdf/기본 개념문제-빅데이터분석.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/기말시험.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf",
     "시험기간 체크리스트.md",
     "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
