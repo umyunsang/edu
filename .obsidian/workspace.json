@@ -11,12 +11,14 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf"
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "개념문제_풀이"
+              "icon": "lucide-file",
+              "title": "final exam"
             }
           }
         ]
@@ -92,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "final exam 의 백링크"
             }
           },
           {
@@ -110,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "final exam 의 나가는 링크"
             }
           },
           {
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
+                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "기말시험 의 개요"
+              "title": "final exam 의 개요"
             }
           },
           {
@@ -215,8 +219,11 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/기말시험.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
@@ -227,7 +234,6 @@
     "ComputerScience/[3-2] 빅데이터분석/pdf/연습문제_빅데이터분석.pdf",
     "ComputerScience/[3-2] 빅데이터분석/pdf/기본 개념문제-빅데이터분석.pdf",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf",
     "시험기간 체크리스트.md",
     "ComputerScience/[3-2] 뉴럴네트워크/과제.pdf",
@@ -238,7 +244,6 @@
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
     "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오메트리.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/polygon.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
