@@ -98,6 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "시험기간 체크리스트.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "e0d55443a85bc26a",
+  "active": "bb44e7ba71794da1",
   "lastOpenFiles": [
     "졸업학점.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
