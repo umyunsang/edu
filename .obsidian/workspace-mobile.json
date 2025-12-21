@@ -143,8 +143,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "terminal:Open terminal": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -156,6 +154,7 @@
   },
   "active": "bb44e7ba71794da1",
   "lastOpenFiles": [
+    "발표자료 image.zip",
     "졸업학점.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[3-2] 최적화수학/README.md",
