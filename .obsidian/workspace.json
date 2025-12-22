@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
+                "file": "certifications/학습-체크리스트.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "final exam"
+              "title": "학습-체크리스트"
             }
           }
         ]
@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "final exam 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "final exam 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -142,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "final exam 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -185,7 +182,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ✳ 시험 예상문제 추가"
+              "title": "터미널: Gemini - edu"
             }
           },
           {
@@ -218,13 +215,21 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "915310f4663e824d",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
+    "certifications/학습-체크리스트.md",
+    "certifications/information-processing/실기.md",
+    "certifications/information-processing/이론.md",
+    "certifications/big-data-analysis/실기.md",
+    "certifications/big-data-analysis/이론.md",
+    "certifications/information-processing",
+    "certifications/big-data-analysis",
+    "certifications",
+    "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
     "발표자료 image.zip",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/final exam.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/깊이-버퍼와-투영.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
     "ComputerScience/[3-2] 고전읽기/멋진신세계pdf.pdf",
     "ComputerScience/[3-2] 고전읽기/멋진신세계.md",
     "ComputerScience/[3-2] 고전읽기",
@@ -236,10 +241,6 @@
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/이론정리.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/연습문제_빅데이터분석.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/기본 개념문제-빅데이터분석.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/시험정리.pdf",
     "시험기간 체크리스트.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
@@ -253,10 +254,6 @@
     "스크린샷 2025-12-08 17.37.28.png",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "ComputerScience/[3-2] 빅데이터분석/Converted_MD/08-PandaDataframes.md",
-    "ComputerScience/[3-2] 빅데이터분석/Converted_MD/DAU_CSE408_Pandas,_Geopandas.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/과제.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/architecture_diagram.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/architecture_text.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
