@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "certifications/체크리스트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "체크리스트 의 백링크"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "certifications/체크리스트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "체크리스트 의 나가는 링크"
             }
           },
           {
@@ -140,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "certifications/체크리스트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "체크리스트 의 개요"
             }
           },
           {
@@ -182,7 +185,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: Gemini - edu"
+              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
             }
           },
           {
@@ -200,7 +203,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 434.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,9 +219,10 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "16e311407b4b94a0",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
     "certifications/체크리스트.md",
+    "시험기간 체크리스트.md",
     "certifications/학습-체크리스트.md",
     "certifications/information-processing/실기.md",
     "certifications/information-processing/이론.md",
@@ -242,7 +247,6 @@
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
-    "시험기간 체크리스트.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
