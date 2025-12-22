@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "certifications/체크리스트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "체크리스트 의 백링크"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "certifications/체크리스트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "체크리스트 의 나가는 링크"
             }
           },
           {
@@ -140,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "certifications/체크리스트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "체크리스트 의 개요"
             }
           },
           {
@@ -182,7 +185,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ✳ 강의 체크리스트 검사"
+              "title": "터미널: ✳ Obsidian Checklist"
             }
           },
           {
@@ -215,7 +218,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "16e311407b4b94a0",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
     "certifications/체크리스트.md",
     "시험기간 체크리스트.md",
