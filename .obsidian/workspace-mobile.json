@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "시험기간 체크리스트.md",
-                "mode": "source",
+                "file": "certifications/체크리스트.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "시험기간 체크리스트"
+              "title": "체크리스트"
             }
           }
         ]
@@ -143,8 +143,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "terminal:Open terminal": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -154,7 +152,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "bb44e7ba71794da1",
+  "active": "e0d55443a85bc26a",
   "lastOpenFiles": [
     "발표자료 image.zip",
     "졸업학점.md",

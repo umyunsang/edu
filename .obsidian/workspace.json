@@ -185,7 +185,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ✳ Obsidian Checklist"
+              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
             }
           },
           {
@@ -203,7 +203,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 434.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,15 +219,17 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "915310f4663e824d",
+  "active": "ba9e23474eb62275",
   "lastOpenFiles": [
+    "certifications/big-data-analysis/실기.md",
     "certifications/체크리스트.md",
-    "시험기간 체크리스트.md",
-    "certifications/학습-체크리스트.md",
+    "certifications/big-data-analysis/이론.md",
     "certifications/information-processing/실기.md",
     "certifications/information-processing/이론.md",
-    "certifications/big-data-analysis/실기.md",
-    "certifications/big-data-analysis/이론.md",
+    "certifications/information-processing/이론",
+    "certifications/information-processing/무제.md",
+    "시험기간 체크리스트.md",
+    "certifications/학습-체크리스트.md",
     "certifications/information-processing",
     "certifications/big-data-analysis",
     "certifications",
@@ -244,7 +247,6 @@
     "ComputerScience/[3-2] 빅데이터분석/examPDF/개념문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
-    "ComputerScience/[3-2] 빅데이터분석/examPDF/연습문제_풀이.pdf",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
@@ -254,9 +256,7 @@
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오메트리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/polygon.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md",
     "스크린샷 2025-12-08 17.37.28.png",
-    "ComputerScience/[3-2] 빅데이터분석/Converted_MD/06-SparkDataFrames.md",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
