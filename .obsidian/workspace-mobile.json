@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "시험기간 체크리스트.md",
+            "file": "certifications/체크리스트.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -143,6 +143,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -154,6 +156,8 @@
   },
   "active": "e0d55443a85bc26a",
   "lastOpenFiles": [
+    "certifications/information-processing/이론/1. 프로그래밍 언어 활용.md",
+    "certifications/information-processing/이론",
     "발표자료 image.zip",
     "졸업학점.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
