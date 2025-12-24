@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "certifications/체크리스트.md",
+                "file": "certifications/information-processing/이론/1. 프로그래밍 언어 활용.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "체크리스트"
+              "title": "1. 프로그래밍 언어 활용"
             }
           }
         ]
@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "certifications/체크리스트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "체크리스트 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "certifications/체크리스트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "체크리스트 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -142,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "certifications/체크리스트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "체크리스트 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -185,7 +182,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
+              "title": "터미널: Gemini - certifications"
             }
           },
           {
@@ -203,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,10 +215,11 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
-    "certifications/big-data-analysis/실기.md",
+    "certifications/information-processing/이론/1. 프로그래밍 언어 활용.md",
     "certifications/체크리스트.md",
+    "certifications/big-data-analysis/실기.md",
     "certifications/big-data-analysis/이론.md",
     "certifications/information-processing/실기.md",
     "certifications/information-processing/이론.md",
