@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "certifications/information-processing/실기/오답노트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "오답노트 의 백링크"
+              "title": "백링크"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "certifications/information-processing/실기/오답노트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "오답노트 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -142,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "certifications/information-processing/실기/오답노트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "오답노트 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -185,7 +182,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: Gemini - certifications"
+              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/certifications"
             }
           },
           {
@@ -218,7 +215,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "915310f4663e824d",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
     "certifications/information-processing/실기/오답노트.md",
     "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
