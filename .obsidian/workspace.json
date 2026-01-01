@@ -11,14 +11,12 @@
             "id": "915310f4663e824d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "certifications/information-processing/실기/오답노트.md",
-                "mode": "source",
-                "source": false
+                "file": "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf"
               },
-              "icon": "lucide-file",
-              "title": "오답노트"
+              "icon": "lucide-file-text",
+              "title": "AI윤리_'낯선 지능'과 함께 살아가기"
             }
           }
         ]
@@ -94,6 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "AI윤리_'낯선 지능'과 함께 살아가기 의 백링크"
             }
           },
           {
@@ -112,11 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "나가는 링크"
+              "title": "AI윤리_'낯선 지능'과 함께 살아가기 의 나가는 링크"
             }
           },
           {
@@ -140,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "AI윤리_'낯선 지능'과 함께 살아가기 의 개요"
             }
           },
           {
@@ -215,32 +216,33 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "16e311407b4b94a0",
+  "active": "915310f4663e824d",
   "lastOpenFiles": [
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_원칙에서 행동으로.pdf",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_AI 시대, 미래는 오지 않는다.pdf",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 ",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 Download/AI윤리_원칙에서 행동으로.pdf",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 Download/AI윤리_AI 시대, 미래는 오지 않는다.pdf",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 Download/AI윤리_'낯선 지능'과 함께 살아가기.pdf",
+    "LGAimer/『AI윤리란 무엇인가_』 강의자료 Download",
+    "LGAimer",
     "certifications/information-processing/실기/오답노트.md",
     "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
     "certifications/information-processing/실기/1. 프로그래밍 언어 활용.md",
     "certifications/information-processing/실기",
     "certifications/information-processing/필기",
-    "certifications/information-processing/실기",
     "certifications/체크리스트.md",
     "certifications/big-data-analysis/실기.md",
     "certifications/big-data-analysis/이론.md",
     "certifications/information-processing/실기.md",
     "certifications/information-processing/이론.md",
-    "certifications/information-processing/필기",
     "certifications/information-processing/무제.md",
     "시험기간 체크리스트.md",
     "certifications/학습-체크리스트.md",
-    "certifications/information-processing",
-    "certifications/big-data-analysis",
-    "certifications",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
-    "발표자료 image.zip",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/pdf/final exam.pdf",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/깊이-버퍼와-투영.md",
-    "ComputerScience/[3-2] 고전읽기/멋진신세계pdf.pdf",
     "ComputerScience/[3-2] 고전읽기/멋진신세계.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
@@ -252,7 +254,6 @@
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/지오매트리.md",
     "ComputerScience/[3-2] 빅데이터분석/md/시험정리.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/지오메트리.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
