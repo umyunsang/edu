@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "certifications/체크리스트.md",
+                "file": "졸업학점.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "체크리스트"
+              "title": "졸업학점"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
+            "file": "졸업학점.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -143,8 +143,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "terminal:Open terminal": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -156,8 +154,8 @@
   },
   "active": "e0d55443a85bc26a",
   "lastOpenFiles": [
-    "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
     "certifications/체크리스트.md",
+    "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
     "ComputerScience/[3-2] 고전읽기/멋진신세계.md",
     "ComputerScience/[3-2] 고전읽기/멋진신세계pdf.pdf",
     "certifications/information-processing/필기",
