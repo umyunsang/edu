@@ -27,10 +27,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "LGAimer/『LG AI연구원 해커톤 문제 소개』  강의자료 Download.pdf"
+                "file": "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "『LG AI연구원 해커톤 문제 소개』  강의자료 Download"
+              "title": "『Compressing Large Language Models』 강의자료 Download"
             }
           }
         ],
@@ -237,10 +237,10 @@
     "LGAimer/『LG AI연구원 해커톤 문제 소개』  강의자료 Download.pdf",
     "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
     "LGAimer/『딥러닝 자연어처리 기초와 LLM Agent』 강의자료 Download.pdf",
-    "LGAimer/무제.md",
-    "LGAimer/README.md",
     "LGAimer/『LG AI연구원 EXAONE 모델 소개』  강의자료 Download.pdf",
     "LGAimer/『Lightweight LLM beyond Scaling From Business Cost Optimization to Frontier Research』 강의자료 Download.pdf",
+    "LGAimer/무제.md",
+    "LGAimer/README.md",
     "LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf",
     "ComputerScience/[3-1] 머신러닝프로젝트/Pandas/Pivot.md",
     "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf",
