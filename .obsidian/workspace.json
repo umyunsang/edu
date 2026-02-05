@@ -216,7 +216,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 434.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,12 +234,12 @@
   },
   "active": "d740c9f79bc2fb6b",
   "lastOpenFiles": [
+    "LGAimer/『LG AI연구원 해커톤 문제 소개』  강의자료 Download.pdf",
     "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
     "LGAimer/『딥러닝 자연어처리 기초와 LLM Agent』 강의자료 Download.pdf",
     "LGAimer/무제.md",
     "LGAimer/README.md",
     "LGAimer/『LG AI연구원 EXAONE 모델 소개』  강의자료 Download.pdf",
-    "LGAimer/『LG AI연구원 해커톤 문제 소개』  강의자료 Download.pdf",
     "LGAimer/『Lightweight LLM beyond Scaling From Business Cost Optimization to Frontier Research』 강의자료 Download.pdf",
     "LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf",
     "ComputerScience/[3-1] 머신러닝프로젝트/Pandas/Pivot.md",
