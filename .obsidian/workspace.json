@@ -32,9 +32,21 @@
               "icon": "lucide-file-text",
               "title": "『Compressing Large Language Models』 강의자료 Download"
             }
+          },
+          {
+            "id": "644a211977403a91",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.11.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -232,7 +244,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "d740c9f79bc2fb6b",
+  "active": "644a211977403a91",
   "lastOpenFiles": [
     "LGAimer/『LG AI연구원 해커톤 문제 소개』  강의자료 Download.pdf",
     "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
