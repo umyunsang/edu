@@ -11,14 +11,12 @@
             "id": "e0d55443a85bc26a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "졸업학점.md",
-                "mode": "preview",
-                "source": false
+                "file": "LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf"
               },
-              "icon": "lucide-file",
-              "title": "졸업학점"
+              "icon": "lucide-file-text",
+              "title": "『LLM Application & Evaluation』 강의자료 Download"
             }
           }
         ]
@@ -98,7 +96,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "졸업학점.md",
+            "file": "LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -154,6 +152,11 @@
   },
   "active": "e0d55443a85bc26a",
   "lastOpenFiles": [
+    "LGAimer/『Lightweight LLM beyond Scaling From Business Cost Optimization to Frontier Research』 강의자료 Download.pdf",
+    "졸업학점.md",
+    "LGAimer/『딥러닝 자연어처리 기초와 LLM Agent』 강의자료 Download.pdf",
+    "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
+    "LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf",
     "certifications/체크리스트.md",
     "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
     "ComputerScience/[3-2] 고전읽기/멋진신세계.md",
@@ -163,14 +166,12 @@
     "certifications/information-processing/실기",
     "certifications/information-processing/이론.md",
     "발표자료 image.zip",
-    "졸업학점.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[3-2] 최적화수학/README.md",
     "무제.base",
     "무제 1.md",
     "무제.md",
     "ComputerScience/[3-2] 최적화수학/3. 볼록최적화/MSC087_3장_볼록최적화.pdf",
-    "ComputerScience/[3-2] 빅데이터분석/pdf/1 빅데이터 분석이란 (Updated 2025).pdf",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/연습문제 풀이.md",
     "ComputerScience/[3-2] 최적화수학/1. Matrix/1. Matrix.md",
     "ComputerScience/[3-2] 컴퓨터 그래픽스/middle exam.md"
