@@ -37,14 +37,12 @@
             "id": "644a211977403a91",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "졸업학점.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[4-1] AIOSS/week0_orientation.pdf"
               },
-              "icon": "lucide-file",
-              "title": "졸업학점"
+              "icon": "lucide-file-text",
+              "title": "week0_orientation"
             }
           }
         ],
@@ -212,7 +210,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
+              "title": "터미널: Gemini - ComputerScience"
             }
           },
           {
@@ -230,8 +228,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,19 +245,21 @@
   },
   "active": "644a211977403a91",
   "lastOpenFiles": [
-    "LGAimer/『LG AI연구원 해커톤 문제 소개』  강의자료 Download.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.0.pdf",
+    "ComputerScience/[4-1] AIOSS/week1_metrics_that_matter.pdf",
+    "ComputerScience/[4-1] AIOSS/week0_orientation.pdf",
+    "ComputerScience/[4-1] 알고리즘/01장.알고리즘개요-파알.pdf",
+    "ComputerScience/[4-1] 알고리즘/10장-NP완전과근사알고리즘-파알.pdf",
+    "ComputerScience/[4-1] 알고리즘/09장-백트래킹과분기한정-수정판-v2.pdf",
+    "ComputerScience/[4-1] 알고리즘/08장-탐욕적기법-수정판.pdf",
+    "ComputerScience/[4-1] 알고리즘/07장-동적계획법-수정판.pdf",
+    "ComputerScience/[4-1] 알고리즘/07-동적계획법-보충-수정판.pdf",
+    "ComputerScience/[4-1] 알고리즘/06장-공간으로시간벌기-수정판.pdf",
+    "ComputerScience/[4-1] 알고리즘/05장-분할정복기법-파알.pdf",
+    "졸업학점.md",
     "LGAimer/무제.md",
-    "LGAimer/『Lightweight LLM beyond Scaling From Business Cost Optimization to Frontier Research』 강의자료 Download.pdf",
-    "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
-    "LGAimer/『딥러닝 자연어처리 기초와 LLM Agent』 강의자료 Download.pdf",
-    "LGAimer/『LG AI연구원 EXAONE 모델 소개』  강의자료 Download.pdf",
     "LGAimer/README.md",
-    "LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf",
     "ComputerScience/[3-1] 머신러닝프로젝트/Pandas/Pivot.md",
-    "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_'낯선 지능'과 함께 살아가기.pdf",
-    "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_원칙에서 행동으로.pdf",
-    "LGAimer/『AI윤리란 무엇인가_』 강의자료 /AI윤리_AI 시대, 미래는 오지 않는다.pdf",
-    "LGAimer/『AI윤리란 무엇인가_』 강의자료 ",
     "certifications/information-processing/실기/오답노트.md",
     "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
     "certifications/information-processing/실기/1. 프로그래밍 언어 활용.md",
@@ -282,7 +281,6 @@
     "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
     "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
     "ComputerScience/[3-2] 뉴럴네트워크/AIE309_HW1_풀이.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/md/학습기술 이론.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
