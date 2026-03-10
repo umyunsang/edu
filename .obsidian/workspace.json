@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "졸업학점.md",
+                "file": "ComputerScience/[4-1] AIOSS/[14주차_최종] 캡스톤 AI OSS 프로젝트 최종 납품.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "졸업학점"
+              "title": "[14주차_최종] 캡스톤 AI OSS 프로젝트 최종 납품"
             }
           }
         ]
@@ -185,7 +185,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: Gemini - ComputerScience"
+              "title": "터미널: ◇  Ready (edu)"
             }
           },
           {
@@ -203,8 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,8 +218,27 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "915310f4663e824d",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.1.pdf",
+    "create_issues.py",
+    "ComputerScience/[4-1] AIOSS/[14주차_최종] 캡스톤 AI OSS 프로젝트 최종 납품.md",
+    "ComputerScience/[4-1] AIOSS/[1주차] 오리엔테이션 기반 개발 환경 설정 및 프로젝트 제안.md",
+    "ComputerScience/[4-1] AIOSS/[13주차] Lean Startup 실험 운영.md",
+    "ComputerScience/[4-1] AIOSS/[12주차] Shift-Left 테스트 자동화.md",
+    "ComputerScience/[4-1] AIOSS/[11주차] Feature Flags 및 점진적 배포 실습.md",
+    "ComputerScience/[4-1] AIOSS/[10주차] 멀티 플랫폼 배포 자동화.md",
+    "ComputerScience/[4-1] AIOSS/[9주차] GitHub Packages 및 의존성 보안 자동화.md",
+    "ComputerScience/[4-1] AIOSS/[8주차] 워크플로우 실행 최적화 (재사용_캐싱_조건부).md",
+    "ComputerScience/[4-1] AIOSS/[7주차] GitHub Actions 기반 기본 CI_CD 구축.md",
+    "ComputerScience/[4-1] AIOSS/[6주차] 오픈소스 실습 및 Inner Source 계획.md",
+    "ComputerScience/[4-1] AIOSS/[5주차] 비동기 협업 체계 구축 (Discussions_Wiki_ADR).md",
+    "ComputerScience/[4-1] AIOSS/[4주차] GitHub Flow 및 코드리뷰 협업 실습.md",
+    "ComputerScience/[4-1] AIOSS/[3주차] GitHub Projects 계획·추적 체계 구축.md",
+    "ComputerScience/[4-1] AIOSS/[2주차] DORA 메트릭 수집 자동화.md",
+    "ComputerScience/[4-1] AIOSS/[1주차] 개발 환경 설정 및 프로젝트 제안서.md",
+    "ComputerScience/[4-1] AIOSS/AIOSS_실전_개발_워크플로우_가이드.md",
+    "졸업학점.md",
     "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
     "prd.md",
     "ComputerScience/[4-1] AIOSS/week0_orientation.pdf",
@@ -231,9 +249,6 @@
     "ComputerScience/[4-1] 알고리즘/09장-백트래킹과분기한정-수정판-v2.pdf",
     "ComputerScience/[4-1] 알고리즘/08장-탐욕적기법-수정판.pdf",
     "ComputerScience/[4-1] 알고리즘/07장-동적계획법-수정판.pdf",
-    "ComputerScience/[4-1] 알고리즘/07-동적계획법-보충-수정판.pdf",
-    "ComputerScience/[4-1] 알고리즘/06장-공간으로시간벌기-수정판.pdf",
-    "졸업학점.md",
     "LGAimer/무제.md",
     "LGAimer/README.md",
     "ComputerScience/[3-1] 머신러닝프로젝트/Pandas/Pivot.md",
@@ -241,22 +256,6 @@
     "certifications/information-processing/필기/1. 프로그래밍 언어 활용.md",
     "certifications/information-processing/실기/1. 프로그래밍 언어 활용.md",
     "certifications/체크리스트.md",
-    "certifications/big-data-analysis/실기.md",
-    "certifications/big-data-analysis/이론.md",
-    "certifications/information-processing/실기.md",
-    "certifications/information-processing/이론.md",
-    "certifications/information-processing/무제.md",
-    "시험기간 체크리스트.md",
-    "certifications/학습-체크리스트.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/final exam.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/좌표공간과-카메라.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/깊이-버퍼와-투영.md",
-    "ComputerScience/[3-2] 고전읽기/멋진신세계.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/컴퓨터그래픽스-시험대비.md",
-    "ComputerScience/[3-2] 컴퓨터 그래픽스/기말시험.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/개념문제_풀이.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/연습문제_풀이.md",
-    "ComputerScience/[3-2] 빅데이터분석/md/이론정리.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
