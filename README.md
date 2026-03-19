@@ -78,7 +78,7 @@ graph TD
 | **[2-1] 웹프로그래밍** | HTML, Spring Boot | [Spring Boot 실습](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3.%20Spring%20Boot%20%EA%B8%B0%EC%B4%88/Spring%20Boot%20%EA%B8%B0%EC%B4%88%20%EC%8B%A4%EC%8A%B5.md) |
 | **[2-1] 컴퓨터 구조** | CPU, 메모리 구조 | [Cache Friendly 코딩](./ComputerScience/%5B2-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0/5.%20%EA%B8%B0%EC%96%B5%20%EC%9E%A5%EC%B9%98/%EA%B3%BC%EC%A0%9C_CacheFriendly%EC%BD%94%EB%94%A9%EC%8B%A4%EC%8A%B5.md) |
 | **[2-2] 운영체제** | 스케줄링, 동기화 | [스케줄러 구현(FCFS/SJF/SRTF)](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C) |
-| **[2-2] 데이터베이스** | SQL, 정규화, 모델링 | [Cafe Project DB 🔗](https://github.com/umyunsang/cafeProj) |
+| **[2-2] 데이터베이스** | SQL, 정규화, 모델링 | - |
 
 ### [3학년] - 머신러닝 심화 및 분산 시스템
 | 과목명 | 핵심 내용 | 실습 및 과제 |
@@ -86,8 +86,8 @@ graph TD
 | **[3-1] 머신러닝** | 회귀, SVM, RNN, Transformer | [CNN/RNN/Transformer](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D) |
 | **[3-1] 머신러닝프로젝트** | SKLearn, Pandas, LangChain | [파이썬 기초 실력과제](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Python%20%EA%B8%B0%EC%B4%88/%EC%8B%A4%EB%A0%A5%EA%B3%BC%EC%A0%9C.md) |
 | **[3-1] 분산처리** | CUDA, 병렬 프로그래밍 | [CUDA Projects 🔗](https://github.com/umyunsang/cudaProj) |
-| **[3-1] AI시스템개발/설계** | MLOps, 아키텍처 설계 | [Big Data Pipeline 🔗](https://github.com/umyunsang/Bigdata_Proj) |
-| **[3-2] 빅데이터분석** | 데이터 레이크, 분석 도구 | [MLFlow 과제](./ComputerScience/%5B3-2%5D%20%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/md/MLFlow%20%EA%B3%BC%EC%A0%9C.md) |
+| **[3-1] AI시스템개발/설계** | MLOps, 아키텍처 설계 | [Cafe Project 🔗](https://github.com/umyunsang/cafeProj) |
+| **[3-2] 빅데이터분석** | 데이터 레이크, 분석 도구 | [MLFlow 과제](./ComputerScience/%5B3-2%5D%20%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/md/MLFlow%20%EA%B3%BC%EC%A0%9C.md)<br>[Big Data Pipeline 🔗](https://github.com/umyunsang/Bigdata_Proj) |
 | **[3-2] 뉴럴네트워크** | 심화 신경망 아키텍처 | [Neural Network Labs 🔗](https://github.com/umyunsang/neural_network) |
 | **[3-2] 컴퓨터 그래픽스** | 렌더링, 그래픽스 기초 | [Graphics Labs 🔗](https://github.com/umyunsang/Graphics) |
 
