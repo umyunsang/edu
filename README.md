@@ -96,7 +96,7 @@ graph TD
 | :--- | :--- | :--- |
 | **[4-1] 알고리즘** | 분할정복, 탐욕법, DP, NP | [CoTest Repository 🔗](https://github.com/umyunsang/COTEST) |
 | **[4-1] 컴퓨터비전** | 영상처리, 기하변환 | [CV 코랩 실습(ipynb)](./ComputerScience/%5B4-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%EB%B9%84%EC%A0%84/%EC%BD%94%EB%9E%A9%20%EC%8B%A4%EC%8A%B5) |
-| **[4-1] AIOSS** | 실증적 개발, 오픈소스 AI 프로젝트 | [Govon Repository 🔗](https://github.com/govon-org/govon) |
+| **[4-1] AIOSS** | 실증적 개발, 오픈소스 AI 프로젝트 | [Govon Repository 🔗](https://github.com/govon-org/govon) (이슈·마일스톤 기여) |
 
 ---
 
