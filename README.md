@@ -1,96 +1,125 @@
-# 🧭 Obsidian | Computer Science 인덱스
+# 🧭 Obsidian | Computer Science & AI Curriculum Map
 
 <p align="center">
   <a href="obsidian://open?vault=Obsidian&file=ComputerScience"><img alt="Open in Obsidian" src="https://img.shields.io/badge/Open%20in-Obsidian-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white"></a>
-  <img alt="Vault" src="https://img.shields.io/badge/Vault-Obsidian-111827?style=for-the-badge&logo=obsidian&logoColor=7C3AED&labelColor=000000">
-  <img alt="Courses" src="https://img.shields.io/badge/Courses-30-22c55e?style=for-the-badge&logo=bookstack&labelColor=000000">
-  <img alt="Notes" src="https://img.shields.io/badge/Notes-335-0ea5e9?style=for-the-badge&logo=markdown&logoColor=white&labelColor=000000">
-  <img alt="PDFs" src="https://img.shields.io/badge/PDFs-275-8b5cf6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&labelColor=000000">
-  <img alt="Language" src="https://img.shields.io/badge/Language-KR-f97316?style=for-the-badge&logo=google-translate&logoColor=white&labelColor=000000">
+  <img alt="Courses" src="https://img.shields.io/badge/Courses-30+-22c55e?style=for-the-badge&logo=bookstack&labelColor=000000">
+  <img alt="Notes" src="https://img.shields.io/badge/Notes-335+-0ea5e9?style=for-the-badge&logo=markdown&logoColor=white&labelColor=000000">
+  <img alt="Practice" src="https://img.shields.io/badge/Practice-Code-f59e0b?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=000000">
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/umyunsang/Obsidian?style=for-the-badge&logo=github&color=24292e&labelColor=000000">
 </p>
 
-이 저장소는 옵시디언(Obsidian) 기반 컴퓨터공학 학부 과목 정리 노트 모음입니다. 아래 인덱스에서 과목별 폴더로 빠르게 이동하세요.
-
-## 🌟 하이라이트
-- 운영체제 스케줄러 구현: [FCFS](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C/FCFS/fcfs.c.md) · [SJF](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C/SJF/sjf.c.md) · [SRTF](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C/SRTF/srtf.c.md) · [Banker](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C/Banker/banker.c.md)
-- DL 실습: [CIFAR10 분류](./ComputerScience/%5B2-1%5D%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5/3.%20Backpropagation/%EC%8B%A4%EC%8A%B5/CIFAR10/CIFAR10.md), [Overfitting 해결(드롭아웃/BN)](./ComputerScience/%5B2-1%5D%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5/3.%20Backpropagation/%EC%8B%A4%EC%8A%B5/Overfitting%20%ED%95%B4%EA%B2%B0/Dropout.md)
-- K8s 네트워킹 가이드: [Ingress](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4/Ingress%20%EC%84%A4%EC%A0%95%20%EC%A0%95%EB%A6%AC.md) · [NodePort](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4/NodePort%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EC%84%A4%EC%A0%95%20%EB%B0%8F%20%EA%B0%80%EC%9D%B4%EB%93%9C.md) · [ClusterIP](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4/ClusterIP%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EC%84%A4%EC%A0%95%20%EB%B0%8F%20%EA%B0%80%EC%9D%B4%EB%93%9C.md) · [LoadBalancer](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4/LoadBalancer%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20%EC%84%A4%EC%A0%95%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-- 웹: [쿠키와 세션 정리](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/4.%20%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98/%EC%BF%A0%ED%82%A4%EC%99%80%20%EC%84%B8%EC%85%98.md)
-- 신호기반 이상탐지: [Feature Engineering 노트](./ComputerScience/%5B3-1%5D%20%EC%88%98%EB%A6%AC%EB%85%BC%EB%A6%AC%ED%95%99/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EC%9D%B4%EC%83%81%20%ED%83%90%EC%A7%80(ASD)%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EC%B5%9C%EC%A0%81%EC%9D%98%20Feature%20Engineering.md)
-
-## 🧰 Skill Stack
-<p>
-  <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white&style=flat" alt="C">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat" alt="Python">
-  <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white&style=flat" alt="Java">
-  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat" alt="Linux">
-  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=flat" alt="Git">
-  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat" alt="Docker">
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white&style=flat" alt="Kubernetes">
-  <img src="https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white&style=flat" alt="Markdown">
-  <img src="https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=white&style=flat" alt="Obsidian">
-</p>
-
-## 🔎 빠른 이동
-- 컴퓨터사이언스 폴더: [./ComputerScience](./ComputerScience)
-- 즐겨찾기: [운영체제](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C) · [데이터베이스](./ComputerScience/%5B2-2%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4) · [컴퓨터 구조](./ComputerScience/%5B2-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0) · [컴퓨터 네트워트](./ComputerScience/%5B2-2%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%8A%B8) · [웹프로그래밍](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) · [머신러닝](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D) · [도커·쿠버네티스](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4)
-
-## 📚 학기별 인덱스
-
-### [1-2]
-- [선형대수학](./ComputerScience/%5B1-2%5D%20%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%ED%95%99) — 벡터·행렬·선형변환 기초(ML/그래픽스 기반)
-- [코딩 기초와 문제해결](./ComputerScience/%5B1-2%5D%20%EC%BD%94%EB%94%A9%20%EA%B8%B0%EC%B4%88%EC%99%80%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0) — 컴퓨팅 사고·알고리즘·기초 프로그래밍
-
-### [2-1]
-- [Python(basic)](./ComputerScience/%5B2-1%5D%20Python(basic)) — 문법·자료형·함수·객체지향·문제풀이
-- [데이터 구조](./ComputerScience/%5B2-1%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B5%AC%EC%A1%B0) — 리스트·스택·큐·트리·정렬 핵심 자료구조
-- [리눅스시스템](./ComputerScience/%5B2-1%5D%20%EB%A6%AC%EB%88%85%EC%8A%A4%EC%8B%9C%EC%8A%A4%ED%85%9C) — 셸·편집기·프로세스·서버·DB 기초
-- [웹프로그래밍](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) — HTML·Spring Boot·쿠키/세션·DB 연동
-- [인공지능](./ComputerScience/%5B2-1%5D%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5) — 퍼셉트론·MLP·역전파·최적화·CNN 입문
-- [컴퓨터 구조](./ComputerScience/%5B2-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0) — 데이터 표현·논리회로·CPU/제어/메모리
-- [확률과 통계](./ComputerScience/%5B2-1%5D%20%ED%99%95%EB%A5%A0%EA%B3%BC%20%ED%86%B5%EA%B3%84) — 확률·통계 기초와 데이터 해석
-
-### [2-2]
-- [OSS](./ComputerScience/%5B2-2%5D%20OSS) — JS 이벤트·객체·DOM 등 클라이언트 기초
-- [데이터베이스](./ComputerScience/%5B2-2%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4) — 모델링·SQL·정규화·트랜잭션·보안
-- [운영체제](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C) — 프로세스·스케줄링·동기화·교착·메모리·파일시스템
-- [이산수학](./ComputerScience/%5B2-2%5D%20%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99) — 논리·집합·관계·그래프 등 CS 수학 기초
-- [컴퓨터 네트워트](./ComputerScience/%5B2-2%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%8A%B8) — 계층 모델·라우팅·TCP/소켓·보안
-
-### [3-1]
-- [AI시스템개발및설계](./ComputerScience/%5B3-1%5D%20AI%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B0%9C%EB%B0%9C%EB%B0%8F%EC%84%A4%EA%B3%84) — 요구분석·설계·아키텍처·배포까지 AI 시스템
-- [머신러닝](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D) — 회귀·KNN·SVM·CNN·RNN/LSTM·Transformer
-- [머신러닝프로젝트](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) — Numpy/Pandas/SKLearn·시각화·LangChain 실전
-- [분산처리](./ComputerScience/%5B3-1%5D%20%EB%B6%84%EC%82%B0%EC%B2%98%EB%A6%AC) — 병렬성 개념·CUDA·분산 처리 기초
-- [수리논리학](./ComputerScience/%5B3-1%5D%20%EC%88%98%EB%A6%AC%EB%85%BC%EB%A6%AC%ED%95%99) — 명제논리·증명과 신호 기반 프로젝트
-- [지식재산개론](./ComputerScience/%5B3-1%5D%20%EC%A7%80%EC%8B%9D%EC%9E%AC%EC%82%B0%EA%B0%9C%EB%A1%A0) — 저작권·특허·상표·디자인 제도 이해
-- [프로그래밍언어론](./ComputerScience/%5B3-1%5D%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4%EB%A1%A0) — 언어 개념·의미론·과제/필기 정리
-
-### [3-2]
-- [뉴럴네트워크](./ComputerScience/%5B3-2%5D%20%E1%84%82%E1%85%B2%E1%84%85%E1%85%A5%E1%86%AF%E1%84%82%E1%85%A6%E1%84%90%E1%85%B3%E1%84%8B%E1%85%AF%E1%86%A8) — 심화 신경망 개념과 응용
-- [빅데이터분석](./ComputerScience/%5B3-2%5D%20%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D) — 빅데이터 처리·분석 기법과 도구
-- [최적화수학](./ComputerScience/%5B3-2%5D%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%88%98%ED%95%99) — 최적화 수학 기초(행렬 등)
-- [컴퓨터 그래픽스](./ComputerScience/%5B3-2%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4) — 렌더링·그래픽스 기초와 실습
-
-### ✨ 기타 / 실전
-- [LLM 이해와 활용](./ComputerScience/LLM%20%EC%9D%B4%ED%95%B4%EC%99%80%20%ED%99%9C%EC%9A%A9) — ChatGPT API·RAG·임베딩·파인튜닝 실습
-- [융합전공](./ComputerScience/%E1%84%8B%E1%85%B2%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%80%E1%85%A9%E1%86%BC) — 타 전공 융합 과목 및 과제
-- [도커와 쿠버네티스](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4) — 도커 기본·K8s 설치와 서비스/네트워킹
-- [자바](./ComputerScience/%EC%9E%90%EB%B0%94) — 자바 기초 문법·자료형·연산·제어문
-- [코딩테스트](./ComputerScience/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8) — 자료구조·정렬 등 문제풀이
+3년간의 컴퓨터공학 및 AI 전공 과정을 체계적으로 정리한 아카이브입니다. 기초 이론부터 실전 구현, 대외 활동까지 모든 학습 노드를 연결하였습니다.
 
 ---
 
-## 🧩 사용 팁
-- Obsidian에서 바로 열기: 상단의 “Open in Obsidian” 버튼을 누르세요. (vault 이름이 `Obsidian`일 때 동작합니다.)
-- 폴더 네이밍 규칙: `[학년-학기] 과목명` (예: `[2-2] 운영체제`). 비정규/실전은 접두사 없이 자유롭게.
-- 새 과목 추가 시: 폴더를 만들고 핵심 목차 노트(`index.md` 또는 과목명.md)를 상단에 두면 탐색이 편합니다.
+## 🗺️ Knowledge Graph (관계성 지도)
 
-## 🙋 About
-- 목표: 학부 커리큘럼 전반을 실무 친화적으로 정리하고, 과제·실습을 통해 CS 기초와 시스템/AI 역량을 보여주는 포트폴리오 지향형 노트 모음
-- 리뷰 포인트: 코드가 있는 노트(운영체제 과제, DL 실습, K8s 가이드)를 중심으로 빠르게 역량 파악 가능하도록 링크를 상단에 배치했습니다.
+학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다.
 
-## 🛠️ 유지보수 메모
-- 과목 폴더 수: 30, 노트(MD): 335, PDF: 275 (README 생성 시점 기준)
-- 뱃지는 GitHub에서 렌더링되며, Obsidian에서는 텍스트로 보일 수 있습니다.
+```mermaid
+graph TD
+    %% 기초 과정
+    Start((입문)) --> LA["[1-2] 선형대수학"]
+    Start --> CPS["[1-2] 코딩기초/문제해결"]
+    Start --> DM["[2-2] 이산수학"]
+
+    %% AI/데이터 테크 트리
+    LA --> AI["[2-1] 인공지능"]
+    AI --> ML["[3-1] 머신러닝"]
+    ML --> MLP["[3-1] 머신러닝프로젝트"]
+    MLP --> BDA["[3-2] 빅데이터분석"]
+    BDA --> CV["[4-1] 컴퓨터비전"]
+    AI --> AISD["[3-1] AI시스템설계"]
+    
+    %% 시스템/네트워크 테크 트리
+    CPS --> PY["[2-1] Python(basic)"]
+    PY --> DS["[2-1] 데이터구조"]
+    DS --> AL["[4-1] 알고리즘"]
+    AL --> CT["코딩테스트"]
+    
+    CA["[2-1] 컴퓨터구조"] --> OS["[2-2] 운영체제"]
+    OS --> DP["[3-1] 분산처리"]
+    
+    %% 인프라/웹 테크 트리
+    LX["[2-1] 리눅스"] --> DB["[2-2] 데이터베이스"]
+    DB --> DK["도커/쿠버네티스"]
+    WEB["[2-1] 웹프로그래밍"] --> OSS["[2-2] OSS(JS)"]
+    OSS --> DPUB["[4-1] 디지털퍼블리싱"]
+    
+    %% 수학/논리 테크 트리
+    DM --> MLG["[3-1] 수리논리학"]
+    MLG --> OM["[3-2] 최적화수학"]
+    
+    %% 대외 활동
+    MLP -.-> LG((LGAimer))
+    BDA -.-> CERT((데이터분석준전문가))
+    
+    style Start fill:#f9f,stroke:#333,stroke-width:2px
+    style LG fill:#ffeb3b,stroke:#fbc02d
+    style CERT fill:#ffeb3b,stroke:#fbc02d
+```
+
+---
+
+## 📂 학년/학기별 커리큘럼 & 실습 코드
+
+### [1학년] - 기초 다지기
+| 과목명 | 핵심 내용 | 실습 및 과제 |
+| :--- | :--- | :--- |
+| **[1-2] 코딩 기초와 문제해결** | 컴퓨팅 사고, 아두이노 | [아두이노 실습](./ComputerScience/%5B1-2%5D%20%EC%BD%94%EB%94%A9%20%EA%B8%B0%EC%B4%88%EC%99%80%20%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/4.%20%EC%95%84%EB%91%90%EC%9D%B4%EB%88%84/%EC%95%84%EB%91%90%EC%9D%B4%EB%85%B8%20%EC%8B%A4%EC%8A%B5.md) |
+| **[1-2] 선형대수학** | 벡터, 행렬, 선형변환 | - |
+
+### [2학년] - CS 핵심 및 AI 입문
+| 과목명 | 핵심 내용 | 실습 및 과제 |
+| :--- | :--- | :--- |
+| **[2-1] Python(basic)** | 파이썬 문법, 객체지향 | [지뢰찾기 구현](./ComputerScience/%5B2-1%5D%20Python(basic)/%EC%A7%80%EB%A2%B0%EC%B0%BE%EA%B8%B0) |
+| **[2-1] 데이터 구조** | 리스트, 스택, 큐, 트리 | [정렬 알고리즘](./ComputerScience/%5B2-1%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B5%AC%EC%A1%B0/5.%20%EC%A0%95%EB%A0%AC/1705817_%EC%97%84%EC%9C%A4%EC%83%81_%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0_4%EC%A3%BC%EC%B0%A8%EA%B3%BC%EC%A0%9C.md) |
+| **[2-1] 인공지능** | 신경망 기초, CNN | [MLP/CNN 실습](./ComputerScience/%5B2-1%5D%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5) |
+| **[2-1] 웹프로그래밍** | HTML, Spring Boot | [Spring Boot 실습](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3.%20Spring%20Boot%20%EA%B8%B0%EC%B4%88/Spring%20Boot%20%EA%B8%B0%EC%B4%88%20%EC%8B%A4%EC%8A%B5.md) |
+| **[2-1] 컴퓨터 구조** | CPU, 메모리 구조 | [Cache Friendly 코딩](./ComputerScience/%5B2-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0/5.%20%EA%B8%B0%EC%96%B5%20%EC%9E%A5%EC%B9%98/%EA%B3%BC%EC%A0%9C_CacheFriendly%EC%BD%94%EB%94%A9%EC%8B%A4%EC%8A%B5.md) |
+| **[2-2] 운영체제** | 스케줄링, 동기화 | [스케줄러 구현(FCFS/SJF/SRTF)](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C) |
+| **[2-2] 데이터베이스** | SQL, 정규화, 모델링 | - |
+
+### [3학년] - 머신러닝 심화 및 분산 시스템
+| 과목명 | 핵심 내용 | 실습 및 과제 |
+| :--- | :--- | :--- |
+| **[3-1] 머신러닝** | 회귀, SVM, RNN, Transformer | [CNN/RNN/Transformer](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D) |
+| **[3-1] 머신러닝프로젝트** | SKLearn, Pandas, LangChain | [파이썬 기초 실력과제](./ComputerScience/%5B3-1%5D%20%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Python%20%EA%B8%B0%EC%B4%88/%EC%8B%A4%EB%A0%A5%EA%B3%BC%EC%A0%9C.md) |
+| **[3-1] 분산처리** | CUDA, 병렬 프로그래밍 | - |
+| **[3-1] AI시스템개발/설계** | MLOps, 아키텍처 설계 | - |
+| **[3-2] 빅데이터분석** | 데이터 레이크, 분석 도구 | [MLFlow 과제](./ComputerScience/%5B3-2%5D%20%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D/md/MLFlow%20%EA%B3%BC%EC%A0%9C.md) |
+| **[3-2] 뉴럴네트워크** | 심화 신경망 아키텍처 | - |
+
+### [4학년] - 실전 알고리즘 및 비전
+| 과목명 | 핵심 내용 | 실습 및 과제 |
+| :--- | :--- | :--- |
+| **[4-1] 알고리즘** | 분할정복, 탐욕법, DP, NP | - |
+| **[4-1] 컴퓨터비전** | 영상처리, 기하변환 | [CV 코랩 실습(ipynb)](./ComputerScience/%5B4-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%EB%B9%84%EC%A0%84/%EC%BD%94%EB%9E%A9%20%EC%8B%A4%EC%8A%B5) |
+| **[4-1] AIOSS** | 오픈소스 AI 프로젝트 | - |
+
+---
+
+## 🏆 대외 활동 & 자격증 (Extracurricular)
+
+*   **LGAimer**: LG AI 연구원 해커톤 및 교육 과정 ([자료 이동](./LGAimer))
+    *   [LLM Application & Evaluation 자료](./LGAimer/%E3%80%8ELLM%20Application%20%26%20Evaluation%E3%80%8F%20%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C%20Download.pdf)
+*   **자격증**: 데이터분석준전문가(ADsP), 정보처리기사 등 ([자료 이동](./certifications))
+    *   [자격증 취득 체크리스트](./certifications/%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+
+---
+
+## 🚀 실전 기술 스택 & 툴 (Highlights)
+
+*   **LLM 활용**: [Fine-Tuning 실습](./ComputerScience/LLM%20%EC%9D%B4%ED%95%B4%EC%99%80%20%ED%99%9C%EC%9A%A9/ChatGPT%20API/Fine-Tuning%20%EC%8B%A4%EC%8A%B5.md), ChatGPT API 연동
+*   **인프라**: [도커 및 쿠버네티스](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4) (Ingress, Service 설정)
+*   **알고리즘**: [코딩테스트 대비](./ComputerScience/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8) 및 백준 문제 풀이
+
+---
+
+## 🔎 검색 팁 (Obsidian)
+- 실습 코드만 보기: `path:"실습" file:.md OR file:.ipynb`
+- 특정 학기 검색: `file:"[2-1]"`
+- 특정 기술 스택: `content:Python` 또는 `tag:#python` (사용 시)
+
+---
+<p align="right">Last Updated: 2026-03-19</p>
