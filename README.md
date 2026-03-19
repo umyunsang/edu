@@ -78,6 +78,7 @@ graph TD
 | **[2-1] 웹프로그래밍** | HTML, Spring Boot | [Spring Boot 실습](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3.%20Spring%20Boot%20%EA%B8%B0%EC%B4%88/Spring%20Boot%20%EA%B8%B0%EC%B4%88%20%EC%8B%A4%EC%8A%B5.md) |
 | **[2-1] 컴퓨터 구조** | CPU, 메모리 구조 | [Cache Friendly 코딩](./ComputerScience/%5B2-1%5D%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B5%AC%EC%A1%B0/5.%20%EA%B8%B0%EC%96%B5%20%EC%9E%A5%EC%B9%98/%EA%B3%BC%EC%A0%9C_CacheFriendly%EC%BD%94%EB%94%A9%EC%8B%A4%EC%8A%B5.md) |
 | **[2-2] 운영체제** | 스케줄링, 동기화 | [스케줄러 구현(FCFS/SJF/SRTF)](./ComputerScience/%5B2-2%5D%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/%EA%B3%BC%EC%A0%9C) |
+| **[2-2] OSS** | JS 이벤트·객체·DOM 등 클라이언트 기초 | [OSS Repository 🔗](https://github.com/umyunsang/OSS) |
 | **[2-2] 데이터베이스** | SQL, 정규화, 모델링 | - |
 
 ### [3학년] - 머신러닝 심화 및 분산 시스템
