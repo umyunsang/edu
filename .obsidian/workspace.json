@@ -183,7 +183,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ⠂ Claude Code"
+              "title": "터미널: ✳ Claude Code"
             }
           },
           {
@@ -218,6 +218,7 @@
   },
   "active": "16e311407b4b94a0",
   "lastOpenFiles": [
+    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/Canny_Edge_Detection.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/Sobel_Edge_Detection.ipynb",
     "ComputerScience/ComfyUI/README.md",
@@ -236,7 +237,6 @@
     "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV/문제.pdf",
     "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV/Binomial Distribution.md",
     "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV",
-    "ComputerScience/[2-1] 확률과 통계/7-1.Bernoulli_RV/Bernoulli RV 문제.pdf",
     "ComputerScience/[2-1] 확률과 통계/7-1.Bernoulli_RV/Bernoulli Distribution.md",
     "ComputerScience/[2-1] 확률과 통계/7-0.Variance/문제 풀이.md",
     "ComputerScience/[2-1] 확률과 통계/7-0.Variance/Variance.md",
