@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ComputerScience/[2-2] OSS/0. Html. javascript 기초/연습문제.pdf"
+                "file": "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "연습문제"
+              "title": "26-1창의적글쓰기 강의자료_중핵교양"
             }
           }
         ]
@@ -219,6 +219,7 @@
   },
   "active": "9312c7e0101e7eef",
   "lastOpenFiles": [
+    "ComputerScience/[2-2] OSS/0. Html. javascript 기초/연습문제.pdf",
     "ComputerScience/[2-2] OSS/0. Html. javascript 기초/html, css, javascript 기초.pdf",
     "ComputerScience/[2-2] OSS/0. Html. javascript 기초/연습문제.md",
     "ComputerScience/[2-2] OSS/0. Html. javascript 기초/html, javascript 기초.md",
@@ -254,7 +255,6 @@
     "prd.md",
     "ComputerScience/[4-1] AIOSS/week0_orientation.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.0.pdf",
-    "ComputerScience/[4-1] AIOSS/week1_metrics_that_matter.pdf",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
