@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf"
+                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "26-1창의적글쓰기 강의자료_중핵교양"
+              "title": "Computer_Vision_3_2D_Image_Processing_2_v1.0"
             }
           }
         ]
@@ -183,7 +183,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu"
+              "title": "터미널: ⠂ Claude Code"
             }
           },
           {
@@ -201,8 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,44 +216,44 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "9312c7e0101e7eef",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
-    "ComputerScience/[2-2] OSS/0. Html. javascript 기초/연습문제.pdf",
-    "ComputerScience/[2-2] OSS/0. Html. javascript 기초/html, css, javascript 기초.pdf",
-    "ComputerScience/[2-2] OSS/0. Html. javascript 기초/연습문제.md",
-    "ComputerScience/[2-2] OSS/0. Html. javascript 기초/html, javascript 기초.md",
-    "ComputerScience/[2-1] 웹프로그래밍/7. 웹 시스템 제작/웹 시스템 제작.pdf",
-    "ComputerScience/[2-1] 웹프로그래밍/7. 웹 시스템 제작/웹 시스템 제작.md",
-    "ComputerScience/[2-1] 웹프로그래밍/6. HTML 기초2/HTML 기초 실습 2.pdf",
-    "ComputerScience/[2-1] 웹프로그래밍/6. HTML 기초2/HTML 기초 실습2.md",
-    "ComputerScience/[2-1] 웹프로그래밍/1. HTML 기초/HTML 기초.pdf",
-    "ComputerScience/[2-1] 웹프로그래밍/1. HTML 기초/HTML 기초 실습.md",
-    "ComputerScience/[2-1] 웹프로그래밍/6. HTML 기초2/문제 풀이.md",
-    "ComputerScience/[2-1] 웹프로그래밍/1. HTML 기초/연습문제.md",
-    "ComputerScience/[2-1] 웹프로그래밍/1. HTML 기초/1장_확인문제.pdf",
-    "ComputerScience/[4-1] AIOSS/[14주차_최종] 캡스톤 AI OSS 프로젝트 최종 납품.md",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.1.pdf",
-    "create_issues.py",
-    "ComputerScience/[4-1] AIOSS/[1주차] 오리엔테이션 기반 개발 환경 설정 및 프로젝트 제안.md",
-    "ComputerScience/[4-1] AIOSS/[13주차] Lean Startup 실험 운영.md",
-    "ComputerScience/[4-1] AIOSS/[12주차] Shift-Left 테스트 자동화.md",
-    "ComputerScience/[4-1] AIOSS/[11주차] Feature Flags 및 점진적 배포 실습.md",
-    "ComputerScience/[4-1] AIOSS/[10주차] 멀티 플랫폼 배포 자동화.md",
-    "ComputerScience/[4-1] AIOSS/[9주차] GitHub Packages 및 의존성 보안 자동화.md",
-    "ComputerScience/[4-1] AIOSS/[8주차] 워크플로우 실행 최적화 (재사용_캐싱_조건부).md",
-    "ComputerScience/[4-1] AIOSS/[7주차] GitHub Actions 기반 기본 CI_CD 구축.md",
-    "ComputerScience/[4-1] AIOSS/[6주차] 오픈소스 실습 및 Inner Source 계획.md",
-    "ComputerScience/[4-1] AIOSS/[5주차] 비동기 협업 체계 구축 (Discussions_Wiki_ADR).md",
-    "ComputerScience/[4-1] AIOSS/[4주차] GitHub Flow 및 코드리뷰 협업 실습.md",
-    "ComputerScience/[4-1] AIOSS/[3주차] GitHub Projects 계획·추적 체계 구축.md",
-    "ComputerScience/[4-1] AIOSS/[2주차] DORA 메트릭 수집 자동화.md",
-    "ComputerScience/[4-1] AIOSS/[1주차] 개발 환경 설정 및 프로젝트 제안서.md",
-    "ComputerScience/[4-1] AIOSS/AIOSS_실전_개발_워크플로우_가이드.md",
-    "졸업학점.md",
-    "LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf",
-    "prd.md",
-    "ComputerScience/[4-1] AIOSS/week0_orientation.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.0.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/Sobel_Edge_Detection.ipynb",
+    "ComputerScience/ComfyUI/README.md",
+    "ComputerScience/ComfyUI",
+    "ComputerScience/[2-1] 확률과 통계/README.md",
+    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/문제.pdf",
+    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/문제 풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/Continuous RVs.md",
+    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/09_continuous_rv.pdf",
+    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs",
+    "ComputerScience/[2-1] 확률과 통계/8.Poisson/문제풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/8.Poisson/Poisson 문제.pdf",
+    "ComputerScience/[2-1] 확률과 통계/8.Poisson/Poisson Distribution.md",
+    "ComputerScience/[2-1] 확률과 통계/8.Poisson/More Discreete Distributions (시험 X).md",
+    "ComputerScience/[2-1] 확률과 통계/8.Poisson",
+    "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV/문제.pdf",
+    "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV/Binomial Distribution.md",
+    "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV",
+    "ComputerScience/[2-1] 확률과 통계/7-1.Bernoulli_RV/Bernoulli RV 문제.pdf",
+    "ComputerScience/[2-1] 확률과 통계/7-1.Bernoulli_RV/Bernoulli Distribution.md",
+    "ComputerScience/[2-1] 확률과 통계/7-0.Variance/문제 풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/7-0.Variance/Variance.md",
+    "ComputerScience/[2-1] 확률과 통계/6.Random_Variables/문제 풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/6.Random_Variables/Random Variables.md",
+    "ComputerScience/[2-1] 확률과 통계/6.Random_Variables/Expectation.md",
+    "ComputerScience/[2-1] 확률과 통계/5.Independence/문제 풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/5.Independence/Independence.md",
+    "ComputerScience/[2-1] 확률과 통계/4.Bayes_theorem/문제 풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/4.Bayes_theorem/Bayes' Theorem.md",
+    "ComputerScience/[2-1] 확률과 통계/3.Probability/문제 풀이.md",
+    "ComputerScience/[2-1] 확률과 통계/3.Probability/Probability.md",
+    "ComputerScience/[2-1] 확률과 통계/23.naive_bayes/23_naive_bayes.md",
+    "ComputerScience/[2-1] 확률과 통계/22.map/22_MAP.md",
+    "ComputerScience/[2-1] 확률과 통계/20.mle/파라미터 추정.md",
+    "ComputerScience/[2-1] 확률과 통계/20.mle/MLE.md",
+    "ComputerScience/[2-1] 확률과 통계/20.mle/20_mle.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
