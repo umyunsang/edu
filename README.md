@@ -116,6 +116,7 @@ graph TD
 ## 🚀 실전 기술 스택 & 툴 (Highlights)
 
 *   **LLM 활용**: [Fine-Tuning 실습](./ComputerScience/LLM%20%EC%9D%B4%ED%95%B4%EC%99%80%20%ED%99%9C%EC%9A%A9/ChatGPT%20API/Fine-Tuning%20%EC%8B%A4%EC%8A%B5.md), ChatGPT API 연동
+*   **GenAI 실전**: [ComfyUI 워크플로우 실습](./ComputerScience/ComfyUI), [Hugging Face Models 🔗](https://huggingface.co/umyunsang)
 *   **인프라**: [도커 및 쿠버네티스](./ComputerScience/%EB%8F%84%EC%BB%A4%EC%99%80%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4) (Ingress, Service 설정)
 *   **알고리즘**: [코딩테스트 대비](./ComputerScience/%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8) 및 백준 문제 풀이
 
