@@ -72,7 +72,7 @@ graph TD
 ### [2학년] - CS 핵심 및 AI 입문
 | 과목명 | 핵심 내용 | 실습 및 과제 |
 | :--- | :--- | :--- |
-| **[2-1] Python(basic)** | 파이썬 문법, 객체지향 | [지뢰찾기 구현](./ComputerScience/%5B2-1%5D%20Python(basic)/%EC%A7%80%EB%A2%B0%EC%B0%BE%EA%B8%B0) |
+| **[2-1] Python(basic)** | 파이썬 문법, 객체지향 | [Python Repository 🔗](https://github.com/umyunsang/Python)<br>[지뢰찾기 구현](./ComputerScience/%5B2-1%5D%20Python(basic)/%EC%A7%80%EB%A2%B0%EC%B0%BE%EA%B8%B0) |
 | **[2-1] 데이터 구조** | 리스트, 스택, 큐, 트리 | [정렬 알고리즘](./ComputerScience/%5B2-1%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B5%AC%EC%A1%B0/5.%20%EC%A0%95%EB%A0%AC/1705817_%EC%97%84%EC%9C%A4%EC%83%81_%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0_4%EC%A3%BC%EC%B0%A8%EA%B3%BC%EC%A0%9C.md) |
 | **[2-1] 인공지능** | 신경망 기초, CNN | [MLP/CNN 실습](./ComputerScience/%5B2-1%5D%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5) |
 | **[2-1] 웹프로그래밍** | HTML, Spring Boot | [Spring Boot 실습](./ComputerScience/%5B2-1%5D%20%EC%9B%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/3.%20Spring%20Boot%20%EA%B8%B0%EC%B4%88/Spring%20Boot%20%EA%B8%B0%EC%B4%88%20%EC%8B%A4%EC%8A%B5.md) |
