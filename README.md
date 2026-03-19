@@ -102,6 +102,7 @@ graph TD
 ## 🏆 대외 활동 & 자격증 (Extracurricular)
 
 *   **LGAimer**: LG AI 연구원 해커톤 및 교육 과정 ([자료 이동](./LGAimer))
+    *   [🏆 LG Aimers 8기 이수증 (LLM Compression)](./LGAimer/LG_Aimers_Certificate.pdf)
     *   [LLM Application & Evaluation 자료](./LGAimer/%E3%80%8ELLM%20Application%20%26%20Evaluation%E3%80%8F%20%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C%20Download.pdf)
 *   **자격증**: 데이터분석준전문가(ADsP), 정보처리기사 등 ([자료 이동](./certifications))
     *   [자격증 취득 체크리스트](./certifications/%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
