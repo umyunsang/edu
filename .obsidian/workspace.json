@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
+                "file": "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pop Quiz 1 풀이"
+              "title": "신경망_핵심이론_시험정리"
             }
           }
         ]
@@ -221,12 +221,14 @@
   },
   "active": "eacf8ac1f4358345",
   "lastOpenFiles": [
+    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.1.pdf",
+    "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
     "ComputerScience/[4-1] AIOSS/week6_github_actions.pdf",
     "ComputerScience/[4-1] AIOSS/week5_open_inner_source_software_delivery.pdf",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 2 풀이.md",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/PopQuiz-25-1-풀이.pdf",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Alg-PopQuiz#2-풀이-2.pdf",
-    "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
     "ComputerScience/[4-1] 알고리즘/02장.알고리즘효율성분석-파알.pdf",
     "Pasted image 20260323153729.png",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이",
@@ -234,9 +236,7 @@
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/Sobel_Edge_Detection.ipynb",
     "ComputerScience/ComfyUI/README.md",
-    "ComputerScience/ComfyUI",
     "ComputerScience/[2-1] 확률과 통계/README.md",
-    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/문제.pdf",
     "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/문제 풀이.md",
     "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/Continuous RVs.md",
     "ComputerScience/[2-1] 확률과 통계/8.Poisson/문제풀이.md",
