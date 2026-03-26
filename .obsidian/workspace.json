@@ -183,7 +183,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ✦  Working… (edu)"
+              "title": "터미널: ◇  Ready (edu)"
             }
           },
           {
@@ -216,11 +216,13 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "16e311407b4b94a0",
+  "active": "eacf8ac1f4358345",
   "lastOpenFiles": [
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/README.md",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_2_2D_Image_Processing_v1.1.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.1.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/README.md",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/해리스 코너 검출 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/슈퍼픽셀 분할 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/최적화 분할 실습.ipynb",
@@ -230,7 +232,6 @@
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/PopQuiz-25-1-풀이.pdf",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Alg-PopQuiz#2-풀이-2.pdf",
-    "ComputerScience/[4-1] 알고리즘/PopQuiz/Pop Quiz 1 풀이.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 2 풀이.md",
     "Pasted image 20260323153729.png",
@@ -254,7 +255,6 @@
     "ComputerScience/[2-1] 확률과 통계/4.Bayes_theorem/Bayes' Theorem.md",
     "ComputerScience/[2-1] 확률과 통계/3.Probability/문제 풀이.md",
     "ComputerScience/[2-1] 확률과 통계/3.Probability/Probability.md",
-    "ComputerScience/[2-1] 확률과 통계/23.naive_bayes/23_naive_bayes.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
