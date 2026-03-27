@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf"
+                "file": "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.1"
+              "title": "26-1창의적글쓰기 강의자료_중핵교양"
             }
           }
         ]
@@ -217,12 +217,12 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "eacf8ac1f4358345",
+  "active": "ba9e23474eb62275",
   "lastOpenFiles": [
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_2_2D_Image_Processing_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.1.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/README.md",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/해리스 코너 검출 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/슈퍼픽셀 분할 실습.ipynb",
