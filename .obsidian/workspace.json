@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf"
+                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "26-1창의적글쓰기 강의자료_중핵교양"
+              "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.1"
             }
           }
         ]
@@ -201,8 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5,
-    "collapsed": true
+    "width": 434.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,9 +216,15 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "ba9e23474eb62275",
+  "active": "16e311407b4b94a0",
   "lastOpenFiles": [
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.1.pdf",
+    "발표 스크립트.md",
+    "PDF_인쇄_완전가이드.md",
+    "README.md",
+    "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_2_2D_Image_Processing_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.1.pdf",
@@ -229,10 +234,7 @@
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/최적화 분할 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/영상 품질 측정 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/영상 품질 측정 실습.md",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_2_2D_Image_Processing_v1.0.pdf",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
-    "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/PopQuiz-25-1-풀이.pdf",
-    "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Alg-PopQuiz#2-풀이-2.pdf",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 2 풀이.md",
     "Pasted image 20260323153729.png",
@@ -253,9 +255,6 @@
     "ComputerScience/[2-1] 확률과 통계/5.Independence/문제 풀이.md",
     "ComputerScience/[2-1] 확률과 통계/5.Independence/Independence.md",
     "ComputerScience/[2-1] 확률과 통계/4.Bayes_theorem/문제 풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/4.Bayes_theorem/Bayes' Theorem.md",
-    "ComputerScience/[2-1] 확률과 통계/3.Probability/문제 풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/3.Probability/Probability.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
