@@ -11,12 +11,14 @@
             "id": "eacf8ac1f4358345",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf"
+                "file": "발표 스크립트.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.1"
+              "icon": "lucide-file",
+              "title": "발표 스크립트"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "67c0be972fb46913",
@@ -141,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "발표 스크립트.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개요"
+              "title": "발표 스크립트 의 개요"
             }
           },
           {
@@ -193,7 +195,7 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ✦  Working… (edu)"
+              "title": "터미널: ◇  Ready (edu)"
             }
           }
         ],
@@ -216,7 +218,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "5036dcff08aeed10",
+  "active": "eacf8ac1f4358345",
   "lastOpenFiles": [
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/ComputerVision_1stHW_Class02_1705817_YunsangUm.ipynb",
