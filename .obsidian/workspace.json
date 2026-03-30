@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "67c0be972fb46913",
@@ -140,17 +141,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "졸업학점.md",
+                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "졸업학점 의 개요"
+              "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.1 의 개요"
             }
           },
           {
-            "id": "16e311407b4b94a0",
+            "id": "e794c3ac963c1388",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "5036dcff08aeed10",
             "type": "leaf",
             "state": {
               "type": "terminal:terminal",
@@ -183,25 +194,15 @@
                 }
               },
               "icon": "terminal",
-              "title": "터미널: ◇  Ready (edu)"
-            }
-          },
-          {
-            "id": "e794c3ac963c1388",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "터미널: ✦  Working… (edu)"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 588.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,12 +217,14 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "16e311407b4b94a0",
+  "active": "eacf8ac1f4358345",
   "lastOpenFiles": [
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.1.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/ComputerVision_1stHW_Class02_1705817_YunsangUm.ipynb",
     "발표 스크립트.md",
+    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/SIFT_DoG_실습.ipynb",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf",
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.1.pdf",
     "PDF_인쇄_완전가이드.md",
     "README.md",
     "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf",
@@ -231,8 +234,6 @@
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/README.md",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/해리스 코너 검출 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/슈퍼픽셀 분할 실습.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/최적화 분할 실습.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/영상 품질 측정 실습.ipynb",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/영상 품질 측정 실습.md",
     "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
     "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
