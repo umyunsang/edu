@@ -141,13 +141,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.1 의 개요"
+              "title": "개요"
             }
           },
           {
@@ -217,7 +216,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "eacf8ac1f4358345",
+  "active": "5036dcff08aeed10",
   "lastOpenFiles": [
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/ComputerVision_1stHW_Class02_1705817_YunsangUm.ipynb",
