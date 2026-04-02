@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "98674a359d51b7bc",
+        "id": "e10af0978e2f13d3",
         "type": "tabs",
         "children": [
           {
-            "id": "eacf8ac1f4358345",
+            "id": "5a1e9be8735dc3c7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "발표 스크립트.md",
-                "mode": "source",
-                "source": false
+                "file": "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf"
               },
-              "icon": "lucide-file",
-              "title": "발표 스크립트"
+              "icon": "lucide-file-text",
+              "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.3"
             }
           }
         ]
@@ -78,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "67c0be972fb46913",
@@ -161,13 +160,14 @@
             }
           },
           {
-            "id": "5036dcff08aeed10",
+            "id": "4763847783e6df73",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "terminal:terminal",
               "state": {
                 "terminal:terminal": {
-                  "cwd": "/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu",
+                  "cwd": "/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/ComputerScience/[4-1] 컴퓨터비전",
                   "focus": false,
                   "profile": {
                     "args": [],
@@ -193,8 +193,9 @@
                   "serial": null
                 }
               },
+              "pinned": true,
               "icon": "terminal",
-              "title": "터미널: ◇  Ready (edu)"
+              "title": "터미널: edu"
             }
           }
         ],
@@ -217,8 +218,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "5036dcff08aeed10",
+  "active": "4763847783e6df73",
   "lastOpenFiles": [
+    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf",
     "발표 스크립트.md",
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
     "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/ComputerVision_1stHW_Class02_1705817_YunsangUm.ipynb",
