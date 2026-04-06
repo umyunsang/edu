@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-An Obsidian vault containing a 3-year Computer Science & AI undergraduate curriculum archive. ~430 markdown notes organized by semester (`[학년-학기] 과목명`), plus certifications and extracurricular activities.
+An Obsidian vault containing a 3-year Computer Science & AI undergraduate curriculum archive. ~430 markdown notes organized by semester, plus certifications and extracurricular activities.
 
 ## Vault Structure
 
-- `ComputerScience/` — All course notes, organized as `[학년-학기] 과목명/` (e.g., `[3-1] 머신러닝/`)
+- `ComputerScience/` — All course notes, named as `학기_영문약어` (e.g., `3-1_machine-learning/`, `4-1_AIOSS/`, `elective_docker-k8s/`)
 - `LGAimer/` — LG Aimers program materials
 - `certifications/` — 정보처리기사, 빅데이터분석 등 자격증 준비 자료
 - `image/` — Shared image assets referenced from notes
@@ -40,7 +40,7 @@ An Obsidian vault containing a 3-year Computer Science & AI undergraduate curric
 ## Working with This Vault
 
 - When creating or editing notes, always use Obsidian Flavored Markdown (wikilinks, callouts, embeds)
-- Preserve existing directory naming convention: `[학년-학기] 과목명`
+- Directory naming: `학기_영문약어` (no spaces, no brackets) — e.g., `3-1_machine-learning`, `elective_LLM`
 - Images should go in `/image/` and be referenced with `![[filename]]`
 - PDF export is configured for A4, no margins, no title — respect these settings when formatting
 - Notes may contain code blocks in Python, Java, JavaScript, C (CUDA), SQL, and shell

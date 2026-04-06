@@ -14,50 +14,104 @@
 
 ## 🗺️ Knowledge Graph (관계성 지도)
 
-학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다.
+학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다. 4개 도메인 트랙(AI/ML, 시스템, 수학, 개발)이 서로 교차하며 최종적으로 컴퓨터비전·알고리즘·AIOSS에서 융합됩니다.
+
+> **Obsidian 사용자:** [`커리큘럼 관계 그래프.canvas`](./커리큘럼%20관계%20그래프.canvas)를 열면 인터랙티브 Canvas 뷰로 볼 수 있습니다.
 
 ```mermaid
 graph TD
-    %% 기초 과정
+    %% ── 1학년 기초 ──
     Start((입문)) --> LA["[1-2] 선형대수학"]
-    Start --> CPS["[1-2] 코딩기초/문제해결"]
-    Start --> DM["[2-2] 이산수학"]
+    Start --> CB["[1-2] 코딩기초"]
 
-    %% AI/데이터 테크 트리
+    %% ── AI/ML 트랙 (빨강) ──
     LA --> AI["[2-1] 인공지능"]
+    CB --> PY["[2-1] Python"]
+    PY --> AI
     AI --> ML["[3-1] 머신러닝"]
-    ML --> MLP["[3-1] 머신러닝프로젝트"]
-    MLP --> BDA["[3-2] 빅데이터분석"]
-    BDA --> CV["[4-1] 컴퓨터비전"]
+    PS["[2-1] 확률통계"] --> ML
+    LA --> ML
+    ML --> MLP["[3-1] ML프로젝트"]
+    ML --> NN["[3-2] 뉴럴네트워크"]
+    ML --> BDA["[3-2] 빅데이터분석"]
+    NN --> CV["[4-1] 컴퓨터비전"]
+    ML --> CV
+    ML --> LLM["LLM 이해와 활용"]
+    NN --> LLM
     AI --> AISD["[3-1] AI시스템설계"]
-    
-    %% 시스템/네트워크 테크 트리
-    CPS --> PY["[2-1] Python(basic)"]
-    PY --> DS["[2-1] 데이터구조"]
-    DS --> AL["[4-1] 알고리즘"]
-    AL --> CT["코딩테스트"]
-    
+
+    %% ── 시스템/인프라 트랙 (파랑) ──
     CA["[2-1] 컴퓨터구조"] --> OS["[2-2] 운영체제"]
+    LX["[2-1] 리눅스"] --> OS
+    PY --> LX
     OS --> DP["[3-1] 분산처리"]
-    
-    %% 인프라/웹 테크 트리
-    LX["[2-1] 리눅스"] --> DB["[2-2] 데이터베이스"]
-    DB --> DK["도커/쿠버네티스"]
-    WEB["[2-1] 웹프로그래밍"] --> OSS["[2-2] OSS(JS)"]
-    OSS --> DPUB["[4-1] 디지털퍼블리싱"]
-    
-    %% 수학/논리 테크 트리
+    CA --> DP
+    NET["[2-2] 네트워크"] --> DP
+    OS --> DK["Docker/K8s"]
+    LX --> DK
+    NET --> DK
+    DP --> AIOSS["[4-1] AIOSS"]
+    DK --> AIOSS
+    OSS["[2-2] OSS"] --> AIOSS
+    AISD --> AIOSS
+
+    %% ── 수학 트랙 (노랑) ──
+    DM["[2-2] 이산수학"] --> AL["[4-1] 알고리즘"]
     DM --> MLG["[3-1] 수리논리학"]
-    MLG --> OM["[3-2] 최적화수학"]
-    
-    %% 대외 활동
-    MLP -.-> LG((LGAimer))
-    BDA -.-> CERT((데이터분석준전문가))
-    
+    DM --> PL["[3-1] 프로그래밍언어론"]
+    LA --> OM["[3-2] 최적화수학"]
+    PS --> OM
+    OM --> NN
+    LA --> GFX["[3-2] 그래픽스"]
+    GFX --> CV
+
+    %% ── 개발 트랙 (초록) ──
+    PY --> DS["[2-1] 자료구조"]
+    DS --> AL
+    AL --> CT["코딩테스트"]
+    DS --> CT
+    PY --> WEB["[2-1] 웹프로그래밍"]
+    LX --> DB["[2-2] 데이터베이스"]
+    DB --> BDA
+    DB --> AISD
+    WEB --> AISD
+
+    %% ── 대외/자격증 ──
+    MLP -.-> LG((LG Aimers))
+    ML -.-> LG
+    BDA -.-> CERT((정보처리기사))
+    OS -.-> CERT
+    DB -.-> CERT
+    NET -.-> CERT
+
+    %% ── 스타일 ──
     style Start fill:#f9f,stroke:#333,stroke-width:2px
+    style AI fill:#ff6b6b,color:#fff
+    style ML fill:#ff6b6b,color:#fff
+    style NN fill:#ff6b6b,color:#fff
+    style CV fill:#ff6b6b,color:#fff
+    style OS fill:#339af0,color:#fff
+    style DP fill:#339af0,color:#fff
+    style AIOSS fill:#339af0,color:#fff
+    style LA fill:#fcc419,color:#333
+    style DM fill:#fcc419,color:#333
+    style OM fill:#fcc419,color:#333
+    style DS fill:#51cf66,color:#fff
+    style AL fill:#51cf66,color:#fff
     style LG fill:#ffeb3b,stroke:#fbc02d
     style CERT fill:#ffeb3b,stroke:#fbc02d
+    style LLM fill:#cc5de8,color:#fff
+    style DK fill:#339af0,color:#fff
 ```
+
+### 트랙별 요약
+
+| 트랙 | 색상 | 최장 경로 |
+|:---|:---|:---|
+| **AI/ML** | 🔴 | 코딩기초 → Python → AI → ML → 뉴럴네트워크 → 컴퓨터비전 |
+| **시스템** | 🔵 | 리눅스 → OS → 분산처리 → AIOSS |
+| **수학** | 🟡 | 선형대수 → 확률통계 → 최적화수학 → 뉴럴네트워크 |
+| **개발** | 🟢 | Python → 자료구조 → 알고리즘 → 코딩테스트 |
 
 ---
 
@@ -128,4 +182,4 @@ graph TD
 - 특정 기술 스택: `content:Python` 또는 `tag:#python` (사용 시)
 
 ---
-<p align="right">Last Updated: 2026-03-19</p>
+<p align="right">Last Updated: 2026-04-06</p>
