@@ -1,0 +1,20 @@
+# [3-2] 최적화수학 · 미니 인덱스
+
+## 🔗 Quick Links
+- [1. Matrix](./1.%20Matrix)
+
+—
+- 상위 인덱스: [../](../) · 루트: [../../](../../)
+
+
+---
+
+## 관련 과목
+
+### 선수 과목
+- [[ComputerScience/1-2_linear-algebra/README|선형대수학]]
+- [[ComputerScience/2-1_probability-statistics/README|확률통계]]
+
+### 관련 주제
+- [[ComputerScience/3-2_neural-network/README|뉴럴네트워크]]
+- [[ComputerScience/4-1_computer-vision/README|컴퓨터비전]]

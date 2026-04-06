@@ -11,14 +11,17 @@
             "id": "5a1e9be8735dc3c7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "ComputerScience/[4-1] AIOSS/md/Week0 - Orientation.md",
-                "mode": "source",
-                "source": false
+                "file": "커리큘럼 관계 그래프.canvas",
+                "viewState": {
+                  "x": 623.9073555403387,
+                  "y": 1317.5647396313152,
+                  "zoom": -1.1691826339327631
+                }
               },
-              "icon": "lucide-file",
-              "title": "Week0 - Orientation"
+              "icon": "lucide-layout-dashboard",
+              "title": "커리큘럼 관계 그래프"
             }
           }
         ]
@@ -78,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 213.5
   },
   "right": {
     "id": "67c0be972fb46913",
@@ -113,12 +116,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "졸업학점.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "졸업학점 의 나가는 링크"
+              "title": "나가는 링크"
             }
           },
           {
@@ -161,43 +163,6 @@
             }
           },
           {
-            "id": "4763847783e6df73",
-            "type": "leaf",
-            "state": {
-              "type": "terminal:terminal",
-              "state": {
-                "terminal:terminal": {
-                  "cwd": "/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/ComputerScience/[4-1] 컴퓨터비전",
-                  "focus": false,
-                  "profile": {
-                    "args": [],
-                    "executable": "/bin/zsh",
-                    "name": "",
-                    "platforms": {
-                      "darwin": true
-                    },
-                    "pythonExecutable": "python3",
-                    "restoreHistory": false,
-                    "rightClickAction": "copyPaste",
-                    "successExitCodes": [
-                      "0",
-                      "SIGINT",
-                      "SIGTERM"
-                    ],
-                    "terminalOptions": {
-                      "documentOverride": null
-                    },
-                    "type": "integrated",
-                    "useWin32Conhost": true
-                  },
-                  "serial": null
-                }
-              },
-              "icon": "terminal",
-              "title": "터미널: ⠐ Analyze obsidian-skills repo compatibility"
-            }
-          },
-          {
             "id": "bf4cb77fbb0494a1",
             "type": "leaf",
             "pinned": true,
@@ -235,9 +200,46 @@
               "icon": "terminal",
               "title": "터미널: ✳ Commit and push orb practice code"
             }
+          },
+          {
+            "id": "52d16b6b8152cbdd",
+            "type": "leaf",
+            "state": {
+              "type": "terminal:terminal",
+              "state": {
+                "terminal:terminal": {
+                  "cwd": "/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu",
+                  "focus": false,
+                  "profile": {
+                    "args": [],
+                    "executable": "/bin/zsh",
+                    "name": "",
+                    "platforms": {
+                      "darwin": true
+                    },
+                    "pythonExecutable": "python3",
+                    "restoreHistory": false,
+                    "rightClickAction": "copyPaste",
+                    "successExitCodes": [
+                      "0",
+                      "SIGINT",
+                      "SIGTERM"
+                    ],
+                    "terminalOptions": {
+                      "documentOverride": null
+                    },
+                    "type": "integrated",
+                    "useWin32Conhost": true
+                  },
+                  "serial": null
+                }
+              },
+              "icon": "terminal",
+              "title": "터미널: ⠂ Build relationship graph with framework integration"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -256,52 +258,54 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "4763847783e6df73",
+  "active": "52d16b6b8152cbdd",
   "lastOpenFiles": [
-    "ComputerScience/[4-1] AIOSS/md/Week0 - Orientation.md",
-    "ComputerScience/[4-1] AIOSS/md/Week1 - Metrics That Matter.md",
-    "ComputerScience/[4-1] AIOSS/md/Week2 - Plan, Track & Visualize.md",
-    "ComputerScience/[4-1] AIOSS/md/Week3 - Teamwork & Collaborative Development.md",
-    "ComputerScience/[4-1] AIOSS/md/Week4 - Asynchronous Work.md",
-    "ComputerScience/[4-1] AIOSS/md/Week5 - Open & Inner Source Software Delivery.md",
-    "ComputerScience/[4-1] AIOSS/md/Week6 - GitHub Actions.md",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/ORB_Video_Tracking.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.4.pdf",
-    "ComputerScience/[4-1] AIOSS/md",
-    "ComputerScience/기타/발표 스크립트.md",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/Feature_Matching_Benchmark.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf",
-    "ComputerScience/[4-1] AIOSS/md/week5_open_inner_source_software_delivery_raw.md",
-    "ComputerScience/[4-1] AIOSS/md/week6_github_actions_raw.md",
-    "ComputerScience/[4-1] AIOSS/Week0 - Orientation.md",
-    "ComputerScience/기타/PDF_인쇄_완전가이드.md",
-    "ComputerScience/기타/졸업학점.md",
-    "ComputerScience/[4-1] 알고리즘/01장.알고리즘개요-파알.pdf",
-    "ComputerScience/[4-1] AIOSS/week3_teamwork_collaborative_development.pdf",
-    "ComputerScience/[4-1] AIOSS/week4_asynchronous_work.pdf",
-    "ComputerScience/[4-1] AIOSS/week5_open_inner_source_software_delivery.pdf",
-    "ComputerScience/[4-1] AIOSS/md/week4_asynchronous_work_raw.md",
-    "ComputerScience/[4-1] AIOSS/md/week3_teamwork_collaborative_development_raw.md",
-    "CLAUDE.md",
-    "ComputerScience/[4-1] AIOSS/md/week0_orientation_raw.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/9. 네트워크 계층/네트워크 계층.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/8. 무선통신 시스템/무선통신 시스템.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/7. LAN의 특징과 규격/LAN의 특징과 규격.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층).md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/5. 통신망과 특징/통신망과 특징.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/3. 신호 처리/신호 처리.md",
-    "ComputerScience/[2-2] 컴퓨터 네트워크/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델.md",
-    "Pasted image 20260323153729.png",
-    "스크린샷 2025-12-08 17.37.28.png",
-    "Pasted image 20251202160528.png",
-    "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
-    "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행결과_1705817_엄윤상.png",
-    "ComputerScience/[3-2] 빅데이터분석/images/터미널_실행결과_1705817_엄윤상.png",
-    "image/Pasted image 20251127132714.png",
-    "image/Pasted image 20251127132626.png",
-    "image/Pasted image 20251127132637.png",
-    "image/Pasted image 20251127132604.png"
+    "ComputerScience/1-2_linear-algebra/README.md",
+    "커리큘럼 관계 그래프.canvas",
+    "커리큘럼 관계 정리.md",
+    "ComputerScience/misc/발표 스크립트.md",
+    "ComputerScience/misc/졸업학점.md",
+    "ComputerScience/misc/PDF_인쇄_완전가이드.md",
+    "ComputerScience/misc",
+    "ComputerScience/elective_convergence/프로젝트 주제.md",
+    "ComputerScience/elective_convergence/소감문 작성.md",
+    "ComputerScience/elective_convergence/과제2.md",
+    "ComputerScience/elective_convergence/과제1.md",
+    "ComputerScience/elective_convergence/_GenAI_FineTuning.pdf",
+    "ComputerScience/elective_convergence/README.md",
+    "ComputerScience/elective_convergence",
+    "ComputerScience/elective_coding-test/정렬/1. 버블 정렬.md",
+    "ComputerScience/elective_coding-test/자료구조/1. 배열과 리스트.md",
+    "ComputerScience/elective_coding-test/자료구조/2. 구간 합.md",
+    "ComputerScience/elective_coding-test/자료구조/5. 스택과 큐.md",
+    "ComputerScience/elective_coding-test/자료구조/3. 투 포인터.md",
+    "ComputerScience/elective_coding-test/자료구조/4. 슬라이딩 윈도우.md",
+    "ComputerScience/elective_coding-test/정렬",
+    "ComputerScience/elective_coding-test/자료구조",
+    "ComputerScience/elective_coding-test/README.md",
+    "ComputerScience/elective_coding-test",
+    "ComputerScience/elective_java/4. 연산자.md",
+    "ComputerScience/elective_java/5. 조건문.md",
+    "ComputerScience/elective_java/README.md",
+    "ComputerScience/elective_java/3. Scanner.md",
+    "ComputerScience/elective_java/2. 변수와 자료형.md",
+    "ComputerScience/elective_java/1. Hello Java.md",
+    "ComputerScience/elective_java",
+    "ComputerScience/elective_docker-k8s/Ingress 설정 정리.md",
+    "ComputerScience/elective_docker-k8s/쿠버네티스 설치.md",
+    "ComputerScience/elective_docker-k8s/쿠버네티스  기초.md",
+    "ComputerScience/elective_docker-k8s/Pasted image 20250114143924.png",
+    "ComputerScience/elective_docker-k8s",
+    "ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG_LangChain.pdf",
+    "ComputerScience/elective_LLM/image/Pasted image 20250120111923.png",
+    "ComputerScience/elective_LLM/image/Pasted image 20250120103621.png",
+    "ComputerScience/elective_LLM/image/Pasted image 20250121150551.png",
+    "ComputerScience/elective_LLM/image/Pasted image 20250120112057.png",
+    "ComputerScience/elective_LLM/image/Pasted image 20250120103633.png",
+    "ComputerScience/elective_LLM/image/Pasted image 20250120101836.png",
+    "ComputerScience/elective_LLM/image/Pasted image 20250120103626.png",
+    "ComputerScience/elective_LLM/ChatGPT API/OpenAI API.pdf",
+    "ComputerScience/3-2_optimization-math/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 004.png",
+    "ComputerScience/3-2_optimization-math/1. Matrix/KakaoTalk_Photo_2025-10-23-12-58-49 003.png"
   ]
 }
