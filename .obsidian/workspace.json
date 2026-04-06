@@ -18,8 +18,21 @@
               "icon": "lucide-file-text",
               "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.3"
             }
+          },
+          {
+            "id": "07e9c0939badb79b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,7 +208,7 @@
               },
               "pinned": true,
               "icon": "terminal",
-              "title": "터미널: edu"
+              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/ComputerScience/[4-1] 컴퓨터비전"
             }
           }
         ],
@@ -218,7 +231,7 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "4763847783e6df73",
+  "active": "07e9c0939badb79b",
   "lastOpenFiles": [
     "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf",
     "발표 스크립트.md",
