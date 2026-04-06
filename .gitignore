@@ -1,0 +1,10 @@
+# Obsidian config
+.obsidian/
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# macOS
+.DS_Store
+**/.DS_Store
