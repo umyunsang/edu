@@ -18,21 +18,8 @@
               "icon": "lucide-file-text",
               "title": "Computer_Vision_4_Feature_Extraction_and_Matching_v1.3"
             }
-          },
-          {
-            "id": "07e9c0939badb79b",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "릴리즈 노트 1.12.7"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "67c0be972fb46913",
@@ -175,7 +161,6 @@
           {
             "id": "4763847783e6df73",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "terminal:terminal",
               "state": {
@@ -206,9 +191,8 @@
                   "serial": null
                 }
               },
-              "pinned": true,
               "icon": "terminal",
-              "title": "터미널: um-yunsang@eom-yunsang-ui-MacBookAir:~/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/ComputerScience/[4-1] 컴퓨터비전"
+              "title": "터미널: ⠂ Analyze obsidian-skills repo compatibility"
             }
           }
         ],
@@ -216,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 588.5
+    "width": 640.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,45 +215,45 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "07e9c0939badb79b",
+  "active": "4763847783e6df73",
   "lastOpenFiles": [
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf",
+    "ComputerScience/기타/졸업학점.md",
+    "ComputerScience/기타/발표 스크립트.md",
+    "ComputerScience/기타/PDF_인쇄_완전가이드.md",
+    "ComputerScience/기타",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/9. 네트워크 계층/네트워크 계층.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/9. 네트워크 계층/9. 네트워크 계층.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/8. 무선통신 시스템/무선통신 시스템.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/8. 무선통신 시스템/8. 무선통신 시스템.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/7. LAN의 특징과 규격/LAN의 특징과 규격.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/7. LAN의 특징과 규격/7. LAN의 특징과 규격.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층).md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/6. 데이터 링크 계층의 작업/6. 데이터 링크 계층의 작업.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/4. 유선 및 무선 데이터 전송/4. 유선 및 무선 데이터 전송.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/5. 통신망과 특징/통신망과 특징.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/5. 통신망과 특징/5. 통신망과 특징.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/3. 신호 처리/신호 처리.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/3. 신호 처리/3. 신호 처리.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/2. 네트워크 분류와 계층 모델/2. 네트워크 분류와 계층 모델.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/13. 전송 계층/전송 계층.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/13. 전송 계층/13. 전송 계층.pdf",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/16. 보안/보안.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/12. 네트워크 계층 작업과 프로토콜/네트워크 계층 작업과 프로토콜.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP).md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/10. 라우팅 알고리즘/라우팅 알고리즘.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/0. Quiz/중간 퀴즈.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/0. Quiz/기말 퀴즈.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/0. Quiz/기말 암기 정리.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/0. Quiz/ip rounting.md",
+    "ComputerScience/[2-2] 컴퓨터 네트워크/README.md",
+    "CLAUDE.md",
     "발표 스크립트.md",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/ComputerVision_1stHW_Class02_1705817_YunsangUm.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/SIFT_DoG_실습.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_1_overview_v1.1.pdf",
     "PDF_인쇄_완전가이드.md",
-    "README.md",
-    "ComputerScience/[4-1] 창의적글쓰기/pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_2_2D_Image_Processing_v1.1.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/Computer_Vision_3_2D_Image_Processing_2_v1.1.pdf",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/README.md",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/해리스 코너 검출 실습.ipynb",
-    "ComputerScience/[4-1] 컴퓨터비전/코랩 실습/영상 품질 측정 실습.md",
-    "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 1 풀이.md",
-    "ComputerScience/[3-2] 뉴럴네트워크/md/신경망_핵심이론_시험정리.md",
-    "ComputerScience/[4-1] 알고리즘/Pop Quiz 풀이/Pop Quiz 2 풀이.md",
     "Pasted image 20260323153729.png",
-    "ComputerScience/ComfyUI/README.md",
-    "ComputerScience/[2-1] 확률과 통계/README.md",
-    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/문제 풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/9.Continuous_RVs/Continuous RVs.md",
-    "ComputerScience/[2-1] 확률과 통계/8.Poisson/문제풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/8.Poisson/Poisson Distribution.md",
-    "ComputerScience/[2-1] 확률과 통계/8.Poisson/More Discreete Distributions (시험 X).md",
-    "ComputerScience/[2-1] 확률과 통계/7-2.Binomial_RV/Binomial Distribution.md",
-    "ComputerScience/[2-1] 확률과 통계/7-1.Bernoulli_RV/Bernoulli Distribution.md",
-    "ComputerScience/[2-1] 확률과 통계/7-0.Variance/문제 풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/7-0.Variance/Variance.md",
-    "ComputerScience/[2-1] 확률과 통계/6.Random_Variables/문제 풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/6.Random_Variables/Random Variables.md",
-    "ComputerScience/[2-1] 확률과 통계/6.Random_Variables/Expectation.md",
-    "ComputerScience/[2-1] 확률과 통계/5.Independence/문제 풀이.md",
-    "ComputerScience/[2-1] 확률과 통계/5.Independence/Independence.md",
-    "ComputerScience/[2-1] 확률과 통계/4.Bayes_theorem/문제 풀이.md",
     "스크린샷 2025-12-08 17.37.28.png",
     "Pasted image 20251202160528.png",
     "ComputerScience/[3-2] 빅데이터분석/images/MLFlow_실행로그_1705817_엄윤상.png",
