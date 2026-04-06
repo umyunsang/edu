@@ -1,5 +1,11 @@
 [
   "better-export-pdf",
   "obsidian-git",
-  "terminal"
+  "terminal",
+  "obsidian-linter",
+  "templater-obsidian",
+  "tag-wrangler",
+  "auto-note-mover",
+  "find-unlinked-files",
+  "consistent-attachments-and-links"
 ]
