@@ -59,9 +59,9 @@
   <!-- Bottom callout -->
   <g>
     <rect x="60" y="650" width="980" height="150" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="sub" x="80" y="685" text-anchor="start">핵심 규칙 (시험 단골)</text>
-    <text class="lab" x="80" y="720">• 서론 · 결론은 <tspan font-weight="bold" fill="#c0392b">미괄식</tspan> — 주제문이 문단 끝에 (독자가 자연스럽게 따라옴)</text>
-    <text class="lab" x="80" y="750">• 본론은 <tspan font-weight="bold" fill="#c0392b">두괄식</tspan> — 소주제문이 문단 앞에 (한눈에 요지 파악)</text>
-    <text class="lab" x="80" y="782" fill="#c0392b" font-weight="bold">출처 기록: 이름 · 제목 · 출판사 · 연도 · 페이지</text>
+    <text class="sub" x="550" y="685">핵심 규칙 (시험 단골)</text>
+    <text class="lab" x="180" y="720">• 서론 · 결론은 <tspan font-weight="bold" fill="#c0392b">미괄식</tspan> — 주제문이 문단 끝에 (독자가 자연스럽게 따라옴)</text>
+    <text class="lab" x="180" y="750">• 본론은 <tspan font-weight="bold" fill="#c0392b">두괄식</tspan> — 소주제문이 문단 앞에 (한눈에 요지 파악)</text>
+    <text class="lab" x="550" y="782" fill="#c0392b" font-weight="bold" text-anchor="middle">출처 기록: 이름 · 제목 · 출판사 · 연도 · 페이지</text>
   </g>
 </svg>
