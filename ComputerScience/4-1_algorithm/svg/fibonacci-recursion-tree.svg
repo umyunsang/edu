@@ -21,7 +21,7 @@
 
   <!-- Left: Naive recursion tree -->
   <circle class="badge" cx="30" cy="65" r="11"/><text class="badgeT" x="30" y="69">1</text>
-  <text class="tb" x="45" y="69" fill="#c0392b">순수 재귀 — 같은 F(k)를 반복 계산 (지수폭발)</text>
+  <text class="tb" x="45" y="69" fill="#c0392b">순수 재귀 — 지수폭발</text>
 
   <g>
     <line class="e" x1="250" y1="95" x2="150" y2="150"/>

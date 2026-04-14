@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="system-ui,sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  <style>
+    .c{fill:#fff;stroke:#2c3e50;stroke-width:1.5}
+    .done{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.5}
+    .cur{fill:#fff2cc;stroke:#d4a017;stroke-width:2}
+    .mid{fill:#eaf2fb;stroke:#2457a7;stroke-width:2}
+    .target{fill:#ffd3e0;stroke:#c2185b;stroke-width:2}
+    .note{fill:#fff7d6;stroke:#b08a1f;stroke-width:1.5}
+    .t{font-size:14px;text-anchor:middle;fill:#1e2a38}
+    .m{font-size:13px;font-family:ui-monospace,Menlo,monospace;text-anchor:middle;fill:#1e2a38}
+    .lab{font-size:13px;fill:#4a5b6c}
+    .labc{font-size:13px;fill:#4a5b6c;text-anchor:middle}
+    .tb{font-size:16px;font-weight:bold;text-anchor:middle;fill:#1e2a38}
+    .th{font-size:14px;font-weight:bold;fill:#1e2a38}
+    .ln{stroke:#2c3e50;stroke-width:1.5;fill:none}
+  </style>
+
+  <text class="tb" x="550" y="30">이진 삽입 정렬: 정렬된 왼쪽에 새 원소를 이분탐색으로 위치 결정 → 이동</text>
+
+  <!-- Step 0: 상태 -->
+  <g transform="translate(60,60)">
+    <text class="th" x="0" y="0">① 현재 상태: 정렬된 왼쪽 [2,4,5,7,9]  +  삽입할 원소 6</text>
+    <g>
+      <rect class="done" x="0" y="15" width="50" height="40"/><text class="t" x="25" y="41">2</text>
+      <rect class="done" x="50" y="15" width="50" height="40"/><text class="t" x="75" y="41">4</text>
+      <rect class="done" x="100" y="15" width="50" height="40"/><text class="t" x="125" y="41">5</text>
+      <rect class="done" x="150" y="15" width="50" height="40"/><text class="t" x="175" y="41">7</text>
+      <rect class="done" x="200" y="15" width="50" height="40"/><text class="t" x="225" y="41">9</text>
+      <rect class="target" x="290" y="15" width="50" height="40"/><text class="t" x="315" y="41">6</text>
+      <text class="labc" x="125" y="75">정렬된 부분 (인덱스 0~4)</text>
+      <text class="labc" x="315" y="75">새 원소</text>
+    </g>
+  </g>
+
+  <!-- Step 1: 이분탐색 반복 1 -->
+  <g transform="translate(60,160)">
+    <text class="th" x="0" y="0">② 이분탐색 Step 1: l=0, r=4, mid=2 → A[2]=5 &lt; 6 → 오른쪽 [3..4]으로</text>
+    <g>
+      <rect class="done" x="0" y="15" width="50" height="40"/><text class="t" x="25" y="41">2</text>
+      <rect class="done" x="50" y="15" width="50" height="40"/><text class="t" x="75" y="41">4</text>
+      <rect class="mid" x="100" y="15" width="50" height="40"/><text class="t" x="125" y="41">5</text>
+      <rect class="done" x="150" y="15" width="50" height="40"/><text class="t" x="175" y="41">7</text>
+      <rect class="done" x="200" y="15" width="50" height="40"/><text class="t" x="225" y="41">9</text>
+      <text class="labc" x="25" y="75">l=0</text>
+      <text class="labc" x="125" y="75">mid=2</text>
+      <text class="labc" x="225" y="75">r=4</text>
+    </g>
+    <text class="lab" x="290" y="40">비교 1회 (6 vs 5)</text>
+  </g>
+
+  <!-- Step 2: 이분탐색 반복 2 -->
+  <g transform="translate(60,260)">
+    <text class="th" x="0" y="0">③ 이분탐색 Step 2: l=3, r=4, mid=3 → A[3]=7 &gt; 6 → 왼쪽 [3..2]로 (종료)</text>
+    <g>
+      <rect class="done" x="0" y="15" width="50" height="40"/><text class="t" x="25" y="41">2</text>
+      <rect class="done" x="50" y="15" width="50" height="40"/><text class="t" x="75" y="41">4</text>
+      <rect class="done" x="100" y="15" width="50" height="40"/><text class="t" x="125" y="41">5</text>
+      <rect class="mid" x="150" y="15" width="50" height="40"/><text class="t" x="175" y="41">7</text>
+      <rect class="done" x="200" y="15" width="50" height="40"/><text class="t" x="225" y="41">9</text>
+      <text class="labc" x="175" y="75">l=mid=3</text>
+      <text class="labc" x="225" y="75">r=4</text>
+    </g>
+    <text class="lab" x="290" y="40">비교 2회 (6 vs 7)</text>
+  </g>
+
+  <!-- Step 3: 삽입 위치 결정 -->
+  <g transform="translate(60,360)">
+    <text class="th" x="0" y="0">④ 삽입 위치 = 인덱스 3 (5와 7 사이)</text>
+    <g>
+      <rect class="done" x="0" y="15" width="50" height="40"/><text class="t" x="25" y="41">2</text>
+      <rect class="done" x="50" y="15" width="50" height="40"/><text class="t" x="75" y="41">4</text>
+      <rect class="done" x="100" y="15" width="50" height="40"/><text class="t" x="125" y="41">5</text>
+      <rect class="done" x="150" y="15" width="50" height="40" opacity="0.4"/><text class="t" x="175" y="41" opacity="0.4">7</text>
+      <rect class="done" x="200" y="15" width="50" height="40" opacity="0.4"/><text class="t" x="225" y="41" opacity="0.4">9</text>
+      <path class="ln" d="M175,15 L235,15" marker-end="url(#ar)"/>
+      <path class="ln" d="M225,60 L285,60" marker-end="url(#ar)"/>
+      <text class="labc" x="125" y="75">여기 다음에 삽입</text>
+      <text class="lab" x="310" y="40">7, 9를 한 칸씩 오른쪽으로 이동</text>
+    </g>
+  </g>
+
+  <!-- Step 4: 최종 -->
+  <g transform="translate(60,460)">
+    <text class="th" x="0" y="0">⑤ 삽입 완료</text>
+    <g>
+      <rect class="done" x="0" y="15" width="50" height="40"/><text class="t" x="25" y="41">2</text>
+      <rect class="done" x="50" y="15" width="50" height="40"/><text class="t" x="75" y="41">4</text>
+      <rect class="done" x="100" y="15" width="50" height="40"/><text class="t" x="125" y="41">5</text>
+      <rect class="cur" x="150" y="15" width="50" height="40"/><text class="t" x="175" y="41">6</text>
+      <rect class="done" x="200" y="15" width="50" height="40"/><text class="t" x="225" y="41">7</text>
+      <rect class="done" x="250" y="15" width="50" height="40"/><text class="t" x="275" y="41">9</text>
+    </g>
+  </g>
+
+  <!-- 요약 -->
+  <g>
+    <rect class="note" x="40" y="540" width="1020" height="90" rx="8"/>
+    <text class="th" x="55" y="565">복잡도 비교</text>
+    <text class="m" x="550" y="588">위치 찾기: 일반 삽입정렬 O(k) → 이진삽입 O(log k)   ·   이동: 여전히 O(k) (원소를 한 칸씩 밀어야 함)</text>
+    <text class="m" x="550" y="612">총 비교: Θ(n log n)   ·   총 이동: Θ(n²)   ⇒   비교 비용이 비쌀 때만 유리 (전체는 여전히 Θ(n²))</text>
+  </g>
+</svg>

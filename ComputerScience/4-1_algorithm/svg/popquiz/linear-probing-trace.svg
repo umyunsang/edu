@@ -213,7 +213,7 @@
   <!-- Summary table -->
   <g transform="translate(30,510)">
     <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">9</text>
-    <text class="tb" x="15" y="18">탐사 횟수 요약 & 평균</text>
+    <text class="tb" x="15" y="18">탐사 횟수 요약 &amp; 평균</text>
     <rect class="sum" x="0" y="30" width="900" height="120"/>
 
     <text class="lab" x="10" y="50" font-weight="bold">키</text>

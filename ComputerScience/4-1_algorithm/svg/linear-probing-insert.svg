@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" font-family="system-ui,sans-serif">
   <style>
     .c{fill:#fff;stroke:#2c3e50;stroke-width:1.2}
     .new{fill:#ffeb99;stroke:#d4a017;stroke-width:2}
@@ -188,5 +188,5 @@
     </g>
   </g>
 
-  <text class="lab" x="30" y="610" fill="#c0392b">교훈(1차 군집화): 인접한 슬롯들이 덩어리로 뭉치면 새 키가 계속 미끄러진다. 이중해싱/이차조사로 완화 가능.</text>
+  <text class="lab" x="30" y="645" fill="#c0392b">교훈(1차 군집화): 인접한 슬롯들이 덩어리로 뭉치면 새 키가 계속 미끄러진다. 이중해싱/이차조사로 완화 가능.</text>
 </svg>

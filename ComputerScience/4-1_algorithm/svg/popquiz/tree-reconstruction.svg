@@ -25,7 +25,7 @@
   </defs>
 
   <text class="tb" x="470" y="22" text-anchor="middle">PQ2-5: 전위 + 중위 → 이진 트리 복원 → 후위 출력</text>
-  <text class="lab" x="470" y="42" text-anchor="middle">전위(Preorder): <tspan font-family="monospace" font-weight="bold">A B D E C F G</tspan> &nbsp;&nbsp; 중위(Inorder): <tspan font-family="monospace" font-weight="bold">D B E A F C G</tspan></text>
+  <text class="lab" x="470" y="42" text-anchor="middle">전위(Preorder): <tspan font-family="monospace" font-weight="bold">A B D E C F G</tspan> &#160;&#160; 중위(Inorder): <tspan font-family="monospace" font-weight="bold">D B E A F C G</tspan></text>
 
   <!-- Step 1: 루트 식별 -->
   <g transform="translate(30,60)">
