@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" font-family="system-ui,sans-serif">
+  <style>
+    .root{fill:#2e86de;stroke:#1c5580;stroke-width:2}
+    .l1{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .l2{fill:#fff;stroke:#8e44ad;stroke-width:2}
+    .lab{font-size:13px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
+    .wtxt{font-size:13px;font-weight:bold;text-anchor:middle;fill:#fff}
+    .ln{stroke:#555;stroke-width:1.5;fill:none}
+    .phase{font-size:12px;font-weight:bold;fill:#c0392b;text-anchor:middle}
+    .mece{font-size:12px;font-weight:bold;fill:#c0392b;text-anchor:middle}
+  </style>
+
+  <text class="tb" x="440" y="24">Logic Tree: MECE 기반 단계별 분해 작성법</text>
+
+  <!-- Root -->
+  <rect class="root" x="30" y="180" width="130" height="60" rx="6"/>
+  <text class="wtxt" x="95" y="210">주제/주장</text>
+  <text class="wtxt" x="95" y="228">초기 질문</text>
+
+  <!-- 1st phase -->
+  <text class="phase" x="280" y="40">1차 전개</text>
+  <rect class="l1" x="220" y="80" width="120" height="50"/>
+  <text class="lab" x="280" y="110" font-weight="bold">상위 덩이 A</text>
+  <rect class="l1" x="220" y="290" width="120" height="50"/>
+  <text class="lab" x="280" y="320" font-weight="bold">상위 덩이 B</text>
+
+  <line class="ln" x1="160" y1="200" x2="220" y2="105"/>
+  <line class="ln" x1="160" y1="220" x2="220" y2="315"/>
+
+  <text class="mece" x="280" y="380">↑ MECE</text>
+
+  <!-- 2nd phase -->
+  <text class="phase" x="490" y="40">2차 전개</text>
+  <rect class="l1" x="430" y="50" width="120" height="40" opacity="0.75"/>
+  <text class="lab" x="490" y="75">A-1</text>
+  <rect class="l1" x="430" y="120" width="120" height="40" opacity="0.75"/>
+  <text class="lab" x="490" y="145">A-2</text>
+  <rect class="l1" x="430" y="260" width="120" height="40" opacity="0.75"/>
+  <text class="lab" x="490" y="285">B-1</text>
+  <rect class="l1" x="430" y="330" width="120" height="40" opacity="0.75"/>
+  <text class="lab" x="490" y="355">B-2</text>
+
+  <line class="ln" x1="340" y1="100" x2="430" y2="70"/>
+  <line class="ln" x1="340" y1="110" x2="430" y2="140"/>
+  <line class="ln" x1="340" y1="310" x2="430" y2="280"/>
+  <line class="ln" x1="340" y1="320" x2="430" y2="350"/>
+
+  <text class="mece" x="490" y="395">↑ MECE</text>
+
+  <!-- 3rd phase -->
+  <text class="phase" x="700" y="40">3차 전개</text>
+  <rect class="l2" x="640" y="30" width="110" height="30"/>
+  <text class="lab" x="695" y="50">A-1-a</text>
+  <rect class="l2" x="640" y="70" width="110" height="30"/>
+  <text class="lab" x="695" y="90">A-1-b</text>
+  <rect class="l2" x="640" y="110" width="110" height="30"/>
+  <text class="lab" x="695" y="130">A-2-a</text>
+  <rect class="l2" x="640" y="150" width="110" height="30"/>
+  <text class="lab" x="695" y="170">A-2-b</text>
+  <rect class="l2" x="640" y="240" width="110" height="30"/>
+  <text class="lab" x="695" y="260">B-1-a</text>
+  <rect class="l2" x="640" y="280" width="110" height="30"/>
+  <text class="lab" x="695" y="300">B-1-b</text>
+  <rect class="l2" x="640" y="320" width="110" height="30"/>
+  <text class="lab" x="695" y="340">B-2-a</text>
+  <rect class="l2" x="640" y="360" width="110" height="30"/>
+  <text class="lab" x="695" y="380">B-2-b</text>
+
+  <line class="ln" x1="550" y1="60" x2="640" y2="45"/>
+  <line class="ln" x1="550" y1="80" x2="640" y2="85"/>
+  <line class="ln" x1="550" y1="130" x2="640" y2="125"/>
+  <line class="ln" x1="550" y1="150" x2="640" y2="165"/>
+  <line class="ln" x1="550" y1="270" x2="640" y2="255"/>
+  <line class="ln" x1="550" y1="290" x2="640" y2="295"/>
+  <line class="ln" x1="550" y1="340" x2="640" y2="335"/>
+  <line class="ln" x1="550" y1="360" x2="640" y2="375"/>
+
+  <g transform="translate(30,410)">
+    <rect x="0" y="0" width="820" height="40" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="lab" x="15" y="25" text-anchor="start" fill="#c0392b" font-weight="bold">
+      매 단계 분기마다 MECE(중복 없이·누락 없이) 적용 → 논리가 새지 않는다. 4~7개 이내 가지만 두는 게 좋다.
+    </text>
+  </g>
+</svg>

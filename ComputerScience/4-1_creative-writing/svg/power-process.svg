@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" font-family="system-ui,sans-serif">
+  <style>
+    .s{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
+    .p{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .o{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .w{fill:#fff7d6;stroke:#d4a017;stroke-width:2}
+    .e{fill:#eaeaea;stroke:#555;stroke-width:2}
+    .r{fill:#f0d4f7;stroke:#9b59b6;stroke-width:2}
+    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px;text-anchor:middle}
+    .letter{font-size:24px;font-weight:bold;text-anchor:middle;fill:#c0392b}
+    .ar{stroke:#333;stroke-width:2;fill:none;marker-end:url(#arw)}
+    .cycle{stroke:#999;stroke-width:1.5;fill:none;stroke-dasharray:4 3;marker-end:url(#arw2)}
+  </style>
+  <defs>
+    <marker id="arw" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#333"/>
+    </marker>
+    <marker id="arw2" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <text class="tb" x="440" y="24">POWER 과정: 힘 글쓰기 5단계 (반복적 사이클)</text>
+
+  <!-- 5 boxes -->
+  <g transform="translate(30,60)">
+    <rect class="p" x="0" y="30" width="150" height="100"/>
+    <text class="letter" x="75" y="55">P</text>
+    <text class="lab" x="75" y="75" font-weight="bold">Pre-Writing</text>
+    <text class="lab" x="75" y="95">글쓰기 준비단계</text>
+    <text class="lab" x="75" y="115">주제·자료·브레인스토밍</text>
+  </g>
+
+  <g transform="translate(200,60)">
+    <rect class="o" x="0" y="30" width="150" height="100"/>
+    <text class="letter" x="75" y="55">O</text>
+    <text class="lab" x="75" y="75" font-weight="bold">Organization</text>
+    <text class="lab" x="75" y="95">글의 구조 잡기</text>
+    <text class="lab" x="75" y="115">덩이지기 · 구조도</text>
+  </g>
+
+  <g transform="translate(370,60)">
+    <rect class="w" x="0" y="30" width="150" height="100"/>
+    <text class="letter" x="75" y="55">W</text>
+    <text class="lab" x="75" y="75" font-weight="bold">Writing</text>
+    <text class="lab" x="75" y="95">초고 쓰기</text>
+    <text class="lab" x="75" y="115">1차 드래프트</text>
+  </g>
+
+  <g transform="translate(540,60)">
+    <rect class="e" x="0" y="30" width="150" height="100"/>
+    <text class="letter" x="75" y="55">E</text>
+    <text class="lab" x="75" y="75" font-weight="bold">Editing</text>
+    <text class="lab" x="75" y="95">고치기</text>
+    <text class="lab" x="75" y="115">문장·표현 다듬기</text>
+  </g>
+
+  <g transform="translate(710,60)">
+    <rect class="r" x="0" y="30" width="150" height="100"/>
+    <text class="letter" x="75" y="55">R</text>
+    <text class="lab" x="75" y="75" font-weight="bold">Re-Writing</text>
+    <text class="lab" x="75" y="95">다시 쓰기</text>
+    <text class="lab" x="75" y="115">구조 재검토</text>
+  </g>
+
+  <!-- Forward arrows -->
+  <line class="ar" x1="180" y1="140" x2="200" y2="140"/>
+  <line class="ar" x1="350" y1="140" x2="370" y2="140"/>
+  <line class="ar" x1="520" y1="140" x2="540" y2="140"/>
+  <line class="ar" x1="690" y1="140" x2="710" y2="140"/>
+
+  <!-- Cycle back -->
+  <path class="cycle" d="M 785 190 Q 785 260 500 260 Q 105 260 105 190"/>
+  <text x="440" y="280" class="lab" fill="#999" font-weight="bold">필요시 반복 (Revising is recursive)</text>
+
+  <!-- Power levels -->
+  <g transform="translate(30,310)">
+    <rect x="0" y="0" width="820" height="100" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22" text-anchor="start">Power Writing: 문장에 숫자 부여 (추상 → 구체)</text>
+    <text class="lab" x="15" y="45" text-anchor="start">• <tspan font-weight="bold" fill="#c0392b">Power 1</tspan> = main idea / 주제·주장</text>
+    <text class="lab" x="15" y="62" text-anchor="start">• <tspan font-weight="bold" fill="#c0392b">Power 2</tspan> = major detail / 근거 — 힘1 문장을 뒷받침</text>
+    <text class="lab" x="15" y="79" text-anchor="start">• <tspan font-weight="bold" fill="#c0392b">Power 3</tspan> = minor detail / 증명 — 힘2 문장을 뒷받침</text>
+    <text class="lab" x="15" y="96" text-anchor="start">• <tspan font-weight="bold" fill="#c0392b">Power 4</tspan> = conclusion / 결론 — 힘1과 짝, 생략 가능</text>
+  </g>
+</svg>

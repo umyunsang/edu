@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" font-family="system-ui,sans-serif">
+  <style>
+    .oct{fill:#eaf2fb;stroke:#2e86de}
+    .oct2{fill:#e6f7e6;stroke:#27ae60}
+    .dog{fill:#fff7d6;stroke:#d4a017}
+    .pt{fill:#c0392b}
+    .arr{stroke:#666;stroke-width:1.5;fill:none;marker-end:url(#a)}
+    .t{font-size:11px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#666"/></marker>
+  </defs>
+  <text class="tb" x="430" y="22" text-anchor="middle">SIFT의 Scale Space: Gaussian 피라미드와 DoG 극값</text>
+  <text class="lab" x="30" y="44">핵심: 서로 다른 σ로 블러한 영상을 빼면 DoG (Difference of Gaussian)가 된다 → 3×3×3 이웃 26개와 비교해 극값이 특징점.</text>
+
+  <!-- Octave 1 -->
+  <g transform="translate(30,70)">
+    <text class="tb" x="60" y="0" text-anchor="middle">Octave 1 (원본 크기)</text>
+    <text class="lab" x="60" y="18" text-anchor="middle">Gaussian σ 증가 ↓</text>
+    <g>
+      <rect class="oct" x="0" y="25" width="120" height="28"/>
+      <text class="t" x="60" y="43">L(x,y,σ)  σ=σ₀</text>
+      <rect class="oct" x="0" y="60" width="120" height="28"/>
+      <text class="t" x="60" y="78">L  σ=k·σ₀</text>
+      <rect class="oct" x="0" y="95" width="120" height="28"/>
+      <text class="t" x="60" y="113">L  σ=k²σ₀</text>
+      <rect class="oct" x="0" y="130" width="120" height="28"/>
+      <text class="t" x="60" y="148">L  σ=k³σ₀</text>
+      <rect class="oct" x="0" y="165" width="120" height="28"/>
+      <text class="t" x="60" y="183">L  σ=k⁴σ₀</text>
+    </g>
+  </g>
+
+  <text class="t" x="170" y="170" font-size="20">−</text>
+
+  <!-- DoG -->
+  <g transform="translate(185,90)">
+    <text class="tb" x="60" y="-10" text-anchor="middle">DoG = L(σᵢ₊₁)−L(σᵢ)</text>
+    <g>
+      <rect class="dog" x="0" y="8" width="120" height="28"/>
+      <text class="t" x="60" y="26">D₁</text>
+      <rect class="dog" x="0" y="42" width="120" height="28"/>
+      <text class="t" x="60" y="60">D₂  ← 검사</text>
+      <rect class="dog" x="0" y="76" width="120" height="28"/>
+      <text class="t" x="60" y="94">D₃</text>
+      <rect class="dog" x="0" y="110" width="120" height="28"/>
+      <text class="t" x="60" y="128">D₄</text>
+    </g>
+  </g>
+
+  <!-- Extrema detection 3x3x3 -->
+  <g transform="translate(360,70)">
+    <text class="tb" x="100" y="0" text-anchor="middle">3×3×3 이웃 극값 검사</text>
+    <text class="lab" x="100" y="20" text-anchor="middle">(위 스케일 9개 + 현재 8개 + 아래 9개 = 26)</text>
+
+    <g transform="translate(0,30)">
+      <text class="lab" x="100" y="12" text-anchor="middle">D₁ (위)</text>
+      <g transform="translate(50,18)">
+        <rect class="dog" x="0" y="0" width="20" height="20"/><rect class="dog" x="20" y="0" width="20" height="20"/><rect class="dog" x="40" y="0" width="20" height="20"/>
+        <rect class="dog" x="0" y="20" width="20" height="20"/><rect class="dog" x="20" y="20" width="20" height="20"/><rect class="dog" x="40" y="20" width="20" height="20"/>
+        <rect class="dog" x="0" y="40" width="20" height="20"/><rect class="dog" x="20" y="40" width="20" height="20"/><rect class="dog" x="40" y="40" width="20" height="20"/>
+      </g>
+    </g>
+
+    <g transform="translate(0,130)">
+      <text class="lab" x="100" y="12" text-anchor="middle">D₂ (현재) — 빨간 점이 후보</text>
+      <g transform="translate(50,18)">
+        <rect class="oct2" x="0" y="0" width="20" height="20"/><rect class="oct2" x="20" y="0" width="20" height="20"/><rect class="oct2" x="40" y="0" width="20" height="20"/>
+        <rect class="oct2" x="0" y="20" width="20" height="20"/><rect class="dog" x="20" y="20" width="20" height="20" stroke-width="2.5"/><rect class="oct2" x="40" y="20" width="20" height="20"/>
+        <rect class="oct2" x="0" y="40" width="20" height="20"/><rect class="oct2" x="20" y="40" width="20" height="20"/><rect class="oct2" x="40" y="40" width="20" height="20"/>
+        <circle class="pt" cx="30" cy="30" r="4"/>
+      </g>
+    </g>
+
+    <g transform="translate(0,230)">
+      <text class="lab" x="100" y="12" text-anchor="middle">D₃ (아래)</text>
+      <g transform="translate(50,18)">
+        <rect class="dog" x="0" y="0" width="20" height="20"/><rect class="dog" x="20" y="0" width="20" height="20"/><rect class="dog" x="40" y="0" width="20" height="20"/>
+        <rect class="dog" x="0" y="20" width="20" height="20"/><rect class="dog" x="20" y="20" width="20" height="20"/><rect class="dog" x="40" y="20" width="20" height="20"/>
+        <rect class="dog" x="0" y="40" width="20" height="20"/><rect class="dog" x="20" y="40" width="20" height="20"/><rect class="dog" x="40" y="40" width="20" height="20"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Octave 2 -->
+  <g transform="translate(600,70)">
+    <text class="tb" x="60" y="0" text-anchor="middle">Octave 2 (½ 크기)</text>
+    <text class="lab" x="60" y="18" text-anchor="middle">다운샘플 후 반복</text>
+    <g>
+      <rect class="oct2" x="10" y="30" width="100" height="24"/>
+      <text class="t" x="60" y="46">L  σ=2σ₀</text>
+      <rect class="oct2" x="10" y="58" width="100" height="24"/>
+      <text class="t" x="60" y="74">L  σ=2k·σ₀</text>
+      <rect class="oct2" x="10" y="86" width="100" height="24"/>
+      <text class="t" x="60" y="102">...</text>
+    </g>
+    <text class="lab" x="60" y="135" text-anchor="middle">큰 구조(큰 σ)까지 탐색</text>
+    <text class="lab" x="60" y="155" text-anchor="middle" fill="#c0392b" font-weight="bold">스케일 불변성</text>
+  </g>
+
+  <!-- Summary -->
+  <g transform="translate(30,390)">
+    <rect x="0" y="0" width="800" height="100" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">SIFT 4단계 한눈에</text>
+    <text class="lab" x="15" y="44">① Scale-space 극값 (DoG) → ② 부정확한/에지 후보 제거 → ③ 주방향 할당 → ④ 128차원 기술자(descriptor)</text>
+    <text class="lab" x="15" y="64">• 불변성: 스케일, 회전, 부분적 조명/시점</text>
+    <text class="lab" x="15" y="84" fill="#c0392b" font-weight="bold">시험: "왜 DoG인가?" → LoG 근사, 계산 빠름 + 스케일 극값이 특징 영역에 대응.</text>
+  </g>
+</svg>

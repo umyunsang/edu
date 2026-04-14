@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="system-ui,sans-serif">
+  <style>
+    .n{fill:#fff;stroke:#2c3e50;stroke-width:1.5}
+    .dup{fill:#ffd6d6;stroke:#c0392b;stroke-width:2}
+    .leaf{fill:#d0f5d0;stroke:#27ae60}
+    .e{stroke:#888;stroke-width:1.3;fill:none}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .note{font-size:12px;fill:#c0392b}
+  </style>
+  <text class="tb" x="410" y="22" text-anchor="middle">피보나치 재귀 호출 트리: F(5) — 같은 값을 여러 번 계산하는 중복 (빨강)</text>
+  <text class="lab" x="30" y="44">규칙: F(n) = F(n-1) + F(n-2), F(0)=0, F(1)=1. 각 노드는 재귀 호출 한 번을 뜻한다.</text>
+
+  <!-- Edges -->
+  <g>
+    <!-- F(5) -> F(4), F(3) -->
+    <line class="e" x1="410" y1="80" x2="250" y2="140"/>
+    <line class="e" x1="410" y1="80" x2="570" y2="140"/>
+    <!-- F(4) -> F(3), F(2) -->
+    <line class="e" x1="250" y1="160" x2="150" y2="220"/>
+    <line class="e" x1="250" y1="160" x2="350" y2="220"/>
+    <!-- F(3) right -> F(2), F(1) -->
+    <line class="e" x1="570" y1="160" x2="500" y2="220"/>
+    <line class="e" x1="570" y1="160" x2="640" y2="220"/>
+    <!-- F(3) left (under F(4)) -> F(2), F(1) -->
+    <line class="e" x1="150" y1="240" x2="80" y2="300"/>
+    <line class="e" x1="150" y1="240" x2="220" y2="300"/>
+    <!-- F(2) under F(4) -> F(1), F(0) -->
+    <line class="e" x1="350" y1="240" x2="300" y2="300"/>
+    <line class="e" x1="350" y1="240" x2="400" y2="300"/>
+    <!-- F(2) under right F(3) -> F(1), F(0) -->
+    <line class="e" x1="500" y1="240" x2="450" y2="300"/>
+    <line class="e" x1="500" y1="240" x2="550" y2="300"/>
+    <!-- F(2) at bottom-left subtree -> F(1), F(0) -->
+    <line class="e" x1="80" y1="320" x2="30" y2="380"/>
+    <line class="e" x1="80" y1="320" x2="130" y2="380"/>
+  </g>
+
+  <!-- Nodes -->
+  <!-- Root F(5) -->
+  <g><circle class="n" cx="410" cy="65" r="24"/><text class="t" x="410" y="70">F(5)</text></g>
+
+  <!-- Level 1: F(4), F(3) -->
+  <g><circle class="n" cx="250" cy="145" r="24"/><text class="t" x="250" y="150">F(4)</text></g>
+  <g><circle class="dup" cx="570" cy="145" r="24"/><text class="t" x="570" y="150">F(3)</text></g>
+
+  <!-- Level 2: F(3) under F(4), F(2) under F(4), F(2) under F(3), F(1) under F(3) -->
+  <g><circle class="dup" cx="150" cy="225" r="24"/><text class="t" x="150" y="230">F(3)</text></g>
+  <g><circle class="dup" cx="350" cy="225" r="24"/><text class="t" x="350" y="230">F(2)</text></g>
+  <g><circle class="dup" cx="500" cy="225" r="24"/><text class="t" x="500" y="230">F(2)</text></g>
+  <g><circle class="leaf" cx="640" cy="225" r="24"/><text class="t" x="640" y="230">F(1)</text></g>
+
+  <!-- Level 3: under F(3)-left -> F(2), F(1); under F(2)s -> F(1), F(0) etc. -->
+  <g><circle class="dup" cx="80" cy="305" r="24"/><text class="t" x="80" y="310">F(2)</text></g>
+  <g><circle class="leaf" cx="220" cy="305" r="24"/><text class="t" x="220" y="310">F(1)</text></g>
+
+  <g><circle class="leaf" cx="300" cy="305" r="24"/><text class="t" x="300" y="310">F(1)</text></g>
+  <g><circle class="leaf" cx="400" cy="305" r="24"/><text class="t" x="400" y="310">F(0)</text></g>
+
+  <g><circle class="leaf" cx="450" cy="305" r="24"/><text class="t" x="450" y="310">F(1)</text></g>
+  <g><circle class="leaf" cx="550" cy="305" r="24"/><text class="t" x="550" y="310">F(0)</text></g>
+
+  <!-- Level 4: F(2) at 80 -> F(1), F(0) -->
+  <g><circle class="leaf" cx="30" cy="385" r="22"/><text class="t" x="30" y="390">F(1)</text></g>
+  <g><circle class="leaf" cx="130" cy="385" r="22"/><text class="t" x="130" y="390">F(0)</text></g>
+
+  <!-- Summary box -->
+  <g transform="translate(30,420)">
+    <rect x="0" y="0" width="760" height="90" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">중복 확인 (빨간 노드들):</text>
+    <text class="lab" x="15" y="44">F(3)은 2번 호출, F(2)는 3번 호출 — 같은 부분문제를 매번 새로 계산 → 지수적 호출 수</text>
+    <text class="lab" x="15" y="64">총 노드 수 ≈ F(5) 계산에 15번 호출. F(n) 계산은 Θ(φⁿ) 으로 폭발 (φ ≈ 1.618).</text>
+    <text class="note" x="15" y="82">개선: 메모이제이션(DP)으로 같은 입력은 한 번만 계산 → O(n). 7장에서 배우는 동적 계획법의 동기.</text>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" font-family="system-ui,sans-serif">
+  <style>
+    .p1{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
+    .p2{fill:#e6f7e6;stroke:#27ae60;stroke-width:2}
+    .pt{fill:#c0392b}
+    .arr{stroke:#666;stroke-width:1.5;fill:none;marker-end:url(#a)}
+    .t{font-size:12px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .eq{font-family:monospace;font-size:13px}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#666"/></marker>
+  </defs>
+  <text class="tb" x="430" y="22" text-anchor="middle">호모그래피 H: 평면과 평면 사이의 변환 (3×3 행렬)</text>
+
+  <!-- Left: image 1 -->
+  <g transform="translate(40,55)">
+    <text class="tb" x="90" y="0" text-anchor="middle">영상 1 (정면도)</text>
+    <polygon class="p1" points="10,30 170,30 170,170 10,170"/>
+    <circle class="pt" cx="40" cy="60"/><text class="t" x="40" y="52">p₁</text>
+    <circle class="pt" cx="140" cy="60"/><text class="t" x="140" y="52">p₂</text>
+    <circle class="pt" cx="140" cy="140"/><text class="t" x="140" y="158">p₃</text>
+    <circle class="pt" cx="40" cy="140"/><text class="t" x="40" y="158">p₄</text>
+    <text class="lab" x="90" y="200" text-anchor="middle">평면에 있는 4점 이상 필요</text>
+  </g>
+
+  <!-- Middle: transformation -->
+  <g transform="translate(260,130)">
+    <text class="tb" x="85" y="-20" text-anchor="middle">H (3×3, DoF 8)</text>
+    <rect x="0" y="-10" width="170" height="80" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="eq" x="10" y="10">[h₁₁ h₁₂ h₁₃]</text>
+    <text class="eq" x="10" y="28">[h₂₁ h₂₂ h₂₃]</text>
+    <text class="eq" x="10" y="46">[h₃₁ h₃₂ 1  ]</text>
+    <text class="t" x="85" y="64">동차 좌표에 곱셈</text>
+
+    <line class="arr" x1="-20" y1="30" x2="-5" y2="30"/>
+    <line class="arr" x1="175" y1="30" x2="195" y2="30"/>
+  </g>
+
+  <!-- Right: image 2 (perspective distorted) -->
+  <g transform="translate(480,55)">
+    <text class="tb" x="150" y="0" text-anchor="middle">영상 2 (비스듬히 본 같은 평면)</text>
+    <polygon class="p2" points="30,50 270,20 290,170 10,170"/>
+    <circle class="pt" cx="68" cy="72"/><text class="t" x="68" y="64">p₁'</text>
+    <circle class="pt" cx="232" cy="52"/><text class="t" x="232" y="44">p₂'</text>
+    <circle class="pt" cx="250" cy="148"/><text class="t" x="250" y="165">p₃'</text>
+    <circle class="pt" cx="52" cy="148"/><text class="t" x="52" y="165">p₄'</text>
+    <text class="lab" x="150" y="200" text-anchor="middle">원근감으로 사각형이 사다리꼴</text>
+  </g>
+
+  <!-- Equation block -->
+  <g transform="translate(30,290)">
+    <rect x="0" y="0" width="800" height="160" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">핵심 식과 자유도</text>
+    <text class="eq" x="15" y="48">[x'  y'  w'] = H · [x  y  1]ᵀ  →  실제 좌표는 x'/w', y'/w'</text>
+    <text class="lab" x="15" y="72">• 자유도(DoF) = 8: 마지막 h₃₃=1로 정규화 → 9−1=8</text>
+    <text class="lab" x="15" y="92">• 대응점 1쌍 → 2식 → 4쌍이면 8식 → 정확히 풀 수 있음 (4점법)</text>
+    <text class="lab" x="15" y="112">• 5쌍 이상이면 과결정 → 최소제곱(Least Squares) 또는 RANSAC으로 풀기</text>
+    <text class="lab" x="15" y="136" fill="#c0392b" font-weight="bold">활용: 파노라마 스티칭, 문서 보정(perspective warp), AR 평면 기반 합성, 위성영상 정합. OpenCV: cv2.findHomography + cv2.warpPerspective</text>
+  </g>
+</svg>

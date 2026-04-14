@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" font-family="system-ui,sans-serif">
+  <style>
+    .finger{fill:#fde2d4;stroke:#c0392b;stroke-width:2}
+    .palm{fill:#fde2d4;stroke:#c0392b;stroke-width:2}
+    .lab{font-size:13px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
+    .num{font-size:22px;font-weight:bold;text-anchor:middle;fill:#c0392b}
+    .desc{font-size:12px;text-anchor:middle}
+    .box{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+  </style>
+  <text class="tb" x="430" y="24">막강한 'Hi, Five' — 한 손으로 외우는 힘 글쓰기 5원리</text>
+
+  <!-- Hand shape -->
+  <g transform="translate(120,60)">
+    <!-- palm -->
+    <rect class="palm" x="60" y="220" width="180" height="140" rx="25"/>
+    <!-- thumb (0) -->
+    <rect class="finger" x="10" y="240" width="50" height="70" rx="18" transform="rotate(-30 35 275)"/>
+    <!-- index (1) -->
+    <rect class="finger" x="70" y="60" width="30" height="170" rx="12"/>
+    <!-- middle (2) -->
+    <rect class="finger" x="110" y="30" width="30" height="200" rx="12"/>
+    <!-- ring (3) -->
+    <rect class="finger" x="150" y="50" width="30" height="180" rx="12"/>
+    <!-- pinky (4) -->
+    <rect class="finger" x="190" y="90" width="30" height="140" rx="12"/>
+
+    <text class="num" x="30" y="240">0</text>
+    <text class="num" x="85" y="180">1</text>
+    <text class="num" x="125" y="150">2</text>
+    <text class="num" x="165" y="170">3</text>
+    <text class="num" x="205" y="210">4</text>
+
+    <text class="lab" x="150" y="300" font-weight="bold">손바닥: 글쓰기 전단계</text>
+    <text class="desc" x="150" y="320">주제 선정 · 자료 수집</text>
+    <text class="desc" x="150" y="340">Pre-Writing · 발상모으기</text>
+  </g>
+
+  <!-- Labels on right -->
+  <g transform="translate(420,60)">
+    <rect class="box" x="0" y="0" width="400" height="55"/>
+    <text class="lab" x="20" y="22" text-anchor="start" font-weight="bold" fill="#c0392b">엄지 0 · 분석(Analysis)</text>
+    <text class="lab" x="20" y="42" text-anchor="start">주제를 정하고 자료를 덩이로 분류 (Pre-Writing)</text>
+
+    <rect class="box" x="0" y="65" width="400" height="55"/>
+    <text class="lab" x="20" y="87" text-anchor="start" font-weight="bold" fill="#c0392b">검지 1 · 주제 / Main Idea</text>
+    <text class="lab" x="20" y="107" text-anchor="start">글의 핵심 한 문장 — "고양이는 훌륭한 애완동물이다"</text>
+
+    <rect class="box" x="0" y="130" width="400" height="55"/>
+    <text class="lab" x="20" y="152" text-anchor="start" font-weight="bold" fill="#c0392b">중지 2 · 근거 / Major Detail</text>
+    <text class="lab" x="20" y="172" text-anchor="start">주제를 뒷받침하는 이유·방법 (힘2 문장)</text>
+
+    <rect class="box" x="0" y="195" width="400" height="55"/>
+    <text class="lab" x="20" y="217" text-anchor="start" font-weight="bold" fill="#c0392b">약지 3 · 증명 / Minor Detail</text>
+    <text class="lab" x="20" y="237" text-anchor="start">근거를 뒷받침하는 자료·사실·예시 (힘3 문장)</text>
+
+    <rect class="box" x="0" y="260" width="400" height="55"/>
+    <text class="lab" x="20" y="282" text-anchor="start" font-weight="bold" fill="#c0392b">새끼 4 · 주제 강조 / Conclusion</text>
+    <text class="lab" x="20" y="302" text-anchor="start">주제 재확인 (힘1과 짝) — 힘4는 생략 가능</text>
+  </g>
+
+  <g transform="translate(30,400)">
+    <rect x="0" y="0" width="800" height="60" fill="#fde2e2" stroke="#c0392b"/>
+    <text x="15" y="22" font-weight="bold" font-size="14">시험 핵심: 손가락 번호 = 문장의 '힘' (Power 1~4)</text>
+    <text x="15" y="42" font-size="13">숫자가 높을수록 구체적 → 설득력↑. 힘1(주제)·힘2(근거)·힘3(증명)·힘4(강조)</text>
+  </g>
+</svg>

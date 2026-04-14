@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="system-ui,sans-serif">
+  <style>
+    .c{fill:#fff;stroke:#2c3e50;stroke-width:1.2}
+    .new{fill:#ffeb99;stroke:#d4a017;stroke-width:2}
+    .occ{fill:#e8e8e8;stroke:#666}
+    .coll{fill:#ffd6d6;stroke:#c0392b;stroke-width:2}
+    .probe{fill:none;stroke:#c0392b;stroke-width:1.5;stroke-dasharray:4 3;marker-end:url(#ar)}
+    .idx{font-size:11px;text-anchor:middle;fill:#666}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .hl{font-size:12px;fill:#c0392b}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+  <text class="tb" x="430" y="22" text-anchor="middle">선형 조사 해싱: h(k) = k mod 13 으로 키 [44, 37, 31, 63, 14, 58, 45, 18] 삽입</text>
+  <text class="lab" x="30" y="44">규칙: 자리가 차 있으면 오른쪽으로 한 칸씩 이동하며 빈 자리 찾기 (끝이면 처음으로 순환). 충돌이 길어질수록 성능 저하.</text>
+
+  <!-- Legend for index row used in all steps -->
+  <g transform="translate(30,60)">
+    <text class="lab" x="0" y="15">인덱스 ↓</text>
+  </g>
+
+  <!-- Step template: 13 cells, 40 wide each = 520 wide -->
+  <!-- Step 1: 44 → 44 mod 13 = 5 -->
+  <g transform="translate(100,60)">
+    <text class="tb" x="0" y="15">1) 44 삽입 → h(44) = 44 mod 13 = 5 (빈 자리)</text>
+    <g transform="translate(0,25)">
+      <g><rect class="c" x="0" y="0" width="40" height="35"/><text class="idx" x="20" y="-5">0</text></g>
+      <g><rect class="c" x="40" y="0" width="40" height="35"/><text class="idx" x="60" y="-5">1</text></g>
+      <g><rect class="c" x="80" y="0" width="40" height="35"/><text class="idx" x="100" y="-5">2</text></g>
+      <g><rect class="c" x="120" y="0" width="40" height="35"/><text class="idx" x="140" y="-5">3</text></g>
+      <g><rect class="c" x="160" y="0" width="40" height="35"/><text class="idx" x="180" y="-5">4</text></g>
+      <g><rect class="new" x="200" y="0" width="40" height="35"/><text class="idx" x="220" y="-5">5</text><text class="t" x="220" y="22">44</text></g>
+      <g><rect class="c" x="240" y="0" width="40" height="35"/><text class="idx" x="260" y="-5">6</text></g>
+      <g><rect class="c" x="280" y="0" width="40" height="35"/><text class="idx" x="300" y="-5">7</text></g>
+      <g><rect class="c" x="320" y="0" width="40" height="35"/><text class="idx" x="340" y="-5">8</text></g>
+      <g><rect class="c" x="360" y="0" width="40" height="35"/><text class="idx" x="380" y="-5">9</text></g>
+      <g><rect class="c" x="400" y="0" width="40" height="35"/><text class="idx" x="420" y="-5">10</text></g>
+      <g><rect class="c" x="440" y="0" width="40" height="35"/><text class="idx" x="460" y="-5">11</text></g>
+      <g><rect class="c" x="480" y="0" width="40" height="35"/><text class="idx" x="500" y="-5">12</text></g>
+    </g>
+  </g>
+
+  <!-- Step 2: 37 → 37 mod 13 = 11 -->
+  <g transform="translate(100,130)">
+    <text class="tb" x="0" y="15">2) 37 삽입 → 37 mod 13 = 11 (빈 자리)</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="c" x="40" y="0" width="40" height="35"/>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="occ" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="c" x="240" y="0" width="40" height="35"/>
+      <rect class="c" x="280" y="0" width="40" height="35"/>
+      <rect class="c" x="320" y="0" width="40" height="35"/>
+      <rect class="c" x="360" y="0" width="40" height="35"/>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="new" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="c" x="480" y="0" width="40" height="35"/>
+    </g>
+  </g>
+
+  <!-- Step 3: 31 → 31 mod 13 = 5, 충돌 → 6 -->
+  <g transform="translate(100,200)">
+    <text class="tb" x="0" y="15">3) 31 삽입 → 31 mod 13 = 5 (충돌!) → 오른쪽 한 칸 → 6 에 넣기</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="c" x="40" y="0" width="40" height="35"/>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="coll" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="new" x="240" y="0" width="40" height="35"/><text class="t" x="260" y="22">31</text>
+      <rect class="c" x="280" y="0" width="40" height="35"/>
+      <rect class="c" x="320" y="0" width="40" height="35"/>
+      <rect class="c" x="360" y="0" width="40" height="35"/>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="occ" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="c" x="480" y="0" width="40" height="35"/>
+      <path class="probe" d="M220 40 Q240 55 258 40"/>
+    </g>
+  </g>
+
+  <!-- Step 4: 63 → 63 mod 13 = 11, 충돌 → 12 -->
+  <g transform="translate(100,270)">
+    <text class="tb" x="0" y="15">4) 63 삽입 → 63 mod 13 = 11 (충돌!) → 12</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="c" x="40" y="0" width="40" height="35"/>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="occ" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="occ" x="240" y="0" width="40" height="35"/><text class="t" x="260" y="22">31</text>
+      <rect class="c" x="280" y="0" width="40" height="35"/>
+      <rect class="c" x="320" y="0" width="40" height="35"/>
+      <rect class="c" x="360" y="0" width="40" height="35"/>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="coll" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="new" x="480" y="0" width="40" height="35"/><text class="t" x="500" y="22">63</text>
+      <path class="probe" d="M460 40 Q480 55 498 40"/>
+    </g>
+  </g>
+
+  <!-- Step 5: 14 → 14 mod 13 = 1 -->
+  <g transform="translate(100,340)">
+    <text class="tb" x="0" y="15">5) 14 삽입 → 14 mod 13 = 1 (빈 자리)</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="new" x="40" y="0" width="40" height="35"/><text class="t" x="60" y="22">14</text>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="occ" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="occ" x="240" y="0" width="40" height="35"/><text class="t" x="260" y="22">31</text>
+      <rect class="c" x="280" y="0" width="40" height="35"/>
+      <rect class="c" x="320" y="0" width="40" height="35"/>
+      <rect class="c" x="360" y="0" width="40" height="35"/>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="occ" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="occ" x="480" y="0" width="40" height="35"/><text class="t" x="500" y="22">63</text>
+    </g>
+  </g>
+
+  <!-- Step 6: 58 → 58 mod 13 = 6, 충돌 → 7 -->
+  <g transform="translate(100,410)">
+    <text class="tb" x="0" y="15">6) 58 삽입 → 58 mod 13 = 6 (충돌!) → 7</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="occ" x="40" y="0" width="40" height="35"/><text class="t" x="60" y="22">14</text>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="occ" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="coll" x="240" y="0" width="40" height="35"/><text class="t" x="260" y="22">31</text>
+      <rect class="new" x="280" y="0" width="40" height="35"/><text class="t" x="300" y="22">58</text>
+      <rect class="c" x="320" y="0" width="40" height="35"/>
+      <rect class="c" x="360" y="0" width="40" height="35"/>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="occ" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="occ" x="480" y="0" width="40" height="35"/><text class="t" x="500" y="22">63</text>
+      <path class="probe" d="M260 40 Q280 55 298 40"/>
+    </g>
+  </g>
+
+  <!-- Step 7: 45 → 45 mod 13 = 6, 충돌 6→7→8 -->
+  <g transform="translate(100,480)">
+    <text class="tb" x="0" y="15">7) 45 삽입 → 45 mod 13 = 6 (충돌!) → 7 (또 충돌!) → 8</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="occ" x="40" y="0" width="40" height="35"/><text class="t" x="60" y="22">14</text>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="occ" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="coll" x="240" y="0" width="40" height="35"/><text class="t" x="260" y="22">31</text>
+      <rect class="coll" x="280" y="0" width="40" height="35"/><text class="t" x="300" y="22">58</text>
+      <rect class="new" x="320" y="0" width="40" height="35"/><text class="t" x="340" y="22">45</text>
+      <rect class="c" x="360" y="0" width="40" height="35"/>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="occ" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="occ" x="480" y="0" width="40" height="35"/><text class="t" x="500" y="22">63</text>
+      <path class="probe" d="M260 40 Q290 60 338 40"/>
+    </g>
+  </g>
+
+  <!-- Step 8: 18 → 18 mod 13 = 5, 충돌 5→6→7→8→9 -->
+  <g transform="translate(100,550)">
+    <text class="tb" x="0" y="15">8) 18 삽입 → 18 mod 13 = 5 (충돌!) → 6 → 7 → 8 → 9 (네 번 미끄러진 끝에 도착) ★ 긴 덩어리 경고</text>
+    <g transform="translate(0,25)">
+      <rect class="c" x="0" y="0" width="40" height="35"/>
+      <rect class="occ" x="40" y="0" width="40" height="35"/><text class="t" x="60" y="22">14</text>
+      <rect class="c" x="80" y="0" width="40" height="35"/>
+      <rect class="c" x="120" y="0" width="40" height="35"/>
+      <rect class="c" x="160" y="0" width="40" height="35"/>
+      <rect class="coll" x="200" y="0" width="40" height="35"/><text class="t" x="220" y="22">44</text>
+      <rect class="coll" x="240" y="0" width="40" height="35"/><text class="t" x="260" y="22">31</text>
+      <rect class="coll" x="280" y="0" width="40" height="35"/><text class="t" x="300" y="22">58</text>
+      <rect class="coll" x="320" y="0" width="40" height="35"/><text class="t" x="340" y="22">45</text>
+      <rect class="new" x="360" y="0" width="40" height="35"/><text class="t" x="380" y="22">18</text>
+      <rect class="c" x="400" y="0" width="40" height="35"/>
+      <rect class="occ" x="440" y="0" width="40" height="35"/><text class="t" x="460" y="22">37</text>
+      <rect class="occ" x="480" y="0" width="40" height="35"/><text class="t" x="500" y="22">63</text>
+      <path class="probe" d="M220 40 Q290 70 378 40"/>
+    </g>
+  </g>
+
+  <text class="lab" x="30" y="610" fill="#c0392b">교훈(1차 군집화): 인접한 슬롯들이 덩어리로 뭉치면 새 키가 계속 미끄러진다. 이중해싱/이차조사로 완화 가능.</text>
+</svg>
