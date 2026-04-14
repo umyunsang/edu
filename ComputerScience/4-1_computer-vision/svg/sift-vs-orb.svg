@@ -49,23 +49,23 @@
     <rect x="0" y="155" width="200" height="40" fill="#fff" stroke="#bbb"/>
     <text class="t" x="10" y="180">속도</text>
     <rect x="200" y="155" width="310" height="40" fill="#fff" stroke="#bbb"/>
-    <text class="t" x="210" y="180" class="bad">느림 (수백 ms)</text>
+    <text class="t bad" x="210" y="180">느림 (수백 ms)</text>
     <rect x="510" y="155" width="290" height="40" fill="#fff" stroke="#bbb"/>
-    <text class="t" x="520" y="180" class="good">매우 빠름 (수 ms) — 실시간 가능</text>
+    <text class="t good" x="520" y="180">매우 빠름 (수 ms) — 실시간 가능</text>
 
     <!-- Row: 메모리 -->
     <rect x="0" y="195" width="200" height="40" fill="#fff" stroke="#bbb"/>
     <text class="t" x="10" y="220">기술자 크기</text>
     <rect x="200" y="195" width="310" height="40" fill="#fff" stroke="#bbb"/>
-    <text class="t" x="210" y="220" class="bad">128 × 4 = 512 byte</text>
+    <text class="t bad" x="210" y="220">128 × 4 = 512 byte</text>
     <rect x="510" y="195" width="290" height="40" fill="#fff" stroke="#bbb"/>
-    <text class="t" x="520" y="220" class="good">32 byte (1/16)</text>
+    <text class="t good" x="520" y="220">32 byte (1/16)</text>
 
     <!-- Row: 불변성 -->
     <rect x="0" y="235" width="200" height="40" fill="#fff" stroke="#bbb"/>
     <text class="t" x="10" y="260">불변성</text>
     <rect x="200" y="235" width="310" height="40" fill="#fff" stroke="#bbb"/>
-    <text class="t" x="210" y="260" class="good">스케일+회전+조명 (강함)</text>
+    <text class="t good" x="210" y="260">스케일+회전+조명 (강함)</text>
     <rect x="510" y="235" width="290" height="40" fill="#fff" stroke="#bbb"/>
     <text class="t" x="520" y="260">회전 O, 스케일 ≈OK (피라미드)</text>
 
@@ -75,7 +75,7 @@
     <rect x="200" y="275" width="310" height="40" fill="#fff" stroke="#bbb"/>
     <text class="t" x="210" y="300">특허 만료됨 (2020~)</text>
     <rect x="510" y="275" width="290" height="40" fill="#fff" stroke="#bbb"/>
-    <text class="t" x="520" y="300" class="good">특허 없음 (OpenCV 기본)</text>
+    <text class="t good" x="520" y="300">특허 없음 (OpenCV 기본)</text>
   </g>
 
   <!-- Summary -->

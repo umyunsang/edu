@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" font-family="system-ui,sans-serif">
   <style>.t{font-size:14px}.ax{stroke:#222;stroke-width:1.5;fill:none}.f{fill:none;stroke-width:2.2}.lab{font-size:13px;font-weight:bold}</style>
   <path class="ax" d="M60 380 L720 380 M60 380 L60 30"/>
   <text class="t" x="400" y="410" text-anchor="middle">입력 크기 n</text>

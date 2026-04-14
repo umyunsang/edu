@@ -1,47 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="system-ui,sans-serif">
-  <style>.b{fill:#eaf2fb;stroke:#2c3e50;stroke-width:1.2}.m{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}.t{font-size:13px;text-anchor:middle}.ar{stroke:#555;fill:none;stroke-width:1.2;marker-end:url(#a)}.tb{font-size:14px;font-weight:bold}</style>
-  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#555"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" font-family="system-ui,sans-serif">
+  <style>
+    .b{fill:#eaf2fb;stroke:#2c3e50;stroke-width:1.3}
+    .m{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.5}
+    .focus{fill:#fff2cc;stroke:#f39c12;stroke-width:2.5}
+    .t{font-size:13px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .phase{font-size:14px;font-weight:bold;text-anchor:middle}
+    .dv{stroke:#2e86de;stroke-width:2;fill:none;marker-end:url(#bl)}
+    .mg{stroke:#c0392b;stroke-width:2.5;fill:none;marker-end:url(#rd)}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .lab{font-size:12px}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+  </style>
+  <defs>
+    <marker id="bl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2e86de"/></marker>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
 
-  <text class="tb" x="410" y="20" text-anchor="middle">병합 정렬: "반으로 쪼갠 뒤 → 정렬된 것들을 합쳐라"</text>
+  <text class="tb" x="460" y="22" text-anchor="middle">병합 정렬: Divide(분할) → Conquer(정복) → Combine(병합)</text>
+  <text class="lab" x="460" y="42" text-anchor="middle">입력 배열 [8, 3, 2, 9, 7, 1, 5, 4] — 파란 화살표=분할, 빨간 화살표=병합</text>
 
+  <!-- Phase labels -->
+  <text class="phase" x="70" y="100" fill="#2e86de">① Divide</text>
+  <text class="phase" x="70" y="120" fill="#2e86de">(반씩 쪼갬)</text>
+  <text class="phase" x="70" y="400" fill="#c0392b">② Combine</text>
+  <text class="phase" x="70" y="420" fill="#c0392b">(정렬하며 병합)</text>
+
+  <!-- Divide tree -->
   <!-- Level 0 -->
-  <g><rect class="b" x="310" y="40" width="200" height="28"/><text class="t" x="410" y="59">[38, 27, 43, 3, 9, 82, 10]</text></g>
+  <g><rect class="b" x="340" y="60" width="240" height="30"/><text class="t" x="460" y="80">[8, 3, 2, 9, 7, 1, 5, 4]</text></g>
+  <circle class="badge" cx="595" cy="75" r="10"/><text class="badgeT" x="595" y="79">1</text>
+
   <!-- Level 1 -->
-  <g><rect class="b" x="180" y="100" width="120" height="28"/><text class="t" x="240" y="119">[38, 27, 43, 3]</text></g>
-  <g><rect class="b" x="520" y="100" width="100" height="28"/><text class="t" x="570" y="119">[9, 82, 10]</text></g>
-  <path class="ar" d="M380 68 L260 100"/><path class="ar" d="M445 68 L570 100"/>
+  <g><rect class="b" x="230" y="130" width="130" height="30"/><text class="t" x="295" y="150">[8, 3, 2, 9]</text></g>
+  <g><rect class="b" x="560" y="130" width="130" height="30"/><text class="t" x="625" y="150">[7, 1, 5, 4]</text></g>
+  <path class="dv" d="M420 90 L310 130"/>
+  <path class="dv" d="M500 90 L610 130"/>
+  <circle class="badge" cx="375" cy="110" r="10"/><text class="badgeT" x="375" y="114">2</text>
+
   <!-- Level 2 -->
-  <g><rect class="b" x="110" y="160" width="70" height="28"/><text class="t" x="145" y="179">[38, 27]</text></g>
-  <g><rect class="b" x="220" y="160" width="70" height="28"/><text class="t" x="255" y="179">[43, 3]</text></g>
-  <g><rect class="b" x="480" y="160" width="50" height="28"/><text class="t" x="505" y="179">[9]</text></g>
-  <g><rect class="b" x="580" y="160" width="70" height="28"/><text class="t" x="615" y="179">[82, 10]</text></g>
-  <path class="ar" d="M220 128 L170 160"/><path class="ar" d="M275 128 L255 160"/>
-  <path class="ar" d="M555 128 L510 160"/><path class="ar" d="M600 128 L610 160"/>
+  <g><rect class="b" x="170" y="200" width="70" height="30"/><text class="t" x="205" y="220">[8, 3]</text></g>
+  <g><rect class="b" x="290" y="200" width="70" height="30"/><text class="t" x="325" y="220">[2, 9]</text></g>
+  <g><rect class="b" x="500" y="200" width="70" height="30"/><text class="t" x="535" y="220">[7, 1]</text></g>
+  <g><rect class="b" x="620" y="200" width="70" height="30"/><text class="t" x="655" y="220">[5, 4]</text></g>
+  <path class="dv" d="M270 160 L215 200"/><path class="dv" d="M320 160 L325 200"/>
+  <path class="dv" d="M600 160 L545 200"/><path class="dv" d="M650 160 L655 200"/>
+
   <!-- Level 3 (leaves) -->
-  <g><rect class="b" x="85" y="215" width="40" height="28"/><text class="t" x="105" y="234">[38]</text></g>
-  <g><rect class="b" x="140" y="215" width="40" height="28"/><text class="t" x="160" y="234">[27]</text></g>
-  <g><rect class="b" x="200" y="215" width="40" height="28"/><text class="t" x="220" y="234">[43]</text></g>
-  <g><rect class="b" x="255" y="215" width="40" height="28"/><text class="t" x="275" y="234">[3]</text></g>
-  <g><rect class="b" x="580" y="215" width="40" height="28"/><text class="t" x="600" y="234">[82]</text></g>
-  <g><rect class="b" x="635" y="215" width="40" height="28"/><text class="t" x="655" y="234">[10]</text></g>
-  <path class="ar" d="M135 188 L115 215"/><path class="ar" d="M155 188 L160 215"/>
-  <path class="ar" d="M245 188 L225 215"/><path class="ar" d="M265 188 L275 215"/>
-  <path class="ar" d="M605 188 L600 215"/><path class="ar" d="M630 188 L650 215"/>
+  <g><rect class="b" x="155" y="265" width="35" height="30"/><text class="t" x="172" y="285">[8]</text></g>
+  <g><rect class="b" x="210" y="265" width="35" height="30"/><text class="t" x="227" y="285">[3]</text></g>
+  <g><rect class="b" x="275" y="265" width="35" height="30"/><text class="t" x="292" y="285">[2]</text></g>
+  <g><rect class="b" x="330" y="265" width="35" height="30"/><text class="t" x="347" y="285">[9]</text></g>
+  <g><rect class="b" x="485" y="265" width="35" height="30"/><text class="t" x="502" y="285">[7]</text></g>
+  <g><rect class="b" x="540" y="265" width="35" height="30"/><text class="t" x="557" y="285">[1]</text></g>
+  <g><rect class="b" x="605" y="265" width="35" height="30"/><text class="t" x="622" y="285">[5]</text></g>
+  <g><rect class="b" x="660" y="265" width="35" height="30"/><text class="t" x="677" y="285">[4]</text></g>
+  <path class="dv" d="M195 230 L175 265"/><path class="dv" d="M220 230 L225 265"/>
+  <path class="dv" d="M315 230 L295 265"/><path class="dv" d="M340 230 L345 265"/>
+  <path class="dv" d="M525 230 L505 265"/><path class="dv" d="M550 230 L555 265"/>
+  <path class="dv" d="M645 230 L625 265"/><path class="dv" d="M670 230 L675 265"/>
 
-  <!-- Merge back upward -->
-  <text class="tb" x="40" y="280">← 분할</text>
-  <text class="tb" x="40" y="300">→ 병합</text>
+  <text class="lab" x="420" y="315" text-anchor="middle" fill="#2e86de">길이 1이 될 때까지 쪼갠다 (자동으로 정렬된 상태)</text>
 
-  <g><rect class="m" x="85" y="275" width="85" height="28"/><text class="t" x="128" y="294">[27, 38]</text></g>
-  <g><rect class="m" x="200" y="275" width="85" height="28"/><text class="t" x="243" y="294">[3, 43]</text></g>
-  <g><rect class="m" x="480" y="275" width="50" height="28"/><text class="t" x="505" y="294">[9]</text></g>
-  <g><rect class="m" x="580" y="275" width="90" height="28"/><text class="t" x="625" y="294">[10, 82]</text></g>
+  <!-- Merge back -->
+  <g><rect class="m" x="150" y="340" width="95" height="30"/><text class="t" x="197" y="360">[3, 8]</text></g>
+  <g><rect class="m" x="275" y="340" width="95" height="30"/><text class="t" x="322" y="360">[2, 9]</text></g>
+  <g><rect class="m" x="480" y="340" width="95" height="30"/><text class="t" x="527" y="360">[1, 7]</text></g>
+  <g><rect class="m" x="605" y="340" width="95" height="30"/><text class="t" x="652" y="360">[4, 5]</text></g>
+  <path class="mg" d="M172 295 L180 340"/><path class="mg" d="M227 295 L215 340"/>
+  <path class="mg" d="M292 295 L305 340"/><path class="mg" d="M347 295 L340 340"/>
+  <path class="mg" d="M502 295 L510 340"/><path class="mg" d="M557 295 L545 340"/>
+  <path class="mg" d="M622 295 L630 340"/><path class="mg" d="M677 295 L665 340"/>
+  <circle class="badge" cx="410" cy="355" r="10"/><text class="badgeT" x="410" y="359">3</text>
 
-  <g><rect class="m" x="110" y="330" width="180" height="28"/><text class="t" x="200" y="349">[3, 27, 38, 43]</text></g>
-  <g><rect class="m" x="500" y="330" width="150" height="28"/><text class="t" x="575" y="349">[9, 10, 82]</text></g>
+  <g><rect class="m" x="195" y="440" width="170" height="30"/><text class="t" x="280" y="460">[2, 3, 8, 9]</text></g>
+  <g><rect class="m" x="500" y="440" width="170" height="30"/><text class="t" x="585" y="460">[1, 4, 5, 7]</text></g>
+  <path class="mg" d="M197 370 L250 440"/><path class="mg" d="M322 370 L310 440"/>
+  <path class="mg" d="M527 370 L555 440"/><path class="mg" d="M652 370 L620 440"/>
+  <circle class="badge" cx="425" cy="455" r="10"/><text class="badgeT" x="425" y="459">4</text>
 
-  <g><rect class="m" x="260" y="385" width="290" height="28"/><text class="t" x="405" y="404">[3, 9, 10, 27, 38, 43, 82]</text></g>
+  <g><rect class="focus" x="290" y="530" width="340" height="36"/><text class="t" x="460" y="553" font-weight="bold">[1, 2, 3, 4, 5, 7, 8, 9]  ✓ 완성</text></g>
+  <path class="mg" d="M280 470 L390 530"/><path class="mg" d="M585 470 L530 530"/>
+  <circle class="badge" cx="460" cy="498" r="10"/><text class="badgeT" x="460" y="502">5</text>
 
-  <text class="tb" x="700" y="395">T(n) = 2T(n/2) + n</text>
-  <text class="tb" x="700" y="415">⇒ O(n log n)</text>
+  <!-- Merge how-to box -->
+  <g transform="translate(30,580)">
+    <rect class="sum" x="0" y="0" width="860" height="80"/>
+    <text class="tb" x="15" y="20">병합(merge) 연산: 두 정렬된 배열 → 한 개의 정렬된 배열</text>
+    <text class="lab" x="15" y="40">• 두 배열의 맨 앞 원소를 비교 → 작은 것을 결과에 넣고 그 쪽 포인터를 한 칸 전진</text>
+    <text class="lab" x="15" y="58">• 한쪽이 끝나면 남은 쪽을 그대로 이어붙임. 한 번 병합에 O(n), 레벨 수 = log₂n.</text>
+    <text class="lab" x="15" y="74" fill="#c0392b" font-weight="bold">T(n)=2T(n/2)+n ⇒ Θ(n log n) (Master Theorem Case 2). 추가 메모리 O(n) 필요.</text>
+  </g>
 </svg>

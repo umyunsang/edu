@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="system-ui,sans-serif">
+  <style>
+    .tb{font-size:15px;font-weight:bold}
+    .th{font-size:12px;font-weight:bold;text-anchor:middle;font-family:monospace}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .lab{font-size:12px}
+    .mono{font-family:monospace;font-size:12px}
+    .cell{fill:#fff;stroke:#2c3e50;stroke-width:1.2}
+    .new{fill:#d0f5d0;stroke:#27ae60;stroke-width:2.2}
+    .collision{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .probed{fill:#fff2cc;stroke:#f39c12;stroke-width:1.8}
+    .old{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.2}
+    .idx{font-size:10px;text-anchor:middle;fill:#666}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .ar{stroke:#c0392b;stroke-width:2;fill:none;marker-end:url(#rd)}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+
+  <text class="tb" x="480" y="22" text-anchor="middle">PQ2-1: 선형 탐사 해싱 — M=13 테이블에 8개 키 삽입 추적</text>
+  <text class="lab" x="480" y="42" text-anchor="middle">해시 함수 h(k) = k mod 13. 충돌 시 (h(k)+i) mod 13 순서로 탐사 (i=1,2,...). 키: 18, 41, 22, 44, 59, 32, 31, 73</text>
+
+  <!-- Helper: index ruler at top reused -->
+  <!-- Step 1 -->
+  <g transform="translate(30,60)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">1</text>
+    <text class="tb" x="15" y="18">삽입 18 — h(18)=18 mod 13 = 5, 빈 슬롯 ✓</text>
+    <g transform="translate(20,30)">
+      <g font-size="10">
+        <text class="idx" x="20" y="-2">0</text><text class="idx" x="60" y="-2">1</text><text class="idx" x="100" y="-2">2</text><text class="idx" x="140" y="-2">3</text><text class="idx" x="180" y="-2">4</text>
+        <text class="idx" x="220" y="-2">5</text><text class="idx" x="260" y="-2">6</text><text class="idx" x="300" y="-2">7</text><text class="idx" x="340" y="-2">8</text><text class="idx" x="380" y="-2">9</text>
+        <text class="idx" x="420" y="-2">10</text><text class="idx" x="460" y="-2">11</text><text class="idx" x="500" y="-2">12</text>
+      </g>
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="cell" x="80" y="0" width="40" height="30"/>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="new" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="cell" x="240" y="0" width="40" height="30"/>
+      <rect class="cell" x="280" y="0" width="40" height="30"/>
+      <rect class="cell" x="320" y="0" width="40" height="30"/>
+      <rect class="cell" x="360" y="0" width="40" height="30"/>
+      <rect class="cell" x="400" y="0" width="40" height="30"/>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+    </g>
+    <text class="lab" x="560" y="48">탐사 횟수: <tspan fill="#27ae60" font-weight="bold">1</tspan></text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(30,115)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">2</text>
+    <text class="tb" x="15" y="18">삽입 41 — h(41)=41 mod 13 = 2, 빈 슬롯 ✓</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="new" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="old" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="cell" x="240" y="0" width="40" height="30"/>
+      <rect class="cell" x="280" y="0" width="40" height="30"/>
+      <rect class="cell" x="320" y="0" width="40" height="30"/>
+      <rect class="cell" x="360" y="0" width="40" height="30"/>
+      <rect class="cell" x="400" y="0" width="40" height="30"/>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+    </g>
+    <text class="lab" x="560" y="48">탐사 횟수: <tspan fill="#27ae60" font-weight="bold">1</tspan></text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(30,170)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
+    <text class="tb" x="15" y="18">삽입 22 — h(22)=22 mod 13 = 9, 빈 슬롯 ✓</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="old" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="old" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="cell" x="240" y="0" width="40" height="30"/>
+      <rect class="cell" x="280" y="0" width="40" height="30"/>
+      <rect class="cell" x="320" y="0" width="40" height="30"/>
+      <rect class="new" x="360" y="0" width="40" height="30"/><text class="t" x="380" y="20">22</text>
+      <rect class="cell" x="400" y="0" width="40" height="30"/>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+    </g>
+    <text class="lab" x="560" y="48">탐사 횟수: <tspan fill="#27ae60" font-weight="bold">1</tspan></text>
+  </g>
+
+  <!-- Step 4: 44 -> 5 충돌! -->
+  <g transform="translate(30,225)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">4</text>
+    <text class="tb" x="15" y="18" fill="#c0392b">삽입 44 — h(44)=44 mod 13 = 5, 충돌! → 탐사 [5]→[6]</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="old" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="collision" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="new" x="240" y="0" width="40" height="30"/><text class="t" x="260" y="20">44</text>
+      <rect class="cell" x="280" y="0" width="40" height="30"/>
+      <rect class="cell" x="320" y="0" width="40" height="30"/>
+      <rect class="old" x="360" y="0" width="40" height="30"/><text class="t" x="380" y="20">22</text>
+      <rect class="cell" x="400" y="0" width="40" height="30"/>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+      <path class="ar" d="M220 -3 Q230 -15 260 -3"/>
+    </g>
+    <text class="lab" x="560" y="48">탐사 횟수: <tspan fill="#c0392b" font-weight="bold">2</tspan></text>
+  </g>
+
+  <!-- Step 5: 59 -> 7 -->
+  <g transform="translate(30,280)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">5</text>
+    <text class="tb" x="15" y="18">삽입 59 — h(59)=59 mod 13 = 7, 빈 슬롯 ✓</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="old" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="old" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="old" x="240" y="0" width="40" height="30"/><text class="t" x="260" y="20">44</text>
+      <rect class="new" x="280" y="0" width="40" height="30"/><text class="t" x="300" y="20">59</text>
+      <rect class="cell" x="320" y="0" width="40" height="30"/>
+      <rect class="old" x="360" y="0" width="40" height="30"/><text class="t" x="380" y="20">22</text>
+      <rect class="cell" x="400" y="0" width="40" height="30"/>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+    </g>
+    <text class="lab" x="560" y="48">탐사 횟수: <tspan fill="#27ae60" font-weight="bold">1</tspan></text>
+  </g>
+
+  <!-- Step 6: 32 -> 6 충돌! -->
+  <g transform="translate(30,335)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">6</text>
+    <text class="tb" x="15" y="18" fill="#c0392b">삽입 32 — h(32)=6, 충돌 연쇄 → [6]→[7]→[8]</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="old" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="old" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="collision" x="240" y="0" width="40" height="30"/><text class="t" x="260" y="20">44</text>
+      <rect class="collision" x="280" y="0" width="40" height="30"/><text class="t" x="300" y="20">59</text>
+      <rect class="new" x="320" y="0" width="40" height="30"/><text class="t" x="340" y="20">32</text>
+      <rect class="old" x="360" y="0" width="40" height="30"/><text class="t" x="380" y="20">22</text>
+      <rect class="cell" x="400" y="0" width="40" height="30"/>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+      <path class="ar" d="M260 -3 Q280 -15 300 -3"/>
+      <path class="ar" d="M300 -3 Q320 -15 340 -3"/>
+    </g>
+    <text class="lab" x="560" y="48">탐사 횟수: <tspan fill="#c0392b" font-weight="bold">3</tspan></text>
+  </g>
+
+  <!-- Step 7: 31 -> 5 대연쇄 -->
+  <g transform="translate(30,390)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">7</text>
+    <text class="tb" x="15" y="18" fill="#c0392b">삽입 31 — h(31)=5, 대연쇄 충돌 → [5]→[6]→[7]→[8]→[9]→[10]</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="old" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="collision" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="collision" x="240" y="0" width="40" height="30"/><text class="t" x="260" y="20">44</text>
+      <rect class="collision" x="280" y="0" width="40" height="30"/><text class="t" x="300" y="20">59</text>
+      <rect class="collision" x="320" y="0" width="40" height="30"/><text class="t" x="340" y="20">32</text>
+      <rect class="collision" x="360" y="0" width="40" height="30"/><text class="t" x="380" y="20">22</text>
+      <rect class="new" x="400" y="0" width="40" height="30"/><text class="t" x="420" y="20">31</text>
+      <rect class="cell" x="440" y="0" width="40" height="30"/>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+      <path class="ar" d="M220 -3 Q420 -25 420 -3"/>
+    </g>
+    <text class="lab" x="560" y="48" fill="#c0392b">탐사 횟수: <tspan fill="#c0392b" font-weight="bold">6</tspan> (1차 군집 형성)</text>
+  </g>
+
+  <!-- Step 8: 73 -> 8 연쇄 -->
+  <g transform="translate(30,445)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">8</text>
+    <text class="tb" x="15" y="18" fill="#c0392b">삽입 73 — h(73)=73 mod 13 = 8, 연쇄 → [8]→[9]→[10]→[11]</text>
+    <g transform="translate(20,30)">
+      <rect class="cell" x="0" y="0" width="40" height="30"/>
+      <rect class="cell" x="40" y="0" width="40" height="30"/>
+      <rect class="old" x="80" y="0" width="40" height="30"/><text class="t" x="100" y="20">41</text>
+      <rect class="cell" x="120" y="0" width="40" height="30"/>
+      <rect class="cell" x="160" y="0" width="40" height="30"/>
+      <rect class="old" x="200" y="0" width="40" height="30"/><text class="t" x="220" y="20">18</text>
+      <rect class="old" x="240" y="0" width="40" height="30"/><text class="t" x="260" y="20">44</text>
+      <rect class="old" x="280" y="0" width="40" height="30"/><text class="t" x="300" y="20">59</text>
+      <rect class="collision" x="320" y="0" width="40" height="30"/><text class="t" x="340" y="20">32</text>
+      <rect class="collision" x="360" y="0" width="40" height="30"/><text class="t" x="380" y="20">22</text>
+      <rect class="collision" x="400" y="0" width="40" height="30"/><text class="t" x="420" y="20">31</text>
+      <rect class="new" x="440" y="0" width="40" height="30"/><text class="t" x="460" y="20">73</text>
+      <rect class="cell" x="480" y="0" width="40" height="30"/>
+      <path class="ar" d="M340 -3 Q400 -20 460 -3"/>
+    </g>
+    <text class="lab" x="560" y="48" fill="#c0392b">탐사 횟수: <tspan fill="#c0392b" font-weight="bold">4</tspan></text>
+  </g>
+
+  <!-- Summary table -->
+  <g transform="translate(30,510)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">9</text>
+    <text class="tb" x="15" y="18">탐사 횟수 요약 & 평균</text>
+    <rect class="sum" x="0" y="30" width="900" height="120"/>
+
+    <text class="lab" x="10" y="50" font-weight="bold">키</text>
+    <text class="lab" x="70" y="50" font-weight="bold">h(k)</text>
+    <text class="lab" x="140" y="50" font-weight="bold">최종 위치</text>
+    <text class="lab" x="240" y="50" font-weight="bold">탐사 횟수</text>
+    <text class="lab" x="340" y="50" font-weight="bold">충돌?</text>
+    <line x1="10" y1="55" x2="890" y2="55" stroke="#d4a017"/>
+
+    <text class="mono" x="10" y="72">18</text><text class="mono" x="70" y="72">5</text><text class="mono" x="140" y="72">5</text><text class="mono" x="240" y="72">1</text><text class="lab" x="340" y="72" fill="#27ae60">없음</text>
+    <text class="mono" x="420" y="72">41 → 2</text>
+    <text class="mono" x="520" y="72">22 → 9</text>
+
+    <text class="mono" x="10" y="92" fill="#c0392b">44</text><text class="mono" x="70" y="92" fill="#c0392b">5</text><text class="mono" x="140" y="92" fill="#c0392b">6</text><text class="mono" x="240" y="92" fill="#c0392b">2</text><text class="lab" x="340" y="92" fill="#c0392b">1회</text>
+    <text class="mono" x="420" y="92">59 → 7</text>
+    <text class="mono" x="520" y="92" fill="#c0392b">32 → 8 (2회 충돌)</text>
+
+    <text class="mono" x="10" y="112" fill="#c0392b">31</text><text class="mono" x="70" y="112" fill="#c0392b">5</text><text class="mono" x="140" y="112" fill="#c0392b">10</text><text class="mono" x="240" y="112" fill="#c0392b">6</text><text class="lab" x="340" y="112" fill="#c0392b">5회</text>
+    <text class="mono" x="420" y="112" fill="#c0392b">73 → 11 (3회)</text>
+
+    <line x1="10" y1="125" x2="890" y2="125" stroke="#d4a017" stroke-width="1.5"/>
+    <text class="lab" x="10" y="143" font-weight="bold">합계 탐사: 1+1+1+2+1+3+6+4 = <tspan fill="#c0392b" font-size="14">19회</tspan></text>
+    <text class="lab" x="250" y="143" font-weight="bold">평균: 19/8 ≈ <tspan fill="#c0392b">2.38</tspan></text>
+    <text class="lab" x="450" y="143" fill="#c0392b" font-weight="bold">적재율 α = 8/13 ≈ 0.62</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <g transform="translate(30,665)">
+    <rect class="sum" x="0" y="0" width="900" height="50"/>
+    <text class="tb" x="15" y="20">핵심 통찰 — 1차 군집화(Primary Clustering)</text>
+    <text class="lab" x="15" y="40" fill="#c0392b" font-weight="bold">h값이 가까운 키들이 뭉치면서 긴 연쇄를 형성. α가 1에 가까워질수록 평균 탐사 ≈ ½(1 + 1/(1-α)²) — 급격히 폭발. α &lt; 0.7 유지 권장.</text>
+  </g>
+</svg>

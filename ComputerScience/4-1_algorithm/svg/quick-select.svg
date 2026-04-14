@@ -1,25 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="system-ui,sans-serif">
   <style>
     .c{fill:#fff;stroke:#2c3e50;stroke-width:1.5}
-    .pv{fill:#ffeb99;stroke:#d4a017;stroke-width:2}
-    .lo{fill:#d6e9ff;stroke:#2e86de}
-    .hi{fill:#ffd6d6;stroke:#c0392b}
-    .ans{fill:#d0f5d0;stroke:#27ae60;stroke-width:2.5}
-    .drop{fill:#eee;stroke:#aaa;stroke-dasharray:4 3}
+    .pv{fill:#ffeb99;stroke:#d4a017;stroke-width:2.5}
+    .lo{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.5}
+    .hi{fill:#fde2e2;stroke:#c0392b;stroke-width:1.5}
+    .ans{fill:#d0f5d0;stroke:#27ae60;stroke-width:3}
+    .drop{fill:#eee;stroke:#aaa;stroke-dasharray:4 3;opacity:0.6}
     .t{font-size:14px;text-anchor:middle;font-family:monospace;font-weight:bold}
-    .lab{font-size:13px}
+    .lab{font-size:12px}
     .tb{font-size:15px;font-weight:bold}
-    .arrow{stroke:#666;stroke-width:1.5;fill:none;marker-end:url(#a)}
+    .arrow{stroke:#c0392b;stroke-width:2.5;fill:none;marker-end:url(#rd)}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .decision{fill:#fff2cc;stroke:#f39c12;stroke-width:2}
   </style>
   <defs>
-    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#666"/></marker>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
   </defs>
-  <text class="tb" x="410" y="22" text-anchor="middle">Quick Select: [7, 4, 6, 3, 9, 1]에서 3번째로 작은 값 찾기 (k=3)</text>
-  <text class="lab" x="30" y="44">아이디어: 퀵정렬처럼 피벗으로 나누되, 답이 들어있는 한쪽만 계속 파고든다. 나머지 절반은 버린다 → 평균 O(n).</text>
+  <text class="tb" x="450" y="22" text-anchor="middle">Quick Select: [7, 4, 6, 3, 9, 1]에서 k=3번째로 작은 값 찾기</text>
+  <text class="lab" x="450" y="42" text-anchor="middle">퀵정렬과 달리 답이 있는 "한쪽"만 재귀 → 나머지는 버림 → 평균 Θ(n)</text>
+
+  <!-- Decision flow box (top-right) -->
+  <g transform="translate(570,60)">
+    <rect class="decision" x="0" y="0" width="310" height="120"/>
+    <text class="tb" x="10" y="20">핵심 판단 규칙 (매 단계마다)</text>
+    <text class="lab" x="10" y="42">피벗 위치 = p (정렬 시 p+1번째 자리)</text>
+    <text class="lab" x="10" y="60">• p+1 == k → 피벗이 정답 ✓</text>
+    <text class="lab" x="10" y="76">• p+1 &gt; k  → 왼쪽에서 k번째 찾기</text>
+    <text class="lab" x="10" y="92">• p+1 &lt; k  → 오른쪽에서 (k−p−1)번째</text>
+    <text class="lab" x="10" y="112" fill="#c0392b" font-weight="bold">"한쪽만" 재귀가 핵심</text>
+  </g>
 
   <!-- Step 0 -->
-  <g transform="translate(30,60)">
-    <text class="tb" x="0" y="15">0단계. 초기 배열 (목표: k=3번째로 작은 값)</text>
+  <g transform="translate(30,65)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">0</text>
+    <text class="tb" x="15" y="15">초기 배열 (k=3 목표)</text>
     <g transform="translate(0,25)">
       <rect class="c" x="0" y="0" width="50" height="40"/><text class="t" x="25" y="25">7</text>
       <rect class="c" x="50" y="0" width="50" height="40"/><text class="t" x="75" y="25">4</text>
@@ -31,10 +47,10 @@
   </g>
 
   <!-- Step 1: pivot = 6 -->
-  <g transform="translate(30,140)">
-    <text class="tb" x="0" y="15">1단계. 피벗 = 6 으로 분할</text>
-    <text class="lab" x="0" y="35">6보다 작은 쪽(왼쪽)에 모으고, 큰 쪽(오른쪽)으로 분리. 피벗 위치가 인덱스 3 (4번째 자리).</text>
-    <g transform="translate(0,45)">
+  <g transform="translate(30,195)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">1</text>
+    <text class="tb" x="15" y="15">피벗 = 6 으로 분할 → 피벗 위치 p = 3 (4번째 자리)</text>
+    <g transform="translate(0,25)">
       <rect class="lo" x="0" y="0" width="50" height="40"/><text class="t" x="25" y="25">4</text>
       <rect class="lo" x="50" y="0" width="50" height="40"/><text class="t" x="75" y="25">3</text>
       <rect class="lo" x="100" y="0" width="50" height="40"/><text class="t" x="125" y="25">1</text>
@@ -42,35 +58,51 @@
       <rect class="hi" x="200" y="0" width="50" height="40"/><text class="t" x="225" y="25">9</text>
       <rect class="hi" x="250" y="0" width="50" height="40"/><text class="t" x="275" y="25">7</text>
     </g>
-    <text class="lab" x="320" y="70">피벗보다 작은 원소 3개 (왼쪽).</text>
-    <text class="lab" x="320" y="90">목표 k=3 → 피벗 왼쪽 절반만 남기고 오른쪽(9, 7)은 버린다.</text>
-    <text class="lab" x="320" y="110" fill="#c0392b">피벗 자체는 4번째로 작은 값이므로 답이 아님.</text>
+    <text class="lab" x="25" y="90" text-anchor="middle" fill="#2e86de" font-weight="bold">&lt; 6 (3개)</text>
+    <text class="lab" x="175" y="90" text-anchor="middle" fill="#d4a017" font-weight="bold">pivot=6 (4번째)</text>
+    <text class="lab" x="240" y="90" text-anchor="middle" fill="#c0392b" font-weight="bold">&gt; 6</text>
+    <text class="lab" x="320" y="15">판단: p+1=4 &gt; k=3 → 왼쪽만 남기고 오른쪽·피벗 버림</text>
   </g>
 
+  <!-- Flow arrow -->
+  <path class="arrow" d="M150 305 L150 345"/>
+
   <!-- Step 2: pivot=3 in left subarray -->
-  <g transform="translate(30,290)">
-    <text class="tb" x="0" y="15">2단계. 왼쪽 부분 [4, 3, 1]에서 피벗 = 3</text>
-    <text class="lab" x="0" y="35">3보다 작은 1은 왼쪽, 큰 4는 오른쪽. 피벗 위치가 인덱스 1 (2번째 자리).</text>
-    <g transform="translate(0,45)">
+  <g transform="translate(30,345)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">2</text>
+    <text class="tb" x="15" y="15">왼쪽 [4, 3, 1]에서 피벗 = 3 → 피벗 위치 p = 1 (2번째 자리)</text>
+    <g transform="translate(0,25)">
       <rect class="lo" x="0" y="0" width="50" height="40"/><text class="t" x="25" y="25">1</text>
       <rect class="pv" x="50" y="0" width="50" height="40"/><text class="t" x="75" y="25">3</text>
       <rect class="hi" x="100" y="0" width="50" height="40"/><text class="t" x="125" y="25">4</text>
-      <rect class="drop" x="150" y="0" width="50" height="40"/><text class="t" x="175" y="25" fill="#999">버림</text>
-      <rect class="drop" x="200" y="0" width="50" height="40"/><text class="t" x="225" y="25" fill="#999">버림</text>
-      <rect class="drop" x="250" y="0" width="50" height="40"/><text class="t" x="275" y="25" fill="#999">버림</text>
+      <rect class="drop" x="150" y="0" width="50" height="40"/><text class="t" x="175" y="25" fill="#999">✗</text>
+      <rect class="drop" x="200" y="0" width="50" height="40"/><text class="t" x="225" y="25" fill="#999">✗</text>
+      <rect class="drop" x="250" y="0" width="50" height="40"/><text class="t" x="275" y="25" fill="#999">✗</text>
     </g>
-    <text class="lab" x="320" y="70">피벗 3은 2번째로 작은 값 (k=3보다 작음).</text>
-    <text class="lab" x="320" y="90">목표는 k=3 → 피벗 오른쪽에서 (3 - 2) = 1번째로 작은 값 찾기.</text>
-    <text class="lab" x="320" y="110" fill="#c0392b">즉 [4] 에서 1번째로 작은 값.</text>
+    <text class="lab" x="25" y="90" fill="#2e86de">1개</text>
+    <text class="lab" x="75" y="90" fill="#d4a017" font-weight="bold">2번째</text>
+    <text class="lab" x="125" y="90" fill="#c0392b">1개</text>
+    <text class="lab" x="320" y="15">판단: p+1=2 &lt; k=3 → 오른쪽에서 (3−2)=1번째 찾기</text>
   </g>
 
+  <!-- Flow arrow -->
+  <path class="arrow" d="M125 455 L125 495"/>
+
   <!-- Step 3: answer -->
-  <g transform="translate(30,440)">
-    <text class="tb" x="0" y="15">3단계. 오른쪽 부분 [4]에 원소 1개 → 그것이 바로 답</text>
-    <g transform="translate(0,25)">
+  <g transform="translate(30,495)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">3</text>
+    <text class="tb" x="15" y="15">오른쪽 [4]에 원소 1개 → 1번째 = 4 → 답 확정!</text>
+    <g transform="translate(100,25)">
       <rect class="ans" x="0" y="0" width="50" height="40"/><text class="t" x="25" y="25">4</text>
     </g>
-    <text class="lab" x="70" y="50" fill="#27ae60" font-weight="bold">✔ 3번째로 작은 값 = 4</text>
-    <text class="lab" x="320" y="50">정렬 후 [1,3,4,6,7,9] 에서 3번째가 4 → 일치.</text>
+    <text class="lab" x="170" y="50" fill="#27ae60" font-weight="bold">✓ 3번째로 작은 값 = 4</text>
+    <text class="lab" x="320" y="50">검증: 정렬 시 [1, 3, 4, 6, 7, 9] → 3번째가 4 ✓</text>
+  </g>
+
+  <!-- Summary -->
+  <g transform="translate(30,570)">
+    <rect class="sum" x="0" y="0" width="860" height="60"/>
+    <text class="tb" x="15" y="22">복잡도: T(n) = T(n/2) + n → 평균 Θ(n) (퀵정렬 Θ(n log n)보다 빠름)</text>
+    <text class="lab" x="15" y="42" fill="#c0392b" font-weight="bold">한쪽만 재귀하므로 log 인수가 사라짐. 최악은 Θ(n²) — 피벗이 계속 치우칠 때 (무작위 피벗으로 회피)</text>
   </g>
 </svg>
