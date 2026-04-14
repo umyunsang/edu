@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" font-family="system-ui,sans-serif">
+  <style>.c{fill:#fff;stroke:#2c3e50}.p{fill:#ffd9d9;stroke:#c0392b;stroke-width:2}.L{fill:#e6f0ff;stroke:#2e86de}.R{fill:#e6f7e6;stroke:#27ae60}.t{font-size:13px;text-anchor:middle}.lab{font-size:13px}.tb{font-size:14px;font-weight:bold}</style>
+  <text class="tb" x="380" y="20" text-anchor="middle">퀵 정렬의 파티션: "피벗보다 작으면 왼쪽, 크면 오른쪽"</text>
+
+  <g transform="translate(40,45)">
+    <text class="lab" x="0" y="15">시작</text>
+    <g><rect class="p" x="60" y="0" width="44" height="40"/><text class="t" x="82" y="26">7</text></g>
+    <g><rect class="c" x="104" y="0" width="44" height="40"/><text class="t" x="126" y="26">2</text></g>
+    <g><rect class="c" x="148" y="0" width="44" height="40"/><text class="t" x="170" y="26">8</text></g>
+    <g><rect class="c" x="192" y="0" width="44" height="40"/><text class="t" x="214" y="26">1</text></g>
+    <g><rect class="c" x="236" y="0" width="44" height="40"/><text class="t" x="258" y="26">9</text></g>
+    <g><rect class="c" x="280" y="0" width="44" height="40"/><text class="t" x="302" y="26">4</text></g>
+    <g><rect class="c" x="324" y="0" width="44" height="40"/><text class="t" x="346" y="26">3</text></g>
+    <g><rect class="c" x="368" y="0" width="44" height="40"/><text class="t" x="390" y="26">6</text></g>
+    <text class="lab" x="440" y="25">피벗 = 7 (첫 원소)</text>
+  </g>
+
+  <g transform="translate(40,110)">
+    <text class="lab" x="0" y="15">분할 후</text>
+    <g><rect class="L" x="60" y="0" width="44" height="40"/><text class="t" x="82" y="26">2</text></g>
+    <g><rect class="L" x="104" y="0" width="44" height="40"/><text class="t" x="126" y="26">1</text></g>
+    <g><rect class="L" x="148" y="0" width="44" height="40"/><text class="t" x="170" y="26">4</text></g>
+    <g><rect class="L" x="192" y="0" width="44" height="40"/><text class="t" x="214" y="26">3</text></g>
+    <g><rect class="L" x="236" y="0" width="44" height="40"/><text class="t" x="258" y="26">6</text></g>
+    <g><rect class="p" x="280" y="0" width="44" height="40"/><text class="t" x="302" y="26">7</text></g>
+    <g><rect class="R" x="324" y="0" width="44" height="40"/><text class="t" x="346" y="26">8</text></g>
+    <g><rect class="R" x="368" y="0" width="44" height="40"/><text class="t" x="390" y="26">9</text></g>
+    <text class="lab" x="440" y="25">피벗 = 제자리 확정</text>
+  </g>
+
+  <g transform="translate(40,175)">
+    <text class="lab" x="0" y="15">재귀</text>
+    <text class="lab" x="70" y="5">왼쪽 부분 [2,1,4,3,6] 또 파티션 → 피벗=2, [1]·2·[4,3,6]</text>
+    <text class="lab" x="70" y="22">오른쪽 부분 [8,9] 또 파티션 → 피벗=8, []·8·[9]</text>
+    <text class="lab" x="70" y="39">계속 반복하다 크기 1이 되면 멈춤 = 정렬 완료</text>
+  </g>
+
+  <g transform="translate(40,240)">
+    <text class="tb" x="0" y="15">복잡도:</text>
+    <text class="lab" x="70" y="15">평균·최선 O(n log n) — 반씩 잘 갈릴 때</text>
+    <text class="lab" x="0" y="35">최악 O(n²) — 이미 정렬된 배열에서 첫 원소를 피벗으로 고를 때처럼 한쪽이 빌 때</text>
+    <text class="lab" x="0" y="55">실전 팁: 무작위 피벗 선택 또는 3-중앙값 피벗을 쓰면 최악을 확률적으로 피함</text>
+  </g>
+
+  <g transform="translate(40,320)">
+    <text class="tb" x="0" y="15">병합정렬과 차이:</text>
+    <text class="lab" x="130" y="15">병합정렬은 "분할→병합"에서 합치는 일에 힘이 든다.</text>
+    <text class="lab" x="0" y="35">퀵정렬은 "분할"에서 이미 정리가 끝나 있어 합칠 필요가 없다(제자리 정렬).</text>
+  </g>
+</svg>

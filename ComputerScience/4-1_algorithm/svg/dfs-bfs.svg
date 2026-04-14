@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="system-ui,sans-serif">
+  <style>.n{fill:#fff;stroke:#2c3e50;stroke-width:1.5}.v{fill:#ffe4b3;stroke:#e67e22}.e{stroke:#888;stroke-width:1.5}.t{font-size:14px;text-anchor:middle;font-weight:bold}.lab{font-size:13px}.tb{font-size:15px;font-weight:bold}</style>
+  <text class="tb" x="200" y="22" text-anchor="middle">DFS (깊이 우선) — 스택 / 재귀</text>
+  <text class="tb" x="620" y="22" text-anchor="middle">BFS (너비 우선) — 큐</text>
+
+  <!-- DFS -->
+  <g transform="translate(60,40)">
+    <line class="e" x1="150" y1="30" x2="80" y2="100"/>
+    <line class="e" x1="150" y1="30" x2="220" y2="100"/>
+    <line class="e" x1="80" y1="100" x2="40" y2="180"/>
+    <line class="e" x1="80" y1="100" x2="130" y2="180"/>
+    <line class="e" x1="220" y1="100" x2="180" y2="180"/>
+    <line class="e" x1="220" y1="100" x2="270" y2="180"/>
+    <circle class="v" cx="150" cy="30" r="22"/><text class="t" x="150" y="35">A¹</text>
+    <circle class="v" cx="80" cy="100" r="22"/><text class="t" x="80" y="105">B²</text>
+    <circle class="n" cx="220" cy="100" r="22"/><text class="t" x="220" y="105">C⁵</text>
+    <circle class="v" cx="40" cy="180" r="22"/><text class="t" x="40" y="185">D³</text>
+    <circle class="n" cx="130" cy="180" r="22"/><text class="t" x="130" y="185">E⁴</text>
+    <circle class="n" cx="180" cy="180" r="22"/><text class="t" x="180" y="185">F⁶</text>
+    <circle class="n" cx="270" cy="180" r="22"/><text class="t" x="270" y="185">G⁷</text>
+    <text class="lab" x="20" y="240">방문 순서: A → B → D → E → C → F → G</text>
+    <text class="lab" x="20" y="260">한쪽 끝까지 내려갔다가 막히면 되돌아감</text>
+    <text class="lab" x="20" y="280">스택 변화: [A] → [A,B] → [A,B,D] → [A,B,E] → [A,C] → [A,C,F]...</text>
+  </g>
+
+  <!-- BFS -->
+  <g transform="translate(480,40)">
+    <line class="e" x1="150" y1="30" x2="80" y2="100"/>
+    <line class="e" x1="150" y1="30" x2="220" y2="100"/>
+    <line class="e" x1="80" y1="100" x2="40" y2="180"/>
+    <line class="e" x1="80" y1="100" x2="130" y2="180"/>
+    <line class="e" x1="220" y1="100" x2="180" y2="180"/>
+    <line class="e" x1="220" y1="100" x2="270" y2="180"/>
+    <circle class="v" cx="150" cy="30" r="22"/><text class="t" x="150" y="35">A¹</text>
+    <circle class="v" cx="80" cy="100" r="22"/><text class="t" x="80" y="105">B²</text>
+    <circle class="v" cx="220" cy="100" r="22"/><text class="t" x="220" y="105">C³</text>
+    <circle class="n" cx="40" cy="180" r="22"/><text class="t" x="40" y="185">D⁴</text>
+    <circle class="n" cx="130" cy="180" r="22"/><text class="t" x="130" y="185">E⁵</text>
+    <circle class="n" cx="180" cy="180" r="22"/><text class="t" x="180" y="185">F⁶</text>
+    <circle class="n" cx="270" cy="180" r="22"/><text class="t" x="270" y="185">G⁷</text>
+    <text class="lab" x="20" y="240">방문 순서: A → B → C → D → E → F → G</text>
+    <text class="lab" x="20" y="260">레벨(거리) 순서대로 퍼져 나감</text>
+    <text class="lab" x="20" y="280">큐 변화: [A] → [B,C] → [C,D,E] → [D,E,F,G] → [E,F,G]...</text>
+  </g>
+
+  <g transform="translate(40,320)">
+    <text class="tb" x="0" y="15">비교:</text>
+    <text class="lab" x="60" y="15">DFS — 미로에서 한 방향으로 끝까지 가본 뒤 돌아오는 방식. 경로 존재성·사이클 검사·위상정렬에 유리.</text>
+    <text class="lab" x="60" y="35">BFS — 한 발자국씩 모든 방향을 동시에. 가중치 없는 그래프의 "최단 경로"에 유리.</text>
+    <text class="lab" x="60" y="55">둘 다 시간 복잡도 O(V+E). V=정점 수, E=간선 수.</text>
+  </g>
+</svg>

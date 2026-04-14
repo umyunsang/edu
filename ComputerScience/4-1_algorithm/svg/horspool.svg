@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" font-family="system-ui,sans-serif">
+  <style>.c{fill:#fff;stroke:#2c3e50}.p{fill:#fff7d6;stroke:#d4a017}.miss{fill:#ffd9d9;stroke:#c0392b}.hit{fill:#d6f5d6;stroke:#27ae60}.t{font-size:13px;text-anchor:middle}.lab{font-size:13px}.tb{font-size:14px;font-weight:bold}.shift{fill:#eaf2fb;stroke:#2e86de}</style>
+  <text class="tb" x="410" y="22" text-anchor="middle">Horspool 문자열 매칭: 패턴 "BARBER"로 "JIM_SAW_ME_IN_A_BARBERSHOP"에서 찾기</text>
+
+  <text class="lab" x="30" y="50">1) shift 표 만들기 (패턴 길이 m=6, 마지막 문자 R 제외 각 문자의 오른쪽 거리)</text>
+  <g transform="translate(30,60)">
+    <g><rect class="shift" x="0" y="0" width="60" height="30"/><text class="t" x="30" y="20">B</text></g>
+    <g><rect class="shift" x="60" y="0" width="60" height="30"/><text class="t" x="90" y="20">A</text></g>
+    <g><rect class="shift" x="120" y="0" width="60" height="30"/><text class="t" x="150" y="20">R</text></g>
+    <g><rect class="shift" x="180" y="0" width="60" height="30"/><text class="t" x="210" y="20">E</text></g>
+    <g><rect class="shift" x="240" y="0" width="60" height="30"/><text class="t" x="270" y="20">기타</text></g>
+    <g><rect class="shift" x="0" y="30" width="60" height="30"/><text class="t" x="30" y="50">4</text></g>
+    <g><rect class="shift" x="60" y="30" width="60" height="30"/><text class="t" x="90" y="50">2</text></g>
+    <g><rect class="shift" x="120" y="30" width="60" height="30"/><text class="t" x="150" y="50">3</text></g>
+    <g><rect class="shift" x="180" y="30" width="60" height="30"/><text class="t" x="210" y="50">1</text></g>
+    <g><rect class="shift" x="240" y="30" width="60" height="30"/><text class="t" x="270" y="50">6</text></g>
+  </g>
+  <text class="lab" x="360" y="90">예: 'B'는 패턴 오른쪽에서 4칸 떨어져 있음 → 불일치 시 4칸 이동</text>
+
+  <text class="lab" x="30" y="150">2) 매칭 과정 (오른쪽 끝부터 비교, 한 번에 여러 칸 건너뛰기)</text>
+  <g transform="translate(30,165)" font-family="monospace">
+    <text class="t" x="300" y="15">J I M _ S A W _ M E _ I N _ A _ B A R B E R S H O P</text>
+    <text class="t" x="190" y="35" fill="#c0392b">B A R B E R</text>
+    <text class="lab" x="680" y="35">끝자리 W≠R, W는 기타 → 6칸 이동</text>
+
+    <text class="t" x="300" y="60">J I M _ S A W _ M E _ I N _ A _ B A R B E R S H O P</text>
+    <text class="t" x="258" y="80" fill="#c0392b">B A R B E R</text>
+    <text class="lab" x="680" y="80">끝자리 _≠R, _는 기타 → 6칸 이동</text>
+
+    <text class="t" x="300" y="105">J I M _ S A W _ M E _ I N _ A _ B A R B E R S H O P</text>
+    <text class="t" x="326" y="125" fill="#c0392b">B A R B E R</text>
+    <text class="lab" x="680" y="125">끝자리 A≠R → shift[A]=2 → 2칸</text>
+
+    <text class="t" x="300" y="150">J I M _ S A W _ M E _ I N _ A _ B A R B E R S H O P</text>
+    <text class="t" x="338" y="170" fill="#27ae60">B A R B E R</text>
+    <text class="lab" x="680" y="170">전부 일치! ✔</text>
+  </g>
+
+  <g transform="translate(30,350)">
+    <text class="tb" x="0" y="15">포인트:</text>
+    <text class="lab" x="70" y="15">최악 O(nm), 평균 O(n). 패턴 전처리 Θ(m+Σ). KMP와 달리 오른쪽 끝부터 비교하는 게 특징.</text>
+  </g>
+</svg>
