@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 380" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 450" font-family="system-ui,sans-serif">
   <style>
     .c1{fill:#fde2e2;stroke:#c0392b;stroke-width:2.5}
     .c2{fill:#eaf2fb;stroke:#2e86de;stroke-width:2.5}
@@ -34,7 +34,7 @@
     <text class="lab" x="0" y="155">독자가 이해하게</text>
   </g>
 
-  <g transform="translate(40,330)">
+  <g transform="translate(40,400)">
     <rect class="box" x="0" y="0" width="760" height="40"/>
     <text class="lab" x="15" y="25" text-anchor="start" font-weight="bold">핵심 암기: <tspan fill="#c0392b">"Correct · Concise · Clear"</tspan> — 공학도 글쓰기의 세 축. 어려운 내용을 쉽게 쓰는 사람이 이상</text>
   </g>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="system-ui,sans-serif">
   <style>
     .finger{fill:#fde2d4;stroke:#c0392b;stroke-width:2}
     .palm{fill:#fde2d4;stroke:#c0392b;stroke-width:2}
@@ -59,7 +59,7 @@
     <text class="lab" x="20" y="302" text-anchor="start">주제 재확인 (힘1과 짝) — 힘4는 생략 가능</text>
   </g>
 
-  <g transform="translate(30,400)">
+  <g transform="translate(30,440)">
     <rect x="0" y="0" width="800" height="60" fill="#fde2e2" stroke="#c0392b"/>
     <text x="15" y="22" font-weight="bold" font-size="14">시험 핵심: 손가락 번호 = 문장의 '힘' (Power 1~4)</text>
     <text x="15" y="42" font-size="13">숫자가 높을수록 구체적 → 설득력↑. 힘1(주제)·힘2(근거)·힘3(증명)·힘4(강조)</text>
