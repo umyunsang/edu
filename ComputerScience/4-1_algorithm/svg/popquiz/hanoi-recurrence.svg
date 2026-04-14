@@ -102,7 +102,7 @@
   <!-- Step 3: 표로 검증 -->
   <g transform="translate(30,520)">
     <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
-    <text class="tb" x="15" y="18">수치 검증 & 체감</text>
+    <text class="tb" x="15" y="18">수치 검증 &amp; 체감</text>
     <rect class="sum" x="0" y="30" width="840" height="80"/>
 
     <text class="lab" x="10" y="50" font-weight="bold">n</text>

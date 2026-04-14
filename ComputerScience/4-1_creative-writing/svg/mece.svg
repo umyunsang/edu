@@ -85,14 +85,12 @@
   </g>
 
   <!-- Bottom -->
-  <g>
-    <rect x="60" y="470" width="980" height="290" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="sub" x="80" y="505" text-anchor="start">왜 MECE인가 — 수평 논리의 핵심</text>
-    <text class="note" x="80" y="545">• 같은 줄(level)에 여러 덩이를 놓을 때 <tspan font-weight="bold">균형</tspan>이 있어야 설득력이 생긴다</text>
-    <text class="note" x="80" y="580">• 대비법 (비교 · 대조) — 덩이가 두 개일 때</text>
-    <text class="note" x="80" y="615">• 열거법 — 덩이가 여러 개일 때</text>
-    <text class="note" x="80" y="660" fill="#c0392b" font-weight="bold">암기 체크리스트 3개:</text>
-    <text class="note" x="80" y="690">① 맞는가?  ② 중복 배제?  ③ 누락 배제?</text>
-    <text class="note" x="80" y="725">• Logic Tree 작성의 기반: 매 단계 전개마다 MECE를 적용해 가지를 나눈다</text>
-  </g>
+  <rect x="60" y="470" width="980" height="290" fill="#fff7d6" stroke="#d4a017"/>
+  <text x="80" y="505" font-size="15" font-weight="bold">왜 MECE인가 — 수평 논리의 핵심</text>
+  <text x="80" y="545" font-size="14">같은 줄(level)에 여러 덩이를 놓을 때 균형이 있어야 설득력이 생긴다</text>
+  <text x="80" y="580" font-size="14">대비법 (비교 · 대조) — 덩이가 두 개일 때</text>
+  <text x="80" y="615" font-size="14">열거법 — 덩이가 여러 개일 때</text>
+  <text x="80" y="660" font-size="14" fill="#c0392b" font-weight="bold">암기 체크리스트 3개</text>
+  <text x="80" y="690" font-size="14">① 맞는가?   ② 중복 배제?   ③ 누락 배제?</text>
+  <text x="80" y="725" font-size="14">Logic Tree 작성의 기반: 매 단계마다 MECE를 적용해 가지를 나눈다</text>
 </svg>

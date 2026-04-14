@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="system-ui,sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2c3e50"/>
+    </marker>
+    <marker id="arup" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#27ae60"/>
+    </marker>
+  </defs>
+  <style>
+    .box{fill:#eaf2fb;stroke:#2c3e50;stroke-width:1.5}
+    .leaf{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.8}
+    .sum{fill:#fff7d6;stroke:#b08a1f;stroke-width:1.8}
+    .root{fill:#fff2cc;stroke:#d4a017;stroke-width:2}
+    .ln{stroke:#2c3e50;stroke-width:1.3;fill:none}
+    .up{stroke:#27ae60;stroke-width:1.5;fill:none}
+    .t{font-size:14px;text-anchor:middle;fill:#1e2a38}
+    .m{font-size:13px;font-family:ui-monospace,Menlo,monospace;text-anchor:middle;fill:#1e2a38}
+    .ret{font-size:13px;font-weight:bold;text-anchor:middle;fill:#b34c00}
+    .lab{font-size:12px;fill:#4a5b6c;text-anchor:middle}
+    .tb{font-size:16px;font-weight:bold;text-anchor:middle;fill:#1e2a38}
+    .note{fill:#fff7d6;stroke:#b08a1f;stroke-width:1.5}
+  </style>
+
+  <text class="tb" x="600" y="30">리스트 합 분할정복: [3,1,4,1,5,9] → 좌/우 분할 → 합쳐 올라오기</text>
+
+  <!-- Root level -->
+  <g>
+    <rect class="root" x="450" y="60" width="300" height="60" rx="8"/>
+    <text class="m" x="600" y="88">sum([3, 1, 4, 1, 5, 9])</text>
+    <text class="lab" x="600" y="108">길이 6 → 3개씩 분할</text>
+  </g>
+  <text class="ret" x="820" y="95">↑ 반환: 23</text>
+
+  <!-- Depth 1: 2 children -->
+  <g>
+    <rect class="box" x="220" y="180" width="220" height="60" rx="8"/>
+    <text class="m" x="330" y="208">sum([3, 1, 4])</text>
+    <text class="lab" x="330" y="228">길이 3</text>
+  </g>
+  <text class="ret" x="475" y="215">→ 8</text>
+
+  <g>
+    <rect class="box" x="760" y="180" width="220" height="60" rx="8"/>
+    <text class="m" x="870" y="208">sum([1, 5, 9])</text>
+    <text class="lab" x="870" y="228">길이 3</text>
+  </g>
+  <text class="ret" x="1015" y="215">→ 15</text>
+
+  <path class="ln" d="M530,120 L360,180" marker-end="url(#ar)"/>
+  <path class="ln" d="M670,120 L840,180" marker-end="url(#ar)"/>
+
+  <!-- Depth 2: split into 2 for each -->
+  <g>
+    <rect class="box" x="80" y="300" width="160" height="55" rx="8"/>
+    <text class="m" x="160" y="326">sum([3, 1])</text>
+  </g>
+  <text class="ret" x="265" y="330">→ 4</text>
+
+  <g>
+    <rect class="box" x="290" y="300" width="160" height="55" rx="8"/>
+    <text class="m" x="370" y="326">sum([4])</text>
+  </g>
+  <text class="ret" x="475" y="330">→ 4</text>
+
+  <g>
+    <rect class="box" x="660" y="300" width="160" height="55" rx="8"/>
+    <text class="m" x="740" y="326">sum([1, 5])</text>
+  </g>
+  <text class="ret" x="845" y="330">→ 6</text>
+
+  <g>
+    <rect class="box" x="870" y="300" width="160" height="55" rx="8"/>
+    <text class="m" x="950" y="326">sum([9])</text>
+  </g>
+  <text class="ret" x="1055" y="330">→ 9</text>
+
+  <path class="ln" d="M290,240 L180,300" marker-end="url(#ar)"/>
+  <path class="ln" d="M370,240 L370,300" marker-end="url(#ar)"/>
+  <path class="ln" d="M830,240 L750,300" marker-end="url(#ar)"/>
+  <path class="ln" d="M910,240 L950,300" marker-end="url(#ar)"/>
+
+  <!-- Depth 3: split [3,1] -> [3],[1] and [1,5] -> [1],[5] -->
+  <g>
+    <rect class="leaf" x="60" y="410" width="100" height="50" rx="8"/>
+    <text class="m" x="110" y="435">sum([3])</text>
+    <text class="lab" x="110" y="452">기저</text>
+  </g>
+  <text class="ret" x="180" y="437">→ 3</text>
+
+  <g>
+    <rect class="leaf" x="210" y="410" width="100" height="50" rx="8"/>
+    <text class="m" x="260" y="435">sum([1])</text>
+    <text class="lab" x="260" y="452">기저</text>
+  </g>
+  <text class="ret" x="330" y="437">→ 1</text>
+
+  <g>
+    <rect class="leaf" x="640" y="410" width="100" height="50" rx="8"/>
+    <text class="m" x="690" y="435">sum([1])</text>
+    <text class="lab" x="690" y="452">기저</text>
+  </g>
+  <text class="ret" x="760" y="437">→ 1</text>
+
+  <g>
+    <rect class="leaf" x="790" y="410" width="100" height="50" rx="8"/>
+    <text class="m" x="840" y="435">sum([5])</text>
+    <text class="lab" x="840" y="452">기저</text>
+  </g>
+  <text class="ret" x="910" y="437">→ 5</text>
+
+  <path class="ln" d="M140,355 L115,410" marker-end="url(#ar)"/>
+  <path class="ln" d="M185,355 L250,410" marker-end="url(#ar)"/>
+  <path class="ln" d="M720,355 L700,410" marker-end="url(#ar)"/>
+  <path class="ln" d="M765,355 L830,410" marker-end="url(#ar)"/>
+
+  <!-- Combine arrows (green up) -->
+  <path class="up" d="M110,410 C 110,380 145,370 160,355" marker-end="url(#arup)"/>
+  <path class="up" d="M260,410 C 260,385 225,370 200,355" marker-end="url(#arup)"/>
+
+  <!-- 의사코드 -->
+  <g>
+    <rect class="note" x="40" y="510" width="540" height="180" rx="8"/>
+    <text class="tb" x="310" y="538" fill="#1e2a38">의사코드</text>
+    <text class="m" x="55" y="565" text-anchor="start">sum(A[lo..hi]):</text>
+    <text class="m" x="55" y="585" text-anchor="start">  if lo == hi:</text>
+    <text class="m" x="55" y="605" text-anchor="start">    return A[lo]        ← 기저</text>
+    <text class="m" x="55" y="625" text-anchor="start">  mid = (lo + hi) / 2</text>
+    <text class="m" x="55" y="645" text-anchor="start">  L = sum(A[lo..mid])</text>
+    <text class="m" x="55" y="665" text-anchor="start">  R = sum(A[mid+1..hi])</text>
+    <text class="m" x="55" y="685" text-anchor="start">  return L + R            ← 결합</text>
+  </g>
+
+  <!-- 복잡도 -->
+  <g>
+    <rect class="note" x="620" y="510" width="540" height="180" rx="8"/>
+    <text class="tb" x="890" y="538" fill="#1e2a38">복잡도 분석 (마스터 정리)</text>
+    <text class="m" x="635" y="565" text-anchor="start">점화식: T(n) = 2·T(n/2) + O(1)</text>
+    <text class="m" x="635" y="590" text-anchor="start">a=2, b=2, d=0 → b^d = 1, a=2 &gt; 1 (case 3)</text>
+    <text class="m" x="635" y="615" text-anchor="start">⇒ T(n) = Θ(n^log₂2) = Θ(n)</text>
+    <text class="m" x="635" y="645" text-anchor="start">잎(leaf) 개수 n개 = 덧셈 n-1회 = 반복문과 동일</text>
+    <text class="m" x="635" y="670" text-anchor="start">최종 합: 3+1+4+1+5+9 = 23</text>
+  </g>
+</svg>

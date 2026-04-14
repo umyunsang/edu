@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 700" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 760" font-family="system-ui,sans-serif">
   <style>
     .tb{font-size:15px;font-weight:bold}
     .th{font-size:13px;font-weight:bold;text-anchor:middle;font-family:monospace}
@@ -17,8 +17,8 @@
     .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
   </style>
 
-  <text class="tb" x="470" y="22" text-anchor="middle">Ch.3 예제 — 외판원 문제(TSP) 완전탐색 (4개 도시)</text>
-  <text class="lab" x="470" y="42" text-anchor="middle">도시 A를 출발해 B,C,D를 모두 한 번씩 방문 후 A로 복귀 — <tspan fill="#c0392b" font-weight="bold">최소 비용 경로</tspan>를 모든 순열 검사로 찾기</text>
+  <text class="tb" x="510" y="22" text-anchor="middle">Ch.3 예제 — 외판원 문제(TSP) 완전탐색 (4개 도시)</text>
+  <text class="lab" x="510" y="42" text-anchor="middle">도시 A를 출발해 B,C,D를 모두 한 번씩 방문 후 A로 복귀 — <tspan fill="#c0392b" font-weight="bold">최소 비용 경로</tspan>를 모든 순열 검사로 찾기</text>
 
   <!-- Step 1: Graph + 비용 행렬 -->
   <g transform="translate(30,60)">
@@ -102,42 +102,42 @@
       <rect class="cell" x="15" y="0" width="60" height="28"/><text class="th" x="45" y="18">#</text>
       <rect class="cell" x="75" y="0" width="220" height="28"/><text class="th" x="185" y="18">경로</text>
       <rect class="cell" x="295" y="0" width="420" height="28"/><text class="th" x="505" y="18">비용 계산</text>
-      <rect class="cell" x="715" y="0" width="140" height="28"/><text class="th" x="785" y="18">합계</text>
+      <rect class="cell" x="715" y="0" width="220" height="28"/><text class="th" x="825" y="18">합계</text>
 
       <rect class="step" x="15" y="28" width="60" height="28"/><text class="th" x="45" y="46">1</text>
       <rect class="step" x="75" y="28" width="220" height="28"/><text class="t" x="185" y="46">A → B → C → D → A</text>
       <rect class="step" x="295" y="28" width="420" height="28"/><text class="t" x="505" y="46">10 + 35 + 30 + 25</text>
-      <rect class="step" x="715" y="28" width="140" height="28"/><text class="t" x="785" y="46">100</text>
+      <rect class="step" x="715" y="28" width="220" height="28"/><text class="t" x="825" y="46">100</text>
 
       <rect class="best" x="15" y="56" width="60" height="28"/><text class="th" x="45" y="74">2</text>
       <rect class="best" x="75" y="56" width="220" height="28"/><text class="t" x="185" y="74">A → B → D → C → A</text>
       <rect class="best" x="295" y="56" width="420" height="28"/><text class="t" x="505" y="74">10 + 15 + 30 + 20</text>
-      <rect class="best" x="715" y="56" width="140" height="28"/><text class="t" x="785" y="74" fill="#27ae60">75 ★ 최솟값</text>
+      <rect class="best" x="715" y="56" width="220" height="28"/><text class="t" x="825" y="74" fill="#27ae60">75 ★ 최솟값</text>
 
       <rect class="step" x="15" y="84" width="60" height="28"/><text class="th" x="45" y="102">3</text>
       <rect class="step" x="75" y="84" width="220" height="28"/><text class="t" x="185" y="102">A → C → B → D → A</text>
       <rect class="step" x="295" y="84" width="420" height="28"/><text class="t" x="505" y="102">20 + 35 + 15 + 25</text>
-      <rect class="step" x="715" y="84" width="140" height="28"/><text class="t" x="785" y="102">95</text>
+      <rect class="step" x="715" y="84" width="220" height="28"/><text class="t" x="825" y="102">95</text>
 
       <rect class="step" x="15" y="112" width="60" height="28"/><text class="th" x="45" y="130">4</text>
       <rect class="step" x="75" y="112" width="220" height="28"/><text class="t" x="185" y="130">A → C → D → B → A</text>
       <rect class="step" x="295" y="112" width="420" height="28"/><text class="t" x="505" y="130">20 + 30 + 15 + 10</text>
-      <rect class="best" x="715" y="112" width="140" height="28"/><text class="t" x="785" y="130" fill="#27ae60">75 ★ (#2의 역방향)</text>
+      <rect class="best" x="715" y="112" width="220" height="28"/><text class="t" x="825" y="130" fill="#27ae60">75 ★ (#2의 역방향)</text>
 
       <rect class="step" x="15" y="140" width="60" height="28"/><text class="th" x="45" y="158">5</text>
       <rect class="step" x="75" y="140" width="220" height="28"/><text class="t" x="185" y="158">A → D → B → C → A</text>
       <rect class="step" x="295" y="140" width="420" height="28"/><text class="t" x="505" y="158">25 + 15 + 35 + 20</text>
-      <rect class="step" x="715" y="140" width="140" height="28"/><text class="t" x="785" y="158">95 (#3의 역방향)</text>
+      <rect class="step" x="715" y="140" width="220" height="28"/><text class="t" x="825" y="158">95 (#3의 역방향)</text>
 
       <rect class="step" x="15" y="168" width="60" height="28"/><text class="th" x="45" y="186">6</text>
       <rect class="step" x="75" y="168" width="220" height="28"/><text class="t" x="185" y="186">A → D → C → B → A</text>
       <rect class="step" x="295" y="168" width="420" height="28"/><text class="t" x="505" y="186">25 + 30 + 35 + 10</text>
-      <rect class="step" x="715" y="168" width="140" height="28"/><text class="t" x="785" y="186">100 (#1의 역방향)</text>
+      <rect class="step" x="715" y="168" width="220" height="28"/><text class="t" x="825" y="186">100 (#1의 역방향)</text>
     </g>
   </g>
 
   <!-- Step 3: 최적 경로 하이라이트 -->
-  <g transform="translate(30,500)">
+  <g transform="translate(30,545)">
     <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
     <text class="tb" x="15" y="18">최적 경로 시각화 — A → B → D → C → A (비용 75)</text>
 

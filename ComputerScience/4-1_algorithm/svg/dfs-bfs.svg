@@ -39,7 +39,7 @@
   </g>
 
   <!-- DFS stack evolution -->
-  <g transform="translate(60,320)">
+  <g transform="translate(60,345)">
     <text class="tb" x="0" y="15">스택 변화 (push=내려가기 / pop=백트랙)</text>
     <g transform="translate(0,25)">
       <rect class="cell" x="0" y="0" width="50" height="28"/><text class="ct" x="25" y="19">A</text>
@@ -73,7 +73,7 @@
   </g>
 
   <!-- BFS queue evolution -->
-  <g transform="translate(510,320)">
+  <g transform="translate(510,345)">
     <text class="tb" x="0" y="15">큐 변화 (enqueue 뒤 / dequeue 앞)</text>
     <g transform="translate(0,25)">
       <rect class="cell" x="0" y="0" width="40" height="28"/><text class="ct" x="20" y="19">A</text>

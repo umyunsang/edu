@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="system-ui,sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7a8a9a"/>
+    </marker>
+  </defs>
+  <style>
+    .bg{fill:#fff;stroke:#2c3e50;stroke-width:1.2}
+    .gline{stroke:#2c3e50;stroke-width:1}
+    .x{font-size:18px;font-weight:bold;text-anchor:middle;fill:#c62828}
+    .o{font-size:18px;font-weight:bold;text-anchor:middle;fill:#1565c0}
+    .lab{font-size:12px;fill:#4a5b6c;text-anchor:middle}
+    .tb{font-size:16px;font-weight:bold;text-anchor:middle;fill:#1e2a38}
+    .ln{stroke:#7a8a9a;stroke-width:1.2;fill:none}
+    .note{fill:#fff7d6;stroke:#b08a1f;stroke-width:1.5}
+    .mc{font-size:13px;text-anchor:middle;fill:#1e2a38}
+    .focus{fill:#fff2cc;stroke:#d4a017;stroke-width:1.8}
+  </style>
+
+  <text class="tb" x="600" y="30">3×3 틱택토 상태공간 트리 — 첫수 9가지 → 깊이 2까지 일부 전개</text>
+
+  <!-- Root: empty 3x3 at top center -->
+  <g transform="translate(540,55)">
+    <rect class="bg" x="0" y="0" width="120" height="120"/>
+    <line class="gline" x1="40" y1="0" x2="40" y2="120"/>
+    <line class="gline" x1="80" y1="0" x2="80" y2="120"/>
+    <line class="gline" x1="0" y1="40" x2="120" y2="40"/>
+    <line class="gline" x1="0" y1="80" x2="120" y2="80"/>
+    <text class="lab" x="60" y="138">빈 보드 (X 차례)</text>
+  </g>
+
+  <!-- 9 children (depth 1) at y=220 -->
+  <!-- x positions: 9 children across width 1100, spacing -->
+  <!-- child cell size: 72, gap 52 -->
+  <!-- total: 9*72 + 8*50 = 648+400=1048 -->
+  <!-- start x = (1200-1048)/2 = 76 -->
+
+  <!-- helper: draw a 3x3 cell with a mark at (r,c) where (0,0) is top-left -->
+  <!-- each cell 72x72, cellSize 24 -->
+
+  <!-- Child 1: X at (0,0) -->
+  <g transform="translate(76,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="12" y="18">X</text>
+    <text class="lab" x="36" y="88">수1</text>
+  </g>
+  <g transform="translate(197,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="36" y="18">X</text>
+    <text class="lab" x="36" y="88">수2</text>
+  </g>
+  <g transform="translate(318,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="60" y="18">X</text>
+    <text class="lab" x="36" y="88">수3</text>
+  </g>
+  <g transform="translate(439,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="12" y="42">X</text>
+    <text class="lab" x="36" y="88">수4</text>
+  </g>
+  <!-- 수5: center (focus) -->
+  <g transform="translate(560,220)">
+    <rect class="focus" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="36" y="42">X</text>
+    <text class="lab" x="36" y="88">수5 (중앙)</text>
+  </g>
+  <g transform="translate(681,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="60" y="42">X</text>
+    <text class="lab" x="36" y="88">수6</text>
+  </g>
+  <g transform="translate(802,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="12" y="66">X</text>
+    <text class="lab" x="36" y="88">수7</text>
+  </g>
+  <g transform="translate(923,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="36" y="66">X</text>
+    <text class="lab" x="36" y="88">수8</text>
+  </g>
+  <g transform="translate(1044,220)">
+    <rect class="bg" x="0" y="0" width="72" height="72"/>
+    <line class="gline" x1="24" y1="0" x2="24" y2="72"/>
+    <line class="gline" x1="48" y1="0" x2="48" y2="72"/>
+    <line class="gline" x1="0" y1="24" x2="72" y2="24"/>
+    <line class="gline" x1="0" y1="48" x2="72" y2="48"/>
+    <text class="x" x="60" y="66">X</text>
+    <text class="lab" x="36" y="88">수9</text>
+  </g>
+
+  <!-- Edges from root to 9 children -->
+  <path class="ln" d="M600,175 L112,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L233,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L354,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L475,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L596,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L717,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L838,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L959,220" marker-end="url(#ar)"/>
+  <path class="ln" d="M600,175 L1080,220" marker-end="url(#ar)"/>
+
+  <!-- Depth 2: expand center (수5) into 8 possible O responses. Show 4 representative -->
+  <text class="mc" x="600" y="360" font-weight="bold">중앙(수5) 선택 후 O의 응수 8가지 중 4가지 전개:</text>
+
+  <!-- 4 children at y=390, spread across -->
+  <g transform="translate(180,390)">
+    <rect class="bg" x="0" y="0" width="90" height="90"/>
+    <line class="gline" x1="30" y1="0" x2="30" y2="90"/>
+    <line class="gline" x1="60" y1="0" x2="60" y2="90"/>
+    <line class="gline" x1="0" y1="30" x2="90" y2="30"/>
+    <line class="gline" x1="0" y1="60" x2="90" y2="60"/>
+    <text class="x" x="45" y="55">X</text>
+    <text class="o" x="15" y="25">O</text>
+    <text class="lab" x="45" y="108">O: 좌상</text>
+  </g>
+  <g transform="translate(420,390)">
+    <rect class="bg" x="0" y="0" width="90" height="90"/>
+    <line class="gline" x1="30" y1="0" x2="30" y2="90"/>
+    <line class="gline" x1="60" y1="0" x2="60" y2="90"/>
+    <line class="gline" x1="0" y1="30" x2="90" y2="30"/>
+    <line class="gline" x1="0" y1="60" x2="90" y2="60"/>
+    <text class="x" x="45" y="55">X</text>
+    <text class="o" x="45" y="25">O</text>
+    <text class="lab" x="45" y="108">O: 상</text>
+  </g>
+  <g transform="translate(660,390)">
+    <rect class="bg" x="0" y="0" width="90" height="90"/>
+    <line class="gline" x1="30" y1="0" x2="30" y2="90"/>
+    <line class="gline" x1="60" y1="0" x2="60" y2="90"/>
+    <line class="gline" x1="0" y1="30" x2="90" y2="30"/>
+    <line class="gline" x1="0" y1="60" x2="90" y2="60"/>
+    <text class="x" x="45" y="55">X</text>
+    <text class="o" x="75" y="25">O</text>
+    <text class="lab" x="45" y="108">O: 우상</text>
+  </g>
+  <g transform="translate(900,390)">
+    <rect class="bg" x="0" y="0" width="90" height="90"/>
+    <line class="gline" x1="30" y1="0" x2="30" y2="90"/>
+    <line class="gline" x1="60" y1="0" x2="60" y2="90"/>
+    <line class="gline" x1="0" y1="30" x2="90" y2="30"/>
+    <line class="gline" x1="0" y1="60" x2="90" y2="60"/>
+    <text class="x" x="45" y="55">X</text>
+    <text class="o" x="15" y="55">O</text>
+    <text class="lab" x="45" y="108">O: 좌</text>
+  </g>
+  <text class="lab" x="1080" y="440">... 나머지 4개 생략</text>
+
+  <!-- edges from 수5 to depth-2 -->
+  <path class="ln" d="M596,295 L225,390" marker-end="url(#ar)"/>
+  <path class="ln" d="M596,295 L465,390" marker-end="url(#ar)"/>
+  <path class="ln" d="M596,295 L705,390" marker-end="url(#ar)"/>
+  <path class="ln" d="M596,295 L945,390" marker-end="url(#ar)"/>
+
+  <!-- summary box -->
+  <g>
+    <rect class="note" x="40" y="540" width="1120" height="210" rx="8"/>
+    <text class="tb" x="600" y="572" fill="#1e2a38">상태공간 크기 분석</text>
+    <text class="mc" x="600" y="605">깊이 1: 9가지   ·   깊이 2: 9×8 = 72가지   ·   최대 깊이 9 (9칸 모두 채움)</text>
+    <text class="mc" x="600" y="633">단순 곱셈 상한: 9! = 362,880  (실제로는 승리 종료·대칭 제거로 훨씬 적음)</text>
+    <text class="mc" x="600" y="661">완전탐색(brute-force)은 모든 가지를 끝까지 전개 → 승/패/무 판정 후 최선수 선택 (미니맥스 원형)</text>
+    <text class="mc" x="600" y="689">대칭 8가지(회전4 × 반사2) 제거하면 첫수는 사실상 3가지: 코너/모서리/중앙</text>
+    <text class="mc" x="600" y="720">핵심: 상태공간 트리 = "앞으로 가능한 모든 미래"의 트리. 3장 완전탐색의 전형적 구조</text>
+  </g>
+</svg>
