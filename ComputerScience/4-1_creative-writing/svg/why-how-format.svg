@@ -74,25 +74,25 @@
     <rect x="0" y="0" width="800" height="160" fill="#fff7d6" stroke="#d4a017"/>
     <text class="tb" x="15" y="22" text-anchor="start">처칠의 PREP 방법 — Why 형식의 고전</text>
     <g transform="translate(15,40)">
-      <rect class="w" x="0" y="0" width="80" height="40"/>
+      <rect class="w" x="0" y="0" width="80" height="65"/>
       <text class="step" x="40" y="26">P · Point</text>
-      <text class="lab" x="40" y="55">주장</text>
+      <text class="lab" x="40" y="50">주장</text>
 
-      <rect class="w" x="120" y="0" width="80" height="40"/>
+      <rect class="w" x="120" y="0" width="80" height="65"/>
       <text class="step" x="160" y="26">R · Reason</text>
-      <text class="lab" x="160" y="55">이유</text>
+      <text class="lab" x="160" y="50">이유</text>
 
-      <rect class="w" x="240" y="0" width="80" height="40"/>
+      <rect class="w" x="240" y="0" width="80" height="65"/>
       <text class="step" x="280" y="26">E · Example</text>
-      <text class="lab" x="280" y="55">사례</text>
+      <text class="lab" x="280" y="50">사례</text>
 
-      <rect class="w" x="360" y="0" width="80" height="40"/>
+      <rect class="w" x="360" y="0" width="80" height="65"/>
       <text class="step" x="400" y="26">P · Point</text>
-      <text class="lab" x="400" y="55">주장 재확인</text>
+      <text class="lab" x="400" y="50">주장 재확인</text>
 
-      <line class="ar" x1="80" y1="20" x2="120" y2="20"/>
-      <line class="ar" x1="200" y1="20" x2="240" y2="20"/>
-      <line class="ar" x1="320" y1="20" x2="360" y2="20"/>
+      <line class="ar" x1="80" y1="32" x2="120" y2="32"/>
+      <line class="ar" x1="200" y1="32" x2="240" y2="32"/>
+      <line class="ar" x1="320" y1="32" x2="360" y2="32"/>
     </g>
     <text class="lab" x="15" y="125" text-anchor="start" fill="#c0392b" font-weight="bold">예: "밥 줘!" → 왜(배고프니까) → 증명(배에서 꼬르륵) → "빨리 밥 줘!"</text>
     <text class="lab" x="15" y="145" text-anchor="start">✦ 레이건 대통령의 '한 장 보고서'도 동일한 How/Why 구조를 따른다.</text>

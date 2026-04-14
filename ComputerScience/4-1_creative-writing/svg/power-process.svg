@@ -29,7 +29,7 @@
     <text class="letter" x="75" y="55">P</text>
     <text class="lab" x="75" y="75" font-weight="bold">Pre-Writing</text>
     <text class="lab" x="75" y="95">글쓰기 준비단계</text>
-    <text class="lab" x="75" y="115">주제·자료·브레인스토밍</text>
+    <text class="lab" x="75" y="115" font-size="11">주제·자료·브레인스토밍</text>
   </g>
 
   <g transform="translate(200,60)">
