@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" font-family="system-ui,sans-serif">
+  <style>
+    .easy-easy{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .hard-easy{fill:#f7dc6f;stroke:#d4a017;stroke-width:2.5}
+    .easy-hard{fill:#fadbd8;stroke:#c0392b;stroke-width:2}
+    .hard-hard{fill:#d6dbdf;stroke:#555;stroke-width:2}
+    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
+    .cell{font-size:13px;text-anchor:middle}
+    .label{font-size:13px;font-weight:bold;text-anchor:middle}
+    .ax{stroke:#333;stroke-width:1.5;fill:none}
+    .ideal{fill:#c0392b;font-weight:bold;font-size:14px;text-anchor:middle}
+  </style>
+
+  <text class="tb" x="440" y="24">글쓰기 네 가지 부류 — 가로: 내용 / 세로: 표현</text>
+
+  <!-- Axes -->
+  <line class="ax" x1="260" y1="80" x2="260" y2="380"/>
+  <line class="ax" x1="260" y1="380" x2="760" y2="380"/>
+  <text class="label" x="80" y="60">내용 쉬움 →</text>
+  <text class="label" x="580" y="405">← 내용 어려움</text>
+  <text class="label" x="200" y="220" transform="rotate(-90 200 220)">표현 쉬움 ↓ 어려움</text>
+
+  <!-- Cell 1: Easy content, Easy expression -->
+  <rect class="easy-easy" x="280" y="100" width="220" height="130"/>
+  <text class="label" x="390" y="130">쉽게 쉽게</text>
+  <text class="cell" x="390" y="155">쉬운 내용을 쉽게 표현</text>
+  <text class="cell" x="390" y="175">일상 대화·초보자 글</text>
+  <text class="cell" x="390" y="205">— 가장 흔하지만 깊이 부족</text>
+
+  <!-- Cell 2: Hard content, Easy expression -->
+  <rect class="hard-easy" x="510" y="100" width="220" height="130"/>
+  <text class="label" x="620" y="130">어렵게 쉽게 ★</text>
+  <text class="cell" x="620" y="155">어려운 내용을 쉽게 표현</text>
+  <text class="cell" x="620" y="175">과학 대중서 · 파인만 스타일</text>
+  <text class="ideal" x="620" y="210">이상적 · 공학도 목표</text>
+
+  <!-- Cell 3: Easy content, Hard expression -->
+  <rect class="easy-hard" x="280" y="240" width="220" height="130"/>
+  <text class="label" x="390" y="270">쉽게 어렵게</text>
+  <text class="cell" x="390" y="295">쉬운 내용을 어렵게 표현</text>
+  <text class="cell" x="390" y="315">허세 글 · 현학적 문체</text>
+  <text class="cell" x="390" y="345">— 가장 나쁨</text>
+
+  <!-- Cell 4: Hard content, Hard expression -->
+  <rect class="hard-hard" x="510" y="240" width="220" height="130"/>
+  <text class="label" x="620" y="270">어렵게 어렵게</text>
+  <text class="cell" x="620" y="295">어려운 내용을 어렵게 표현</text>
+  <text class="cell" x="620" y="315">전문 논문·매뉴얼</text>
+  <text class="cell" x="620" y="345">— 전문가끼리는 효율적</text>
+
+  <!-- Bottom -->
+  <g transform="translate(30,410)">
+    <rect x="0" y="0" width="820" height="40" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="cell" x="15" y="25" text-anchor="start" fill="#c0392b" font-weight="bold">
+      시험: 이상적인 글쓰기 = "어려운 내용을 쉽게 쓴다" — 공학도에게 가장 필요한 역량.
+    </text>
+  </g>
+</svg>

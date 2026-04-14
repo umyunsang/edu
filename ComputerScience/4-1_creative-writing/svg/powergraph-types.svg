@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" font-family="system-ui,sans-serif">
+  <style>
+    .n1{fill:#e74c3c;stroke:#c0392b;stroke-width:2}
+    .n2{fill:#3498db;stroke:#2e86de;stroke-width:2}
+    .n3{fill:#27ae60;stroke:#1e8449;stroke-width:2}
+    .n4{fill:#f39c12;stroke:#d4a017;stroke-width:2}
+    .txt{font-size:14px;text-anchor:middle;font-weight:bold;fill:#fff}
+    .ln{stroke:#333;stroke-width:1.5;fill:none;marker-end:url(#ar)}
+    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:12px;text-anchor:middle}
+    .tt{font-size:13px}
+  </style>
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <text class="tb" x="440" y="24">Powergraph 3유형: 문단 차원의 힘 글쓰기</text>
+
+  <!-- A type: 1-2-3-4 Serial -->
+  <g transform="translate(40,60)">
+    <text class="tb" x="120" y="0">A형 · 직렬 (1-2-3-4)</text>
+    <circle class="n1" cx="40" cy="30" r="18"/><text class="txt" x="40" y="35">1</text>
+    <circle class="n2" cx="100" cy="30" r="18"/><text class="txt" x="100" y="35">2</text>
+    <circle class="n3" cx="160" cy="30" r="18"/><text class="txt" x="160" y="35">3</text>
+    <circle class="n4" cx="220" cy="30" r="18"/><text class="txt" x="220" y="35">4</text>
+    <line class="ln" x1="58" y1="30" x2="82" y2="30"/>
+    <line class="ln" x1="118" y1="30" x2="142" y2="30"/>
+    <line class="ln" x1="178" y1="30" x2="202" y2="30"/>
+    <text class="lab" x="40" y="68">주제</text>
+    <text class="lab" x="100" y="68">근거</text>
+    <text class="lab" x="160" y="68">증명</text>
+    <text class="lab" x="220" y="68">강조</text>
+    <text class="tt" x="120" y="95" text-anchor="middle">한 근거 → 한 증명 순차 배치</text>
+    <text class="tt" x="120" y="115" text-anchor="middle" fill="#c0392b">가장 기본형</text>
+  </g>
+
+  <!-- B type: 1-2-2-4 Parallel -->
+  <g transform="translate(340,60)">
+    <text class="tb" x="160" y="0">B형 · 병렬 (1-2-2-4)</text>
+    <circle class="n1" cx="40" cy="30" r="18"/><text class="txt" x="40" y="35">1</text>
+    <circle class="n2" cx="130" cy="10" r="18"/><text class="txt" x="130" y="15">2</text>
+    <circle class="n2" cx="130" cy="50" r="18"/><text class="txt" x="130" y="55">2</text>
+    <circle class="n4" cx="260" cy="30" r="18"/><text class="txt" x="260" y="35">4</text>
+    <line class="ln" x1="58" y1="28" x2="112" y2="14"/>
+    <line class="ln" x1="58" y1="32" x2="112" y2="46"/>
+    <line class="ln" x1="148" y1="14" x2="242" y2="28"/>
+    <line class="ln" x1="148" y1="46" x2="242" y2="32"/>
+    <text class="lab" x="40" y="70">주제</text>
+    <text class="lab" x="130" y="90">근거 여러 개</text>
+    <text class="lab" x="260" y="70">강조</text>
+    <text class="tt" x="160" y="115" text-anchor="middle">한 주제에 근거 여러 개 병렬</text>
+  </g>
+
+  <!-- C type: 1-2-2-2-2-4 Parallel Extended -->
+  <g transform="translate(40,210)">
+    <text class="tb" x="380" y="0">C형 · 병렬 확장 (1-2-2-2-2-4)</text>
+    <circle class="n1" cx="50" cy="60" r="18"/><text class="txt" x="50" y="65">1</text>
+    <circle class="n2" cx="200" cy="10" r="18"/><text class="txt" x="200" y="15">2</text>
+    <circle class="n2" cx="200" cy="45" r="18"/><text class="txt" x="200" y="50">2</text>
+    <circle class="n2" cx="200" cy="80" r="18"/><text class="txt" x="200" y="85">2</text>
+    <circle class="n2" cx="200" cy="115" r="18"/><text class="txt" x="200" y="120">2</text>
+    <circle class="n4" cx="380" cy="60" r="18"/><text class="txt" x="380" y="65">4</text>
+    <line class="ln" x1="68" y1="56" x2="182" y2="14"/>
+    <line class="ln" x1="68" y1="58" x2="182" y2="45"/>
+    <line class="ln" x1="68" y1="62" x2="182" y2="80"/>
+    <line class="ln" x1="68" y1="64" x2="182" y2="115"/>
+    <line class="ln" x1="218" y1="14" x2="362" y2="56"/>
+    <line class="ln" x1="218" y1="45" x2="362" y2="58"/>
+    <line class="ln" x1="218" y1="80" x2="362" y2="62"/>
+    <line class="ln" x1="218" y1="115" x2="362" y2="64"/>
+    <text class="tt" x="380" y="150" text-anchor="middle">근거 4개 이상 → 종합 결론</text>
+  </g>
+
+  <!-- Serial-Parallel Hybrid: 1'-2'(1-2-3)-2'(1-2-3)-4' -->
+  <g transform="translate(470,210)">
+    <text class="tb" x="180" y="0">직렬-병렬 복합형</text>
+    <text class="lab" x="180" y="20" fill="#c0392b" font-weight="bold">5문단 에세이의 본체 구조</text>
+
+    <circle class="n1" cx="20" cy="80" r="16"/><text class="txt" x="20" y="85">1'</text>
+
+    <g transform="translate(60,50)">
+      <rect x="0" y="0" width="80" height="60" fill="#ecf0f1" stroke="#333"/>
+      <text class="lab" x="40" y="20">본론1 (2')</text>
+      <text class="lab" x="40" y="37" font-size="11">1-2-3</text>
+      <text class="lab" x="40" y="52" font-size="11">두괄식</text>
+    </g>
+    <g transform="translate(150,50)">
+      <rect x="0" y="0" width="80" height="60" fill="#ecf0f1" stroke="#333"/>
+      <text class="lab" x="40" y="20">본론2 (2')</text>
+      <text class="lab" x="40" y="37" font-size="11">1-2-3</text>
+      <text class="lab" x="40" y="52" font-size="11">두괄식</text>
+    </g>
+    <g transform="translate(240,50)">
+      <rect x="0" y="0" width="80" height="60" fill="#ecf0f1" stroke="#333"/>
+      <text class="lab" x="40" y="20">본론3 (2')</text>
+      <text class="lab" x="40" y="37" font-size="11">1-2-3</text>
+      <text class="lab" x="40" y="52" font-size="11">두괄식</text>
+    </g>
+
+    <circle class="n4" cx="355" cy="80" r="16"/><text class="txt" x="355" y="85">4'</text>
+
+    <line class="ln" x1="36" y1="80" x2="60" y2="80"/>
+    <line class="ln" x1="140" y1="80" x2="150" y2="80"/>
+    <line class="ln" x1="230" y1="80" x2="240" y2="80"/>
+    <line class="ln" x1="320" y1="80" x2="339" y2="80"/>
+
+    <text class="tt" x="180" y="140" text-anchor="middle">1' = 서론(미괄식) · 4' = 결론(미괄식)</text>
+  </g>
+
+  <!-- Example: cat essay -->
+  <g transform="translate(40,390)">
+    <rect x="0" y="0" width="800" height="110" fill="#fde2e2" stroke="#c0392b"/>
+    <text class="tb" x="15" y="22" text-anchor="start">예: "고양이는 이상적인 애완동물" (1-2-2-2-4 → 5문단 확장)</text>
+    <text class="tt" x="15" y="45">• 서론(1'): 고양이는 훌륭한 애완동물이다 — 미괄식</text>
+    <text class="tt" x="15" y="65">• 본론1(2'): 첫째, 사교성이 뛰어나다 (힘2) → 애교스럽다(힘2), 쓰다듬어 달라(힘3)…</text>
+    <text class="tt" x="15" y="85">• 본론2-3(2'): 둘째·셋째 근거 병렬 전개 — 각 본론은 두괄식</text>
+    <text class="tt" x="15" y="105">• 결론(4'): 다양한 방법으로, 고양이는 이상적인 애완동물이다 — 미괄식</text>
+  </g>
+</svg>

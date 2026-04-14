@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" font-family="system-ui,sans-serif">
+  <style>
+    .b{fill:#fff7d6;stroke:#d4a017}
+    .g{fill:#e6f7e6;stroke:#27ae60}
+    .r{fill:#eaf2fb;stroke:#2e86de}
+    .a{stroke:#999;fill:none;stroke-width:1.5}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace}
+    .th{font-size:14px;text-anchor:middle;font-weight:bold;font-family:monospace}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+  </style>
+  <text class="tb" x="390" y="22" text-anchor="middle">빠른 거듭제곱: 2¹³ 을 축소정복으로 계산</text>
+  <text class="lab" x="30" y="46">규칙: n이 짝수면 aⁿ = (aⁿ/²)², n이 홀수면 aⁿ = a · (a^((n-1)/2))². "한 단계마다 지수를 반으로" 줄인다.</text>
+
+  <!-- 분해 트리 (위에서 아래로) -->
+  <g transform="translate(30,80)">
+    <g><rect class="r" x="260" y="0" width="200" height="40"/><text class="th" x="360" y="25">2¹³ = 2 · (2⁶)²</text></g>
+    <path class="a" d="M360 40 L360 70"/>
+
+    <g><rect class="r" x="260" y="70" width="200" height="40"/><text class="th" x="360" y="95">2⁶ = (2³)²</text></g>
+    <path class="a" d="M360 110 L360 140"/>
+
+    <g><rect class="r" x="260" y="140" width="200" height="40"/><text class="th" x="360" y="165">2³ = 2 · (2¹)²</text></g>
+    <path class="a" d="M360 180 L360 210"/>
+
+    <g><rect class="g" x="260" y="210" width="200" height="40"/><text class="th" x="360" y="235">2¹ = 2  (바닥 조건)</text></g>
+  </g>
+
+  <!-- 되돌아 올라가며 실제 값 계산 -->
+  <g transform="translate(30,360)">
+    <text class="tb" x="0" y="15">되돌아 올라가며 계산 (덧셈 아니고 곱셈 횟수에 집중):</text>
+  </g>
+  <g transform="translate(30,380)" font-family="monospace">
+    <text class="lab" x="0" y="15">2¹ = 2                              (곱셈 0회)</text>
+    <text class="lab" x="0" y="35">2³ = 2 · (2¹)² = 2 · 4 = 8            (곱셈 2회: 2·2, 그리고 그 결과와 2)</text>
+    <text class="lab" x="0" y="55">2⁶ = (2³)² = 8² = 64                 (곱셈 1회)</text>
+    <text class="lab" x="0" y="75">2¹³ = 2 · (2⁶)² = 2 · 4096 = 8192    (곱셈 2회)</text>
+  </g>
+
+  <g transform="translate(30,470)">
+    <text class="lab" x="0" y="0" fill="#c0392b">총 곱셈 ≈ 5회. 무식하게 2를 12번 곱하는 방법(곱셈 12회)보다 훨씬 적다 → O(log n).</text>
+  </g>
+</svg>

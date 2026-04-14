@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" font-family="system-ui,sans-serif">
+  <style>
+    .sift{fill:#eaf2fb;stroke:#2e86de}
+    .orb{fill:#e6f7e6;stroke:#27ae60}
+    .head{fill:#fff7d6;stroke:#d4a017}
+    .t{font-size:13px}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .good{fill:#27ae60;font-weight:bold}
+    .bad{fill:#c0392b;font-weight:bold}
+  </style>
+  <text class="tb" x="430" y="22" text-anchor="middle">SIFT vs ORB: 언제 무엇을 쓰나</text>
+
+  <!-- Table -->
+  <g transform="translate(30,45)">
+    <!-- headers -->
+    <rect class="head" x="0" y="0" width="200" height="35"/>
+    <text class="tb" x="100" y="22" text-anchor="middle">항목</text>
+    <rect class="sift" x="200" y="0" width="310" height="35"/>
+    <text class="tb" x="355" y="22" text-anchor="middle">SIFT (2004)</text>
+    <rect class="orb" x="510" y="0" width="290" height="35"/>
+    <text class="tb" x="655" y="22" text-anchor="middle">ORB (2011)</text>
+
+    <!-- Row: 검출 -->
+    <rect x="0" y="35" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="60">검출기 (Keypoint)</text>
+    <rect x="200" y="35" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="60">DoG 극값 (Scale-space)</text>
+    <rect x="510" y="35" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="60">oFAST (FAST + 방향)</text>
+
+    <!-- Row: 기술자 -->
+    <rect x="0" y="75" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="100">기술자 (Descriptor)</text>
+    <rect x="200" y="75" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="100">128차원 float (히스토그램 기반)</text>
+    <rect x="510" y="75" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="100">256bit BRIEF (이진 비교)</text>
+
+    <!-- Row: 거리 -->
+    <rect x="0" y="115" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="140">매칭 거리</text>
+    <rect x="200" y="115" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="140">L2 (유클리디안)</text>
+    <rect x="510" y="115" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="140">Hamming (XOR+popcount) — 매우 빠름</text>
+
+    <!-- Row: 속도 -->
+    <rect x="0" y="155" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="180">속도</text>
+    <rect x="200" y="155" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="180" class="bad">느림 (수백 ms)</text>
+    <rect x="510" y="155" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="180" class="good">매우 빠름 (수 ms) — 실시간 가능</text>
+
+    <!-- Row: 메모리 -->
+    <rect x="0" y="195" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="220">기술자 크기</text>
+    <rect x="200" y="195" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="220" class="bad">128 × 4 = 512 byte</text>
+    <rect x="510" y="195" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="220" class="good">32 byte (1/16)</text>
+
+    <!-- Row: 불변성 -->
+    <rect x="0" y="235" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="260">불변성</text>
+    <rect x="200" y="235" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="260" class="good">스케일+회전+조명 (강함)</text>
+    <rect x="510" y="235" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="260">회전 O, 스케일 ≈OK (피라미드)</text>
+
+    <!-- Row: 특허 -->
+    <rect x="0" y="275" width="200" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="10" y="300">라이선스</text>
+    <rect x="200" y="275" width="310" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="210" y="300">특허 만료됨 (2020~)</text>
+    <rect x="510" y="275" width="290" height="40" fill="#fff" stroke="#bbb"/>
+    <text class="t" x="520" y="300" class="good">특허 없음 (OpenCV 기본)</text>
+  </g>
+
+  <!-- Summary -->
+  <g transform="translate(30,380)">
+    <rect x="0" y="0" width="800" height="55" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">한 줄 선택 기준</text>
+    <text class="lab" x="15" y="44" fill="#c0392b" font-weight="bold">SIFT = 정확도 우선(SLAM 오프라인, 파노라마 고품질) · ORB = 속도 우선(모바일, 실시간 AR, VSLAM)</text>
+  </g>
+</svg>
