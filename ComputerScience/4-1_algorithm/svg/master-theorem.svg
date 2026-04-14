@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" font-family="system-ui,sans-serif">
+  <style>.t{font-size:13px}.tb{font-size:14px;font-weight:bold}.box{fill:#f7f9fc;stroke:#2c3e50;stroke-width:1.5}.c1{fill:#fde2e2;stroke:#c0392b}.c2{fill:#e7f5e2;stroke:#27ae60}.c3{fill:#e2eefd;stroke:#2e86de}</style>
+  <rect class="box" x="20" y="10" width="780" height="60" rx="8"/>
+  <text class="tb" x="40" y="35">마스터 정리 (Master Theorem)</text>
+  <text class="t" x="40" y="58">T(n) = a·T(n/b) + f(n) 형태, 여기서 a ≥ 1, b &gt; 1, f(n)은 양수 함수. 기준식 nᶜ where c = log_b a.</text>
+
+  <rect class="box c1" x="20" y="90" width="250" height="240" rx="8"/>
+  <text class="tb" x="145" y="115" text-anchor="middle">Case 1</text>
+  <text class="t" x="35" y="145">조건:</text>
+  <text class="t" x="35" y="165">f(n) = O(n^(c−ε)), ε&gt;0</text>
+  <text class="t" x="35" y="195">→ 분할 일이 바닥에서 지배</text>
+  <text class="tb" x="35" y="225">결과: T(n) = Θ(n^c)</text>
+  <text class="t" x="35" y="265">예: T(n)=2T(n/2)+1</text>
+  <text class="t" x="35" y="285">c=log₂2=1, f(n)=O(1)</text>
+  <text class="t" x="35" y="305">⇒ Θ(n)</text>
+
+  <rect class="box c2" x="290" y="90" width="250" height="240" rx="8"/>
+  <text class="tb" x="415" y="115" text-anchor="middle">Case 2</text>
+  <text class="t" x="305" y="145">조건:</text>
+  <text class="t" x="305" y="165">f(n) = Θ(n^c · log^k n)</text>
+  <text class="t" x="305" y="195">→ 각 층이 비슷하게 기여</text>
+  <text class="tb" x="305" y="225">결과: Θ(n^c · log^(k+1) n)</text>
+  <text class="t" x="305" y="265">예: T(n)=2T(n/2)+n</text>
+  <text class="t" x="305" y="285">c=1, f(n)=Θ(n)=Θ(n¹·log⁰n)</text>
+  <text class="t" x="305" y="305">⇒ Θ(n log n)</text>
+
+  <rect class="box c3" x="560" y="90" width="240" height="240" rx="8"/>
+  <text class="tb" x="680" y="115" text-anchor="middle">Case 3</text>
+  <text class="t" x="575" y="145">조건:</text>
+  <text class="t" x="575" y="165">f(n) = Ω(n^(c+ε)), ε&gt;0</text>
+  <text class="t" x="575" y="190">+ regularity 조건</text>
+  <text class="t" x="575" y="205">a·f(n/b) ≤ k·f(n)</text>
+  <text class="tb" x="575" y="235">결과: T(n) = Θ(f(n))</text>
+  <text class="t" x="575" y="270">예: T(n)=2T(n/2)+n²</text>
+  <text class="t" x="575" y="290">c=1, f(n)=Ω(n^(1+1))</text>
+  <text class="t" x="575" y="310">⇒ Θ(n²)</text>
+</svg>

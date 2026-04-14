@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="system-ui,sans-serif">
+  <style>.b{fill:#eaf2fb;stroke:#2c3e50;stroke-width:1.2}.m{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}.t{font-size:13px;text-anchor:middle}.ar{stroke:#555;fill:none;stroke-width:1.2;marker-end:url(#a)}.tb{font-size:14px;font-weight:bold}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#555"/></marker></defs>
+
+  <text class="tb" x="410" y="20" text-anchor="middle">병합 정렬: "반으로 쪼갠 뒤 → 정렬된 것들을 합쳐라"</text>
+
+  <!-- Level 0 -->
+  <g><rect class="b" x="310" y="40" width="200" height="28"/><text class="t" x="410" y="59">[38, 27, 43, 3, 9, 82, 10]</text></g>
+  <!-- Level 1 -->
+  <g><rect class="b" x="180" y="100" width="120" height="28"/><text class="t" x="240" y="119">[38, 27, 43, 3]</text></g>
+  <g><rect class="b" x="520" y="100" width="100" height="28"/><text class="t" x="570" y="119">[9, 82, 10]</text></g>
+  <path class="ar" d="M380 68 L260 100"/><path class="ar" d="M445 68 L570 100"/>
+  <!-- Level 2 -->
+  <g><rect class="b" x="110" y="160" width="70" height="28"/><text class="t" x="145" y="179">[38, 27]</text></g>
+  <g><rect class="b" x="220" y="160" width="70" height="28"/><text class="t" x="255" y="179">[43, 3]</text></g>
+  <g><rect class="b" x="480" y="160" width="50" height="28"/><text class="t" x="505" y="179">[9]</text></g>
+  <g><rect class="b" x="580" y="160" width="70" height="28"/><text class="t" x="615" y="179">[82, 10]</text></g>
+  <path class="ar" d="M220 128 L170 160"/><path class="ar" d="M275 128 L255 160"/>
+  <path class="ar" d="M555 128 L510 160"/><path class="ar" d="M600 128 L610 160"/>
+  <!-- Level 3 (leaves) -->
+  <g><rect class="b" x="85" y="215" width="40" height="28"/><text class="t" x="105" y="234">[38]</text></g>
+  <g><rect class="b" x="140" y="215" width="40" height="28"/><text class="t" x="160" y="234">[27]</text></g>
+  <g><rect class="b" x="200" y="215" width="40" height="28"/><text class="t" x="220" y="234">[43]</text></g>
+  <g><rect class="b" x="255" y="215" width="40" height="28"/><text class="t" x="275" y="234">[3]</text></g>
+  <g><rect class="b" x="580" y="215" width="40" height="28"/><text class="t" x="600" y="234">[82]</text></g>
+  <g><rect class="b" x="635" y="215" width="40" height="28"/><text class="t" x="655" y="234">[10]</text></g>
+  <path class="ar" d="M135 188 L115 215"/><path class="ar" d="M155 188 L160 215"/>
+  <path class="ar" d="M245 188 L225 215"/><path class="ar" d="M265 188 L275 215"/>
+  <path class="ar" d="M605 188 L600 215"/><path class="ar" d="M630 188 L650 215"/>
+
+  <!-- Merge back upward -->
+  <text class="tb" x="40" y="280">← 분할</text>
+  <text class="tb" x="40" y="300">→ 병합</text>
+
+  <g><rect class="m" x="85" y="275" width="85" height="28"/><text class="t" x="128" y="294">[27, 38]</text></g>
+  <g><rect class="m" x="200" y="275" width="85" height="28"/><text class="t" x="243" y="294">[3, 43]</text></g>
+  <g><rect class="m" x="480" y="275" width="50" height="28"/><text class="t" x="505" y="294">[9]</text></g>
+  <g><rect class="m" x="580" y="275" width="90" height="28"/><text class="t" x="625" y="294">[10, 82]</text></g>
+
+  <g><rect class="m" x="110" y="330" width="180" height="28"/><text class="t" x="200" y="349">[3, 27, 38, 43]</text></g>
+  <g><rect class="m" x="500" y="330" width="150" height="28"/><text class="t" x="575" y="349">[9, 10, 82]</text></g>
+
+  <g><rect class="m" x="260" y="385" width="290" height="28"/><text class="t" x="405" y="404">[3, 9, 10, 27, 38, 43, 82]</text></g>
+
+  <text class="tb" x="700" y="395">T(n) = 2T(n/2) + n</text>
+  <text class="tb" x="700" y="415">⇒ O(n log n)</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 360" font-family="system-ui,sans-serif">
+  <style>.c{fill:#fff;stroke:#2c3e50}.mid{fill:#ffe6b3;stroke:#e67e22;stroke-width:2}.drop{fill:#f0f0f0;stroke:#bbb;opacity:.5}.hit{fill:#d6f5d6;stroke:#27ae60;stroke-width:2}.t{font-size:13px;text-anchor:middle}.lab{font-size:13px}.tb{font-size:14px;font-weight:bold}</style>
+  <text class="tb" x="390" y="22" text-anchor="middle">이진 탐색: 정렬된 배열에서 "가운데를 찍어 반씩 버리기" (찾는 값 = 23)</text>
+
+  <g transform="translate(30,50)">
+    <text class="lab" x="0" y="15">1단계</text>
+    <g><rect class="c" x="60" y="0" width="40" height="40"/><text class="t" x="80" y="26">3</text></g>
+    <g><rect class="c" x="100" y="0" width="40" height="40"/><text class="t" x="120" y="26">7</text></g>
+    <g><rect class="c" x="140" y="0" width="40" height="40"/><text class="t" x="160" y="26">11</text></g>
+    <g><rect class="c" x="180" y="0" width="40" height="40"/><text class="t" x="200" y="26">17</text></g>
+    <g><rect class="mid" x="220" y="0" width="40" height="40"/><text class="t" x="240" y="26">20</text></g>
+    <g><rect class="c" x="260" y="0" width="40" height="40"/><text class="t" x="280" y="26">23</text></g>
+    <g><rect class="c" x="300" y="0" width="40" height="40"/><text class="t" x="320" y="26">29</text></g>
+    <g><rect class="c" x="340" y="0" width="40" height="40"/><text class="t" x="360" y="26">35</text></g>
+    <g><rect class="c" x="380" y="0" width="40" height="40"/><text class="t" x="400" y="26">41</text></g>
+    <text class="lab" x="450" y="15">mid=20 &lt; 23 이므로</text>
+    <text class="lab" x="450" y="33">오른쪽 반으로 이동</text>
+  </g>
+
+  <g transform="translate(30,120)">
+    <text class="lab" x="0" y="15">2단계</text>
+    <g><rect class="drop" x="60" y="0" width="40" height="40"/><text class="t" x="80" y="26">3</text></g>
+    <g><rect class="drop" x="100" y="0" width="40" height="40"/><text class="t" x="120" y="26">7</text></g>
+    <g><rect class="drop" x="140" y="0" width="40" height="40"/><text class="t" x="160" y="26">11</text></g>
+    <g><rect class="drop" x="180" y="0" width="40" height="40"/><text class="t" x="200" y="26">17</text></g>
+    <g><rect class="drop" x="220" y="0" width="40" height="40"/><text class="t" x="240" y="26">20</text></g>
+    <g><rect class="c" x="260" y="0" width="40" height="40"/><text class="t" x="280" y="26">23</text></g>
+    <g><rect class="c" x="300" y="0" width="40" height="40"/><text class="t" x="320" y="26">29</text></g>
+    <g><rect class="mid" x="340" y="0" width="40" height="40"/><text class="t" x="360" y="26">35</text></g>
+    <g><rect class="c" x="380" y="0" width="40" height="40"/><text class="t" x="400" y="26">41</text></g>
+    <text class="lab" x="450" y="15">mid=35 &gt; 23 이므로</text>
+    <text class="lab" x="450" y="33">왼쪽 반으로 이동</text>
+  </g>
+
+  <g transform="translate(30,190)">
+    <text class="lab" x="0" y="15">3단계</text>
+    <g><rect class="drop" x="60" y="0" width="40" height="40"/><text class="t" x="80" y="26">3</text></g>
+    <g><rect class="drop" x="100" y="0" width="40" height="40"/><text class="t" x="120" y="26">7</text></g>
+    <g><rect class="drop" x="140" y="0" width="40" height="40"/><text class="t" x="160" y="26">11</text></g>
+    <g><rect class="drop" x="180" y="0" width="40" height="40"/><text class="t" x="200" y="26">17</text></g>
+    <g><rect class="drop" x="220" y="0" width="40" height="40"/><text class="t" x="240" y="26">20</text></g>
+    <g><rect class="hit" x="260" y="0" width="40" height="40"/><text class="t" x="280" y="26">23</text></g>
+    <g><rect class="c" x="300" y="0" width="40" height="40"/><text class="t" x="320" y="26">29</text></g>
+    <g><rect class="drop" x="340" y="0" width="40" height="40"/><text class="t" x="360" y="26">35</text></g>
+    <g><rect class="drop" x="380" y="0" width="40" height="40"/><text class="t" x="400" y="26">41</text></g>
+    <text class="lab" x="450" y="25">mid=23 = 23 ✔ 발견</text>
+  </g>
+
+  <g transform="translate(30,260)">
+    <text class="tb" x="0" y="15">복잡도:</text>
+    <text class="lab" x="70" y="15">T(n) = T(n/2) + O(1) → O(log n)</text>
+    <text class="lab" x="0" y="35">조건(중요): (1) 배열이 정렬돼 있어야 한다 (2) 인덱스 접근 O(1)이 가능해야 한다(배열).</text>
+    <text class="lab" x="0" y="55">직관: n개 중 하나를 "스무고개"로 찾을 때, 한 번 물을 때마다 후보가 반으로 줄어든다.</text>
+    <text class="lab" x="0" y="75">n=1000이면 log₂1000 ≈ 10번 만에 끝남. 순차 탐색(최대 1000번)과 엄청난 차이.</text>
+  </g>
+</svg>

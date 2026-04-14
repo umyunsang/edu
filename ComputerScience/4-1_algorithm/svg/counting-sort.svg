@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="system-ui,sans-serif">
+  <style>.c{fill:#fff;stroke:#2c3e50}.cnt{fill:#eaf2fb;stroke:#2e86de}.cum{fill:#fff7d6;stroke:#d4a017}.out{fill:#e6f7e6;stroke:#27ae60}.t{font-size:13px;text-anchor:middle}.lab{font-size:13px}.tb{font-size:14px;font-weight:bold}</style>
+  <text class="tb" x="380" y="22" text-anchor="middle">계수 정렬: 같은 숫자가 몇 번 나왔는지 "세는" 비교-없는 정렬</text>
+
+  <g transform="translate(40,50)">
+    <text class="lab" x="0" y="15">입력 A</text>
+    <g><rect class="c" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">3</text></g>
+    <g><rect class="c" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">1</text></g>
+    <g><rect class="c" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">4</text></g>
+    <g><rect class="c" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">1</text></g>
+    <g><rect class="c" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">5</text></g>
+    <g><rect class="c" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">9</text></g>
+    <g><rect class="c" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">2</text></g>
+    <g><rect class="c" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">6</text></g>
+    <g><rect class="c" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">5</text></g>
+    <g><rect class="c" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">3</text></g>
+    <g><rect class="c" x="520" y="0" width="44" height="36"/><text class="t" x="542" y="24">5</text></g>
+    <text class="lab" x="600" y="22">값의 범위: 0~9</text>
+  </g>
+
+  <g transform="translate(40,110)">
+    <text class="lab" x="0" y="15">1단계 Count</text>
+    <text class="t" x="102" y="-2">0</text>
+    <text class="t" x="146" y="-2">1</text>
+    <text class="t" x="190" y="-2">2</text>
+    <text class="t" x="234" y="-2">3</text>
+    <text class="t" x="278" y="-2">4</text>
+    <text class="t" x="322" y="-2">5</text>
+    <text class="t" x="366" y="-2">6</text>
+    <text class="t" x="410" y="-2">7</text>
+    <text class="t" x="454" y="-2">8</text>
+    <text class="t" x="498" y="-2">9</text>
+    <g><rect class="cnt" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">0</text></g>
+    <g><rect class="cnt" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">2</text></g>
+    <g><rect class="cnt" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">1</text></g>
+    <g><rect class="cnt" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">2</text></g>
+    <g><rect class="cnt" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">1</text></g>
+    <g><rect class="cnt" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">3</text></g>
+    <g><rect class="cnt" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">1</text></g>
+    <g><rect class="cnt" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">0</text></g>
+    <g><rect class="cnt" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">0</text></g>
+    <g><rect class="cnt" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">1</text></g>
+    <text class="lab" x="560" y="22">각 값이 몇 번?</text>
+  </g>
+
+  <g transform="translate(40,180)">
+    <text class="lab" x="0" y="15">2단계 누적합</text>
+    <g><rect class="cum" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">0</text></g>
+    <g><rect class="cum" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">2</text></g>
+    <g><rect class="cum" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">3</text></g>
+    <g><rect class="cum" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">5</text></g>
+    <g><rect class="cum" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">6</text></g>
+    <g><rect class="cum" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">9</text></g>
+    <g><rect class="cum" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">10</text></g>
+    <g><rect class="cum" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">10</text></g>
+    <g><rect class="cum" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">10</text></g>
+    <g><rect class="cum" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">11</text></g>
+    <text class="lab" x="560" y="22">"값 v 이하 개수"</text>
+  </g>
+
+  <g transform="translate(40,240)">
+    <text class="lab" x="0" y="15">3단계 출력</text>
+    <g><rect class="out" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">1</text></g>
+    <g><rect class="out" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">1</text></g>
+    <g><rect class="out" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">2</text></g>
+    <g><rect class="out" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">3</text></g>
+    <g><rect class="out" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">3</text></g>
+    <g><rect class="out" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">4</text></g>
+    <g><rect class="out" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">5</text></g>
+    <g><rect class="out" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">5</text></g>
+    <g><rect class="out" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">5</text></g>
+    <g><rect class="out" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">6</text></g>
+    <g><rect class="out" x="520" y="0" width="44" height="36"/><text class="t" x="542" y="24">9</text></g>
+    <text class="lab" x="600" y="22">정렬 완료</text>
+  </g>
+
+  <g transform="translate(40,310)">
+    <text class="tb" x="0" y="15">복잡도:</text>
+    <text class="lab" x="70" y="15">O(n + k) — n은 원소 수, k는 값 범위. 비교를 하지 않으므로 Ω(n log n) 하한을 벗어남.</text>
+    <text class="lab" x="0" y="35">조건(중요): 값이 작은 정수(또는 자연수)여야 함. k가 n보다 훨씬 크면 오히려 비효율.</text>
+    <text class="lab" x="0" y="55">아이디어: "세어서 자리를 지정"하는 입력 강화(preprocessing) 기법의 대표 예.</text>
+    <text class="lab" x="0" y="75">안정정렬(stable): 누적합을 이용해 뒤에서 앞으로 배치하면 원래 순서가 보존됨.</text>
+  </g>
+</svg>
