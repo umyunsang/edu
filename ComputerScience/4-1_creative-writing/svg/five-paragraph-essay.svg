@@ -1,81 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" font-family="system-ui,sans-serif">
   <style>
-    .intro{fill:#fde2e2;stroke:#c0392b;stroke-width:1.5}
-    .body{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.5}
-    .concl{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.5}
+    .intro{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .body{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
+    .concl{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
     .pyr{fill:#fff7d6;stroke:#d4a017;stroke-width:2}
-    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
-    .lab{font-size:12px}
-    .topic{font-size:13px;font-weight:bold;fill:#c0392b}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px}
     .num{font-size:14px;font-weight:bold;text-anchor:middle}
-    .ar{stroke:#27ae60;stroke-width:1.5;fill:none;marker-end:url(#ag)}
+    .small{font-size:12px}
   </style>
-  <defs>
-    <marker id="ag" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L9,3 z" fill="#27ae60"/>
-    </marker>
-  </defs>
 
-  <text class="tb" x="450" y="24">5문단 기본 에세이 형식: 글의 양(피라미드) ↔ 글의 구조</text>
+  <text class="title" x="550" y="40">5문단 기본 에세이 형식: 글의 양 ↔ 글의 구조</text>
 
-  <!-- Pyramid on left: shows volume -->
-  <g transform="translate(60,60)">
-    <text class="tb" x="120" y="0">글의 양 (피라미드)</text>
-    <polygon class="pyr" points="120,20 20,300 220,300"/>
-    <text class="num" x="120" y="70">1'(1)</text>
-    <line x1="40" y1="100" x2="200" y2="100" stroke="#d4a017" stroke-dasharray="3 3"/>
-    <text class="num" x="120" y="125">2'</text>
-    <text class="num" x="60" y="165">1</text>
-    <text class="num" x="120" y="165">2</text>
-    <text class="num" x="180" y="165">3</text>
-    <line x1="30" y1="200" x2="210" y2="200" stroke="#d4a017" stroke-dasharray="3 3"/>
-    <text class="num" x="120" y="225">2' 2' 2'</text>
-    <text class="num" x="120" y="245" font-size="11">(본론 3개)</text>
-    <line x1="20" y1="275" x2="220" y2="275" stroke="#d4a017" stroke-dasharray="3 3"/>
-    <text class="num" x="120" y="295">4'(4)</text>
+  <!-- Pyramid -->
+  <g transform="translate(60,80)">
+    <text class="sub" x="160" y="25">글의 양 (피라미드)</text>
+    <polygon class="pyr" points="160,50 20,400 300,400"/>
+
+    <line x1="45" y1="125" x2="275" y2="125" stroke="#d4a017" stroke-dasharray="4 4"/>
+    <line x1="75" y1="225" x2="245" y2="225" stroke="#d4a017" stroke-dasharray="4 4"/>
+    <line x1="40" y1="325" x2="280" y2="325" stroke="#d4a017" stroke-dasharray="4 4"/>
+
+    <text class="num" x="160" y="95">1' (서론)</text>
+    <text class="num" x="160" y="175">2' (본론 1)</text>
+    <text class="num" x="160" y="275">2' (본론 2, 3)</text>
+    <text class="num" x="160" y="375">4' (결론)</text>
   </g>
 
-  <!-- Structure on right: actual paragraphs -->
-  <g transform="translate(360,60)">
-    <text class="tb" x="250" y="0">글의 구조 (5문단)</text>
-    <!-- Intro -->
-    <rect class="intro" x="0" y="20" width="500" height="60"/>
-    <text class="lab" x="15" y="40" font-weight="bold">서론 (1') — 미괄식</text>
-    <text class="lab" x="15" y="60" font-size="11">도입 → 배경 → ... → [1] 주제문 (문단 끝)</text>
-    <text class="num" x="490" y="60" text-anchor="end" fill="#c0392b">1</text>
+  <!-- Structure right -->
+  <g transform="translate(430,80)">
+    <text class="sub" x="300" y="25">글의 구조 (5문단)</text>
 
-    <!-- Body 1 -->
-    <rect class="body" x="0" y="90" width="500" height="75"/>
-    <text class="lab" x="15" y="108" font-weight="bold">본론1 (2') — 두괄식</text>
-    <text class="lab" x="15" y="125" font-size="11">[1] 소주제(힘2) · [2] 근거 · [3] 증명 · ...</text>
-    <text class="lab" x="15" y="145" font-size="11">"첫째, 사교성이 뛰어나다" (맨 앞)</text>
-    <text class="num" x="25" y="108" fill="#2e86de">1</text>
+    <rect class="intro" x="0" y="40" width="600" height="70"/>
+    <text class="lab" x="15" y="65" font-weight="bold">서론 (1') — 미괄식</text>
+    <text class="small" x="15" y="88">도입 → 배경 → ... → [1] 주제문 (문단 끝)</text>
 
-    <!-- Body 2 -->
-    <rect class="body" x="0" y="175" width="500" height="75"/>
-    <text class="lab" x="15" y="193" font-weight="bold">본론2 (2') — 두괄식</text>
-    <text class="lab" x="15" y="210" font-size="11">[1] 소주제 · [2] 근거 · [3] 증명</text>
-    <text class="lab" x="15" y="230" font-size="11">"둘째, 문명화된 가족 구성원이다"</text>
+    <rect class="body" x="0" y="125" width="600" height="90"/>
+    <text class="lab" x="15" y="150" font-weight="bold">본론 1 (2') — 두괄식</text>
+    <text class="small" x="15" y="175">[1] 소주제 · [2] 근거 · [3] 증명 · ...</text>
+    <text class="small" x="15" y="198">"첫째, 사교성이 뛰어나다" (맨 앞)</text>
 
-    <!-- Body 3 -->
-    <rect class="body" x="0" y="260" width="500" height="75"/>
-    <text class="lab" x="15" y="278" font-weight="bold">본론3 (2') — 두괄식</text>
-    <text class="lab" x="15" y="295" font-size="11">[1] 소주제 · [2] 근거 · [3] 증명</text>
-    <text class="lab" x="15" y="315" font-size="11">"셋째, 키우기 쉽다"</text>
+    <rect class="body" x="0" y="230" width="600" height="90"/>
+    <text class="lab" x="15" y="255" font-weight="bold">본론 2 (2') — 두괄식</text>
+    <text class="small" x="15" y="280">[1] 소주제 · [2] 근거 · [3] 증명</text>
+    <text class="small" x="15" y="303">"둘째, 문명화된 가족 구성원이다"</text>
 
-    <!-- Conclusion -->
-    <rect class="concl" x="0" y="345" width="500" height="60"/>
-    <text class="lab" x="15" y="365" font-weight="bold">결론 (4') — 미괄식</text>
-    <text class="lab" x="15" y="385" font-size="11">종합 → ... → [4] 주제 재확인 (문단 끝)</text>
-    <text class="num" x="490" y="385" text-anchor="end" fill="#27ae60">4</text>
+    <rect class="body" x="0" y="335" width="600" height="90"/>
+    <text class="lab" x="15" y="360" font-weight="bold">본론 3 (2') — 두괄식</text>
+    <text class="small" x="15" y="385">[1] 소주제 · [2] 근거 · [3] 증명</text>
+    <text class="small" x="15" y="408">"셋째, 키우기 쉽다"</text>
+
+    <rect class="concl" x="0" y="440" width="600" height="70"/>
+    <text class="lab" x="15" y="465" font-weight="bold">결론 (4') — 미괄식</text>
+    <text class="small" x="15" y="488">종합 → ... → [4] 주제 재확인 (문단 끝)</text>
   </g>
 
   <!-- Bottom callout -->
-  <g transform="translate(40,490)">
-    <rect x="0" y="0" width="820" height="80" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="tb" x="15" y="22" text-anchor="start">핵심 규칙 (시험 단골)</text>
-    <text class="lab" x="15" y="44">• 서론·결론은 <tspan font-weight="bold" fill="#c0392b">미괄식</tspan> — 주제문이 문단 끝에 (독자가 자연스럽게 따라오게)</text>
-    <text class="lab" x="15" y="62">• 본론은 <tspan font-weight="bold" fill="#c0392b">두괄식</tspan> — 소주제문이 문단 앞에 (한눈에 요지 파악)</text>
-    <text class="lab" x="15" y="75" fill="#c0392b" font-weight="bold">출처 기록: 이름 · 제목 · 출판사 · 년도 · 페이지</text>
+  <g>
+    <rect x="60" y="650" width="980" height="150" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="sub" x="80" y="685" text-anchor="start">핵심 규칙 (시험 단골)</text>
+    <text class="lab" x="80" y="720">• 서론 · 결론은 <tspan font-weight="bold" fill="#c0392b">미괄식</tspan> — 주제문이 문단 끝에 (독자가 자연스럽게 따라옴)</text>
+    <text class="lab" x="80" y="750">• 본론은 <tspan font-weight="bold" fill="#c0392b">두괄식</tspan> — 소주제문이 문단 앞에 (한눈에 요지 파악)</text>
+    <text class="lab" x="80" y="782" fill="#c0392b" font-weight="bold">출처 기록: 이름 · 제목 · 출판사 · 연도 · 페이지</text>
   </g>
 </svg>

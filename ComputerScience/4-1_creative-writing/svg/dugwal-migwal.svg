@@ -1,60 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="system-ui,sans-serif">
   <style>
     .d{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
     .m{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
     .topic{fill:#f39c12;stroke:#d4a017;stroke-width:2}
-    .detail{fill:#fff;stroke:#999;stroke-width:1}
-    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
-    .lab{font-size:13px;text-anchor:middle}
-    .ky{font-size:12px}
+    .detail{fill:#fff;stroke:#999;stroke-width:1.5}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:16px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px}
+    .key{font-size:13px;font-weight:bold}
   </style>
 
-  <text class="tb" x="440" y="24">두괄식 vs 미괄식: 소주제문의 위치</text>
+  <text class="title" x="550" y="40">두괄식 vs 미괄식: 소주제문의 위치</text>
 
-  <!-- Dugwalsik -->
-  <g transform="translate(40,60)">
-    <text class="tb" x="190" y="0" fill="#c0392b">두괄식 (Deductive)</text>
-    <text class="lab" x="190" y="20">소주제문이 문단 앞에</text>
+  <!-- Dugwalsik (left) -->
+  <g transform="translate(60,80)">
+    <text class="sub" x="240" y="25" fill="#c0392b">두괄식 (Deductive)</text>
+    <text class="lab" x="130" y="50" font-size="13" text-anchor="middle">소주제문이 문단 앞에</text>
 
-    <rect class="d" x="0" y="40" width="380" height="160"/>
-    <rect class="topic" x="10" y="50" width="360" height="30"/>
-    <text class="ky" x="190" y="70" text-anchor="middle" font-weight="bold">[1] 소주제문 — 핵심 주장</text>
-    <rect class="detail" x="10" y="90" width="360" height="25"/>
-    <text class="ky" x="20" y="108">[2] 근거 문장</text>
-    <rect class="detail" x="10" y="120" width="360" height="25"/>
-    <text class="ky" x="20" y="138">[3] 증명 · 예시 · 자료</text>
-    <rect class="detail" x="10" y="150" width="360" height="25"/>
-    <text class="ky" x="20" y="168">[3] 추가 증명</text>
+    <rect class="d" x="0" y="70" width="480" height="220"/>
+    <rect class="topic" x="15" y="85" width="450" height="40"/>
+    <text class="key" x="30" y="110">[1] 소주제문 — 핵심 주장</text>
 
-    <text class="lab" x="190" y="225" fill="#c0392b" font-weight="bold">용도: 본론 문단 · 비즈니스 · 뉴스 리드</text>
-    <text class="lab" x="190" y="245">장점: 한눈에 요지 파악, 바쁜 독자에게 유리</text>
-    <text class="lab" x="190" y="265">예: "첫째, 고양이는 사교성이 뛰어나다. (세부…)"</text>
+    <rect class="detail" x="15" y="135" width="450" height="35"/>
+    <text class="lab" x="30" y="158">[2] 근거 문장</text>
+
+    <rect class="detail" x="15" y="180" width="450" height="35"/>
+    <text class="lab" x="30" y="203">[3] 증명 · 예시 · 자료</text>
+
+    <rect class="detail" x="15" y="225" width="450" height="35"/>
+    <text class="lab" x="30" y="248">[3] 추가 증명</text>
+
+    <text class="lab" x="15" y="320" fill="#c0392b" font-weight="bold">용도: 본론 문단 · 비즈니스 · 뉴스 리드</text>
+    <text class="lab" x="15" y="350">장점: 한눈에 요지 파악</text>
+    <text class="lab" x="15" y="375">바쁜 독자에게 유리</text>
+    <text class="lab" x="15" y="405">예: "첫째, 고양이는 사교성이 뛰어나다."</text>
   </g>
 
-  <!-- Migwalsik -->
-  <g transform="translate(480,60)">
-    <text class="tb" x="190" y="0" fill="#2e86de">미괄식 (Inductive)</text>
-    <text class="lab" x="190" y="20">소주제문이 문단 끝에</text>
+  <!-- Migwalsik (right) -->
+  <g transform="translate(580,80)">
+    <text class="sub" x="240" y="25" fill="#2e86de">미괄식 (Inductive)</text>
+    <text class="lab" x="130" y="50" font-size="13" text-anchor="middle">소주제문이 문단 끝에</text>
 
-    <rect class="m" x="0" y="40" width="380" height="160"/>
-    <rect class="detail" x="10" y="50" width="360" height="25"/>
-    <text class="ky" x="20" y="68">도입 · 배경</text>
-    <rect class="detail" x="10" y="80" width="360" height="25"/>
-    <text class="ky" x="20" y="98">전개 · 근거 축적</text>
-    <rect class="detail" x="10" y="110" width="360" height="25"/>
-    <text class="ky" x="20" y="128">전개 · 증명</text>
-    <rect class="topic" x="10" y="140" width="360" height="30"/>
-    <text class="ky" x="190" y="160" text-anchor="middle" font-weight="bold">[1] 주제문 — 결론적 한 줄</text>
+    <rect class="m" x="0" y="70" width="460" height="220"/>
+    <rect class="detail" x="15" y="85" width="430" height="35"/>
+    <text class="lab" x="30" y="108">도입 · 배경</text>
 
-    <text class="lab" x="190" y="225" fill="#2e86de" font-weight="bold">용도: 서론·결론 문단 · 문학 · 연설</text>
-    <text class="lab" x="190" y="245">장점: 감정·긴장 축적 후 메시지 전달</text>
-    <text class="lab" x="190" y="265">예: "...다양한 방법으로, 고양이는 이상적이다."</text>
+    <rect class="detail" x="15" y="130" width="430" height="35"/>
+    <text class="lab" x="30" y="153">전개 · 근거 축적</text>
+
+    <rect class="detail" x="15" y="175" width="430" height="35"/>
+    <text class="lab" x="30" y="198">전개 · 증명</text>
+
+    <rect class="topic" x="15" y="220" width="430" height="40"/>
+    <text class="key" x="30" y="245">[1] 주제문 — 결론적 한 줄</text>
+
+    <text class="lab" x="15" y="320" fill="#2e86de" font-weight="bold">용도: 서론 · 결론 문단 · 문학 · 연설</text>
+    <text class="lab" x="15" y="350">장점: 감정 · 긴장 축적 후 전달</text>
+    <text class="lab" x="15" y="375">독자가 자연스럽게 따라온다</text>
+    <text class="lab" x="15" y="405">예: "...다양한 방법으로, 고양이는 이상적이다."</text>
   </g>
 
-  <!-- Bottom: 5-paragraph essay rule -->
-  <g transform="translate(40,350)">
-    <rect x="0" y="0" width="800" height="60" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="tb" x="15" y="22" text-anchor="start">시험 단골 규칙 — 5문단 에세이</text>
-    <text class="lab" x="15" y="45" text-anchor="start" fill="#c0392b" font-weight="bold">서론(미괄식) → 본론1·2·3(두괄식) → 결론(미괄식)</text>
+  <!-- Bottom rule -->
+  <g>
+    <rect x="60" y="580" width="980" height="110" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="sub" x="80" y="615" text-anchor="start">시험 단골 규칙 — 5문단 에세이</text>
+    <text class="lab" x="80" y="650" fill="#c0392b" font-weight="bold" font-size="15">서론(미괄식) → 본론 1·2·3(두괄식) → 결론(미괄식)</text>
+    <text class="lab" x="80" y="680">서론 · 결론은 부드럽게, 본론은 요지부터</text>
   </g>
 </svg>

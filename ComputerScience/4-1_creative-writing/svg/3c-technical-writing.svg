@@ -1,41 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 450" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="system-ui,sans-serif">
   <style>
     .c1{fill:#fde2e2;stroke:#c0392b;stroke-width:2.5}
     .c2{fill:#eaf2fb;stroke:#2e86de;stroke-width:2.5}
     .c3{fill:#d0f5d0;stroke:#27ae60;stroke-width:2.5}
-    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
-    .letter{font-size:38px;font-weight:bold;text-anchor:middle}
-    .word{font-size:18px;font-weight:bold;text-anchor:middle}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .word{font-size:20px;font-weight:bold;text-anchor:middle}
+    .letter{font-size:36px;font-weight:bold;text-anchor:middle}
     .lab{font-size:13px;text-anchor:middle}
-    .box{fill:#fff7d6;stroke:#d4a017}
+    .box{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .note{font-size:13px}
   </style>
 
-  <text class="tb" x="420" y="24">Technical Writing 3C 원칙</text>
+  <text class="title" x="500" y="40">Technical Writing 3C 원칙</text>
 
-  <!-- Venn-like: three overlapping circles -->
-  <g transform="translate(420,180)">
-    <circle class="c1" cx="-110" cy="-30" r="120" opacity="0.75"/>
-    <circle class="c2" cx="110" cy="-30" r="120" opacity="0.75"/>
-    <circle class="c3" cx="0" cy="80" r="120" opacity="0.75"/>
-
-    <text class="letter" x="-140" y="-50" fill="#c0392b">C</text>
-    <text class="word" x="-140" y="-20">Correct</text>
-    <text class="lab" x="-140" y="0">정확하게</text>
-    <text class="lab" x="-140" y="15">사실·수치·문법</text>
-
-    <text class="letter" x="140" y="-50" fill="#2e86de">C</text>
-    <text class="word" x="140" y="-20">Concise</text>
-    <text class="lab" x="140" y="0">간결하게</text>
-    <text class="lab" x="140" y="15">군더더기 제거</text>
-
-    <text class="letter" x="0" y="90" fill="#27ae60">C</text>
-    <text class="word" x="0" y="120">Clear</text>
-    <text class="lab" x="0" y="140">명료하게</text>
-    <text class="lab" x="0" y="155">독자가 이해하게</text>
+  <!-- Three non-overlapping cards -->
+  <g>
+    <rect class="c1" x="60" y="90" width="280" height="220" rx="10"/>
+    <text class="letter" x="200" y="145" fill="#c0392b">C</text>
+    <text class="word" x="200" y="190" fill="#c0392b">Correct</text>
+    <text class="lab" x="200" y="225">정확하게</text>
+    <text class="lab" x="200" y="250">사실 · 수치 · 문법</text>
+    <text class="lab" x="200" y="280">오류가 없어야 한다</text>
   </g>
 
-  <g transform="translate(40,400)">
-    <rect class="box" x="0" y="0" width="760" height="40"/>
-    <text class="lab" x="15" y="25" text-anchor="start" font-weight="bold">핵심 암기: <tspan fill="#c0392b">"Correct · Concise · Clear"</tspan> — 공학도 글쓰기의 세 축. 어려운 내용을 쉽게 쓰는 사람이 이상</text>
+  <g>
+    <rect class="c2" x="360" y="90" width="280" height="220" rx="10"/>
+    <text class="letter" x="500" y="145" fill="#2e86de">C</text>
+    <text class="word" x="500" y="190" fill="#2e86de">Concise</text>
+    <text class="lab" x="500" y="225">간결하게</text>
+    <text class="lab" x="500" y="250">군더더기 제거</text>
+    <text class="lab" x="500" y="280">짧고 명확하게</text>
+  </g>
+
+  <g>
+    <rect class="c3" x="660" y="90" width="280" height="220" rx="10"/>
+    <text class="letter" x="800" y="145" fill="#27ae60">C</text>
+    <text class="word" x="800" y="190" fill="#27ae60">Clear</text>
+    <text class="lab" x="800" y="225">명료하게</text>
+    <text class="lab" x="800" y="250">독자가 이해하도록</text>
+    <text class="lab" x="800" y="280">모호함 제거</text>
+  </g>
+
+  <!-- Bottom callout -->
+  <g>
+    <rect class="box" x="60" y="380" width="880" height="140"/>
+    <text class="note" x="80" y="415" font-weight="bold">핵심 암기</text>
+    <text class="note" x="80" y="445">" Correct · Concise · Clear "</text>
+    <text class="note" x="80" y="475">공학도 글쓰기의 세 축이다.</text>
+    <text class="note" x="80" y="505" fill="#c0392b" font-weight="bold">어려운 내용을 쉽게 쓰는 사람이 이상적이다.</text>
   </g>
 </svg>

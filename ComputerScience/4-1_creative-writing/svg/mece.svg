@@ -1,94 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" font-family="system-ui,sans-serif">
   <style>
     .me{fill:#f39c12;stroke:#d4a017;stroke-width:2}
     .ce{fill:#2e86de;stroke:#2874a6;stroke-width:2}
     .mece{fill:#27ae60;stroke:#1e8449;stroke-width:2}
     .bad{fill:#e74c3c;stroke:#c0392b;stroke-width:2}
-    .tb{font-size:15px;font-weight:bold;text-anchor:middle}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;text-anchor:middle}
     .wtxt{fill:#fff;font-size:14px;font-weight:bold;text-anchor:middle}
     .lab{font-size:13px;text-anchor:middle}
-    .case{font-size:12px;text-anchor:middle}
+    .note{font-size:14px}
   </style>
 
-  <text class="tb" x="440" y="24">MECE: Mutually Exclusive, Collectively Exhaustive</text>
+  <text class="title" x="550" y="40">MECE: Mutually Exclusive, Collectively Exhaustive</text>
 
   <!-- Left: MECE definition tree -->
-  <g transform="translate(40,60)">
-    <rect class="mece" x="0" y="60" width="90" height="50"/>
-    <text class="wtxt" x="45" y="90">MECE</text>
+  <g transform="translate(60,80)">
+    <text class="sub" x="240" y="25">정의 — 상호 배타 · 전체 망라</text>
 
-    <rect class="me" x="160" y="10" width="90" height="50"/>
-    <text class="wtxt" x="205" y="40">ME</text>
+    <rect class="mece" x="0" y="70" width="110" height="60"/>
+    <text class="wtxt" x="55" y="105">MECE</text>
 
-    <rect class="ce" x="160" y="110" width="90" height="50"/>
-    <text class="wtxt" x="205" y="140">CE</text>
+    <rect class="me" x="180" y="10" width="110" height="60"/>
+    <text class="wtxt" x="235" y="45">ME</text>
 
-    <line x1="90" y1="85" x2="160" y2="35" stroke="#333" stroke-width="1.5"/>
-    <line x1="90" y1="85" x2="160" y2="135" stroke="#333" stroke-width="1.5"/>
+    <rect class="ce" x="180" y="130" width="110" height="60"/>
+    <text class="wtxt" x="235" y="165">CE</text>
 
-    <rect x="280" y="0" width="180" height="30" fill="#fff" stroke="#d4a017"/>
-    <text x="290" y="20" font-size="12">Mutually — 상호 간에</text>
-    <rect x="280" y="35" width="180" height="30" fill="#fff" stroke="#d4a017"/>
-    <text x="290" y="55" font-size="12">Exclusive — 중복되지 않고</text>
-    <rect x="280" y="100" width="180" height="30" fill="#fff" stroke="#2e86de"/>
-    <text x="290" y="120" font-size="12">Collectively — 전체로써</text>
-    <rect x="280" y="135" width="180" height="30" fill="#fff" stroke="#2e86de"/>
-    <text x="290" y="155" font-size="12">Exhaustive — 누락이 없음</text>
+    <line x1="110" y1="95" x2="180" y2="40" stroke="#333" stroke-width="1.5"/>
+    <line x1="110" y1="105" x2="180" y2="160" stroke="#333" stroke-width="1.5"/>
 
-    <line x1="250" y1="20" x2="280" y2="15" stroke="#333" stroke-width="1"/>
-    <line x1="250" y1="50" x2="280" y2="50" stroke="#333" stroke-width="1"/>
-    <line x1="250" y1="125" x2="280" y2="115" stroke="#333" stroke-width="1"/>
-    <line x1="250" y1="150" x2="280" y2="150" stroke="#333" stroke-width="1"/>
+    <rect x="340" y="0" width="160" height="35" fill="#fff" stroke="#d4a017"/>
+    <text x="355" y="23" font-size="13">Mutually · 상호 간에</text>
+    <rect x="340" y="40" width="160" height="35" fill="#fff" stroke="#d4a017"/>
+    <text x="355" y="63" font-size="13">Exclusive · 중복 없음</text>
+    <rect x="340" y="130" width="160" height="35" fill="#fff" stroke="#2e86de"/>
+    <text x="355" y="153" font-size="13">Collectively · 전체로써</text>
+    <rect x="340" y="170" width="160" height="35" fill="#fff" stroke="#2e86de"/>
+    <text x="355" y="193" font-size="13">Exhaustive · 누락 없음</text>
 
-    <text class="tb" x="230" y="200" fill="#c0392b">중복 없이 · 누락 없이</text>
+    <line x1="290" y1="25" x2="340" y2="20" stroke="#333"/>
+    <line x1="290" y1="55" x2="340" y2="55" stroke="#333"/>
+    <line x1="290" y1="150" x2="340" y2="150" stroke="#333"/>
+    <line x1="290" y1="175" x2="340" y2="185" stroke="#333"/>
+
+    <text class="sub" x="240" y="270" fill="#c0392b">중복 없이 · 누락 없이</text>
   </g>
 
-  <!-- Right: 3 cases example (people) -->
-  <g transform="translate(520,60)">
-    <text class="tb" x="160" y="0">사람 전체 분류 예시</text>
+  <!-- Right: examples -->
+  <g transform="translate(630,80)">
+    <text class="sub" x="200" y="25">사람 전체 분류 예시</text>
 
-    <!-- Case 1: OK -->
-    <g transform="translate(0,20)">
-      <rect class="mece" x="0" y="0" width="150" height="40"/>
-      <text class="wtxt" x="35" y="25">남자</text>
-      <text class="wtxt" x="115" y="25">여자</text>
-      <rect x="160" y="10" width="160" height="25" fill="#d0f5d0" stroke="#27ae60"/>
-      <text class="case" x="240" y="28" font-weight="bold" fill="#27ae60">✓ 완벽한 MECE</text>
+    <!-- Case 1 -->
+    <g transform="translate(0,50)">
+      <rect class="mece" x="0" y="0" width="200" height="50"/>
+      <text class="wtxt" x="50" y="30">남자</text>
+      <text class="wtxt" x="150" y="30">여자</text>
+      <rect x="220" y="12" width="200" height="28" fill="#d0f5d0" stroke="#27ae60"/>
+      <text x="230" y="32" font-size="13" font-weight="bold" fill="#27ae60">완벽한 MECE</text>
     </g>
 
     <!-- Case 2: overlap -->
-    <g transform="translate(0,80)">
-      <rect class="bad" x="0" y="0" width="150" height="40"/>
-      <text class="wtxt" x="30" y="25">남자</text>
-      <rect class="bad" x="50" y="5" width="60" height="30" opacity="0.7"/>
-      <text class="wtxt" x="80" y="25" font-size="11">자녀</text>
-      <text class="wtxt" x="120" y="25">여자</text>
-      <rect x="160" y="10" width="160" height="25" fill="#fde2e2" stroke="#c0392b"/>
-      <text class="case" x="240" y="28" font-weight="bold" fill="#c0392b">✗ 중복 있음 (MECE 안됨)</text>
+    <g transform="translate(0,130)">
+      <rect class="bad" x="0" y="0" width="200" height="50"/>
+      <text class="wtxt" x="40" y="30">남자</text>
+      <rect class="bad" x="70" y="8" width="60" height="34" opacity="0.7"/>
+      <text class="wtxt" x="100" y="30" font-size="12">자녀</text>
+      <text class="wtxt" x="160" y="30">여자</text>
+      <rect x="220" y="12" width="200" height="28" fill="#fde2e2" stroke="#c0392b"/>
+      <text x="230" y="32" font-size="13" font-weight="bold" fill="#c0392b">중복 있음 (실패)</text>
     </g>
 
     <!-- Case 3: gap -->
-    <g transform="translate(0,140)">
-      <rect class="bad" x="0" y="0" width="50" height="40"/>
-      <text class="wtxt" x="25" y="25" font-size="11">남자</text>
-      <rect x="50" y="0" width="60" height="40" fill="#fff" stroke="#c0392b" stroke-dasharray="4 3"/>
-      <text class="case" x="80" y="20">기혼</text>
-      <text class="case" x="80" y="35">여자</text>
-      <rect class="bad" x="110" y="0" width="40" height="40" opacity="0.5"/>
-      <text class="wtxt" x="130" y="25" font-size="11">?</text>
-      <rect x="160" y="10" width="160" height="25" fill="#fde2e2" stroke="#c0392b"/>
-      <text class="case" x="240" y="28" font-weight="bold" fill="#c0392b">✗ 누락 있음 (MECE 안됨)</text>
+    <g transform="translate(0,210)">
+      <rect class="bad" x="0" y="0" width="70" height="50"/>
+      <text class="wtxt" x="35" y="30">남자</text>
+      <rect x="70" y="0" width="70" height="50" fill="#fff" stroke="#c0392b" stroke-dasharray="4 3"/>
+      <text class="lab" x="105" y="22">기혼</text>
+      <text class="lab" x="105" y="40">여자</text>
+      <rect class="bad" x="140" y="0" width="60" height="50" opacity="0.5"/>
+      <text class="wtxt" x="170" y="30" font-size="12">?</text>
+      <rect x="220" y="12" width="200" height="28" fill="#fde2e2" stroke="#c0392b"/>
+      <text x="230" y="32" font-size="13" font-weight="bold" fill="#c0392b">누락 있음 (실패)</text>
     </g>
   </g>
 
   <!-- Bottom -->
-  <g transform="translate(40,310)">
-    <rect x="0" y="0" width="800" height="150" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="tb" x="15" y="22" text-anchor="start">왜 MECE인가 — 수평 논리의 핵심</text>
-    <text class="lab" x="15" y="45" text-anchor="start">• 같은 줄(level)에 여러 개의 덩이를 늘어놓을 때 <tspan font-weight="bold">균형</tspan>을 이루어야 설득력이 생긴다</text>
-    <text class="lab" x="15" y="65" text-anchor="start">• 대비법(비교·대조) — 덩이가 두 개만 있을 때</text>
-    <text class="lab" x="15" y="85" text-anchor="start">• 열거법 — 덩이가 여러 개일 때</text>
-    <text class="lab" x="15" y="110" text-anchor="start" fill="#c0392b" font-weight="bold">암기 체크리스트 3개: ① 맞는가? ② 중복 배제? ③ 누락 배제?</text>
-    <text class="lab" x="15" y="130" text-anchor="start">• Logic Tree 작성의 기반: 매 단계 전개마다 MECE를 적용해 가지를 나눈다</text>
+  <g>
+    <rect x="60" y="470" width="980" height="290" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="sub" x="80" y="505" text-anchor="start">왜 MECE인가 — 수평 논리의 핵심</text>
+    <text class="note" x="80" y="545">• 같은 줄(level)에 여러 덩이를 놓을 때 <tspan font-weight="bold">균형</tspan>이 있어야 설득력이 생긴다</text>
+    <text class="note" x="80" y="580">• 대비법 (비교 · 대조) — 덩이가 두 개일 때</text>
+    <text class="note" x="80" y="615">• 열거법 — 덩이가 여러 개일 때</text>
+    <text class="note" x="80" y="660" fill="#c0392b" font-weight="bold">암기 체크리스트 3개:</text>
+    <text class="note" x="80" y="690">① 맞는가?  ② 중복 배제?  ③ 누락 배제?</text>
+    <text class="note" x="80" y="725">• Logic Tree 작성의 기반: 매 단계 전개마다 MECE를 적용해 가지를 나눈다</text>
   </g>
 </svg>
