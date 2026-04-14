@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="system-ui,sans-serif">
   <style>
     .img{fill:#f8f8f8;stroke:#555}
     .flat{fill:#bdc3c7}
@@ -82,7 +82,7 @@
   </g>
 
   <!-- Formula box -->
-  <g transform="translate(30,310)">
+  <g transform="translate(30,390)">
     <rect x="0" y="0" width="820" height="150" fill="#fff7d6" stroke="#d4a017"/>
     <text class="tb" x="15" y="22">Harris 응답함수 R (고유값 직접 계산 없이 사용)</text>
     <text class="eq" x="15" y="50">M = Σ_w [[Ix²  IxIy] ; [IxIy  Iy²]]   ← 구조 텐서 (structure tensor)</text>
