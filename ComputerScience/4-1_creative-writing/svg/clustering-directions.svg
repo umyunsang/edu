@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="system-ui,sans-serif">
   <style>
     .v{fill:#e74c3c;stroke:#c0392b;stroke-width:2}
     .h{fill:#3498db;stroke:#2e86de;stroke-width:2}
@@ -67,8 +67,8 @@
   </g>
 
   <!-- Bottom: clustering principles -->
-  <g transform="translate(40,320)">
-    <rect x="0" y="0" width="800" height="130" fill="#fff7d6" stroke="#d4a017"/>
+  <g transform="translate(40,400)">
+    <rect x="0" y="0" width="800" height="140" fill="#fff7d6" stroke="#d4a017"/>
     <text class="tb" x="15" y="22" text-anchor="start">덩이지기 원리 — 인지심리학 기반</text>
     <text class="lab" x="15" y="45" text-anchor="start">• 인간 뇌는 한꺼번에 <tspan font-weight="bold" fill="#c0392b">최대 7개</tspan>의 정보만 처리 가능 (Miller's Magic Number)</text>
     <text class="lab" x="15" y="65" text-anchor="start">• 비슷한 것끼리 덩이로 묶어 상위 개념화 → 기억·이해가 쉬워짐</text>

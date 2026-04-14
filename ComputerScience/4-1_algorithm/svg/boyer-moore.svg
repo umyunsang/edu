@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 740" font-family="system-ui,sans-serif">
+  <style>
+    .tb{font-size:15px;font-weight:bold}
+    .t{font-size:12px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .th{font-size:13px;font-weight:bold;text-anchor:middle;font-family:monospace}
+    .lab{font-size:12px}
+    .mono{font-family:monospace;font-size:12px}
+    .cell{fill:#fff;stroke:#2c3e50;stroke-width:1.1}
+    .focus{fill:#fff2cc;stroke:#f39c12;stroke-width:2.2}
+    .miss{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .hit{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .step{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.3}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .ar{stroke:#c0392b;stroke-width:2;fill:none;marker-end:url(#rd)}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+
+  <text class="tb" x="470" y="22" text-anchor="middle">Ch.6 예제 — 보이어-무어(Boyer–Moore) : 두 휴리스틱 조합</text>
+  <text class="lab" x="470" y="42" text-anchor="middle">오른쪽 끝부터 비교. <tspan fill="#c0392b" font-weight="bold">불일치 문자(Bad Character)</tspan>와 <tspan fill="#2e86de" font-weight="bold">좋은 서픽스(Good Suffix)</tspan> 중 <tspan font-weight="bold">더 큰 shift</tspan> 선택</text>
+
+  <!-- Step 1: 휴리스틱 1 - 불일치 문자 -->
+  <g transform="translate(30,60)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">1</text>
+    <text class="tb" x="15" y="18">휴리스틱 ① 불일치 문자 (Bad Character) — Horspool과 동일 원리</text>
+
+    <rect class="sum" x="0" y="30" width="880" height="135"/>
+    <text class="mono" x="15" y="55">텍스트 T = "...<tspan fill="#c0392b" font-weight="bold">A</tspan>..." 에서 패턴 P = "BARBER"의 마지막 R이 <tspan fill="#c0392b" font-weight="bold">A</tspan>와 불일치</text>
+
+    <g transform="translate(30,65)">
+      <rect class="cell" x="0" y="0" width="34" height="28"/><text class="t" x="17" y="20">B</text>
+      <rect class="cell" x="34" y="0" width="34" height="28"/><text class="t" x="51" y="20">A</text>
+      <rect class="cell" x="68" y="0" width="34" height="28"/><text class="t" x="85" y="20">R</text>
+      <rect class="cell" x="102" y="0" width="34" height="28"/><text class="t" x="119" y="20">B</text>
+      <rect class="cell" x="136" y="0" width="34" height="28"/><text class="t" x="153" y="20">E</text>
+      <rect class="miss" x="170" y="0" width="34" height="28"/><text class="t" x="187" y="20">R</text>
+      <text class="lab" x="220" y="20" fill="#c0392b">↑ 비교 실패: R ≠ A</text>
+    </g>
+
+    <text class="mono" x="15" y="128" fill="#2e86de" font-weight="bold">규칙:</text>
+    <text class="mono" x="65" y="128">불일치된 T 문자 c의 "패턴 내 가장 오른쪽 위치"까지 맞추도록 shift (없으면 패턴 길이만큼)</text>
+    <text class="mono" x="15" y="150" fill="#c0392b" font-weight="bold">주의:</text>
+    <text class="mono" x="65" y="150">불일치 위치가 c의 마지막 출현보다 <tspan font-weight="bold">왼쪽</tspan>이면 역방향 shift가 될 수 있음 → max(1, t₁(c)) 사용</text>
+  </g>
+
+  <!-- Step 2: 휴리스틱 2 - 좋은 서픽스 -->
+  <g transform="translate(30,215)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">2</text>
+    <text class="tb" x="15" y="18">휴리스틱 ② 좋은 서픽스 (Good Suffix) — 이미 일치한 꼬리를 활용</text>
+
+    <rect class="sum" x="0" y="30" width="880" height="165"/>
+    <text class="mono" x="15" y="55">텍스트 일부 "...<tspan fill="#27ae60" font-weight="bold">ER</tspan>..." 가 패턴 끝 "<tspan fill="#27ae60" font-weight="bold">ER</tspan>"와 일치 후, 그 앞 글자에서 불일치</text>
+
+    <g transform="translate(30,65)">
+      <text class="lab" x="0" y="20">T:</text>
+      <rect class="cell" x="30" y="0" width="34" height="28"/><text class="t" x="47" y="20">?</text>
+      <rect class="miss" x="64" y="0" width="34" height="28"/><text class="t" x="81" y="20">X</text>
+      <rect class="hit" x="98" y="0" width="34" height="28"/><text class="t" x="115" y="20">E</text>
+      <rect class="hit" x="132" y="0" width="34" height="28"/><text class="t" x="149" y="20">R</text>
+
+      <text class="lab" x="200" y="20">P:</text>
+      <rect class="cell" x="225" y="0" width="34" height="28"/><text class="t" x="242" y="20">B</text>
+      <rect class="miss" x="259" y="0" width="34" height="28"/><text class="t" x="276" y="20">B</text>
+      <rect class="hit" x="293" y="0" width="34" height="28"/><text class="t" x="310" y="20">E</text>
+      <rect class="hit" x="327" y="0" width="34" height="28"/><text class="t" x="344" y="20">R</text>
+      <text class="lab" x="390" y="20" fill="#27ae60" font-weight="bold">꼬리 "ER" 일치, 그 앞 불일치</text>
+    </g>
+
+    <text class="mono" x="15" y="125" fill="#2e86de" font-weight="bold">규칙:</text>
+    <text class="mono" x="65" y="125">일치한 서픽스 S를 패턴의 왼쪽에서 다시 찾아 맞추도록 shift (없으면 일치하는 접두가 서픽스가 되도록)</text>
+    <text class="mono" x="15" y="150">· 패턴 "BARBER"의 서픽스 "ER"은 왼쪽에 없음 → 대체 규칙: 서픽스의 일부가 접두어와 일치하는지 확인</text>
+    <text class="mono" x="15" y="170">· 패턴 길이만큼 점프 가능 (가장 큰 이득)</text>
+    <text class="mono" x="15" y="188">· 선계산표 t₂[k]: "길이 k의 서픽스가 일치한 뒤 불일치 시" 이동량</text>
+  </g>
+
+  <!-- Step 3: 조합 규칙 -->
+  <g transform="translate(30,420)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
+    <text class="tb" x="15" y="18">조합 규칙 — 두 휴리스틱 중 <tspan fill="#c0392b">더 큰 shift</tspan>를 선택</text>
+
+    <g transform="translate(0,35)">
+      <rect class="cell" x="15" y="0" width="120" height="32"/><text class="th" x="75" y="20">상황</text>
+      <rect class="cell" x="135" y="0" width="240" height="32"/><text class="th" x="255" y="20">t₁(c) — 불일치 문자</text>
+      <rect class="cell" x="375" y="0" width="240" height="32"/><text class="th" x="495" y="20">t₂[k] — 좋은 서픽스</text>
+      <rect class="cell" x="615" y="0" width="240" height="32"/><text class="th" x="735" y="20">최종 shift</text>
+
+      <rect class="step" x="15" y="32" width="120" height="32"/><text class="th" x="75" y="52">k = 0 (즉시)</text>
+      <rect class="step" x="135" y="32" width="240" height="32"/><text class="t" x="255" y="52">max(1, t₁(c))</text>
+      <rect class="step" x="375" y="32" width="240" height="32"/><text class="t" x="495" y="52">(해당 없음)</text>
+      <rect class="step" x="615" y="32" width="240" height="32"/><text class="t" x="735" y="52">max(1, t₁(c))</text>
+
+      <rect class="step" x="15" y="64" width="120" height="32"/><text class="th" x="75" y="84">k ≥ 1 (꼬리 일치)</text>
+      <rect class="step" x="135" y="64" width="240" height="32"/><text class="t" x="255" y="84">max(1, t₁(c) − k)</text>
+      <rect class="step" x="375" y="64" width="240" height="32"/><text class="t" x="495" y="84">t₂[k]</text>
+      <rect class="focus" x="615" y="64" width="240" height="32"/><text class="t" x="735" y="84">max{ max(1, t₁(c)−k), t₂[k] }</text>
+    </g>
+  </g>
+
+  <!-- Step 4: 복잡도 비교 -->
+  <g transform="translate(30,560)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">4</text>
+    <text class="tb" x="15" y="18">복잡도와 비교</text>
+
+    <rect class="sum" x="0" y="30" width="880" height="150"/>
+    <text class="mono" x="15" y="52" fill="#2e86de" font-weight="bold">Brute Force:</text>
+    <text class="mono" x="130" y="52">최악 Θ(nm), 평균 O(n) &#160;— 매번 1칸 shift</text>
+
+    <text class="mono" x="15" y="75" fill="#2e86de" font-weight="bold">Horspool:</text>
+    <text class="mono" x="130" y="75">최악 Θ(nm), 평균 Θ(n) &#160;— 불일치 문자만 사용, 단순</text>
+
+    <text class="mono" x="15" y="98" fill="#27ae60" font-weight="bold">Boyer–Moore:</text>
+    <text class="mono" x="130" y="98">최악 Θ(n), 평균 Θ(n/m) &#160;— 두 휴리스틱 결합, 큰 패턴에 유리</text>
+
+    <text class="lab" x="15" y="130" fill="#c0392b" font-weight="bold">핵심 통찰:</text>
+    <text class="mono" x="100" y="130">패턴이 길수록 (m↑) 한 번 shift로 건너뛰는 문자가 많아짐 → 텍스트의 일부만 검사</text>
+    <text class="mono" x="15" y="150" fill="#2e86de" font-weight="bold">실용: 긴 패턴(m ≥ 10) &amp; 큰 알파벳(영문 텍스트)에서 최고 성능 — grep, 에디터 찾기 기본 알고리즘</text>
+  </g>
+</svg>

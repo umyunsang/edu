@@ -1,43 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 480" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 660" font-family="system-ui,sans-serif">
   <style>
-    .b{fill:#fff7d6;stroke:#d4a017}
-    .g{fill:#e6f7e6;stroke:#27ae60}
-    .r{fill:#eaf2fb;stroke:#2e86de}
-    .a{stroke:#999;fill:none;stroke-width:1.5}
+    .b{fill:#fff2cc;stroke:#f39c12;stroke-width:2}
+    .g{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .r{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.5}
+    .odd{fill:#fde2e2;stroke:#c0392b;stroke-width:1.8}
     .t{font-size:13px;text-anchor:middle;font-family:monospace}
     .th{font-size:14px;text-anchor:middle;font-weight:bold;font-family:monospace}
     .tb{font-size:15px;font-weight:bold}
-    .lab{font-size:13px}
+    .lab{font-size:12px}
+    .arD{stroke:#c0392b;stroke-width:2.5;fill:none;marker-end:url(#rd)}
+    .arU{stroke:#27ae60;stroke-width:2.5;fill:none;marker-end:url(#gn)}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
   </style>
-  <text class="tb" x="390" y="22" text-anchor="middle">빠른 거듭제곱: 2¹³ 을 축소정복으로 계산</text>
-  <text class="lab" x="30" y="46">규칙: n이 짝수면 aⁿ = (aⁿ/²)², n이 홀수면 aⁿ = a · (a^((n-1)/2))². "한 단계마다 지수를 반으로" 줄인다.</text>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+    <marker id="gn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#27ae60"/></marker>
+  </defs>
+  <text class="tb" x="430" y="22" text-anchor="middle">빠른 거듭제곱 (Exponentiation by Squaring): 2¹³ 계산</text>
+  <text class="lab" x="430" y="42" text-anchor="middle">규칙: 짝수 n → aⁿ=(aⁿ/²)² | 홀수 n → aⁿ=a·(a⁽ⁿ⁻¹⁾/²)² | 한 단계마다 지수가 반으로 ⇒ O(log n)</text>
 
-  <!-- 분해 트리 (위에서 아래로) -->
-  <g transform="translate(30,80)">
-    <g><rect class="r" x="260" y="0" width="200" height="40"/><text class="th" x="360" y="25">2¹³ = 2 · (2⁶)²</text></g>
-    <path class="a" d="M360 40 L360 70"/>
+  <!-- Decompose tree (descending, red arrows) -->
+  <text class="tb" x="220" y="75" fill="#c0392b">↓ 분해 (지수를 절반으로)</text>
 
-    <g><rect class="r" x="260" y="70" width="200" height="40"/><text class="th" x="360" y="95">2⁶ = (2³)²</text></g>
-    <path class="a" d="M360 110 L360 140"/>
+  <g transform="translate(130,90)">
+    <rect class="odd" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="28">2¹³ (홀수)</text>
+    <text class="t" x="100" y="42" font-size="11">= 2 · (2⁶)²</text>
+  </g>
+  <path class="arD" d="M230 135 L230 170"/>
+  <text class="lab" x="260" y="155" fill="#c0392b">13 → 6</text>
 
-    <g><rect class="r" x="260" y="140" width="200" height="40"/><text class="th" x="360" y="165">2³ = 2 · (2¹)²</text></g>
-    <path class="a" d="M360 180 L360 210"/>
+  <g transform="translate(130,175)">
+    <rect class="r" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="28">2⁶ (짝수)</text>
+    <text class="t" x="100" y="42" font-size="11">= (2³)²</text>
+  </g>
+  <path class="arD" d="M230 220 L230 255"/>
+  <text class="lab" x="260" y="240" fill="#c0392b">6 → 3</text>
 
-    <g><rect class="g" x="260" y="210" width="200" height="40"/><text class="th" x="360" y="235">2¹ = 2  (바닥 조건)</text></g>
+  <g transform="translate(130,260)">
+    <rect class="odd" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="28">2³ (홀수)</text>
+    <text class="t" x="100" y="42" font-size="11">= 2 · (2¹)²</text>
+  </g>
+  <path class="arD" d="M230 305 L230 340"/>
+  <text class="lab" x="260" y="325" fill="#c0392b">3 → 1</text>
+
+  <g transform="translate(130,345)">
+    <rect class="g" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="28">2¹ = 2</text>
+    <text class="t" x="100" y="42" font-size="11">(바닥 조건)</text>
   </g>
 
-  <!-- 되돌아 올라가며 실제 값 계산 -->
-  <g transform="translate(30,360)">
-    <text class="tb" x="0" y="15">되돌아 올라가며 계산 (덧셈 아니고 곱셈 횟수에 집중):</text>
+  <!-- Recombine (ascending, green arrows) on right -->
+  <text class="tb" x="620" y="75" fill="#27ae60">↑ 재조합 (값 계산)</text>
+
+  <g transform="translate(530,345)">
+    <rect class="g" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="22">2¹ = 2</text>
+    <text class="t" x="100" y="38" font-size="11">곱셈 0회</text>
   </g>
-  <g transform="translate(30,380)" font-family="monospace">
-    <text class="lab" x="0" y="15">2¹ = 2                              (곱셈 0회)</text>
-    <text class="lab" x="0" y="35">2³ = 2 · (2¹)² = 2 · 4 = 8            (곱셈 2회: 2·2, 그리고 그 결과와 2)</text>
-    <text class="lab" x="0" y="55">2⁶ = (2³)² = 8² = 64                 (곱셈 1회)</text>
-    <text class="lab" x="0" y="75">2¹³ = 2 · (2⁶)² = 2 · 4096 = 8192    (곱셈 2회)</text>
+  <path class="arU" d="M630 345 L630 310"/>
+
+  <g transform="translate(530,260)">
+    <rect class="odd" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="22">2³ = 2·(2¹)² = 2·4 = 8</text>
+    <text class="t" x="100" y="38" font-size="11">곱셈 2회 (제곱1 + 홀수1)</text>
+  </g>
+  <path class="arU" d="M630 260 L630 225"/>
+
+  <g transform="translate(530,175)">
+    <rect class="r" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="22">2⁶ = (2³)² = 64</text>
+    <text class="t" x="100" y="38" font-size="11">곱셈 1회 (제곱)</text>
+  </g>
+  <path class="arU" d="M630 175 L630 140"/>
+
+  <g transform="translate(530,90)">
+    <rect class="odd" x="0" y="0" width="200" height="45"/><text class="th" x="100" y="22">2¹³ = 2·(2⁶)² = 2·4096 = 8192</text>
+    <text class="t" x="100" y="38" font-size="11">곱셈 2회</text>
   </g>
 
-  <g transform="translate(30,470)">
-    <text class="lab" x="0" y="0" fill="#c0392b">총 곱셈 ≈ 5회. 무식하게 2를 12번 곱하는 방법(곱셈 12회)보다 훨씬 적다 → O(log n).</text>
+  <!-- Bridge between columns -->
+  <path class="arU" d="M340 368 L530 368" stroke-dasharray="4 3"/>
+  <text class="lab" x="435" y="360" text-anchor="middle" fill="#27ae60" font-weight="bold">역방향 계산 시작</text>
+
+  <!-- Counting badge -->
+  <g transform="translate(30,430)">
+    <rect class="sum" x="0" y="0" width="800" height="110"/>
+    <text class="tb" x="15" y="22">곱셈 횟수 비교</text>
+    <text class="lab" x="15" y="44">• 무식한 방법 (2를 12번 곱함): 곱셈 12회</text>
+    <text class="lab" x="15" y="62" fill="#c0392b" font-weight="bold">• 빠른 거듭제곱: 0 + 2 + 1 + 2 = 5회 ⇒ O(log₂ 13) ≈ 4 수준</text>
+    <text class="lab" x="15" y="82">• 이진수 시각화: 13 = 1101₂ → 비트가 1이면 "곱셈 한 번 더" 추가됨 (홀수 처리와 동일)</text>
+    <text class="lab" x="15" y="100" fill="#2e86de" font-weight="bold">• 활용: RSA 모듈러 거듭제곱 aⁿ mod m — 큰 n(1024-bit)에서 필수</text>
+  </g>
+
+  <!-- Binary trace -->
+  <g transform="translate(30,550)">
+    <rect class="sum" x="0" y="0" width="800" height="100"/>
+    <text class="tb" x="15" y="20">이진수 관점: 13 = 1101₂ — 왼쪽→오른쪽 읽기</text>
+    <text class="lab" x="15" y="40" font-family="monospace">비트 1: result = 1       → result² · 2 = 2        (첫 비트)</text>
+    <text class="lab" x="15" y="58" font-family="monospace">비트 1: result = 2       → 2² · 2 = 8              (홀수)</text>
+    <text class="lab" x="15" y="76" font-family="monospace">비트 0: result = 8       → 8²     = 64             (짝수 → 제곱만)</text>
+    <text class="lab" x="15" y="94" font-family="monospace" fill="#c0392b" font-weight="bold">비트 1: result = 64      → 64² · 2 = 8192          ✓ 정답</text>
   </g>
 </svg>

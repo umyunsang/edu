@@ -1,84 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="system-ui,sans-serif">
-  <style>.c{fill:#fff;stroke:#2c3e50}.cnt{fill:#eaf2fb;stroke:#2e86de}.cum{fill:#fff7d6;stroke:#d4a017}.out{fill:#e6f7e6;stroke:#27ae60}.t{font-size:13px;text-anchor:middle}.lab{font-size:13px}.tb{font-size:14px;font-weight:bold}</style>
-  <text class="tb" x="380" y="22" text-anchor="middle">계수 정렬: 같은 숫자가 몇 번 나왔는지 "세는" 비교-없는 정렬</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" font-family="system-ui,sans-serif">
+  <style>
+    .c{fill:#fff;stroke:#2c3e50;stroke-width:1.3}
+    .cnt{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.3}
+    .cum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.3}
+    .out{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.3}
+    .focus{fill:#fff2cc;stroke:#f39c12;stroke-width:2.5}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .lab{font-size:12px}
+    .tb{font-size:14px;font-weight:bold}
+    .idx{font-size:11px;text-anchor:middle;fill:#666}
+    .ar{stroke:#c0392b;stroke-width:2;fill:none;marker-end:url(#rd)}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+  <text class="tb" x="390" y="22" text-anchor="middle">계수 정렬: 비교 없이 "몇 번 나왔는지"만 세면 O(n+k)</text>
+  <text class="lab" x="390" y="42" text-anchor="middle">입력 [3,1,4,1,5,9,2,6,5,3,5] — 값 범위 0~9, n=11, k=10</text>
 
-  <g transform="translate(40,50)">
-    <text class="lab" x="0" y="15">입력 A</text>
-    <g><rect class="c" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">3</text></g>
-    <g><rect class="c" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">1</text></g>
-    <g><rect class="c" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">4</text></g>
-    <g><rect class="c" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">1</text></g>
-    <g><rect class="c" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">5</text></g>
-    <g><rect class="c" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">9</text></g>
-    <g><rect class="c" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">2</text></g>
-    <g><rect class="c" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">6</text></g>
-    <g><rect class="c" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">5</text></g>
-    <g><rect class="c" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">3</text></g>
-    <g><rect class="c" x="520" y="0" width="44" height="36"/><text class="t" x="542" y="24">5</text></g>
-    <text class="lab" x="600" y="22">값의 범위: 0~9</text>
+  <!-- Step 1: Input -->
+  <g transform="translate(40,60)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">1</text>
+    <text class="tb" x="15" y="18">입력 배열 A — 그대로 한 번 훑는다</text>
+    <g transform="translate(80,30)">
+      <rect class="c" x="0" y="0" width="44" height="36"/><text class="t" x="22" y="24">3</text>
+      <rect class="c" x="44" y="0" width="44" height="36"/><text class="t" x="66" y="24">1</text>
+      <rect class="c" x="88" y="0" width="44" height="36"/><text class="t" x="110" y="24">4</text>
+      <rect class="c" x="132" y="0" width="44" height="36"/><text class="t" x="154" y="24">1</text>
+      <rect class="c" x="176" y="0" width="44" height="36"/><text class="t" x="198" y="24">5</text>
+      <rect class="c" x="220" y="0" width="44" height="36"/><text class="t" x="242" y="24">9</text>
+      <rect class="c" x="264" y="0" width="44" height="36"/><text class="t" x="286" y="24">2</text>
+      <rect class="c" x="308" y="0" width="44" height="36"/><text class="t" x="330" y="24">6</text>
+      <rect class="c" x="352" y="0" width="44" height="36"/><text class="t" x="374" y="24">5</text>
+      <rect class="c" x="396" y="0" width="44" height="36"/><text class="t" x="418" y="24">3</text>
+      <rect class="c" x="440" y="0" width="44" height="36"/><text class="t" x="462" y="24">5</text>
+    </g>
   </g>
 
-  <g transform="translate(40,110)">
-    <text class="lab" x="0" y="15">1단계 Count</text>
-    <text class="t" x="102" y="-2">0</text>
-    <text class="t" x="146" y="-2">1</text>
-    <text class="t" x="190" y="-2">2</text>
-    <text class="t" x="234" y="-2">3</text>
-    <text class="t" x="278" y="-2">4</text>
-    <text class="t" x="322" y="-2">5</text>
-    <text class="t" x="366" y="-2">6</text>
-    <text class="t" x="410" y="-2">7</text>
-    <text class="t" x="454" y="-2">8</text>
-    <text class="t" x="498" y="-2">9</text>
-    <g><rect class="cnt" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">0</text></g>
-    <g><rect class="cnt" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">2</text></g>
-    <g><rect class="cnt" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">1</text></g>
-    <g><rect class="cnt" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">2</text></g>
-    <g><rect class="cnt" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">1</text></g>
-    <g><rect class="cnt" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">3</text></g>
-    <g><rect class="cnt" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">1</text></g>
-    <g><rect class="cnt" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">0</text></g>
-    <g><rect class="cnt" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">0</text></g>
-    <g><rect class="cnt" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">1</text></g>
-    <text class="lab" x="560" y="22">각 값이 몇 번?</text>
+  <path class="ar" d="M390 120 L390 150"/>
+  <text class="lab" x="410" y="140" fill="#c0392b">"몇 번?" 카운트</text>
+
+  <!-- Step 2: Count -->
+  <g transform="translate(40,155)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">2</text>
+    <text class="tb" x="15" y="18">Count 배열 — 각 값의 출현 횟수</text>
+    <g transform="translate(80,30)">
+      <text class="idx" x="22" y="-4">v=0</text><rect class="cnt" x="0" y="0" width="44" height="36"/><text class="t" x="22" y="24">0</text>
+      <text class="idx" x="66" y="-4">v=1</text><rect class="cnt" x="44" y="0" width="44" height="36"/><text class="t" x="66" y="24">2</text>
+      <text class="idx" x="110" y="-4">v=2</text><rect class="cnt" x="88" y="0" width="44" height="36"/><text class="t" x="110" y="24">1</text>
+      <text class="idx" x="154" y="-4">v=3</text><rect class="cnt" x="132" y="0" width="44" height="36"/><text class="t" x="154" y="24">2</text>
+      <text class="idx" x="198" y="-4">v=4</text><rect class="cnt" x="176" y="0" width="44" height="36"/><text class="t" x="198" y="24">1</text>
+      <text class="idx" x="242" y="-4">v=5</text><rect class="focus" x="220" y="0" width="44" height="36"/><text class="t" x="242" y="24">3</text>
+      <text class="idx" x="286" y="-4">v=6</text><rect class="cnt" x="264" y="0" width="44" height="36"/><text class="t" x="286" y="24">1</text>
+      <text class="idx" x="330" y="-4">v=7</text><rect class="cnt" x="308" y="0" width="44" height="36"/><text class="t" x="330" y="24">0</text>
+      <text class="idx" x="374" y="-4">v=8</text><rect class="cnt" x="352" y="0" width="44" height="36"/><text class="t" x="374" y="24">0</text>
+      <text class="idx" x="418" y="-4">v=9</text><rect class="cnt" x="396" y="0" width="44" height="36"/><text class="t" x="418" y="24">1</text>
+    </g>
+    <text class="lab" x="570" y="50" fill="#f39c12" font-weight="bold">5가 3번 등장 ✓</text>
   </g>
 
-  <g transform="translate(40,180)">
-    <text class="lab" x="0" y="15">2단계 누적합</text>
-    <g><rect class="cum" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">0</text></g>
-    <g><rect class="cum" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">2</text></g>
-    <g><rect class="cum" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">3</text></g>
-    <g><rect class="cum" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">5</text></g>
-    <g><rect class="cum" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">6</text></g>
-    <g><rect class="cum" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">9</text></g>
-    <g><rect class="cum" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">10</text></g>
-    <g><rect class="cum" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">10</text></g>
-    <g><rect class="cum" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">10</text></g>
-    <g><rect class="cum" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">11</text></g>
-    <text class="lab" x="560" y="22">"값 v 이하 개수"</text>
+  <path class="ar" d="M390 230 L390 260"/>
+  <text class="lab" x="410" y="250" fill="#c0392b">"이하 몇 개?" 누적</text>
+
+  <!-- Step 3: Cumulative -->
+  <g transform="translate(40,265)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
+    <text class="tb" x="15" y="18">누적합 배열 — C[v]는 "값 v 이하"의 개수 (= v의 끝자리 인덱스+1)</text>
+    <g transform="translate(80,35)">
+      <rect class="cum" x="0" y="0" width="44" height="36"/><text class="t" x="22" y="24">0</text>
+      <rect class="cum" x="44" y="0" width="44" height="36"/><text class="t" x="66" y="24">2</text>
+      <rect class="cum" x="88" y="0" width="44" height="36"/><text class="t" x="110" y="24">3</text>
+      <rect class="cum" x="132" y="0" width="44" height="36"/><text class="t" x="154" y="24">5</text>
+      <rect class="cum" x="176" y="0" width="44" height="36"/><text class="t" x="198" y="24">6</text>
+      <rect class="focus" x="220" y="0" width="44" height="36"/><text class="t" x="242" y="24">9</text>
+      <rect class="cum" x="264" y="0" width="44" height="36"/><text class="t" x="286" y="24">10</text>
+      <rect class="cum" x="308" y="0" width="44" height="36"/><text class="t" x="330" y="24">10</text>
+      <rect class="cum" x="352" y="0" width="44" height="36"/><text class="t" x="374" y="24">10</text>
+      <rect class="cum" x="396" y="0" width="44" height="36"/><text class="t" x="418" y="24">11</text>
+    </g>
+    <text class="lab" x="15" y="95" fill="#f39c12">C[5]=9 → "5 이하 값이 9개" → 마지막 5는 output[8] 위치에 배치</text>
   </g>
 
-  <g transform="translate(40,240)">
-    <text class="lab" x="0" y="15">3단계 출력</text>
-    <g><rect class="out" x="80" y="0" width="44" height="36"/><text class="t" x="102" y="24">1</text></g>
-    <g><rect class="out" x="124" y="0" width="44" height="36"/><text class="t" x="146" y="24">1</text></g>
-    <g><rect class="out" x="168" y="0" width="44" height="36"/><text class="t" x="190" y="24">2</text></g>
-    <g><rect class="out" x="212" y="0" width="44" height="36"/><text class="t" x="234" y="24">3</text></g>
-    <g><rect class="out" x="256" y="0" width="44" height="36"/><text class="t" x="278" y="24">3</text></g>
-    <g><rect class="out" x="300" y="0" width="44" height="36"/><text class="t" x="322" y="24">4</text></g>
-    <g><rect class="out" x="344" y="0" width="44" height="36"/><text class="t" x="366" y="24">5</text></g>
-    <g><rect class="out" x="388" y="0" width="44" height="36"/><text class="t" x="410" y="24">5</text></g>
-    <g><rect class="out" x="432" y="0" width="44" height="36"/><text class="t" x="454" y="24">5</text></g>
-    <g><rect class="out" x="476" y="0" width="44" height="36"/><text class="t" x="498" y="24">6</text></g>
-    <g><rect class="out" x="520" y="0" width="44" height="36"/><text class="t" x="542" y="24">9</text></g>
-    <text class="lab" x="600" y="22">정렬 완료</text>
+  <path class="ar" d="M390 355 L390 385"/>
+  <text class="lab" x="410" y="375" fill="#c0392b">A를 뒤→앞 스캔하며 배치 (stable)</text>
+
+  <!-- Step 4: Output -->
+  <g transform="translate(40,390)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">4</text>
+    <text class="tb" x="15" y="18">출력 배열 — 누적합을 인덱스로 사용</text>
+    <g transform="translate(80,30)">
+      <rect class="out" x="0" y="0" width="44" height="36"/><text class="t" x="22" y="24">1</text>
+      <rect class="out" x="44" y="0" width="44" height="36"/><text class="t" x="66" y="24">1</text>
+      <rect class="out" x="88" y="0" width="44" height="36"/><text class="t" x="110" y="24">2</text>
+      <rect class="out" x="132" y="0" width="44" height="36"/><text class="t" x="154" y="24">3</text>
+      <rect class="out" x="176" y="0" width="44" height="36"/><text class="t" x="198" y="24">3</text>
+      <rect class="out" x="220" y="0" width="44" height="36"/><text class="t" x="242" y="24">4</text>
+      <rect class="out" x="264" y="0" width="44" height="36"/><text class="t" x="286" y="24">5</text>
+      <rect class="out" x="308" y="0" width="44" height="36"/><text class="t" x="330" y="24">5</text>
+      <rect class="out" x="352" y="0" width="44" height="36"/><text class="t" x="374" y="24">5</text>
+      <rect class="out" x="396" y="0" width="44" height="36"/><text class="t" x="418" y="24">6</text>
+      <rect class="out" x="440" y="0" width="44" height="36"/><text class="t" x="462" y="24">9</text>
+    </g>
+    <text class="idx" x="102" y="90">0</text>
+    <text class="idx" x="146" y="90">1</text>
+    <text class="idx" x="190" y="90">2</text>
+    <text class="idx" x="234" y="90">3</text>
+    <text class="idx" x="278" y="90">4</text>
+    <text class="idx" x="322" y="90">5</text>
+    <text class="idx" x="366" y="90">6</text>
+    <text class="idx" x="410" y="90">7</text>
+    <text class="idx" x="454" y="90">8</text>
+    <text class="idx" x="498" y="90">9</text>
+    <text class="idx" x="542" y="90">10</text>
+    <text class="lab" x="570" y="30" fill="#27ae60" font-weight="bold">정렬 완료 ✓</text>
   </g>
 
-  <g transform="translate(40,310)">
-    <text class="tb" x="0" y="15">복잡도:</text>
-    <text class="lab" x="70" y="15">O(n + k) — n은 원소 수, k는 값 범위. 비교를 하지 않으므로 Ω(n log n) 하한을 벗어남.</text>
-    <text class="lab" x="0" y="35">조건(중요): 값이 작은 정수(또는 자연수)여야 함. k가 n보다 훨씬 크면 오히려 비효율.</text>
-    <text class="lab" x="0" y="55">아이디어: "세어서 자리를 지정"하는 입력 강화(preprocessing) 기법의 대표 예.</text>
-    <text class="lab" x="0" y="75">안정정렬(stable): 누적합을 이용해 뒤에서 앞으로 배치하면 원래 순서가 보존됨.</text>
+  <!-- Summary -->
+  <g transform="translate(30,495)">
+    <rect class="sum" x="0" y="0" width="720" height="60"/>
+    <text class="tb" x="15" y="22">복잡도 Θ(n+k), 비교-없는 정렬 ⇒ Ω(n log n) 하한을 벗어남</text>
+    <text class="lab" x="15" y="42" fill="#c0392b" font-weight="bold">조건: 값이 작은 정수. k≫n이면 비효율. 안정(stable) — 누적합으로 뒤부터 배치하면 원순서 보존</text>
   </g>
 </svg>

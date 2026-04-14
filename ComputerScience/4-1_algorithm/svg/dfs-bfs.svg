@@ -1,52 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="system-ui,sans-serif">
-  <style>.n{fill:#fff;stroke:#2c3e50;stroke-width:1.5}.v{fill:#ffe4b3;stroke:#e67e22}.e{stroke:#888;stroke-width:1.5}.t{font-size:14px;text-anchor:middle;font-weight:bold}.lab{font-size:13px}.tb{font-size:15px;font-weight:bold}</style>
-  <text class="tb" x="200" y="22" text-anchor="middle">DFS (깊이 우선) — 스택 / 재귀</text>
-  <text class="tb" x="620" y="22" text-anchor="middle">BFS (너비 우선) — 큐</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="system-ui,sans-serif">
+  <style>
+    .n{fill:#fff;stroke:#2c3e50;stroke-width:1.5}
+    .v{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .cur{fill:#fff2cc;stroke:#f39c12;stroke-width:3}
+    .e{stroke:#888;stroke-width:1.5}
+    .t{font-size:13px;text-anchor:middle;font-weight:bold}
+    .order{font-size:12px;text-anchor:middle;fill:#c0392b;font-weight:bold}
+    .lab{font-size:12px}
+    .tb{font-size:15px;font-weight:bold}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .cell{fill:#eaf2fb;stroke:#2e86de;font-family:monospace}
+    .cellR{fill:#fde2e2;stroke:#c0392b;font-family:monospace}
+    .ct{font-size:12px;text-anchor:middle;font-family:monospace}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+  <text class="tb" x="225" y="22" text-anchor="middle">DFS (깊이 우선) — 스택 / 재귀</text>
+  <text class="tb" x="675" y="22" text-anchor="middle">BFS (너비 우선) — 큐</text>
 
-  <!-- DFS -->
+  <!-- DFS tree -->
   <g transform="translate(60,40)">
-    <line class="e" x1="150" y1="30" x2="80" y2="100"/>
-    <line class="e" x1="150" y1="30" x2="220" y2="100"/>
-    <line class="e" x1="80" y1="100" x2="40" y2="180"/>
-    <line class="e" x1="80" y1="100" x2="130" y2="180"/>
-    <line class="e" x1="220" y1="100" x2="180" y2="180"/>
-    <line class="e" x1="220" y1="100" x2="270" y2="180"/>
-    <circle class="v" cx="150" cy="30" r="22"/><text class="t" x="150" y="35">A¹</text>
-    <circle class="v" cx="80" cy="100" r="22"/><text class="t" x="80" y="105">B²</text>
-    <circle class="n" cx="220" cy="100" r="22"/><text class="t" x="220" y="105">C⁵</text>
-    <circle class="v" cx="40" cy="180" r="22"/><text class="t" x="40" y="185">D³</text>
-    <circle class="n" cx="130" cy="180" r="22"/><text class="t" x="130" y="185">E⁴</text>
-    <circle class="n" cx="180" cy="180" r="22"/><text class="t" x="180" y="185">F⁶</text>
-    <circle class="n" cx="270" cy="180" r="22"/><text class="t" x="270" y="185">G⁷</text>
-    <text class="lab" x="20" y="240">방문 순서: A → B → D → E → C → F → G</text>
-    <text class="lab" x="20" y="260">한쪽 끝까지 내려갔다가 막히면 되돌아감</text>
-    <text class="lab" x="20" y="280">스택 변화: [A] → [A,B] → [A,B,D] → [A,B,E] → [A,C] → [A,C,F]...</text>
+    <line class="e" x1="180" y1="40" x2="100" y2="120"/>
+    <line class="e" x1="180" y1="40" x2="260" y2="120"/>
+    <line class="e" x1="100" y1="120" x2="50" y2="200"/>
+    <line class="e" x1="100" y1="120" x2="150" y2="200"/>
+    <line class="e" x1="260" y1="120" x2="210" y2="200"/>
+    <line class="e" x1="260" y1="120" x2="310" y2="200"/>
+    <circle class="v" cx="180" cy="40" r="22"/><text class="t" x="180" y="45">A</text><text class="order" x="180" y="12">1</text>
+    <circle class="v" cx="100" cy="120" r="22"/><text class="t" x="100" y="125">B</text><text class="order" x="70" y="112">2</text>
+    <circle class="v" cx="260" cy="120" r="22"/><text class="t" x="260" y="125">C</text><text class="order" x="290" y="112">5</text>
+    <circle class="v" cx="50" cy="200" r="22"/><text class="t" x="50" y="205">D</text><text class="order" x="50" y="172">3</text>
+    <circle class="v" cx="150" cy="200" r="22"/><text class="t" x="150" y="205">E</text><text class="order" x="150" y="172">4</text>
+    <circle class="v" cx="210" cy="200" r="22"/><text class="t" x="210" y="205">F</text><text class="order" x="210" y="172">6</text>
+    <circle class="v" cx="310" cy="200" r="22"/><text class="t" x="310" y="205">G</text><text class="order" x="310" y="172">7</text>
+    <text class="lab" x="20" y="260" fill="#c0392b" font-weight="bold">방문 순서: A → B → D → E → C → F → G</text>
+    <text class="lab" x="20" y="278">"한 방향으로 끝까지, 막히면 백트랙"</text>
   </g>
 
-  <!-- BFS -->
-  <g transform="translate(480,40)">
-    <line class="e" x1="150" y1="30" x2="80" y2="100"/>
-    <line class="e" x1="150" y1="30" x2="220" y2="100"/>
-    <line class="e" x1="80" y1="100" x2="40" y2="180"/>
-    <line class="e" x1="80" y1="100" x2="130" y2="180"/>
-    <line class="e" x1="220" y1="100" x2="180" y2="180"/>
-    <line class="e" x1="220" y1="100" x2="270" y2="180"/>
-    <circle class="v" cx="150" cy="30" r="22"/><text class="t" x="150" y="35">A¹</text>
-    <circle class="v" cx="80" cy="100" r="22"/><text class="t" x="80" y="105">B²</text>
-    <circle class="v" cx="220" cy="100" r="22"/><text class="t" x="220" y="105">C³</text>
-    <circle class="n" cx="40" cy="180" r="22"/><text class="t" x="40" y="185">D⁴</text>
-    <circle class="n" cx="130" cy="180" r="22"/><text class="t" x="130" y="185">E⁵</text>
-    <circle class="n" cx="180" cy="180" r="22"/><text class="t" x="180" y="185">F⁶</text>
-    <circle class="n" cx="270" cy="180" r="22"/><text class="t" x="270" y="185">G⁷</text>
-    <text class="lab" x="20" y="240">방문 순서: A → B → C → D → E → F → G</text>
-    <text class="lab" x="20" y="260">레벨(거리) 순서대로 퍼져 나감</text>
-    <text class="lab" x="20" y="280">큐 변화: [A] → [B,C] → [C,D,E] → [D,E,F,G] → [E,F,G]...</text>
+  <!-- DFS stack evolution -->
+  <g transform="translate(60,320)">
+    <text class="tb" x="0" y="15">스택 변화 (push=내려가기 / pop=백트랙)</text>
+    <g transform="translate(0,25)">
+      <rect class="cell" x="0" y="0" width="50" height="28"/><text class="ct" x="25" y="19">A</text>
+      <rect class="cell" x="60" y="0" width="50" height="28"/><text class="ct" x="85" y="19">A,B</text>
+      <rect class="cell" x="120" y="0" width="60" height="28"/><text class="ct" x="150" y="19">A,B,D</text>
+      <rect class="cellR" x="190" y="0" width="60" height="28"/><text class="ct" x="220" y="19">A,B pop D</text>
+      <rect class="cell" x="260" y="0" width="60" height="28"/><text class="ct" x="290" y="19">A,B,E</text>
+      <rect class="cellR" x="330" y="0" width="50" height="28"/><text class="ct" x="355" y="19">A pop</text>
+    </g>
+    <text class="lab" x="0" y="75">계속 이어짐: [A,C] → [A,C,F] → [A,C,G] → ...</text>
   </g>
 
-  <g transform="translate(40,320)">
-    <text class="tb" x="0" y="15">비교:</text>
-    <text class="lab" x="60" y="15">DFS — 미로에서 한 방향으로 끝까지 가본 뒤 돌아오는 방식. 경로 존재성·사이클 검사·위상정렬에 유리.</text>
-    <text class="lab" x="60" y="35">BFS — 한 발자국씩 모든 방향을 동시에. 가중치 없는 그래프의 "최단 경로"에 유리.</text>
-    <text class="lab" x="60" y="55">둘 다 시간 복잡도 O(V+E). V=정점 수, E=간선 수.</text>
+  <!-- BFS tree -->
+  <g transform="translate(510,40)">
+    <line class="e" x1="180" y1="40" x2="100" y2="120"/>
+    <line class="e" x1="180" y1="40" x2="260" y2="120"/>
+    <line class="e" x1="100" y1="120" x2="50" y2="200"/>
+    <line class="e" x1="100" y1="120" x2="150" y2="200"/>
+    <line class="e" x1="260" y1="120" x2="210" y2="200"/>
+    <line class="e" x1="260" y1="120" x2="310" y2="200"/>
+    <circle class="v" cx="180" cy="40" r="22"/><text class="t" x="180" y="45">A</text><text class="order" x="180" y="12">1</text>
+    <circle class="v" cx="100" cy="120" r="22"/><text class="t" x="100" y="125">B</text><text class="order" x="70" y="112">2</text>
+    <circle class="v" cx="260" cy="120" r="22"/><text class="t" x="260" y="125">C</text><text class="order" x="290" y="112">3</text>
+    <circle class="v" cx="50" cy="200" r="22"/><text class="t" x="50" y="205">D</text><text class="order" x="50" y="172">4</text>
+    <circle class="v" cx="150" cy="200" r="22"/><text class="t" x="150" y="205">E</text><text class="order" x="150" y="172">5</text>
+    <circle class="v" cx="210" cy="200" r="22"/><text class="t" x="210" y="205">F</text><text class="order" x="210" y="172">6</text>
+    <circle class="v" cx="310" cy="200" r="22"/><text class="t" x="310" y="205">G</text><text class="order" x="310" y="172">7</text>
+    <text class="lab" x="20" y="260" fill="#c0392b" font-weight="bold">방문 순서: A → B → C → D → E → F → G</text>
+    <text class="lab" x="20" y="278">"레벨 0 → 레벨 1 → 레벨 2 (동시 전진)"</text>
+    <text class="lab" x="20" y="296" fill="#2e86de">거리: A=0, B/C=1, D/E/F/G=2</text>
+  </g>
+
+  <!-- BFS queue evolution -->
+  <g transform="translate(510,320)">
+    <text class="tb" x="0" y="15">큐 변화 (enqueue 뒤 / dequeue 앞)</text>
+    <g transform="translate(0,25)">
+      <rect class="cell" x="0" y="0" width="40" height="28"/><text class="ct" x="20" y="19">A</text>
+      <rect class="cell" x="50" y="0" width="55" height="28"/><text class="ct" x="77" y="19">B,C</text>
+      <rect class="cell" x="115" y="0" width="70" height="28"/><text class="ct" x="150" y="19">C,D,E</text>
+      <rect class="cell" x="195" y="0" width="80" height="28"/><text class="ct" x="235" y="19">D,E,F,G</text>
+      <rect class="cellR" x="285" y="0" width="70" height="28"/><text class="ct" x="320" y="19">E,F,G</text>
+    </g>
+    <text class="lab" x="0" y="75">앞에서 꺼내 확장 → 뒤에 추가. "최단 거리" 보장</text>
+  </g>
+
+  <!-- Comparison table -->
+  <g transform="translate(30,430)">
+    <rect class="sum" x="0" y="0" width="840" height="180"/>
+    <text class="tb" x="15" y="22">DFS vs BFS 요약</text>
+    <line x1="15" y1="32" x2="825" y2="32" stroke="#d4a017"/>
+    <text class="lab" x="15" y="52" font-weight="bold">항목</text>
+    <text class="lab" x="180" y="52" font-weight="bold" fill="#c0392b">DFS (깊이 우선)</text>
+    <text class="lab" x="520" y="52" font-weight="bold" fill="#2e86de">BFS (너비 우선)</text>
+
+    <text class="lab" x="15" y="75">자료구조</text>
+    <text class="lab" x="180" y="75">스택 (또는 재귀 호출)</text>
+    <text class="lab" x="520" y="75">큐 (FIFO)</text>
+
+    <text class="lab" x="15" y="95">탐색 순서</text>
+    <text class="lab" x="180" y="95">한 경로 끝까지 → 백트랙</text>
+    <text class="lab" x="520" y="95">레벨 단위로 동시 확장</text>
+
+    <text class="lab" x="15" y="115">주요 용도</text>
+    <text class="lab" x="180" y="115">사이클·연결성·위상정렬·백트래킹</text>
+    <text class="lab" x="520" y="115">가중치 없는 최단경로, 레벨 기반</text>
+
+    <text class="lab" x="15" y="135">공간</text>
+    <text class="lab" x="180" y="135">O(V) — 재귀 깊이만큼</text>
+    <text class="lab" x="520" y="135">O(V) — 한 레벨 크기</text>
+
+    <text class="lab" x="15" y="160" fill="#c0392b" font-weight="bold">공통: 시간 O(V+E), 방문 체크 필수. 인접리스트 권장.</text>
   </g>
 </svg>

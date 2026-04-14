@@ -10,7 +10,7 @@
     .lab{font-size:13px}
     .note{font-size:12px}
   </style>
-  <text class="tb" x="410" y="22" text-anchor="middle">감마 보정: $I_{out} = 255 (I_{in}/255)^γ$</text>
+  <text class="tb" x="410" y="22" text-anchor="middle">감마 보정: I<tspan font-size="11" baseline-shift="sub">out</tspan> = 255 · (I<tspan font-size="11" baseline-shift="sub">in</tspan>/255)<tspan font-size="11" baseline-shift="super">γ</tspan></text>
   <text class="lab" x="30" y="46">세 곡선은 같은 사진을 γ 값만 바꿔 돌렸을 때의 입출력 관계. 가로축=원본 밝기, 세로축=보정 후 밝기.</text>
 
   <!-- Axes -->
