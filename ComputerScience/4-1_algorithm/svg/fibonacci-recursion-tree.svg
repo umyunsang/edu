@@ -61,8 +61,8 @@
 
   <circle class="dup" cx="40" cy="310" r="22"/><text class="t" x="40" y="314">F(2)</text><text class="order" x="18" y="296">#4</text>
   <circle class="leaf" cx="130" cy="310" r="22"/><text class="t" x="130" y="314">F(1)</text><text class="order" x="155" y="296">#7</text>
-  <circle class="leaf" cx="230" cy="310" r="22"/><text class="t" x="230" y="314">F(1)</text><text class="order" x="208" y="296">#9a</text>
-  <circle class="leaf" cx="290" cy="310" r="22"/><text class="t" x="290" y="314">F(0)</text><text class="order" x="314" y="296">#9b</text>
+  <circle class="leaf" cx="230" cy="310" r="22"/><text class="t" x="230" y="314">F(1)</text><text class="order" x="195" y="340">#9a</text>
+  <circle class="leaf" cx="290" cy="310" r="22"/><text class="t" x="290" y="314">F(0)</text><text class="order" x="325" y="340">#9b</text>
   <circle class="leaf" cx="345" cy="310" r="22"/><text class="t" x="345" y="314">F(1)</text>
   <circle class="leaf" cx="405" cy="310" r="22"/><text class="t" x="405" y="314">F(0)</text>
 
@@ -103,10 +103,10 @@
   <g transform="translate(555,270)">
     <rect class="memo" x="0" y="0" width="340" height="100"/>
     <text class="tb" x="10" y="20" fill="#2e86de" font-size="13">상향식 DP 의사코드</text>
-    <text class="t" x="10" y="40" text-anchor="start" font-size="11">memo[0]=0; memo[1]=1;</text>
-    <text class="t" x="10" y="58" text-anchor="start" font-size="11">for i = 2 to n:</text>
-    <text class="t" x="10" y="76" text-anchor="start" font-size="11">  memo[i] = memo[i-1] + memo[i-2]</text>
-    <text class="t" x="10" y="94" text-anchor="start" font-size="11">return memo[n]</text>
+    <text x="10" y="40" font-size="11" font-family="monospace" font-weight="bold" text-anchor="start">memo[0]=0; memo[1]=1;</text>
+    <text x="10" y="58" font-size="11" font-family="monospace" font-weight="bold" text-anchor="start">for i = 2 to n:</text>
+    <text x="10" y="76" font-size="11" font-family="monospace" font-weight="bold" text-anchor="start">  memo[i] = memo[i-1] + memo[i-2]</text>
+    <text x="10" y="94" font-size="11" font-family="monospace" font-weight="bold" text-anchor="start">return memo[n]</text>
   </g>
 
   <!-- Count badge panel -->

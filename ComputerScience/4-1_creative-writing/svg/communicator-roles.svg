@@ -47,7 +47,7 @@
   <!-- Bottom insight -->
   <g>
     <rect x="60" y="510" width="980" height="190" fill="#fde2e2" stroke="#c0392b"/>
-    <text class="sub" x="80" y="545" text-anchor="start">역할별 문서 예시 — 시험 단골</text>
+    <text x="80" y="545" font-size="15px" font-weight="bold" text-anchor="start">역할별 문서 예시 — 시험 단골</text>
     <text class="lab" x="80" y="580">• 보고서1 (시간 순차성): 언제 · 무엇을 했는가 — 실무자 일일 보고</text>
     <text class="lab" x="80" y="610">• 보고서3 (해결책/원인/결과): 문제-원인-해결책 3단계 — 중간관리자 분석 보고</text>
     <text class="lab" x="80" y="640">• 한 장 보고서 (레이건 · 처칠 PREP): 결론부터 제시 — 경영자용 설득 문서</text>

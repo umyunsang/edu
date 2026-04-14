@@ -81,15 +81,15 @@
     <text class="th" x="135" y="22" fill="#c0392b">Case 1: 분할 지배</text>
     <line x1="10" y1="32" x2="260" y2="32" stroke="#c0392b"/>
     <text class="tb" x="15" y="52" font-size="12">조건</text>
-    <text class="mono" x="15" y="72">f(n) = O(n^(c-ε)), ε &gt; 0</text>
-    <text class="note" x="15" y="90">→ f가 n^c보다 엄격히 작음</text>
+    <text class="mono" x="135" y="72" text-anchor="middle">f(n) = O(n^(c-ε)), ε &gt; 0</text>
+    <text class="note" x="135" y="90" text-anchor="middle">→ f가 n^c보다 엄격히 작음</text>
     <text class="tb" x="15" y="115" font-size="12">결과</text>
-    <text class="mono" x="15" y="135" fill="#c0392b" font-weight="bold">T(n) = Θ(n^c)</text>
+    <text class="mono" x="135" y="135" text-anchor="middle" fill="#c0392b" font-weight="bold">T(n) = Θ(n^c)</text>
     <text class="tb" x="15" y="160" font-size="12">예제</text>
-    <text class="mono" x="15" y="178">T(n) = 2T(n/2) + 1</text>
-    <text class="note" x="15" y="196">a=2, b=2, c=log₂2=1</text>
-    <text class="note" x="15" y="212">f(n)=O(1)=O(n^0) &lt; n¹</text>
-    <text class="mono" x="15" y="232" fill="#c0392b" font-weight="bold">⇒ Θ(n)</text>
+    <text class="mono" x="135" y="178" text-anchor="middle">T(n) = 2T(n/2) + 1</text>
+    <text class="note" x="135" y="196" text-anchor="middle">a=2, b=2, c=log₂2=1</text>
+    <text class="note" x="135" y="212" text-anchor="middle">f(n)=O(1)=O(n^0) &lt; n¹</text>
+    <text class="mono" x="135" y="232" text-anchor="middle" fill="#c0392b" font-weight="bold">⇒ Θ(n)</text>
   </g>
 
   <!-- Case 2 -->
@@ -98,15 +98,15 @@
     <text class="th" x="135" y="22" fill="#27ae60">Case 2: 균등 (가장 흔함)</text>
     <line x1="10" y1="32" x2="260" y2="32" stroke="#27ae60"/>
     <text class="tb" x="15" y="52" font-size="12">조건</text>
-    <text class="mono" x="15" y="72">f(n) = Θ(n^c · log^k n)</text>
-    <text class="note" x="15" y="90">→ f와 n^c가 같은 차수</text>
+    <text class="mono" x="135" y="72" text-anchor="middle">f(n) = Θ(n^c · log^k n)</text>
+    <text class="note" x="135" y="90" text-anchor="middle">→ f와 n^c가 같은 차수</text>
     <text class="tb" x="15" y="115" font-size="12">결과</text>
-    <text class="mono" x="15" y="135" fill="#27ae60" font-weight="bold">T(n) = Θ(n^c · log^(k+1) n)</text>
+    <text class="mono" x="135" y="135" text-anchor="middle" fill="#27ae60" font-weight="bold">T(n) = Θ(n^c · log^(k+1) n)</text>
     <text class="tb" x="15" y="160" font-size="12">예제 (병합정렬)</text>
-    <text class="mono" x="15" y="178">T(n) = 2T(n/2) + n</text>
-    <text class="note" x="15" y="196">a=2, b=2, c=1, k=0</text>
-    <text class="note" x="15" y="212">f(n)=Θ(n¹·log⁰n)</text>
-    <text class="mono" x="15" y="232" fill="#27ae60" font-weight="bold">⇒ Θ(n log n)</text>
+    <text class="mono" x="135" y="178" text-anchor="middle">T(n) = 2T(n/2) + n</text>
+    <text class="note" x="135" y="196" text-anchor="middle">a=2, b=2, c=1, k=0</text>
+    <text class="note" x="135" y="212" text-anchor="middle">f(n)=Θ(n¹·log⁰n)</text>
+    <text class="mono" x="135" y="232" text-anchor="middle" fill="#27ae60" font-weight="bold">⇒ Θ(n log n)</text>
   </g>
 
   <!-- Case 3 -->
@@ -115,15 +115,15 @@
     <text class="th" x="135" y="22" fill="#2e86de">Case 3: 결합 지배</text>
     <line x1="10" y1="32" x2="260" y2="32" stroke="#2e86de"/>
     <text class="tb" x="15" y="52" font-size="12">조건</text>
-    <text class="mono" x="15" y="72">f(n) = Ω(n^(c+ε)), ε &gt; 0</text>
-    <text class="note" x="15" y="88">+ regularity:</text>
-    <text class="mono" x="15" y="104" font-size="11">a·f(n/b) ≤ k·f(n), k&lt;1</text>
+    <text class="mono" x="135" y="72" text-anchor="middle">f(n) = Ω(n^(c+ε)), ε &gt; 0</text>
+    <text class="note" x="135" y="88" text-anchor="middle">+ regularity:</text>
+    <text class="mono" x="135" y="104" text-anchor="middle" font-size="11">a·f(n/b) ≤ k·f(n), k&lt;1</text>
     <text class="tb" x="15" y="130" font-size="12">결과</text>
-    <text class="mono" x="15" y="150" fill="#2e86de" font-weight="bold">T(n) = Θ(f(n))</text>
+    <text class="mono" x="135" y="150" text-anchor="middle" fill="#2e86de" font-weight="bold">T(n) = Θ(f(n))</text>
     <text class="tb" x="15" y="175" font-size="12">예제</text>
-    <text class="mono" x="15" y="193">T(n) = 2T(n/2) + n²</text>
-    <text class="note" x="15" y="210">c=1, f(n)=n²=Ω(n^(1+1))</text>
-    <text class="mono" x="15" y="232" fill="#2e86de" font-weight="bold">⇒ Θ(n²)</text>
+    <text class="mono" x="135" y="193" text-anchor="middle">T(n) = 2T(n/2) + n²</text>
+    <text class="note" x="135" y="210" text-anchor="middle">c=1, f(n)=n²=Ω(n^(1+1))</text>
+    <text class="mono" x="135" y="232" text-anchor="middle" fill="#2e86de" font-weight="bold">⇒ Θ(n²)</text>
   </g>
 
   <!-- Application table -->

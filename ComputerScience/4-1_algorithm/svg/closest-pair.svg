@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 750" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 760" font-family="system-ui,sans-serif">
   <style>
     .tb{font-size:15px;font-weight:bold}
     .th{font-size:13px;font-weight:bold;text-anchor:middle;font-family:monospace}
@@ -107,7 +107,7 @@
   </g>
 
   <!-- Step 3: 재귀 호출 트리 -->
-  <g transform="translate(30,475)">
+  <g transform="translate(30,500)">
     <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
     <text class="tb" x="15" y="18">재귀 트리와 점화식 — 병합정렬과 동형</text>
 
@@ -141,7 +141,7 @@
   </g>
 
   <!-- Step 4: 억지 vs 분할정복 -->
-  <g transform="translate(30,710)">
+  <g transform="translate(30,735)">
     <rect class="sum" x="0" y="-15" width="880" height="30"/>
     <text class="mono" x="15" y="5">비교 — n=10⁶: 억지 Θ(n²) = 10¹² 비교 &#160;·&#160; 분할정복 Θ(n log n) ≈ 2×10⁷ &#160;→&#160; <tspan fill="#c0392b" font-weight="bold">5만배 빠름</tspan></text>
   </g>

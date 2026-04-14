@@ -121,7 +121,7 @@
 
     <g transform="translate(0,150)">
       <text class="lab" x="0" y="0">과정: 결과 (x',y')마다 역변환 T⁻¹로 원본 위치를 찾음.</text>
-      <text class="lab" x="0" y="20">원본에서 정수가 아닌 실수 위치가 나오면 → nearest/bilinear/bicubic 보간으로 값 가져옴.</text>
+      <text class="lab" x="0" y="20">실수 위치가 나오면 → nearest/bilinear/bicubic 보간.</text>
       <text class="lab" x="0" y="40" fill="#27ae60" font-weight="bold">결과의 모든 픽셀이 채워진다 → hole 없음.</text>
     </g>
   </g>

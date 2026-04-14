@@ -63,7 +63,7 @@
   <!-- Bottom rule -->
   <g>
     <rect x="60" y="580" width="980" height="110" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="sub" x="80" y="615" text-anchor="start">시험 단골 규칙 — 5문단 에세이</text>
+    <text class="sub" x="550" y="615">시험 단골 규칙 — 5문단 에세이</text>
     <text class="lab" x="80" y="650" fill="#c0392b" font-weight="bold" font-size="15">서론(미괄식) → 본론 1·2·3(두괄식) → 결론(미괄식)</text>
     <text class="lab" x="80" y="680">서론 · 결론은 부드럽게, 본론은 요지부터</text>
   </g>

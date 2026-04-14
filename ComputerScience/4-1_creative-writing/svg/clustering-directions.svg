@@ -73,10 +73,10 @@
   <!-- Bottom: principles -->
   <g>
     <rect x="60" y="550" width="980" height="200" fill="#fff7d6" stroke="#d4a017"/>
-    <text class="sub" x="80" y="585" text-anchor="start">덩이지기 원리 — 인지심리학 기반</text>
-    <text class="note" x="80" y="620">• 인간 뇌는 한꺼번에 <tspan font-weight="bold" fill="#c0392b">최대 7개</tspan>의 정보만 처리 가능 (Miller's Magic Number)</text>
-    <text class="note" x="80" y="650">• 비슷한 것끼리 덩이로 묶어 상위 개념화 → 기억과 이해가 쉬워진다</text>
-    <text class="note" x="80" y="680">• 발상모으기(Brainstorming) → Mind Map → 조직도(Organization chart)</text>
-    <text class="note" x="80" y="720" fill="#c0392b" font-weight="bold">"청킹(Chunking)" · "조직화" · "체계화"가 글의 힘을 만든다</text>
+    <text class="sub" x="550" y="585">덩이지기 원리 — 인지심리학 기반</text>
+    <text class="note" x="180" y="620">• 인간 뇌는 한꺼번에 <tspan font-weight="bold" fill="#c0392b">최대 7개</tspan>의 정보만 처리 가능 (Miller's Magic Number)</text>
+    <text class="note" x="180" y="650">• 비슷한 것끼리 덩이로 묶어 상위 개념화 → 기억과 이해가 쉬워진다</text>
+    <text class="note" x="180" y="680">• 발상모으기(Brainstorming) → Mind Map → 조직도(Organization chart)</text>
+    <text class="note" x="550" y="715" fill="#c0392b" font-weight="bold" text-anchor="middle">"청킹(Chunking)" · "조직화" · "체계화"가 글의 힘을 만든다</text>
   </g>
 </svg>
