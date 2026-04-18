@@ -1,119 +1,180 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 780" font-family="system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 720" font-family="system-ui,sans-serif">
   <style>
-    .n{fill:#fff;stroke:#2c3e50;stroke-width:1.5}
-    .pick{fill:#ffeb99;stroke:#d4a017;stroke-width:2.5}
-    .done{fill:#d0d0d0;stroke:#999;stroke-dasharray:4 3}
-    .e{stroke:#666;stroke-width:1.5;fill:none;marker-end:url(#a)}
-    .erm{stroke:#ccc;stroke-width:1.2;fill:none;stroke-dasharray:3 3;marker-end:url(#ag)}
-    .t{font-size:14px;text-anchor:middle;font-weight:bold}
-    .lab{font-size:13px}
-    .tb{font-size:15px;font-weight:bold}
-    .num{font-size:11px;fill:#c0392b;text-anchor:middle;font-weight:bold}
+    .node{fill:#fff;stroke:#2c3e50;stroke-width:1.8}
+    .finished{fill:#e8f5e9;stroke:#2e7d32;stroke-width:1.8}
+    .edge{stroke:#666;stroke-width:1.5;fill:none;marker-end:url(#arr)}
+    .nlabel{font-size:16px;text-anchor:middle;font-weight:bold;dominant-baseline:central}
+    .dval{font-size:12px;fill:#2980b9;text-anchor:middle;font-weight:bold}
+    .fval{font-size:12px;fill:#c0392b;text-anchor:middle;font-weight:bold}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:14px;font-weight:bold;fill:#222}
+    .note{font-size:12px;fill:#555}
+    .stackbox{fill:#fff9e6;stroke:#d4a017;stroke-width:1.5}
+    .resbox{fill:#e8f5e9;stroke:#2e7d32;stroke-width:1.8}
+    .arrow{font-size:18px;fill:#555;text-anchor:middle;font-weight:bold}
+    .hi{fill:#c0392b;font-weight:bold}
   </style>
   <defs>
-    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#666"/></marker>
-    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ccc"/></marker>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#666"/>
+    </marker>
   </defs>
-  <text class="tb" x="440" y="22" text-anchor="middle">위상 정렬: 간선 A→C, A→D, B→D, C→E, D→F, E→F</text>
-  <text class="lab" x="30" y="44">규칙: 매 단계마다 진입차수 0인 정점을 꺼낸다. 꺼낸 정점의 밖으로 나가는 간선은 제거.</text>
 
-  <!-- Step 0: 초기 상태 -->
-  <g transform="translate(30,60)">
-    <text class="tb" x="0" y="15">0단계. 초기 상태</text>
-    <text class="lab" x="150" y="15">진입차수 — A:0, B:0, C:1, D:2, E:1, F:2</text>
-    <circle class="n" cx="60" cy="60" r="22"/><text class="t" x="60" y="65">A</text><text class="num" x="60" y="38">0</text>
-    <circle class="n" cx="60" cy="140" r="22"/><text class="t" x="60" y="145">B</text><text class="num" x="60" y="118">0</text>
-    <circle class="n" cx="150" cy="60" r="22"/><text class="t" x="150" y="65">C</text><text class="num" x="150" y="38">1</text>
-    <circle class="n" cx="150" cy="140" r="22"/><text class="t" x="150" y="145">D</text><text class="num" x="150" y="118">2</text>
-    <circle class="n" cx="240" cy="60" r="22"/><text class="t" x="240" y="65">E</text><text class="num" x="240" y="38">1</text>
-    <circle class="n" cx="330" cy="100" r="22"/><text class="t" x="330" y="105">F</text><text class="num" x="330" y="78">2</text>
-    <line class="e" x1="82" y1="60" x2="128" y2="60"/>
-    <line class="e" x1="82" y1="72" x2="128" y2="128"/>
-    <line class="e" x1="82" y1="140" x2="128" y2="140"/>
-    <line class="e" x1="172" y1="60" x2="218" y2="60"/>
-    <line class="e" x1="172" y1="140" x2="308" y2="105"/>
-    <line class="e" x1="262" y1="65" x2="308" y2="95"/>
-    <text class="lab" x="380" y="100">결과 리스트: [ ]</text>
+  <text class="title" x="510" y="28">DFS 기반 위상 정렬 — 알파벳순 방문, finish 역순 출력</text>
+  <text class="note" x="510" y="48" text-anchor="middle">간선: A→B,C  B→D,E  C→D,E,F  D→G,H  E→H  F→G,H</text>
+
+  <!-- ① Graph with d/f times -->
+  <text class="sub" x="30" y="80">① 그래프 + 방문/종료 시각 (<tspan class="dval">d</tspan> / <tspan class="fval">f</tspan>)</text>
+
+  <!-- Node A -->
+  <circle class="finished" cx="90" cy="260" r="26"/>
+  <text class="nlabel" x="90" y="260">A</text>
+  <text class="dval" x="60" y="232">1</text>
+  <text class="fval" x="120" y="232">16</text>
+
+  <!-- Node B -->
+  <circle class="finished" cx="230" cy="150" r="26"/>
+  <text class="nlabel" x="230" y="150">B</text>
+  <text class="dval" x="200" y="122">2</text>
+  <text class="fval" x="260" y="122">11</text>
+
+  <!-- Node C -->
+  <circle class="finished" cx="230" cy="370" r="26"/>
+  <text class="nlabel" x="230" y="370">C</text>
+  <text class="dval" x="200" y="408">12</text>
+  <text class="fval" x="260" y="408">15</text>
+
+  <!-- Node D -->
+  <circle class="finished" cx="380" cy="150" r="26"/>
+  <text class="nlabel" x="380" y="150">D</text>
+  <text class="dval" x="350" y="122">3</text>
+  <text class="fval" x="410" y="122">8</text>
+
+  <!-- Node F -->
+  <circle class="finished" cx="380" cy="260" r="26"/>
+  <text class="nlabel" x="380" y="260">F</text>
+  <text class="dval" x="350" y="298">13</text>
+  <text class="fval" x="410" y="298">14</text>
+
+  <!-- Node E -->
+  <circle class="finished" cx="380" cy="370" r="26"/>
+  <text class="nlabel" x="380" y="370">E</text>
+  <text class="dval" x="350" y="408">9</text>
+  <text class="fval" x="410" y="408">10</text>
+
+  <!-- Node G -->
+  <circle class="finished" cx="540" cy="150" r="26"/>
+  <text class="nlabel" x="540" y="150">G</text>
+  <text class="dval" x="510" y="122">4</text>
+  <text class="fval" x="570" y="122">5</text>
+
+  <!-- Node H -->
+  <circle class="finished" cx="540" cy="370" r="26"/>
+  <text class="nlabel" x="540" y="370">H</text>
+  <text class="dval" x="510" y="408">6</text>
+  <text class="fval" x="570" y="408">7</text>
+
+  <!-- Edges -->
+  <line class="edge" x1="110" y1="244" x2="208" y2="166"/>
+  <line class="edge" x1="110" y1="276" x2="208" y2="354"/>
+  <line class="edge" x1="256" y1="150" x2="354" y2="150"/>
+  <line class="edge" x1="248" y1="172" x2="362" y2="348"/>
+  <line class="edge" x1="248" y1="348" x2="362" y2="172"/>
+  <line class="edge" x1="256" y1="370" x2="354" y2="370"/>
+  <line class="edge" x1="252" y1="354" x2="358" y2="278"/>
+  <line class="edge" x1="406" y1="150" x2="514" y2="150"/>
+  <line class="edge" x1="402" y1="170" x2="518" y2="350"/>
+  <line class="edge" x1="406" y1="370" x2="514" y2="370"/>
+  <line class="edge" x1="400" y1="244" x2="518" y2="168"/>
+  <line class="edge" x1="400" y1="276" x2="518" y2="352"/>
+
+  <!-- ② Finish stack -->
+  <g transform="translate(680, 70)">
+    <text class="sub" x="0" y="0">② Finish 스택</text>
+    <text class="note" x="0" y="18">(종료 순서대로 push)</text>
+
+    <!-- Top of stack -->
+    <text class="note" x="130" y="55">← top (마지막 finish)</text>
+    <rect class="stackbox" x="20" y="40" width="90" height="36"/>
+    <text class="nlabel" x="65" y="58">A</text>
+
+    <rect class="stackbox" x="20" y="76" width="90" height="36"/>
+    <text class="nlabel" x="65" y="94">C</text>
+
+    <rect class="stackbox" x="20" y="112" width="90" height="36"/>
+    <text class="nlabel" x="65" y="130">F</text>
+
+    <rect class="stackbox" x="20" y="148" width="90" height="36"/>
+    <text class="nlabel" x="65" y="166">B</text>
+
+    <rect class="stackbox" x="20" y="184" width="90" height="36"/>
+    <text class="nlabel" x="65" y="202">E</text>
+
+    <rect class="stackbox" x="20" y="220" width="90" height="36"/>
+    <text class="nlabel" x="65" y="238">D</text>
+
+    <rect class="stackbox" x="20" y="256" width="90" height="36"/>
+    <text class="nlabel" x="65" y="274">H</text>
+
+    <rect class="stackbox" x="20" y="292" width="90" height="36"/>
+    <text class="nlabel" x="65" y="310">G</text>
+    <text class="note" x="130" y="315">← bottom (첫 finish)</text>
+
+    <!-- reverse arrow -->
+    <text class="arrow" x="55" y="360">↓ reverse (pop)</text>
   </g>
 
-  <!-- Step 1: A 선택 -->
-  <g transform="translate(460,60)">
-    <text class="tb" x="0" y="15">1단계. A 선택 (진입차수 0)</text>
-    <text class="lab" x="0" y="35">A에서 나가는 간선 제거 → C:1→0, D:2→1</text>
-    <circle class="pick" cx="60" cy="70" r="22"/><text class="t" x="60" y="75">A</text>
-    <circle class="n" cx="60" cy="150" r="22"/><text class="t" x="60" y="155">B</text><text class="num" x="60" y="128">0</text>
-    <circle class="n" cx="150" cy="70" r="22"/><text class="t" x="150" y="75">C</text><text class="num" x="150" y="48">0</text>
-    <circle class="n" cx="150" cy="150" r="22"/><text class="t" x="150" y="155">D</text><text class="num" x="150" y="128">1</text>
-    <circle class="n" cx="240" cy="70" r="22"/><text class="t" x="240" y="75">E</text><text class="num" x="240" y="48">1</text>
-    <circle class="n" cx="330" cy="110" r="22"/><text class="t" x="330" y="115">F</text><text class="num" x="330" y="88">2</text>
-    <line class="erm" x1="82" y1="70" x2="128" y2="70"/>
-    <line class="erm" x1="82" y1="82" x2="128" y2="138"/>
-    <line class="e" x1="82" y1="150" x2="128" y2="150"/>
-    <line class="e" x1="172" y1="70" x2="218" y2="70"/>
-    <line class="e" x1="172" y1="150" x2="308" y2="115"/>
-    <line class="e" x1="262" y1="75" x2="308" y2="105"/>
-    <text class="lab" x="0" y="200">결과 리스트: [ A ]</text>
+  <!-- Separator -->
+  <line x1="20" y1="450" x2="1000" y2="450" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- ③ DFS trace (left) -->
+  <g transform="translate(30, 470)">
+    <text class="sub" x="0" y="0">③ DFS 탐색 순서 (알파벳 우선)</text>
+    <text class="note" x="0" y="20">
+      A→B→D→G<tspan class="hi">[f=5]</tspan> →H<tspan class="hi">[f=7]</tspan> →D<tspan class="hi">[f=8]</tspan>
+    </text>
+    <text class="note" x="0" y="40">
+      →E<tspan class="hi">[f=10]</tspan> →B<tspan class="hi">[f=11]</tspan> →C→F<tspan class="hi">[f=14]</tspan> →C<tspan class="hi">[f=15]</tspan> →A<tspan class="hi">[f=16]</tspan>
+    </text>
+    <text class="note" x="0" y="68">※ 각 정점에서 인접 정점이 여러 개면 <tspan font-weight="bold">알파벳 작은 것부터</tspan> 방문</text>
+    <text class="note" x="0" y="86">※ 더 갈 곳이 없으면 <tspan font-weight="bold" fill="#c0392b">finish</tspan>하고 스택에 push</text>
   </g>
 
-  <!-- Step 2: B 선택 -->
-  <g transform="translate(30,290)">
-    <text class="tb" x="0" y="15">2단계. B 선택</text>
-    <text class="lab" x="0" y="35">B에서 나가는 간선 제거 → D:1→0</text>
-    <circle class="done" cx="60" cy="70" r="22"/><text class="t" x="60" y="75">A</text>
-    <circle class="pick" cx="60" cy="150" r="22"/><text class="t" x="60" y="155">B</text>
-    <circle class="n" cx="150" cy="70" r="22"/><text class="t" x="150" y="75">C</text><text class="num" x="150" y="48">0</text>
-    <circle class="n" cx="150" cy="150" r="22"/><text class="t" x="150" y="155">D</text><text class="num" x="150" y="128">0</text>
-    <circle class="n" cx="240" cy="70" r="22"/><text class="t" x="240" y="75">E</text><text class="num" x="240" y="48">1</text>
-    <circle class="n" cx="330" cy="110" r="22"/><text class="t" x="330" y="115">F</text><text class="num" x="330" y="88">2</text>
-    <line class="erm" x1="82" y1="150" x2="128" y2="150"/>
-    <line class="e" x1="172" y1="70" x2="218" y2="70"/>
-    <line class="e" x1="172" y1="150" x2="308" y2="115"/>
-    <line class="e" x1="262" y1="75" x2="308" y2="105"/>
-    <text class="lab" x="0" y="200">결과 리스트: [ A, B ]</text>
-  </g>
+  <!-- ④ Reversed result -->
+  <g transform="translate(30, 590)">
+    <text class="sub" x="0" y="0">④ 스택 pop (역순) = 위상 정렬 결과</text>
 
-  <!-- Step 3: C 선택 -->
-  <g transform="translate(460,290)">
-    <text class="tb" x="0" y="15">3단계. C 선택 (D도 가능, 예시로 C 먼저)</text>
-    <text class="lab" x="0" y="35">C→E 제거 → E:1→0</text>
-    <circle class="done" cx="60" cy="70" r="22"/><text class="t" x="60" y="75">A</text>
-    <circle class="done" cx="60" cy="150" r="22"/><text class="t" x="60" y="155">B</text>
-    <circle class="pick" cx="150" cy="70" r="22"/><text class="t" x="150" y="75">C</text>
-    <circle class="n" cx="150" cy="150" r="22"/><text class="t" x="150" y="155">D</text><text class="num" x="150" y="128">0</text>
-    <circle class="n" cx="240" cy="70" r="22"/><text class="t" x="240" y="75">E</text><text class="num" x="240" y="48">0</text>
-    <circle class="n" cx="330" cy="110" r="22"/><text class="t" x="330" y="115">F</text><text class="num" x="330" y="88">2</text>
-    <line class="erm" x1="172" y1="70" x2="218" y2="70"/>
-    <line class="e" x1="172" y1="150" x2="308" y2="115"/>
-    <line class="e" x1="262" y1="75" x2="308" y2="105"/>
-    <text class="lab" x="0" y="200">결과 리스트: [ A, B, C ]</text>
-  </g>
+    <rect class="resbox" x="0" y="20" width="60" height="60"/>
+    <text class="nlabel" x="30" y="50">A</text>
+    <text class="arrow" x="78" y="56">→</text>
 
-  <!-- Step 4: D 선택 -->
-  <g transform="translate(30,520)">
-    <text class="tb" x="0" y="15">4단계. D 선택</text>
-    <text class="lab" x="0" y="35">D→F 제거 → F:2→1</text>
-    <circle class="done" cx="60" cy="70" r="22"/><text class="t" x="60" y="75">A</text>
-    <circle class="done" cx="60" cy="150" r="22"/><text class="t" x="60" y="155">B</text>
-    <circle class="done" cx="150" cy="70" r="22"/><text class="t" x="150" y="75">C</text>
-    <circle class="pick" cx="150" cy="150" r="22"/><text class="t" x="150" y="155">D</text>
-    <circle class="n" cx="240" cy="70" r="22"/><text class="t" x="240" y="75">E</text><text class="num" x="240" y="48">0</text>
-    <circle class="n" cx="330" cy="110" r="22"/><text class="t" x="330" y="115">F</text><text class="num" x="330" y="88">1</text>
-    <line class="erm" x1="172" y1="150" x2="308" y2="115"/>
-    <line class="e" x1="262" y1="75" x2="308" y2="105"/>
-    <text class="lab" x="0" y="200">결과 리스트: [ A, B, C, D ]</text>
-  </g>
+    <rect class="resbox" x="96" y="20" width="60" height="60"/>
+    <text class="nlabel" x="126" y="50">C</text>
+    <text class="arrow" x="174" y="56">→</text>
 
-  <!-- Step 5/6: E, F -->
-  <g transform="translate(460,520)">
-    <text class="tb" x="0" y="15">5~6단계. E → F 순서로 마무리</text>
-    <text class="lab" x="0" y="35">E→F 제거 → F:1→0, 마지막으로 F 꺼냄</text>
-    <circle class="done" cx="60" cy="70" r="22"/><text class="t" x="60" y="75">A</text>
-    <circle class="done" cx="60" cy="150" r="22"/><text class="t" x="60" y="155">B</text>
-    <circle class="done" cx="150" cy="70" r="22"/><text class="t" x="150" y="75">C</text>
-    <circle class="done" cx="150" cy="150" r="22"/><text class="t" x="150" y="155">D</text>
-    <circle class="done" cx="240" cy="70" r="22"/><text class="t" x="240" y="75">E</text>
-    <circle class="done" cx="330" cy="110" r="22"/><text class="t" x="330" y="115">F</text>
-    <text class="lab" x="0" y="200">결과 리스트: [ A, B, C, D, E, F ] ✔</text>
-    <text class="lab" x="0" y="220" fill="#c0392b">주의: B를 먼저 꺼내도, D를 C보다 먼저 꺼내도 모두 정답.</text>
+    <rect class="resbox" x="192" y="20" width="60" height="60"/>
+    <text class="nlabel" x="222" y="50">F</text>
+    <text class="arrow" x="270" y="56">→</text>
+
+    <rect class="resbox" x="288" y="20" width="60" height="60"/>
+    <text class="nlabel" x="318" y="50">B</text>
+    <text class="arrow" x="366" y="56">→</text>
+
+    <rect class="resbox" x="384" y="20" width="60" height="60"/>
+    <text class="nlabel" x="414" y="50">E</text>
+    <text class="arrow" x="462" y="56">→</text>
+
+    <rect class="resbox" x="480" y="20" width="60" height="60"/>
+    <text class="nlabel" x="510" y="50">D</text>
+    <text class="arrow" x="558" y="56">→</text>
+
+    <rect class="resbox" x="576" y="20" width="60" height="60"/>
+    <text class="nlabel" x="606" y="50">H</text>
+    <text class="arrow" x="654" y="56">→</text>
+
+    <rect class="resbox" x="672" y="20" width="60" height="60"/>
+    <text class="nlabel" x="702" y="50">G</text>
+
+    <text class="note" x="0" y="105">f 값이 <tspan font-weight="bold">큰 순서대로</tspan> 정렬한 것과 동일 (16, 15, 14, 11, 10, 8, 7, 5)</text>
   </g>
 </svg>
