@@ -1,7 +1,7 @@
 ---
 aliases:
-  - 홈
-  - 지식 지도
+- 홈
+- 지식 지도
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -9,8 +9,8 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
-  - type/index
+- type/MOC
+- type/index
 title: Home MOC
 type: MOC
 updated: 2026-05-05

@@ -1,6 +1,8 @@
 ---
+aliases: []
 course: algorithm
 created: '2026-03-23'
+date: '2026-03-23'
 semester: 4-1
 source: ''
 status: 정리완료
@@ -11,6 +13,7 @@ tags:
 - 알고리즘
 - 트리순회
 - 해싱
+title: 'Pop Quiz #2 문제 풀이'
 type: lecture
 updated: '2026-05-05'
 ---

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - Math MOC
+- Math MOC
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -8,7 +8,7 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
+- type/MOC
 title: Math Foundations MOC
 type: MOC
 updated: 2026-05-05

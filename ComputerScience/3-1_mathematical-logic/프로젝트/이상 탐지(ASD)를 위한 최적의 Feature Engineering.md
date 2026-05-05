@@ -1,12 +1,15 @@
 ---
+aliases: []
 course: mathematical-logic
 created: '2025-04-04'
+date: '2025-04-04'
 semester: 3-1
 source: ''
 status: seedling
 tags:
 - math/discrete
 - type/project
+title: 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 type: project
 updated: '2026-05-05'
 ---

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - Algo MOC
+- Algo MOC
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -8,8 +8,8 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
-  - cs/algorithms
+- type/MOC
+- cs/algorithms
 title: Algorithms MOC
 type: MOC
 updated: 2026-05-05

@@ -1,6 +1,8 @@
 ---
+aliases: []
 course: AIOSS
 created: '2026-04-06'
+date: '2026-04-06'
 semester: 4-1
 source: ''
 status: seedling

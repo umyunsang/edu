@@ -1,6 +1,8 @@
 ---
+aliases: []
 course: algorithm
 created: '2026-03-23'
+date: '2026-03-23'
 semester: 4-1
 source: ''
 status: 정리완료
@@ -10,6 +12,7 @@ tags:
 - 시간복잡도
 - 시험대비
 - 알고리즘
+title: 'Pop Quiz #1 문제 풀이'
 type: lecture
 updated: '2026-05-05'
 ---

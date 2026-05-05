@@ -1,6 +1,6 @@
 ---
 aliases:
-  - 포트폴리오
+- 포트폴리오
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -8,8 +8,8 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
-  - meta/portfolio
+- type/MOC
+- meta/portfolio
 title: Portfolio MOC
 type: MOC
 updated: 2026-05-05

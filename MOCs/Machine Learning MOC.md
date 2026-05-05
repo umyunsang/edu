@@ -1,6 +1,6 @@
 ---
 aliases:
-  - ML MOC
+- ML MOC
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -8,8 +8,8 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
-  - cs/ml
+- type/MOC
+- cs/ml
 title: Machine Learning MOC
 type: MOC
 updated: 2026-05-05
