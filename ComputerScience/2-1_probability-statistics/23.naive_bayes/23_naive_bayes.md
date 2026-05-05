@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[19_sampling]], [[20_mle]], [[22_MAP]], [[Bayes' Theorem]], [[Bernoulli Distribution]], [[Binomial Distribution]], [[Bootstrapping]], [[Combinations]]
 ---
 ### 나이브 베이즈 분류기 (Naive Bayes Classifier)
 

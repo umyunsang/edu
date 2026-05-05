@@ -87,9 +87,9 @@ def main():
                 n_mocs_updated += 1
 
     # === Step 2: Inject siblings:: inline field per note ===
+    # Fallback: if a note is alone in its parent folder, look at grandparent for siblings.
     n_notes_with_siblings = 0
     if not args.skip_siblings:
-        # Group notes by parent folder
         by_folder: dict[Path, list[Path]] = defaultdict(list)
         for p in notes:
             if p.parent.name in {"MOCs"}:
@@ -98,35 +98,57 @@ def main():
                 continue
             by_folder[p.parent].append(p)
 
-        for folder, members in by_folder.items():
-            if len(members) < 2:
-                continue
-            members_sorted = sorted(members, key=lambda p: p.stem.lower())
-            for p in members_sorted:
-                others = [m for m in members_sorted if m.resolve() != p.resolve()][:8]
-                if not others:
-                    continue
-                sibling_links = ", ".join(f"[[{m.stem}]]" for m in others)
-                target_line = f"siblings:: {sibling_links}"
-
-                fm, body = read_note(p)
-                if SIBLINGS_RE.search(body):
-                    new_body = SIBLINGS_RE.sub(target_line, body, count=1)
+        # Helper: pick siblings, falling back up the directory tree
+        def pick_siblings(p: Path) -> list[Path]:
+            cur = p.parent
+            for _ in range(4):  # walk up to 4 levels
+                members = [m for m in by_folder.get(cur, []) if m.resolve() != p.resolve()]
+                if len(members) >= 1:
+                    return sorted(members, key=lambda m: m.stem.lower())[:8]
+                # Aggregate from siblings of cur (grandparent's children that are folders)
+                if cur.parent and cur.parent != VAULT:
+                    grand_members: list[Path] = []
+                    for sub_folder, sub_members in by_folder.items():
+                        try:
+                            if sub_folder.parent.resolve() == cur.parent.resolve() and sub_folder != cur:
+                                grand_members.extend(sub_members)
+                        except Exception:
+                            continue
+                    if grand_members:
+                        return sorted(grand_members, key=lambda m: m.stem.lower())[:8]
+                    cur = cur.parent
                 else:
-                    # Insert after up:: line if exists, else at top
-                    m_up = UP_RE.search(body)
-                    if m_up:
-                        idx = m_up.end()
-                        new_body = body[:idx] + "\n" + target_line + body[idx:]
-                    else:
-                        new_body = target_line + "\n\n" + body
+                    break
+            return []
 
-                if new_body != body:
-                    if args.dry_run:
-                        print(f"DRY SIB: {p.relative_to(VAULT)}  +{len(others)} siblings")
-                    else:
-                        write_note(p, fm, new_body)
-                    n_notes_with_siblings += 1
+        for p in notes:
+            if p.parent.name == "MOCs":
+                continue
+            if p.name == "README.md":
+                continue
+            others = pick_siblings(p)
+            if not others:
+                continue
+            sibling_links = ", ".join(f"[[{m.stem}]]" for m in others)
+            target_line = f"siblings:: {sibling_links}"
+
+            fm, body = read_note(p)
+            if SIBLINGS_RE.search(body):
+                new_body = SIBLINGS_RE.sub(target_line, body, count=1)
+            else:
+                m_up = UP_RE.search(body)
+                if m_up:
+                    idx = m_up.end()
+                    new_body = body[:idx] + "\n" + target_line + body[idx:]
+                else:
+                    new_body = target_line + "\n\n" + body
+
+            if new_body != body:
+                if args.dry_run:
+                    print(f"DRY SIB: {p.relative_to(VAULT)}  +{len(others)} siblings")
+                else:
+                    write_note(p, fm, new_body)
+                n_notes_with_siblings += 1
 
     print(f"\nSummary:")
     print(f"  MOCs updated: {n_mocs_updated}")

@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[Data_analysis]], [[Dataframe]], [[imshow 이미지 그래프]], [[Numpy 기초]], [[pie 원형 그래프]], [[Pivot]]
 ## **1. `docs_load()` 함수**
 - **역할**: PDF 문서를 읽어들입니다.
 - **세부 내용**:

@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[AND, NAND, OR 게이트]]
 ---
 
 ### AND 게이트

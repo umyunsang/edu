@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[logistic]], [[Multi_Regression]], [[SGDClassifier]]
 ---
 # 농어(length, weight) 데이터 분석 및 회귀 모델 비교
 

@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[KNNR]], [[logistic]], [[SGDClassifier]]
 ---
 ### 1. 데이터셋 불러오기 및 준비
 

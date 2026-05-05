@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[KNNR]], [[logistic]], [[Multi_Regression]]
 ---
 # **SGDClassifier  사용한 물고기 데이터 분류**
 

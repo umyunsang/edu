@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[3주차 발표자료]], [[AI-system-design__3주차__발표 스크립트]], [[시스템 구성도]]
 ---
 **AI 시스템 아이디어 기획 및 요구사항 정의 발표 스크립트**
 
