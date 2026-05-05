@@ -1,4 +1,22 @@
+---
+aliases: []
+course: data-structures
+created: '2024-05-14'
+date: '2024-05-14'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/algorithms
+- type/lecture
+title: AVL
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Algorithms MOC]]
+
+siblings:: [[트리 (TREE)]]
 ---
 #### AVL 트리
 **이진 탐색 트리

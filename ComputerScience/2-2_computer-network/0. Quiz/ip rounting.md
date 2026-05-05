@@ -1,4 +1,22 @@
+---
+aliases: []
+course: computer-network
+created: '2024-11-10'
+date: '2024-11-10'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/systems
+- type/lecture
+title: Chapter 1. Routing Information Protocol (RIP)
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Systems MOC]]
+
+siblings:: [[기말 암기 정리]], [[기말 퀴즈]], [[중간 퀴즈]]
 ---
 # Chapter 1. Routing Information Protocol (RIP)
 

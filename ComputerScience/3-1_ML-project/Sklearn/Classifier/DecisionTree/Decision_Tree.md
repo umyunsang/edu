@@ -1,4 +1,22 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-13'
+date: '2024-08-13'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: '**Decision Tree를 활용한 와인 데이터 분류**'
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[KNNC]]
 ---
 # **Decision Tree를 활용한 와인 데이터 분류**
 

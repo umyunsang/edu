@@ -1,9 +1,28 @@
+---
+aliases: []
+course: distributed-computing
+created: '2025-06-04'
+date: '2025-06-04'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/distributed
+- cs/systems
+- type/lecture
+title: CUDA 프로그램 연습 및 CUDA API이해
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Systems MOC]]
+
+siblings:: [[1. WhyParlleism]], [[쿠다]]
 ---
 # CUDA 프로그램 연습 및 CUDA API이해
 
 
-![[Pasted image 20250329135531.png]]
+![[3-1_machine-learning__Pasted image 20250329135531.png]]
 
 |         |                   |
 | ------- | :---------------: |

@@ -1,15 +1,22 @@
-
 ---
-# Real-World Problem. Implementing a Data Processing Pipeline
-### 문제 설명
-
-당신의 작업은 여러 데이터 처리 단계를 사용하여 Pandas DataFrame을 정리(cleaning)하는 것입니다. 함수 합성과 데코레이터 패턴을 사용하여 데이터 처리에 대해 견고하고 재사용 가능한 파이프라인을 구현해야 합니다.
-
-**참고:**  
-예제 코드 구조를 기반으로 코드를 작성하여 LMS에 제출하십시오. 파일 확장자는 .py 또는 .ipynb 중 하나여야 합니다. ChatGPT나 기타 LLM을 사용한 경우, 코드 내에 명확히 참조 출처를 명시해야 합니다.
-
+aliases: []
+course: discrete-math
+created: '2024-11-30'
+date: '2024-11-30'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- math/discrete
+- type/project
+title: Decorator to log execution details
+type: project
+updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[과제 번역]]
 ### **작업 1: 데이터 정리 함수 정의**
 
 1. 다음 데이터 정리 단계를 구현하세요:

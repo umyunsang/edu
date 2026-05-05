@@ -1,4 +1,23 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-22'
+date: '2025-01-22'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: Vector store
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Llama Index]], [[LLM__검색 증강 생성 RAG__LangChain]], [[RAG]]
 ---
 ### Vector Store (VectorDB)
 

@@ -1,9 +1,22 @@
-
 ---
-STFT(Short-Time Fourier Transform)와 함께 모델 입력으로 추가할 수 있는 정보를 **딥러닝 관점에서** 고려할 때, 다음과 같은 요소를 생각해볼 수 있습니다.  
-
+aliases: []
+course: mathematical-logic
+created: '2025-03-28'
+date: '2025-03-28'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- math/discrete
+- type/project
+title: ASD Feature 발굴
+type: project
+updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[1차 컨펌]], [[2차 컨펌]], [[신호 특징 분석 결과]], [[이상 탐지(ASD)를 위한 최적의 Feature Engineering]]
 ## **1. STFT와 함께 넣을 수 있는 추가 정보**  
 
 STFT만으로는 **주파수 정보**를 반영할 수 있지만, **음향학적 특징**이나 **시간-주파수 관계**를 더욱 풍부하게 표현할 수 있는 정보를 추가하면 모델 성능을 높일 수 있습니다.  

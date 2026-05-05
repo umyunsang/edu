@@ -1,4 +1,23 @@
+---
+aliases: []
+course: web-programming
+created: '2024-05-17'
+date: '2024-05-17'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/se
+- skill/javascript
+- type/lecture
+title: HTML 기초 실습2
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Software Engineering MOC]]
+
+siblings:: [[web-programming__6. HTML 기초2__문제 풀이]]
 ---
 ### HTML 기초 실습 정리
 

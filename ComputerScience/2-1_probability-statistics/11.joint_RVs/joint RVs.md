@@ -1,4 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: Continuity correction
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[probability-statistics__11.joint_RVs__문제 풀이]]
 ---
 ## **Normal Approximation**
 ### Website testing 문제

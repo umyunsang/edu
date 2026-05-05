@@ -1,11 +1,32 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- DORA
+- community
+- contribution
+- cs/ai
+- cs/devops
+- cs/open-source
+- inner-source
+- license
+- open-source
+- type/lecture
+title: Open & Inner Source Software Delivery
+type: lecture
+updated: '2026-05-05'
 week: 5
-title: "Open & Inner Source Software Delivery"
-tags: [AIOSS, open-source, inner-source, license, contribution, DORA, community]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week6 - GitHub Actions]]
 # Open & Inner Source Software Delivery
 
 오픈소스의 핵심 가치와 라이선스 체계를 이해하고, 오픈소스 기여 프로세스를 습득하며, 조직 내부에 오픈소스 방식을 적용하는 Inner Source 전략을 학습합니다.

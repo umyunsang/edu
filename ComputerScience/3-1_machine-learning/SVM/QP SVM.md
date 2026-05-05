@@ -1,4 +1,22 @@
+---
+aliases: []
+course: machine-learning
+created: '2025-04-15'
+date: '2025-04-15'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: Quadratic Programming 기반 SVM(Support Vector Machine)
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[SVM]]
 ---
 # Quadratic Programming 기반 SVM(Support Vector Machine)
 
@@ -15,7 +33,7 @@ clf.fit(X, y)
 visualize_svm(clf.coef_[0], clf.intercept_)
 ```
 
-![[Pasted image 20250415173546.png]]
+![[3-1_machine-learning__Pasted image 20250415173546.png]]
 
 ## 2. 마진 계산
 학습된 SVM 모델의 마진 크기를 계산합니다.
@@ -24,7 +42,3 @@ visualize_svm(clf.coef_[0], clf.intercept_)
 margin = 2 / np.sqrt(np.dot(clf.coef_[0].T, clf.coef_[0]))
 print(margin)
 ```
-
-
-
-

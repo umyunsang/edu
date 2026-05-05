@@ -1,4 +1,23 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: 데이터 로드
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 ---
 ### Fine-Tuning 실습: JSONL 형식 데이터 준비 및 검증, Fine-Tuning 과정
 

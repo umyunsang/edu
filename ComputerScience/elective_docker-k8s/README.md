@@ -1,3 +1,20 @@
+---
+aliases: []
+course: docker-k8s
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: evergreen
+tags:
+- cs/devops
+- skill/docker
+- type/index
+title: 도커와 쿠버네티스 · 미니 인덱스
+type: index
+updated: '2026-05-05'
+---
+
 # 도커와 쿠버네티스 · 미니 인덱스
 
 ## 📄 Top Notes

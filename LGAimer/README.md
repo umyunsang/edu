@@ -1,3 +1,20 @@
+---
+aliases: []
+course: lgaimer
+created: '2026-01-08'
+date: '2026-01-08'
+semester: extracurricular
+source: ''
+status: evergreen
+tags:
+- cs/ml
+- meta/extracurricular
+- type/index
+title: LGAimer 강의 자료 모음
+type: index
+updated: '2026-05-05'
+---
+
 # LGAimer 강의 자료 모음
 
 이 저장소는 LG AI Research에서 진행하는 LGAimer 프로그램의 강의 자료를 포함하고 있습니다.

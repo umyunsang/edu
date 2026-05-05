@@ -1,3 +1,22 @@
+---
+aliases: []
+course: computer-graphics
+created: '2025-12-09'
+date: '2025-12-09'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- cs/cv
+- type/lecture
+title: OpenGL 폴리곤 그리기 정리
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Computer Vision MOC]]
+
+siblings:: [[0. 소개]], [[final exam]], [[middle exam]], [[깊이-버퍼와-투영]], [[좌표공간과-카메라]], [[지오매트리]], [[컴퓨터그래픽스-시험대비]]
 # OpenGL 폴리곤 그리기 정리
 
 ## 기본 개념

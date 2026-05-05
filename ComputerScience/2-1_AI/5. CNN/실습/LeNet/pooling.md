@@ -1,4 +1,24 @@
+---
+aliases: []
+course: AI
+created: '2024-05-25'
+date: '2024-05-25'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/dl
+- cs/ml
+- type/project
+title: CNN 모델 정의
+type: project
+updated: '2026-05-05'
+---
 
+up:: [[Deep Learning MOC]]
+
+siblings:: [[CNN 모듈]], [[LR control]]
 ---
 ` 1. Pooling layer 변경: Average pooling -> Max pooling
 ` 2. Convolutional layer channel 개수 변경: 6 -> 32, 64`

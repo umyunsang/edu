@@ -1,4 +1,23 @@
+---
+aliases: []
+course: optimization-math
+created: '2025-11-27'
+date: '2025-11-27'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- cs/ml
+- math/calculus
+- type/lecture
+title: MSC087_HW2_풀이
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[0. 리눅스 소개]], [[0. 소개]], [[1. Hello Java]], [[1. WhyParlleism]], [[1. 리눅스의 기본]], [[1. 변수와 자료형]], [[10. 도커]], [[2. 리눅스 VI]]
 ---
 
 ## 문제 1. p156. 05 (a) - 방향 도함수

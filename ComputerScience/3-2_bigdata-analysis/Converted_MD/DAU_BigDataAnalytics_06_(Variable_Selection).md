@@ -1,3 +1,23 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- cs/db
+- cs/ml
+- type/lecture
+title: DAU_BigDataAnalytics_06_(Variable_Selection)
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Machine Learning MOC]]
+
+siblings:: [[01-WordCount]], [[02-MapReduce]], [[03_Hadoop]], [[04-ParallelComputation]], [[05-PySpark]], [[06-SparkDataFrames]], [[07-PandasSeries]], [[08-PandaDataframes]]
 # DAU_BigDataAnalytics_06_(Variable_Selection)
 
 # 변수 선택(Variable Selection) 기법에 대한 코드

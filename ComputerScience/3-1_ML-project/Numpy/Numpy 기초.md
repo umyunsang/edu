@@ -1,4 +1,22 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-01'
+date: '2024-08-01'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: Numpy 기초
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[Data_analysis]], [[Dataframe]], [[imshow 이미지 그래프]], [[ML-project__LangChain__LangChain]], [[pie 원형 그래프]], [[Pivot]]
 ---
 #### 배열 생성 및 속성 확인
 

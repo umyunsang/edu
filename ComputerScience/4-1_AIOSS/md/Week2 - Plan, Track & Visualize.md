@@ -1,11 +1,32 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- agile
+- cs/ai
+- cs/devops
+- cs/open-source
+- github-projects
+- issue-tracking
+- kanban
+- scrum
+- sprint
+- type/lecture
+title: Plan, Track, and Visualize Your Work
+type: lecture
+updated: '2026-05-05'
 week: 2
-title: "Plan, Track, and Visualize Your Work"
-tags: [AIOSS, agile, scrum, github-projects, kanban, sprint, issue-tracking]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Plan, Track, and Visualize Your Work
 
 ## 작업 계획, 추적 및 시각화

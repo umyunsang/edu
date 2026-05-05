@@ -1,11 +1,31 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- CI-CD
+- DevOps
+- cs/ai
+- cs/devops
+- cs/open-source
+- github
+- open-source
+- orientation
+- type/lecture
+title: Orientation
+type: lecture
+updated: '2026-05-05'
 week: 0
-title: "Orientation"
-tags: [AIOSS, orientation, github, open-source, CI-CD, DevOps]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Week 0 - Orientation: AI Open Source Software
 
 현대 소프트웨어 개발의 핵심 역량을 습득하는 여정.
@@ -646,4 +666,4 @@ ssh -T git@github.com
 
 > *"The best way to predict the future is to invent it."* -- Alan Kay
 
-**Next Week Preview:** [[Week2 - Metrics That Matter]] -- 데이터 기반의 의사결정과 개발 생산성 측정
+**Next Week Preview:** [[Week1 - Metrics That Matter]] -- 데이터 기반의 의사결정과 개발 생산성 측정

@@ -1,3 +1,22 @@
+---
+aliases: []
+course: intellectual-property
+created: '2025-06-14'
+date: '2025-06-14'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- meta/cert
+- type/lecture
+title: 상표_processed
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Certifications MOC]]
+
+siblings:: [[IPAT_기출문제]], [[저작권_processed]], [[지식재산권_processed]], [[특허_processed]]
 [상표] IPAT 기출문제
 
 **문제 1. 상표의 정의에 대한 설명으로 옳지 않은 것은?**

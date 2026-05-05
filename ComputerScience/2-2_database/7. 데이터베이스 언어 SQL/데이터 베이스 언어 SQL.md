@@ -1,4 +1,22 @@
+---
+aliases: []
+course: database
+created: '2024-10-07'
+date: '2024-10-07'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/db
+- type/lecture
+title: 데이터 베이스 언어 SQL
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Database MOC]]
+
+siblings:: [[뷰(view)]]
 ---
 ## 1. SQL의 소개
 #### SQL의 분류
@@ -689,4 +707,4 @@ OX문제
 책의 문제와 조금 다르게 냄
 한문제는 다른 테이블을 주어짐
 
-월요일 4시 시험 60분 
+월요일 4시 시험 60분

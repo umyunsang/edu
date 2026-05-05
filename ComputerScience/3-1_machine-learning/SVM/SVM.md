@@ -1,4 +1,22 @@
+---
+aliases: []
+course: machine-learning
+created: '2025-04-15'
+date: '2025-04-15'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: SVM
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[QP SVM]]
 ---
 > [!PDF|red] [[20250415_Suport_vector_machine_실습 강의자료.pdf#page=15&selection=12,0,13,0&color=red|20250415_Suport_vector_machine_실습 강의자료, p.15]]
 > > SVM Gradient Decent Method (GD)
@@ -33,7 +51,7 @@ plt.show()
 ```
 
 >[!success]
->![[Pasted image 20250421121448.png]]
+>![[3-1_machine-learning__Pasted image 20250421121448.png]]
 
 
 ## 3. SVM 클래스 구현
@@ -170,7 +188,7 @@ visualize_svm(model.weights, model.bias)
 > - 마진: 결정 경계와 가장 가까운 데이터 점들(서포트 벡터) 사이의 거리
 > - 목표 달성: 최대 마진 분류기가 성공적으로 학습되었음을 시각적으로 확인
 
-![[Pasted image 20250415173442.png]]
+![[3-1_machine-learning__Pasted image 20250415173442.png]]
 
 > [!note] 참고사항
 > - 파란색/주황색 점: 두 클래스의 데이터 포인트

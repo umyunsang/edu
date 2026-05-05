@@ -1,4 +1,22 @@
+---
+aliases: []
+course: ML-project
+created: '2024-06-12'
+date: '2024-06-12'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: 농어(length, weight) 데이터 분석 및 회귀 모델 비교
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[logistic]], [[Multi_Regression]], [[SGDClassifier]]
 ---
 # 농어(length, weight) 데이터 분석 및 회귀 모델 비교
 

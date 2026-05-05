@@ -1,3 +1,19 @@
+---
+aliases: []
+course: discrete-math
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 2-2
+source: ''
+status: evergreen
+tags:
+- math/discrete
+- type/index
+title: '[2-2] 이산수학 · 미니 인덱스'
+type: index
+updated: '2026-05-05'
+---
+
 # [2-2] 이산수학 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -10,7 +26,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

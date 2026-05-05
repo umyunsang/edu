@@ -1,3 +1,24 @@
+---
+aliases: []
+course: AI
+created: '2024-04-02'
+date: '2024-04-02'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/dl
+- cs/ml
+- type/project
+title: 2. 데이터셋 준비
+type: project
+updated: '2026-05-05'
+---
+
+up:: [[Deep Learning MOC]]
+
+siblings:: [[SLP (Single Layer Perceptron)]]
 #ComputerScience #인공지능 #perceptron 
  
 ---

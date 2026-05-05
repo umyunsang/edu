@@ -1,11 +1,32 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- CI-CD
+- DORA
+- DevOps
+- code-quality
+- cs/ai
+- cs/devops
+- cs/open-source
+- flow-metrics
+- metrics
+- type/lecture
+title: Metrics That Matter
+type: lecture
+updated: '2026-05-05'
 week: 1
-title: "Metrics That Matter"
-tags: [AIOSS, metrics, DORA, DevOps, CI-CD, flow-metrics, code-quality]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week0 - Orientation]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Metrics That Matter
 
 ## Introduction: 중요한 소프트웨어 개발 메트릭

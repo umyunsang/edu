@@ -1,3 +1,19 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: evergreen
+tags:
+- math/probability
+- math/statistics
+- type/index
+title: Probability and Statistics Repository
+type: index
+updated: '2026-05-05'
+---
 
 ---
 
@@ -108,7 +124,6 @@ Welcome to the **Probability and Statistics** repository! This repository contai
 
 ### 19. **Maximum Likelihood Estimation (MLE)**
 - [**20_mle.md**](./20.mle/20_mle.md): Markdown documentation on maximum likelihood estimation (MLE).
-
 
 - [**20_mle.pdf**](./20.mle/20_mle.pdf): Documentation on MLE.
 

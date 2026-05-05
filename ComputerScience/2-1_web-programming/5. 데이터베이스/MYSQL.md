@@ -1,4 +1,23 @@
+---
+aliases: []
+course: web-programming
+created: '2024-05-10'
+date: '2024-05-10'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/se
+- skill/javascript
+- type/lecture
+title: MYSQL
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Software Engineering MOC]]
+
+siblings:: [[web-programming__5. 데이터베이스__확인문제]], [[데이터베이스]]
 ---
 ## MYSQL
 

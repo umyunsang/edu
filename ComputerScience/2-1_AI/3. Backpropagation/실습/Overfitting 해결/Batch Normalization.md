@@ -1,4 +1,24 @@
+---
+aliases: []
+course: AI
+created: '2024-04-15'
+date: '2024-04-15'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/dl
+- cs/ml
+- type/project
+title: Batch Normalization
+type: project
+updated: '2026-05-05'
+---
 
+up:: [[Deep Learning MOC]]
+
+siblings:: [[Data Augumentation]], [[Dropout]]
 ---
 # Batch Normalization
 	MLP 재정의 : self.bn = nn.BatchNorm1d(100) 추가

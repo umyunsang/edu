@@ -1,10 +1,22 @@
-
 ---
-### 파이 차트 예제
-
-아래는 `matplotlib`를 사용하여 파이 차트를 생성하는 코드입니다. 이 예제에서는 각 조각의 색상, 레이블, 폭을 설정하고, 각 조각의 비율을 표시합니다.
-
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: 데이터와 관련된 정보
+type: lecture
+updated: '2026-05-05'
 ---
+
+up:: [[Machine Learning MOC]]
+
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[imshow 이미지 그래프]], [[scatter 산점도 그래프]], [[subplot  예제]], [[subplot 생성]], [[그래프 스타일]], [[기본 그래프]]
 ```python
 import matplotlib.pyplot as plt
 import numpy as np

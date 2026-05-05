@@ -1,3 +1,20 @@
+---
+aliases: []
+course: LLM
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: evergreen
+tags:
+- cs/llm
+- cs/nlp
+- type/index
+title: LLM 이해와 활용 · 미니 인덱스
+type: index
+updated: '2026-05-05'
+---
+
 # LLM 이해와 활용 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -11,7 +28,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

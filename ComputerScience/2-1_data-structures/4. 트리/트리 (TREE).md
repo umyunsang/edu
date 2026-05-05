@@ -1,4 +1,22 @@
+---
+aliases: []
+course: data-structures
+created: '2024-05-11'
+date: '2024-05-11'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/algorithms
+- type/lecture
+title: 트리 (TREE)
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Algorithms MOC]]
+
+siblings:: [[AVL]]
 ---
 #### 트리(TREE) 정의 
 - 트리는 나무 모양의 자료구조 

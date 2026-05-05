@@ -1,3 +1,20 @@
+---
+aliases: []
+course: coding-test
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: evergreen
+tags:
+- cs/algorithms
+- skill/python
+- type/index
+title: 코딩테스트 · 미니 인덱스
+type: index
+updated: '2026-05-05'
+---
+
 # 코딩테스트 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -6,7 +23,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 
