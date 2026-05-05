@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 3-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - meta/cert
 - type/MOC
@@ -29,3 +29,12 @@ updated: '2026-05-05'
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/3-1_intellectual-property"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

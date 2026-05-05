@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: elective
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/devops
 - skill/docker
@@ -40,3 +40,12 @@ updated: '2026-05-05'
 
 ### 관련 주제
 - [[ComputerScience/4-1_AIOSS/README|AIOSS]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/elective_docker-k8s"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

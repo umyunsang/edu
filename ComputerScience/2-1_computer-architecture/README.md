@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 2-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/systems
 - type/MOC
@@ -37,3 +37,12 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/2-2_operating-system/README|운영체제]]
 - [[ComputerScience/3-1_distributed-computing/README|분산처리]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/2-1_computer-architecture"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

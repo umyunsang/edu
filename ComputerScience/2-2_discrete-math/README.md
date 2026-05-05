@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 2-2
 source: ''
-status: seedling
+status: evergreen
 tags:
 - math/discrete
 - type/MOC
@@ -36,3 +36,12 @@ updated: '2026-05-05'
 - [[ComputerScience/4-1_algorithm/README|알고리즘]]
 - [[ComputerScience/3-1_mathematical-logic/README|수리논리학]]
 - [[ComputerScience/3-1_programming-languages/README|프로그래밍언어론]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/2-2_discrete-math"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: extracurricular
 source: ''
-status: seedling
+status: evergreen
 tags:
 - type/MOC
 title: 🗂️ Computer Science 폴더 인덱스
@@ -86,3 +86,12 @@ updated: '2026-05-05'
 - 과제만 보기: `path:"과제/" file:.md`
 - 실습만 보기: `path:"실습/" file:.md`
 - PDF 제외하고 노트만: `file:.md -path:.pdf`
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

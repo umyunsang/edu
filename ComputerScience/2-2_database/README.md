@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 2-2
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/db
 - type/MOC
@@ -46,3 +46,12 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/3-2_bigdata-analysis/README|빅데이터분석]]
 - [[ComputerScience/3-1_AI-system-design/README|AI시스템설계]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/2-2_database"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

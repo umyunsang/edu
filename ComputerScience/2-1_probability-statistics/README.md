@@ -5,7 +5,7 @@ created: '2026-03-19'
 date: '2026-03-19'
 semester: 2-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - math/probability
 - math/statistics
@@ -171,3 +171,12 @@ Contributions are welcome! If you have additional problems, solutions, or improv
 ### 후속 과목
 - [[ComputerScience/3-1_machine-learning/README|머신러닝]]
 - [[ComputerScience/3-2_bigdata-analysis/README|빅데이터분석]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/2-1_probability-statistics"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```
