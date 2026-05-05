@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
 ---
 ### 독립 이산형 확률 변수(Independent discrete random variables)
 

@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/project
 title: 2. 데이터셋 준비
 type: project
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 #ComputerScience #인공지능 #perceptron 
  

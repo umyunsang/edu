@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 08-PandaDataframes
 
 # 📊 **Pandas DataFrames - 2차원 데이터 구조**

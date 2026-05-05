@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Certifications MOC]]
+
 [상표] IPAT 기출문제
 
 **문제 1. 상표의 정의에 대한 설명으로 옳지 않은 것은?**

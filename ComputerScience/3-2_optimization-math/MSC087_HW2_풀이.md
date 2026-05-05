@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 ---
 
 ## 문제 1. p156. 05 (a) - 방향 도함수

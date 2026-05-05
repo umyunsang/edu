@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/project
 title: 패키지 선언
 type: project
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 ---
 ![](../../../../../../image/Pasted%20image%2020240527181027.png)

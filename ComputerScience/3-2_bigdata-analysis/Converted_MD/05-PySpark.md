@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 05. PySpark - Apache Spark를 활용한 대규모 분산 처리
 
 ## 📚 개요

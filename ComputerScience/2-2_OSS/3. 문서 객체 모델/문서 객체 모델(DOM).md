@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[AI Open Source MOC]]
+
 ---
 ## DOM 이해하기
 #### HTML 태그가 객체 형태인 이유

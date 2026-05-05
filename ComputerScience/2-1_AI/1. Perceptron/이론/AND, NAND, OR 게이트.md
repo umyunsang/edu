@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/lecture
 title: AND, NAND, OR 게이트
 type: lecture
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 ---
 1.  **AND 게이트**:

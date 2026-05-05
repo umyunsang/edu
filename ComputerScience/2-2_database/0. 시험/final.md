@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Database MOC]]
+
 ---
 4지선다 10문제
 

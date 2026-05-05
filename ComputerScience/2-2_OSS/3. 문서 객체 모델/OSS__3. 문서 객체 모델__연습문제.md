@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[AI Open Source MOC]]
+
 ---
 ![](../../../../image/Pasted%20image%2020241104103609.png)
 >[!풀이]

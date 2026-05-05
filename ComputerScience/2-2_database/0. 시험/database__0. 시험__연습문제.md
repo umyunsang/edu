@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Database MOC]]
+
 ## 1장
 
 ### 01. 데이터와 정보에 대한 설명으로 옳지 않은 것은? ④

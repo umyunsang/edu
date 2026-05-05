@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/lecture
 title: MLP theorm
 type: lecture
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 #ComputerScience #인공지능 #perceptron 
  

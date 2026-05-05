@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 아키텍처 다이어그램 (텍스트 버전)
 
 ```

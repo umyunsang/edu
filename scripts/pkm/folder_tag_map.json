@@ -3,7 +3,7 @@
   "patterns": [
     {"match": "1-2_coding-basics",            "tags": ["skill/python", "cs/se"]},
     {"match": "1-2_linear-algebra",           "tags": ["math/linalg"]},
-    {"match": "2-1_AI",                       "tags": ["cs/ai"]},
+    {"match": "2-1_AI",                       "tags": ["cs/ml", "cs/dl"]},
     {"match": "2-1_computer-architecture",    "tags": ["cs/systems"]},
     {"match": "2-1_data-structures",          "tags": ["cs/algorithms"]},
     {"match": "2-1_linux",                    "tags": ["cs/systems", "skill/linux"]},

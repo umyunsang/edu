@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # DAU_CSE408_Pandas,_Geopandas
 
 # 동아대학교 컴퓨터AI공학부

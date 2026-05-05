@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Software Engineering MOC]]
+
 # 7장-12장 연습문제 종합
 
 성공적으로 처리된 장: 7, 8, 9, 10, 12

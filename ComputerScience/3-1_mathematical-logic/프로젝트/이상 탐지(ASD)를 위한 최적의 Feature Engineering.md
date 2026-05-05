@@ -14,6 +14,8 @@ type: project
 updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
 ---
 # 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 

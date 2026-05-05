@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
 ---
 #### openai API  활용
     

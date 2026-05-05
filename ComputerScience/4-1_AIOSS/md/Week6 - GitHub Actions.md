@@ -24,6 +24,8 @@ updated: '2026-05-05'
 week: 6
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 # Automation with GitHub Actions
 
 ## 학습 목표

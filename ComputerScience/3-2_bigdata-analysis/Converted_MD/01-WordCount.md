@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 01. Word Count - 빅데이터 분석의 첫 걸음
 
 ## 📚 개요

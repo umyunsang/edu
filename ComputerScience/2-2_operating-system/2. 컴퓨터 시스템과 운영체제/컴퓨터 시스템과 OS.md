@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ## 컴퓨터 하드웨어 구성
 

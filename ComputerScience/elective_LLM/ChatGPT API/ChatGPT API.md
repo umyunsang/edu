@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
 ---
 #### ChatGPT의 API 연동
 - 요청 매개변수 설정 

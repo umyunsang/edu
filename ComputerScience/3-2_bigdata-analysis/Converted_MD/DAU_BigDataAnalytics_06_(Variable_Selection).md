@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # DAU_BigDataAnalytics_06_(Variable_Selection)
 
 # 변수 선택(Variable Selection) 기법에 대한 코드

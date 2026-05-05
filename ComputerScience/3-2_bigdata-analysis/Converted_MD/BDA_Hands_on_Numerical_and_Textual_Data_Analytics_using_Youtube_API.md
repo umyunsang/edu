@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API
 
 # Youtube API와 함께하는 핸즈온 튜토리얼

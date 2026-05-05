@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[AI Open Source MOC]]
+
 ---
 ## slot원본.html
 ```html

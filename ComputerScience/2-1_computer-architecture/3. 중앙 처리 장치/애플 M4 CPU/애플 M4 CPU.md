@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ## 애플 M4 CPU 조사 레포트
 
 ### 1. 개요

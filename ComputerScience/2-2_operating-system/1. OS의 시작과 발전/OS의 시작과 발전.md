@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ## 운영체제의 정의에서 핵심 단어
 1. **운영체제는 컴퓨터의 모든 자원(resource) 관리** 

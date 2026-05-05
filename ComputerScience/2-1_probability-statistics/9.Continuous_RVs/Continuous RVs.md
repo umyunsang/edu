@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
 ---
 ### 연속적인 확률 변수(Continuous Random Variable)
  연속적인 확률 변수는 특정 값 사이의 확률을 표현합니다.

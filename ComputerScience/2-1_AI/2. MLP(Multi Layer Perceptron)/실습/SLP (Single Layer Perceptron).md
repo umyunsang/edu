@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/project
 title: SLP (Single Layer Perceptron)
 type: project
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 #ComputerScience #인공지능 #perceptron 
  

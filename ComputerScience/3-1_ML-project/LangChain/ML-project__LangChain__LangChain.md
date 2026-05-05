@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 ## **1. `docs_load()` 함수**
 - **역할**: PDF 문서를 읽어들입니다.
 - **세부 내용**:

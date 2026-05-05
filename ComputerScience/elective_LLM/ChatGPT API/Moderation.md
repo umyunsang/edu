@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
 ### 주요 특징
 
 1. 텍스트 및 이미지 콘텐츠 검토 지원.

@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ## 1. CPU 스케줄링 개요
 - 스케줄링은 왜 필요할까? 

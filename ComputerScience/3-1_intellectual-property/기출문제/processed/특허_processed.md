@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Certifications MOC]]
+
 [특허] IPAT 기출문제
 
 **1. 다음 중 특허의 요건에 해당하지 않는 것은?**

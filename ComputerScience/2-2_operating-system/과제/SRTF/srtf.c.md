@@ -14,6 +14,8 @@ type: project
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ```c
 #include <stdio.h>

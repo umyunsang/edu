@@ -14,6 +14,8 @@ type: project
 updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
 ### **작업 1: 데이터 정리 함수 정의**
 
 1. 다음 데이터 정리 단계를 구현하세요:

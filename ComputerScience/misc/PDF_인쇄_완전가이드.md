@@ -13,6 +13,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Home MOC]]
+
 # PDF 인쇄 완전 가이드
 
 ## 1. CSS 스니펫 활성화 방법

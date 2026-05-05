@@ -25,6 +25,8 @@ updated: '2026-05-05'
 week: 4
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 # Asynchronous Work - Collaborate from Anywhere
 
 비동기 협업의 원칙과 도구를 이해하고

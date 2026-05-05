@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 아키텍처 다이어그램
 
 ## 소셜 비디오 빅데이터 실시간 처리 플랫폼 아키텍처

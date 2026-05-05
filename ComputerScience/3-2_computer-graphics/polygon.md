@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Computer Vision MOC]]
+
 # OpenGL 폴리곤 그리기 정리
 
 ## 기본 개념

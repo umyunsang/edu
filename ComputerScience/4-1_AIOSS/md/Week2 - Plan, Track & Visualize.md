@@ -24,6 +24,8 @@ updated: '2026-05-05'
 week: 2
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 # Plan, Track, and Visualize Your Work
 
 ## 작업 계획, 추적 및 시각화

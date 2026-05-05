@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Algorithms MOC]]
+
 ---
 #### AVL 트리
 **이진 탐색 트리
