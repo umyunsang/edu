@@ -1,3 +1,17 @@
+---
+aliases: []
+course: machine-learning
+created: '2025-04-15'
+date: '2025-04-15'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: SVM
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 > [!PDF|red] [[20250415_Suport_vector_machine_실습 강의자료.pdf#page=15&selection=12,0,13,0&color=red|20250415_Suport_vector_machine_실습 강의자료, p.15]]

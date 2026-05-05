@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI-system-design
+created: '2025-03-31'
+date: '2025-03-31'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Architecture
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # Architecture

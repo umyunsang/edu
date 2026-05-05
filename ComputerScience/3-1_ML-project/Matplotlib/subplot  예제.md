@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 2x2 그리드로 서브플롯 생성
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 #### **1. 서브플롯 생성**

@@ -1,9 +1,22 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- DORA
+- community
+- contribution
+- inner-source
+- license
+- open-source
+- type/lecture
+title: Open & Inner Source Software Delivery
+type: lecture
+updated: '2026-05-05'
 week: 5
-title: "Open & Inner Source Software Delivery"
-tags: [AIOSS, open-source, inner-source, license, contribution, DORA, community]
 ---
 
 # Open & Inner Source Software Delivery

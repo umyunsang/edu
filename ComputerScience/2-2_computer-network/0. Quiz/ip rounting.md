@@ -1,3 +1,17 @@
+---
+aliases: []
+course: computer-network
+created: '2024-11-10'
+date: '2024-11-10'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Chapter 1. Routing Information Protocol (RIP)
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # Chapter 1. Routing Information Protocol (RIP)

@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-25'
+date: '2025-09-25'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 아키텍처 다이어그램 (텍스트 버전)
+type: lecture
+updated: '2026-05-05'
+---
+
 # 아키텍처 다이어그램 (텍스트 버전)
 
 ```

@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI
+created: '2024-04-10'
+date: '2024-04-10'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/project
+title: AND, NAND, OR 게이트 실습
+type: project
+updated: '2026-05-05'
+---
 
 ---
 

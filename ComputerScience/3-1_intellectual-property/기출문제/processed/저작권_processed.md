@@ -1,3 +1,18 @@
+---
+aliases: []
+course: intellectual-property
+created: '2025-06-14'
+date: '2025-06-14'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 저작권_processed
+type: lecture
+updated: '2026-05-05'
+---
+
 [저작권] IPAT 기출문제
 
 **1. 저작권의 보호 대상에 해당하지 않는 것은?**

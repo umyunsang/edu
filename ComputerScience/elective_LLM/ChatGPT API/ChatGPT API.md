@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-20'
+date: '2025-01-20'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 응답이 준비되는 대로 바로 받아볼 수 있습니다.
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 #### ChatGPT의 API 연동

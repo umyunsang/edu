@@ -1,3 +1,17 @@
+---
+aliases: []
+course: web-programming
+created: '2024-04-09'
+date: '2024-04-09'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: HTML 기초 실습
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 1.html

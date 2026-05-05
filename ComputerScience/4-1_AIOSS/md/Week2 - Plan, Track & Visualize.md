@@ -1,9 +1,22 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- agile
+- github-projects
+- issue-tracking
+- kanban
+- scrum
+- sprint
+- type/lecture
+title: Plan, Track, and Visualize Your Work
+type: lecture
+updated: '2026-05-05'
 week: 2
-title: "Plan, Track, and Visualize Your Work"
-tags: [AIOSS, agile, scrum, github-projects, kanban, sprint, issue-tracking]
 ---
 
 # Plan, Track, and Visualize Your Work

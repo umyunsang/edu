@@ -1,9 +1,22 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- CI-CD
+- DORA
+- DevOps
+- code-quality
+- flow-metrics
+- metrics
+- type/lecture
+title: Metrics That Matter
+type: lecture
+updated: '2026-05-05'
 week: 1
-title: "Metrics That Matter"
-tags: [AIOSS, metrics, DORA, DevOps, CI-CD, flow-metrics, code-quality]
 ---
 
 # Metrics That Matter

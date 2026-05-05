@@ -1,9 +1,16 @@
-
 ---
-### 박스 플롯 (Boxplot) 예제
-
-아래는 `matplotlib`를 사용하여 여러 데이터 세트의 분포를 시각화하는 박스 플롯을 생성하는 코드입니다. 박스 플롯은 데이터의 중앙값, 사분위수, 그리고 이상치를 시각적으로 나타내는 데 유용합니다.
-
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 랜덤 시드 설정 (재현성을 위해)
+type: lecture
+updated: '2026-05-05'
 ---
 
 ```python

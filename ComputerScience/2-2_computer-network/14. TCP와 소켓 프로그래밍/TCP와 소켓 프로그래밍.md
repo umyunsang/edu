@@ -1,3 +1,17 @@
+---
+aliases: []
+course: computer-network
+created: '2024-12-02'
+date: '2024-12-02'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: TCP와 소켓 프로그래밍
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 1. 전송 계층 관련 프로토콜 분석

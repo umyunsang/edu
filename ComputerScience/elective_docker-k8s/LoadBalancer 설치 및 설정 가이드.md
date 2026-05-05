@@ -1,3 +1,17 @@
+---
+aliases: []
+course: docker-k8s
+created: '2025-01-17'
+date: '2025-01-17'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: LoadBalancer 설치 및 설정 가이드
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### LoadBalancer 설치 및 설정 가이드

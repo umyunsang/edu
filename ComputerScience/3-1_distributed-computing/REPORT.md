@@ -1,3 +1,17 @@
+---
+aliases: []
+course: distributed-computing
+created: '2025-06-04'
+date: '2025-06-04'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: CUDA 프로그램 연습 및 CUDA API이해
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # CUDA 프로그램 연습 및 CUDA API이해

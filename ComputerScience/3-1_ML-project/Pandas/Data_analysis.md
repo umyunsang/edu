@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-07'
+date: '2024-08-07'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: CSV 파일 경로
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 데이터 분석 및 처리 과정 요약

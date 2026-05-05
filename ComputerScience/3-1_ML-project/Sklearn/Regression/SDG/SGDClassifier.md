@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-13'
+date: '2024-08-13'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: '**SGDClassifier  사용한 물고기 데이터 분류**'
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # **SGDClassifier  사용한 물고기 데이터 분류**

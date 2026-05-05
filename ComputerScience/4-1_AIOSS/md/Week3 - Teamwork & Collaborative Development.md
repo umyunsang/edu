@@ -1,9 +1,23 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- branch-protection
+- code-review
+- conventional-commits
+- git-flow
+- github-flow
+- pull-request
+- teamwork
+- type/lecture
+title: Teamwork & Collaborative Development
+type: lecture
+updated: '2026-05-05'
 week: 3
-title: "Teamwork & Collaborative Development"
-tags: [AIOSS, teamwork, pull-request, code-review, git-flow, github-flow, conventional-commits, branch-protection]
 ---
 
 # Teamwork & Collaborative Development

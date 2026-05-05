@@ -1,3 +1,17 @@
+---
+aliases: []
+course: computer-architecture
+created: '2024-05-26'
+date: '2024-05-26'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 과제_CacheFriendly코딩실습
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 

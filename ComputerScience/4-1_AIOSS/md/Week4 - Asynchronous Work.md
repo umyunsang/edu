@@ -1,9 +1,23 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- ADR
+- AIOSS
+- RFC
+- async
+- collaboration
+- documentation
+- github-discussions
+- remote-work
+- type/lecture
+title: Asynchronous Work
+type: lecture
+updated: '2026-05-05'
 week: 4
-title: "Asynchronous Work"
-tags: [AIOSS, async, remote-work, collaboration, github-discussions, ADR, RFC, documentation]
 ---
 
 # Asynchronous Work - Collaborate from Anywhere

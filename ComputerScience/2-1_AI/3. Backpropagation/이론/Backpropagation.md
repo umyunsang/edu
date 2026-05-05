@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI
+created: '2024-04-09'
+date: '2024-04-09'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Backpropagation
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### Gradient Descent Method (경사 하강법)

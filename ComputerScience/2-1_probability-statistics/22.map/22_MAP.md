@@ -1,3 +1,17 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Maximum A Posteriori
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # Maximum A Posteriori
@@ -39,4 +53,3 @@ Laplace estimates : 각각의 Observe 에 +1 을 함
 | Multinomial $p_i$             | Dirichlet     |
 | Normal $\mu$                  | Normal        |
 | Normal $\sigma^2$             | Inverse Gamma |
-

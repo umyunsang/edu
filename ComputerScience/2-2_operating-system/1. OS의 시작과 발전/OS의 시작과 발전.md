@@ -1,3 +1,17 @@
+---
+aliases: []
+course: operating-system
+created: '2024-09-04'
+date: '2024-09-04'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: OS의 시작과 발전
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 운영체제의 정의에서 핵심 단어

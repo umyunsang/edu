@@ -1,3 +1,18 @@
+---
+aliases: []
+course: java
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: 자바 · 미니 인덱스
+type: MOC
+updated: '2026-05-05'
+---
+
 # 자바 · 미니 인덱스
 
 ## 📄 Top Notes
@@ -9,4 +24,3 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-

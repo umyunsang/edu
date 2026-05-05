@@ -1,3 +1,18 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Binomial Distribution
+type: lecture
+updated: '2026-05-05'
+---
+
 #ComputerScience #확률과통계
 
 ---

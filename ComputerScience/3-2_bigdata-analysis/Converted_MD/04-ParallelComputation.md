@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 04. 병렬 컴퓨팅 - Python을 활용한 분산 처리
+type: lecture
+updated: '2026-05-05'
+---
+
 # 04. 병렬 컴퓨팅 - Python을 활용한 분산 처리
 
 ## 📚 개요

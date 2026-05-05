@@ -1,3 +1,18 @@
+---
+aliases: []
+course: uncategorized
+created: '2024-05-23'
+date: '2024-05-23'
+semester: extracurricular
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: 🧭 Obsidian | Computer Science & AI Curriculum Map
+type: MOC
+updated: '2026-05-05'
+---
+
 # 🧭 Obsidian | Computer Science & AI Curriculum Map
 
 <p align="center">

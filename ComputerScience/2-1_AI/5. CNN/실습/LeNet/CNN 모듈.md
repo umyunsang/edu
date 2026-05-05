@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI
+created: '2024-05-25'
+date: '2024-05-25'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/project
+title: CNN 모델 정의
+type: project
+updated: '2026-05-05'
+---
 
 ---
 ![](../../../../../../image/Pasted%20image%2020240527184404.png)

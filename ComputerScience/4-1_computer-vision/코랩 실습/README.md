@@ -1,3 +1,18 @@
+---
+aliases: []
+course: computer-vision
+created: '2026-03-26'
+date: '2026-03-26'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: 컴퓨터비전 코랩 실습 목록
+type: MOC
+updated: '2026-05-05'
+---
+
 # 컴퓨터비전 코랩 실습 목록
 
 이 폴더는 컴퓨터비전 강의의 주요 알고리즘과 기법들을 Google Colab 환경에서 실습한 노트북 파일들을 담고 있습니다.

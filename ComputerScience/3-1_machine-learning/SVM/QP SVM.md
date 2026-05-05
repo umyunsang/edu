@@ -1,3 +1,17 @@
+---
+aliases: []
+course: machine-learning
+created: '2025-04-15'
+date: '2025-04-15'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Quadratic Programming 기반 SVM(Support Vector Machine)
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # Quadratic Programming 기반 SVM(Support Vector Machine)
@@ -24,7 +38,3 @@ visualize_svm(clf.coef_[0], clf.intercept_)
 margin = 2 / np.sqrt(np.dot(clf.coef_[0].T, clf.coef_[0]))
 print(margin)
 ```
-
-
-
-

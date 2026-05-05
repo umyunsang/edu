@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: DAU_BigDataAnalytics_06_(Variable_Selection)
+type: lecture
+updated: '2026-05-05'
+---
+
 # DAU_BigDataAnalytics_06_(Variable_Selection)
 
 # 변수 선택(Variable Selection) 기법에 대한 코드

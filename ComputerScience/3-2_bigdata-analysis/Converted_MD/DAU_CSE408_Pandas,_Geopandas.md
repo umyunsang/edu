@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: DAU_CSE408_Pandas,_Geopandas
+type: lecture
+updated: '2026-05-05'
+---
+
 # DAU_CSE408_Pandas,_Geopandas
 
 # 동아대학교 컴퓨터AI공학부

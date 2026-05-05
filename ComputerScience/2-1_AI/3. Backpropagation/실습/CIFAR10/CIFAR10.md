@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI
+created: '2024-04-16'
+date: '2024-04-16'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/project
+title: GPU를 사용할지 여부를 확인합니다.
+type: project
+updated: '2026-05-05'
+---
 
 ---
 ## CIFAR10

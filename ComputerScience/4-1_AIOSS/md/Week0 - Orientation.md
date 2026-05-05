@@ -1,9 +1,21 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- CI-CD
+- DevOps
+- github
+- open-source
+- orientation
+- type/lecture
+title: Orientation
+type: lecture
+updated: '2026-05-05'
 week: 0
-title: "Orientation"
-tags: [AIOSS, orientation, github, open-source, CI-CD, DevOps]
 ---
 
 # Week 0 - Orientation: AI Open Source Software

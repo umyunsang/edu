@@ -1,3 +1,18 @@
+---
+aliases: []
+course: discrete-math
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: '[2-2] 이산수학 · 미니 인덱스'
+type: MOC
+updated: '2026-05-05'
+---
+
 # [2-2] 이산수학 · 미니 인덱스
 
 ## 🔗 Quick Links

@@ -1,7 +1,16 @@
-
 ---
-### Embedding: 개요 및 실습
-
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: OpenAI API Key 설정
+type: lecture
+updated: '2026-05-05'
 ---
 
 #### 1. Embedding이란?

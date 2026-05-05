@@ -1,3 +1,18 @@
+---
+aliases: []
+course: intellectual-property
+created: '2025-06-14'
+date: '2025-06-14'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 지식재산권_processed
+type: lecture
+updated: '2026-05-05'
+---
+
 [지식재산권] IPAT 기출문제
 
 **1. 다음 중 특허권의 요건으로 옳지 않은 것은?**

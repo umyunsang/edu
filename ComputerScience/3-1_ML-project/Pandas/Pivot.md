@@ -1,7 +1,16 @@
-
 ---
-### Pandas를 활용한 데이터 조작 및 분석
-
+aliases: []
+course: ML-project
+created: '2024-08-07'
+date: '2024-08-07'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: DataFrame 생성
+type: lecture
+updated: '2026-05-05'
 ---
 
 #### 1. DataFrame 생성 및 초기화

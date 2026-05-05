@@ -1,3 +1,17 @@
+---
+aliases: []
+course: OSS
+created: '2024-11-29'
+date: '2024-11-29'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: slot 요구사항
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## slot원본.html

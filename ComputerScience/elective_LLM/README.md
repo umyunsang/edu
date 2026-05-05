@@ -1,3 +1,18 @@
+---
+aliases: []
+course: LLM
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: LLM 이해와 활용 · 미니 인덱스
+type: MOC
+updated: '2026-05-05'
+---
+
 # LLM 이해와 활용 · 미니 인덱스
 
 ## 🔗 Quick Links

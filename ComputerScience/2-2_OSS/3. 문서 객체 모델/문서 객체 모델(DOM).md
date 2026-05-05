@@ -1,3 +1,17 @@
+---
+aliases: []
+course: OSS
+created: '2024-11-08'
+date: '2024-11-08'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 문서 객체 모델(DOM)
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## DOM 이해하기

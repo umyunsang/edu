@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 02. MapReduce - 분산 데이터 처리의 핵심
+type: lecture
+updated: '2026-05-05'
+---
+
 # 02. MapReduce - 분산 데이터 처리의 핵심
 
 ## 📚 개요

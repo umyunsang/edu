@@ -1,3 +1,17 @@
+---
+aliases: []
+course: data-structures
+created: '2024-05-11'
+date: '2024-05-11'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 트리 (TREE)
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 #### 트리(TREE) 정의 
