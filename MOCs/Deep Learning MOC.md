@@ -1,6 +1,6 @@
 ---
 aliases:
-  - DL MOC
+- DL MOC
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -8,8 +8,8 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
-  - cs/dl
+- type/MOC
+- cs/dl
 title: Deep Learning MOC
 type: MOC
 updated: 2026-05-05

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - 미해결 질문
+- 미해결 질문
 course: cross-curriculum
 created: 2026-05-05
 date: 2026-05-05
@@ -8,8 +8,8 @@ semester: all
 source: ''
 status: evergreen
 tags:
-  - type/MOC
-  - meta/question
+- type/MOC
+- meta/question
 title: Open Questions MOC
 type: MOC
 updated: 2026-05-05
