@@ -1,3 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: Variance
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Math Foundations MOC]]
+
+siblings:: [[probability-statistics__7-0.Variance__문제 풀이]]
 #ComputerScience #확률과통계 
 
 ---

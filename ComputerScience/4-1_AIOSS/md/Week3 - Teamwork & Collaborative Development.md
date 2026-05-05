@@ -1,11 +1,33 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- branch-protection
+- code-review
+- conventional-commits
+- cs/ai
+- cs/devops
+- cs/open-source
+- git-flow
+- github-flow
+- pull-request
+- teamwork
+- type/lecture
+title: Teamwork & Collaborative Development
+type: lecture
+updated: '2026-05-05'
 week: 3
-title: "Teamwork & Collaborative Development"
-tags: [AIOSS, teamwork, pull-request, code-review, git-flow, github-flow, conventional-commits, branch-protection]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Teamwork & Collaborative Development
 
 팀워크와 협업 개발 - Pull Request 기반 워크플로우, 코드 리뷰 전략, 그리고 협업 베스트 프랙티스

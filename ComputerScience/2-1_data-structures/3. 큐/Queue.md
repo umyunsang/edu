@@ -1,4 +1,22 @@
+---
+aliases: []
+course: data-structures
+created: '2024-08-16'
+date: '2024-08-16'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/algorithms
+- type/lecture
+title: Queue
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Algorithms MOC]]
+
+siblings:: [[큐]]
 ---
 ## 큐
 

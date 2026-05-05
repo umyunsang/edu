@@ -1,3 +1,23 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- cs/db
+- cs/ml
+- type/lecture
+title: 04. 병렬 컴퓨팅 - Python을 활용한 분산 처리
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Machine Learning MOC]]
+
+siblings:: [[01-WordCount]], [[02-MapReduce]], [[03_Hadoop]], [[05-PySpark]], [[06-SparkDataFrames]], [[07-PandasSeries]], [[08-PandaDataframes]], [[BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
 # 04. 병렬 컴퓨팅 - Python을 활용한 분산 처리
 
 ## 📚 개요

@@ -1,9 +1,23 @@
-
 ---
-### Embedding: 개요 및 실습
-
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: OpenAI API Key 설정
+type: lecture
+updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 #### 1. Embedding이란?
 
 - **정의**: 텍스트 데이터를 고차원 벡터(부동소수점 배열)로 변환하는 기술.

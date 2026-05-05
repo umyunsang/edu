@@ -1,4 +1,23 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: 데이터프레임 로드
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[TTS, STT]]
 ---
 #### openai API  활용
     

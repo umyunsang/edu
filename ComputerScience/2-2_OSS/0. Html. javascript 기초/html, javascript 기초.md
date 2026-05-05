@@ -1,5 +1,22 @@
+---
+aliases: []
+course: OSS
+created: '2024-09-06'
+date: '2024-09-06'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/open-source
+- type/lecture
+title: QUIZ.1
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[AI Open Source MOC]]
 
+siblings:: [[OSS__0. Html. javascript 기초__연습문제]]
 ---
 # QUIZ.1
 
@@ -244,4 +261,4 @@ function changeColor() {
     else return true;
   }
 ```
-- 
+-

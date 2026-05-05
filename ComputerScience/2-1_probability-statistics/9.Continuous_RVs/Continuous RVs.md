@@ -1,4 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: Continuous RVs
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[probability-statistics__9.Continuous_RVs__문제 풀이]]
 ---
 ### 연속적인 확률 변수(Continuous Random Variable)
  연속적인 확률 변수는 특정 값 사이의 확률을 표현합니다.
@@ -118,5 +137,3 @@ $$F(x; \lambda) = \int_{0}^{x} \lambda e^{-\lambda t} dt = 1 - e^{-\lambda x}, \
 지수 분포의 CDF는 적분을 통해 얻어지며, 확률 변수가 특정 값 이하일 확률을 나타냅니다. 특히, $x$ 이하의 값에 대한 확률을 나타내는데 유용합니다. CDF의 값은 0에서 시작하여 $x$가 증가함에 따라 지수적으로 증가하며, $x$가 무한히 커질 때 1에 수렴합니다.
 
 지수 분포의 CDF는 또한 확률 변수가 특정 값보다 큰 값을 가질 확률을 계산하는데에도 유용하게 사용됩니다. 특히, $1 - F(x)$를 계산하면 확률 변수가 $x$보다 큰 값을 가질 확률을 구할 수 있습니다.
-
-

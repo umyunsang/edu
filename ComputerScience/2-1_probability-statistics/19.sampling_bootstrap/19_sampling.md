@@ -1,4 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: 19_sampling
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[Bootstrapping]], [[Sampling]]
 ---
 
 ### 샘플을 통한 모평균과 모분산 추정
@@ -107,4 +126,3 @@ $$SE = \sqrt{\frac{S^2}{n}}$$
 - $\sqrt{\frac{S^2}{n}}$는 $\overline{X}$의 분산의 제곱근을 추정할 수 있습니다.
 
 따라서, 샘플 평균 $\overline{X}$와 샘플 분산 $S^2$는 각각 모평균 $\mu$와 모분산 $\sigma^2$에 대한 좋은 추정치를 제공하며, 표준 오차(SE)는 샘플 평균의 변동성을 측정하는 데 사용됩니다.
-

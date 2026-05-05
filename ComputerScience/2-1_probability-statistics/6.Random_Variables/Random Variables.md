@@ -1,3 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: Random Variables
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Math Foundations MOC]]
+
+siblings:: [[Expectation]], [[probability-statistics__6.Random_Variables__문제 풀이]]
 #ComputerScience #확률과통계 
 
 ---

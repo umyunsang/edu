@@ -1,3 +1,19 @@
+---
+aliases: []
+course: python
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 2-1
+source: ''
+status: evergreen
+tags:
+- skill/python
+- type/index
+title: '[2-1] Python(basic) · 미니 인덱스'
+type: index
+updated: '2026-05-05'
+---
+
 # [2-1] Python(basic) · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -14,7 +30,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

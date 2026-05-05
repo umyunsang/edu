@@ -1,4 +1,23 @@
+---
+aliases: []
+course: AI-system-design
+created: '2025-03-31'
+date: '2025-03-31'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/se
+- type/lecture
+title: Architecture
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[AI Open Source MOC]]
+
+siblings:: [[test]]
 ---
 # Architecture
 ## **1. 시스템 개요**  
@@ -311,6 +330,3 @@ curl -X 'POST' \
 4. 일반 사용자 메뉴 추가 - ❌ 실패 (권한 없음, 예상된 동작)
 5. 관리자 로그인 - ✅ 성공
 6. 관리자 메뉴 추가 - ✅ 성공
-
-
-

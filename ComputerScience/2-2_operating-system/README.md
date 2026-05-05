@@ -1,3 +1,19 @@
+---
+aliases: []
+course: operating-system
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 2-2
+source: ''
+status: evergreen
+tags:
+- cs/systems
+- type/index
+title: '[2-2] 운영체제 · 미니 인덱스'
+type: index
+updated: '2026-05-05'
+---
+
 # [2-2] 운영체제 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -21,7 +37,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

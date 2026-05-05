@@ -1,9 +1,22 @@
-
 ---
-물론입니다. 애플 M4 CPU에 대한 조사 레포트를 작성해드리겠습니다. 참고한 홈페이지와 관련 기사는 링크로 제공하겠습니다.
-
+aliases: []
+course: computer-architecture
+created: '2024-05-18'
+date: '2024-05-18'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/systems
+- type/lecture
+title: 애플 M4 CPU
+type: lecture
+updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
+siblings:: [[1. 프로세스 구성과 동작]], [[2. 산술 논리 연산 장치]], [[3. 레지스터]], [[4. 컴퓨터 명령어]], [[5. 주소 지정 방식]], [[6. CISC와 RISC]]
 ## 애플 M4 CPU 조사 레포트
 
 ### 1. 개요

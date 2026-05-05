@@ -1,9 +1,23 @@
-
 ---
-### Text to Speech (TTS) 및 Speech to Text (STT) 기능 요약
-
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: 음성 파일 저장
+type: lecture
+updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]]
 ### 1. Text to Speech (TTS)
 
 **TTS 모델**은 텍스트를 음성으로 변환하며, 다양한 언어 및 음성 스타일을 제공합니다.  

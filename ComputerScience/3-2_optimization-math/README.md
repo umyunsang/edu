@@ -1,3 +1,20 @@
+---
+aliases: []
+course: optimization-math
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 3-2
+source: ''
+status: evergreen
+tags:
+- cs/ml
+- math/calculus
+- type/index
+title: '[3-2] 최적화수학 · 미니 인덱스'
+type: index
+updated: '2026-05-05'
+---
+
 # [3-2] 최적화수학 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -5,7 +22,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

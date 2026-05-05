@@ -1,4 +1,24 @@
+---
+aliases: []
+course: AI
+created: '2024-04-10'
+date: '2024-04-10'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/dl
+- cs/ml
+- type/lecture
+title: AND, NAND, OR 게이트
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Deep Learning MOC]]
+
+siblings:: [[AND, NAND, OR 게이트 실습]]
 ---
 1.  **AND 게이트**:
    - 입력값이 모두 참일 때만 출력이 참이므로, 두 입력값의 가중치 합이 임계값을 초과해야 합니다.

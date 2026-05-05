@@ -1,4 +1,22 @@
+---
+aliases: []
+course: ML-project
+created: '2024-06-12'
+date: '2024-06-12'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: 도미 35마리 length길이(cm)와 weight무게(g) 데이터
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[Decision_Tree]]
 ---
 ## K-최근접 이웃 (K-Nearest Neighbors) 분류기 활용
 

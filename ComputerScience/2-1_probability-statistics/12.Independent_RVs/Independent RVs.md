@@ -1,4 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: Independent RVs
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[19_sampling]], [[20_mle]], [[22_MAP]], [[23_naive_bayes]], [[Bayes' Theorem]], [[Bernoulli Distribution]], [[Binomial Distribution]], [[Bootstrapping]]
 ---
 ### 독립 이산형 확률 변수(Independent discrete random variables)
 

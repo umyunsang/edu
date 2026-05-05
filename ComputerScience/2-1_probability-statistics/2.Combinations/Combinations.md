@@ -1,4 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: Combinations
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Math Foundations MOC]]
+
+siblings:: [[probability-statistics__2.Combinations__문제 풀이]]
 ---
 
 ### Permutations of Distinct Objects (서로 다른 객체의 순열)

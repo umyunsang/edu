@@ -1,3 +1,22 @@
+---
+aliases: []
+course: computer-graphics
+created: '2025-10-19'
+date: '2025-10-19'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- cs/cv
+- type/lecture
+title: 컴퓨터그래픽스 시험 대비 자료
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Computer Vision MOC]]
+
+siblings:: [[0. 소개]], [[final exam]], [[polygon]], [[깊이-버퍼와-투영]], [[좌표공간과-카메라]], [[지오매트리]], [[컴퓨터그래픽스-시험대비]]
 # 컴퓨터그래픽스 시험 대비 자료
 
 ## 📚 목차

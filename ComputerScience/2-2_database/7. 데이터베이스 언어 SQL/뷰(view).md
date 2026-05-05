@@ -1,4 +1,22 @@
+---
+aliases: []
+course: database
+created: '2024-10-28'
+date: '2024-10-28'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/db
+- type/lecture
+title: 뷰(view)
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Database MOC]]
+
+siblings:: [[데이터 베이스 언어 SQL]]
 ---
 ## 4. 뷰
 #### 뷰(view)

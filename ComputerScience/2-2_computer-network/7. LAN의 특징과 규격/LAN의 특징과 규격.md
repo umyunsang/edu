@@ -1,4 +1,22 @@
+---
+aliases: []
+course: computer-network
+created: '2024-10-16'
+date: '2024-10-16'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/systems
+- type/lecture
+title: LAN의 특징과 규격
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Systems MOC]]
+
+siblings:: [[ip rounting]], [[TCP와 소켓 프로그래밍]], [[기말 암기 정리]], [[기말 퀴즈]], [[네트워크 계층]], [[네트워크 계층 작업과 프로토콜]], [[네트워크 분류와 계층 모델]], [[데이터 링크 계층의 작업 (2 계층)]]
 ---
 ## 1. LAN 계층
 #### LAN의 계층 구조

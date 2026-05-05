@@ -1,3 +1,24 @@
+---
+aliases: []
+course: AI
+created: '2024-04-02'
+date: '2024-04-02'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/dl
+- cs/ml
+- type/project
+title: SLP (Single Layer Perceptron)
+type: project
+updated: '2026-05-05'
+---
+
+up:: [[Deep Learning MOC]]
+
+siblings:: [[MLP (Multi Layer Perceptron)]]
 #ComputerScience #인공지능 #perceptron 
  
 ---

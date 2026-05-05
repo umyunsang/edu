@@ -1,8 +1,27 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: 필요한 라이브러리 임포트
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Llama Index]], [[LLM__검색 증강 생성 RAG__LangChain]], [[Vector store]]
 ---
 ### RAG (Retrieval-Augmented Generation) 개요
 
-![[Pasted image 20250121150551.png]]
+![[elective_LLM__Pasted image 20250121150551.png]]
 
 **RAG**는 생성형 AI 모델에 실시간 정보 검색 능력을 결합한 접근 방식입니다. 대형 언어 모델(LLM)이 외부 지식 소스와 연계하여 모델의 범용성과 적응력을 유지하면서도 정확하고 신뢰할 수 있는 답변을 생성할 수 있게 합니다. 주요 응용 분야로는 질문 응답 시스템(QA), 지식 검색, 고객 지원 등이 있습니다.
 

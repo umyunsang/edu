@@ -1,4 +1,22 @@
+---
+aliases: []
+course: machine-learning
+created: '2025-03-27'
+date: '2025-03-27'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: Linear Regression
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[LSM, GDM 선형 회귀모델]], [[Multiple_Linear_Regression]], [[우버데이터_Multiple_Linear_Regression]]
 ---
 ## Linear Regression
 

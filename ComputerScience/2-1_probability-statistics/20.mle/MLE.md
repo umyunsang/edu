@@ -1,3 +1,23 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- math/probability
+- math/statistics
+- type/lecture
+title: MLE
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[Math Foundations MOC]]
+
+siblings:: [[20_mle]], [[파라미터 추정]]
 ### 최대 우도 추정 (Maximum Likelihood Estimation, )
 
 최대 우도 추정(MLE)은 관찰된 데이터를 가장 잘 설명하는 파라미터 $\theta$를 선택하는 알고리즘입니다. 우리가 파라미터를 추정하는 데 사용할 데이터는 $n$개의 독립적이고 동일하게 분포된(IID) 샘플 $X_1, X_2, \dots, X_n$입니다.
@@ -86,4 +106,3 @@ $$
 $$
 {\mu}_{MLE} = \frac{1}{n}\sum_{i=1}^n X_i, \quad {\sigma^2}_{MLE} = \frac{1}{n}\sum_{i=1}^n (x_i - {\mu}_{MLE})^2
 $$
-

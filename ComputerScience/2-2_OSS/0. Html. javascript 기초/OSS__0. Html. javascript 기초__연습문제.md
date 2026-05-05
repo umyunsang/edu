@@ -1,0 +1,341 @@
+---
+aliases: []
+course: OSS
+created: '2024-09-06'
+date: '2024-09-06'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/open-source
+- type/lecture
+title: 연습문제
+type: lecture
+updated: '2026-05-05'
+---
+
+up:: [[AI Open Source MOC]]
+
+siblings:: [[html, javascript 기초]]
+---
+![](../../../../image/Pasted%20image%2020240906112005.png)
+```html
+<!-- html 주석처리 방법 -->
+```
+```javascript
+// jjavascript 주석처리 방법
+/* jjavascript 주석처리 방법*/
+```
+```css
+/* css 주석 처리 */
+```
+---
+![](../../../../image/Pasted%20image%2020240906112326.png)
+```html
+<input type='text' name=''>
+```
+---
+![](../../../../image/Pasted%20image%2020240909103639.png)
+```html
+<button onclick="startTest()">테스트 시작</button>
+```
+---
+![](../../../../image/Pasted%20image%2020240909103929.png)
+```html
+<style>
+	body { padding:20px; background:yellow;}
+	h1 {color:blue;background:cyan;}
+	button {background:pink;}
+</style>
+```
+---
+![](../../../../image/Pasted%20image%2020240909104407.png)
+```html
+<head>
+    <meta charset="UTF-8">
+    <title>오늘 실습</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+```
+
+```css
+body { padding:20px; background:yellow;}
+h1 {color:blue;background:cyan;}
+button {background:pink;}
+```
+---
+![](../../../../image/Pasted%20image%2020240909104810.png)
+```html
+<script src="quiz.js"> </script>
+```
+
+```js
+function checkAnswers() {
+    let score = 0;
+    // 사용자가 입력한 값 가져오기
+    let a1 = document.getElementById('a1').value.trim();
+    let a2 = document.getElementById('a2').value.trim();
+    let a3 = document.getElementById('a3').value.trim();
+    // 채점
+    if (a1.toLowerCase() === "cat") score++;
+    if (a2.toLowerCase() === "dolphin") score++;
+    if (a3.toLowerCase() === "duck") score++;
+    // 결과 출력
+    document.getElementById('result').textContent = score + "개 맞았습니다.";
+}
+```
+---
+![](../../../../image/Pasted%20image%2020240909105119.png)
+- **document.getElementById('a1')**: HTML 문서에서 특정 `id(a1)`를 가진 요소를 선택하는 메서드.
+- **a1** : js 변수
+-  **value**: 사용자가 입력한 텍스트 값을 가져오는 속성.
+-  **trim()**: 사용자가 입력한 값에서 앞뒤 공백을 제거하는 메서드 (중간 공백은 X)
+---
+![](../../../../image/Pasted%20image%2020240909105643.png)
+ - `.value`는 사용자가 `<input>` 필드에 입력한 값을 가져옵니다.
+ - `.textContent`는 `<h3>` 요소의 텍스트 내용을 변경하여 화면에 표시합니다.
+---
+![](../../../../image/Pasted%20image%2020240909105818.png)
+```html
+<body>
+	10<sup>2</sup>은? <input type="text" id="a4"> <br><br>
+	25<sup>2</sup>은? <input type="test" id="a5"> <br><br>
+</body>
+```
+
+```js
+function checkAnswers() {
+const a4 = document.getElementById('a4').value.trim();
+const a5 = document.getElementById('a5').value.trim();
+
+if (a4.toLowerCase() === "100") score++;
+if (a5.toLowerCase() === "625") score++;
+}
+```
+---
+![](../../../../image/Pasted%20image%2020240909110731.png)
+```html
+<body>
+<h3 id="good"></h3>
+</body>
+```
+
+```js
+function checkAnswers() {
+    if (score==5)
+        document.getElementById('good').textContent = "참 잘했어요!!";
+    else if (score==0)
+	    document.getElementById('good').textContent = "try again";
+    else
+	    document.getElementById('good').textContent = "";
+}
+```
+---
+![](../../../../image/Pasted%20image%2020240909111448.png)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1705817 엄윤상</title>
+</head>
+<style>
+    body {padding: 20px; background: aqua;}
+    button {background: yellow;}
+    h1 {color: blue;}
+    h3 {color: red;}
+    img {width: 120px; height: 80ps;}
+</style>
+<body>
+    <h1>무엇일까요? </h1>
+    <img src="static/당근.png" alt="당근"> <input type="text" id="a1"> <br><br>
+    <img src="static/양파.png" alt="양파"> <input type="text" id="a2"> <br><br>
+    <img src="static/식빵.png" alt="식빵"> <input type="text" id="a3"> <br><br>
+    <button onclick="checkAnswers()">제출하기</button> <br><br>
+    <h3 id="result"></h3>
+    <h3 id="good"></h3>
+    <script>
+    function checkAnswers() {
+        let score = 0;
+        const a1 = document.getElementById('a1').value.trim();
+        const a2 = document.getElementById('a2').value.trim();
+        const a3 = document.getElementById('a3').value.trim();
+        if (a1.toLowerCase() === "당근") score++;
+        if (a2.toLowerCase() === "양파") score++;
+        if (a3.toLowerCase() === "식빵") score++;
+        document.getElementById('result').textContent = score + "개 맞았습니다.";
+        if (score==3)
+        document.getElementById('good').textContent = "참 잘했어요!!";
+        else if (score==0)
+        document.getElementById('good').textContent = "try again";
+        else
+        document.getElementById('good').textContent = "";
+    }
+    </script>
+</body>
+</html>
+```
+---
+![](../../../../image/Pasted%20image%2020240909112758.png)
+```js
+const image = document.getElementById('image');
+const who = document.getElementById('who').value.trim();
+if (who == "당근") image.src = 'static/당근.png';
+else if (who == "양파") image.src = 'static/양파.png';
+else if (who == "식빵") image.src = 'static/식빵.png';
+else image.src = 'static/쏘리.png';
+```
+- value.trim()
+- who ==
+- static/
+---
+![](../../../../image/Pasted%20image%2020240909113123.png)
+```html
+<button onclick="showImage()">사진</button>
+```
+---
+![](../../../../image/Pasted%20image%2020240909113156.png)
+```js
+if (who == "당근" || who == "당") image.src = 'static/당근.png';
+else if (who == "양파" || who == "양") image.src = 'static/양파.png';
+else if (who == "식빵" || who == "식") image.src = 'static/식빵.png';
+else image.src = 'static/쏘리.png';
+```
+---
+![](../../../../image/Pasted%20image%2020240913105309.png)
+
+![](../../../../image/Pasted%20image%2020240913105606.png)
+![](../../../../image/Pasted%20image%2020240913105622.png)
+```js
+function calculate(op) {
+    // html에서 입력한 숫자 2개 가져와서 숫자로 변환 후 num1, num2에 넣음
+    const num1 = parseFloat(document.getElementById('number1').value);
+    const num2 = parseFloat(document.getElementById('number2').value);
+    let result = 0;
+    // 숫자 아니면 리턴(종료)
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("두 개 모두 숫자로 입력해 주세요!");
+        return;
+    }
+    switch (op) {
+        case '+': result = num1 + num2; break;
+        case '-': result = num1 - num2; break;
+        case '*': result = num1 * num2; break;
+        case '**': result = num1 ** num2; break;
+        case 'bigger':
+            if (num1 > num2) result = num1;
+            else result = num2;
+            break;
+        case 'clear': boxclear(); break;
+        case '/': if (num2 === 0) {
+                alert("0으로 나눌 수 없어요!"); return;
+            }
+            result = num1 / num2; break;
+    }
+    // 결과 보여줌
+    document.getElementById('result').value = result;
+}
+function boxclear() {
+    document.getElementById('number1').value = "";
+    document.getElementById('number2').value = "";
+    document.getElementById('result').value = "";
+}
+```
+---
+![](../../../../image/Pasted%20image%2020240913112801.png)
+- alert창은 일반적으로 사용자한데 메세지 전달
+- prompt창은 사용자한데 입력을 받음
+
+---
+![](../../../../image/Pasted%20image%2020240913112937.png)
+- 괄호안 문자열의 자료형을 변환 함
+
+---
+![](../../../../image/Pasted%20image%2020240920105617.png)
+```js
+// (1) 화면 바탕색바꾸기
+document.body.style.backgroundColor = co;
+// (2) input박스 글자색 바꾸기
+document.getElementById("co").style.color = co;
+```
+---
+![](../../../../image/Pasted%20image%2020240920110327.png)
+```js
+return st.color != "";
+```
+
+---
+![](../../../../image/Pasted%20image%2020240920111245.png)
+- return 을 적어주면 더 좋다
+
+---
+![](../../../../image/Pasted%20image%2020240920111458.png)
+```js
+    if (co == "") {
+        alert("색을 입력해 주세요"); return
+    }
+    else if (!isValidColor(co)) {
+      alert(co + "는 존재하지 않는 색입니다. 다시 작성해 주세요 ^^"); return
+    }
+```
+
+---
+![](../../../../image/Pasted%20image%2020240920112018.png)
+- value는 검은 글자이면서 사람이 입력했다고 생각하고 값이 넘어간다
+- placehoder는 회색 글자이면서 값이 안 넘어 간다
+
+---
+![](../../../../image/Pasted%20image%2020240920112345.png)
+```js 
+alert(`${co}는 존재하지 않는 색입니다. 다시 작성해 주세요 ^^`);
+```
+```js
+let n, sum;
+
+n = prompt("숫자를 입력하세요.");
+document.write(`n ==>  + ${n} + <hr>`);
+  
+sum = n + 100;
+document.write(`n + 100 ==>  + ${sum} + <hr>`);
+  
+sum = parseInt(n) + 100;
+document.write(`정수변환n + 100 ==>  + ${sum} + <hr>`);
+```
+---
+![](../../../../image/Pasted%20image%2020240920112809.png)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>sentences</title>
+  <style>
+    #output {
+      width: 300px;
+      height: 200px;
+      border: 2px solid silver;
+      overflow-y: auto;}
+    #inputText {
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h2>문장 입력 후 누적</h2>
+  <div id="output"></div>
+  <!-- 여기 2라인 코딩 -->
+  <input type="text" id="inputText" placeholder="문장을 입력하세요">
+  <button onclick="addText()">추가</button>
+  <script>
+    function addText() {
+      const input = document.getElementById('inputText').value;
+      const output = document.getElementById('output');
+      if (input.trim() !== "") {
+        output.innerHTML += input + '<br>';
+        document.getElementById('inputText').value = ''; 
+      }
+    }
+  </script>
+</body>
+</html>
+``'

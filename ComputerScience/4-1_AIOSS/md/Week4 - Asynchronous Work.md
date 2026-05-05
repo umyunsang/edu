@@ -1,11 +1,33 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- ADR
+- AIOSS
+- RFC
+- async
+- collaboration
+- cs/ai
+- cs/devops
+- cs/open-source
+- documentation
+- github-discussions
+- remote-work
+- type/lecture
+title: Asynchronous Work
+type: lecture
+updated: '2026-05-05'
 week: 4
-title: "Asynchronous Work"
-tags: [AIOSS, async, remote-work, collaboration, github-discussions, ADR, RFC, documentation]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Asynchronous Work - Collaborate from Anywhere
 
 비동기 협업의 원칙과 도구를 이해하고

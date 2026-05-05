@@ -1,4 +1,22 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: 2x2 그리드로 서브플롯 생성
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[imshow 이미지 그래프]], [[pie 원형 그래프]], [[scatter 산점도 그래프]], [[subplot 생성]], [[그래프 스타일]], [[기본 그래프]]
 ---
 #### **1. 서브플롯 생성**
 
@@ -82,4 +100,3 @@ ax[1, 1].imshow(Z)  # 이미지를 서브플롯에 표시
   - `ax[1, 1].imshow(Z)`: 네 번째 서브플롯에서 이미지를 표시합니다.
 
 ---
-

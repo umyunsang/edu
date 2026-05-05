@@ -1,4 +1,24 @@
+---
+aliases: []
+course: AI
+created: '2024-05-11'
+date: '2024-05-11'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/ai
+- cs/dl
+- cs/ml
+- type/project
+title: Training dataset 다운로드
+type: project
+updated: '2026-05-05'
+---
 
+up:: [[Deep Learning MOC]]
+
+siblings:: [[LearningRateControl]], [[Momentum]]
 ---
 Adam(Adaptive Moment Estimation)은 경사 하강법 최적화 알고리즘의 한 종류로, 각 매개변수마다 학습률을 개별적으로 조정하여 효율적인 학습을 가능하게 합니다. Adam은 모멘텀 방법과 RMSProp 방법을 결합한 형태로, 기울기의 1차 및 2차 모멘트를 모두 고려하여 학습률을 조정합니다.
 

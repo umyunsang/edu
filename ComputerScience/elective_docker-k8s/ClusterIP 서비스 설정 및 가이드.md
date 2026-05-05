@@ -1,4 +1,23 @@
+---
+aliases: []
+course: docker-k8s
+created: '2025-01-17'
+date: '2025-01-17'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/devops
+- skill/docker
+- type/lecture
+title: quiz.yaml 파일을 클러스터에 적용
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Ingress 설정 정리]], [[LoadBalancer 설치 및 설정 가이드]], [[NodePort 서비스 설정 및 가이드]], [[도커]], [[도커 기초]], [[쿠버네티스  기초]], [[쿠버네티스 설치]]
 ---
 
 #### 1. **파드 생성**

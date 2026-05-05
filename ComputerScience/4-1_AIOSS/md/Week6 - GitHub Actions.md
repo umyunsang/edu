@@ -1,11 +1,32 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+aliases: []
+course: AIOSS
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- CI-CD
+- DevOps
+- YAML
+- automation
+- cs/ai
+- cs/devops
+- cs/open-source
+- github-actions
+- type/lecture
+- workflow
+title: Automation with GitHub Actions
+type: lecture
+updated: '2026-05-05'
 week: 6
-title: "Automation with GitHub Actions"
-tags: [AIOSS, github-actions, CI-CD, automation, YAML, workflow, DevOps]
 ---
 
+up:: [[Cloud & Containers MOC]]
+
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]]
 # Automation with GitHub Actions
 
 ## 학습 목표

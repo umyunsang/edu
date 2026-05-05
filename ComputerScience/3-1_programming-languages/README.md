@@ -1,3 +1,19 @@
+---
+aliases: []
+course: programming-languages
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-1
+source: ''
+status: evergreen
+tags:
+- cs/se
+- type/index
+title: '[3-1] 프로그래밍언어론 · 미니 인덱스'
+type: index
+updated: '2026-05-05'
+---
+
 # [3-1] 프로그래밍언어론 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -13,7 +29,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

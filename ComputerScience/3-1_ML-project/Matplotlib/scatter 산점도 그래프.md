@@ -1,11 +1,22 @@
-
 ---
-### 산점도 그래프 예제
-
-아래는 `matplotlib`를 사용하여 산점도(scatter plot)를 생성하는 코드입니다. 각 점의 크기와 색상을 랜덤으로 설정하여 시각적으로 흥미로운 그래프를 만들어봅니다.
-
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: 데이터 포인트 개수
+type: lecture
+updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[imshow 이미지 그래프]], [[pie 원형 그래프]], [[subplot  예제]], [[subplot 생성]], [[그래프 스타일]], [[기본 그래프]]
 ```python
 import matplotlib.pyplot as plt
 import numpy as np

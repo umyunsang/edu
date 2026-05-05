@@ -1,4 +1,23 @@
+---
+aliases: []
+course: web-programming
+created: '2024-04-09'
+date: '2024-04-09'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- cs/se
+- skill/javascript
+- type/lecture
+title: HTML 기초 실습
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Software Engineering MOC]]
+
+siblings:: [[web-programming__1. HTML 기초__연습문제]]
 ---
 ## 1.html
 	1.&nbsp;대신 <style> 태그에서 공백을 넣을 수 있음

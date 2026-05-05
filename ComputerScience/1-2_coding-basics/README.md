@@ -1,3 +1,20 @@
+---
+aliases: []
+course: coding-basics
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 1-2
+source: ''
+status: evergreen
+tags:
+- cs/se
+- skill/python
+- type/index
+title: '[1-2] 코딩 기초와 문제해결 · 미니 인덱스'
+type: index
+updated: '2026-05-05'
+---
+
 # [1-2] 코딩 기초와 문제해결 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -12,7 +29,6 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-
 
 ---
 

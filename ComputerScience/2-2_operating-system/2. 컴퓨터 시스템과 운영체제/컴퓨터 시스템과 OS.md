@@ -1,4 +1,22 @@
+---
+aliases: []
+course: operating-system
+created: '2024-09-09'
+date: '2024-09-09'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/systems
+- type/lecture
+title: 컴퓨터 시스템과 OS
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Systems MOC]]
+
+siblings:: [[3장문제]], [[CPU 스케줄링]], [[OS의 시작과 발전]], [[가상 메모리]], [[교착상태]], [[기말 정리]], [[대용량 저장 장치 관리]], [[메모리 관리]]
 ---
 ## 컴퓨터 하드웨어 구성
 

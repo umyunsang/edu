@@ -1,3 +1,18 @@
+---
+aliases: []
+course: README.md
+created: '2025-09-24'
+date: '2025-09-24'
+semester: extracurricular
+source: ''
+status: evergreen
+tags:
+- type/index
+title: 🗂️ Computer Science 폴더 인덱스
+type: index
+updated: '2026-05-05'
+---
+
 # 🗂️ Computer Science 폴더 인덱스
 
 <p align="center">

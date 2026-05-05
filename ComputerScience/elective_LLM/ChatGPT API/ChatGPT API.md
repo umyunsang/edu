@@ -1,4 +1,23 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-20'
+date: '2025-01-20'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: 응답이 준비되는 대로 바로 받아볼 수 있습니다.
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[Audio Generation]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 ---
 #### ChatGPT의 API 연동
 - 요청 매개변수 설정 

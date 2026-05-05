@@ -1,10 +1,23 @@
-
 ---
-### Audio Generation with GPT-4o-audio-preview: Overview
-
-GPT-4o-audio-preview 모델은 텍스트 및 오디오 입력을 활용하여 다양한 출력 형식을 생성할 수 있습니다. 주요 기능 및 특징은 다음과 같습니다.
-
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- cs/llm
+- cs/nlp
+- type/lecture
+title: OpenAI 클라이언트 초기화
+type: lecture
+updated: '2026-05-05'
 ---
+
+up:: [[LLM & NLP MOC]]
+
+siblings:: [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 #### 1. 주요 기능
 
 - **텍스트 본문 요약을 음성 오디오로 생성**

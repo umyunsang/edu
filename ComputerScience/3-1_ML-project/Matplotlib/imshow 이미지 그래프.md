@@ -1,11 +1,22 @@
-
 ---
-### `imshow` 함수 예제
-
-아래는 `matplotlib`를 사용하여 10x10 배열의 데이터를 이미지 형태로 표시하는 코드입니다. 이 예제는 그레이스케일 색상 맵을 사용하여 데이터를 시각화합니다.
-
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- cs/ml
+- type/lecture
+title: 10x10 크기의 랜덤 데이터 배열 생성
+type: lecture
+updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[pie 원형 그래프]], [[scatter 산점도 그래프]], [[subplot  예제]], [[subplot 생성]], [[그래프 스타일]], [[기본 그래프]]
 ```python
 import matplotlib.pyplot as plt
 import numpy as np

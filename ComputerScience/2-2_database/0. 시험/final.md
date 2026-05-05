@@ -1,4 +1,22 @@
+---
+aliases: []
+course: database
+created: '2024-12-09'
+date: '2024-12-09'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- cs/db
+- type/lecture
+title: final
+type: lecture
+updated: '2026-05-05'
+---
 
+up:: [[Database MOC]]
+
+siblings:: [[7장 문제]], [[database__0. 시험__연습문제]], [[레포트]], [[중간 주관식 예상]], [[중간 주관식 예상(답)]]
 ---
 4지선다 10문제
 
