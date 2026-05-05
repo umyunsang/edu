@@ -34,7 +34,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -52,12 +51,3 @@ updated: '2026-05-05'
 ### 관련 주제
 - [[ComputerScience/3-1_ML-project/README|ML프로젝트]]
 - [[ComputerScience/elective_LLM/README|LLM 이해와 활용]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/3-1_machine-learning"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

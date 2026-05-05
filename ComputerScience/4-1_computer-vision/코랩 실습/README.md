@@ -51,12 +51,3 @@ updated: '2026-05-05'
 * **Language**: Python 3.10+
 * **Library**: OpenCV, NumPy, Scikit-image, Matplotlib
 * **Platform**: Google Colab (추천)
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/4-1_computer-vision/코랩 실습"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

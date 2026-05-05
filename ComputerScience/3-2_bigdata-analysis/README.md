@@ -26,7 +26,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -35,12 +34,3 @@ updated: '2026-05-05'
 - [[ComputerScience/3-1_machine-learning/README|머신러닝]]
 - [[ComputerScience/2-2_database/README|데이터베이스]]
 - [[ComputerScience/2-1_probability-statistics/README|확률통계]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/3-2_bigdata-analysis"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

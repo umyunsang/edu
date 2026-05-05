@@ -30,7 +30,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -38,12 +37,3 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/2-1_python/README|Python 프로그래밍]]
 - [[ComputerScience/elective_java/README|Java 프로그래밍]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/1-2_coding-basics"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```
