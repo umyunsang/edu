@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/ml
 - math/calculus
-- type/MOC
+- type/index
 title: '[3-2] 최적화수학 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

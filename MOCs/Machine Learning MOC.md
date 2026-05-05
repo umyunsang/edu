@@ -99,7 +99,6 @@ children:: [[Deep Learning MOC]], [[Computer Vision MOC]]
 - [[우버데이터_Multiple_Linear_Regression]]
 - [[이론정리]]
 - [[크기조정 및 그리드]]
-
 ## All ML notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

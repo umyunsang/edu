@@ -86,7 +86,6 @@ central:: [[Math Foundations MOC]]
 - [[이상 탐지(ASD)를 위한 최적의 Feature Engineering]]
 - [[집합 및 집합 연산]]
 - [[파라미터 추정]]
-
 ## All math notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

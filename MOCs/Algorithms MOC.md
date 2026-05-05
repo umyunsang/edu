@@ -64,7 +64,6 @@ central:: [[Algorithms MOC]]
 - [[큐]]
 - [[트리 (TREE)]]
 - [[트리 만들기]]
-
 ## All algorithm notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/llm
 - cs/nlp
-- type/MOC
+- type/index
 title: LLM 이해와 활용 · 미니 인덱스
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

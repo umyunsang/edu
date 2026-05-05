@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/ml
 - meta/extracurricular
-- type/MOC
+- type/index
 title: LGAimer 강의 자료 모음
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

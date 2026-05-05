@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - meta/extracurricular
-- type/MOC
+- type/index
 title: 융합전공 · 미니 인덱스
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

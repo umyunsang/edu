@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/algorithms
 - skill/python
-- type/MOC
+- type/index
 title: 코딩테스트 · 미니 인덱스
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

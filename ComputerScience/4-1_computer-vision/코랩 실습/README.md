@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/cv
 - cs/dl
-- type/MOC
+- type/index
 title: 컴퓨터비전 코랩 실습 목록
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

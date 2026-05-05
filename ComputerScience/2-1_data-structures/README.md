@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - cs/algorithms
-- type/MOC
+- type/index
 title: '[2-1] 데이터 구조 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

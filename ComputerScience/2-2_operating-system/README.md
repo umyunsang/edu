@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - cs/systems
-- type/MOC
+- type/index
 title: '[2-2] 운영체제 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

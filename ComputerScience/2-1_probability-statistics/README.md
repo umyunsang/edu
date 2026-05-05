@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - math/probability
 - math/statistics
-- type/MOC
+- type/index
 title: Probability and Statistics Repository
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

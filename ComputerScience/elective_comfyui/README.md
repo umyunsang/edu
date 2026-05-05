@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/ai
 - cs/cv
-- type/MOC
+- type/index
 title: 🎨 ComfyUI & Generative AI Workflows
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

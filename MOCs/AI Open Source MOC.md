@@ -61,7 +61,6 @@ central:: [[AI Open Source MOC]]
 - [[장바구니에 메뉴 추가]]
 - [[주문 및 결제 AI 시스템 개발]]
 - [[주문 생성]]
-
 ## All AIOSS notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

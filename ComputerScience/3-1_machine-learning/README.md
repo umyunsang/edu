@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - cs/ml
-- type/MOC
+- type/index
 title: '[3-1] 머신러닝 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

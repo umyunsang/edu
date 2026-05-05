@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - meta/cert
-- type/MOC
+- type/index
 title: '[3-1] 지식재산개론 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

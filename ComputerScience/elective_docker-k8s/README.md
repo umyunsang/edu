@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/devops
 - skill/docker
-- type/MOC
+- type/index
 title: 도커와 쿠버네티스 · 미니 인덱스
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

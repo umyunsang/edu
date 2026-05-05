@@ -60,7 +60,6 @@ central:: [[LLM & NLP MOC]]
 - [[Vector store]]
 - [[추론 모델]]
 - [[환경 구성]]
-
 ## All LLM/NLP notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

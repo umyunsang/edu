@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - cs/se
-- type/MOC
+- type/index
 title: '[3-1] 프로그래밍언어론 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

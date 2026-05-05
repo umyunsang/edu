@@ -60,7 +60,6 @@ central:: [[Database MOC]]
 - [[중간 주관식 예상]]
 - [[중간 주관식 예상(답)]]
 - [[회복과 병행 제어]]
-
 ## All database notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

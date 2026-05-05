@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - math/linalg
-- type/MOC
+- type/index
 title: 선형대수학
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

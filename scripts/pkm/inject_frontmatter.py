@@ -74,7 +74,7 @@ def infer_type(rel: Path, has_existing_type: str | None = None) -> str:
         return has_existing_type
     name = rel.name
     if name == "README.md":
-        return "MOC"
+        return "index"  # README is folder entry doc, not conceptual parent
     if "MOC" in name:
         return "MOC"
     if rel.parts and rel.parts[0] == "MOCs":

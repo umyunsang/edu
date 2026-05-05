@@ -47,7 +47,6 @@ central:: [[Computer Vision MOC]]
 - [[좌표공간과-카메라]]
 - [[지오매트리]]
 - [[컴퓨터그래픽스-시험대비]]
-
 ## All CV notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

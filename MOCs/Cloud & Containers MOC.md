@@ -53,7 +53,6 @@ central:: [[Cloud & Containers MOC]]
 - [[도커 기초]]
 - [[쿠버네티스  기초]]
 - [[쿠버네티스 설치]]
-
 ## All container notes (auto)
 ```dataview
 TABLE status, file.mtime as updated
