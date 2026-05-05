@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - cs/dl
-- type/MOC
+- type/index
 title: '[3-2] 뉴럴네트워크 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

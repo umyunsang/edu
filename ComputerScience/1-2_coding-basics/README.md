@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/se
 - skill/python
-- type/MOC
+- type/index
 title: '[1-2] 코딩 기초와 문제해결 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

@@ -51,7 +51,6 @@ central:: [[Certifications MOC]]
 - [[특허 제도]]
 - [[특허_processed]]
 - [[특허명세서의 양식]]
-
 ## All certification notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

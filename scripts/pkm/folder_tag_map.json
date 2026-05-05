@@ -47,7 +47,7 @@
     {"match": "LGAimer/*",                    "tags": ["cs/ml", "meta/extracurricular"]}
   ],
   "filename_rules": [
-    {"match": "README.md",                    "tags": ["type/MOC"], "frontmatter": {"type": "MOC"}},
+    {"match": "README.md",                    "tags": ["type/index"], "frontmatter": {"type": "index"}},
     {"match": "*MOC*.md",                     "tags": ["type/MOC"], "frontmatter": {"type": "MOC"}}
   ],
   "subdir_rules": [

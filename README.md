@@ -5,11 +5,11 @@ created: '2024-05-23'
 date: '2024-05-23'
 semester: extracurricular
 source: ''
-status: seedling
+status: evergreen
 tags:
-- type/MOC
+- type/index
 title: 🧭 Obsidian | Computer Science & AI Curriculum Map
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

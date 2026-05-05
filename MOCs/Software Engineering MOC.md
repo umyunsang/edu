@@ -77,7 +77,6 @@ central:: [[Software Engineering MOC]]
 - [[중간고사]]
 - [[컴퓨터에서의 정보의 표현(시험문제 안나옴)]]
 - [[쿠키와 세션]]
-
 ## All SE notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

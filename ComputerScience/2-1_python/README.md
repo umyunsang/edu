@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - skill/python
-- type/MOC
+- type/index
 title: '[2-1] Python(basic) · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

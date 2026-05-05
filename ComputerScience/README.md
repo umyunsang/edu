@@ -7,9 +7,9 @@ semester: extracurricular
 source: ''
 status: evergreen
 tags:
-- type/MOC
+- type/index
 title: 🗂️ Computer Science 폴더 인덱스
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

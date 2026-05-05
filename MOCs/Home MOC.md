@@ -88,7 +88,6 @@ children:: [[Machine Learning MOC]], [[Deep Learning MOC]], [[Algorithms MOC]], 
 - [[지뢰찾기]]
 - [[커리큘럼 관계 정리]]
 - [[프로젝트 주제]]
-
 ## All MOCs (auto)
 ```dataview
 LIST FROM #type/MOC

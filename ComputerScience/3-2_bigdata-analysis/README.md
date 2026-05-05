@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/db
 - cs/ml
-- type/MOC
+- type/index
 title: '[3-2] 빅데이터분석 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

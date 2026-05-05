@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - skill/java
-- type/MOC
+- type/index
 title: 자바 · 미니 인덱스
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

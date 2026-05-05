@@ -8,9 +8,9 @@ source: ''
 status: evergreen
 tags:
 - cs/systems
-- type/MOC
+- type/index
 title: '[2-1] 컴퓨터 구조 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

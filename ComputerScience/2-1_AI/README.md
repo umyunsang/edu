@@ -10,9 +10,9 @@ tags:
 - cs/ai
 - cs/dl
 - cs/ml
-- type/MOC
+- type/index
 title: '[2-1] 인공지능 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

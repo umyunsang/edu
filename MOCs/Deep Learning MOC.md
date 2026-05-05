@@ -65,7 +65,6 @@ central:: [[Deep Learning MOC]]
 - [[중간고사_컴퓨터비전_정밀분석_정리]]
 - [[학습기술 이론]]
 - [[활성화 함수 변경]]
-
 ## All DL notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

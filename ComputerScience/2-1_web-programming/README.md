@@ -9,9 +9,9 @@ status: evergreen
 tags:
 - cs/se
 - skill/javascript
-- type/MOC
+- type/index
 title: '[2-1] 웹프로그래밍 · 미니 인덱스'
-type: MOC
+type: index
 updated: '2026-05-05'
 ---
 

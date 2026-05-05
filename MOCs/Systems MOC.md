@@ -123,7 +123,6 @@ central:: [[Systems MOC]]
 - [[파일 시스템 관리]]
 - [[페이징 메모리 관리]]
 - [[프로세스와 프로세스 관리]]
-
 ## All systems notes (auto)
 ```dataview
 TABLE status, file.mtime as updated
