@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/ai
 - type/lecture
 title: AND, NAND, OR 게이트
 type: lecture

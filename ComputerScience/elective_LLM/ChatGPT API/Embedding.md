@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/llm
+- cs/nlp
 - type/lecture
 title: OpenAI API Key 설정
 type: lecture

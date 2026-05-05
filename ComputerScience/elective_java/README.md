@@ -7,6 +7,7 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- skill/java
 - type/MOC
 title: 자바 · 미니 인덱스
 type: MOC

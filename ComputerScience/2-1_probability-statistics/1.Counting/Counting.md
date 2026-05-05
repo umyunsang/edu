@@ -7,6 +7,8 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- math/probability
+- math/statistics
 - type/lecture
 title: Counting
 type: lecture
@@ -74,4 +76,3 @@ updated: '2026-05-05'
 - 이미지를 수평으로 뒤집으면 같은 이미지로 간주됩니다. 따라서 각 이미지는 그 자신과 수평으로 뒤집힌 이미지로 각각 두 번씩 중복되므로, 중복된 이미지를 고려하여 결과를 2로 나누어 수정합니다.
 
 ---
-

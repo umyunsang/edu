@@ -5,6 +5,7 @@ semester: 4-1
 source: ''
 status: 정리완료
 tags:
+- cs/algorithms
 - type/lecture
 - 시간복잡도
 - 시험대비

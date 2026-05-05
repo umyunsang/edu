@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/ai
 - type/project
 title: CNN 모델 정의
 type: project

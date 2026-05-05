@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: 2x2 그리드로 서브플롯 생성
 type: lecture
@@ -96,4 +97,3 @@ ax[1, 1].imshow(Z)  # 이미지를 서브플롯에 표시
   - `ax[1, 1].imshow(Z)`: 네 번째 서브플롯에서 이미지를 표시합니다.
 
 ---
-

@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/llm
+- cs/nlp
 - type/lecture
 title: OpenAI 클라이언트 초기화
 type: lecture

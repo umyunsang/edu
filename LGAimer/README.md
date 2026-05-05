@@ -7,6 +7,8 @@ semester: extracurricular
 source: ''
 status: seedling
 tags:
+- cs/ml
+- meta/extracurricular
 - type/MOC
 title: LGAimer 강의 자료 모음
 type: MOC

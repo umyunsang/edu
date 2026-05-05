@@ -7,6 +7,7 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/cv
 - type/lecture
 title: OpenGL 폴리곤 그리기 정리
 type: lecture

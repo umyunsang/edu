@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: LAN의 특징과 규격
 type: lecture

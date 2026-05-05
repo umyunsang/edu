@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: 애플 M4 CPU
 type: lecture

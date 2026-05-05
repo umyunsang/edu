@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/ai
 - type/project
 title: Training dataset 다운로드
 type: project

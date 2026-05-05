@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/llm
+- cs/nlp
 - type/lecture
 title: LLM 모델 이해
 type: lecture

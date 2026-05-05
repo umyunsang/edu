@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- math/discrete
 - type/project
 title: Decorator to log execution details
 type: project

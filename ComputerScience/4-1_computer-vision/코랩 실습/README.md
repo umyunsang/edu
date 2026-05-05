@@ -7,6 +7,8 @@ semester: 4-1
 source: ''
 status: seedling
 tags:
+- cs/cv
+- cs/dl
 - type/MOC
 title: 컴퓨터비전 코랩 실습 목록
 type: MOC

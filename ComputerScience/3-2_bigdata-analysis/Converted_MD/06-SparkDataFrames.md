@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/lecture
 title: 06. Spark DataFrames - 구조화된 데이터 처리
 type: lecture

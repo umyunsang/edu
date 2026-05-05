@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: 도미 35마리 length길이(cm)와 weight무게(g) 데이터
 type: lecture

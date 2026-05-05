@@ -7,6 +7,7 @@ semester: 1-2
 source: ''
 status: seedling
 tags:
+- math/linalg
 - type/MOC
 title: 선형대수학
 type: MOC

@@ -7,6 +7,7 @@ semester: cert
 source: ''
 status: seedling
 tags:
+- meta/cert
 - type/lecture
 title: Workspace Context
 type: lecture

@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: '**SGDClassifier  사용한 물고기 데이터 분류**'
 type: lecture

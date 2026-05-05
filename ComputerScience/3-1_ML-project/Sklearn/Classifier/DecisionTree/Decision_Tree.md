@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: '**Decision Tree를 활용한 와인 데이터 분류**'
 type: lecture

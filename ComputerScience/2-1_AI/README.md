@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/ai
 - type/MOC
 title: '[2-1] 인공지능 · 미니 인덱스'
 type: MOC

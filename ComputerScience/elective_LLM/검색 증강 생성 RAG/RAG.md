@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/llm
+- cs/nlp
 - type/lecture
 title: 필요한 라이브러리 임포트
 type: lecture

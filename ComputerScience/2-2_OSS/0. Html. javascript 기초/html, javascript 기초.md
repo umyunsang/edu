@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/open-source
 - type/lecture
 title: QUIZ.1
 type: lecture
@@ -257,4 +258,4 @@ function changeColor() {
     else return true;
   }
 ```
-- 
+-

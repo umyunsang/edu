@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/llm
+- cs/nlp
 - type/lecture
 title: 응답이 준비되는 대로 바로 받아볼 수 있습니다.
 type: lecture

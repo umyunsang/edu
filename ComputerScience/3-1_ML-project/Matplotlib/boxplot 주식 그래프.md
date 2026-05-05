@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: 랜덤 시드 설정 (재현성을 위해)
 type: lecture

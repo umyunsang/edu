@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/MOC
 title: '[3-1] 머신러닝 · 미니 인덱스'
 type: MOC

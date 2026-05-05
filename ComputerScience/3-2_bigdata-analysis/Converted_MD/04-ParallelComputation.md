@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/lecture
 title: 04. 병렬 컴퓨팅 - Python을 활용한 분산 처리
 type: lecture

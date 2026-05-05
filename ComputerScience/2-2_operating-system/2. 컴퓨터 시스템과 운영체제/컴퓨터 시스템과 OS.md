@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: 컴퓨터 시스템과 OS
 type: lecture

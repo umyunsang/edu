@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/devops
+- skill/docker
 - type/lecture
 title: quiz.yaml 파일을 클러스터에 적용
 type: lecture

@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/open-source
 - type/lecture
 title: TTS 요구 사항
 type: lecture

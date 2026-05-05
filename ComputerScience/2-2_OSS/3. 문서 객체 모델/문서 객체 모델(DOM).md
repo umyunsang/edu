@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/open-source
 - type/lecture
 title: 문서 객체 모델(DOM)
 type: lecture

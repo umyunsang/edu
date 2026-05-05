@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/lecture
 title: 01. Word Count - 빅데이터 분석의 첫 걸음
 type: lecture

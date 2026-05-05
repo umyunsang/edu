@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/devops
+- skill/docker
 - type/MOC
 title: 도커와 쿠버네티스 · 미니 인덱스
 type: MOC

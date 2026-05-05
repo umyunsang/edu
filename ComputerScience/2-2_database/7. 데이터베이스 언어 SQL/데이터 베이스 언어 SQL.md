@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/db
 - type/lecture
 title: 데이터 베이스 언어 SQL
 type: lecture
@@ -703,4 +704,4 @@ OX문제
 책의 문제와 조금 다르게 냄
 한문제는 다른 테이블을 주어짐
 
-월요일 4시 시험 60분 
+월요일 4시 시험 60분

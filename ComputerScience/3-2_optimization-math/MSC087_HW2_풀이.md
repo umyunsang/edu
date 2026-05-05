@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/ml
+- math/calculus
 - type/lecture
 title: MSC087_HW2_풀이
 type: lecture

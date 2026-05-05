@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/devops
+- skill/docker
 - type/lecture
 title: Ingress 설정 정리
 type: lecture

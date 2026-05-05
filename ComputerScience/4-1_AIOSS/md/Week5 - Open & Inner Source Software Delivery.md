@@ -9,6 +9,9 @@ tags:
 - DORA
 - community
 - contribution
+- cs/ai
+- cs/devops
+- cs/open-source
 - inner-source
 - license
 - open-source

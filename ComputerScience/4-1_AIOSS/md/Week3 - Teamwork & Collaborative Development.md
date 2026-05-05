@@ -9,6 +9,9 @@ tags:
 - branch-protection
 - code-review
 - conventional-commits
+- cs/ai
+- cs/devops
+- cs/open-source
 - git-flow
 - github-flow
 - pull-request

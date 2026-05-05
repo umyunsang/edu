@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/project
 title: srtf.c
 type: project

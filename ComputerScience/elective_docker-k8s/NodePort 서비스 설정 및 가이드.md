@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/devops
+- skill/docker
 - type/lecture
 title: NodePort 서비스 설정 및 가이드
 type: lecture

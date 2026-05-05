@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/MOC
 title: '[2-2] 운영체제 · 미니 인덱스'
 type: MOC

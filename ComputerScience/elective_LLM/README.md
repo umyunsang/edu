@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/llm
+- cs/nlp
 - type/MOC
 title: LLM 이해와 활용 · 미니 인덱스
 type: MOC

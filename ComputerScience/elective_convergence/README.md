@@ -7,6 +7,7 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- meta/extracurricular
 - type/MOC
 title: 융합전공 · 미니 인덱스
 type: MOC

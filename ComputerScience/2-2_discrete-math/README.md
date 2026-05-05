@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- math/discrete
 - type/MOC
 title: '[2-2] 이산수학 · 미니 인덱스'
 type: MOC

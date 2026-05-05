@@ -7,6 +7,8 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ai
+- cs/se
 - type/lecture
 title: AI 메뉴 추천
 type: lecture

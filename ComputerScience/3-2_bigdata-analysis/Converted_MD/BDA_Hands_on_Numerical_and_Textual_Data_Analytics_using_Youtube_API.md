@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/lecture
 title: BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API
 type: lecture

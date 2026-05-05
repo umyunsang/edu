@@ -7,6 +7,8 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/se
+- skill/javascript
 - type/MOC
 title: '[2-1] 웹프로그래밍 · 미니 인덱스'
 type: MOC

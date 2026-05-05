@@ -10,6 +10,9 @@ tags:
 - DORA
 - DevOps
 - code-quality
+- cs/ai
+- cs/devops
+- cs/open-source
 - flow-metrics
 - metrics
 - type/lecture

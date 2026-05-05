@@ -7,6 +7,8 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ai
+- cs/se
 - type/MOC
 title: '[3-1] AI시스템개발및설계 · 미니 인덱스'
 type: MOC
