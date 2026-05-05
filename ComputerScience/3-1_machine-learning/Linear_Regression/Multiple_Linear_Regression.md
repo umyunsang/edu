@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: \[\[Machine Learning MOC\]\]
 
-siblings:: [[Linear Regression]], [[LSM, GDM 선형 회귀모델]], [[우버데이터_Multiple_Linear_Regression]]
+siblings:: \[\[Linear Regression\]\], \[\[LSM, GDM 선형 회귀모델\]\], [[우버데이터_Multiple_Linear_Regression]]
 ---
 # Multiple Linear Regression
 
@@ -44,7 +44,7 @@ siblings:: [[Linear Regression]], [[LSM, GDM 선형 회귀모델]], [[우버데�
 >grade = (등급 - mean_grade) / std_grade
 >
 ># 예측
->price = model.predict([[sqft_living, grade]])
+>price = model.predict(\[\[sqft_living, grade\]\])
 >
 ># 결과 역정규화
 >real_price = (price * std_price) + mean_price
@@ -246,7 +246,7 @@ grade = 8
 sqft_living = (sqft_living - mean_sqft_living) / std_sqft_living
 grade = (grade - mean_grade) / std_grade
 
-X_new = np.array([[sqft_living, grade]])
+X_new = np.array(\[\[sqft_living, grade\]\])
 
 # 학습한 모델 theta를 이용해 Y_hat 예측
 Y_hat = model_LSM.predict(X_new)

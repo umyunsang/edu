@@ -666,4 +666,4 @@ ssh -T git@github.com
 
 > *"The best way to predict the future is to invent it."* -- Alan Kay
 
-**Next Week Preview:** [[Week2 - Metrics That Matter]] -- 데이터 기반의 의사결정과 개발 생산성 측정
+**Next Week Preview:** [[Week1 - Metrics That Matter]] -- 데이터 기반의 의사결정과 개발 생산성 측정

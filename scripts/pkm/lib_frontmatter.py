@@ -72,9 +72,20 @@ def iter_vault_notes(
     root: Path,
     exclude: Iterable[str] = (".obsidian", ".git", ".claude", ".pytest_cache", "scripts", "docs"),
 ) -> Iterable[Path]:
+    """Robust os.walk-based iteration with NFC normalization (macOS HFS+/iCloud
+    returns filenames in NFD by default which breaks string equality with NFC literals)."""
+    import os
     exclude_parts = {str(e) for e in exclude}
-    for p in sorted(Path(root).rglob("*.md")):
-        rel = p.relative_to(root)
-        if any(part in exclude_parts for part in rel.parts):
-            continue
+    root = Path(root)
+    results: list[Path] = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if d not in exclude_parts]
+        # NFC-normalize the dirpath so resulting Path objects use NFC consistently
+        dirpath_nfc = unicodedata.normalize("NFC", dirpath)
+        for fn in filenames:
+            if not fn.endswith(".md"):
+                continue
+            fn_nfc = unicodedata.normalize("NFC", fn)
+            results.append(Path(dirpath_nfc) / fn_nfc)
+    for p in sorted(results):
         yield p

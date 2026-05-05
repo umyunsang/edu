@@ -20,11 +20,13 @@ LINK_RE = re.compile(r"\[\[([^\]|#]+?)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 
 
 def build_index() -> dict[str, str]:
-    """basename (no ext, lowercase) → relative path"""
+    """basename (no .md, lowercase) → relative path. Manual stem to avoid pathlib
+    confusion on '1. xxx.md' style names."""
     idx: dict[str, str] = {}
     for p in iter_vault_notes(VAULT, exclude=EXCLUDE):
-        idx.setdefault(p.stem.lower(), str(p.relative_to(VAULT)))
-        idx.setdefault(p.stem, str(p.relative_to(VAULT)))
+        name = p.name
+        stem_str = name[:-3] if name.endswith(".md") else name
+        idx.setdefault(stem_str.lower(), str(p.relative_to(VAULT)))
     return idx
 
 
@@ -44,7 +46,8 @@ def extract_links(text: str) -> set[str]:
                 continue
             if target.startswith("http") or target.startswith(("'", '"', "$", "{")):
                 continue
-            stem = Path(target).stem.lower()
+            base = target.rsplit("/", 1)[-1]
+            stem = (base[:-3] if base.endswith(".md") else base).lower()
             out.add(stem)
     return out
 
@@ -52,8 +55,12 @@ def extract_links(text: str) -> set[str]:
 def main():
     idx = build_index()
     notes = list(iter_vault_notes(VAULT, exclude=EXCLUDE))
+    def note_key(p: Path) -> str:
+        n = p.name
+        return (n[:-3] if n.endswith(".md") else n).lower()
+
     out_links: dict[str, set[str]] = {}
-    in_count: dict[str, int] = {p.stem.lower(): 0 for p in notes}
+    in_count: dict[str, int] = {note_key(p): 0 for p in notes}
 
     for p in notes:
         try:
@@ -61,7 +68,7 @@ def main():
         except Exception:
             continue
         links = extract_links(text)
-        out_links[p.stem.lower()] = links
+        out_links[note_key(p)] = links
         for link in links:
             if link in in_count:
                 in_count[link] += 1
@@ -69,7 +76,7 @@ def main():
     orphans: list[Path] = []
     weak: list[tuple[Path, int, int]] = []
     for p in notes:
-        key = p.stem.lower()
+        key = note_key(p)
         out_n = len(out_links.get(key, set()))
         in_n = in_count.get(key, 0)
         if out_n == 0 and in_n == 0:
