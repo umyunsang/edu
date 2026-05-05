@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[KNNR]], [[Multi_Regression]], [[SGDClassifier]]
 ---
 ### 1. **데이터 불러오기 및 확인**
 

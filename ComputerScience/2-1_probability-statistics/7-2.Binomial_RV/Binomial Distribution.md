@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[19_sampling]], [[20_mle]], [[22_MAP]], [[23_naive_bayes]], [[Bayes' Theorem]], [[Bernoulli Distribution]], [[Bootstrapping]], [[Combinations]]
 #ComputerScience #확률과통계
 
 ---

@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[KNNC]]
 ---
 # **Decision Tree를 활용한 와인 데이터 분류**
 

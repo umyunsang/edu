@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[시험 예상 문제]], [[인공지능_중간고사_엄윤상_1705817]]
 ---
 ### Gradient Descent Method (경사 하강법)
 

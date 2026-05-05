@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Software Engineering MOC]]
 
+siblings:: [[HTML 기초 실습]], [[HTML 기초 실습2]], [[MYSQL]], [[Spring Boot 기초 실습]], [[web-programming__1. HTML 기초__연습문제]], [[web-programming__3. Spring Boot 기초__확인문제]], [[web-programming__4. 쿠키와 세션__확인문제]], [[web-programming__5. 데이터베이스__확인문제]]
 ---
 
 **Quiz #1:** 

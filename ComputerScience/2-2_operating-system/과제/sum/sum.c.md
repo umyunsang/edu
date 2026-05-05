@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Systems MOC]]
 
+siblings:: [[allocation.c]], [[banker.c]], [[fcfs.c]], [[page.c]], [[sjf.c]], [[srtf.c]]
 ---
 ```c
 #include <stdio.h>

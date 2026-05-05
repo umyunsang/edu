@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[Decision_Tree]]
 ---
 ## K-최근접 이웃 (K-Nearest Neighbors) 분류기 활용
 
