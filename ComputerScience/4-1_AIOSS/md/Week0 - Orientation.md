@@ -23,6 +23,8 @@ updated: '2026-05-05'
 week: 0
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 # Week 0 - Orientation: AI Open Source Software
 
 현대 소프트웨어 개발의 핵심 역량을 습득하는 여정.

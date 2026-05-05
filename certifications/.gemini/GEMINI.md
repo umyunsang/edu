@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Certifications MOC]]
+
 # Workspace Context
 
 이 작업 공간은 **시험 대비용 핵심 요약 노트**를 작성하고 관리하는 곳입니다. 사용자가 필기 내용을 정리하거나 보기 좋게 해달라고 요청하는 경우, 다음 지침을 엄격히 따릅니다:

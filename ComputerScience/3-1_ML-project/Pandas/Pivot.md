@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 #### 1. DataFrame 생성 및 초기화
 
 먼저, 상품, 재질, 가격 정보를 포함하는 DataFrame을 생성합니다.

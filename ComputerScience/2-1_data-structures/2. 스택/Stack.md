@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Algorithms MOC]]
+
 ---
 스택(Stack)은 데이터를 저장하는 선형 자료구조 중 하나로, 데이터를 한쪽 끝에서만 삽입하고 삭제할 수 있는 구조를 갖습니다. 이러한 특성 때문에 "후입선출" (Last-In-First-Out, LIFO) 구조라고도 합니다. 
 

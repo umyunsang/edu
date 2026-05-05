@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 04. 병렬 컴퓨팅 - Python을 활용한 분산 처리
 
 ## 📚 개요

@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
 ---
 
 ### 샘플을 통한 모평균과 모분산 추정

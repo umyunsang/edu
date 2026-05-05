@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ## 1. LAN 계층
 #### LAN의 계층 구조

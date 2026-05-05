@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 02. MapReduce - 분산 데이터 처리의 핵심
 
 ## 📚 개요

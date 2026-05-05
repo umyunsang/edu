@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 ---
 ### LoadBalancer 설치 및 설정 가이드
 

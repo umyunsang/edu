@@ -24,6 +24,8 @@ updated: '2026-05-05'
 week: 5
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 # Open & Inner Source Software Delivery
 
 오픈소스의 핵심 가치와 라이선스 체계를 이해하고, 오픈소스 기여 프로세스를 습득하며, 조직 내부에 오픈소스 방식을 적용하는 Inner Source 전략을 학습합니다.

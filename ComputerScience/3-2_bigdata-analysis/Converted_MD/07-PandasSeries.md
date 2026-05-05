@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 07-PandasSeries
 
 # 📊 **Pandas Series - 1차원 데이터 구조**

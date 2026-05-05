@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[AI Open Source MOC]]
+
 ---
 **AI 시스템 아이디어 기획 및 요구사항 정의 발표 스크립트**
 

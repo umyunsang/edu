@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Software Engineering MOC]]
+
 #ComputerScience #웹프로그래밍 #기본태그 
 
 ---

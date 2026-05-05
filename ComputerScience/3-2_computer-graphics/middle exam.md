@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Computer Vision MOC]]
+
 # 컴퓨터그래픽스 시험 대비 자료
 
 ## 📚 목차

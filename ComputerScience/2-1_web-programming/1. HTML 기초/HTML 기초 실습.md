@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Software Engineering MOC]]
+
 ---
 ## 1.html
 	1.&nbsp;대신 <style> 태그에서 공백을 넣을 수 있음

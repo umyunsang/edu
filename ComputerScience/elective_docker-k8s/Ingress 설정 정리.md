@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 ---
 ### **Ingress 설정 정리**
 

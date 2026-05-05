@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Math Foundations MOC]]
+
 ---
 
 ### Permutations of Distinct Objects (서로 다른 객체의 순열)

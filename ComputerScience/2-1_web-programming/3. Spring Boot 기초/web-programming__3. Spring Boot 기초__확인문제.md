@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Software Engineering MOC]]
+
 ---
 
 ### Quiz #1:

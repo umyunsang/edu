@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 03. Hadoop - 빅데이터 분산 처리의 핵심
 
 ## 📚 개요

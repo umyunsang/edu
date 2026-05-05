@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ## 1. 인터넷 프로토콜(IP)의 작업
 #### 네트워크 계층과 IP의 이해

@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[AI Open Source MOC]]
+
 ---
 #### Vanilla JS?  jQuery? React? Vue.js?
 : 새롭게 시작하는 Front-end 개발 프로젝트에서 위 4가지 중 어느 쪽을 선택할 것인지 검토

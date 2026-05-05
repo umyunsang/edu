@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Deep Learning MOC]]
+
 ---
 ## 문제 1. Sigmoid 함수의 Backpropagation
 

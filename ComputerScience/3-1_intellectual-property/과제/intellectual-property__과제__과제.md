@@ -14,6 +14,8 @@ type: project
 updated: '2026-05-05'
 ---
 
+up:: [[Certifications MOC]]
+
 【명세서】
 
     【발명의 명칭】

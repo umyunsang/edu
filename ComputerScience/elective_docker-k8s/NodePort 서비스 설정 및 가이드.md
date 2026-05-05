@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Cloud & Containers MOC]]
+
 ---
 ### NodePort 서비스 설정 및 가이드
 

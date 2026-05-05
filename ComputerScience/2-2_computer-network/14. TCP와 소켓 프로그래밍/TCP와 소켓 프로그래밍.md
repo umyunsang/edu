@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 ## 1. 전송 계층 관련 프로토콜 분석
 #### TCP 헤더 분석

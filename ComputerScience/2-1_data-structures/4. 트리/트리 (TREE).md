@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Algorithms MOC]]
+
 ---
 #### 트리(TREE) 정의 
 - 트리는 나무 모양의 자료구조 

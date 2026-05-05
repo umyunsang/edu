@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
 #### 1. Embedding이란?
 
 - **정의**: 텍스트 데이터를 고차원 벡터(부동소수점 배열)로 변환하는 기술.

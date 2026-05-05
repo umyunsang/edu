@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 ---
 # Quadratic Programming 기반 SVM(Support Vector Machine)
 

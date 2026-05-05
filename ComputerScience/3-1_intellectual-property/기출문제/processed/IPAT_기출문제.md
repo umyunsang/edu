@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Certifications MOC]]
+
 ---
 ## [지식재산권]  IPAT 기출문제
 

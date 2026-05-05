@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[LLM & NLP MOC]]
+
 ### Fine-Tuning의 주요 특징
 
 1. **정의**

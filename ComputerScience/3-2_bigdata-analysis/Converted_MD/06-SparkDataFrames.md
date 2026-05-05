@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 # 06. Spark DataFrames - 구조화된 데이터 처리
 
 ## 📚 개요

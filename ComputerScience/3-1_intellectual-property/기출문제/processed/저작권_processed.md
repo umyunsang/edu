@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Certifications MOC]]
+
 [저작권] IPAT 기출문제
 
 **1. 저작권의 보호 대상에 해당하지 않는 것은?**

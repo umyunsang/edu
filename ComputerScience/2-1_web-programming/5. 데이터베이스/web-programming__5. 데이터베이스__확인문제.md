@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Software Engineering MOC]]
+
 ---
 **Quiz #1 database는 어디에 속할까요?**
 1) 소프트웨어

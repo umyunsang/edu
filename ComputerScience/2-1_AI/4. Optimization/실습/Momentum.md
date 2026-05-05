@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/project
 title: Training dataset 다운로드
 type: project
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 ---
 

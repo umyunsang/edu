@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 ---
 ### 1. **데이터 불러오기 및 확인**
 

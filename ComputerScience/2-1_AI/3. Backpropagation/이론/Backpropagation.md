@@ -8,11 +8,15 @@ source: ''
 status: seedling
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/lecture
 title: Backpropagation
 type: lecture
 updated: '2026-05-05'
 ---
+
+up:: [[Deep Learning MOC]]
 
 ---
 ### Gradient Descent Method (경사 하강법)

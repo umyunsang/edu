@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 ## 1. 실행한 maxBins 및 maxDepth 값
 
 총 **5개의 runs**를 다음과 같은 파라미터 조합으로 실행했습니다:

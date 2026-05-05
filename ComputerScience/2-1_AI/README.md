@@ -8,6 +8,8 @@ source: ''
 status: evergreen
 tags:
 - cs/ai
+- cs/dl
+- cs/ml
 - type/MOC
 title: '[2-1] 인공지능 · 미니 인덱스'
 type: MOC

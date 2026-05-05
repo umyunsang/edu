@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Machine Learning MOC]]
+
 ---
 ### 서브플롯을 활용한 텍스트 표시 예제
 

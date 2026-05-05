@@ -14,6 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Computer Vision MOC]]
+
 ## 1. 그리기의 기초 (Primitive & Attributes)
 
 ### 1.1 선형 보간 (Linear Interpolation)과 직선

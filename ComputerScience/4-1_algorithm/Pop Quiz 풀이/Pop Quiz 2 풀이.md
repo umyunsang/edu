@@ -18,6 +18,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Algorithms MOC]]
+
 # Pop Quiz #2 문제 풀이
 
 ### [문제 1/2] 해싱 (Hashing)

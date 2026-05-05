@@ -15,6 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
+up:: [[Systems MOC]]
+
 ---
 # CUDA 프로그램 연습 및 CUDA API이해
 
