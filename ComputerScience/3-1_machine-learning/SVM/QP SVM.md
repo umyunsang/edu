@@ -30,7 +30,7 @@ clf.fit(X, y)
 visualize_svm(clf.coef_[0], clf.intercept_)
 ```
 
-![[Pasted image 20250415173546.png]]
+![[3-1_machine-learning__Pasted image 20250415173546.png]]
 
 ## 2. 마진 계산
 학습된 SVM 모델의 마진 크기를 계산합니다.

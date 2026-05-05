@@ -19,7 +19,7 @@ updated: '2026-05-05'
 # CUDA 프로그램 연습 및 CUDA API이해
 
 
-![[Pasted image 20250329135531.png]]
+![[3-1_machine-learning__Pasted image 20250329135531.png]]
 
 |         |                   |
 | ------- | :---------------: |
