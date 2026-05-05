@@ -1,12 +1,16 @@
-
 ---
-### Fine-Tuning이란
-
-Fine-Tuning은 사전 학습된 LLM(Large Language Model)을 특정 작업이나 요구 사항에 맞게 추가 학습시켜 최적화하는 **전이 학습(Transfer Learning)** 방법입니다.
-
-- 적은 데이터로도 특정 작업에서 높은 성능 발휘 가능.
-- 사용자 요구에 맞는 스타일, 톤, 출력 형식을 제공.
-
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Fine-Tuning
+type: lecture
+updated: '2026-05-05'
 ---
 
 ### Fine-Tuning의 주요 특징

@@ -1,3 +1,18 @@
+---
+aliases: []
+course: coding-basics
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 1-2
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: '[1-2] 코딩 기초와 문제해결 · 미니 인덱스'
+type: MOC
+updated: '2026-05-05'
+---
+
 # [1-2] 코딩 기초와 문제해결 · 미니 인덱스
 
 ## 🔗 Quick Links

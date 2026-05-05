@@ -1,7 +1,16 @@
-
 ---
-STFT(Short-Time Fourier Transform)와 함께 모델 입력으로 추가할 수 있는 정보를 **딥러닝 관점에서** 고려할 때, 다음과 같은 요소를 생각해볼 수 있습니다.  
-
+aliases: []
+course: mathematical-logic
+created: '2025-03-28'
+date: '2025-03-28'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/project
+title: ASD Feature 발굴
+type: project
+updated: '2026-05-05'
 ---
 
 ## **1. STFT와 함께 넣을 수 있는 추가 정보**  

@@ -1,3 +1,17 @@
+---
+aliases: []
+course: computer-network
+created: '2024-11-11'
+date: '2024-11-11'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 인터넷 프로토콜(IP)
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 1. 인터넷 프로토콜(IP)의 작업

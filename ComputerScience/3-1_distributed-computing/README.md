@@ -1,3 +1,18 @@
+---
+aliases: []
+course: distributed-computing
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: '[3-1] 분산처리 · 미니 인덱스'
+type: MOC
+updated: '2026-05-05'
+---
+
 # [3-1] 분산처리 · 미니 인덱스
 
 ## 🔗 Quick Links

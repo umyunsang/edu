@@ -1,7 +1,16 @@
-
 ---
-# MLFlow 실습 과제 - 최종 제출
-
+aliases: []
+course: bigdata-analysis
+created: '2025-12-03'
+date: '2025-12-03'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Docker 컨테이너 실행
+type: lecture
+updated: '2026-05-05'
 ---
 
 ## 1. 실행한 maxBins 및 maxDepth 값
@@ -193,4 +202,3 @@ evaluator = BinaryClassificationEvaluator()  # 정상: Evaluator
 모든 실행이 정상적으로 완료되었으며, MLFlow UI를 통해 5개의 runs를 확인할 수 있습니다.
 
 ---
-

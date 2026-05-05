@@ -1,3 +1,17 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 20_mle
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### Defining the likelihood of data

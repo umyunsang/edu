@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-09'
+date: '2024-08-09'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 데이터셋 불러오기
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### 1. 데이터셋 불러오기 및 준비

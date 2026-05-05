@@ -1,3 +1,17 @@
+---
+aliases: []
+course: operating-system
+created: '2024-09-09'
+date: '2024-09-09'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 컴퓨터 시스템과 OS
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 컴퓨터 하드웨어 구성

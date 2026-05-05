@@ -1,7 +1,16 @@
-
 ---
-# 컴퓨터 그래픽스 실습 개념 및 시험 완벽 대비
-
+aliases: []
+course: computer-graphics
+created: '2025-12-13'
+date: '2025-12-13'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: final exam
+type: lecture
+updated: '2026-05-05'
 ---
 
 ## 1. 그리기의 기초 (Primitive & Attributes)

@@ -1,7 +1,18 @@
 ---
-## [지식재산권] IPAT 기출문제
-
+aliases: []
+course: intellectual-property
+created: '2025-06-15'
+date: '2025-06-15'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: IPAT_기출문제
+type: lecture
+updated: '2026-05-05'
 ---
+
 ---
 ## [지식재산권]  IPAT 기출문제
 

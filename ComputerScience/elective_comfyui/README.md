@@ -1,3 +1,18 @@
+---
+aliases: []
+course: comfyui
+created: '2026-03-19'
+date: '2026-03-19'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: 🎨 ComfyUI & Generative AI Workflows
+type: MOC
+updated: '2026-05-05'
+---
+
 # 🎨 ComfyUI & Generative AI Workflows
 
 <p align="center">

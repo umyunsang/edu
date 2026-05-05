@@ -1,3 +1,18 @@
+---
+aliases: []
+course: convergence
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: 융합전공 · 미니 인덱스
+type: MOC
+updated: '2026-05-05'
+---
+
 # 융합전공 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -10,4 +25,3 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-

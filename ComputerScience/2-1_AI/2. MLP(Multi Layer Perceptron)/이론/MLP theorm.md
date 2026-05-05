@@ -1,3 +1,18 @@
+---
+aliases: []
+course: AI
+created: '2024-04-01'
+date: '2024-04-01'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: MLP theorm
+type: lecture
+updated: '2026-05-05'
+---
+
 #ComputerScience #인공지능 #perceptron 
  
 ---

@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-22'
+date: '2025-01-22'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Vector store
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### Vector Store (VectorDB)

@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 데이터 로드
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### Fine-Tuning 실습: JSONL 형식 데이터 준비 및 검증, Fine-Tuning 과정

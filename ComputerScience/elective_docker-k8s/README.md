@@ -1,3 +1,18 @@
+---
+aliases: []
+course: docker-k8s
+created: '2025-09-24'
+date: '2025-09-24'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: 도커와 쿠버네티스 · 미니 인덱스
+type: MOC
+updated: '2026-05-05'
+---
+
 # 도커와 쿠버네티스 · 미니 인덱스
 
 ## 📄 Top Notes

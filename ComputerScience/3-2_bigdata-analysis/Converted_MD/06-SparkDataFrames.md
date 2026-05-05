@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 06. Spark DataFrames - 구조화된 데이터 처리
+type: lecture
+updated: '2026-05-05'
+---
+
 # 06. Spark DataFrames - 구조화된 데이터 처리
 
 ## 📚 개요

@@ -1,7 +1,16 @@
-
 ---
-### Text to Speech (TTS) 및 Speech to Text (STT) 기능 요약
-
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 음성 파일 저장
+type: lecture
+updated: '2026-05-05'
 ---
 
 ### 1. Text to Speech (TTS)

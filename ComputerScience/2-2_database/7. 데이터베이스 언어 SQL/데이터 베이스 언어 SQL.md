@@ -1,3 +1,17 @@
+---
+aliases: []
+course: database
+created: '2024-10-07'
+date: '2024-10-07'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 데이터 베이스 언어 SQL
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 1. SQL의 소개

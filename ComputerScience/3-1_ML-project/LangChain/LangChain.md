@@ -1,8 +1,18 @@
-
 ---
-이 코드는 LangChain을 활용하여 PDF 문서를 읽고, 해당 문서의 내용을 기반으로 질문에 답변하는 RAG (Retrieval-Augmented Generation) 구조를 구현한 실습 코드입니다. 
-
+aliases: []
+course: ML-project
+created: '2024-08-14'
+date: '2024-08-14'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: LangChain
+type: lecture
+updated: '2026-05-05'
 ---
+
 ## **1. `docs_load()` 함수**
 - **역할**: PDF 문서를 읽어들입니다.
 - **세부 내용**:

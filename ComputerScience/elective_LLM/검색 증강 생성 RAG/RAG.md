@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 필요한 라이브러리 임포트
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### RAG (Retrieval-Augmented Generation) 개요

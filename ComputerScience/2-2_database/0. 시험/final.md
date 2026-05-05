@@ -1,3 +1,17 @@
+---
+aliases: []
+course: database
+created: '2024-12-09'
+date: '2024-12-09'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: final
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 4지선다 10문제

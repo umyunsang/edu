@@ -1,3 +1,18 @@
+---
+aliases: []
+course: web-programming
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: '[2-1] 웹프로그래밍 · 미니 인덱스'
+type: MOC
+updated: '2026-05-05'
+---
+
 # [2-1] 웹프로그래밍 · 미니 인덱스
 
 ## 🔗 Quick Links
@@ -11,4 +26,3 @@
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
-

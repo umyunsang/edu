@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-20'
+date: '2025-01-20'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: ChatGPT 모델 이해와 활용
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 #### OpenAI API
@@ -66,4 +80,3 @@ OpenAI API 주요 기능 :
 >- 모델은 초기에 학습된 일반적인 지식을 바탕으로, 더 구체적이고 특화된 작업을 더 효과적 으로 수행할 수 있습니다. 
 >- 사전 훈련된 모델의 파라미터를 특정 작업의 데이터에 맞게 조정합니다. 
 >- 특정 작업에 대해 모델의 정확도와 효율성을 크게 개선합니다
-

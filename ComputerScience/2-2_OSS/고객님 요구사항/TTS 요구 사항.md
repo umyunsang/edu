@@ -1,3 +1,17 @@
+---
+aliases: []
+course: OSS
+created: '2024-11-24'
+date: '2024-11-24'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: TTS 요구 사항
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## TTS원본.html

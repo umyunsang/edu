@@ -1,9 +1,16 @@
-
 ---
-### 막대 그래프 예제
-
-아래는 `matplotlib`를 사용하여 두 개의 막대 그래프를 나란히 표시하는 코드입니다. 이 코드는 국내와 해외의 데이터를 비교하는 막대 그래프를 생성합니다.
-
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: x 축의 위치를 지정하는 배열
+type: lecture
+updated: '2026-05-05'
 ---
 
 ```python

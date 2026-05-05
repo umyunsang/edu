@@ -1,7 +1,15 @@
 ---
-tags: []
-created: 2024-03-21
+course: mathematical-logic
+created: '2025-04-04'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/project
+type: project
+updated: '2026-05-05'
 ---
+
 ---
 # 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 
@@ -273,4 +281,4 @@ if __name__ == "__main__":
 3. **향후 개선사항**
    - 더 많은 샘플에 대한 분석 필요
    - 시간에 따른 특징 변화 분석 추가
-   - 다양한 작동 조건에서의 특징 안정성 검증 
+   - 다양한 작동 조건에서의 특징 안정성 검증

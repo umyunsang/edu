@@ -1,3 +1,18 @@
+---
+aliases: []
+course: computer-graphics
+created: '2025-10-19'
+date: '2025-10-19'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 컴퓨터그래픽스 시험 대비 자료
+type: lecture
+updated: '2026-05-05'
+---
+
 # 컴퓨터그래픽스 시험 대비 자료
 
 ## 📚 목차

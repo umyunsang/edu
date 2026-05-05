@@ -1,3 +1,18 @@
+---
+aliases: []
+course: certification
+created: '2025-12-24'
+date: '2025-12-24'
+semester: cert
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Workspace Context
+type: lecture
+updated: '2026-05-05'
+---
+
 # Workspace Context
 
 이 작업 공간은 **시험 대비용 핵심 요약 노트**를 작성하고 관리하는 곳입니다. 사용자가 필기 내용을 정리하거나 보기 좋게 해달라고 요청하는 경우, 다음 지침을 엄격히 따릅니다:

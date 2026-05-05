@@ -1,3 +1,17 @@
+---
+aliases: []
+course: neural-network
+created: '2025-11-27'
+date: '2025-11-27'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: AIE309_HW1_풀이
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 문제 1. Sigmoid 함수의 Backpropagation

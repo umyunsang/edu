@@ -23,10 +23,16 @@ def _yaml_dump(data: dict) -> str:
 
 
 def read_note(path: Path) -> tuple[dict, str]:
+    """Read a markdown note. Robust to files that start with `---` as a horizontal rule
+    (not as YAML frontmatter delimiter). On YAML parse failure, treat as no frontmatter.
+    """
     raw = Path(path).read_text(encoding="utf-8")
     raw = unicodedata.normalize("NFC", raw)
-    post = frontmatter.loads(raw)
-    return dict(post.metadata), post.content
+    try:
+        post = frontmatter.loads(raw)
+        return dict(post.metadata), post.content
+    except (yaml.YAMLError, Exception):
+        return {}, raw
 
 
 def write_note(path: Path, fm: dict, body: str) -> None:
@@ -64,7 +70,7 @@ def merge_frontmatter(
 
 def iter_vault_notes(
     root: Path,
-    exclude: Iterable[str] = (".obsidian", ".git", "scripts", "docs"),
+    exclude: Iterable[str] = (".obsidian", ".git", ".claude", ".pytest_cache", "scripts", "docs"),
 ) -> Iterable[Path]:
     exclude_parts = {str(e) for e in exclude}
     for p in sorted(Path(root).rglob("*.md")):

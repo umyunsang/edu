@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-21'
+date: '2025-01-21'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 데이터프레임 로드
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 #### openai API  활용

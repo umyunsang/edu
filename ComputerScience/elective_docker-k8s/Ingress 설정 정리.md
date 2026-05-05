@@ -1,3 +1,17 @@
+---
+aliases: []
+course: docker-k8s
+created: '2025-01-17'
+date: '2025-01-17'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Ingress 설정 정리
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### **Ingress 설정 정리**

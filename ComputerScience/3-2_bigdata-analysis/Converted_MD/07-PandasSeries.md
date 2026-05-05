@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 07-PandasSeries
+type: lecture
+updated: '2026-05-05'
+---
+
 # 07-PandasSeries
 
 # 📊 **Pandas Series - 1차원 데이터 구조**

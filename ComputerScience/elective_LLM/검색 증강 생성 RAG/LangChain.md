@@ -1,3 +1,18 @@
+---
+aliases: []
+course: LLM
+created: '2024-06-12'
+date: '2024-06-12'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 템플릿 생성
+type: lecture
+updated: '2026-05-05'
+---
+
 https://wikidocs.net/book/14314 
 
 ---

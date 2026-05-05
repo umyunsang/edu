@@ -1,3 +1,18 @@
+---
+aliases: []
+course: probability-statistics
+created: '2026-03-19'
+date: '2026-03-19'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Expectation
+type: lecture
+updated: '2026-05-05'
+---
+
 #ComputerScience #확률과통계 
 
 ---
@@ -29,4 +44,4 @@ $$E[aX + b] = aE[X] + b$$
 	확률 변수 \( X \)의 함수 \( g(X) \)의 기대값은 함수를 적용한 후의 값들에 대한 기대값을 구하는 것과 같습니다. 이것은 \( g(X) \)의 분포를 명시적으로 알지 못할 때 유용하게 사용됩니다.
 
 4. **상수의 기대값(Expectation of a Constant)**:
-	상수의 기대값은 그 상수 자체입니다.$$E[c] = c $$ 
+	상수의 기대값은 그 상수 자체입니다.$$E[c] = c $$

@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2025-09-24'
+date: '2025-09-24'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 01. Word Count - 빅데이터 분석의 첫 걸음
+type: lecture
+updated: '2026-05-05'
+---
+
 # 01. Word Count - 빅데이터 분석의 첫 걸음
 
 ## 📚 개요

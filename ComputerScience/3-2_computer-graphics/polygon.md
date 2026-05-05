@@ -1,3 +1,18 @@
+---
+aliases: []
+course: computer-graphics
+created: '2025-12-09'
+date: '2025-12-09'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: OpenGL 폴리곤 그리기 정리
+type: lecture
+updated: '2026-05-05'
+---
+
 # OpenGL 폴리곤 그리기 정리
 
 ## 기본 개념

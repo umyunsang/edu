@@ -1,3 +1,17 @@
+---
+aliases: []
+course: data-structures
+created: '2024-05-14'
+date: '2024-05-14'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: AVL
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 #### AVL 트리

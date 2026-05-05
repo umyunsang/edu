@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI-system-design
+created: '2024-06-12'
+date: '2024-06-12'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 스마트 오더 플랫폼 'cafe-recommend' - B2B 어드민 기능 제안
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # 스마트 오더 플랫폼 'cafe-recommend' - B2B 어드민 기능 제안
@@ -36,4 +50,4 @@
 
 ## 결론
 
-위에 제시된 기능들은 사업자들이 'cafe-recommend' 플랫폼을 통해 실질적인 운영 효율성 개선과 매출 증대를 경험할 수 있도록 돕는 핵심 요소가 될 것입니다. 각 기능의 우선순위를 정하고 단계적으로 개발하여 플랫폼의 가치를 지속적으로 높여나가는 것을 추천합니다. 
+위에 제시된 기능들은 사업자들이 'cafe-recommend' 플랫폼을 통해 실질적인 운영 효율성 개선과 매출 증대를 경험할 수 있도록 돕는 핵심 요소가 될 것입니다. 각 기능의 우선순위를 정하고 단계적으로 개발하여 플랫폼의 가치를 지속적으로 높여나가는 것을 추천합니다.

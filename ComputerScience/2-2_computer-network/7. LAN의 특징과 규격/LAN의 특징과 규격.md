@@ -1,3 +1,17 @@
+---
+aliases: []
+course: computer-network
+created: '2024-10-16'
+date: '2024-10-16'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: LAN의 특징과 규격
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 1. LAN 계층

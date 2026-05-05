@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-06'
+date: '2024-08-06'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Pandas Series 이해하기
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # Pandas Series 이해하기

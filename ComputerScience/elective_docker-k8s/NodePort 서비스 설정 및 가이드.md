@@ -1,3 +1,17 @@
+---
+aliases: []
+course: docker-k8s
+created: '2025-01-17'
+date: '2025-01-17'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: NodePort 서비스 설정 및 가이드
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### NodePort 서비스 설정 및 가이드

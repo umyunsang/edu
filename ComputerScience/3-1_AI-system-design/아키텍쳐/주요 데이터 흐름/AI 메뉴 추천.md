@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI-system-design
+created: '2025-04-10'
+date: '2025-04-10'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: AI 메뉴 추천
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ```mermaid

@@ -1,7 +1,16 @@
-
 ---
-물론입니다. 애플 M4 CPU에 대한 조사 레포트를 작성해드리겠습니다. 참고한 홈페이지와 관련 기사는 링크로 제공하겠습니다.
-
+aliases: []
+course: computer-architecture
+created: '2024-05-18'
+date: '2024-05-18'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 애플 M4 CPU
+type: lecture
+updated: '2026-05-05'
 ---
 
 ## 애플 M4 CPU 조사 레포트

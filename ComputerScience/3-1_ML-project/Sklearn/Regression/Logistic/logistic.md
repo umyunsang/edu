@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-12'
+date: '2024-08-12'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: logistic
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### 1. **데이터 불러오기 및 확인**

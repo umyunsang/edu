@@ -1,3 +1,17 @@
+---
+aliases: []
+course: database
+created: '2024-10-28'
+date: '2024-10-28'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 뷰(view)
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 4. 뷰

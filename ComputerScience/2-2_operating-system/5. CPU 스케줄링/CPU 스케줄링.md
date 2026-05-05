@@ -1,3 +1,17 @@
+---
+aliases: []
+course: operating-system
+created: '2024-10-07'
+date: '2024-10-07'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: CPU 스케줄링
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## 1. CPU 스케줄링 개요

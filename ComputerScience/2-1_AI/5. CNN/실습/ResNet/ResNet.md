@@ -1,3 +1,17 @@
+---
+aliases: []
+course: AI
+created: '2024-05-27'
+date: '2024-05-27'
+semester: 2-1
+source: ''
+status: seedling
+tags:
+- type/project
+title: Training dataset 다운로드
+type: project
+updated: '2026-05-05'
+---
 
 ---
 ![](../../../../../../image/Pasted%20image%2020240604143441.png)

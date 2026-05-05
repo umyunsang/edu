@@ -1,3 +1,17 @@
+---
+aliases: []
+course: operating-system
+created: '2024-12-03'
+date: '2024-12-03'
+semester: 2-2
+source: ''
+status: seedling
+tags:
+- type/project
+title: page.c
+type: project
+updated: '2026-05-05'
+---
 
 ---
 ```c

@@ -1,9 +1,22 @@
 ---
-semester: "4-1"
-course: "AIOSS"
+course: AIOSS
+created: '2026-04-06'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- AIOSS
+- CI-CD
+- DevOps
+- YAML
+- automation
+- github-actions
+- type/lecture
+- workflow
+title: Automation with GitHub Actions
+type: lecture
+updated: '2026-05-05'
 week: 6
-title: "Automation with GitHub Actions"
-tags: [AIOSS, github-actions, CI-CD, automation, YAML, workflow, DevOps]
 ---
 
 # Automation with GitHub Actions

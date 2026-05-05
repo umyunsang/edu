@@ -1,3 +1,17 @@
+---
+aliases: []
+course: machine-learning
+created: '2025-04-09'
+date: '2025-04-09'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: Multiple Linear Regression
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 # Multiple Linear Regression

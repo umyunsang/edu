@@ -1,3 +1,18 @@
+---
+aliases: []
+course: bigdata-analysis
+created: '2026-04-06'
+date: '2026-04-06'
+semester: 3-2
+source: ''
+status: seedling
+tags:
+- type/MOC
+title: '[3-2] 빅데이터분석 · 미니 인덱스'
+type: MOC
+updated: '2026-05-05'
+---
+
 # [3-2] 빅데이터분석 · 미니 인덱스
 
 ## 🔗 Quick Links

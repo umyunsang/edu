@@ -1,3 +1,17 @@
+---
+aliases: []
+course: LLM
+created: '2025-01-20'
+date: '2025-01-20'
+semester: elective
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: LLM 모델 이해
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ## LLM 모델 이해

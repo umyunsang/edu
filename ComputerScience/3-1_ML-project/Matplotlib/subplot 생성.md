@@ -1,3 +1,17 @@
+---
+aliases: []
+course: ML-project
+created: '2024-08-05'
+date: '2024-08-05'
+semester: 3-1
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: 2x3 그리드로 서브플롯 생성
+type: lecture
+updated: '2026-05-05'
+---
 
 ---
 ### 서브플롯을 활용한 텍스트 표시 예제
