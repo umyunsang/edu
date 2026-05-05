@@ -18,14 +18,14 @@ updated: '2026-05-05'
 ---
 ## LLM 모델 이해
 #### 자연어처리(NLP) 기술의 발전
-![[Pasted image 20250120101836.png]]
+![[elective_LLM__Pasted image 20250120101836.png]]
 - **n-gram 모델** : 연속된 단어의 그룹을 기반으로 확률을 계산하는 모델
 - **Hidden Markov Model (HMM)** : 관찰할 수 없는(숨겨진) 상태와 관찰 가능한 데이터 사이
 의 확률 관계를 모델링
 - **Recurrent Neural Networks (RNN)** : 순차적 데이터(텍스트, 음성, 동영상 등)를 처리하기
 위해 설계된 신경망 구조
 
-![[Pasted image 20250120103621.png]]
+![[elective_LLM__Pasted image 20250120103621.png]]
 - **Sequence-to-Sequence (Seq2Seq)** : Encoder(문맥이해, 압축)-Decoder(문장 생성) 아키텍 처 기반, 입력 시퀀스를 출력 시퀀스로 변환하는 모델 구조 
 - **Attention** : 입력 시퀀스 내의 중요한 부분에 집중하여, 시퀀스 처리 작업의 성능을 향상 시키는 신경망 구조 
 - **Transformer** : 어텐션 메커니즘을 활용하여 순차적 계산을 최소화하고 병렬 처리를 극대화 한 신경망 아키텍처
@@ -47,7 +47,7 @@ updated: '2026-05-05'
 7. **생성 및 분류** (Generation and Classification)
 #### LLM의 언어 처리 Task Model
 ##### Sequence-to-Sequence (Seq2Seq)
-![[Pasted image 20250120111923.png]]
+![[elective_LLM__Pasted image 20250120111923.png]]
 - 하나의 입력 시퀀스를 받아 다른 출력 시퀀스로 변환하는 신경망 구조 
 - Encoder(문맥이해, 압축)-Decoder(문장 생성) 아키텍처 기반 
 - 컨텍스트 벡터를 기반으로 다음 단어를 예측 
@@ -65,7 +65,7 @@ updated: '2026-05-05'
 - RNN 계열 모델로 구성 
 - 생성된 단어(또는 토큰)와 컨텍스트 벡터를 기반으로 Decoder가 생성한 단어들을 하나씩 결 합하면서 다음 단어를 예측하며, 생성해야 할 단어의 수만큼 예측 반복
 ##### Attention Mechanism
-![[Pasted image 20250120112057.png]]
+![[elective_LLM__Pasted image 20250120112057.png]]
 -  Seq2Seq 모델에서 Decoder가 입력 시퀀스의 모든 단어를 동적으로 참조할 수 있도록 도와주는 방법 
 - Seq2Seq 모델에서 발생하는 정보 손실 문제를 해결하기 위해 도입 
 - Decoder 가 출력 단어를 생성할 때 입력의 특정 부분에 더 집중(Attention) 하도록 함 

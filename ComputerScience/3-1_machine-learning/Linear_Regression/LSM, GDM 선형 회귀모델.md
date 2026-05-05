@@ -69,7 +69,7 @@ print(f"X_test: {X_test.shape}, Y_test: {Y_test.shape}")
 ```
 
 >[!success]
->![[Pasted image 20250421120641.png]]
+>![[3-1_machine-learning__Pasted image 20250421120641.png]]
 >X_train: (17290, 1), Y_train: (17290, 1)
 X_test: (4323, 1), Y_test: (4323, 1)
 
@@ -188,7 +188,7 @@ plt.show()
 ```
 
 >[!success]
->![[Pasted image 20250421120853.png]]
+>![[3-1_machine-learning__Pasted image 20250421120853.png]]
 
 
 ---

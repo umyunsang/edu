@@ -105,7 +105,7 @@ docker exec mlflow-container bash -c \
 
 실제 터미널에서 명령어를 실행한 결과입니다:
 
-![[터미널_실행결과_1705817_엄윤상.png]]
+![[3-2_bigdata-analysis__터미널_실행결과_1705817_엄윤상.png]]
 
 **주요 실행 내용:**
 - Spark 3.5.0 버전으로 실행
@@ -115,7 +115,7 @@ docker exec mlflow-container bash -c \
 
 ### 4.2 실행 출력 요약
 
-![[MLFlow_실행결과_1705817_엄윤상.png]]
+![[3-2_bigdata-analysis__MLFlow_실행결과_1705817_엄윤상.png]]
 **5개 Runs 실행 결과:**
 - ✅ Run 1: maxBins=20, maxDepth=4
 - ✅ Run 2: maxBins=24, maxDepth=6
@@ -125,7 +125,7 @@ docker exec mlflow-container bash -c \
 
 ### 4.3 상세 실행 로그
 
-![[MLFlow_실행로그_1705817_엄윤상.png]]
+![[3-2_bigdata-analysis__MLFlow_실행로그_1705817_엄윤상.png]]
 
 **로그에서 확인 가능한 정보:**
 - Spark Job 실행 상태
