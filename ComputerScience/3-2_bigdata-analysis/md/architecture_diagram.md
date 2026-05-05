@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[architecture_text]], [[bigdata-analysis__md__과제]], [[MLFlow 과제]], [[개념문제_풀이]], [[시험정리]], [[연습문제_풀이]], [[이론정리]]
 # 아키텍처 다이어그램
 
 ## 소셜 비디오 빅데이터 실시간 처리 플랫폼 아키텍처

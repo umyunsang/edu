@@ -44,6 +44,51 @@ children:: [[Machine Learning MOC]], [[Deep Learning MOC]], [[Algorithms MOC]], 
 - [[Certifications MOC]]
 - [[Open Questions MOC]]
 
+## Linked Notes (auto)
+
+> 40 notes link up to this MOC.
+
+- [[1. Hello Java]]
+- [[1. 변수와 자료형]]
+- [[2. 변수와 자료형]]
+- [[2. 연산자]]
+- [[3. Scanner]]
+- [[3. 반복문]]
+- [[4. 연산자]]
+- [[4. 조건문]]
+- [[5. 리스트, 튜플, 딕셔너리]]
+- [[5. 조건문]]
+- [[6. 함수]]
+- [[7. 파일 읽기와 쓰기]]
+- [[8. 객체 지향 프로그래밍]]
+- [[AI Open Source MOC]]
+- [[Algorithms MOC]]
+- [[Certifications MOC]]
+- [[CLAUDE]]
+- [[Database MOC]]
+- [[Machine Learning MOC]]
+- [[Math Foundations MOC]]
+- [[misc__발표 스크립트]]
+- [[Open Questions MOC]]
+- [[PDF_인쇄_완전가이드]]
+- [[Portfolio MOC]]
+- [[Security MOC]]
+- [[Software Engineering MOC]]
+- [[Systems MOC]]
+- [[퀴즈]]
+- [[과제1]]
+- [[과제2]]
+- [[답지]]
+- [[멋진신세계]]
+- [[문제풀이 10~20]]
+- [[문제풀이 1~10]]
+- [[소감문 작성]]
+- [[졸업학점]]
+- [[중간고사_창의적글쓰기_정리]]
+- [[지뢰찾기]]
+- [[커리큘럼 관계 정리]]
+- [[프로젝트 주제]]
+
 ## All MOCs (auto)
 ```dataview
 LIST FROM #type/MOC

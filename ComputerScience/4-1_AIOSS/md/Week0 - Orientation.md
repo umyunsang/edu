@@ -25,6 +25,7 @@ week: 0
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Week 0 - Orientation: AI Open Source Software
 
 현대 소프트웨어 개발의 핵심 역량을 습득하는 여정.

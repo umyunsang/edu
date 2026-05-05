@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[Combinations]]
 ---
 ### **퀴즈 1: 확률 교과서**
 ```

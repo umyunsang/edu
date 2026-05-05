@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[OSS__0. Html. javascript 기초__연습문제]]
 ---
 # QUIZ.1
 

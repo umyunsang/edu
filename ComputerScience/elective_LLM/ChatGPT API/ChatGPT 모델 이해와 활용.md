@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[LLM & NLP MOC]]
 
+siblings:: [[Audio Generation]], [[ChatGPT API]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 ---
 #### OpenAI API
 ```

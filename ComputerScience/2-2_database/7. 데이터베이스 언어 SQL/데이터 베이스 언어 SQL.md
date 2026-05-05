@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Database MOC]]
 
+siblings:: [[뷰(view)]]
 ---
 ## 1. SQL의 소개
 #### SQL의 분류

@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[Continuous RVs]]
 ---
 ### 지진 문제
 ```

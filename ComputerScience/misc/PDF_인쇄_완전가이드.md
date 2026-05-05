@@ -15,6 +15,7 @@ updated: '2026-05-05'
 
 up:: [[Home MOC]]
 
+siblings:: [[misc__발표 스크립트]], [[졸업학점]]
 # PDF 인쇄 완전 가이드
 
 ## 1. CSS 스니펫 활성화 방법

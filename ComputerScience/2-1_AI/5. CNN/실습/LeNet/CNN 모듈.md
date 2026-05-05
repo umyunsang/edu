@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[LR control]], [[pooling]]
 ---
 ![](../../../../../../image/Pasted%20image%2020240527184404.png)
 

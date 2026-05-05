@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[LLM & NLP MOC]]
 
+siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[openai API 활용]], [[TTS, STT]]
 ### 주요 특징
 
 1. 텍스트 및 이미지 콘텐츠 검토 지원.

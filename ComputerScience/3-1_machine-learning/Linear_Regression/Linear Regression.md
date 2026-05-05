@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[LSM, GDM 선형 회귀모델]], [[Multiple_Linear_Regression]], [[우버데이터_Multiple_Linear_Regression]]
 ---
 ## Linear Regression
 

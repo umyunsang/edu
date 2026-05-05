@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[CNN 모듈]], [[LR control]]
 ---
 ` 1. Pooling layer 변경: Average pooling -> Max pooling
 ` 2. Convolutional layer channel 개수 변경: 6 -> 32, 64`

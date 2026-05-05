@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[imshow 이미지 그래프]], [[pie 원형 그래프]], [[scatter 산점도 그래프]], [[subplot  예제]], [[그래프 스타일]], [[기본 그래프]]
 ---
 ### 서브플롯을 활용한 텍스트 표시 예제
 

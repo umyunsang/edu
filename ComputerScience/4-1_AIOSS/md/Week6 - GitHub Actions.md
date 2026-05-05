@@ -26,6 +26,7 @@ week: 6
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]]
 # Automation with GitHub Actions
 
 ## 학습 목표

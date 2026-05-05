@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[1. 음성 인식 요구 사항]], [[Framework]], [[slot 요구사항]], [[배경사진 요구사항]], [[올림픽 요구사항]]
 ---
 ## TTS원본.html
 ```html

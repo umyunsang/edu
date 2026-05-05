@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[19_sampling]], [[Bootstrapping]]
 ---
 ### 모집단 통계 추정
 

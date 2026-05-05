@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Software Engineering MOC]]
 
+siblings:: [[HTML 기초 실습2]]
 ---
 ![](../../../../image/Pasted%20image%2020240529124723.png)
 

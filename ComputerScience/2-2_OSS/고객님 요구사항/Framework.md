@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[1. 음성 인식 요구 사항]], [[slot 요구사항]], [[TTS 요구 사항]], [[배경사진 요구사항]], [[올림픽 요구사항]]
 ---
 #### Vanilla JS?  jQuery? React? Vue.js?
 : 새롭게 시작하는 Front-end 개발 프로젝트에서 위 4가지 중 어느 쪽을 선택할 것인지 검토

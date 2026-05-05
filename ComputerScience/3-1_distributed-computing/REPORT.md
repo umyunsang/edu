@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Systems MOC]]
 
+siblings:: [[1. WhyParlleism]], [[쿠다]]
 ---
 # CUDA 프로그램 연습 및 CUDA API이해
 

@@ -26,6 +26,7 @@ week: 2
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Plan, Track, and Visualize Your Work
 
 ## 작업 계획, 추적 및 시각화

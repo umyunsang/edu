@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Database MOC]]
 
+siblings:: [[데이터 베이스 언어 SQL]]
 ---
 ## 4. 뷰
 #### 뷰(view)

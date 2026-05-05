@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Computer Vision MOC]]
 
+siblings:: [[0. 소개]], [[middle exam]], [[polygon]], [[깊이-버퍼와-투영]], [[좌표공간과-카메라]], [[지오매트리]], [[컴퓨터그래픽스-시험대비]]
 ## 1. 그리기의 기초 (Primitive & Attributes)
 
 ### 1.1 선형 보간 (Linear Interpolation)과 직선

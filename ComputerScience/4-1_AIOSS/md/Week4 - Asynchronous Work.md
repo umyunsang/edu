@@ -27,6 +27,7 @@ week: 4
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Asynchronous Work - Collaborate from Anywhere
 
 비동기 협업의 원칙과 도구를 이해하고

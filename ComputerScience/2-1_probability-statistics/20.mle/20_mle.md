@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[MLE]], [[파라미터 추정]]
 ---
 ### Defining the likelihood of data
 

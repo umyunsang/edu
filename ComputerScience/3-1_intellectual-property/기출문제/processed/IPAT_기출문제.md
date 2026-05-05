@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Certifications MOC]]
 
+siblings:: [[상표_processed]], [[저작권_processed]], [[지식재산권_processed]], [[특허_processed]]
 ---
 ## [지식재산권]  IPAT 기출문제
 

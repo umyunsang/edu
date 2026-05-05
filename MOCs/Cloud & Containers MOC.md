@@ -34,6 +34,26 @@ central:: [[Cloud & Containers MOC]]
 ## Cloud Platforms
 - 
 
+## Linked Notes (auto)
+
+> 15 notes link up to this MOC.
+
+- [[ClusterIP 서비스 설정 및 가이드]]
+- [[Ingress 설정 정리]]
+- [[LoadBalancer 설치 및 설정 가이드]]
+- [[NodePort 서비스 설정 및 가이드]]
+- [[Week0 - Orientation]]
+- [[Week1 - Metrics That Matter]]
+- [[Week2 - Plan, Track & Visualize]]
+- [[Week3 - Teamwork & Collaborative Development]]
+- [[Week4 - Asynchronous Work]]
+- [[Week5 - Open & Inner Source Software Delivery]]
+- [[Week6 - GitHub Actions]]
+- [[도커]]
+- [[도커 기초]]
+- [[쿠버네티스  기초]]
+- [[쿠버네티스 설치]]
+
 ## All container notes (auto)
 ```dataview
 TABLE status, file.mtime as updated

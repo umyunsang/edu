@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[CNN 모듈]], [[pooling]]
 ---
 ` 3. Learning rate control  
 	` • 1 ~ 74 epoch: 0.001  `

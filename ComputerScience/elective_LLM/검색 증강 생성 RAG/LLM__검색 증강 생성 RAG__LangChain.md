@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[LLM & NLP MOC]]
 
+siblings:: [[Llama Index]], [[RAG]], [[Vector store]]
 https://wikidocs.net/book/14314 
 
 ---

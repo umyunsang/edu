@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[메뉴 조회]], [[장바구니에 메뉴 추가]], [[주문 생성]]
 ---
 ```mermaid
 graph LR

@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[architecture_diagram]], [[architecture_text]], [[bigdata-analysis__md__과제]], [[개념문제_풀이]], [[시험정리]], [[연습문제_풀이]], [[이론정리]]
 ## 1. 실행한 maxBins 및 maxDepth 값
 
 총 **5개의 runs**를 다음과 같은 파라미터 조합으로 실행했습니다:
