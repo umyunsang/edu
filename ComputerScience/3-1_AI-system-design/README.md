@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 3-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/ai
 - cs/se
@@ -41,3 +41,12 @@ updated: '2026-05-05'
 
 ### 후속 과목
 - [[ComputerScience/4-1_AIOSS/README|AIOSS]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/3-1_AI-system-design"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

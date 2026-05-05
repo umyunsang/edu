@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 2-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/algorithms
 - type/MOC
@@ -39,3 +39,12 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/4-1_algorithm/README|알고리즘]]
 - [[ComputerScience/elective_coding-test/README|코딩테스트]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/2-1_data-structures"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

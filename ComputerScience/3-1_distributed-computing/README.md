@@ -5,7 +5,7 @@ created: '2026-04-06'
 date: '2026-04-06'
 semester: 3-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/distributed
 - cs/systems
@@ -41,3 +41,12 @@ updated: '2026-05-05'
 
 ### 후속 과목
 - [[ComputerScience/4-1_AIOSS/README|AIOSS]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/3-1_distributed-computing"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

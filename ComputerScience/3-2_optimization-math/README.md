@@ -5,7 +5,7 @@ created: '2026-04-06'
 date: '2026-04-06'
 semester: 3-2
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/ml
 - math/calculus
@@ -35,3 +35,12 @@ updated: '2026-05-05'
 ### 관련 주제
 - [[ComputerScience/3-2_neural-network/README|뉴럴네트워크]]
 - [[ComputerScience/4-1_computer-vision/README|컴퓨터비전]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/3-2_optimization-math"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

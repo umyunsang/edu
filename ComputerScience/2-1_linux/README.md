@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 2-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/systems
 - skill/linux
@@ -45,3 +45,12 @@ updated: '2026-05-05'
 
 ### 관련 주제
 - [[ComputerScience/2-2_database/README|데이터베이스]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/2-1_linux"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: elective
 source: ''
-status: seedling
+status: evergreen
 tags:
 - meta/extracurricular
 - type/MOC
@@ -26,3 +26,12 @@ updated: '2026-05-05'
 
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/elective_convergence"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```

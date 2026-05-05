@@ -5,7 +5,7 @@ created: '2025-09-24'
 date: '2025-09-24'
 semester: 3-1
 source: ''
-status: seedling
+status: evergreen
 tags:
 - cs/ml
 - type/MOC
@@ -34,3 +34,12 @@ updated: '2026-05-05'
 
 ### 선수 과목
 - [[ComputerScience/3-1_machine-learning/README|머신러닝]]
+
+## All notes in this course (auto)
+```dataview
+TABLE status, file.mtime as updated
+FROM "ComputerScience/3-1_ML-project"
+WHERE type != "MOC"
+SORT file.mtime DESC
+LIMIT 50
+```
