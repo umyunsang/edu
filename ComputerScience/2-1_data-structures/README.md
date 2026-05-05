@@ -28,7 +28,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -39,12 +38,3 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/4-1_algorithm/README|알고리즘]]
 - [[ComputerScience/elective_coding-test/README|코딩테스트]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/2-1_data-structures"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

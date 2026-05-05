@@ -37,7 +37,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -45,12 +44,3 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/3-1_distributed-computing/README|분산처리]]
 - [[ComputerScience/elective_docker-k8s/README|Docker/K8s]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/2-2_computer-network"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

@@ -36,12 +36,3 @@ updated: '2026-05-05'
 
 ---
 본 자료는 학습 목적으로 구성되었습니다.
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "LGAimer"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

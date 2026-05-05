@@ -31,7 +31,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -43,12 +42,3 @@ updated: '2026-05-05'
 - [[ComputerScience/2-1_AI/README|인공지능]]
 - [[ComputerScience/2-1_linux/README|리눅스]]
 - [[ComputerScience/2-1_web-programming/README|웹프로그래밍]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/2-1_python"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

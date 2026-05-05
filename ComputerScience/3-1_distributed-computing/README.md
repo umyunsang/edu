@@ -29,7 +29,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -41,12 +40,3 @@ updated: '2026-05-05'
 
 ### 후속 과목
 - [[ComputerScience/4-1_AIOSS/README|AIOSS]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/3-1_distributed-computing"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

@@ -29,7 +29,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -37,12 +36,3 @@ updated: '2026-05-05'
 ### 선수 과목
 - [[ComputerScience/3-1_machine-learning/README|머신러닝]]
 - [[ComputerScience/3-2_neural-network/README|뉴럴네트워크]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/elective_LLM"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```

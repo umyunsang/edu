@@ -35,7 +35,6 @@ updated: '2026-05-05'
 —
 - 상위 인덱스: [../](../) · 루트: [../../](../../)
 
-
 ---
 
 ## 관련 과목
@@ -46,12 +45,3 @@ updated: '2026-05-05'
 ### 후속 과목
 - [[ComputerScience/3-2_bigdata-analysis/README|빅데이터분석]]
 - [[ComputerScience/3-1_AI-system-design/README|AI시스템설계]]
-
-## All notes in this course (auto)
-```dataview
-TABLE status, file.mtime as updated
-FROM "ComputerScience/2-2_database"
-WHERE type != "MOC"
-SORT file.mtime DESC
-LIMIT 50
-```
