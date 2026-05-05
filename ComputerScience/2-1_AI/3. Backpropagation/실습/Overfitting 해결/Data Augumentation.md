@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[Batch Normalization]], [[Dropout]]
 ---
 ## Data Augumentation
 	`데이터 확장`

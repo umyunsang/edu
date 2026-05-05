@@ -26,6 +26,7 @@ week: 1
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week0 - Orientation]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Metrics That Matter
 
 ## Introduction: 중요한 소프트웨어 개발 메트릭

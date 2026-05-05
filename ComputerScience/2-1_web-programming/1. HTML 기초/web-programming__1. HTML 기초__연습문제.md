@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Software Engineering MOC]]
 
+siblings:: [[HTML 기초 실습]]
 #ComputerScience #웹프로그래밍 #기본태그 
 
 ---

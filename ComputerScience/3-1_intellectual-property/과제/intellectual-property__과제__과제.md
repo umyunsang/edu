@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Certifications MOC]]
 
+siblings:: [[특허명세서의 양식]]
 【명세서】
 
     【발명의 명칭】

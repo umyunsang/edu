@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[01-WordCount]], [[02-MapReduce]], [[03_Hadoop]], [[04-ParallelComputation]], [[05-PySpark]], [[06-SparkDataFrames]], [[07-PandasSeries]], [[08-PandaDataframes]]
 # DAU_CSE408_Pandas,_Geopandas
 
 # 동아대학교 컴퓨터AI공학부

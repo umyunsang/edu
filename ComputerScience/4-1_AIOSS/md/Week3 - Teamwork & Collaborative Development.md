@@ -27,6 +27,7 @@ week: 3
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
 # Teamwork & Collaborative Development
 
 팀워크와 협업 개발 - Pull Request 기반 워크플로우, 코드 리뷰 전략, 그리고 협업 베스트 프랙티스

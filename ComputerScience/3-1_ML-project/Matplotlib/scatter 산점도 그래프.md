@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[imshow 이미지 그래프]], [[pie 원형 그래프]], [[subplot  예제]], [[subplot 생성]], [[그래프 스타일]], [[기본 그래프]]
 ```python
 import matplotlib.pyplot as plt
 import numpy as np

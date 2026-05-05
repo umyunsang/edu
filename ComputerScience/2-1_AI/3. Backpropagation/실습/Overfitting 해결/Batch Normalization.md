@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[Data Augumentation]], [[Dropout]]
 ---
 # Batch Normalization
 	MLP 재정의 : self.bn = nn.BatchNorm1d(100) 추가

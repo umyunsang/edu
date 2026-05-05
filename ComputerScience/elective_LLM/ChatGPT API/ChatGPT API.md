@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[LLM & NLP MOC]]
 
+siblings:: [[Audio Generation]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 ---
 #### ChatGPT의 API 연동
 - 요청 매개변수 설정 

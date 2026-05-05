@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[UMNet]], [[VGG]], [[VGGDense]], [[VGGskip]]
 ---
 ![](../../../../../../image/Pasted%20image%2020240527182119.png)
 

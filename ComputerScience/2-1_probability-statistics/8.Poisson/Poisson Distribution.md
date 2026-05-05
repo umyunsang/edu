@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[More Discreete Distributions (시험 X)]], [[문제풀이]]
 #ComputerScience #확률과통계 
 
 ---

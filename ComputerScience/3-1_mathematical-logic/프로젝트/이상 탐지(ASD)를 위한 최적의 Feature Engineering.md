@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[1차 컨펌]], [[2차 컨펌]], [[ASD Feature 발굴]], [[신호 특징 분석 결과]]
 ---
 # 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 

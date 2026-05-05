@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[3주차 발표자료]]
 ---
 ### **📢 AI 챗봇 기반 가상 고객센터 – 특허 vs 저작권 보호 전략**
 

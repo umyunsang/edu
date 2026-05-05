@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[문서 객체 모델(DOM)]]
 ---
 ![](../../../../image/Pasted%20image%2020241104103609.png)
 >[!풀이]

@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[주문 및 결제 AI 시스템 개발]]
 ---
 # 스마트 오더 플랫폼 'cafe-recommend' - B2B 어드민 기능 제안
 

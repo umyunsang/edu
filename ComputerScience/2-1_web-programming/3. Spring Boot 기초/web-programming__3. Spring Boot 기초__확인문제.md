@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Software Engineering MOC]]
 
+siblings:: [[Spring Boot 기초 실습]]
 ---
 
 ### Quiz #1:

@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[test]]
 ---
 # Architecture
 ## **1. 시스템 개요**  

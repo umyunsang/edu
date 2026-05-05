@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Certifications MOC]]
 
+siblings:: [[IPAT_기출문제]], [[상표_processed]], [[지식재산권_processed]], [[특허_processed]]
 [저작권] IPAT 기출문제
 
 **1. 저작권의 보호 대상에 해당하지 않는 것은?**

@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[LLM & NLP MOC]]
 
+siblings:: [[Llama Index]], [[LLM__검색 증강 생성 RAG__LangChain]], [[Vector store]]
 ---
 ### RAG (Retrieval-Augmented Generation) 개요
 

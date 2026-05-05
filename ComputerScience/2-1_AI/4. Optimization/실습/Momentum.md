@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[Adam]], [[LearningRateControl]]
 ---
 
 모멘텀(Momentum)은 경사 하강법(Gradient Descent) 최적화 알고리즘의 한 종류로, 기울기 갱신 시 직전 기울기를 고려하여 업데이트하는 방법입니다. 이는 기존의 경사 하강법보다 빠르게 수렴하고, 지역 최솟값(local minimum)에 빠지지 않고 전역 최솟값(global minimum)으로 빠르게 수렴하는 데 도움이 됩니다.

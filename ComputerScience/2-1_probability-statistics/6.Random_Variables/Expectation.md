@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[probability-statistics__6.Random_Variables__문제 풀이]], [[Random Variables]]
 #ComputerScience #확률과통계 
 
 ---

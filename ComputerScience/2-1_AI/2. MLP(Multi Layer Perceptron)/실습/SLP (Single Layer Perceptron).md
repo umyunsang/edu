@@ -18,6 +18,7 @@ updated: '2026-05-05'
 
 up:: [[Deep Learning MOC]]
 
+siblings:: [[MLP (Multi Layer Perceptron)]]
 #ComputerScience #인공지능 #perceptron 
  
 ---

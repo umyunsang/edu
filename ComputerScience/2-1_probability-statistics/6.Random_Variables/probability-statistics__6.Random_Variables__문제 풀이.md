@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[Expectation]], [[Random Variables]]
 ---
 ### Example random variable
 ```

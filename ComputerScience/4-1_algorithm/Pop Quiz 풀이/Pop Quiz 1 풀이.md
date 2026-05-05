@@ -19,6 +19,7 @@ updated: '2026-05-05'
 
 up:: [[Algorithms MOC]]
 
+siblings:: [[Pop Quiz 2 풀이]]
 # Pop Quiz #1 문제 풀이
 
 ### [문제 1]

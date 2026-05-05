@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[Variance]]
 ---
 ### Variance of a 6-sided dice
 ```

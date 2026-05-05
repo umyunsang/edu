@@ -26,6 +26,7 @@ week: 5
 
 up:: [[Cloud & Containers MOC]]
 
+siblings:: [[Week0 - Orientation]], [[Week1 - Metrics That Matter]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week6 - GitHub Actions]]
 # Open & Inner Source Software Delivery
 
 오픈소스의 핵심 가치와 라이선스 체계를 이해하고, 오픈소스 기여 프로세스를 습득하며, 조직 내부에 오픈소스 방식을 적용하는 Inner Source 전략을 학습합니다.

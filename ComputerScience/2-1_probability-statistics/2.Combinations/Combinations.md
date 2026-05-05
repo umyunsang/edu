@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[probability-statistics__2.Combinations__문제 풀이]]
 ---
 
 ### Permutations of Distinct Objects (서로 다른 객체의 순열)

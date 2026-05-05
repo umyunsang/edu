@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Software Engineering MOC]]
 
+siblings:: [[web-programming__5. 데이터베이스__확인문제]], [[데이터베이스]]
 ---
 ## MYSQL
 

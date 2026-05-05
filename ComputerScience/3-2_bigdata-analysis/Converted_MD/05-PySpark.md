@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[01-WordCount]], [[02-MapReduce]], [[03_Hadoop]], [[04-ParallelComputation]], [[06-SparkDataFrames]], [[07-PandasSeries]], [[08-PandaDataframes]], [[BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
 # 05. PySpark - Apache Spark를 활용한 대규모 분산 처리
 
 ## 📚 개요

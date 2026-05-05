@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[AI Open Source MOC]]
 
+siblings:: [[html, javascript 기초]]
 ---
 ![](../../../../image/Pasted%20image%2020240906112005.png)
 ```html

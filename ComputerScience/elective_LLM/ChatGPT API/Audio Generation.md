@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[LLM & NLP MOC]]
 
+siblings:: [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]], [[TTS, STT]]
 #### 1. 주요 기능
 
 - **텍스트 본문 요약을 음성 오디오로 생성**

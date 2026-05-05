@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[Data_analysis]], [[Dataframe]], [[Pivot]]
 ---
 # Pandas Series 이해하기
 

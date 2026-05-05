@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[probability-statistics__4.Bayes_theorem__문제 풀이]]
 #ComputerScience #확률과통계 
 
 ---

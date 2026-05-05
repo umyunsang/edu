@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Math Foundations MOC]]
 
+siblings:: [[probability-statistics__11.joint_RVs__문제 풀이]]
 ---
 ## **Normal Approximation**
 ### Website testing 문제

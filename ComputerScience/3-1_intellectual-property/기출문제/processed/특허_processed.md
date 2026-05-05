@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Certifications MOC]]
 
+siblings:: [[IPAT_기출문제]], [[상표_processed]], [[저작권_processed]], [[지식재산권_processed]]
 [특허] IPAT 기출문제
 
 **1. 다음 중 특허의 요건에 해당하지 않는 것은?**

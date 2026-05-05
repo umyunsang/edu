@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Algorithms MOC]]
 
+siblings:: [[트리 (TREE)]]
 ---
 #### AVL 트리
 **이진 탐색 트리

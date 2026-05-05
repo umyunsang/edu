@@ -16,6 +16,7 @@ updated: '2026-05-05'
 
 up:: [[Systems MOC]]
 
+siblings:: [[기말 암기 정리]], [[기말 퀴즈]], [[중간 퀴즈]]
 ---
 # Chapter 1. Routing Information Protocol (RIP)
 

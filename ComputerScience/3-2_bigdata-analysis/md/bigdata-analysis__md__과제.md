@@ -17,6 +17,7 @@ updated: '2026-05-05'
 
 up:: [[Machine Learning MOC]]
 
+siblings:: [[architecture_diagram]], [[architecture_text]], [[MLFlow 과제]], [[개념문제_풀이]], [[시험정리]], [[연습문제_풀이]], [[이론정리]]
 # K-POP 아티스트 인기도 분석 시스템: YouTube 데이터 기반 분기별 트렌드 예측 및 시각화
 
 ## 문제 정의 및 목표
