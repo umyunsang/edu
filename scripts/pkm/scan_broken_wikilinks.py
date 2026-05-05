@@ -15,19 +15,25 @@ WIKI_PAT = re.compile(r"(?<!\!)\[\[([^\]|#]+?)(?:#[^\]|]*)?(\|[^\]]*)?\]\]")
 
 
 def build_index() -> tuple[set[str], set[str]]:
+    """Index by exact filename basename (NFC-normalized, no .md stripped)."""
+    import os
+    import unicodedata
     stems: set[str] = set()
     paths: set[str] = set()
-    # Index all files (md + pdf + image + canvas etc), not just md
-    for p in VAULT.rglob("*"):
-        if not p.is_file():
-            continue
-        rel = p.relative_to(VAULT)
-        if any(part in EXCLUDE for part in rel.parts):
-            continue
-        stems.add(p.stem)
-        stems.add(p.name)  # for refs that include extension
-        paths.add(str(rel).replace("\\", "/"))
-        paths.add(str(rel.with_suffix("")).replace("\\", "/"))
+    for dirpath, dirnames, filenames in os.walk(VAULT):
+        dirnames[:] = [d for d in dirnames if d not in EXCLUDE]
+        rel_dir = Path(unicodedata.normalize("NFC", dirpath)).relative_to(VAULT)
+        for fn in filenames:
+            name = unicodedata.normalize("NFC", fn)
+            rel = rel_dir / name
+            if name.endswith(".md"):
+                stems.add(name[:-3])
+            else:
+                stems.add(name)
+            stems.add(name)
+            paths.add(str(rel).replace("\\", "/"))
+            if name.endswith(".md"):
+                paths.add(str(rel)[:-3].replace("\\", "/"))
     return stems, paths
 
 
@@ -62,10 +68,13 @@ def main():
                     continue
                 if target.replace(".", "").replace(",", "").replace(" ", "").isdigit():
                     continue
-                stem = Path(target).stem
-                if stem in stems:
+                import unicodedata as _ud
+                target_nfc = _ud.normalize("NFC", target)
+                base = target_nfc.rsplit("/", 1)[-1]
+                stem_candidate = base[:-3] if base.endswith(".md") else base
+                if stem_candidate in stems or base in stems:
                     continue
-                norm = target.lstrip("/").removesuffix(".md")
+                norm = target_nfc.lstrip("/").removesuffix(".md")
                 if norm in paths:
                     continue
                 broken.append((p, target, line_no))

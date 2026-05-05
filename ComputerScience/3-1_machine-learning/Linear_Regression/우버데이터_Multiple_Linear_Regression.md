@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: \[\[Machine Learning MOC\]\]
 
-siblings:: [[Linear Regression]], [[LSM, GDM 선형 회귀모델]], [[Multiple_Linear_Regression]]
+siblings:: \[\[Linear Regression\]\], \[\[LSM, GDM 선형 회귀모델\]\], \[\[Multiple_Linear_Regression\]\]
 ---
 # Multiple Linear Regression with Uber Dataset
 
@@ -233,7 +233,7 @@ $$
 >L2_distance_norm = (L2_distance - mean_L2) / std_L2
 >passenger_count_norm = (passenger_count - mean_passenger) / std_passenger
 >
->X_new = np.array([[L1_distance_norm, L2_distance_norm, passenger_count_norm]])
+>X_new = np.array(\[\[L1_distance_norm, L2_distance_norm, passenger_count_norm\]\])
 >
 ># 학습한 모델 theta를 이용해 Y_hat 예측
 >Y_hat = model_LSM.predict(X_new)
