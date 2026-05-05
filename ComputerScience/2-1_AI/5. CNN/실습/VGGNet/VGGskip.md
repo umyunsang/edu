@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/ai
 - type/project
 title: 패키지 선언
 type: project

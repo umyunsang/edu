@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/algorithms
 - type/MOC
 title: '[2-1] 데이터 구조 · 미니 인덱스'
 type: MOC

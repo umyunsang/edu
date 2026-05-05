@@ -10,6 +10,9 @@ tags:
 - DevOps
 - YAML
 - automation
+- cs/ai
+- cs/devops
+- cs/open-source
 - github-actions
 - type/lecture
 - workflow

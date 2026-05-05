@@ -7,6 +7,7 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/dl
 - type/lecture
 title: AIE309_HW1_풀이
 type: lecture

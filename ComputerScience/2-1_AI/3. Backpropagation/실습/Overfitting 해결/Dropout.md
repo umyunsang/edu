@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/ai
 - type/project
 title: GPU를 사용할지 여부를 확인합니다.
 type: project

@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/lecture
 title: 05. PySpark - Apache Spark를 활용한 대규모 분산 처리
 type: lecture

@@ -7,6 +7,9 @@ status: seedling
 tags:
 - AIOSS
 - agile
+- cs/ai
+- cs/devops
+- cs/open-source
 - github-projects
 - issue-tracking
 - kanban

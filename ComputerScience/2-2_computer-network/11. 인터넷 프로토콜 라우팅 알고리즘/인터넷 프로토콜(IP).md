@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: 인터넷 프로토콜(IP)
 type: lecture

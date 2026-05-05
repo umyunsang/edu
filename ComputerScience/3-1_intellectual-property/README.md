@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- meta/cert
 - type/MOC
 title: '[3-1] 지식재산개론 · 미니 인덱스'
 type: MOC

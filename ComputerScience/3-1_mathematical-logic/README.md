@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- math/discrete
 - type/MOC
 title: '[3-1] 수리논리학 · 미니 인덱스'
 type: MOC

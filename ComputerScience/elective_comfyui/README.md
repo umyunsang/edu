@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/ai
+- cs/cv
 - type/MOC
 title: 🎨 ComfyUI & Generative AI Workflows
 type: MOC

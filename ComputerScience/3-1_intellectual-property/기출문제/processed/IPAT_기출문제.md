@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- meta/cert
 - type/lecture
 title: IPAT_기출문제
 type: lecture

@@ -8,6 +8,9 @@ tags:
 - AIOSS
 - CI-CD
 - DevOps
+- cs/ai
+- cs/devops
+- cs/open-source
 - github
 - open-source
 - orientation

@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/db
 - type/MOC
 title: '[2-2] 데이터베이스 · 미니 인덱스'
 type: MOC

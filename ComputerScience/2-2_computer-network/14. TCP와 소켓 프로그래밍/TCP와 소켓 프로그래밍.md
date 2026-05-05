@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: TCP와 소켓 프로그래밍
 type: lecture

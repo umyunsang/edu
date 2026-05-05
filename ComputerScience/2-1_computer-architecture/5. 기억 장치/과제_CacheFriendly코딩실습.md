@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: 과제_CacheFriendly코딩실습
 type: lecture

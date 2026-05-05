@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: 농어(length, weight) 데이터 분석 및 회귀 모델 비교
 type: lecture

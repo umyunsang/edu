@@ -7,6 +7,8 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- math/probability
+- math/statistics
 - type/lecture
 title: Combinations
 type: lecture

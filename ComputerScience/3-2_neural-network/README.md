@@ -7,6 +7,7 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/dl
 - type/MOC
 title: '[3-2] 뉴럴네트워크 · 미니 인덱스'
 type: MOC

@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- skill/python
 - type/MOC
 title: '[2-1] Python(basic) · 미니 인덱스'
 type: MOC

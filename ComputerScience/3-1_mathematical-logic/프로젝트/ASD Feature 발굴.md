@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- math/discrete
 - type/project
 title: ASD Feature 발굴
 type: project

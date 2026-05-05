@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/se
 - type/MOC
 title: '[3-1] 프로그래밍언어론 · 미니 인덱스'
 type: MOC

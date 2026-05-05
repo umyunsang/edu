@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/algorithms
 - type/lecture
 title: 5개의 웹 주소를 스택에 추가합니다.
 type: lecture

@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/MOC
 title: '[3-2] 빅데이터분석 · 미니 인덱스'
 type: MOC

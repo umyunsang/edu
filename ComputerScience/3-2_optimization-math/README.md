@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/ml
+- math/calculus
 - type/MOC
 title: '[3-2] 최적화수학 · 미니 인덱스'
 type: MOC

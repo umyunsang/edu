@@ -5,6 +5,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- math/discrete
 - type/project
 type: project
 updated: '2026-05-05'

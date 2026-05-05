@@ -7,6 +7,7 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/algorithms
 - type/lecture
 title: AVL
 type: lecture

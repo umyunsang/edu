@@ -10,6 +10,9 @@ tags:
 - RFC
 - async
 - collaboration
+- cs/ai
+- cs/devops
+- cs/open-source
 - documentation
 - github-discussions
 - remote-work

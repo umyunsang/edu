@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/open-source
 - type/MOC
 title: '[2-2] OSS · 미니 인덱스'
 type: MOC

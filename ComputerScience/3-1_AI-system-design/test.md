@@ -7,6 +7,8 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ai
+- cs/se
 - type/lecture
 title: 스마트 오더 플랫폼 'cafe-recommend' - B2B 어드민 기능 제안
 type: lecture

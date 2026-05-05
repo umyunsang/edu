@@ -7,6 +7,8 @@ semester: 3-2
 source: ''
 status: seedling
 tags:
+- cs/db
+- cs/ml
 - type/lecture
 title: DAU_BigDataAnalytics_06_(Variable_Selection)
 type: lecture

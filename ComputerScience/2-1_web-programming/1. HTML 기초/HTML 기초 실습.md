@@ -7,6 +7,8 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/se
+- skill/javascript
 - type/lecture
 title: HTML 기초 실습
 type: lecture

@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: Quadratic Programming 기반 SVM(Support Vector Machine)
 type: lecture

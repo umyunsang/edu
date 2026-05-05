@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/devops
+- skill/docker
 - type/lecture
 title: LoadBalancer 설치 및 설정 가이드
 type: lecture

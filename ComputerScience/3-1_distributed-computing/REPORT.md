@@ -7,6 +7,8 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/distributed
+- cs/systems
 - type/lecture
 title: CUDA 프로그램 연습 및 CUDA API이해
 type: lecture

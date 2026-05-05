@@ -7,6 +7,7 @@ semester: 2-2
 source: ''
 status: seedling
 tags:
+- cs/systems
 - type/lecture
 title: OS의 시작과 발전
 type: lecture

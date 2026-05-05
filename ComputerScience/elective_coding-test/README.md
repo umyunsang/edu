@@ -7,6 +7,8 @@ semester: elective
 source: ''
 status: seedling
 tags:
+- cs/algorithms
+- skill/python
 - type/MOC
 title: 코딩테스트 · 미니 인덱스
 type: MOC

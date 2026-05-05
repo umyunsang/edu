@@ -7,6 +7,8 @@ semester: 2-1
 source: ''
 status: seedling
 tags:
+- cs/systems
+- skill/linux
 - type/MOC
 title: '[2-1] 리눅스시스템 · 미니 인덱스'
 type: MOC

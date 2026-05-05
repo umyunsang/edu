@@ -7,6 +7,7 @@ semester: 3-1
 source: ''
 status: seedling
 tags:
+- cs/ml
 - type/lecture
 title: 10x10 크기의 랜덤 데이터 배열 생성
 type: lecture
