@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" font-family="system-ui,sans-serif">
+  <style>
+    .ax{stroke:#333;stroke-width:1.2;fill:none}
+    .bar1{fill:#2e86de;stroke:#1a5490}
+    .bar2{fill:#27ae60;stroke:#1e7e3b}
+    .cdf{stroke:#c0392b;stroke-width:2.5;fill:none}
+    .t{font-size:11px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .note{font-size:12px}
+  </style>
+  <text class="tb" x="430" y="22" text-anchor="middle">히스토그램 평활화: 한쪽에 몰린 밝기를 골고루 펴기</text>
+  <text class="lab" x="30" y="44">핵심 공식: s = T(r) = (L−1) · CDF(r) — 누적분포함수를 그대로 매핑 함수로 쓴다.</text>
+
+  <!-- Before histogram -->
+  <g transform="translate(40,70)">
+    <text class="tb" x="110" y="0" text-anchor="middle">Before (어두운 영상)</text>
+    <g transform="translate(0,20)">
+      <line class="ax" x1="0" y1="140" x2="220" y2="140"/>
+      <line class="ax" x1="0" y1="0" x2="0" y2="140"/>
+      <rect class="bar1" x="10"  y="100" width="18" height="40"/>
+      <rect class="bar1" x="30"  y="70"  width="18" height="70"/>
+      <rect class="bar1" x="50"  y="40"  width="18" height="100"/>
+      <rect class="bar1" x="70"  y="20"  width="18" height="120"/>
+      <rect class="bar1" x="90"  y="50"  width="18" height="90"/>
+      <rect class="bar1" x="110" y="90"  width="18" height="50"/>
+      <rect class="bar1" x="130" y="115" width="18" height="25"/>
+      <rect class="bar1" x="150" y="128" width="18" height="12"/>
+      <rect class="bar1" x="170" y="135" width="18" height="5"/>
+      <rect class="bar1" x="190" y="138" width="18" height="2"/>
+      <text class="t" x="110" y="160">밝기 0 → 255</text>
+      <text class="t" x="-10" y="5" text-anchor="end">개수</text>
+    </g>
+    <text class="lab" x="110" y="200" text-anchor="middle" fill="#1a5490">어두운 쪽에 몰려 있음</text>
+  </g>
+
+  <!-- CDF -->
+  <g transform="translate(300,70)">
+    <text class="tb" x="110" y="0" text-anchor="middle">CDF (누적분포)</text>
+    <g transform="translate(0,20)">
+      <line class="ax" x1="0" y1="140" x2="220" y2="140"/>
+      <line class="ax" x1="0" y1="0" x2="0" y2="140"/>
+      <path class="cdf" d="M0 138 Q30 110 60 60 T130 20 Q170 10 220 5"/>
+      <text class="t" x="110" y="160">밝기</text>
+      <text class="t" x="-10" y="5" text-anchor="end">CDF</text>
+      <text class="lab" x="70" y="40" fill="#c0392b">S자 곡선</text>
+    </g>
+    <text class="lab" x="110" y="200" text-anchor="middle" fill="#c0392b">이 곡선이 바로 변환 함수 T(r)</text>
+  </g>
+
+  <!-- After histogram -->
+  <g transform="translate(560,70)">
+    <text class="tb" x="110" y="0" text-anchor="middle">After (평활화)</text>
+    <g transform="translate(0,20)">
+      <line class="ax" x1="0" y1="140" x2="220" y2="140"/>
+      <line class="ax" x1="0" y1="0" x2="0" y2="140"/>
+      <rect class="bar2" x="10"  y="70" width="18" height="70"/>
+      <rect class="bar2" x="30"  y="60" width="18" height="80"/>
+      <rect class="bar2" x="50"  y="65" width="18" height="75"/>
+      <rect class="bar2" x="70"  y="55" width="18" height="85"/>
+      <rect class="bar2" x="90"  y="68" width="18" height="72"/>
+      <rect class="bar2" x="110" y="60" width="18" height="80"/>
+      <rect class="bar2" x="130" y="65" width="18" height="75"/>
+      <rect class="bar2" x="150" y="55" width="18" height="85"/>
+      <rect class="bar2" x="170" y="68" width="18" height="72"/>
+      <rect class="bar2" x="190" y="60" width="18" height="80"/>
+      <text class="t" x="110" y="160">밝기 0 → 255</text>
+    </g>
+    <text class="lab" x="110" y="200" text-anchor="middle" fill="#1e7e3b">전체 구간에 고르게 퍼짐</text>
+  </g>
+
+  <!-- Procedure box -->
+  <g transform="translate(40,300)">
+    <rect x="0" y="0" width="780" height="160" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">절차 (3단계)</text>
+    <text class="lab" x="15" y="48" font-weight="bold">① 히스토그램:</text>
+    <text class="lab" x="130" y="48">각 밝기값(0~255)의 픽셀 개수 h(r) 세기</text>
+    <text class="lab" x="15" y="72" font-weight="bold">② CDF 계산:</text>
+    <text class="lab" x="130" y="72">누적합 cdf(r) = Σ h(i) for i=0..r, 그리고 정규화</text>
+    <text class="lab" x="15" y="96" font-weight="bold">③ 매핑:</text>
+    <text class="lab" x="130" y="96">s = round( (L−1) · cdf(r) / N )  — N은 총 픽셀 수, L=256</text>
+    <text class="lab" x="15" y="130" fill="#c0392b" font-weight="bold">시험 포인트: "CDF를 매핑함수로 쓰면 출력 히스토그램이 이론적으로 균등분포에 근접" — OpenCV: cv2.equalizeHist</text>
+  </g>
+</svg>

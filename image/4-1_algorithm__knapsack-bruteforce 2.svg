@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="system-ui,sans-serif">
+  <style>
+    .box{stroke:#2c3e50;fill:#fff}
+    .ok{fill:#e6f7e6;stroke:#27ae60}
+    .best{fill:#ffeb99;stroke:#d4a017;stroke-width:2}
+    .bad{fill:#ffd9d9;stroke:#c0392b}
+    .t{font-size:13px;text-anchor:middle}
+    .tl{font-size:13px}
+    .tb{font-size:15px;font-weight:bold}
+    .h{font-size:13px;font-weight:bold;text-anchor:middle}
+  </style>
+  <text class="tb" x="410" y="24" text-anchor="middle">0/1 배낭 완전탐색: 물건 A(10,60), B(20,100), C(30,120), 용량 50</text>
+  <text class="tl" x="30" y="50">① 각 물건을 "넣거나 / 안 넣거나" → 2³ = 8가지 경우를 전부 확인한다.</text>
+
+  <g transform="translate(30,65)">
+    <rect class="box" x="0" y="0" width="80" height="30"/><text class="h" x="40" y="20">선택</text>
+    <rect class="box" x="80" y="0" width="80" height="30"/><text class="h" x="120" y="20">무게</text>
+    <rect class="box" x="160" y="0" width="80" height="30"/><text class="h" x="200" y="20">가치</text>
+    <rect class="box" x="240" y="0" width="120" height="30"/><text class="h" x="300" y="20">용량 50 이내?</text>
+    <rect class="box" x="360" y="0" width="400" height="30"/><text class="h" x="560" y="20">판정</text>
+
+    <!-- Row 1: 공집합 -->
+    <rect class="box" x="0" y="30" width="80" height="30"/><text class="t" x="40" y="50">∅</text>
+    <rect class="box" x="80" y="30" width="80" height="30"/><text class="t" x="120" y="50">0</text>
+    <rect class="box" x="160" y="30" width="80" height="30"/><text class="t" x="200" y="50">0</text>
+    <rect class="ok" x="240" y="30" width="120" height="30"/><text class="t" x="300" y="50">O</text>
+    <rect class="box" x="360" y="30" width="400" height="30"/><text class="tl" x="375" y="50">가장 낮음</text>
+
+    <!-- Row 2: A -->
+    <rect class="box" x="0" y="60" width="80" height="30"/><text class="t" x="40" y="80">A</text>
+    <rect class="box" x="80" y="60" width="80" height="30"/><text class="t" x="120" y="80">10</text>
+    <rect class="box" x="160" y="60" width="80" height="30"/><text class="t" x="200" y="80">60</text>
+    <rect class="ok" x="240" y="60" width="120" height="30"/><text class="t" x="300" y="80">O</text>
+    <rect class="box" x="360" y="60" width="400" height="30"/><text class="tl" x="375" y="80">단일 선택 중 최저</text>
+
+    <!-- Row 3: B -->
+    <rect class="box" x="0" y="90" width="80" height="30"/><text class="t" x="40" y="110">B</text>
+    <rect class="box" x="80" y="90" width="80" height="30"/><text class="t" x="120" y="110">20</text>
+    <rect class="box" x="160" y="90" width="80" height="30"/><text class="t" x="200" y="110">100</text>
+    <rect class="ok" x="240" y="90" width="120" height="30"/><text class="t" x="300" y="110">O</text>
+    <rect class="box" x="360" y="90" width="400" height="30"/><text class="tl" x="375" y="110">단일 선택 중 중간</text>
+
+    <!-- Row 4: C -->
+    <rect class="box" x="0" y="120" width="80" height="30"/><text class="t" x="40" y="140">C</text>
+    <rect class="box" x="80" y="120" width="80" height="30"/><text class="t" x="120" y="140">30</text>
+    <rect class="box" x="160" y="120" width="80" height="30"/><text class="t" x="200" y="140">120</text>
+    <rect class="ok" x="240" y="120" width="120" height="30"/><text class="t" x="300" y="140">O</text>
+    <rect class="box" x="360" y="120" width="400" height="30"/><text class="tl" x="375" y="140">단일 선택 중 최고</text>
+
+    <!-- Row 5: A+B -->
+    <rect class="box" x="0" y="150" width="80" height="30"/><text class="t" x="40" y="170">A+B</text>
+    <rect class="box" x="80" y="150" width="80" height="30"/><text class="t" x="120" y="170">30</text>
+    <rect class="box" x="160" y="150" width="80" height="30"/><text class="t" x="200" y="170">160</text>
+    <rect class="ok" x="240" y="150" width="120" height="30"/><text class="t" x="300" y="170">O</text>
+    <rect class="box" x="360" y="150" width="400" height="30"/><text class="tl" x="375" y="170">두 개 조합</text>
+
+    <!-- Row 6: A+C -->
+    <rect class="box" x="0" y="180" width="80" height="30"/><text class="t" x="40" y="200">A+C</text>
+    <rect class="box" x="80" y="180" width="80" height="30"/><text class="t" x="120" y="200">40</text>
+    <rect class="box" x="160" y="180" width="80" height="30"/><text class="t" x="200" y="200">180</text>
+    <rect class="ok" x="240" y="180" width="120" height="30"/><text class="t" x="300" y="200">O</text>
+    <rect class="box" x="360" y="180" width="400" height="30"/><text class="tl" x="375" y="200">두 개 조합</text>
+
+    <!-- Row 7: B+C BEST -->
+    <rect class="best" x="0" y="210" width="80" height="30"/><text class="t" x="40" y="230">B+C</text>
+    <rect class="best" x="80" y="210" width="80" height="30"/><text class="t" x="120" y="230">50</text>
+    <rect class="best" x="160" y="210" width="80" height="30"/><text class="t" x="200" y="230">220</text>
+    <rect class="best" x="240" y="210" width="120" height="30"/><text class="t" x="300" y="230">O (딱 50)</text>
+    <rect class="best" x="360" y="210" width="400" height="30"/><text class="tl" x="375" y="230">★ 최대 가치 — 정답</text>
+
+    <!-- Row 8: A+B+C -->
+    <rect class="box" x="0" y="240" width="80" height="30"/><text class="t" x="40" y="260">A+B+C</text>
+    <rect class="box" x="80" y="240" width="80" height="30"/><text class="t" x="120" y="260">60</text>
+    <rect class="box" x="160" y="240" width="80" height="30"/><text class="t" x="200" y="260">280</text>
+    <rect class="bad" x="240" y="240" width="120" height="30"/><text class="t" x="300" y="260">X (초과)</text>
+    <rect class="box" x="360" y="240" width="400" height="30"/><text class="tl" x="375" y="260">가치가 높아도 용량 초과 → 탈락</text>
+  </g>
+
+  <g transform="translate(30,360)">
+    <text class="tb" x="0" y="15">② 정답:</text>
+    <text class="tl" x="75" y="15">B + C, 총 가치 220. (용량을 딱 맞게 채우면서 가치 최대)</text>
+    <text class="tb" x="0" y="38">③ 왜 "완전탐색"인가:</text>
+    <text class="tl" x="160" y="38">각 물건마다 "넣/안넣" 2가지 → 경우의 수 2ⁿ. n이 커지면 폭발.</text>
+    <text class="tb" x="0" y="61">④ 개선 방향:</text>
+    <text class="tl" x="105" y="61">7장 동적 계획법(DP)으로 중복 계산을 제거하면 O(nW)로 줄어든다.</text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="system-ui,sans-serif">
+  <style>
+    .tb{font-size:15px;font-weight:bold}
+    .th{font-size:13px;font-weight:bold;text-anchor:middle;font-family:monospace}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .lab{font-size:12px}
+    .mono{font-family:monospace;font-size:13px}
+    .cell{fill:#fff;stroke:#2c3e50;stroke-width:1.2}
+    .focus{fill:#fff2cc;stroke:#f39c12;stroke-width:2.5}
+    .excl{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .shift{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.3}
+    .done{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.5}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .ar{stroke:#2e86de;stroke-width:1.5;fill:none;marker-end:url(#bl)}
+  </style>
+  <defs>
+    <marker id="bl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2e86de"/></marker>
+  </defs>
+
+  <text class="tb" x="450" y="22" text-anchor="middle">PQ2-6: Horspool shift표 — 패턴 "KAKARBAR" (m=8)</text>
+  <text class="lab" x="450" y="42" text-anchor="middle">규칙: 마지막 문자 <tspan fill="#c0392b" font-weight="bold">제외</tspan>, 각 문자가 <tspan fill="#2e86de" font-weight="bold">오른쪽 끝까지 얼마나 떨어졌는가</tspan>. 중복 시 가까운(오른쪽) 값 선택. 패턴에 없거나 마지막 문자 = m.</text>
+
+  <!-- Step 1: 패턴 인덱싱 -->
+  <g transform="translate(30,60)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">1</text>
+    <text class="tb" x="15" y="18">패턴에 위치 번호 매기기 (마지막 인덱스 = m-1 = 7)</text>
+
+    <g transform="translate(30,35)">
+      <rect class="cell" x="0" y="0" width="50" height="32"/><text class="t" x="25" y="21">K</text>
+      <rect class="cell" x="50" y="0" width="50" height="32"/><text class="t" x="75" y="21">A</text>
+      <rect class="cell" x="100" y="0" width="50" height="32"/><text class="t" x="125" y="21">K</text>
+      <rect class="cell" x="150" y="0" width="50" height="32"/><text class="t" x="175" y="21">A</text>
+      <rect class="cell" x="200" y="0" width="50" height="32"/><text class="t" x="225" y="21">R</text>
+      <rect class="cell" x="250" y="0" width="50" height="32"/><text class="t" x="275" y="21">B</text>
+      <rect class="cell" x="300" y="0" width="50" height="32"/><text class="t" x="325" y="21">A</text>
+      <rect class="excl" x="350" y="0" width="50" height="32"/><text class="t" x="375" y="21">R</text>
+      <text class="lab" x="25" y="50" text-anchor="middle">0</text>
+      <text class="lab" x="75" y="50" text-anchor="middle">1</text>
+      <text class="lab" x="125" y="50" text-anchor="middle">2</text>
+      <text class="lab" x="175" y="50" text-anchor="middle">3</text>
+      <text class="lab" x="225" y="50" text-anchor="middle">4</text>
+      <text class="lab" x="275" y="50" text-anchor="middle">5</text>
+      <text class="lab" x="325" y="50" text-anchor="middle">6</text>
+      <text class="lab" x="375" y="50" text-anchor="middle">7</text>
+      <text class="lab" x="420" y="22" fill="#c0392b" font-weight="bold">← 마지막(제외)</text>
+    </g>
+  </g>
+
+  <!-- Step 2: 문자별 shift 계산 -->
+  <g transform="translate(30,180)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">2</text>
+    <text class="tb" x="15" y="18">각 문자별 shift = (m-1) - 마지막 출현 위치 (마지막 문자 R 제외)</text>
+
+    <rect class="sum" x="15" y="35" width="840" height="170"/>
+
+    <!-- K: positions 0, 2 -> take 2 -> shift = 7-2 = 5 -->
+    <text class="mono" x="30" y="60">K: 위치 0, <tspan fill="#f39c12" font-weight="bold">2</tspan> (마지막 K)  →  shift[K] = 7 − 2 = <tspan fill="#2e86de" font-weight="bold">5</tspan></text>
+
+    <!-- A: positions 1, 3, 6 -> take 6 -> shift = 7-6 = 1 -->
+    <text class="mono" x="30" y="85">A: 위치 1, 3, <tspan fill="#f39c12" font-weight="bold">6</tspan> (가장 가까운 A)  →  shift[A] = 7 − 6 = <tspan fill="#2e86de" font-weight="bold">1</tspan></text>
+
+    <!-- R: 마지막 R은 제외 -> 내부 R은 위치 4 -> 7-4 = 3 -->
+    <text class="mono" x="30" y="110">R: 위치 <tspan fill="#f39c12" font-weight="bold">4</tspan>만 유효 (끝 R 제외)  →  shift[R] = 7 − 4 = <tspan fill="#2e86de" font-weight="bold">3</tspan></text>
+
+    <!-- B: position 5 -> 7-5 = 2 -->
+    <text class="mono" x="30" y="135">B: 위치 <tspan fill="#f39c12" font-weight="bold">5</tspan>  →  shift[B] = 7 − 5 = <tspan fill="#2e86de" font-weight="bold">2</tspan></text>
+
+    <!-- 기타 -->
+    <text class="mono" x="30" y="160">기타 (패턴 내부에 없는 문자): shift = m = <tspan fill="#2e86de" font-weight="bold">8</tspan></text>
+
+    <text class="lab" x="30" y="190" fill="#c0392b" font-weight="bold">핵심: 같은 문자가 여러 번 나오면 <tspan fill="#f39c12">가장 오른쪽</tspan> (= 작은 shift) 사용 — 안전한 최대 점프</text>
+  </g>
+
+  <!-- Step 3: shift 표 -->
+  <g transform="translate(30,405)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
+    <text class="tb" x="15" y="18">shift 표 결과</text>
+
+    <g transform="translate(30,35)">
+      <rect class="shift" x="0" y="0" width="100" height="34"/><text class="t" x="50" y="22">문자</text>
+      <rect class="shift" x="100" y="0" width="80" height="34"/><text class="t" x="140" y="22">K</text>
+      <rect class="shift" x="180" y="0" width="80" height="34"/><text class="t" x="220" y="22">A</text>
+      <rect class="shift" x="260" y="0" width="80" height="34"/><text class="t" x="300" y="22">R</text>
+      <rect class="shift" x="340" y="0" width="80" height="34"/><text class="t" x="380" y="22">B</text>
+      <rect class="shift" x="420" y="0" width="120" height="34"/><text class="t" x="480" y="22">기타</text>
+
+      <rect class="shift" x="0" y="34" width="100" height="34"/><text class="t" x="50" y="56">shift</text>
+      <rect class="done" x="100" y="34" width="80" height="34"/><text class="t" x="140" y="56">5</text>
+      <rect class="done" x="180" y="34" width="80" height="34"/><text class="t" x="220" y="56">1</text>
+      <rect class="done" x="260" y="34" width="80" height="34"/><text class="t" x="300" y="56">3</text>
+      <rect class="done" x="340" y="34" width="80" height="34"/><text class="t" x="380" y="56">2</text>
+      <rect class="done" x="420" y="34" width="120" height="34"/><text class="t" x="480" y="56">8</text>
+    </g>
+  </g>
+
+  <!-- Step 4: 주의점 -->
+  <g transform="translate(30,510)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">4</text>
+    <text class="tb" x="15" y="18">자주 하는 실수 (체크리스트)</text>
+
+    <rect class="sum" x="0" y="30" width="880" height="90"/>
+    <text class="lab" x="15" y="50" fill="#c0392b" font-weight="bold">✗ 마지막 문자를 포함해 계산</text>
+    <text class="lab" x="230" y="50">→ R을 위치 7로 보면 shift=0 되어 무한 루프</text>
+    <text class="lab" x="15" y="70" fill="#c0392b" font-weight="bold">✗ K, A 중복 시 왼쪽 위치 선택</text>
+    <text class="lab" x="230" y="70">→ 패턴을 건너뛰어 매칭 누락 (오답 발생)</text>
+    <text class="lab" x="15" y="90" fill="#27ae60" font-weight="bold">✓ 기타 문자는 항상 m (여기선 8)</text>
+    <text class="lab" x="230" y="90">→ 패턴 전체 길이만큼 점프 — 최대 이득</text>
+    <text class="lab" x="15" y="110" fill="#2e86de" font-weight="bold">공식: shift[c] = m - 1 - max{ i : 0 ≤ i &lt; m-1, P[i] = c }</text>
+  </g>
+</svg>

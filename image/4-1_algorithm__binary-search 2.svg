@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="system-ui,sans-serif">
+  <style>
+    .c{fill:#fff;stroke:#2c3e50;stroke-width:1.3}
+    .mid{fill:#fff2cc;stroke:#f39c12;stroke-width:2.5}
+    .drop{fill:#eee;stroke:#bbb;opacity:0.4;stroke-dasharray:3 3}
+    .hit{fill:#d0f5d0;stroke:#27ae60;stroke-width:3}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .lab{font-size:12px}
+    .tb{font-size:14px;font-weight:bold}
+    .idx{font-size:10px;text-anchor:middle;fill:#666}
+    .ptr{font-size:12px;text-anchor:middle;font-weight:bold}
+    .ar{stroke:#c0392b;stroke-width:2;fill:none;marker-end:url(#rd)}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+  <text class="tb" x="480" y="22" text-anchor="middle">이진 탐색: 정렬된 9개 배열에서 target = 23 찾기</text>
+  <text class="lab" x="480" y="42" text-anchor="middle">매 반복마다 mid = (low+high)/2 → 한쪽 절반을 버림 → 후보 n → n/2 → n/4 → ... → 1</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(40,70)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">1</text>
+    <text class="tb" x="15" y="15">low=0, high=8, mid=4</text>
+    <g transform="translate(60,30)">
+      <text class="idx" x="20" y="-4">0</text><rect class="c" x="0" y="0" width="40" height="40"/><text class="t" x="20" y="26">3</text>
+      <text class="idx" x="60" y="-4">1</text><rect class="c" x="40" y="0" width="40" height="40"/><text class="t" x="60" y="26">7</text>
+      <text class="idx" x="100" y="-4">2</text><rect class="c" x="80" y="0" width="40" height="40"/><text class="t" x="100" y="26">11</text>
+      <text class="idx" x="140" y="-4">3</text><rect class="c" x="120" y="0" width="40" height="40"/><text class="t" x="140" y="26">17</text>
+      <text class="idx" x="180" y="-4">4</text><rect class="mid" x="160" y="0" width="40" height="40"/><text class="t" x="180" y="26">20</text>
+      <text class="idx" x="220" y="-4">5</text><rect class="c" x="200" y="0" width="40" height="40"/><text class="t" x="220" y="26">23</text>
+      <text class="idx" x="260" y="-4">6</text><rect class="c" x="240" y="0" width="40" height="40"/><text class="t" x="260" y="26">29</text>
+      <text class="idx" x="300" y="-4">7</text><rect class="c" x="280" y="0" width="40" height="40"/><text class="t" x="300" y="26">35</text>
+      <text class="idx" x="340" y="-4">8</text><rect class="c" x="320" y="0" width="40" height="40"/><text class="t" x="340" y="26">41</text>
+    </g>
+    <text class="ptr" x="80" y="95" fill="#2e86de">low</text>
+    <text class="ptr" x="240" y="95" fill="#f39c12">mid=20</text>
+    <text class="ptr" x="400" y="95" fill="#27ae60">high</text>
+    <text class="lab" x="480" y="35" fill="#c0392b" font-weight="bold">20 &lt; 23 → 오른쪽 반 탐색</text>
+    <text class="lab" x="480" y="52">low = mid+1 = 5</text>
+  </g>
+
+  <!-- arrow -->
+  <path class="ar" d="M400 160 L400 195"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(40,200)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">2</text>
+    <text class="tb" x="15" y="15">low=5, high=8, mid=6</text>
+    <g transform="translate(60,30)">
+      <rect class="drop" x="0" y="0" width="40" height="40"/><text class="t" x="20" y="26" fill="#999">3</text>
+      <rect class="drop" x="40" y="0" width="40" height="40"/><text class="t" x="60" y="26" fill="#999">7</text>
+      <rect class="drop" x="80" y="0" width="40" height="40"/><text class="t" x="100" y="26" fill="#999">11</text>
+      <rect class="drop" x="120" y="0" width="40" height="40"/><text class="t" x="140" y="26" fill="#999">17</text>
+      <rect class="drop" x="160" y="0" width="40" height="40"/><text class="t" x="180" y="26" fill="#999">20</text>
+      <rect class="c" x="200" y="0" width="40" height="40"/><text class="t" x="220" y="26">23</text>
+      <rect class="mid" x="240" y="0" width="40" height="40"/><text class="t" x="260" y="26">29</text>
+      <rect class="c" x="280" y="0" width="40" height="40"/><text class="t" x="300" y="26">35</text>
+      <rect class="c" x="320" y="0" width="40" height="40"/><text class="t" x="340" y="26">41</text>
+    </g>
+    <text class="ptr" x="280" y="95" fill="#2e86de">low</text>
+    <text class="ptr" x="320" y="95" fill="#f39c12">mid=29</text>
+    <text class="ptr" x="400" y="95" fill="#27ae60">high</text>
+    <text class="lab" x="480" y="35" fill="#c0392b" font-weight="bold">29 &gt; 23 → 왼쪽 반 탐색</text>
+    <text class="lab" x="480" y="52">high = mid−1 = 5</text>
+  </g>
+
+  <path class="ar" d="M400 290 L400 325"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(40,330)">
+    <circle class="badge" cx="-5" cy="10" r="11"/><text class="badgeT" x="-5" y="14">3</text>
+    <text class="tb" x="15" y="15">low=5, high=5, mid=5 → A[5]=23 ✓ 발견!</text>
+    <g transform="translate(60,30)">
+      <rect class="drop" x="0" y="0" width="40" height="40"/><text class="t" x="20" y="26" fill="#999">3</text>
+      <rect class="drop" x="40" y="0" width="40" height="40"/><text class="t" x="60" y="26" fill="#999">7</text>
+      <rect class="drop" x="80" y="0" width="40" height="40"/><text class="t" x="100" y="26" fill="#999">11</text>
+      <rect class="drop" x="120" y="0" width="40" height="40"/><text class="t" x="140" y="26" fill="#999">17</text>
+      <rect class="drop" x="160" y="0" width="40" height="40"/><text class="t" x="180" y="26" fill="#999">20</text>
+      <rect class="hit" x="200" y="0" width="40" height="40"/><text class="t" x="220" y="26">23</text>
+      <rect class="drop" x="240" y="0" width="40" height="40"/><text class="t" x="260" y="26" fill="#999">29</text>
+      <rect class="drop" x="280" y="0" width="40" height="40"/><text class="t" x="300" y="26" fill="#999">35</text>
+      <rect class="drop" x="320" y="0" width="40" height="40"/><text class="t" x="340" y="26" fill="#999">41</text>
+    </g>
+    <text class="ptr" x="280" y="95" fill="#27ae60" font-weight="bold">low=mid=high=5 → target 일치 ✓</text>
+    <text class="lab" x="480" y="50" fill="#27ae60" font-weight="bold">return 5 (인덱스)</text>
+  </g>
+
+  <!-- Decision flow -->
+  <g transform="translate(680,70)">
+    <rect class="sum" x="0" y="0" width="260" height="150"/>
+    <text class="tb" x="10" y="20">판단 규칙</text>
+    <text class="lab" x="10" y="42">A[mid] == target → 찾음 ✓</text>
+    <text class="lab" x="10" y="62">A[mid] &lt; target → low = mid+1</text>
+    <text class="lab" x="10" y="82">A[mid] &gt; target → high = mid−1</text>
+    <text class="lab" x="10" y="105">종료 조건: low &gt; high (없음)</text>
+    <text class="lab" x="10" y="130" fill="#c0392b" font-weight="bold">한 번 비교 = 후보 절반 삭제</text>
+  </g>
+
+  <!-- Summary -->
+  <g transform="translate(40,450)">
+    <rect class="sum" x="0" y="0" width="900" height="90"/>
+    <text class="tb" x="15" y="22">복잡도 T(n)=T(n/2)+O(1) ⇒ O(log n)</text>
+    <text class="lab" x="15" y="44">• 전제조건: (1) 배열이 정렬됨 (2) 인덱스 O(1) 랜덤 접근 (링크드리스트는 불가)</text>
+    <text class="lab" x="15" y="62">• 직관: 스무고개처럼 질문 한 번에 후보가 반씩. n=1,000,000 → 약 20번이면 끝.</text>
+    <text class="lab" x="15" y="82" fill="#c0392b" font-weight="bold">• 오버플로 주의: mid = low + (high−low)/2 (단순 (low+high)/2은 큰 n에서 오버플로 위험)</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="system-ui,sans-serif">
+  <style>
+    .ax{stroke:#333;stroke-width:1.2;fill:none}
+    .grid{stroke:#ddd;stroke-width:0.7;fill:none}
+    .c1{stroke:#c0392b;stroke-width:2.5;fill:none}
+    .c2{stroke:#333;stroke-width:2;fill:none;stroke-dasharray:6 4}
+    .c3{stroke:#2e86de;stroke-width:2.5;fill:none}
+    .t{font-size:13px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .note{font-size:12px}
+  </style>
+  <text class="tb" x="410" y="22" text-anchor="middle">감마 보정: I<tspan font-size="11" baseline-shift="sub">out</tspan> = 255 · (I<tspan font-size="11" baseline-shift="sub">in</tspan>/255)<tspan font-size="11" baseline-shift="super">γ</tspan></text>
+  <text class="lab" x="30" y="46">세 곡선은 같은 사진을 γ 값만 바꿔 돌렸을 때의 입출력 관계. 가로축=원본 밝기, 세로축=보정 후 밝기.</text>
+
+  <!-- Axes -->
+  <g transform="translate(90,70)">
+    <!-- grid -->
+    <g>
+      <line class="grid" x1="0" y1="0" x2="280" y2="0"/>
+      <line class="grid" x1="0" y1="70" x2="280" y2="70"/>
+      <line class="grid" x1="0" y1="140" x2="280" y2="140"/>
+      <line class="grid" x1="0" y1="210" x2="280" y2="210"/>
+      <line class="grid" x1="70" y1="0" x2="70" y2="280"/>
+      <line class="grid" x1="140" y1="0" x2="140" y2="280"/>
+      <line class="grid" x1="210" y1="0" x2="210" y2="280"/>
+    </g>
+    <!-- axes -->
+    <line class="ax" x1="0" y1="280" x2="280" y2="280"/>
+    <line class="ax" x1="0" y1="0" x2="0" y2="280"/>
+    <text class="lab" x="140" y="310" text-anchor="middle">입력 밝기 I_in (0 → 255)</text>
+    <text class="lab" x="-10" y="145" text-anchor="end" transform="rotate(-90 -10 145)">출력 밝기 I_out</text>
+    <text class="t" x="0" y="295">0</text>
+    <text class="t" x="280" y="295">255</text>
+
+    <!-- γ=0.5: above diagonal (어두운 영역 밝아짐) -->
+    <path class="c1" d="M0 280 Q50 180 120 110 T280 0"/>
+    <!-- γ=1.0: diagonal -->
+    <line class="c2" x1="0" y1="280" x2="280" y2="0"/>
+    <!-- γ=2.2: below diagonal (어두워짐) -->
+    <path class="c3" d="M0 280 Q120 260 180 200 T280 0"/>
+
+    <!-- labels on curves -->
+    <text class="lab" x="80" y="130" fill="#c0392b" font-weight="bold">γ = 0.5 (어두운 부분 밝아짐)</text>
+    <text class="lab" x="150" y="165" font-weight="bold">γ = 1.0 (변화 없음)</text>
+    <text class="lab" x="110" y="245" fill="#2e86de" font-weight="bold">γ = 2.2 (전체가 어두워짐)</text>
+  </g>
+
+  <!-- Side: 3 swatches showing visual effect -->
+  <g transform="translate(430,70)">
+    <text class="tb" x="0" y="0">시각 효과 (같은 원본에 γ 적용)</text>
+
+    <text class="lab" x="0" y="35">원본 (γ=1)</text>
+    <rect x="130" y="18" width="230" height="28" fill="url(#g0)"/>
+
+    <text class="lab" x="0" y="85">γ=0.5 — 어두운 중간값이 밝아져 노출이 올라간 효과</text>
+    <rect x="0" y="95" width="360" height="28" fill="url(#g1)"/>
+
+    <text class="lab" x="0" y="145">γ=2.2 — 중간값이 내려가 대비가 강해지고 어두워짐</text>
+    <rect x="0" y="155" width="360" height="28" fill="url(#g2)"/>
+
+    <text class="note" x="0" y="210" fill="#c0392b" font-weight="bold">시험 포인트:</text>
+    <text class="note" x="0" y="228">• γ &lt; 1 → 어두운 부분 ↑ (사진 밝게)</text>
+    <text class="note" x="0" y="246">• γ &gt; 1 → 전체가 어두워짐</text>
+    <text class="note" x="0" y="264">• 모니터가 γ ≈ 2.2 특성 → 저장 시 보통 역감마(1/2.2) 보정</text>
+    <text class="note" x="0" y="282">• OpenCV 실습에서는 cv2.LUT로 룩업 테이블을 미리 만든 뒤 적용 (공간-시간 트레이드오프)</text>
+  </g>
+
+  <defs>
+    <linearGradient id="g0" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#333"/><stop offset="0.3" stop-color="#aaa"/><stop offset="0.7" stop-color="#ddd"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#000"/><stop offset="0.5" stop-color="#444"/><stop offset="0.85" stop-color="#bbb"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  </defs>
+
+  <g transform="translate(30,390)">
+    <text class="note" x="0" y="0" fill="#c0392b" font-weight="bold">한 줄 암기: γ&lt;1 밝게, γ&gt;1 어둡게. 사람 눈은 어두운 변화에 민감하고 모니터는 γ≈2.2.</text>
+  </g>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="system-ui,sans-serif">
+  <style>
+    .box{fill:#eaf2fb;stroke:#2c3e50;stroke-width:1.5}
+    .cell{fill:#fff;stroke:#2c3e50;stroke-width:1}
+    .hd{fill:#d8e2ec;stroke:#2c3e50;stroke-width:1}
+    .picked{fill:#fff2cc;stroke:#d4a017;stroke-width:2}
+    .best{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .note{fill:#fff7d6;stroke:#b08a1f;stroke-width:1.5}
+    .tb{font-size:16px;font-weight:bold;text-anchor:middle;fill:#1e2a38}
+    .th{font-size:14px;font-weight:bold;text-anchor:middle;fill:#1e2a38}
+    .t{font-size:14px;text-anchor:middle;fill:#1e2a38}
+    .m{font-size:14px;font-family:ui-monospace,Menlo,monospace;fill:#1e2a38}
+    .mc{font-size:14px;font-family:ui-monospace,Menlo,monospace;text-anchor:middle;fill:#1e2a38}
+    .lab{font-size:13px;fill:#4a5b6c}
+  </style>
+
+  <text class="tb" x="600" y="30">작업 배정 (Job Assignment): 4명×4작업 비용 행렬, 4! = 24 순열 중 3가지 시도</text>
+
+  <!-- 비용 행렬 -->
+  <g transform="translate(40,60)">
+    <text class="th" x="160" y="15">비용 행렬 C[사람][작업]</text>
+    <!-- header row -->
+    <rect class="hd" x="40" y="25" width="70" height="34"/>
+    <text class="t" x="75" y="47">작업1</text>
+    <rect class="hd" x="110" y="25" width="70" height="34"/>
+    <text class="t" x="145" y="47">작업2</text>
+    <rect class="hd" x="180" y="25" width="70" height="34"/>
+    <text class="t" x="215" y="47">작업3</text>
+    <rect class="hd" x="250" y="25" width="70" height="34"/>
+    <text class="t" x="285" y="47">작업4</text>
+    <!-- rows: person A B C D -->
+    <rect class="hd" x="0" y="59" width="40" height="34"/>
+    <text class="t" x="20" y="81">사람A</text>
+    <rect class="cell" x="40" y="59" width="70" height="34"/><text class="t" x="75" y="81">9</text>
+    <rect class="cell" x="110" y="59" width="70" height="34"/><text class="t" x="145" y="81">2</text>
+    <rect class="cell" x="180" y="59" width="70" height="34"/><text class="t" x="215" y="81">7</text>
+    <rect class="cell" x="250" y="59" width="70" height="34"/><text class="t" x="285" y="81">8</text>
+
+    <rect class="hd" x="0" y="93" width="40" height="34"/>
+    <text class="t" x="20" y="115">사람B</text>
+    <rect class="cell" x="40" y="93" width="70" height="34"/><text class="t" x="75" y="115">6</text>
+    <rect class="cell" x="110" y="93" width="70" height="34"/><text class="t" x="145" y="115">4</text>
+    <rect class="cell" x="180" y="93" width="70" height="34"/><text class="t" x="215" y="115">3</text>
+    <rect class="cell" x="250" y="93" width="70" height="34"/><text class="t" x="285" y="115">7</text>
+
+    <rect class="hd" x="0" y="127" width="40" height="34"/>
+    <text class="t" x="20" y="149">사람C</text>
+    <rect class="cell" x="40" y="127" width="70" height="34"/><text class="t" x="75" y="149">5</text>
+    <rect class="cell" x="110" y="127" width="70" height="34"/><text class="t" x="145" y="149">8</text>
+    <rect class="cell" x="180" y="127" width="70" height="34"/><text class="t" x="215" y="149">1</text>
+    <rect class="cell" x="250" y="127" width="70" height="34"/><text class="t" x="285" y="149">8</text>
+
+    <rect class="hd" x="0" y="161" width="40" height="34"/>
+    <text class="t" x="20" y="183">사람D</text>
+    <rect class="cell" x="40" y="161" width="70" height="34"/><text class="t" x="75" y="183">7</text>
+    <rect class="cell" x="110" y="161" width="70" height="34"/><text class="t" x="145" y="183">6</text>
+    <rect class="cell" x="180" y="161" width="70" height="34"/><text class="t" x="215" y="183">9</text>
+    <rect class="cell" x="250" y="161" width="70" height="34"/><text class="t" x="285" y="183">4</text>
+  </g>
+
+  <!-- 설명 박스 -->
+  <g>
+    <rect class="box" x="400" y="60" width="760" height="165" rx="8"/>
+    <text class="th" x="780" y="85">문제 &amp; 완전탐색 전략</text>
+    <text class="m" x="415" y="112">각 사람은 정확히 한 작업, 각 작업은 정확히 한 사람에게 배정.</text>
+    <text class="m" x="415" y="134">배정 = 작업 번호의 순열 (예: A→1, B→2, C→3, D→4)</text>
+    <text class="m" x="415" y="156">경우의 수 = n! = 4! = 24가지 (모두 시도)</text>
+    <text class="m" x="415" y="178">총 비용 = C[A][j1] + C[B][j2] + C[C][j3] + C[D][j4]</text>
+    <text class="m" x="415" y="200">시간 복잡도 = Θ(n·n!) — 각 순열당 n개 비용 합산</text>
+  </g>
+
+  <!-- 순열 시도 3가지 -->
+  <g transform="translate(40,300)">
+    <text class="th" x="160" y="15">시도 ①  순열 (1,2,3,4): A→1, B→2, C→3, D→4</text>
+    <rect class="box" x="0" y="25" width="320" height="70" rx="6"/>
+    <text class="mc" x="160" y="55">9 + 4 + 1 + 4 = 18</text>
+    <text class="lab" x="160" y="80" text-anchor="middle">항등 순열</text>
+  </g>
+
+  <g transform="translate(400,300)">
+    <text class="th" x="160" y="15">시도 ②  순열 (2,1,3,4): A→2, B→1, C→3, D→4</text>
+    <rect class="picked" x="0" y="25" width="320" height="70" rx="6"/>
+    <text class="mc" x="160" y="55">2 + 6 + 1 + 4 = 13</text>
+    <text class="lab" x="160" y="80" text-anchor="middle">현재 최선 후보</text>
+  </g>
+
+  <g transform="translate(760,300)">
+    <text class="th" x="160" y="15">시도 ③  순열 (4,3,2,1): A→4, B→3, C→2, D→1</text>
+    <rect class="box" x="0" y="25" width="320" height="70" rx="6"/>
+    <text class="mc" x="160" y="55">8 + 3 + 8 + 7 = 26</text>
+    <text class="lab" x="160" y="80" text-anchor="middle">역순 순열</text>
+  </g>
+
+  <!-- 최종 최소 -->
+  <g transform="translate(40,430)">
+    <text class="th" x="560" y="15">... 24개 순열 중 전체 최소는 다음 순열:</text>
+    <rect class="best" x="360" y="30" width="400" height="70" rx="6"/>
+    <text class="mc" x="560" y="60">순열 (2,3,1,4): A→2, B→3, C→1, D→4</text>
+    <text class="mc" x="560" y="86">비용 2 + 3 + 5 + 4 = 14 ← 최소</text>
+  </g>
+
+  <!-- 하단 요약 -->
+  <g>
+    <rect class="note" x="40" y="550" width="1120" height="130" rx="8"/>
+    <text class="th" x="600" y="578">요약 &amp; 개선 여지</text>
+    <text class="mc" x="600" y="606">n=4 → 24가지 / n=10 → 3,628,800가지 / n=20 → 2.4×10^18가지 — 완전탐색 불가</text>
+    <text class="mc" x="600" y="632">→ 8장 탐욕(근사), 9장 분기한정(하한으로 가지치기)로 개선 가능</text>
+    <text class="mc" x="600" y="658">최적해 보장 대신 시간이 기하급수적 — 완전탐색의 전형적 딜레마</text>
+  </g>
+</svg>

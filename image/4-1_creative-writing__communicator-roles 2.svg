@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="system-ui,sans-serif">
+  <style>
+    .top{fill:#c0392b;stroke:#922b21;stroke-width:2}
+    .mid{fill:#2e86de;stroke:#1c5580;stroke-width:2}
+    .bot{fill:#27ae60;stroke:#1e8449;stroke-width:2}
+    .wtxt{fill:#fff;font-weight:bold;font-size:16px;text-anchor:middle}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px}
+    .box{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+  </style>
+
+  <text class="title" x="550" y="40">4가지 의사소통자 유형 — 조직 계층별 글쓰기</text>
+
+  <!-- Pyramid on left -->
+  <g transform="translate(60,80)">
+    <polygon class="top" points="220,20 120,110 320,110"/>
+    <text class="wtxt" x="220" y="90">최고경영자</text>
+
+    <polygon class="mid" points="120,110 40,210 400,210 320,110"/>
+    <text class="wtxt" x="220" y="170">중간관리자</text>
+
+    <polygon class="bot" points="40,210 0,310 440,310 400,210"/>
+    <text class="wtxt" x="220" y="270">실무자</text>
+
+    <text class="sub" x="220" y="355">조직 계층 피라미드</text>
+  </g>
+
+  <!-- Right: explanations -->
+  <g transform="translate(560,80)">
+    <rect class="box" x="0" y="0" width="480" height="90"/>
+    <text class="lab" x="20" y="30" font-weight="bold" fill="#c0392b" font-size="15">최고경영자 · Persuasive (설득형)</text>
+    <text class="lab" x="20" y="55">비전 · 전략 · 투자 결정을 설득</text>
+    <text class="lab" x="20" y="78">Why 형식 · PREP 구조</text>
+
+    <rect class="box" x="0" y="110" width="480" height="90"/>
+    <text class="lab" x="20" y="140" font-weight="bold" fill="#2e86de" font-size="15">중간관리자 · Explanatory (설명형)</text>
+    <text class="lab" x="20" y="165">상하 연결 · 분석 · 해석 · 대안 제시</text>
+    <text class="lab" x="20" y="188">How 형식 중심</text>
+
+    <rect class="box" x="0" y="220" width="480" height="90"/>
+    <text class="lab" x="20" y="250" font-weight="bold" fill="#27ae60" font-size="15">실무자 · Informational (정보형)</text>
+    <text class="lab" x="20" y="275">사실 · 수치 · 일정 보고</text>
+    <text class="lab" x="20" y="298">일일 보고서 · 기술 매뉴얼</text>
+  </g>
+
+  <!-- Bottom insight -->
+  <g>
+    <rect x="60" y="510" width="980" height="190" fill="#fde2e2" stroke="#c0392b"/>
+    <text x="80" y="545" font-size="15px" font-weight="bold" text-anchor="start">역할별 문서 예시 — 시험 단골</text>
+    <text class="lab" x="80" y="580">• 보고서1 (시간 순차성): 언제 · 무엇을 했는가 — 실무자 일일 보고</text>
+    <text class="lab" x="80" y="610">• 보고서3 (해결책/원인/결과): 문제-원인-해결책 3단계 — 중간관리자 분석 보고</text>
+    <text class="lab" x="80" y="640">• 한 장 보고서 (레이건 · 처칠 PREP): 결론부터 제시 — 경영자용 설득 문서</text>
+    <text class="lab" x="80" y="675" fill="#c0392b" font-weight="bold">핵심: 읽는 사람의 계층에 따라 형식 · 분량 · 구조가 달라진다</text>
+  </g>
+</svg>

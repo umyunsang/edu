@@ -1,0 +1,25 @@
+---
+aliases: []
+course: computer-vision
+created: '2026-05-05'
+date: '2026-05-05'
+semester: 4-1
+source: ''
+status: seedling
+tags:
+- type/literature
+- meta/question
+- cs/cv
+title: Computer_Vision_4_Feature_Extraction_and_Matching_v1.5
+type: literature
+updated: '2026-05-05'
+---
+
+up:: [[Computer Vision MOC]]
+
+# Computer_Vision_4_Feature_Extraction_and_Matching_v1.5
+
+> Stub. PDF 변환 대상. 4-1 컴퓨터비전 강의 4주차 Feature Extraction & Matching.
+
+## TODO
+- [ ] 본문 작성

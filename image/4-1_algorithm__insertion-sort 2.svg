@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="system-ui,sans-serif">
+  <style>.c{fill:#fff;stroke:#2c3e50;stroke-width:1.5}.cur{fill:#fff7d6;stroke:#d4a017;stroke-width:2}.done{fill:#e6f7e6;stroke:#27ae60}.t{font-size:14px;text-anchor:middle}.lab{font-size:13px}.tb{font-size:14px;font-weight:bold}</style>
+  <text class="tb" x="360" y="22" text-anchor="middle">삽입 정렬: 카드 한 장씩 "이미 정렬된 왼쪽"으로 끼워 넣기</text>
+
+  <g transform="translate(40,50)">
+    <text class="lab" x="0" y="15">초기</text>
+    <g><rect class="c" x="60" y="0" width="50" height="40"/><text class="t" x="85" y="26">5</text></g>
+    <g><rect class="c" x="110" y="0" width="50" height="40"/><text class="t" x="135" y="26">2</text></g>
+    <g><rect class="c" x="160" y="0" width="50" height="40"/><text class="t" x="185" y="26">4</text></g>
+    <g><rect class="c" x="210" y="0" width="50" height="40"/><text class="t" x="235" y="26">6</text></g>
+    <g><rect class="c" x="260" y="0" width="50" height="40"/><text class="t" x="285" y="26">1</text></g>
+    <g><rect class="c" x="310" y="0" width="50" height="40"/><text class="t" x="335" y="26">3</text></g>
+    <text class="lab" x="390" y="25">→ 왼쪽 한 장(5)은 이미 정렬</text>
+  </g>
+
+  <g transform="translate(40,110)">
+    <text class="lab" x="0" y="15">2 삽입</text>
+    <g><rect class="done" x="60" y="0" width="50" height="40"/><text class="t" x="85" y="26">2</text></g>
+    <g><rect class="done" x="110" y="0" width="50" height="40"/><text class="t" x="135" y="26">5</text></g>
+    <g><rect class="cur" x="160" y="0" width="50" height="40"/><text class="t" x="185" y="26">4</text></g>
+    <g><rect class="c" x="210" y="0" width="50" height="40"/><text class="t" x="235" y="26">6</text></g>
+    <g><rect class="c" x="260" y="0" width="50" height="40"/><text class="t" x="285" y="26">1</text></g>
+    <g><rect class="c" x="310" y="0" width="50" height="40"/><text class="t" x="335" y="26">3</text></g>
+    <text class="lab" x="390" y="25">→ 2는 5 앞으로 이동</text>
+  </g>
+
+  <g transform="translate(40,170)">
+    <text class="lab" x="0" y="15">4 삽입</text>
+    <g><rect class="done" x="60" y="0" width="50" height="40"/><text class="t" x="85" y="26">2</text></g>
+    <g><rect class="done" x="110" y="0" width="50" height="40"/><text class="t" x="135" y="26">4</text></g>
+    <g><rect class="done" x="160" y="0" width="50" height="40"/><text class="t" x="185" y="26">5</text></g>
+    <g><rect class="cur" x="210" y="0" width="50" height="40"/><text class="t" x="235" y="26">6</text></g>
+    <g><rect class="c" x="260" y="0" width="50" height="40"/><text class="t" x="285" y="26">1</text></g>
+    <g><rect class="c" x="310" y="0" width="50" height="40"/><text class="t" x="335" y="26">3</text></g>
+    <text class="lab" x="390" y="25">→ 4는 2와 5 사이로 끼움</text>
+  </g>
+
+  <g transform="translate(40,230)">
+    <text class="lab" x="0" y="15">6 삽입</text>
+    <g><rect class="done" x="60" y="0" width="50" height="40"/><text class="t" x="85" y="26">2</text></g>
+    <g><rect class="done" x="110" y="0" width="50" height="40"/><text class="t" x="135" y="26">4</text></g>
+    <g><rect class="done" x="160" y="0" width="50" height="40"/><text class="t" x="185" y="26">5</text></g>
+    <g><rect class="done" x="210" y="0" width="50" height="40"/><text class="t" x="235" y="26">6</text></g>
+    <g><rect class="cur" x="260" y="0" width="50" height="40"/><text class="t" x="285" y="26">1</text></g>
+    <g><rect class="c" x="310" y="0" width="50" height="40"/><text class="t" x="335" y="26">3</text></g>
+    <text class="lab" x="390" y="25">→ 6은 이미 제자리</text>
+  </g>
+
+  <g transform="translate(40,290)">
+    <text class="lab" x="0" y="15">1 삽입</text>
+    <g><rect class="done" x="60" y="0" width="50" height="40"/><text class="t" x="85" y="26">1</text></g>
+    <g><rect class="done" x="110" y="0" width="50" height="40"/><text class="t" x="135" y="26">2</text></g>
+    <g><rect class="done" x="160" y="0" width="50" height="40"/><text class="t" x="185" y="26">4</text></g>
+    <g><rect class="done" x="210" y="0" width="50" height="40"/><text class="t" x="235" y="26">5</text></g>
+    <g><rect class="done" x="260" y="0" width="50" height="40"/><text class="t" x="285" y="26">6</text></g>
+    <g><rect class="cur" x="310" y="0" width="50" height="40"/><text class="t" x="335" y="26">3</text></g>
+    <text class="lab" x="390" y="25">→ 1은 맨 앞으로</text>
+  </g>
+
+  <g transform="translate(40,350)">
+    <text class="tb" x="0" y="15">포인트:</text>
+    <text class="lab" x="70" y="15">이미 정렬된 경우 비교만 하고 끝나 최선 O(n). 최악(역정렬)은 O(n²).</text>
+    <text class="lab" x="0" y="35">"작은 문제(n-1)까지 해결 + 한 장만 추가"로 푸는 축소정복의 대표 예.</text>
+  </g>
+</svg>

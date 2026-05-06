@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" font-family="system-ui,sans-serif">
+  <style>
+    .pre{fill:#fde2e2;stroke:#c0392b;stroke-width:3}
+    .wri{fill:#eaf2fb;stroke:#2e86de;stroke-width:3}
+    .rev{fill:#d0f5d0;stroke:#27ae60;stroke-width:3}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .st{font-size:17px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px;text-anchor:middle}
+    .ar{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#a1)}
+    .back{stroke:#999;stroke-width:2;fill:none;stroke-dasharray:6 4;marker-end:url(#a2)}
+    .note{font-size:14px}
+  </style>
+  <defs>
+    <marker id="a1" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#333"/>
+    </marker>
+    <marker id="a2" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <text class="title" x="550" y="40">글쓰기 3단계: 구상 → 쓰기 → 수정 (반복적)</text>
+
+  <!-- Prewriting -->
+  <g>
+    <circle class="pre" cx="200" cy="230" r="120"/>
+    <text class="st" x="200" y="175">① Prewriting</text>
+    <text class="lab" x="200" y="205">구상 단계</text>
+    <text class="lab" x="200" y="230">발상 · 자료 · 구조</text>
+    <text class="lab" x="200" y="255">뭉기 · 가지치기</text>
+    <text class="lab" x="200" y="280">Mind Map</text>
+  </g>
+
+  <!-- Writing -->
+  <g>
+    <circle class="wri" cx="550" cy="230" r="120"/>
+    <text class="st" x="550" y="175">② Writing</text>
+    <text class="lab" x="550" y="205">쓰기 단계</text>
+    <text class="lab" x="550" y="230">초고 작성</text>
+    <text class="lab" x="550" y="255">힘 글쓰기 적용</text>
+    <text class="lab" x="550" y="280">문장 → 문단 → 글</text>
+  </g>
+
+  <!-- Revising -->
+  <g>
+    <circle class="rev" cx="900" cy="230" r="120"/>
+    <text class="st" x="900" y="175">③ Revising</text>
+    <text class="lab" x="900" y="205">수정 단계</text>
+    <text class="lab" x="900" y="230">고치기 · 다시쓰기</text>
+    <text class="lab" x="900" y="255">독자 점검</text>
+    <text class="lab" x="900" y="280">Editing · Re-Writing</text>
+  </g>
+
+  <!-- Arrows -->
+  <line class="ar" x1="325" y1="230" x2="425" y2="230"/>
+  <line class="ar" x1="675" y1="230" x2="775" y2="230"/>
+
+  <!-- Back arrow -->
+  <path class="back" d="M 870 360 Q 870 440 550 440 Q 230 440 230 360"/>
+  <text x="550" y="475" class="lab" font-weight="bold" fill="#999">필요하면 언제든 앞 단계로 돌아간다 (반복적 · Recursive)</text>
+
+  <!-- Bottom -->
+  <g>
+    <rect x="60" y="510" width="980" height="70" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="note" x="80" y="545" fill="#c0392b" font-weight="bold">미국식 Prewriting · Writing · Revising</text>
+    <text class="note" x="80" y="570">= POWER (P · O · W · E · R) 5단계의 상위 구분</text>
+  </g>
+</svg>

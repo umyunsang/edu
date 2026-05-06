@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 1080" font-family="system-ui,sans-serif">
+  <style>
+    .c{fill:#fff;stroke:#2c3e50;stroke-width:1.3}
+    .p{fill:#ffd9d9;stroke:#c0392b;stroke-width:2.5}
+    .pf{fill:#d5d5d5;stroke:#555;stroke-width:1.5}
+    .L{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.5}
+    .R{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.5}
+    .single{fill:#fff2cc;stroke:#f39c12;stroke-width:1.5}
+    .sorted{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+    .t{font-size:14px;text-anchor:middle;font-weight:bold;dominant-baseline:central}
+    .idx{font-size:10px;text-anchor:middle;fill:#888}
+    .tb{font-size:16px;font-weight:bold}
+    .tbc{font-size:18px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:12px}
+    .lev{font-size:13px;font-weight:bold;fill:#c0392b}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .edge{stroke:#888;stroke-width:1.3;fill:none}
+    .note{font-size:11px;fill:#555}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .grp{fill:none;stroke-width:1.5;stroke-dasharray:4 3}
+    .grpL{stroke:#2e86de}
+    .grpR{stroke:#27ae60}
+    .grpS{stroke:#f39c12}
+    .arr{stroke:#c0392b;stroke-width:1.8;fill:none;marker-end:url(#rd)}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+  </defs>
+
+  <text class="tbc" x="510" y="26">퀵 정렬 전체 과정 — 입력 [5,3,8,4,9,1,6,2,7] (PDF 5장 p13)</text>
+  <text class="lab" x="510" y="46" text-anchor="middle">피벗은 각 부분배열의 첫 원소. 피벗 확정 후 좌/우에 같은 방식 재귀 호출 → 부분배열 크기 1 또는 0 이면 종료</text>
+
+  <!-- ================================ -->
+  <!-- Stage 1: Initial -->
+  <g transform="translate(0,70)">
+    <circle class="badge" cx="40" cy="20" r="12"/><text class="badgeT" x="40" y="24">1</text>
+    <text class="tb" x="60" y="25">초기 상태 — 피벗 5 선택 (첫 원소)</text>
+    <text class="lev" x="60" y="44">Level 0 호출: quicksort([5,3,8,4,9,1,6,2,7])</text>
+    <g transform="translate(270,55)">
+      <g><rect class="p" x="0" y="0" width="48" height="40"/><text class="t" x="24" y="20">5</text></g>
+      <g><rect class="c" x="54" y="0" width="48" height="40"/><text class="t" x="78" y="20">3</text></g>
+      <g><rect class="c" x="108" y="0" width="48" height="40"/><text class="t" x="132" y="20">8</text></g>
+      <g><rect class="c" x="162" y="0" width="48" height="40"/><text class="t" x="186" y="20">4</text></g>
+      <g><rect class="c" x="216" y="0" width="48" height="40"/><text class="t" x="240" y="20">9</text></g>
+      <g><rect class="c" x="270" y="0" width="48" height="40"/><text class="t" x="294" y="20">1</text></g>
+      <g><rect class="c" x="324" y="0" width="48" height="40"/><text class="t" x="348" y="20">6</text></g>
+      <g><rect class="c" x="378" y="0" width="48" height="40"/><text class="t" x="402" y="20">2</text></g>
+      <g><rect class="c" x="432" y="0" width="48" height="40"/><text class="t" x="456" y="20">7</text></g>
+      <text class="idx" x="24" y="52">0</text><text class="idx" x="78" y="52">1</text><text class="idx" x="132" y="52">2</text>
+      <text class="idx" x="186" y="52">3</text><text class="idx" x="240" y="52">4</text><text class="idx" x="294" y="52">5</text>
+      <text class="idx" x="348" y="52">6</text><text class="idx" x="402" y="52">7</text><text class="idx" x="456" y="52">8</text>
+    </g>
+  </g>
+
+  <!-- Stage 2: Level 0 partition done -->
+  <g transform="translate(0,195)">
+    <circle class="badge" cx="40" cy="20" r="12"/><text class="badgeT" x="40" y="24">2</text>
+    <text class="tb" x="60" y="25">Level 0 파티션 완료 — 피벗 5 제자리 확정 (인덱스 4)</text>
+    <text class="lev" x="60" y="44">좌측 [1,3,2,4] : 5보다 작은 값 · 우측 [9,6,8,7] : 5보다 큰 값</text>
+    <g transform="translate(270,55)">
+      <g><rect class="L" x="0" y="0" width="48" height="40"/><text class="t" x="24" y="20">1</text></g>
+      <g><rect class="L" x="54" y="0" width="48" height="40"/><text class="t" x="78" y="20">3</text></g>
+      <g><rect class="L" x="108" y="0" width="48" height="40"/><text class="t" x="132" y="20">2</text></g>
+      <g><rect class="L" x="162" y="0" width="48" height="40"/><text class="t" x="186" y="20">4</text></g>
+      <g><rect class="pf" x="216" y="0" width="48" height="40"/><text class="t" x="240" y="20" fill="#c0392b">5</text></g>
+      <g><rect class="R" x="270" y="0" width="48" height="40"/><text class="t" x="294" y="20">9</text></g>
+      <g><rect class="R" x="324" y="0" width="48" height="40"/><text class="t" x="348" y="20">6</text></g>
+      <g><rect class="R" x="378" y="0" width="48" height="40"/><text class="t" x="402" y="20">8</text></g>
+      <g><rect class="R" x="432" y="0" width="48" height="40"/><text class="t" x="456" y="20">7</text></g>
+      <!-- partition brackets -->
+      <rect class="grp grpL" x="-4" y="-4" width="220" height="48" rx="4"/>
+      <rect class="grp grpR" x="266" y="-4" width="220" height="48" rx="4"/>
+      <text class="note" x="106" y="60" fill="#2e86de" text-anchor="middle" font-weight="bold">좌측 부분배열 (재귀 호출)</text>
+      <text class="note" x="240" y="60" fill="#c0392b" text-anchor="middle" font-weight="bold">확정</text>
+      <text class="note" x="376" y="60" fill="#27ae60" text-anchor="middle" font-weight="bold">우측 부분배열 (재귀 호출)</text>
+    </g>
+  </g>
+
+  <!-- Stage 3: Level 1 — pivots 1 and 9 -->
+  <g transform="translate(0,325)">
+    <circle class="badge" cx="40" cy="20" r="12"/><text class="badgeT" x="40" y="24">3</text>
+    <text class="tb" x="60" y="25">Level 1 파티션 완료 — 피벗 1, 9 확정</text>
+    <text class="lev" x="60" y="44">quicksort([1,3,2,4]): 피벗 1 → 왼쪽 공집합, 오른쪽 [3,2,4]  /  quicksort([9,6,8,7]): 피벗 9 → 왼쪽 [7,6,8], 오른쪽 공집합</text>
+    <g transform="translate(270,55)">
+      <g><rect class="pf" x="0" y="0" width="48" height="40"/><text class="t" x="24" y="20" fill="#c0392b">1</text></g>
+      <g><rect class="R" x="54" y="0" width="48" height="40"/><text class="t" x="78" y="20">3</text></g>
+      <g><rect class="R" x="108" y="0" width="48" height="40"/><text class="t" x="132" y="20">2</text></g>
+      <g><rect class="R" x="162" y="0" width="48" height="40"/><text class="t" x="186" y="20">4</text></g>
+      <g><rect class="pf" x="216" y="0" width="48" height="40"/><text class="t" x="240" y="20" fill="#c0392b">5</text></g>
+      <g><rect class="L" x="270" y="0" width="48" height="40"/><text class="t" x="294" y="20">7</text></g>
+      <g><rect class="L" x="324" y="0" width="48" height="40"/><text class="t" x="348" y="20">6</text></g>
+      <g><rect class="L" x="378" y="0" width="48" height="40"/><text class="t" x="402" y="20">8</text></g>
+      <g><rect class="pf" x="432" y="0" width="48" height="40"/><text class="t" x="456" y="20" fill="#c0392b">9</text></g>
+      <rect class="grp grpR" x="50" y="-4" width="166" height="48" rx="4"/>
+      <rect class="grp grpL" x="266" y="-4" width="166" height="48" rx="4"/>
+      <text class="note" x="24" y="60" fill="#c0392b" text-anchor="middle" font-weight="bold">확정</text>
+      <text class="note" x="132" y="60" fill="#27ae60" text-anchor="middle" font-weight="bold">[3,2,4] 재귀</text>
+      <text class="note" x="240" y="60" fill="#c0392b" text-anchor="middle" font-weight="bold">확정</text>
+      <text class="note" x="348" y="60" fill="#2e86de" text-anchor="middle" font-weight="bold">[7,6,8] 재귀</text>
+      <text class="note" x="456" y="60" fill="#c0392b" text-anchor="middle" font-weight="bold">확정</text>
+    </g>
+  </g>
+
+  <!-- Stage 4: Level 2 — pivots 3 and 7 -->
+  <g transform="translate(0,460)">
+    <circle class="badge" cx="40" cy="20" r="12"/><text class="badgeT" x="40" y="24">4</text>
+    <text class="tb" x="60" y="25">Level 2 파티션 완료 — 피벗 3, 7 확정</text>
+    <text class="lev" x="60" y="44">quicksort([3,2,4]): 피벗 3 → [2] | 3 | [4]  /  quicksort([7,6,8]): 피벗 7 → [6] | 7 | [8]</text>
+    <g transform="translate(270,55)">
+      <g><rect class="pf" x="0" y="0" width="48" height="40"/><text class="t" x="24" y="20" fill="#c0392b">1</text></g>
+      <g><rect class="single" x="54" y="0" width="48" height="40"/><text class="t" x="78" y="20">2</text></g>
+      <g><rect class="pf" x="108" y="0" width="48" height="40"/><text class="t" x="132" y="20" fill="#c0392b">3</text></g>
+      <g><rect class="single" x="162" y="0" width="48" height="40"/><text class="t" x="186" y="20">4</text></g>
+      <g><rect class="pf" x="216" y="0" width="48" height="40"/><text class="t" x="240" y="20" fill="#c0392b">5</text></g>
+      <g><rect class="single" x="270" y="0" width="48" height="40"/><text class="t" x="294" y="20">6</text></g>
+      <g><rect class="pf" x="324" y="0" width="48" height="40"/><text class="t" x="348" y="20" fill="#c0392b">7</text></g>
+      <g><rect class="single" x="378" y="0" width="48" height="40"/><text class="t" x="402" y="20">8</text></g>
+      <g><rect class="pf" x="432" y="0" width="48" height="40"/><text class="t" x="456" y="20" fill="#c0392b">9</text></g>
+      <rect class="grp grpS" x="50" y="-4" width="58" height="48" rx="4"/>
+      <rect class="grp grpS" x="158" y="-4" width="58" height="48" rx="4"/>
+      <rect class="grp grpS" x="266" y="-4" width="58" height="48" rx="4"/>
+      <rect class="grp grpS" x="374" y="-4" width="58" height="48" rx="4"/>
+      <text class="note" x="78" y="60" fill="#d4a017" text-anchor="middle" font-weight="bold">[2]</text>
+      <text class="note" x="186" y="60" fill="#d4a017" text-anchor="middle" font-weight="bold">[4]</text>
+      <text class="note" x="294" y="60" fill="#d4a017" text-anchor="middle" font-weight="bold">[6]</text>
+      <text class="note" x="402" y="60" fill="#d4a017" text-anchor="middle" font-weight="bold">[8]</text>
+    </g>
+  </g>
+
+  <!-- Stage 5: Base case (size ≤ 1 returns immediately) -->
+  <g transform="translate(0,595)">
+    <circle class="badge" cx="40" cy="20" r="12"/><text class="badgeT" x="40" y="24">5</text>
+    <text class="tb" x="60" y="25">Level 3 — 크기 1 부분배열은 이미 정렬됨 (재귀 종료)</text>
+    <text class="lev" x="60" y="44">[2], [4], [6], [8] 각각 원소 한 개 → if (l ≥ r) return; 기저 사례로 즉시 반환</text>
+    <g transform="translate(270,55)">
+      <g><rect class="pf" x="0" y="0" width="48" height="40"/><text class="t" x="24" y="20" fill="#c0392b">1</text></g>
+      <g><rect class="pf" x="54" y="0" width="48" height="40"/><text class="t" x="78" y="20" fill="#c0392b">2</text></g>
+      <g><rect class="pf" x="108" y="0" width="48" height="40"/><text class="t" x="132" y="20" fill="#c0392b">3</text></g>
+      <g><rect class="pf" x="162" y="0" width="48" height="40"/><text class="t" x="186" y="20" fill="#c0392b">4</text></g>
+      <g><rect class="pf" x="216" y="0" width="48" height="40"/><text class="t" x="240" y="20" fill="#c0392b">5</text></g>
+      <g><rect class="pf" x="270" y="0" width="48" height="40"/><text class="t" x="294" y="20" fill="#c0392b">6</text></g>
+      <g><rect class="pf" x="324" y="0" width="48" height="40"/><text class="t" x="348" y="20" fill="#c0392b">7</text></g>
+      <g><rect class="pf" x="378" y="0" width="48" height="40"/><text class="t" x="402" y="20" fill="#c0392b">8</text></g>
+      <g><rect class="pf" x="432" y="0" width="48" height="40"/><text class="t" x="456" y="20" fill="#c0392b">9</text></g>
+    </g>
+  </g>
+
+  <!-- Stage 6: Final sorted -->
+  <g transform="translate(0,705)">
+    <circle class="badge" cx="40" cy="20" r="12"/><text class="badgeT" x="40" y="24">6</text>
+    <text class="tb" x="60" y="25">정렬 완료 — 모든 재귀 호출 반환</text>
+    <text class="lev" x="60" y="44">합치는 단계가 없다(in-place). 피벗 확정 = 정렬 완료</text>
+    <g transform="translate(270,55)">
+      <g><rect class="sorted" x="0" y="0" width="48" height="40"/><text class="t" x="24" y="20">1</text></g>
+      <g><rect class="sorted" x="54" y="0" width="48" height="40"/><text class="t" x="78" y="20">2</text></g>
+      <g><rect class="sorted" x="108" y="0" width="48" height="40"/><text class="t" x="132" y="20">3</text></g>
+      <g><rect class="sorted" x="162" y="0" width="48" height="40"/><text class="t" x="186" y="20">4</text></g>
+      <g><rect class="sorted" x="216" y="0" width="48" height="40"/><text class="t" x="240" y="20">5</text></g>
+      <g><rect class="sorted" x="270" y="0" width="48" height="40"/><text class="t" x="294" y="20">6</text></g>
+      <g><rect class="sorted" x="324" y="0" width="48" height="40"/><text class="t" x="348" y="20">7</text></g>
+      <g><rect class="sorted" x="378" y="0" width="48" height="40"/><text class="t" x="402" y="20">8</text></g>
+      <g><rect class="sorted" x="432" y="0" width="48" height="40"/><text class="t" x="456" y="20">9</text></g>
+    </g>
+  </g>
+
+  <!-- Separator -->
+  <line x1="20" y1="830" x2="1000" y2="830" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Recursion tree -->
+  <g transform="translate(0,845)">
+    <text class="tb" x="20" y="18">재귀 호출 트리 — 피벗으로 노드 표시, 자식은 좌/우 부분배열</text>
+
+    <!-- Level 0: root pivot 5 -->
+    <g>
+      <rect class="p" x="470" y="30" width="80" height="32" rx="4"/>
+      <text class="t" x="510" y="46">pivot 5</text>
+      <text class="note" x="510" y="76" text-anchor="middle">[5,3,8,4,9,1,6,2,7]</text>
+    </g>
+
+    <!-- Edges to level 1 -->
+    <line class="edge" x1="490" y1="62" x2="260" y2="110"/>
+    <line class="edge" x1="530" y1="62" x2="760" y2="110"/>
+
+    <!-- Level 1 left: pivot 1 -->
+    <g>
+      <rect class="p" x="220" y="110" width="80" height="32" rx="4"/>
+      <text class="t" x="260" y="126">pivot 1</text>
+      <text class="note" x="260" y="156" text-anchor="middle">[1,3,2,4]</text>
+    </g>
+    <!-- Level 1 right: pivot 9 -->
+    <g>
+      <rect class="p" x="720" y="110" width="80" height="32" rx="4"/>
+      <text class="t" x="760" y="126">pivot 9</text>
+      <text class="note" x="760" y="156" text-anchor="middle">[9,6,8,7]</text>
+    </g>
+
+    <!-- Edges to level 2 -->
+    <line class="edge" x1="240" y1="142" x2="160" y2="180"/>
+    <line class="edge" x1="280" y1="142" x2="360" y2="180"/>
+    <line class="edge" x1="740" y1="142" x2="660" y2="180"/>
+    <line class="edge" x1="780" y1="142" x2="860" y2="180"/>
+
+    <!-- Level 2 -->
+    <g>
+      <rect class="pf" x="120" y="180" width="80" height="32" rx="4"/>
+      <text class="t" x="160" y="196" fill="#c0392b">∅ (공집합)</text>
+      <text class="note" x="160" y="225" text-anchor="middle">반환</text>
+    </g>
+    <g>
+      <rect class="p" x="320" y="180" width="80" height="32" rx="4"/>
+      <text class="t" x="360" y="196">pivot 3</text>
+      <text class="note" x="360" y="225" text-anchor="middle">[3,2,4]</text>
+    </g>
+    <g>
+      <rect class="p" x="620" y="180" width="80" height="32" rx="4"/>
+      <text class="t" x="660" y="196">pivot 7</text>
+      <text class="note" x="660" y="225" text-anchor="middle">[7,6,8]</text>
+    </g>
+    <g>
+      <rect class="pf" x="820" y="180" width="80" height="32" rx="4"/>
+      <text class="t" x="860" y="196" fill="#c0392b">∅ (공집합)</text>
+      <text class="note" x="860" y="225" text-anchor="middle">반환</text>
+    </g>
+
+    <!-- Edges to level 3 (single-element leaves) -->
+    <line class="edge" x1="340" y1="212" x2="300" y2="245"/>
+    <line class="edge" x1="380" y1="212" x2="420" y2="245"/>
+    <line class="edge" x1="640" y1="212" x2="600" y2="245"/>
+    <line class="edge" x1="680" y1="212" x2="720" y2="245"/>
+
+    <!-- Level 3 single-element leaves -->
+    <g>
+      <rect class="single" x="270" y="245" width="60" height="28" rx="4"/>
+      <text class="t" x="300" y="259">[2]</text>
+    </g>
+    <g>
+      <rect class="single" x="390" y="245" width="60" height="28" rx="4"/>
+      <text class="t" x="420" y="259">[4]</text>
+    </g>
+    <g>
+      <rect class="single" x="570" y="245" width="60" height="28" rx="4"/>
+      <text class="t" x="600" y="259">[6]</text>
+    </g>
+    <g>
+      <rect class="single" x="690" y="245" width="60" height="28" rx="4"/>
+      <text class="t" x="720" y="259">[8]</text>
+    </g>
+
+    <!-- Depth labels -->
+    <text class="note" x="30" y="50" font-weight="bold" fill="#c0392b">Level 0</text>
+    <text class="note" x="30" y="130" font-weight="bold" fill="#c0392b">Level 1</text>
+    <text class="note" x="30" y="200" font-weight="bold" fill="#c0392b">Level 2</text>
+    <text class="note" x="30" y="265" font-weight="bold" fill="#c0392b">Level 3 (기저)</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(20,1045)">
+    <rect class="p" x="0" y="-8" width="22" height="14"/>
+    <text class="lab" x="28" y="3">활성 피벗</text>
+    <rect class="pf" x="110" y="-8" width="22" height="14"/>
+    <text class="lab" x="138" y="3">확정된 피벗</text>
+    <rect class="L" x="240" y="-8" width="22" height="14"/>
+    <text class="lab" x="268" y="3">좌측 부분배열 (재귀)</text>
+    <rect class="R" x="420" y="-8" width="22" height="14"/>
+    <text class="lab" x="448" y="3">우측 부분배열 (재귀)</text>
+    <rect class="single" x="600" y="-8" width="22" height="14"/>
+    <text class="lab" x="628" y="3">단일 원소 (자동 정렬)</text>
+    <rect class="sorted" x="790" y="-8" width="22" height="14"/>
+    <text class="lab" x="818" y="3">최종 정렬 완료</text>
+  </g>
+</svg>

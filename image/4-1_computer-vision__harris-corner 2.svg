@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="system-ui,sans-serif">
+  <style>
+    .img{fill:#f8f8f8;stroke:#555}
+    .flat{fill:#bdc3c7}
+    .edge{fill:#5d6d7e}
+    .corner{fill:#2c3e50}
+    .ax{stroke:#333;stroke-width:1.2;fill:none}
+    .zone1{fill:#d0f5d0;stroke:#27ae60;stroke-dasharray:4 3}
+    .zone2{fill:#fff2cc;stroke:#d4a017;stroke-dasharray:4 3}
+    .zone3{fill:#fde2e2;stroke:#c0392b;stroke-dasharray:4 3}
+    .dot{fill:#c0392b}
+    .t{font-size:12px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+    .eq{font-family:monospace;font-size:13px}
+  </style>
+  <text class="tb" x="440" y="22" text-anchor="middle">Harris 코너 검출: 어떤 픽셀이 "코너"인가</text>
+
+  <!-- Three patches -->
+  <g transform="translate(30,50)">
+    <text class="tb" x="0" y="0">세 종류의 영역</text>
+
+    <g transform="translate(0,20)">
+      <rect class="img" x="0" y="0" width="80" height="80"/>
+      <rect class="flat" x="5" y="5" width="70" height="70"/>
+      <text class="t" x="40" y="100">flat (평탄)</text>
+      <text class="t" x="40" y="118" fill="#27ae60">λ₁ ≈ λ₂ ≈ 0</text>
+    </g>
+
+    <g transform="translate(110,20)">
+      <rect class="img" x="0" y="0" width="80" height="80"/>
+      <rect class="flat" x="5" y="5" width="70" height="35"/>
+      <rect class="edge" x="5" y="40" width="70" height="35"/>
+      <text class="t" x="40" y="100">edge (에지)</text>
+      <text class="t" x="40" y="118" fill="#d4a017">λ₁ &gt;&gt; λ₂ ≈ 0</text>
+    </g>
+
+    <g transform="translate(220,20)">
+      <rect class="img" x="0" y="0" width="80" height="80"/>
+      <rect class="corner" x="5" y="40" width="35" height="35"/>
+      <rect class="flat" x="40" y="5" width="35" height="35"/>
+      <rect class="flat" x="5" y="5" width="35" height="35"/>
+      <rect class="edge" x="40" y="40" width="35" height="35"/>
+      <text class="t" x="40" y="100">corner (코너)</text>
+      <text class="t" x="40" y="118" fill="#c0392b">λ₁, λ₂ 둘 다 큼</text>
+    </g>
+
+    <text class="lab" x="0" y="160">작은 창을 조금씩 옮겨볼 때</text>
+    <text class="lab" x="0" y="180">• 평탄: 어느 방향도 변화 없음</text>
+    <text class="lab" x="0" y="200">• 에지: 에지 방향은 변화 없고, 수직 방향만 변화</text>
+    <text class="lab" x="0" y="220">• 코너: 모든 방향으로 변화 → 두 고유값 모두 큼</text>
+  </g>
+
+  <!-- Eigenvalue space -->
+  <g transform="translate(380,60)">
+    <text class="tb" x="150" y="0" text-anchor="middle">고유값 평면 (λ₁, λ₂)</text>
+    <g transform="translate(0,15)">
+      <rect class="zone1" x="0" y="230" width="90" height="60"/>
+      <rect class="zone2" x="90" y="20" width="200" height="50"/>
+      <rect class="zone2" x="0" y="70" width="90" height="220"/>
+      <rect class="zone3" x="90" y="70" width="200" height="160"/>
+
+      <line class="ax" x1="0" y1="290" x2="310" y2="290"/>
+      <line class="ax" x1="0" y1="290" x2="0" y2="0"/>
+      <text class="t" x="310" y="285">λ₁</text>
+      <text class="t" x="-10" y="10">λ₂</text>
+
+      <text class="t" x="45" y="265" fill="#27ae60" font-weight="bold">flat</text>
+      <text class="t" x="45" y="280" fill="#27ae60" font-size="10">λ₁,λ₂ 작음</text>
+
+      <text class="t" x="190" y="50" fill="#d4a017" font-weight="bold">edge (λ₂ 큼)</text>
+      <text class="t" x="45" y="180" fill="#d4a017" font-weight="bold">edge</text>
+      <text class="t" x="45" y="196" fill="#d4a017" font-size="10">(λ₁ 큼)</text>
+
+      <text class="t" x="190" y="150" fill="#c0392b" font-weight="bold">CORNER</text>
+      <text class="t" x="190" y="168" fill="#c0392b" font-size="10">(둘 다 큼)</text>
+
+      <circle class="dot" cx="180" cy="140"/>
+      <circle class="dot" cx="210" cy="120"/>
+      <circle class="dot" cx="160" cy="160"/>
+    </g>
+  </g>
+
+  <!-- Formula box -->
+  <g transform="translate(30,390)">
+    <rect x="0" y="0" width="820" height="150" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">Harris 응답함수 R (고유값 직접 계산 없이 사용)</text>
+    <text class="eq" x="15" y="50">M = Σ_w [[Ix²  IxIy] ; [IxIy  Iy²]]   ← 구조 텐서 (structure tensor)</text>
+    <text class="eq" x="15" y="72">R = det(M) − k · trace(M)²   (k ≈ 0.04 ~ 0.06)</text>
+    <text class="eq" x="15" y="94">det(M) = λ₁λ₂,   trace(M) = λ₁ + λ₂</text>
+    <text class="lab" x="15" y="118">• R 큰 양수 → 코너  | R 큰 음수 → 에지  | R ≈ 0 → 평탄</text>
+    <text class="lab" x="15" y="138" fill="#c0392b" font-weight="bold">암기: "고유값 두 개가 모두 커야 코너" — R은 그것을 하나의 점수로 압축.</text>
+  </g>
+</svg>

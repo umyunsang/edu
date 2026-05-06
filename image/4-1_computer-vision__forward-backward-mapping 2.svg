@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" font-family="system-ui,sans-serif">
+  <style>
+    .src{fill:#eaf2fb;stroke:#2e86de}
+    .dst{fill:#fff7d6;stroke:#d4a017}
+    .hole{fill:#ffd6d6;stroke:#c0392b;stroke-width:1.5}
+    .filled{fill:#d0f5d0;stroke:#27ae60}
+    .arr{stroke:#666;stroke-width:1.5;fill:none;marker-end:url(#a)}
+    .arrb{stroke:#c0392b;stroke-width:1.5;fill:none;marker-end:url(#ar)}
+    .arg{stroke:#27ae60;stroke-width:1.5;fill:none;marker-end:url(#ag)}
+    .t{font-size:12px;text-anchor:middle;font-family:monospace}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#666"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#27ae60"/></marker>
+  </defs>
+  <text class="tb" x="430" y="22" text-anchor="middle">Forward vs Backward Mapping: 왜 backward가 더 안정적인가</text>
+
+  <!-- Forward -->
+  <g transform="translate(30,55)">
+    <text class="tb" x="170" y="15" text-anchor="middle">Forward Mapping: 원본 → 결과 (구멍 발생)</text>
+
+    <g transform="translate(0,30)">
+      <text class="lab" x="60" y="-5" text-anchor="middle">원본 (정수 격자)</text>
+      <g>
+        <rect class="src" x="0" y="0" width="30" height="30"/>
+        <rect class="src" x="30" y="0" width="30" height="30"/>
+        <rect class="src" x="60" y="0" width="30" height="30"/>
+        <rect class="src" x="90" y="0" width="30" height="30"/>
+        <rect class="src" x="0" y="30" width="30" height="30"/>
+        <rect class="src" x="30" y="30" width="30" height="30"/>
+        <rect class="src" x="60" y="30" width="30" height="30"/>
+        <rect class="src" x="90" y="30" width="30" height="30"/>
+        <rect class="src" x="0" y="60" width="30" height="30"/>
+        <rect class="src" x="30" y="60" width="30" height="30"/>
+        <rect class="src" x="60" y="60" width="30" height="30"/>
+        <rect class="src" x="90" y="60" width="30" height="30"/>
+      </g>
+    </g>
+
+    <g transform="translate(220,30)">
+      <text class="lab" x="60" y="-5" text-anchor="middle">결과 (픽셀 사이에 떨어짐)</text>
+      <g>
+        <rect class="dst" x="0" y="0" width="30" height="30"/>
+        <rect class="hole" x="30" y="0" width="30" height="30"/>
+        <rect class="dst" x="60" y="0" width="30" height="30"/>
+        <rect class="hole" x="90" y="0" width="30" height="30"/>
+        <rect class="hole" x="0" y="30" width="30" height="30"/>
+        <rect class="dst" x="30" y="30" width="30" height="30"/>
+        <rect class="hole" x="60" y="30" width="30" height="30"/>
+        <rect class="dst" x="90" y="30" width="30" height="30"/>
+        <rect class="dst" x="0" y="60" width="30" height="30"/>
+        <rect class="hole" x="30" y="60" width="30" height="30"/>
+        <rect class="dst" x="60" y="60" width="30" height="30"/>
+        <rect class="hole" x="90" y="60" width="30" height="30"/>
+      </g>
+      <text class="lab" x="60" y="105" fill="#c0392b">빨간 칸 = 어떤 원본도 도착하지 않은 "구멍"</text>
+    </g>
+
+    <!-- Arrows src->dst -->
+    <g class="arr">
+      <line x1="125" y1="42" x2="215" y2="42"/>
+      <line x1="125" y1="52" x2="215" y2="72"/>
+    </g>
+
+    <g transform="translate(0,150)">
+      <text class="lab" x="0" y="0">과정: 원본 (x,y)에 변환 T를 적용하여 결과 (x',y')에 값을 던짐.</text>
+      <text class="lab" x="0" y="20">문제: (x',y')가 정수 격자에 정확히 떨어지지 않음 → 결과 영상 여기저기 빈칸.</text>
+      <text class="lab" x="0" y="40" fill="#c0392b" font-weight="bold">홀(hole) 현상 → 결과 영상이 얼룩덜룩.</text>
+    </g>
+  </g>
+
+  <!-- Backward -->
+  <g transform="translate(450,55)">
+    <text class="tb" x="170" y="15" text-anchor="middle">Backward Mapping: 결과 → 원본 (구멍 없음)</text>
+
+    <g transform="translate(0,30)">
+      <text class="lab" x="60" y="-5" text-anchor="middle">결과 (채우고 싶은 격자)</text>
+      <g>
+        <rect class="filled" x="0" y="0" width="30" height="30"/>
+        <rect class="filled" x="30" y="0" width="30" height="30"/>
+        <rect class="filled" x="60" y="0" width="30" height="30"/>
+        <rect class="filled" x="90" y="0" width="30" height="30"/>
+        <rect class="filled" x="0" y="30" width="30" height="30"/>
+        <rect class="filled" x="30" y="30" width="30" height="30"/>
+        <rect class="filled" x="60" y="30" width="30" height="30"/>
+        <rect class="filled" x="90" y="30" width="30" height="30"/>
+        <rect class="filled" x="0" y="60" width="30" height="30"/>
+        <rect class="filled" x="30" y="60" width="30" height="30"/>
+        <rect class="filled" x="60" y="60" width="30" height="30"/>
+        <rect class="filled" x="90" y="60" width="30" height="30"/>
+      </g>
+    </g>
+
+    <g transform="translate(220,30)">
+      <text class="lab" x="60" y="-5" text-anchor="middle">원본 (보간으로 값 가져옴)</text>
+      <g>
+        <rect class="src" x="0" y="0" width="30" height="30"/>
+        <rect class="src" x="30" y="0" width="30" height="30"/>
+        <rect class="src" x="60" y="0" width="30" height="30"/>
+        <rect class="src" x="90" y="0" width="30" height="30"/>
+        <rect class="src" x="0" y="30" width="30" height="30"/>
+        <rect class="src" x="30" y="30" width="30" height="30"/>
+        <rect class="src" x="60" y="30" width="30" height="30"/>
+        <rect class="src" x="90" y="30" width="30" height="30"/>
+        <rect class="src" x="0" y="60" width="30" height="30"/>
+        <rect class="src" x="30" y="60" width="30" height="30"/>
+        <rect class="src" x="60" y="60" width="30" height="30"/>
+        <rect class="src" x="90" y="60" width="30" height="30"/>
+      </g>
+      <!-- interpolation point -->
+      <circle cx="45" cy="42" r="3" fill="#c0392b"/>
+    </g>
+
+    <g class="arrb">
+      <line x1="125" y1="42" x2="215" y2="42"/>
+    </g>
+    <text class="lab" x="170" y="30" fill="#c0392b" text-anchor="middle">T⁻¹ 역변환</text>
+
+    <g transform="translate(0,150)">
+      <text class="lab" x="0" y="0">과정: 결과 (x',y')마다 역변환 T⁻¹로 원본 위치를 찾음.</text>
+      <text class="lab" x="0" y="20">실수 위치가 나오면 → nearest/bilinear/bicubic 보간.</text>
+      <text class="lab" x="0" y="40" fill="#27ae60" font-weight="bold">결과의 모든 픽셀이 채워진다 → hole 없음.</text>
+    </g>
+  </g>
+
+  <!-- Summary box -->
+  <g transform="translate(30,350)">
+    <rect x="0" y="0" width="800" height="90" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">시험 암기 포인트</text>
+    <text class="lab" x="15" y="44">• ==실전에서는 거의 backward mapping을 쓴다== (cv2.warpAffine, cv2.remap 등 내부도 같은 방식)</text>
+    <text class="lab" x="15" y="64">• forward는 구멍 → 후처리로 메워야 해서 비용이 더 크다.</text>
+    <text class="lab" x="15" y="82" fill="#c0392b" font-weight="bold">한 문장: "결과 픽셀을 기준으로 원본을 뒤로 되찾아가면 모든 픽셀이 채워진다."</text>
+  </g>
+</svg>

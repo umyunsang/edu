@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" font-family="system-ui,sans-serif">
+  <style>
+    .intro{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .body{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
+    .concl{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .pyr{fill:#fff7d6;stroke:#d4a017;stroke-width:2}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px}
+    .num{font-size:14px;font-weight:bold;text-anchor:middle}
+    .small{font-size:12px}
+  </style>
+
+  <text class="title" x="550" y="40">5문단 기본 에세이 형식: 글의 양 ↔ 글의 구조</text>
+
+  <!-- Pyramid -->
+  <g transform="translate(60,80)">
+    <text class="sub" x="160" y="25">글의 양 (피라미드)</text>
+    <polygon class="pyr" points="160,50 20,400 300,400"/>
+
+    <line x1="45" y1="125" x2="275" y2="125" stroke="#d4a017" stroke-dasharray="4 4"/>
+    <line x1="75" y1="225" x2="245" y2="225" stroke="#d4a017" stroke-dasharray="4 4"/>
+    <line x1="40" y1="325" x2="280" y2="325" stroke="#d4a017" stroke-dasharray="4 4"/>
+
+    <text class="num" x="160" y="95">1' (서론)</text>
+    <text class="num" x="160" y="175">2' (본론 1)</text>
+    <text class="num" x="160" y="275">2' (본론 2, 3)</text>
+    <text class="num" x="160" y="375">4' (결론)</text>
+  </g>
+
+  <!-- Structure right -->
+  <g transform="translate(430,80)">
+    <text class="sub" x="300" y="25">글의 구조 (5문단)</text>
+
+    <rect class="intro" x="0" y="40" width="600" height="70"/>
+    <text class="lab" x="15" y="65" font-weight="bold">서론 (1') — 미괄식</text>
+    <text class="small" x="15" y="88">도입 → 배경 → ... → [1] 주제문 (문단 끝)</text>
+
+    <rect class="body" x="0" y="125" width="600" height="90"/>
+    <text class="lab" x="15" y="150" font-weight="bold">본론 1 (2') — 두괄식</text>
+    <text class="small" x="15" y="175">[1] 소주제 · [2] 근거 · [3] 증명 · ...</text>
+    <text class="small" x="15" y="198">"첫째, 사교성이 뛰어나다" (맨 앞)</text>
+
+    <rect class="body" x="0" y="230" width="600" height="90"/>
+    <text class="lab" x="15" y="255" font-weight="bold">본론 2 (2') — 두괄식</text>
+    <text class="small" x="15" y="280">[1] 소주제 · [2] 근거 · [3] 증명</text>
+    <text class="small" x="15" y="303">"둘째, 문명화된 가족 구성원이다"</text>
+
+    <rect class="body" x="0" y="335" width="600" height="90"/>
+    <text class="lab" x="15" y="360" font-weight="bold">본론 3 (2') — 두괄식</text>
+    <text class="small" x="15" y="385">[1] 소주제 · [2] 근거 · [3] 증명</text>
+    <text class="small" x="15" y="408">"셋째, 키우기 쉽다"</text>
+
+    <rect class="concl" x="0" y="440" width="600" height="70"/>
+    <text class="lab" x="15" y="465" font-weight="bold">결론 (4') — 미괄식</text>
+    <text class="small" x="15" y="488">종합 → ... → [4] 주제 재확인 (문단 끝)</text>
+  </g>
+
+  <!-- Bottom callout -->
+  <g>
+    <rect x="60" y="650" width="980" height="150" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="sub" x="550" y="685">핵심 규칙 (시험 단골)</text>
+    <text class="lab" x="180" y="720">• 서론 · 결론은 <tspan font-weight="bold" fill="#c0392b">미괄식</tspan> — 주제문이 문단 끝에 (독자가 자연스럽게 따라옴)</text>
+    <text class="lab" x="180" y="750">• 본론은 <tspan font-weight="bold" fill="#c0392b">두괄식</tspan> — 소주제문이 문단 앞에 (한눈에 요지 파악)</text>
+    <text class="lab" x="550" y="782" fill="#c0392b" font-weight="bold" text-anchor="middle">출처 기록: 이름 · 제목 · 출판사 · 연도 · 페이지</text>
+  </g>
+</svg>
