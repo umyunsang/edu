@@ -1,0 +1,29 @@
+[
+  {
+    "source_id": "26-1창의적글쓰기_강의자료_중핵교양",
+    "title": "26-1창의적글쓰기 강의자료_중핵교양",
+    "relative_path": "pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf",
+    "pages": 149,
+    "combined_text": "knowledge/source_text/26-1창의적글쓰기_강의자료_중핵교양.txt",
+    "page_dir": "knowledge/source_text/pages/26-1창의적글쓰기_강의자료_중핵교양",
+    "priority": "primary"
+  },
+  {
+    "source_id": "퀴즈",
+    "title": "퀴즈",
+    "relative_path": "pdf/퀴즈.pdf",
+    "pages": 1,
+    "combined_text": "knowledge/source_text/퀴즈.txt",
+    "page_dir": "knowledge/source_text/pages/퀴즈",
+    "priority": "assignment-example"
+  },
+  {
+    "source_id": "중간고사_창의적글쓰기_정리",
+    "title": "중간고사_창의적글쓰기_정리",
+    "relative_path": "중간고사_창의적글쓰기_정리.pdf",
+    "pages": 15,
+    "combined_text": "knowledge/source_text/중간고사_창의적글쓰기_정리.txt",
+    "page_dir": "knowledge/source_text/pages/중간고사_창의적글쓰기_정리",
+    "priority": "derived-summary"
+  }
+]

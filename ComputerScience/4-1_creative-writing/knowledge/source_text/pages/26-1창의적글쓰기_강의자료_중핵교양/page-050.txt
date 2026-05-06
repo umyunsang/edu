@@ -1,0 +1,37 @@
+SOURCE_ID: 26-1창의적글쓰기_강의자료_중핵교양
+TITLE: 26-1창의적글쓰기 강의자료_중핵교양
+PDF_PATH: pdf/26-1창의적글쓰기 강의자료_중핵교양.pdf
+PAGE: 50
+---
+Creative Writing
+
+
+
+                Organization – 본문의 구조 (논리적 전개)
+❖ 수평논리
+    • 같은 줄에 여러 개의 덩이를 이루는 경우가 많으므로 동등한 구성으로 균형을 이루어야 설득력이 있는 것
+    • 대비법 (비교와 대조) - 같은 줄에 덩이가 두 개만 있는 것
+    • 열거법 - 덩이가 여러 개 있는 것
+    • MECE (Mutually Exclusive and Collectively Exhaustive)
+     – 중복 없이 누락 없이
+     - 전체를 여러 개의 묶음으로 나누어 파악하는 사고법
+     - 어떤 사항이나 개념을 중복 없이 , 누락 없이 부분 집합들로 전체를 파악하는 것
+
+
+
+
+                                 Mutually - 상호 간에
+               중복 없이
+                (ME)
+                               Exclusive - 중복되지 않고               사람전체
+                                                                 (MECE)
+MECE
+                                Collectively - 전체로써
+               누락 없이
+                                                                 중복이 있음
+                (CE)                                             (MECE 안 됨)
+                               Exhaustive - 누락이 없음
+
+
+                                                                 누락이 있음
+                                                                 (MECE 안 됨)

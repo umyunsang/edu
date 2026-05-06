@@ -1,0 +1,30 @@
+SOURCE_ID: 중간고사_창의적글쓰기_정리
+TITLE: 중간고사_창의적글쓰기_정리
+PDF_PATH: 중간고사_창의적글쓰기_정리.pdf
+PAGE: 9
+---
+             (   ·   )—
+             —
+
+MECE — Mutually Exclusive, Collectively Exhaustive
+
+
+
+Mutually
+Exclusive                  (ME =               )
+Collectively
+Exhaustive                (CE =            )
+
+
+
+
+13. 5                              (p.52 ·         )
+
+
+
+
+        1' (1)              →
+    1   2'                         +   ·
+    2   2'                         +   ·
+    3   2'                         +   ·
+        4' (4)              →
