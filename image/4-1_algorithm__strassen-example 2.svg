@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1100" font-family="system-ui,sans-serif">
+  <style>
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;fill:#222}
+    .note{font-size:12px;fill:#555}
+    .mat{fill:#fff;stroke:#2c3e50;stroke-width:2}
+    .matA{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
+    .matB{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .matC{fill:#fff2cc;stroke:#f39c12;stroke-width:2}
+    .cell{fill:none;stroke:#999;stroke-width:1}
+    .val{font-size:16px;text-anchor:middle;dominant-baseline:central;font-weight:bold}
+    .lab{font-size:14px;text-anchor:middle;font-weight:bold}
+    .calc{font-size:12px;font-family:monospace;fill:#222}
+    .hi{fill:#c0392b;font-weight:bold}
+    .hib{fill:#2e86de;font-weight:bold}
+    .hig{fill:#27ae60;font-weight:bold}
+    .box{fill:#f8f9fa;stroke:#bbb;stroke-width:1}
+    .okbox{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+    .redbox{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .yellowbox{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .mbox{fill:#fff;stroke:#c0392b;stroke-width:1.8}
+    .arrow{stroke:#666;stroke-width:2;fill:none;marker-end:url(#ar)}
+    .small{font-size:11px;fill:#666}
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <text class="title" x="540" y="26">스트라센 행렬 곱셈 — 2×2 예시 (곱셈 8회 → 7회)</text>
+  <text class="note" x="540" y="46" text-anchor="middle">A × B = C 를 두 가지 방법으로 계산하여 곱셈 연산 횟수를 직접 비교</text>
+
+  <!-- ========== Input matrices ========== -->
+  <g transform="translate(40, 70)">
+    <text class="sub" x="0" y="0">① 입력 행렬</text>
+
+    <!-- Matrix A -->
+    <g transform="translate(20, 20)">
+      <rect class="matA" x="0" y="0" width="120" height="120"/>
+      <line class="cell" x1="60" y1="0" x2="60" y2="120"/>
+      <line class="cell" x1="0" y1="60" x2="120" y2="60"/>
+      <text class="val" x="30" y="30">1</text>
+      <text class="val" x="90" y="30">2</text>
+      <text class="val" x="30" y="90">3</text>
+      <text class="val" x="90" y="90">4</text>
+      <text class="lab" x="60" y="-8" fill="#2e86de">A</text>
+      <text class="small" x="30" y="45">a</text>
+      <text class="small" x="90" y="45">b</text>
+      <text class="small" x="30" y="105">c</text>
+      <text class="small" x="90" y="105">d</text>
+    </g>
+
+    <text class="val" x="180" y="90">×</text>
+
+    <!-- Matrix B -->
+    <g transform="translate(210, 20)">
+      <rect class="matB" x="0" y="0" width="120" height="120"/>
+      <line class="cell" x1="60" y1="0" x2="60" y2="120"/>
+      <line class="cell" x1="0" y1="60" x2="120" y2="60"/>
+      <text class="val" x="30" y="30">5</text>
+      <text class="val" x="90" y="30">6</text>
+      <text class="val" x="30" y="90">7</text>
+      <text class="val" x="90" y="90">8</text>
+      <text class="lab" x="60" y="-8" fill="#27ae60">B</text>
+      <text class="small" x="30" y="45">e</text>
+      <text class="small" x="90" y="45">f</text>
+      <text class="small" x="30" y="105">g</text>
+      <text class="small" x="90" y="105">h</text>
+    </g>
+
+    <text class="val" x="370" y="90">=</text>
+
+    <!-- Matrix C -->
+    <g transform="translate(400, 20)">
+      <rect class="matC" x="0" y="0" width="140" height="120"/>
+      <line class="cell" x1="70" y1="0" x2="70" y2="120"/>
+      <line class="cell" x1="0" y1="60" x2="140" y2="60"/>
+      <text class="val" x="35" y="30">19</text>
+      <text class="val" x="105" y="30">22</text>
+      <text class="val" x="35" y="90">43</text>
+      <text class="val" x="105" y="90">50</text>
+      <text class="lab" x="70" y="-8" fill="#d4a017">C = A × B</text>
+    </g>
+  </g>
+
+  <!-- ========== Method 1: Standard ========== -->
+  <g transform="translate(40, 230)">
+    <rect class="box" x="0" y="0" width="500" height="300"/>
+    <text class="sub" x="15" y="22">② 표준 방식 — <tspan class="hi">곱셈 8회</tspan> + 덧셈 4회</text>
+    <text class="note" x="15" y="40">공식: $C_{ij} = A_{i1}\cdot B_{1j} + A_{i2}\cdot B_{2j}$</text>
+
+    <text class="calc" x="15" y="70"><tspan class="hib">C₁₁ = a·e + b·g</tspan></text>
+    <text class="calc" x="15" y="88">     = <tspan class="hi">1·5</tspan> + <tspan class="hi">2·7</tspan> = 5 + 14 = <tspan class="hi">19</tspan>   (곱셈 2회)</text>
+
+    <text class="calc" x="15" y="112"><tspan class="hib">C₁₂ = a·f + b·h</tspan></text>
+    <text class="calc" x="15" y="130">     = <tspan class="hi">1·6</tspan> + <tspan class="hi">2·8</tspan> = 6 + 16 = <tspan class="hi">22</tspan>   (곱셈 2회)</text>
+
+    <text class="calc" x="15" y="154"><tspan class="hib">C₂₁ = c·e + d·g</tspan></text>
+    <text class="calc" x="15" y="172">     = <tspan class="hi">3·5</tspan> + <tspan class="hi">4·7</tspan> = 15 + 28 = <tspan class="hi">43</tspan>   (곱셈 2회)</text>
+
+    <text class="calc" x="15" y="196"><tspan class="hib">C₂₂ = c·f + d·h</tspan></text>
+    <text class="calc" x="15" y="214">     = <tspan class="hi">3·6</tspan> + <tspan class="hi">4·8</tspan> = 18 + 32 = <tspan class="hi">50</tspan>   (곱셈 2회)</text>
+
+    <line x1="15" y1="232" x2="485" y2="232" stroke="#666"/>
+    <text class="calc" x="15" y="254" fill="#c0392b" font-weight="bold">총 곱셈 연산: 2+2+2+2 = 8회</text>
+    <text class="calc" x="15" y="272" fill="#c0392b" font-weight="bold">블록 크기 n이면 T(n)=8·T(n/2)+O(n²) → O(n³)</text>
+  </g>
+
+  <!-- ========== Method 2: Strassen M1~M7 ========== -->
+  <g transform="translate(560, 230)">
+    <rect class="redbox" x="0" y="0" width="480" height="500"/>
+    <text class="sub" x="15" y="22" fill="#c0392b">③ 스트라센 방식 — <tspan class="hi">곱셈 7회</tspan> + 덧셈/뺄셈 18회</text>
+    <text class="note" x="15" y="40">덧·뺄셈은 늘지만, 곱셈이 8→7로 줄어드는 것이 핵심 (큰 n에서 압도적 이득)</text>
+
+    <!-- M1 -->
+    <g transform="translate(15, 55)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₁</tspan> = (a+d)(e+h) = (1+4)(5+8) = 5·13 = <tspan class="hi">65</tspan></text>
+    </g>
+    <!-- M2 -->
+    <g transform="translate(15, 88)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₂</tspan> = (c+d)·e = (3+4)·5 = 7·5 = <tspan class="hi">35</tspan></text>
+    </g>
+    <!-- M3 -->
+    <g transform="translate(15, 121)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₃</tspan> = a·(f−h) = 1·(6−8) = 1·(−2) = <tspan class="hi">−2</tspan></text>
+    </g>
+    <!-- M4 -->
+    <g transform="translate(15, 154)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₄</tspan> = d·(g−e) = 4·(7−5) = 4·2 = <tspan class="hi">8</tspan></text>
+    </g>
+    <!-- M5 -->
+    <g transform="translate(15, 187)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₅</tspan> = (a+b)·h = (1+2)·8 = 3·8 = <tspan class="hi">24</tspan></text>
+    </g>
+    <!-- M6 -->
+    <g transform="translate(15, 220)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₆</tspan> = (c−a)(e+f) = (3−1)(5+6) = 2·11 = <tspan class="hi">22</tspan></text>
+    </g>
+    <!-- M7 -->
+    <g transform="translate(15, 253)">
+      <rect class="mbox" x="0" y="0" width="450" height="28"/>
+      <text class="calc" x="8" y="18"><tspan class="hi">M₇</tspan> = (b−d)(g+h) = (2−4)(7+8) = (−2)·15 = <tspan class="hi">−30</tspan></text>
+    </g>
+
+    <line x1="15" y1="300" x2="465" y2="300" stroke="#c0392b"/>
+
+    <text class="sub" x="15" y="320" fill="#c0392b">결과 블록 조합 (덧셈/뺄셈만, 곱셈 없음)</text>
+
+    <text class="calc" x="15" y="345">C₁₁ = M₁+M₄−M₅+M₇ = 65+8−24+(−30) = <tspan class="hi">19</tspan> ✓</text>
+    <text class="calc" x="15" y="365">C₁₂ = M₃+M₅          = (−2)+24         = <tspan class="hi">22</tspan> ✓</text>
+    <text class="calc" x="15" y="385">C₂₁ = M₂+M₄          = 35+8            = <tspan class="hi">43</tspan> ✓</text>
+    <text class="calc" x="15" y="405">C₂₂ = M₁+M₃−M₂+M₆  = 65+(−2)−35+22  = <tspan class="hi">50</tspan> ✓</text>
+
+    <line x1="15" y1="425" x2="465" y2="425" stroke="#c0392b"/>
+    <text class="calc" x="15" y="450" fill="#c0392b" font-weight="bold">총 곱셈 연산: 7회 (M₁~M₇ 각 1회)</text>
+    <text class="calc" x="15" y="470" fill="#c0392b" font-weight="bold">T(n) = 7·T(n/2) + O(n²)</text>
+    <text class="calc" x="15" y="490" fill="#c0392b" font-weight="bold">→ Θ(n^log₂7) ≈ Θ(n^2.807)</text>
+  </g>
+
+  <!-- ========== Arrow bridging ========== -->
+  <g transform="translate(40, 545)">
+    <rect class="yellowbox" x="0" y="0" width="500" height="180"/>
+    <text class="sub" x="15" y="22">④ 기억 요령 — M₁~M₇ 외우는 대칭 규칙</text>
+    <text class="note" x="15" y="44">• <tspan class="hi">M₁</tspan>: 대각합 × 대각합 — (a+d)(e+h) <tspan fill="#888">(양쪽 모두 "합")</tspan></text>
+    <text class="note" x="15" y="62">• <tspan class="hi">M₂</tspan>: 아래행합 × 좌상 — (c+d)·e</text>
+    <text class="note" x="15" y="80">• <tspan class="hi">M₃</tspan>: 좌상 × 우열차 — a(f−h) — <tspan fill="#888">우상-우하</tspan></text>
+    <text class="note" x="15" y="98">• <tspan class="hi">M₄</tspan>: 우하 × 좌열차 — d(g−e) — <tspan fill="#888">좌하-좌상</tspan></text>
+    <text class="note" x="15" y="116">• <tspan class="hi">M₅</tspan>: 위행합 × 우하 — (a+b)·h</text>
+    <text class="note" x="15" y="134">• <tspan class="hi">M₆</tspan>: 아래-위대각 × 위행합 — (c−a)(e+f)</text>
+    <text class="note" x="15" y="152">• <tspan class="hi">M₇</tspan>: 위-아래대각 × 아래행합 — (b−d)(g+h)</text>
+  </g>
+
+  <!-- ========== Comparison summary ========== -->
+  <g transform="translate(40, 745)">
+    <rect class="okbox" x="0" y="0" width="1000" height="130"/>
+    <text class="sub" x="15" y="22" fill="#2e7d32">⑤ 곱셈 8회 vs 7회 — 큰 n 에서 얼마나 차이나는가?</text>
+    <text class="calc" x="15" y="48">• n=2일 때: 표준 8회 vs 스트라센 7회 — 차이는 거의 없음 (덧셈 오버헤드 때문에 오히려 느릴 수도)</text>
+    <text class="calc" x="15" y="68">• 재귀: 각 레벨에서 <tspan class="hib">8→7</tspan>로 줄면 n=1024 기준 표준 $\approx 10^9$, 스트라센 $\approx 7^{10}\approx 2.8\times 10^8$ — <tspan class="hi">약 3배 이상 빠름</tspan></text>
+    <text class="calc" x="15" y="88">• 지수: log₂8 = 3 vs log₂7 ≈ 2.807 — 겨우 0.19 차이지만 <tspan class="hi">n이 클수록 차이가 지수적으로 벌어짐</tspan></text>
+    <text class="calc" x="15" y="110" fill="#c0392b" font-weight="bold">→ 핵심 교훈: "곱셈 1회 줄이기"는 단순히 1/8 절약이 아니다. 재귀 트리 전체에 걸쳐 <tspan fill="#2e7d32">복잡도 지수 자체</tspan>를 낮추는 효과.</text>
+  </g>
+
+  <!-- ========== Recursion tree ========== -->
+  <g transform="translate(40, 895)">
+    <text class="sub" x="0" y="0">⑥ 재귀 트리 — T(n) = 7 · T(n/2) + O(n²)</text>
+
+    <!-- level 0 -->
+    <circle class="matA" cx="500" cy="30" r="20"/>
+    <text class="val" x="500" y="30" font-size="14">n</text>
+    <text class="small" x="500" y="8" text-anchor="middle">레벨 0: 1개</text>
+
+    <!-- level 1: 7 children -->
+    <g>
+      <line class="arrow" x1="500" y1="50" x2="140" y2="90"/>
+      <line class="arrow" x1="500" y1="50" x2="260" y2="90"/>
+      <line class="arrow" x1="500" y1="50" x2="380" y2="90"/>
+      <line class="arrow" x1="500" y1="50" x2="500" y2="90"/>
+      <line class="arrow" x1="500" y1="50" x2="620" y2="90"/>
+      <line class="arrow" x1="500" y1="50" x2="740" y2="90"/>
+      <line class="arrow" x1="500" y1="50" x2="860" y2="90"/>
+    </g>
+    <circle class="matB" cx="140" cy="110" r="16"/><text class="val" x="140" y="110" font-size="12">n/2</text>
+    <circle class="matB" cx="260" cy="110" r="16"/><text class="val" x="260" y="110" font-size="12">n/2</text>
+    <circle class="matB" cx="380" cy="110" r="16"/><text class="val" x="380" y="110" font-size="12">n/2</text>
+    <circle class="matB" cx="500" cy="110" r="16"/><text class="val" x="500" y="110" font-size="12">n/2</text>
+    <circle class="matB" cx="620" cy="110" r="16"/><text class="val" x="620" y="110" font-size="12">n/2</text>
+    <circle class="matB" cx="740" cy="110" r="16"/><text class="val" x="740" y="110" font-size="12">n/2</text>
+    <circle class="matB" cx="860" cy="110" r="16"/><text class="val" x="860" y="110" font-size="12">n/2</text>
+    <text class="small" x="500" y="145" text-anchor="middle">레벨 1: <tspan class="hi">7개</tspan> (표준은 8개)</text>
+
+    <text class="small" x="500" y="175" text-anchor="middle" fill="#c0392b" font-weight="bold">레벨 k: 7^k 개 → 전체 호출 수 = 1+7+49+...+7^(log₂ n) = O(7^log₂ n) = O(n^log₂ 7) ≈ O(n^2.807)</text>
+  </g>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 760" font-family="system-ui,sans-serif">
+  <style>
+    .tb{font-size:15px;font-weight:bold}
+    .th{font-size:13px;font-weight:bold;text-anchor:middle;font-family:monospace}
+    .t{font-size:13px;text-anchor:middle;font-family:monospace;font-weight:bold}
+    .lab{font-size:12px}
+    .mono{font-family:monospace;font-size:12px}
+    .cell{fill:#fff;stroke:#2c3e50;stroke-width:1.2}
+    .focus{fill:#fff2cc;stroke:#f39c12;stroke-width:2.2}
+    .done{fill:#d0f5d0;stroke:#27ae60;stroke-width:2}
+    .step{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.3}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .bucket{fill:#f5f5f5;stroke:#888;stroke-width:1.2}
+    .ar{stroke:#2e86de;stroke-width:1.5;fill:none;marker-end:url(#bl)}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .unitsDig{fill:#c0392b;font-weight:bold}
+    .tensDig{fill:#2e86de;font-weight:bold}
+  </style>
+  <defs>
+    <marker id="bl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2e86de"/></marker>
+  </defs>
+
+  <text class="tb" x="470" y="22" text-anchor="middle">Ch.6 예제 — 기수정렬(Radix Sort / LSD) : [28, 93, 39, 81, 62, 72, 47, 15]</text>
+  <text class="lab" x="470" y="42" text-anchor="middle">자리수별로 <tspan font-family="monospace" font-weight="bold">안정 정렬</tspan> 반복. LSD = 낮은 자리부터 → 높은 자리까지. 총 d번 pass (d = 최대 자리수)</text>
+
+  <!-- Step 1: 원본 배열 -->
+  <g transform="translate(30,60)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">1</text>
+    <text class="tb" x="15" y="18">원본 배열 (2자리 수이므로 d = 2 — 2회 pass 필요)</text>
+
+    <g transform="translate(30,35)">
+      <rect class="cell" x="0" y="0" width="60" height="34"/><text class="t" x="30" y="22"><tspan class="tensDig">2</tspan><tspan class="unitsDig">8</tspan></text>
+      <rect class="cell" x="60" y="0" width="60" height="34"/><text class="t" x="90" y="22"><tspan class="tensDig">9</tspan><tspan class="unitsDig">3</tspan></text>
+      <rect class="cell" x="120" y="0" width="60" height="34"/><text class="t" x="150" y="22"><tspan class="tensDig">3</tspan><tspan class="unitsDig">9</tspan></text>
+      <rect class="cell" x="180" y="0" width="60" height="34"/><text class="t" x="210" y="22"><tspan class="tensDig">8</tspan><tspan class="unitsDig">1</tspan></text>
+      <rect class="cell" x="240" y="0" width="60" height="34"/><text class="t" x="270" y="22"><tspan class="tensDig">6</tspan><tspan class="unitsDig">2</tspan></text>
+      <rect class="cell" x="300" y="0" width="60" height="34"/><text class="t" x="330" y="22"><tspan class="tensDig">7</tspan><tspan class="unitsDig">2</tspan></text>
+      <rect class="cell" x="360" y="0" width="60" height="34"/><text class="t" x="390" y="22"><tspan class="tensDig">4</tspan><tspan class="unitsDig">7</tspan></text>
+      <rect class="cell" x="420" y="0" width="60" height="34"/><text class="t" x="450" y="22"><tspan class="tensDig">1</tspan><tspan class="unitsDig">5</tspan></text>
+      <text class="lab" x="510" y="22" fill="#c0392b"><tspan class="tensDig">청=10자리</tspan>  <tspan class="unitsDig">빨=1자리</tspan></text>
+    </g>
+  </g>
+
+  <!-- Step 2: Pass 1 (units) -->
+  <g transform="translate(30,140)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">2</text>
+    <text class="tb" x="15" y="18">Pass 1 — 1의 자리 기준 버킷 분배 &amp; 수집</text>
+
+    <!-- Buckets -->
+    <g transform="translate(30,35)">
+      <text class="lab" x="0" y="18" font-weight="bold">버킷</text>
+      <rect class="bucket" x="40" y="0" width="80" height="30"/><text class="th" x="80" y="20">0</text>
+      <rect class="bucket" x="120" y="0" width="80" height="30"/><text class="th" x="160" y="20">1 → 81</text>
+      <rect class="bucket" x="200" y="0" width="80" height="30"/><text class="th" x="240" y="20">2 → 62,72</text>
+      <rect class="bucket" x="280" y="0" width="80" height="30"/><text class="th" x="320" y="20">3 → 93</text>
+      <rect class="bucket" x="360" y="0" width="80" height="30"/><text class="th" x="400" y="20">4</text>
+      <rect class="bucket" x="440" y="0" width="80" height="30"/><text class="th" x="480" y="20">5 → 15</text>
+      <rect class="bucket" x="520" y="0" width="80" height="30"/><text class="th" x="560" y="20">6</text>
+      <rect class="bucket" x="600" y="0" width="80" height="30"/><text class="th" x="640" y="20">7 → 47</text>
+      <rect class="bucket" x="680" y="0" width="80" height="30"/><text class="th" x="720" y="20">8 → 28</text>
+      <rect class="bucket" x="760" y="0" width="80" height="30"/><text class="th" x="800" y="20">9 → 39</text>
+    </g>
+
+    <text class="lab" x="30" y="90">수집 (버킷 0→9 순서, FIFO 유지 — 안정성 보장):</text>
+
+    <g transform="translate(30,100)">
+      <rect class="step" x="0" y="0" width="60" height="34"/><text class="t" x="30" y="22"><tspan class="tensDig">8</tspan><tspan class="unitsDig">1</tspan></text>
+      <rect class="step" x="60" y="0" width="60" height="34"/><text class="t" x="90" y="22"><tspan class="tensDig">6</tspan><tspan class="unitsDig">2</tspan></text>
+      <rect class="step" x="120" y="0" width="60" height="34"/><text class="t" x="150" y="22"><tspan class="tensDig">7</tspan><tspan class="unitsDig">2</tspan></text>
+      <rect class="step" x="180" y="0" width="60" height="34"/><text class="t" x="210" y="22"><tspan class="tensDig">9</tspan><tspan class="unitsDig">3</tspan></text>
+      <rect class="step" x="240" y="0" width="60" height="34"/><text class="t" x="270" y="22"><tspan class="tensDig">1</tspan><tspan class="unitsDig">5</tspan></text>
+      <rect class="step" x="300" y="0" width="60" height="34"/><text class="t" x="330" y="22"><tspan class="tensDig">4</tspan><tspan class="unitsDig">7</tspan></text>
+      <rect class="step" x="360" y="0" width="60" height="34"/><text class="t" x="390" y="22"><tspan class="tensDig">2</tspan><tspan class="unitsDig">8</tspan></text>
+      <rect class="step" x="420" y="0" width="60" height="34"/><text class="t" x="450" y="22"><tspan class="tensDig">3</tspan><tspan class="unitsDig">9</tspan></text>
+      <text class="lab" x="510" y="22" fill="#c0392b" font-weight="bold">1의 자리 기준 정렬됨</text>
+    </g>
+  </g>
+
+  <!-- Step 3: Pass 2 (tens) -->
+  <g transform="translate(30,300)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">3</text>
+    <text class="tb" x="15" y="18">Pass 2 — 10의 자리 기준 버킷 분배 &amp; 수집</text>
+
+    <g transform="translate(30,35)">
+      <text class="lab" x="0" y="18" font-weight="bold">버킷</text>
+      <rect class="bucket" x="40" y="0" width="80" height="30"/><text class="th" x="80" y="20">0</text>
+      <rect class="bucket" x="120" y="0" width="80" height="30"/><text class="th" x="160" y="20">1 → 15</text>
+      <rect class="bucket" x="200" y="0" width="80" height="30"/><text class="th" x="240" y="20">2 → 28</text>
+      <rect class="bucket" x="280" y="0" width="80" height="30"/><text class="th" x="320" y="20">3 → 39</text>
+      <rect class="bucket" x="360" y="0" width="80" height="30"/><text class="th" x="400" y="20">4 → 47</text>
+      <rect class="bucket" x="440" y="0" width="80" height="30"/><text class="th" x="480" y="20">5</text>
+      <rect class="bucket" x="520" y="0" width="80" height="30"/><text class="th" x="560" y="20">6 → 62</text>
+      <rect class="bucket" x="600" y="0" width="80" height="30"/><text class="th" x="640" y="20">7 → 72</text>
+      <rect class="bucket" x="680" y="0" width="80" height="30"/><text class="th" x="720" y="20">8 → 81</text>
+      <rect class="bucket" x="760" y="0" width="80" height="30"/><text class="th" x="800" y="20">9 → 93</text>
+    </g>
+
+    <text class="lab" x="30" y="90" fill="#c0392b" font-weight="bold">핵심: 같은 버킷 내에서는 입력 순서 유지 — Pass 1에서 정리한 1의 자리 순서가 보존됨</text>
+
+    <g transform="translate(30,105)">
+      <rect class="done" x="0" y="0" width="60" height="34"/><text class="t" x="30" y="22"><tspan class="tensDig">1</tspan><tspan class="unitsDig">5</tspan></text>
+      <rect class="done" x="60" y="0" width="60" height="34"/><text class="t" x="90" y="22"><tspan class="tensDig">2</tspan><tspan class="unitsDig">8</tspan></text>
+      <rect class="done" x="120" y="0" width="60" height="34"/><text class="t" x="150" y="22"><tspan class="tensDig">3</tspan><tspan class="unitsDig">9</tspan></text>
+      <rect class="done" x="180" y="0" width="60" height="34"/><text class="t" x="210" y="22"><tspan class="tensDig">4</tspan><tspan class="unitsDig">7</tspan></text>
+      <rect class="done" x="240" y="0" width="60" height="34"/><text class="t" x="270" y="22"><tspan class="tensDig">6</tspan><tspan class="unitsDig">2</tspan></text>
+      <rect class="done" x="300" y="0" width="60" height="34"/><text class="t" x="330" y="22"><tspan class="tensDig">7</tspan><tspan class="unitsDig">2</tspan></text>
+      <rect class="done" x="360" y="0" width="60" height="34"/><text class="t" x="390" y="22"><tspan class="tensDig">8</tspan><tspan class="unitsDig">1</tspan></text>
+      <rect class="done" x="420" y="0" width="60" height="34"/><text class="t" x="450" y="22"><tspan class="tensDig">9</tspan><tspan class="unitsDig">3</tspan></text>
+      <text class="lab" x="510" y="22" fill="#27ae60" font-weight="bold">완전 정렬 완료 ✓</text>
+    </g>
+  </g>
+
+  <!-- Step 4: 안정성의 중요성 -->
+  <g transform="translate(30,470)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">4</text>
+    <text class="tb" x="15" y="18">안정 정렬이 필수인 이유 — 62와 72 비교</text>
+
+    <rect class="sum" x="0" y="30" width="870" height="110"/>
+    <text class="mono" x="15" y="52">Pass 1 후: …, <tspan fill="#c0392b" font-weight="bold">62, 72</tspan>, … (둘 다 1자리 2, 입력 순서대로)</text>
+    <text class="mono" x="15" y="72">Pass 2 버킷 6에는 62만, 버킷 7에는 72만 → 6 &lt; 7이므로 자연스럽게 62가 먼저</text>
+    <text class="lab" x="15" y="98" fill="#c0392b" font-weight="bold">만약 같은 10자리(예: 62와 63 모두 6)라면:</text>
+    <text class="mono" x="15" y="118">Pass 1에서 확립된 "1자리가 작은 것이 앞" 순서가 유지되어야 함. 불안정 정렬 쓰면 붕괴 → 오답!</text>
+  </g>
+
+  <!-- Step 5: 복잡도 -->
+  <g transform="translate(30,625)">
+    <circle class="badge" cx="-5" cy="15" r="11"/><text class="badgeT" x="-5" y="19">5</text>
+    <text class="tb" x="15" y="18">복잡도 &amp; 제약</text>
+
+    <rect class="sum" x="0" y="30" width="870" height="95"/>
+    <text class="mono" x="15" y="52" fill="#c0392b" font-weight="bold">T(n) = Θ(d · (n + k))</text>
+    <text class="mono" x="15" y="72">  · d = 자리수 (여기선 2) &#160; · k = 기수 (여기선 10) &#160; · n = 원소 개수 (여기선 8)</text>
+    <text class="mono" x="15" y="92">  · d, k가 상수면 → <tspan fill="#27ae60" font-weight="bold">선형 시간 Θ(n)</tspan>. 비교 기반 Θ(n log n) 하한을 우회!</text>
+    <text class="lab" x="15" y="115" fill="#c0392b" font-weight="bold">단점: 메모리 O(n+k), 키가 정수/고정폭 문자열일 때만 적용 가능</text>
+  </g>
+</svg>

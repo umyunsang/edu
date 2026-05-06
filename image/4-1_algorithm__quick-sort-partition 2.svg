@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="system-ui,sans-serif">
+  <style>
+    .c{fill:#fff;stroke:#2c3e50}
+    .p{fill:#ffd9d9;stroke:#c0392b;stroke-width:2.5}
+    .L{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.5}
+    .R{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.5}
+    .focus{fill:#fff2cc;stroke:#f39c12;stroke-width:2.5}
+    .t{font-size:13px;text-anchor:middle}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:12px}
+    .ar{stroke:#c0392b;stroke-width:2;fill:none;marker-end:url(#rd)}
+    .swap{stroke:#d4a017;stroke-width:2;fill:none;marker-end:url(#yl);stroke-dasharray:4 3}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:11px;fill:#fff;text-anchor:middle;font-weight:bold}
+    .sum{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .pointer{font-size:14px;font-weight:bold;text-anchor:middle}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+    <marker id="yl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#d4a017"/></marker>
+  </defs>
+
+  <text class="tb" x="450" y="22" text-anchor="middle">퀵 정렬 파티션: 피벗을 기준으로 양쪽으로 분할</text>
+  <text class="lab" x="450" y="42" text-anchor="middle">배열 [7, 2, 8, 1, 9, 4, 3, 6], 피벗 = 첫 원소 7 | i=왼쪽 포인터, j=오른쪽 포인터</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(40,60)">
+    <circle class="badge" cx="-15" cy="30" r="11"/><text class="badgeT" x="-15" y="34">1</text>
+    <text class="tb" x="0" y="15">초기: 피벗 7 선택</text>
+    <text class="lab" x="0" y="32">i는 왼→오로 "7보다 큰 수" 찾고, j는 오→왼로 "7보다 작은 수" 찾음</text>
+    <g><rect class="p" x="60" y="50" width="44" height="40"/><text class="t" x="82" y="76">7</text></g>
+    <g><rect class="c" x="104" y="50" width="44" height="40"/><text class="t" x="126" y="76">2</text></g>
+    <g><rect class="c" x="148" y="50" width="44" height="40"/><text class="t" x="170" y="76">8</text></g>
+    <g><rect class="c" x="192" y="50" width="44" height="40"/><text class="t" x="214" y="76">1</text></g>
+    <g><rect class="c" x="236" y="50" width="44" height="40"/><text class="t" x="258" y="76">9</text></g>
+    <g><rect class="c" x="280" y="50" width="44" height="40"/><text class="t" x="302" y="76">4</text></g>
+    <g><rect class="c" x="324" y="50" width="44" height="40"/><text class="t" x="346" y="76">3</text></g>
+    <g><rect class="c" x="368" y="50" width="44" height="40"/><text class="t" x="390" y="76">6</text></g>
+    <text class="pointer" x="82" y="110" fill="#c0392b">pivot</text>
+    <text class="pointer" x="126" y="110" fill="#2e86de">i</text>
+    <text class="pointer" x="390" y="110" fill="#27ae60">j</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(40,195)">
+    <circle class="badge" cx="-15" cy="30" r="11"/><text class="badgeT" x="-15" y="34">2</text>
+    <text class="tb" x="0" y="15">i가 전진: 8에서 멈춤 (&gt;7). j가 후진: 3에서 멈춤 (&lt;7) → 교환</text>
+    <g><rect class="p" x="60" y="50" width="44" height="40"/><text class="t" x="82" y="76">7</text></g>
+    <g><rect class="c" x="104" y="50" width="44" height="40"/><text class="t" x="126" y="76">2</text></g>
+    <g><rect class="focus" x="148" y="50" width="44" height="40"/><text class="t" x="170" y="76">8</text></g>
+    <g><rect class="c" x="192" y="50" width="44" height="40"/><text class="t" x="214" y="76">1</text></g>
+    <g><rect class="c" x="236" y="50" width="44" height="40"/><text class="t" x="258" y="76">9</text></g>
+    <g><rect class="c" x="280" y="50" width="44" height="40"/><text class="t" x="302" y="76">4</text></g>
+    <g><rect class="focus" x="324" y="50" width="44" height="40"/><text class="t" x="346" y="76">3</text></g>
+    <g><rect class="c" x="368" y="50" width="44" height="40"/><text class="t" x="390" y="76">6</text></g>
+    <text class="pointer" x="170" y="110" fill="#2e86de">i</text>
+    <text class="pointer" x="346" y="110" fill="#27ae60">j</text>
+    <path class="swap" d="M170 45 Q258 5 346 45"/>
+    <text class="lab" x="258" y="20" text-anchor="middle" fill="#d4a017" font-weight="bold">swap(8, 3)</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(40,335)">
+    <circle class="badge" cx="-15" cy="30" r="11"/><text class="badgeT" x="-15" y="34">3</text>
+    <text class="tb" x="0" y="15">i·j 계속 이동 → i는 9(&gt;7), j는 4(&lt;7)에서 멈춤 → 교환</text>
+    <g><rect class="p" x="60" y="35" width="44" height="40"/><text class="t" x="82" y="61">7</text></g>
+    <g><rect class="c" x="104" y="35" width="44" height="40"/><text class="t" x="126" y="61">2</text></g>
+    <g><rect class="c" x="148" y="35" width="44" height="40"/><text class="t" x="170" y="61">3</text></g>
+    <g><rect class="c" x="192" y="35" width="44" height="40"/><text class="t" x="214" y="61">1</text></g>
+    <g><rect class="focus" x="236" y="35" width="44" height="40"/><text class="t" x="258" y="61">9</text></g>
+    <g><rect class="focus" x="280" y="35" width="44" height="40"/><text class="t" x="302" y="61">4</text></g>
+    <g><rect class="c" x="324" y="35" width="44" height="40"/><text class="t" x="346" y="61">8</text></g>
+    <g><rect class="c" x="368" y="35" width="44" height="40"/><text class="t" x="390" y="61">6</text></g>
+    <text class="pointer" x="258" y="95" fill="#2e86de">i</text>
+    <text class="pointer" x="302" y="95" fill="#27ae60">j</text>
+    <path class="swap" d="M258 30 Q280 5 302 30"/>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(40,440)">
+    <circle class="badge" cx="-15" cy="30" r="11"/><text class="badgeT" x="-15" y="34">4</text>
+    <text class="tb" x="0" y="15">i·j 교차 (j가 i보다 왼쪽) → 피벗과 j위치를 교환 → 피벗 확정</text>
+    <g><rect class="p" x="60" y="35" width="44" height="40"/><text class="t" x="82" y="61">7</text></g>
+    <g><rect class="c" x="104" y="35" width="44" height="40"/><text class="t" x="126" y="61">2</text></g>
+    <g><rect class="c" x="148" y="35" width="44" height="40"/><text class="t" x="170" y="61">3</text></g>
+    <g><rect class="focus" x="192" y="35" width="44" height="40"/><text class="t" x="214" y="61">1</text></g>
+    <g><rect class="focus" x="236" y="35" width="44" height="40"/><text class="t" x="258" y="61">4</text></g>
+    <g><rect class="c" x="280" y="35" width="44" height="40"/><text class="t" x="302" y="61">9</text></g>
+    <g><rect class="c" x="324" y="35" width="44" height="40"/><text class="t" x="346" y="61">8</text></g>
+    <g><rect class="c" x="368" y="35" width="44" height="40"/><text class="t" x="390" y="61">6</text></g>
+    <text class="pointer" x="258" y="95" fill="#2e86de">i</text>
+    <text class="pointer" x="214" y="95" fill="#27ae60">j (왼쪽으로 추월!)</text>
+  </g>
+
+  <!-- Step 5: Final partition -->
+  <g transform="translate(40,540)">
+    <circle class="badge" cx="-15" cy="30" r="11"/><text class="badgeT" x="-15" y="34">5</text>
+    <text class="tb" x="0" y="15">피벗(7) ↔ A[j]=4 교환 → 피벗 7은 제자리 확정 (인덱스 4)</text>
+    <g><rect class="L" x="60" y="35" width="44" height="40"/><text class="t" x="82" y="61">4</text></g>
+    <g><rect class="L" x="104" y="35" width="44" height="40"/><text class="t" x="126" y="61">2</text></g>
+    <g><rect class="L" x="148" y="35" width="44" height="40"/><text class="t" x="170" y="61">3</text></g>
+    <g><rect class="L" x="192" y="35" width="44" height="40"/><text class="t" x="214" y="61">1</text></g>
+    <g><rect class="p" x="236" y="35" width="44" height="40"/><text class="t" x="258" y="61" font-weight="bold">7</text></g>
+    <g><rect class="R" x="280" y="35" width="44" height="40"/><text class="t" x="302" y="61">9</text></g>
+    <g><rect class="R" x="324" y="35" width="44" height="40"/><text class="t" x="346" y="61">8</text></g>
+    <g><rect class="R" x="368" y="35" width="44" height="40"/><text class="t" x="390" y="61">6</text></g>
+    <text class="lab" x="125" y="95" text-anchor="middle" fill="#2e86de" font-weight="bold">← 모두 &lt; 7</text>
+    <text class="lab" x="258" y="95" text-anchor="middle" fill="#c0392b" font-weight="bold">피벗 확정</text>
+    <text class="lab" x="345" y="95" text-anchor="middle" fill="#27ae60" font-weight="bold">모두 &gt; 7 →</text>
+    <text class="lab" x="440" y="63">왼쪽·오른쪽을 같은 방식으로 재귀 호출</text>
+  </g>
+
+  <!-- Summary -->
+  <g transform="translate(30,640)">
+    <rect class="sum" x="0" y="0" width="860" height="70"/>
+    <text class="tb" x="15" y="22">복잡도 및 병합정렬과의 차이</text>
+    <text class="lab" x="15" y="42">• 평균·최선 Θ(n log n) — 반씩 잘 갈릴 때 | 최악 Θ(n²) — 피벗이 한쪽으로만 몰릴 때(이미 정렬된 배열 + 첫 원소 피벗)</text>
+    <text class="lab" x="15" y="60" fill="#c0392b" font-weight="bold">병합정렬은 "합칠 때" 일함 / 퀵정렬은 "쪼갤 때" 이미 정리 끝. 제자리 정렬(추가 메모리 O(log n) 스택만)</text>
+  </g>
+</svg>

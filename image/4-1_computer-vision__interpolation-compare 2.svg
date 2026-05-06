@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" font-family="system-ui,sans-serif">
+  <style>
+    .grid{fill:#eaf2fb;stroke:#2e86de}
+    .pt{fill:#c0392b}
+    .ln{stroke:#333;stroke-width:1.2;fill:none}
+    .block{fill:#ffd6d6;stroke:#c0392b}
+    .smooth{fill:#d0f5d0;stroke:#27ae60}
+    .t{font-size:11px;text-anchor:middle;font-family:monospace}
+    .tb{font-size:15px;font-weight:bold}
+    .lab{font-size:13px}
+  </style>
+  <text class="tb" x="430" y="22" text-anchor="middle">보간 방법 비교: Nearest vs Bilinear vs Bicubic</text>
+  <text class="lab" x="30" y="44">실수 좌표 (x',y')에서 값을 가져올 때, 주변 픽셀을 몇 개 쓰느냐가 핵심.</text>
+
+  <!-- Nearest -->
+  <g transform="translate(30,70)">
+    <text class="tb" x="110" y="0" text-anchor="middle">① Nearest Neighbor (1개)</text>
+    <g transform="translate(0,20)">
+      <rect class="grid" x="0" y="0" width="60" height="60"/>
+      <rect class="grid" x="60" y="0" width="60" height="60"/>
+      <rect class="grid" x="120" y="0" width="60" height="60"/>
+      <rect class="grid" x="0" y="60" width="60" height="60"/>
+      <rect class="grid" x="60" y="60" width="60" height="60"/>
+      <rect class="grid" x="120" y="60" width="60" height="60"/>
+      <text class="t" x="30" y="35">10</text>
+      <text class="t" x="90" y="35">50</text>
+      <text class="t" x="150" y="35">90</text>
+      <text class="t" x="30" y="95">20</text>
+      <text class="t" x="90" y="95">60</text>
+      <text class="t" x="150" y="95">100</text>
+      <circle cx="78" cy="42" r="4" fill="#c0392b"/>
+      <text class="t" x="78" y="55" font-size="10">(x',y')</text>
+    </g>
+    <text class="lab" x="0" y="170">가까운 1개 픽셀 값 그대로 사용</text>
+    <text class="lab" x="0" y="190" fill="#c0392b" font-weight="bold">결과 = 50 (가장 가까운 것)</text>
+    <text class="lab" x="0" y="210">• 장점: 매우 빠름</text>
+    <text class="lab" x="0" y="230">• 단점: 계단 현상, 각진 경계</text>
+    <rect class="block" x="0" y="240" width="200" height="30"/>
+    <text class="t" x="100" y="260">픽셀 경계가 각짐 (blocky)</text>
+  </g>
+
+  <!-- Bilinear -->
+  <g transform="translate(310,70)">
+    <text class="tb" x="110" y="0" text-anchor="middle">② Bilinear (4개)</text>
+    <g transform="translate(0,20)">
+      <rect class="grid" x="0" y="0" width="60" height="60"/>
+      <rect class="grid" x="60" y="0" width="60" height="60"/>
+      <rect class="grid" x="120" y="0" width="60" height="60"/>
+      <rect class="grid" x="0" y="60" width="60" height="60"/>
+      <rect class="grid" x="60" y="60" width="60" height="60"/>
+      <rect class="grid" x="120" y="60" width="60" height="60"/>
+      <text class="t" x="30" y="35">10</text>
+      <text class="t" x="90" y="35">50</text>
+      <text class="t" x="150" y="35">90</text>
+      <text class="t" x="30" y="95">20</text>
+      <text class="t" x="90" y="95">60</text>
+      <text class="t" x="150" y="95">100</text>
+      <circle cx="78" cy="42" r="4" fill="#c0392b"/>
+      <!-- connecting lines to 4 corners -->
+      <line class="ln" x1="78" y1="42" x2="60" y2="30" stroke-dasharray="3 2"/>
+      <line class="ln" x1="78" y1="42" x2="120" y2="30" stroke-dasharray="3 2"/>
+      <line class="ln" x1="78" y1="42" x2="60" y2="90" stroke-dasharray="3 2"/>
+      <line class="ln" x1="78" y1="42" x2="120" y2="90" stroke-dasharray="3 2"/>
+    </g>
+    <text class="lab" x="0" y="170">주변 4개 픽셀의 가중평균</text>
+    <text class="lab" x="0" y="190" font-family="monospace" font-size="11">a=dx, b=dy</text>
+    <text class="lab" x="0" y="208" font-family="monospace" font-size="11">r = (1-a)(1-b)·10 + a(1-b)·50</text>
+    <text class="lab" x="0" y="224" font-family="monospace" font-size="11">   + (1-a)b·20 + ab·60</text>
+    <text class="lab" x="0" y="248">• 부드럽지만 약간 흐림</text>
+    <rect class="smooth" x="0" y="260" width="200" height="30"/>
+    <text class="t" x="100" y="280">경계가 부드러움</text>
+  </g>
+
+  <!-- Bicubic -->
+  <g transform="translate(590,70)">
+    <text class="tb" x="110" y="0" text-anchor="middle">③ Bicubic (16개)</text>
+    <g transform="translate(0,20)">
+      <rect class="grid" x="0" y="0" width="60" height="60"/>
+      <rect class="grid" x="60" y="0" width="60" height="60"/>
+      <rect class="grid" x="120" y="0" width="60" height="60"/>
+      <rect class="grid" x="0" y="60" width="60" height="60"/>
+      <rect class="grid" x="60" y="60" width="60" height="60"/>
+      <rect class="grid" x="120" y="60" width="60" height="60"/>
+      <circle cx="78" cy="42" r="4" fill="#c0392b"/>
+      <!-- small indicator dots for 4x4 neighborhood -->
+      <g fill="#27ae60">
+        <circle cx="30" cy="30" r="2"/>
+        <circle cx="90" cy="30" r="2"/>
+        <circle cx="150" cy="30" r="2"/>
+        <circle cx="30" cy="90" r="2"/>
+        <circle cx="90" cy="90" r="2"/>
+        <circle cx="150" cy="90" r="2"/>
+      </g>
+      <text class="t" x="90" y="130" font-size="10" fill="#27ae60">주변 4×4 = 16개 샘플</text>
+    </g>
+    <text class="lab" x="0" y="170">3차 다항식 곡선으로 내삽</text>
+    <text class="lab" x="0" y="190">• 가장 부드럽고 자연스러움</text>
+    <text class="lab" x="0" y="210">• 가장 느리고 계산량↑</text>
+    <text class="lab" x="0" y="230">• 사진 확대에서 품질 최고</text>
+    <rect class="smooth" x="0" y="250" width="200" height="30"/>
+    <text class="t" x="100" y="270">가장 매끄럽고 선명함</text>
+  </g>
+
+  <!-- Summary box -->
+  <g transform="translate(30,380)">
+    <rect x="0" y="0" width="800" height="50" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="tb" x="15" y="22">선택 기준</text>
+    <text class="lab" x="15" y="42" fill="#c0392b" font-weight="bold">속도↑ Nearest — 균형 Bilinear (기본값) — 품질↑ Bicubic (사진/출판). OpenCV: cv2.INTER_NEAREST / LINEAR / CUBIC</text>
+  </g>
+</svg>

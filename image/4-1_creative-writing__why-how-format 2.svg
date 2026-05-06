@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="system-ui,sans-serif">
+  <style>
+    .w{fill:#fde2e2;stroke:#c0392b;stroke-width:2}
+    .h{fill:#eaf2fb;stroke:#2e86de;stroke-width:2}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;text-anchor:middle}
+    .lab{font-size:13px;text-anchor:middle}
+    .step{font-size:14px;font-weight:bold;text-anchor:middle}
+    .ar{stroke:#333;stroke-width:2;fill:none;marker-end:url(#a1)}
+    .note{font-size:13px}
+  </style>
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+
+  <text class="title" x="550" y="40">Why 형식 vs How 형식: 설득이냐 설명이냐</text>
+
+  <!-- Why format -->
+  <g transform="translate(60,80)">
+    <rect x="0" y="0" width="480" height="230" fill="#fff" stroke="#c0392b" stroke-width="1.5" rx="8"/>
+    <text class="sub" x="240" y="30" fill="#c0392b">Why 형식 (설득 · 논증)</text>
+
+    <rect class="w" x="30" y="60" width="90" height="60"/>
+    <text class="step" x="75" y="90">주장</text>
+    <text class="lab" x="75" y="108">힘1</text>
+
+    <rect class="w" x="145" y="60" width="90" height="60"/>
+    <text class="step" x="190" y="90">이유</text>
+    <text class="lab" x="190" y="108">힘2</text>
+
+    <rect class="w" x="260" y="60" width="90" height="60"/>
+    <text class="step" x="305" y="90">증명</text>
+    <text class="lab" x="305" y="108">힘3</text>
+
+    <rect class="w" x="375" y="60" width="90" height="60"/>
+    <text class="step" x="420" y="84">주장</text>
+    <text class="step" x="420" y="102">강조</text>
+    <text class="lab" x="420" y="118">힘4</text>
+
+    <line class="ar" x1="120" y1="90" x2="145" y2="90"/>
+    <line class="ar" x1="235" y1="90" x2="260" y2="90"/>
+    <line class="ar" x1="350" y1="90" x2="375" y2="90"/>
+
+    <text class="lab" x="240" y="165" fill="#c0392b" font-weight="bold">논문 · 사설 · 제안서 · 연설</text>
+    <text class="lab" x="240" y="195">→ 왜 그렇게 해야 하는가</text>
+  </g>
+
+  <!-- How format -->
+  <g transform="translate(560,80)">
+    <rect x="0" y="0" width="480" height="230" fill="#fff" stroke="#2e86de" stroke-width="1.5" rx="8"/>
+    <text class="sub" x="240" y="30" fill="#2e86de">How 형식 (설명 · 지시)</text>
+
+    <rect class="h" x="30" y="60" width="90" height="60"/>
+    <text class="step" x="75" y="90">주제</text>
+    <text class="lab" x="75" y="108">힘1</text>
+
+    <rect class="h" x="145" y="60" width="90" height="60"/>
+    <text class="step" x="190" y="90">방법</text>
+    <text class="lab" x="190" y="108">힘2</text>
+
+    <rect class="h" x="260" y="60" width="90" height="60"/>
+    <text class="step" x="305" y="90">자료</text>
+    <text class="lab" x="305" y="108">힘3</text>
+
+    <rect class="h" x="375" y="60" width="90" height="60"/>
+    <text class="step" x="420" y="84">주제</text>
+    <text class="step" x="420" y="102">강조</text>
+    <text class="lab" x="420" y="118">힘4</text>
+
+    <line class="ar" x1="120" y1="90" x2="145" y2="90"/>
+    <line class="ar" x1="235" y1="90" x2="260" y2="90"/>
+    <line class="ar" x1="350" y1="90" x2="375" y2="90"/>
+
+    <text class="lab" x="240" y="165" fill="#2e86de" font-weight="bold">보고서 · 매뉴얼 · 기술문서 · 설명서</text>
+    <text class="lab" x="240" y="195">→ 어떻게 하는가</text>
+  </g>
+
+  <!-- PREP (Churchill) -->
+  <g>
+    <rect x="60" y="360" width="980" height="330" fill="#fff7d6" stroke="#d4a017"/>
+    <text x="80" y="395" font-size="16" font-weight="bold">처칠의 PREP 방법 — Why 형식의 고전</text>
+
+    <g transform="translate(80,420)">
+      <rect class="w" x="0" y="0" width="120" height="80"/>
+      <text class="step" x="60" y="35">P · Point</text>
+      <text class="lab" x="60" y="60">주장</text>
+
+      <rect class="w" x="160" y="0" width="120" height="80"/>
+      <text class="step" x="220" y="35">R · Reason</text>
+      <text class="lab" x="220" y="60">이유</text>
+
+      <rect class="w" x="320" y="0" width="120" height="80"/>
+      <text class="step" x="380" y="35">E · Example</text>
+      <text class="lab" x="380" y="60">사례</text>
+
+      <rect class="w" x="480" y="0" width="120" height="80"/>
+      <text class="step" x="540" y="35">P · Point</text>
+      <text class="lab" x="540" y="60">주장 재확인</text>
+
+      <line class="ar" x1="120" y1="40" x2="160" y2="40"/>
+      <line class="ar" x1="280" y1="40" x2="320" y2="40"/>
+      <line class="ar" x1="440" y1="40" x2="480" y2="40"/>
+    </g>
+
+    <text x="80" y="570" font-size="14" fill="#c0392b" font-weight="bold">예시 — "밥 줘!" (PREP 4단계)</text>
+    <text x="80" y="600" font-size="13">P: "밥 줘!" → R: 배고프니까 → E: 배에서 꼬르륵 → P: "빨리 밥 줘!"</text>
+    <text x="80" y="640" font-size="13">레이건 대통령의 '한 장 보고서'도 동일한 How / Why 구조를 따른다.</text>
+    <text x="80" y="670" font-size="13" fill="#c0392b" font-weight="bold">결론부터 제시하고 이유로 설득 · 사례로 증명 · 다시 주장 강조</text>
+  </g>
+</svg>

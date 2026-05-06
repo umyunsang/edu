@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1060" font-family="system-ui,sans-serif">
+  <style>
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .sub{font-size:15px;font-weight:bold;fill:#222}
+    .note{font-size:12px;fill:#555}
+    .c{fill:#fff;stroke:#2c3e50;stroke-width:1.5}
+    .pv{fill:#ffd9d9;stroke:#c0392b;stroke-width:2.5}
+    .pvOk{fill:#d0f5d0;stroke:#27ae60;stroke-width:2.8}
+    .lo{fill:#eaf2fb;stroke:#2e86de;stroke-width:1.8}
+    .hi{fill:#ffe0b2;stroke:#e67e22;stroke-width:1.8}
+    .drop{fill:#f0f0f0;stroke:#bbb;stroke-width:1;stroke-dasharray:4 3;opacity:0.8}
+    .ans{fill:#d0f5d0;stroke:#27ae60;stroke-width:3.5}
+    .t{font-size:16px;text-anchor:middle;font-weight:bold;dominant-baseline:central;font-family:monospace}
+    .tgray{font-size:14px;text-anchor:middle;fill:#aaa;dominant-baseline:central;font-family:monospace}
+    .idx{font-size:11px;text-anchor:middle;fill:#888;font-family:monospace}
+    .lab{font-size:13px}
+    .badge{fill:#c0392b}
+    .badgeT{font-size:12px;fill:#fff;text-anchor:middle;font-weight:bold;dominant-baseline:central}
+    .box{fill:#f8f9fa;stroke:#bbb;stroke-width:1}
+    .rulebox{fill:#fff2cc;stroke:#f39c12;stroke-width:2}
+    .keybox{fill:#fff7d6;stroke:#d4a017;stroke-width:1.5}
+    .okbox{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+    .arrow{stroke:#c0392b;stroke-width:2.5;fill:none;marker-end:url(#rd)}
+    .arrow2{stroke:#666;stroke-width:2;fill:none;marker-end:url(#gy)}
+    .hiT{fill:#c0392b;font-weight:bold}
+    .hiB{fill:#2e86de;font-weight:bold}
+    .hiG{fill:#27ae60;font-weight:bold}
+    .hiO{fill:#e67e22;font-weight:bold}
+    .calc{font-size:13px;font-family:monospace;fill:#222}
+  </style>
+  <defs>
+    <marker id="rd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c0392b"/></marker>
+    <marker id="gy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#666"/></marker>
+  </defs>
+
+  <text class="title" x="540" y="26">Quick Select — k번째로 작은 수 찾기 (부분 정렬로 충분)</text>
+  <text class="note" x="540" y="46" text-anchor="middle">배열 [7, 4, 6, 3, 9, 1] 에서 k = 3번째로 작은 수를 찾자 (미리보기: 정렬 시 [1, 3, 4, 6, 7, 9] → 답 = 4)</text>
+
+  <!-- ========================= RULE BOX (top) ========================= -->
+  <g transform="translate(40, 70)">
+    <rect class="rulebox" x="0" y="0" width="1000" height="120"/>
+    <text class="sub" x="15" y="22">핵심 규칙 — 피벗 분할 후 "피벗의 순위 r"과 "찾을 순위 k"를 비교</text>
+    <text class="note" x="15" y="42">분할이 끝나면 피벗은 정렬 시 자기 자리에 놓임 → 피벗 앞에 있는 원소 수 = r−1 → 이로부터 <tspan class="hiT">피벗 순위 r</tspan> 을 즉시 알 수 있음</text>
+
+    <g transform="translate(15, 58)">
+      <rect class="keybox" x="0" y="0" width="320" height="52"/>
+      <text class="calc" x="10" y="20"><tspan class="hiG" font-weight="bold">① r = k</tspan> → 피벗이 답! 종료</text>
+      <text class="note" x="10" y="40">(피벗 자리에 k번째가 딱 놓인 경우)</text>
+    </g>
+    <g transform="translate(345, 58)">
+      <rect class="keybox" x="0" y="0" width="320" height="52"/>
+      <text class="calc" x="10" y="20"><tspan class="hiB" font-weight="bold">② r &gt; k</tspan> → 답은 피벗 왼쪽에 존재</text>
+      <text class="note" x="10" y="40">왼쪽 부분에서 동일한 k 그대로 탐색</text>
+    </g>
+    <g transform="translate(675, 58)">
+      <rect class="keybox" x="0" y="0" width="310" height="52"/>
+      <text class="calc" x="10" y="20"><tspan class="hiO" font-weight="bold">③ r &lt; k</tspan> → 답은 피벗 오른쪽에 존재</text>
+      <text class="note" x="10" y="40">오른쪽에서 <tspan font-weight="bold">(k − r)번째</tspan> 를 탐색</text>
+    </g>
+  </g>
+
+  <!-- ========================= STEP 0: initial ========================= -->
+  <g transform="translate(40, 220)">
+    <circle class="badge" cx="0" cy="12" r="12"/><text class="badgeT" x="0" y="12">0</text>
+    <text class="sub" x="20" y="16">초기 배열 (길이 n = 6, 찾을 순위 k = 3)</text>
+
+    <g transform="translate(20, 40)">
+      <text class="idx" x="30" y="-6">[0]</text>
+      <text class="idx" x="90" y="-6">[1]</text>
+      <text class="idx" x="150" y="-6">[2]</text>
+      <text class="idx" x="210" y="-6">[3]</text>
+      <text class="idx" x="270" y="-6">[4]</text>
+      <text class="idx" x="330" y="-6">[5]</text>
+
+      <rect class="pv" x="0" y="0" width="60" height="44"/><text class="t" x="30" y="22">7</text>
+      <rect class="c" x="60" y="0" width="60" height="44"/><text class="t" x="90" y="22">4</text>
+      <rect class="c" x="120" y="0" width="60" height="44"/><text class="t" x="150" y="22">6</text>
+      <rect class="c" x="180" y="0" width="60" height="44"/><text class="t" x="210" y="22">3</text>
+      <rect class="c" x="240" y="0" width="60" height="44"/><text class="t" x="270" y="22">9</text>
+      <rect class="c" x="300" y="0" width="60" height="44"/><text class="t" x="330" y="22">1</text>
+    </g>
+
+    <text class="note" x="30" y="110" fill="#c0392b" font-weight="bold">↑ 피벗 = 7 (첫 원소 선택)</text>
+    <text class="note" x="440" y="60">• 목표: 3번째로 작은 수</text>
+    <text class="note" x="440" y="78">• 전략: 분할 후 피벗 순위 r 을 확인 → 규칙 적용 → 한쪽만 재귀</text>
+    <text class="note" x="440" y="96">• 반드시 전체 정렬할 필요 없음 ← 여기서 log 인수가 사라지는 핵심</text>
+  </g>
+
+  <!-- ========================= STEP 1: partition by 7 ========================= -->
+  <g transform="translate(40, 360)">
+    <circle class="badge" cx="0" cy="12" r="12"/><text class="badgeT" x="0" y="12">1</text>
+    <text class="sub" x="20" y="16">피벗 7 로 분할 → 7 보다 작은 값 5개가 앞으로, 9가 뒤로 이동 → 7은 인덱스 [5] 자리 확정</text>
+
+    <g transform="translate(20, 40)">
+      <text class="idx" x="30" y="-6">[0]</text>
+      <text class="idx" x="90" y="-6">[1]</text>
+      <text class="idx" x="150" y="-6">[2]</text>
+      <text class="idx" x="210" y="-6">[3]</text>
+      <text class="idx" x="270" y="-6">[4]</text>
+      <text class="idx" x="330" y="-6">[5]</text>
+
+      <rect class="lo" x="0" y="0" width="60" height="44"/><text class="t" x="30" y="22">4</text>
+      <rect class="lo" x="60" y="0" width="60" height="44"/><text class="t" x="90" y="22">3</text>
+      <rect class="lo" x="120" y="0" width="60" height="44"/><text class="t" x="150" y="22">1</text>
+      <rect class="lo" x="180" y="0" width="60" height="44"/><text class="t" x="210" y="22">6</text>
+      <rect class="hi" x="240" y="0" width="60" height="44"/><text class="t" x="270" y="22">9</text>
+      <rect class="pv" x="300" y="0" width="60" height="44"/><text class="t" x="330" y="22">7</text>
+    </g>
+
+    <text class="note" x="120" y="110" text-anchor="middle" fill="#2e86de" font-weight="bold">← 4개 모두 &lt; 7 (왼쪽 그룹)</text>
+    <text class="note" x="270" y="110" text-anchor="middle" fill="#e67e22" font-weight="bold">9 &gt; 7</text>
+    <text class="note" x="330" y="110" text-anchor="middle" fill="#c0392b" font-weight="bold">pivot 자리 확정</text>
+
+    <!-- Decision -->
+    <g transform="translate(440, 25)">
+      <rect class="box" x="0" y="0" width="540" height="100"/>
+      <text class="sub" x="12" y="22">판단</text>
+      <text class="calc" x="12" y="48">피벗 7은 인덱스 [5] → 앞에 5개 존재 → <tspan class="hiT" font-weight="bold">순위 r = 6</tspan></text>
+      <text class="calc" x="12" y="70">r = 6, k = 3 → <tspan class="hiB" font-weight="bold">r &gt; k</tspan> → 규칙 ② 적용</text>
+      <text class="calc" x="12" y="92">→ <tspan class="hiB" font-weight="bold">왼쪽 부분 [4, 3, 1, 6]</tspan> 에서 계속 k=3 그대로 탐색 (9·7 버림)</text>
+    </g>
+  </g>
+
+  <!-- Flow arrow step1 → step2 -->
+  <path class="arrow" d="M200 505 L200 545"/>
+
+  <!-- ========================= STEP 2: partition [4,3,1,6] by 4 ========================= -->
+  <g transform="translate(40, 545)">
+    <circle class="badge" cx="0" cy="12" r="12"/><text class="badgeT" x="0" y="12">2</text>
+    <text class="sub" x="20" y="16">남은 [4, 3, 1, 6] 에서 피벗 4 로 분할 → 4는 인덱스 [2] 자리 확정</text>
+
+    <g transform="translate(20, 40)">
+      <text class="idx" x="30" y="-6">[0]</text>
+      <text class="idx" x="90" y="-6">[1]</text>
+      <text class="idx" x="150" y="-6">[2]</text>
+      <text class="idx" x="210" y="-6">[3]</text>
+      <text class="idx" x="270" y="-6">[4]</text>
+      <text class="idx" x="330" y="-6">[5]</text>
+
+      <rect class="lo" x="0" y="0" width="60" height="44"/><text class="t" x="30" y="22">3</text>
+      <rect class="lo" x="60" y="0" width="60" height="44"/><text class="t" x="90" y="22">1</text>
+      <rect class="pvOk" x="120" y="0" width="60" height="44"/><text class="t" x="150" y="22">4</text>
+      <rect class="hi" x="180" y="0" width="60" height="44"/><text class="t" x="210" y="22">6</text>
+      <rect class="drop" x="240" y="0" width="60" height="44"/><text class="tgray" x="270" y="22">9</text>
+      <rect class="drop" x="300" y="0" width="60" height="44"/><text class="tgray" x="330" y="22">7</text>
+    </g>
+
+    <text class="note" x="60" y="110" text-anchor="middle" fill="#2e86de" font-weight="bold">&lt; 4 (2개)</text>
+    <text class="note" x="150" y="110" text-anchor="middle" fill="#27ae60" font-weight="bold">pivot r=3</text>
+    <text class="note" x="210" y="110" text-anchor="middle" fill="#e67e22" font-weight="bold">&gt; 4 (1개)</text>
+    <text class="note" x="300" y="110" text-anchor="middle" fill="#888">(1단계에서 이미 탈락)</text>
+
+    <!-- Decision -->
+    <g transform="translate(440, 25)">
+      <rect class="okbox" x="0" y="0" width="540" height="100"/>
+      <text class="sub" x="12" y="22" fill="#2e7d32">판단 — 정답 발견!</text>
+      <text class="calc" x="12" y="48">피벗 4는 인덱스 [2] → 앞에 2개 존재 → <tspan class="hiG" font-weight="bold">순위 r = 3</tspan></text>
+      <text class="calc" x="12" y="70">r = 3, k = 3 → <tspan class="hiG" font-weight="bold">r = k</tspan> → 규칙 ① 적용</text>
+      <text class="calc" x="12" y="92">→ <tspan class="hiG" font-weight="bold">피벗 4 가 바로 답</tspan> — 재귀 종료 (왼쪽·오른쪽 들어갈 필요 없음)</text>
+    </g>
+  </g>
+
+  <!-- ========================= Answer highlight ========================= -->
+  <g transform="translate(40, 685)">
+    <rect class="okbox" x="0" y="0" width="1000" height="66"/>
+    <text class="sub" x="15" y="26" fill="#2e7d32">✓ 결과: [7, 4, 6, 3, 9, 1] 의 3번째로 작은 수 = 4</text>
+    <text class="note" x="15" y="50">전체 정렬 [1, 3, 4, 6, 7, 9] 중 3번째 = 4 ✓. 단 <tspan font-weight="bold">2번의 분할</tspan>만으로 정답 도달 (오른쪽 절반은 한 번도 건드리지 않음)</text>
+  </g>
+
+  <!-- ========================= Why O(n) recursion tree ========================= -->
+  <g transform="translate(40, 770)">
+    <text class="sub" x="0" y="0">왜 평균 복잡도가 Θ(n)인가? — 퀵정렬과 재귀 구조 비교</text>
+
+    <!-- Quicksort tree (both sides) -->
+    <g transform="translate(0, 20)">
+      <rect class="box" x="0" y="0" width="480" height="230"/>
+      <text class="sub" x="10" y="22" fill="#c0392b">퀵정렬: 양쪽 다 재귀 → T(n) = 2T(n/2) + n</text>
+
+      <rect class="pv" x="200" y="44" width="80" height="24"/><text class="t" x="240" y="56" font-size="13">n</text>
+      <line class="arrow2" x1="240" y1="68" x2="120" y2="90"/>
+      <line class="arrow2" x1="240" y1="68" x2="360" y2="90"/>
+      <rect class="lo" x="80" y="90" width="80" height="22"/><text class="t" x="120" y="101" font-size="12">n/2</text>
+      <rect class="hi" x="320" y="90" width="80" height="22"/><text class="t" x="360" y="101" font-size="12">n/2</text>
+
+      <line class="arrow2" x1="120" y1="112" x2="60" y2="134"/>
+      <line class="arrow2" x1="120" y1="112" x2="180" y2="134"/>
+      <line class="arrow2" x1="360" y1="112" x2="300" y2="134"/>
+      <line class="arrow2" x1="360" y1="112" x2="420" y2="134"/>
+      <rect class="lo" x="30" y="134" width="60" height="20"/><text class="t" x="60" y="144" font-size="11">n/4</text>
+      <rect class="lo" x="150" y="134" width="60" height="20"/><text class="t" x="180" y="144" font-size="11">n/4</text>
+      <rect class="hi" x="270" y="134" width="60" height="20"/><text class="t" x="300" y="144" font-size="11">n/4</text>
+      <rect class="hi" x="390" y="134" width="60" height="20"/><text class="t" x="420" y="144" font-size="11">n/4</text>
+
+      <text class="note" x="240" y="175" text-anchor="middle">⋯ 각 레벨 작업량 합 = n</text>
+      <text class="calc" x="240" y="197" text-anchor="middle" fill="#c0392b" font-weight="bold">레벨 수 log n → 전체 n · log n</text>
+      <text class="note" x="10" y="218">양쪽 전부 정렬이 필요해 어느 가지도 버릴 수 없음</text>
+    </g>
+
+    <!-- Quick Select tree (one side only) -->
+    <g transform="translate(520, 20)">
+      <rect class="box" x="0" y="0" width="480" height="230"/>
+      <text class="sub" x="10" y="22" fill="#27ae60">Quick Select: 한쪽만 재귀 → T(n) = T(n/2) + n</text>
+
+      <rect class="pv" x="200" y="44" width="80" height="24"/><text class="t" x="240" y="56" font-size="13">n</text>
+      <line class="arrow2" x1="240" y1="68" x2="120" y2="90"/>
+      <line class="arrow2" x1="240" y1="68" x2="360" y2="90" stroke-dasharray="5 4" opacity="0.4"/>
+      <rect class="lo" x="80" y="90" width="80" height="22"/><text class="t" x="120" y="101" font-size="12">n/2</text>
+      <rect class="drop" x="320" y="90" width="80" height="22"/><text class="tgray" x="360" y="101" font-size="11">버림</text>
+
+      <line class="arrow2" x1="120" y1="112" x2="60" y2="134"/>
+      <line class="arrow2" x1="120" y1="112" x2="180" y2="134" stroke-dasharray="5 4" opacity="0.4"/>
+      <rect class="lo" x="30" y="134" width="60" height="20"/><text class="t" x="60" y="144" font-size="11">n/4</text>
+      <rect class="drop" x="150" y="134" width="60" height="20"/><text class="tgray" x="180" y="144" font-size="10">버림</text>
+
+      <line class="arrow2" x1="60" y1="154" x2="30" y2="174"/>
+      <rect class="lo" x="10" y="174" width="40" height="18"/><text class="t" x="30" y="183" font-size="10">n/8</text>
+
+      <text class="note" x="240" y="200" text-anchor="middle">n + n/2 + n/4 + n/8 + ⋯ ≤ <tspan fill="#27ae60" font-weight="bold">2n</tspan> (등비급수)</text>
+      <text class="calc" x="240" y="220" text-anchor="middle" fill="#27ae60" font-weight="bold">평균 Θ(n) — log 인수가 사라짐</text>
+    </g>
+  </g>
+
+  <!-- ========================= Complexity summary ========================= -->
+  <g transform="translate(40, 1035)">
+    <text class="note" x="0" y="0" fill="#c0392b" font-weight="bold">⚠ 최악 Θ(n²): 피벗이 매번 극단값(최소/최대)으로 뽑혀서 크기가 n−1 씩만 줄어들 때 → <tspan fill="#222">무작위 피벗</tspan> 또는 <tspan fill="#222">median-of-medians</tspan> 로 회피</text>
+  </g>
+</svg>

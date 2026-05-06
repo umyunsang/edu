@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="'Pretendard','SUIT','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f1e8"/>
+      <stop offset="52%" stop-color="#fcfaf6"/>
+      <stop offset="100%" stop-color="#f4f7fb"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f4ec"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#6d5d4b" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .eyebrow{font-size:12px;font-weight:700;letter-spacing:2px}
+      .title{font-size:32px;font-weight:800;fill:#1f2937}
+      .subtitle{font-size:15px;font-weight:500;fill:#5f6b7a}
+      .hero-main{font-size:21px;font-weight:800;fill:#1f2937}
+      .hero-sub{font-size:14px;font-weight:500;fill:#59667a}
+      .card-kicker{font-size:12px;font-weight:800;letter-spacing:1.6px}
+      .card-title{font-size:28px;font-weight:800}
+      .card-kor{font-size:15px;font-weight:700;fill:#475467}
+      .card-copy{font-size:13px;font-weight:500;fill:#344054}
+      .card-foot{font-size:13px;font-weight:800}
+      .footer-label{font-size:12px;font-weight:800;letter-spacing:1.4px}
+      .footer-main{font-size:17px;font-weight:700;fill:#1f2937}
+    </style>
+  </defs>
+
+  <rect width="1000" height="560" fill="url(#bg)"/>
+  <circle cx="920" cy="88" r="110" fill="#d8e6f7" opacity="0.35"/>
+  <circle cx="102" cy="504" r="92" fill="#fde2d8" opacity="0.45"/>
+  <circle cx="862" cy="486" r="74" fill="#dcefdc" opacity="0.4"/>
+
+  <rect x="56" y="44" width="172" height="30" rx="15" fill="#1f2937" opacity="0.94"/>
+  <text class="eyebrow" x="142" y="63" text-anchor="middle" fill="#f8fafc">TECHNICAL WRITING</text>
+
+  <rect x="834" y="44" width="110" height="34" rx="17" fill="#ffffff" stroke="#d7dde5"/>
+  <text x="889" y="66" text-anchor="middle" font-size="14" font-weight="800" fill="#334155">3C PRINCIPLE</text>
+
+  <text class="title" x="56" y="118">기술문서의 3C 원칙</text>
+  <text class="subtitle" x="56" y="146">Correct, Concise, Clear를 분리해서 점검하면 문장이 더 신뢰롭고 빠르게 읽힌다.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="176" width="888" height="104" rx="28" fill="url(#hero)"/>
+  </g>
+  <circle cx="108" cy="228" r="26" fill="#f1e3d3"/>
+  <text x="108" y="237" text-anchor="middle" font-size="30" font-weight="800" fill="#8a5a25">"</text>
+  <text class="hero-main" x="148" y="220">좋은 기술 문서는 사실은 정확하고, 문장은 간결하며, 의미는 명확하다.</text>
+  <text class="hero-sub" x="148" y="250">Correct는 신뢰를 만들고, Concise는 읽는 시간을 줄이며, Clear는 이해의 마찰을 없앤다.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="310" width="280" height="184" rx="26" fill="#fff4f1"/>
+  </g>
+  <rect x="56" y="310" width="280" height="184" rx="26" fill="none" stroke="#e9beb5"/>
+  <rect x="76" y="328" width="56" height="24" rx="12" fill="#c0392b"/>
+  <text class="card-kicker" x="104" y="344" text-anchor="middle" fill="#ffffff">01</text>
+  <circle cx="288" cy="350" r="26" fill="#fde2dc"/>
+  <text x="288" y="360" text-anchor="middle" font-size="26" font-weight="800" fill="#c0392b">C</text>
+  <text class="card-title" x="76" y="378" fill="#c0392b">Correct</text>
+  <text class="card-kor" x="76" y="398">정확하게</text>
+  <line x1="76" y1="414" x2="316" y2="414" stroke="#e6c9c1"/>
+  <circle cx="88" cy="432" r="4" fill="#c0392b"/>
+  <text class="card-copy" x="102" y="436">사실 · 수치 · 용어를 검증한다</text>
+  <circle cx="88" cy="452" r="4" fill="#c0392b"/>
+  <text class="card-copy" x="102" y="456">문법 · 표기 · 단위를 일관되게 맞춘다</text>
+  <circle cx="88" cy="472" r="4" fill="#c0392b"/>
+  <text class="card-copy" x="102" y="476">오해를 부르는 오류를 남기지 않는다</text>
+  <text class="card-foot" x="76" y="488" fill="#9f2f24">신뢰를 만든다</text>
+
+  <g filter="url(#shadow)">
+    <rect x="360" y="310" width="280" height="184" rx="26" fill="#f3f8ff"/>
+  </g>
+  <rect x="360" y="310" width="280" height="184" rx="26" fill="none" stroke="#c8daf0"/>
+  <rect x="380" y="328" width="56" height="24" rx="12" fill="#2e86de"/>
+  <text class="card-kicker" x="408" y="344" text-anchor="middle" fill="#ffffff">02</text>
+  <circle cx="592" cy="350" r="26" fill="#dcecff"/>
+  <text x="592" y="360" text-anchor="middle" font-size="26" font-weight="800" fill="#2e86de">C</text>
+  <text class="card-title" x="380" y="378" fill="#2e86de">Concise</text>
+  <text class="card-kor" x="380" y="398">간결하게</text>
+  <line x1="380" y1="414" x2="620" y2="414" stroke="#d6e4f5"/>
+  <circle cx="392" cy="432" r="4" fill="#2e86de"/>
+  <text class="card-copy" x="406" y="436">군더더기 표현과 중복을 덜어낸다</text>
+  <circle cx="392" cy="452" r="4" fill="#2e86de"/>
+  <text class="card-copy" x="406" y="456">한 문장에는 한 핵심만 담는다</text>
+  <circle cx="392" cy="472" r="4" fill="#2e86de"/>
+  <text class="card-copy" x="406" y="476">짧지만 필요한 정보는 빠짐없이 남긴다</text>
+  <text class="card-foot" x="380" y="488" fill="#1d5ea3">읽는 시간을 줄인다</text>
+
+  <g filter="url(#shadow)">
+    <rect x="664" y="310" width="280" height="184" rx="26" fill="#f4fbf5"/>
+  </g>
+  <rect x="664" y="310" width="280" height="184" rx="26" fill="none" stroke="#cde5cf"/>
+  <rect x="684" y="328" width="56" height="24" rx="12" fill="#27ae60"/>
+  <text class="card-kicker" x="712" y="344" text-anchor="middle" fill="#ffffff">03</text>
+  <circle cx="896" cy="350" r="26" fill="#dbf3e1"/>
+  <text x="896" y="360" text-anchor="middle" font-size="26" font-weight="800" fill="#27ae60">C</text>
+  <text class="card-title" x="684" y="378" fill="#27ae60">Clear</text>
+  <text class="card-kor" x="684" y="398">명료하게</text>
+  <line x1="684" y1="414" x2="924" y2="414" stroke="#d6e9d8"/>
+  <circle cx="696" cy="432" r="4" fill="#27ae60"/>
+  <text class="card-copy" x="710" y="436">독자가 처음 읽어도 뜻이 보이게 쓴다</text>
+  <circle cx="696" cy="452" r="4" fill="#27ae60"/>
+  <text class="card-copy" x="710" y="456">모호한 표현 대신 구체적인 말을 고른다</text>
+  <circle cx="696" cy="472" r="4" fill="#27ae60"/>
+  <text class="card-copy" x="710" y="476">구조를 정리해 핵심이 바로 드러나게 한다</text>
+  <text class="card-foot" x="684" y="488" fill="#1f8c4e">이해를 빠르게 만든다</text>
+
+  <rect x="56" y="516" width="888" height="28" rx="14" fill="#fffaf0" stroke="#eadfca"/>
+  <text class="footer-label" x="78" y="534" fill="#9a6a2c">MEMO</text>
+  <text class="footer-main" x="146" y="535">어려운 내용을 쉽게, 짧게, 틀리지 않게 쓰는 사람이 좋은 기술문서 작성자다.</text>
+</svg>

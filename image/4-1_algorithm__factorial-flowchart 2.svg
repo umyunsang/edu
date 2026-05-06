@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="system-ui,sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2c3e50"/>
+    </marker>
+  </defs>
+  <style>
+    .box{fill:#eaf2fb;stroke:#2c3e50;stroke-width:1.5}
+    .base{fill:#d0f5d0;stroke:#27ae60;stroke-width:1.8}
+    .focus{fill:#fff2cc;stroke:#d4a017;stroke-width:1.8}
+    .ret{fill:#fff7d6;stroke:#b08a1f;stroke-width:1.5}
+    .t{font-size:14px;text-anchor:middle;fill:#1e2a38}
+    .m{font-size:14px;text-anchor:middle;font-family:ui-monospace,Menlo,monospace;fill:#1e2a38}
+    .lab{font-size:13px;fill:#4a5b6c}
+    .tb{font-size:16px;font-weight:bold;text-anchor:middle;fill:#1e2a38}
+    .ln{stroke:#2c3e50;stroke-width:1.5;fill:none}
+  </style>
+
+  <text class="tb" x="500" y="30">팩토리얼 재귀 호출 트리 (n=4) — 내려갈 때 호출, 올라올 때 반환</text>
+
+  <!-- 왼쪽: 호출 단계 -->
+  <text class="lab" x="60" y="80">호출(다운):</text>
+  <g>
+    <rect class="focus" x="60" y="95" width="220" height="50" rx="6"/>
+    <text class="m" x="170" y="117">factorial(4)</text>
+    <text class="lab" x="170" y="135" text-anchor="middle">if 4==0 아님 → 4 * factorial(3)</text>
+  </g>
+  <path class="ln" d="M170,145 L170,175" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="focus" x="60" y="180" width="220" height="50" rx="6"/>
+    <text class="m" x="170" y="202">factorial(3)</text>
+    <text class="lab" x="170" y="220" text-anchor="middle">3 * factorial(2)</text>
+  </g>
+  <path class="ln" d="M170,230 L170,260" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="focus" x="60" y="265" width="220" height="50" rx="6"/>
+    <text class="m" x="170" y="287">factorial(2)</text>
+    <text class="lab" x="170" y="305" text-anchor="middle">2 * factorial(1)</text>
+  </g>
+  <path class="ln" d="M170,315 L170,345" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="focus" x="60" y="350" width="220" height="50" rx="6"/>
+    <text class="m" x="170" y="372">factorial(1)</text>
+    <text class="lab" x="170" y="390" text-anchor="middle">1 * factorial(0)</text>
+  </g>
+  <path class="ln" d="M170,400 L170,430" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="base" x="60" y="435" width="220" height="50" rx="6"/>
+    <text class="m" x="170" y="457">factorial(0)</text>
+    <text class="lab" x="170" y="475" text-anchor="middle">기저: return 1</text>
+  </g>
+
+  <!-- 오른쪽: 반환 단계 -->
+  <text class="lab" x="560" y="80">반환(업):</text>
+  <g>
+    <rect class="ret" x="560" y="435" width="360" height="50" rx="6"/>
+    <text class="m" x="740" y="465">factorial(0) = 1</text>
+  </g>
+  <path class="ln" d="M740,435 L740,405" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="ret" x="560" y="350" width="360" height="50" rx="6"/>
+    <text class="m" x="740" y="380">factorial(1) = 1 * 1 = 1</text>
+  </g>
+  <path class="ln" d="M740,350 L740,320" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="ret" x="560" y="265" width="360" height="50" rx="6"/>
+    <text class="m" x="740" y="295">factorial(2) = 2 * 1 = 2</text>
+  </g>
+  <path class="ln" d="M740,265 L740,235" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="ret" x="560" y="180" width="360" height="50" rx="6"/>
+    <text class="m" x="740" y="210">factorial(3) = 3 * 2 = 6</text>
+  </g>
+  <path class="ln" d="M740,180 L740,150" marker-end="url(#ar)"/>
+
+  <g>
+    <rect class="base" x="560" y="95" width="360" height="50" rx="6"/>
+    <text class="m" x="740" y="125">factorial(4) = 4 * 6 = 24</text>
+  </g>
+
+  <!-- 가로 연결 -->
+  <path class="ln" d="M280,460 L560,460" marker-end="url(#ar)" stroke-dasharray="4 4"/>
+
+  <text class="lab" x="500" y="525" text-anchor="middle">점화식: T(n) = T(n-1) + 1 ⇒ Θ(n)    ·    기저: factorial(0) = 1</text>
+</svg>

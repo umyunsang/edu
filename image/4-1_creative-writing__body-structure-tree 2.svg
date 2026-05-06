@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" font-family="system-ui,sans-serif">
+  <style>
+    .root{fill:#2c3e50;stroke:#1c2833;stroke-width:2}
+    .l1{fill:#e67e22;stroke:#d35400;stroke-width:2}
+    .l2{fill:#2e86de;stroke:#2471a3;stroke-width:2}
+    .l3{fill:#27ae60;stroke:#1e8449;stroke-width:2}
+    .l4{fill:#8e44ad;stroke:#6c3483;stroke-width:2}
+    .leaf{fill:#fff;stroke:#555}
+    .wtxt{fill:#fff;font-size:13px;font-weight:bold;text-anchor:middle}
+    .lab{fill:#333;font-size:12px;text-anchor:middle}
+    .title{font-size:18px;font-weight:bold;text-anchor:middle}
+    .ln{stroke:#333;stroke-width:1.5;fill:none}
+    .note{font-size:13px}
+  </style>
+
+  <text class="title" x="550" y="40">Organization — 본문의 구조 (전체 분류도)</text>
+
+  <!-- Root -->
+  <rect class="root" x="470" y="70" width="160" height="44"/>
+  <text class="wtxt" x="550" y="97">본문의 구조</text>
+
+  <!-- Level 1 -->
+  <rect class="l1" x="230" y="160" width="180" height="40"/>
+  <text class="wtxt" x="320" y="185">자연적 전개</text>
+
+  <rect class="l1" x="690" y="160" width="180" height="40"/>
+  <text class="wtxt" x="780" y="185">논리적 전개</text>
+
+  <line class="ln" x1="550" y1="114" x2="320" y2="160"/>
+  <line class="ln" x1="550" y1="114" x2="780" y2="160"/>
+
+  <!-- Level 2 natural -->
+  <rect class="l2" x="140" y="240" width="140" height="36"/>
+  <text class="wtxt" x="210" y="263">시간적</text>
+  <rect class="l2" x="340" y="240" width="140" height="36"/>
+  <text class="wtxt" x="410" y="263">공간적</text>
+  <line class="ln" x1="320" y1="200" x2="210" y2="240"/>
+  <line class="ln" x1="320" y1="200" x2="410" y2="240"/>
+
+  <!-- Level 2 logical -->
+  <rect class="l2" x="600" y="240" width="140" height="36"/>
+  <text class="wtxt" x="670" y="263">수직적</text>
+  <rect class="l2" x="800" y="240" width="140" height="36"/>
+  <text class="wtxt" x="870" y="263">수평적</text>
+  <line class="ln" x1="780" y1="200" x2="670" y2="240"/>
+  <line class="ln" x1="780" y1="200" x2="870" y2="240"/>
+
+  <!-- Level 3 vertical -->
+  <rect class="l3" x="560" y="320" width="100" height="34"/>
+  <text class="wtxt" x="610" y="342">점층법</text>
+  <rect class="l3" x="680" y="320" width="100" height="34"/>
+  <text class="wtxt" x="730" y="342">인과법</text>
+  <line class="ln" x1="670" y1="276" x2="610" y2="320"/>
+  <line class="ln" x1="670" y1="276" x2="730" y2="320"/>
+
+  <!-- Level 3 horizontal -->
+  <rect class="l3" x="800" y="320" width="100" height="34"/>
+  <text class="wtxt" x="850" y="342">대비법</text>
+  <rect class="l3" x="920" y="320" width="100" height="34"/>
+  <text class="wtxt" x="970" y="342">열거법</text>
+  <line class="ln" x1="870" y1="276" x2="850" y2="320"/>
+  <line class="ln" x1="870" y1="276" x2="970" y2="320"/>
+
+  <!-- 대비법 하위 -->
+  <rect class="l4" x="780" y="400" width="80" height="32"/>
+  <text class="wtxt" x="820" y="420">반박</text>
+  <rect class="l4" x="870" y="400" width="80" height="32"/>
+  <text class="wtxt" x="910" y="420">절충</text>
+  <line class="ln" x1="850" y1="354" x2="820" y2="400"/>
+  <line class="ln" x1="850" y1="354" x2="910" y2="400"/>
+
+  <!-- 인과법 하위 -->
+  <rect class="l4" x="560" y="400" width="80" height="32"/>
+  <text class="wtxt" x="600" y="420">귀납법</text>
+  <rect class="l4" x="650" y="400" width="80" height="32"/>
+  <text class="wtxt" x="690" y="420">연역법</text>
+  <rect class="l4" x="740" y="400" width="80" height="32"/>
+  <text class="wtxt" x="780" y="420">흐름도</text>
+  <line class="ln" x1="730" y1="354" x2="600" y2="400"/>
+  <line class="ln" x1="730" y1="354" x2="690" y2="400"/>
+  <line class="ln" x1="730" y1="354" x2="780" y2="400"/>
+
+  <!-- 흐름도 하위 -->
+  <rect class="leaf" x="700" y="470" width="80" height="30"/>
+  <text class="lab" x="740" y="489">논리나무</text>
+  <rect class="leaf" x="790" y="470" width="80" height="30"/>
+  <text class="lab" x="830" y="489">가계도</text>
+  <line class="ln" x1="780" y1="432" x2="740" y2="470"/>
+  <line class="ln" x1="780" y1="432" x2="830" y2="470"/>
+
+  <!-- Bottom legends -->
+  <g>
+    <rect x="60" y="560" width="480" height="170" fill="#fff7d6" stroke="#d4a017"/>
+    <text class="note" x="80" y="590" font-weight="bold" fill="#d4a017">자연적 전개</text>
+    <text class="note" x="80" y="620">사건사슬 (chain of events)</text>
+    <text class="note" x="80" y="650">수직 = 시간 / 수평 = 공간</text>
+    <text class="note" x="80" y="680">예: 역사기록, 기행문, 매뉴얼</text>
+    <text class="note" x="80" y="710">시간 순 · 공간 순 전개</text>
+  </g>
+  <g>
+    <rect x="560" y="560" width="480" height="170" fill="#fde2e2" stroke="#c0392b"/>
+    <text class="note" x="580" y="590" font-weight="bold" fill="#c0392b">논리적 전개</text>
+    <text class="note" x="580" y="620">수직(주종) + 수평(동등) + MECE</text>
+    <text class="note" x="580" y="650">예: 힘 글(Hi Five), 경고문</text>
+    <text class="note" x="580" y="680">사건기사, 보고문 = 수직 + 결과 앞</text>
+    <text class="note" x="580" y="710" fill="#c0392b" font-weight="bold">두괄식 배치가 기본</text>
+  </g>
+</svg>
