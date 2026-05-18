@@ -1,0 +1,5 @@
+docling
+qdrant-client
+rank-bm25
+sentence-transformers
+ragas

@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-05-18T14:29:05.216457+00:00",
+  "root": ".",
+  "database": ".aioss-rag/index/fts.sqlite",
+  "records": 250,
+  "method": "SQLite FTS5 lexical index with PDF layout extraction and overlap chunks",
+  "upgrade_path": [
+    "Docling layout parsing",
+    "hybrid dense plus sparse retrieval",
+    "cross-encoder or ColBERT-style reranking",
+    "RAGAS or TruLens answer-level evaluation"
+  ]
+}

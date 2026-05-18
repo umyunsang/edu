@@ -1,0 +1,13 @@
+{
+  "Stop": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 tools/aioss_eval/summarize_session.py --root ."
+        }
+      ]
+    }
+  ]
+}

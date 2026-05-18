@@ -1,0 +1,53 @@
+name: AIOSS Sample CI
+
+on:
+  push:
+    branches:
+      - main
+      - ci/**
+      - feature/**
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  sample-gates:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ComputerScience/4-1_AIOSS
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          python-version: "3.12"
+
+      - name: Install Python tooling
+        run: python -m pip install --upgrade pip pytest ruff
+
+      - name: Install actionlint
+        run: |
+          ACTIONLINT_VERSION=1.7.12
+          curl -sSL -o /tmp/actionlint.tar.gz \
+            "https://github.com/rhysd/actionlint/releases/download/v${ACTIONLINT_VERSION}/actionlint_${ACTIONLINT_VERSION}_linux_amd64.tar.gz"
+          mkdir -p /tmp/actionlint
+          tar -xzf /tmp/actionlint.tar.gz -C /tmp/actionlint
+          echo "/tmp/actionlint" >> "$GITHUB_PATH"
+
+      - name: Validate sample GitHub Actions workflows
+        run: |
+          actionlint sample/sample-solutions/sample-2-ci-basics/.github/workflows/ci.yml
+          actionlint sample/sample-solutions-minimal/sample-2-ci-basics/.github/workflows/ci.yml
+
+      - name: Run sample evaluations
+        run: |
+          python tools/aioss_eval/sample_eval.py --target sample/sample-solutions-minimal --label minimal-ci
+          python tools/aioss_eval/sample_eval.py --target sample/sample-solutions --label solution-ci
+
+      - name: Run lint
+        run: ruff check sample/sample-solutions sample/sample-solutions-minimal tools/aioss_eval

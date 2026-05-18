@@ -8,3 +8,13 @@ CLAUDE.md
 # macOS
 .DS_Store
 **/.DS_Store
+
+# AIOSS generated artifacts
+ComputerScience/4-1_AIOSS/.aioss-rag/.venv/
+ComputerScience/4-1_AIOSS/.aioss-rag/cache/
+ComputerScience/4-1_AIOSS/.aioss-rag/index/
+ComputerScience/4-1_AIOSS/.aioss-eval/runs/
+ComputerScience/4-1_AIOSS/.pytest_cache/
+ComputerScience/4-1_AIOSS/.ruff_cache/
+ComputerScience/4-1_AIOSS/**/__pycache__/
+ComputerScience/4-1_AIOSS/**/*.pyc
