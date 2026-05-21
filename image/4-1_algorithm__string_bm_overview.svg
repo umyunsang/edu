@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <style>
+      .bg{fill:#fbfdff}.title{font:700 32px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 21px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 17px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 14px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:14}.pat{fill:#dbeafe;stroke:#60a5fa}.bad{fill:#fee2e2;stroke:#f87171}.good{fill:#dcfce7;stroke:#22c55e}.txtcell{fill:#f8fafc;stroke:#94a3b8}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#a)}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="650"/>
+  <text class="title" x="52" y="62">문자열 매칭: 전처리표로 이동량을 크게 잡기</text>
+  <text class="t" x="52" y="96">Horspool 상세 추적은 제외하고, PDF의 Boyer-Moore 심화 슬라이드가 말하는 두 휴리스틱만 정리한다.</text>
+
+  <rect class="card" x="58" y="135" width="500" height="220"/>
+  <text class="h" x="84" y="172">억지 기법</text>
+  <text class="t" x="84" y="212">텍스트의 모든 위치에 패턴을 대고</text>
+  <text class="t" x="84" y="238">앞에서부터 비교한다.</text>
+  <text class="s" x="84" y="292">최악: O(mn)</text>
+  <path class="arrow" d="M250 260 C310 260 370 260 430 260"/>
+
+  <rect class="card" x="642" y="135" width="500" height="220"/>
+  <text class="h" x="668" y="172">Boyer-Moore의 생각</text>
+  <text class="t" x="668" y="212">틀린 지점까지 비교했다면, 그 정보를 버리지 않고</text>
+  <text class="t" x="668" y="238">패턴을 여러 칸 건너뛴다.</text>
+  <text class="s" x="668" y="292">전처리표 = 다음 정렬 위치를 결정하는 저장공간</text>
+
+  <g transform="translate(92 400)">
+    <text class="h" x="0" y="0">나쁜 심벌</text>
+    <rect class="bad" x="0" y="28" width="420" height="92" rx="12"/>
+    <text class="t" x="24" y="62">첫 불일치 문자가 패턴 안에 어디 있는지 본다.</text>
+    <text class="s" x="24" y="92">없거나 멀리 있으면 패턴을 더 크게 이동</text>
+  </g>
+  <g transform="translate(585 400)">
+    <text class="h" x="0" y="0">좋은 접미어</text>
+    <rect class="good" x="0" y="28" width="450" height="92" rx="12"/>
+    <text class="t" x="24" y="62">이미 맞은 접미어가 다시 맞도록 이동한다.</text>
+    <text class="s" x="24" y="92">PDF 예: ANA가 맞았으므로 다음 ANA 위치로 건너뜀</text>
+  </g>
+</svg>

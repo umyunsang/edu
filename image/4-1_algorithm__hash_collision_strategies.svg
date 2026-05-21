@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 32px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 21px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 17px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 14px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.box{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:14}.slot{fill:#e0f2fe;stroke:#0284c7}.used{fill:#bae6fd;stroke:#0284c7}.del{fill:#fde68a;stroke:#d97706}.chain{fill:#dcfce7;stroke:#16a34a}.arrow{stroke:#475569;stroke-width:3;fill:none;marker-end:url(#a)}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="title" x="50" y="62">해싱: 충돌이 생기면 탐색 경로가 알고리즘이 된다</text>
+  <text class="t" x="50" y="96">해시 함수는 시작 주소만 준다. 실제 성능은 충돌 처리와 적재율에 좌우된다.</text>
+
+  <rect class="box" x="56" y="135" width="335" height="485"/>
+  <text class="h" x="82" y="174">선형 조사</text>
+  <text class="s" x="82" y="205">h(k)=k mod 13, 빈 칸까지 오른쪽으로 이동</text>
+  <g transform="translate(82 245)">
+    <text class="s" x="0" y="-18">최종 테이블 예</text>
+    <g>
+      <rect class="used" x="0" y="0" width="36" height="36"/><text class="s" x="11" y="24">24</text>
+      <rect class="used" x="36" y="0" width="36" height="36"/><text class="s" x="47" y="24">27</text>
+      <rect class="slot" x="72" y="0" width="36" height="36"/><text class="s" x="84" y="24">.</text>
+      <rect class="slot" x="108" y="0" width="36" height="36"/><text class="s" x="120" y="24">.</text>
+      <rect class="slot" x="144" y="0" width="36" height="36"/><text class="s" x="156" y="24">.</text>
+      <rect class="slot" x="180" y="0" width="36" height="36"/><text class="s" x="192" y="24">.</text>
+      <rect class="used" x="216" y="0" width="36" height="36"/><text class="s" x="227" y="24">45</text>
+      <rect class="used" x="252" y="0" width="36" height="36"/><text class="s" x="263" y="24">71</text>
+    </g>
+    <g transform="translate(0 40)">
+      <rect class="used" x="0" y="0" width="36" height="36"/><text class="s" x="11" y="24">60</text>
+      <rect class="used" x="36" y="0" width="36" height="36"/><text class="s" x="47" y="24">9</text>
+      <rect class="used" x="72" y="0" width="36" height="36"/><text class="s" x="83" y="24">88</text>
+      <rect class="used" x="108" y="0" width="36" height="36"/><text class="s" x="119" y="24">46</text>
+      <rect class="used" x="144" y="0" width="36" height="36"/><text class="s" x="155" y="24">38</text>
+    </g>
+  </g>
+  <text class="t" x="82" y="392">삭제 시 그냥 빈 칸으로 만들면</text>
+  <text class="t" x="82" y="421">뒤쪽 원소 탐색이 끊긴다.</text>
+  <rect class="del" x="82" y="452" width="185" height="48" rx="10"/>
+  <text class="t" x="104" y="483">DELETED 표시</text>
+
+  <rect class="box" x="430" y="135" width="335" height="485"/>
+  <text class="h" x="456" y="174">군집화 완화</text>
+  <text class="t" x="456" y="220">선형 조사는 연속 구간을 만들기 쉽다.</text>
+  <text class="t" x="456" y="250">그래서 조사 위치를 다르게 만든다.</text>
+  <text class="s" x="456" y="310">이차 조사: h(k)+i²</text>
+  <text class="s" x="456" y="345">이중 해싱: h1(k)+i*h2(k)</text>
+  <path class="arrow" d="M500 410 C570 360 640 390 700 330"/>
+  <text class="s" x="456" y="480">핵심: 같은 시작 주소라도 다음 후보 칸을</text>
+  <text class="s" x="456" y="505">분산시켜 긴 덩어리를 줄인다.</text>
+
+  <rect class="box" x="804" y="135" width="335" height="485"/>
+  <text class="h" x="830" y="174">체이닝</text>
+  <text class="t" x="830" y="220">한 버킷에 여러 레코드를 리스트로 저장한다.</text>
+  <g transform="translate(840 270)">
+    <rect class="slot" x="0" y="0" width="54" height="38"/><text class="s" x="21" y="25">1</text>
+    <path class="arrow" d="M54 19 L100 19"/>
+    <rect class="chain" x="102" y="0" width="60" height="38" rx="8"/><text class="s" x="126" y="25">8</text>
+    <path class="arrow" d="M162 19 L206 19"/>
+    <rect class="chain" x="208" y="0" width="60" height="38" rx="8"/><text class="s" x="226" y="25">1</text>
+    <rect class="slot" x="0" y="68" width="54" height="38"/><text class="s" x="21" y="93">6</text>
+    <path class="arrow" d="M54 87 L100 87"/>
+    <rect class="chain" x="102" y="68" width="60" height="38" rx="8"/><text class="s" x="123" y="93">6</text>
+    <path class="arrow" d="M162 87 L206 87"/>
+    <rect class="chain" x="208" y="68" width="60" height="38" rx="8"/><text class="s" x="223" y="93">13</text>
+  </g>
+  <text class="s" x="830" y="480">충돌 자체를 없애지는 않는다.</text>
+  <text class="s" x="830" y="505">충돌을 리스트 길이 문제로 바꾼다.</text>
+</svg>

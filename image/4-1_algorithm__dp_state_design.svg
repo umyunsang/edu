@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="700" viewBox="0 0 1250 700">
+  <defs>
+    <style>
+      .bg{fill:#fbfdff}.title{font:700 32px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 21px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 17px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 14px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:14}.blue{fill:#e0f2fe;stroke:#38bdf8}.green{fill:#dcfce7;stroke:#22c55e}.amber{fill:#fef3c7;stroke:#f59e0b}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#a)}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="700"/>
+  <text class="title" x="52" y="62">동적 계획법은 점화식 암기가 아니라 상태 설계다</text>
+  <text class="t" x="52" y="96">PDF의 Fibonacci, 이항계수, 격자, Coin, Knapsack, LCS, Floyd, Edit distance는 같은 질문으로 풀린다.</text>
+
+  <g transform="translate(70 145)">
+    <rect class="card blue" x="0" y="0" width="190" height="90"/><text class="h" x="26" y="38">1 상태</text><text class="s" x="26" y="64">한 칸의 의미</text>
+    <path class="arrow" d="M190 45 L245 45"/>
+    <rect class="card green" x="250" y="0" width="190" height="90"/><text class="h" x="276" y="38">2 기반값</text><text class="s" x="276" y="64">가장 작은 문제</text>
+    <path class="arrow" d="M440 45 L495 45"/>
+    <rect class="card amber" x="500" y="0" width="190" height="90"/><text class="h" x="526" y="38">3 전이</text><text class="s" x="526" y="64">선택지 비교</text>
+    <path class="arrow" d="M690 45 L745 45"/>
+    <rect class="card blue" x="750" y="0" width="190" height="90"/><text class="h" x="776" y="38">4 순서</text><text class="s" x="776" y="64">어느 칸 먼저?</text>
+    <path class="arrow" d="M940 45 L995 45"/>
+    <rect class="card green" x="1000" y="0" width="140" height="90"/><text class="h" x="1026" y="38">5 복원</text><text class="s" x="1026" y="64">선택 추적</text>
+  </g>
+
+  <rect class="card" x="72" y="310" width="330" height="250"/>
+  <text class="h" x="98" y="350">중복 부분 문제</text>
+  <text class="t" x="98" y="390">Fibonacci 분할정복은 같은 fib(n)을</text>
+  <text class="t" x="98" y="418">여러 번 다시 계산한다.</text>
+  <text class="s" x="98" y="474">메모이제이션: 필요할 때 저장</text>
+  <text class="s" x="98" y="502">테이블화: 작은 값부터 채움</text>
+
+  <rect class="card" x="460" y="310" width="330" height="250"/>
+  <text class="h" x="486" y="350">최적 부분 구조</text>
+  <text class="t" x="486" y="390">부분 문제의 최적해를 합쳐서</text>
+  <text class="t" x="486" y="418">전체 최적해를 만들 수 있어야 한다.</text>
+  <text class="s" x="486" y="474">가능: 최단경로, MCM, Knapsack</text>
+  <text class="s" x="486" y="502">주의: 최장 단순경로는 바로 안 됨</text>
+
+  <rect class="card" x="848" y="310" width="330" height="250"/>
+  <text class="h" x="874" y="350">표의 차원 늘리기</text>
+  <text class="t" x="874" y="390">기억해야 할 조건이 늘면</text>
+  <text class="t" x="874" y="418">상태에 변수를 추가한다.</text>
+  <text class="s" x="874" y="474">격자 경로: P(i,j)</text>
+  <text class="s" x="874" y="502">표시 칸 조건: P(i,j,c)</text>
+</svg>

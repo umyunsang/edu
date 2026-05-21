@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 31px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 21px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 17px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 14px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:14}.blue{fill:#e0f2fe;stroke:#38bdf8}.green{fill:#dcfce7;stroke:#22c55e}.amber{fill:#fef3c7;stroke:#f59e0b}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#a)}.code{font:600 16px 'SF Mono',Menlo,monospace;fill:#0f172a}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="720"/>
+  <text class="title" x="52" y="62">LCS, Floyd, MCM: 표 뒤에 복원 정보가 숨어 있다</text>
+  <text class="t" x="52" y="96">최적값만 구하면 표 하나로 충분하지만, 실제 답을 출력하려면 선택을 기억해야 한다.</text>
+
+  <rect class="card blue" x="62" y="140" width="340" height="470"/>
+  <text class="h" x="88" y="180">LCS</text>
+  <text class="t" x="88" y="220">마지막 원소가 같으면 대각선+1,</text>
+  <text class="t" x="88" y="248">다르면 위/왼쪽 중 큰 값.</text>
+  <rect class="blue" x="88" y="292" width="276" height="88" rx="12"/>
+  <text class="code" x="110" y="326">same: L[i-1][j-1]+1</text>
+  <text class="code" x="110" y="354">diff: max(up,left)</text>
+  <text class="s" x="88" y="430">원숭이 문제는 두 순서를 만든 뒤</text>
+  <text class="s" x="88" y="456">공통 부분순서를 찾는 응용이다.</text>
+
+  <rect class="card green" x="430" y="140" width="340" height="470"/>
+  <text class="h" x="456" y="180">Floyd-Warshall</text>
+  <text class="t" x="456" y="220">중간 정점 k를 새로 허용할 때</text>
+  <text class="t" x="456" y="248">거쳐 가는 길이 더 짧은지 비교.</text>
+  <rect class="green" x="456" y="292" width="276" height="88" rx="12"/>
+  <text class="code" x="478" y="326">D[i][j] = min(D[i][j],</text>
+  <text class="code" x="478" y="354">             D[i][k]+D[k][j])</text>
+  <text class="s" x="456" y="430">경로를 출력하려면 P[i][j]에</text>
+  <text class="s" x="456" y="456">중간 정점을 저장한다.</text>
+
+  <rect class="card amber" x="798" y="140" width="340" height="470"/>
+  <text class="h" x="824" y="180">MCM</text>
+  <text class="t" x="824" y="220">행렬 구간 Ai..Aj를 어디서</text>
+  <text class="t" x="824" y="248">쪼갤지 k를 모두 시험한다.</text>
+  <rect class="amber" x="824" y="292" width="276" height="88" rx="12"/>
+  <text class="code" x="846" y="326">M[i][j] = min_k</text>
+  <text class="code" x="846" y="354">M[i][k]+M[k+1][j]+cost</text>
+  <text class="s" x="824" y="430">최적 괄호를 출력하려면</text>
+  <text class="s" x="824" y="456">P[i][j]에 최적 k를 저장한다.</text>
+</svg>

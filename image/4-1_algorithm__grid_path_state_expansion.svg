@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 32px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 21px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 17px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 14px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.cell{fill:#fff;stroke:#94a3b8}.block{fill:#334155}.mark{fill:#ef4444}.green{fill:#dcfce7;stroke:#22c55e}.blue{fill:#e0f2fe;stroke:#38bdf8}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:14}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#a)}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <text class="title" x="52" y="62">격자 경로: 같은 점화식, 달라지는 상태</text>
+  <text class="t" x="52" y="96">오른쪽/아래쪽 이동만 허용하면 한 칸은 위쪽과 왼쪽에서만 들어온다.</text>
+
+  <g transform="translate(88 150)">
+    <text class="h" x="0" y="-24">1 기본 경로</text>
+    <g>
+      <rect class="cell" x="0" y="0" width="45" height="45"/><rect class="cell" x="45" y="0" width="45" height="45"/><rect class="cell" x="90" y="0" width="45" height="45"/><rect class="cell" x="135" y="0" width="45" height="45"/>
+      <rect class="cell" x="0" y="45" width="45" height="45"/><rect class="cell" x="45" y="45" width="45" height="45"/><rect class="cell" x="90" y="45" width="45" height="45"/><rect class="cell" x="135" y="45" width="45" height="45"/>
+      <rect class="cell" x="0" y="90" width="45" height="45"/><rect class="cell" x="45" y="90" width="45" height="45"/><rect class="cell" x="90" y="90" width="45" height="45"/><rect class="cell" x="135" y="90" width="45" height="45"/>
+    </g>
+    <text class="s" x="0" y="175">P(i,j)=P(i-1,j)+P(i,j-1)</text>
+  </g>
+
+  <g transform="translate(468 150)">
+    <text class="h" x="0" y="-24">2 막힌 칸</text>
+    <g>
+      <rect class="cell" x="0" y="0" width="45" height="45"/><rect class="cell" x="45" y="0" width="45" height="45"/><rect class="block" x="90" y="0" width="45" height="45"/><rect class="cell" x="135" y="0" width="45" height="45"/>
+      <rect class="cell" x="0" y="45" width="45" height="45"/><rect class="block" x="45" y="45" width="45" height="45"/><rect class="cell" x="90" y="45" width="45" height="45"/><rect class="cell" x="135" y="45" width="45" height="45"/>
+      <rect class="cell" x="0" y="90" width="45" height="45"/><rect class="cell" x="45" y="90" width="45" height="45"/><rect class="cell" x="90" y="90" width="45" height="45"/><rect class="cell" x="135" y="90" width="45" height="45"/>
+    </g>
+    <text class="s" x="0" y="175">blocked이면 P(i,j)=0</text>
+  </g>
+
+  <g transform="translate(848 150)">
+    <text class="h" x="0" y="-24">3 표시 칸 조건</text>
+    <g>
+      <rect class="cell" x="0" y="0" width="45" height="45"/><rect class="cell" x="45" y="0" width="45" height="45"/><circle class="mark" cx="112" cy="22" r="12"/><rect class="cell" x="90" y="0" width="45" height="45"/><rect class="cell" x="135" y="0" width="45" height="45"/>
+      <rect class="cell" x="0" y="45" width="45" height="45"/><rect class="cell" x="45" y="45" width="45" height="45"/><rect class="cell" x="90" y="45" width="45" height="45"/><rect class="cell" x="135" y="45" width="45" height="45"/>
+      <rect class="cell" x="0" y="90" width="45" height="45"/><circle class="mark" cx="67" cy="112" r="12"/><rect class="cell" x="45" y="90" width="45" height="45"/><rect class="cell" x="90" y="90" width="45" height="45"/><rect class="cell" x="135" y="90" width="45" height="45"/>
+    </g>
+    <text class="s" x="0" y="175">P(i,j,c): 표시 칸을 c번 지난 경로 수</text>
+  </g>
+
+  <rect class="card blue" x="96" y="430" width="468" height="120"/>
+  <text class="h" x="122" y="470">한 번 이상 지나는 경우</text>
+  <text class="t" x="122" y="505">P0(i,j): 아직 안 지남, P1(i,j): 이미 지남</text>
+  <text class="s" x="122" y="532">표시 칸에 도착하면 P0의 경로가 P1로 넘어간다.</text>
+
+  <rect class="card green" x="626" y="430" width="468" height="120"/>
+  <text class="h" x="652" y="470">정확히 k번 지나는 경우</text>
+  <text class="t" x="652" y="505">c=0..k를 상태에 넣고 마지막에 P(T,k)를 본다.</text>
+  <text class="s" x="652" y="532">막힌 칸이 섞이면 해당 칸의 모든 c 값을 0으로 둔다.</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 34px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 22px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 17px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 14px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:16}.blue{fill:#e0f2fe;stroke:#38bdf8}.green{fill:#dcfce7;stroke:#22c55e}.amber{fill:#fef3c7;stroke:#f59e0b}.gray{fill:#f1f5f9;stroke:#94a3b8}.omit{fill:#fee2e2;stroke:#ef4444}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#a)}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <text class="title" x="54" y="62">6-7장 전체 구조: 공간을 써서 시간을 줄이는 방법</text>
+  <text class="t" x="54" y="96">PDF 전체를 이미지로 확인한 뒤, 강의에서 실제 풀이로 이어지는 주제만 노트화했다.</text>
+
+  <rect class="card blue" x="54" y="135" width="330" height="210"/>
+  <text class="h" x="78" y="175">6장 공간으로 시간 벌기</text>
+  <text class="t" x="78" y="215">전처리표, 해시 테이블처럼</text>
+  <text class="t" x="78" y="242">정보를 미리 저장해 탐색을 줄인다.</text>
+  <text class="s" x="78" y="288">포함: Boyer-Moore 개념, 해싱</text>
+  <text class="s" x="78" y="313">제외: 기수 정렬, 카운팅 정렬, Horspool</text>
+
+  <rect class="card green" x="456" y="135" width="360" height="210"/>
+  <text class="h" x="480" y="175">7장 동적 계획법</text>
+  <text class="t" x="480" y="215">같은 부분 문제를 다시 풀지 않도록</text>
+  <text class="t" x="480" y="242">표에 저장하고 재사용한다.</text>
+  <text class="s" x="480" y="288">포함: Fibonacci, 이항계수, 격자, Coin,</text>
+  <text class="s" x="480" y="313">Knapsack, LCS, Floyd, Edit distance</text>
+
+  <rect class="card amber" x="888" y="135" width="258" height="210"/>
+  <text class="h" x="912" y="175">보충 자료</text>
+  <text class="t" x="912" y="215">DP 설계 과정을 더 길게</text>
+  <text class="t" x="912" y="242">전개한 풀이 자료</text>
+  <text class="s" x="912" y="288">포함: MCM, Floyd 복원,</text>
+  <text class="s" x="912" y="313">최적성 원리, LCS 응용</text>
+
+  <path class="arrow" d="M384 240 C420 240 430 240 456 240"/>
+  <path class="arrow" d="M816 240 C850 240 860 240 888 240"/>
+
+  <rect class="card gray" x="54" y="405" width="282" height="122"/>
+  <text class="h" x="78" y="445">핵심 질문 1</text>
+  <text class="t" x="78" y="480">무엇을 저장하면</text>
+  <text class="t" x="78" y="506">다시 비교하지 않을까?</text>
+
+  <rect class="card gray" x="390" y="405" width="282" height="122"/>
+  <text class="h" x="414" y="445">핵심 질문 2</text>
+  <text class="t" x="414" y="480">표의 한 칸은</text>
+  <text class="t" x="414" y="506">정확히 무엇을 뜻하나?</text>
+
+  <rect class="card gray" x="726" y="405" width="282" height="122"/>
+  <text class="h" x="750" y="445">핵심 질문 3</text>
+  <text class="t" x="750" y="480">값만 구하나, 실제 선택도</text>
+  <text class="t" x="750" y="506">복원해야 하나?</text>
+
+  <rect class="card omit" x="54" y="570" width="1092" height="52"/>
+  <text class="t" x="78" y="603">최종 제외 범위: 기수 정렬, 카운팅 정렬, Horspool 상세 풀이, OBST</text>
+</svg>
