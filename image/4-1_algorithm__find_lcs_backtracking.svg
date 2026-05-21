@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.title{font:700 32px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.h{font:700 22px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#0f172a}.t{font:500 18px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#334155}.s{font:500 15px 'Apple SD Gothic Neo',Arial,sans-serif;fill:#475569}.mono{font:700 18px 'SF Mono',Menlo,monospace;fill:#0f172a}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:16}.blue{fill:#e0f2fe;stroke:#38bdf8}.green{fill:#dcfce7;stroke:#22c55e}.amber{fill:#fef3c7;stroke:#f59e0b}.pink{fill:#fee2e2;stroke:#fb7185}.arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#a)}.cell{fill:#fff;stroke:#94a3b8}.hit{fill:#bbf7d0;stroke:#16a34a;stroke-width:2}.tie{fill:#fef3c7;stroke:#f59e0b;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <text class="title" x="54" y="62">Find a Longest Common Subsequence: 표에서 실제 문자열을 꺼내기</text>
+  <text class="t" x="54" y="96">LCS 길이 표의 마지막 값은 5다. 하지만 문제는 길이만이 아니라 가능한 LCS 문자열을 역추적으로 찾는 것이다.</text>
+
+  <rect class="card blue" x="64" y="140" width="325" height="170"/>
+  <text class="h" x="88" y="178">입력 수열</text>
+  <text class="mono" x="88" y="220">A = G D V E G T A</text>
+  <text class="mono" x="88" y="258">B = G V C E K S T A G T</text>
+
+  <rect class="card green" x="438" y="140" width="325" height="170"/>
+  <text class="h" x="462" y="178">역추적 규칙</text>
+  <text class="t" x="462" y="218">문자가 같으면 대각선으로 이동하고</text>
+  <text class="t" x="462" y="248">그 문자를 LCS에 넣는다.</text>
+  <text class="s" x="462" y="282">다르면 위/왼쪽 중 큰 값으로 이동한다.</text>
+
+  <rect class="card amber" x="812" y="140" width="325" height="170"/>
+  <text class="h" x="836" y="178">분기점</text>
+  <text class="t" x="836" y="218">위와 왼쪽 값이 같으면</text>
+  <text class="t" x="836" y="248">둘 다 따라가야 다른 LCS를 찾는다.</text>
+  <text class="s" x="836" y="282">이 예제는 서로 다른 LCS가 2개다.</text>
+
+  <g transform="translate(96 385)">
+    <text class="h" x="0" y="-28">한 경로: GVETA</text>
+    <rect class="hit" x="0" y="0" width="92" height="48" rx="10"/><text class="mono" x="32" y="31">G</text>
+    <path class="arrow" d="M92 24 L132 24"/>
+    <rect class="hit" x="140" y="0" width="92" height="48" rx="10"/><text class="mono" x="172" y="31">V</text>
+    <path class="arrow" d="M232 24 L272 24"/>
+    <rect class="hit" x="280" y="0" width="92" height="48" rx="10"/><text class="mono" x="312" y="31">E</text>
+    <path class="arrow" d="M372 24 L412 24"/>
+    <rect class="hit" x="420" y="0" width="92" height="48" rx="10"/><text class="mono" x="452" y="31">T</text>
+    <path class="arrow" d="M512 24 L552 24"/>
+    <rect class="hit" x="560" y="0" width="92" height="48" rx="10"/><text class="mono" x="592" y="31">A</text>
+  </g>
+
+  <g transform="translate(96 515)">
+    <text class="h" x="0" y="-28">다른 경로: GVEGT</text>
+    <rect class="hit" x="0" y="0" width="92" height="48" rx="10"/><text class="mono" x="32" y="31">G</text>
+    <path class="arrow" d="M92 24 L132 24"/>
+    <rect class="hit" x="140" y="0" width="92" height="48" rx="10"/><text class="mono" x="172" y="31">V</text>
+    <path class="arrow" d="M232 24 L272 24"/>
+    <rect class="hit" x="280" y="0" width="92" height="48" rx="10"/><text class="mono" x="312" y="31">E</text>
+    <path class="arrow" d="M372 24 L412 24"/>
+    <rect class="hit" x="420" y="0" width="92" height="48" rx="10"/><text class="mono" x="452" y="31">G</text>
+    <path class="arrow" d="M512 24 L552 24"/>
+    <rect class="hit" x="560" y="0" width="92" height="48" rx="10"/><text class="mono" x="592" y="31">T</text>
+  </g>
+
+  <rect class="card pink" x="812" y="390" width="325" height="160"/>
+  <text class="h" x="836" y="430">시험에서 묻는 포인트</text>
+  <text class="t" x="836" y="470">길이만 쓰면 반쪽 답이다.</text>
+  <text class="t" x="836" y="500">표의 동률 분기를 따라가서</text>
+  <text class="t" x="836" y="530">실제 LCS 문자열도 제시해야 한다.</text>
+</svg>
