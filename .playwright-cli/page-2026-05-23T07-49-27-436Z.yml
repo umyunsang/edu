@@ -1,0 +1,176 @@
+- generic [ref=e4]:
+  - link "배너 이미지 AD" [ref=e6] [cursor=pointer]:
+    - /url: /news/event/79683
+    - img "배너 이미지" [ref=e7]
+    - button "AD" [ref=e8]
+  - banner [ref=e9]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - navigation [ref=e13]:
+          - list [ref=e15]:
+            - listitem [ref=e16]:
+              - link "loud" [ref=e17] [cursor=pointer]:
+                - /url: https://www.loud.kr
+                - img [ref=e18]
+            - listitem [ref=e24]:
+              - link "notefolio" [ref=e25] [cursor=pointer]:
+                - /url: https://notefolio.net
+                - img [ref=e26]
+        - generic [ref=e37]:
+          - link "정부지원사업 정부지원사업" [ref=e38] [cursor=pointer]:
+            - /url: /promo/gov-voucher
+            - generic [ref=e40]:
+              - paragraph [ref=e41]: 정부지원사업
+              - img "정부지원사업" [ref=e42]
+          - link "공모전 대행" [ref=e44] [cursor=pointer]:
+            - /url: /promo/stunning-agency
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: 공모전 대행
+              - img [ref=e49]
+        - link "로그인/회원가입" [ref=e53] [cursor=pointer]:
+          - /url: https://accounts.stunning.kr/auth/login?from_url=Loud&redirect_url=https%3A%2F%2Fwww.loud.kr%2Fcontest%2Fview%2F203211&state=lm3wk
+      - generic [ref=e54]:
+        - link "라우드 로고" [ref=e55] [cursor=pointer]:
+          - /url: /
+          - img "라우드 로고" [ref=e57]
+        - generic [ref=e58]:
+          - link "디자인" [ref=e59] [cursor=pointer]:
+            - /url: /
+            - paragraph [ref=e60]: 디자인
+          - link "AI 공모전 로고 AI 공모전 New" [ref=e62] [cursor=pointer]:
+            - /url: /ai
+            - img "AI 공모전 로고" [ref=e63]
+            - paragraph [ref=e64]: AI 공모전
+            - generic [ref=e65]: New
+        - generic [ref=e66]:
+          - textbox [ref=e68]:
+            - /placeholder: 어떤 디자인이 필요하세요?
+          - img [ref=e69] [cursor=pointer]
+    - generic [ref=e71]:
+      - navigation [ref=e72]:
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "카테고리" [ref=e75] [cursor=pointer]:
+              - /url: /category
+              - paragraph [ref=e76]:
+                - img [ref=e77]
+                - text: 카테고리
+          - listitem [ref=e81]:
+            - link "콘테스트 BEST" [ref=e82] [cursor=pointer]:
+              - /url: /contest/list/end
+              - paragraph [ref=e83]:
+                - text: 콘테스트
+                - superscript [ref=e84]: BEST
+          - listitem [ref=e85]:
+            - link "디자이너 찾기" [ref=e86] [cursor=pointer]:
+              - /url: /gelato/market
+              - paragraph [ref=e87]: 디자이너 찾기
+          - listitem [ref=e88]:
+            - link "고객 후기 4.9점" [ref=e89] [cursor=pointer]:
+              - /url: /review
+              - paragraph [ref=e90]:
+                - text: 고객 후기
+                - superscript [ref=e91]:
+                  - img [ref=e92]
+                  - text: 4.9점
+          - listitem [ref=e94]:
+            - link "디자인 사례" [ref=e95] [cursor=pointer]:
+              - /url: /portfolio
+              - paragraph [ref=e96]: 디자인 사례
+          - listitem [ref=e97]
+          - listitem [ref=e99]:
+            - link "원스톱 상담 HOT" [ref=e100] [cursor=pointer]:
+              - /url: /promo/onestop
+              - paragraph [ref=e101]:
+                - button "원스톱 상담 HOT" [ref=e102]:
+                  - text: 원스톱 상담
+                  - paragraph [ref=e103]: HOT
+      - link "디자인 의뢰하기" [ref=e106] [cursor=pointer]:
+        - /url: /contest/category/로고-브랜딩
+        - generic [ref=e107]: 디자인 의뢰하기
+  - generic [ref=e109]:
+    - main [ref=e111]
+    - contentinfo:
+      - generic [ref=e146]:
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - img "LOUD" [ref=e150]
+              - text: powered by
+              - link "STUNNING" [ref=e151] [cursor=pointer]:
+                - /url: https://about.stunning.kr/
+                - strong [ref=e152]: STUNNING
+            - generic [ref=e153]:
+              - link "stunning-web" [ref=e155] [cursor=pointer]:
+                - /url: https://about.stunning.kr
+                - img [ref=e156]
+              - generic [ref=e166]:
+                - generic [ref=e167]: 대표 김승환서비스명 라우드소싱
+                - generic [ref=e168]: 사업자번호 120-87-69298통신판매 제2011-서울강남-01864직업정보제공 J1200020190003
+                - generic [ref=e169]: 주소 서울특별시 강남구 선릉로 636, 키스톤빌딩 3층 302호(삼성동)
+                - generic [ref=e170]: 본 사이트에 게시된 디자이너 및 의뢰기업 정보가 무단으로 수집되는 것을 거부합니다.© STUNNING INC.
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - link "서비스 소개" [ref=e173] [cursor=pointer]:
+                - /url: /guide/service
+                - text: 서비스 소개
+                - img [ref=e175]
+              - link "콘테스트 Q&A" [ref=e179] [cursor=pointer]:
+                - /url: /guide/ask
+                - text: 콘테스트 Q&A
+                - img [ref=e181]
+              - link "이벤트 HOT" [ref=e185] [cursor=pointer]:
+                - /url: /news/event
+                - text: 이벤트
+                - generic [ref=e186]: HOT
+                - img [ref=e188]
+              - link "고객 센터" [ref=e192] [cursor=pointer]:
+                - /url: https://help.loud.kr/hc/ko
+                - text: 고객 센터
+                - img [ref=e194]
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - generic [ref=e200]: 상담시간
+                - generic [ref=e201]:
+                  - paragraph [ref=e202]: 평일11:00 ~ 17:00
+                  - paragraph [ref=e203]: 점심12:30 ~ 13:30
+                  - text: (주말, 공휴일은 제외)
+              - generic [ref=e204]:
+                - generic [ref=e205]: 이메일
+                - link "help@stunning.kr" [ref=e207] [cursor=pointer]:
+                  - /url: mailto:help@stunning.kr
+            - link "노트폴리오 국내 최대 포트폴리오 플랫폼 Notefolio" [ref=e209] [cursor=pointer]:
+              - /url: https://notefolio.net/
+              - generic [ref=e210]:
+                - generic [ref=e211]: 노트폴리오
+                - generic [ref=e212]: 국내 최대 포트폴리오 플랫폼
+              - img "Notefolio" [ref=e213]
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - link "회사소개" [ref=e217] [cursor=pointer]:
+              - /url: https://about.stunning.kr/
+            - link "공지사항" [ref=e219] [cursor=pointer]:
+              - /url: https://help.loud.kr/hc/ko/categories/22656710633881-%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%86%8C%EC%8B%B1-%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD
+            - link "개인정보처리방침" [ref=e221] [cursor=pointer]:
+              - /url: https://help.loud.kr/hc/ko/articles/50085509635865-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8-20260209
+            - link "사업자 확인" [ref=e223] [cursor=pointer]:
+              - /url: http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208769298
+            - link "이용약관" [ref=e225] [cursor=pointer]:
+              - /url: https://help.loud.kr/hc/ko/categories/8358488924441-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80-%EB%B0%8F-%EC%A0%95%EC%B1%85
+            - link "광고 문의" [ref=e227] [cursor=pointer]:
+              - /url: /promo/campaign
+            - link "클래스" [ref=e229] [cursor=pointer]:
+              - /url: /class/list
+            - link "공모전 대행" [ref=e231] [cursor=pointer]:
+              - /url: /promo/stunning-agency
+          - generic [ref=e232]:
+            - link "blog" [ref=e233] [cursor=pointer]:
+              - /url: https://blog.naver.com/louders33
+            - link "facebook" [ref=e235] [cursor=pointer]:
+              - /url: https://www.facebook.com/loudsourcing
+            - link "instagram" [ref=e237] [cursor=pointer]:
+              - /url: https://www.instagram.com/loudsourcing/
+            - link "pinterest" [ref=e239] [cursor=pointer]:
+              - /url: https://www.pinterest.co.kr/loudsourcing/
+            - link "youtube" [ref=e241] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/loudsourcing
