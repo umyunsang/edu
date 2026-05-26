@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#f8fafc"/>
+  <text x="42" y="52" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Dijkstra 슬라이드 예제 최종 상태</text>
+  <text x="42" y="84" font-family="Arial, sans-serif" font-size="16" fill="#475569">시작 정점 A에서 거리 배열을 갱신하고, 매 단계 미확정 정점 중 거리가 가장 작은 정점을 확정한다.</text>
+
+  <g font-family="Arial, sans-serif" font-size="18" text-anchor="middle">
+    <text x="205" y="135" font-weight="700" fill="#334155">확정 순서</text>
+    <rect x="65" y="160" width="280" height="64" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="205" y="199" fill="#111827">A → E → B → G → C → F → D</text>
+
+    <text x="655" y="135" font-weight="700" fill="#334155">최종 거리</text>
+    <rect x="430" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="494" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="558" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="622" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="686" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="750" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <rect x="814" y="160" width="64" height="44" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text x="462" y="188">A</text><text x="526" y="188">B</text><text x="590" y="188">C</text><text x="654" y="188">D</text><text x="718" y="188">E</text><text x="782" y="188">F</text><text x="846" y="188">G</text>
+    <rect x="430" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="494" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="558" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="622" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="686" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="750" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="814" y="204" width="64" height="48" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="462" y="235">0</text><text x="526" y="235">5</text><text x="590" y="235">9</text><text x="654" y="235">11</text><text x="718" y="235">3</text><text x="782" y="235">10</text><text x="846" y="235">8</text>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="75" y="300" width="810" height="70" rx="10" fill="#fff7ed" stroke="#fb923c"/>
+    <text x="100" y="330" font-size="17" font-weight="700" fill="#9a3412">시험에서 틀리는 지점</text>
+    <text x="100" y="356" font-size="16" fill="#334155">정점을 확정한 뒤에는 그 정점의 거리를 다시 줄이지 않는다. 음수 간선이 있으면 이 확정 논리가 깨진다.</text>
+  </g>
+</svg>

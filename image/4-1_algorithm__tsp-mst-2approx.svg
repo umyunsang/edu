@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="520" viewBox="0 0 1080 520">
+  <rect width="1080" height="520" fill="#f8fafc"/>
+  <text x="42" y="52" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">Metric TSP MST 기반 2-근사</text>
+  <text x="42" y="84" font-family="Arial, sans-serif" font-size="16" fill="#475569">MST를 두 번 따라가면 모든 정점을 방문하는 닫힌 walk가 되고, 삼각부등식으로 shortcut해도 길이가 늘지 않는다.</text>
+
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="70" y="145" width="170" height="90" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="155" y="180" font-size="20" font-weight="700" fill="#1e3a8a">MST</text>
+    <text x="155" y="207" font-size="15" fill="#334155">OPT 이하</text>
+
+    <rect x="325" y="145" width="170" height="90" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="410" y="180" font-size="20" font-weight="700" fill="#92400e">간선 2배</text>
+    <text x="410" y="207" font-size="15" fill="#334155">Euler walk</text>
+
+    <rect x="580" y="145" width="170" height="90" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="665" y="180" font-size="20" font-weight="700" fill="#14532d">Shortcut</text>
+    <text x="665" y="207" font-size="15" fill="#334155">길이 증가 없음</text>
+
+    <rect x="835" y="145" width="170" height="90" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="920" y="180" font-size="20" font-weight="700" fill="#4c1d95">Tour</text>
+    <text x="920" y="207" font-size="15" fill="#334155">2 x OPT 이하</text>
+
+    <path d="M240 190 H325" stroke="#64748b" stroke-width="3"/>
+    <path d="M495 190 H580" stroke="#64748b" stroke-width="3"/>
+    <path d="M750 190 H835" stroke="#64748b" stroke-width="3"/>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="315" width="860" height="98" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="140" y="350" font-size="18" font-weight="700" fill="#334155">보장식</text>
+    <text x="140" y="382" font-size="17" fill="#111827">w(MST) &lt;= OPT,  w(Euler walk) = 2w(MST),  w(shortcut tour) &lt;= w(Euler walk)</text>
+  </g>
+</svg>

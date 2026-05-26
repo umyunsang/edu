@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+  <rect width="980" height="420" fill="#f8fafc"/>
+  <text x="40" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">DP 손풀이 핵심 카드</text>
+  <text x="40" y="82" font-family="Arial, sans-serif" font-size="16" fill="#475569">문제마다 이 5칸을 먼저 채우면 표를 안정적으로 만들 수 있다.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="40" y="120" width="160" height="210" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="120" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#1e3a8a">상태</text>
+    <text x="120" y="194" text-anchor="middle" font-size="16" fill="#1e293b">D[i], K[i][w],</text>
+    <text x="120" y="220" text-anchor="middle" font-size="16" fill="#1e293b">L[i][j]의 의미</text>
+    <text x="120" y="266" text-anchor="middle" font-size="15" fill="#475569">한 칸이 무엇을</text>
+    <text x="120" y="290" text-anchor="middle" font-size="15" fill="#475569">대표하는지 쓴다</text>
+
+    <rect x="230" y="120" width="160" height="210" rx="10" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="310" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#14532d">초기값</text>
+    <text x="310" y="194" text-anchor="middle" font-size="16" fill="#1e293b">0행, 0열,</text>
+    <text x="310" y="220" text-anchor="middle" font-size="16" fill="#1e293b">도달 불가값</text>
+    <text x="310" y="266" text-anchor="middle" font-size="15" fill="#475569">표의 가장자리부터</text>
+    <text x="310" y="290" text-anchor="middle" font-size="15" fill="#475569">고정한다</text>
+
+    <rect x="420" y="120" width="160" height="210" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="500" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#92400e">점화식</text>
+    <text x="500" y="194" text-anchor="middle" font-size="16" fill="#1e293b">이전 칸 후보를</text>
+    <text x="500" y="220" text-anchor="middle" font-size="16" fill="#1e293b">비교한다</text>
+    <text x="500" y="266" text-anchor="middle" font-size="15" fill="#475569">max, min, sum 중</text>
+    <text x="500" y="290" text-anchor="middle" font-size="15" fill="#475569">문제 목표에 맞춘다</text>
+
+    <rect x="610" y="120" width="160" height="210" rx="10" fill="#fce7f3" stroke="#db2777" stroke-width="2"/>
+    <text x="690" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#831843">계산순서</text>
+    <text x="690" y="194" text-anchor="middle" font-size="16" fill="#1e293b">작은 문제에서</text>
+    <text x="690" y="220" text-anchor="middle" font-size="16" fill="#1e293b">큰 문제로</text>
+    <text x="690" y="266" text-anchor="middle" font-size="15" fill="#475569">참조 칸이 이미</text>
+    <text x="690" y="290" text-anchor="middle" font-size="15" fill="#475569">계산되어야 한다</text>
+
+    <rect x="800" y="120" width="140" height="210" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="870" y="158" text-anchor="middle" font-size="22" font-weight="700" fill="#4c1d95">복원</text>
+    <text x="870" y="194" text-anchor="middle" font-size="16" fill="#1e293b">마지막 칸에서</text>
+    <text x="870" y="220" text-anchor="middle" font-size="16" fill="#1e293b">역추적</text>
+    <text x="870" y="266" text-anchor="middle" font-size="15" fill="#475569">선택된 물건,</text>
+    <text x="870" y="290" text-anchor="middle" font-size="15" fill="#475569">문자열, 경로</text>
+  </g>
+
+  <g stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M205 225 H225"/>
+    <path d="M395 225 H415"/>
+    <path d="M585 225 H605"/>
+    <path d="M775 225 H795"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

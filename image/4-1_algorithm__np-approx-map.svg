@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520">
+  <rect width="1040" height="520" fill="#f8fafc"/>
+  <text x="42" y="52" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">NP완전과 근사 알고리즘 한 장 정리</text>
+  <text x="42" y="84" font-family="Arial, sans-serif" font-size="16" fill="#475569">정확해를 빠르게 찾기 어려운 문제는 결정문제로 바꿔 분류하고, 최적해 대신 보장 비율을 가진 해를 구한다.</text>
+
+  <g font-family="Arial, sans-serif">
+    <ellipse cx="280" cy="260" rx="210" ry="145" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <ellipse cx="310" cy="260" rx="140" ry="95" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="280" y="145" text-anchor="middle" font-size="22" font-weight="700" fill="#1e3a8a">NP</text>
+    <text x="310" y="245" text-anchor="middle" font-size="22" font-weight="700" fill="#1e3a8a">P</text>
+    <text x="310" y="276" text-anchor="middle" font-size="15" fill="#334155">다항시간 해결</text>
+
+    <rect x="385" y="292" width="110" height="56" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="440" y="315" text-anchor="middle" font-size="18" font-weight="700" fill="#92400e">NPC</text>
+    <text x="440" y="337" text-anchor="middle" font-size="13" fill="#334155">NP ∩ NP-hard</text>
+
+    <rect x="610" y="130" width="300" height="85" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="760" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#334155">NP-hard</text>
+    <text x="760" y="193" text-anchor="middle" font-size="15" fill="#334155">NP 밖의 최적화 문제도 포함 가능</text>
+
+    <rect x="610" y="255" width="300" height="110" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="760" y="290" text-anchor="middle" font-size="21" font-weight="700" fill="#14532d">근사 알고리즘</text>
+    <text x="760" y="320" text-anchor="middle" font-size="15" fill="#334155">최적해와의 거리 보장</text>
+    <text x="760" y="346" text-anchor="middle" font-size="15" fill="#334155">예: Bin Packing, Vertex Cover, TSP</text>
+
+    <rect x="610" y="398" width="300" height="58" rx="10" fill="#fff7ed" stroke="#fb923c"/>
+    <text x="760" y="434" text-anchor="middle" font-size="17" font-weight="700" fill="#9a3412">시험 답안: 변환 방향과 보장 비율을 명시</text>
+
+    <path d="M500 312 C555 260, 570 210, 610 178" fill="none" stroke="#64748b" stroke-width="3"/>
+    <path d="M500 322 C565 326, 575 325, 610 320" fill="none" stroke="#64748b" stroke-width="3"/>
+  </g>
+</svg>
