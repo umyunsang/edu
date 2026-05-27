@@ -1,96 +1,3 @@
----
-aliases:
-  - 알고리즘 7장 이후 시각화 정리
-  - 알고리즘 기말 손풀이 정리
-course: algorithm
-created: '2026-05-26'
-date: '2026-05-26'
-exam: 기말고사
-range: 7장 이후, 최적 이진 검색 트리 제외
-semester: 4-1
-status: draft
-tags:
-  - algorithm
-  - cs/algorithms
-  - exam-summary
-  - final
-  - problem-solving
-  - visual-summary
-  - type/lecture
-title: 알고리즘 7장 이후 시각화 손풀이 정리
-type: lecture
-updated: '2026-05-26'
----
-
-# 알고리즘 7장 이후 시각화 손풀이 정리
-
-## 기본 원리와 문제 구조 한눈에 보기
-
-> [!important] 문제를 처음 봤을 때의 판단 순서
-> 먼저 "이 문제가 표를 채우는 문제인지, 지금 하나를 골라도 되는 문제인지, 상태공간트리를 내려가야 하는 문제인지, 최적해 대신 근사해를 구하는 문제인지"를 구분한다. 알고리즘 이름은 그 다음에 붙인다.
-
-```mermaid
-flowchart TB
-    A["문제를 본다"] --> B{"작은 문제가 반복되는가"}
-    B -->|"예"| C["동적계획법: 상태를 정의하고 표를 채운다"]
-    B -->|"아니오"| D{"지금 선택을 되돌리지 않아도 되는가"}
-    D -->|"예"| E["탐욕: 안전한 선택을 반복한다"]
-    D -->|"아니오"| F{"모든 후보를 트리로 탐색해야 하는가"}
-    F -->|"제약 위반으로 가지를 자름"| G["백트래킹: promising하지 않으면 되돌아간다"]
-    F -->|"한계값으로 가지를 자름"| H["분기한정: 현재 최고해를 이길 수 없으면 버린다"]
-    A --> I{"정확해가 너무 어려운가"}
-    I -->|"문제 난이도 설명"| J["NP완전: 결정 문제와 환원 방향을 설명한다"]
-    I -->|"가까운 해 계산"| K["근사: 해와 최적해의 비율을 설명한다"]
-```
-
-### 장별 큰 그림
-
-| 구분 | 문제 구조 | 기본 원리 | 답안에서 보여야 하는 것 |
-|---|---|---|---|
-| 동적계획법 | 큰 문제가 작은 상태들의 표로 접힘 | 최적 부분 구조와 중복 부분문제 | 상태 정의, 참조하는 이전 칸, 채우는 순서, 역추적 여부 |
-| 탐욕 알고리즘 | 매 순간 후보 중 하나를 고름 | 현재 선택이 어떤 최적해에 포함될 수 있음 | 선택 기준, 선택이 안전한 이유, 실패 반례 여부 |
-| 백트래킹 | 선택지가 상태공간트리로 펼쳐짐 | 불가능한 부분해 아래는 더 볼 필요 없음 | 상태, 후보, 제약 검사, 되돌림 지점 |
-| 분기한정 | 상태공간트리에 한계값이 붙음 | 현재 최고해를 이길 수 없는 가지는 버림 | bound 계산, pruning 이유, DFS/Best-First 확장 순서 |
-| NP완전 | 문제를 결정 문제로 바꾸고 난이도를 비교 | 이미 어려운 문제에서 새 문제로 환원 | NP 소속성, 환원 방향, YES/NO 대응 |
-| 근사 알고리즘 | 최적해 대신 보장된 근사해를 구함 | 최적해의 하한/상한과 알고리즘 해를 비교 | 알고리즘 실행 결과, 근사 비율, 비율이 성립하는 이유 |
-
-### 알고리즘별 문제 구조 요약
-
-| 알고리즘 | 입력 모양 | 상태 또는 선택 | 핵심 원리 | 답안 포인트 |
-|---|---|---|---|---|
-| Coin Changing DP | 목표 금액과 동전 종류 | `C[j]`: 금액 `j`의 최소 동전 수 | 마지막 동전 하나를 떼면 이전 금액의 최적해가 남음 | `j-d` 칸들을 비교하고 최솟값에 1을 더함 |
-| 0-1 Knapsack DP | 물건의 무게/가치와 용량 | `K[i][w]`: `i`번째 물건까지, 용량 `w` | 현재 물건을 넣거나 넣지 않는 두 경우만 비교 | 넣는 경우도 이전 행을 참조해야 같은 물건을 다시 쓰지 않음 |
-| LCS | 두 문자열 | `L[i][j]`: 두 접두사의 LCS 길이 | 마지막 문자가 같으면 대각선, 다르면 위/왼쪽 중 큰 값 | 표 채우기와 문자열 역추적을 분리 |
-| Floyd-Warshall | 가중치 인접행렬 | `D^k[i][j]`: `1..k`만 경유지로 허용한 최단거리 | 새 경유지 `k`를 쓰는 길과 안 쓰는 길만 비교 | 거리행렬과 경로복원 배열 `P`를 구분 |
-| Edit Distance | 두 문자열 | `E[i][j]`: 접두사 변환 최소 비용 | 마지막 연산이 삽입, 삭제, 대체 중 하나 | 왼쪽/위/대각선 방향을 실제 편집 연산과 연결 |
-| Matrix-chain | 행렬 크기 배열 | `M[i][j]`: `A_i..A_j` 최소 곱셈 비용 | 마지막 곱셈 위치 `k`를 모두 시도 | 비용표 `M`과 절단 위치표 `P`를 함께 사용 |
-| Coin Change Greedy | 금액과 동전 체계 | 남은 금액에서 가장 큰 동전 선택 | 현재 가장 큰 동전을 최대한 사용 | 동전 체계가 바뀌면 실패할 수 있음을 반례로 설명 |
-| Fractional Knapsack | 나눌 수 있는 물건과 용량 | 단위 무게당 가치 순서 | 높은 단위 가치를 먼저 채우는 해가 교환 논증으로 정당화됨 | 마지막 물건은 일부만 넣을 수 있음 |
-| Prim | 가중 무방향 그래프 | 현재 트리 `S`에서 바깥으로 나가는 최소 간선 | cut을 가로지르는 최소 간선은 안전함 | 매 단계의 `S`와 선택 간선을 표시 |
-| Kruskal | 가중 무방향 그래프 | 가중치순 간선 검사 | 서로 다른 컴포넌트를 잇는 최소 간선은 안전함 | 작은 간선이어도 사이클이면 버림 |
-| Dijkstra | 음수 간선 없는 가중 그래프 | 시작점 기준 임시 거리 | 가장 작은 임시 거리 정점은 더 짧아질 수 없음 | 확정 정점, 거리 배열, predecessor를 같이 관리 |
-| Huffman | 문자 빈도 | 가장 낮은 빈도 두 노드 병합 | 낮은 빈도 문자는 깊은 형제 노드가 되어도 평균 비용이 작음 | 병합 순서가 트리와 코드 결정 |
-| N-Queen | `N x N` 체스판 | 행마다 열 선택 | 같은 열/대각선 충돌이면 아래를 볼 필요 없음 | 퀸을 놓는 장면보다 되돌리는 장면이 핵심 |
-| Graph Coloring | 그래프와 색 수 | 정점마다 색 선택 | 인접 정점 색 충돌이면 가지치기 | pruning 이유를 "인접 정점과 같은 색"으로 표시 |
-| Knapsack BnB | 0-1 배낭 상태공간트리 | profit, weight, bound | 낙관적 최대 profit이 현재 최고해 이하이면 버림 | bound는 fractional 방식으로 계산한 상한 |
-| Job Assignment BnB | 비용 행렬 | 사람별 일 배정과 lower bound | 낙관적 최소 비용이 현재 최고 비용 이상이면 버림 | 최소화 문제라 pruning 부등호 방향이 Knapsack과 반대 |
-| Bin Packing | 물건 크기와 통 용량 | 물건을 어느 통에 넣을지 선택 | 간단한 배치 규칙으로 통 수를 줄임 | NF/FF/BF/WF의 통 선택 기준을 구분 |
-| Vertex Cover Approx | 그래프 | uncovered edge의 양끝 정점 선택 | 선택한 독립 간선 집합이 최적해의 하한 | 간선 하나당 정점 두 개를 고르므로 2-근사 |
-| TSP Approx | metric 완전 그래프 | MST 기반 순회 | MST 비용은 최적 TSP보다 작거나 같고 shortcut은 비용을 늘리지 않음 | MST, preorder, shortcut, 2-근사 논리를 연결 |
-| NP Reduction | 결정 문제 | 입력 변환 | 이미 어려운 문제를 새 문제로 바꾸면 새 문제도 어렵다 | 환원 방향을 반대로 쓰지 않음 |
-
-### 헷갈리기 쉬운 구조 차이
-
-| 비교 | 구분 기준 |
-|---|---|
-| Coin Changing DP vs Coin Change Greedy | DP는 `현재 금액 이전 칸들`을 비교하고, Greedy는 `현재 남은 금액에서 가장 큰 동전`을 고른다 |
-| 0-1 Knapsack vs Fractional Knapsack | 0-1은 물건을 쪼갤 수 없어 DP/BnB가 필요하고, Fractional은 마지막 물건을 잘라 넣을 수 있어 Greedy가 된다 |
-| Prim vs Kruskal | Prim은 현재 트리에서 바깥으로 나가는 간선을 고르고, Kruskal은 전체 간선을 정렬해 사이클이 없으면 고른다 |
-| Backtracking vs Branch and Bound | Backtracking은 제약 위반으로 버리고, Branch and Bound는 현재 최고해를 이길 가능성이 없어서 버린다 |
-| DP 표 채우기 vs 역추적 | 표 값은 최적값이고, 실제 선택 물건/문자열/경로는 별도의 역추적에서 나온다 |
-| NP-hard vs NP-complete | NP-hard는 적어도 NP만큼 어렵다는 뜻이고, NP-complete는 NP에 속하면서 NP-hard인 문제다 |
-| 정확 알고리즘 vs 근사 알고리즘 | 정확 알고리즘은 최적해를 요구하고, 근사 알고리즘은 최적해와의 거리 비율을 보장한다 |
-
 ## 7장 동적계획법
 
 ### 동적계획법을 손으로 푸는 공통 감각
@@ -116,7 +23,11 @@ DP 표를 볼 때는 표 전체를 외우지 말고, 한 칸만 집중해서 본
 
 ![[pdf/07장-동적계획법-수정판.pdf#page=26|900]]
 
-![[4-1_algorithm__dp-coin-change-usfca.png|900]]
+![[4-1_algorithm__dp-coin-01-structure.png|1250]]
+
+![[4-1_algorithm__dp-coin-02-transition.png|1250]]
+
+![[4-1_algorithm__dp-coin-03-trace.png|1230]]
 
 수업 예제는 금액 12에 동전 `1, 6, 10`을 쓰는 경우와 금액 25에 동전 `1, 7, 15`를 쓰는 경우다. 이 문제는 큰 동전을 먼저 고르는 문제가 아니라, **현재 금액을 만들 수 있는 이전 금액들 중 가장 싼 경로를 고르는 문제**다.
 
@@ -155,7 +66,11 @@ $$
 
 ![[pdf/07장-동적계획법-수정판.pdf#page=29|900]]
 
-![[4-1_algorithm__dp-knapsack-visualizedsa.png|900]]
+![[4-1_algorithm__dp-knapsack-01-structure.png|1250]]
+
+![[4-1_algorithm__dp-knapsack-02-cell.png|1250]]
+
+![[4-1_algorithm__dp-knapsack-03-trace.png|1250]]
 
 0-1 Knapsack은 Coin Change와 다르게 같은 물건을 여러 번 쓸 수 없다. 그래서 현재 물건을 넣는 경우에도 **현재 행이 아니라 이전 행**을 참조한다.
 
@@ -199,7 +114,11 @@ $$
 
 ![[pdf/07장-동적계획법-수정판.pdf#page=34|900]]
 
-![[4-1_algorithm__dp-lcs-usfca.png|900]]
+![[4-1_algorithm__dp-lcs-01-structure.png|1250]]
+
+![[4-1_algorithm__dp-lcs-02-cell.png|1250]]
+
+![[4-1_algorithm__dp-lcs-03-trace.png|1250]]
 
 LCS는 표를 채우는 문제와 문자열을 복원하는 문제가 분리된다. 표의 값은 길이이고, 실제 LCS 문자열은 마지막 칸에서 거꾸로 추적해야 나온다.
 
@@ -240,7 +159,11 @@ $$
 
 ![[pdf/07장-동적계획법-수정판.pdf#page=43|900]]
 
-![[4-1_algorithm__dp-floyd-usfca.png|900]]
+![[4-1_algorithm__dp-floyd-01-structure.png|1250]]
+
+![[4-1_algorithm__dp-floyd-02-update.png|1250]]
+
+![[4-1_algorithm__dp-floyd-03-path.png|1250]]
 
 Floyd-Warshall은 모든 쌍 최단경로를 한꺼번에 구한다. 이때 핵심은 `i`에서 `j`로 가는 길을 무작정 모두 보는 것이 아니라, **중간 정점으로 사용할 수 있는 정점의 범위를 하나씩 늘리는 것**이다.
 
@@ -278,7 +201,11 @@ $$
 
 ![[pdf/07장-동적계획법-수정판.pdf#page=48|900]]
 
-![[4-1_algorithm__dp-edit-distance-wikimedia.png|900]]
+![[4-1_algorithm__dp-edit-01-structure.png|1250]]
+
+![[4-1_algorithm__dp-edit-02-operations.png|1250]]
+
+![[4-1_algorithm__dp-edit-03-trace.png|1250]]
 
 Edit Distance는 표의 세 방향이 실제 편집 동작과 연결되어야 이해된다.
 
@@ -318,7 +245,11 @@ $$
 
 ![[pdf/07-동적계획법-보충-수정판.pdf#page=2|900]]
 
-![[4-1_algorithm__dp-matrix-chain-algotree.png|900]]
+![[4-1_algorithm__dp-matrix-01-structure.png|1250]]
+
+![[4-1_algorithm__dp-matrix-02-cost.png|1250]]
+
+![[4-1_algorithm__dp-matrix-03-table.png|1250]]
 
 연쇄 행렬곱셈은 곱셈 결과는 같지만 괄호 순서에 따라 비용이 달라지는 문제다. 핵심은 **중간 행렬의 크기**다.
 
@@ -383,6 +314,8 @@ $$
 
 ![[pdf/08장-탐욕적기법-수정판.pdf#page=4|900]]
 
+![[4-1_algorithm__greedy-coin-01-counterexample.png|1250]]
+
 수업 예제는 우리나라 동전 체계에서 620원, 345원, 572원을 큰 동전부터 쓰는 흐름이다. 여기서는 큰 동전부터 최대한 쓰면 최적해가 나온다.
 
 Coin Change Greedy의 원리는 매우 단순하다. 매 순간 남은 금액 이하의 가장 큰 동전을 선택한다. 하지만 이 원리는 동전 체계가 특정한 구조를 가질 때만 최적성을 보장한다. 동전 단위가 조금만 바뀌어도 "큰 동전을 먼저 쓰는 선택"이 나중의 조합 가능성을 망칠 수 있다. 그래서 이 문제는 탐욕 알고리즘의 좋은 예이면서 동시에 탐욕 알고리즘의 한계를 보여주는 반례 예제다.
@@ -406,6 +339,8 @@ Coin Change Greedy의 원리는 매우 단순하다. 매 순간 남은 금액 �
 
 ![[pdf/08장-탐욕적기법-수정판.pdf#page=7|900]]
 
+![[4-1_algorithm__greedy-fractional-01-flow.png|1250]]
+
 Fractional Knapsack은 물건을 쪼갤 수 있으므로 0-1 Knapsack과 다르다. 화면에서는 물건을 딱딱한 상자가 아니라 잘라 넣을 수 있는 막대로 봐야 한다.
 
 이 문제의 원리는 교환 논증으로 이해할 수 있다. 단위 무게당 가치가 더 높은 물건을 덜 넣고, 더 낮은 물건을 더 넣은 해가 있다면 둘을 조금 교환해서 총 가치를 올릴 수 있다. 따라서 최적해에서는 단위 가치가 높은 물건부터 채워지는 형태가 된다. 마지막 물건만 용량에 맞게 잘라 넣을 수 있기 때문에 탐욕 선택이 깨지지 않는다.
@@ -426,7 +361,9 @@ Fractional Knapsack은 물건을 쪼갤 수 있으므로 0-1 Knapsack과 다르�
 
 ![[pdf/08장-탐욕적기법-수정판.pdf#page=10|900]]
 
-![[4-1_algorithm__greedy-mst-visualgo.png|900]]
+![[4-1_algorithm__greedy-prim-01-cut.png|1250]]
+
+![[4-1_algorithm__greedy-prim-02-step.png|1250]]
 
 Prim은 현재까지 만든 트리에서 바깥으로 나가는 간선만 후보로 본다. 전체 간선 중 가장 작은 것을 무조건 고르는 것이 아니라, **현재 트리에 붙일 수 있는 가장 싼 간선**을 고른다.
 
@@ -447,7 +384,9 @@ Prim을 손으로 풀 때는 매 단계마다 `S`를 적어야 한다. 간선을
 
 ![[pdf/08장-탐욕적기법-수정판.pdf#page=15|900]]
 
-![[4-1_algorithm__greedy-kruskal-usfca.png|900]]
+![[4-1_algorithm__greedy-kruskal-01-cycle.png|1250]]
+
+![[4-1_algorithm__greedy-kruskal-02-step.png|1250]]
 
 Kruskal은 간선 전체를 가중치 오름차순으로 정렬한 뒤, 사이클을 만들지 않는 간선만 채택한다.
 
@@ -469,7 +408,9 @@ Kruskal의 실수 포인트는 작은 간선을 무조건 넣는 것이다. 작�
 
 ![[pdf/08장-탐욕적기법-수정판.pdf#page=21|900]]
 
-![[4-1_algorithm__greedy-dijkstra-visualgo.png|900]]
+![[4-1_algorithm__greedy-dijkstra-01-relax.png|1250]]
+
+![[4-1_algorithm__greedy-dijkstra-02-step.png|1250]]
 
 Dijkstra는 시작 정점에서 각 정점까지의 임시 거리를 관리한다. 매 단계에서 임시 거리 중 가장 작은 정점을 확정한다. 이 확정이 안전한 이유는 간선 가중치가 음수가 아니기 때문이다.
 
@@ -499,7 +440,9 @@ Dijkstra의 핵심 불변식은 "확정 집합에 들어간 정점의 거리는 
 
 ![[pdf/08장-탐욕적기법-수정판.pdf#page=33|900]]
 
-![[4-1_algorithm__greedy-huffman-tinyray.png|900]]
+![[4-1_algorithm__greedy-huffman-01-merge.png|1250]]
+
+![[4-1_algorithm__greedy-huffman-02-tree.png|1120]]
 
 Huffman은 빈도가 작은 두 문자를 반복해서 합친다. 화면으로 보면 가장 작은 두 노드가 밑에서 합쳐지고, 그 합이 다시 후보 목록으로 들어간다.
 
@@ -537,9 +480,9 @@ Huffman에서 중요한 것은 코드 자체보다 트리 생성 순서다. 시�
 
 ![[pdf/09장-백트래킹과분기한정-수정판-v2.pdf#page=12|900]]
 
-![[4-1_algorithm__backtracking-nqueens-usfca.png|900]]
+![[4-1_algorithm__backtracking-nqueen-01-board.png|1250]]
 
-![[4-1_algorithm__backtracking-nqueens-visualizer.png|900]]
+![[4-1_algorithm__backtracking-nqueen-02-tree.png|1250]]
 
 N-Queen은 행마다 퀸 하나를 놓는다고 생각하면 상태공간이 정리된다. 한 행에서 열을 하나씩 시도하고, 공격받지 않으면 다음 행으로 내려간다.
 
@@ -570,7 +513,7 @@ N-Queen의 기본 원리는 각 행에 퀸을 하나씩 놓아도 일반성을 �
 
 ![[pdf/09장-백트래킹과분기한정-수정판-v2.pdf#page=16|900]]
 
-![[4-1_algorithm__backtracking-graph-coloring-cmu.png|900]]
+![[4-1_algorithm__backtracking-coloring-01-flow.png|1250]]
 
 Graph Coloring은 인접한 정점끼리 같은 색을 쓰면 안 되는 문제다. 백트래킹 관점에서는 정점 하나씩 색을 배정하면서, 이미 색칠된 이웃과 충돌하는지를 검사한다.
 
@@ -593,7 +536,11 @@ Graph Coloring은 제약만족문제처럼 보면 쉽다. 변수는 정점이고
 
 ![[pdf/09장-백트래킹과분기한정-수정판-v2.pdf#page=43|900]]
 
-![[4-1_algorithm__bnb-knapsack-gfg.png|900]]
+![[4-1_algorithm__bnb-common-01-prune.png|1250]]
+
+![[4-1_algorithm__bnb-knapsack-01-tree.png|1250]]
+
+![[4-1_algorithm__bnb-knapsack-02-bound.png|1250]]
 
 분기한정은 백트래킹에 한계값을 붙인다. 0-1 Knapsack에서는 어떤 노드에서 앞으로 얻을 수 있는 최대 가능 이익을 계산하고, 그 값이 현재 최고 이익보다 좋지 않으면 그 아래는 보지 않는다.
 
@@ -635,7 +582,9 @@ Best-First 분기한정에서는 큐가 중요하다.
 
 ![[pdf/09장-백트래킹과분기한정-수정판-v2.pdf#page=64|900]]
 
-![[4-1_algorithm__bnb-job-assignment-gfg.png|900]]
+![[4-1_algorithm__bnb-job-01-matrix.png|1250]]
+
+![[4-1_algorithm__bnb-job-02-bound.png|1250]]
 
 일 배정 문제는 사람마다 맡을 일을 하나씩 정하되 총 비용을 최소화하는 문제다. 상태공간트리에서 깊이 `i`는 `i`번째 사람에게 일을 배정하는 단계다.
 
@@ -658,7 +607,9 @@ Best-First 분기한정에서는 큐가 중요하다.
 
 ![[pdf/10장-NP완전과근사알고리즘-파알.pdf#page=8|900]]
 
-![[4-1_algorithm__np-reductions-visualgo.png|900]]
+![[4-1_algorithm__np-01-classification.png|1250]]
+
+![[4-1_algorithm__np-02-reduction-direction.png|1250]]
 
 NP 단원은 계산을 많이 하기보다 문제의 위치를 정확히 설명해야 한다. 특히 최적화 문제와 결정 문제를 구분해야 한다.
 
@@ -710,7 +661,9 @@ $$
 
 ![[pdf/10장-NP완전과근사알고리즘-파알.pdf#page=16|900]]
 
-![[4-1_algorithm__np-bin-packing-tutorial.png|900]]
+![[4-1_algorithm__approx-bin-01-rules.png|1160]]
+
+![[4-1_algorithm__approx-bin-02-bound.png|1250]]
 
 Bin Packing은 물건들을 용량이 같은 통에 넣되 통 수를 최소화하는 문제다. 화면에서는 물건 조각들이 통을 채우는 장면으로 봐야 한다.
 
@@ -746,7 +699,9 @@ $$
 
 ![[pdf/10장-NP완전과근사알고리즘-파알.pdf#page=21|900]]
 
-![[4-1_algorithm__np-vertex-cover-oakland.png|900]]
+![[4-1_algorithm__approx-vc-01-edge.png|1250]]
+
+![[4-1_algorithm__approx-vc-02-proof.png|1250]]
 
 Vertex Cover는 모든 간선이 선택된 정점 중 적어도 하나에 닿도록 정점 집합을 고르는 문제다.
 
@@ -761,7 +716,7 @@ Minimum Vertex Cover는 NP-complete 문제지만, 간단한 2-근사 알고리�
 
 이 알고리즘이 2-근사인 이유는 선택한 간선들이 서로 독립적으로 남도록 처리되기 때문이다. 알고리즘이 고른 각 간선마다 최적 vertex cover도 적어도 한 끝점은 골라야 한다. 알고리즘은 그 간선마다 두 끝점을 모두 고르므로, 최적해의 최대 두 배 안에 들어간다.
 
-답안에는 다음 요소가 들어가야 한다.
+답안에는 다음 항목이 들어가야 한다.
 
 | 단계 | 답안 표현 |
 |---|---|
@@ -775,7 +730,9 @@ Minimum Vertex Cover는 NP-complete 문제지만, 간단한 2-근사 알고리�
 
 ![[pdf/10장-NP완전과근사알고리즘-파알.pdf#page=25|900]]
 
-![[4-1_algorithm__np-tsp-visualgo.png|900]]
+![[4-1_algorithm__approx-tsp-01-mst.png|1250]]
+
+![[4-1_algorithm__approx-tsp-02-proof.png|1250]]
 
 TSP 근사 알고리즘에서 수업의 핵심은 MST를 이용하는 방식이다. 단, 이 방식은 일반 TSP가 아니라 보통 삼각부등식을 만족하는 metric TSP에서 의미가 있다.
 
@@ -802,13 +759,15 @@ MST 기반 TSP 근사의 원리는 최적 TSP 순회에서 간선 하나를 제�
 
 ### Reduction 시각화로 NP-complete 감각 잡기
 
-![[4-1_algorithm__np-reduction-visualizer.png|900]]
+![[4-1_algorithm__np-02-reduction-direction.png|1250]]
+
+![[4-1_algorithm__np-reduction-01-proof.png|1250]]
 
 환원 문제는 수식보다 화살표 방향이 중요하다. 이미 NP-complete인 문제에서 새 문제로 화살표가 가야 새 문제가 어렵다는 결론이 나온다.
 
 환원의 이론적 의미는 "새 문제를 빠르게 풀 수 있다면, 이미 어려운 문제도 빠르게 풀 수 있다"는 모순 구조다. 이미 NP-complete인 문제 `A`를 새 문제 `B`로 다항 시간에 바꿀 수 있다면, `B`를 푸는 알고리즘은 `A`를 푸는 알고리즘으로도 쓰인다. 그러므로 `B`는 적어도 `A`만큼 어렵다.
 
-손풀이 설명에는 다음 요소가 들어가야 한다.
+손풀이 설명에는 다음 항목이 들어가야 한다.
 
 1. 새 문제가 NP에 속함을 보인다.  
    주어진 해를 다항 시간에 검증할 수 있음을 설명한다.
