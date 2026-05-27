@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[architecture_diagram]], [[architecture_text]], [[bigdata-analysis__md__과제]], [[개념문제_풀이]], [[시험정리]], [[연습문제_풀이]], [[이론정리]]
+siblings:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_diagram|architecture_diagram]], [[ComputerScience/3-2_bigdata-analysis/md/architecture_text|architecture_text]], [[ComputerScience/3-2_bigdata-analysis/md/bigdata-analysis__md__과제|bigdata-analysis__md__과제]], [[ComputerScience/3-2_bigdata-analysis/md/개념문제_풀이|개념문제_풀이]], [[ComputerScience/3-2_bigdata-analysis/md/시험정리|시험정리]], [[ComputerScience/3-2_bigdata-analysis/md/연습문제_풀이|연습문제_풀이]], [[ComputerScience/3-2_bigdata-analysis/md/이론정리|이론정리]]
 ## 1. 실행한 maxBins 및 maxDepth 값
 
 총 **5개의 runs**를 다음과 같은 파라미터 조합으로 실행했습니다:

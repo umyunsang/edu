@@ -1,3 +1,6 @@
+up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+siblings:: [[ComputerScience/4-1_creative-writing/중간고사_창의적글쓰기_정리|중간고사_창의적글쓰기_정리]]
+
 # Creative Writing Course Instructions
 
 이 폴더는 `창의적글쓰기` 수업 과제 작업 공간이다. 답변과 산출물은 기본적으로 한국어로 작성한다.

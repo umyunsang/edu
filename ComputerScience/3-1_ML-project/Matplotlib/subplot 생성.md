@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[imshow 이미지 그래프]], [[pie 원형 그래프]], [[scatter 산점도 그래프]], [[subplot  예제]], [[그래프 스타일]], [[기본 그래프]]
+siblings:: [[ComputerScience/3-1_ML-project/Matplotlib/bar 막대 그래프|bar 막대 그래프]], [[ComputerScience/3-1_ML-project/Matplotlib/boxplot 주식 그래프|boxplot 주식 그래프]], [[ComputerScience/3-1_ML-project/Matplotlib/imshow 이미지 그래프|imshow 이미지 그래프]], [[ComputerScience/3-1_ML-project/Matplotlib/pie 원형 그래프|pie 원형 그래프]], [[ComputerScience/3-1_ML-project/Matplotlib/scatter 산점도 그래프|scatter 산점도 그래프]], [[ComputerScience/3-1_ML-project/Matplotlib/subplot  예제|subplot  예제]], [[ComputerScience/3-1_ML-project/Matplotlib/그래프 스타일|그래프 스타일]], [[ComputerScience/3-1_ML-project/Matplotlib/기본 그래프|기본 그래프]]
 ---
 ### 서브플롯을 활용한 텍스트 표시 예제
 

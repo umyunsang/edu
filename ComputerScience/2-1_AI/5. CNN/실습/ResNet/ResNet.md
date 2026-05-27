@@ -16,9 +16,8 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[CNN 모듈]], [[LR control]], [[pooling]], [[UMNet]], [[VGG]], [[VGGCA]], [[VGGDense]], [[VGGskip]]
 ---
 ![](../../../../../../image/Pasted%20image%2020240604143441.png)
 ### ResNet 모듈

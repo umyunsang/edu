@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[web-programming__1. HTML 기초__연습문제]]
+siblings:: [[ComputerScience/2-1_web-programming/1. HTML 기초/web-programming__1. HTML 기초__연습문제|web-programming__1. HTML 기초__연습문제]]
 ---
 ## 1.html
 	1.&nbsp;대신 <style> 태그에서 공백을 넣을 수 있음

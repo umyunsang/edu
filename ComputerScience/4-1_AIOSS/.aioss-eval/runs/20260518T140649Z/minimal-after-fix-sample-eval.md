@@ -1,3 +1,6 @@
+up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
+siblings:: [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T140649Z/solution-after-fix-sample-eval|solution-after-fix-sample-eval]]
+
 # AIOSS Sample Evaluation: minimal-after-fix
 
 - Target: `/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/ComputerScience/4-1_AIOSS/sample/sample-solutions-minimal`

@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[CNN 모듈]], [[pooling]]
+siblings:: [[ComputerScience/2-1_AI/5. CNN/실습/LeNet/CNN 모듈|CNN 모듈]], [[ComputerScience/2-1_AI/5. CNN/실습/LeNet/pooling|pooling]]
 ---
 ` 3. Learning rate control  
 	` • 1 ~ 74 epoch: 0.001  `

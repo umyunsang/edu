@@ -14,14 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: [[LSM, GDM 선형 회귀모델]], [[Multiple_Linear_Regression]], [[우버데이터_Multiple_Linear_Regression]]
+siblings:: [[ComputerScience/3-1_machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델|LSM, GDM 선형 회귀모델]], [[ComputerScience/3-1_machine-learning/Linear_Regression/Multiple_Linear_Regression|Multiple_Linear_Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/우버데이터_Multiple_Linear_Regression|우버데이터_Multiple_Linear_Regression]]
 ---
 ## Linear Regression
 
 >[!문제]
->![Image](images/Pasted%20image%2020250327165759.png)
+>![[image/3-1_machine-learning__Pasted image 20250327165759.png]]
 >#### **1. 선형 회귀 모델**
 >
 >선형 회귀의 방정식은 다음과 같아.

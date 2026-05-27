@@ -1,108 +1,781 @@
 {
-	"nodes":[
-		{"id":"grp_elective","type":"group","x":-400,"y":1280,"width":1960,"height":500,"color":"6","label":"선택 / 비교과"},
-		{"id":"grp_semester_2a","type":"group","x":-1100,"y":-400,"width":560,"height":1500,"color":"5","label":"2학년 1학기"},
-		{"id":"grp_semester_3a","type":"group","x":360,"y":-400,"width":560,"height":1500,"color":"4","label":"3학년 1학기"},
-		{"id":"grp_semester_2b","type":"group","x":-400,"y":-400,"width":560,"height":1300,"color":"5","label":"2학년 2학기"},
-		{"id":"grp_semester_3b","type":"group","x":1000,"y":-400,"width":560,"height":1300,"color":"4","label":"3학년 2학기"},
-		{"id":"grp_semester_4a","type":"group","x":1700,"y":-400,"width":560,"height":1300,"color":"1","label":"4학년 1학기"},
-		{"id":"grp_semester_1y","type":"group","x":-1800,"y":-200,"width":560,"height":900,"color":"3","label":"1학년 2학기"},
-		{"id":"grp_cert","type":"group","x":1700,"y":1100,"width":560,"height":500,"color":"2","label":"자격증 / 프로그램"},
-		{"id":"n_os","type":"text","text":"### 운영체제\nOS역사, 프로세스 관리, 스레드/멀티태스킹, CPU 스케줄링(FCFS/SJF/SRTF), 동기화, 교착상태, 메모리/가상메모리, 파일시스템","x":-360,"y":-340,"width":480,"height":160,"color":"5"},
-		{"id":"n_network","type":"text","text":"### 컴퓨터 네트워크\n네트워크 기초, 계층모델, 신호처리, 데이터링크, LAN, 라우팅, TCP/소켓, 보안","x":-360,"y":-140,"width":480,"height":140},
-		{"id":"n_database","type":"text","text":"### 데이터베이스\nDBMS, 데이터 모델링, 관계형 모델, SQL, 정규화, 트랜잭션, 보안, 빅데이터 응용","x":-360,"y":40,"width":480,"height":140,"color":"4"},
-		{"id":"n_discrete","type":"text","text":"### 이산수학\n수학적 모델링, 논리, 집합, 관계, 함수, 그래프 이론","x":-360,"y":220,"width":480,"height":120,"color":"3"},
-		{"id":"n_oss","type":"text","text":"### OSS (오픈소스 SW)\n오픈소스 개발 방법론, 협업 도구, 라이선스","x":-360,"y":380,"width":480,"height":120},
-		{"id":"n_python","type":"text","text":"### Python 프로그래밍\n변수, 자료형, 반복/조건문, 리스트, 함수, OOP, 파일I/O","x":-1060,"y":-340,"width":480,"height":120},
-		{"id":"n_ai_intro","type":"text","text":"### 인공지능 개론\nPerceptron, MLP, Backpropagation, 최적화, CNN, AI아바타 프로젝트","x":-1060,"y":-180,"width":480,"height":140,"color":"1"},
-		{"id":"n_data_struct","type":"text","text":"### 자료구조\n리스트, 스택, 큐, 트리, 정렬 알고리즘","x":-1060,"y":0,"width":480,"height":120,"color":"4"},
-		{"id":"n_comp_arch","type":"text","text":"### 컴퓨터 구조\n데이터 표현, 논리회로, CPU 구조, 제어장치, 메모리","x":-1060,"y":160,"width":480,"height":120},
-		{"id":"n_linux","type":"text","text":"### 리눅스\nVI, Shell, 권한, Flask, REST API, DB연동, 프로세스, Docker 입문","x":-1060,"y":320,"width":480,"height":140,"color":"5"},
-		{"id":"n_prob_stat","type":"text","text":"### 확률과 통계\n확률분포, 통계적 추론, 회귀분석\n→ ML/빅데이터의 통계적 기반","x":-1060,"y":500,"width":480,"height":120,"color":"3"},
-		{"id":"n_web","type":"text","text":"### 웹프로그래밍\nHTML, CSS, JavaScript, 프론트엔드/백엔드 기초","x":-1060,"y":660,"width":480,"height":120},
-		{"id":"n_classics","type":"text","text":"### 고전읽기\n멋진신세계 등 고전 분석","x":1040,"y":320,"width":480,"height":100},
-		{"id":"n_cert","type":"text","text":"### 정보처리기사\n필기 + 실기 준비\n→ CS 전과목 종합 평가","x":1740,"y":1160,"width":480,"height":140,"color":"2"},
-		{"id":"n_lgaimer","type":"text","text":"### LG Aimers\nLG AI 교육 프로그램\n→ ML/DL 실무 적용","x":1740,"y":1340,"width":480,"height":140,"color":"2"},
-		{"id":"legend","type":"text","text":"## 범례\n🔴 AI/ML 계열\n🔵 시스템 계열\n🟡 수학 계열\n🟢 개발/SW 계열\n🟣 선택/비교과\n🟠 자격증/프로그램\n\n**화살표 의미**\n→ 선수과목 관계\n⇢ 주제 연관성","x":2450,"y":360,"width":260,"height":340},
-		{"id":"n_optim","type":"text","text":"### 최적화 수학\n행렬 이론, 수학적 최적화 기법\n→ ML 학습의 수학적 토대","x":1040,"y":160,"width":480,"height":120,"color":"3"},
-		{"id":"n_coding_basics","type":"text","text":"### 코딩 기초\n정보표현, 컴퓨팅사고, 알고리즘 입문, 아두이노, 함수","x":-1760,"y":-140,"width":480,"height":140},
-		{"id":"n_linear_algebra","type":"text","text":"### 선형대수학\n벡터, 행렬, 고유값, 선형변환\n→ ML/DL/CV/그래픽스의 수학적 기반","x":-1760,"y":60,"width":480,"height":140,"color":"3"},
-		{"id":"n_neural","type":"text","text":"### 뉴럴네트워크\n고급 신경망 아키텍처, 딥러닝 심화 이론","x":1040,"y":-340,"width":480,"height":120,"color":"1"},
-		{"id":"n_bigdata","type":"text","text":"### 빅데이터 분석\n데이터 처리/분석 기법, 분석 도구 활용","x":1040,"y":-180,"width":480,"height":120,"color":"2"},
-		{"id":"n_graphics","type":"text","text":"### 컴퓨터 그래픽스\nOpenGL, 폴리곤, 좌표공간/카메라, 투영, 깊이버퍼, 지오매트리","x":1040,"y":-20,"width":480,"height":140},
-		{"id":"n_cv","type":"text","text":"### 컴퓨터 비전\n색공간 변환, 기하변환, 히스토그램, 필터링, Canny/Sobel 엣지, 모폴로지, Harris코너, 영상분할(SLIC), PSNR/SSIM","x":1740,"y":-340,"width":480,"height":160,"color":"1"},
-		{"id":"n_algorithm","type":"text","text":"### 알고리즘\nBrute Force, 분할정복, 축소기법, DP, 탐욕, 백트래킹, B&B, NP-완전성, 근사 알고리즘","x":1740,"y":-140,"width":480,"height":160,"color":"4"},
-		{"id":"n_aioss","type":"text","text":"### AIOSS (AI 오픈소스 SW)\nSW메트릭스, 프로젝트관리, GitHub Actions, CI/CD, InnerSource","x":1740,"y":60,"width":480,"height":140,"color":"5"},
-		{"id":"n_writing","type":"text","text":"### 창의적 글쓰기\n에세이, 창작 글쓰기","x":1740,"y":240,"width":480,"height":100},
-		{"id":"track_ai","type":"text","text":"## AI/ML 트랙\nPerceptron → CNN → ML → DL → NLP → CV","x":2450,"y":-350,"width":260,"height":130,"color":"1"},
-		{"id":"track_sys","type":"text","text":"## 시스템 트랙\nOS → 분산처리 → Docker/K8s → AIOSS","x":2450,"y":-180,"width":260,"height":130,"color":"5"},
-		{"id":"track_math","type":"text","text":"## 수학 트랙\n선형대수 → 확률통계 → 이산수학 → 최적화","x":2450,"y":-10,"width":260,"height":130,"color":"3"},
-		{"id":"track_dev","type":"text","text":"## 개발 트랙\nPython → 웹 → DB → 자료구조 → 알고리즘","x":2450,"y":160,"width":260,"height":130,"color":"4"},
-		{"id":"n_coding_test","type":"text","text":"### 코딩테스트\n자료구조 문제풀이, 정렬 알고리즘 실전","x":120,"y":1340,"width":440,"height":120,"color":"6"},
-		{"id":"n_comfyui","type":"text","text":"### ComfyUI\n이미지 생성 AI, Stable Diffusion 워크플로우","x":120,"y":1520,"width":440,"height":120,"color":"6"},
-		{"id":"n_llm","type":"text","text":"### LLM 이해와 활용\nChatGPT API, LLM 기초, RAG, Fine-Tuning, Embedding, TTS/STT","x":600,"y":1340,"width":440,"height":140,"color":"6"},
-		{"id":"n_convergence","type":"text","text":"### 융합과목\n학제간 융합 프로젝트","x":600,"y":1520,"width":440,"height":120,"color":"6"},
-		{"id":"n_docker","type":"text","text":"### Docker & Kubernetes\n도커 기초, K8s 설치, ClusterIP, NodePort, LoadBalancer, Ingress","x":-360,"y":1340,"width":440,"height":140,"color":"6"},
-		{"id":"n_java","type":"text","text":"### Java 프로그래밍\n변수, 자료형, Scanner, 연산자, 조건문","x":-360,"y":1520,"width":440,"height":120,"color":"6"},
-		{"id":"n_ai_sys","type":"text","text":"### AI 시스템 설계\n주문/결제 AI 시스템 프로젝트, 실제 서비스 설계/구현","x":400,"y":-140,"width":480,"height":120,"color":"1"},
-		{"id":"n_distributed","type":"text","text":"### 분산처리\n병렬처리 이론, CUDA 프로그래밍, GPU 병렬 컴퓨팅","x":400,"y":20,"width":480,"height":120,"color":"5"},
-		{"id":"n_pl","type":"text","text":"### 프로그래밍언어론\n구문론, 파싱, 데이터 타입, 언어 설계 원리","x":400,"y":180,"width":480,"height":120},
-		{"id":"n_logic","type":"text","text":"### 수리논리학\n명제논리, 술어논리, 증명론, 논리적 추론","x":400,"y":340,"width":480,"height":120,"color":"3"},
-		{"id":"n_ip","type":"text","text":"### 지식재산권\n특허, 상표, 저작권, 지재권 법률 기초","x":400,"y":500,"width":480,"height":120},
-		{"id":"n_ml_proj","type":"text","text":"### ML 프로젝트\n머신러닝 실전 프로젝트 수행","x":400,"y":660,"width":480,"height":120,"color":"1"},
-		{"id":"n_ml","type":"text","text":"### 머신러닝\nLinear Regression, KNN, Decision Tree, SVM, CNN, UNet, RNN/LSTM, Transformer, SRCNN\n+ 핵심 수학 개념","x":400,"y":-340,"width":480,"height":160,"color":"1"}
-	],
-	"edges":[
-		{"id":"e_coding_python","fromNode":"n_coding_basics","fromSide":"right","toNode":"n_python","toSide":"left","label":"프로그래밍 기초"},
-		{"id":"e_coding_java","fromNode":"n_coding_basics","fromSide":"bottom","toNode":"n_java","toSide":"left","color":"6","label":"언어 확장"},
-		{"id":"e_python_ai","fromNode":"n_python","fromSide":"bottom","toNode":"n_ai_intro","toSide":"top","color":"1","label":"구현 언어"},
-		{"id":"e_python_linux","fromNode":"n_python","fromSide":"bottom","toNode":"n_linux","toSide":"top","label":"Flask/스크립팅"},
-		{"id":"e_python_web","fromNode":"n_python","fromSide":"bottom","toNode":"n_web","toSide":"top","label":"백엔드"},
-		{"id":"e_linalg_ai","fromNode":"n_linear_algebra","fromSide":"right","toNode":"n_ai_intro","toSide":"left","color":"3","label":"수학 기반"},
-		{"id":"e_linalg_ml","fromNode":"n_linear_algebra","fromSide":"right","toNode":"n_ml","toSide":"left","color":"3","label":"벡터/행렬 연산"},
-		{"id":"e_linalg_graphics","fromNode":"n_linear_algebra","fromSide":"right","toNode":"n_graphics","toSide":"left","color":"3","label":"변환 행렬"},
-		{"id":"e_linalg_optim","fromNode":"n_linear_algebra","fromSide":"right","toNode":"n_optim","toSide":"left","color":"3","label":"행렬 이론"},
-		{"id":"e_ai_ml","fromNode":"n_ai_intro","fromSide":"right","toNode":"n_ml","toSide":"left","color":"1","label":"심화"},
-		{"id":"e_ai_aisys","fromNode":"n_ai_intro","fromSide":"right","toNode":"n_ai_sys","toSide":"left","color":"1","label":"시스템 적용"},
-		{"id":"e_ds_algorithm","fromNode":"n_data_struct","fromSide":"right","toNode":"n_algorithm","toSide":"left","color":"4","label":"핵심 선수"},
-		{"id":"e_ds_codingtest","fromNode":"n_data_struct","fromSide":"bottom","toNode":"n_coding_test","toSide":"top","color":"4","label":"문제풀이 기반"},
-		{"id":"e_arch_os","fromNode":"n_comp_arch","fromSide":"right","toNode":"n_os","toSide":"left","color":"5","label":"HW→SW 연계"},
-		{"id":"e_arch_distributed","fromNode":"n_comp_arch","fromSide":"right","toNode":"n_distributed","toSide":"left","color":"5","label":"GPU/CUDA 아키텍처"},
-		{"id":"e_linux_os","fromNode":"n_linux","fromSide":"right","toNode":"n_os","toSide":"left","color":"5","label":"프로세스/시스템"},
-		{"id":"e_linux_docker","fromNode":"n_linux","fromSide":"bottom","toNode":"n_docker","toSide":"top","color":"5","label":"Docker 확장"},
-		{"id":"e_linux_db","fromNode":"n_linux","fromSide":"right","toNode":"n_database","toSide":"left","label":"DB 연동"},
-		{"id":"e_prob_ml","fromNode":"n_prob_stat","fromSide":"right","toNode":"n_ml","toSide":"left","color":"3","label":"통계적 학습"},
-		{"id":"e_prob_bigdata","fromNode":"n_prob_stat","fromSide":"right","toNode":"n_bigdata","toSide":"left","color":"3","label":"분석 기반"},
-		{"id":"e_os_distributed","fromNode":"n_os","fromSide":"right","toNode":"n_distributed","toSide":"left","color":"5","label":"프로세스/스레드 심화"},
-		{"id":"e_os_docker","fromNode":"n_os","fromSide":"bottom","toNode":"n_docker","toSide":"top","color":"5","label":"컨테이너 기반"},
-		{"id":"e_network_distributed","fromNode":"n_network","fromSide":"right","toNode":"n_distributed","toSide":"left","color":"5","label":"분산 통신"},
-		{"id":"e_network_docker","fromNode":"n_network","fromSide":"bottom","toNode":"n_docker","toSide":"top","label":"K8s 네트워킹"},
-		{"id":"e_db_bigdata","fromNode":"n_database","fromSide":"right","toNode":"n_bigdata","toSide":"left","color":"2","label":"데이터 관리"},
-		{"id":"e_db_aisys","fromNode":"n_database","fromSide":"right","toNode":"n_ai_sys","toSide":"left","label":"데이터 저장"},
-		{"id":"e_discrete_algorithm","fromNode":"n_discrete","fromSide":"right","toNode":"n_algorithm","toSide":"left","color":"3","label":"그래프/조합론"},
-		{"id":"e_discrete_logic","fromNode":"n_discrete","fromSide":"right","toNode":"n_logic","toSide":"left","color":"3","label":"논리 확장"},
-		{"id":"e_discrete_pl","fromNode":"n_discrete","fromSide":"right","toNode":"n_pl","toSide":"left","color":"3","label":"형식 언어"},
-		{"id":"e_ml_neural","fromNode":"n_ml","fromSide":"right","toNode":"n_neural","toSide":"left","color":"1","label":"DL 심화"},
-		{"id":"e_ml_cv","fromNode":"n_ml","fromSide":"right","toNode":"n_cv","toSide":"left","color":"1","label":"CNN→Vision"},
-		{"id":"e_ml_bigdata","fromNode":"n_ml","fromSide":"right","toNode":"n_bigdata","toSide":"left","color":"1","label":"분석 모델"},
-		{"id":"e_ml_mlproj","fromNode":"n_ml","fromSide":"bottom","toNode":"n_ml_proj","toSide":"top","color":"1","label":"실전 적용"},
-		{"id":"e_ml_llm","fromNode":"n_ml","fromSide":"bottom","toNode":"n_llm","toSide":"top","color":"1","label":"Transformer→LLM"},
-		{"id":"e_neural_cv","fromNode":"n_neural","fromSide":"right","toNode":"n_cv","toSide":"left","color":"1","label":"DL+Vision"},
-		{"id":"e_neural_llm","fromNode":"n_neural","fromSide":"bottom","toNode":"n_llm","toSide":"top","color":"1","label":"NLP 응용"},
-		{"id":"e_optim_ml","fromNode":"n_optim","fromSide":"right","toNode":"n_cv","toSide":"left","color":"3","label":"최적화 기법"},
-		{"id":"e_optim_neural","fromNode":"n_optim","fromSide":"top","toNode":"n_neural","toSide":"bottom","color":"3","label":"학습 최적화"},
-		{"id":"e_graphics_cv","fromNode":"n_graphics","fromSide":"right","toNode":"n_cv","toSide":"left","label":"영상처리 기초"},
-		{"id":"e_distributed_aioss","fromNode":"n_distributed","fromSide":"right","toNode":"n_aioss","toSide":"left","color":"5","label":"DevOps 연계"},
-		{"id":"e_docker_aioss","fromNode":"n_docker","fromSide":"right","toNode":"n_aioss","toSide":"bottom","color":"5","label":"CI/CD 인프라"},
-		{"id":"e_oss_aioss","fromNode":"n_oss","fromSide":"right","toNode":"n_aioss","toSide":"left","label":"OSS 심화"},
-		{"id":"e_aisys_aioss","fromNode":"n_ai_sys","fromSide":"right","toNode":"n_aioss","toSide":"left","color":"1","label":"AI+DevOps"},
-		{"id":"e_comfyui_llm","fromNode":"n_comfyui","fromSide":"right","toNode":"n_llm","toSide":"bottom","color":"6","label":"생성 AI"},
-		{"id":"e_ml_lgaimer","fromNode":"n_ml","fromSide":"bottom","toNode":"n_lgaimer","toSide":"top","color":"2","label":"실무 ML"},
-		{"id":"e_all_cert","fromNode":"n_algorithm","fromSide":"bottom","toNode":"n_cert","toSide":"top","color":"2","label":"CS 종합"},
-		{"id":"e_db_cert","fromNode":"n_database","fromSide":"right","toNode":"n_cert","toSide":"left","color":"2","label":"DB 출제"},
-		{"id":"e_os_cert","fromNode":"n_os","fromSide":"right","toNode":"n_cert","toSide":"left","color":"2","label":"OS 출제"},
-		{"id":"e_net_cert","fromNode":"n_network","fromSide":"right","toNode":"n_cert","toSide":"left","color":"2","label":"네트워크 출제"},
-		{"id":"e_web_aisys","fromNode":"n_web","fromSide":"right","toNode":"n_ai_sys","toSide":"left","label":"웹 서비스"},
-		{"id":"e_algorithm_ct","fromNode":"n_algorithm","fromSide":"bottom","toNode":"n_coding_test","toSide":"top","color":"4","label":"문제풀이 심화"}
-	]
+  "nodes": [
+    {
+      "id": "g_entry",
+      "type": "group",
+      "x": -1180,
+      "y": -520,
+      "width": 680,
+      "height": 300,
+      "color": "6",
+      "label": "진입 / 관계 허브"
+    },
+    {
+      "id": "g_foundation",
+      "type": "group",
+      "x": -1180,
+      "y": -170,
+      "width": 2200,
+      "height": 360,
+      "color": "4",
+      "label": "기초 / 수학 / 프로그래밍"
+    },
+    {
+      "id": "g_ai",
+      "type": "group",
+      "x": -1180,
+      "y": 250,
+      "width": 2200,
+      "height": 390,
+      "color": "1",
+      "label": "AI / ML / Vision"
+    },
+    {
+      "id": "g_system",
+      "type": "group",
+      "x": -1180,
+      "y": 700,
+      "width": 2200,
+      "height": 390,
+      "color": "2",
+      "label": "시스템 / 인프라"
+    },
+    {
+      "id": "g_sw",
+      "type": "group",
+      "x": -1180,
+      "y": 1150,
+      "width": 2200,
+      "height": 390,
+      "color": "3",
+      "label": "SW / 데이터 / 실전"
+    },
+    {
+      "id": "g_ext",
+      "type": "group",
+      "x": -1180,
+      "y": 1600,
+      "width": 2200,
+      "height": 300,
+      "color": "5",
+      "label": "비교과 / 자격 / 글쓰기"
+    },
+    {
+      "id": "home",
+      "type": "file",
+      "file": "README.md",
+      "x": -1100,
+      "y": -440,
+      "width": 260,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "relation",
+      "type": "file",
+      "file": "커리큘럼 관계 정리.md",
+      "x": -780,
+      "y": -440,
+      "width": 260,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "coding",
+      "type": "file",
+      "file": "ComputerScience/1-2_coding-basics/중간고사.md",
+      "x": -1100,
+      "y": -80,
+      "width": 260,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "linear",
+      "type": "text",
+      "text": "선형대수\nGitHub Lab 중심\nML/CV 수학 기반",
+      "x": -780,
+      "y": -80,
+      "width": 260,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "python",
+      "type": "file",
+      "file": "ComputerScience/2-1_python/1. 변수와 자료형.md",
+      "x": -460,
+      "y": -80,
+      "width": 260,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "prob",
+      "type": "file",
+      "file": "ComputerScience/2-1_probability-statistics/3.Probability/Probability.md",
+      "x": -140,
+      "y": -80,
+      "width": 260,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "discrete",
+      "type": "file",
+      "file": "ComputerScience/2-2_discrete-math/4. 그래프/그래프.md",
+      "x": 180,
+      "y": -80,
+      "width": 260,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "opt",
+      "type": "file",
+      "file": "ComputerScience/3-2_optimization-math/1. Matrix/1. Matrix.md",
+      "x": 500,
+      "y": -80,
+      "width": 260,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "ai",
+      "type": "file",
+      "file": "ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation.md",
+      "x": -460,
+      "y": 360,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "ml",
+      "type": "file",
+      "file": "ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념.md",
+      "x": -140,
+      "y": 360,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "ml_project",
+      "type": "file",
+      "file": "ComputerScience/3-1_ML-project/Python 기초/실력과제.md",
+      "x": 180,
+      "y": 290,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "nn",
+      "type": "file",
+      "file": "ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리.md",
+      "x": 180,
+      "y": 450,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "bigdata",
+      "type": "file",
+      "file": "ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제.md",
+      "x": 500,
+      "y": 290,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "cv",
+      "type": "file",
+      "file": "ComputerScience/4-1_computer-vision/중간고사_컴퓨터비전_정밀분석_정리.md",
+      "x": 500,
+      "y": 450,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "llm",
+      "type": "file",
+      "file": "ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG.md",
+      "x": 820,
+      "y": 360,
+      "width": 260,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "arch",
+      "type": "file",
+      "file": "ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습.md",
+      "x": -1100,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "linux",
+      "type": "file",
+      "file": "ComputerScience/2-1_linux/1. 리눅스의 기본.md",
+      "x": -780,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "os",
+      "type": "file",
+      "file": "ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리.md",
+      "x": -460,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "network",
+      "type": "file",
+      "file": "ComputerScience/2-2_computer-network/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍.md",
+      "x": -140,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "distributed",
+      "type": "file",
+      "file": "ComputerScience/3-1_distributed-computing/쿠다.md",
+      "x": 180,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "docker",
+      "type": "file",
+      "file": "ComputerScience/elective_docker-k8s/도커 기초.md",
+      "x": 500,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "aioss",
+      "type": "file",
+      "file": "ComputerScience/4-1_AIOSS/md/Week0 - Orientation.md",
+      "x": 820,
+      "y": 810,
+      "width": 260,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "ds",
+      "type": "file",
+      "file": "ComputerScience/2-1_data-structures/5. 정렬/정렬.md",
+      "x": -780,
+      "y": 1260,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "web",
+      "type": "file",
+      "file": "ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습.md",
+      "x": -460,
+      "y": 1185,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "db",
+      "type": "file",
+      "file": "ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL.md",
+      "x": -460,
+      "y": 1335,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "oss",
+      "type": "file",
+      "file": "ComputerScience/2-2_OSS/3. 문서 객체 모델/문서 객체 모델(DOM).md",
+      "x": -140,
+      "y": 1185,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "pl",
+      "type": "file",
+      "file": "ComputerScience/3-1_programming-languages/필기/3. 구문론.md",
+      "x": -140,
+      "y": 1335,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "alg",
+      "type": "file",
+      "file": "ComputerScience/4-1_algorithm/중간고사_정리.md",
+      "x": 180,
+      "y": 1260,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "codingtest",
+      "type": "file",
+      "file": "ComputerScience/elective_coding-test/자료구조/1. 배열과 리스트.md",
+      "x": 500,
+      "y": 1260,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "aisd",
+      "type": "file",
+      "file": "ComputerScience/3-1_AI-system-design/주문 및 결제 AI 시스템 개발.md",
+      "x": 820,
+      "y": 1260,
+      "width": 260,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "lg",
+      "type": "file",
+      "file": "LGAimer/LG Aimers 9기 지원서 초안.md",
+      "x": -780,
+      "y": 1700,
+      "width": 260,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "cert",
+      "type": "file",
+      "file": "certifications/체크리스트.md",
+      "x": -460,
+      "y": 1700,
+      "width": 260,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "creative",
+      "type": "file",
+      "file": "ComputerScience/4-1_creative-writing/중간고사_창의적글쓰기_정리.md",
+      "x": -140,
+      "y": 1700,
+      "width": 260,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "classic",
+      "type": "file",
+      "file": "ComputerScience/3-2_classics-reading/멋진신세계.md",
+      "x": 180,
+      "y": 1700,
+      "width": 260,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "misc",
+      "type": "file",
+      "file": "ComputerScience/misc/졸업학점.md",
+      "x": 500,
+      "y": 1700,
+      "width": 260,
+      "height": 120,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_home_relation",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "relation",
+      "toSide": "left",
+      "label": "관계 기준"
+    },
+    {
+      "id": "e_relation_coding",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "coding",
+      "toSide": "left"
+    },
+    {
+      "id": "e_relation_python",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "python",
+      "toSide": "left"
+    },
+    {
+      "id": "e_relation_ml",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "ml",
+      "toSide": "left"
+    },
+    {
+      "id": "e_relation_os",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "os",
+      "toSide": "left"
+    },
+    {
+      "id": "e_relation_alg",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "alg",
+      "toSide": "left"
+    },
+    {
+      "id": "e_relation_cv",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "cv",
+      "toSide": "left"
+    },
+    {
+      "id": "e_relation_aioss",
+      "fromNode": "relation",
+      "fromSide": "right",
+      "toNode": "aioss",
+      "toSide": "left"
+    },
+    {
+      "id": "e_coding_python",
+      "fromNode": "coding",
+      "fromSide": "right",
+      "toNode": "python",
+      "toSide": "left"
+    },
+    {
+      "id": "e_python_ai",
+      "fromNode": "python",
+      "fromSide": "right",
+      "toNode": "ai",
+      "toSide": "left"
+    },
+    {
+      "id": "e_linear_ai",
+      "fromNode": "linear",
+      "fromSide": "right",
+      "toNode": "ai",
+      "toSide": "left"
+    },
+    {
+      "id": "e_linear_ml",
+      "fromNode": "linear",
+      "fromSide": "right",
+      "toNode": "ml",
+      "toSide": "left"
+    },
+    {
+      "id": "e_prob_ml",
+      "fromNode": "prob",
+      "fromSide": "right",
+      "toNode": "ml",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ai_ml",
+      "fromNode": "ai",
+      "fromSide": "right",
+      "toNode": "ml",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ml_ml_project",
+      "fromNode": "ml",
+      "fromSide": "right",
+      "toNode": "ml_project",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ml_nn",
+      "fromNode": "ml",
+      "fromSide": "right",
+      "toNode": "nn",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ml_bigdata",
+      "fromNode": "ml",
+      "fromSide": "right",
+      "toNode": "bigdata",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ml_llm",
+      "fromNode": "ml",
+      "fromSide": "right",
+      "toNode": "llm",
+      "toSide": "left"
+    },
+    {
+      "id": "e_nn_cv",
+      "fromNode": "nn",
+      "fromSide": "right",
+      "toNode": "cv",
+      "toSide": "left"
+    },
+    {
+      "id": "e_opt_nn",
+      "fromNode": "opt",
+      "fromSide": "right",
+      "toNode": "nn",
+      "toSide": "left"
+    },
+    {
+      "id": "e_opt_cv",
+      "fromNode": "opt",
+      "fromSide": "right",
+      "toNode": "cv",
+      "toSide": "left"
+    },
+    {
+      "id": "e_arch_os",
+      "fromNode": "arch",
+      "fromSide": "right",
+      "toNode": "os",
+      "toSide": "left"
+    },
+    {
+      "id": "e_linux_os",
+      "fromNode": "linux",
+      "fromSide": "right",
+      "toNode": "os",
+      "toSide": "left"
+    },
+    {
+      "id": "e_os_distributed",
+      "fromNode": "os",
+      "fromSide": "right",
+      "toNode": "distributed",
+      "toSide": "left"
+    },
+    {
+      "id": "e_network_distributed",
+      "fromNode": "network",
+      "fromSide": "right",
+      "toNode": "distributed",
+      "toSide": "left"
+    },
+    {
+      "id": "e_linux_docker",
+      "fromNode": "linux",
+      "fromSide": "right",
+      "toNode": "docker",
+      "toSide": "left"
+    },
+    {
+      "id": "e_os_docker",
+      "fromNode": "os",
+      "fromSide": "right",
+      "toNode": "docker",
+      "toSide": "left"
+    },
+    {
+      "id": "e_network_docker",
+      "fromNode": "network",
+      "fromSide": "right",
+      "toNode": "docker",
+      "toSide": "left"
+    },
+    {
+      "id": "e_distributed_aioss",
+      "fromNode": "distributed",
+      "fromSide": "right",
+      "toNode": "aioss",
+      "toSide": "left"
+    },
+    {
+      "id": "e_docker_aioss",
+      "fromNode": "docker",
+      "fromSide": "right",
+      "toNode": "aioss",
+      "toSide": "left"
+    },
+    {
+      "id": "e_oss_aioss",
+      "fromNode": "oss",
+      "fromSide": "right",
+      "toNode": "aioss",
+      "toSide": "left"
+    },
+    {
+      "id": "e_python_ds",
+      "fromNode": "python",
+      "fromSide": "right",
+      "toNode": "ds",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ds_alg",
+      "fromNode": "ds",
+      "fromSide": "right",
+      "toNode": "alg",
+      "toSide": "left"
+    },
+    {
+      "id": "e_discrete_alg",
+      "fromNode": "discrete",
+      "fromSide": "right",
+      "toNode": "alg",
+      "toSide": "left"
+    },
+    {
+      "id": "e_alg_codingtest",
+      "fromNode": "alg",
+      "fromSide": "right",
+      "toNode": "codingtest",
+      "toSide": "left"
+    },
+    {
+      "id": "e_python_web",
+      "fromNode": "python",
+      "fromSide": "right",
+      "toNode": "web",
+      "toSide": "left"
+    },
+    {
+      "id": "e_python_db",
+      "fromNode": "python",
+      "fromSide": "right",
+      "toNode": "db",
+      "toSide": "left"
+    },
+    {
+      "id": "e_db_bigdata",
+      "fromNode": "db",
+      "fromSide": "right",
+      "toNode": "bigdata",
+      "toSide": "left"
+    },
+    {
+      "id": "e_web_aisd",
+      "fromNode": "web",
+      "fromSide": "right",
+      "toNode": "aisd",
+      "toSide": "left"
+    },
+    {
+      "id": "e_db_aisd",
+      "fromNode": "db",
+      "fromSide": "right",
+      "toNode": "aisd",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ai_aisd",
+      "fromNode": "ai",
+      "fromSide": "right",
+      "toNode": "aisd",
+      "toSide": "left"
+    },
+    {
+      "id": "e_aisd_aioss",
+      "fromNode": "aisd",
+      "fromSide": "right",
+      "toNode": "aioss",
+      "toSide": "left"
+    },
+    {
+      "id": "e_discrete_pl",
+      "fromNode": "discrete",
+      "fromSide": "right",
+      "toNode": "pl",
+      "toSide": "left"
+    },
+    {
+      "id": "e_pl_alg",
+      "fromNode": "pl",
+      "fromSide": "right",
+      "toNode": "alg",
+      "toSide": "left"
+    },
+    {
+      "id": "e_ml_lg",
+      "fromNode": "ml",
+      "fromSide": "right",
+      "toNode": "lg",
+      "toSide": "left"
+    },
+    {
+      "id": "e_bigdata_lg",
+      "fromNode": "bigdata",
+      "fromSide": "right",
+      "toNode": "lg",
+      "toSide": "left"
+    },
+    {
+      "id": "e_os_cert",
+      "fromNode": "os",
+      "fromSide": "right",
+      "toNode": "cert",
+      "toSide": "left"
+    },
+    {
+      "id": "e_db_cert",
+      "fromNode": "db",
+      "fromSide": "right",
+      "toNode": "cert",
+      "toSide": "left"
+    },
+    {
+      "id": "e_network_cert",
+      "fromNode": "network",
+      "fromSide": "right",
+      "toNode": "cert",
+      "toSide": "left"
+    },
+    {
+      "id": "e_alg_cert",
+      "fromNode": "alg",
+      "fromSide": "right",
+      "toNode": "cert",
+      "toSide": "left"
+    },
+    {
+      "id": "e_creative_misc",
+      "fromNode": "creative",
+      "fromSide": "right",
+      "toNode": "misc",
+      "toSide": "left"
+    },
+    {
+      "id": "e_classic_creative",
+      "fromNode": "classic",
+      "fromSide": "right",
+      "toNode": "creative",
+      "toSide": "left"
+    }
+  ]
 }

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[19_sampling]], [[Bootstrapping]]
+siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/19_sampling|19_sampling]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bootstrapping|Bootstrapping]]
 ---
 ### 모집단 통계 추정
 

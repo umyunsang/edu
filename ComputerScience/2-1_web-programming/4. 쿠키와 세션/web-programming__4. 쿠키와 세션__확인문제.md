@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[쿠키와 세션]]
+siblings:: [[ComputerScience/2-1_web-programming/4. 쿠키와 세션/쿠키와 세션|쿠키와 세션]]
 ### Quiz #2:
 주소창에 http://localhost:8080/bank 로 접속하면 a.html이 화면이 뜨며, a.html 안에 `<form action="/bank/deposit">` 라는 폼이 있습니다. 이 폼에서 입력한 정보를 전송받아서 세션에 넣을 수 있는 메소드의 어노테이션은 
 

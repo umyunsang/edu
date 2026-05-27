@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Systems MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 분산처리]]
 
-siblings:: [[1. WhyParlleism]], [[쿠다]]
+siblings:: [[ComputerScience/3-1_distributed-computing/1. WhyParlleism|1. WhyParlleism]], [[ComputerScience/3-1_distributed-computing/쿠다|쿠다]]
 ---
 # CUDA 프로그램 연습 및 CUDA API이해
 

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[probability-statistics__10.Normal_RV__문제 풀이]]
+siblings:: [[ComputerScience/2-1_probability-statistics/10.Normal_RV/probability-statistics__10.Normal_RV__문제 풀이|probability-statistics__10.Normal_RV__문제 풀이]]
 ---
 ### 정규 분포 (Normal Distribution)
 통계학에서 자주 사용되는 중요한 확률 분포 중 하나입니다. 정규 분포는 종 모양의 곡선으로 나타나며, 중심 경향성을 나타내는 평균과 데이터의 퍼짐 정도를 나타내는 표준편차에 의해 결정됩니다. 정규 분포는 다양한 현상에서 자주 관찰되며, 중심 극한 정리 등 여러 통계적 분석에 기초를 제공합니다.

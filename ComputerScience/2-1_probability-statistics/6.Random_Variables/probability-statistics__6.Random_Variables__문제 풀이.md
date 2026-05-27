@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[Expectation]], [[Random Variables]]
+siblings:: [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Expectation|Expectation]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Random Variables|Random Variables]]
 ---
 ### Example random variable
 ```

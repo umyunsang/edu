@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[CNN 모듈]], [[LR control]]
+siblings:: [[ComputerScience/2-1_AI/5. CNN/실습/LeNet/CNN 모듈|CNN 모듈]], [[ComputerScience/2-1_AI/5. CNN/실습/LeNet/LR control|LR control]]
 ---
 ` 1. Pooling layer 변경: Average pooling -> Max pooling
 ` 2. Convolutional layer channel 개수 변경: 6 -> 32, 64`

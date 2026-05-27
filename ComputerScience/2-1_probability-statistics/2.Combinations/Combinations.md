@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[probability-statistics__2.Combinations__문제 풀이]]
+siblings:: [[ComputerScience/2-1_probability-statistics/2.Combinations/probability-statistics__2.Combinations__문제 풀이|probability-statistics__2.Combinations__문제 풀이]]
 ---
 
 ### Permutations of Distinct Objects (서로 다른 객체의 순열)

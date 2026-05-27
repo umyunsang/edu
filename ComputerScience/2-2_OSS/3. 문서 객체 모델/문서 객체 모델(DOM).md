@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[OSS__3. 문서 객체 모델__연습문제]]
+siblings:: [[ComputerScience/2-2_OSS/3. 문서 객체 모델/OSS__3. 문서 객체 모델__연습문제|OSS__3. 문서 객체 모델__연습문제]]
 ---
 ## DOM 이해하기
 #### HTML 태그가 객체 형태인 이유

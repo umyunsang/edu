@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Certifications MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 지식재산개론]]
 
-siblings:: [[IPAT_기출문제]], [[상표_processed]], [[지식재산권_processed]], [[특허_processed]]
+siblings:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/상표_processed|상표_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/특허_processed|특허_processed]]
 [저작권] IPAT 기출문제
 
 **1. 저작권의 보호 대상에 해당하지 않는 것은?**

@@ -11,6 +11,22 @@ from typing import Iterable
 import frontmatter
 import yaml
 
+DEFAULT_EXCLUDE = (
+    ".obsidian",
+    ".git",
+    ".claude",
+    ".agents",
+    ".playwright-cli",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    "__pycache__",
+    ".venv",
+    ".aioss-rag",
+    "scripts",
+    "docs",
+)
+
 
 def _yaml_dump(data: dict) -> str:
     return yaml.safe_dump(
@@ -70,7 +86,7 @@ def merge_frontmatter(
 
 def iter_vault_notes(
     root: Path,
-    exclude: Iterable[str] = (".obsidian", ".git", ".claude", ".pytest_cache", "scripts", "docs"),
+    exclude: Iterable[str] = DEFAULT_EXCLUDE,
 ) -> Iterable[Path]:
     """Robust os.walk-based iteration with NFC normalization (macOS HFS+/iCloud
     returns filenames in NFD by default which breaks string equality with NFC literals)."""

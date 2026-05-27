@@ -1,3 +1,6 @@
+up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+siblings:: [[ComputerScience/4-1_creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]]
+
 # 2차 과제 자기소개서 초안
 
 ## 1. 성장과정을 중심으로 자신에 대해 자유롭게 표현하시오.

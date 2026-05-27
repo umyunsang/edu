@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[MYSQL]], [[데이터베이스]]
+siblings:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/MYSQL|MYSQL]], [[ComputerScience/2-1_web-programming/5. 데이터베이스/데이터베이스|데이터베이스]]
 ---
 **Quiz #1 database는 어디에 속할까요?**
 1) 소프트웨어

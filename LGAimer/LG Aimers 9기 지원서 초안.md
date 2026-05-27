@@ -15,7 +15,8 @@ type: draft
 updated: '2026-05-23'
 ---
 
-up:: [[LGAimer/README|LGAimer 강의 자료 모음]]
+up:: [[커리큘럼 관계 정리|LGAimer]]
+siblings:: [[LGAimer/무제|무제]]
 
 # LG Aimers 9기 지원서 초안
 

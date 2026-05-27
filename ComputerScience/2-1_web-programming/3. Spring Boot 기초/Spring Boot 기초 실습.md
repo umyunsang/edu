@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[web-programming__3. Spring Boot 기초__확인문제]]
+siblings:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/web-programming__3. Spring Boot 기초__확인문제|web-programming__3. Spring Boot 기초__확인문제]]
 #ComputerScience #웹프로그래밍 
 
 ---

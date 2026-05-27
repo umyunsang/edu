@@ -13,9 +13,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Home MOC]]
+up:: [[커리큘럼 관계 정리|기타 자료]]
 
-siblings:: [[misc__발표 스크립트]], [[졸업학점]]
+siblings:: [[ComputerScience/misc/misc__발표 스크립트|misc__발표 스크립트]], [[ComputerScience/misc/졸업학점|졸업학점]]
 # PDF 인쇄 완전 가이드
 
 ## 1. CSS 스니펫 활성화 방법

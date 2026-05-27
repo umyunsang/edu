@@ -14,9 +14,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] 이산수학]]
 
-siblings:: [[과제 번역]]
+siblings:: [[ComputerScience/2-2_discrete-math/과제/과제 번역|과제 번역]]
 ### **작업 1: 데이터 정리 함수 정의**
 
 1. 다음 데이터 정리 단계를 구현하세요:

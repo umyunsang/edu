@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[웹 시스템 제작]]
+siblings:: [[ComputerScience/2-1_web-programming/7. 웹 시스템 제작/웹 시스템 제작|웹 시스템 제작]]
 ---
 ![](../../../../image/Pasted%20image%2020240605150904.png)
 

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[More Discreete Distributions (시험 X)]], [[문제풀이]]
+siblings:: [[ComputerScience/2-1_probability-statistics/8.Poisson/More Discreete Distributions (시험 X)|More Discreete Distributions (시험 X)]], [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]]
 #ComputerScience #확률과통계 
 
 ---

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[LLM & NLP MOC]]
+up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[Llama Index]], [[LLM__검색 증강 생성 RAG__LangChain]], [[RAG]]
+siblings:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Llama Index|Llama Index]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/LLM__검색 증강 생성 RAG__LangChain|LLM__검색 증강 생성 RAG__LangChain]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG|RAG]]
 ---
 ### Vector Store (VectorDB)
 

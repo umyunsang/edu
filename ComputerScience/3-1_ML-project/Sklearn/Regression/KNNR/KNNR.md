@@ -14,9 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[logistic]], [[Multi_Regression]], [[SGDClassifier]]
 ---
 # 농어(length, weight) 데이터 분석 및 회귀 모델 비교
 

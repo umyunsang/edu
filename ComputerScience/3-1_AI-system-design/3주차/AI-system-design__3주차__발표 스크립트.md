@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] AI시스템개발및설계]]
 
-siblings:: [[3주차 발표자료]]
+siblings:: [[ComputerScience/3-1_AI-system-design/3주차/3주차 발표자료|3주차 발표자료]]
 ---
 ### **📢 AI 챗봇 기반 가상 고객센터 – 특허 vs 저작권 보호 전략**
 

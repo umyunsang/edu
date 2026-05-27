@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Algorithms MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 자료구조]]
 
-siblings:: [[트리 (TREE)]]
+siblings:: [[ComputerScience/2-1_data-structures/4. 트리/트리 (TREE)|트리 (TREE)]]
 ---
 #### AVL 트리
 **이진 탐색 트리

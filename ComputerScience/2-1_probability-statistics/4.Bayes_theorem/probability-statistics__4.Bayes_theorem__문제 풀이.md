@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[Bayes' Theorem]]
+siblings:: [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/Bayes' Theorem|Bayes' Theorem]]
 ---
 ### **퀴즈 1: 스팸 이메일 탐지**
 ```

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[LLM & NLP MOC]]
+up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[LLM__검색 증강 생성 RAG__LangChain]], [[RAG]], [[Vector store]]
+siblings:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/LLM__검색 증강 생성 RAG__LangChain|LLM__검색 증강 생성 RAG__LangChain]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG|RAG]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Vector store|Vector store]]
 ---
 #### LlamaIndex란?
 LlamaIndex는 LLM에서 학습되지 않은 데이터를 활용하여 질의응답 AI를 쉽게 개발할 수 있는 오픈소스 라이브러리입니다. 외부 데이터를 LLM에 주입해 더 정확하고 최신의 응답을 생성할 수 있으며, RAG(Retrieval-Augmented Generation) 작업 흐름을 간단한 Python 코드로 구현할 수 있도록 지원합니다. 이 라이브러리는 내부적으로 LangChain을 활용하며, 다음과 같은 특징과 기능을 제공합니다:

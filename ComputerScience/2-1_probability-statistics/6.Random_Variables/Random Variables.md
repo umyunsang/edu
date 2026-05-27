@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[Expectation]], [[probability-statistics__6.Random_Variables__문제 풀이]]
+siblings:: [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Expectation|Expectation]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/probability-statistics__6.Random_Variables__문제 풀이|probability-statistics__6.Random_Variables__문제 풀이]]
 #ComputerScience #확률과통계 
 
 ---

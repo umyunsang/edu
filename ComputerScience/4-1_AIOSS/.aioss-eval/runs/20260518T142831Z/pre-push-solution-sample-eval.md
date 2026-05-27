@@ -1,3 +1,6 @@
+up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
+siblings:: [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T142831Z/pre-push-minimal-sample-eval|pre-push-minimal-sample-eval]]
+
 # AIOSS Sample Evaluation: pre-push-solution
 
 - Target: `/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/ComputerScience/4-1_AIOSS/sample/sample-solutions`

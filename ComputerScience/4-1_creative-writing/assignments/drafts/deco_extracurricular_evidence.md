@@ -11,7 +11,8 @@ tags:
   - source/deco
 ---
 
-up:: [[self_intro_assignment2_starl_skeleton]]
+up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+siblings:: [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]]
 
 # DECO 비교과 참여현황 근거 정리
 

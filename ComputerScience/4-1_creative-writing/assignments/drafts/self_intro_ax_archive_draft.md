@@ -1,3 +1,6 @@
+up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+siblings:: [[ComputerScience/4-1_creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]]
+
 # AX 시대, 지식을 선별하고 연결하는 사람
 
 형식: 자기소개서 과제 초안 - `1. 직무와 관련된 경험`, `2. 지속적 경험`
@@ -58,5 +61,5 @@
 - 자기소개서에서 `지속성`은 작성자의 노력, 특성, 강점이 언제부터 시작되었고 어떤 과정과 결과를 거쳤는지를 보여 주는 요소다. [강의자료 p.92]
 - 자기소개서 평가에서는 경험의 원인, 과정, 결과를 구체적으로 서술하여 자기점검과 자기성찰 능력을 보여 주는 것이 중요하다. [강의자료 p.93]
 - 자기소개서 작성 전략은 `소제목 + STARL` 구조를 활용할 수 있다. [강의자료 p.97]
-- 아카이브 README는 컴퓨터공학 및 AI 전공 과정을 체계적으로 정리하고, AI/ML·시스템·수학·개발 트랙이 연결되는 구조를 제시한다. [edu README](</Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu/README.md:26>)
+- 아카이브 README는 컴퓨터공학 및 AI 전공 과정을 체계적으로 정리하고, AI/ML·시스템·수학·개발 트랙이 연결되는 구조를 제시한다. [[커리큘럼 관계 정리|edu README]]
 - 로컬 Git 기준 전체 커밋 수는 1872개로 확인된다. 단, 이는 현재 로컬 저장소에서 확인한 수치이므로 제출 본문에는 구체 숫자를 넣지 않았다.

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] AI시스템개발및설계]]
 
-siblings:: [[test]]
+siblings:: [[ComputerScience/3-1_AI-system-design/test|test]]
 ---
 # Architecture
 ## **1. 시스템 개요**  

@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] AI시스템개발및설계]]
 
-siblings:: [[주문 및 결제 AI 시스템 개발]]
+siblings:: [[ComputerScience/3-1_AI-system-design/주문 및 결제 AI 시스템 개발|주문 및 결제 AI 시스템 개발]]
 ---
 # 스마트 오더 플랫폼 'cafe-recommend' - B2B 어드민 기능 제안
 

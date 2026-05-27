@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[SLP (Single Layer Perceptron)]]
+siblings:: [[ComputerScience/2-1_AI/2. MLP(Multi Layer Perceptron)/실습/SLP (Single Layer Perceptron)|SLP (Single Layer Perceptron)]]
 #ComputerScience #인공지능 #perceptron 
  
 ---

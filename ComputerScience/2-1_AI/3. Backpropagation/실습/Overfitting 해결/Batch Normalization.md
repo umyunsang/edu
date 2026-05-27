@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[Data Augumentation]], [[Dropout]]
+siblings:: [[ComputerScience/2-1_AI/3. Backpropagation/실습/Overfitting 해결/Data Augumentation|Data Augumentation]], [[ComputerScience/2-1_AI/3. Backpropagation/실습/Overfitting 해결/Dropout|Dropout]]
 ---
 # Batch Normalization
 	MLP 재정의 : self.bn = nn.BatchNorm1d(100) 추가

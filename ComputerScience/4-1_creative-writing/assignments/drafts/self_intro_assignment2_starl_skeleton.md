@@ -1,8 +1,11 @@
+up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+siblings:: [[ComputerScience/4-1_creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]]
+
 # 2차 과제 자기소개서 STARL 스켈레톤
 
 ## 과제 조건 정리
 
-- 원본 파일: `/Users/um-yunsang/Downloads/26-1창글12분반_2차과제.docx`
+- 원본 파일: `/Users/um-yunsang/Downloads/26-1창글12분반_2차과제.docx`
 - 과제명: 자기 소개서 쓰기
 - 문항 1: `성장과정을 중심으로 자신에 대해 자유롭게 표현하시오.` 700자 이상
 - 문항 2: `성격상의 장단점 및 단점 개선 노력에 대해 기술하시오.` 800자 이상

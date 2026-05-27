@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[html, javascript 기초]]
+siblings:: [[ComputerScience/2-2_OSS/0. Html. javascript 기초/html, javascript 기초|html, javascript 기초]]
 ---
 ![](../../../../image/Pasted%20image%2020240906112005.png)
 ```html

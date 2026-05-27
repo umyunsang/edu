@@ -14,9 +14,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Certifications MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 지식재산개론]]
 
-siblings:: [[특허명세서의 양식]]
+siblings:: [[ComputerScience/3-1_intellectual-property/과제/특허명세서의 양식|특허명세서의 양식]]
 【명세서】
 
     【발명의 명칭】

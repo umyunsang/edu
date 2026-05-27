@@ -15,7 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-2] 뉴럴네트워크]]
+siblings:: [[ComputerScience/3-2_neural-network/md/Ch4. 경사 하강법 최적화|Ch4. 경사 하강법 최적화]], [[ComputerScience/3-2_neural-network/md/Ch5. 오차역전파법 수학적 증명|Ch5. 오차역전파법 수학적 증명]], [[ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리|신경망_핵심이론_시험정리]], [[ComputerScience/3-2_neural-network/md/학습기술 이론|학습기술 이론]]
 
 # Ch2. 퍼셉트론 상세 정리
 

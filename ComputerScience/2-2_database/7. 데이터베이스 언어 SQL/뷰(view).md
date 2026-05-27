@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Database MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] 데이터베이스]]
 
-siblings:: [[데이터 베이스 언어 SQL]]
+siblings:: [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
 ---
 ## 4. 뷰
 #### 뷰(view)

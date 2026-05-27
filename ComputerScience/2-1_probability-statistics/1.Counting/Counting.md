@@ -15,9 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[19_sampling]], [[20_mle]], [[22_MAP]], [[23_naive_bayes]], [[Bayes' Theorem]], [[Bernoulli Distribution]], [[Binomial Distribution]], [[Bootstrapping]]
 ---
 
 ### 1. 단계별 카운팅 (곱의 법칙)

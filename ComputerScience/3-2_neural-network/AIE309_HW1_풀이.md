@@ -14,9 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-2] 뉴럴네트워크]]
 
-siblings:: [[0. 리눅스 소개]], [[0. 소개]], [[1. Hello Java]], [[1. WhyParlleism]], [[1. 리눅스의 기본]], [[1. 변수와 자료형]], [[10. 도커]], [[2. 리눅스 VI]]
 ---
 ## 문제 1. Sigmoid 함수의 Backpropagation
 

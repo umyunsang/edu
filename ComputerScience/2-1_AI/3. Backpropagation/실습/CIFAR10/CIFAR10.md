@@ -16,9 +16,8 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[Batch Normalization]], [[Data Augumentation]], [[Dropout]], [[활성화 함수 변경]]
 ---
 ## CIFAR10
 

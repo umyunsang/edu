@@ -14,9 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[Decision_Tree]]
 ---
 ## K-최근접 이웃 (K-Nearest Neighbors) 분류기 활용
 

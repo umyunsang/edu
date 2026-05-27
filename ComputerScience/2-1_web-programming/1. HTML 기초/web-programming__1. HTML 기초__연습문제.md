@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[HTML 기초 실습]]
+siblings:: [[ComputerScience/2-1_web-programming/1. HTML 기초/HTML 기초 실습|HTML 기초 실습]]
 #ComputerScience #웹프로그래밍 #기본태그 
 
 ---

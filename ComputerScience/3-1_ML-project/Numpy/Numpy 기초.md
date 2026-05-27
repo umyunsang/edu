@@ -14,9 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[bar 막대 그래프]], [[boxplot 주식 그래프]], [[Data_analysis]], [[Dataframe]], [[imshow 이미지 그래프]], [[ML-project__LangChain__LangChain]], [[pie 원형 그래프]], [[Pivot]]
 ---
 #### 배열 생성 및 속성 확인
 
@@ -175,7 +174,6 @@ rnd = np.random.rand(5) # [0.37, 0.95, ..., 0.06] - 0~1 사이 난수 5개
 print(rnd)
 rnd = np.random.rand(5) * 10 + 165 # [166.0, 168.6, ..., 172.1] - 범위 조정
 print(rnd.round(2))     # 소수점 둘째 자리까지 반올림
-
 
 print(rnd.astype(int))  # 정수로 변환
 

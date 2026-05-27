@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[LLM & NLP MOC]]
+up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Moderation]], [[openai API 활용]]
+siblings:: [[ComputerScience/elective_LLM/ChatGPT API/Audio Generation|Audio Generation]], [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT API|ChatGPT API]], [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT 모델 이해와 활용|ChatGPT 모델 이해와 활용]], [[ComputerScience/elective_LLM/ChatGPT API/Embedding|Embedding]], [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning|Fine-Tuning]], [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning 실습|Fine-Tuning 실습]], [[ComputerScience/elective_LLM/ChatGPT API/Moderation|Moderation]], [[ComputerScience/elective_LLM/ChatGPT API/openai API 활용|openai API 활용]]
 ### 1. Text to Speech (TTS)
 
 **TTS 모델**은 텍스트를 음성으로 변환하며, 다양한 언어 및 음성 스타일을 제공합니다.  

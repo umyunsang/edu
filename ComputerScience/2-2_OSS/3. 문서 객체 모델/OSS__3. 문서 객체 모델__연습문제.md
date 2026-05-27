@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[문서 객체 모델(DOM)]]
+siblings:: [[ComputerScience/2-2_OSS/3. 문서 객체 모델/문서 객체 모델(DOM)|문서 객체 모델(DOM)]]
 ---
 ![](../../../../image/Pasted%20image%2020241104103609.png)
 >[!풀이]

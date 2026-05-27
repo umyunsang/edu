@@ -14,9 +14,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[KNNR]], [[logistic]], [[SGDClassifier]]
 ---
 ### 1. 데이터셋 불러오기 및 준비
 

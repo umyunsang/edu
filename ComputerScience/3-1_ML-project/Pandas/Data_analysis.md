@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[Dataframe]], [[Pivot]], [[Series]]
+siblings:: [[ComputerScience/3-1_ML-project/Pandas/Dataframe|Dataframe]], [[ComputerScience/3-1_ML-project/Pandas/Pivot|Pivot]], [[ComputerScience/3-1_ML-project/Pandas/Series|Series]]
 ---
 ## 데이터 분석 및 처리 과정 요약
 

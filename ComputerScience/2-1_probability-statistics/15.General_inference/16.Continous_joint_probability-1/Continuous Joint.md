@@ -15,9 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[19_sampling]], [[20_mle]], [[22_MAP]], [[23_naive_bayes]], [[Bayes' Theorem]], [[Bernoulli Distribution]], [[Binomial Distribution]], [[Bootstrapping]]
 +
 ---
 # Continuous Joint
@@ -39,7 +38,6 @@ $$
 $$
 P(a_1 < X \leq a_2, b_1 < Y \leq b_2) = F(a_2, b_2) - F(a_1, b_2) + F(a_1, b_1) - F(a_2, b_1)
 $$
-
 
 ## 다변량 가우시안
 

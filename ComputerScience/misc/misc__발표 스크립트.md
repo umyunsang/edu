@@ -13,9 +13,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Home MOC]]
+up:: [[커리큘럼 관계 정리|기타 자료]]
 
-siblings:: [[PDF_인쇄_완전가이드]], [[졸업학점]]
+siblings:: [[ComputerScience/misc/PDF_인쇄_완전가이드|PDF_인쇄_완전가이드]], [[ComputerScience/misc/졸업학점|졸업학점]]
 ### [GovOn 프로젝트 발표글 : 온프레미스 인프라 및 공식 문서 기반]
 
 *힘 글쓰기 원리(전체에서 부분, 덩이지기, 시각화, 상대 위주 객관화, 공학적 접근) 및 PREP 기법 적용*

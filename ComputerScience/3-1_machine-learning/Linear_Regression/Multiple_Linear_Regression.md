@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: \[\[Machine Learning MOC\]\]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: \[\[Linear Regression\]\], \[\[LSM, GDM 선형 회귀모델\]\], [[우버데이터_Multiple_Linear_Regression]]
+siblings:: [[ComputerScience/3-1_machine-learning/Linear_Regression/Linear Regression|Linear Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델|LSM, GDM 선형 회귀모델]], [[ComputerScience/3-1_machine-learning/Linear_Regression/우버데이터_Multiple_Linear_Regression|우버데이터_Multiple_Linear_Regression]]
 ---
 # Multiple Linear Regression
 

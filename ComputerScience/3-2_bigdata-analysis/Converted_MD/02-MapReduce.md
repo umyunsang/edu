@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[01-WordCount]], [[03_Hadoop]], [[04-ParallelComputation]], [[05-PySpark]], [[06-SparkDataFrames]], [[07-PandasSeries]], [[08-PandaDataframes]], [[BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
+siblings:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API|BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
 # 02. MapReduce - 분산 데이터 처리의 핵심
 
 ## 📚 개요
@@ -38,7 +38,7 @@ MapReduce는 대용량 데이터를 분산 환경에서 효율적으로 처리�
 
 ### 🏗️ 도메인 분해 (Domain Decomposition)
 
-![도메인 분해](images/domain_decomp.png)
+
 
 *출처: https://computing.llnl.gov/tutorials/parallel_comp*
 
@@ -88,7 +88,7 @@ print("곱셈 결과:", list(res))
 - **불변성**: 원본 데이터를 변경하지 않고 새로운 결과 생성
 - **재사용성**: 동일한 함수를 다양한 데이터에 적용 가능
 
-![MapReduce](images/mapreduce.jpg)
+
 
 ## 🔄 Reduce 함수 이해하기
 

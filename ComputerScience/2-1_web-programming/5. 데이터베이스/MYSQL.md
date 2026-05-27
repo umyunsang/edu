@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Software Engineering MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[web-programming__5. 데이터베이스__확인문제]], [[데이터베이스]]
+siblings:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/web-programming__5. 데이터베이스__확인문제|web-programming__5. 데이터베이스__확인문제]], [[ComputerScience/2-1_web-programming/5. 데이터베이스/데이터베이스|데이터베이스]]
 ---
 ## MYSQL
 

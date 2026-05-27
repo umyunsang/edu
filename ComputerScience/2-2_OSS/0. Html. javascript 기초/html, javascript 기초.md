@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[AI Open Source MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[OSS__0. Html. javascript 기초__연습문제]]
+siblings:: [[ComputerScience/2-2_OSS/0. Html. javascript 기초/OSS__0. Html. javascript 기초__연습문제|OSS__0. Html. javascript 기초__연습문제]]
 ---
 # QUIZ.1
 

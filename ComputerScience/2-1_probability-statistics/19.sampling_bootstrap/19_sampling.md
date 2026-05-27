@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[Bootstrapping]], [[Sampling]]
+siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bootstrapping|Bootstrapping]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Sampling|Sampling]]
 ---
 
 ### 샘플을 통한 모평균과 모분산 추정

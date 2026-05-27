@@ -16,10 +16,10 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib_frontmatter import iter_vault_notes, read_note, write_note  # noqa: E402
+from lib_frontmatter import DEFAULT_EXCLUDE, iter_vault_notes, read_note, write_note  # noqa: E402
 
 VAULT = Path("/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu")
-EXCLUDE = (".obsidian", ".git", ".claude", ".pytest_cache", "scripts", "docs", "_templates")
+EXCLUDE = (*DEFAULT_EXCLUDE, "_templates")
 UP_RE = re.compile(r"^up::\s*\[\[([^\]]+)\]\]\s*$", re.MULTILINE)
 SIBLINGS_RE = re.compile(r"^siblings::\s*.*$", re.MULTILINE)
 SECTION_HEADER = "## Linked Notes (auto)"

@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: [[SVM]]
+siblings:: [[ComputerScience/3-1_machine-learning/SVM/SVM|SVM]]
 ---
 # Quadratic Programming 기반 SVM(Support Vector Machine)
 

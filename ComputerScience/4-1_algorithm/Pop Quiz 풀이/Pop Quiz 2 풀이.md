@@ -18,9 +18,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Algorithms MOC]]
+up:: [[커리큘럼 관계 정리|[4-1] 알고리즘]]
 
-siblings:: [[Pop Quiz 1 풀이]]
+siblings:: [[ComputerScience/4-1_algorithm/Pop Quiz 풀이/Pop Quiz 1 풀이|Pop Quiz 1 풀이]]
 # Pop Quiz #2 문제 풀이
 
 ### [문제 1/2] 해싱 (Hashing)

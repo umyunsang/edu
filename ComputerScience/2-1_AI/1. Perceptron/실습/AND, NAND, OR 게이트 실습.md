@@ -16,9 +16,8 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[AND, NAND, OR 게이트]]
 ---
 
 ### AND 게이트

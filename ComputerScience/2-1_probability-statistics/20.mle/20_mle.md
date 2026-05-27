@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[MLE]], [[파라미터 추정]]
+siblings:: [[ComputerScience/2-1_probability-statistics/20.mle/MLE|MLE]], [[ComputerScience/2-1_probability-statistics/20.mle/파라미터 추정|파라미터 추정]]
 ---
 ### Defining the likelihood of data
 

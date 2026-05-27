@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[Data_analysis]], [[Dataframe]], [[Series]]
+siblings:: [[ComputerScience/3-1_ML-project/Pandas/Data_analysis|Data_analysis]], [[ComputerScience/3-1_ML-project/Pandas/Dataframe|Dataframe]], [[ComputerScience/3-1_ML-project/Pandas/Series|Series]]
 #### 1. DataFrame 생성 및 초기화
 
 먼저, 상품, 재질, 가격 정보를 포함하는 DataFrame을 생성합니다.

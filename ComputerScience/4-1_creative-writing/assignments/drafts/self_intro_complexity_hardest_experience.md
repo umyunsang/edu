@@ -1,3 +1,6 @@
+up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+siblings:: [[ComputerScience/4-1_creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]]
+
 # 꿈이 없던 시간이 만든 첫 번째 목표
 
 ## 과제 조건 해석

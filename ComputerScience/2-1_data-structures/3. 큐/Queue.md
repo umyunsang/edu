@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Algorithms MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 자료구조]]
 
-siblings:: [[큐]]
+siblings:: [[ComputerScience/2-1_data-structures/3. 큐/큐|큐]]
 ---
 ## 큐
 

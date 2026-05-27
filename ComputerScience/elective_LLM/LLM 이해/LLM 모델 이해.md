@@ -15,9 +15,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[LLM & NLP MOC]]
+up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[Audio Generation]], [[ChatGPT API]], [[ChatGPT 모델 이해와 활용]], [[Embedding]], [[Fine-Tuning]], [[Fine-Tuning 실습]], [[Llama Index]], [[LLM__검색 증강 생성 RAG__LangChain]]
 ---
 ## LLM 모델 이해
 #### 자연어처리(NLP) 기술의 발전

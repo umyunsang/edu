@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[LR control]], [[pooling]]
+siblings:: [[ComputerScience/2-1_AI/5. CNN/실습/LeNet/LR control|LR control]], [[ComputerScience/2-1_AI/5. CNN/실습/LeNet/pooling|pooling]]
 ---
 ![](../../../../../../image/Pasted%20image%2020240527184404.png)
 

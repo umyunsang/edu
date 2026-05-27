@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Systems MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] 컴퓨터 네트워크]]
 
-siblings:: [[기말 암기 정리]], [[기말 퀴즈]], [[중간 퀴즈]]
+siblings:: [[ComputerScience/2-2_computer-network/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/2-2_computer-network/0. Quiz/기말 퀴즈|기말 퀴즈]], [[ComputerScience/2-2_computer-network/0. Quiz/중간 퀴즈|중간 퀴즈]]
 ---
 # Chapter 1. Routing Information Protocol (RIP)
 

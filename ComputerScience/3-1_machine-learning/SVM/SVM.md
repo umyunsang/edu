@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: [[QP SVM]]
+siblings:: [[ComputerScience/3-1_machine-learning/SVM/QP SVM|QP SVM]]
 ---
 > [!PDF|red] [[20250415_Suport_vector_machine_실습 강의자료.pdf#page=15&selection=12,0,13,0&color=red|20250415_Suport_vector_machine_실습 강의자료, p.15]]
 > > SVM Gradient Decent Method (GD)

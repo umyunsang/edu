@@ -15,9 +15,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Math Foundations MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[probability-statistics__9.Continuous_RVs__문제 풀이]]
+siblings:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/probability-statistics__9.Continuous_RVs__문제 풀이|probability-statistics__9.Continuous_RVs__문제 풀이]]
 ---
 ### 연속적인 확률 변수(Continuous Random Variable)
  연속적인 확률 변수는 특정 값 사이의 확률을 표현합니다.

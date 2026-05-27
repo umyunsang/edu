@@ -15,14 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[01-WordCount]], [[02-MapReduce]], [[03_Hadoop]], [[04-ParallelComputation]], [[05-PySpark]], [[06-SparkDataFrames]], [[08-PandaDataframes]], [[BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
+siblings:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/02-MapReduce|02-MapReduce]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API|BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
 # 07-PandasSeries
 
 # 📊 **Pandas Series - 1차원 데이터 구조**
 
-![pandas](images/pandas.png "Pandas Logo")
+
 
 ## 🎯 **개요**
 

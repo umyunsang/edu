@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[Batch Normalization]], [[Data Augumentation]]
+siblings:: [[ComputerScience/2-1_AI/3. Backpropagation/실습/Overfitting 해결/Batch Normalization|Batch Normalization]], [[ComputerScience/2-1_AI/3. Backpropagation/실습/Overfitting 해결/Data Augumentation|Data Augumentation]]
 ---
 ## Dropout
 

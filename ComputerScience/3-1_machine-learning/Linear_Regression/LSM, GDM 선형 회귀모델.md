@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Machine Learning MOC]]
+up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: [[Linear Regression]], [[Multiple_Linear_Regression]], [[우버데이터_Multiple_Linear_Regression]]
+siblings:: [[ComputerScience/3-1_machine-learning/Linear_Regression/Linear Regression|Linear Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/Multiple_Linear_Regression|Multiple_Linear_Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/우버데이터_Multiple_Linear_Regression|우버데이터_Multiple_Linear_Regression]]
 ---
 # Simple Linear Regression
 

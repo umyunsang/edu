@@ -14,9 +14,9 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[Database MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] 데이터베이스]]
 
-siblings:: [[뷰(view)]]
+siblings:: [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/뷰(view)|뷰(view)]]
 ---
 ## 1. SQL의 소개
 #### SQL의 분류

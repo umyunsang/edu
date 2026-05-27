@@ -14,9 +14,8 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Systems MOC]]
+up:: [[커리큘럼 관계 정리|[2-2] 운영체제]]
 
-siblings:: [[allocation.c]], [[banker.c]], [[page.c]], [[sjf.c]], [[srtf.c]], [[sum.c]]
 ---
 ```c
 #include <stdio.h>

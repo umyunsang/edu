@@ -16,9 +16,9 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[Deep Learning MOC]]
+up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[UMNet]], [[VGG]], [[VGGCA]], [[VGGskip]]
+siblings:: [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/UMNet|UMNet]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGG|VGG]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGCA|VGGCA]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGskip|VGGskip]]
 ---
 ![](../../../../../../image/Pasted%20image%2020240527181924.png)
 

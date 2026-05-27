@@ -24,9 +24,9 @@ updated: '2026-05-05'
 week: 1
 ---
 
-up:: [[Cloud & Containers MOC]]
+up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
 
-siblings:: [[Week0 - Orientation]], [[Week2 - Plan, Track & Visualize]], [[Week3 - Teamwork & Collaborative Development]], [[Week4 - Asynchronous Work]], [[Week5 - Open & Inner Source Software Delivery]], [[Week6 - GitHub Actions]]
+siblings:: [[ComputerScience/4-1_AIOSS/md/Week0 - Orientation|Week0 - Orientation]], [[ComputerScience/4-1_AIOSS/md/Week2 - Plan, Track & Visualize|Week2 - Plan, Track & Visualize]], [[ComputerScience/4-1_AIOSS/md/Week3 - Teamwork & Collaborative Development|Week3 - Teamwork & Collaborative Development]], [[ComputerScience/4-1_AIOSS/md/Week4 - Asynchronous Work|Week4 - Asynchronous Work]], [[ComputerScience/4-1_AIOSS/md/Week5 - Open & Inner Source Software Delivery|Week5 - Open & Inner Source Software Delivery]], [[ComputerScience/4-1_AIOSS/md/Week6 - GitHub Actions|Week6 - GitHub Actions]]
 # Metrics That Matter
 
 ## Introduction: 중요한 소프트웨어 개발 메트릭
