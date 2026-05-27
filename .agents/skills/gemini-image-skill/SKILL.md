@@ -1,3 +1,8 @@
+---
+name: gemini-image-skill
+description: Generate images with the Google Gemini API for slides and documents, including model, style, aspect-ratio, cost, and approval workflow guidance. Use when the user asks to create images with Gemini or for presentation/document visuals via Gemini.
+---
+
 # Gemini Image Generation Skill
 
 Google Gemini API를 사용한 이미지 생성 스킬. 슬라이드 및 문서용 이미지를 생성합니다.
