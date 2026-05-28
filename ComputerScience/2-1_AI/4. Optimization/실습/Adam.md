@@ -16,9 +16,14 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[ComputerScience/2-1_AI/4. Optimization/실습/LearningRateControl|LearningRateControl]], [[ComputerScience/2-1_AI/4. Optimization/실습/Momentum|Momentum]]
+
+
+
+up:: [[ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation|Backpropagation]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_AI/4. Optimization/실습/Momentum|Momentum]], [[ComputerScience/2-1_AI/4. Optimization/실습/LearningRateControl|LearningRateControl]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGCA|VGGCA]]
+
 ---
 Adam(Adaptive Moment Estimation)은 경사 하강법 최적화 알고리즘의 한 종류로, 각 매개변수마다 학습률을 개별적으로 조정하여 효율적인 학습을 가능하게 합니다. Adam은 모멘텀 방법과 RMSProp 방법을 결합한 형태로, 기울기의 1차 및 2차 모멘트를 모두 고려하여 학습률을 조정합니다.
 

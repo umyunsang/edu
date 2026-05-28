@@ -14,7 +14,12 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 운영체제]]
+
+
+
+up:: [[ComputerScience/2-2_operating-system/과제/Banker/banker.c|banker.c]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_operating-system/과제/Page/page.c|page.c]], [[ComputerScience/2-2_operating-system/과제/SJF/sjf.c|sjf.c]], [[ComputerScience/2-2_operating-system/과제/SRTF/srtf.c|srtf.c]]
 
 ---
 ```c

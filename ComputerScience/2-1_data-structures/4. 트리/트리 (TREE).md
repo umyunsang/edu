@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 자료구조]]
 
-siblings:: [[ComputerScience/2-1_data-structures/4. 트리/AVL|AVL]]
+
+
+
+up:: [[ComputerScience/2-1_data-structures/3. 큐/큐|큐]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_data-structures/4. 트리/AVL|AVL]], [[ComputerScience/2-1_data-structures/5. 정렬/정렬|정렬]], [[ComputerScience/2-1_data-structures/1. 리스트/리스트|리스트]]
+
 ---
 #### 트리(TREE) 정의 
 - 트리는 나무 모양의 자료구조 
@@ -56,7 +61,6 @@ siblings:: [[ComputerScience/2-1_data-structures/4. 트리/AVL|AVL]]
 - 방법2: 왼쪽 자식 – 오른쪽 형제
 
 	![](../../../../image/Pasted%20image%2020240511133507.png)
-
 
 #### 이진 트리 (Binary TREE)
 - 모든 노드가 최대 2개의 자식만을 가질 수 있는 트리
@@ -103,7 +107,6 @@ siblings:: [[ComputerScience/2-1_data-structures/4. 트리/AVL|AVL]]
 **Quiz**
 	문제 1. "D"의 부모 노드는? -> B
 	문제 2. "D"의 왼쪽 자식노드와 오른쪽 자식노드는? -> H, I
-
 
 #### 이진 트리 구현을 위한 클래스
 

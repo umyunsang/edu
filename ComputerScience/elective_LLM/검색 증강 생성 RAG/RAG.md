@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Llama Index|Llama Index]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/LLM__검색 증강 생성 RAG__LangChain|LLM__검색 증강 생성 RAG__LangChain]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Vector store|Vector store]]
+
+
+up:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/LLM__검색 증강 생성 RAG__LangChain|LLM__검색 증강 생성 RAG__LangChain]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리|신경망_핵심이론_시험정리]]
+related:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Llama Index|Llama Index]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Vector store|Vector store]], [[ComputerScience/elective_LLM/ChatGPT API/Embedding|Embedding]]
+
 ---
 ### RAG (Retrieval-Augmented Generation) 개요
 
@@ -143,7 +147,6 @@ print(docs[0].page_content[5000:6000])  # 첫 번째 문서의 일부 내용 출
 
 긴 텍스트 문서를 일정한 크기의 청크(chunk)로 분할합니다. 이렇게 하면 각 청크를 독립적으로 처리할 수 있어 검색과 생성 단계에서 더 효율적입니다.
 
-
 ```python
 # 텍스트 분할을 위한 클래스 임포트
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -175,7 +178,6 @@ RAG(Retrieval-Augmented Generation)에서 **인덱싱과 임베딩 생성**은 �
 #### 1. 인덱싱 (Indexing)
 
 텍스트 데이터를 임베딩(벡터 표현)으로 변환하고 벡터 저장소에 저장하여 유사성 검색(similarity search)을 수행합니다.
-
 
 ```python
 # 필요한 라이브러리 임포트

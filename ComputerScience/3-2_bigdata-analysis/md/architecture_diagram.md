@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_text|architecture_text]], [[ComputerScience/3-2_bigdata-analysis/md/bigdata-analysis__md__과제|bigdata-analysis__md__과제]], [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]], [[ComputerScience/3-2_bigdata-analysis/md/개념문제_풀이|개념문제_풀이]], [[ComputerScience/3-2_bigdata-analysis/md/시험정리|시험정리]], [[ComputerScience/3-2_bigdata-analysis/md/연습문제_풀이|연습문제_풀이]], [[ComputerScience/3-2_bigdata-analysis/md/이론정리|이론정리]]
+
+
+up:: [[ComputerScience/3-2_bigdata-analysis/md/bigdata-analysis__md__과제|bigdata-analysis__md__과제]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_text|architecture_text]], [[ComputerScience/3-2_bigdata-analysis/md/이론정리|이론정리]], [[ComputerScience/3-2_bigdata-analysis/md/시험정리|시험정리]]
+
 # 아키텍처 다이어그램
 
 ## 소셜 비디오 빅데이터 실시간 처리 플랫폼 아키텍처

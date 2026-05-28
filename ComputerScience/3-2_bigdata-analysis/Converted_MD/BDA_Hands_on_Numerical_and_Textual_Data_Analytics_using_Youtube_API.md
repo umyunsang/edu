@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/02-MapReduce|02-MapReduce]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]]
+
+
+
+up:: [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/DAU_CSE408_Pandas,_Geopandas|DAU_CSE408_Pandas,_Geopandas]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/DAU_BigDataAnalytics_06_(Variable_Selection)|DAU_BigDataAnalytics_06_(Variable_Selection)]]
+
 # BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API
 
 # Youtube API와 함께하는 핸즈온 튜토리얼
@@ -83,7 +88,6 @@ Solving environment: \ | / - \ | / - \ | / - \ | / 
 
   added / updated specs:
     - google-api-python-client
-
 
 The following packages will be downloaded:
 
@@ -160,198 +164,43 @@ The following packages will be UPDATED:
   conda                              22.11.1-py39hf3d152e_1 --> 23.3.1-py39hf3d152e_0 
   openssl                                  3.0.8-h0b41bf4_0 --> 3.1.0-h0b41bf4_0 
 
-
-
 Downloading and Extracting Packages
 six-1.16.0           | 14 KB     | :   0% 0/1 [00:00<?, ?it/s]
 typing-extensions-4. | 9 KB      | :   0% 0/1 [00:00<?, ?it/s][A
 
 multidict-6.0.4      | 51 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A
 
-
 async-timeout-4.0.2  | 9 KB      | :   0% 0/1 [00:00<?, ?it/s][A[A[A
-
-
 
 aiohttp-3.8.4        | 432 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A
 
-
-
-
 jsonpatch-1.32       | 14 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A
-
-
-
-
 
 libprotobuf-3.21.12  | 2.1 MB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A
 
-
-
-
-
-
 google-auth-2.17.1   | 97 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A
-
-
-
-
-
-
 
 packaging-23.0       | 40 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 aiosignal-1.3.1      | 12 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
 googleapis-common-pr | 114 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
 pyu2f-0.1.5          | 31 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
 google-auth-httplib2 | 13 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 conda-23.3.1         | 933 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
 
 cachetools-5.3.0     | 14 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 httplib2-0.22.0      | 93 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 google-api-core-2.11 | 75 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 rsa-4.9              | 29 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 pyasn1-modules-0.2.7 | 60 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 typing-extensions-4. | 9 KB      | : 100% 1.0/1 [00:00<00:00,  5.40it/s][A
@@ -359,204 +208,43 @@ typing-extensions-4. | 9 KB      | : 100% 1.0/1 [00:00<00:00,  5.40it/s][A
 
 multidict-6.0.4      | 51 KB     | :  31% 0.31100987091875476/1 [00:00<00:00,  1.43it/s][A[A
 
-
-
-
 jsonpatch-1.32       | 14 KB     | : 100% 1.0/1 [00:00<00:00,  4.74it/s][A[A[A[A[A
-
-
 
 aiohttp-3.8.4        | 432 KB    | :   4% 0.03702657443168592/1 [00:00<00:06,  6.31s/it][A[A[A[A
 
-
 six-1.16.0           | 14 KB     | : 100% 1.0/1 [00:00<00:00,  3.91it/s]
-
-
-
-
 
 libprotobuf-3.21.12  | 2.1 MB    | :   1% 0.0074184923490005815/1 [00:00<00:30, 31.04s/it][A[A[A[A[A[A
 
-
-
-
-
-
 google-auth-2.17.1   | 97 KB     | :  17% 0.16517128052099925/1 [00:00<00:01,  1.39s/it][A[A[A[A[A[A[A
-
-
-
-
-
-
 
 packaging-23.0       | 40 KB     | :  40% 0.4028918506860768/1 [00:00<00:00,  1.58it/s][A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 aiosignal-1.3.1      | 12 KB     | : 100% 1.0/1 [00:00<00:00,  3.81it/s][A[A[A[A[A[A[A[A[A
-
-
-
 
 jsonpatch-1.32       | 14 KB     | : 100% 1.0/1 [00:00<00:00,  4.74it/s][A[A[A[A[A
 
-
-
-
-
-
-
-
-
 googleapis-common-pr | 114 KB    | :  14% 0.13996599947034352/1 [00:00<00:01,  1.94s/it][A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
 
 pyu2f-0.1.5          | 31 KB     | :  51% 0.5139917179068892/1 [00:00<00:00,  1.83it/s][A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
 google-auth-httplib2 | 13 KB     | : 100% 1.0/1 [00:00<00:00,  3.49it/s][A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
 
 conda-23.3.1         | 933 KB    | :   2% 0.01715562573427628/1 [00:00<00:16, 17.25s/it][A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
 libprotobuf-3.21.12  | 2.1 MB    | :  96% 0.9644040053700756/1 [00:00<00:00,  3.66it/s]   [A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 httplib2-0.22.0      | 93 KB     | :  17% 0.1728051301523014/1 [00:00<00:01,  1.84s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
 cachetools-5.3.0     | 14 KB     | : 100% 1.0/1 [00:00<00:00,  3.09it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 google-api-core-2.11 | 75 KB     | :  21% 0.21214553929820018/1 [00:00<00:01,  1.52s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
 async-timeout-4.0.2  | 9 KB      | : 100% 1.0/1 [00:00<00:00,  4.12it/s][A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 pyasn1-modules-0.2.7 | 60 KB     | :  27% 0.26707963159181675/1 [00:00<00:00,  1.36s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 rsa-4.9              | 29 KB     | :  55% 0.5486387837792586/1 [00:00<00:00,  1.50it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
@@ -564,576 +252,113 @@ multidict-6.0.4      | 51 KB     | : 100% 1.0/1 [00:00<00:00,  2.41it/s]        
 
 six-1.16.0           | 14 KB     | : 100% 1.0/1 [00:00<00:00,  3.91it/s]
 
-
-
-
-
-
 google-auth-2.17.1   | 97 KB     | : 100% 1.0/1 [00:00<00:00,  1.77it/s]                [A[A[A[A[A[A[A
-
-
-
-
-
 
 google-auth-2.17.1   | 97 KB     | : 100% 1.0/1 [00:00<00:00,  1.77it/s][A[A[A[A[A[A[A
 
-
-
-
-
-
-
 packaging-23.0       | 40 KB     | : 100% 1.0/1 [00:00<00:00,  1.53it/s]               [A[A[A[A[A[A[A[A
-
-
-
-
-
-
 
 packaging-23.0       | 40 KB     | : 100% 1.0/1 [00:00<00:00,  1.53it/s][A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 aiosignal-1.3.1      | 12 KB     | : 100% 1.0/1 [00:00<00:00,  3.81it/s][A[A[A[A[A[A[A[A[A
-
-
 
 aiohttp-3.8.4        | 432 KB    | : 100% 1.0/1 [00:00<00:00,  1.55it/s]                [A[A[A[A
 
-
-
 aiohttp-3.8.4        | 432 KB    | : 100% 1.0/1 [00:00<00:00,  1.55it/s][A[A[A[A
-
-
-
-
-
-
-
-
-
 
 pyu2f-0.1.5          | 31 KB     | : 100% 1.0/1 [00:00<00:00,  1.30it/s]               [A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
 pyu2f-0.1.5          | 31 KB     | : 100% 1.0/1 [00:00<00:00,  1.30it/s][A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
 google-auth-httplib2 | 13 KB     | : 100% 1.0/1 [00:00<00:00,  3.49it/s][A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 httplib2-0.22.0      | 93 KB     | : 100% 1.0/1 [00:00<00:00,  1.34it/s]               [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 httplib2-0.22.0      | 93 KB     | : 100% 1.0/1 [00:00<00:00,  1.34it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
 googleapis-common-pr | 114 KB    | : 100% 1.0/1 [00:00<00:00,  1.28it/s]                [A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
 googleapis-common-pr | 114 KB    | : 100% 1.0/1 [00:00<00:00,  1.28it/s][A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
 cachetools-5.3.0     | 14 KB     | : 100% 1.0/1 [00:00<00:00,  3.09it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 google-api-core-2.11 | 75 KB     | : 100% 1.0/1 [00:00<00:00,  1.17it/s]                [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 google-api-core-2.11 | 75 KB     | : 100% 1.0/1 [00:00<00:00,  1.17it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
 
 libprotobuf-3.21.12  | 2.1 MB    | : 100% 1.0/1 [00:01<00:00,  3.66it/s]               [A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 rsa-4.9              | 29 KB     | : 100% 1.0/1 [00:01<00:00,  1.24s/it]               [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 rsa-4.9              | 29 KB     | : 100% 1.0/1 [00:01<00:00,  1.24s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 pyasn1-modules-0.2.7 | 60 KB     | : 100% 1.0/1 [00:01<00:00,  1.28s/it]                [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 pyasn1-modules-0.2.7 | 60 KB     | : 100% 1.0/1 [00:01<00:00,  1.28s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 conda-23.3.1         | 933 KB    | : 100% 1.0/1 [00:01<00:00,  1.22s/it]                [A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
 
 conda-23.3.1         | 933 KB    | : 100% 1.0/1 [00:01<00:00,  1.22s/it][A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         
                                                                         [A
 
                                                                         [A[A
 
-
                                                                         [A[A[A
-
-
 
                                                                         [A[A[A[A
 
-
-
-
                                                                         [A[A[A[A[A
-
-
-
-
 
                                                                         [A[A[A[A[A[A
 
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 [A
 
 [A[A
 
-
 [A[A[A
-
-
 
 [A[A[A[A
 
-
-
-
 [A[A[A[A[A
-
-
-
-
 
 [A[A[A[A[A[A
 
-
-
-
-
-
 [A[A[A[A[A[A[A
-
-
-
-
-
-
 
 [A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 [A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
 [A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
 
 [A[A[A[A[A[A[A[A[A[A[A
 Preparing transaction: | / - done
@@ -1178,7 +403,6 @@ a comma-separated list of one or more search resource properties that the API re
 import google_auth_oauthlib.flow
 import googleapiclient.discovery
 import googleapiclient.errors
-
 
 import io
 import os
@@ -1248,7 +472,6 @@ Pagetoken
 page token 넣어 지속적으로 다음결과를 출력해보기
 
 ~~~python
-
 
 ~~~
 
@@ -1585,7 +808,6 @@ Solving environment: \ | / - \ | / - \ | / - \ | / 
   added / updated specs:
     - spacy
 
-
 The following packages will be downloaded:
 
     package                    |            build
@@ -1662,259 +884,64 @@ The following NEW packages will be INSTALLED:
   typer              conda-forge/noarch::typer-0.7.0-pyhd8ed1ab_0 
   wasabi             conda-forge/linux-64::wasabi-1.1.1-py39hf3d152e_1 
 
-
-
 Downloading and Extracting Packages
 confection-0.0.4     | 61 KB     | :   0% 0/1 [00:00<?, ?it/s]
 shellingham-1.5.1    | 14 KB     | :   0% 0/1 [00:00<?, ?it/s][A
 
 jinja2-3.1.2         | 99 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A
 
-
 srsly-2.4.6          | 550 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A
-
-
 
 typer-0.7.0          | 56 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A
 
-
-
-
 smart_open-5.2.1     | 43 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A
-
-
-
-
 
 catalogue-2.0.8      | 32 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A
 
-
-
-
-
-
 pydantic-1.10.7      | 2.1 MB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 libgfortran-ng-12.2. | 22 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
 liblapack-3.9.0      | 13 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
 libcblas-3.9.0       | 13 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
 spacy-3.5.1          | 5.1 MB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 libopenblas-0.3.21   | 10.1 MB   | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
 
 spacy-loggers-1.0.4  | 15 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 pathy-0.10.1         | 42 KB     | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 future-0.18.3        | 357 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 numpy-1.24.2         | 6.4 MB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 preshed-3.0.8        | 121 KB    | :   0% 0/1 [00:00<?, ?it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
 jinja2-3.1.2         | 99 KB     | :  16% 0.16150941908263755/1 [00:00<00:00,  1.14it/s][A[A
 
-
-
 typer-0.7.0          | 56 KB     | :  28% 0.2849094007581818/1 [00:00<00:00,  1.94it/s][A[A[A[A
 confection-0.0.4     | 61 KB     | :  26% 0.26085018309186436/1 [00:00<00:00,  1.36it/s]
 
-
-
-
 smart_open-5.2.1     | 43 KB     | :  37% 0.3730503882146679/1 [00:00<00:00,  1.90it/s][A[A[A[A[A
-
 
 srsly-2.4.6          | 550 KB    | :   3% 0.029078259634924438/1 [00:00<00:06,  7.18s/it][A[A[A
 
-
-
-
-
-
 pydantic-1.10.7      | 2.1 MB    | :   1% 0.007570237470919688/1 [00:00<00:27, 27.88s/it][A[A[A[A[A[A[A
-
-
-
-
 
 catalogue-2.0.8      | 32 KB     | :  50% 0.49666545410452284/1 [00:00<00:00,  2.09it/s][A[A[A[A[A[A
 
-
-
-
-
-
-
-
 libgfortran-ng-12.2. | 22 KB     | :  72% 0.7159587484705471/1 [00:00<00:00,  2.89it/s][A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
 liblapack-3.9.0      | 13 KB     | : 100% 1.0/1 [00:00<00:00,  3.61it/s][A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
 libcblas-3.9.0       | 13 KB     | : 100% 1.0/1 [00:00<00:00,  3.53it/s][A[A[A[A[A[A[A[A[A[A[A
-
 
 srsly-2.4.6          | 550 KB    | :  52% 0.5234086734286398/1 [00:00<00:00,  2.08it/s]  [A[A[A
 
@@ -1922,878 +949,168 @@ jinja2-3.1.2         | 99 KB     | : 100% 1.0/1 [00:00<00:00,  3.49it/s]        
 
 jinja2-3.1.2         | 99 KB     | : 100% 1.0/1 [00:00<00:00,  3.49it/s][A[A
 
-
-
-
-
-
-
-
-
-
-
-
 libopenblas-0.3.21   | 10.1 MB   | :   0% 0.0015489208557598652/1 [00:00<03:26, 206.59s/it][A[A[A[A[A[A[A[A[A[A[A[A[A
 shellingham-1.5.1    | 14 KB     | : 100% 1.0/1 [00:00<00:00,  5.51it/s][A
 
-
-
-
-
-
-
-
-
-
-
 spacy-3.5.1          | 5.1 MB    | :   0% 0.003073866413262803/1 [00:00<01:53, 113.38s/it][A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 pathy-0.10.1         | 42 KB     | :  38% 0.3812892715848266/1 [00:00<00:00,  1.08s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 libopenblas-0.3.21   | 10.1 MB   | :  20% 0.19671294868150285/1 [00:00<00:01,  1.66s/it]   [A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
 
 spacy-loggers-1.0.4  | 15 KB     | : 100% 1.0/1 [00:00<00:00,  2.36it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
 confection-0.0.4     | 61 KB     | : 100% 1.0/1 [00:00<00:00,  2.26it/s]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 future-0.18.3        | 357 KB    | :   4% 0.044823812650470564/1 [00:00<00:09, 10.23s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 numpy-1.24.2         | 6.4 MB    | :   0% 0.002460556604816347/1 [00:00<03:06, 186.79s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
 
 libopenblas-0.3.21   | 10.1 MB   | :  38% 0.37638776794964723/1 [00:00<00:00,  1.04s/it][A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
 spacy-3.5.1          | 5.1 MB    | :  64% 0.639364213958663/1 [00:00<00:00,  1.59it/s]  [A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 numpy-1.24.2         | 6.4 MB    | :  37% 0.3690834907224521/1 [00:00<00:00,  1.15s/it]   [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 preshed-3.0.8        | 121 KB    | :  13% 0.1326564486223453/1 [00:00<00:03,  4.38s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | :   2% 0.018888349609701493/1 [00:00<00:30, 31.26s/it][A[A[A[A[A[A[A[A
 
-
-
-
 smart_open-5.2.1     | 43 KB     | : 100% 1.0/1 [00:00<00:00,  1.65it/s]               [A[A[A[A[A
-
-
-
 
 smart_open-5.2.1     | 43 KB     | : 100% 1.0/1 [00:00<00:00,  1.65it/s][A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 libopenblas-0.3.21   | 10.1 MB   | :  52% 0.5204374075353146/1 [00:00<00:00,  1.10it/s] [A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
 spacy-3.5.1          | 5.1 MB    | :  92% 0.9190860575655782/1 [00:00<00:00,  1.95it/s][A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 numpy-1.24.2         | 6.4 MB    | :  66% 0.6569686134859647/1 [00:00<00:00,  1.38it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
 
 catalogue-2.0.8      | 32 KB     | : 100% 1.0/1 [00:00<00:00,  1.36it/s]                [A[A[A[A[A[A
 
-
-
-
-
 catalogue-2.0.8      | 32 KB     | : 100% 1.0/1 [00:00<00:00,  1.36it/s][A[A[A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | :   8% 0.07555339843880597/1 [00:00<00:07,  7.77s/it] [A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 libopenblas-0.3.21   | 10.1 MB   | :  73% 0.7295417230628964/1 [00:00<00:00,  1.40it/s][A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 numpy-1.24.2         | 6.4 MB    | :  97% 0.9743804155072735/1 [00:00<00:00,  1.85it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 libgfortran-ng-12.2. | 22 KB     | : 100% 1.0/1 [00:00<00:00,  2.89it/s]               [A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
 
 libopenblas-0.3.21   | 10.1 MB   | : 100% 0.9990539519651129/1 [00:00<00:00,  1.78it/s][A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
 liblapack-3.9.0      | 13 KB     | : 100% 1.0/1 [00:00<00:00,  3.61it/s][A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | :  19% 0.1888834960970149/1 [00:00<00:02,  3.21s/it] [A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
 libcblas-3.9.0       | 13 KB     | : 100% 1.0/1 [00:00<00:00,  3.53it/s][A[A[A[A[A[A[A[A[A[A[A
-
-
 
 typer-0.7.0          | 56 KB     | : 100% 1.0/1 [00:00<00:00,  1.03it/s]               [A[A[A[A
 
-
-
 typer-0.7.0          | 56 KB     | : 100% 1.0/1 [00:00<00:00,  1.03it/s][A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | :  38% 0.3777669921940298/1 [00:00<00:01,  1.63s/it][A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
 thinc-8.1.9          | 847 KB    | :  55% 0.5477621386813433/1 [00:01<00:00,  1.17s/it][A[A[A[A[A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | :  79% 0.7933106836074626/1 [00:01<00:00,  1.23it/s][A[A[A[A[A[A[A[A
 
-
-
-
-
-
 pydantic-1.10.7      | 2.1 MB    | : 100% 1.0/1 [00:01<00:00,  1.14s/it]                 [A[A[A[A[A[A[A
-
-
-
-
-
 
 pydantic-1.10.7      | 2.1 MB    | : 100% 1.0/1 [00:01<00:00,  1.14s/it][A[A[A[A[A[A[A
 
-
 srsly-2.4.6          | 550 KB    | : 100% 1.0/1 [00:01<00:00,  1.31s/it]               [A[A[A
-
 
 srsly-2.4.6          | 550 KB    | : 100% 1.0/1 [00:01<00:00,  1.31s/it][A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
 spacy-loggers-1.0.4  | 15 KB     | : 100% 1.0/1 [00:01<00:00,  2.36it/s][A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 pathy-0.10.1         | 42 KB     | : 100% 1.0/1 [00:01<00:00,  1.29s/it]               [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 pathy-0.10.1         | 42 KB     | : 100% 1.0/1 [00:01<00:00,  1.29s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 preshed-3.0.8        | 121 KB    | : 100% 1.0/1 [00:01<00:00,  1.26s/it]               [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 preshed-3.0.8        | 121 KB    | : 100% 1.0/1 [00:01<00:00,  1.26s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  ... (more hidden) ...[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 future-0.18.3        | 357 KB    | : 100% 1.0/1 [00:01<00:00,  1.36s/it]                 [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 future-0.18.3        | 357 KB    | : 100% 1.0/1 [00:01<00:00,  1.36s/it][A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 numpy-1.24.2         | 6.4 MB    | : 100% 1.0/1 [00:03<00:00,  1.85it/s]               [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
 spacy-3.5.1          | 5.1 MB    | : 100% 1.0/1 [00:03<00:00,  1.95it/s]               [A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
 thinc-8.1.9          | 847 KB    | : 100% 1.0/1 [00:04<00:00,  7.03s/it]               [A[A[A[A[A[A[A[A
-
-
-
-
-
-
 
 thinc-8.1.9          | 847 KB    | : 100% 1.0/1 [00:04<00:00,  7.03s/it][A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
 libopenblas-0.3.21   | 10.1 MB   | : 100% 1.0/1 [00:06<00:00,  1.78it/s]               [A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         
                                                                         [A
 
                                                                         [A[A
 
-
                                                                         [A[A[A
-
-
 
                                                                         [A[A[A[A
 
-
-
-
                                                                         [A[A[A[A[A
-
-
-
-
 
                                                                         [A[A[A[A[A[A
 
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                                         [A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
 [A
 
 [A[A
 
-
 [A[A[A
-
-
 
 [A[A[A[A
 
-
-
-
 [A[A[A[A[A
-
-
-
-
 
 [A[A[A[A[A[A
 
-
-
-
-
-
 [A[A[A[A[A[A[A
-
-
-
-
-
-
 
 [A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
 [A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
 
 [A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
 [A[A[A[A[A[A[A[A[A[A[A
 
-
-
-
-
-
-
-
-
-
-
 [A[A[A[A[A[A[A[A[A[A[A[A
-
-
-
-
-
-
-
-
-
-
-
 
 [A[A[A[A[A[A[A[A[A[A[A[A[A
 Preparing transaction: | / - done
@@ -2808,7 +1125,6 @@ Solving environment: / - \ | / - \ | / - \ | / - \ 
 
   added / updated specs:
     - cupy
-
 
 The following packages will be downloaded:
 
@@ -2825,8 +1141,6 @@ The following NEW packages will be INSTALLED:
   cudatoolkit        conda-forge/linux-64::cudatoolkit-11.8.0-h37601d7_11 
   cupy               conda-forge/linux-64::cupy-12.0.0-py39hc3c280e_0 
   fastrlock          conda-forge/linux-64::fastrlock-0.8-py39h5a03fae_3 
-
-
 
 Downloading and Extracting Packages
 fastrlock-0.8        | 32 KB     | :   0% 0/1 [00:00<?, ?it/s]
@@ -3682,14 +1996,12 @@ python itertools를 이용하여 진행해보시기 바랍니다
 # 요 약
 YouTube API뿐만 아니라, Panopto, Brightcove, Vimeo, IBM Watson Media 등 다양한 비디오 플랫폼이 존재한다. 본 튜토리얼은 영상이 아닌 영상에 관련된 메타데이터(숫자, 텍스트)를 어떻게 분석해야하는지에 다루었다.
 
-
 # 나아갈 방향
 - 유튜브의 특정 카테고리의 특징을 반영한 서비스를 개발해 본다.
    - 왜 해당 서비스를 해야하는가? 
    - 단순 키워드에만 의존하는 것이 아닌가?
 - 음성적인 부분과, 시각적인 부분을 함께 고려한 서비스를 개발해 본다. 
 - 다양한 주제로 한 서비스를 모색해 본다.
-
 
 *** 빅데이터 분석은 하나의 컴포넌트가 아닌, 여러개의 컴포넌트로 구성되는 파이프라인을 잘 설계하는 것이 큰 중요한 부분임을 알고 있어야 한다.
 

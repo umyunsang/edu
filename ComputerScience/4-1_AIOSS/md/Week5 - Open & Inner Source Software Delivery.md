@@ -24,9 +24,14 @@ updated: '2026-05-05'
 week: 5
 ---
 
-up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
 
-siblings:: [[ComputerScience/4-1_AIOSS/md/Week0 - Orientation|Week0 - Orientation]], [[ComputerScience/4-1_AIOSS/md/Week1 - Metrics That Matter|Week1 - Metrics That Matter]], [[ComputerScience/4-1_AIOSS/md/Week2 - Plan, Track & Visualize|Week2 - Plan, Track & Visualize]], [[ComputerScience/4-1_AIOSS/md/Week3 - Teamwork & Collaborative Development|Week3 - Teamwork & Collaborative Development]], [[ComputerScience/4-1_AIOSS/md/Week4 - Asynchronous Work|Week4 - Asynchronous Work]], [[ComputerScience/4-1_AIOSS/md/Week6 - GitHub Actions|Week6 - GitHub Actions]]
+
+
+
+up:: [[ComputerScience/4-1_AIOSS/md/Week0 - Orientation|Week0 - Orientation]]
+prerequisites:: [[ComputerScience/3-1_distributed-computing/쿠다|쿠다]], [[ComputerScience/elective_docker-k8s/도커 기초|도커 기초]]
+related:: [[ComputerScience/4-1_AIOSS/md/Week3 - Teamwork & Collaborative Development|Week3 - Teamwork & Collaborative Development]], [[ComputerScience/4-1_AIOSS/md/Week4 - Asynchronous Work|Week4 - Asynchronous Work]], [[ComputerScience/4-1_AIOSS/md/Week2 - Plan, Track & Visualize|Week2 - Plan, Track & Visualize]]
+
 # Open & Inner Source Software Delivery
 
 오픈소스의 핵심 가치와 라이선스 체계를 이해하고, 오픈소스 기여 프로세스를 습득하며, 조직 내부에 오픈소스 방식을 적용하는 Inner Source 전략을 학습합니다.

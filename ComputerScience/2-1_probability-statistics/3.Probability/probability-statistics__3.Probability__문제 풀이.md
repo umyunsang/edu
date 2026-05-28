@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+
+up:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_probability-statistics/2.Combinations/probability-statistics__2.Combinations__문제 풀이|probability-statistics__2.Combinations__문제 풀이]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/probability-statistics__6.Random_Variables__문제 풀이|probability-statistics__6.Random_Variables__문제 풀이]], [[ComputerScience/2-1_probability-statistics/7-0.Variance/probability-statistics__7-0.Variance__문제 풀이|probability-statistics__7-0.Variance__문제 풀이]]
+
 ---
 ### Cats and sharks
 ```
@@ -54,7 +56,6 @@ Let event E = our choice excludes one or both indistinct books.
 1. How many distinct outcomes are in E ?
 2. What is P(E) ?
 ```
-
 
 우리는 총 6권의 책 중에서 3권을 선택하는 문제를 다루고 있습니다. 이 중에서 구별 가능한 책 4권과 구별할 수 없는 책 2권이 있습니다. 
 

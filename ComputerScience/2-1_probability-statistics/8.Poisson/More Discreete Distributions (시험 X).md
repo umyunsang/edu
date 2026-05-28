@@ -15,9 +15,10 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/8.Poisson/Poisson Distribution|Poisson Distribution]], [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]]
+up:: [[ComputerScience/2-1_probability-statistics/8.Poisson/Poisson Distribution|Poisson Distribution]]
+related:: [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]], [[ComputerScience/2-1_probability-statistics/7-1.Bernoulli_RV/Bernoulli Distribution|Bernoulli Distribution]], [[ComputerScience/2-1_probability-statistics/7-2.Binomial_RV/Binomial Distribution|Binomial Distribution]]
+
 #ComputerScience #확률과통계 
 
 ---

@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] AI시스템개발및설계]]
 
-siblings:: [[ComputerScience/3-1_AI-system-design/test|test]]
+
+
+
+up:: [[ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation|Backpropagation]]
+prerequisites:: [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-1_AI-system-design/아키텍쳐/주요 데이터 흐름/AI 메뉴 추천|AI 메뉴 추천]], [[ComputerScience/3-1_AI-system-design/test|test]], [[ComputerScience/3-1_AI-system-design/아키텍쳐/주요 데이터 흐름/메뉴 조회|메뉴 조회]]
+
 ---
 # Architecture
 ## **1. 시스템 개요**  

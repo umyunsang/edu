@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/10.Normal_RV/Normal Distribution|Normal Distribution]]
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/1.Counting/Counting|Counting]]
+related:: [[ComputerScience/2-1_probability-statistics/10.Normal_RV/Normal Distribution|Normal Distribution]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/probability-statistics__11.joint_RVs__문제 풀이|probability-statistics__11.joint_RVs__문제 풀이]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Sampling|Sampling]]
+
 ---
 ### Campus Bikes
 
@@ -87,6 +91,5 @@ $P(|X - 3| > 6)$
 ---
 
 ### Noisey Wiresd
-
 
 xXXXXXXXx

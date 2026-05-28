@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 운영체제]]
+
+
+
+
+up:: [[ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_operating-system/2. 컴퓨터 시스템과 운영체제/컴퓨터 시스템과 OS|컴퓨터 시스템과 OS]], [[ComputerScience/2-2_operating-system/8. 메모리관리/메모리 관리|메모리 관리]], [[ComputerScience/2-2_operating-system/10. 가상 메모리/가상 메모리|가상 메모리]]
 
 ---
 ## 운영체제의 정의에서 핵심 단어

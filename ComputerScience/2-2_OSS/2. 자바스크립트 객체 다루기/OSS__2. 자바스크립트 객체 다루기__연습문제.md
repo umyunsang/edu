@@ -14,9 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[ComputerScience/2-2_OSS/2. 자바스크립트 객체 다루기/자바스크립트 객체 다루기|자바스크립트 객체 다루기]]
+
+
+up:: [[ComputerScience/2-2_OSS/2. 자바스크립트 객체 다루기/자바스크립트 객체 다루기|자바스크립트 객체 다루기]]
+prerequisites:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 기초 실습]]
+related:: [[ComputerScience/2-2_OSS/0. Html. javascript 기초/OSS__0. Html. javascript 기초__연습문제|OSS__0. Html. javascript 기초__연습문제]], [[ComputerScience/2-2_OSS/3. 문서 객체 모델/OSS__3. 문서 객체 모델__연습문제|OSS__3. 문서 객체 모델__연습문제]], [[ComputerScience/2-2_OSS/0. Html. javascript 기초/html, javascript 기초|html, javascript 기초]]
+
 ---
 ##### 01 다음 중 객체에서 데이터를 조작하는 것과 가장 관련 있는 용어는 무엇인가? 
 ① 프로퍼티 ② 메서드 ③ 속성값 ④ 태그 
@@ -199,7 +203,6 @@ for (let i = 0; i <= s.length; i++) {  // 오타 아님
 let today = new Date();
 const day = "일월화수목금토";
 /* 코드를 완성 하시오*/
-
 
 document.write("오늘은 " + day[a] + "요일<br>");
 document.write("내일은 " + day[b] + "요일<br>");

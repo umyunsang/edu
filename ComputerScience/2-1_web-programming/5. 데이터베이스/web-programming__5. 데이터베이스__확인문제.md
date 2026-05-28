@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/MYSQL|MYSQL]], [[ComputerScience/2-1_web-programming/5. 데이터베이스/데이터베이스|데이터베이스]]
+
+
+up:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/데이터베이스|데이터베이스]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/web-programming__3. Spring Boot 기초__확인문제|web-programming__3. Spring Boot 기초__확인문제]], [[ComputerScience/2-1_web-programming/4. 쿠키와 세션/web-programming__4. 쿠키와 세션__확인문제|web-programming__4. 쿠키와 세션__확인문제]], [[ComputerScience/2-1_web-programming/5. 데이터베이스/MYSQL|MYSQL]]
+
 ---
 **Quiz #1 database는 어디에 속할까요?**
 1) 소프트웨어
@@ -69,7 +73,6 @@ siblings:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/MYSQL|MYS
 4) **MongoDB**
 
 **답:** 4) MongoDB
-
 
 ---
 **Quiz #7 

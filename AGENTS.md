@@ -13,9 +13,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[README|아카이브 홈]]
 
-siblings:: [[CLAUDE|CLAUDE]], [[GEMINI|GEMINI]], [[커리큘럼 관계 정리|커리큘럼 관계 정리]]
+
+
+
+related:: [[CLAUDE|CLAUDE]], [[GEMINI|GEMINI]]
+
 # AGENTS.md
 
 This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.

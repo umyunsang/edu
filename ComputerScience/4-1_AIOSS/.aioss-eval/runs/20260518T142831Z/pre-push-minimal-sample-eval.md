@@ -1,5 +1,5 @@
-up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
-siblings:: [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T142831Z/pre-push-solution-sample-eval|pre-push-solution-sample-eval]]
+up:: [[ComputerScience/4-1_algorithm/기말고사_정리|기말고사_정리]]
+related:: [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T142831Z/pre-push-solution-sample-eval|pre-push-solution-sample-eval]], [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T141147Z/minimal-verify-sample-eval|minimal-verify-sample-eval]], [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T140702Z/minimal-final-sample-eval|minimal-final-sample-eval]]
 
 # AIOSS Sample Evaluation: pre-push-minimal
 

@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Llama Index|Llama Index]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG|RAG]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Vector store|Vector store]]
+
+
+
+up:: [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT API|ChatGPT API]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리|신경망_핵심이론_시험정리]]
+related:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Llama Index|Llama Index]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG|RAG]], [[ComputerScience/elective_LLM/검색 증강 생성 RAG/Vector store|Vector store]]
+
 https://wikidocs.net/book/14314 
 
 ---

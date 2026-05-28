@@ -15,7 +15,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
+
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]], [[ComputerScience/2-1_probability-statistics/10.Normal_RV/Normal Distribution|Normal Distribution]]
 
 +
 ---

@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/19_sampling|19_sampling]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bootstrapping|Bootstrapping]]
+
+up:: [[ComputerScience/2-1_probability-statistics/12.Independent_RVs/Independent RVs|Independent RVs]]
+related:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/19_sampling|19_sampling]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bootstrapping|Bootstrapping]], [[ComputerScience/2-1_probability-statistics/20.mle/MLE|MLE]]
+
 ---
 ### 모집단 통계 추정
 
@@ -39,15 +41,11 @@ siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/19
 
 우리는 데이터가 동일한 기저 분포( $F$ )에서 추출된 IID로 가정합니다. 이 분포의 참된 평균( $\mu$ )과 참된 분산( $\sigma^2$ )이 있습니다. 모든 부탄 국민과 이야기할 수 없기 때문에, 우리는 샘플을 통해 평균과 분산을 추정해야 합니다. 샘플에서 샘플 평균( $\overline{X}$ )과 샘플 분산( $S^2$ )을 계산할 수 있습니다. 이 값들은 참된 평균과 참된 분산에 대한 가장 좋은 추정치입니다.
 
-
 $$\overline{X} = \sum_{i=1}^n \frac{X_i}{n} \quad S^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \overline{X})^2$$
-
 
 첫 번째 질문은, 이러한 추정치가 불편 추정치인지입니다. 불편 추정치란, 이 샘플링 과정을 여러 번 반복할 경우, 우리의 추정치의 기대값이 우리가 추정하려는 참된 값과 같아야 한다는 것을 의미합니다. $\overline{X}$에 대해 불편 추정치임을 증명할 것입니다. $S^2$에 대한 증명은 강의 슬라이드에 있습니다.
 
-
 $$E[\overline{X}] = E\left[\sum_{i=1}^n \frac{X_i}{n}\right] = \frac{1}{n}E\left[\sum_{i=1}^n X_i\right] = \frac{1}{n}\sum_{i=1}^n E[X_i] = \frac{1}{n}\sum_{i=1}^n \mu = \frac{1}{n}n\mu = \mu$$
-
 
 샘플 평균 공식은 기대값의 이해와 관련이 있어 보입니다. 샘플 분산도 마찬가지지만, 방정식의 분모에 있는 $(n-1)$는 놀라운 요소입니다. 왜 $(n-1)$일까요? 이 분모는 $E[S^2] = \sigma^2$가 되도록 보정하는 데 필요합니다.
 
@@ -56,7 +54,6 @@ $$E[\overline{X}] = E\left[\sum_{i=1}^n \frac{X_i}{n}\right] = \frac{1}{n}E\left
 ## 표준 오차
 
 좋습니다. 우리의 평균과 분산 추정치가 불편하다는 것을 납득했습니다. 하지만 이제 샘플 평균이 참된 평균에 비해 얼마나 변동할 수 있는지 알고 싶습니다.
-
 
 $$\text{Var}(\overline{X}) = \text{Var}\left(\sum_{i=1}^n \frac{X_i}{n}\right) = \left(\frac{1}{n}\right)^2 \text{Var}\left(\sum_{i=1}^n X_i\right) = \left(\frac{1}{n}\right)^2 \sum_{i=1}^n \text{Var}(X_i) = \left(\frac{1}{n}\right)^2 \sum_{i=1}^n \sigma^2 = \left(\frac{1}{n}\right)^2 n \sigma^2 = \frac{\sigma^2}{n}$$
 

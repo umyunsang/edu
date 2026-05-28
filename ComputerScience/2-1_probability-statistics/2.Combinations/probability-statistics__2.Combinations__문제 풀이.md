@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/2.Combinations/Combinations|Combinations]]
+
+up:: [[ComputerScience/2-1_probability-statistics/2.Combinations/Combinations|Combinations]]
+related:: [[ComputerScience/2-1_probability-statistics/3.Probability/probability-statistics__3.Probability__문제 풀이|probability-statistics__3.Probability__문제 풀이]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/probability-statistics__6.Random_Variables__문제 풀이|probability-statistics__6.Random_Variables__문제 풀이]], [[ComputerScience/2-1_probability-statistics/7-2.Binomial_RV/Binomial Distribution|Binomial Distribution]]
+
 ---
 ### **퀴즈 1: 확률 교과서**
 ```

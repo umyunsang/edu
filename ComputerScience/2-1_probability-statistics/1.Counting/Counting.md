@@ -15,7 +15,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
+
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_probability-statistics/3.Probability/probability-statistics__3.Probability__문제 풀이|probability-statistics__3.Probability__문제 풀이]], [[ComputerScience/2-1_probability-statistics/2.Combinations/probability-statistics__2.Combinations__문제 풀이|probability-statistics__2.Combinations__문제 풀이]], [[ComputerScience/2-1_probability-statistics/2.Combinations/Combinations|Combinations]]
 
 ---
 

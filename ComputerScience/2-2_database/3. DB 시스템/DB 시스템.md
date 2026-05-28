@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 데이터베이스]]
+
+
+
+
+up:: [[ComputerScience/2-2_database/2. 관리 시스템/관리 시스템|관리 시스템]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_database/12. 데이터베이스 응용 기술/데이터베이스 응용 기술|데이터베이스 응용 기술]], [[ComputerScience/2-2_database/1. 기본 개념/기본 개념|기본 개념]], [[ComputerScience/2-2_database/0. 시험/database__0. 시험__연습문제|database__0. 시험__연습문제]]
 
 ---
 ![](../../../../image/Pasted%20image%2020240909173025.png)

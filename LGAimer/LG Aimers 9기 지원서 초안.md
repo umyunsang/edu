@@ -15,8 +15,13 @@ type: draft
 updated: '2026-05-23'
 ---
 
-up:: [[커리큘럼 관계 정리|LGAimer]]
-siblings:: [[LGAimer/무제|무제]]
+
+
+
+
+up:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]]
+prerequisites:: [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]
+related:: [[LGAimer/무제|무제]], [[ComputerScience/3-2_bigdata-analysis/md/bigdata-analysis__md__과제|bigdata-analysis__md__과제]]
 
 # LG Aimers 9기 지원서 초안
 

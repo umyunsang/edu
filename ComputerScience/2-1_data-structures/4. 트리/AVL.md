@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 자료구조]]
 
-siblings:: [[ComputerScience/2-1_data-structures/4. 트리/트리 (TREE)|트리 (TREE)]]
+
+
+
+up:: [[ComputerScience/2-1_data-structures/4. 트리/트리 (TREE)|트리 (TREE)]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_data-structures/시험/기말/기말_데이터구조 답지|기말_데이터구조 답지]], [[ComputerScience/2-1_data-structures/5. 정렬/정렬|정렬]], [[ComputerScience/2-1_data-structures/2. 스택/스택|스택]]
+
 ---
 #### AVL 트리
 **이진 탐색 트리
@@ -71,7 +76,6 @@ siblings:: [[ComputerScience/2-1_data-structures/4. 트리/트리 (TREE)|트리 
 - 오른쪽 서브 트리의 왼쪽 서브 트리에 노드가 추가되면서 불균형이 발생했을 때 사용
 
 	![](../../../../image/Pasted%20image%2020240516150425.png)
-
 
 ## AVL 트리 코드 구현
 #### AVl 트리 코드 구현

@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 데이터베이스]]
 
-siblings:: [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/뷰(view)|뷰(view)]]
+
+
+
+up:: [[ComputerScience/2-2_database/6. 관계 데이터 연산/관계 데이터 연산|관계 데이터 연산]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_database/0. 시험/7장 문제|7장 문제]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/뷰(view)|뷰(view)]], [[ComputerScience/2-2_database/5. 관계 데이터 모델/관계 데이터 모델 (용어 암기)|관계 데이터 모델 (용어 암기)]]
+
 ---
 ## 1. SQL의 소개
 #### SQL의 분류
@@ -698,7 +703,6 @@ FROM 주문;
 주관식으로 나옴
 결과 테이블을 그려라 할수도 있음
 테이블은 교제에 있는 테이블을 시험지에 줄거임
-
 
 OX문제
 4지 선다

@@ -14,9 +14,14 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 이산수학]]
 
-siblings:: [[ComputerScience/2-2_discrete-math/과제/과제 번역|과제 번역]]
+
+
+
+up:: [[ComputerScience/2-2_discrete-math/과제/과제 번역|과제 번역]]
+prerequisites:: [[ComputerScience/1-2_coding-basics/중간고사|중간고사]]
+related:: [[ComputerScience/2-2_discrete-math/3. 관계와 함수/관계와 함수|관계와 함수]], [[ComputerScience/2-2_discrete-math/4. 그래프/그래프|그래프]], [[ComputerScience/2-2_discrete-math/1. 수학적 모델과 논리/수학적 모델과 논리|수학적 모델과 논리]]
+
 ### **작업 1: 데이터 정리 함수 정의**
 
 1. 다음 데이터 정리 단계를 구현하세요:

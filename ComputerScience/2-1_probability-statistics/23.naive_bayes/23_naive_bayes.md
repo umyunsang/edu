@@ -15,7 +15,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
+
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/22.map/22_MAP|22_MAP]]
+related:: [[ComputerScience/2-1_probability-statistics/20.mle/MLE|MLE]], [[ComputerScience/2-1_probability-statistics/20.mle/20_mle|20_mle]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]]
 
 ---
 ### 나이브 베이즈 분류기 (Naive Bayes Classifier)

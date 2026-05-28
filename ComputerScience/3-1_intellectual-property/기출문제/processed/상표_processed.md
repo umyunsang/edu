@@ -14,9 +14,10 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 지식재산개론]]
 
-siblings:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/저작권_processed|저작권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/특허_processed|특허_processed]]
+up:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/특허_processed|특허_processed]]
+related:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/저작권_processed|저작권_processed]]
+
 [상표] IPAT 기출문제
 
 **문제 1. 상표의 정의에 대한 설명으로 옳지 않은 것은?**

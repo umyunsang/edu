@@ -16,7 +16,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
+
+
+
+
+up:: [[ComputerScience/2-1_AI/1. Perceptron/실습/AND, NAND, OR 게이트 실습|AND, NAND, OR 게이트 실습]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation|Backpropagation]], [[ComputerScience/2-1_AI/중간시험/인공지능_중간고사_엄윤상_1705817|인공지능_중간고사_엄윤상_1705817]], [[ComputerScience/2-1_AI/3. Backpropagation/실습/Overfitting 해결/Dropout|Dropout]]
 
 ---
 1.  **AND 게이트**:

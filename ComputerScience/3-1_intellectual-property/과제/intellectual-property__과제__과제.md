@@ -14,9 +14,12 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 지식재산개론]]
 
-siblings:: [[ComputerScience/3-1_intellectual-property/과제/특허명세서의 양식|특허명세서의 양식]]
+
+
+up:: [[ComputerScience/3-1_intellectual-property/6. 특허 명세서/특허 명세서 작성법|특허 명세서 작성법]]
+related:: [[ComputerScience/3-1_intellectual-property/과제/특허명세서의 양식|특허명세서의 양식]], [[ComputerScience/3-1_intellectual-property/5. 특허/특허 제도|특허 제도]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/특허_processed|특허_processed]]
+
 【명세서】
 
     【발명의 명칭】

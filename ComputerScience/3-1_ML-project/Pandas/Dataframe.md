@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
 
-siblings:: [[ComputerScience/3-1_ML-project/Pandas/Data_analysis|Data_analysis]], [[ComputerScience/3-1_ML-project/Pandas/Pivot|Pivot]], [[ComputerScience/3-1_ML-project/Pandas/Series|Series]]
+
+
+
+up:: [[ComputerScience/3-1_ML-project/Numpy/Numpy 기초|Numpy 기초]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/3-1_ML-project/Pandas/Pivot|Pivot]], [[ComputerScience/3-1_ML-project/Pandas/Series|Series]], [[ComputerScience/3-1_ML-project/Pandas/Data_analysis|Data_analysis]]
+
 ---
 # Pandas DataFrame 이해하기
 

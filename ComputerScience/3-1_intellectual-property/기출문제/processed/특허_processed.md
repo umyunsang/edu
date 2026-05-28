@@ -14,9 +14,10 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 지식재산개론]]
 
-siblings:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/상표_processed|상표_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/저작권_processed|저작권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]]
+up:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/상표_processed|상표_processed]]
+related:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/저작권_processed|저작권_processed]]
+
 [특허] IPAT 기출문제
 
 **1. 다음 중 특허의 요건에 해당하지 않는 것은?**

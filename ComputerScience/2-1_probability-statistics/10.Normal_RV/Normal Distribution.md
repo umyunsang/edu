@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/10.Normal_RV/probability-statistics__10.Normal_RV__문제 풀이|probability-statistics__10.Normal_RV__문제 풀이]]
+
+up:: [[ComputerScience/2-1_probability-statistics/10.Normal_RV/probability-statistics__10.Normal_RV__문제 풀이|probability-statistics__10.Normal_RV__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/probability-statistics__11.joint_RVs__문제 풀이|probability-statistics__11.joint_RVs__문제 풀이]], [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]]
+
 ---
 ### 정규 분포 (Normal Distribution)
 통계학에서 자주 사용되는 중요한 확률 분포 중 하나입니다. 정규 분포는 종 모양의 곡선으로 나타나며, 중심 경향성을 나타내는 평균과 데이터의 퍼짐 정도를 나타내는 표준편차에 의해 결정됩니다. 정규 분포는 다양한 현상에서 자주 관찰되며, 중심 극한 정리 등 여러 통계적 분석에 기초를 제공합니다.
@@ -43,7 +45,6 @@ $$X \sim N(\mu, \sigma^2)$$
 - $\sigma^2$ 는 분산을 나타내며, 데이터가 평균으로부터 얼마나 퍼져 있는지를 나타냅니다. $\sigma$ 는 표준편차를 의미합니다.
 
 정규 분포는 통계적 가설 검정, 추정, 예측 등 다양한 분야에서 널리 활용되며, 중요한 확률 분포 중 하나로 인정받고 있습니다.
-
 
 ### 정규 분포의 확률 밀도 함수(PDF, Probability Density Function)
 
@@ -102,7 +103,6 @@ $$
    분산은 $a$의 제곱에 비례하므로, $Y$의 분산은 $a^2 \sigma^2$입니다.
 
 따라서, $Y$는 정규 분포를 따르며, 그 평균과 분산은 변환에 따라 조정됩니다. 결론적으로, 정규 분포를 따르는 확률 변수 $X$에 선형 변환 $Y = aX + b$을 적용하면, 그 결과로 나오는 확률 변수 $Y$도 정규 분포를 따르게 됩니다.
-
 
 ## 표준 정규 분포
 

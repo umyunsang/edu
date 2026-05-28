@@ -14,9 +14,14 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 수리논리학]]
 
-siblings:: [[ComputerScience/3-1_mathematical-logic/프로젝트/1차 컨펌|1차 컨펌]], [[ComputerScience/3-1_mathematical-logic/프로젝트/2차 컨펌|2차 컨펌]], [[ComputerScience/3-1_mathematical-logic/프로젝트/ASD Feature 발굴|ASD Feature 발굴]], [[ComputerScience/3-1_mathematical-logic/프로젝트/신호 특징 분석 결과|신호 특징 분석 결과]]
+
+
+
+up:: [[ComputerScience/3-1_mathematical-logic/논리학 개론|논리학 개론]]
+prerequisites:: [[ComputerScience/2-2_discrete-math/4. 그래프/그래프|그래프]]
+related:: [[ComputerScience/3-1_mathematical-logic/프로젝트/ASD Feature 발굴|ASD Feature 발굴]], [[ComputerScience/3-1_mathematical-logic/프로젝트/신호 특징 분석 결과|신호 특징 분석 결과]], [[ComputerScience/3-1_mathematical-logic/프로젝트/2차 컨펌|2차 컨펌]]
+
 ---
 # 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 

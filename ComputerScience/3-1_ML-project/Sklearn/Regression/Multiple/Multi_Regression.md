@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
+
+
+
+
+up:: [[ComputerScience/3-1_ML-project/Sklearn/Regression/Logistic/logistic|logistic]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/3-1_ML-project/Sklearn/Regression/KNNR/KNNR|KNNR]], [[ComputerScience/3-1_ML-project/Sklearn/Classifier/DecisionTree/Decision_Tree|Decision_Tree]], [[ComputerScience/3-1_ML-project/Sklearn/Classifier/KNNC/KNNC|KNNC]]
 
 ---
 ### 1. 데이터셋 불러오기 및 준비

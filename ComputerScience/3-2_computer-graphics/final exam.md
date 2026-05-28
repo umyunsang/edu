@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 컴퓨터 그래픽스]]
 
-siblings:: [[ComputerScience/3-2_computer-graphics/0. 소개|0. 소개]], [[ComputerScience/3-2_computer-graphics/middle exam|middle exam]], [[ComputerScience/3-2_computer-graphics/polygon|polygon]], [[ComputerScience/3-2_computer-graphics/깊이-버퍼와-투영|깊이-버퍼와-투영]], [[ComputerScience/3-2_computer-graphics/좌표공간과-카메라|좌표공간과-카메라]], [[ComputerScience/3-2_computer-graphics/지오매트리|지오매트리]], [[ComputerScience/3-2_computer-graphics/컴퓨터그래픽스-시험대비|컴퓨터그래픽스-시험대비]]
+
+
+
+up:: [[ComputerScience/3-2_computer-graphics/컴퓨터그래픽스-시험대비|컴퓨터그래픽스-시험대비]]
+prerequisites:: [[ComputerScience/3-2_optimization-math/1. Matrix/1. Matrix|1. Matrix]]
+related:: [[ComputerScience/3-2_computer-graphics/깊이-버퍼와-투영|깊이-버퍼와-투영]], [[ComputerScience/3-2_computer-graphics/좌표공간과-카메라|좌표공간과-카메라]], [[ComputerScience/3-2_computer-graphics/polygon|polygon]]
+
 ## 1. 그리기의 기초 (Primitive & Attributes)
 
 ### 1.1 선형 보간 (Linear Interpolation)과 직선

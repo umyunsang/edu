@@ -15,9 +15,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/19_sampling|19_sampling]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Sampling|Sampling]]
+
+
+up:: [[ComputerScience/2-1_probability-statistics/12.Independent_RVs/Independent RVs|Independent RVs]]
+related:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Sampling|Sampling]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/19_sampling|19_sampling]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]]
+
 ---
 ### Bootstrap 방법론
 

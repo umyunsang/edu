@@ -14,7 +14,13 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 운영체제]]
+
+
+
+
+up:: [[ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_operating-system/과제/MemoryAlloc/allocation.c|allocation.c]], [[ComputerScience/2-2_operating-system/4. 스레드와 멀티테스킹/스레드와 멀티테스킹|스레드와 멀티테스킹]], [[ComputerScience/2-2_operating-system/7. 교착상태/교착상태|교착상태]]
 
 ---
 ```c

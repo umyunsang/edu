@@ -15,7 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/7-0.Variance/probability-statistics__7-0.Variance__문제 풀이|probability-statistics__7-0.Variance__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/7-1.Bernoulli_RV/Bernoulli Distribution|Bernoulli Distribution]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/probability-statistics__6.Random_Variables__문제 풀이|probability-statistics__6.Random_Variables__문제 풀이]], [[ComputerScience/2-1_probability-statistics/5.Independence/probability-statistics__5.Independence__문제 풀이|probability-statistics__5.Independence__문제 풀이]]
 
 #ComputerScience #확률과통계
 

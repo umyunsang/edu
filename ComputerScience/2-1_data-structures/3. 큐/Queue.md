@@ -14,9 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 자료구조]]
 
-siblings:: [[ComputerScience/2-1_data-structures/3. 큐/큐|큐]]
+
+
+up:: [[ComputerScience/2-1_data-structures/3. 큐/큐|큐]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_data-structures/1. 리스트/리스트|리스트]], [[ComputerScience/2-1_data-structures/2. 스택/스택|스택]], [[ComputerScience/2-1_data-structures/1. 리스트/단순 연결 리스트|단순 연결 리스트]]
+
 ---
 ## 큐
 
@@ -25,7 +29,6 @@ siblings:: [[ComputerScience/2-1_data-structures/3. 큐/큐|큐]]
 - 일상생활의 관공서, 은행, 우체국, 병원 등에서 번호표를 이용한 줄서기 
 
 - 선입 선출(First-In First-Out, FIFO)
-
 
 #### `파이썬 리스트 큐`
 

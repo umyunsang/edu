@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: [[ComputerScience/3-1_machine-learning/SVM/QP SVM|QP SVM]]
+
+
+
+up:: [[ComputerScience/3-1_machine-learning/SVM/QP SVM|QP SVM]]
+prerequisites:: [[ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation|Backpropagation]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/3-1_machine-learning/중간/대비문제|대비문제]], [[ComputerScience/3-1_machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델|LSM, GDM 선형 회귀모델]], [[ComputerScience/3-1_machine-learning/Linear_Regression/Multiple_Linear_Regression|Multiple_Linear_Regression]]
+
 ---
 > [!PDF|red] [[20250415_Suport_vector_machine_실습 강의자료.pdf#page=15&selection=12,0,13,0&color=red|20250415_Suport_vector_machine_실습 강의자료, p.15]]
 > > SVM Gradient Decent Method (GD)
@@ -52,7 +57,6 @@ plt.show()
 
 >[!success]
 >![[3-1_machine-learning__Pasted image 20250421121448.png]]
-
 
 ## 3. SVM 클래스 구현
 SVM 알고리즘을 직접 구현한 클래스입니다.
@@ -95,7 +99,6 @@ class SVM:
                 
                 
 
-
     def predict(self, X):
         """
         새로운 데이터에 대한 클래스 예측
@@ -133,7 +136,6 @@ margin_log = model.fit(X, y)
 
 print(model.weights, model.bias)
 ```
-
 
 ## 5. 결정 경계 시각화 함수
 SVM의 결정 경계와 마진을 시각화하는 함수를 정의합니다.

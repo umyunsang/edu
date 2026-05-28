@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/probability-statistics__9.Continuous_RVs__문제 풀이|probability-statistics__9.Continuous_RVs__문제 풀이]]
+
+up:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/probability-statistics__9.Continuous_RVs__문제 풀이|probability-statistics__9.Continuous_RVs__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/8.Poisson/Poisson Distribution|Poisson Distribution]], [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]], [[ComputerScience/2-1_probability-statistics/12.Independent_RVs/Independent RVs|Independent RVs]]
+
 ---
 ### 연속적인 확률 변수(Continuous Random Variable)
  연속적인 확률 변수는 특정 값 사이의 확률을 표현합니다.
@@ -78,7 +80,6 @@ $$
 
 이렇게 정의된 균일 분포는 확률 변수가 특정 구간에서 균일하게 분포되어 있음을 나타내며, 해당 구간 내의 값들에 대한 확률을 나타내는데 유용합니다.
 
-
 ### 지수 분포(Exponential Distribution)
 어떤 사건이 발생하는 시간 간격을 모델링하는 데 사용되는 연속 확률 분포입니다. 
 주로 사건 발생 간격이 무작위인 경우에 사용됩니다. 
@@ -125,12 +126,10 @@ $P(X<30) \approx 0.0582$
 
 따라서 30년 안에 최소 한 번의 지진이 발생할 확률은 약 0.0582 또는 5.82%입니다.
 
-
 ## CDF of an Exponental RV
 지수 분포(Exponential Distribution)의 누적 분포 함수(Cumulative Distribution Function, CDF)는 확률 변수가 특정 값보다 작거나 같은 값을 가질 확률을 나타냅니다. 지수 분포의 CDF는 다음과 같이 정의됩니다:
 
 $$F(x; \lambda) = \int_{0}^{x} \lambda e^{-\lambda t} dt = 1 - e^{-\lambda x}, \text{ for } x \geq 0$$
-
 
 여기서 $x$는 양수이며, $\lambda$는 비율 파라미터(rate parameter)로, 사건이 단위 시간당 발생하는 평균 횟수를 나타냅니다. $e$는 자연 로그의 밑이고, $\lambda e^{-\lambda x}$는 사건이 시간 $x$ 내에 발생할 확률을 나타냅니다.
 

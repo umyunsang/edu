@@ -14,9 +14,14 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 수리논리학]]
 
-siblings:: [[ComputerScience/3-1_mathematical-logic/프로젝트/1차 컨펌|1차 컨펌]], [[ComputerScience/3-1_mathematical-logic/프로젝트/2차 컨펌|2차 컨펌]], [[ComputerScience/3-1_mathematical-logic/프로젝트/신호 특징 분석 결과|신호 특징 분석 결과]], [[ComputerScience/3-1_mathematical-logic/프로젝트/이상 탐지(ASD)를 위한 최적의 Feature Engineering|이상 탐지(ASD)를 위한 최적의 Feature Engineering]]
+
+
+
+up:: [[ComputerScience/3-1_mathematical-logic/논리학 개론|논리학 개론]]
+prerequisites:: [[ComputerScience/2-2_discrete-math/4. 그래프/그래프|그래프]]
+related:: [[ComputerScience/3-1_mathematical-logic/프로젝트/2차 컨펌|2차 컨펌]], [[ComputerScience/3-1_mathematical-logic/프로젝트/이상 탐지(ASD)를 위한 최적의 Feature Engineering|이상 탐지(ASD)를 위한 최적의 Feature Engineering]], [[ComputerScience/3-1_mathematical-logic/프로젝트/1차 컨펌|1차 컨펌]]
+
 ## **1. STFT와 함께 넣을 수 있는 추가 정보**  
 
 STFT만으로는 **주파수 정보**를 반영할 수 있지만, **음향학적 특징**이나 **시간-주파수 관계**를 더욱 풍부하게 표현할 수 있는 정보를 추가하면 모델 성능을 높일 수 있습니다.  

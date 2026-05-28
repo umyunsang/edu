@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[ComputerScience/2-2_OSS/3. 문서 객체 모델/OSS__3. 문서 객체 모델__연습문제|OSS__3. 문서 객체 모델__연습문제]]
+
+
+
+up:: [[ComputerScience/2-2_OSS/3. 문서 객체 모델/OSS__3. 문서 객체 모델__연습문제|OSS__3. 문서 객체 모델__연습문제]]
+prerequisites:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 기초 실습]]
+related:: [[ComputerScience/2-2_OSS/2. 자바스크립트 객체 다루기/자바스크립트 객체 다루기|자바스크립트 객체 다루기]], [[ComputerScience/2-2_OSS/1. 이벤트 이해하기/이벤트 이해하기|이벤트 이해하기]], [[ComputerScience/2-2_OSS/0. Html. javascript 기초/html, javascript 기초|html, javascript 기초]]
+
 ---
 ## DOM 이해하기
 #### HTML 태그가 객체 형태인 이유

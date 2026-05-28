@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[ComputerScience/2-1_web-programming/7. 웹 시스템 제작/웹 시스템 제작|웹 시스템 제작]]
+
+
+
+up:: [[ComputerScience/2-1_web-programming/7. 웹 시스템 제작/웹 시스템 제작|웹 시스템 제작]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 기초 실습]], [[ComputerScience/2-1_web-programming/1. HTML 기초/web-programming__1. HTML 기초__연습문제|web-programming__1. HTML 기초__연습문제]], [[ComputerScience/2-1_web-programming/1. HTML 기초/HTML 기초 실습|HTML 기초 실습]]
+
 ---
 ![](../../../../image/Pasted%20image%2020240605150904.png)
 

@@ -1,4 +1,5 @@
-up:: [[커리큘럼 관계 정리|[4-1] 창의적글쓰기]]
+up:: [[ComputerScience/4-1_creative-writing/중간고사_창의적글쓰기_정리|중간고사_창의적글쓰기_정리]]
+related:: [[ComputerScience/4-1_creative-writing/AGENTS|AGENTS]], [[ComputerScience/4-1_creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/4-1_creative-writing/templates/writing-assignment|writing-assignment]]
 
 # Source Map
 

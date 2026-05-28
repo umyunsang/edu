@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[ComputerScience/elective_LLM/ChatGPT API/Audio Generation|Audio Generation]], [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT 모델 이해와 활용|ChatGPT 모델 이해와 활용]], [[ComputerScience/elective_LLM/ChatGPT API/Embedding|Embedding]], [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning|Fine-Tuning]], [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning 실습|Fine-Tuning 실습]], [[ComputerScience/elective_LLM/ChatGPT API/Moderation|Moderation]], [[ComputerScience/elective_LLM/ChatGPT API/openai API 활용|openai API 활용]], [[ComputerScience/elective_LLM/ChatGPT API/TTS, STT|TTS, STT]]
+
+
+
+up:: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG|RAG]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리|신경망_핵심이론_시험정리]]
+related:: [[ComputerScience/elective_LLM/ChatGPT API/openai API 활용|openai API 활용]], [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT 모델 이해와 활용|ChatGPT 모델 이해와 활용]], [[ComputerScience/elective_LLM/ChatGPT API/Audio Generation|Audio Generation]]
+
 ---
 #### ChatGPT의 API 연동
 - 요청 매개변수 설정 
@@ -376,7 +381,6 @@ print("번역 텍스트:", response_text.strip())
 	- **문맥 손실**: 높은 토큰 수 제한(4096~32,768 토큰)을 초과할 경우 문맥이 손실될 수 있음.
 	- **정보 반복**: 반복적인 대화에서는 모델이 불필요한 정보를 반복할 가능성 있음.
 	- **응답 시간 및 비용**: 사용량에 따라 응답 시간이 길어지고, 비용이 증가할 수 있음.
-
 
 ```python
 import openai

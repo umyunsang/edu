@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/20.mle/MLE|MLE]], [[ComputerScience/2-1_probability-statistics/20.mle/파라미터 추정|파라미터 추정]]
+
+up:: [[ComputerScience/2-1_probability-statistics/20.mle/MLE|MLE]]
+related:: [[ComputerScience/2-1_probability-statistics/22.map/22_MAP|22_MAP]], [[ComputerScience/2-1_probability-statistics/23.naive_bayes/23_naive_bayes|23_naive_bayes]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]]
+
 ---
 ### Defining the likelihood of data
 
@@ -48,7 +50,6 @@ $$L(\theta) = \prod_{i=1}^n f(X_i|\theta)$$
 $$LL(\theta)= \log L(\theta) = \log\left(\prod_{i=1}^n f(X_i|\theta)\right)=\sum_{i=1}^n \log f(X_i|\theta)$$
 
 로그-우도 함수를 최대화하는 것은 가능도 함수를 최대화하는 것과 같은 결과를 가져옵니다. 로그-우도 함수를 사용하는 이유는 종종 가능도 함수를 미분하기 쉽기 때문입니다.
-
 
 ### Maximum Likelihood with Bernoulli
 

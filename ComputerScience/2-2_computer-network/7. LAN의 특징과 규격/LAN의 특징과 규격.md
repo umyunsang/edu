@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 컴퓨터 네트워크]]
+
+
+
+
+up:: [[ComputerScience/2-2_computer-network/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
+related:: [[ComputerScience/2-2_computer-network/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/2-2_computer-network/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델|네트워크 분류와 계층 모델]], [[ComputerScience/2-2_computer-network/8. 무선통신 시스템/무선통신 시스템|무선통신 시스템]]
 
 ---
 ## 1. LAN 계층

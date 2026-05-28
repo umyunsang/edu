@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Expectation|Expectation]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Random Variables|Random Variables]]
+
+up:: [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Random Variables|Random Variables]]
+related:: [[ComputerScience/2-1_probability-statistics/7-0.Variance/probability-statistics__7-0.Variance__문제 풀이|probability-statistics__7-0.Variance__문제 풀이]], [[ComputerScience/2-1_probability-statistics/7-2.Binomial_RV/Binomial Distribution|Binomial Distribution]], [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]]
+
 ---
 ### Example random variable
 ```

@@ -16,7 +16,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
+
+
+
+
+up:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+prerequisites:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_AI/4. Optimization/실습/Momentum|Momentum]], [[ComputerScience/2-1_AI/4. Optimization/실습/Adam|Adam]], [[ComputerScience/2-1_AI/1. Perceptron/이론/AND, NAND, OR 게이트|AND, NAND, OR 게이트]]
 
 ---
 ### Gradient Descent Method (경사 하강법)

@@ -15,14 +15,18 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/02-MapReduce|02-MapReduce]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]]
+
+
+
+up:: [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/DAU_BigDataAnalytics_06_(Variable_Selection)|DAU_BigDataAnalytics_06_(Variable_Selection)]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]]
+
 # DAU_CSE408_Pandas,_Geopandas
 
 # 동아대학교 컴퓨터AI공학부
 ## CSE408: 빅데이터 분석
-
 
 이번 프로그램에서는 Colab환경에서 로컬모드로 [Apache Spark](https://spark.apache.org)을 사용하는 방법을 배웁니다.
 
@@ -268,7 +272,6 @@ Successfully installed click-plugins-1.1.1 cligj-0.7.2 fiona-1.9.3 geopandas-0.1
 import geopandas as gpd
 
 ~~~
-
 
 ## 버스데이터 처리하기 좌표 만들어서 넣기
 

@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|LLM 이해와 활용]]
 
-siblings:: [[ComputerScience/elective_LLM/ChatGPT API/Audio Generation|Audio Generation]], [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT API|ChatGPT API]], [[ComputerScience/elective_LLM/ChatGPT API/Embedding|Embedding]], [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning|Fine-Tuning]], [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning 실습|Fine-Tuning 실습]], [[ComputerScience/elective_LLM/ChatGPT API/Moderation|Moderation]], [[ComputerScience/elective_LLM/ChatGPT API/openai API 활용|openai API 활용]], [[ComputerScience/elective_LLM/ChatGPT API/TTS, STT|TTS, STT]]
+
+
+up:: [[ComputerScience/elective_LLM/ChatGPT API/ChatGPT API|ChatGPT API]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리|신경망_핵심이론_시험정리]]
+related:: [[ComputerScience/elective_LLM/ChatGPT API/추론 모델|추론 모델]], [[ComputerScience/elective_LLM/LLM 이해/LLM 모델 이해|LLM 모델 이해]], [[ComputerScience/elective_LLM/ChatGPT API/Embedding|Embedding]]
+
 ---
 #### OpenAI API
 ```

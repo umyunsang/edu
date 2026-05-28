@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 머신러닝]]
 
-siblings:: [[ComputerScience/3-1_machine-learning/Linear_Regression/Linear Regression|Linear Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/Multiple_Linear_Regression|Multiple_Linear_Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/우버데이터_Multiple_Linear_Regression|우버데이터_Multiple_Linear_Regression]]
+
+
+
+up:: [[ComputerScience/3-1_machine-learning/Linear_Regression/Linear Regression|Linear Regression]]
+prerequisites:: [[ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation|Backpropagation]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/3-1_machine-learning/Linear_Regression/Multiple_Linear_Regression|Multiple_Linear_Regression]], [[ComputerScience/3-1_machine-learning/Linear_Regression/우버데이터_Multiple_Linear_Regression|우버데이터_Multiple_Linear_Regression]], [[ComputerScience/3-1_machine-learning/중간/대비문제|대비문제]]
+
 ---
 # Simple Linear Regression
 
@@ -108,8 +113,6 @@ $$\theta = (X^T \cdot X)^{-1} \cdot (X^T \cdot Y)$$
 >[!warning]
 > 행렬 $X^T \cdot X$ 가 비가역 행렬일 경우 역행렬을 구할 수 없으므로 주의가 필요합니다.
 
-
-
 ```python
 class LinearRegression_LSM():
     """
@@ -152,7 +155,6 @@ class LinearRegression_LSM():
         # 최종 파라미터 θ 계산: θ = (XᵀX)^(-1) XᵀY
         self.theta = np.dot(XTX_inv, XTY)
 
-
         return self.theta
 
     def predict(self, X):
@@ -192,7 +194,6 @@ plt.show()
 
 >[!success]
 >![[3-1_machine-learning__Pasted image 20250421120853.png]]
-
 
 ---
 ## Gradient Descent Method 기반 선형 회귀 모델 작성
@@ -252,10 +253,8 @@ class LinearRegression_GDM():
       theta = [w, b]
       theta = np.array([w, b]).reshape(2, 1)
 
-
       # y_hat 계산: 예측값 = X @ theta
       y_hat = np.dot(X, theta)
-
 
       # dw, db 계산
       # dw = (2/N) * sum((y - y_hat) * -X)
@@ -264,14 +263,12 @@ class LinearRegression_GDM():
       # db = (2/N) * sum((y - y_hat) * -1)
       db = (2/N) * sum((Y - y_hat) * -1)
 
-
       # w, b 업데이트
       # w_t+1 = w_t - learning_rate * dw
       w = w - self.learning_rate * dw
 
       # b_t+1 = b_t - learning_rate * db
       b = b - self.learning_rate * db
-
 
     # 최종 학습된 theta 저장
     self.theta = np.array([w, b])  # (1차원 배열)

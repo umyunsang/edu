@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/2.Combinations/probability-statistics__2.Combinations__문제 풀이|probability-statistics__2.Combinations__문제 풀이]]
+
+up:: [[ComputerScience/2-1_probability-statistics/2.Combinations/probability-statistics__2.Combinations__문제 풀이|probability-statistics__2.Combinations__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/3.Probability/probability-statistics__3.Probability__문제 풀이|probability-statistics__3.Probability__문제 풀이]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]], [[ComputerScience/2-1_probability-statistics/5.Independence/Independence|Independence]]
+
 ---
 
 ### Permutations of Distinct Objects (서로 다른 객체의 순열)

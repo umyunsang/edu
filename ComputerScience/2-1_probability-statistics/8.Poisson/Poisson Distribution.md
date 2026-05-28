@@ -15,9 +15,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/8.Poisson/More Discreete Distributions (시험 X)|More Discreete Distributions (시험 X)]], [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]]
+
+
+up:: [[ComputerScience/2-1_probability-statistics/7-0.Variance/probability-statistics__7-0.Variance__문제 풀이|probability-statistics__7-0.Variance__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]], [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/probability-statistics__9.Continuous_RVs__문제 풀이|probability-statistics__9.Continuous_RVs__문제 풀이]], [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]]
+
 #ComputerScience #확률과통계 
 
 ---
@@ -49,8 +52,6 @@ $$ \text{Var}(X) = \sigma^2 = \lambda $$
 
 - **PMF 그래프:**
 	포아송 분포의 PMF 그래프는 확률 질량 함수 플롯으로, x-축은 사건의 수 $k$를 나타내고 y-축은 확률 $P(X = k)$를 나타냅니다. 일반적으로 그래프는 평균 발생률 매개변수 $\lambda$를 중심으로 오른쪽으로 치우친 모양을 보입니다.
-
-
 
 ## Poisson Proof
 

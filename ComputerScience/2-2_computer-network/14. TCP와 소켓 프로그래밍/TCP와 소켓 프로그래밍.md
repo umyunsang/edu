@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 컴퓨터 네트워크]]
+
+
+
+
+up:: [[ComputerScience/2-2_computer-network/13. 전송 계층/전송 계층|전송 계층]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
+related:: [[ComputerScience/2-2_computer-network/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP)|인터넷 프로토콜(IP)]], [[ComputerScience/2-2_computer-network/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]], [[ComputerScience/2-2_computer-network/0. Quiz/기말 암기 정리|기말 암기 정리]]
 
 ---
 ## 1. 전송 계층 관련 프로토콜 분석

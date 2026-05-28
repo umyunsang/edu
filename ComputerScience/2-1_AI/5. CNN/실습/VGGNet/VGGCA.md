@@ -16,9 +16,14 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/UMNet|UMNet]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGG|VGG]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGDense|VGGDense]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGskip|VGGskip]]
+
+
+
+up:: [[ComputerScience/2-1_AI/5. CNN/실습/ResNet/ResNet|ResNet]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGDense|VGGDense]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/UMNet|UMNet]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGskip|VGGskip]]
+
 ---
 ![](../../../../../../image/Pasted%20image%2020240527182119.png)
 

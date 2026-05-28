@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/5.Independence/Independence|Independence]]
+
+up:: [[ComputerScience/2-1_probability-statistics/5.Independence/Independence|Independence]]
+related:: [[ComputerScience/2-1_probability-statistics/7-2.Binomial_RV/Binomial Distribution|Binomial Distribution]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/probability-statistics__6.Random_Variables__문제 풀이|probability-statistics__6.Random_Variables__문제 풀이]], [[ComputerScience/2-1_probability-statistics/7-1.Bernoulli_RV/Bernoulli Distribution|Bernoulli Distribution]]
+
 ---
 ### 동전 던지기 문제 (독립시행)
 

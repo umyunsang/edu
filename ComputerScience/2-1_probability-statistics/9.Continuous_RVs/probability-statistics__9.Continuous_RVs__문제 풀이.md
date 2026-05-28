@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]]
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]]
+related:: [[ComputerScience/2-1_probability-statistics/8.Poisson/문제풀이|문제풀이]], [[ComputerScience/2-1_probability-statistics/8.Poisson/Poisson Distribution|Poisson Distribution]], [[ComputerScience/2-1_probability-statistics/3.Probability/probability-statistics__3.Probability__문제 풀이|probability-statistics__3.Probability__문제 풀이]]
+
 ---
 ### 지진 문제
 ```

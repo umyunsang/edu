@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 머신러닝프로젝트]]
+
+
+
+
+up:: [[ComputerScience/3-1_ML-project/LangChain/ML-project__LangChain__LangChain|ML-project__LangChain__LangChain]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/3-1_ML-project/Matplotlib/imshow 이미지 그래프|imshow 이미지 그래프]], [[ComputerScience/3-1_ML-project/Pandas/Pivot|Pivot]], [[ComputerScience/3-1_ML-project/Pandas/Dataframe|Dataframe]]
 
 ---
 #### 배열 생성 및 속성 확인

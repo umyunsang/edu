@@ -14,9 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 컴퓨터 네트워크]]
 
-siblings:: [[ComputerScience/2-2_computer-network/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/2-2_computer-network/0. Quiz/기말 퀴즈|기말 퀴즈]], [[ComputerScience/2-2_computer-network/0. Quiz/중간 퀴즈|중간 퀴즈]]
+
+
+up:: [[ComputerScience/2-2_computer-network/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍|TCP와 소켓 프로그래밍]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
+related:: [[ComputerScience/2-2_computer-network/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/2-2_computer-network/0. Quiz/중간 퀴즈|중간 퀴즈]], [[ComputerScience/2-2_computer-network/0. Quiz/기말 퀴즈|기말 퀴즈]]
+
 ---
 # Chapter 1. Routing Information Protocol (RIP)
 
@@ -124,7 +128,6 @@ Next, let’s verify that all the routers are seeing all the `172.16.0.0` subn
    R       172.16.252.0 [120/1] via 172.16.250.2, 0:00:11, Serial0
                         [120/1] via 172.16.251.2, 0:00:19, Serial1
 
-
    Chicago>sh ip route
    Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
           D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
@@ -142,7 +145,6 @@ Next, let’s verify that all the routers are seeing all the `172.16.0.0` subn
    R       172.16.100.0 [120/1] via 172.16.252.2, 0:00:10, Serial1
    R       172.16.251.0 [120/1] via 172.16.250.1, 0:00:01, Serial0
                        [120/1] via 172.16.252.2, 0:00:10, Serial1
-
 
    Ames>sh ip route
    Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
@@ -187,7 +189,6 @@ C       171.16.1.0 is directly connected, Ethernet0
 C       171.16.250.0 is directly connected, Serial0
 C       171.16.251.0 is directly connected, Serial1
 
-
 Chicago>sh ip route
 Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
@@ -200,7 +201,6 @@ Gateway of last resort is not set
 C       171.16.50.0 is directly connected, Ethernet0
 C       171.16.250.0 is directly connected, Serial0
 C       171.16.252.0 is directly connected, Serial1
-
 
 Ames>sh ip route
 Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
@@ -1355,7 +1355,6 @@ ip address 172.16.251.1 255.255.255.0
 router igrp 10
 network 172.16.0.0
 
-
 hostname Chicago
 ...
 interface Ethernet0
@@ -1372,7 +1371,6 @@ ip address 172.16.252.1 255.255.255.0
 
 router igrp 10
 network 172.16.0.0
-
 
 hostname Ames
 ...
@@ -1409,7 +1407,6 @@ C       172.16.1.0 is directly connected, Ethernet0
 I       172.16.100.0 [100/10576] via 172.16.250.2, 00:00:43, Serial0
 C    192.168.1.0/24 is directly connected, Ethernet1
 
-
 Chicago#sh ip route
 ...
 Gateway of last resort is not set
@@ -1422,7 +1419,6 @@ I       172.16.251.0 [100/182571] via 172.16.250.1, 00:00:01, Serial0
 C       172.16.50.0 is directly connected, Ethernet0
 I       172.16.1.0 [100/8576] via 172.16.250.1, 00:00:01, Serial0
 I       172.16.100.0 [100/8576] via 172.16.252.2, 00:01:01, Serial1
-
 
 Ames#sh ip route
 ...
@@ -1520,7 +1516,6 @@ ip address 172.16.248.1 255.255.255.0
 ...
 router igrp 10
 network 172.16.0.0
-
 
 hostname London
 ...
@@ -1931,7 +1926,6 @@ However, let’s define a new subnet of `172.16.0.0` on _core1_ (and then bl
 8  access-list 1 deny 172.16.10.0 0.0.0.255   
 9  access-list 1 permit 0.0.0.0 255.255.255.255
 
-
    branch1#sh ip route
    ...
    Gateway of last resort is 172.16.245.1 to network 10.0.0.0
@@ -1939,7 +1933,6 @@ However, let’s define a new subnet of `172.16.0.0` on _core1_ (and then bl
         172.16.0.0/24 is subnetted, 1 subnets
    C       172.16.245.0 is directly connected, Serial0
    I*   10.0.0.0/8 [100/8576] via 172.16.245.1, 00:00:26, Serial0
-
 
    branch1#ping 192.168.1.1
 
@@ -2595,7 +2588,6 @@ bandwidth 56
 router eigrp 10
 network 172.16.0.0
 
-
 hostname Chicago
 ...
 interface Ethernet0
@@ -2612,7 +2604,6 @@ description Chicago to Ames link
 
 router eigrp 10
 network 172.16.0.0
-
 
 hostname Ames
 ...
@@ -2699,7 +2690,6 @@ router eigrp 10
 network 172.16.0.0
 network 172.20.0.0
 no auto-summary 
-
 
 hostname Ottawa
 ...
@@ -2803,7 +2793,6 @@ and _Chicago_ could be configured to summarize its block using the statement o
 ```
 ip summary-address eigrp 10 172.16.0.0 255.255.240.0
 ```
-
 
 ---
 
@@ -3858,7 +3847,6 @@ The LSA in the following example is self-originated, as seen in the advertising 
 
           OSPF Router with ID (192.168.1.1) (Process ID 10)
 
-
               Net Link States (Area 0)
 
      Routing Bit Set on this LSA
@@ -3884,7 +3872,6 @@ The summary LSAs in the following example are originated by _NewYork2_ (`192.1
    NewYork#sh ip ospf database summary
 
           OSPF Router with ID (192.168.1.1) (Process ID 10)
-
 
                Summary Net Link States (Area 0)
 
@@ -3923,7 +3910,6 @@ The link state ID (line 34) in this example describes the router ID of _Paris_,
 
           OSPF Router with ID (192.168.1.1) (Process ID 10)
 
-
               Summary ASB Link States (Area 0)
 
      Routing Bit Set on this LSA
@@ -3948,7 +3934,6 @@ Network `10.0.1.0` is learned via RIP from _NewYork2_, which floods an extern
    NewYork#sh ip ospf database external
 
           OSPF Router with ID (192.168.1.1) (Process ID 10)
-
 
                Type-5 AS External Link States
 
@@ -4248,7 +4233,6 @@ Paris#sh ip ospf database external
 
        OSPF Router with ID (192.168.1.5) (Process ID 10)
 
-
            AS External Link States
 
   Routing Bit Set on this LSA
@@ -4428,7 +4412,6 @@ The command **ip ospf network broadcast** (lines 52, 53, and 55) makes OSPF be
    router ospf 10
    network 192.168.10.0 0.0.0.255 area 0
 
-
    hostname Miami
    !
    interface Serial0
@@ -4446,7 +4429,6 @@ The command **ip ospf network broadcast** (lines 52, 53, and 55) makes OSPF be
    !
    router ospf 10
     network 192.168.10.0 0.0.0.255 area 0
-
 
    hostname NewOrleans
    !

@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_diagram|architecture_diagram]], [[ComputerScience/3-2_bigdata-analysis/md/architecture_text|architecture_text]], [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]], [[ComputerScience/3-2_bigdata-analysis/md/개념문제_풀이|개념문제_풀이]], [[ComputerScience/3-2_bigdata-analysis/md/시험정리|시험정리]], [[ComputerScience/3-2_bigdata-analysis/md/연습문제_풀이|연습문제_풀이]], [[ComputerScience/3-2_bigdata-analysis/md/이론정리|이론정리]]
+
+
+
+up:: [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_diagram|architecture_diagram]], [[ComputerScience/3-2_bigdata-analysis/md/architecture_text|architecture_text]], [[ComputerScience/3-2_bigdata-analysis/md/시험정리|시험정리]]
+
 # K-POP 아티스트 인기도 분석 시스템: YouTube 데이터 기반 분기별 트렌드 예측 및 시각화
 
 ## 문제 정의 및 목표
@@ -44,8 +49,6 @@ siblings:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_diagram|archit
 ### 전체 아키텍처 개요
 아래 흐름도는 데이터 수집부터 대시보드 제공까지의 전체 구조를 요약한다.
 
-
-
 ### 데이터 수집 및 정제 전략
 - 랜덤 샘플링 기반 수집: 일일 10,000 쿼터라는 API 할당량 제약 아래에서 아티스트, 정렬 기준, 기간을 무작위 조합하여 요청함으로써 인기 상위 그룹에 편향되지 않도록 했다. 균등 할당이나 인기순 집중 전략은 각각 현실성과 다양성 측면에서 한계를 보여 본 접근을 채택했다.
 - Bloom Filter 기반 중복 제거: 영상 ID를 해시하여 비트 배열로 관리하고 거짓 양성률을 1% 수준으로 설정해 Hash Set 대비 약 1/50의 메모리 사용량으로 50만 건의 후보를 처리했다. Bloom 필터에서 걸러지지 않은 중복은 Delta Lake의 고유 제약으로 최종 제거해 중복률을 사실상 0%에 가깝게 낮췄다.
@@ -56,8 +59,6 @@ siblings:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_diagram|archit
 - CDF 기반 동적 티어 분류: 각 분기마다 참여도 분포의 누적분포함수(CDF)를 계산해 상위 5%는 Tier 1, 상위 15%는 Tier 2, 상위 40%는 Tier 3, 나머지는 Tier 4로 구분했다. 절대 기준이나 K-평균과 달리 시장 변화에 따라 탄력적으로 티어가 조정된다.
 - 다목적 최적화 기반 모델 선택: 정확도, F1 점수, 추론 지연을 동시에 고려해 로지스틱 회귀, 랜덤 포레스트, 그래디언트 부스팅을 비교하고 Pareto Front 상의 모델만 채택했다.
 
-
-
 > [!tip] Pareto 기반 의사결정은 단일 점수에 의존할 때 발생하는 속도와 정확도 간 트레이드오프 놓침을 방지해, 실시간 대시보드에는 로지스틱 회귀, 오프라인 분석에는 랜덤 포레스트를 선택할 수 있도록 지원한다.
 
 ## 구현 세부사항
@@ -66,8 +67,6 @@ siblings:: [[ComputerScience/3-2_bigdata-analysis/md/architecture_diagram|archit
 - `core/bloom.py`는 MurmurHash3 기반 Bloom 필터를 구현해 O(1)에 가까운 속도로 중복을 판정한다.
 - Structured Streaming 잡은 분기 단위로 데이터를 집계해 QoQ 성장률과 시장점유율을 Silver CSV로 생성하고, Gold 단계에서 percentile과 Tier 레이블을 추가한다. 이때 `percent_rank()`로 누적 백분위를 구하고 `approx_count_distinct()`로 HyperLogLog를 활용한 고유 시청자 수를 추정한다.
 - Streamlit 프런트엔드는 Altair 차트로 시장 점유율 분포, Top-10 랭킹, QoQ 추이, 아티스트 상세 정보, 실시간 예측 5개 탭을 제공하며 Bloom 필터 결과를 확률과 아이콘으로 피드백한다.
-
-
 
 핵심 QoQ 연산은 아래와 같다.
 

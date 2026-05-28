@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|도커와 쿠버네티스]]
 
-siblings:: [[ComputerScience/elective_docker-k8s/ClusterIP 서비스 설정 및 가이드|ClusterIP 서비스 설정 및 가이드]], [[ComputerScience/elective_docker-k8s/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]], [[ComputerScience/elective_docker-k8s/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]], [[ComputerScience/elective_docker-k8s/도커|도커]], [[ComputerScience/elective_docker-k8s/도커 기초|도커 기초]], [[ComputerScience/elective_docker-k8s/쿠버네티스  기초|쿠버네티스  기초]], [[ComputerScience/elective_docker-k8s/쿠버네티스 설치|쿠버네티스 설치]]
+
+
+
+up:: [[ComputerScience/elective_docker-k8s/도커 기초|도커 기초]]
+prerequisites:: [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]], [[ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]]
+related:: [[ComputerScience/elective_docker-k8s/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]], [[ComputerScience/elective_docker-k8s/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]], [[ComputerScience/elective_docker-k8s/쿠버네티스 설치|쿠버네티스 설치]]
+
 ---
 ### **Ingress 설정 정리**
 

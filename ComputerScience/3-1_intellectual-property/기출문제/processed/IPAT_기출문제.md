@@ -14,9 +14,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 지식재산개론]]
 
-siblings:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/상표_processed|상표_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/저작권_processed|저작권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/특허_processed|특허_processed]]
+
+
+up:: [[ComputerScience/3-1_intellectual-property/기출문제/processed/특허_processed|특허_processed]]
+related:: [[ComputerScience/3-1_intellectual-property/기출문제/1. IPAT 기출문제 지식재산권_답안통합|1. IPAT 기출문제 지식재산권_답안통합]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]], [[ComputerScience/3-1_intellectual-property/기출문제/processed/상표_processed|상표_processed]]
+
 ---
 ## [지식재산권]  IPAT 기출문제
 
@@ -2423,7 +2426,6 @@ d. 상표권은 그 지정상품마다 분할하여 이전할 수 있으며 이 
 ## [특허] IPAT 기출문제
 
 ---
-
 
 ###### **1. 다음 중 특허권에 관한 설명으로 옳지 않은 것은?**
 ==①== 특허권은 국제주의의 원칙상 1국가에서 특허등록되면 특허출원하지 않은 국가에서도 행사할 수  

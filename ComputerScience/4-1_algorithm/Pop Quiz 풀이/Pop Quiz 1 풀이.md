@@ -17,9 +17,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[4-1] 알고리즘]]
 
-siblings:: [[ComputerScience/4-1_algorithm/Pop Quiz 풀이/Pop Quiz 2 풀이|Pop Quiz 2 풀이]]
+
+
+
+up:: [[ComputerScience/4-1_algorithm/중간고사_정리|중간고사_정리]]
+prerequisites:: [[ComputerScience/2-1_data-structures/5. 정렬/정렬|정렬]], [[ComputerScience/2-2_discrete-math/4. 그래프/그래프|그래프]]
+related:: [[ComputerScience/4-1_algorithm/Pop Quiz 풀이/Pop Quiz 2 풀이|Pop Quiz 2 풀이]], [[ComputerScience/4-1_algorithm/기말고사_정리|기말고사_정리]], [[ComputerScience/4-1_algorithm/실습과제/트리 만들기|트리 만들기]]
+
 # Pop Quiz #1 문제 풀이
 
 ### [문제 1]

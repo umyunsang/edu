@@ -25,9 +25,14 @@ updated: '2026-05-05'
 week: 3
 ---
 
-up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
 
-siblings:: [[ComputerScience/4-1_AIOSS/md/Week0 - Orientation|Week0 - Orientation]], [[ComputerScience/4-1_AIOSS/md/Week1 - Metrics That Matter|Week1 - Metrics That Matter]], [[ComputerScience/4-1_AIOSS/md/Week2 - Plan, Track & Visualize|Week2 - Plan, Track & Visualize]], [[ComputerScience/4-1_AIOSS/md/Week4 - Asynchronous Work|Week4 - Asynchronous Work]], [[ComputerScience/4-1_AIOSS/md/Week5 - Open & Inner Source Software Delivery|Week5 - Open & Inner Source Software Delivery]], [[ComputerScience/4-1_AIOSS/md/Week6 - GitHub Actions|Week6 - GitHub Actions]]
+
+
+
+up:: [[ComputerScience/4-1_AIOSS/md/Week0 - Orientation|Week0 - Orientation]]
+prerequisites:: [[ComputerScience/3-1_distributed-computing/쿠다|쿠다]], [[ComputerScience/elective_docker-k8s/도커 기초|도커 기초]]
+related:: [[ComputerScience/4-1_AIOSS/md/Week1 - Metrics That Matter|Week1 - Metrics That Matter]], [[ComputerScience/4-1_AIOSS/md/Week2 - Plan, Track & Visualize|Week2 - Plan, Track & Visualize]], [[ComputerScience/4-1_AIOSS/md/Week6 - GitHub Actions|Week6 - GitHub Actions]]
+
 # Teamwork & Collaborative Development
 
 팀워크와 협업 개발 - Pull Request 기반 워크플로우, 코드 리뷰 전략, 그리고 협업 베스트 프랙티스

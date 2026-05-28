@@ -15,12 +15,15 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 분산처리]]
 
-siblings:: [[ComputerScience/3-1_distributed-computing/1. WhyParlleism|1. WhyParlleism]], [[ComputerScience/3-1_distributed-computing/쿠다|쿠다]]
+
+
+up:: [[ComputerScience/3-1_distributed-computing/쿠다|쿠다]]
+prerequisites:: [[ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]], [[ComputerScience/2-2_computer-network/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍|TCP와 소켓 프로그래밍]]
+related:: [[ComputerScience/3-1_distributed-computing/1. WhyParlleism|1. WhyParlleism]], [[ComputerScience/2-2_operating-system/1. OS의 시작과 발전/OS의 시작과 발전|OS의 시작과 발전]], [[ComputerScience/2-2_operating-system/4. 스레드와 멀티테스킹/스레드와 멀티테스킹|스레드와 멀티테스킹]]
+
 ---
 # CUDA 프로그램 연습 및 CUDA API이해
-
 
 ![[3-1_machine-learning__Pasted image 20250329135531.png]]
 
@@ -32,8 +35,6 @@ siblings:: [[ComputerScience/3-1_distributed-computing/1. WhyParlleism|1. WhyPar
 | 이름      |        엄윤상        |
 | 제출일자    | 6월 20일 오후 11:59까지 |
 | 담당교수    |      옥수열 교수님      |
-
-
 
 ---
 # CUDA 프로그래밍 분석 리포트

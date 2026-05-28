@@ -14,7 +14,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 컴퓨터 네트워크]]
+
+
+
+up:: [[ComputerScience/2-2_computer-network/10. 라우팅 알고리즘/라우팅 알고리즘|라우팅 알고리즘]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
+related:: [[ComputerScience/2-2_computer-network/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/2-2_computer-network/9. 네트워크 계층/네트워크 계층|네트워크 계층]], [[ComputerScience/2-2_computer-network/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍|TCP와 소켓 프로그래밍]]
 
 ---
 ## 1. 인터넷 프로토콜(IP)의 작업

@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 데이터베이스]]
 
-siblings:: [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+
+
+
+up:: [[ComputerScience/2-2_database/6. 관계 데이터 연산/관계 데이터 연산|관계 데이터 연산]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]], [[ComputerScience/2-2_database/0. 시험/7장 문제|7장 문제]], [[ComputerScience/2-2_database/0. 시험/중간 주관식 예상(답)|중간 주관식 예상(답)]]
+
 ---
 ## 4. 뷰
 #### 뷰(view)

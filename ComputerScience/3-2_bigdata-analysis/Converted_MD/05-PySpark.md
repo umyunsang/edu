@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/02-MapReduce|02-MapReduce]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API|BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]]
+
+
+
+up:: [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/02-MapReduce|02-MapReduce]]
+
 # 05. PySpark - Apache Spark를 활용한 대규모 분산 처리
 
 ## 📚 개요
@@ -31,8 +36,6 @@ PySpark는 Apache Spark의 Python API로, 대규모 데이터를 효율적으로
 - 실제 빅데이터 처리 작업에 PySpark 적용
 
 ## 🚀 Apache Spark 소개
-
-
 
 ### 📋 **Spark의 역사**
 - **2014년 첫 릴리즈**: Apache Spark 공식 출시
@@ -255,8 +258,6 @@ PySpark는 Python에서 Apache Spark를 사용할 수 있게 해주는 API로, P
 - **스트림 처리**: 실시간 데이터 스트림 처리
 - **ETL 파이프라인**: 데이터 추출, 변환, 로드 작업
 
-
-
 ## 🔧 SparkContext 클래스 - Spark의 핵심
 
 SparkContext는 Spark 애플리케이션의 진입점으로, 클러스터와의 연결을 관리하고 RDD를 생성하는 핵심 클래스입니다.
@@ -444,8 +445,6 @@ rdd = sc.textFile("sample.txt")
 - **드라이버 반환**: RDD의 모든 요소를 드라이버에 단일 리스트로 반환
 - **메모리 주의**: 대용량 데이터의 경우 메모리 부족 위험
 
-
-
 *출처: https://i.imgur.com/DUO6ygB.png*
 
 ### 🎯 **연습문제 5.3: Collect 연산**
@@ -472,8 +471,6 @@ print("총 라인 수:", len(collected_data))
 - **Narrow 연산**: 각 파티션 내에서 독립적으로 실행
 - **새로운 RDD**: 기존 RDD의 각 요소에 함수를 적용하여 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
-
-
 
 *출처: http://i.imgur.com/PxNJf0U.png*
 
@@ -579,8 +576,6 @@ print("총 소요 시간:", end_time - start_time, "초")
 - **병렬 처리**: 각 파티션에서 독립적으로 필터링 수행
 - **성능 최적화**: Narrow 연산으로 네트워크 통신 최소화
 
-
-
 *출처: http://i.imgur.com/GFyji4U.png*
 
 ### 🎯 **Filter 연산 예제**
@@ -618,8 +613,6 @@ print("3의 배수:", multiples_of_3.collect())
 - **평면화**: 생성된 리스트들을 하나의 평면 리스트로 변환
 - **병렬 처리**: 각 파티션에서 독립적으로 처리 수행
 - **성능 최적화**: Narrow 연산으로 네트워크 통신 최소화
-
-
 
 ### 🎯 **FlatMap 연산 예제**
 
@@ -716,8 +709,6 @@ print("정리된 단어:", cleaned_words.collect())
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
 
-
-
 ### 🎯 **GroupBy 연산 예제**
 
 ```python
@@ -754,8 +745,6 @@ print("그룹화된 결과:", [(k, list(v)) for (k, v) in grouped_names.collect(
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
 - **대안**: `reduceByKey()` 함수 사용 권장 (더 효율적)
-
-
 
 ### 🎯 **GroupByKey 연산 예제**
 
@@ -794,8 +783,6 @@ print("그룹화된 결과:", result)
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
 - **조인 유형**: Inner Join, Left Join, Right Join, Outer Join 지원
-
-
 
 ### 🎯 **Join 연산 예제**
 
@@ -839,8 +826,6 @@ print("조인 결과:", joined.collect())
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
 - **메모리 사용**: 중복 제거를 위한 추가 메모리 사용
 
-
-
 ### 🎯 **Distinct 연산 예제**
 
 ```python
@@ -878,8 +863,6 @@ print("중복 제거된 데이터:", unique_data.collect())
 - **키-값 쌍**: 생성된 키와 원본 값을 키-값 쌍으로 변환
 - **병렬 처리**: 각 파티션에서 독립적으로 처리 수행
 - **성능 최적화**: Narrow 연산으로 네트워크 통신 최소화
-
-
 
 ### 🎯 **KeyBy 연산 예제**
 
@@ -927,8 +910,6 @@ print("키-값 쌍:", keyed_names.collect())
 - **병렬 처리**: 여러 파티션에서 동시에 처리 수행
 - **결과 반환**: 최종 집계 결과를 드라이버에 반환
 
-
-
 ### 🎯 **Map-Reduce 연산 예제**
 
 ```python
@@ -971,8 +952,6 @@ print("제곱의 합:", result)
 - **`variance()`**: 분산 계산
 - **`stdev()`**: 표준편차 계산
 
-
-
 ### 🔢 CountByKey - 키별 개수 계산
 
 #### 📋 **CountByKey의 특징**
@@ -986,8 +965,6 @@ print("제곱의 합:", result)
 - **결과 반환**: 키와 개수의 매핑을 드라이버에 반환
 - **병렬 처리**: 여러 파티션에서 동시에 처리 수행
 - **메모리 효율성**: 중간 결과를 메모리에 유지하지 않음
-
-
 
 ### 🎯 **CountByKey 연산 예제**
 
@@ -1120,7 +1097,6 @@ All documentation is available [here](https://spark.apache.org/docs/2.1.0/api/py
 
 For a global overview see the Transformations section of the [programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
 
-
 ## SparkSession
 
 Since SPARK 2.0.0,  SparkSession provides a single point 
@@ -1139,7 +1115,6 @@ allows programming Spark with DataFrame and Dataset APIs.
 - Note that the more points generated, the better the approximation
 
 See [this tutorial](https://computing.llnl.gov/tutorials/parallel_comp/#ExamplesPI).
-
 
 ### Exercise 9.2
 

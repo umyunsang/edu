@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bootstrapping|Bootstrapping]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Sampling|Sampling]]
+
+up:: [[ComputerScience/2-1_probability-statistics/12.Independent_RVs/Independent RVs|Independent RVs]]
+related:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Sampling|Sampling]], [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bootstrapping|Bootstrapping]], [[ComputerScience/2-1_probability-statistics/20.mle/20_mle|20_mle]]
+
 ---
 
 ### 샘플을 통한 모평균과 모분산 추정
@@ -118,7 +120,6 @@ siblings:: [[ComputerScience/2-1_probability-statistics/19.sampling_bootstrap/Bo
 **샘플 평균의 표준 오차**는 $\overline{X}$의 표준 편차에 대한 추정치입니다:
 
 $$SE = \sqrt{\frac{S^2}{n}}$$
-
 
 **직관적 설명**:
 - $S^2$는 모분산 $\sigma^2$의 불편 추정량입니다.

@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/5.Independence/probability-statistics__5.Independence__문제 풀이|probability-statistics__5.Independence__문제 풀이]]
+
+up:: [[ComputerScience/2-1_probability-statistics/5.Independence/probability-statistics__5.Independence__문제 풀이|probability-statistics__5.Independence__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]], [[ComputerScience/2-1_probability-statistics/12.Independent_RVs/Independent RVs|Independent RVs]], [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/Bayes' Theorem|Bayes' Theorem]]
+
 #ComputerScience #확률과통계 
 
 ---

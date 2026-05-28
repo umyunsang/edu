@@ -14,7 +14,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] 운영체제]]
+
+
+
+up:: [[ComputerScience/2-2_operating-system/4. 스레드와 멀티테스킹/스레드와 멀티테스킹|스레드와 멀티테스킹]]
+prerequisites:: [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]], [[ComputerScience/2-1_linux/1. 리눅스의 기본|1. 리눅스의 기본]]
+related:: [[ComputerScience/2-2_operating-system/6. 스레드 동기화/스레드 동기화|스레드 동기화]], [[ComputerScience/2-2_operating-system/12. 저장 장치 관리/대용량 저장 장치 관리|대용량 저장 장치 관리]], [[ComputerScience/2-2_operating-system/1. OS의 시작과 발전/OS의 시작과 발전|OS의 시작과 발전]]
 
 ---
 ## 1. CPU 스케줄링 개요

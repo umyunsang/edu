@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/web-programming__5. 데이터베이스__확인문제|web-programming__5. 데이터베이스__확인문제]], [[ComputerScience/2-1_web-programming/5. 데이터베이스/데이터베이스|데이터베이스]]
+
+
+
+up:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/데이터베이스|데이터베이스]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_web-programming/5. 데이터베이스/web-programming__5. 데이터베이스__확인문제|web-programming__5. 데이터베이스__확인문제]], [[ComputerScience/2-1_web-programming/6. HTML 기초2/HTML 기초 실습2|HTML 기초 실습2]], [[ComputerScience/2-1_web-programming/7. 웹 시스템 제작/web-programming__7. 웹 시스템 제작__문제 풀이|web-programming__7. 웹 시스템 제작__문제 풀이]]
+
 ---
 ## MYSQL
 
@@ -135,7 +140,6 @@ MySQL을 사용하여 데이터베이스를 조작하는 데에는 여러 가지
 	위 예제에서는 'employees' 테이블에서 'id'가 1인 레코드의 'name' 열만을 조회합니다.
 
 ---
-
 
 5. **UPDATE**: 테이블의 레코드를 수정합니다.
 

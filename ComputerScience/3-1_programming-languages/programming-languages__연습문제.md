@@ -14,7 +14,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-1] 프로그래밍언어론]]
+
+
+
+
+up:: [[ComputerScience/3-1_programming-languages/필기/3. 구문론|3. 구문론]]
+prerequisites:: [[ComputerScience/2-2_discrete-math/4. 그래프/그래프|그래프]], [[ComputerScience/2-1_data-structures/5. 정렬/정렬|정렬]]
+related:: [[ComputerScience/3-1_programming-languages/교재/6장_교재_문제|6장_교재_문제]], [[ComputerScience/3-1_programming-languages/교재/5장_교재_문제|5장_교재_문제]], [[ComputerScience/3-1_programming-languages/교재/3장_교재_문제|3장_교재_문제]]
 
 # 7장-12장 연습문제 종합
 

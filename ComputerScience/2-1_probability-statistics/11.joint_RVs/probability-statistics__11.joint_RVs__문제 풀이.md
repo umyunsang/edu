@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]]
+
+up:: [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]]
+related:: [[ComputerScience/2-1_probability-statistics/10.Normal_RV/Normal Distribution|Normal Distribution]], [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/probability-statistics__4.Bayes_theorem__문제 풀이|probability-statistics__4.Bayes_theorem__문제 풀이]], [[ComputerScience/2-1_probability-statistics/10.Normal_RV/probability-statistics__10.Normal_RV__문제 풀이|probability-statistics__10.Normal_RV__문제 풀이]]
+
 ---
 ### Website testing 문제
 ```

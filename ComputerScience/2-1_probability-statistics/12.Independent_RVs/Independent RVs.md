@@ -15,7 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
+
+
+
+up:: [[ComputerScience/2-1_probability-statistics/11.joint_RVs/joint RVs|joint RVs]]
+related:: [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]], [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/Bayes' Theorem|Bayes' Theorem]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Random Variables|Random Variables]]
 
 ---
 ### 독립 이산형 확률 변수(Independent discrete random variables)

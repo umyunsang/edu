@@ -16,9 +16,14 @@ type: project
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 인공지능]]
 
-siblings:: [[ComputerScience/2-1_AI/4. Optimization/실습/Adam|Adam]], [[ComputerScience/2-1_AI/4. Optimization/실습/LearningRateControl|LearningRateControl]]
+
+
+
+up:: [[ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation|Backpropagation]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_AI/4. Optimization/실습/Adam|Adam]], [[ComputerScience/2-1_AI/4. Optimization/실습/LearningRateControl|LearningRateControl]], [[ComputerScience/2-1_AI/5. CNN/실습/VGGNet/VGGCA|VGGCA]]
+
 ---
 
 모멘텀(Momentum)은 경사 하강법(Gradient Descent) 최적화 알고리즘의 한 종류로, 기울기 갱신 시 직전 기울기를 고려하여 업데이트하는 방법입니다. 이는 기존의 경사 하강법보다 빠르게 수렴하고, 지역 최솟값(local minimum)에 빠지지 않고 전역 최솟값(global minimum)으로 빠르게 수렴하는 데 도움이 됩니다.
@@ -44,7 +49,6 @@ $$
 모멘텀을 사용하면 경사 하강법이 효율적으로 수렴하고 지역 최솟값에 빠지지 않는 것을 도와줍니다. 특히, 비등방성(anisotropic) 및 길쭉한(sloped) 기울기 표면에서 경사 하강법을 가속화하여 빠르게 수렴할 수 있습니다.
 
 종합하면, 모멘텀은 경사 하강법 최적화 알고리즘의 한 종류로서, 기울기 갱신 시 직전 기울기를 고려하여 업데이트하여 수렴 속도를 높이고 안정성을 향상시키는 데 사용됩니다.
-
 
 ```python
 import torch  

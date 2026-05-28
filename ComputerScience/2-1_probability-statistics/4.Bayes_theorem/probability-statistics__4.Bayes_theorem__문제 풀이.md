@@ -15,9 +15,12 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/Bayes' Theorem|Bayes' Theorem]]
+
+
+up:: [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|Probability]]
+related:: [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/Bayes' Theorem|Bayes' Theorem]], [[ComputerScience/2-1_probability-statistics/11.joint_RVs/probability-statistics__11.joint_RVs__문제 풀이|probability-statistics__11.joint_RVs__문제 풀이]], [[ComputerScience/2-1_probability-statistics/7-0.Variance/probability-statistics__7-0.Variance__문제 풀이|probability-statistics__7-0.Variance__문제 풀이]]
+
 ---
 ### **퀴즈 1: 스팸 이메일 탐지**
 ```

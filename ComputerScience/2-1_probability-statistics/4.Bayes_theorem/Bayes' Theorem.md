@@ -15,9 +15,11 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 확률과 통계]]
 
-siblings:: [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/probability-statistics__4.Bayes_theorem__문제 풀이|probability-statistics__4.Bayes_theorem__문제 풀이]]
+
+up:: [[ComputerScience/2-1_probability-statistics/4.Bayes_theorem/probability-statistics__4.Bayes_theorem__문제 풀이|probability-statistics__4.Bayes_theorem__문제 풀이]]
+related:: [[ComputerScience/2-1_probability-statistics/12.Independent_RVs/Independent RVs|Independent RVs]], [[ComputerScience/2-1_probability-statistics/9.Continuous_RVs/Continuous RVs|Continuous RVs]], [[ComputerScience/2-1_probability-statistics/6.Random_Variables/Expectation|Expectation]]
+
 #ComputerScience #확률과통계 
 
 ---

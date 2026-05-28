@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 자료구조]]
 
-siblings:: [[ComputerScience/2-1_data-structures/2. 스택/스택|스택]], [[ComputerScience/2-1_data-structures/2. 스택/전위, 후위 표기법|전위, 후위 표기법]]
+
+
+
+up:: [[ComputerScience/2-1_data-structures/2. 스택/스택|스택]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_data-structures/2. 스택/전위, 후위 표기법|전위, 후위 표기법]], [[ComputerScience/2-1_data-structures/3. 큐/큐|큐]], [[ComputerScience/2-1_data-structures/1. 리스트/리스트|리스트]]
+
 ---
 스택(Stack)은 데이터를 저장하는 선형 자료구조 중 하나로, 데이터를 한쪽 끝에서만 삽입하고 삭제할 수 있는 구조를 갖습니다. 이러한 특성 때문에 "후입선출" (Last-In-First-Out, LIFO) 구조라고도 합니다. 
 
@@ -34,7 +39,6 @@ siblings:: [[ComputerScience/2-1_data-structures/2. 스택/스택|스택]], [[Co
 - 스택 구현 방법: 
 	- NODE를 이용한 직접 코딩 
 	- 파이썬의 list 자료형을 활용한 코딩
-
 
 ## 스택 구현 - Python list 자료형 활용
 

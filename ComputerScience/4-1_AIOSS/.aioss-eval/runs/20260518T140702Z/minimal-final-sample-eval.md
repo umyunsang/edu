@@ -1,4 +1,5 @@
-up:: [[커리큘럼 관계 정리|[4-1] AIOSS]]
+up:: [[ComputerScience/4-1_algorithm/기말고사_정리|기말고사_정리]]
+related:: [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T142831Z/pre-push-minimal-sample-eval|pre-push-minimal-sample-eval]], [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T141147Z/minimal-verify-sample-eval|minimal-verify-sample-eval]], [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T140649Z/solution-after-fix-sample-eval|solution-after-fix-sample-eval]]
 
 # AIOSS Sample Evaluation: minimal-final
 

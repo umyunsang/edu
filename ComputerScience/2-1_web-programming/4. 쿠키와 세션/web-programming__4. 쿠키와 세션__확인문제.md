@@ -15,9 +15,13 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-1] 웹프로그래밍]]
 
-siblings:: [[ComputerScience/2-1_web-programming/4. 쿠키와 세션/쿠키와 세션|쿠키와 세션]]
+
+
+up:: [[ComputerScience/2-1_web-programming/4. 쿠키와 세션/쿠키와 세션|쿠키와 세션]]
+prerequisites:: [[ComputerScience/2-1_python/1. 변수와 자료형|1. 변수와 자료형]]
+related:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/web-programming__3. Spring Boot 기초__확인문제|web-programming__3. Spring Boot 기초__확인문제]], [[ComputerScience/2-1_web-programming/1. HTML 기초/web-programming__1. HTML 기초__연습문제|web-programming__1. HTML 기초__연습문제]], [[ComputerScience/2-1_web-programming/5. 데이터베이스/web-programming__5. 데이터베이스__확인문제|web-programming__5. 데이터베이스__확인문제]]
+
 ### Quiz #2:
 주소창에 http://localhost:8080/bank 로 접속하면 a.html이 화면이 뜨며, a.html 안에 `<form action="/bank/deposit">` 라는 폼이 있습니다. 이 폼에서 입력한 정보를 전송받아서 세션에 넣을 수 있는 메소드의 어노테이션은 
 
@@ -103,7 +107,6 @@ public void login() {
 ---
 ### Quiz #10
 로그인 체크 소스의 빈 부분을 채우세요.
-
 
 답:
 ```java

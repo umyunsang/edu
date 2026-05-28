@@ -14,9 +14,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[2-2] OSS]]
 
-siblings:: [[ComputerScience/2-2_OSS/0. Html. javascript 기초/OSS__0. Html. javascript 기초__연습문제|OSS__0. Html. javascript 기초__연습문제]]
+
+
+
+up:: [[ComputerScience/2-2_OSS/0. Html. javascript 기초/OSS__0. Html. javascript 기초__연습문제|OSS__0. Html. javascript 기초__연습문제]]
+prerequisites:: [[ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 기초 실습]]
+related:: [[ComputerScience/2-2_OSS/3. 문서 객체 모델/문서 객체 모델(DOM)|문서 객체 모델(DOM)]], [[ComputerScience/2-2_OSS/2. 자바스크립트 객체 다루기/OSS__2. 자바스크립트 객체 다루기__연습문제|OSS__2. 자바스크립트 객체 다루기__연습문제]], [[ComputerScience/2-2_OSS/1. 이벤트 이해하기/이벤트 이해하기|이벤트 이해하기]]
+
 ---
 # QUIZ.1
 
@@ -157,7 +162,6 @@ image.src = 'static/쏘리.png'; }
     - `who`가 "양파" 또는 "양"일 경우 `image.src = 'static/양파.png'`로 설정합니다.
     - `who`가 "식빵" 또는 "식"일 경우 `image.src = 'static/식빵.png'`로 설정합니다.
     - 위의 조건에 맞지 않으면 `image.src = 'static/쏘리.png'`로 설정하여 기본적으로 "쏘리" 이미지를 표시합니다.
-
 
 ---
 # ex3.js

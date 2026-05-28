@@ -15,9 +15,14 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-up:: [[커리큘럼 관계 정리|[3-2] 빅데이터분석]]
 
-siblings:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/02-MapReduce|02-MapReduce]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]]
+
+
+
+up:: [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]
+prerequisites:: [[ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념|머신러닝 핵심 수학 개념]], [[ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[ComputerScience/3-2_bigdata-analysis/Converted_MD/DAU_CSE408_Pandas,_Geopandas|DAU_CSE408_Pandas,_Geopandas]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/3-2_bigdata-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]]
+
 # DAU_BigDataAnalytics_06_(Variable_Selection)
 
 # 변수 선택(Variable Selection) 기법에 대한 코드
@@ -454,7 +459,6 @@ Output:
 +---+--------------------+---+-------+---+--------+--------+-----+--------+----+-------+---------+-------+-------+----+-------+-----+--------+
 only showing top 20 rows
 
-
 ~~~
 
 ~~~python
@@ -634,7 +638,6 @@ Output:
 +---+--------------------+--------------------+---+-------+---+--------+--------+-----+--------+----+-------+---------+-------+-------+----+-------+-----+--------+
 only showing top 20 rows
 
-
 ~~~
 
 Built-in Variable Selection Process: Without Target
@@ -696,7 +699,6 @@ Output:
 |[-0.11044203745873847,-53.98554342962398,1.0903138050958234]|
 +------------------------------------------------------------+
 only showing top 20 rows
-
 
 ~~~
 
@@ -790,7 +792,6 @@ Output:
 |[-0.6396798564710514,2.621609196420631,-2.1560847881880587] |
 +------------------------------------------------------------+
 only showing top 20 rows
-
 
 ~~~
 
@@ -1912,7 +1913,6 @@ Selected Indices:  [0, 1, 2, 3, 4, 5]
 |0.0|(32,[0,2,3,4,5,7,...|(16,[0,2,3,4,5,7,...| 33|      0|  5|      54|       1|   -1|       0| 4.0|    0.0|      0.0|    0.0|    0.0| 0.0|    1.0|  0.0|     0.0|(6,[0,2,3,4,5],[3...|
 +---+--------------------+--------------------+---+-------+---+--------+--------+-----+--------+----+-------+---------+-------+-------+----+-------+-----+--------+--------------------+
 only showing top 20 rows
-
 
 ~~~
 
