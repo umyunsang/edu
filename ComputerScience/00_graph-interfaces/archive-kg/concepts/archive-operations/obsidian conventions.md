@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/아카이브 운영 지식그래프|아카이브 운영]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/아카이브 운영 지식그래프|아카이브 운영]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/아카이브 운영 근거 인덱스|아카이브 운영 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/아카이브 운영 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/vault structure|vault structure]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/installed plugins|installed plugins]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/working with this vault|working with this vault]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/커리큘럼 관계 정리|커리큘럼 관계 정리]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/what this is|what this is]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/git workflow|git workflow]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/vault structure|vault structure]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/installed plugins|installed plugins]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/working with this vault|working with this vault]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/cuda|cuda]]
 
 # obsidian conventions
 
@@ -27,15 +28,18 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-oper
 ## 로컬 근거
 
 - [[AGENTS]]
-- [[AGENTS]]
-- [[AGENTS]]
-- [[CLAUDE]]
-- [[CLAUDE]]
 - [[CLAUDE]]
 
 ## 연결 개념
 
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/what this is|what this is]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/git workflow|git workflow]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/vault structure|vault structure]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/installed plugins|installed plugins]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/working with this vault|working with this vault]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/커리큘럼 관계 정리|커리큘럼 관계 정리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/ai|ai]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/ml|ml]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/os|os]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/llm|llm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/sql|sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/cuda|cuda]]

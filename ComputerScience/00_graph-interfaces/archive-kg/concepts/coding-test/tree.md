@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/코딩 테스트 지식그래프|코딩 테스트]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/코딩 테스트 지식그래프|코딩 테스트]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/코딩 테스트 근거 인덱스|코딩 테스트 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/프로그래밍 기초 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/problem|problem]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/www.acmicpc.net|www.acmicpc.net]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/전역 변수 선언|전역 변수 선언]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/버블 정렬|버블 정렬]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/코드 구현|코드 구현]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/스택과 큐|스택과 큐]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/투 포인터|투 포인터]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/버블 정렬|버블 정렬]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/트리 만들기|트리 만들기]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/후위 표기법|후위 표기법]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/코딩 테스트|코딩 테스트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/배열과 리스트|배열과 리스트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/중간고사 정리|중간고사 정리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/조 4주차과제|조 4주차과제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/기말고사 정리|기말고사 정리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/tree|Python 프로그래밍/tree]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/tree|자료구조/tree]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/decision tree|빅데이터분석/decision tree]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/tree|프로그래밍언어론/tree]]
 
 # tree
 
@@ -27,17 +28,26 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/
 ## 로컬 근거
 
 - [[ComputerScience/01_programming-foundations/coding-test/자료구조/1. 배열과 리스트]]
-- [[ComputerScience/01_programming-foundations/coding-test/자료구조/1. 배열과 리스트]]
-- [[ComputerScience/01_programming-foundations/coding-test/자료구조/2. 구간 합]]
 - [[ComputerScience/01_programming-foundations/coding-test/자료구조/2. 구간 합]]
 - [[ComputerScience/01_programming-foundations/coding-test/자료구조/3. 투 포인터]]
-- [[ComputerScience/01_programming-foundations/coding-test/자료구조/3. 투 포인터]]
 - [[ComputerScience/01_programming-foundations/coding-test/자료구조/4. 슬라이딩 윈도우]]
-- [[ComputerScience/01_programming-foundations/coding-test/자료구조/4. 슬라이딩 윈도우]]
+- [[ComputerScience/01_programming-foundations/coding-test/자료구조/5. 스택과 큐]]
+- [[ComputerScience/01_programming-foundations/coding-test/정렬/1. 버블 정렬]]
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/problem|problem]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/www.acmicpc.net|www.acmicpc.net]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/전역 변수 선언|전역 변수 선언]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/코드 구현|코드 구현]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/스택과 큐|스택과 큐]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/투 포인터|투 포인터]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/버블 정렬|버블 정렬]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/트리 만들기|트리 만들기]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/후위 표기법|후위 표기법]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/코딩 테스트|코딩 테스트]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/배열과 리스트|배열과 리스트]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/중간고사 정리|중간고사 정리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/조 4주차과제|조 4주차과제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/coding-test/기말고사 정리|기말고사 정리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/tree|Python 프로그래밍/tree]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/tree|자료구조/tree]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/decision tree|빅데이터분석/decision tree]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/tree|프로그래밍언어론/tree]]

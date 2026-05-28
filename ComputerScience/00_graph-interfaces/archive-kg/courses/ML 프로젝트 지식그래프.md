@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/ML 프로젝트 근거 인덱스|ML 프로젝트 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/cifar10|cifar10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/gdm 선형 회귀모델|gdm 선형 회귀모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/multi layer perceptron|multi layer perceptron]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/그래프 출력|그래프 출력]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/구구단 프로그램|구구단 프로그램]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/기본 그래프|기본 그래프]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/변수와 자료형|변수와 자료형]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/그래프 스타일|그래프 스타일]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/중간시험 범위|중간시험 범위]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/다중 선형 회귀|다중 선형 회귀]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/성적입력 프로그램|성적입력 프로그램]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/파일 읽기와 쓰기|파일 읽기와 쓰기]]
 module:: [[ComputerScience/00_graph-interfaces/courses/ML 프로젝트 인터페이스|ML 프로젝트 인터페이스]]
 domain:: [[ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스|AI ML 데이터 인터페이스]]
 
@@ -35,18 +36,18 @@ ML 프로젝트 과목/활동의 로컬 노트, PDF, 코드/산출물을 2026 Gr
 
 ## 핵심 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ml|ml]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|svm]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/api|api]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/rag|rag]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/구구단 프로그램|구구단 프로그램]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/ml|ml]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/knn|knn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/cnn|cnn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/cifar10|cifar10]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/llm|llm]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/gdm 선형 회귀모델|gdm 선형 회귀모델]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/multi layer perceptron|multi layer perceptron]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/그래프 출력|그래프 출력]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/기본 그래프|기본 그래프]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/변수와 자료형|변수와 자료형]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/그래프 스타일|그래프 스타일]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/중간시험 범위|중간시험 범위]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/다중 선형 회귀|다중 선형 회귀]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/성적입력 프로그램|성적입력 프로그램]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/파일 읽기와 쓰기|파일 읽기와 쓰기]]
 
 ## 근거
 

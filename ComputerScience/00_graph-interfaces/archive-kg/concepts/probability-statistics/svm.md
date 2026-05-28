@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/확률통계 지식그래프|확률통계]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/확률통계 지식그래프|확률통계]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/확률통계 근거 인덱스|확률통계 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/수학 이론 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cifar10|cifar10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/nand|nand]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/파라미터 추정|파라미터 추정]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/joint RVs|joint RVs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/Independent RVs|Independent RVs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/random variables|random variables]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/Continuous Joint|Continuous Joint]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/maximum a posteriori|maximum a posteriori]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/naive bayes|naive bayes]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/mle|mle]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/nand|nand]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/vggca|vggca]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/미터 추정|미터 추정]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/or 게이트|or 게이트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/mlp 이론|mlp 이론]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cifar10|cifar10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/연습문제 풀이|연습문제 풀이]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/시험 예상 문제|시험 예상 문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/SVM|머신러닝/SVM]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|ML 프로젝트/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-networks/svm|뉴럴네트워크/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/svm|빅데이터분석/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|LLM/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|생성형 AI 파인튜닝/svm]]
 
 # svm
 
@@ -27,16 +28,36 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-
 ## 로컬 근거
 
 - [[ComputerScience/02_math-theory/probability-statistics/1.Counting/Counting]]
-- [[ComputerScience/02_math-theory/probability-statistics/1.Counting/Counting]]
-- [[ComputerScience/02_math-theory/probability-statistics/1.Counting/Counting]]
-- [[ComputerScience/02_math-theory/probability-statistics/1.Counting/Counting]]
-- [[ComputerScience/02_math-theory/probability-statistics/1.Counting/Counting]]
-- [[ComputerScience/02_math-theory/probability-statistics/1.Counting/Counting]]
 - [[ComputerScience/02_math-theory/probability-statistics/10.Normal_RV/Normal Distribution]]
-- [[ComputerScience/02_math-theory/probability-statistics/10.Normal_RV/Normal Distribution]]
+- [[ComputerScience/02_math-theory/probability-statistics/10.Normal_RV/Normal Random Variable 문제 풀이]]
+- [[ComputerScience/02_math-theory/probability-statistics/11.joint_RVs/Joint Random Variables 문제 풀이]]
+- [[ComputerScience/02_math-theory/probability-statistics/11.joint_RVs/joint RVs]]
+- [[ComputerScience/02_math-theory/probability-statistics/12.Independent_RVs/Independent RVs]]
+- [[ComputerScience/02_math-theory/probability-statistics/15.General_inference/16.Continous_joint_probability-1/Continuous Joint]]
+- [[ComputerScience/02_math-theory/probability-statistics/19.sampling_bootstrap/19_sampling]]
 
 ## 연결 개념
 
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/파라미터 추정|파라미터 추정]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/joint RVs|joint RVs]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/Independent RVs|Independent RVs]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/random variables|random variables]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/Continuous Joint|Continuous Joint]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/maximum a posteriori|maximum a posteriori]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/naive bayes|naive bayes]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/mle|mle]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cnn|cnn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cifar10|cifar10]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/nand|nand]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/vggca|vggca]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/미터 추정|미터 추정]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/or 게이트|or 게이트]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/mlp 이론|mlp 이론]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/cifar10|cifar10]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/연습문제 풀이|연습문제 풀이]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/시험 예상 문제|시험 예상 문제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/SVM|머신러닝/SVM]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|ML 프로젝트/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-networks/svm|뉴럴네트워크/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/svm|빅데이터분석/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|LLM/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|생성형 AI 파인튜닝/svm]]

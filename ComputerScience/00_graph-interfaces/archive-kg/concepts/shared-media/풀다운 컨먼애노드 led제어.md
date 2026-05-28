@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/공유 미디어 지식그래프|공유 미디어]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/공유 미디어 지식그래프|공유 미디어]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/공유 미디어 근거 인덱스|공유 미디어 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/공유 미디어 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀업 컨먼애노드 led제어|풀업 컨먼애노드 led제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀업 컨먼캐소드 led제어|풀업 컨먼캐소드 led제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀다운 컨먼캐소드 led제어|풀다운 컨먼캐소드 led제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm dfs bfs|1 algorithm dfs bfs]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/순서도 기호|순서도 기호]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/IMG 1555|IMG 1555]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/발표자료 image|발표자료 image]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/자동차 헤드라이트 시스템|자동차 헤드라이트 시스템]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀업 컨먼애노드 led제어|풀업 컨먼애노드 led제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀업 컨먼캐소드 led제어|풀업 컨먼캐소드 led제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀다운 컨먼캐소드 led제어|풀다운 컨먼캐소드 led제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm dfs bfs|1 algorithm dfs bfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm horspool|1 algorithm horspool]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/2 neural network image|2 neural network image]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm merge sort|1 algorithm merge sort]]
 
 # 풀다운 컨먼애노드 led제어
 
@@ -30,7 +31,14 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media
 
 ## 연결 개념
 
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/순서도 기호|순서도 기호]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/IMG 1555|IMG 1555]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/발표자료 image|발표자료 image]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/자동차 헤드라이트 시스템|자동차 헤드라이트 시스템]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀업 컨먼애노드 led제어|풀업 컨먼애노드 led제어]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀업 컨먼캐소드 led제어|풀업 컨먼캐소드 led제어]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/풀다운 컨먼캐소드 led제어|풀다운 컨먼캐소드 led제어]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm dfs bfs|1 algorithm dfs bfs]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm horspool|1 algorithm horspool]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/2 neural network image|2 neural network image]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm merge sort|1 algorithm merge sort]]

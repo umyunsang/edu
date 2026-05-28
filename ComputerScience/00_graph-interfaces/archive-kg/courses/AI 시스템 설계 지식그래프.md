@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/AI 시스템 설계 근거 인덱스|AI 시스템 설계 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/cifar10|cifar10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/nand|nand]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/multi layer perceptron|multi layer perceptron]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/vggca|vggca]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/특허 가능성|특허 가능성]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/데이터 모델링|데이터 모델링]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/nand|nand]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/vggca|vggca]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/메뉴 조회|메뉴 조회]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/주문 생성|주문 생성]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/응용 기술|응용 기술]]
 module:: [[ComputerScience/00_graph-interfaces/courses/AI 시스템 설계 인터페이스|AI 시스템 설계 인터페이스]]
 domain:: [[ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스|AI ML 데이터 인터페이스]]
 
@@ -36,17 +37,17 @@ AI 시스템 설계 과목/활동의 로컬 노트, PDF, 코드/산출물을 202
 ## 핵심 개념
 
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/cnn|cnn]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/api|api]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/cifar10|cifar10]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|sql]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/rag|rag]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/nand|nand]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/db|db]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/multi layer perceptron|multi layer perceptron]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/데이터 모델링|데이터 모델링]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/ml|ml]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/db|db]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/cnn|cnn]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/nand|nand]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/vggca|vggca]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/특허 가능성|특허 가능성]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/메뉴 조회|메뉴 조회]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/주문 생성|주문 생성]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/응용 기술|응용 기술]]
 
 ## 근거
 

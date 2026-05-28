@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/자격증 지식그래프|자격증]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/자격증 지식그래프|자격증]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/자격증 근거 인덱스|자격증 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/자격증 검증 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/java|java]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/db|db]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/srtf|srtf]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/기말 정리|기말 정리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/용어 암기|용어 암기]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/응용 기술|응용 기술]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/기본 개념|기본 개념]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/구현 과제|구현 과제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/메모리 관리|메모리 관리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|Python 프로그래밍/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/sql|빅데이터분석/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|AI 시스템 설계/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|Linux/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/sql|데이터베이스/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/sql|아카이브 운영/sql]]
 
 # sql
 
@@ -26,17 +27,26 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certificatio
 
 ## 로컬 근거
 
-- [[certifications/information-processing/실기/오답노트]]
-- [[certifications/information-processing/실기/오답노트]]
-- [[certifications/information-processing/실기/오답노트]]
-- [[certifications/information-processing/실기/오답노트]]
+- [[certifications/information-processing/실기/C언어 실기 오답노트]]
 - [[certifications/information-processing/필기/1. 프로그래밍 언어 활용]]
-- [[certifications/information-processing/필기/1. 프로그래밍 언어 활용]]
-- [[certifications/information-processing/필기/1. 프로그래밍 언어 활용]]
-- [[certifications/information-processing/필기/1. 프로그래밍 언어 활용]]
+- [[certifications/체크리스트]]
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|cpu]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/java|java]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/os|os]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/db|db]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/fcfs|fcfs]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/srtf|srtf]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/기말 정리|기말 정리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/용어 암기|용어 암기]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/응용 기술|응용 기술]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/기본 개념|기본 개념]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/구현 과제|구현 과제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/메모리 관리|메모리 관리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|Python 프로그래밍/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/sql|빅데이터분석/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|AI 시스템 설계/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|Linux/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/sql|데이터베이스/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/sql|아카이브 운영/sql]]

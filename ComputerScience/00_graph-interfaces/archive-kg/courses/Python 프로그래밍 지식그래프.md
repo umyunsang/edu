@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/프로그래밍 기초 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/프로그래밍 기초 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/Python 프로그래밍 근거 인덱스|Python 프로그래밍 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/html|html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/cifar10|cifar10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/nand|nand]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/multi layer perceptron|multi layer perceptron]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/tree|tree]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/mysql|mysql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/vggca|vggca]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/중간시험 범위|중간시험 범위]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/tree|tree]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/html|html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knnc|knnc]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/rest|rest]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knnr|knnr]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/nand|nand]]
 module:: [[ComputerScience/00_graph-interfaces/courses/Python 프로그래밍 인터페이스|Python 프로그래밍 인터페이스]]
 domain:: [[ComputerScience/01_programming-foundations/프로그래밍 기초 인터페이스|프로그래밍 기초 인터페이스]]
 
@@ -35,18 +36,18 @@ Python 프로그래밍 과목/활동의 로컬 노트, PDF, 코드/산출물을 
 
 ## 핵심 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/cnn|cnn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/html|html]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/cifar10|cifar10]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knn|knn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/db|db]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/nand|nand]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|sql]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/multi layer perceptron|multi layer perceptron]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/중간시험 범위|중간시험 범위]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/ai|ai]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/db|db]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/cnn|cnn]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knn|knn]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/tree|tree]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/mysql|mysql]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/vggca|vggca]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/html|html]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knnc|knnc]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/rest|rest]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/knnr|knnr]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/nand|nand]]
 
 ## 근거
 

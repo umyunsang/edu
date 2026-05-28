@@ -14,9 +14,10 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/Linux 지식그래프|Linux]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/Linux 지식그래프|Linux]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cuda|cuda]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/rest|rest]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/srtf|srtf]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 시스템|리눅스 시스템]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 권한|리눅스 권한]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 셸|리눅스 셸]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 시스템|리눅스 시스템]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 셸|리눅스 셸]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 권한|리눅스 권한]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/REST|REST]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 소개|리눅스 소개]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/주요 옵션|주요 옵션]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/fcfs|fcfs]]
 
 # Linux 근거 인덱스
 

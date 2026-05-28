@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/LLM 근거 인덱스|LLM 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/gdm 선형 회귀모델|gdm 선형 회귀모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/cifar10|cifar10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/주요 특징|주요 특징]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/추론 모델|추론 모델]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ChatGPT 모델 이해와 활용|ChatGPT 모델 이해와 활용]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/추론 모델|추론 모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/Fine Tuning|Fine Tuning]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/llama index|llama index]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/vector store|vector store]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/Audio Generation|Audio Generation]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|svm]]
 module:: [[ComputerScience/00_graph-interfaces/courses/LLM 인터페이스|LLM 인터페이스]]
 domain:: [[ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스|AI ML 데이터 인터페이스]]
 
@@ -36,17 +37,17 @@ LLM 과목/활동의 로컬 노트, PDF, 코드/산출물을 2026 GraphRAG 아�
 ## 핵심 개념
 
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/api|api]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/llm|llm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/api|api]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/rag|rag]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|svm]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/knn|knn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/cnn|cnn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ml|ml]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/gdm 선형 회귀모델|gdm 선형 회귀모델]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/cifar10|cifar10]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/주요 특징|주요 특징]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ChatGPT 모델 이해와 활용|ChatGPT 모델 이해와 활용]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/추론 모델|추론 모델]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/Fine Tuning|Fine Tuning]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/llama index|llama index]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/vector store|vector store]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/Audio Generation|Audio Generation]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/ml|ml]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|svm]]
 
 ## 근거
 

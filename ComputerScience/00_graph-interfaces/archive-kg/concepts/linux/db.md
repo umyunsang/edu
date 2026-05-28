@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/Linux 지식그래프|Linux]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/Linux 지식그래프|Linux]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/Linux 근거 인덱스|Linux 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/시스템 인프라 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cuda|cuda]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/rest|rest]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/srtf|srtf]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 시스템|리눅스 시스템]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 셸|리눅스 셸]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 권한|리눅스 권한]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/REST|REST]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 소개|리눅스 소개]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/주요 옵션|주요 옵션]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/db|Python 프로그래밍/db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/db|AI 시스템 설계/db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/db|데이터베이스/db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/db|자격증/db]]
 
 # db
 
@@ -27,17 +28,28 @@ Linux 자료에서 추출된 개념 노드입니다.
 ## 로컬 근거
 
 - [[ComputerScience/04_systems-infrastructure/linux/0. 리눅스 소개]]
-- [[ComputerScience/04_systems-infrastructure/linux/0. 리눅스 소개]]
-- [[ComputerScience/04_systems-infrastructure/linux/0. 리눅스 소개]]
-- [[ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본]]
-- [[ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본]]
 - [[ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본]]
 - [[ComputerScience/04_systems-infrastructure/linux/10. 도커]]
-- [[ComputerScience/04_systems-infrastructure/linux/10. 도커]]
+- [[ComputerScience/04_systems-infrastructure/linux/2. 리눅스 VI]]
+- [[ComputerScience/04_systems-infrastructure/linux/3. 리눅스 셸]]
+- [[ComputerScience/04_systems-infrastructure/linux/4. 리눅스 권한]]
+- [[ComputerScience/04_systems-infrastructure/linux/5. 플라스크]]
+- [[ComputerScience/04_systems-infrastructure/linux/6. REST]]
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cuda|cuda]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/rest|rest]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 시스템|리눅스 시스템]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/os|os]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cpu|cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 셸|리눅스 셸]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 권한|리눅스 권한]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/REST|REST]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/리눅스 소개|리눅스 소개]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/주요 옵션|주요 옵션]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/api|api]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/fcfs|fcfs]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/srtf|srtf]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/db|Python 프로그래밍/db]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/db|AI 시스템 설계/db]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/db|데이터베이스/db]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/db|자격증/db]]

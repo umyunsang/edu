@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/인공지능 지식그래프|인공지능]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/인공지능 지식그래프|인공지능]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/인공지능 근거 인덱스|인공지능 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/ispl|ispl]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/년 1학기 인공지능|년 1학기 인공지능]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/learning rate|learning rate]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/loss function|loss function]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/CIFAR10|CIFAR10]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/multi layer perceptron|multi layer perceptron]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/ispl|ispl]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/batch size|batch size]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/Batch Normalization|Batch Normalization]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/년 1학기 인공지능|년 1학기 인공지능]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/rep. of korea|rep. of korea]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/testing dataset 다운로드|testing dataset 다운로드]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/image signal processing laboratory|image signal processing laboratory]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/nand|nand]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/Data Augmentation|Data Augmentation]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/single layer perceptron|single layer perceptron]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/dongsan jun|dongsan jun]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/dong a univ|머신러닝/dong a univ]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dong a university|AIOSS 오픈소스 delivery/dong a university]]
 
 # dong a univ
 
@@ -37,6 +38,22 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-i
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/llm|llm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/ai|ai]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/learning rate|learning rate]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/loss function|loss function]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/cnn|cnn]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/CIFAR10|CIFAR10]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/multi layer perceptron|multi layer perceptron]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/ispl|ispl]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/batch size|batch size]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/Batch Normalization|Batch Normalization]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/년 1학기 인공지능|년 1학기 인공지능]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/rep. of korea|rep. of korea]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/testing dataset 다운로드|testing dataset 다운로드]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/image signal processing laboratory|image signal processing laboratory]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/nand|nand]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/Data Augmentation|Data Augmentation]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/single layer perceptron|single layer perceptron]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artificial-intelligence/dongsan jun|dongsan jun]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/dong a univ|머신러닝/dong a univ]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dong a university|AIOSS 오픈소스 delivery/dong a university]]

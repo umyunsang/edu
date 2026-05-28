@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/데이터베이스 지식그래프|데이터베이스]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/데이터베이스 지식그래프|데이터베이스]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/데이터베이스 근거 인덱스|데이터베이스 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/소프트웨어 엔지니어링 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/중간 주관식 예상|중간 주관식 예상]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/thank you|thank you]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/관계 데이터 모델|관계 데이터 모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터 모델링|데이터 모델링]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터베이스 설계|데이터베이스 설계]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/기본 개념|기본 개념]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/관리 시스템|관리 시스템]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/고급 정규형|고급 정규형]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/보안과 권한 관리|보안과 권한 관리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/회복과 병행 제어|회복과 병행 제어]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터베이스 응용 기술|데이터베이스 응용 기술]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|Python 프로그래밍/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/sql|빅데이터분석/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|AI 시스템 설계/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|Linux/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/sql|자격증/sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/sql|아카이브 운영/sql]]
 
 # sql
 
@@ -27,16 +28,30 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-sys
 ## 로컬 근거
 
 - [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
-- [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
-- [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
-- [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
-- [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
-- [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
-- [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제]]
 - [[ComputerScience/05_software-engineering/database-systems/0. 시험/기말시험 범위 및 연습문제]]
+- [[ComputerScience/05_software-engineering/database-systems/0. 시험/데이터베이스 연습문제]]
+- [[ComputerScience/05_software-engineering/database-systems/0. 시험/레포트]]
+- [[ComputerScience/05_software-engineering/database-systems/0. 시험/중간 주관식 예상(답)]]
+- [[ComputerScience/05_software-engineering/database-systems/0. 시험/중간 주관식 예상]]
+- [[ComputerScience/05_software-engineering/database-systems/1. 기본 개념/기본 개념]]
+- [[ComputerScience/05_software-engineering/database-systems/10. 회복과 병행제어/회복과 병행 제어]]
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/ai|ai]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/thank you|thank you]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/관계 데이터 모델|관계 데이터 모델]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터 모델링|데이터 모델링]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터베이스 설계|데이터베이스 설계]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/db|db]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/중간 주관식 예상|중간 주관식 예상]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/기본 개념|기본 개념]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/관리 시스템|관리 시스템]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/고급 정규형|고급 정규형]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/보안과 권한 관리|보안과 권한 관리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/회복과 병행 제어|회복과 병행 제어]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터베이스 응용 기술|데이터베이스 응용 기술]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-programming/sql|Python 프로그래밍/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/sql|빅데이터분석/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/sql|AI 시스템 설계/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/sql|Linux/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/sql|자격증/sql]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/archive-operations/sql|아카이브 운영/sql]]

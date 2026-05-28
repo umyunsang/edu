@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/소프트웨어 엔지니어링 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/소프트웨어 엔지니어링 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/AIOSS 오픈소스 delivery 근거 인덱스|AIOSS 오픈소스 delivery 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/aioss|aioss]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/학습 목표|학습 목표]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/cuda|cuda]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/prof. sejin chun|prof. sejin chun]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dong a university|dong a university]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/성과 수준|성과 수준]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/open|open]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/software|software]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dom|dom]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/핵심 요약|핵심 요약]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/학습 목표|학습 목표]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/실습 과제|실습 과제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/runs on|runs on]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/pull request|pull request]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/ubuntu latest|ubuntu latest]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/key takeaways|key takeaways]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/section|section]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/prof. sejin chun|prof. sejin chun]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dong a university|dong a university]]
 module:: [[ComputerScience/00_graph-interfaces/courses/AIOSS 오픈소스 delivery 인터페이스|AIOSS 오픈소스 delivery 인터페이스]]
 domain:: [[ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스|소프트웨어 엔지니어링 인터페이스]]
 
@@ -35,18 +36,18 @@ AIOSS 오픈소스 delivery 과목/활동의 로컬 노트, PDF, 코드/산출�
 
 ## 핵심 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/aioss|aioss]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/학습 목표|학습 목표]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/cuda|cuda]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/prof. sejin chun|prof. sejin chun]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/핵심 요약|핵심 요약]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/api|api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/학습 목표|학습 목표]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/실습 과제|실습 과제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/ai|ai]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/runs on|runs on]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/pull request|pull request]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/ubuntu latest|ubuntu latest]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/key takeaways|key takeaways]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/section|section]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/prof. sejin chun|prof. sejin chun]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dong a university|dong a university]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/db|db]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/성과 수준|성과 수준]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/open|open]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/software|software]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/dom|dom]]
 
 ## 근거
 

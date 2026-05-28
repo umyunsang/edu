@@ -22,9 +22,10 @@ up:: [[ComputerScience/04_systems-infrastructure/computer-networks/14. TCP와 �
 prerequisites:: [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
 related:: [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/중간 퀴즈|중간 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 퀴즈|기말 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/라우팅 알고리즘|라우팅 알고리즘]], [[ComputerScience/04_systems-infrastructure/computer-networks/5. 통신망과 특징/통신망과 특징|통신망과 특징]], [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크|통신과 컴퓨터 네트워크]], [[ComputerScience/04_systems-infrastructure/computer-networks/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP)|인터넷 프로토콜(IP)]], [[ComputerScience/04_systems-infrastructure/computer-networks/9. 네트워크 계층/네트워크 계층|네트워크 계층]], [[ComputerScience/04_systems-infrastructure/computer-networks/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델|네트워크 분류와 계층 모델]], [[ComputerScience/04_systems-infrastructure/computer-networks/7. LAN의 특징과 규격/LAN의 특징과 규격|LAN의 특징과 규격]], [[ComputerScience/04_systems-infrastructure/computer-networks/12. 네트워크 계층 작업과 프로토콜/네트워크 계층 작업과 프로토콜|네트워크 계층 작업과 프로토콜]], [[ComputerScience/04_systems-infrastructure/computer-networks/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]], [[ComputerScience/04_systems-infrastructure/computer-networks/8. 무선통신 시스템/무선통신 시스템|무선통신 시스템]], [[ComputerScience/04_systems-infrastructure/computer-networks/3. 신호 처리/신호 처리|신호 처리]], [[ComputerScience/04_systems-infrastructure/computer-networks/16. 보안/네트워크 보안|네트워크 보안]], [[ComputerScience/04_systems-infrastructure/computer-networks/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송|유선 및 무선 데이터 전송]], [[ComputerScience/04_systems-infrastructure/computer-networks/13. 전송 계층/전송 계층|전송 계층]], [[ComputerScience/02_math-theory/discrete-mathematics/3. 관계와 함수/관계와 함수|관계와 함수]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/1. 논리 게이트|1. 논리 게이트]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/5. 주소 지정 방식|5. 주소 지정 방식]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/CUDA 프로그램 연습 및 CUDA API 이해|CUDA 프로그램 연습 및 CUDA API 이해]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/2. 불 대수|2. 불 대수]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/2. 산술 논리 연산 장치|2. 산술 논리 연산 장치]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/1. Why Parallelism|1. Why Parallelism]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/3. 레지스터|3. 레지스터]], [[ComputerScience/04_systems-infrastructure/computer-architecture/중간 시험 범위|중간 시험 범위]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/4. 컴퓨터 명령어|4. 컴퓨터 명령어]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/5. 파이프 라이닝|5. 파이프 라이닝]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/2. 주기억 장치|2. 주기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/1. 프로세스 구성과 동작|1. 프로세스 구성과 동작]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/6. CISC와 RISC|6. CISC와 RISC]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/4. 가상 기억 장치|4. 가상 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/4. 조합 논리 회로|4. 조합 논리 회로]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/3. 명령어 사이클|3. 명령어 사이클]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/1. 기억 장치 시스템의 개요|1. 기억 장치 시스템의 개요]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/5. 에러 검출 코드|5. 에러 검출 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/1. 제어 장치의 기능|1. 제어 장치의 기능]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/2. 정수 표현|2. 정수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/3. 캐시 기억 장치|3. 캐시 기억 장치]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다|쿠다]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/4. 디지털 코드|4. 디지털 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/2. 제어 장치의 종류|2. 제어 장치의 종류]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/3. 실수 표현|3. 실수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/1. 진법과 진법 변환|1. 진법과 진법 변환]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/4. 프로세서 제어|4. 프로세서 제어]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/3. 카르노 맵|3. 카르노 맵]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/애플 M4 CPU/애플 M4 CPU|애플 M4 CPU]]
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
 kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/컴퓨터네트워크 근거 인덱스|컴퓨터네트워크 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cuda|cuda]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층 작업과 프로토콜|네트워크 계층 작업과 프로토콜]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/risc|risc]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/kakao id|kakao id]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/s03 301 01호실|s03 301 01호실]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/section|section]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층|네트워크 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/전송 계층|전송 계층]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
@@ -4676,3 +4677,45 @@ These OSPF benefits come at a price:
 - OSPF maintains an LS database that requires sizeable memory, and the SPF algorithm can hog CPU resources if the size of the topology database has grown out of bounds. Splitting an area to reduce the size of the LS database may not be straightforward, depending on the topology of the area.
     
 - OSPF assumes a hierarchical network topology -- migrating a network from another protocol to OSPF requires extensive planning.
+
+## PNG 시각자료
+
+![[computer-networks__Routing Information Protocol (RIP)__- left none get b.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__ptelstens SENSES.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__H 18 M Pivot $= 0.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Pcxly = 0) Pcxly.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__xX it X 1.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Ao 6-14 WERBZIO B.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Aol 6-6 7PM a.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__o https github.co.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__of GIOLE, C1.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__CRE) 22 sxe sete.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Example.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Routing Procotol.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__B2 4-3 Of8 ZH.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__ARORA Senay.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__7,2 1,21 24 (comp.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Let A= {0,1,2,3}.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__Ol 4-12 SBPaSt OF.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__HOHHOAS AS SAO SA.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__ae 47 HAlet Ze.png]]
+
+![[computer-networks__Routing Information Protocol (RIP)__B2 42 SBHS 01st D.png]]

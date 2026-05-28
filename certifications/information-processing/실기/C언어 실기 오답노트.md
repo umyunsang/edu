@@ -1,0 +1,106 @@
+---
+aliases: []
+course: certification
+created: '2025-12-24'
+date: '2025-12-24'
+semester: cert
+source: ''
+status: 복습필요
+tags:
+- C언어
+- meta/cert
+- type/lecture
+- 실기
+- 오답노트
+- 정보처리기사
+title: C언어 실기 오답노트
+type: lecture
+updated: '2026-05-05'
+---
+
+domain:: [[ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스|소프트웨어 엔지니어링 인터페이스]]
+stage:: [[ComputerScience/00_graph-interfaces/stages/6단계 전문 확장 인터페이스|6단계 전문 확장 인터페이스]]
+module:: [[ComputerScience/00_graph-interfaces/courses/자격증 인터페이스|자격증 인터페이스]]
+bridge:: [[ComputerScience/00_graph-interfaces/bridges/시스템 운영 브리지|시스템 운영 브리지]], [[ComputerScience/00_graph-interfaces/bridges/산출물 포트폴리오 브리지|산출물 포트폴리오 브리지]]
+up:: [[certifications/체크리스트|체크리스트]]
+prerequisites:: [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]], [[ComputerScience/05_software-engineering/database-systems/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL|데이터 베이스 언어 SQL]]
+related:: [[certifications/information-processing/필기/1. 프로그래밍 언어 활용|1. 프로그래밍 언어 활용]], [[ComputerScience/01_programming-foundations/coding-test/정렬/1. 버블 정렬|1. 버블 정렬]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/5. 주소 지정 방식|5. 주소 지정 방식]], [[ComputerScience/04_systems-infrastructure/operating-systems/8. 메모리관리/메모리 관리|메모리 관리]], [[ComputerScience/01_programming-foundations/data-structures/2. 스택/Stack|Stack]], [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/3장문제|3장문제]], [[ComputerScience/04_systems-infrastructure/operating-systems/4. 스레드와 멀티테스킹/스레드와 멀티테스킹|스레드와 멀티테스킹]], [[ComputerScience/04_systems-infrastructure/operating-systems/11. 파일 시스템 관리/파일 시스템 관리|파일 시스템 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/시험/기말 정리|기말 정리]], [[ComputerScience/04_systems-infrastructure/operating-systems/9. 페이징 메모리 관리/페이징 메모리 관리|페이징 메모리 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/2. 컴퓨터 시스템과 운영체제/컴퓨터 시스템과 OS|컴퓨터 시스템과 OS]], [[ComputerScience/05_software-engineering/database-systems/6. 관계 데이터 연산/관계 데이터 연산|관계 데이터 연산]], [[ComputerScience/05_software-engineering/database-systems/5. 관계 데이터 모델/관계 데이터 모델 (용어 암기)|관계 데이터 모델 (용어 암기)]], [[ComputerScience/05_software-engineering/database-systems/9. 정규화/정규화|정규화]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제|7장 문제]], [[ComputerScience/04_systems-infrastructure/operating-systems/7. 교착상태/교착상태|교착상태]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/데이터베이스 연습문제|데이터베이스 연습문제]], [[ComputerScience/04_systems-infrastructure/operating-systems/6. 스레드 동기화/스레드 동기화|스레드 동기화]], [[ComputerScience/04_systems-infrastructure/operating-systems/1. OS의 시작과 발전/OS의 시작과 발전|OS의 시작과 발전]], [[ComputerScience/05_software-engineering/database-systems/4. 데이터 모델링/데이터 모델링|데이터 모델링]], [[ComputerScience/04_systems-infrastructure/operating-systems/5. CPU 스케줄링/CPU 스케줄링|CPU 스케줄링]], [[ComputerScience/05_software-engineering/database-systems/10. 회복과 병행제어/회복과 병행 제어|회복과 병행 제어]], [[ComputerScience/05_software-engineering/database-systems/7. 데이터베이스 언어 SQL/뷰(view)|뷰(view)]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/레포트|레포트]], [[ComputerScience/05_software-engineering/database-systems/8. 데이터베이스 설계/데이터베이스 설계|데이터베이스 설계]], [[ComputerScience/05_software-engineering/database-systems/13. 데이터 과학과 빅데이터/데이터 과학과 빅데이터|데이터 과학과 빅데이터]], [[ComputerScience/04_systems-infrastructure/operating-systems/10. 가상 메모리/가상 메모리|가상 메모리]], [[ComputerScience/05_software-engineering/database-systems/12. 데이터베이스 응용 기술/데이터베이스 응용 기술|데이터베이스 응용 기술]], [[ComputerScience/04_systems-infrastructure/operating-systems/12. 저장 장치 관리/대용량 저장 장치 관리|대용량 저장 장치 관리]], [[ComputerScience/05_software-engineering/database-systems/3. DB 시스템/DB 시스템|DB 시스템]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/기말시험 범위 및 연습문제|기말시험 범위 및 연습문제]], [[ComputerScience/05_software-engineering/database-systems/1. 기본 개념/기본 개념|기본 개념]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/MemoryAlloc/메모리 할당 알고리즘 구현 과제|메모리 할당 알고리즘 구현 과제]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/중간 주관식 예상|중간 주관식 예상]], [[ComputerScience/05_software-engineering/database-systems/2. 관리 시스템/관리 시스템|관리 시스템]], [[ComputerScience/05_software-engineering/database-systems/9. 정규화/고급 정규형|고급 정규형]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/중간 주관식 예상(답)|중간 주관식 예상(답)]], [[ComputerScience/05_software-engineering/database-systems/11. 보안과 권한 관리/보안과 권한 관리|보안과 권한 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/Page/페이지 교체 알고리즘 구현 과제|페이지 교체 알고리즘 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/sum/sum.c|sum.c]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/FCFS/FCFS CPU 스케줄링 구현 과제|FCFS CPU 스케줄링 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/SJF/SJF CPU 스케줄링 구현 과제|SJF CPU 스케줄링 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/SRTF/SRTF CPU 스케줄링 구현 과제|SRTF CPU 스케줄링 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/Banker/Banker Algorithm 구현 과제|Banker Algorithm 구현 과제]]
+
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/자격증 지식그래프|자격증]]
+kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/자격증 지식그래프|자격증]]
+kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/자격증 근거 인덱스|자격증 근거 인덱스]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/db|db]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/fcfs|fcfs]]
+kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
+
+# C언어 실기 오답노트
+
+> [!fail] 재귀 함수(Recursion) 함정
+> - **기저 조건(Base Case)**: 무한 루프에 빠지지 않도록 하는 종료 조건 확인 필수.
+> - **==스택 호출==**: 마지막 호출부터 역순으로 결과값이 합쳐지거나 반환되는 과정(Backtracking) 추적 주의.
+> - **실수 포인트**: `n-1`인지 `n-2`인지, 혹은 호출 전/후에 출력문이 있는지에 따라 결과가 완전히 달라짐.
+
+> [!fail] 포인터(Pointer) 함정
+> - **연산자 우선순위**: `*p++` (주소 증가 후 참조) vs `(*p)++` (참조 값 증가).
+> - **배열 이름의 의미**: `int a[3]`에서 `a`는 배열의 **시작 주소**를 의미함.
+>   - `p = a;` 또는 `p = &a[0];` 처럼 주소 할당 시 **`*p`는 첫 번째 요소의 값(`a[0]`)**을 의미함.
+> - **배열과 포인터 표기법**: `a[i]`, `*(a+i)`, `p[i]`, `*(p+i)`는 모두 동일한 값을 가리킴.
+> - **2차원 배열**: `a[1][1]`과 `*(*(a+1)+1)`의 매칭 관계 확인 필수.
+> > [!example] 2차원 배열 포인터 변환 예시
+> > `int a[2][3];` 일 때 `a[1][1]`의 값에 접근하는 방법:
+> > - `a[1]` $\rightarrow$ `*(a+1)` (1행의 시작 주소)
+> > - `a[1][1]` $\rightarrow$ `*(*(a+1) + 1)` (1행 1열의 값)
+> > - **주의**: `*a+1`은 `a[0][0]`의 값에 1을 더하는 것, `*(a+1)`은 다음 행의 주소.
+
+## 버블 정렬 (Bubble Sort)
+```c
+for(i=1; i<s; i++) { // 회전 수 (s-1회)
+    for(j=0; j<s-i; j++) { // 비교 횟수 (회전할수록 줄어듦)
+        if (A[j] > A[j+1]) { // 오름차순 (부등호 방향 주의)
+            temp = A[j];
+            A[j] = A[j+1];
+            A[j+1] = temp;
+```
+> [!important] 버블 정렬 핵심 포인트
+> - **안쪽 루프 범위**: `j < s - i` 가 가장 큰 함정. **==i가 1부터 시작하면 `s-i`, 0부터 시작하면 `s-i-1`==**.
+> - **정렬 완료 상태**: 한 회전이 끝날 때마다 가장 큰(또는 작은) 값이 **맨 뒤**부터 확정됨.
+
+## 스택 (Stack)
+```c
+// 삽입 (Push)
+top = top + 1;
+if (top > m) OVERFLOW;
+else stack[top] = data;
+
+// 삭제 (Pop)
+if (top == 0) EMPTY;
+else {
+    data = stack[top];
+    top = top - 1;
+}
+```
+
+### 스택 코드 빈칸 채우기 대비
+```c
+#define max_stack_size 10
+int stack[max_stack_size];
+int top = -1; // 초기값이 -1인 경우 주의
+
+void push(int item){
+    if (top >= max_stack_size - 1) printf("FULL"); 
+    // 1번 빈칸: max_stack_size - 1
+    stack[++top] = item; // 2번 빈칸: item (++top 순서 주의)
+}
+
+int pop(){
+    if (top == -1) printf("EMPTY"); // 3번 빈칸: -1 (초기값 기준)
+    return stack[top--]; // 4번 빈칸: top-- (값 반환 후 감소)
+}
+
+int isempty(){
+    if (top == -1) return 1; // 5번 빈칸: -1
+    else return 0;
+}
+```
+> [!warning] 스택 인덱스 함정
+> - **EMPTY 조건**: `top` 초기값이 `-1`인 경우, `stack[0]`에 데이터가 저장되므로 **`top == 0`은 데이터가 1개 존재함**을 의미. 따라서 비어있는 상태는 `top == -1`.
+>-  **전위/후위 연산**: `stack[++top]` (증가 후 삽입)과 `stack[top--]` (반환 후 감소)의 위치 관계를 반드시 파악할 것.

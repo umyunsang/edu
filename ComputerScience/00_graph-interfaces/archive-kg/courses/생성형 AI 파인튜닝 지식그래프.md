@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/생성형 AI 파인튜닝 근거 인덱스|생성형 AI 파인튜닝 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/gdm 선형 회귀모델|gdm 선형 회귀모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/환경 구성|환경 구성]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/추론 모델|추론 모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/소감문 작성|소감문 작성]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/fine tuning|fine tuning]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/linear regression|linear regression]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/환경 구성|환경 구성]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/추론 모델|추론 모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/kg parent|kg parent]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/kg profile|kg profile]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/fine tuning|fine tuning]]
 module:: [[ComputerScience/00_graph-interfaces/courses/생성형 AI 파인튜닝 인터페이스|생성형 AI 파인튜닝 인터페이스]]
 domain:: [[ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스|AI ML 데이터 인터페이스]]
 
@@ -36,16 +37,16 @@ domain:: [[ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스|AI ML �
 ## 핵심 개념
 
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/api|api]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/rag|rag]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|svm]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/llm|llm]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/ml|ml]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/gdm 선형 회귀모델|gdm 선형 회귀모델]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/knn|knn]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/llm|llm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/linear regression|linear regression]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/rag|rag]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/api|api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|svm]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/환경 구성|환경 구성]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/추론 모델|추론 모델]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/소감문 작성|소감문 작성]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/kg parent|kg parent]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/kg profile|kg profile]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/fine tuning|fine tuning]]
 
 ## 근거

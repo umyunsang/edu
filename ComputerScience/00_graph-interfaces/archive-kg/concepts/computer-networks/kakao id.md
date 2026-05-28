@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/컴퓨터네트워크 근거 인덱스|컴퓨터네트워크 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/시스템 인프라 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 보안|네트워크 보안]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/이양민 교수 연구실|이양민 교수 연구실]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/s03 301 01호실|s03 301 01호실]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/s03 301 01호실|s03 301 01호실]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/section|section]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/이양민 교수 연구실|이양민 교수 연구실]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/동아대학교 컴퓨터ai 공학부|동아대학교 컴퓨터ai 공학부]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층|네트워크 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/전송 계층|전송 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/신호 처리|신호 처리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/통신망과 특징|통신망과 특징]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 보안|네트워크 보안]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/라우팅 알고리즘|라우팅 알고리즘]]
 
 # kakao id
 
@@ -26,18 +27,25 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-net
 
 ## 로컬 근거
 
-- [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/1.통신과 컴퓨터네트워크.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/10. 라우팅 알고리즘.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/11. 인터넷 프로토콜 라우팅 알고리즘/11. 인터넷 프로토콜라우팅 알고리즘.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/12. 네트워크 계층 작업과 프로토콜/12. 네트워크 계층 작업과 프로토콜.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/13. 전송 계층/13. 전송 계층.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/14. TCP와 소켓 프로그래밍/14. TCP와 소켓 프로그래밍.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/16. 보안/16장 보안.pdf]]
-- [[ComputerScience/04_systems-infrastructure/computer-networks/2. 네트워크 분류와 계층 모델/2. 네트워크 분류와 계층 모델.pdf]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/Routing Information Protocol (RIP)]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 암기 정리]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 퀴즈]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/중간 퀴즈]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/라우팅 알고리즘]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP)]]
+- [[ComputerScience/04_systems-infrastructure/computer-networks/12. 네트워크 계층 작업과 프로토콜/네트워크 계층 작업과 프로토콜]]
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/os|os]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 보안|네트워크 보안]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/이양민 교수 연구실|이양민 교수 연구실]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/s03 301 01호실|s03 301 01호실]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/section|section]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/이양민 교수 연구실|이양민 교수 연구실]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/동아대학교 컴퓨터ai 공학부|동아대학교 컴퓨터ai 공학부]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층|네트워크 계층]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/전송 계층|전송 계층]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/신호 처리|신호 처리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/통신망과 특징|통신망과 특징]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 보안|네트워크 보안]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/라우팅 알고리즘|라우팅 알고리즘]]

@@ -9,35 +9,49 @@ status: evergreen
 tags:
 - type/concept
 - pkm/kg-concept
-title: svm
+title: SVM
 type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/머신러닝 지식그래프|머신러닝]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/머신러닝 지식그래프|머신러닝]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/머신러닝 근거 인덱스|머신러닝 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/AI ML 데이터 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/cnn|cnn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/knn|knn]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/rep. of korea|rep. of korea]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/image signal processing laboratory|image signal processing laboratory]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/년 1학기 머신러닝|년 1학기 머신러닝]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/dong a univ|dong a univ]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/ispl|ispl]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/dongsan jun|dongsan jun]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/learning rate|learning rate]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/knn|knn]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/def fit|def fit]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/def init|def init]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/svm|확률통계/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|ML 프로젝트/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-networks/svm|뉴럴네트워크/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/svm|빅데이터분석/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|LLM/svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|생성형 AI 파인튜닝/svm]]
 
-# svm
+# SVM
 
 머신러닝 자료에서 추출된 개념 노드입니다.
 
 ## 로컬 근거
 
 - [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델]]
-- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델]]
-- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델]]
-- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델]]
-- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델]]
-- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/LSM, GDM 선형 회귀모델]]
 - [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/Linear Regression]]
-- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/Linear Regression]]
+- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/Multiple_Linear_Regression]]
+- [[ComputerScience/03_ai-ml-data/machine-learning/Linear_Regression/우버데이터_Multiple_Linear_Regression]]
+- [[ComputerScience/03_ai-ml-data/machine-learning/SVM/QP SVM]]
+- [[ComputerScience/03_ai-ml-data/machine-learning/SVM/SVM]]
+- [[ComputerScience/03_ai-ml-data/machine-learning/머신러닝 핵심 수학 개념]]
+- [[ComputerScience/03_ai-ml-data/machine-learning/중간/대비문제]]
 
 ## 연결 개념
 
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/rep. of korea|rep. of korea]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/image signal processing laboratory|image signal processing laboratory]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/년 1학기 머신러닝|년 1학기 머신러닝]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/dong a univ|dong a univ]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/ispl|ispl]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/dongsan jun|dongsan jun]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/learning rate|learning rate]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/cnn|cnn]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/rag|rag]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/knn|knn]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/def fit|def fit]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/machine-learning/def init|def init]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/probability-statistics/svm|확률통계/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-projects/svm|ML 프로젝트/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-networks/svm|뉴럴네트워크/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/svm|빅데이터분석/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/svm|LLM/svm]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/svm|생성형 AI 파인튜닝/svm]]

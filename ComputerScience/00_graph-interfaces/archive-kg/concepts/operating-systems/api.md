@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/운영체제 지식그래프|운영체제]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/운영체제 지식그래프|운영체제]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/운영체제 근거 인덱스|운영체제 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/시스템 인프라 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/srtf|srtf]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/risc|risc]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/rest|rest]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/메모리 관리|메모리 관리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/srtf|srtf]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/파일 시스템 관리|파일 시스템 관리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/강의 목표|강의 목표]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/기말 정리|기말 정리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/스레드 동기화|스레드 동기화]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/운영체제 인터페이스|운영체제 인터페이스]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/스레드와 멀티테스킹|스레드와 멀티테스킹]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/프로세스와 프로세스 관리|프로세스와 프로세스 관리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cuda|cuda]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/risc|risc]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/rest|rest]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/구현 과제|구현 과제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/지정 방식|지정 방식]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-networks/api|뉴럴네트워크/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/api|빅데이터분석/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/api|LLM/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/api|AI 시스템 설계/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/api|생성형 AI 파인튜닝/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/api|Linux/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/parallel-distributed-computing/api|병렬 분산처리/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/api|AIOSS 오픈소스 delivery/api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|LG Aimers/api]]
 
 # api
 
@@ -27,17 +28,39 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-sy
 ## 로컬 근거
 
 - [[ComputerScience/04_systems-infrastructure/operating-systems/1. OS의 시작과 발전/OS의 시작과 발전]]
-- [[ComputerScience/04_systems-infrastructure/operating-systems/1. OS의 시작과 발전/OS의 시작과 발전]]
-- [[ComputerScience/04_systems-infrastructure/operating-systems/10. 가상 메모리/가상 메모리]]
 - [[ComputerScience/04_systems-infrastructure/operating-systems/10. 가상 메모리/가상 메모리]]
 - [[ComputerScience/04_systems-infrastructure/operating-systems/11. 파일 시스템 관리/파일 시스템 관리]]
-- [[ComputerScience/04_systems-infrastructure/operating-systems/11. 파일 시스템 관리/파일 시스템 관리]]
 - [[ComputerScience/04_systems-infrastructure/operating-systems/12. 저장 장치 관리/대용량 저장 장치 관리]]
-- [[ComputerScience/04_systems-infrastructure/operating-systems/12. 저장 장치 관리/대용량 저장 장치 관리]]
+- [[ComputerScience/04_systems-infrastructure/operating-systems/2. 컴퓨터 시스템과 운영체제/컴퓨터 시스템과 OS]]
+- [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/3장문제]]
+- [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리]]
+- [[ComputerScience/04_systems-infrastructure/operating-systems/4. 스레드와 멀티테스킹/스레드와 멀티테스킹]]
 
 ## 연결 개념
 
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cpu|cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/fcfs|fcfs]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/메모리 관리|메모리 관리]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/srtf|srtf]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/파일 시스템 관리|파일 시스템 관리]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/os|os]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/강의 목표|강의 목표]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/기말 정리|기말 정리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/스레드 동기화|스레드 동기화]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/운영체제 인터페이스|운영체제 인터페이스]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/스레드와 멀티테스킹|스레드와 멀티테스킹]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/프로세스와 프로세스 관리|프로세스와 프로세스 관리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cuda|cuda]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/risc|risc]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/rest|rest]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/구현 과제|구현 과제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/지정 방식|지정 방식]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-networks/api|뉴럴네트워크/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/big-data-analysis/api|빅데이터분석/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/large-language-models/api|LLM/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ai-system-design/api|AI 시스템 설계/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generative-ai-fine-tuning/api|생성형 AI 파인튜닝/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/api|Linux/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/parallel-distributed-computing/api|병렬 분산처리/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/aioss-open-source-delivery/api|AIOSS 오픈소스 delivery/api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|LG Aimers/api]]

@@ -9,15 +9,18 @@ indexes, content-derived concepts, query-mode nodes, and community reports.
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 import shutil
 import subprocess
 import sys
 import unicodedata
+import zipfile
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
+from xml.etree import ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from interface_graph_wiring import DOMAINS, VAULT, link, nfc, write_note  # noqa: E402
@@ -31,9 +34,13 @@ COURSE_ROOT = f"{KG_ROOT}/courses"
 CONCEPT_ROOT = f"{KG_ROOT}/concepts"
 EVIDENCE_ROOT = f"{KG_ROOT}/evidence"
 QUERY_ROOT = f"{KG_ROOT}/query-modes"
+MEDIA_ROOT = f"{KG_ROOT}/media"
 SKELETON = f"{KG_ROOT}/2026 GraphRAG 아카이브 스켈레톤.md"
 COVERAGE_REPORT = f"{KG_ROOT}/파일 커버리지 검증 리포트.md"
+RENAME_REPORT = f"{KG_ROOT}/내용 기반 파일명 정합성 리포트.md"
+EXTRACTION_REPORT = f"{KG_ROOT}/전문 내용 추출 검증 리포트.md"
 HUB = "ComputerScience/00_graph-interfaces/지식그래프 허브.md"
+TEXT_CACHE_ROOT = VAULT / "scripts/pkm/.cache/full-text"
 
 OLD_RESEARCH_DIRS = (
     "ComputerScience/00_graph-interfaces/ontology",
@@ -49,6 +56,7 @@ MANAGED_ARCHIVE_DIRS = (
     CONCEPT_ROOT,
     EVIDENCE_ROOT,
     QUERY_ROOT,
+    MEDIA_ROOT,
 )
 
 EXCLUDE_DIRS = {
@@ -99,15 +107,21 @@ OLD_BROAD_FIELD_RE = re.compile(
     re.MULTILINE,
 )
 KG_FIELD_RE = re.compile(
-    r"^(?:kg_profile|kg_evidence|kg_concepts|kg_query_mode|kg_source_scope)::\s*.*\n?",
+    r"^(?:kg_parent|kg_profile|kg_evidence|kg_concepts|kg_query_mode|kg_source_scope)::\s*.*\n?",
     re.MULTILINE,
 )
 FIELD_BLOCK_RE = re.compile(r"\A((?:(?:[A-Za-z가-힣0-9_-]+)::.*\n)+)\n?")
 FRONTMATTER_RE = re.compile(r"\A---\n.*?\n---\n?", re.S)
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
+WIKILINK_FULL_RE = re.compile(r"\[\[([^\]|#]+)(#[^\]|]*)?(\|[^\]]*)?\]\]")
+MD_LINK_RE = re.compile(r"(!?\[[^\]]*]\()([^)#]+)(#[^)]*)?(\))")
 HEADING_RE = re.compile(r"^\s{0,3}#{1,4}\s+(.+?)\s*#*\s*$", re.MULTILINE)
 KOREAN_OR_WORD_RE = re.compile(r"[가-힣A-Za-z][가-힣A-Za-z0-9_+./ -]{1,80}")
 ACRONYM_RE = re.compile(r"\b[A-Z][A-Z0-9]{1,9}\b")
+GENERIC_STEM_RE = re.compile(
+    r"^(?:answer[_ -]?\d+|\d{4,}|download|untitled|강의자료|수업자료|문제|문제\s*풀이|문제풀이|연습문제|풀이)$",
+    re.I,
+)
 
 ARTIFACT_SUFFIXES = {
     ".ipynb",
@@ -226,6 +240,7 @@ class Course:
     media_files: list[Path] = field(default_factory=list)
     concepts: list[str] = field(default_factory=list)
     concept_sources: dict[str, list[Path]] = field(default_factory=dict)
+    extraction_stats: Counter[str] = field(default_factory=Counter)
 
 
 METHOD_SOURCES = (
@@ -443,39 +458,156 @@ def keep_phrase(value: str) -> bool:
 
 def candidate_phrases(text: str) -> list[str]:
     out: list[str] = []
+    seen: set[str] = set()
+
+    def add(value: str) -> None:
+        key = concept_key(value)
+        if key not in seen:
+            seen.add(key)
+            out.append(value)
+
     for heading in HEADING_RE.findall(text):
         heading = clean_phrase(heading)
         if keep_phrase(heading):
-            out.append(heading)
+            add(heading)
         for part in re.split(r"\s*[,:;/|]\s*", heading):
             part = clean_phrase(part)
             if keep_phrase(part):
-                out.append(part)
+                add(part)
     for acronym in ACRONYM_RE.findall(text):
         if keep_phrase(acronym):
-            out.append(acronym)
-    for match in KOREAN_OR_WORD_RE.findall(text[:5000]):
-        phrase = clean_phrase(match)
+            add(acronym)
+    body_added = 0
+    for match in KOREAN_OR_WORD_RE.finditer(text):
+        phrase = clean_phrase(match.group(0))
         if keep_phrase(phrase) and 2 <= len(phrase.split()) <= 5:
-            out.append(phrase)
+            add(phrase)
+            body_added += 1
+        if body_added >= 1600:
+            break
     return out
+
+
+def cache_key(path: Path) -> str:
+    stat = path.stat()
+    raw = f"{rel(path)}:{stat.st_size}:{stat.st_mtime_ns}"
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
 
 
 def pdf_text(path: Path) -> str:
     pdftotext = shutil.which("pdftotext")
     if not pdftotext:
         return ""
+    TEXT_CACHE_ROOT.mkdir(parents=True, exist_ok=True)
+    cache = TEXT_CACHE_ROOT / f"{cache_key(path)}.txt"
+    if cache.exists():
+        return cache.read_text(encoding="utf-8", errors="ignore")
     try:
         proc = subprocess.run(
-            [pdftotext, "-f", "1", "-l", "2", str(path), "-"],
+            [pdftotext, str(path), "-"],
             check=False,
             capture_output=True,
             text=True,
-            timeout=12,
+            timeout=60,
         )
     except Exception:
         return ""
-    return nfc(proc.stdout[:8000])
+    text = nfc(proc.stdout)
+    cache.write_text(text, encoding="utf-8")
+    return text
+
+
+def textlike_full_text(path: Path) -> str:
+    suffix = path.suffix.lower()
+    if suffix == ".ipynb":
+        try:
+            data = json.loads(path.read_text(encoding="utf-8", errors="ignore"))
+            chunks: list[str] = []
+            for cell in data.get("cells", []):
+                source = cell.get("source", "")
+                if isinstance(source, list):
+                    chunks.extend(str(item) for item in source)
+                else:
+                    chunks.append(str(source))
+            return nfc("\n".join(chunks))
+        except Exception:
+            return path.read_text(encoding="utf-8", errors="ignore")
+    if suffix in {".docx", ".pptx", ".xlsx"}:
+        return office_zip_text(path)
+    try:
+        return nfc(path.read_text(encoding="utf-8", errors="ignore"))
+    except Exception:
+        return ""
+
+
+def office_zip_text(path: Path) -> str:
+    try:
+        with zipfile.ZipFile(path) as zf:
+            chunks: list[str] = []
+            for name in zf.namelist():
+                if not name.endswith(".xml"):
+                    continue
+                if not (
+                    name.startswith("word/")
+                    or name.startswith("ppt/")
+                    or name.startswith("xl/sharedStrings")
+                    or name.startswith("xl/worksheets")
+                ):
+                    continue
+                try:
+                    root = ET.fromstring(zf.read(name))
+                except Exception:
+                    continue
+                for node in root.iter():
+                    if node.text and node.text.strip():
+                        chunks.append(node.text.strip())
+            return nfc("\n".join(chunks))
+    except Exception:
+        return ""
+
+
+def title_lines_from_text(text: str, limit: int = 4) -> list[str]:
+    lines: list[str] = []
+    for raw in nfc(text).splitlines():
+        line = clean_phrase(raw)
+        low = line.lower()
+        if not line or low in STOP_PHRASES:
+            continue
+        if line in {"by", "page", "copyright"}:
+            continue
+        if re.fullmatch(r"[-0-9 /.,]+", line):
+            continue
+        if keep_phrase(line) or len(line) >= 6:
+            lines.append(line)
+        if len(lines) >= limit:
+            break
+    return lines
+
+
+def content_title_for_path(path: Path) -> str:
+    suffix = path.suffix.lower()
+    if suffix == ".md":
+        try:
+            fm, body = read_note(path)
+        except Exception:
+            fm, body = {}, path.read_text(encoding="utf-8", errors="ignore")
+        title = clean_phrase(str(fm.get("title") or ""))
+        if keep_phrase(title):
+            return title
+        headings = HEADING_RE.findall(body)
+        if headings:
+            title = clean_phrase(headings[0])
+            if keep_phrase(title):
+                return title
+    elif suffix == ".pdf":
+        lines = title_lines_from_text(pdf_text(path), 3)
+        if lines:
+            return clean_phrase(" ".join(lines[:2]))
+    elif suffix in TEXTLIKE_SUFFIXES or suffix in {".docx", ".pptx", ".xlsx"}:
+        lines = title_lines_from_text(textlike_full_text(path), 3)
+        if lines:
+            return clean_phrase(" ".join(lines[:2]))
+    return ""
 
 
 def iter_files() -> list[Path]:
@@ -661,20 +793,28 @@ def extract_concepts(courses: dict[str, Course]) -> None:
                 fm, body = read_note(md)
             except Exception:
                 continue
+            course.extraction_stats["markdown_full_files"] += 1
+            course.extraction_stats["markdown_chars"] += len(body)
+            heading_set = set(HEADING_RE.findall(body))
             seed = "\n".join(
                 [
                     str(fm.get("title") or ""),
                     clean_phrase(md.stem),
-                    body[:12000],
+                    body,
                 ]
             )
             for phrase in candidate_phrases(seed):
                 key = concept_key(phrase)
-                counts[key] += 3 if phrase in HEADING_RE.findall(body) else 1
+                counts[key] += 3 if phrase in heading_set else 1
                 if len(source_map[key]) < 8:
                     source_map[key].append(md)
-        for pdf in course.pdf_files[:80]:
-            seed = clean_phrase(pdf.stem) + "\n" + pdf_text(pdf)
+        for pdf in course.pdf_files:
+            extracted = pdf_text(pdf)
+            course.extraction_stats["pdf_full_files"] += 1
+            course.extraction_stats["pdf_chars"] += len(extracted)
+            if not extracted.strip():
+                course.extraction_stats["pdf_text_empty_or_failed"] += 1
+            seed = clean_phrase(pdf.stem) + "\n" + extracted
             for phrase in candidate_phrases(seed):
                 key = concept_key(phrase)
                 counts[key] += 2
@@ -688,16 +828,25 @@ def extract_concepts(courses: dict[str, Course]) -> None:
                 if len(source_map[key]) < 8:
                     source_map[key].append(artifact)
             if artifact.suffix.lower() in TEXTLIKE_SUFFIXES:
-                try:
-                    text = artifact.read_text(encoding="utf-8", errors="ignore")[:8000]
-                except Exception:
-                    text = ""
+                text = textlike_full_text(artifact)
+                course.extraction_stats["textlike_full_files"] += 1
+                course.extraction_stats["textlike_chars"] += len(text)
+                for phrase in candidate_phrases(text):
+                    key = concept_key(phrase)
+                    counts[key] += 1
+                    if len(source_map[key]) < 8:
+                        source_map[key].append(artifact)
+            elif artifact.suffix.lower() in {".docx", ".pptx", ".xlsx"}:
+                text = textlike_full_text(artifact)
+                course.extraction_stats["office_xml_text_files"] += 1
+                course.extraction_stats["office_xml_chars"] += len(text)
                 for phrase in candidate_phrases(text):
                     key = concept_key(phrase)
                     counts[key] += 1
                     if len(source_map[key]) < 8:
                         source_map[key].append(artifact)
         for media in course.media_files:
+            course.extraction_stats["media_filename_files"] += 1
             phrase = clean_phrase(media.stem)
             if keep_phrase(phrase):
                 key = concept_key(phrase)
@@ -753,17 +902,11 @@ def remove_old_generated_research_dirs() -> int:
 
 
 def reset_managed_archive_dirs() -> int:
-    removed = 0
-    for rel_dir in MANAGED_ARCHIVE_DIRS:
-        full = VAULT / rel_dir
-        if full.exists():
-            robust_rmtree(full)
-            removed += 1
-    skeleton = VAULT / SKELETON
-    if skeleton.exists():
-        skeleton.unlink()
-        removed += 1
-    return removed
+    full_root = VAULT / KG_ROOT
+    if full_root.exists():
+        robust_rmtree(full_root)
+        return 1
+    return 0
 
 
 def robust_rmtree(path: Path) -> None:
@@ -798,6 +941,7 @@ def method_note(title: str, path: str, summary: str, source_url: str, source_lab
     lines = note_header(title, ["type/interface", "pkm/kg-method-2026"])
     lines.extend(
         [
+            f"kg_parent:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
             f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
             "",
             f"# {title}",
@@ -845,20 +989,21 @@ def write_method_layer(courses: dict[str, Course]) -> int:
             "",
             "## 적용 원칙",
             "",
-            "- **Source scope**: 원문 노트, PDF, 코드/산출물 파일을 지식의 바닥 계층으로 둡니다.",
+            "- **Top-down interface first**: 허브와 스켈레톤에서 방법론, 질의 모드, 분야 커뮤니티, 과목 프로필, 근거 파일 순서로 내려갑니다.",
+            "- **Full source extraction**: 원문 노트 전체, PDF 전체 텍스트, 텍스트/코드/노트북/Office 산출물 텍스트를 추출한 뒤 개념을 계산합니다.",
             "- **Atomic evidence**: 과목별 근거 인덱스가 원문 파일을 모아 출처와 적용 범위를 보존합니다.",
-            "- **Minimal reasoning subgraph**: 일반 연구/스택 링크를 모든 노트에 붙이지 않고, 과목별 핵심 개념만 연결합니다.",
-            "- **4-level knowledge tree**: source/evidence, concept keyword, course profile, community report의 네 계층으로 탐색합니다.",
-            "- **Resolution before linking**: 파일명만 보지 않고 heading, frontmatter title, PDF 첫 페이지 텍스트, 코드/산출물명을 함께 보고 개념을 합칩니다.",
+            "- **Minimal reasoning subgraph**: 일반 연구/스택 링크를 모든 노트에 붙이지 않고, 과목별 핵심 개념과 공유 개념을 연결합니다.",
+            "- **4-level knowledge tree**: method/query, community, course/concept, evidence/source 계층으로 탐색합니다.",
+            "- **Resolution before linking**: 파일명만 보지 않고 heading, frontmatter title, PDF 전체 텍스트, 코드/산출물 내용을 함께 보고 개념을 합칩니다.",
             "- **Query-mode view**: GraphRAG-Bench의 fact, complex, contextual, creative 질의 유형을 아카이브 탐색 인터페이스로 둡니다.",
             "",
-            "## 계층",
+            "## Top-down 계층",
             "",
-            "1. 원문 파일: 강의 노트, PDF, 코드/노트북, 과제 산출물",
-            "2. 근거 인덱스: 과목별 source registry",
-            "3. 개념 노드: heading/PDF/code에서 추출한 과목별 concept codebook",
-            "4. 과목 프로필: 한 과목의 evidence, concept, query mode, module을 묶는 reasoning subgraph",
-            "5. 커뮤니티 리포트: 분야별 GraphRAG community summary",
+            "1. 허브/스켈레톤: 전체 GraphRAG 방식과 탐색 계층",
+            "2. 방법론/질의 모드: 2026 연구와 retrieval 목적별 관점",
+            "3. 커뮤니티 리포트: 프로그래밍, 수학, AI, 시스템, 소프트웨어 등 분야별 인터페이스",
+            "4. 과목 프로필/개념 노드: 과목별 reasoning subgraph와 concept codebook",
+            "5. 근거 인덱스/원문 파일: 강의 노트, PDF, 코드/노트북, 과제 산출물, PNG 첨부",
             "",
             "## 과목 프로필",
             "",
@@ -871,6 +1016,7 @@ def write_method_layer(courses: dict[str, Course]) -> int:
     hub_lines = note_header("지식그래프 허브", ["type/interface", "pkm/hub", "pkm/kg-skeleton"])
     hub_lines.extend(
         [
+            f"kg_parent:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
             f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
             "method:: " + ", ".join(method_links[:5]),
             "",
@@ -902,6 +1048,7 @@ def write_method_layer(courses: dict[str, Course]) -> int:
         ]
         lines.extend(
             [
+                f"kg_parent:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
                 f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
                 "kg_courses:: " + ", ".join(course_links),
                 "",
@@ -941,11 +1088,27 @@ def first_links(paths: list[Path], limit: int = 12) -> list[str]:
     return [wikilink(p) for p in paths[:limit]]
 
 
+def relation_tokens(value: str) -> set[str]:
+    tokens = {clean_phrase(t).lower() for t in re.split(r"[^가-힣A-Za-z0-9]+", value)}
+    return {
+        t
+        for t in tokens
+        if len(t) >= 3
+        and t not in STOP_PHRASES
+        and t not in {"data", "model", "basic", "example", "note", "course", "lecture", "week"}
+    }
+
+
 def write_course_layers(courses: dict[str, Course]) -> int:
     updated = 0
     by_domain: dict[str, list[Course]] = defaultdict(list)
     for course in courses.values():
         by_domain[course.domain_key].append(course)
+
+    all_concepts: list[tuple[Course, str, set[str], str]] = []
+    for course in courses.values():
+        for concept in course.concepts:
+            all_concepts.append((course, concept, relation_tokens(concept), concept_key(concept)))
 
     for course in courses.values():
         concept_links = [wikilink(concept_path(course, c), c) for c in course.concepts]
@@ -958,6 +1121,7 @@ def write_course_layers(courses: dict[str, Course]) -> int:
         profile_lines = note_header(f"{course.label} 지식그래프", ["type/interface", "pkm/kg-course"])
         profile_lines.extend(
             [
+                f"kg_parent:: {wikilink(community_path(course))}",
                 f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
                 f"kg_community:: {wikilink(community_path(course))}",
                 f"kg_evidence:: {evidence_link}",
@@ -1001,6 +1165,7 @@ def write_course_layers(courses: dict[str, Course]) -> int:
         evidence_lines = note_header(f"{course.label} 근거 인덱스", ["type/interface", "pkm/kg-evidence"])
         evidence_lines.extend(
             [
+                f"kg_parent:: {wikilink(course_profile_path(course), course.label)}",
                 f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
                 f"kg_course:: {wikilink(course_profile_path(course), course.label)}",
                 "kg_concepts:: " + ", ".join(concept_links),
@@ -1024,11 +1189,26 @@ def write_course_layers(courses: dict[str, Course]) -> int:
 
         for idx, concept in enumerate(course.concepts):
             sources = course.concept_sources.get(concept, [])[:8]
-            related = [c for c in course.concepts[max(0, idx - 2) : idx] + course.concepts[idx + 1 : idx + 3] if c != concept]
-            related_links = [wikilink(concept_path(course, c), c) for c in related]
+            local_related = [c for c in course.concepts if c != concept]
+            my_key = concept_key(concept)
+            my_tokens = relation_tokens(concept)
+            cross_related: list[tuple[Course, str]] = []
+            for other_course, other_concept, other_tokens, other_key in all_concepts:
+                if other_course.key == course.key and other_concept == concept:
+                    continue
+                if other_course.key == course.key:
+                    continue
+                if my_key == other_key or (my_tokens and other_tokens and my_tokens & other_tokens):
+                    cross_related.append((other_course, other_concept))
+            related_links = [wikilink(concept_path(course, c), c) for c in local_related]
+            related_links.extend(
+                wikilink(concept_path(other_course, other_concept), f"{other_course.label}/{other_concept}")
+                for other_course, other_concept in cross_related
+            )
             concept_lines = note_header(concept, ["type/concept", "pkm/kg-concept"], note_type="concept")
             concept_lines.extend(
                 [
+                    f"kg_parent:: {wikilink(course_profile_path(course), course.label)}",
                     f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
                     f"kg_course:: {wikilink(course_profile_path(course), course.label)}",
                     f"kg_evidence:: {evidence_link}",
@@ -1149,6 +1329,217 @@ def write_coverage_report(courses: dict[str, Course]) -> bool:
     return upsert_text_file(COVERAGE_REPORT, "\n".join(lines))
 
 
+def write_extraction_report(courses: dict[str, Course]) -> bool:
+    totals: Counter[str] = Counter()
+    rows: list[str] = []
+    for course in sorted(courses.values(), key=lambda c: c.label):
+        totals.update(course.extraction_stats)
+        rows.append(
+            "| "
+            + " | ".join(
+                [
+                    course.label,
+                    str(course.extraction_stats.get("markdown_full_files", 0)),
+                    str(course.extraction_stats.get("pdf_full_files", 0)),
+                    str(course.extraction_stats.get("pdf_text_empty_or_failed", 0)),
+                    str(course.extraction_stats.get("textlike_full_files", 0)),
+                    str(course.extraction_stats.get("office_xml_text_files", 0)),
+                    str(course.extraction_stats.get("media_filename_files", 0)),
+                ]
+            )
+            + " |"
+        )
+    lines = note_header("전문 내용 추출 검증 리포트", ["type/interface", "pkm/kg-evidence"])
+    lines.extend(
+        [
+            f"kg_parent:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
+            f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
+            "",
+            "# 전문 내용 추출 검증 리포트",
+            "",
+            "확장자별 분류만 하지 않고, 실제 텍스트 추출 가능한 파일은 전문을 읽어 개념 후보와 rename 후보를 계산했습니다.",
+            "",
+            "## 전체 추출량",
+            "",
+            f"- Markdown full-body files: {totals.get('markdown_full_files', 0)}",
+            f"- Markdown characters: {totals.get('markdown_chars', 0)}",
+            f"- PDF full-text files: {totals.get('pdf_full_files', 0)}",
+            f"- PDF extracted characters: {totals.get('pdf_chars', 0)}",
+            f"- PDF empty/failed text extraction: {totals.get('pdf_text_empty_or_failed', 0)}",
+            f"- Text/code/notebook full-text files: {totals.get('textlike_full_files', 0)}",
+            f"- Text/code/notebook characters: {totals.get('textlike_chars', 0)}",
+            f"- Office XML text files: {totals.get('office_xml_text_files', 0)}",
+            f"- Office XML characters: {totals.get('office_xml_chars', 0)}",
+            f"- Media filename/OCR-context files: {totals.get('media_filename_files', 0)}",
+            "",
+            "## 과목별 추출 검증",
+            "",
+            "| Course | md full | pdf full | pdf empty | text/code full | office xml | media ctx |",
+            "|---|---:|---:|---:|---:|---:|---:|",
+        ]
+    )
+    lines.extend(rows)
+    return upsert_text_file(EXTRACTION_REPORT, "\n".join(lines))
+
+
+def protected_rename_rels() -> set[str]:
+    protected = set(ROOT_SUPPORT)
+    protected.update(anchor.rel for domain in DOMAINS for anchor in domain.courses)
+    return {nfc(item) for item in protected}
+
+
+def is_generic_stem(stem: str) -> bool:
+    cleaned = clean_phrase(stem)
+    if not cleaned:
+        return False
+    return bool(GENERIC_STEM_RE.fullmatch(cleaned)) or cleaned.lower() in STOP_PHRASES
+
+
+def unique_destination(path: Path, desired_stem: str) -> Path:
+    desired_stem = slugify(desired_stem, path.stem)
+    candidate = path.with_name(f"{desired_stem}{path.suffix}")
+    if candidate == path:
+        return candidate
+    idx = 2
+    while candidate.exists():
+        candidate = path.with_name(f"{desired_stem} {idx}{path.suffix}")
+        idx += 1
+    return candidate
+
+
+def rename_title_for_generic(path: Path) -> str:
+    title = content_title_for_path(path)
+    if title:
+        return title
+    parent = clean_phrase(path.parent.name)
+    stem = clean_phrase(path.stem)
+    if parent and keep_phrase(parent):
+        if "풀이" in stem:
+            return f"{parent} 문제 풀이"
+        if "문제" in stem:
+            return f"{parent} 문제"
+        return f"{parent} {stem}".strip()
+    return ""
+
+
+def wikilink_target_for(path: Path) -> str:
+    r = rel(path)
+    return r.removesuffix(".md") if path.suffix.lower() == ".md" else r
+
+
+def target_matches_old_path(target: str, source: Path, old_path: Path) -> bool:
+    clean = nfc(target).replace("%20", " ").strip()
+    clean = clean.split("#", 1)[0].split("|", 1)[0].strip()
+    old_r = rel(old_path)
+    old_no_ext = old_r.removesuffix(".md")
+    if clean in {old_r, old_no_ext}:
+        return True
+    try:
+        relative = (source.parent / clean).resolve()
+        if relative == old_path.resolve():
+            return True
+    except Exception:
+        pass
+    if clean in {old_path.name, old_path.stem} and source.parent == old_path.parent:
+        return True
+    return False
+
+
+def rewrite_links_for_rename(old_path: Path, new_path: Path) -> int:
+    changed = 0
+    new_target = wikilink_target_for(new_path)
+    new_rel = rel(new_path)
+    old_rel = rel(old_path)
+    for source in iter_files():
+        if source.suffix.lower() not in {".md", ".canvas", ".json"}:
+            continue
+        try:
+            text = nfc(source.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+
+        def wiki_repl(match: re.Match[str]) -> str:
+            target, section, alias = match.group(1), match.group(2) or "", match.group(3) or ""
+            if target_matches_old_path(target, source, old_path):
+                return f"[[{new_target}{section}{alias}]]"
+            return match.group(0)
+
+        def md_repl(match: re.Match[str]) -> str:
+            target = match.group(2)
+            if target_matches_old_path(target, source, old_path):
+                return f"{match.group(1)}{new_rel}{match.group(3) or ''}{match.group(4)}"
+            return match.group(0)
+
+        new = WIKILINK_FULL_RE.sub(wiki_repl, text)
+        new = MD_LINK_RE.sub(md_repl, new)
+        new = new.replace(old_rel, new_rel)
+        if new != text:
+            source.write_text(nfc(new), encoding="utf-8")
+            changed += 1
+    return changed
+
+
+def apply_content_based_renames() -> dict[str, object]:
+    protected = protected_rename_rels()
+    applied: list[str] = []
+    deferred: list[str] = []
+    rewrites = 0
+    for path in iter_files():
+        if not path.exists():
+            continue
+        r = rel(path)
+        if r.startswith(GENERATED_DIR + "/") or r in protected:
+            continue
+        if path.suffix.lower() not in {".md", ".pdf", ".txt", ".ipynb", ".docx", ".pptx", ".xlsx"}:
+            continue
+        if not is_generic_stem(path.stem):
+            continue
+        title = rename_title_for_generic(path)
+        if not title or not keep_phrase(title):
+            deferred.append(f"{r} -> 내용 기반 제목 부족")
+            continue
+        destination = unique_destination(path, title)
+        if destination == path:
+            continue
+        rewrites += rewrite_links_for_rename(path, destination)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        path.rename(destination)
+        applied.append(f"{r} -> {rel(destination)}")
+    return {"applied": applied, "deferred": deferred, "rewrites": rewrites}
+
+
+def write_rename_report(result: dict[str, object]) -> bool:
+    applied = list(result.get("applied", []))
+    deferred = list(result.get("deferred", []))
+    lines = note_header("내용 기반 파일명 정합성 리포트", ["type/interface", "pkm/kg-evidence"])
+    lines.extend(
+        [
+            f"kg_parent:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
+            f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
+            "",
+            "# 내용 기반 파일명 정합성 리포트",
+            "",
+            "generic 파일명은 frontmatter/H1/PDF 전문 첫 제목/텍스트 전문 첫 제목을 기준으로 rename했습니다. 링크는 Obsidian wikilink와 markdown link를 함께 재작성했습니다.",
+            "",
+            "## Summary",
+            "",
+            f"- Applied renames: {len(applied)}",
+            f"- Link rewrite passes: {result.get('rewrites', 0)}",
+            f"- Deferred candidates: {len(deferred)}",
+            "",
+            "## Applied",
+            "",
+        ]
+    )
+    lines.extend(f"- `{item}`" for item in applied)
+    lines.extend(["", "## Deferred", ""])
+    if deferred:
+        lines.extend(f"- `{item}`" for item in deferred)
+    else:
+        lines.append("- 없음")
+    return upsert_text_file(RENAME_REPORT, "\n".join(lines))
+
+
 def write_community_report(title: str, path: str, courses: list[Course], summary: str) -> None:
     course_links = [wikilink(course_profile_path(course), course.label) for course in courses]
     concept_links: list[str] = []
@@ -1159,6 +1550,7 @@ def write_community_report(title: str, path: str, courses: list[Course], summary
     lines = note_header(title, ["type/interface", "pkm/kg-community"])
     lines.extend(
         [
+            f"kg_parent:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
             f"kg_skeleton:: {wikilink(SKELETON, '2026 GraphRAG 아카이브 스켈레톤')}",
             "kg_courses:: " + ", ".join(course_links),
             "kg_concepts:: " + ", ".join(concept_links[:40]),
@@ -1181,7 +1573,7 @@ def write_community_report(title: str, path: str, courses: list[Course], summary
 
 
 def concepts_for_note(course: Course, path: Path, body: str, fm: dict) -> list[str]:
-    haystack = "\n".join([str(fm.get("title") or ""), clean_phrase(path.stem), body[:8000]]).lower()
+    haystack = "\n".join([str(fm.get("title") or ""), clean_phrase(path.stem), body]).lower()
     picked: list[str] = []
     for concept in course.concepts:
         parts = [p.lower() for p in re.split(r"\s+", concept) if len(p) >= 2]
@@ -1221,6 +1613,7 @@ def update_source_notes(courses: dict[str, Course]) -> tuple[int, int]:
             concept_links = [wikilink(concept_path(course, c), c) for c in concepts]
             query_links = [wikilink(QUERY_MODES[k][1], QUERY_MODES[k][0]) for k in course.query_modes]
             fields = [
+                ("kg_parent", wikilink(course_profile_path(course), course.label)),
                 ("kg_profile", wikilink(course_profile_path(course), course.label)),
                 ("kg_evidence", wikilink(course_evidence_path(course), f"{course.label} 근거 인덱스")),
                 ("kg_concepts", ", ".join(concept_links)),
@@ -1426,6 +1819,7 @@ def canvas_missing_files(canvas_path: str) -> int:
 
 
 def main() -> None:
+    rename_result = apply_content_based_renames()
     courses = build_courses()
     collect_sources(courses)
     extract_concepts(courses)
@@ -1435,6 +1829,8 @@ def main() -> None:
     method_updates = write_method_layer(courses)
     course_updates = write_course_layers(courses)
     coverage_updated = write_coverage_report(courses)
+    extraction_updated = write_extraction_report(courses)
+    rename_report_updated = write_rename_report(rename_result)
     note_updates, cleaned_notes = update_source_notes(courses)
     excluded_cleanups = clean_excluded_note_fields()
     deleted_link_cleanups = clean_deleted_links()
@@ -1455,8 +1851,10 @@ def main() -> None:
         f"course_layer_updates={course_updates} source_note_updates={note_updates} "
         f"cleaned_old_broad_fields={cleaned_notes} excluded_note_cleanups={excluded_cleanups} "
         f"deleted_link_cleanups={deleted_link_cleanups} "
+        f"content_renames={len(rename_result.get('applied', []))} rename_link_rewrites={rename_result.get('rewrites', 0)} "
         f"graph_json_updated={int(graph_updated)} canvas_updated={int(canvas_updated)} "
-        f"coverage_report_updated={int(coverage_updated)} "
+        f"coverage_report_updated={int(coverage_updated)} extraction_report_updated={int(extraction_updated)} "
+        f"rename_report_updated={int(rename_report_updated)} "
         f"canvas_missing_files={missing_canvas}"
     )
 

@@ -14,11 +14,12 @@ type: interface
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/외부 프로그램 커뮤니티]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/외부 프로그램 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/LG Aimers 근거 인덱스|LG Aimers 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/svm|svm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/지원동기|지원동기]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/평가 산식|평가 산식]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/관련 경력(경험) 기술|관련 경력(경험) 기술]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/강의자료 download|강의자료 download]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/u kang|u kang]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/tokenizer|tokenizer]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/한양대학교 철학과|한양대학교 철학과]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/hy 과학기술윤리|hy 과학기술윤리]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/강의자료 download|강의자료 download]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/iclr|iclr]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/vram|vram]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/bert|bert]]
 module:: [[ComputerScience/00_graph-interfaces/courses/LG Aimers 인터페이스|LG Aimers 인터페이스]]
 domain:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/외부 프로그램 커뮤니티|외부 프로그램 커뮤니티]]
 
@@ -37,16 +38,16 @@ LG Aimers 과목/활동의 로컬 노트, PDF, 코드/산출물을 2026 GraphRAG
 
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/svm|svm]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/지원동기|지원동기]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/평가 산식|평가 산식]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/관련 경력(경험) 기술|관련 경력(경험) 기술]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/강의자료 download|강의자료 download]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/u kang|u kang]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/tokenizer|tokenizer]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/한양대학교 철학과|한양대학교 철학과]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/hy 과학기술윤리|hy 과학기술윤리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/iclr|iclr]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/vram|vram]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ml|ml]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/rag|rag]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/bert|bert]]
 
 ## 근거
 

@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/이산수학 지식그래프|이산수학]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/이산수학 지식그래프|이산수학]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/이산수학 근거 인덱스|이산수학 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/수학 이론 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/수학적 모델과 논리|수학적 모델과 논리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/집합 및 집합 연산|집합 및 집합 연산]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/과제 번역|과제 번역]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/수학 이론 인터페이스|수학 이론 인터페이스]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/무향 그래프|무향 그래프]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/라고 한다|라고 한다]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/집합 및 집합 연산|집합 및 집합 연산]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/수학적 모델과 논리|수학적 모델과 논리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/decorator to log execution details|decorator to log execution details]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/boolean product|boolean product]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/시험문제|시험문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/과제 번역|과제 번역]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/이상 탐지|이상 탐지]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 레포트|장 레포트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 제출용|장 제출용]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm dfs bfs|공유 미디어/1 algorithm dfs bfs]]
 
 # bfs
 
@@ -26,14 +27,22 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mat
 
 ## 로컬 근거
 
+- [[ComputerScience/02_math-theory/discrete-mathematics/4. 그래프/그래프]]
 - [[ComputerScience/02_math-theory/discrete-mathematics/과제/과제 번역]]
-- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete_Mathematics__Homework_I (1).pdf]]
-- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete_Mathematics__Homework_I (1).pdf]]
+- [[ComputerScience/02_math-theory/discrete-mathematics/4. 그래프/5 그래프.pdf]]
 - [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete_Mathematics__Homework_I (1).pdf]]
 
 ## 연결 개념
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/수학적 모델과 논리|수학적 모델과 논리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/무향 그래프|무향 그래프]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/라고 한다|라고 한다]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/집합 및 집합 연산|집합 및 집합 연산]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/수학적 모델과 논리|수학적 모델과 논리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/decorator to log execution details|decorator to log execution details]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/boolean product|boolean product]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/시험문제|시험문제]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/과제 번역|과제 번역]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/수학 이론 인터페이스|수학 이론 인터페이스]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/이상 탐지|이상 탐지]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 레포트|장 레포트]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 제출용|장 제출용]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/shared-media/1 algorithm dfs bfs|공유 미디어/1 algorithm dfs bfs]]

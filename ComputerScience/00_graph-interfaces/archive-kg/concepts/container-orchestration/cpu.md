@@ -14,11 +14,12 @@ type: concept
 updated: '2026-05-28'
 ---
 
+kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컨테이너 오케스트레이션 지식그래프|컨테이너 오케스트레이션]]
 kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컨테이너 오케스트레이션 지식그래프|컨테이너 오케스트레이션]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/컨테이너 오케스트레이션 근거 인덱스|컨테이너 오케스트레이션 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/시스템 인프라 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/srtf|srtf]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/쿠버네티스 설치|쿠버네티스 설치]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/os|os]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/rest|rest]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/srtf|srtf]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/도커 기초|도커 기초]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/리눅스 셸|리눅스 셸]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/기말 정리|기말 정리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/구현 과제|구현 과제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cpu|Linux/cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-architecture/cpu|컴퓨터구조/cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cpu|운영체제/cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|컴퓨터네트워크/cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/parallel-distributed-computing/cpu|병렬 분산처리/cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|자격증/cpu]]
 
 # cpu
 
@@ -27,15 +28,30 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-or
 ## 로컬 근거
 
 - [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
-- [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/Ingress 설정 정리]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/LoadBalancer 설치 및 설정 가이드]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/NodePort 서비스 설정 및 가이드]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/도커]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/쿠버네티스 설치]]
+- [[ComputerScience/04_systems-infrastructure/container-orchestration/파드(Pod)]]
 
 ## 연결 개념
 
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/쿠버네티스 설치|쿠버네티스 설치]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/os|os]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/rest|rest]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/fcfs|fcfs]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/srtf|srtf]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/도커 기초|도커 기초]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/리눅스 셸|리눅스 셸]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/기말 정리|기말 정리]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/container-orchestration/구현 과제|구현 과제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/cpu|Linux/cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-architecture/cpu|컴퓨터구조/cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cpu|운영체제/cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|컴퓨터네트워크/cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/parallel-distributed-computing/cpu|병렬 분산처리/cpu]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/certifications/cpu|자격증/cpu]]
