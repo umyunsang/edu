@@ -3,13 +3,17 @@ aliases: []
 course: python-programming
 created: '2024-05-23'
 date: '2024-05-23'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
 tags:
 - skill/python
 - type/lecture
-title: '프로그래머스 Python 기초 문제 1-10'
+title: 프로그래머스 Python 기초 문제 1-10
 type: lecture
 updated: '2026-05-05'
 ---
@@ -29,7 +33,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-p
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
-![[Pasted image 20240523164527.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__o o A.png]]
 ```python
 # 문자열 s에 대해서  
 # p와 y의 갯수를 센 다음 비교  
@@ -65,7 +69,7 @@ print(solution(s))
 ```
 
 ---
-![[Pasted image 20240523164624.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__갯수가 같으면 True, 아니면 False 1.png]]
 ```python
 # 하샤드수 판별 문제  
 # 숫자 x를 받고, x가 각 자릿수의 합으로 나누었을 때 나머지가 0이면 True  
@@ -95,7 +99,7 @@ for a in arr:
 ```
 
 ---
-![[Pasted image 20240523164700.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__숫자 x를 받고, x가 각 자릿수의 합으로 나누.png]]
 ```python
 # 숫자 n을 받아서 각 자릿수를 내림차순으로 정렬한 숫자를 반환  
 def solution(n):  
@@ -117,7 +121,7 @@ print(solution(n))
 ```
 
 ---
-![[Pasted image 20240523164733.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__숫자 n을 받아서 각 자릿수를 내림차순으로 정렬.png]]
 ```python
 # 숫자 x와 n을 받아  
 # x부터 x씩 증가하는 숫자 n개를 가진 리스트를 반환  
@@ -146,7 +150,7 @@ for v1, v2 in zip(x_list, n_list):
 ```
 
 ---
-![[Pasted image 20240523164804.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__2) zip 함수 각 리스트의 요소를 하나씩.png]]
 ```python
 # 짝수일 때 : / 2# 홀수일 때 : * 3 + 1# 1이 될 때까지 몇 번 수행해야 하는가?  
 # 500을 넘어서면 -1을 반환  
@@ -176,7 +180,7 @@ for a in arr:
 ```
 
 ---
-![[Pasted image 20240523164832.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__500을 넘어서면 -1을 반환.png]]
 ```python
 # 정수 a, b를 받아서 a부터 b까지의 숫자 합  
 # a와 b의 대소관계는 정해져있지 않다  
@@ -204,7 +208,7 @@ for v1, v2 in zip(a_list, b_list):
 ```
 
 ---
-![[Pasted image 20240523164858.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__a와 b의 대소관계는 정해져있지 않다.png]]
 ```python
 # 문자열 숫자가 주어졌을 때 맨 뒤 4자리만 남기고 나머지는 '*'def solution(phone_number):  
     # (1) 문자열을 리스트로 바꾼 후에 조정  
@@ -226,7 +230,7 @@ for p in phone_number:
 ```
 
 ---
-![[Pasted image 20240523164934.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__문자열 숫자가 주어졌을 때 맨 뒤 4자리만 남기.png]]
 ```python
 # (1) 주어진 리스트의 값을 divisor로 나누었을 때  
 #     나누어 떨어지는 값을 반환 리스트에 담아서 반환  
@@ -249,7 +253,7 @@ for a, d in zip(arr, divisor):
 ```
 
 ---
-![[Pasted image 20240523165007.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__3) 나누어 떨어지는 값이 없으면( 반환 리스.png]]
 ```python
 # 주어진 리스트(absolutes)에 포함된 값에  
 # signs의 진리값을 부호로 적용한 값의 총합  
@@ -273,7 +277,7 @@ for a, s in zip(absolutes, signs):
 ```
 
 ---
-![[Pasted image 20240523165040.png]]
+![[python-programming__프로그래머스 Python 기초 문제 1-10__signs의 진리값을 부호로 적용한 값의 총합.png]]
 ```python
 # 주어진 리스트에서 0부터 9 사이의 숫자 중 없는 숫자의 총합  
   

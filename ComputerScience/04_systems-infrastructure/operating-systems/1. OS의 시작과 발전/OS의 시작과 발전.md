@@ -3,6 +3,10 @@ aliases: []
 course: operating-systems
 created: '2024-09-04'
 date: '2024-09-04'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -50,7 +54,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 ## 운영체제와 응용소프트웨어
 
-![](../../../../image/Pasted%20image%2020240904103832.png)
+![[operating-systems__OS의 시작과 발전__운영체제와 응용소프트웨어.png]]
 
 ## 운영체제의 역사
 
@@ -64,7 +68,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 1951년 EDVAC 컴퓨터를 만들 때 적용
 - CPU와 메모리 분리
 - 소프트웨어와 하드웨어 분리
-	![](../../../../image/Pasted%20image%2020240904104950.png)
+	![[operating-systems__OS의 시작과 발전__2. 내장 프로그래밍 방식.png]]
 
 #### 3. 프로그램 로더의 발견
  1. **로더의 역할**
@@ -82,7 +86,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ---
 ## 배치 운영체제
 
-![](../../../../image/Pasted%20image%2020240909091810.png)
+![[operating-systems__OS의 시작과 발전__배치 운영체제.png]]
 
 - 출현 배경
 	- 컴퓨터의 노는 시간을 줄여 컴퓨터의 활용률 향상
@@ -93,7 +97,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 ## 다중 프로그래밍 운영체제
 
-![](../../../../image/Pasted%20image%2020240909091830.png)
+![[operating-systems__OS의 시작과 발전__다중 프로그래밍 운영체제 2.png]]
 
 다중프로그래밍은 여러 프로그램을 메모리에 올려놓고, CPU가 한 프로그램을 실 행하다 I/O가 발생하면, 입출력이 완료될 때까지 CPU가 메모리에 적재된 다른 프로그램을 실행하는 식으로 CPU의 노는 시간을 줄이는 기법이다.
 
@@ -123,11 +127,11 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 교착 상태 해결 (DeadLock)
 		- 프로세스들이 상대가 가진 자원을 서로 요청하면서 무한대기하는 교착상태 해결
 
-![](../../../../image/Pasted%20image%2020240904111128.png)
+![[operating-systems__OS의 시작과 발전__다중 프로그래밍 운영체제.png]]
 
 ## 시분할 다중프로그래밍 운영체제 (Time Sharing Multiprogramming)
 
-![](../../../../image/Pasted%20image%2020240909091851.png)
+![[operating-systems__OS의 시작과 발전__시분할 다중프로그래밍 운영체제 (Time Sharing Multiprogr.png]]
 
 - 출현 배경 
 	- 다중프로그래밍 운영체제와 거의 동시에 연구 시작 

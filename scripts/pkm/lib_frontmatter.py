@@ -68,9 +68,17 @@ def read_note(path: Path) -> tuple[dict, str]:
         if end == -1:
             return {}, raw
         body = raw[raw.find("\n", end + 4) + 1 :]
+        yaml_text = raw[4:end]
+        if yaml is not None:
+            try:
+                parsed = yaml.safe_load(yaml_text) or {}
+                if isinstance(parsed, dict):
+                    return parsed, body
+            except Exception:
+                pass
         metadata: dict = {}
         current_list: str | None = None
-        for line in raw[4:end].splitlines():
+        for line in yaml_text.splitlines():
             if not line.strip():
                 continue
             if line.startswith("- ") and current_list:

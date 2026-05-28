@@ -3,6 +3,10 @@ aliases: []
 course: container-orchestration
 created: '2025-01-17'
 date: '2025-01-17'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: elective
 source: ''
 status: seedling

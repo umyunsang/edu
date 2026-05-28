@@ -3,6 +3,10 @@ aliases: []
 course: aioss-open-source-delivery
 created: '2026-04-06'
 date: '2026-04-06'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 4-1
 source: ''
 status: seedling
@@ -22,7 +26,7 @@ tags:
 title: Teamwork & Collaborative Development
 type: lecture
 updated: '2026-05-05'
-week: 3
+week: '3'
 ---
 
 domain:: [[ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스|소프트웨어 엔지니어링 인터페이스]]

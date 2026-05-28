@@ -3,13 +3,17 @@ aliases: []
 course: ml-projects
 created: '2024-06-12'
 date: '2024-06-12'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-1
 source: ''
 status: seedling
 tags:
 - cs/ml
 - type/lecture
-title: 'KNN 분류'
+title: KNN 분류
 type: lecture
 updated: '2026-05-05'
 ---

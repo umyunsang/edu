@@ -3,6 +3,10 @@ aliases: []
 course: ai-system-design
 created: '2024-06-12'
 date: '2024-06-12'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-1
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - cs/ai
 - cs/se
 - type/lecture
-title: '스마트 오더 플랫폼 B2B 어드민 기능 제안'
+title: 스마트 오더 플랫폼 B2B 어드민 기능 제안
 type: lecture
 updated: '2026-05-05'
 ---

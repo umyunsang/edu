@@ -610,33 +610,37 @@ def update_graph_json() -> bool:
     data = json.loads(path.read_text(encoding="utf-8"))
     data.update(
         {
-            "showTags": True,
+            "showTags": False,
             "showAttachments": True,
+            "hideUnresolved": True,
+            "showOrphans": True,
             "showArrow": True,
             "collapse-color-groups": False,
             "collapse-display": False,
             "collapse-forces": False,
-            "nodeSizeMultiplier": 1.25,
-            "lineSizeMultiplier": 1.35,
+            "nodeSizeMultiplier": 0.62,
+            "lineSizeMultiplier": 0.75,
             "textFadeMultiplier": 0,
-            "linkDistance": 210,
-            "repelStrength": 12,
-            "scale": 0.55,
+            "centerStrength": 0.42,
+            "repelStrength": 16,
+            "linkStrength": 0.75,
+            "linkDistance": 260,
+            "scale": 0.58,
         }
     )
     stage_groups = [
-        {"query": "tag:#pkm/hub", "color": {"a": 1, "rgb": 0x7C3AED}},
-        {"query": "tag:#pkm/stage", "color": {"a": 1, "rgb": 0xF59E0B}},
-        {"query": "tag:#pkm/bridge", "color": {"a": 1, "rgb": 0x14B8A6}},
-        {"query": "tag:#pkm/module", "color": {"a": 1, "rgb": 0x64748B}},
-        {"query": "tag:#pkm/domain", "color": {"a": 1, "rgb": 0x22C55E}},
-        {"query": "path:ComputerScience/01_programming-foundations", "color": {"a": 1, "rgb": 0x16A34A}},
-        {"query": "path:ComputerScience/02_math-theory", "color": {"a": 1, "rgb": 0xEAB308}},
-        {"query": "path:ComputerScience/03_ai-ml-data", "color": {"a": 1, "rgb": 0xEF4444}},
-        {"query": "path:ComputerScience/04_systems-infrastructure", "color": {"a": 1, "rgb": 0x2563EB}},
-        {"query": "path:ComputerScience/05_software-engineering", "color": {"a": 1, "rgb": 0x10B981}},
-        {"query": "path:ComputerScience/06_algorithms-graphics", "color": {"a": 1, "rgb": 0xA855F7}},
-        {"query": "path:ComputerScience/07_professional-humanities", "color": {"a": 1, "rgb": 0xEC4899}},
+        {"query": "tag:#pkm/hub", "color": {"a": 1, "rgb": 0x5B5BD6}},
+        {"query": "tag:#pkm/stage", "color": {"a": 1, "rgb": 0xE69F00}},
+        {"query": "tag:#pkm/bridge", "color": {"a": 1, "rgb": 0x56B4E9}},
+        {"query": "tag:#pkm/module", "color": {"a": 1, "rgb": 0x6B7280}},
+        {"query": "tag:#pkm/domain", "color": {"a": 1, "rgb": 0x009E73}},
+        {"query": "path:ComputerScience/01_programming-foundations", "color": {"a": 1, "rgb": 0x009E73}},
+        {"query": "path:ComputerScience/02_math-theory", "color": {"a": 1, "rgb": 0xE6B800}},
+        {"query": "path:ComputerScience/03_ai-ml-data", "color": {"a": 1, "rgb": 0xD55E00}},
+        {"query": "path:ComputerScience/04_systems-infrastructure", "color": {"a": 1, "rgb": 0x0072B2}},
+        {"query": "path:ComputerScience/05_software-engineering", "color": {"a": 1, "rgb": 0x56B4E9}},
+        {"query": "path:ComputerScience/06_algorithms-graphics", "color": {"a": 1, "rgb": 0xCC79A7}},
+        {"query": "path:ComputerScience/07_professional-humanities", "color": {"a": 1, "rgb": 0x8B5CF6}},
     ]
     existing = data.get("colorGroups", [])
     query_to_group = {group.get("query"): group for group in existing if isinstance(group, dict)}
@@ -684,31 +688,31 @@ def make_canvas(
             }
         )
 
-    add_node(nodes, {"id": "g_hub", "type": "group", "x": -360, "y": -760, "width": 720, "height": 220, "color": "6", "label": "지식그래프 허브"})
-    add_node(nodes, {"id": "hub", "type": "file", "file": HUB, "x": -150, "y": -700, "width": 300, "height": 100, "color": "6"})
+    add_node(nodes, {"id": "g_hub", "type": "group", "x": -420, "y": -780, "width": 840, "height": 250, "color": "6", "label": "Level 0 - 지식그래프 허브"})
+    add_node(nodes, {"id": "hub", "type": "file", "file": HUB, "x": -240, "y": -720, "width": 480, "height": 150, "color": "6"})
 
-    add_node(nodes, {"id": "g_stage", "type": "group", "x": -1120, "y": -460, "width": 2240, "height": 230, "color": "5", "label": "단계 인터페이스"})
+    add_node(nodes, {"id": "g_stage", "type": "group", "x": -1120, "y": -460, "width": 2240, "height": 230, "color": "5", "label": "Level 1 - 단계 인터페이스"})
     stage_ids: dict[str, str] = {}
     for index, stage in enumerate(STAGES):
         node_id = f"stage_{index + 1}"
         stage_ids[stage.key] = node_id
-        add_node(nodes, {"id": node_id, "type": "file", "file": stage.path, "x": -1040 + index * 360, "y": -390, "width": 300, "height": 90, "color": "5"})
+        add_node(nodes, {"id": node_id, "type": "file", "file": stage.path, "x": -1040 + index * 360, "y": -390, "width": 270, "height": 80, "color": "5"})
         edge("hub", node_id, "stage", "5")
 
-    add_node(nodes, {"id": "g_domain", "type": "group", "x": -1260, "y": -150, "width": 2520, "height": 230, "color": "4", "label": "분야 인터페이스"})
+    add_node(nodes, {"id": "g_domain", "type": "group", "x": -1260, "y": -150, "width": 2520, "height": 230, "color": "4", "label": "Level 2 - 분야 인터페이스"})
     domain_ids: dict[str, str] = {}
     for index, domain in enumerate(DOMAINS):
         node_id = f"domain_{domain.key}"
         domain_ids[domain.key] = node_id
-        add_node(nodes, {"id": node_id, "type": "file", "file": domain.path, "x": -1190 + index * 350, "y": -85, "width": 290, "height": 90, "color": COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4")})
+        add_node(nodes, {"id": node_id, "type": "file", "file": domain.path, "x": -1190 + index * 350, "y": -85, "width": 240, "height": 68, "color": COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4")})
         edge("hub", node_id, "domain", "4")
 
-    add_node(nodes, {"id": "g_bridge", "type": "group", "x": -1260, "y": 160, "width": 2520, "height": 250, "color": "6", "label": "브리지 인터페이스"})
+    add_node(nodes, {"id": "g_bridge", "type": "group", "x": -1260, "y": 160, "width": 2520, "height": 250, "color": "6", "label": "Level 2 - 브리지 인터페이스"})
     bridge_ids: dict[str, str] = {}
     for index, bridge in enumerate(BRIDGES):
         node_id = f"bridge_{bridge.key}"
         bridge_ids[bridge.key] = node_id
-        add_node(nodes, {"id": node_id, "type": "file", "file": bridge.path, "x": -1190 + index * 350, "y": 230, "width": 290, "height": 90, "color": "6"})
+        add_node(nodes, {"id": node_id, "type": "file", "file": bridge.path, "x": -1190 + index * 350, "y": 230, "width": 220, "height": 64, "color": "6"})
         edge("hub", node_id, "bridge", "6")
 
     domain_course_map: dict[str, list[Module]] = defaultdict(list)
@@ -723,10 +727,10 @@ def make_canvas(
         group_h = max(260, 120 + len(domain_modules) * 92)
         group_id = f"group_courses_{domain.key}"
         x = x0 + index * col_w
-        add_node(nodes, {"id": group_id, "type": "group", "x": x, "y": y0, "width": 330, "height": group_h, "color": COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4"), "label": domain.title.replace(" 인터페이스", "")})
+        add_node(nodes, {"id": group_id, "type": "group", "x": x, "y": y0, "width": 330, "height": group_h, "color": COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4"), "label": "Level 3 - " + domain.title.replace(" 인터페이스", "")})
         for j, module in enumerate(domain_modules):
             node_id = f"module_{module.course}".replace("-", "_")
-            add_node(nodes, {"id": node_id, "type": "file", "file": module.path, "x": x + 25, "y": y0 + 60 + j * 92, "width": 280, "height": 70, "color": COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4")})
+            add_node(nodes, {"id": node_id, "type": "file", "file": module.path, "x": x + 25, "y": y0 + 60 + j * 92, "width": 180, "height": 54, "color": COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4")})
             edge(domain_ids[domain.key], node_id, "module", COLOR_BY_DOMAIN_KEY.get(Path(domain.path).parts[1], "4"))
             stage = stage_by_course[module.course]
             edge(stage_ids[stage.key], node_id, "stage", "5")

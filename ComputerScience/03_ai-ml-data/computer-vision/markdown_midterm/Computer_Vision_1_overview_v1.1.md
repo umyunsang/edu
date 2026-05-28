@@ -3,6 +3,10 @@ aliases: []
 course: computer-vision
 created: '2026-05-05'
 date: '2026-05-05'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 4-1
 source: ''
 status: seedling

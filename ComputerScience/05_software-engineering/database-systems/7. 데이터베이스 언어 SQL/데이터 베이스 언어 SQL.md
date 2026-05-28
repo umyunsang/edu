@@ -3,6 +3,10 @@ aliases: []
 course: database-systems
 created: '2024-10-07'
 date: '2024-10-07'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -54,7 +58,7 @@ revoke grant commit rollback
 	- 보안을 위해 데이터에 대한 접근 및 사용 권한을 사용자별로 부여하거나 취소 하는 기능을 제공
 
 #### ==아마 시험 ?==
-![](../../../../image/Pasted%20image%2020241007173812.png)
+![[database-systems__데이터 베이스 언어 SQL__아마 시험.png]]
 ## 2. SQL을 이용한 데이터 정의
 #### ==테이블 생성 : CREATE TABLE 문 (암기)==
 ```SQL
@@ -80,7 +84,7 @@ CREATE TABLE 테이블_이름 (
 		- 예) 적립금 INT DEFAULT 0 
 		- 예) 담당자 VARCHAR(10) DEFAULT ‘방경아'
 - 속성의 데이터 타입
-	![](../../../../image/Pasted%20image%2020241010104327.png)
+	![[database-systems__데이터 베이스 언어 SQL__테이블 생성 CREATE TABLE 문 (암기.png]]
 - **키의 정의** 
 	- PRIMARY KEY 
 		- 기본키를 지정하는 키워드 
@@ -112,13 +116,13 @@ CREATE TABLE 테이블_이름 (
 		- 예) CONSTRAINT CHK_CPY CHECK(제조업체 = ‘한빛제과’)
 
 #### 참조 무결성 제약조건 유지를 위한 투플 삭제 예
-![](../../../../image/Pasted%20image%2020241010104711.png)
+![[database-systems__데이터 베이스 언어 SQL__참조 무결성 제약조건 유지를 위한 투플 삭제 예.png]]
 - ON DELETE NO ACTION : 부서 테이블의 투플을 삭제하지 못하게 함 
 - ON DELETE CASCADE : 사원 테이블에서 홍보부에 근무하는 정소화 사원 투플도 함께 삭제 
 - ON DELETE SET NULL : 사원 테이블에서 정소화 사원의 소속부서 속성 값을 NULL로 변경 
 - ON DELETE SET DEFAULT : 사원 테이블에서 정소화 사원의 소속부서 속성 값을 기본 값으로 변경
 #### 고객 테이블 생성을 위한 CREATE TABLE 문 작성 예
-![](../../../../image/Pasted%20image%2020241010104947.png)
+![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예.png]]
 ```sql
 CREATE TABLE 고객 (
 	고객아이디 VARCHAR(20) NOT NULL,
@@ -131,7 +135,7 @@ CREATE TABLE 고객 (
 );
 ```
 
-![](../../../../image/Pasted%20image%2020241010105005.png)
+![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 2.png]]
 ```sql
 CREATE TABLE 제품 (
 	제품번호 CHAR(3) NOT NULL,
@@ -144,7 +148,7 @@ CREATE TABLE 제품 (
 );
 ```
 
-![](../../../../image/Pasted%20image%2020241010105048.png)
+![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 3.png]]
 ```sql
 CREATE TABLE 주문 (
 	주문번호 CHAR(3) NOT NULL,
@@ -159,7 +163,7 @@ CREATE TABLE 주문 (
 );
 ```
 
-![](../../../../image/Pasted%20image%2020241010105104.png)
+![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 4.png]]
 ```sql
 CREATE TABLE 배송업체 (
 	업체번호 CHAR(3) NOT NULL,
@@ -185,7 +189,7 @@ ALTER TABLE 테이블이름
 ALTER TABLE 테이블_이름
 	ADD 속성_이름 데이터_타입 [NOT NULL] [DEFAULT 기본_값];
 ```
-![](../../../../image/Pasted%20image%2020241010111745.png)
+![[database-systems__데이터 베이스 언어 SQL__테이블 변경 ALTER TABLE 문.png]]
 ```SQL
 ALTER TABLE 고객 ADD 가입날짜 DATETIME;
 ```
@@ -198,7 +202,7 @@ ALTER TABLE 테이블_이름 DROP COLUMN 속성_이름;
 	- 속성 삭제가 수행되지 않음 
 	- 관련된 제약조건이나 참조하는 다른 속성을 먼저 삭제해야 함
 
-![](../../../../image/Pasted%20image%2020241010112120.png)
+![[database-systems__데이터 베이스 언어 SQL__테이블 변경 ALTER TABLE 문 2.png]]
 ```SQL
 ALTER TABLE 고객 DROP COLUMN 가입날짜;
 ```
@@ -234,33 +238,33 @@ FROM 테이블_리스트;
 		- 결과 테이블에서만 계산된 결과 값이 출력됨 
 			- 속성의 값이 실제로 변경되는 것은 아님
 
-![](../../../../image/Pasted%20image%2020241010112625.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문.png]]
 ```SQL
 SELECT 고객아이디, 고객이름, 등급 FROM 고객;
 ```
-![](../../../../image/Pasted%20image%2020241010112720.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 2.png]]
 ```SQL
 SELECT * FROM 고객;
 ```
 - 모든 속성을 검색할 때는 속성의 이름을 전부 나열하지 않고 * 사용 가능
 
-![](../../../../image/Pasted%20image%2020241010112812.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 3.png]]
 ```SQL
 SELECT ALL 제조업체 FROM 제품;
 ```
 - 결과 테이블에서 제조업체가 중복 됨
 
-![](../../../../image/Pasted%20image%2020241010112928.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 4.png]]
 ```SQL
 SELECT DISTINCT 제조업체 FROM 제품;
 ```
 - 결과 테이블에서 제조업체가 한 번씩만 나타남
 
-![](../../../../image/Pasted%20image%2020241010113120.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 5.png]]
 ```SQL
 SELECT 제품명, 단가 AS 가격 FROM 제품;
 ```
-![](../../../../image/Pasted%20image%2020241010113356.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 6.png]]
 ```SQL
 SELECT 제품명, 단가 +500 AS "조정 단가" FROM 제품;
 ```
@@ -279,23 +283,23 @@ FROM 테이블_리스트
 			- 예) ‘2022-12-01’ < ‘2022-12-02’ 
 		- 조건에서 문자나 날짜 값은 작은따옴표로 묶어서 표현
 
-![](../../../../image/Pasted%20image%2020241010113729.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색.png]]
 ```SQL
 SELECT 제품명, 재고량, 단가 FROM 제품 WHERE 제조업체='한빛제과';
 ```
-![](../../../../image/Pasted%20image%2020241010113822.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 2.png]]
 ```SQL
 SELECT 주문제품, 수량, 주문일자 
 FROM 주문 
 WHERE 주문고객='apple' AND 수량>=15;
 ```
-![](../../../../image/Pasted%20image%2020241010113932.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 3.png]]
 ```sql
 SELECT 주문제품, 수량, 주문일자, 주문고객 
 FROM 주문 
 WHERE 주문고객='apple' OR 수량>=15;
 ```
-![](../../../../image/Pasted%20image%2020241010114055.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 4.png]]
 ```sql
 SELECT 제품명, 단가, 제조업체 FROM 제품 WHERE 단가>=2000 AND 단가<=3000;
 ```
@@ -304,15 +308,15 @@ SELECT 제품명, 단가, 제조업체 FROM 제품 WHERE 단가>=2000 AND 단가
 	- LIKE 키워드를 이용해 **부분적으로 일치하는 데이터** 검색 
 	- 문자열을 이용하는 조건에만 LIKE 키워드 사용 가능
 
-![](../../../../image/Pasted%20image%2020241014163042.png)
-![](../../../../image/Pasted%20image%2020241014163024.png)
-![](../../../../image/Pasted%20image%2020241015155755.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 6.png]]
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 5.png]]
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 8.png]]
 ```sql
 SELECT 고객이름, 나이, 등급, 적립금
 FROM 고객
 WHERE 고객이름 LIKE '김%';
 ```
-![](../../../../image/Pasted%20image%2020241015155857.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 9.png]]
 ```SQL
 SELECT 고객아이디, 고객이름, 등급
 FROM 고객
@@ -325,13 +329,13 @@ WHERE 고객아이디 LIKE '_____'; /* Access 에서는 '?????'
 	- IS NOT NULL 키워드를 이용해 특정 속성의 값이 널 값이 아닌지를 비교 
 	- 검색 조건에서 널 값은 다른 값과 크기를 비교하면 결과가 모두 거짓이 됨
 
-![](../../../../image/Pasted%20image%2020241015160037.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 10.png]]
 ```SQL
 SELECT 고객이름
 FROM 고객
 WHERE 나이 IS NULL;
 ```
-![](../../../../image/Pasted%20image%2020241015160113.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 11.png]]
 ```SQL
 SELECT 고객이름
 FROM 고객
@@ -351,13 +355,13 @@ FROM 테이블_리스트
 		-  널 값은 오름차순에서는 맨 마지막에 출력되고, 내림차순에서는 맨 먼저 출력됨 
 		-  여러 기준에 따라 정렬하려면 정렬 기준이 되는 속성들을 차례대로 제시
 
-![](../../../../image/Pasted%20image%2020241015160255.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 12.png]]
 ```SQL
 SELECT 고객이름, 등급, 나이
 FROM 고객
 ORDER BY 나이 DESC; /* DESC : 내림차순 */
 ```
-![](../../../../image/Pasted%20image%2020241015160349.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 13.png]]
 ```SQL
 SELECT 주문고객, 주문제품, 수량, 주문일자
 FROM 주문
@@ -366,23 +370,23 @@ ORDER BY 주문제품 ASC, 수량 DESC; /* ASC : 오름차순, DESC : 내림차�
 ```
 - P01 제품이 맨 먼저 출력되고, P03 제품 중에는 수량이 22인 제품이 먼저 출력됨됨
 ---
-![](../../../../image/Pasted%20image%2020241014165859.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 7.png]]
 - 집계 함수를 이용한 검색
 	- 집계 함수 사용 시 주의 사항 
 		- 집계 함수는 널인 속성 값은 제외하고 계산함 
 		- 집계 함수는 WHERE 절에서는 사용할 수 없고, SELECT 절이나 HAVING 절에서만 사용 가능
 
-![](../../../../image/Pasted%20image%2020241015160558.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 14.png]]
 ```SQL
 SELECT AVG(단가) FROM 제품; /* AVG : 속성 값의 평균 */
 ```
-![](../../../../image/Pasted%20image%2020241015160652.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 15.png]]
 ```SQL
 SELECT SUM(재고량) AS '재고량 합계'
 FROM 제품
 WHERE 제조업체 = '한빛제과'; /* SUM : 속성 값의 합계 , AS : 속성명 지정 */
 ```
-![](../../../../image/Pasted%20image%2020241015160833.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 16.png]]
 ```SQL
 /* 1. 고객아이디 속성을 이용해 계산하는 경우 */
 SELECT COUNT(고객아이디)  AS 고객수 FROM 고객;
@@ -394,7 +398,7 @@ SELECT COUNT(*) AS 고객수 FROM 고객;
 - 널인 속성 값은 제외하고 개수 계산
 - 정확한 개수를 계산하기 위해서는 보통 **기본키 속성이나 별을 주로 사용**
 
-![](../../../../image/Pasted%20image%2020241015161105.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 17.png]]
 ```SQL
 SELECT COUNT(DISTINCT 제조업체) AS '제조업체 수' FROM 제품;
 ```
@@ -414,7 +418,7 @@ FROM 테이블_리스트
 	- HAVING 키워드와 함께 그룹에 대한 조건 작성 가능 
 	- 그룹을 나누는 기준이 되는 속성을 SELECT 절에도 작성하는 것이 좋음
 
-![](../../../../image/Pasted%20image%2020241015161222.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 18.png]]
 ```SQL
 SELECT 주문제품, SUM(수량) AS 총주문수량
 FROM 주문
@@ -423,13 +427,13 @@ GROUP BY 주문제품;
 - 그룹을 나누는 기준이 되는 '주문제품' 속성을 SELECT 절에도 작성하는 것이 좋음
 - 동일 제품을 주문한 투플을 모아 그룹으로 만들고, 그룹별로 수량의 합계를 계산
 
-![](../../../../image/Pasted%20image%2020241015162146.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 19.png]]
 ```SQL
 SELECT 제조업체, COUNT(*) AS 제품수, MAX(단가) AS 최고가
 FROM 제품
 GROUP BY 제조업체;
 ```
-![](../../../../image/Pasted%20image%2020241015162306.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 20.png]]
 ```SQL
 SELECT 제조업체, COUNT(*) AS 제품수, MAX(단가) AS 최고가
 FROM 제품
@@ -437,13 +441,13 @@ GROUP BY 제조업체 HAVING COUNT(*) >= 3;
 ```
 - 집계 함수를 이용한 조건은 WHERE 절에는 작성할 수 없고, HAVING 절에서 작성 가능
 
-![](../../../../image/Pasted%20image%2020241015162438.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 21.png]]
 ```SQL
 SELECT 등급, COUNT(*) AS 고객수, AVG(적립금) AS 평균적립금
 FROM 고객
 GROUP BY 등급 HAVING AVG(적립금) >= 1000;
 ```
-![](../../../../image/Pasted%20image%2020241015162538.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 22.png]]
 ```SQL
 SELECT 주문제품, 주문고객, SUM(수량) AS 총주문수량
 FROM 주문
@@ -468,13 +472,13 @@ FROM 테이블1 INNER JOIN 테이블2 ON 조인조건
 [ WHERE 검색조건 ]
 ```
 
-![](../../../../image/Pasted%20image%2020241015162656.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 23.png]]
 ```SQL
 SELECT 제품.제품명
 FROM 제품, 주문
 WHERE 주문.주문고객 ='banana' AND 제품.제품번호 = 주문.주문제품;
 ```
-![](../../../../image/Pasted%20image%2020241015162841.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 24.png]]
 ```SQL
 SELECT 주문.주문제품, 주문.주문일자
 FROM 고객, 주문
@@ -486,7 +490,7 @@ WHERE c.나이 >= 30 AND c.고객아이디 = o.주문고객;
 ```
 - FROM 절에서 테이블의 이름을 대신하는 단순한 별명을 제시하여 질의문을 작성하는 것도 좋음
 
-![](../../../../image/Pasted%20image%2020241015163302.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 25.png]]
 ```SQL
 SELECT 제품.제품명
 FROM 고객, 제품, 주문
@@ -508,7 +512,7 @@ FROM 테이블1 LEFT; RIGHT; FULL OUTER JOIN 테이블2 ON 조인조건
 		- 왼쪽 외부 조인, 오른쪽 외부 조인, 완전 외부 조인
 
 ---
-![](../../../../image/Pasted%20image%2020241017103926.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 26.png]]
 - 부속 질의문을 이용한 검색
 	- SELECT 문 안에 또 다른 SELECT 문을 포함하는 **질의**
 		- 상위 질의문(주 질의문): 다른 SELECT 문을 포함하는 SELECT 문 
@@ -521,7 +525,7 @@ FROM 테이블1 LEFT; RIGHT; FULL OUTER JOIN 테이블2 ON 조인조건
 		- 단일 행 부속 질의문은 비교 연산자(=, <>, >, >=, <, <=) 사용 가능 
 		- 다중 행 부속 질의문은 비교 연산자 사용 불가
 
-![](../../../../image/Pasted%20image%2020241017103944.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 27.png]]
 ```sql
 SELECT 제품명, 단가
 FROM 제품
@@ -530,7 +534,7 @@ WHERE 제조업체 = (SELECT 제조업체 FROM 제품 WHERE 제품명 ='달콤�
 ```
 - ‘달콤비스킷’의 제조업체는 ‘한빛제과’만 존재 → **단일 행 부속 질의문 (비교 연산자 = 이용)**
 
-![](../../../../image/Pasted%20image%2020241017104135.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 28.png]]
 ```SQL
 SELECT 고객이름, 적립금
 FROM 고객
@@ -538,7 +542,7 @@ WHERE 적립금 = (SELECT MAX(적립금) FROM 고객);
 ```
 - 최대 적립금은 단일 값이므로 단일 행 부속 질의문 **(비교 연산자 = 이용)**
 
-![](../../../../image/Pasted%20image%2020241017104237.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 29.png]]
 ```SQL
 SELECT 제품명, 제조업체
 FROM 제품
@@ -546,7 +550,7 @@ WHERE 제품번호 IN (SELECT 주문제품 FROM 주문 WHERE 주문고객 ='bana
 ```
 - ‘banana’ 고객이 주문한 제품은 여러 개이므로 → **다중 행 부속 질의문 (IN 연산자 이용)**
 
-![](../../../../image/Pasted%20image%2020241017104504.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 30.png]]
 ```SQL
 SELECT 제품명, 제조업체
 FROM 제품
@@ -554,7 +558,7 @@ WHERE 제품번호 NOT IN (SELECT 주문제품 FROM 주문 WHERE 주문고객 ='
 ```
 - 부속 질의문의 결과 값 중에서 일치하는 것이 없어야 조건이 참이 되는 **NOT IN** 연산자 이용
 
-![](../../../../image/Pasted%20image%2020241017105135.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 31.png]]
 ```SQL
 SELECT 제품명, 단가, 제조업체
 FROM 제품
@@ -564,7 +568,7 @@ WHERE 단가 > ANY (SELECT 단가 FROM 제품 WHERE 제조업체='대한식품')
 ```
 - 대한식품이 제조한 제품은 단가가 4,500원인 그냥만두와 1,200원인 얼큰라면
 
-![](../../../../image/Pasted%20image%2020241017105753.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 32.png]]
 ```SQL
 SELECT 고객이름
 FROM 고객
@@ -590,7 +594,7 @@ VALUES (속성값_리스트);
 	- VALUES 키워드와 함께 삽입할 속성 값들을 나열 
 	- **INTO 절의 속성 이름과 VALUES 절의 값은 순서대로 일대일 대응되어야 함**
 
-![](../../../../image/Pasted%20image%2020241017110724.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 삽입 INSERT 문.png]]
 ```SQL
 INSERT
 INTO 고객(고객아이디, 고객이름, 나이, 등급, 직업, 적립금)
@@ -601,7 +605,7 @@ INTO 고객
 VALUES ('strawberry', '최유경', 30, 'vip', '공무원', 100);
 ```
 
-![](../../../../image/Pasted%20image%2020241017111052.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 삽입 INSERT 문 2.png]]
 ```SQL
 INSERT 
 INTO 고객(고객아이디, 고객이름, 나이, 등급, 적립금)
@@ -650,20 +654,20 @@ SET 속성_이름1 = 값1, ...
 - WHERE 절에 제시된 조건을 만족하는 투플만 속성 값을 수정 
 	- WHERE 절을 생략하면 테이블에 존재하는 모든 투플을 대상으로 수정
 
-![](../../../../image/Pasted%20image%2020241017133217.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문.png]]
 ```sql
 UPDATE 제품
 SET 제품명='통큰파이'
 WHERE 제품번호='p03';
 ```
 
-![](../../../../image/Pasted%20image%2020241017133337.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문 2.png]]
 ```SQL
 UPDATE 제품
 SET 단가 = 단가 *1.1;
 ```
 
-![](../../../../image/Pasted%20image%2020241017133416.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문 3.png]]
 ```SQL
 UPDATE 주문 
 SET 수량 = 5
@@ -681,14 +685,14 @@ FROM 테이블_이름
 - WHERE 절에 제시한 조건을 만족하는 투플만 삭제 
 	- WHERE 절을 생략하면 테이블에 존재하는 모든 투플을 삭제해 빈 테이블이 됨
 
-![](../../../../image/Pasted%20image%2020241017133525.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억.png]]
 ```SQL
 DELETE
 FROM 주문
 WHERE 주문일자='2022-05-22';
 ```
 
-![](../../../../image/Pasted%20image%2020241017133607.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억 2.png]]
 ```SQL
 DELETE
 FROM 주문
@@ -696,7 +700,7 @@ WHERE 주문고객 IN (SELECT 고객아이디 FROM 고객 WHERE 고객이름='�
 ```
 - 부속 질의문을 포함한 DELETE 문
 
-![](../../../../image/Pasted%20image%2020241017133703.png)
+![[database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억 3.png]]
 ```SQL
 DELETE
 FROM 주문;

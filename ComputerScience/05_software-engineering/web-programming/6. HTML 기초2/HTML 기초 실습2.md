@@ -3,6 +3,10 @@ aliases: []
 course: web-programming
 created: '2024-05-17'
 date: '2024-05-17'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -26,7 +30,7 @@ related:: [[ComputerScience/05_software-engineering/web-programming/1. HTML 기�
 kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/웹 프로그래밍 근거 인덱스|웹 프로그래밍 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 ---
@@ -69,7 +73,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
              <td>2행 3열
     </table>
 ```
-![](../../../../image/Pasted%20image%2020240610170328.png)
+![[web-programming__HTML 기초 실습2__HTML 표 실습 2.png]]
 -  **rowspan**
 	- 행을 합치는 방법입니다.
 	- 예시:
@@ -82,7 +86,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
              <td>2행 3열
     </table>
 ```
-![](../../../../image/Pasted%20image%2020240610170137.png)
+![[web-programming__HTML 기초 실습2__HTML 표 실습.png]]
 
 ### HTML `input` 태그의 `type` 속성: `range`와 `number`
 
@@ -163,7 +167,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 | `disabled`  | 폼 요소가 비활성화되어 사용자가 상호작용할 수 없음을 지정. 폼 제출 시 전송되지 않음.                   | `<input>`, `<textarea>`, `<select>`, `<button>`, `<fieldset>`, `<option>`, `<optgroup>`                     |
 
 ---
-![](../../../../image/Pasted%20image%2020240610170610.png)
+![[web-programming__HTML 기초 실습2__disabled.png]]
 
 ```html
 <!DOCTYPE html>

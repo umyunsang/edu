@@ -3,6 +3,10 @@ aliases: []
 course: operating-systems
 created: '2024-10-07'
 date: '2024-10-07'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -103,7 +107,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 #### 선점 스케줄링과 비선점 스케줄링
 
-![](../../../../image/Pasted%20image%2020241007095445.png)
+![[operating-systems__CPU 스케줄링__선점 스케줄링과 비선점 스케줄링.png]]
 #### 기아와 에이징
 
 ## 3. CPU 스케줄링 알고리즘
@@ -123,7 +127,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- **호위 효과(convoy effect) 발생** 
 		- 긴 스레드가 CPU를 오래 사용하면, 늦게 도착한 짧은 스레드 오래 대기
 
-![](../../../../image/Pasted%20image%2020241007100617.png)
+![[operating-systems__CPU 스케줄링__FCFS(First Come First Served)(비선점 스케줄링.png]]
 #### Shortest Job First(SJF; 비선점 스케줄링)
 **가장 짧은 스레드 우선 처리**
 - 알고리즘 
@@ -142,7 +146,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 문제점 
 	- 실행 시간의 **예측이 불가능**하므로 현실에서는 거의 사용되지 않음
 
-![](../../../../image/Pasted%20image%2020241012121203.png)
+![[operating-systems__CPU 스케줄링__Shortest Job First(SJF; 비선점 스케줄링.png]]
 
 #### Shortest Remaining Time First(SRTF; 선점 스케줄링) 
 **남은 시간이 짧은 스레드가 준비 큐에 들어오면 이를 우선 처리**
@@ -163,7 +167,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 문제점 
 	- 실행 시간 예측이 불가능하므로 현실에서는 거의 사용되지 않음
 
-![](../../../../image/Pasted%20image%2020241012122320.png)
+![[operating-systems__CPU 스케줄링__Shortest Remaining Time First(SRTF; 선점 스케줄링.png]]
 #### ==Round-Robin(RR; 선점 스케줄링)==
 스레드들을 돌아가면서 할당된 시간(타임 슬라이스)만큼 실행
 - 알고리즘 
@@ -181,9 +185,9 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 잦은 스케줄링으로 전체 스케줄링 오버헤드 큼. 특히 타임 슬라이스가 작을 때 더욱 큼 
 	- 균형된 처리율 : **타임슬라이스가 크면 FCFS에 가까움, 적으면 SJF/SRTF에 가까움** 늦게 도착한 짧은 스레드는 FCFS보다 빨리 완료되고, 긴 스레드는 SJF보다 빨리 완료됨
 - 타임 슬라이스 = 1ms 일 때
-	![](../../../../image/Pasted%20image%2020241012123755.png)
+	![[operating-systems__CPU 스케줄링__Round-Robin(RR; 선점 스케줄링.png]]
 - 타임 슬라이스 = 2ms 일 때
-	![](../../../../image/Pasted%20image%2020241012123828.png)
+	![[operating-systems__CPU 스케줄링__Round-Robin(RR; 선점 스케줄링) 2.png]]
 
 #### Priority Scheduling(ready Queue 1개)
 우선 순위를 기반으로 하는 스케줄링. 가장 높은 순위의 스레드 먼저 실행
@@ -230,7 +234,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 예) 전체 스레드를 백그라운드 스레드와 포그라운드 스레드의 2개의 그룹으로 구성 
 	- 예) 시스템 스레드, 대화식 스레드, 배치 스레드 등 3개의 레벨로 나누고 시스템 스레드를 우선적으로 스케줄링
 
-![](../../../../image/Pasted%20image%2020241012125223.png)
+![[operating-systems__CPU 스케줄링__Multilevel queue scheduling(MLQ; ready queu.png]]
 
 #### Multilevel feedback queue scheduling(MLFQ; 선점/비선점 스케줄링 둘 다 구현 가능)
 큐만 n개의 우선순위 레벨을 둠. 스레드는 동일한 우선순위 
@@ -261,13 +265,13 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 성능 이슈 
 	- 짧거나 입출력이 빈번한 스레드, 혹은 대화식 스레드를 높은 레벨의 큐에서 빨리 실행 -> CPU 활용률이 높음
 
-![](../../../../image/Pasted%20image%2020241012125429.png)
+![[operating-systems__CPU 스케줄링__Multilevel feedback queue scheduling(MLFQ.png]]
 
 ---
 ## 실전 스케줄링 사례
 
-![](../../../../image/Pasted%20image%2020241012130824.png)
-![](../../../../image/Pasted%20image%2020241012132530.png)
+![[operating-systems__CPU 스케줄링__실전 스케줄링 사례.png]]
+![[operating-systems__CPU 스케줄링__실전 스케줄링 사례 2.png]]
 
 ## 4. 멀티 코어 cpu에서의 스케줄링
 - 멀티코어 시스템에서 싱글 코어 CPU 스케줄링을 사용할 때 문제점 

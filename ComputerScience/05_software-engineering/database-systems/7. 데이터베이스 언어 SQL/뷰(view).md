@@ -3,6 +3,10 @@ aliases: []
 course: database-systems
 created: '2024-10-28'
 date: '2024-10-28'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -53,7 +57,7 @@ AS SELECT 문
 - WITH CHECK OPTION 
 	- 뷰에 삽입이나 수정 연산을 할 때 **SELECT 문에서 제시한 뷰의 정의 조건을 위반하면 수행되지 않도록 하는 제약조건을 지정**
 
-![](../../../../image/Pasted%20image%2020241028163957.png)
+![[database-systems__뷰(view__뷰 생성 CREATE VIEW 문.png]]
 ```SQL
 CREATE VIEW 우수고객(고객아이디, 고객이름, 나이, 등급)
 AS SELECT 고객아이디, 고객이름, 나이, 등급
@@ -70,7 +74,7 @@ WITH CHECK OPTION;
 ```
 - 뷰가 생성된 후에 우수고객 뷰에 ‘vip’ 등급이 아닌 고객 데이터를 삽입하거나 뷰의 정의 조건을 위반하는 수정 및 삭제 연산을 시도하면 실행을 거부함 (WITH CHECK OPTION 때문)
 
-![](../../../../image/Pasted%20image%2020241028164210.png)
+![[database-systems__뷰(view__뷰 생성 CREATE VIEW 문 2.png]]
 ```SQL
 CREATE VIEW 업체별제품수(제조업체, 제품수)
 AS SELECT 제조업체, COUNT(*)
@@ -85,7 +89,7 @@ WITH CHECK OPTION;
 	- 뷰에 대한 SELECT 문이 내부적으로는 기본 테이블에 대한 SELECT 문으로 변환되어 수행
 - **검색 연산은 모든 뷰에 수행 가능**
 
-![](../../../../image/Pasted%20image%2020241028164652.png)
+![[database-systems__뷰(view__뷰 활용 SELECT 문.png]]
 ```SQL
 SELECT * FROM 우수고객 WHERE 나이>=20;
 ```

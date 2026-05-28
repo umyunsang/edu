@@ -3,13 +3,17 @@ aliases: []
 course: generative-ai-fine-tuning
 created: '2025-09-19'
 date: '2025-09-19'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: elective
 source: ''
 status: seedling
 tags:
 - meta/extracurricular
 - type/lecture
-title: 'Civitai LoRA 실내공간 스타일 생성 과제'
+title: Civitai LoRA 실내공간 스타일 생성 과제
 type: lecture
 updated: '2026-05-05'
 ---
@@ -29,16 +33,16 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generati
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
 
 2번
-![[Pasted image 20250919125449.png]]
+![[generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__Nate ey ep.png]]
 
-![[Pasted image 20250919125003.png]]
+![[generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__CIVITRI! BO Mode.png]]
 
 https://civitai.com/models/1928143/dpindoor-scene-designliving-room-style-generation
 
 ---
 3번
 
-![[Pasted image 20250919125509.png]]
-![[Pasted image 20250919125320.png]]
+![[generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__Mia ace Ss.png]]
+![[generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__T ivitai 2144 Sc.png]]
 
 https://civitai.com/models/558341/the-simpsons-living-room-pony-xl

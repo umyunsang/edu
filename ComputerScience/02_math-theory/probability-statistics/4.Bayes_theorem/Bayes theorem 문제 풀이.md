@@ -3,6 +3,10 @@ aliases: []
 course: probability-statistics
 created: '2026-03-19'
 date: '2026-03-19'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - math/probability
 - math/statistics
 - type/lecture
-title: 'Bayes theorem 문제 풀이'
+title: Bayes theorem 문제 풀이
 type: lecture
 updated: '2026-05-05'
 ---

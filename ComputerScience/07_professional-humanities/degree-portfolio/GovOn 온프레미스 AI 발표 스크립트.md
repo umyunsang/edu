@@ -3,12 +3,16 @@ aliases: []
 course: degree-portfolio
 created: '2026-03-30'
 date: '2026-03-30'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: extracurricular
 source: ''
 status: seedling
 tags:
 - type/lecture
-title: 'GovOn 온프레미스 AI 발표 스크립트'
+title: GovOn 온프레미스 AI 발표 스크립트
 type: lecture
 updated: '2026-05-05'
 ---

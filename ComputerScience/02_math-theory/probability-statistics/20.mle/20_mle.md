@@ -3,6 +3,10 @@ aliases: []
 course: probability-statistics
 created: '2026-03-19'
 date: '2026-03-19'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -89,8 +93,8 @@ $$
 
 결국, MLE 추정값은 단순히 샘플 평균이 됩니다.
 
-![[Pasted image 20240610113804.png]]
-![[Pasted image 20240610113836.png]]
+![[probability-statistics__20_mle__Maximum Likelihood with Bernoulli.png]]
+![[probability-statistics__20_mle__Maximum Likelihood with Bernoulli 2.png]]
 
 ### Maximum Likelihood with Normal
 

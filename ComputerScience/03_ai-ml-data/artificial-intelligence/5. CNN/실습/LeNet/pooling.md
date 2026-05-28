@@ -3,6 +3,10 @@ aliases: []
 course: artificial-intelligence
 created: '2024-05-25'
 date: '2024-05-25'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -34,7 +38,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ` 1. Pooling layer 변경: Average pooling -> Max pooling
 ` 2. Convolutional layer channel 개수 변경: 6 -> 32, 64`
 
-![](../../../../../../image/Pasted%20image%2020240527185047.png)
+![[artificial-intelligence__CNN 모델 정의__32x32x3.png]]
 
 ```python
 

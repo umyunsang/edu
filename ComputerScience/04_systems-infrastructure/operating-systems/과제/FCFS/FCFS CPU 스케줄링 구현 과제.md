@@ -3,13 +3,17 @@ aliases: []
 course: operating-systems
 created: '2024-12-01'
 date: '2024-12-01'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
 tags:
 - cs/systems
 - type/project
-title: 'FCFS CPU 스케줄링 구현 과제'
+title: FCFS CPU 스케줄링 구현 과제
 type: project
 updated: '2026-05-05'
 ---

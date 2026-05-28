@@ -3,6 +3,10 @@ aliases: []
 course: web-programming
 created: '2024-05-29'
 date: '2024-05-29'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - cs/se
 - skill/javascript
 - type/lecture
-title: 'HTML 기초2 문제 풀이'
+title: HTML 기초2 문제 풀이
 type: lecture
 updated: '2026-05-05'
 ---
@@ -26,11 +30,11 @@ related:: [[ComputerScience/05_software-engineering/web-programming/7. 웹 시�
 kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/웹 프로그래밍 근거 인덱스|웹 프로그래밍 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/a href|a href]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/a href|a href]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 ---
-![](../../../../image/Pasted%20image%2020240529124723.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 1 diary. him BH SE AAAS Berd Sera.png]]
 
 ```html
 <body>
@@ -46,7 +50,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529125052.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 2 diaryPopup.himial4 SH 2 1S Sees.png]]
 
 ```html
     <script th:inline="javascript">
@@ -56,7 +60,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529125220.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 3 YM BS MAA diaryList.htmiS esta a.png]]
 
 ```html
     <div align="center">
@@ -77,7 +81,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529125604.png)
+![[web-programming__HTML 기초2 문제 풀이__Quize4 BA noe HE SUSHSS HAD TY.png]]
 
 ```sql
 drop table if exists diary;
@@ -92,7 +96,7 @@ insert into diary (je, nae, wdate) values ('test', 'hello, world!', now());
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529130036.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 5 PALE WAN diarjava S 7tria.png]]
 
 ```java
 package com.web.p5;
@@ -117,7 +121,7 @@ public class Diary {
 	`이 어노테이션은 새로운 데이터를 만들 때 자동으로 그 시간을 저장합니다. 우리는 이 어노테이션을 사용하여 새로운 일기를 작성할 때의 시간을 wdate 필드에 저장할 수 있습니다. 그러면 우리는 직접 시간을 설정할 필요 없이 자동으로 현재 시간이 기록됩니다.`
 
 ---
-![](../../../../image/Pasted%20image%2020240529130531.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 6 BYYSS MAAN diaryRepjava S UGtNA.png]]
 ```java
 package com.web.p5;
 
@@ -134,7 +138,7 @@ public interface diaryRep extends JpaRepository<diary, Integer> {
 
 ---
 
-![](../../../../image/Pasted%20image%2020240529131722.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 7 diaryControllerjava AM HAYS Sau.png]]
 
 ```java
 package com.web.p5;
@@ -177,7 +181,7 @@ public class DiaryController {
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529160524.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 8 SBA at SS ee ta) ASB HH WSS Y.png]]
 
 ```html
 <style>
@@ -186,7 +190,7 @@ body {background-image:url("/fower.jpg");background-size : cover;}
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529160830.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 9 SBA sqittS Ai crest el YAtraA. F.png]]
 
 ```sql
 drop table if exists survey;
@@ -200,7 +204,7 @@ create table survey (
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529160946.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 10 SBA survey.javaS Att.png]]
 
 ```java
 package com.web.p5;
@@ -218,7 +222,7 @@ public class survey {
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529161045.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 1 922A surveyRep java AYtrAl Ll.png]]
 
 ```java
 package com.web.p5;
@@ -228,7 +232,7 @@ public interface surveyRep extends JpaRepository<survey, Integer> {
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240529161140.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 12 922+ surveyContrillerjaval SH A.png]]
 
 ```java
 @GetMapping("/survery5")
@@ -268,7 +272,7 @@ public String survery5(HttpSession se, Model mo) {
    세션에 저장되거나 모델에 넣을 때 사용되는 데이터의 데이터 타입은 모두 Object입니다. 이는 자바에서 다형성(polymorphism)을 지원하기 위한 것으로, 모든 클래스는 Object 클래스를 상속받기 때문입니다. 따라서 어떤 종류의 데이터도 세션이나 모델에 넣을 수 있습니다. 하지만 이를 사용할 때는 형변환을 통해 원하는 데이터 타입으로 변환해야 합니다.
 
 ---
-![](../../../../image/Pasted%20image%2020240529161415.png)
+![[web-programming__HTML 기초2 문제 풀이__Quiz 13 9-24t surveyContrillerjaval 6H™.png]]
 
 ```java
 @GetMapping("/survey/list")

@@ -3,13 +3,17 @@ aliases: []
 course: python-programming
 created: '2024-05-23'
 date: '2024-05-23'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
 tags:
 - skill/python
 - type/lecture
-title: '프로그래머스 Python 기초 문제 11-20'
+title: 프로그래머스 Python 기초 문제 11-20
 type: lecture
 updated: '2026-05-05'
 ---
@@ -29,7 +33,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/python-p
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
-![[Pasted image 20240523165241.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__A 11. HAlztea BA7.png]]
 ```python
 # 정수 n, m이 주어졌을 때  
 # 가로 n x 세로 m 의 형태로  
@@ -42,7 +46,7 @@ solution(5, 3)
 ```
 
 ---
-![[Pasted image 20240523165301.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__직사각형 모양의 ' '을 출력.png]]
 ```python
 # 문자열 s를 입력받아 가운데 글자를 출력  
 # s의 길이가 홀수면 가운데 글자 하나만 반환  
@@ -62,7 +66,7 @@ print(solution(s))
 ```
 
 ---
-![[Pasted image 20240523165322.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__짝수면 가운데 글자 2개를 반환.png]]
 ```python
 # 두 행렬의 합  
 def solution(arr1, arr2):  
@@ -94,7 +98,7 @@ print(solution(arr1, arr2))
 ```
 
 ---
-![[Pasted image 20240523165343.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__두 행렬의 합.png]]
 ```python
 # a와 b의 내적(Inner product) -> AI분야에서 딥러닝의 핵심 연산  
 #                              컨벌루션(Convolution) - Convolutional Neural Networks  
@@ -120,7 +124,7 @@ print(solution(a, b))
 ```
 
 ---
-![[Pasted image 20240523165404.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__각 위치의 요소들의 곱을 합한 것.png]]
 ```python
 # 문자열 s의 길이가 4 혹은 6# 숫자로만 구성돼있는지 확인  
   
@@ -140,7 +144,7 @@ print(solution(s))
 ```
 
 ---
-![[Pasted image 20240523165427.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__문자열 s의 길이가 4 혹은 6 숫자로만 구성.png]]
 ```python
 # 연속적으로 나타나는 같은 숫자 제거  
   
@@ -167,7 +171,7 @@ print(solution(arr))
 ```
 
 ---
-![[Pasted image 20240523165452.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__arr len(arr)-2 arr len.png]]
 ```python
 # 각 단어의 짝수번째 인덱스 문자를 대문자  
 #          홀수번째 인덱스 문자를 소문자  
@@ -194,19 +198,19 @@ print(solution(s))
 ```
 
 ---
-![[Pasted image 20240523165513.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__홀수번째 인덱스 문자를 소문자.png]]
 ```python
 
 ```
 
 ---
-![[Pasted image 20240523165536.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__홀수번째 인덱스 문자를 소문자 2.png]]
 ```python
 
 ```
 
 ---
-![[Pasted image 20240523165605.png]]
+![[python-programming__프로그래머스 Python 기초 문제 11-20__홀수번째 인덱스 문자를 소문자 3.png]]
 ```python
 
 ```

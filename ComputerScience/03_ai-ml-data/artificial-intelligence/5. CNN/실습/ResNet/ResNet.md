@@ -3,6 +3,10 @@ aliases: []
 course: artificial-intelligence
 created: '2024-05-27'
 date: '2024-05-27'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -31,7 +35,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/artifici
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]]
 
 ---
-![](../../../../../../image/Pasted%20image%2020240604143441.png)
+![[artificial-intelligence__Training dataset 다운로드__32x32x3.png]]
 ### ResNet 모듈
 
 ```python

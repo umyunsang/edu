@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 88
+kg_layer_label: L3 evidence
+kg_level: 3
+kg_role: evidence-index
 semester: meta
 source: ''
 status: evergreen
@@ -38,18 +42,18 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/generati
 
 ## Media and attachments
 
-- [[image/Pasted image 20250919125449.png]]
-- [[image/Pasted image 20250919125003.png]]
-- [[image/Pasted image 20250919125509.png]]
-- [[image/Pasted image 20250919125320.png]]
-- [[image/Pasted image 20250912120731.png]]
+- [[image/generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__Nate ey ep.png]]
+- [[image/generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__CIVITRI! BO Mode.png]]
+- [[image/generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__Mia ace Ss.png]]
+- [[image/generative-ai-fine-tuning__Civitai LoRA 실내공간 스타일 생성 과제__T ivitai 2144 Sc.png]]
+- [[image/generative-ai-fine-tuning__생성형 AI 이미지 스타일 변환 과제__1) 사진찍어서 + 스타일 적용 그래픽.png]]
 - [[image/ChatGPT Image 2025년 9월 12일 오후 12_05_36.png]]
 - [[image/ChatGPT Image 2025년 9월 12일 오후 12_17_56.png]]
-- [[image/Pasted image 20250912123819.png]]
-- [[image/Pasted image 20250912121713.png]]
+- [[image/generative-ai-fine-tuning__생성형 AI 이미지 스타일 변환 과제__3) 옷을 바꾸어 입히기.png]]
+- [[image/generative-ai-fine-tuning__생성형 AI 이미지 스타일 변환 과제__4) 카카오톡 이모티콘으로 만들기.png]]
 - [[image/IMG_1555.jpg]]
-- [[image/Pasted image 20250919185534.png]]
-- [[image/Pasted image 20250919190047.png]]
-- [[image/Pasted image 20250919190544.png]]
-- [[image/Pasted image 20250919191005.png]]
-- [[image/Pasted image 20250919191502.png]]
+- [[image/generative-ai-fine-tuning__소감문 작성__2-1. paintit.ai.png]]
+- [[image/generative-ai-fine-tuning__소감문 작성__2-2. reroom.ai.png]]
+- [[image/generative-ai-fine-tuning__소감문 작성__2-3. mnml.ai.png]]
+- [[image/generative-ai-fine-tuning__소감문 작성__2-4. luw.ai.png]]
+- [[image/generative-ai-fine-tuning__소감문 작성__2-5. instantinteriorai.com.png]]

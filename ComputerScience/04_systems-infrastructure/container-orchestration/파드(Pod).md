@@ -3,6 +3,10 @@ aliases: []
 course: container-orchestration
 created: '2025-01-15'
 date: '2025-01-15'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: elective
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - cs/devops
 - skill/docker
 - type/lecture
-title: '파드(Pod)'
+title: 파드(Pod)
 type: lecture
 updated: '2026-05-05'
 ---

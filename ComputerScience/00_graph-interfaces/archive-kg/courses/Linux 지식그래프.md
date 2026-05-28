@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 96
+kg_layer_label: L3 course profile
+kg_level: 3
+kg_role: course-profile
 semester: meta
 source: ''
 status: evergreen
@@ -32,7 +36,7 @@ Linux 과목/활동의 로컬 노트, PDF, 코드/산출물을 2026 GraphRAG 아
 - Markdown notes: 11
 - PDFs: 16
 - Code/artifacts: 0
-- Media/attachments: 39
+- Media/attachments: 1
 
 ## 핵심 개념
 
@@ -88,23 +92,4 @@ Linux 과목/활동의 로컬 노트, PDF, 코드/산출물을 2026 GraphRAG 아
 
 ## 대표 미디어/첨부
 
-- [[image/Pasted image 20241227114942.png]]
-- [[image/Pasted image 20241227114848.png]]
-- [[image/Pasted image 20241227114920.png]]
-- [[image/Pasted image 20250103131354.png]]
-- [[image/Pasted image 20250103131418.png]]
-- [[image/Pasted image 20250103131441.png]]
-- [[image/Pasted image 20241227114705.png]]
-- [[image/Pasted image 20241227114728.png]]
-- [[image/Pasted image 20250103131514.png]]
-- [[image/Pasted image 20250103131530.png]]
-- [[image/Pasted image 20250113120838.png]]
-- [[image/Pasted image 20250113123251.png]]
-- [[image/Pasted image 20250113123320.png]]
-- [[image/Pasted image 20250113123400.png]]
-- [[image/Pasted image 20241227114630.png]]
-- [[image/Pasted image 20250103132051.png]]
-- [[image/Pasted image 20250103132315.png]]
-- [[image/Pasted image 20250103132339.png]]
-- [[image/Pasted image 20241227120913.png]]
-- [[image/Pasted image 20241227121345.png]]
+- [[image/linux__1. 리눅스의 기본__출력 관련 명령.png]]

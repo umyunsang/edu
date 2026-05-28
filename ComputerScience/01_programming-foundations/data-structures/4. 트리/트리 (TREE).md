@@ -3,6 +3,10 @@ aliases: []
 course: data-structures
 created: '2024-05-11'
 date: '2024-05-11'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -33,12 +37,12 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 트리는 나무 모양의 자료구조 
 	- 계층적인 관계를 가진 자료의 표현에 매우 유용 
 	- 비선형 자료구조, 계층구조 
-	![](../../../../image/Pasted%20image%2020240511132732.png)
+	![[data-structures__트리 (TREE__트리(TREE) 정의.png]]
 - 활용 예시: 운영체제의 파일시스템, 탐색 트리, 우선순위 큐, 결정 트리 등
 
 #### 트리(TREE) 관련 용어
 
-![](../../../../image/Pasted%20image%2020240511132912.png)
+![[data-structures__트리 (TREE__트리(TREE) 관련 용어.png]]
 
 | 용어     | 내용                                                        |
 | ------ | --------------------------------------------------------- |
@@ -57,16 +61,16 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 중첩된 집합
 	- 중첩된 괄호
 	- 들여쓰기 (indentation)
-	![](../../../../image/Pasted%20image%2020240511133126.png)
+	![[data-structures__트리 (TREE__트리(TREE) 표기 방법.png]]
 
 #### 트리(TREE) 표현법
 - 방법1 : N-링크표현
 	- 자식의 개수에 제한이 없는 트리 (genderal TREE)
-		![](../../../../image/Pasted%20image%2020240511133321.png)
+		![[data-structures__트리 (TREE__트리(TREE) 표현법.png]]
 
 - 방법2: 왼쪽 자식 – 오른쪽 형제
 
-	![](../../../../image/Pasted%20image%2020240511133507.png)
+	![[data-structures__트리 (TREE__트리(TREE) 표현법 2.png]]
 
 #### 이진 트리 (Binary TREE)
 - 모든 노드가 최대 2개의 자식만을 가질 수 있는 트리
@@ -83,7 +87,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 #### 이진 트리 (Binary TREE) 종류
 
-![](../../../../image/Pasted%20image%2020240511133810.png)
+![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류.png]]
 
 - 포화 이진 트리 (full binary tree)
 	- 트리의 각 레벨에 노드가 꽉 차 있는 이진 트리
@@ -92,23 +96,23 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 마지막 레벨에서는 노드가 꽉 차 있지 않아도 되지만 중간에 빈 곳이 있으면 안 됨 
 	- “포화 이진 트리는 항상 완전 이진 트리”는 성립, “완전 이진 트리는 항상 포화 이진 트리”는 성립되지 않음
 	
-	![](../../../../image/Pasted%20image%2020240511134048.png)
+	![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류 2.png]]
 	
 - 균형 이진 트리 (balanced binary tree)
 	- 높이 균형 이진 트리 (height-balanced binary tree) 
 	- 모든 노드에서 좌우 서브 트리의 높이 차이가 1 이하인 트리를 말하며, 높이 차이가 1 초과할 경우 경사트리
 	
-	![](../../../../image/Pasted%20image%2020240511134217.png)
+	![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류 3.png]]
 
 #### 이진 트리 (Binary TREE) 와 배열 자료형의 관계
 
-![](../../../../image/Pasted%20image%2020240511134312.png)
+![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 와 배열 자료형의 관계.png]]
 
 - 이진 트리의 특성을 활용한 배열 자료형에 저장할 경우 탐색 및 활용이 용이함 
 - 배열의 첫 인덱스는 건너띄고, 두번째 인덱스 부터 저장 
 - 루트 노드부터 각 레벨로 내려오고, 각 레벨은 왼쪽에서 오른쪽으로 순차적으로 저장
 
-![](../../../../image/Pasted%20image%2020240511134458.png)
+![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 와 배열 자료형의 관계 2.png]]
 
 **Quiz**
 	문제 1. "D"의 부모 노드는? -> B
@@ -116,7 +120,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 #### 이진 트리 구현을 위한 클래스
 
-![](../../../../image/Pasted%20image%2020240511135134.png)
+![[data-structures__트리 (TREE__이진 트리 구현을 위한 클래스.png]]
 ```python
 class TreeNode:
 	def __init__(self, value, left=None, right=None):
@@ -154,7 +158,7 @@ def preorder_recursive(node):
 		preorder_recursive(node.left)
 		preorder_recursive(node.right)
 ```
-![](../../../../image/Pasted%20image%2020240511140018.png)
+![[data-structures__트리 (TREE__이진 트리 출력방법.png]]
 
 **2. 중위순회 출력 (inorder traversal) : L(left)V(root)R(right)**
 
@@ -166,7 +170,7 @@ def inorder_recursive(node):
 		inorder_recursive(node.right)
 ```
 
-![](../../../../image/Pasted%20image%2020240511140621.png)
+![[data-structures__트리 (TREE__이진 트리 출력방법 2.png]]
 
 **3. 후위순회 출력 (postorder traversal) : L(left)R(right)V(root)
 
@@ -178,7 +182,7 @@ def postorder_recursive(node):
 		print(node.value, end=' ')
 ```
 
-![](../../../../image/Pasted%20image%2020240511140823.png)
+![[data-structures__트리 (TREE__이진 트리 출력방법 3.png]]
 
 #### 전체 노드의 수 구하기
 - 왼쪽 서브 트리의 노드 수와 오른쪽 서브 트리의 노드 수의 합

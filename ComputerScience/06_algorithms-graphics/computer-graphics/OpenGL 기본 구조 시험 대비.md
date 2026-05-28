@@ -3,13 +3,17 @@ aliases: []
 course: computer-graphics
 created: '2025-10-19'
 date: '2025-10-19'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-2
 source: ''
 status: seedling
 tags:
 - cs/cv
 - type/lecture
-title: 'OpenGL 기본 구조 시험 대비'
+title: OpenGL 기본 구조 시험 대비
 type: lecture
 updated: '2026-05-05'
 ---

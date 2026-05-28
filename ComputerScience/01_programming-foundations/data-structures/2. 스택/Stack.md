@@ -3,6 +3,10 @@ aliases: []
 course: data-structures
 created: '2024-04-03'
 date: '2024-04-03'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -35,7 +39,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 ## Stack 개념
 
-![](../../../../image/Pasted%20image%2020240816180120.png)
+![[data-structures__5개의 웹 주소를 스택에 추가합니다__Stack 개념.png]]
 
 -  LIFO (Last In First Out) 또는 FILO (First In Last Out) 데이터 출입 통로가 하나인 구조 
 - "**TOP**" : 데이터 최상위 데이터 위치를 의미함. 
@@ -238,7 +242,7 @@ while True:
 	- 후위 표기 방식은 괄호없이 중위 표기 수식을 표현할 수 있음. 
 - 전위(Prefix) 표기: 연산자를 피 연산자들 앞에 두는 표기법
 
-![](../../../../image/Pasted%20image%2020240816180850.png)
+![[data-structures__5개의 웹 주소를 스택에 추가합니다__수식 중위(Infix) 표기 후위(Postfix) 표기.png]]
 
 **다음 수식을 입력 받아 후위 표기로 출력하는 코드를 작성하세요. 
 문제1. 입력 => A * ( B + C / D ) 

@@ -3,6 +3,10 @@ aliases: []
 course: open-source-software
 created: '2024-11-24'
 date: '2024-11-24'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -62,7 +66,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 입력박스를 2개 만들고 디자인은 아래 화면처럼 해주세요. (가운데 정렬, 맨 위 파란 글자, 박스 내 글자크기, 버튼 변경(색, 글자크기, 여백) 
 - 한 박스에라도 글자 입력 시에는 읽어주세요. 두 박스 모두 비면 팝업창 띄워주세요. 
 - 위 박스부터 차례대로 텍스트 읽어주세요.
-![](../../../../image/Pasted%20image%2020241124151009.png)
+![[open-source-software__TTS 요구 사항__고객님의 요구사항.png]]
 
 #### 팀장의 요구사항 
 - (1) 박스가 2개 뿐이므로 반복문 사용하지 말고 getElementById() 2번 사용해서 편하게 코딩한 소스 TTS수정후.html 

@@ -3,6 +3,10 @@ aliases: []
 course: stage-3
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 150
+kg_layer_label: L1 stage
+kg_level: 1
+kg_role: stage
 semester: meta
 source: ''
 status: evergreen

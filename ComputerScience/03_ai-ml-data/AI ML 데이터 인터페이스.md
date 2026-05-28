@@ -3,6 +3,10 @@ aliases: []
 course: ai
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 126
+kg_layer_label: L2 domain
+kg_level: 2
+kg_role: domain
 semester: meta
 source: ''
 status: evergreen

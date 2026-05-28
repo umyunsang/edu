@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -29,12 +33,12 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programm
 
 - [[ComputerScience/05_software-engineering/web-programming/1. HTML 기초/HTML 기초 실습]]
 - [[ComputerScience/05_software-engineering/web-programming/1. HTML 기초/HTML 기초 연습문제]]
+- [[ComputerScience/05_software-engineering/web-programming/2. Spring Boot 개발 환경 세팅/Spring Boot 개발 환경 세팅 확인문제]]
 - [[ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 실습]]
 - [[ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 확인문제]]
 - [[ComputerScience/05_software-engineering/web-programming/4. 쿠키와 세션/쿠키와 세션 확인문제]]
 - [[ComputerScience/05_software-engineering/web-programming/4. 쿠키와 세션/쿠키와 세션]]
 - [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/MYSQL]]
-- [[ComputerScience/05_software-engineering/web-programming/6. HTML 기초2/HTML 기초 실습2]]
 
 ## 연결 개념
 

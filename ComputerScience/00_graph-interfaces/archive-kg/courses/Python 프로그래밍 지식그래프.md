@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 96
+kg_layer_label: L3 course profile
+kg_level: 3
+kg_role: course-profile
 semester: meta
 source: ''
 status: evergreen
@@ -78,23 +82,23 @@ Python 프로그래밍 과목/활동의 로컬 노트, PDF, 코드/산출물을 
 
 ## 대표 미디어/첨부
 
-- [[image/Pasted image 20240523164527.png]]
-- [[image/Pasted image 20240523164624.png]]
-- [[image/Pasted image 20240523164700.png]]
-- [[image/Pasted image 20240523164733.png]]
-- [[image/Pasted image 20240523164804.png]]
-- [[image/Pasted image 20240523164832.png]]
-- [[image/Pasted image 20240523164858.png]]
-- [[image/Pasted image 20240523164934.png]]
-- [[image/Pasted image 20240523165007.png]]
-- [[image/Pasted image 20240523165040.png]]
-- [[image/Pasted image 20240523165241.png]]
-- [[image/Pasted image 20240523165301.png]]
-- [[image/Pasted image 20240523165322.png]]
-- [[image/Pasted image 20240523165343.png]]
-- [[image/Pasted image 20240523165404.png]]
-- [[image/Pasted image 20240523165427.png]]
-- [[image/Pasted image 20240523165452.png]]
-- [[image/Pasted image 20240523165513.png]]
-- [[image/Pasted image 20240523165536.png]]
-- [[image/Pasted image 20240523165605.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__o o A.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__갯수가 같으면 True, 아니면 False 1.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__숫자 x를 받고, x가 각 자릿수의 합으로 나누.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__숫자 n을 받아서 각 자릿수를 내림차순으로 정렬.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__2) zip 함수 각 리스트의 요소를 하나씩.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__500을 넘어서면 -1을 반환.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__a와 b의 대소관계는 정해져있지 않다.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__문자열 숫자가 주어졌을 때 맨 뒤 4자리만 남기.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__3) 나누어 떨어지는 값이 없으면( 반환 리스.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 1-10__signs의 진리값을 부호로 적용한 값의 총합.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__A 11. HAlztea BA7.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__직사각형 모양의 ' '을 출력.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__짝수면 가운데 글자 2개를 반환.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__두 행렬의 합.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__각 위치의 요소들의 곱을 합한 것.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__문자열 s의 길이가 4 혹은 6 숫자로만 구성.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__arr len(arr)-2 arr len.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__홀수번째 인덱스 문자를 소문자.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__홀수번째 인덱스 문자를 소문자 2.png]]
+- [[image/python-programming__프로그래머스 Python 기초 문제 11-20__홀수번째 인덱스 문자를 소문자 3.png]]

@@ -3,6 +3,10 @@ aliases: []
 course: artificial-intelligence
 created: '2024-04-02'
 date: '2024-04-02'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling

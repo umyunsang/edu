@@ -3,6 +3,10 @@ aliases: []
 course: open-source-software
 created: '2024-09-06'
 date: '2024-09-06'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling

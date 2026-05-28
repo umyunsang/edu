@@ -3,6 +3,10 @@ aliases: []
 course: probability-statistics
 created: '2026-03-19'
 date: '2026-03-19'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -77,15 +81,15 @@ $$\hat{y} = argmax_{y = \{0, 1\}} \left( \log P(Y = y) + \sum_{i} \log P(X_i = x
 나이브 베이즈 가정은 각 특징 $x_i$가 주어진 $y$에 대해 서로 독립적이라는 것입니다. 이 가정은 실제로는 틀릴 수 있지만, 큰 특징 공간에서 데이터를 학습하고 예측하는 데 유용합니다. 이 가정을 통해 알고리즘을 간소화하고, 계산 복잡성을 줄일 수 있습니다.
 
 ---
-![[Pasted image 20240610191037.png]]
-![[Pasted image 20240610191323.png]]
-![[Pasted image 20240610191347.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 2.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 3.png]]
 
 ---
-![[Pasted image 20240610200513.png]]
-![[Pasted image 20240610200631.png]]
-![[Pasted image 20240610200658.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 4.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 5.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 6.png]]
 
 ---
-![[Pasted image 20240610200738.png]]
-![[Pasted image 20240610200757.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 7.png]]
+![[probability-statistics__23_naive_bayes__나이브 베이즈 가정 8.png]]

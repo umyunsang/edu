@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -28,6 +32,7 @@ LG Aimers 자료에서 추출된 개념 노드입니다.
 ## 로컬 근거
 
 - [[LGAimer/LG Aimers 9기 지원서 초안]]
+- [[LGAimer/LG Aimers 9기 평가 및 제출 가이드]]
 - [[LGAimer/『Compressing Large Language Models』 강의자료 Download.pdf]]
 - [[LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf]]
 - [[LGAimer/『Lightweight LLM beyond Scaling From Business Cost Optimization to Frontier Research』 강의자료 Download.pdf]]

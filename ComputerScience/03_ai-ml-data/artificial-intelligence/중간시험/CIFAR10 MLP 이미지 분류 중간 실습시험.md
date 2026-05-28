@@ -3,6 +3,10 @@ aliases: []
 course: artificial-intelligence
 created: '2024-04-16'
 date: '2024-04-16'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -11,7 +15,7 @@ tags:
 - cs/dl
 - cs/ml
 - type/lecture
-title: 'CIFAR10 MLP 이미지 분류 중간 실습시험'
+title: CIFAR10 MLP 이미지 분류 중간 실습시험
 type: lecture
 updated: '2026-05-05'
 ---

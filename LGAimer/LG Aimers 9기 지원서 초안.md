@@ -3,6 +3,10 @@ aliases: []
 course: lgaimer
 created: '2026-05-23'
 date: '2026-05-23'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: extracurricular
 source: ''
 status: seedling

@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -27,7 +31,12 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/neural-netwo
 
 ## 로컬 근거
 
-- [[ComputerScience/00_graph-interfaces/archive-kg/evidence/뉴럴네트워크 근거 인덱스|뉴럴네트워크 근거 인덱스]]
+- [[ComputerScience/03_ai-ml-data/neural-networks/AIE309_HW1_풀이]]
+- [[ComputerScience/03_ai-ml-data/neural-networks/md/2장 퍼셉트론 상세 정리]]
+- [[ComputerScience/03_ai-ml-data/neural-networks/md/4장 신경망 학습과 경사 하강법]]
+- [[ComputerScience/03_ai-ml-data/neural-networks/md/Ch5. 오차역전파법 수학적 증명]]
+- [[ComputerScience/03_ai-ml-data/neural-networks/md/신경망_핵심이론_시험정리]]
+- [[ComputerScience/03_ai-ml-data/neural-networks/md/학습기술 이론]]
 
 ## 연결 개념
 

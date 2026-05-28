@@ -3,6 +3,10 @@ aliases: []
 course: artificial-intelligence
 created: '2024-05-25'
 date: '2024-05-25'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -36,7 +40,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	` • 75 ~ 149 epoch: 0.0005`  
 	` • 150 ~ 200 epoch: 0.00025`
 
-![](../../../../../../image/Pasted%20image%2020240527185141.png)
+![[artificial-intelligence__CNN 모델 정의__6) Training loop.png]]
 
 ```python
 # CNN 모델 정의  

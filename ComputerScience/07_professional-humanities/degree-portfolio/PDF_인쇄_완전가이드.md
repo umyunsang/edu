@@ -3,6 +3,10 @@ aliases: []
 course: degree-portfolio
 created: '2025-06-14'
 date: '2025-06-14'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: extracurricular
 source: ''
 status: seedling

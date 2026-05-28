@@ -3,6 +3,10 @@ aliases: []
 course: ml-projects
 created: '2024-08-05'
 date: '2024-08-05'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-1
 source: ''
 status: seedling

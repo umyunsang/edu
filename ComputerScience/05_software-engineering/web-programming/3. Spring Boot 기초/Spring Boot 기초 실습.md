@@ -3,6 +3,10 @@ aliases: []
 course: web-programming
 created: '2024-03-27'
 date: '2024-03-27'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -26,7 +30,7 @@ related:: [[ComputerScience/05_software-engineering/web-programming/3. Spring Bo
 kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/웹 프로그래밍 근거 인덱스|웹 프로그래밍 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 #ComputerScience #웹프로그래밍 

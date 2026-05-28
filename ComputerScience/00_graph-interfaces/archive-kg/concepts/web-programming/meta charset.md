@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -19,7 +23,7 @@ kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/웹 프로그래밍 지식그래프|웹 프로그래밍]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/웹 프로그래밍 근거 인덱스|웹 프로그래밍 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/소프트웨어 엔지니어링 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/a href|a href]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/html|html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/model mo|model mo]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/form method|form method]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/table border|table border]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/MYSQL|MYSQL]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/meta charset|오픈소스 소프트웨어/meta charset]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/a href|a href]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/html|html]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/model mo|model mo]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/form method|form method]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/table border|table border]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/MYSQL|MYSQL]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/meta charset|오픈소스 소프트웨어/meta charset]]
 
 # meta charset
 
@@ -39,8 +43,8 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programm
 ## 연결 개념
 
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/doctype html|doctype html]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/input type|input type]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/웹 프로그래밍|웹 프로그래밍]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/background color|background color]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/utf 8|utf 8]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/a href|a href]]

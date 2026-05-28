@@ -3,6 +3,10 @@ aliases: []
 course: ai-system-design
 created: '2025-03-17'
 date: '2025-03-17'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-1
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - cs/ai
 - cs/se
 - type/lecture
-title: 'AI 시스템 아이디어 기획 요구사항 정의 발표 스크립트'
+title: AI 시스템 아이디어 기획 요구사항 정의 발표 스크립트
 type: lecture
 updated: '2026-05-05'
 ---

@@ -3,13 +3,17 @@ aliases: []
 course: computer-graphics
 created: '2025-12-09'
 date: '2025-12-09'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-2
 source: ''
 status: seedling
 tags:
 - cs/cv
 - type/lecture
-title: 'OpenGL 폴리곤 그리기 정리'
+title: OpenGL 폴리곤 그리기 정리
 type: lecture
 updated: '2026-05-05'
 ---

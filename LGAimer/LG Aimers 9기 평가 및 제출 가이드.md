@@ -3,6 +3,10 @@ aliases: []
 course: lgaimer
 created: '2026-02-03'
 date: '2026-02-03'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: extracurricular
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - cs/ml
 - meta/extracurricular
 - type/lecture
-title: 'LG Aimers 9기 평가 및 제출 가이드'
+title: LG Aimers 9기 평가 및 제출 가이드
 type: lecture
 updated: '2026-05-05'
 ---
@@ -26,7 +30,7 @@ related:: [[ComputerScience/03_ai-ml-data/large-language-models/ChatGPT API/추�
 kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/LG Aimers 지식그래프|LG Aimers]]
 kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/LG Aimers 지식그래프|LG Aimers]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/LG Aimers 근거 인덱스|LG Aimers 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 1. 리더 보드

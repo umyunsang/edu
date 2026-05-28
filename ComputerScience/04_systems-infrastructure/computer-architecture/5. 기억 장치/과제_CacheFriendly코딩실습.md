@@ -3,13 +3,17 @@ aliases: []
 course: computer-architecture
 created: '2024-05-26'
 date: '2024-05-26'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
 tags:
 - cs/systems
 - type/lecture
-title: 'Cache Friendly 코딩 실습'
+title: Cache Friendly 코딩 실습
 type: lecture
 updated: '2026-05-05'
 ---

@@ -1,3 +1,10 @@
+---
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
+---
+
 domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]
 stage:: [[ComputerScience/00_graph-interfaces/stages/6단계 전문 확장 인터페이스|6단계 전문 확장 인터페이스]]
 module:: [[ComputerScience/00_graph-interfaces/courses/창의적 글쓰기 인터페이스|창의적 글쓰기 인터페이스]]

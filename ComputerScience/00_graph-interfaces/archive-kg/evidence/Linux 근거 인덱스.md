@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 88
+kg_layer_label: L3 evidence
+kg_level: 3
+kg_role: evidence-index
 semester: meta
 source: ''
 status: evergreen
@@ -60,42 +64,4 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/linux/�
 
 ## Media and attachments
 
-- [[image/Pasted image 20241227114942.png]]
-- [[image/Pasted image 20241227114848.png]]
-- [[image/Pasted image 20241227114920.png]]
-- [[image/Pasted image 20250103131354.png]]
-- [[image/Pasted image 20250103131418.png]]
-- [[image/Pasted image 20250103131441.png]]
-- [[image/Pasted image 20241227114705.png]]
-- [[image/Pasted image 20241227114728.png]]
-- [[image/Pasted image 20250103131514.png]]
-- [[image/Pasted image 20250103131530.png]]
-- [[image/Pasted image 20250113120838.png]]
-- [[image/Pasted image 20250113123251.png]]
-- [[image/Pasted image 20250113123320.png]]
-- [[image/Pasted image 20250113123400.png]]
-- [[image/Pasted image 20241227114630.png]]
-- [[image/Pasted image 20250103132051.png]]
-- [[image/Pasted image 20250103132315.png]]
-- [[image/Pasted image 20250103132339.png]]
-- [[image/Pasted image 20241227120913.png]]
-- [[image/Pasted image 20241227121345.png]]
-- [[image/Pasted image 20250103132435.png]]
-- [[image/Pasted image 20250103132451.png]]
-- [[image/Pasted image 20250103132520.png]]
-- [[image/Pasted image 20250103132604.png]]
-- [[image/Pasted image 20250103132620.png]]
-- [[image/Pasted image 20250103132631.png]]
-- [[image/Pasted image 20250103132649.png]]
-- [[image/Pasted image 20250103132705.png]]
-- [[image/Pasted image 20250103132725.png]]
-- [[image/Pasted image 20241230123741.png]]
-- [[image/Pasted image 20241231122702.png]]
-- [[image/Pasted image 20250103134353.png]]
-- [[image/Pasted image 20241231123823.png]]
-- [[image/Pasted image 20241231124022.png]]
-- [[image/Pasted image 20250114122425.png]]
-- [[image/Pasted image 20250108131752.png]]
-- [[image/Pasted image 20250108131840.png]]
-- [[image/Pasted image 20250108131858.png]]
-- [[image/Pasted image 20250109115702.png]]
+- [[image/linux__1. 리눅스의 기본__출력 관련 명령.png]]

@@ -3,13 +3,17 @@ aliases: []
 course: open-source-software
 created: '2024-09-06'
 date: '2024-09-06'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
 tags:
 - cs/open-source
 - type/lecture
-title: 'HTML JavaScript 기초 연습문제'
+title: HTML JavaScript 기초 연습문제
 type: lecture
 updated: '2026-05-05'
 ---
@@ -29,7 +33,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-sou
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 ---
-![](../../../../image/Pasted%20image%2020240906112005.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 3 html, javascript.png]]
 ```html
 <!-- html 주석처리 방법 -->
 ```
@@ -41,17 +45,17 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 /* css 주석 처리 */
 ```
 ---
-![](../../../../image/Pasted%20image%2020240906112326.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 5 input 412 S97 2A o.png]]
 ```html
 <input type='text' name=''>
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909103639.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quizs6 ‘SAS AN lea At HES.png]]
 ```html
 <button onclick="startTest()">테스트 시작</button>
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909103929.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 7 cra Css 4 BES SIN.png]]
 ```html
 <style>
 	body { padding:20px; background:yellow;}
@@ -60,7 +64,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 </style>
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909104407.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 8 css S quiz.css tYS.png]]
 ```html
 <head>
     <meta charset="UTF-8">
@@ -75,7 +79,7 @@ h1 {color:blue;background:cyan;}
 button {background:pink;}
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909104810.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 9 javascript 22 quiz.png]]
 ```html
 <script src="quiz.js"> </script>
 ```
@@ -96,17 +100,17 @@ function checkAnswers() {
 }
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909105119.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 10 TS tt SN 8% ala B.png]]
 - **document.getElementById('a1')**: HTML 문서에서 특정 `id(a1)`를 가진 요소를 선택하는 메서드.
 - **a1** : js 변수
 -  **value**: 사용자가 입력한 텍스트 값을 가져오는 속성.
 -  **trim()**: 사용자가 입력한 값에서 앞뒤 공백을 제거하는 메서드 (중간 공백은 X)
 ---
-![](../../../../image/Pasted%20image%2020240909105643.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 1 document.getElemen.png]]
  - `.value`는 사용자가 `<input>` 필드에 입력한 값을 가져옵니다.
  - `.textContent`는 `<h3>` 요소의 텍스트 내용을 변경하여 화면에 표시합니다.
 ---
-![](../../../../image/Pasted%20image%2020240909105818.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 12 St 22M. 1H SAA.png]]
 ```html
 <body>
 	10<sup>2</sup>은? <input type="text" id="a4"> <br><br>
@@ -124,7 +128,7 @@ if (a5.toLowerCase() === "625") score++;
 }
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909110731.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 13 5B Cf Obl sb Bee.png]]
 ```html
 <body>
 <h3 id="good"></h3>
@@ -142,7 +146,7 @@ function checkAnswers() {
 }
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909111448.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 14 AWS BASD VRES qui.png]]
 ```html
 <!DOCTYPE html>
 <html>
@@ -187,7 +191,7 @@ function checkAnswers() {
 </html>
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909112758.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 15 who.htmidM 2H 3SR.png]]
 ```js
 const image = document.getElementById('image');
 const who = document.getElementById('who').value.trim();
@@ -200,12 +204,12 @@ else image.src = 'static/쏘리.png';
 - who ==
 - static/
 ---
-![](../../../../image/Pasted%20image%2020240909113123.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 16 who.htmi2 HEA BH.png]]
 ```html
 <button onclick="showImage()">사진</button>
 ```
 ---
-![](../../../../image/Pasted%20image%2020240909113156.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 17, aera Ve Sab HS A.png]]
 ```js
 if (who == "당근" || who == "당") image.src = 'static/당근.png';
 else if (who == "양파" || who == "양") image.src = 'static/양파.png';
@@ -213,10 +217,10 @@ else if (who == "식빵" || who == "식") image.src = 'static/식빵.png';
 else image.src = 'static/쏘리.png';
 ```
 ---
-![](../../../../image/Pasted%20image%2020240913105309.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 18 WZ MES ST NA.png]]
 
-![](../../../../image/Pasted%20image%2020240913105606.png)
-![](../../../../image/Pasted%20image%2020240913105622.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 19 BAS AE HES ATHY S.png]]
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 20 BE HE Bt input bo.png]]
 ```js
 function calculate(op) {
     // html에서 입력한 숫자 2개 가져와서 숫자로 변환 후 num1, num2에 넣음
@@ -253,16 +257,16 @@ function boxclear() {
 }
 ```
 ---
-![](../../../../image/Pasted%20image%2020240913112801.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 21 alert4tat prompt4.png]]
 - alert창은 일반적으로 사용자한데 메세지 전달
 - prompt창은 사용자한데 입력을 받음
 
 ---
-![](../../../../image/Pasted%20image%2020240913112937.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 22 parseFloat(), par.png]]
 - 괄호안 문자열의 자료형을 변환 함
 
 ---
-![](../../../../image/Pasted%20image%2020240920105617.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 23 SIMI5AM body Bry.png]]
 ```js
 // (1) 화면 바탕색바꾸기
 document.body.style.backgroundColor = co;
@@ -270,17 +274,17 @@ document.body.style.backgroundColor = co;
 document.getElementById("co").style.color = co;
 ```
 ---
-![](../../../../image/Pasted%20image%2020240920110327.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 24 AIMS js cra BUBWE.png]]
 ```js
 return st.color != "";
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240920111245.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 25 AIMS, AIMS BO att.png]]
 - return 을 적어주면 더 좋다
 
 ---
-![](../../../../image/Pasted%20image%2020240920111458.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 26 SIMS GreferS HE Y.png]]
 ```js
     if (co == "") {
         alert("색을 입력해 주세요"); return
@@ -291,12 +295,12 @@ return st.color != "";
 ```
 
 ---
-![](../../../../image/Pasted%20image%2020240920112018.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 27 SIMI5°%M placehol.png]]
 - value는 검은 글자이면서 사람이 입력했다고 생각하고 값이 넘어간다
 - placehoder는 회색 글자이면서 값이 안 넘어 간다
 
 ---
-![](../../../../image/Pasted%20image%2020240920112345.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 28 AWMIS2 ore eb SUS.png]]
 ```js 
 alert(`${co}는 존재하지 않는 색입니다. 다시 작성해 주세요 ^^`);
 ```
@@ -313,7 +317,7 @@ sum = parseInt(n) + 100;
 document.write(`정수변환n + 100 ==>  + ${sum} + <hr>`);
 ```
 ---
-![](../../../../image/Pasted%20image%2020240920112809.png)
+![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 29 BS UND HES SYte S.png]]
 ```html
 <!DOCTYPE html>
 <html>

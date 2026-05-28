@@ -3,6 +3,10 @@ aliases: []
 course: open-source-delivery
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 118
+kg_layer_label: L2 bridge
+kg_level: 2
+kg_role: bridge
 semester: meta
 source: ''
 status: evergreen

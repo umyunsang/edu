@@ -3,6 +3,10 @@ aliases: []
 course: data-structures
 created: '2024-05-14'
 date: '2024-05-14'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -66,27 +70,27 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 **LL 회전
 - 왼쪽 서브 트리의 왼쪽 서브 트리에 노드가 추가되면서 불균형이 발생했을 때 사용
 
-	![](../../../../image/Pasted%20image%2020240516150232.png)
+	![[data-structures__AVL__AVL 트리의 회전 연산.png]]
 
 **RR 회전
 - 오른쪽 서브 트리의 오른쪽 서브 트리에 노드가 추가되면서 불균형이 발생했을 때 사용
 
-	![](../../../../image/Pasted%20image%2020240516150307.png)
+	![[data-structures__AVL__AVL 트리의 회전 연산 2.png]]
 
 **LR 회전
 - 왼쪽 서브 트리의 오른쪽 서브 트리에 노드가 추가되면서 불균형이 발생했을 때 사용
 
-	![](../../../../image/Pasted%20image%2020240516150401.png)
+	![[data-structures__AVL__AVL 트리의 회전 연산 3.png]]
 
 **RL 회전
 - 오른쪽 서브 트리의 왼쪽 서브 트리에 노드가 추가되면서 불균형이 발생했을 때 사용
 
-	![](../../../../image/Pasted%20image%2020240516150425.png)
+	![[data-structures__AVL__AVL 트리의 회전 연산 4.png]]
 
 ## AVL 트리 코드 구현
 #### AVl 트리 코드 구현
 
-![](../../../../image/Pasted%20image%2020240516150715.png)
-![](../../../../image/Pasted%20image%2020240516150739.png)
-![](../../../../image/Pasted%20image%2020240516150804.png)
-![](../../../../image/Pasted%20image%2020240516150832.png)
+![[data-structures__AVL__AVl 트리 코드 구현.png]]
+![[data-structures__AVL__AVl 트리 코드 구현 2.png]]
+![[data-structures__AVL__AVl 트리 코드 구현 3.png]]
+![[data-structures__AVL__AVl 트리 코드 구현 4.png]]

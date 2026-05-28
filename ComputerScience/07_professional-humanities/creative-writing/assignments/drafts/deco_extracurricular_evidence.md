@@ -1,14 +1,15 @@
 ---
+course: creative-writing
+created: '2026-05-26'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
+status: draft
+tags: []
 title: DECO 비교과 참여현황 근거 정리
 type: evidence
-course: creative-writing
-status: draft
-created: '2026-05-26'
 updated: '2026-05-26'
-tags:
-  - type/evidence
-  - writing/self-introduction
-  - source/deco
 ---
 
 domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]

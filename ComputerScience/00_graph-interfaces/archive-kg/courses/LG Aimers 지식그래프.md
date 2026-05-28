@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 96
+kg_layer_label: L3 course profile
+kg_level: 3
+kg_role: course-profile
 semester: meta
 source: ''
 status: evergreen
@@ -19,7 +23,7 @@ kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/외부 프로그램 커뮤니티]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/LG Aimers 근거 인덱스|LG Aimers 근거 인덱스]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/강의자료 download|강의자료 download]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/iclr|iclr]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/vram|vram]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/bert|bert]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/강의자료 download|강의자료 download]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/iclr|iclr]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/vram|vram]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ml|ml]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/rag|rag]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/bert|bert]]
 module:: [[ComputerScience/00_graph-interfaces/courses/LG Aimers 인터페이스|LG Aimers 인터페이스]]
 domain:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/외부 프로그램 커뮤니티|외부 프로그램 커뮤니티]]
 
@@ -39,8 +43,8 @@ LG Aimers 과목/활동의 로컬 노트, PDF, 코드/산출물을 2026 GraphRAG
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/ai|ai]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/llm|llm]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/강의자료 download|강의자료 download]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/language models|language models]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/gpu|gpu]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/api|api]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/iclr|iclr]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/exaone|exaone]]

@@ -3,6 +3,10 @@ aliases: []
 course: uncategorized
 created: '2026-04-06'
 date: '2026-04-06'
+kg_graph_size: 60
+kg_layer_label: L4 support
+kg_level: 4
+kg_role: support
 semester: extracurricular
 source: ''
 status: seedling

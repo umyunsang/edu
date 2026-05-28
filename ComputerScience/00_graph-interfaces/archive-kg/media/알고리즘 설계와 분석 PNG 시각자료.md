@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 84
+kg_layer_label: L3 media
+kg_level: 3
+kg_role: media-index
 semester: meta
 source: ''
 status: evergreen
@@ -63,13 +67,6 @@ OCR/파일명/과목 prefix로 내용 확인 후 과목 단위로 보존한 PNG 
 - ocr: _ io =| ° oi 7i= LCS: $5 FAS SA/Oe MA} oO GICIGIGICIGIO Nn, So tf $17] Expt YW] a —> | HAMS = he ES et wy (0) g g a OW CHZ2ta +1, CLEA 9/21 AAA A CHZ2Mom 2 oot 
 
 ![[4-1_algorithm__dp-lcs-01-structure.png]]
-
-## 4-1_algorithm__dp-lcs-05-monkey-order
-
-- size: `3126 x 960`
-- ocr: LCS $2: JIE S7tstD IQE GAGE 2M 27 BAS SM SAE WPI] FIEORUESS LCS= 3ojE Se CHE st Se 17S SMz OSS wastct. 7| 25h Ce) C1) Ca) Ce) © $e SE st SOME ait S7ista, HE SOM
-
-![[4-1_algorithm__dp-lcs-05-monkey-order.png]]
 
 ## 4-1_algorithm__dp-matrix-03-table
 

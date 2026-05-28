@@ -3,6 +3,10 @@ aliases: []
 course: operating-systems
 created: '2024-09-09'
 date: '2024-09-09'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -31,7 +35,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ---
 ## 컴퓨터 하드웨어 구성
 
-![[Pasted image 20240909093327.png]]
+![[operating-systems__컴퓨터 시스템과 OS__컴퓨터 하드웨어 구성.png]]
 - CPU(Central Processing Unit) 
 	- 프로그램 코드(기계 명령)를 해석하여 실행하는 중앙처리장치 
 	- 컴퓨터의 가장 핵심 장치 
@@ -92,7 +96,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 ## 2. 컴퓨터 시스템의 계층 구조와 운영체제 인터페이스
 #### 컴퓨터 시스템 계층 구조
-![](../../../../image/Pasted%20image%2020240911104956.png)
+![[operating-systems__컴퓨터 시스템과 OS__컴퓨터 시스템 계층 구조.png]]
 - 응용프로그램이 하드웨어를 사용하고자 할 때 
 	- 반드시 운영체제에게 요청 -> 운영체제가 대신하여 하드웨어 조작 
 	- 유일한 요청 방법 – ==시스템 호출(system call)==
@@ -171,9 +175,9 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 		- 인터럽트 서비스 루틴이 커널 공간에 있기 때문 
 	- CPU는 인터럽트 서비스 루틴 실행 
 	- 인터럽트 서비스 루틴이 끝나면 CPU는 사용자 모드로 자동 전환
-	![](../../../../image/Pasted%20image%2020240923091038.png)
+	![[operating-systems__컴퓨터 시스템과 OS__사용자 모드와 커널 모드 2.png]]
 - 사용자 모드와 커널 모드의 비교
-	![](../../../../image/Pasted%20image%2020240911113952.png)
+	![[operating-systems__컴퓨터 시스템과 OS__사용자 모드와 커널 모드.png]]
 
 #### 특권 명령
 - 특권 명령 
@@ -247,7 +251,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 		- 운영체제마다 시스템 호출 함수의 이름이 서로 다름
 		- 시스템 호출 함수를 **커널 AP**I(Application Programming Interface)라고 부름
 
-	![](../../../../image/Pasted%20image%2020240923092625.png)
+	![[operating-systems__컴퓨터 시스템과 OS__응용프로그램 빌딩.png]]
 
 #### 시스템 호출
 - 시스템 호출 
@@ -256,13 +260,13 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 		- 커널 콜(kernel call), **트랩**(trap) = (소프트웨어 인터럽트) 로도 불림 
 		- 응용프로그램에서 커널 기능을 활용하도록 만들어 놓은 기능 
 
-![](../../../../image/Pasted%20image%2020240923093401.png)
+![[operating-systems__컴퓨터 시스템과 OS__시스템 호출.png]]
 
 #### 시스템 호출에 따른 비용 정리
 - **시스템 호출은 함수 호출에 비해 많은 시간 비용** 
 	- 시스템 호출을 많이 할수록 프로그램 실행 속도 저하
 - 시스템 호출은 필연적이지만, 시스템 호출 횟수를 줄여야 응용프로그램의 실행 시간이 짧아지고, 시스템 입장에서 더 많은 프로그램을 실행시킬 수 있는 시간 확보 -> 시스템의 처리율 향상
-	![](../../../../image/Pasted%20image%2020240923094511.png)
+	![[operating-systems__컴퓨터 시스템과 OS__시스템 호출에 따른 비용 정리.png]]
 
 ## 4. 운영체제와 인터럽트
 #### 인터럽트

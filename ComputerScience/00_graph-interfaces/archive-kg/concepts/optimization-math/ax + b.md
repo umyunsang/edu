@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -28,6 +32,8 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization
 ## 로컬 근거
 
 - [[ComputerScience/02_math-theory/optimization-math/1. Matrix/1. Matrix]]
+- [[ComputerScience/02_math-theory/optimization-math/1. Matrix/연습문제 풀이]]
+- [[ComputerScience/02_math-theory/optimization-math/MSC087_HW2_풀이]]
 - [[ComputerScience/02_math-theory/optimization-math/1. Matrix/MSC087_1장_행렬_v3.pdf]]
 - [[ComputerScience/02_math-theory/optimization-math/3. 볼록최적화/MSC087_3장_볼록최적화.pdf]]
 

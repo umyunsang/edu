@@ -3,6 +3,10 @@ aliases: []
 course: algorithm-design-analysis
 created: '2026-03-23'
 date: '2026-03-23'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 4-1
 source: ''
 status: 정리완료
@@ -28,7 +32,7 @@ related:: [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/Pop
 kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/알고리즘 설계와 분석 지식그래프|알고리즘 설계와 분석]]
 kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/알고리즘 설계와 분석 지식그래프|알고리즘 설계와 분석]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/알고리즘 설계와 분석 근거 인덱스|알고리즘 설계와 분석 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/억지 기법|억지 기법]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/시간 복잡도|시간 복잡도]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/근사 알고리즘|근사 알고리즘]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/복잡도 분석|복잡도 분석]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/해시 함수|해시 함수]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/억지 기법|억지 기법]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/시간 복잡도|시간 복잡도]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/복잡도 분석|복잡도 분석]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/근사 알고리즘|근사 알고리즘]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-design-analysis/해시 함수|해시 함수]]
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 # Pop Quiz #1 문제 풀이

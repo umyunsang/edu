@@ -3,6 +3,10 @@ aliases: []
 course: parallel-distributed-computing
 created: '2025-06-04'
 date: '2025-06-04'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-1
 source: ''
 status: seedling
@@ -10,7 +14,7 @@ tags:
 - cs/distributed
 - cs/systems
 - type/lecture
-title: 'CUDA 프로그램 연습 및 CUDA API 이해'
+title: CUDA 프로그램 연습 및 CUDA API 이해
 type: lecture
 updated: '2026-05-05'
 ---

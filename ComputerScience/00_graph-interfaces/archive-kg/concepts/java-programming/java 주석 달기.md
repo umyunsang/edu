@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -19,7 +23,7 @@ kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/Java 프로그래밍 지식그래프|Java 프로그래밍]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/Java 프로그래밍 근거 인덱스|Java 프로그래밍 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/프로그래밍 기초 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/자바 프로그램의 기본 구조|자바 프로그램의 기본 구조]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/기본 구조|기본 구조]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/변수와 자료형|변수와 자료형]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg parent|kg parent]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/자바의 컴파일 과정|자바의 컴파일 과정]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/Hello Java|Hello Java]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/java 프로그래밍|java 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg profile|kg profile]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg evidence|kg evidence]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg concepts|kg concepts]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg query mode|kg query mode]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/자바 프로그램의 기본 구조|자바 프로그램의 기본 구조]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/기본 구조|기본 구조]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/변수와 자료형|변수와 자료형]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg parent|kg parent]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/Hello Java|Hello Java]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/java 프로그래밍|java 프로그래밍]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg profile|kg profile]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg evidence|kg evidence]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg concepts|kg concepts]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg query mode|kg query mode]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/프로그래밍 기초 인터페이스|프로그래밍 기초 인터페이스]]
 
 # java 주석 달기
 
@@ -39,10 +43,10 @@ Java 프로그래밍 자료에서 추출된 개념 노드입니다.
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/기본 구조|기본 구조]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/변수와 자료형|변수와 자료형]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg parent|kg parent]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/자바의 컴파일 과정|자바의 컴파일 과정]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/Hello Java|Hello Java]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/java 프로그래밍|java 프로그래밍]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg profile|kg profile]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg evidence|kg evidence]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg concepts|kg concepts]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/kg query mode|kg query mode]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/java-programming/프로그래밍 기초 인터페이스|프로그래밍 기초 인터페이스]]

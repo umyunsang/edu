@@ -3,13 +3,17 @@ aliases: []
 course: generative-ai-fine-tuning
 created: '2025-09-26'
 date: '2025-09-26'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: elective
 source: ''
 status: seedling
 tags:
 - meta/extracurricular
 - type/lecture
-title: '생성형 AI 파인튜닝 프로젝트 주제'
+title: 생성형 AI 파인튜닝 프로젝트 주제
 type: lecture
 updated: '2026-05-05'
 ---

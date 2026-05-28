@@ -3,6 +3,10 @@ aliases: []
 course: probability-statistics
 created: '2026-03-19'
 date: '2026-03-19'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling

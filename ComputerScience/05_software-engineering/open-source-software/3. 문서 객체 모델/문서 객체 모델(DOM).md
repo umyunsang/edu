@@ -3,6 +3,10 @@ aliases: []
 course: open-source-software
 created: '2024-11-08'
 date: '2024-11-08'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -31,7 +35,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ---
 ## DOM 이해하기
 #### HTML 태그가 객체 형태인 이유
-![](../../../../image/Pasted%20image%2020241108104046.png)
+![[open-source-software__문서 객체 모델(DOM__HTML 태그가 객체 형태인 이유.png]]
 #### 웹 시스템 관련 객체 (가장 상위 객체는 window)
 - **Array, String, Math, Date 객체**
 	- 데이터를 보관하고 처리하도록 자바스크립트에서 제공하는 기본 객체 (수업자료 2장 참고) 
@@ -44,7 +48,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 웹브라우저와 관련된 내용을 객체 형태로 만든 것 (soon)
 
 ## DOM 객체 다루기 : HTML 요소 접근하기
-![](../../../../image/Pasted%20image%2020241108104431.png)
+![[open-source-software__문서 객체 모델(DOM__DOM 객체 다루기 HTML 요소 접근하기.png]]
 
 ---
 #### 예제1. HTML 요소 1개에 접근하기 (화면 결과는?)
@@ -163,7 +167,7 @@ icearr[0] = ice
 </body>
 ```
 >[!출력결과]
->![](../../../../image/Pasted%20image%2020241108110347.png)
+>![[open-source-software__문서 객체 모델(DOM__예제4. form 안의 input 문자열 읽기.png]]
 - const id = document.myform.userId , const pw = document.myform.password 가능하다
 ---
 #### 예제5. textarea 문자열 읽기
@@ -183,7 +187,7 @@ icearr[0] = ice
 </body>
 ```
 >[!출력결과]
->![](../../../../image/Pasted%20image%2020241108110531.png)
+>![[open-source-software__문서 객체 모델(DOM__예제5. textarea 문자열 읽기.png]]
 - st : textarea를 가르키는게 아니고 textarea 안에 내용물을 가져온다
 - textarea의 문자열은 getElementById로 받는다
 ---
@@ -207,7 +211,7 @@ icearr[0] = ice
 </body>
 ```
 >[!출력결과]
->![](../../../../image/Pasted%20image%2020241108110924.png)
+>![[open-source-software__문서 객체 모델(DOM__예제6. 체크박스 값 1개 읽기.png]]
 - 체크박스 값 1개를 읽을 때는 getElemnetById로 받는다
 ---
 #### 예제7. 체크박스 값 여러 개 읽기
@@ -233,7 +237,7 @@ icearr[0] = ice
 </body>
 ```
 >[!출력결과]
->![](../../../../image/Pasted%20image%2020241108111310.png)
+>![[open-source-software__문서 객체 모델(DOM__예제7. 체크박스 값 여러 개 읽기.png]]
 - name속성은 getElementsByName으로 받는다
 ---
 #### 예제8. 리디오버튼에서 값 읽기
@@ -260,7 +264,7 @@ icearr[0] = ice
 </body>
 ```
 >[!출력결과]
->![](../../../../image/Pasted%20image%2020241108111706.png)
+>![[open-source-software__문서 객체 모델(DOM__예제8. 리디오버튼에서 값 읽기.png]]
 - getElementsByName("color") 로 받을 수 도 있음
 - querySelectorAll("[type='radio']")
 	- 대괄호([])를 사용해서 type전부를 가져 올 수 있음
@@ -291,7 +295,7 @@ icearr[0] = ice
 </body>
 ```
 >[!출력결과]
->![](../../../../image/Pasted%20image%2020241108111909.png)
+>![[open-source-software__문서 객체 모델(DOM__예제9. 드롭박스에서 값 읽기.png]]
 - s.addEventListener("change", getSelect);
 	- on change 아님, getSelect() 괄호 필요없다
 - 옵션태그에 별도로 value값이 없으면 태그 옆의 값이 value가 된다
@@ -397,7 +401,7 @@ icearr[0] = ice
 
 ---
 ## HTML 노드 추가 및 삭제
-![[Pasted image 20241125104329.png]]
+![[open-source-software__문서 객체 모델(DOM__HTML 노드 추가 및 삭제.png]]
 - document.
 	- createElement()
 - 부모.
@@ -484,7 +488,7 @@ icearr[0] = ice
 
 ---
 ## 테이블 요소 추가/삭제
-![[Pasted image 20241125112601.png]]
+![[open-source-software__문서 객체 모델(DOM__테이블 요소 추가 삭제.png]]
 - insertRow() : tr 추가
 - insertCell() : td 추가
 - deleteRow() : tr 삭제

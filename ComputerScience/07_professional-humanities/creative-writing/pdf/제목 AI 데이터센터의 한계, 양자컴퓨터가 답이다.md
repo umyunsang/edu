@@ -3,6 +3,10 @@ aliases: []
 course: creative-writing
 created: '2026-04-29'
 date: '2026-04-29'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 4-1
 source: ''
 status: seedling

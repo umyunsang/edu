@@ -3,6 +3,10 @@ aliases: []
 course: big-data-analysis
 created: '2025-09-24'
 date: '2025-09-24'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-2
 source: ''
 status: seedling
@@ -2020,22 +2024,22 @@ YouTube API뿐만 아니라, Panopto, Brightcove, Vimeo, IBM Watson Media 등 �
 
 ![[3-2_bigdata-analysis__image.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 10.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 2.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 2.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 3.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 3.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 4.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 4.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 5.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 5.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 6.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 6.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 7.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 7.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 8.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 8.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 9.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic 9.png]]
 
-![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytics_usi 10.png]]
+![[big-data-analysis__BDA_Hands_on_Numerical_and_Textual_Data_Analytic.png]]

@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 88
+kg_layer_label: L3 evidence
+kg_level: 3
+kg_role: evidence-index
 semester: meta
 source: ''
 status: evergreen
@@ -68,7 +72,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/ml-proje
 
 ## Media and attachments
 
-- [[image/Pasted image 20240730100923.png]]
-- [[image/Pasted image 20240730100944.png]]
-- [[image/Pasted image 20240730101014.png]]
-- [[image/Pasted image 20240730101033.png]]
+- [[image/ml-projects__실력과제__2 Ueto +E 9487 7 (Dictionary 7 H.png]]
+- [[image/ml-projects__실력과제__3. ‘2. BS Sele ster.png]]
+- [[image/ml-projects__실력과제__5. ‘4. Be $e Ste.png]]
+- [[image/ml-projects__실력과제__tHE 1, AME 25 SHHWFAR 21.png]]

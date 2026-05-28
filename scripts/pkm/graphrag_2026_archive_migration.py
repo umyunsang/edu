@@ -1695,22 +1695,40 @@ def update_graph_json() -> bool:
     new_groups = [
         ("tag:#pkm/kg-skeleton", 0x5B5BD6),
         ("tag:#pkm/kg-method-2026", 0x8B5CF6),
-        ("tag:#pkm/kg-community", 0x0F766E),
-        ("tag:#pkm/kg-course", 0x2563EB),
-        ("tag:#pkm/kg-concept", 0xF59E0B),
-        ("tag:#pkm/kg-evidence", 0xDC2626),
-        ("tag:#pkm/kg-query", 0x16A34A),
+        ("tag:#pkm/kg-community", 0x009E73),
+        ("tag:#pkm/kg-course", 0x0072B2),
+        ("tag:#pkm/kg-concept", 0xE69F00),
+        ("tag:#pkm/kg-evidence", 0xD55E00),
+        ("tag:#pkm/kg-query", 0x56B4E9),
     ]
+    group_palette = dict(new_groups)
+    for group in keep:
+        query = group.get("query")
+        if query in group_palette:
+            group["color"] = {"a": 1, "rgb": group_palette[query]}
     existing = {group.get("query") for group in keep}
     for query, rgb in new_groups:
         if query not in existing:
             keep.insert(0, {"query": query, "color": {"a": 1, "rgb": rgb}})
     data["colorGroups"] = keep
-    data["showTags"] = True
+    data["showTags"] = False
     data["showAttachments"] = True
+    data["hideUnresolved"] = True
+    data["showOrphans"] = True
     data["showArrow"] = True
-    data["nodeSizeMultiplier"] = max(1.3, float(data.get("nodeSizeMultiplier", 1)))
-    data["lineSizeMultiplier"] = max(1.45, float(data.get("lineSizeMultiplier", 1)))
+    data["collapse-color-groups"] = False
+    data["collapse-display"] = False
+    data["collapse-forces"] = False
+    # Keep native Graph View from exaggerating high-degree nodes; hierarchy is
+    # expressed explicitly in the generated top-down canvas sizes below.
+    data["nodeSizeMultiplier"] = 0.62
+    data["lineSizeMultiplier"] = 0.75
+    data["textFadeMultiplier"] = 0
+    data["centerStrength"] = 0.42
+    data["repelStrength"] = 16
+    data["linkStrength"] = 0.75
+    data["linkDistance"] = 260
+    data["scale"] = 0.58
     out = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     old = path.read_text(encoding="utf-8")
     if old != out:
@@ -1746,23 +1764,23 @@ def create_canvas(courses: dict[str, Course]) -> bool:
             edge["label"] = label
         edges.append(edge)
 
-    add_group("2026 method layer", -960, -760, 1920, 230, "6")
-    skeleton_id = add_file(SKELETON, -160, -700, 320, 110, "6")
+    add_group("Level 0 - top-down root", -980, -840, 1960, 250, "6")
+    skeleton_id = add_file(SKELETON, -280, -790, 560, 160, "6")
     method_ids = []
     for i, (_title, path, *_rest) in enumerate(METHOD_SOURCES[:6]):
         x = -900 + i * 300
-        method_id = add_file(path, x, -560, 260, 90, "6")
+        method_id = add_file(path, x, -535, 260, 82, "6")
         method_ids.append(method_id)
         add_edge(skeleton_id, method_id, "method")
 
-    add_group("GraphRAG-Bench query modes", -700, -400, 1400, 200, "4")
+    add_group("Level 1 - method and query interfaces", -740, -420, 1480, 210, "4")
     query_ids: dict[str, str] = {}
     for i, (key, (_title, path, _summary)) in enumerate(QUERY_MODES.items()):
-        qid = add_file(path, -600 + i * 400, -330, 280, 90, "4")
+        qid = add_file(path, -600 + i * 400, -345, 240, 76, "4")
         query_ids[key] = qid
         add_edge(skeleton_id, qid, "query")
 
-    add_group("community reports", -1260, -110, 2520, 260, "2")
+    add_group("Level 2 - field communities", -1260, -120, 2520, 260, "2")
     community_ids: dict[str, str] = {}
     all_domains = [(d.key, d.title.replace(" 인터페이스", " 커뮤니티"), f"{COMMUNITY_ROOT}/{slugify(d.title.replace(' 인터페이스', ' 커뮤니티'))}.md") for d in DOMAINS]
     all_domains += [
@@ -1774,19 +1792,19 @@ def create_canvas(courses: dict[str, Course]) -> bool:
     for i, (key, _title, path) in enumerate(all_domains):
         x = -1170 + (i % 5) * 480
         y = -40 + (i // 5) * 115
-        cid = add_file(path, x, y, 360, 85, "2")
+        cid = add_file(path, x, y, 300, 76, "2")
         community_ids[key] = cid
         add_edge(skeleton_id, cid, "community")
 
-    add_group("course profiles and local evidence", -1540, 250, 3080, 980, "1")
+    add_group("Level 3 - course profiles and local evidence", -1540, 250, 3080, 980, "1")
     sorted_courses = sorted(courses.values(), key=lambda c: (c.domain_key, c.label))
     course_ids: dict[str, str] = {}
     evidence_ids: dict[str, str] = {}
     for i, course in enumerate(sorted_courses):
         x = -1480 + (i % 6) * 500
         y = 330 + (i // 6) * 160
-        cid = add_file(course_profile_path(course), x, y, 280, 82, "1")
-        eid = add_file(course_evidence_path(course), x + 295, y, 170, 82, "3")
+        cid = add_file(course_profile_path(course), x, y, 220, 68, "1")
+        eid = add_file(course_evidence_path(course), x + 240, y + 4, 170, 58, "3")
         course_ids[course.key] = cid
         evidence_ids[course.key] = eid
         if course.domain_key in community_ids:
@@ -1795,14 +1813,14 @@ def create_canvas(courses: dict[str, Course]) -> bool:
         for mode in course.query_modes[:2]:
             add_edge(query_ids[mode], cid, "mode")
 
-    add_group("sample concept codebook", -1540, 1300, 3080, 520, "3")
+    add_group("Level 4 - compact concept codebook", -1540, 1300, 3080, 520, "3")
     for i, course in enumerate(sorted_courses[:30]):
         if not course.concepts:
             continue
         x = -1480 + (i % 6) * 500
         y = 1380 + (i // 6) * 92
         concept = course.concepts[0]
-        kid = add_file(concept_path(course, concept), x, y, 360, 72, "3")
+        kid = add_file(concept_path(course, concept), x, y, 180, 54, "3")
         add_edge(course_ids[course.key], kid, "concept")
 
     canvas = {"nodes": nodes, "edges": edges}

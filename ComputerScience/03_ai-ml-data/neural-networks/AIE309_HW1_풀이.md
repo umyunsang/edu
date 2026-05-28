@@ -3,6 +3,10 @@ aliases: []
 course: neural-networks
 created: '2025-11-27'
 date: '2025-11-27'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-2
 source: ''
 status: seedling
@@ -31,7 +35,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 ---
 ## 문제 1. Sigmoid 함수의 Backpropagation
 
-![[Pasted image 20251127132311.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 1. Sigmoid 함수의 Backpropagation.png]]
 
 ### 주어진 정보
 - 입력: $$X = \begin{pmatrix} \log 2 & \log 3 & \log 4 \\ \log 5 & \log 6 & \log 7 \end{pmatrix}$$
@@ -84,7 +88,7 @@ $$\boxed{\frac{\partial L}{\partial X} = \begin{pmatrix} 2 & 3 & 4 \\ 5 & 6 & 7 
 
 ## 문제 2. ReLU 함수의 Backpropagation
 
-![[Pasted image 20251127132336.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 2. ReLU 함수의 Backpropagation.png]]
 
 ### 주어진 정보
 - 입력: $X = \begin{pmatrix} 1 & -2 & 3 \\ -4 & 5 & -6 \end{pmatrix}$
@@ -132,7 +136,7 @@ $$\boxed{\frac{\partial L}{\partial X} = \begin{pmatrix} 1 & 0 & -3 \\ 0 & 5 & 0
 
 ## 문제 3. SoftmaxWithLoss의 Backpropagation
 
-![[Pasted image 20251127132350.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 3. SoftmaxWithLoss의 Backpropagation.png]]
 ### 주어진 정보
 - 입력: $X = \begin{pmatrix} \log 2 & \log 3 \end{pmatrix}$ (단일 샘플로 해석)
 - Target label: $t = (1, 0)$ (첫 번째 클래스가 정답)
@@ -175,7 +179,7 @@ $$\boxed{\frac{\partial L}{\partial X} = \begin{pmatrix} -\frac{3}{5} & \frac{3}
 
 ## 문제 4. Affine Layer의 Backpropagation
 
-![[Pasted image 20251127132547.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 4. Affine Layer의 Backpropagation.png]]
 
 ### 주어진 정보
 - $X = \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix}$ (3×2 행렬, batch size=3)
@@ -254,7 +258,7 @@ $$\boxed{\frac{\partial L}{\partial X} = \begin{pmatrix} 1 & 7 \\ 1 & 4 \\ 3 & 6
 
 ## 문제 5. 대칭변환의 Backpropagation
 
-![[Pasted image 20251127132604.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 5. 대칭변환의 Backpropagation.png]]
 
 ### 주어진 정보
 - 변환: $X = (x_1, x_2, x_3) \rightarrow Y = (x_2, x_3, x_1)$
@@ -312,7 +316,7 @@ $$\boxed{\frac{\partial L}{\partial X} = (d_3, d_1, d_2)}$$
 
 ## 문제 6. Momentum Algorithm
 
-![[Pasted image 20251127132626.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 6. Momentum Algorithm.png]]
 
 ### 주어진 정보
 - 목적 함수: $f(x, y) = x^2 + xy$
@@ -372,7 +376,7 @@ $$\boxed{x_1 = (-2, 0), \quad x_2 = (-1, 1), \quad x_3 = (1, 3)}$$
 
 ## 문제 7. NAG (Nesterov Accelerated Gradient) Algorithm
 
-![[Pasted image 20251127132637.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 7. NAG (Nesterov Accelerated Gradient.png]]
 
 ### 주어진 정보
 - 목적 함수: $f(x, y) = x^2 + xy$
@@ -443,7 +447,7 @@ $$\boxed{x_1 = (-2, 0), \quad x_2 = (6, 4), \quad x_3 = (-22, -6)}$$
 
 ## 문제 8. AdaGrad Algorithm
 
-![[Pasted image 20251127132649.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 8. AdaGrad Algorithm.png]]
 
 ### 주어진 정보
 - 목적 함수: $f(x, y) = x^2 + xy$
@@ -516,7 +520,7 @@ $$\boxed{x_1 = \begin{pmatrix} 0.5 \\ 0.5 \end{pmatrix} = \begin{pmatrix} \frac{
 
 ## 문제 9. RMSProp Algorithm
 
-![[Pasted image 20251127132702.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 9. RMSProp Algorithm.png]]
 
 ### 주어진 정보
 - 목적 함수: $f(x, y) = x^2 + xy$
@@ -601,7 +605,7 @@ $$\boxed{x_1 = \begin{pmatrix} -\frac{1}{2} \\ -\frac{1}{2} \end{pmatrix}, \quad
 
 ## 문제 10. Adam Algorithm
 
-![[Pasted image 20251127132714.png]]
+![[neural-networks__AIE309_HW1_풀이__문제 10. Adam Algorithm.png]]
 
 ### 주어진 정보
 - 목적 함수: $f(x, y) = x^2 + xy$

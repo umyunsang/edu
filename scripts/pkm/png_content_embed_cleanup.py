@@ -39,6 +39,8 @@ OCR_CACHE = VAULT / "scripts/pkm/.cache/png-ocr"
 WIKI_IMAGE_RE = re.compile(r"!\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
 MD_IMAGE_RE = re.compile(r"!\[[^\]]*]\(([^)]+)\)")
 PNG_SECTION_RE = re.compile(r"\n## PNG 시각자료\n\n.*?(?=\n## |\Z)", re.S)
+HEADING_RE = re.compile(r"^\s{0,3}#{1,6}\s+(.+?)\s*#*\s*$", re.MULTILINE)
+GENERIC_PNG_RE = re.compile(r"^(?:Pasted image \d+|스크린샷.*|Screenshot.*|Screen Shot.*|image[-_ ]?\d+|IMG[-_ ].*)$", re.I)
 TOKEN_RE = re.compile(r"[가-힣A-Za-z0-9]{2,}")
 STOP = {
     "image",
@@ -128,6 +130,29 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: f.read(1024 * 1024), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def git_tracked_png_count() -> int:
+    try:
+        proc = subprocess.run(
+            ["git", "ls-files", "image/*.png"],
+            cwd=VAULT,
+            capture_output=True,
+            text=True,
+            timeout=10,
+            check=False,
+        )
+    except Exception:
+        return 0
+    return len([line for line in proc.stdout.splitlines() if line.strip()])
+
+
+def duplicate_state(paths: list[Path]) -> tuple[int, int]:
+    groups: dict[str, list[Path]] = defaultdict(list)
+    for path in paths:
+        groups[sha256(path)].append(path)
+    duplicate_groups = [items for items in groups.values() if len(items) > 1]
+    return len(duplicate_groups), sum(len(items) for items in duplicate_groups)
 
 
 def choose_canonical(group: list[Path], refs: dict[str, list[Ref]]) -> Path:
@@ -309,6 +334,7 @@ def media_index_path(course_label: str) -> str:
 def clean_title_fragment(value: str) -> str:
     value = nfc(value)
     value = re.sub(r"!?\[\[[^\]]+\]\]", " ", value)
+    value = re.sub(r"[`*=~]+", " ", value)
     value = re.sub(r"[\\/:*?\"<>|#^[\]]+", " ", value)
     value = re.sub(r"\s+", " ", value).strip(" .,:;!?()[]{}\"'")
     return value[:48].strip()
@@ -330,6 +356,187 @@ def unique_png_destination(path: Path, stem: str) -> Path:
         candidate = path.with_name(f"{stem} {idx}{path.suffix}")
         idx += 1
     return candidate
+
+
+def is_generic_png(path: Path) -> bool:
+    stem = nfc(path.stem).strip()
+    return bool(GENERIC_PNG_RE.match(stem))
+
+
+def best_ref_for_png(png: Path, refs: dict[str, list[Ref]], courses: dict) -> tuple[Path | None, str | None]:
+    candidates = refs.get(png.name, [])
+    ranked: list[tuple[int, Path, str | None]] = []
+    for ref in candidates:
+        source = ref.source
+        course = find_course_for_path(source, courses)
+        score = 0
+        r = rel(source)
+        if source.suffix.lower() == ".md":
+            score += 5
+        if not r.startswith(KG_ROOT + "/"):
+            score += 20
+        if course:
+            score += 10
+        if "archive-kg/media" in r or r.endswith(".canvas"):
+            score -= 10
+        ranked.append((score, source, course.key if course else None))
+    if not ranked:
+        return None, infer_course_key(png)
+    _score, source, course_key = sorted(ranked, key=lambda item: item[0], reverse=True)[0]
+    return source, course_key
+
+
+def source_title(source: Path) -> str:
+    try:
+        text = source.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return clean_title_fragment(source.stem)
+    title_match = re.search(r"^title:\s*(.+)$", text, flags=re.MULTILINE)
+    if title_match:
+        title = clean_title_fragment(title_match.group(1).strip("'\" "))
+        if title:
+            return title
+    heading = HEADING_RE.search(text)
+    if heading:
+        title = clean_title_fragment(heading.group(1))
+        if title:
+            return title
+    return clean_title_fragment(source.stem)
+
+
+def nearest_heading_for_image(source: Path, image_name: str) -> str:
+    try:
+        text = source.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return ""
+    encoded = urllib.parse.quote(image_name)
+    positions = [idx for needle in (image_name, encoded) if (idx := text.find(needle)) >= 0]
+    if not positions:
+        return ""
+    pos = min(positions)
+    headings = [(m.start(), clean_title_fragment(m.group(1))) for m in HEADING_RE.finditer(text[:pos])]
+    headings = [(idx, heading) for idx, heading in headings if heading and heading != "PNG 시각자료"]
+    return headings[-1][1] if headings else ""
+
+
+def planned_png_destination(path: Path, stem: str, reserved: set[str]) -> Path:
+    stem = slugify(stem, path.stem)
+    candidate = path.with_name(f"{stem}{path.suffix}")
+    idx = 2
+    while (candidate.exists() and candidate != path) or candidate.name in reserved:
+        candidate = path.with_name(f"{stem} {idx}{path.suffix}")
+        idx += 1
+    reserved.add(candidate.name)
+    return candidate
+
+
+def rewrite_image_refs(mapping: dict[str, str]) -> int:
+    if not mapping:
+        return 0
+    changed = 0
+    encoded_mapping = {urllib.parse.quote(old): urllib.parse.quote(new) for old, new in mapping.items()}
+    for source in all_text_files():
+        try:
+            text = source.read_text(encoding="utf-8")
+        except Exception:
+            continue
+        new_text = text
+        for old, new in mapping.items():
+            new_text = new_text.replace(old, new)
+        for old, new in encoded_mapping.items():
+            new_text = new_text.replace(old, new)
+        if new_text != text:
+            source.write_text(nfc(new_text), encoding="utf-8")
+            changed += 1
+    return changed
+
+
+def normalize_markdown_image_refs() -> int:
+    png_names = {p.name for p in image_files()}
+    changed = 0
+
+    def is_local_target(target: str) -> bool:
+        target = target.strip()
+        lower = target.lower()
+        if lower.startswith(("http://", "https://", "data:", "obsidian://")):
+            return False
+        decoded = urllib.parse.unquote(target)
+        return "/image/" in decoded or decoded.startswith("image/") or decoded.startswith("../")
+
+    for source in all_text_files():
+        try:
+            text = source.read_text(encoding="utf-8")
+        except Exception:
+            continue
+
+        def replace(match: re.Match) -> str:
+            target = match.group(1)
+            name = decode_target(target)
+            if is_local_target(target) and name in png_names:
+                return f"![[{name}]]"
+            return match.group(0)
+
+        new_text = MD_IMAGE_RE.sub(replace, text)
+        if new_text != text:
+            source.write_text(nfc(new_text), encoding="utf-8")
+            changed += 1
+    return changed
+
+
+def rename_referenced_generic_pngs(refs: dict[str, list[Ref]], courses: dict) -> tuple[list[str], int, int]:
+    planned: list[tuple[Path, Path, str]] = []
+    reserved = {p.name for p in image_files() if not is_generic_png(p)}
+    ocr_scanned = 0
+    for png in image_files():
+        if not is_generic_png(png):
+            continue
+        source, course_key = best_ref_for_png(png, refs, courses)
+        if source is None:
+            continue
+        ocr = ocr_text(png)
+        ocr_scanned += 1
+        course_prefix = course_key or infer_course_key(png) or "shared-media"
+        heading = nearest_heading_for_image(source, png.name)
+        fragment = heading or ocr_title_fragment(ocr) or source_title(source)
+        source_fragment = source_title(source)
+        stem_parts = [course_prefix, source_fragment]
+        if fragment and fragment != source_fragment:
+            stem_parts.append(fragment)
+        destination = planned_png_destination(png, "__".join(stem_parts), reserved)
+        if destination != png:
+            planned.append((png, destination, f"{rel(png)} -> {rel(destination)}"))
+    mapping = {old.name: new.name for old, new, _item in planned}
+    rewrite_passes = rewrite_image_refs(mapping)
+    renamed: list[str] = []
+    for old, new, item in planned:
+        if old.exists():
+            old.rename(new)
+            renamed.append(item)
+    return renamed, ocr_scanned, rewrite_passes
+
+
+def normalized_png_stem(stem: str) -> str:
+    parts = [clean_title_fragment(part) for part in nfc(stem).split("__")]
+    parts = [part for part in parts if part]
+    return slugify("__".join(parts), stem)
+
+
+def normalize_semantic_png_names() -> tuple[list[str], int]:
+    planned: list[tuple[Path, Path, str]] = []
+    reserved: set[str] = set()
+    for png in image_files():
+        clean_stem = normalized_png_stem(png.stem)
+        destination = planned_png_destination(png, clean_stem, reserved)
+        if destination != png:
+            planned.append((png, destination, f"{rel(png)} -> {rel(destination)}"))
+    mapping = {old.name: new.name for old, new, _item in planned}
+    rewrite_passes = rewrite_image_refs(mapping)
+    renamed: list[str] = []
+    for old, new, item in planned:
+        if old.exists():
+            old.rename(new)
+            renamed.append(item)
+    return renamed, rewrite_passes
 
 
 def rename_unreferenced_png(path: Path, course_key: str | None, note: Path | None, ocr: str, courses: dict) -> Path:
@@ -408,6 +615,18 @@ def main() -> None:
 
     refs = scan_refs()
     pngs = image_files()
+    referenced_renamed, referenced_ocr_scanned, referenced_rewrite_passes = rename_referenced_generic_pngs(refs, courses)
+    if referenced_renamed:
+        refs = scan_refs()
+        pngs = image_files()
+    normalized_semantic_names, normalized_rewrite_passes = normalize_semantic_png_names()
+    if normalized_semantic_names:
+        refs = scan_refs()
+        pngs = image_files()
+    markdown_embed_rewrites = normalize_markdown_image_refs()
+    if markdown_embed_rewrites:
+        refs = scan_refs()
+        pngs = image_files()
     referenced = {IMAGE_DIR / name for name in refs}
     orphans = [p for p in pngs if p not in referenced]
 
@@ -450,6 +669,8 @@ def main() -> None:
     refs = scan_refs()
     remaining_pngs = image_files()
     remaining_unembedded = sorted(str(rel(p)) for p in remaining_pngs if p.name not in refs)
+    current_duplicate_groups, current_duplicate_files = duplicate_state(remaining_pngs)
+    current_generic_names = sum(1 for p in remaining_pngs if is_generic_png(p))
 
     lines = note_header("PNG 내용 검증 및 정리 리포트", ["type/interface", "pkm/kg-evidence"])
     lines.extend(
@@ -465,6 +686,12 @@ def main() -> None:
             f"- Initial PNG files: {len(pngs) + len(duplicate_deleted)}",
             f"- Exact duplicate files deleted: {len(duplicate_deleted)}",
             f"- Duplicate reference rewrite passes: {duplicate_rewrites}",
+            f"- Referenced generic PNGs OCR-scanned: {referenced_ocr_scanned}",
+            f"- Referenced generic PNGs semantically renamed: {len(referenced_renamed)}",
+            f"- Referenced PNG rewrite passes: {referenced_rewrite_passes}",
+            f"- Semantic PNG filenames normalized: {len(normalized_semantic_names)}",
+            f"- Semantic PNG normalization rewrite passes: {normalized_rewrite_passes}",
+            f"- Local markdown image refs converted to embeds: {markdown_embed_rewrites}",
             f"- Orphan PNGs OCR-scanned: {ocr_scanned}",
             f"- Orphan PNGs semantically renamed: {len(semantic_renamed)}",
             f"- Embedded into source notes: {len(embedded_to_notes)}",
@@ -473,6 +700,9 @@ def main() -> None:
             f"- Unmatched orphan PNGs deleted: {len(orphan_deleted)}",
             f"- Remaining PNG files: {len(remaining_pngs)}",
             f"- Remaining unembedded PNG files: {len(remaining_unembedded)}",
+            f"- Current exact duplicate groups: {current_duplicate_groups}",
+            f"- Current exact duplicate files: {current_duplicate_files}",
+            f"- Current generic/Pasted PNG filenames: {current_generic_names}",
             "",
             "## Deleted exact duplicates",
             "",
@@ -481,6 +711,14 @@ def main() -> None:
     lines.extend(f"- `{item}`" for item in duplicate_deleted[:300])
     if len(duplicate_deleted) > 300:
         lines.append(f"- ... {len(duplicate_deleted) - 300} more")
+    lines.extend(["", "## Semantically renamed referenced PNGs", ""])
+    lines.extend(f"- `{item}`" for item in referenced_renamed[:300])
+    if len(referenced_renamed) > 300:
+        lines.append(f"- ... {len(referenced_renamed) - 300} more")
+    lines.extend(["", "## Normalized semantic PNG filenames", ""])
+    lines.extend(f"- `{item}`" for item in normalized_semantic_names[:300])
+    if len(normalized_semantic_names) > 300:
+        lines.append(f"- ... {len(normalized_semantic_names) - 300} more")
     lines.extend(["", "## Semantically renamed orphan PNGs", ""])
     lines.extend(f"- `{item}`" for item in semantic_renamed[:300])
     if len(semantic_renamed) > 300:
@@ -502,6 +740,10 @@ def main() -> None:
     print(
         "png_content_embed_cleanup "
         f"duplicates_deleted={len(duplicate_deleted)} duplicate_rewrites={duplicate_rewrites} "
+        f"referenced_ocr_scanned={referenced_ocr_scanned} "
+        f"referenced_renamed={len(referenced_renamed)} referenced_rewrites={referenced_rewrite_passes} "
+        f"normalized_semantic_names={len(normalized_semantic_names)} normalized_rewrites={normalized_rewrite_passes} "
+        f"markdown_embed_rewrites={markdown_embed_rewrites} "
         f"orphans_scanned={ocr_scanned} embedded_notes={len(embedded_to_notes)} "
         f"semantic_renamed={len(semantic_renamed)} "
         f"media_indexes={media_indexes_written} normalized_sections={normalized_png_sections} "

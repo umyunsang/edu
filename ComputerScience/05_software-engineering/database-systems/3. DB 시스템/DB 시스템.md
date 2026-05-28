@@ -3,6 +3,10 @@ aliases: []
 course: database-systems
 created: '2024-09-09'
 date: '2024-09-09'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-2
 source: ''
 status: seedling
@@ -29,7 +33,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database
 kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 ---
-![](../../../../image/Pasted%20image%2020240909173025.png)
+![[database-systems__DB 시스템__OEWWIOA AlABy.png]]
 
 ## 1. 데이터베이스 시스템의 정의
 
@@ -44,7 +48,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - **인스턴스(instance)** 
 	- 스키마에 따라 데이터베이스에 실제로 저장된 값
 	- CPU에 점유되어 처리되고있는 객체를 인스턴스라 한다
-	![](../../../../image/Pasted%20image%2020240909173230.png)
+	![[database-systems__DB 시스템__스키마와 인스턴스.png]]
 
 #### ==3단계 데이터베이스 구조(시험: 용어 위주)==
 - 데이터베이스를 쉽게 이해하고 이용할 수 있도록 하나의 데이터베이스를 관점에 따라 세 단계로 나눈 것 
@@ -69,7 +73,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 			- 전체 데이터베이스가 저장 장치에 실제로 저장되는 방법을 정의한 것 
 			- 레코드 구조, 필드 크기, 레코드 접근 경로 등 물리적 저장 구조를 정의
 - 3단계 데이터베이스 구조의 예
-	![](../../../../image/Pasted%20image%2020240912105017.png)
+	![[database-systems__DB 시스템__3단계 데이터베이스 구조(시험 용어 위주.png]]
 
 #### ==데이터 독립성(data independency)(시험: 용어 위주)==
 데이터베이스를 3단계 구조로 나누고 단계별로 스키마를 유지하며 스키마 사이의 대응 관계를 정의하는 궁극적인 목적 -> **데이터 독립성의 실현**
@@ -104,7 +108,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 #### 데이터 언어
 - 사용자와 데이터베이스 관리 시스템 간의 통신 수단 
 - 사용 목적에 따라 데이터 정의어, 데이터 조작어, 데이터 제어어로 구분
-	![](../../../../image/Pasted%20image%2020240912112357.png)
+	![[database-systems__DB 시스템__데이터 언어.png]]
 - **데이터 정의어(DDL; Data Definition Language)** 
 	- 스키마를 정의하거나, 수정 또는 삭제하기 위해 사용 
 - **데이터 조작어(DML; Data Manipulation Language)** 
@@ -125,7 +129,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 ## 데이터베이스 관리 시스템의 구성
 
-![](../../../../image/Pasted%20image%2020240912112859.png)
+![[database-systems__DB 시스템__데이터베이스 관리 시스템의 구성.png]]
 - DML 프리 컴파일러(용어 알아두기)
 - 트랜잭션 : 명령어의 답안들로 묶어진 하나의 명령어
 

@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 66
+kg_layer_label: L4 concept
+kg_level: 4
+kg_role: concept
 semester: meta
 source: ''
 status: evergreen
@@ -19,7 +23,7 @@ kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아
 kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/최적화 수학 지식그래프|최적화 수학]]
 kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/최적화 수학 근거 인덱스|최적화 수학 근거 인덱스]]
 kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/수학 이론 커뮤니티]]
-related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/최적화 수학|최적화 수학]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/msc087|msc087]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/png 시각자료|png 시각자료]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ax + b|ax + b]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 1|step 1]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 2|step 2]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 3|step 3]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 4|step 4]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 5|step 5]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/s series|s series]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/form method|웹 프로그래밍/form method]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/최적화 수학|최적화 수학]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ax + b|ax + b]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/msc087|msc087]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/png 시각자료|png 시각자료]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 1|step 1]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 2|step 2]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 3|step 3]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 4|step 4]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 5|step 5]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/s series|s series]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/web-programming/form method|웹 프로그래밍/form method]]
 
 # s method
 
@@ -35,10 +39,10 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization
 ## 연결 개념
 
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/최적화 수학|최적화 수학]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ax + b|ax + b]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/msc087|msc087]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/png 시각자료|png 시각자료]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ai|ai]]
-- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/ax + b|ax + b]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 1|step 1]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 2|step 2]]
 - [[ComputerScience/00_graph-interfaces/archive-kg/concepts/optimization-math/step 3|step 3]]

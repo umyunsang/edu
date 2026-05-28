@@ -3,6 +3,10 @@ aliases: []
 course: archive-kg
 created: '2026-05-28'
 date: '2026-05-28'
+kg_graph_size: 140
+kg_layer_label: L1 query
+kg_level: 1
+kg_role: query
 semester: meta
 source: ''
 status: evergreen

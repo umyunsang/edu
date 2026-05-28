@@ -3,6 +3,10 @@ aliases: []
 course: data-structures
 created: '2024-08-16'
 date: '2024-08-16'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 2-1
 source: ''
 status: seedling
@@ -118,7 +122,7 @@ def print_q():  # 큐출력
 ---
 ## 데크
 
-![](../../../../image/Pasted%20image%2020240816190547.png)
+![[data-structures__Queue__데크.png]]
 
 - 데크(Double-ended Queue, Deque): 양쪽 끝에서 삽입과 삭제를 허용하는 자료구조 
 

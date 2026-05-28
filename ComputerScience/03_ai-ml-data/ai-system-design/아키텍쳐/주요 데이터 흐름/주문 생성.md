@@ -3,6 +3,10 @@ aliases: []
 course: ai-system-design
 created: '2025-04-10'
 date: '2025-04-10'
+kg_graph_size: 62
+kg_layer_label: L4 source
+kg_level: 4
+kg_role: source-note
 semester: 3-1
 source: ''
 status: seedling
