@@ -1,0 +1,43 @@
+---
+aliases: []
+course: archive-kg
+created: '2026-05-28'
+date: '2026-05-28'
+semester: meta
+source: ''
+status: evergreen
+tags:
+- type/concept
+- pkm/kg-concept
+title: report
+type: concept
+updated: '2026-05-28'
+---
+
+kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
+kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/프로그래밍언어론 지식그래프|프로그래밍언어론]]
+kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/프로그래밍언어론 근거 인덱스|프로그래밍언어론 근거 인덱스]]
+kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/소프트웨어 엔지니어링 커뮤니티]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/장 교재 문제|장 교재 문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/장 연습문제|장 연습문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/데이터 타입|데이터 타입]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/ipat|ipat]]
+
+# report
+
+프로그래밍언어론 자료에서 추출된 개념 노드입니다.
+
+## 로컬 근거
+
+- [[ComputerScience/05_software-engineering/programming-languages/과제/3장 제출용]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/3장 제출용]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/3장 제출용]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/3장 제출용]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/4장 재귀 하강 파서 연습문제]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/4장 재귀 하강 파서 연습문제]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/4장 재귀 하강 파서 연습문제]]
+- [[ComputerScience/05_software-engineering/programming-languages/과제/5장 연습문제 (제출용)]]
+
+## 연결 개념
+
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/장 교재 문제|장 교재 문제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/장 연습문제|장 연습문제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/데이터 타입|데이터 타입]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/programming-languages/ipat|ipat]]

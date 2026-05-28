@@ -14,7 +14,6 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-
 up:: [[certifications/체크리스트|🎯 2026년 상반기 자격증 합격 로드맵]]
 related:: [[certifications/information-processing/필기/1. 프로그래밍 언어 활용|1. 프로그래밍 언어 활용]], [[certifications/information-processing/실기/오답노트|C언어 실기 오답노트]], [[GEMINI|GEMINI]]
 

@@ -1,0 +1,40 @@
+---
+aliases: []
+course: archive-kg
+created: '2026-05-28'
+date: '2026-05-28'
+semester: meta
+source: ''
+status: evergreen
+tags:
+- type/concept
+- pkm/kg-concept
+title: decorator to log execution details
+type: concept
+updated: '2026-05-28'
+---
+
+kg_skeleton:: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
+kg_course:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/이산수학 지식그래프|이산수학]]
+kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/이산수학 근거 인덱스|이산수학 근거 인덱스]]
+kg_community:: [[ComputerScience/00_graph-interfaces/archive-kg/communities/수학 이론 커뮤니티]]
+related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 교재 문제|장 교재 문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 연습문제|장 연습문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/시험문제|시험문제]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/data cleaning functions|data cleaning functions]]
+
+# decorator to log execution details
+
+이산수학 자료에서 추출된 개념 노드입니다.
+
+## 로컬 근거
+
+- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete mathematics Assignment]]
+- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete mathematics Assignment]]
+- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete mathematics Assignment]]
+- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete mathematics Assignment]]
+- [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete mathematics Assignment]]
+
+## 연결 개념
+
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 교재 문제|장 교재 문제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/장 연습문제|장 연습문제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/시험문제|시험문제]]
+- [[ComputerScience/00_graph-interfaces/archive-kg/concepts/discrete-mathematics/data cleaning functions|data cleaning functions]]

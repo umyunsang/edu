@@ -13,8 +13,10 @@ type: index
 updated: '2026-05-28'
 ---
 
-
+graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
+bridge:: [[ComputerScience/00_graph-interfaces/bridges/아카이브 운영 브리지|아카이브 운영 브리지]]
 central:: [[커리큘럼 관계 정리|커리큘럼 관계 정리]]
+
 # 🧭 Obsidian | Computer Science & AI Curriculum Map
 
 <p align="center">
@@ -31,9 +33,15 @@ central:: [[커리큘럼 관계 정리|커리큘럼 관계 정리]]
 
 ## 🗺️ Knowledge Graph (관계성 지도)
 
-학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다. 현재 파일 구조는 학년/학기 폴더가 아니라 7개 분야별 인터페이스 폴더를 기준으로 정리되어 있으며, 학기 이력은 각 노트의 frontmatter에 남겨 둡니다.
+학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다. 현재 파일 구조는 학년/학기 폴더가 아니라 지식그래프 인터페이스와 7개 분야별 인터페이스 폴더를 기준으로 정리되어 있으며, 학기 이력은 각 노트의 frontmatter에 남겨 둡니다.
 
-> **Obsidian 사용자:** [[커리큘럼 관계 그래프.canvas|`커리큘럼 관계 그래프.canvas`]]를 열면 인터랙티브 Canvas 뷰로 볼 수 있습니다.
+> **Obsidian 사용자:** [[2026 GraphRAG 아카이브.canvas|`2026 GraphRAG 아카이브.canvas`]], [[지식그래프 레벨 인터페이스.canvas|`지식그래프 레벨 인터페이스.canvas`]], [[커리큘럼 관계 그래프.canvas|`커리큘럼 관계 그래프.canvas`]]를 열면 인터랙티브 Canvas 뷰로 볼 수 있습니다.
+
+### 2026 GraphRAG 아카이브 스켈레톤
+
+- 최상위 허브: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
+- 구조 기준: [[ComputerScience/00_graph-interfaces/archive-kg/2026 GraphRAG 아카이브 스켈레톤|2026 GraphRAG 아카이브 스켈레톤]]
+- 주요 관계 필드: `domain::`, `stage::`, `module::`, `bridge::`, `kg_profile::`, `kg_evidence::`, `kg_concepts::`, `kg_query_mode::`
 
 ```mermaid
 graph TD
@@ -136,6 +144,7 @@ graph TD
 
 | 인터페이스 폴더 | 분류 기준 | 포함 과목 |
 | :--- | :--- | :--- |
+| `ComputerScience/00_graph-interfaces/` | Graph View에 실제 노드로 보이는 단계·브리지·과목·관계·리서치 인터페이스 | hub, stages, bridges, courses, ontology, research, tech-stacks, ecosystems, competencies |
 | `ComputerScience/01_programming-foundations/` | 프로그래밍 언어와 구현 기초 | coding-basics, python-programming, data-structures, coding-test, java-programming |
 | `ComputerScience/02_math-theory/` | 수학적 기초와 이론 | probability-statistics, discrete-mathematics, optimization-math, mathematical-logic |
 | `ComputerScience/03_ai-ml-data/` | AI, ML, 데이터, 생성형 AI | artificial-intelligence, machine-learning, neural-networks, computer-vision, large-language-models, big-data-analysis |

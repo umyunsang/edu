@@ -13,12 +13,18 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-
-
 domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]
+stage:: [[ComputerScience/00_graph-interfaces/stages/6단계 전문 확장 인터페이스|6단계 전문 확장 인터페이스]]
+module:: [[ComputerScience/00_graph-interfaces/courses/학점 포트폴리오 인터페이스|학점 포트폴리오 인터페이스]]
+bridge:: [[ComputerScience/00_graph-interfaces/bridges/산출물 포트폴리오 브리지|산출물 포트폴리오 브리지]]
 up:: [[ComputerScience/07_professional-humanities/degree-portfolio/졸업학점|졸업학점]]
 prerequisites:: [[ComputerScience/07_professional-humanities/creative-writing/중간고사_창의적글쓰기_정리|중간고사_창의적글쓰기_정리]]
 related:: [[ComputerScience/07_professional-humanities/degree-portfolio/GovOn 온프레미스 AI 발표 스크립트|GovOn 온프레미스 AI 발표 스크립트]], [[ComputerScience/07_professional-humanities/creative-writing/docs/WRITING_WORKFLOW|WRITING_WORKFLOW]], [[ComputerScience/07_professional-humanities/creative-writing/knowledge/source_map|source_map]], [[ComputerScience/07_professional-humanities/creative-writing/AGENTS|AGENTS]], [[ComputerScience/04_systems-infrastructure/container-orchestration/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]], [[ComputerScience/07_professional-humanities/creative-writing/docs/CODEX_RAG_NOTES|CODEX_RAG_NOTES]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/07_professional-humanities/creative-writing/templates/writing-assignment|writing-assignment]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]], [[ComputerScience/07_professional-humanities/creative-writing/pdf/퀴즈|퀴즈]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/07_professional-humanities/intellectual-property/4. 디자인 제도 및 등록요건/디자인 제도의 목적과 개념|디자인 제도의 목적과 개념]]
+
+kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/학점 포트폴리오 지식그래프|학점 포트폴리오]]
+kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/학점 포트폴리오 근거 인덱스|학점 포트폴리오 근거 인덱스]]
+kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/degree-portfolio/ai|ai]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/degree-portfolio/pdf 인쇄 완전 가이드|pdf 인쇄 완전 가이드]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/degree-portfolio/전문 교양 인터페이스|전문 교양 인터페이스]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/degree-portfolio/전 가이드|전 가이드]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/degree-portfolio/css|css]]
+kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 # PDF 인쇄 완전 가이드
 

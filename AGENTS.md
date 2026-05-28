@@ -13,12 +13,8 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-
-
-
-
-
-
+graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
+bridge:: [[ComputerScience/00_graph-interfaces/bridges/아카이브 운영 브리지|아카이브 운영 브리지]]
 related:: [[CLAUDE|CLAUDE]], [[GEMINI|GEMINI]]
 
 # AGENTS.md
@@ -32,6 +28,7 @@ An Obsidian vault containing a 3-year Computer Science & AI undergraduate curric
 ## Vault Structure
 
 - `ComputerScience/01_programming-foundations/` — coding basics, Python, data structures, coding test, Java
+- `ComputerScience/00_graph-interfaces/` — real Obsidian graph nodes for stages, bridges, course modules, relationship ontology, research trends, tech stacks, ecosystems, and competencies
 - `ComputerScience/02_math-theory/` — probability/statistics, discrete math, optimization math, mathematical logic
 - `ComputerScience/03_ai-ml-data/` — AI, ML, neural networks, computer vision, LLM, big data, AI system design
 - `ComputerScience/04_systems-infrastructure/` — Linux, computer architecture, OS, networks, distributed/CUDA/MPI, containers
@@ -69,6 +66,7 @@ An Obsidian vault containing a 3-year Computer Science & AI undergraduate curric
 ## Working with This Vault
 
 - When creating or editing notes, always use Obsidian Flavored Markdown (wikilinks, callouts, embeds)
+- Graph relationships should prefer explicit interface nodes and wikilink fields: `domain::`, `stage::`, `module::`, `bridge::`, `schema::`, `source_model::`, `relation_type::`, `tech_stack::`, `research::`, `ecosystem::`, `competency::`
 - Directory naming: field interface first, canonical course folder second — e.g., `03_ai-ml-data/machine-learning`, `04_systems-infrastructure/operating-systems`
 - Images should go in `/image/` and be referenced with `![[filename]]`
 - PDF export is configured for A4, no margins, no title — respect these settings when formatting
