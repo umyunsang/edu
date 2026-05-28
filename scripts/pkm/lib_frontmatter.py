@@ -8,8 +8,15 @@ import unicodedata
 from pathlib import Path
 from typing import Iterable
 
-import frontmatter
-import yaml
+try:
+    import frontmatter
+except ModuleNotFoundError:  # pragma: no cover - depends on local Python env
+    frontmatter = None
+
+try:
+    import yaml
+except ModuleNotFoundError:  # pragma: no cover - depends on local Python env
+    yaml = None
 
 DEFAULT_EXCLUDE = (
     ".obsidian",
@@ -24,11 +31,21 @@ DEFAULT_EXCLUDE = (
     ".venv",
     ".aioss-rag",
     "scripts",
-    "docs",
 )
 
 
 def _yaml_dump(data: dict) -> str:
+    if yaml is None:
+        lines: list[str] = []
+        for key in sorted(data):
+            value = data[key]
+            if isinstance(value, list):
+                lines.append(f"{key}:")
+                for item in value:
+                    lines.append(f"- {item!r}")
+            else:
+                lines.append(f"{key}: {value!r}")
+        return "\n".join(lines) + "\n"
     return yaml.safe_dump(
         data,
         allow_unicode=True,
@@ -44,10 +61,40 @@ def read_note(path: Path) -> tuple[dict, str]:
     """
     raw = Path(path).read_text(encoding="utf-8")
     raw = unicodedata.normalize("NFC", raw)
+    if frontmatter is None:
+        if not raw.startswith("---\n"):
+            return {}, raw
+        end = raw.find("\n---", 4)
+        if end == -1:
+            return {}, raw
+        body = raw[raw.find("\n", end + 4) + 1 :]
+        metadata: dict = {}
+        current_list: str | None = None
+        for line in raw[4:end].splitlines():
+            if not line.strip():
+                continue
+            if line.startswith("- ") and current_list:
+                metadata.setdefault(current_list, [])
+                if isinstance(metadata[current_list], list):
+                    metadata[current_list].append(line[2:].strip().strip("'\""))
+                continue
+            if ":" not in line or line.startswith(" "):
+                current_list = None
+                continue
+            key, value = line.split(":", 1)
+            key = key.strip()
+            value = value.strip()
+            if value:
+                metadata[key] = value.strip("'\"")
+                current_list = None
+            else:
+                metadata[key] = []
+                current_list = key
+        return metadata, body
     try:
         post = frontmatter.loads(raw)
         return dict(post.metadata), post.content
-    except (yaml.YAMLError, Exception):
+    except Exception:
         return {}, raw
 
 

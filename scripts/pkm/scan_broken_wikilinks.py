@@ -12,6 +12,7 @@ from lib_frontmatter import DEFAULT_EXCLUDE, iter_vault_notes  # noqa: E402
 VAULT = Path("/Users/um-yunsang/Library/Mobile Documents/iCloud~md~obsidian/Documents/edu")
 EXCLUDE = (*DEFAULT_EXCLUDE, "_templates")
 WIKI_PAT = re.compile(r"(?<!\!)\[\[([^\]|#]+?)(?:#[^\]|]*)?(\|[^\]]*)?\]\]")
+INLINE_CODE_RE = re.compile(r"`[^`]*`")
 
 
 def build_index() -> tuple[set[str], set[str]]:
@@ -53,6 +54,7 @@ def main():
                 continue
             if in_code:
                 continue
+            line = INLINE_CODE_RE.sub("", line)
             for m in WIKI_PAT.finditer(line):
                 target = m.group(1).strip()
                 if not target:

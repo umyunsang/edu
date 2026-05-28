@@ -31,7 +31,7 @@ central:: [[커리큘럼 관계 정리|커리큘럼 관계 정리]]
 
 ## 🗺️ Knowledge Graph (관계성 지도)
 
-학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다. 4개 도메인 트랙(AI/ML, 시스템, 수학, 개발)이 서로 교차하며 최종적으로 컴퓨터비전·알고리즘·AIOSS에서 융합됩니다.
+학습 로드맵에 따른 과목 간의 유기적인 관계를 보여줍니다. 현재 파일 구조는 학년/학기 폴더가 아니라 7개 분야별 인터페이스 폴더를 기준으로 정리되어 있으며, 학기 이력은 각 노트의 frontmatter에 남겨 둡니다.
 
 > **Obsidian 사용자:** [[커리큘럼 관계 그래프.canvas|`커리큘럼 관계 그래프.canvas`]]를 열면 인터랙티브 Canvas 뷰로 볼 수 있습니다.
 
@@ -132,36 +132,48 @@ graph TD
 
 ---
 
-## 📂 학년/학기별 커리큘럼 & 실습 코드
+## 📂 분야별 인터페이스 폴더 & 커리큘럼
+
+| 인터페이스 폴더 | 분류 기준 | 포함 과목 |
+| :--- | :--- | :--- |
+| `ComputerScience/01_programming-foundations/` | 프로그래밍 언어와 구현 기초 | coding-basics, python-programming, data-structures, coding-test, java-programming |
+| `ComputerScience/02_math-theory/` | 수학적 기초와 이론 | probability-statistics, discrete-mathematics, optimization-math, mathematical-logic |
+| `ComputerScience/03_ai-ml-data/` | AI, ML, 데이터, 생성형 AI | artificial-intelligence, machine-learning, neural-networks, computer-vision, large-language-models, big-data-analysis |
+| `ComputerScience/04_systems-infrastructure/` | 시스템과 인프라 | linux, computer-architecture, operating-systems, computer-networks, parallel-distributed-computing, container-orchestration |
+| `ComputerScience/05_software-engineering/` | 소프트웨어 개발과 운영 | web-programming, database-systems, open-source-software, programming-languages, aioss-open-source-delivery |
+| `ComputerScience/06_algorithms-graphics/` | 알고리즘 분석과 그래픽스 | algorithm-design-analysis, computer-graphics |
+| `ComputerScience/07_professional-humanities/` | 전문 교양, 글쓰기, 포트폴리오 | intellectual-property, creative-writing, classics-reading, degree-portfolio |
+
+아래 표는 학습 이력 순서를 설명하기 위한 보조 보기이며, 실제 파일 탐색의 기준은 위 분야별 인터페이스입니다.
 
 ### [1학년] - 기초 다지기
 | 과목명 | 핵심 내용 | 실습 및 과제 |
 | :--- | :--- | :--- |
-| **[1-2] 코딩 기초와 문제해결** | 컴퓨팅 사고, 아두이노 | [[ComputerScience/1-2_coding-basics/4. 아두이누/아두이노 실습|아두이노 실습]] |
+| **[1-2] 코딩 기초와 문제해결** | 컴퓨팅 사고, 아두이노 | [[ComputerScience/01_programming-foundations/coding-basics/4. 아두이노/아두이노 실습|아두이노 실습]] |
 | **[1-2] 선형대수학** | 벡터, 행렬, 선형변환 | [Linear Algebra Lab 🔗](https://github.com/umyunsang/Linear-Algebra) |
 
 ### [2학년] - CS 핵심 및 AI 입문
 | 과목명 | 핵심 내용 | 실습 및 과제 |
 | :--- | :--- | :--- |
-| **[2-1] Python(basic)** | 파이썬 문법, 객체지향 | [Python Repository 🔗](https://github.com/umyunsang/Python)<br>[[ComputerScience/2-1_python/지뢰찾기/지뢰찾기|지뢰찾기 구현]] |
-| **[2-1] 데이터 구조** | 리스트, 스택, 큐, 트리 | [Data Structures Repo 🔗](https://github.com/umyunsang/Data_Structures)<br>[[ComputerScience/2-1_data-structures/5. 정렬/1705817_엄윤상_데이터구조_4주차과제|정렬 알고리즘 실습]] |
-| **[2-1] 인공지능** | 신경망 기초, CNN | [AI Repository 🔗](https://github.com/umyunsang/Artificial_Intelligence)<br>[[ComputerScience/2-1_AI/3. Backpropagation/실습/CIFAR10/CIFAR10|CNN 실습]] |
-| **[2-1] 웹프로그래밍** | HTML, Spring Boot | [Web Programming Repo 🔗](https://github.com/umyunsang/Web_Programming)<br>[[ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 실습]] |
+| **[2-1] Python(basic)** | 파이썬 문법, 객체지향 | [Python Repository 🔗](https://github.com/umyunsang/Python)<br>[[ComputerScience/01_programming-foundations/python-programming/지뢰찾기/지뢰찾기|지뢰찾기 구현]] |
+| **[2-1] 데이터 구조** | 리스트, 스택, 큐, 트리 | [Data Structures Repo 🔗](https://github.com/umyunsang/Data_Structures)<br>[[ComputerScience/01_programming-foundations/data-structures/5. 정렬/1705817_엄윤상_데이터구조_4주차과제|정렬 알고리즘 실습]] |
+| **[2-1] 인공지능** | 신경망 기초, CNN | [AI Repository 🔗](https://github.com/umyunsang/Artificial_Intelligence)<br>[[ComputerScience/03_ai-ml-data/artificial-intelligence/3. Backpropagation/실습/CIFAR10/CIFAR10|CNN 실습]] |
+| **[2-1] 웹프로그래밍** | HTML, Spring Boot | [Web Programming Repo 🔗](https://github.com/umyunsang/Web_Programming)<br>[[ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 실습]] |
 | **[2-1] 리눅스시스템** | 셸·편집기·프로세스·서버 기초 | [Linux Repository 🔗](https://github.com/umyunsang/Linux) |
-| **[2-1] 확률과 통계** | 확률·통계 기초와 데이터 해석 | [[ComputerScience/2-1_probability-statistics/3.Probability/Probability|강의 자료 정리(Local)]] |
-| **[2-1] 컴퓨터 구조** | CPU, 메모리 구조 | [[ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|Cache Friendly 코딩]] |
-| **[2-2] 운영체제** | 스케줄링, 동기화 | [[ComputerScience/2-2_operating-system/과제/FCFS/fcfs.c|스케줄러 구현(FCFS/SJF/SRTF)]] |
+| **[2-1] 확률과 통계** | 확률·통계 기초와 데이터 해석 | [[ComputerScience/02_math-theory/probability-statistics/3.Probability/Probability|강의 자료 정리(Local)]] |
+| **[2-1] 컴퓨터 구조** | CPU, 메모리 구조 | [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|Cache Friendly 코딩]] |
+| **[2-2] 운영체제** | 스케줄링, 동기화 | [[ComputerScience/04_systems-infrastructure/operating-systems/과제/FCFS/FCFS CPU 스케줄링 구현 과제|스케줄러 구현(FCFS/SJF/SRTF)]] |
 | **[2-2] OSS** | JS 이벤트·객체·DOM 등 클라이언트 기초 | [OSS Repository 🔗](https://github.com/umyunsang/OSS) |
 | **[2-2] 데이터베이스** | SQL, 정규화, 모델링 | - |
 
 ### [3학년] - 머신러닝 심화 및 분산 시스템
 | 과목명 | 핵심 내용 | 실습 및 과제 |
 | :--- | :--- | :--- |
-| **[3-1] 머신러닝** | 회귀, SVM, RNN, Transformer | [[ComputerScience/3-1_machine-learning/SVM/SVM|SVM·회귀 정리]] |
-| **[3-1] 머신러닝프로젝트** | SKLearn, Pandas, LangChain | [[ComputerScience/3-1_ML-project/Python 기초/실력과제|파이썬 기초 실력과제]] |
+| **[3-1] 머신러닝** | 회귀, SVM, RNN, Transformer | [[ComputerScience/03_ai-ml-data/machine-learning/SVM/SVM|SVM·회귀 정리]] |
+| **[3-1] 머신러닝프로젝트** | SKLearn, Pandas, LangChain | [[ComputerScience/03_ai-ml-data/ml-projects/Python 기초/실력과제|파이썬 기초 실력과제]] |
 | **[3-1] 분산처리** | CUDA, 병렬 프로그래밍 | [CUDA Projects 🔗](https://github.com/umyunsang/cudaProj) |
 | **[3-1] AI시스템개발/설계** | MLOps, 아키텍처 설계 | [Cafe Project 🔗](https://github.com/umyunsang/cafeProj) |
-| **[3-2] 빅데이터분석** | 데이터 레이크, 분석 도구 | [[ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제|MLFlow 과제]]<br>[Big Data Pipeline 🔗](https://github.com/umyunsang/Bigdata_Proj) |
+| **[3-2] 빅데이터분석** | 데이터 레이크, 분석 도구 | [[ComputerScience/03_ai-ml-data/big-data-analysis/md/MLFlow 과제|MLFlow 과제]]<br>[Big Data Pipeline 🔗](https://github.com/umyunsang/Bigdata_Proj) |
 | **[3-2] 뉴럴네트워크** | 심화 신경망 아키텍처 | [Neural Network Labs 🔗](https://github.com/umyunsang/neural_network) |
 | **[3-2] 컴퓨터 그래픽스** | 렌더링, 그래픽스 기초 | [Graphics Labs 🔗](https://github.com/umyunsang/Graphics) |
 
@@ -169,7 +181,7 @@ graph TD
 | 과목명 | 핵심 내용 | 실습 및 과제 |
 | :--- | :--- | :--- |
 | **[4-1] 알고리즘** | 분할정복, 탐욕법, DP, NP | [CoTest Repository 🔗](https://github.com/umyunsang/COTEST) |
-| **[4-1] 컴퓨터비전** | 영상처리, 기하변환 | [[ComputerScience/4-1_computer-vision/중간고사_컴퓨터비전_정밀분석_정리|CV 핵심 정리]] |
+| **[4-1] 컴퓨터비전** | 영상처리, 기하변환 | [[ComputerScience/03_ai-ml-data/computer-vision/중간고사_컴퓨터비전_정밀분석_정리|CV 핵심 정리]] |
 | **[4-1] AIOSS** | 실증적 개발, 오픈소스 AI 프로젝트 | [Govon Repository 🔗](https://github.com/govon-org/govon) (이슈·마일스톤 기여) |
 
 ---
@@ -186,10 +198,10 @@ graph TD
 
 ## 🚀 실전 기술 스택 & 툴 (Highlights)
 
-*   **LLM 활용**: [[ComputerScience/elective_LLM/ChatGPT API/Fine-Tuning 실습|Fine-Tuning 실습]], ChatGPT API 연동
-*   **GenAI 실전**: [[ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG|RAG 워크플로우]], [Hugging Face Models 🔗](https://huggingface.co/umyunsang)
-*   **인프라**: [[ComputerScience/elective_docker-k8s/도커 기초|도커 및 쿠버네티스]] (Ingress, Service 설정)
-*   **알고리즘**: [[ComputerScience/elective_coding-test/자료구조/1. 배열과 리스트|코딩테스트 대비]] 및 백준 문제 풀이
+*   **LLM 활용**: [[ComputerScience/03_ai-ml-data/large-language-models/ChatGPT API/Fine-Tuning 실습|Fine-Tuning 실습]], ChatGPT API 연동
+*   **GenAI 실전**: [[ComputerScience/03_ai-ml-data/large-language-models/검색 증강 생성 RAG/RAG|RAG 워크플로우]], [Hugging Face Models 🔗](https://huggingface.co/umyunsang)
+*   **인프라**: [[ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초|도커 및 쿠버네티스]] (Ingress, Service 설정)
+*   **알고리즘**: [[ComputerScience/01_programming-foundations/coding-test/자료구조/1. 배열과 리스트|코딩테스트 대비]] 및 백준 문제 풀이
 
 ---
 

@@ -1,1 +1,2 @@
-related:: [[AGENTS|AGENTS]], [[CLAUDE|CLAUDE]]
+related:: [[CLAUDE|CLAUDE]], [[AGENTS|AGENTS]]
+

@@ -17,6 +17,8 @@ updated: '2026-05-05'
 
 
 
+
+
 related:: [[CLAUDE|CLAUDE]], [[GEMINI|GEMINI]]
 
 # AGENTS.md
@@ -25,11 +27,17 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 ## What This Is
 
-An Obsidian vault containing a 3-year Computer Science & AI undergraduate curriculum archive. ~430 markdown notes organized by semester, plus certifications and extracurricular activities.
+An Obsidian vault containing a 3-year Computer Science & AI undergraduate curriculum archive. ~430 markdown notes are organized by content domain, with semester history preserved in frontmatter.
 
 ## Vault Structure
 
-- `ComputerScience/` — All course notes, named as `학기_영문약어` (e.g., `3-1_machine-learning/`, `4-1_AIOSS/`, `elective_docker-k8s/`)
+- `ComputerScience/01_programming-foundations/` — coding basics, Python, data structures, coding test, Java
+- `ComputerScience/02_math-theory/` — probability/statistics, discrete math, optimization math, mathematical logic
+- `ComputerScience/03_ai-ml-data/` — AI, ML, neural networks, computer vision, LLM, big data, AI system design
+- `ComputerScience/04_systems-infrastructure/` — Linux, computer architecture, OS, networks, distributed/CUDA/MPI, containers
+- `ComputerScience/05_software-engineering/` — web, database, OSS, programming languages, AIOSS delivery workflow
+- `ComputerScience/06_algorithms-graphics/` — algorithm design/analysis and computer graphics
+- `ComputerScience/07_professional-humanities/` — intellectual property, creative writing, classics, degree/portfolio notes
 - `LGAimer/` — LG Aimers program materials
 - `certifications/` — 정보처리기사, 빅데이터분석 등 자격증 준비 자료
 - `image/` — Shared image assets referenced from notes
@@ -61,7 +69,7 @@ An Obsidian vault containing a 3-year Computer Science & AI undergraduate curric
 ## Working with This Vault
 
 - When creating or editing notes, always use Obsidian Flavored Markdown (wikilinks, callouts, embeds)
-- Directory naming: `학기_영문약어` (no spaces, no brackets) — e.g., `3-1_machine-learning`, `elective_LLM`
+- Directory naming: field interface first, canonical course folder second — e.g., `03_ai-ml-data/machine-learning`, `04_systems-infrastructure/operating-systems`
 - Images should go in `/image/` and be referenced with `![[filename]]`
 - PDF export is configured for A4, no margins, no title — respect these settings when formatting
 - Notes may contain code blocks in Python, Java, JavaScript, C (CUDA), SQL, and shell

@@ -1,0 +1,99 @@
+---
+aliases: []
+course: degree-portfolio
+created: '2025-06-14'
+date: '2025-06-14'
+semester: extracurricular
+source: ''
+status: seedling
+tags:
+- type/lecture
+title: PDF 인쇄 완전 가이드
+type: lecture
+updated: '2026-05-05'
+---
+
+
+
+domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]
+up:: [[ComputerScience/07_professional-humanities/degree-portfolio/졸업학점|졸업학점]]
+prerequisites:: [[ComputerScience/07_professional-humanities/creative-writing/중간고사_창의적글쓰기_정리|중간고사_창의적글쓰기_정리]]
+related:: [[ComputerScience/07_professional-humanities/degree-portfolio/GovOn 온프레미스 AI 발표 스크립트|GovOn 온프레미스 AI 발표 스크립트]], [[ComputerScience/07_professional-humanities/creative-writing/docs/WRITING_WORKFLOW|WRITING_WORKFLOW]], [[ComputerScience/07_professional-humanities/creative-writing/knowledge/source_map|source_map]], [[ComputerScience/07_professional-humanities/creative-writing/AGENTS|AGENTS]], [[ComputerScience/04_systems-infrastructure/container-orchestration/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]], [[ComputerScience/07_professional-humanities/creative-writing/docs/CODEX_RAG_NOTES|CODEX_RAG_NOTES]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/07_professional-humanities/creative-writing/templates/writing-assignment|writing-assignment]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]], [[ComputerScience/07_professional-humanities/creative-writing/pdf/퀴즈|퀴즈]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/07_professional-humanities/intellectual-property/4. 디자인 제도 및 등록요건/디자인 제도의 목적과 개념|디자인 제도의 목적과 개념]]
+
+# PDF 인쇄 완전 가이드
+
+## 1. CSS 스니펫 활성화 방법
+
+### 1.1 Obsidian 설정에서 CSS 스니펫 활성화
+1. Obsidian 설정 열기 (`Cmd/Ctrl + ,`)
+2. 좌측 메뉴에서 **"Appearance"** 선택
+3. **"CSS snippets"** 섹션으로 스크롤
+4. **"Reload snippets"** 버튼 클릭
+5. `pdf-print-styling.css` 파일이 목록에 나타나면 **토글 스위치 활성화**
+
+### 1.2 스니펫 파일 위치 확인
+- 파일 위치: `.obsidian/snippets/pdf-print-styling.css`
+- 파일이 없다면 위 경로에 생성된 파일을 확인하세요.
+
+## 2. PDF 인쇄 방법
+
+### 2.1 Obsidian 내장 PDF 내보내기
+1. 과제.md 파일 열기
+2. `Cmd/Ctrl + P` (인쇄 대화상자)
+3. **"PDF로 저장"** 선택
+4. 저장 위치와 파일명 설정
+5. **"저장"** 클릭
+
+### 2.2 고급 PDF 설정 (권장)
+1. 인쇄 대화상자에서 **"더 많은 설정"** 클릭
+2. **"배경 그래픽"** 체크 (색상과 배경 유지)
+3. **"머리글 및 바닥글"** 설정 (선택사항)
+4. **"여백"** 설정: **"최소"** 또는 **"사용자 정의"** (2cm 권장)
+
+## 3. 스타일링 특징
+
+### 3.1 적용된 디자인 요소
+- **헤더**: 파란색 강조, 하단 보더, 적절한 여백
+- **코드 블록**: 회색 배경, 테두리, 모노스페이스 폰트
+- **목록**: 들여쓰기와 간격 최적화
+- **강조 텍스트**: 빨간색(굵게), 보라색(기울임)
+- **페이지 브레이크**: 헤더와 코드 블록의 적절한 분할
+
+### 3.2 인쇄 최적화
+- A4 용지 크기 설정
+- 2cm 여백
+- 페이지 브레이크 자동 조정
+- 색상 인쇄 지원
+
+## 4. 문제 해결
+
+### 4.1 스타일이 적용되지 않는 경우
+1. CSS 스니펫이 활성화되었는지 확인
+2. Obsidian 재시작
+3. 스니펫 파일 경로 확인
+
+### 4.2 인쇄 품질 개선
+1. **"배경 그래픽"** 옵션 활성화
+2. **"색상"** 인쇄 설정 확인
+3. **"고품질"** 인쇄 옵션 선택
+
+### 4.3 레이아웃 조정이 필요한 경우
+- CSS 파일에서 `@page` 섹션의 `margin` 값 조정
+- `font-size` 값으로 글자 크기 조정
+- `line-height` 값으로 줄 간격 조정
+
+## 5. 추가 팁
+
+### 5.1 Mermaid 다이어그램 최적화
+- 다이어그램이 페이지를 넘나들지 않도록 자동 조정
+- 인쇄 시 중앙 정렬
+
+### 5.2 긴 코드 블록 처리
+- 코드 블록이 페이지를 넘나들지 않도록 설정
+- 필요시 수동으로 페이지 나누기
+
+### 5.3 최종 확인사항
+- [ ] 모든 헤더가 적절히 구분되는가?
+- [ ] 코드 블록이 깔끔하게 표시되는가?
+- [ ] 목록의 들여쓰기가 일관되는가?
+- [ ] 페이지 브레이크가 자연스러운가?

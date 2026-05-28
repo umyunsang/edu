@@ -3,7 +3,8 @@
 
 This deliberately avoids routing every note through a central map. It reads each
 note, chooses a local content parent, then adds semantically related notes based
-on title, headings, tags, folder context, and body tokens.
+on headings, body tokens, tags, and local folder context. File stems are used as
+a weak signal only after content-based renaming has made them reliable labels.
 """
 from __future__ import annotations
 
@@ -29,12 +30,15 @@ EXCLUDE = {
     ".venv",
     ".aioss-rag",
     "scripts",
-    "docs",
     "_templates",
+}
+EXCLUDE_NOTE_RELS = {
+    "README.md",
+    "커리큘럼 관계 정리.md",
 }
 
 FIELD_RE = re.compile(
-    r"^(?:up|siblings|related|prerequisites|next|central)::\s*.*$",
+    r"^(?:domain|up|siblings|related|prerequisites|next|central)::\s*.*$",
     re.MULTILINE,
 )
 HEADING_RE = re.compile(r"^#{1,6}\s+(.+)$", re.MULTILINE)
@@ -95,8 +99,22 @@ class Note:
     title: str
     body: str
     course: str
+    domain_key: str
     parent_key: str
     tokens: Counter[str]
+
+
+DOMAIN_INTERFACES = {
+    "01_programming-foundations": "ComputerScience/01_programming-foundations/프로그래밍 기초 인터페이스.md",
+    "02_math-theory": "ComputerScience/02_math-theory/수학 이론 인터페이스.md",
+    "03_ai-ml-data": "ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스.md",
+    "04_systems-infrastructure": "ComputerScience/04_systems-infrastructure/시스템 인프라 인터페이스.md",
+    "05_software-engineering": "ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스.md",
+    "06_algorithms-graphics": "ComputerScience/06_algorithms-graphics/알고리즘 그래픽스 인터페이스.md",
+    "07_professional-humanities": "ComputerScience/07_professional-humanities/전문 교양 인터페이스.md",
+    "LGAimer": "ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스.md",
+    "certifications": "ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스.md",
+}
 
 
 def iter_notes(root: Path) -> list[Path]:
@@ -192,7 +210,11 @@ def link(note: Note) -> str:
     return f"[[{note.rel.removesuffix('.md')}|{note.stem}]]"
 
 
-def course_of(path: Path) -> str:
+def path_link(rel: str) -> str:
+    return f"[[{rel.removesuffix('.md')}|{Path(rel).stem}]]"
+
+
+def domain_key_of(path: Path) -> str:
     try:
         parts = path.relative_to(VAULT).parts
     except ValueError:
@@ -204,21 +226,43 @@ def course_of(path: Path) -> str:
     return ""
 
 
+def course_of(path: Path) -> str:
+    try:
+        parts = path.relative_to(VAULT).parts
+    except ValueError:
+        parts = path.parts
+    if parts and parts[0] == "ComputerScience" and len(parts) >= 4:
+        if re.match(r"^\d{2}_", parts[1]):
+            return parts[2]
+        return parts[1]
+    if parts and parts[0] == "ComputerScience" and len(parts) >= 2:
+        return parts[1]
+    if parts:
+        return parts[0]
+    return ""
+
+
 def build_notes() -> list[Note]:
     notes: list[Note] = []
     for path in iter_notes(VAULT):
         rel = path.relative_to(VAULT).as_posix()
-        if rel == "README.md":
+        if rel in EXCLUDE_NOTE_RELS:
             continue
         _, fm, body = split_note(path)
-        headings = " ".join(HEADING_RE.findall(body))
-        title = str(fm.get("title") or "").strip() or path.stem
+        if str(fm.get("type") or "").strip() == "interface":
+            continue
+        heading_list = [h.strip() for h in HEADING_RE.findall(body) if h.strip()]
+        headings = " ".join(heading_list)
+        fm_title = str(fm.get("title") or "").strip()
+        title = heading_list[0] if heading_list else (fm_title or path.stem)
         tags = " ".join(str(t) for t in (fm.get("tags") or []))
         course = course_of(path)
+        domain_key = domain_key_of(path)
         weighted = Counter()
-        weighted.update(tokenize(title, path.stem, headings, tags))
-        weighted.update(tokenize(title, path.stem))
-        weighted.update(tokenize(body[:6000]))
+        weighted.update(tokenize(title, headings, tags))
+        weighted.update(tokenize(body[:1200]))
+        weighted.update(tokenize(body[1200:6000]))
+        weighted.update(tokenize(path.parent.name, path.stem))
         parent_key = normalize_name(path.parent.name)
         notes.append(
             Note(
@@ -228,6 +272,7 @@ def build_notes() -> list[Note]:
                 title=title,
                 body=body,
                 course=course,
+                domain_key=domain_key,
                 parent_key=parent_key,
                 tokens=weighted,
             )
@@ -256,41 +301,41 @@ def existing_course_anchor(notes: list[Note], rel: str) -> Note | None:
 
 def choose_anchors(notes: list[Note]) -> dict[str, Note]:
     preferred = {
-        "1-2_coding-basics": "ComputerScience/1-2_coding-basics/중간고사.md",
-        "2-1_python": "ComputerScience/2-1_python/1. 변수와 자료형.md",
-        "2-1_AI": "ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation.md",
-        "2-1_computer-architecture": "ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습.md",
-        "2-1_data-structures": "ComputerScience/2-1_data-structures/5. 정렬/정렬.md",
-        "2-1_linux": "ComputerScience/2-1_linux/1. 리눅스의 기본.md",
-        "2-1_probability-statistics": "ComputerScience/2-1_probability-statistics/3.Probability/Probability.md",
-        "2-1_web-programming": "ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습.md",
-        "2-2_OSS": "ComputerScience/2-2_OSS/3. 문서 객체 모델/문서 객체 모델(DOM).md",
-        "2-2_computer-network": "ComputerScience/2-2_computer-network/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍.md",
-        "2-2_database": "ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL.md",
-        "2-2_discrete-math": "ComputerScience/2-2_discrete-math/4. 그래프/그래프.md",
-        "2-2_operating-system": "ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리.md",
-        "3-1_AI-system-design": "ComputerScience/3-1_AI-system-design/주문 및 결제 AI 시스템 개발.md",
-        "3-1_ML-project": "ComputerScience/3-1_ML-project/Python 기초/실력과제.md",
-        "3-1_distributed-computing": "ComputerScience/3-1_distributed-computing/쿠다.md",
-        "3-1_intellectual-property": "ComputerScience/3-1_intellectual-property/2. 저작권제도와 등록요건/저작권 제도와 등록요건.md",
-        "3-1_machine-learning": "ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념.md",
-        "3-1_mathematical-logic": "ComputerScience/3-1_mathematical-logic/논리학 개론.md",
-        "3-1_programming-languages": "ComputerScience/3-1_programming-languages/필기/3. 구문론.md",
-        "3-2_bigdata-analysis": "ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제.md",
-        "3-2_classics-reading": "ComputerScience/3-2_classics-reading/멋진신세계.md",
-        "3-2_computer-graphics": "ComputerScience/3-2_computer-graphics/컴퓨터그래픽스-시험대비.md",
-        "3-2_neural-network": "ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리.md",
-        "3-2_optimization-math": "ComputerScience/3-2_optimization-math/1. Matrix/1. Matrix.md",
-        "4-1_AIOSS": "ComputerScience/4-1_AIOSS/md/Week0 - Orientation.md",
-        "4-1_algorithm": "ComputerScience/4-1_algorithm/중간고사_정리.md",
-        "4-1_computer-vision": "ComputerScience/4-1_computer-vision/중간고사_컴퓨터비전_정밀분석_정리.md",
-        "4-1_creative-writing": "ComputerScience/4-1_creative-writing/중간고사_창의적글쓰기_정리.md",
-        "elective_LLM": "ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG.md",
-        "elective_coding-test": "ComputerScience/elective_coding-test/자료구조/1. 배열과 리스트.md",
-        "elective_convergence": "ComputerScience/elective_convergence/프로젝트 주제.md",
-        "elective_docker-k8s": "ComputerScience/elective_docker-k8s/도커 기초.md",
-        "elective_java": "ComputerScience/elective_java/1. Hello Java.md",
-        "misc": "ComputerScience/misc/졸업학점.md",
+        "coding-basics": "ComputerScience/01_programming-foundations/coding-basics/중간고사.md",
+        "python-programming": "ComputerScience/01_programming-foundations/python-programming/1. 변수와 자료형.md",
+        "data-structures": "ComputerScience/01_programming-foundations/data-structures/5. 정렬/정렬.md",
+        "coding-test": "ComputerScience/01_programming-foundations/coding-test/자료구조/1. 배열과 리스트.md",
+        "java-programming": "ComputerScience/01_programming-foundations/java-programming/1. Hello Java.md",
+        "probability-statistics": "ComputerScience/02_math-theory/probability-statistics/3.Probability/Probability.md",
+        "discrete-mathematics": "ComputerScience/02_math-theory/discrete-mathematics/4. 그래프/그래프.md",
+        "optimization-math": "ComputerScience/02_math-theory/optimization-math/1. Matrix/1. Matrix.md",
+        "mathematical-logic": "ComputerScience/02_math-theory/mathematical-logic/논리학 개론.md",
+        "artificial-intelligence": "ComputerScience/03_ai-ml-data/artificial-intelligence/3. Backpropagation/이론/Backpropagation.md",
+        "machine-learning": "ComputerScience/03_ai-ml-data/machine-learning/머신러닝 핵심 수학 개념.md",
+        "ml-projects": "ComputerScience/03_ai-ml-data/ml-projects/Pandas/데이터 분석 및 처리 과정 요약.md",
+        "neural-networks": "ComputerScience/03_ai-ml-data/neural-networks/md/신경망_핵심이론_시험정리.md",
+        "big-data-analysis": "ComputerScience/03_ai-ml-data/big-data-analysis/md/K-POP 아티스트 인기도 분석 시스템.md",
+        "computer-vision": "ComputerScience/03_ai-ml-data/computer-vision/중간고사_컴퓨터비전_정밀분석_정리.md",
+        "large-language-models": "ComputerScience/03_ai-ml-data/large-language-models/검색 증강 생성 RAG/RAG.md",
+        "ai-system-design": "ComputerScience/03_ai-ml-data/ai-system-design/주문 및 결제 AI 시스템 개발.md",
+        "generative-ai-fine-tuning": "ComputerScience/03_ai-ml-data/generative-ai-fine-tuning/프로젝트 주제.md",
+        "linux": "ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본.md",
+        "computer-architecture": "ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습.md",
+        "operating-systems": "ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리.md",
+        "computer-networks": "ComputerScience/04_systems-infrastructure/computer-networks/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍.md",
+        "parallel-distributed-computing": "ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다.md",
+        "container-orchestration": "ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초.md",
+        "web-programming": "ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 실습.md",
+        "database-systems": "ComputerScience/05_software-engineering/database-systems/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL.md",
+        "open-source-software": "ComputerScience/05_software-engineering/open-source-software/3. 문서 객체 모델/문서 객체 모델(DOM).md",
+        "programming-languages": "ComputerScience/05_software-engineering/programming-languages/필기/3. 구문론.md",
+        "aioss-open-source-delivery": "ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week0 - Orientation.md",
+        "algorithm-design-analysis": "ComputerScience/06_algorithms-graphics/algorithm-design-analysis/중간고사_정리.md",
+        "computer-graphics": "ComputerScience/06_algorithms-graphics/computer-graphics/컴퓨터그래픽스-시험대비.md",
+        "intellectual-property": "ComputerScience/07_professional-humanities/intellectual-property/2. 저작권제도와 등록요건/저작권 제도와 등록요건.md",
+        "creative-writing": "ComputerScience/07_professional-humanities/creative-writing/중간고사_창의적글쓰기_정리.md",
+        "classics-reading": "ComputerScience/07_professional-humanities/classics-reading/멋진신세계.md",
+        "degree-portfolio": "ComputerScience/07_professional-humanities/degree-portfolio/졸업학점.md",
         "LGAimer": "LGAimer/LG Aimers 9기 지원서 초안.md",
         "certifications": "certifications/체크리스트.md",
     }
@@ -302,7 +347,7 @@ def choose_anchors(notes: list[Note]) -> dict[str, Note]:
     for course, members in by_course.items():
         chosen = existing_course_anchor(notes, preferred.get(course, ""))
         if chosen is None:
-            root_members = [n for n in members if n.path.parent == VAULT / "ComputerScience" / course]
+            root_members = [n for n in members if n.path.parent.name == course]
             pool = root_members or members
             chosen = max(pool, key=lambda n: (len(n.tokens), -len(n.rel)))
         anchors[course] = chosen
@@ -391,19 +436,33 @@ def relation_scores(
     for other in notes:
         if other == note:
             continue
-        if other.course not in scope and other.path.parent != note.path.parent:
-            continue
+        same_domain = other.domain_key == note.domain_key and note.domain_key
+        same_parent = other.path.parent == note.path.parent
+        in_scope = other.course in scope
         score = cosine(note.tokens, other.tokens, idf)
+        title_overlap = set(tokenize(note.title)) & set(tokenize(other.title))
+        if not (same_domain or same_parent or in_scope or score > 0.075 or title_overlap):
+            continue
         if other.course == note.course:
             score += 0.08
-        if other.path.parent == note.path.parent:
+        if same_domain:
+            score += 0.035
+        if same_parent:
             score += 0.16
-        if other.course in scope:
+        if in_scope:
             score += 0.04
-        title_overlap = set(tokenize(note.title)) & set(tokenize(other.title))
         if title_overlap:
             score += 0.05 * len(title_overlap)
-        if score > 0.12:
+        threshold = 0.09
+        if same_parent:
+            threshold = 0.015
+        elif other.course == note.course:
+            threshold = 0.03
+        elif in_scope:
+            threshold = 0.04
+        elif same_domain:
+            threshold = 0.055
+        if score > threshold:
             scored.append((score, other))
     scored.sort(key=lambda item: (-item[0], item[1].rel))
     return scored
@@ -416,6 +475,9 @@ def relation_block(
     prereqs: list[Note],
 ) -> str:
     lines: list[str] = []
+    domain_rel = DOMAIN_INTERFACES.get(note.domain_key)
+    if domain_rel:
+        lines.append(f"domain:: {path_link(domain_rel)}")
     if up is not None:
         lines.append(f"up:: {link(up)}")
     if prereqs:
@@ -449,34 +511,38 @@ def main() -> None:
     }
 
     prereq_map = {
-        "2-1_python": ["1-2_coding-basics"],
-        "2-1_AI": ["2-1_python", "2-1_probability-statistics"],
-        "2-1_data-structures": ["2-1_python"],
-        "2-1_linux": ["2-1_python"],
-        "2-1_web-programming": ["2-1_python"],
-        "2-2_operating-system": ["2-1_computer-architecture", "2-1_linux"],
-        "2-2_database": ["2-1_python", "2-1_linux"],
-        "2-2_computer-network": ["2-1_computer-architecture"],
-        "2-2_discrete-math": ["1-2_coding-basics"],
-        "2-2_OSS": ["2-1_web-programming"],
-        "3-1_machine-learning": ["2-1_AI", "2-1_probability-statistics"],
-        "3-1_ML-project": ["3-1_machine-learning", "2-1_python"],
-        "3-1_AI-system-design": ["2-1_AI", "2-2_database"],
-        "3-1_distributed-computing": ["2-2_operating-system", "2-2_computer-network"],
-        "3-1_mathematical-logic": ["2-2_discrete-math"],
-        "3-1_programming-languages": ["2-2_discrete-math", "2-1_data-structures"],
-        "3-2_neural-network": ["3-1_machine-learning", "3-2_optimization-math"],
-        "3-2_bigdata-analysis": ["3-1_machine-learning", "2-2_database"],
-        "3-2_computer-graphics": ["3-2_optimization-math"],
-        "3-2_optimization-math": ["2-1_probability-statistics", "2-1_AI"],
-        "4-1_algorithm": ["2-1_data-structures", "2-2_discrete-math"],
-        "4-1_computer-vision": ["3-2_neural-network", "3-2_computer-graphics"],
-        "4-1_AIOSS": ["3-1_distributed-computing", "elective_docker-k8s"],
-        "elective_LLM": ["3-1_machine-learning", "3-2_neural-network"],
-        "elective_coding-test": ["2-1_data-structures", "4-1_algorithm"],
-        "elective_docker-k8s": ["2-1_linux", "2-2_operating-system"],
-        "LGAimer": ["3-1_machine-learning", "3-2_bigdata-analysis"],
-        "certifications": ["2-2_operating-system", "2-2_database"],
+        "python-programming": ["coding-basics"],
+        "artificial-intelligence": ["python-programming", "probability-statistics"],
+        "data-structures": ["python-programming"],
+        "linux": ["python-programming"],
+        "web-programming": ["python-programming"],
+        "operating-systems": ["computer-architecture", "linux"],
+        "database-systems": ["python-programming", "linux"],
+        "computer-networks": ["computer-architecture"],
+        "discrete-mathematics": ["coding-basics"],
+        "open-source-software": ["web-programming"],
+        "machine-learning": ["artificial-intelligence", "probability-statistics"],
+        "ml-projects": ["machine-learning", "python-programming"],
+        "ai-system-design": ["artificial-intelligence", "database-systems"],
+        "parallel-distributed-computing": ["operating-systems", "computer-networks"],
+        "mathematical-logic": ["discrete-mathematics"],
+        "programming-languages": ["discrete-mathematics", "data-structures"],
+        "neural-networks": ["machine-learning", "optimization-math"],
+        "big-data-analysis": ["machine-learning", "database-systems"],
+        "computer-graphics": ["optimization-math"],
+        "optimization-math": ["probability-statistics", "artificial-intelligence"],
+        "algorithm-design-analysis": ["data-structures", "discrete-mathematics"],
+        "computer-vision": ["neural-networks", "computer-graphics"],
+        "aioss-open-source-delivery": ["parallel-distributed-computing", "container-orchestration", "open-source-software"],
+        "large-language-models": ["machine-learning", "neural-networks"],
+        "coding-test": ["data-structures", "algorithm-design-analysis"],
+        "container-orchestration": ["linux", "operating-systems"],
+        "generative-ai-fine-tuning": ["large-language-models", "machine-learning"],
+        "classics-reading": ["creative-writing"],
+        "degree-portfolio": ["creative-writing"],
+        "intellectual-property": ["programming-languages"],
+        "LGAimer": ["machine-learning", "big-data-analysis"],
+        "certifications": ["operating-systems", "database-systems"],
     }
 
     updated = 0
@@ -487,7 +553,7 @@ def main() -> None:
             anchors[c]
             for c in prereq_map.get(note.course, [])
             if c in anchors and anchors[c] != note and anchors[c] != up
-        ][:2]
+        ]
         scored = relation_scores(note, notes, idf, prereq_map)
         excluded = {note.rel}
         if up is not None:
@@ -499,11 +565,7 @@ def main() -> None:
         for _, other in same_course + cross_course:
             if other.rel in excluded:
                 continue
-            if "/시험/" in other.rel and "/시험/" not in note.rel and len(related) >= 1:
-                continue
             related.append(other)
-            if len(related) == 3:
-                break
         block = relation_block(note, up, related, prereqs)
         new_body = replace_relation_fields(body, block)
         if new_body != body:

@@ -83,7 +83,7 @@
     {
       "id": "coding",
       "type": "file",
-      "file": "ComputerScience/1-2_coding-basics/중간고사.md",
+      "file": "ComputerScience/01_programming-foundations/coding-basics/중간고사.md",
       "x": -1100,
       "y": -80,
       "width": 260,
@@ -103,7 +103,7 @@
     {
       "id": "python",
       "type": "file",
-      "file": "ComputerScience/2-1_python/1. 변수와 자료형.md",
+      "file": "ComputerScience/01_programming-foundations/python-programming/1. 변수와 자료형.md",
       "x": -460,
       "y": -80,
       "width": 260,
@@ -113,7 +113,7 @@
     {
       "id": "prob",
       "type": "file",
-      "file": "ComputerScience/2-1_probability-statistics/3.Probability/Probability.md",
+      "file": "ComputerScience/02_math-theory/probability-statistics/3.Probability/Probability.md",
       "x": -140,
       "y": -80,
       "width": 260,
@@ -123,7 +123,7 @@
     {
       "id": "discrete",
       "type": "file",
-      "file": "ComputerScience/2-2_discrete-math/4. 그래프/그래프.md",
+      "file": "ComputerScience/02_math-theory/discrete-mathematics/4. 그래프/그래프.md",
       "x": 180,
       "y": -80,
       "width": 260,
@@ -133,7 +133,7 @@
     {
       "id": "opt",
       "type": "file",
-      "file": "ComputerScience/3-2_optimization-math/1. Matrix/1. Matrix.md",
+      "file": "ComputerScience/02_math-theory/optimization-math/1. Matrix/1. Matrix.md",
       "x": 500,
       "y": -80,
       "width": 260,
@@ -143,7 +143,7 @@
     {
       "id": "ai",
       "type": "file",
-      "file": "ComputerScience/2-1_AI/3. Backpropagation/이론/Backpropagation.md",
+      "file": "ComputerScience/03_ai-ml-data/artificial-intelligence/3. Backpropagation/이론/Backpropagation.md",
       "x": -460,
       "y": 360,
       "width": 260,
@@ -153,7 +153,7 @@
     {
       "id": "ml",
       "type": "file",
-      "file": "ComputerScience/3-1_machine-learning/머신러닝 핵심 수학 개념.md",
+      "file": "ComputerScience/03_ai-ml-data/machine-learning/머신러닝 핵심 수학 개념.md",
       "x": -140,
       "y": 360,
       "width": 260,
@@ -163,7 +163,7 @@
     {
       "id": "ml_project",
       "type": "file",
-      "file": "ComputerScience/3-1_ML-project/Python 기초/실력과제.md",
+      "file": "ComputerScience/03_ai-ml-data/ml-projects/Python 기초/실력과제.md",
       "x": 180,
       "y": 290,
       "width": 260,
@@ -173,7 +173,7 @@
     {
       "id": "nn",
       "type": "file",
-      "file": "ComputerScience/3-2_neural-network/md/신경망_핵심이론_시험정리.md",
+      "file": "ComputerScience/03_ai-ml-data/neural-networks/md/신경망_핵심이론_시험정리.md",
       "x": 180,
       "y": 450,
       "width": 260,
@@ -183,7 +183,7 @@
     {
       "id": "bigdata",
       "type": "file",
-      "file": "ComputerScience/3-2_bigdata-analysis/md/MLFlow 과제.md",
+      "file": "ComputerScience/03_ai-ml-data/big-data-analysis/md/MLFlow 과제.md",
       "x": 500,
       "y": 290,
       "width": 260,
@@ -193,7 +193,7 @@
     {
       "id": "cv",
       "type": "file",
-      "file": "ComputerScience/4-1_computer-vision/중간고사_컴퓨터비전_정밀분석_정리.md",
+      "file": "ComputerScience/03_ai-ml-data/computer-vision/중간고사_컴퓨터비전_정밀분석_정리.md",
       "x": 500,
       "y": 450,
       "width": 260,
@@ -203,7 +203,7 @@
     {
       "id": "llm",
       "type": "file",
-      "file": "ComputerScience/elective_LLM/검색 증강 생성 RAG/RAG.md",
+      "file": "ComputerScience/03_ai-ml-data/large-language-models/검색 증강 생성 RAG/RAG.md",
       "x": 820,
       "y": 360,
       "width": 260,
@@ -213,7 +213,7 @@
     {
       "id": "arch",
       "type": "file",
-      "file": "ComputerScience/2-1_computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습.md",
+      "file": "ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습.md",
       "x": -1100,
       "y": 810,
       "width": 260,
@@ -223,7 +223,7 @@
     {
       "id": "linux",
       "type": "file",
-      "file": "ComputerScience/2-1_linux/1. 리눅스의 기본.md",
+      "file": "ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본.md",
       "x": -780,
       "y": 810,
       "width": 260,
@@ -233,7 +233,7 @@
     {
       "id": "os",
       "type": "file",
-      "file": "ComputerScience/2-2_operating-system/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리.md",
+      "file": "ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리.md",
       "x": -460,
       "y": 810,
       "width": 260,
@@ -243,7 +243,7 @@
     {
       "id": "network",
       "type": "file",
-      "file": "ComputerScience/2-2_computer-network/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍.md",
+      "file": "ComputerScience/04_systems-infrastructure/computer-networks/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍.md",
       "x": -140,
       "y": 810,
       "width": 260,
@@ -253,7 +253,7 @@
     {
       "id": "distributed",
       "type": "file",
-      "file": "ComputerScience/3-1_distributed-computing/쿠다.md",
+      "file": "ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다.md",
       "x": 180,
       "y": 810,
       "width": 260,
@@ -263,7 +263,7 @@
     {
       "id": "docker",
       "type": "file",
-      "file": "ComputerScience/elective_docker-k8s/도커 기초.md",
+      "file": "ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초.md",
       "x": 500,
       "y": 810,
       "width": 260,
@@ -273,7 +273,7 @@
     {
       "id": "aioss",
       "type": "file",
-      "file": "ComputerScience/4-1_AIOSS/md/Week0 - Orientation.md",
+      "file": "ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week0 - Orientation.md",
       "x": 820,
       "y": 810,
       "width": 260,
@@ -283,7 +283,7 @@
     {
       "id": "ds",
       "type": "file",
-      "file": "ComputerScience/2-1_data-structures/5. 정렬/정렬.md",
+      "file": "ComputerScience/01_programming-foundations/data-structures/5. 정렬/정렬.md",
       "x": -780,
       "y": 1260,
       "width": 260,
@@ -293,7 +293,7 @@
     {
       "id": "web",
       "type": "file",
-      "file": "ComputerScience/2-1_web-programming/3. Spring Boot 기초/Spring Boot 기초 실습.md",
+      "file": "ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 실습.md",
       "x": -460,
       "y": 1185,
       "width": 260,
@@ -303,7 +303,7 @@
     {
       "id": "db",
       "type": "file",
-      "file": "ComputerScience/2-2_database/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL.md",
+      "file": "ComputerScience/05_software-engineering/database-systems/7. 데이터베이스 언어 SQL/데이터 베이스 언어 SQL.md",
       "x": -460,
       "y": 1335,
       "width": 260,
@@ -313,7 +313,7 @@
     {
       "id": "oss",
       "type": "file",
-      "file": "ComputerScience/2-2_OSS/3. 문서 객체 모델/문서 객체 모델(DOM).md",
+      "file": "ComputerScience/05_software-engineering/open-source-software/3. 문서 객체 모델/문서 객체 모델(DOM).md",
       "x": -140,
       "y": 1185,
       "width": 260,
@@ -323,7 +323,7 @@
     {
       "id": "pl",
       "type": "file",
-      "file": "ComputerScience/3-1_programming-languages/필기/3. 구문론.md",
+      "file": "ComputerScience/05_software-engineering/programming-languages/필기/3. 구문론.md",
       "x": -140,
       "y": 1335,
       "width": 260,
@@ -333,7 +333,7 @@
     {
       "id": "alg",
       "type": "file",
-      "file": "ComputerScience/4-1_algorithm/중간고사_정리.md",
+      "file": "ComputerScience/06_algorithms-graphics/algorithm-design-analysis/중간고사_정리.md",
       "x": 180,
       "y": 1260,
       "width": 260,
@@ -343,7 +343,7 @@
     {
       "id": "codingtest",
       "type": "file",
-      "file": "ComputerScience/elective_coding-test/자료구조/1. 배열과 리스트.md",
+      "file": "ComputerScience/01_programming-foundations/coding-test/자료구조/1. 배열과 리스트.md",
       "x": 500,
       "y": 1260,
       "width": 260,
@@ -353,7 +353,7 @@
     {
       "id": "aisd",
       "type": "file",
-      "file": "ComputerScience/3-1_AI-system-design/주문 및 결제 AI 시스템 개발.md",
+      "file": "ComputerScience/03_ai-ml-data/ai-system-design/주문 및 결제 AI 시스템 개발.md",
       "x": 820,
       "y": 1260,
       "width": 260,
@@ -383,7 +383,7 @@
     {
       "id": "creative",
       "type": "file",
-      "file": "ComputerScience/4-1_creative-writing/중간고사_창의적글쓰기_정리.md",
+      "file": "ComputerScience/07_professional-humanities/creative-writing/중간고사_창의적글쓰기_정리.md",
       "x": -140,
       "y": 1700,
       "width": 260,
@@ -393,7 +393,7 @@
     {
       "id": "classic",
       "type": "file",
-      "file": "ComputerScience/3-2_classics-reading/멋진신세계.md",
+      "file": "ComputerScience/07_professional-humanities/classics-reading/멋진신세계.md",
       "x": 180,
       "y": 1700,
       "width": 260,
@@ -403,7 +403,7 @@
     {
       "id": "misc",
       "type": "file",
-      "file": "ComputerScience/misc/졸업학점.md",
+      "file": "ComputerScience/07_professional-humanities/degree-portfolio/졸업학점.md",
       "x": 500,
       "y": 1700,
       "width": 260,
