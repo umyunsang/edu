@@ -31,7 +31,7 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/algorithm-de
 
 ## 로컬 근거
 
-- [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/기말고사_정리]]
+- [[알고리즘_기말고사_정리]]
 - [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/중간고사_정리]]
 - [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/pdf/03장-억지기법과완전탐색-파알.pdf]]
 - [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/pdf/04장-축소정복기법-수정판.pdf]]
