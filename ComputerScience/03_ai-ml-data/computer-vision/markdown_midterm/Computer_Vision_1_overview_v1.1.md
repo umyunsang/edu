@@ -35,7 +35,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 # Computer_Vision_1_overview_v1.1
 
-> Stub. PDF 변환 대상. 4-1 컴퓨터비전 강의 1주차 overview. PDF 원본은 [[Computer_Vision_1_overview_v1.1.pdf]]
+> Stub. PDF 변환 대상. 4-1 컴퓨터비전 강의 1주차 overview. PDF 원본은 [[1_overview_v1.1.pdf]]
 
 ## TODO
 - [ ] 본문 작성

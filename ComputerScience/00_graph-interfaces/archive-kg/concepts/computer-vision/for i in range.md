@@ -36,9 +36,9 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-vis
 - [[ComputerScience/03_ai-ml-data/computer-vision/markdown_midterm/Computer_Vision_3_2D_Image_Processing_2_v1.1]]
 - [[ComputerScience/03_ai-ml-data/computer-vision/markdown_midterm/Computer_Vision_4_Feature_Extraction_and_Matching_v1.5]]
 - [[ComputerScience/03_ai-ml-data/computer-vision/markdown_midterm/Computer_Vision_5_Stereo_Vision_v1.0]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.1.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.2.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.3.pdf]]
 
 ## 연결 개념
 

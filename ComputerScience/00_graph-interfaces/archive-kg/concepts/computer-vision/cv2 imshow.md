@@ -32,13 +32,13 @@ related:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-vis
 ## 로컬 근거
 
 - [[ComputerScience/03_ai-ml-data/computer-vision/중간고사_컴퓨터비전_정밀분석_정리]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_2_2D_Image_Processing_v1.1.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_3_2D_Image_Processing_2_v1.0.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_3_2D_Image_Processing_2_v1.1.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.1.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.2.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.3.pdf]]
-- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/Computer_Vision_4_Feature_Extraction_and_Matching_v1.4.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/2_2D_Image_Processing_v1.1.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/3_2D_Image_Processing_2_v1.0.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/3_2D_Image_Processing_2_v1.1.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.1.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.2.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.3.pdf]]
+- [[ComputerScience/03_ai-ml-data/computer-vision/pdf/4_Feature_Extraction_and_Matching_v1.4.pdf]]
 
 ## 연결 개념
 
