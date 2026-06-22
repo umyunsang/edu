@@ -46,7 +46,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 
 - `1.quantum-ml-overview/` — 양자 ML 개요
 - `2.qml-structure/` — QML 구조 이해
-- `3.qml-pipeline/` — QML 파이프라인
+- `1.quantum-ml-overview/qml-pipeline/` — QML 파이프라인
 - `4.qml-models/` — QML 모델
 - `5.qnn-and-hybrid/` — 양자 신경망(QNN) 및 Hybrid
 - `6.performance-comparison-and-qaoa-basics/` — 성능 비교 및 QAOA 기초
@@ -58,4 +58,4 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Iris 실습: `1.quantum-ml-overview/iris-classification/`
 - 표현력의 한계 강의자료: `1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf`
 - 표현력의 한계 실습: `1.quantum-ml-overview/expressive-power-limit/notebooks/practice/2_xor_expressive_power_practice.ipynb`
-- QML 파이프라인 실습: `3.qml-pipeline/notebooks/practice/3_1_loss_surface_visualization.ipynb`
+- QML 파이프라인 실습: `1.quantum-ml-overview/qml-pipeline/notebooks/practice/3_1_loss_surface_visualization.ipynb`
