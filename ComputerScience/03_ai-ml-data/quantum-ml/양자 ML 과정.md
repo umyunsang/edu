@@ -40,6 +40,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 ## 수업 자료
 
 - 강의 노트와 실습 파일은 커리큘럼 주제 폴더에 추가합니다.
+- 실습 노트북은 `notebooks/practice/`처럼 깊은 하위 폴더를 만들지 않고 주제 폴더 바로 아래에 둡니다.
 - 양자 역학의 깊은 이론은 이 과정에서 깊게 다루지 않습니다.
 
 ## 커리큘럼 구조
@@ -57,5 +58,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 
 - Iris 실습: `1.quantum-ml-overview/iris-classification/`
 - 표현력의 한계 강의자료: `1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf`
-- 표현력의 한계 실습: `1.quantum-ml-overview/expressive-power-limit/notebooks/practice/2_xor_expressive_power_practice.ipynb`
-- QML 파이프라인 실습: `1.quantum-ml-overview/qml-pipeline/notebooks/practice/3_1_loss_surface_visualization.ipynb`
+- 표현력의 한계 실습: `1.quantum-ml-overview/expressive-power-limit/2_xor_expressive_power_practice.ipynb`
+- QML 파이프라인 실습 3-1: `1.quantum-ml-overview/qml-pipeline/3_1_loss_surface_visualization.ipynb`
+- QML 파이프라인 실습 3-2: `1.quantum-ml-overview/qml-pipeline/3_2_binary_classification_dataset.ipynb`
+- QML 파이프라인 실습 3-3: `1.quantum-ml-overview/qml-pipeline/3_3_pca_projection_visualization.ipynb`
