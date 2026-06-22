@@ -58,3 +58,4 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Iris 실습: `1.quantum-ml-overview/iris-classification/`
 - 표현력의 한계 강의자료: `1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf`
 - 표현력의 한계 실습: `1.quantum-ml-overview/expressive-power-limit/notebooks/practice/2_xor_expressive_power_practice.ipynb`
+- QML 파이프라인 실습: `3.qml-pipeline/notebooks/practice/3_1_loss_surface_visualization.ipynb`
