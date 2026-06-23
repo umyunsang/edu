@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-06-22'
+updated: '2026-06-23'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -56,6 +56,8 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 
 ## 현재 자료 배치
 
+- QML에서 Quantum의 역할 강의자료: `1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf`
+- QML에서 Quantum의 역할 실습: `1.quantum-ml-overview/quantum-role/1_week1_quantum_role_practice.ipynb`
 - Iris 실습: `1.quantum-ml-overview/iris-classification/`
 - 표현력의 한계 강의자료: `1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf`
 - 표현력의 한계 실습: `1.quantum-ml-overview/expressive-power-limit/2_xor_expressive_power_practice.ipynb`
