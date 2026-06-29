@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgrm_carpediem_lms=self.webpackChunkgrm_carpediem_lms||[]).push([[2867],{72867:function(e,r,n){n.r(r);n(47313);var s=n(46417);r.default=function(){return(0,s.jsx)(s.Fragment,{})}}}]);

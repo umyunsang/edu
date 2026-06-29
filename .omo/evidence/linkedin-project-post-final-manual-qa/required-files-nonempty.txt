@@ -1,0 +1,6 @@
+PASS non-empty .omo/ultraresearch/20260626-110924-linkedin-project-post/SYNTHESIS.md     6722 bytes
+PASS non-empty .omo/ultraresearch/20260626-110924-linkedin-project-post/DRAFT.md     1184 bytes
+PASS non-empty .omo/ultraresearch/20260626-110924-linkedin-project-post/PUBLISHING_BLOCKED.md     1796 bytes
+PASS non-empty .omo/ultraresearch/20260626-110924-linkedin-project-post/claim-ledger.md     3054 bytes
+PASS non-empty .omo/ultraresearch/20260626-110924-linkedin-project-post/evidence/cleanup-check.txt      312 bytes
+PASS non-empty .omo/ulw-loop/linkedin-project-post-20260626/ledger.jsonl    51089 bytes

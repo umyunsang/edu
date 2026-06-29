@@ -1,0 +1,9 @@
+Fri Jun 26 11:22:35 KST 2026
+session-scoped tmux:
+none
+session-scoped processes:
+none
+subagents:
+closed: 019f01b2-492c, 019f01b2-53c2, 019f01b2-60b1, 019f01b2-6b87, 019f01b2-7620, 019f01b2-859a
+note:
+unrelated pre-existing tmux/playwright processes were observed in the broad scan and intentionally not touched.

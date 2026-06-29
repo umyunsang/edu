@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">음식물쓰레기가 환경에 미치는 영향 암기 도식</title>
+  <desc id="desc">현재 상황, 원인, 예시, 해결 방안을 네 단계로 연결한 암기용 도식</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8faf7; }
+      .title { font: 700 42px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #1f2933; }
+      .subtitle { font: 500 23px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #52616b; }
+      .card-title { font: 700 28px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #1f2933; }
+      .card-text { font: 500 24px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #334e5c; }
+      .keyword { font: 800 27px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #0f766e; }
+      .small { font: 600 21px -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; fill: #536471; }
+      .arrow { stroke: #58746a; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+      .card { stroke-width: 3; rx: 26; ry: 26; }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#58746a"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#1f2933" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="760"/>
+
+  <text class="title" x="600" y="72" text-anchor="middle">음식물쓰레기 환경 영향 암기 지도</text>
+  <text class="subtitle" x="600" y="112" text-anchor="middle">상황 → 원인 → 사례 → 해결 순서로 외우기</text>
+
+  <rect class="card" x="70" y="170" width="500" height="190" fill="#fff7ed" stroke="#f59e0b" filter="url(#shadow)"/>
+  <text class="card-title" x="115" y="222">1. 현재 상황과 문제점</text>
+  <text class="card-text" x="115" y="270">
+    <tspan x="115" dy="0">전 세계에서 10억 톤 이상 버려짐</tspan>
+    <tspan x="115" dy="38">음식만 아니라 자원도 낭비됨</tspan>
+  </text>
+  <text class="keyword" x="115" y="333">핵심: 음식 + 자원 낭비</text>
+
+  <rect class="card" x="630" y="170" width="500" height="190" fill="#ecfeff" stroke="#0891b2" filter="url(#shadow)"/>
+  <text class="card-title" x="675" y="222">2. 원인 분석</text>
+  <text class="card-text" x="675" y="270">
+    <tspan x="675" dy="0">많이 사고, 많이 만들고</tspan>
+    <tspan x="675" dy="38">남은 음식을 잘 보관하지 않음</tspan>
+  </text>
+  <text class="keyword" x="675" y="333">핵심: 많이 사고 많이 남김</text>
+
+  <rect class="card" x="70" y="455" width="500" height="190" fill="#f0fdf4" stroke="#22c55e" filter="url(#shadow)"/>
+  <text class="card-title" x="115" y="507">3. 예시와 경험</text>
+  <text class="card-text" x="115" y="555">
+    <tspan x="115" dy="0">배달음식 반찬과 밥이 남음</tspan>
+    <tspan x="115" dy="38">학교 급식 잔반이 버려짐</tspan>
+  </text>
+  <text class="keyword" x="115" y="618">핵심: 배달음식 + 급식 잔반</text>
+
+  <rect class="card" x="630" y="455" width="500" height="190" fill="#f5f3ff" stroke="#8b5cf6" filter="url(#shadow)"/>
+  <text class="card-title" x="675" y="507">4. 해결 방안</text>
+  <text class="card-text" x="675" y="555">
+    <tspan x="675" dy="0">먹을 만큼만 사고 담기</tspan>
+    <tspan x="675" dy="38">남은 음식은 다시 활용하기</tspan>
+  </text>
+  <text class="keyword" x="675" y="618">핵심: 필요한 만큼만</text>
+
+  <path class="arrow" d="M 575 265 H 620"/>
+  <path class="arrow" d="M 880 370 V 445"/>
+  <path class="arrow" d="M 625 550 H 580"/>
+  <path class="arrow" d="M 320 445 V 370"/>
+
+  <rect x="337" y="366" width="526" height="58" rx="29" fill="#ffffff" stroke="#cbd5df" stroke-width="2"/>
+  <text class="small" x="600" y="402" text-anchor="middle">외울 문장: 음식물쓰레기는 음식과 자원을 함께 버리는 일이다.</text>
+</svg>

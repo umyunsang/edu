@@ -17,7 +17,7 @@ tags:
 - type/interface
 title: LG Aimers 9기
 type: interface
-updated: '2026-06-22'
+updated: '2026-06-25'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -35,7 +35,7 @@ kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/LGAimer/
 
 # LG Aimers 9기
 
-LG Aimers 9기 지원, 평가 가이드, Tabular ML, Optimization/Decision-Focused Learning, Time-Series Analysis 강의자료를 묶는 세대 허브입니다.
+LG Aimers 9기 지원, 평가 가이드, Tabular ML, Optimization/Decision-Focused Learning, Time-Series Analysis, Mathematics for ML, 지도학습, LLM Application & Evaluation, 딥러닝 자연어처리 기초와 LLM Agent 강의자료를 묶는 세대 허브입니다.
 
 ## 핵심 연결
 
@@ -47,6 +47,14 @@ LG Aimers 9기 지원, 평가 가이드, Tabular ML, Optimization/Decision-Focus
 
 - [[LGAimer/LG Aimers 9기/LG Aimers 9기 지원서 초안|LG Aimers 9기 지원서 초안]]
 - [[LGAimer/LG Aimers 9기/LG Aimers 9기 평가 및 제출 가이드|LG Aimers 9기 평가 및 제출 가이드]]
+- [[LGAimer/LG Aimers 9기/LG Aimers 9기 강의자료 원소스|LG Aimers 9기 강의자료 원소스]]
+
+## PDF 강의자료
+
+- [[LGAimer/LG Aimers 9기/강의자료/『Mathematics for ML』 강의자료 Download.pdf|Mathematics for ML]]
+- [[LGAimer/LG Aimers 9기/강의자료/『지도학습』 강의자료 다운로드.pdf|지도학습]]
+- [[LGAimer/LG Aimers 9기/강의자료/『LLM Application & Evaluation』 강의자료 Download.pdf|LLM Application & Evaluation]]
+- [[LGAimer/LG Aimers 9기/강의자료/『딥러닝 자연어처리 기초와 LLM Agent』 강의자료 Download.pdf|딥러닝 자연어처리 기초와 LLM Agent]]
 
 ## Tabular ML 강의자료
 

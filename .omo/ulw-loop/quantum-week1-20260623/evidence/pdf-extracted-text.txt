@@ -1,0 +1,107 @@
+QML에서 Quantum의 역할
+        QML에서 Quantum의 역할 > QML 구조 이해
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > QML 구조 이해
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > Quantum Encoding 이해
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > Feature Map 이해
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > QML 구조 이해
+
+
+
+
+        사전 준비 사항
+
+
+        •     필수 라이브러리 설치
+
+
+            from qiskit.circuit.library import zz_feature_map          pip install pylatexenc matplotlib
+            import matplotlib.pyplot as plt
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > QML 구조 이해
+
+
+
+
+        2. Feature Map 생성
+
+          from qiskit.circuit.library import zz_feature_map            방금 생성한 회로는 학습 회로가 아닙니다.”
+
+          feature_map = zz_feature_map(feature_dimension=2)            "이 회로는 데이터를 양자 공간으로 보내기 위한 회로입니다.”
+
+          print(feature_map)                                           즉, Data -> Feature Map 단계만 수행합니다.
+
+
+
+
+        실행 결과
+
+          q_0: ─H──P(x[0])──■────────
+                  │
+          q_1: ─H──P(x[1])──■────────
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > QML 구조 이해
+
+
+
+
+        3. 회로 시각화
+                                                                       학습하는 회로가 아니라 데이터를 변환하는 회로
+        from qiskit.circuit.library import zz_feature_map
+                                                                       H 게이트는 데이터를 넣기 전에 양자 상태를 준비하는 단계
+        import matplotlib.pyplot as plt
+
+        feature_map = zz_feature_map(feature_dimension=2)              P 게이트가 데이터를 회로 안에 넣어주는 역할
+
+                                                                       CNOT는 각 데이터 특징이 서로 관계를 가지도록 만드는 과정
+        feature_map.draw("mpl")
+                                                                       큰 P 게이트는 단순히 데이터를 넣는 것이 아니라, 데이터를
+        plt.show()
+                                                                       사이의 관계도 함께 표현
+
+        실행 결과                                                          같은 변환을 여러 번 반복하여 더 복잡한 표현 공간을 구성
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > Feature Map 이해
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+        QML에서 Quantum의 역할 > Measurement 이해
+
+
+
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+

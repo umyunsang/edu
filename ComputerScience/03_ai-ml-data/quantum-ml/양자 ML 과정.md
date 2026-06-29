@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-06-23'
+updated: '2026-06-28'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -56,6 +56,11 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 
 ## 현재 자료 배치
 
+- Hadamard Gate 개념 강의자료: `1.quantum-ml-overview/hadamard-gate/3. Hadamard Gate 개념 이해.pdf`
+- 상태변화 분석 강의자료: `1.quantum-ml-overview/state-change-analysis/4. 상태변화 분석.pdf`
+- Quantum Computing 필요성 강의자료: `1.quantum-ml-overview/why-quantum-computing/1. 왜 Quantum Computing이 필요한가.pdf`
+- Bit와 Qubit 강의자료: `1.quantum-ml-overview/bit-and-qubit/2. Bit와 Qubit.pdf`
+- Quantum Feature Space 강의자료: `1.quantum-ml-overview/quantum-feature-space/3. Quantum Feature Space.pdf`
 - QML에서 Quantum의 역할 강의자료: `1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf`
 - QML에서 Quantum의 역할 실습: `1.quantum-ml-overview/quantum-role/4_qml_quantum_role_practice.ipynb`
 - Iris 실습: `1.quantum-ml-overview/iris-classification/`

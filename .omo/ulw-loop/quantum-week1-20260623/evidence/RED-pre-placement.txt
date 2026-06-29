@@ -1,0 +1,3 @@
+RED placement check before artifact copy
+missing-pdf-as-expected=ComputerScience/03_ai-ml-data/quantum-ml/1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf
+missing-notebook-as-expected=ComputerScience/03_ai-ml-data/quantum-ml/1.quantum-ml-overview/quantum-role/1_week1_quantum_role_practice.ipynb

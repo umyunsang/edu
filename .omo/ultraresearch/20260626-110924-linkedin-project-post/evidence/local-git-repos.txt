@@ -1,0 +1,12 @@
+/Users/um-yunsang/.codex/.tmp/plugins
+/Users/um-yunsang/.codex/memories
+/Users/um-yunsang/.codex/vendor_imports/skills
+/Users/um-yunsang/.oh-my-zsh
+/Users/um-yunsang/Documents/DigitalPublishing
+/Users/um-yunsang/IlluOps
+/Users/um-yunsang/Primer
+/Users/um-yunsang/UMMAYA
+/Users/um-yunsang/UMMAYA/.references/claude-code-sourcemap
+/Users/um-yunsang/UMMAYA/.references/claude-reviews-claude
+/Users/um-yunsang/UMMAYA/.references/claw-code
+/Users/um-yunsang/UMMAYA/.references/gemini-cli
