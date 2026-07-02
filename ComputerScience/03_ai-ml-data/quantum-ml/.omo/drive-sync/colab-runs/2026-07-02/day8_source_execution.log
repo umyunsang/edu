@@ -1,0 +1,20 @@
+[colab] Creating session 'run-66a0ee'...
+[colab] Session READY (run-66a0ee). Executing .omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py...
+COLAB_SOURCE_BEGIN 4-2-1.py
+{'00': 508, '11': 492}
+COLAB_SOURCE_OK 4-2-1.py
+COLAB_SOURCE_BEGIN 4-2-2.py
+{'00': 1000}
+COLAB_SOURCE_OK 4-2-2.py
+COLAB_SOURCE_BEGIN 4-2-3.py
+{'00': 496, '01': 504}
+COLAB_SOURCE_OK 4-2-3.py
+COLAB_SOURCE_BEGIN 4-3-1.py
+Counter({'00': 266, '10': 258, '11': 254, '01': 222})
+COLAB_SOURCE_OK 4-3-1.py
+COLAB_SOURCE_BEGIN 4-3-2.py
+{'00': 490, '11': 510}
+COLAB_SOURCE_OK 4-3-2.py
+COLAB_DAY8_SOURCE_EXECUTION_OK
+[colab] Stopping session 'run-66a0ee'...
+[colab] Session terminated.

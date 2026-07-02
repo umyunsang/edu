@@ -1,0 +1,179 @@
+{
+  "source_folder": "https://drive.google.com/drive/folders/1efBVhTfekDukwBtYe7aPrsa4lNhaeXnl",
+  "files": {
+    "1C6bKbtut_BsZSmI3vr5Tm-z4nYGlODfj": {
+      "day": "Day8",
+      "source_title": "3-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T10:33:12.956Z",
+      "modified_time": "2026-06-30T09:28:58.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/3-1.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/3_1_cnot_basis_state_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-01T11:56:03.067102+00:00"
+    },
+    "1V_BdwzK_aqMj1XcQTycxITq1dNo-5_F_": {
+      "day": "Day8",
+      "source_title": "3-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T10:33:12.898Z",
+      "modified_time": "2026-06-30T09:29:15.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/3-2.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/3_2_hadamard_superposition_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-01T11:56:03.068071+00:00"
+    },
+    "1YVazSFPi6JlSEB7Igjarmr9a6JH9Wb5s": {
+      "day": "Day8",
+      "source_title": "3-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T10:33:12.933Z",
+      "modified_time": "2026-06-30T09:29:15.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/3-3.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/3_3_bell_state_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-01T11:56:03.069475+00:00"
+    },
+    "1NsLjgxHgjjCz_CPPbrObcXUHnARyItjs": {
+      "day": "Day8",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T11:17:13.303Z",
+      "modified_time": "2026-07-01T11:15:45.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/4_1_bell_measurement_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-01T11:56:03.070544+00:00"
+    },
+    "1lxrn6tyr82qf6Y5X3u5Zmz1mqeNvDEFm": {
+      "day": "Day8",
+      "source_title": "4-2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T11:35:38.505Z",
+      "modified_time": "2026-07-01T07:50:42.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-2-1.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/4_2_1_bell_circuit_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-02T00:07:54.767113+00:00",
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-02T16:42:44+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 600 .omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.log",
+        "marker": "COLAB_DAY8_SOURCE_EXECUTION_OK",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1ZKm_pEWM7oQ7cjhaGaLR0YGMDvVp0U-X": {
+      "day": "Day8",
+      "source_title": "4-2-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T11:35:38.599Z",
+      "modified_time": "2026-07-01T07:56:10.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-2-2.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/4_2_2_cnot_measurement_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-02T00:07:54.767113+00:00",
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-02T16:42:44+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 600 .omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.log",
+        "marker": "COLAB_DAY8_SOURCE_EXECUTION_OK",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1S3qEE7o9YeX6aUmRi2kbL-O72DB99Otv": {
+      "day": "Day8",
+      "source_title": "4-2-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T11:35:38.420Z",
+      "modified_time": "2026-07-01T07:59:57.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-2-3.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/4_2_3_hadamard_measurement_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-02T00:07:54.767113+00:00",
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-02T16:42:44+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 600 .omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.log",
+        "marker": "COLAB_DAY8_SOURCE_EXECUTION_OK",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1_KgglO3WH0MPQ5VDh5dxzFnDtHcgulUn": {
+      "day": "Day8",
+      "source_title": "4-3-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T11:46:24.911Z",
+      "modified_time": "2026-07-01T08:05:05.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-3-1.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/4_3_1_classical_random_bits_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-02T00:07:54.767113+00:00",
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-02T16:42:44+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 600 .omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.log",
+        "marker": "COLAB_DAY8_SOURCE_EXECUTION_OK",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1C-c4HOswAALIV3IKAGYKoZKtgItQ9IW1": {
+      "day": "Day8",
+      "source_title": "4-3-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-01T11:46:24.959Z",
+      "modified_time": "2026-07-01T08:08:33.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-3-2.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/4_3_2_bell_histogram_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-02T00:07:54.767113+00:00",
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-02T16:42:44+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 600 .omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-02/day8_source_execution.log",
+        "marker": "COLAB_DAY8_SOURCE_EXECUTION_OK",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    }
+  }
+}

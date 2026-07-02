@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-06-30'
+updated: '2026-07-02'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -48,6 +48,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - `1.quantum-ml-overview/` — 양자 ML 개요
 - `2.qml-structure/` — QML 구조 이해
 - `1.quantum-ml-overview/qml-pipeline/` — QML 파이프라인
+- `1.quantum-ml-overview/entanglement-and-cnot/` — Entanglement와 CNOT 실습
 - `4.qml-models/` — QML 모델
 - `5.qnn-and-hybrid/` — 양자 신경망(QNN) 및 Hybrid
 - `6.performance-comparison-and-qaoa-basics/` — 성능 비교 및 QAOA 기초
@@ -73,3 +74,12 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - QML 파이프라인 실습 3-1: `1.quantum-ml-overview/qml-pipeline/3_1_loss_surface_visualization.ipynb`
 - QML 파이프라인 실습 3-2: `1.quantum-ml-overview/qml-pipeline/3_2_binary_classification_dataset.ipynb`
 - QML 파이프라인 실습 3-3: `1.quantum-ml-overview/qml-pipeline/3_3_pca_projection_visualization.ipynb`
+- CNOT basis-state 실습 3-1: `1.quantum-ml-overview/entanglement-and-cnot/3_1_cnot_basis_state_practice.ipynb`
+- Hadamard superposition 실습 3-2: `1.quantum-ml-overview/entanglement-and-cnot/3_2_hadamard_superposition_practice.ipynb`
+- Bell state 실습 3-3: `1.quantum-ml-overview/entanglement-and-cnot/3_3_bell_state_practice.ipynb`
+- Bell measurement 실습 4-1: `1.quantum-ml-overview/entanglement-and-cnot/4_1_bell_measurement_practice.ipynb`
+- Bell circuit 실습 4-2-1: `1.quantum-ml-overview/entanglement-and-cnot/4_2_1_bell_circuit_practice.ipynb`
+- CNOT measurement 실습 4-2-2: `1.quantum-ml-overview/entanglement-and-cnot/4_2_2_cnot_measurement_practice.ipynb`
+- Hadamard measurement 실습 4-2-3: `1.quantum-ml-overview/entanglement-and-cnot/4_2_3_hadamard_measurement_practice.ipynb`
+- classical random bits 실습 4-3-1: `1.quantum-ml-overview/entanglement-and-cnot/4_3_1_classical_random_bits_practice.ipynb`
+- Bell histogram 실습 4-3-2: `1.quantum-ml-overview/entanglement-and-cnot/4_3_2_bell_histogram_practice.ipynb`
