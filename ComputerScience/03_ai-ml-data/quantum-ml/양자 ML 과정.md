@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-02'
+updated: '2026-07-11'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -83,3 +83,32 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Hadamard measurement 실습 4-2-3: `1.quantum-ml-overview/entanglement-and-cnot/4_2_3_hadamard_measurement_practice.ipynb`
 - classical random bits 실습 4-3-1: `1.quantum-ml-overview/entanglement-and-cnot/4_3_1_classical_random_bits_practice.ipynb`
 - Bell histogram 실습 4-3-2: `1.quantum-ml-overview/entanglement-and-cnot/4_3_2_bell_histogram_practice.ipynb`
+- Day9 X gate 측정 실습: `1.quantum-ml-overview/state-change-analysis/day9_x_2_1_x_gate_measurement_practice.ipynb`
+- Day9 Z/H/Y gate 측정 실습: `1.quantum-ml-overview/state-change-analysis/`
+- Day9 feature-encoded circuit 실습: `1.quantum-ml-overview/quantum-feature-space/day9_4_1_feature_encoded_entangling_circuit_practice.ipynb`
+- Day9 ZZ feature map 실습: `1.quantum-ml-overview/quantum-feature-space/day9_zz_4_4_feature_map_reps1_practice.ipynb`
+- Day10 H/X gate 순서 측정 실습: `1.quantum-ml-overview/state-change-analysis/day10_2_1_hx_xh_order_measurement_practice.ipynb`
+- Day10 multi-qubit rotation/entanglement 실습: `1.quantum-ml-overview/state-change-analysis/day10_2_2_multi_qubit_rotation_entanglement_practice.ipynb`
+
+- Quantum Gate 개념 강의자료: `1.quantum-ml-overview/quantum-gate/1. Quantum Gate 개념.pdf`
+- Quantum Circuit 개요 강의자료: `1.quantum-ml-overview/quantum-circuit/1. Quantum Circuit 개요.pdf`
+- Quantum Circuit과 QML 강의자료: `1.quantum-ml-overview/qml-circuit/4. Quantum Circuit과 QML.pdf`
+- Day11 feature map circuit 실습: `1.quantum-ml-overview/qml-circuit/day11_1_1_feature_map_circuit_practice.ipynb`
+- Day11 quantum circuit 측정 실습: `1.quantum-ml-overview/quantum-circuit/`
+- Day11 QML feature map ansatz 실습: `1.quantum-ml-overview/qml-circuit/day11_4_1_qml_feature_map_ansatz_practice.ipynb`
+- Day12 customer feature encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day12_1_2_customer_feature_encoding_practice.ipynb`
+- Day12 parameterized feature map 실습: `1.quantum-ml-overview/quantum-feature-space/day12_2_1_parameterized_feature_map_practice.ipynb`
+- Day12 Quantum Feature Space 종합 실습: `1.quantum-ml-overview/quantum-feature-space/day12_2_full_quantum_feature_space_lab.ipynb`
+- Day13 feature map ansatz 측정 실습: `1.quantum-ml-overview/qml-circuit/day13_2_1_feature_map_ansatz_measurement_practice.ipynb`
+- Day13 Mini QML Pipeline 실습: `1.quantum-ml-overview/qml-pipeline/day13_4_1_mini_qml_pipeline_practice.ipynb`
+- Day14 single-feature angle encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_1_single_feature_angle_encoding_practice.ipynb`
+- Day14 two-feature angle encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_2_two_feature_angle_encoding_practice.ipynb`
+- Day14 multi-feature angle encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_3_multi_feature_angle_encoding_practice.ipynb`
+- Day14 basis/angle/hybrid encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_4_basis_angle_hybrid_encoding_practice.ipynb`
+- Day14 customer hybrid encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_5_customer_hybrid_encoding_practice.ipynb`
+- Day14 QML end-to-end workflow 실습: `1.quantum-ml-overview/qml-pipeline/day14_2_1_qml_end_to_end_workflow_practice.ipynb`
+- Day15 ZZ feature map와 quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day15_1_1_zz_feature_map_quantum_kernel_practice.ipynb`
+- Day15 amplitude encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_1_amplitude_encoding_workflow_practice.ipynb`
+- Day15 amplitude encoding 시뮬레이션 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_2_amplitude_encoding_simulation_practice.ipynb`
+- Day15 amplitude encoding 함수화 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_3_amplitude_encoding_function_practice.ipynb`
+- Day15 basis/angle/amplitude encoding 비교 실습: `1.quantum-ml-overview/quantum-feature-space/day15_3_1_encoding_comparison_practice.ipynb`
