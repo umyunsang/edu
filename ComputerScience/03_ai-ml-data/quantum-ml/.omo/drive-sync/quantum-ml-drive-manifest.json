@@ -769,7 +769,11 @@
       "processed_as": "colab-ready-ipynb",
       "processed_at": "2026-07-11T00:00:00+09:00",
       "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "code_cells": 1}
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "code_cells": 1
+      }
     },
     "1e7fCN31EJWS9OhzN-LF9W2TiBWwqAoXN": {
       "day": "Day15",
@@ -782,7 +786,11 @@
       "processed_as": "colab-ready-ipynb",
       "processed_at": "2026-07-11T00:00:00+09:00",
       "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "code_cells": 1}
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "code_cells": 1
+      }
     },
     "1-Hbf_DSBi87D3umr5J8Qf0jaQ5zCI2Kq": {
       "day": "Day15",
@@ -795,7 +803,11 @@
       "processed_as": "colab-ready-ipynb",
       "processed_at": "2026-07-11T00:00:00+09:00",
       "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "code_cells": 1}
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "code_cells": 1
+      }
     },
     "1vqp72rKiCjL_2qLDvksAaDPqp4VJ5ORU": {
       "day": "Day15",
@@ -808,7 +820,11 @@
       "processed_as": "colab-ready-ipynb",
       "processed_at": "2026-07-11T00:00:00+09:00",
       "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "code_cells": 1}
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "code_cells": 1
+      }
     },
     "1Ey9He1SLPzuIPnSy8Va-HpZiJSt3IgJ9": {
       "day": "Day15",
@@ -821,7 +837,447 @@
       "processed_as": "colab-ready-ipynb",
       "processed_at": "2026-07-11T00:00:00+09:00",
       "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "code_cells": 1}
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "code_cells": 1
+      }
+    },
+    "1JXESUqxsbIMvyp7QA4R1z7aMRFP7rg2M": {
+      "day": "Day1",
+      "source_title": "2.표현력의 한계.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-22T12:30:27.470Z",
+      "modified_time": "2026-06-22T12:30:12.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day1/2.표현력의 한계.pdf",
+      "artifact_path": "1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "1dRMTrKFuFxdKXyIUzs7ioVuym4xNzKXX": {
+      "day": "Day1",
+      "source_title": "3-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-22T13:53:38.746Z",
+      "modified_time": "2026-06-21T11:03:40.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day1/3-3.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/3_3_pca_projection_visualization.ipynb",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1Uqh9OGZAmU_w55_QQGpxNgBMGXVYALGX": {
+      "day": "Day1",
+      "source_title": "3-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-22T13:53:39.071Z",
+      "modified_time": "2026-06-21T10:57:45.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day1/3-2.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/3_2_binary_classification_dataset.ipynb",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1uKLjjWthYbrd5qTvfNOBFWpNEhiyLwfG": {
+      "day": "Day1",
+      "source_title": "3-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-22T13:37:40.868Z",
+      "modified_time": "2026-06-21T10:11:37.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day1/3-1.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/3_1_loss_surface_visualization.ipynb",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1tiFPoQ8XyDOqki5npYsTnLp3KlcP-z1M": {
+      "day": "Day1",
+      "source_title": "1-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-22T11:31:45.936Z",
+      "modified_time": "2026-06-21T03:25:41.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day1/1-2.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/1_iris_classification_practice.ipynb",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1qk0vwcj_Urlus1n1jJhNytupHN1F0ZnE": {
+      "day": "Day1",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-22T11:28:59.145Z",
+      "modified_time": "2026-06-21T03:24:56.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day1/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/01_iris_colab_setup.ipynb",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1ZiCHxwVhS98V-9USsmsVFlK2LifnsVcj": {
+      "day": "Day2",
+      "source_title": "1.왜 Quantum Computing이 필요한가.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-23T13:58:11.174Z",
+      "modified_time": "2026-06-23T08:12:49.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day2/1.왜 Quantum Computing이 필요한가.pdf",
+      "artifact_path": "1.quantum-ml-overview/why-quantum-computing/1. 왜 Quantum Computing이 필요한가.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "1HS_zl8uOZO_9zfbIl-9wOuunnGzWOxOn": {
+      "day": "Day2",
+      "source_title": "2.Bit와 Qubit.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-23T13:58:17.295Z",
+      "modified_time": "2026-06-23T08:11:27.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day2/2.Bit와 Qubit.pdf",
+      "artifact_path": "1.quantum-ml-overview/bit-and-qubit/2. Bit와 Qubit.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "1Thw9uNUQ2p_dw0SV9NbSndZyEfhIqtNb": {
+      "day": "Day2",
+      "source_title": "3.Quantum Feature Sapce.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-23T13:58:22.688Z",
+      "modified_time": "2026-06-23T08:09:40.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day2/3.Quantum Feature Sapce.pdf",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/3. Quantum Feature Space.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "1qJNYZOupguCR_vIj3fus-ZDaPakwO9iI": {
+      "day": "Day2",
+      "source_title": "4.QML에서 Quantum의 역할.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-23T13:22:44.885Z",
+      "modified_time": "2026-06-23T08:08:33.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day2/4.QML에서 Quantum의 역할.pdf",
+      "artifact_path": "1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "1mnP5oY4ztCE7iWK0dX_UyBiGpw0iR7YB": {
+      "day": "Day5",
+      "source_title": "4.상태변화 분석.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-26T11:03:06.511Z",
+      "modified_time": "2026-06-26T11:15:03.539Z",
+      "raw_path": ".omo/drive-sync/raw/Day5/4.상태변화 분석.pdf",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/4. 상태변화 분석.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "1axTsaG1OMMtZ7r7FHCb_yg8Op-XRafxl": {
+      "day": "Day5",
+      "source_title": "3.Hardamard Gate 개념 이해.pdf",
+      "mime_type": "application/pdf",
+      "created_time": "2026-06-26T12:02:34.817Z",
+      "modified_time": "2026-06-26T09:52:10.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day5/3.Hardamard Gate 개념 이해.pdf",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/3. Hadamard Gate 개념 이해.pdf",
+      "processed_as": "existing-artifact-reconciled",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false
+    },
+    "14ZPK80v5y6mQAAc4p22Pcj-Wstuv2Bzm": {
+      "day": "Day6",
+      "source_title": "4-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T13:39:34.540Z",
+      "modified_time": "2026-06-29T07:08:04.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-4.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_4_4_hx_gate_histogram_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1MRNSqZB-zaStvNpcFbD5kO1-5LCmQ4n7": {
+      "day": "Day6",
+      "source_title": "4-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T13:39:34.404Z",
+      "modified_time": "2026-06-29T07:03:49.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-3.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_4_3_x_gate_histogram_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "18siQXlzVAaFxHh-GznZJoIGkejoDS7qf": {
+      "day": "Day6",
+      "source_title": "4-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T13:39:34.297Z",
+      "modified_time": "2026-06-29T07:00:11.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-2.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_4_2_hadamard_histogram_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1mRzjgPPwM93a3ZszxDTJytGwh-Cwa7EX": {
+      "day": "Day6",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T13:39:34.280Z",
+      "modified_time": "2026-06-29T06:56:09.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_4_1_zero_state_histogram_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1-5BZmMcImkTZfnOURIB9qAeM28QQfwU6": {
+      "day": "Day6",
+      "source_title": "3-2-6.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:47:53.961Z",
+      "modified_time": "2026-06-29T02:41:20.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-6.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_6_x_state_probability_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1wtsmjGMG2HKNpWmjKXhgEGgbaBY8PsRR": {
+      "day": "Day6",
+      "source_title": "3-2-5.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:47:53.608Z",
+      "modified_time": "2026-06-29T02:40:54.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-5.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_5_hadamard_state_probability_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "15BZdr3pnht6xDr9LxXyqasVA7BhRwxyt": {
+      "day": "Day6",
+      "source_title": "3-2-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:47:53.841Z",
+      "modified_time": "2026-06-29T02:40:19.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-4.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_4_zero_state_probability_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1QP6OWNnR2Z8SuXaZxFYdw3g6FmkNnJ2Z": {
+      "day": "Day6",
+      "source_title": "3-2-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:44:21.914Z",
+      "modified_time": "2026-06-29T02:38:47.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-3.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_3_probability_vector_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1L26FGilWr7v-wps-_HW613bsmGtEYyMB": {
+      "day": "Day6",
+      "source_title": "3-2-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:44:21.680Z",
+      "modified_time": "2026-06-29T02:38:39.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-2.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_2_hadamard_probability_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1EsJdhq4Jr8eVXtSEbz38l3WCz58AUi8O": {
+      "day": "Day6",
+      "source_title": "3-2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:44:21.946Z",
+      "modified_time": "2026-06-29T02:38:07.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-1.py",
+      "artifact_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_1_hadamard_counts_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1DcbzlHi74DTmWT7fZ9Pfbz5r1B89_xQg": {
+      "day": "Day6",
+      "source_title": "3-1-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:31:56.963Z",
+      "modified_time": "2026-06-29T02:33:56.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-1-3.py",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/day6_3_1_3_two_hadamard_two_qubit_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1KS6PHoLaVjDdcNy0A5a4by_sB0OfxYG9": {
+      "day": "Day6",
+      "source_title": "3-1-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:31:56.747Z",
+      "modified_time": "2026-06-29T02:33:35.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-1-2.py",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/day6_3_1_2_single_hadamard_two_qubit_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1ukpWUk4WnhJvT3YRD8MxOwXV0oCTeoss": {
+      "day": "Day6",
+      "source_title": "3-1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T12:31:57.181Z",
+      "modified_time": "2026-06-29T02:32:07.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-1-1.py",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/day6_3_1_1_two_qubit_basis_measurement_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "15DtQg-8sbHwzJn8p66mceDV26HhlRZYj": {
+      "day": "Day6",
+      "source_title": "2-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T11:16:20.400Z",
+      "modified_time": "2026-06-26T03:42:54.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/2-3.py",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/day6_2_3_hadamard_1000_shots_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1_nudxUoCORdRagIDwbHyAI95M0vnCnNr": {
+      "day": "Day6",
+      "source_title": "2-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T11:16:20.154Z",
+      "modified_time": "2026-06-26T03:42:36.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/2-2.py",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/day6_2_2_hadamard_100_shots_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1SOawoPe4pUG5aexo6FhFlneTeTQATqnr": {
+      "day": "Day6",
+      "source_title": "2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-29T11:16:20.244Z",
+      "modified_time": "2026-06-26T03:42:13.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day6/2-1.py",
+      "artifact_path": "1.quantum-ml-overview/hadamard-gate/day6_2_1_hadamard_10_shots_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
+    },
+    "1Lq0PzBIsYkaLmZRTwZ-nNS2UtHPuKX-Z": {
+      "day": "Day7",
+      "source_title": "2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-06-30T13:20:51.527Z",
+      "modified_time": "2026-06-29T05:43:03.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day7/2-1.py",
+      "artifact_path": "1.quantum-ml-overview/entanglement-and-cnot/day7_2_1_bell_state_measurement_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-12T00:06:26.584Z",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass"
+      }
     }
   },
   "last_scan": {

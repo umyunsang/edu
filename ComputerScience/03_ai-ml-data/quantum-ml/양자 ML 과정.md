@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-11'
+updated: '2026-07-12'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -112,3 +112,8 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day15 amplitude encoding 시뮬레이션 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_2_amplitude_encoding_simulation_practice.ipynb`
 - Day15 amplitude encoding 함수화 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_3_amplitude_encoding_function_practice.ipynb`
 - Day15 basis/angle/amplitude encoding 비교 실습: `1.quantum-ml-overview/quantum-feature-space/day15_3_1_encoding_comparison_practice.ipynb`
+- Day6 Hadamard shots 실습: `1.quantum-ml-overview/hadamard-gate/day6_2_1_hadamard_10_shots_practice.ipynb`, `day6_2_2_hadamard_100_shots_practice.ipynb`, `day6_2_3_hadamard_1000_shots_practice.ipynb`
+- Day6 two-qubit Hadamard 실습: `1.quantum-ml-overview/hadamard-gate/day6_3_1_1_two_qubit_basis_measurement_practice.ipynb`, `day6_3_1_2_single_hadamard_two_qubit_practice.ipynb`, `day6_3_1_3_two_hadamard_two_qubit_practice.ipynb`
+- Day6 상태·확률 벡터 실습: `1.quantum-ml-overview/state-change-analysis/day6_3_2_1_hadamard_counts_practice.ipynb`부터 `day6_3_2_6_x_state_probability_practice.ipynb`까지
+- Day6 상태 히스토그램 실습: `1.quantum-ml-overview/state-change-analysis/day6_4_1_zero_state_histogram_practice.ipynb`부터 `day6_4_4_hx_gate_histogram_practice.ipynb`까지
+- Day7 Bell state 측정 실습: `1.quantum-ml-overview/entanglement-and-cnot/day7_2_1_bell_state_measurement_practice.ipynb`
