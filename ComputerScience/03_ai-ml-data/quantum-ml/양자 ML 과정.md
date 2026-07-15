@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-12'
+updated: '2026-07-15'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -117,3 +117,8 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day6 상태·확률 벡터 실습: `1.quantum-ml-overview/state-change-analysis/day6_3_2_1_hadamard_counts_practice.ipynb`부터 `day6_3_2_6_x_state_probability_practice.ipynb`까지
 - Day6 상태 히스토그램 실습: `1.quantum-ml-overview/state-change-analysis/day6_4_1_zero_state_histogram_practice.ipynb`부터 `day6_4_4_hx_gate_histogram_practice.ipynb`까지
 - Day7 Bell state 측정 실습: `1.quantum-ml-overview/entanglement-and-cnot/day7_2_1_bell_state_measurement_practice.ipynb`
+- Day16 single/multi/combined Pauli feature map 실습: `1.quantum-ml-overview/quantum-feature-space/day16_2_1_single_pauli_feature_maps_practice.ipynb`부터 `day16_2_3_combined_pauli_feature_maps_practice.ipynb`까지
+- Day16 Pauli feature map Iris 실습: `1.quantum-ml-overview/quantum-feature-space/day16_2_4_pauli_feature_map_iris_practice.ipynb`
+- Day16 센서 phase encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day16_3_1_sensor_phase_normalization_practice.ipynb`부터 `day16_3_4_phase_interference_measurement_practice.ipynb`까지
+- Day17 parameter sweep·binding 실습: `1.quantum-ml-overview/qml-circuit/day17_1_1_parameter_sweep_practice.ipynb`, `day17_1_2_parameter_binding_state_analysis_practice.ipynb`
+- Day17 RealAmplitudes ansatz 실습: `1.quantum-ml-overview/qml-circuit/day17_2_1_real_amplitudes_ansatz_practice.ipynb`

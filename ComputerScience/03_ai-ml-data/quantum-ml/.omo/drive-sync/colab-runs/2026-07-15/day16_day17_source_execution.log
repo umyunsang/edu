@@ -1,0 +1,26 @@
+# Quantum ML Colab Source Execution - 2026-07-15
+
+- Status: PASS
+- Exit code: 0
+- Surface: Google Colab CLI remote VM
+- Command: `~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-15/day16_day17_source_execution.py`
+- Local package install: no
+- Remote dependencies: `qiskit`, `qiskit-aer`, `scikit-learn`, `pandas`, `matplotlib`, `pylatexenc`
+
+## Source Markers
+
+- `COLAB_SOURCE_OK Day16/2-1.py`
+- `COLAB_SOURCE_OK Day16/2-2.py`
+- `COLAB_SOURCE_OK Day16/2-3.py`
+- `COLAB_SOURCE_OK Day16/2-4.py`
+- `COLAB_SOURCE_OK Day16/3-1.py`
+- `COLAB_SOURCE_OK Day16/3-2.py`
+- `COLAB_SOURCE_OK Day16/3-3.py`
+- `COLAB_SOURCE_OK Day16/3-4.py`
+- `COLAB_SOURCE_OK Day17/1-1.py`
+- `COLAB_SOURCE_OK Day17/1-2.py`
+- `COLAB_SOURCE_OK Day17/2-1.py`
+
+## Final Marker
+
+`COLAB_DAY16_DAY17_SOURCE_EXECUTION_OK`
