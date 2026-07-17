@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-15'
+updated: '2026-07-17'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -122,3 +122,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day16 센서 phase encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day16_3_1_sensor_phase_normalization_practice.ipynb`부터 `day16_3_4_phase_interference_measurement_practice.ipynb`까지
 - Day17 parameter sweep·binding 실습: `1.quantum-ml-overview/qml-circuit/day17_1_1_parameter_sweep_practice.ipynb`, `day17_1_2_parameter_binding_state_analysis_practice.ipynb`
 - Day17 RealAmplitudes ansatz 실습: `1.quantum-ml-overview/qml-circuit/day17_2_1_real_amplitudes_ansatz_practice.ipynb`
+- Day18 Strongly Entangling Layers 실습: `1.quantum-ml-overview/qml-circuit/day18_3_1_strongly_entangling_layers_practice.ipynb`
+- Day18 frequency encoding·expectation·time evolution·measurement 실습: `1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb`부터 `day18_4_4_measurement_probability_oscillation_practice.ipynb`까지
+- Day19 quantum loss parameter sweep 실습: `1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb`
+- Day19 loss function 실습: `1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb`

@@ -1,0 +1,14 @@
+command: ~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py
+session: run-e122cf
+status: PASS
+sources: 7
+markers:
+- COLAB_SOURCE_OK Day18/3-1.py
+- COLAB_SOURCE_OK Day18/4-1.py
+- COLAB_SOURCE_OK Day18/4-2.py
+- COLAB_SOURCE_OK Day18/4-3.py
+- COLAB_SOURCE_OK Day18/4-4.py
+- COLAB_SOURCE_OK Day19/1-1.py
+- COLAB_SOURCE_OK Day19/2-1.py
+- COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK
+note: Day19/2-1.py emitted a non-fatal matplotlib warning after opening more than 20 figures; execution completed with exit code 0.
