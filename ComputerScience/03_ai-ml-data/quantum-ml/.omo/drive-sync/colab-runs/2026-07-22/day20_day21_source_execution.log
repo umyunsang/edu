@@ -1,0 +1,26 @@
+command: ~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py
+session: run-6a8189
+executed_at: 2026-07-22T09:11:53+09:00
+status: PASS
+sources: 11
+remote_dependencies:
+- qiskit
+- qiskit-aer
+- qiskit-algorithms
+- matplotlib
+- pylatexenc
+markers:
+- COLAB_SOURCE_OK Day20/2-2.py
+- COLAB_SOURCE_OK Day20/2-3.py
+- COLAB_SOURCE_OK Day20/2-5.py
+- COLAB_SOURCE_OK Day20/2-4.py
+- COLAB_SOURCE_OK Day21/4-3.py
+- COLAB_SOURCE_OK Day21/4-1.py
+- COLAB_SOURCE_OK Day21/3-4.py
+- COLAB_SOURCE_OK Day21/3-3.py
+- COLAB_SOURCE_OK Day21/3-2.py
+- COLAB_SOURCE_OK Day21/3-1.py
+- COLAB_SOURCE_OK Day21/4-2.py
+- COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK
+note: Day21/3-4.py emitted a non-fatal matplotlib warning after opening more than 20 figures; all sources completed with exit code 0 and the Colab session was terminated.
+
