@@ -16,6 +16,7 @@ scripts/pkm/.cache/
 **/.render/
 .omo/evidence/**/render/
 .trash/
+.worktrees/
 **/tmp/
 *.log
 
