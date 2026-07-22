@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-17'
+updated: '2026-07-22'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -126,3 +126,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day18 frequency encoding·expectation·time evolution·measurement 실습: `1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb`부터 `day18_4_4_measurement_probability_oscillation_practice.ipynb`까지
 - Day19 quantum loss parameter sweep 실습: `1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb`
 - Day19 loss function 실습: `1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb`
+- Day20 manual learning cycle 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_2_manual_learning_cycle_practice.ipynb`
+- Day20 loss landscape·parameter sweep·target loss curve 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_3_loss_landscape_practice.ipynb`부터 `day20_2_5_target_loss_curve_practice.ipynb`까지
+- Day21 공통 objective function·COBYLA·SPSA·학습 시각화 실습: `1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb`부터 `day21_3_4_quantum_learning_visualization_practice.ipynb`까지
+- Day21 학습 전후 비교·optimizer 비교·parameter 저장 실습: `1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb`부터 `day21_4_3_learning_result_parameter_persistence_practice.ipynb`까지
