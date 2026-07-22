@@ -69,11 +69,11 @@ Edu reference layer는 Obsidian 검색 기능이나 특정 RAG backend가 아니
 - derived Markdown/JSON/index의 Git commit 또는 public publication
 - 특정 graph/vector database를 canonical source of truth로 사용
 - MCP write tool, approval minting 또는 autonomous release
-- remote inference, remote hybrid, HTTP listener, multi-user service 또는 ambient network egress
+- remote inference, remote hybrid, externally reachable or persistent HTTP listener, multi-user service 또는 ambient network egress
 - global GJC source/release 변경
 - `.omo` workflow 재생성
 
-Remote inference, HTTP 또는 source mutation이 필요해지면 이 설계의 승인 범위를 벗어나므로 별도 threat model과 명시 승인이 필요하다.
+Remote inference, externally reachable/persistent HTTP 또는 source mutation이 필요해지면 이 설계의 승인 범위를 벗어나므로 별도 threat model과 명시 승인이 필요하다. OpenDataLoader local-hybrid/OCR가 요구하는 batch-scoped sidecar만 예외다. 이 sidecar는 `127.0.0.1`의 OS-assigned port에만 bind하고, model/runtime은 사전 획득·digest 검증하며, extraction 중 egress와 download를 차단하고, 성공·실패·취소 후 즉시 종료해야 한다. `0.0.0.0`, remote URL, persistent port와 implicit fast fallback은 허용하지 않는다.
 
 ## 4. Rollout 결정
 
@@ -384,7 +384,7 @@ Golden bake-off에서 quality threshold를 통과한 모델 중 quality가 높�
 - wire protocol baseline: MCP `2025-11-25`
 - Python SDK: stable v1 line `<2`
 - transport: local single-user STDIO only
-- HTTP, remote hybrid, egress: disabled
+- MCP HTTP, remote hybrid와 egress: disabled. 이 MCP transport 금지는 PDF extraction의 batch-scoped loopback sidecar 예외를 확장하지 않는다.
 - initialization, capability negotiation, timeout, cancellation, shutdown sequence를 테스트한다.
 
 ### 11.2 Exact tool limits
@@ -466,7 +466,7 @@ Raw query, content, document text, prompt, source/display path, raw URI와 citat
 
 - original vault와 PDF는 read-only
 - external registry/cache/log/backup는 owner-only local roots
-- remote inference/API/HTTP 없음
+- remote inference/API 및 externally reachable/persistent HTTP 없음. OpenDataLoader의 검증된 batch-scoped `127.0.0.1` sidecar 외에는 listener를 허용하지 않는다.
 - tracked config에 secret, approval state, exact private path 없음
 - generated Markdown/JSON/media는 external closure에만 존재
 - content와 PDF 내 prompt injection은 untrusted data
