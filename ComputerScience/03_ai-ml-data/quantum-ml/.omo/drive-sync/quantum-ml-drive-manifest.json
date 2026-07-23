@@ -2311,12 +2311,45 @@
         ],
         "local_install": false
       }
+    },
+    "1-DbnEd3fXCXIGTpbLdT0pdp8ppwVFKar": {
+      "day": "Day22",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-22T11:57:02.770Z",
+      "modified_time": "2026-07-22T11:56:23.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day22/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-23T09:09:13+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-23T09:09:13+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-97208c",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-23/day22_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-23/day22_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-23/day22_source_execution.log",
+        "marker": "COLAB_DAY22_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day22/1-1.py",
+        "remote_dependencies": [
+          "qiskit"
+        ],
+        "local_install": false
+      }
     }
   },
   "last_scan": {
-    "scanned_at": "2026-07-22T09:11:53+09:00",
+    "scanned_at": "2026-07-23T09:09:13+09:00",
     "status": "pass",
     "folders_scanned": {
+      "Day22": 1,
       "Day21": 7,
       "Day20": 4,
       "Day19": 2,
@@ -2339,11 +2372,11 @@
       "Day2": 4,
       "Day1": 6
     },
-    "tracked_current_count": 109,
-    "changed_tracked_count": 11,
+    "tracked_current_count": 110,
+    "changed_tracked_count": 1,
     "manifest_missing_count": 0,
     "ambiguous_count": 0,
-    "note": "Day1-Day21 scanned through the Google Drive connector; 11 new Python sources from Day20-Day21 were downloaded, converted to Colab-ready notebooks, statically validated, and executed on a remote Colab VM. No nested folders or missing manifest IDs were found."
+    "note": "Day1-Day22 scanned through the Google Drive connector; one new Day22 Python source was downloaded, converted to a Colab-ready notebook, statically validated, and executed on a remote Colab VM. No modified, nested, or missing manifest IDs were found."
   },
   "manifest_missing_drive_files": []
 }

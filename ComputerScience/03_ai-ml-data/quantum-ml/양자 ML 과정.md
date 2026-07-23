@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-22'
+updated: '2026-07-23'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -130,3 +130,4 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day20 loss landscape·parameter sweep·target loss curve 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_3_loss_landscape_practice.ipynb`부터 `day20_2_5_target_loss_curve_practice.ipynb`까지
 - Day21 공통 objective function·COBYLA·SPSA·학습 시각화 실습: `1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb`부터 `day21_3_4_quantum_learning_visualization_practice.ipynb`까지
 - Day21 학습 전후 비교·optimizer 비교·parameter 저장 실습: `1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb`부터 `day21_4_3_learning_result_parameter_persistence_practice.ipynb`까지
+- Day22 Classical Kernel에서 Quantum Kernel으로 실습: `1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb`
