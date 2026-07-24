@@ -131,3 +131,8 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day21 공통 objective function·COBYLA·SPSA·학습 시각화 실습: `1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb`부터 `day21_3_4_quantum_learning_visualization_practice.ipynb`까지
 - Day21 학습 전후 비교·optimizer 비교·parameter 저장 실습: `1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb`부터 `day21_4_3_learning_result_parameter_persistence_practice.ipynb`까지
 - Day22 Classical Kernel에서 Quantum Kernel으로 실습: `1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb`
+- Day23 Fidelity quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day23_3_1_fidelity_quantum_kernel_practice.ipynb`
+- Day23 Pauli feature map quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day23_3_2_pauli_feature_map_quantum_kernel_practice.ipynb`
+- Day23 quantum kernel matrix 검증 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_1_quantum_kernel_matrix_validation_practice.ipynb`
+- Day23 quantum kernel heatmap 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_2_quantum_kernel_heatmap_practice.ipynb`
+- Day23 quantum kernel 품질 평가 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_3_quantum_kernel_quality_evaluation_practice.ipynb`
