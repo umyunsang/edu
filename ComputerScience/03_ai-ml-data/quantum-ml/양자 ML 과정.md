@@ -136,3 +136,9 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day23 quantum kernel matrix 검증 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_1_quantum_kernel_matrix_validation_practice.ipynb`
 - Day23 quantum kernel heatmap 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_2_quantum_kernel_heatmap_practice.ipynb`
 - Day23 quantum kernel 품질 평가 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_3_quantum_kernel_quality_evaluation_practice.ipynb`
+- Day24 Classical SVM baseline 실습: `1.quantum-ml-overview/iris-classification/day24_1_1_classical_svm_baseline_practice.ipynb`
+- Day24 Iris QSVC 분류 실습: `1.quantum-ml-overview/iris-classification/day24_2_1_qsvc_iris_classifier_practice.ipynb`
+- Day25 QSVM 학습 데이터 준비 실습: `1.quantum-ml-overview/iris-classification/day25_3_1_qsvm_training_data_preparation_practice.ipynb`
+- Day25 QSVC 모델 생성 실습: `1.quantum-ml-overview/iris-classification/day25_3_2_qsvc_model_construction_practice.ipynb`
+- Day25 QSVM 학습 실습: `1.quantum-ml-overview/iris-classification/day25_3_3_qsvm_training_practice.ipynb`
+- Day25 QSVM 예측 실습: `1.quantum-ml-overview/iris-classification/day25_3_4_qsvm_prediction_practice.ipynb`
