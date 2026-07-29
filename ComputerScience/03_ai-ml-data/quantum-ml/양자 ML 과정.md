@@ -142,3 +142,5 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day25 QSVC 모델 생성 실습: `1.quantum-ml-overview/iris-classification/day25_3_2_qsvc_model_construction_practice.ipynb`
 - Day25 QSVM 학습 실습: `1.quantum-ml-overview/iris-classification/day25_3_3_qsvm_training_practice.ipynb`
 - Day25 QSVM 예측 실습: `1.quantum-ml-overview/iris-classification/day25_3_4_qsvm_prediction_practice.ipynb`
+- Day26 분류 평가 지표와 Confusion Matrix 실습: `1.quantum-ml-overview/iris-classification/day26_1_1_classification_metrics_confusion_matrix_practice.ipynb`
+- Day26 QSVM 성능 평가 실습: `1.quantum-ml-overview/iris-classification/day26_4_1_qsvm_performance_evaluation_practice.ipynb`
