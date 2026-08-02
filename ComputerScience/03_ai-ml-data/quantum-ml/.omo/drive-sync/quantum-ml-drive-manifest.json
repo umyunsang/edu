@@ -3300,7 +3300,7 @@
     }
   },
   "last_scan": {
-    "scanned_at": "2026-08-01T09:09:58+09:00",
+    "scanned_at": "2026-08-02T09:04:05+09:00",
     "status": "pass",
     "folders_scanned": {
       "Day29": 0,
@@ -3334,10 +3334,10 @@
       "Day1": 6
     },
     "tracked_current_count": 136,
-    "changed_tracked_count": 1,
+    "changed_tracked_count": 0,
     "manifest_missing_count": 0,
     "ambiguous_count": 0,
-    "note": "Day1-Day29 scanned through the Google Drive connector; one new Day28 Python source was downloaded, converted to a Colab-ready notebook, statically validated, and executed on a remote Colab VM. Day29 is empty. No modified, nested, ambiguous, or missing manifest IDs were found."
+    "note": "Day1-Day29 scanned through the Google Drive connector; all 136 Drive IDs and modified times match the manifest. Day29 is empty. No new, modified, nested, ambiguous, or missing manifest IDs were found; no download, notebook generation, course-index update, or Colab execution was required."
   },
   "manifest_missing_drive_files": []
 }
