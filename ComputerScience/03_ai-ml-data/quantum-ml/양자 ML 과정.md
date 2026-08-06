@@ -148,3 +148,5 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day27 Classical SVM 성능 기준선 실습: `1.quantum-ml-overview/iris-classification/day27_4_1_classical_svm_performance_baseline_practice.ipynb`
 - Day27 QSVM 성능 분석과 개선 전략 실습: `1.quantum-ml-overview/iris-classification/day27_4_2_qsvm_performance_analysis_improvement_practice.ipynb`
 - Day28 Neural Network 구조 분석 실습: `1.quantum-ml-overview/neural-network/day28_1_1_neural_network_structure_practice.ipynb`
+- Day31 QNN 구성 요소 확인 실습: `1.quantum-ml-overview/neural-network/day31_2_1_qnn_components_practice.ipynb`
+- Day31 Parameterized Circuit·EstimatorQNN 생성·Forward 분석 실습: `1.quantum-ml-overview/neural-network/day31_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day31_3_5_estimator_qnn_forward_analysis_practice.ipynb`까지
