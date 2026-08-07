@@ -1686,44 +1686,1881 @@
       "processed_as": "colab-ready-ipynb",
       "processed_at": "2026-07-17T09:53:33+09:00",
       "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day18/3-1.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day18/3-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
     },
     "1BKTr7VTvu6n5FliC2N6h0ttSVzmFTlga": {
-      "day": "Day18", "source_title": "4-2.py", "mime_type": "text/x-python-script", "created_time": "2026-07-15T12:36:38.324Z", "modified_time": "2026-07-15T12:33:54.000Z", "raw_path": ".omo/drive-sync/raw/Day18/4-2.py", "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_2_frequency_expectation_curve_practice.ipynb", "processed_as": "colab-ready-ipynb", "processed_at": "2026-07-17T09:53:33+09:00", "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day18/4-2.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
+      "day": "Day18",
+      "source_title": "4-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-15T12:36:38.324Z",
+      "modified_time": "2026-07-15T12:33:54.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-2.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_2_frequency_expectation_curve_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-17T09:53:33+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day18/4-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
     },
     "1ytICO0Ki2dpPOnrD7k52hKldqW9yfLIt": {
-      "day": "Day18", "source_title": "4-4.py", "mime_type": "text/x-python-script", "created_time": "2026-07-15T12:54:01.395Z", "modified_time": "2026-07-13T16:21:55.000Z", "raw_path": ".omo/drive-sync/raw/Day18/4-4.py", "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_4_measurement_probability_oscillation_practice.ipynb", "processed_as": "colab-ready-ipynb", "processed_at": "2026-07-17T09:53:33+09:00", "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day18/4-4.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
+      "day": "Day18",
+      "source_title": "4-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-15T12:54:01.395Z",
+      "modified_time": "2026-07-13T16:21:55.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-4.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_4_measurement_probability_oscillation_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-17T09:53:33+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day18/4-4.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
     },
     "1p-Jsxk0gb44C13BPNp5ty6PEcXqBCXKT": {
-      "day": "Day18", "source_title": "4-3.py", "mime_type": "text/x-python-script", "created_time": "2026-07-15T12:46:11.241Z", "modified_time": "2026-07-13T16:21:42.000Z", "raw_path": ".omo/drive-sync/raw/Day18/4-3.py", "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_3_time_evolution_statevector_practice.ipynb", "processed_as": "colab-ready-ipynb", "processed_at": "2026-07-17T09:53:33+09:00", "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day18/4-3.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
+      "day": "Day18",
+      "source_title": "4-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-15T12:46:11.241Z",
+      "modified_time": "2026-07-13T16:21:42.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-3.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_3_time_evolution_statevector_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-17T09:53:33+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day18/4-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
     },
     "1XFgRGEG3TPv1YBzvJN79I-Hhr6L5OH4q": {
-      "day": "Day18", "source_title": "4-1.py", "mime_type": "text/x-python-script", "created_time": "2026-07-15T12:27:38.860Z", "modified_time": "2026-07-13T16:12:37.000Z", "raw_path": ".omo/drive-sync/raw/Day18/4-1.py", "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb", "processed_as": "colab-ready-ipynb", "processed_at": "2026-07-17T09:53:33+09:00", "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day18/4-1.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
+      "day": "Day18",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-15T12:27:38.860Z",
+      "modified_time": "2026-07-13T16:12:37.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-17T09:53:33+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day18/4-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
     },
     "1xdO62v01jwP05E9_uOT6UBontBFPeV1y": {
-      "day": "Day19", "source_title": "2-1.py", "mime_type": "text/x-python-script", "created_time": "2026-07-16T13:44:19.889Z", "modified_time": "2026-07-16T04:34:57.000Z", "raw_path": ".omo/drive-sync/raw/Day19/2-1.py", "artifact_path": "1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb", "processed_as": "colab-ready-ipynb", "processed_at": "2026-07-17T09:53:33+09:00", "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day19/2-1.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
+      "day": "Day19",
+      "source_title": "2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-16T13:44:19.889Z",
+      "modified_time": "2026-07-16T04:34:57.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day19/2-1.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-17T09:53:33+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day19/2-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
     },
     "1uqamonrSc4fO_fFL9cOYIxBClUlBIkbC": {
-      "day": "Day19", "source_title": "1-1.py", "mime_type": "text/x-python-script", "created_time": "2026-07-16T11:50:26.276Z", "modified_time": "2026-07-13T17:31:05.000Z", "raw_path": ".omo/drive-sync/raw/Day19/1-1.py", "artifact_path": "1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb", "processed_as": "colab-ready-ipynb", "processed_at": "2026-07-17T09:53:33+09:00", "local_execution": false,
-      "validation": {"json_tool": "pass", "ast_parse": "pass", "raw_notebook_match": "pass"},
-      "colab_execution": {"status": "pass", "executed_at": "2026-07-17T09:53:33+09:00", "surface": "google-colab-cli", "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py", "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log", "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK", "source_marker": "COLAB_SOURCE_OK Day19/1-1.py", "remote_dependencies": ["qiskit", "qiskit-aer", "pennylane", "scikit-learn", "matplotlib", "pylatexenc"], "local_install": false}
-    }
+      "day": "Day19",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-16T11:50:26.276Z",
+      "modified_time": "2026-07-13T17:31:05.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day19/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-17T09:53:33+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-17T09:53:33+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-17/day18_day19_source_execution.log",
+        "marker": "COLAB_DAY18_DAY19_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day19/1-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "pennylane",
+          "scikit-learn",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1oJWKQ_36YwQD8cXJ_6uo8eLsdpfMWT3K": {
+      "day": "Day20",
+      "source_title": "2-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-20T10:55:14.135Z",
+      "modified_time": "2026-07-16T04:25:00.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-2.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day20_2_2_manual_learning_cycle_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day20/2-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "13ViCMKzcHCi-eYkVr6MdH5sm942LqAS-": {
+      "day": "Day20",
+      "source_title": "2-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-20T11:36:33.069Z",
+      "modified_time": "2026-07-16T04:24:32.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-3.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day20_2_3_loss_landscape_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day20/2-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "12W2VxSWx6og0O_wbxL9q3dRmS2Lp3rNU": {
+      "day": "Day20",
+      "source_title": "2-5.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-20T12:20:40.957Z",
+      "modified_time": "2026-07-16T03:50:26.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-5.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day20_2_5_target_loss_curve_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day20/2-5.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1GvrmcpZOVbkYbS9FkRqStcfF_yPXJ5sM": {
+      "day": "Day20",
+      "source_title": "2-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-20T12:13:41.228Z",
+      "modified_time": "2026-07-16T03:48:24.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-4.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day20_2_4_parameter_sweep_prediction_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day20/2-4.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1eQOYdBLDhueyQdsyp7m4sk6rlhWQuVRC": {
+      "day": "Day21",
+      "source_title": "4-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T13:52:14.495Z",
+      "modified_time": "2026-07-21T14:44:02.240Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/4-3.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_4_3_learning_result_parameter_persistence_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/4-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "178vNRh5LYoNSlaEIhEtYOY-rQlIceCVb": {
+      "day": "Day21",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T13:34:29.385Z",
+      "modified_time": "2026-07-21T13:31:00.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/4-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1zBEaL1mI16QH7fOTlP-KQbuo7CFboltB": {
+      "day": "Day21",
+      "source_title": "3-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T12:30:39.741Z",
+      "modified_time": "2026-07-21T12:23:48.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-4.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_3_4_quantum_learning_visualization_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/3-4.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1iFA3o0L3ASVb08zwhyhRyXdNe567IILm": {
+      "day": "Day21",
+      "source_title": "3-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T12:18:38.617Z",
+      "modified_time": "2026-07-21T12:09:46.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-3.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_3_3_spsa_optimizer_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/3-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1yNHba_PxzrjpajrVACtFdKmXthFrSB-t": {
+      "day": "Day21",
+      "source_title": "3-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T11:49:51.215Z",
+      "modified_time": "2026-07-21T11:40:26.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-2.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_3_2_cobyla_optimizer_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/3-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1kyDEquqtIVAeD4fOhPRk95NtqXwuBl6N": {
+      "day": "Day21",
+      "source_title": "3-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T11:25:55.972Z",
+      "modified_time": "2026-07-21T11:22:55.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-1.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/3-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1algoH6pLdb8cuNFFZ7X18P1G8eCOK96t": {
+      "day": "Day21",
+      "source_title": "4-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-21T13:41:45.233Z",
+      "modified_time": "2026-07-19T08:07:59.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day21/4-2.py",
+      "artifact_path": "1.quantum-ml-overview/qml-pipeline/day21_4_2_optimizer_comparison_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-22T09:11:53+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-22T09:11:53+09:00",
+        "surface": "google-colab-cli",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-22/day20_day21_source_execution.log",
+        "marker": "COLAB_DAY20_DAY21_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day21/4-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-aer",
+          "qiskit-algorithms",
+          "matplotlib",
+          "pylatexenc"
+        ],
+        "local_install": false
+      }
+    },
+    "1-DbnEd3fXCXIGTpbLdT0pdp8ppwVFKar": {
+      "day": "Day22",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-22T11:57:02.770Z",
+      "modified_time": "2026-07-22T11:56:23.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day22/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-23T09:09:13+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-23T09:09:13+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-97208c",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-07-23/day22_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-23/day22_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-23/day22_source_execution.log",
+        "marker": "COLAB_DAY22_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day22/1-1.py",
+        "remote_dependencies": [
+          "qiskit"
+        ],
+        "local_install": false
+      }
+    },
+    "1NByuHCM0BbCHbxtu4lQV6aiNW695k6JQ": {
+      "day": "Day23",
+      "source_title": "3-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-23T11:33:20.572Z",
+      "modified_time": "2026-07-16T16:29:59.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day23/3-1.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day23_3_1_fidelity_quantum_kernel_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-24T09:07:15+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-24T09:10:09:z",
+        "surface": "google-colab-cli",
+        "session": "run-7cb4d8",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.log",
+        "marker": "COLAB_DAY23_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day23/3-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1RboAnGMinsA5KDxY6NwgzSHyAbix7k3k": {
+      "day": "Day23",
+      "source_title": "3-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-23T11:39:53.899Z",
+      "modified_time": "2026-07-21T14:58:55.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day23/3-2.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day23_3_2_pauli_feature_map_quantum_kernel_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-24T09:07:15+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-24T09:10:09:z",
+        "surface": "google-colab-cli",
+        "session": "run-7cb4d8",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.log",
+        "marker": "COLAB_DAY23_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day23/3-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1OCeJU_8ic4gyBOiqxain0xpG8I_5fJ1i": {
+      "day": "Day23",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-23T12:31:19.747Z",
+      "modified_time": "2026-07-16T16:34:53.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day23/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day23_4_1_quantum_kernel_matrix_validation_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-24T09:07:15+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-24T09:10:09:z",
+        "surface": "google-colab-cli",
+        "session": "run-7cb4d8",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.log",
+        "marker": "COLAB_DAY23_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day23/4-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "15_El7s4CYmrJSuCq3nWE9vGW1ldM7jRN": {
+      "day": "Day23",
+      "source_title": "4-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-23T12:57:13.233Z",
+      "modified_time": "2026-07-23T12:52:12.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day23/4-2.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day23_4_2_quantum_kernel_heatmap_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-24T09:07:15+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-24T09:10:09:z",
+        "surface": "google-colab-cli",
+        "session": "run-7cb4d8",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.log",
+        "marker": "COLAB_DAY23_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day23/4-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1imEXiW6JDWMkDpreuSGY0bnY0qhjK3fZ": {
+      "day": "Day23",
+      "source_title": "4-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-23T13:55:30.813Z",
+      "modified_time": "2026-07-18T15:12:20.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day23/4-3.py",
+      "artifact_path": "1.quantum-ml-overview/quantum-feature-space/day23_4_3_quantum_kernel_quality_evaluation_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-24T09:07:15+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-24T09:10:09:z",
+        "surface": "google-colab-cli",
+        "session": "run-7cb4d8",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-24/day23_source_execution.log",
+        "marker": "COLAB_DAY23_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day23/4-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1WN9s62s-MteHpdJYp3FNn8VEf23qU8JL": {
+      "day": "Day24",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-24T11:35:31.176Z",
+      "modified_time": "2026-07-23T01:37:18.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day24/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day24_1_1_classical_svm_baseline_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-28T09:17:47+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-28T09:21:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-565f3c",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.log",
+        "marker": "COLAB_DAY24_DAY25_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day24/1-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1_g22tTfMdGucJTUJB91TDkx5V9wBcNB6": {
+      "day": "Day24",
+      "source_title": "2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-24T13:15:26.371Z",
+      "modified_time": "2026-07-16T16:37:33.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day24/2-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day24_2_1_qsvc_iris_classifier_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-28T09:17:47+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-28T09:21:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-565f3c",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.log",
+        "marker": "COLAB_DAY24_DAY25_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day24/2-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1FQ0zt29e7a1N-ScThp2_4gudI3_ovs5I": {
+      "day": "Day25",
+      "source_title": "3-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-27T11:18:25.746Z",
+      "modified_time": "2026-07-27T11:13:25.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-3.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day25_3_3_qsvm_training_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-28T09:17:47+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-28T09:21:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-565f3c",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.log",
+        "marker": "COLAB_DAY24_DAY25_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day25/3-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1HuQZhxi5Fzow39IXMdxWCQP78b8Rsx26": {
+      "day": "Day25",
+      "source_title": "3-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-27T12:22:13.075Z",
+      "modified_time": "2026-07-24T03:44:48.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-4.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day25_3_4_qsvm_prediction_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-28T09:17:47+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-28T09:21:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-565f3c",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.log",
+        "marker": "COLAB_DAY24_DAY25_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day25/3-4.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "17DjHCsIS45FhPnKwayVdomeusCE05MnN": {
+      "day": "Day25",
+      "source_title": "3-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-27T10:43:22.569Z",
+      "modified_time": "2026-07-24T03:37:15.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-2.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day25_3_2_qsvc_model_construction_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-28T09:17:47+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-28T09:21:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-565f3c",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.log",
+        "marker": "COLAB_DAY24_DAY25_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day25/3-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1hwy3KT9mAFlncbPx4ZkO44MOPpmcRjuk": {
+      "day": "Day25",
+      "source_title": "3-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-27T10:22:35.728Z",
+      "modified_time": "2026-07-24T03:16:32.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day25_3_1_qsvm_training_data_preparation_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-28T09:17:47+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-28T09:21:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-565f3c",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-28/day24_day25_source_execution.log",
+        "marker": "COLAB_DAY24_DAY25_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day25/3-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "16Oy2SRdifnrza0TdMuRLfNOmeS4FAZvE": {
+      "day": "Day26",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-28T12:52:53.877Z",
+      "modified_time": "2026-07-16T17:26:37.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day26/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day26_1_1_classification_metrics_confusion_matrix_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-29T13:44:55+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-29T13:44:55+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-afcf89",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-29/day26_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-29/day26_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-29/day26_source_execution.log",
+        "marker": "COLAB_DAY26_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day26/1-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "1TYXgRqCP_VdPUw_PYnOMw9ZQVY6IWvU6": {
+      "day": "Day26",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-28T11:43:45.763Z",
+      "modified_time": "2026-07-16T16:43:16.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day26/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day26_4_1_qsvm_performance_evaluation_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-29T13:44:55+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-29T13:44:55+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-afcf89",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-29/day26_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-29/day26_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-29/day26_source_execution.log",
+        "marker": "COLAB_DAY26_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day26/4-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib"
+        ],
+        "local_install": false
+      }
+    },
+    "18TjFMkxCs04ep1GA0uVYZirpm6VloCrO": {
+      "day": "Day27",
+      "source_title": "2-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:21:10.785Z",
+      "modified_time": "2026-07-29T04:19:01.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_1_qsvm_environment_setup_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1-TyU4FezNAEcb2x69oyQ92mRHyrVgmB2": {
+      "day": "Day27",
+      "source_title": "2-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:27:05.363Z",
+      "modified_time": "2026-07-29T04:19:01.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-2.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_2_qsvm_data_preparation_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1ePTskqNEOmUuIpkdr5cXPupPLjAlPmLb": {
+      "day": "Day27",
+      "source_title": "2-3.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:32:14.560Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-3.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_3_qsvm_training_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-3.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1uHBK0xTj5_zN7uwfMbCLq2kmVjaWoPbG": {
+      "day": "Day27",
+      "source_title": "2-4.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:39:47.780Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-4.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_4_qsvm_prediction_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-4.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "18eAW6pt0bgcEwlzLk6oh_BycjZrDRiD7": {
+      "day": "Day27",
+      "source_title": "2-5.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:44:07.940Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-5.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_5_qsvm_accuracy_analysis_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-5.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1RkcdgcM_x2L53AmcI7KBingn-qTJoYsB": {
+      "day": "Day27",
+      "source_title": "2-6.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:50:24.593Z",
+      "modified_time": "2026-07-29T11:45:21.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-6.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_6_qsvm_precision_recall_f1_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-6.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1D01zMCLSjq9WSF7N3c3PV_4GFRZM-P-t": {
+      "day": "Day27",
+      "source_title": "2-7.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T11:59:26.961Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-7.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_7_qsvm_classification_report_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-7.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1O01k9oul1OIoysuEdZQvUygATihK5WPJ": {
+      "day": "Day27",
+      "source_title": "2-8.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T12:15:43.372Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-8.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_8_qsvm_confusion_matrix_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-8.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1NmqYVA0AJ33hdt1IdqnMmG7W3SDXCvnp": {
+      "day": "Day27",
+      "source_title": "2-9.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T12:21:25.887Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-9.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_9_qsvm_roc_auc_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-9.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1Rf35zK7cKksLRktpkKHVoRumlCJq3Orx": {
+      "day": "Day27",
+      "source_title": "2-10.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T12:25:04.490Z",
+      "modified_time": "2026-07-28T06:29:02.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-10.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_2_10_qsvm_performance_report_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/2-10.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1N91cAxAm3B1wUsFaHZtxc9bWJCEBe6EJ": {
+      "day": "Day27",
+      "source_title": "4-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T13:47:22.265Z",
+      "modified_time": "2026-07-29T04:50:49.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/4-1.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_4_1_classical_svm_performance_baseline_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/4-1.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1RrludV-1auIMLqgr55AIIVvT-2vnjVkW": {
+      "day": "Day27",
+      "source_title": "4-2.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-29T13:47:26.936Z",
+      "modified_time": "2026-07-29T13:41:34.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day27/4-2.py",
+      "artifact_path": "1.quantum-ml-overview/iris-classification/day27_4_2_qsvm_performance_analysis_improvement_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-07-30T09:12:06+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-07-30T09:12:06+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-84bdf3",
+        "command": "~/.local/bin/colab run --timeout 2400 .omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-07-30/day27_source_execution.log",
+        "marker": "COLAB_DAY27_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day27/4-2.py",
+        "remote_dependencies": [
+          "qiskit",
+          "qiskit-machine-learning",
+          "scikit-learn",
+          "pandas",
+          "matplotlib",
+          "seaborn"
+        ],
+        "local_install": false
+      }
+    },
+    "1ZXrwsHXaHhRA3yFGadqfXsqFIeVh3iER": {
+      "day": "Day28",
+      "source_title": "1-1.py",
+      "mime_type": "text/x-python-script",
+      "created_time": "2026-07-30T13:15:40.891Z",
+      "modified_time": "2026-07-30T06:54:56.000Z",
+      "raw_path": ".omo/drive-sync/raw/Day28/1-1.py",
+      "artifact_path": "1.quantum-ml-overview/neural-network/day28_1_1_neural_network_structure_practice.ipynb",
+      "processed_as": "colab-ready-ipynb",
+      "processed_at": "2026-08-01T09:09:58+09:00",
+      "local_execution": false,
+      "validation": {
+        "json_tool": "pass",
+        "ast_parse": "pass",
+        "raw_notebook_match": "pass",
+        "raw_drive_match": "pass"
+      },
+      "colab_execution": {
+        "status": "pass",
+        "executed_at": "2026-08-01T09:09:58+09:00",
+        "surface": "google-colab-cli",
+        "session": "run-9ce562",
+        "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-01/day28_source_execution.py",
+        "runner_path": ".omo/drive-sync/colab-runs/2026-08-01/day28_source_execution.py",
+        "log_path": ".omo/drive-sync/colab-runs/2026-08-01/day28_source_execution.log",
+        "marker": "COLAB_DAY28_SOURCE_EXECUTION_OK",
+        "source_marker": "COLAB_SOURCE_OK Day28/1-1.py",
+        "remote_dependencies": [
+          "torch"
+        ],
+        "local_install": false
+      }
+    },
+      "1o2x85Wkwd9WZ6bU0HBtAqFs9drym-kFK": {
+        "day": "Day31",
+        "source_title": "2-1.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-04T11:29:29.594Z",
+        "modified_time": "2026-08-04T11:24:59.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day31/2-1.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day31_2_1_qnn_components_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-06T09:13:47+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-06T09:13:47+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-f4b2df",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.log",
+          "marker": "COLAB_DAY31_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day31/2-1.py",
+          "remote_dependencies": [
+            "qiskit",
+            "qiskit-machine-learning",
+            "numpy"
+          ],
+          "local_install": false
+        }
+      },
+      "1MPrhKrao8Jy1yuETv_1U7_BU3mlSACV-": {
+        "day": "Day31",
+        "source_title": "3-1.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-04T12:22:49.717Z",
+        "modified_time": "2026-07-24T15:50:34.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day31/3-1.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day31_3_1_parameterized_quantum_circuit_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-06T09:13:47+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-06T09:13:47+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-f4b2df",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.log",
+          "marker": "COLAB_DAY31_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day31/3-1.py",
+          "remote_dependencies": [
+            "qiskit",
+            "qiskit-machine-learning",
+            "numpy"
+          ],
+          "local_install": false
+        }
+      },
+      "1ujrU8IjLE3GouZ68nUFLm_tdQqEArXxn": {
+        "day": "Day31",
+        "source_title": "3-2.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-04T12:22:56.844Z",
+        "modified_time": "2026-08-02T14:12:56.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day31/3-2.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day31_3_2_estimator_qnn_preparation_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-06T09:13:47+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-06T09:13:47+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-f4b2df",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.log",
+          "marker": "COLAB_DAY31_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day31/3-2.py",
+          "remote_dependencies": [
+            "qiskit",
+            "qiskit-machine-learning",
+            "numpy"
+          ],
+          "local_install": false
+        }
+      },
+      "1HSuQC1ryrxXnS3U8gI9W3avynW2BgdL_": {
+        "day": "Day31",
+        "source_title": "3-3.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-04T12:55:14.964Z",
+        "modified_time": "2026-08-04T12:52:06.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day31/3-3.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day31_3_3_estimator_qnn_construction_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-06T09:13:47+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-06T09:13:47+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-f4b2df",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.log",
+          "marker": "COLAB_DAY31_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day31/3-3.py",
+          "remote_dependencies": [
+            "qiskit",
+            "qiskit-machine-learning",
+            "numpy"
+          ],
+          "local_install": false
+        }
+      },
+      "1ah73_APIOqHQO4Ekwm49CUx16D_Mx-oE": {
+        "day": "Day31",
+        "source_title": "3-4.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-04T13:36:11.926Z",
+        "modified_time": "2026-08-02T14:31:01.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day31/3-4.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day31_3_4_estimator_qnn_forward_pass_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-06T09:13:47+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-06T09:13:47+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-f4b2df",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.log",
+          "marker": "COLAB_DAY31_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day31/3-4.py",
+          "remote_dependencies": [
+            "qiskit",
+            "qiskit-machine-learning",
+            "numpy"
+          ],
+          "local_install": false
+        }
+      },
+      "130XFm2NpMh-E3XgIx2lKw8OtHZoM1V6p": {
+        "day": "Day31",
+        "source_title": "3-5.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-04T13:46:29.807Z",
+        "modified_time": "2026-08-04T13:42:50.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day31/3-5.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day31_3_5_estimator_qnn_forward_analysis_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-06T09:13:47+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-06T09:13:47+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-f4b2df",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-06/day31_source_execution.log",
+          "marker": "COLAB_DAY31_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day31/3-5.py",
+          "remote_dependencies": [
+            "qiskit",
+            "qiskit-machine-learning",
+            "numpy"
+          ],
+          "local_install": false
+        }
+      },
+      "1qKc88TCR6_N3dJ3PclwrwUa1IXzHAPFZ": {
+        "day": "Day33",
+        "source_title": "1-1.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-06T11:37:22.180Z",
+        "modified_time": "2026-08-06T11:25:18.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day33/1-1.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-07T12:39:51+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-07T12:39:51+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-6c6166",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.log",
+          "marker": "COLAB_DAY33_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day33/1-1.py",
+          "remote_dependencies": [
+            "torch"
+          ],
+          "remote_dependency_install": false,
+          "local_install": false
+        }
+      }
   },
   "last_scan": {
-    "scanned_at": "2026-07-17T09:53:33+09:00",
+    "scanned_at": "2026-08-07T12:39:51+09:00",
     "status": "pass",
     "folders_scanned": {
+      "Day33": 1,
+      "Day32": 0,
+      "Day31": 6,
+      "Day30": 0,
+      "Day29": 0,
+      "Day28": 1,
+      "Day27": 12,
+      "Day26": 2,
+      "Day25": 4,
+      "Day24": 2,
+      "Day23": 5,
+      "Day22": 1,
+      "Day21": 7,
+      "Day20": 4,
       "Day19": 2,
       "Day18": 5,
       "Day17": 3,
@@ -1744,243 +3581,11 @@
       "Day2": 4,
       "Day1": 6
     },
-    "tracked_current_count": 98,
-    "changed_tracked_count": 7,
+    "tracked_current_count": 142,
+    "changed_tracked_count": 1,
     "manifest_missing_count": 0,
-    "note": "Day1-Day19 scanned; seven new Day18-Day19 Python sources were normalized, validated, and executed in Google Colab."
+    "ambiguous_count": 0,
+    "note": "Day1-Day33 scanned through the Google Drive connector: 143 files total, 1 new Day33 Python script, 0 modified, 142 current, 0 missing, and no nested folders. The source was downloaded exactly, converted to a Colab-ready notebook under neural-network, statically validated, and executed successfully on remote Colab session run-6c6166. Day29, Day30, and Day32 are empty."
   },
-  "manifest_missing_drive_files": [
-    {
-      "day": "Day7",
-      "source_title": "2-1.py",
-      "id": "1Lq0PzBIsYkaLmZRTwZ-nNS2UtHPuKX-Z",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-30T13:20:51.527Z",
-      "modified_time": "2026-06-29T05:43:03.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "4-4.py",
-      "id": "14ZPK80v5y6mQAAc4p22Pcj-Wstuv2Bzm",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T13:39:34.540Z",
-      "modified_time": "2026-06-29T07:08:04.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "4-3.py",
-      "id": "1MRNSqZB-zaStvNpcFbD5kO1-5LCmQ4n7",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T13:39:34.404Z",
-      "modified_time": "2026-06-29T07:03:49.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "4-2.py",
-      "id": "18siQXlzVAaFxHh-GznZJoIGkejoDS7qf",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T13:39:34.297Z",
-      "modified_time": "2026-06-29T07:00:11.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "4-1.py",
-      "id": "1mRzjgPPwM93a3ZszxDTJytGwh-Cwa7EX",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T13:39:34.280Z",
-      "modified_time": "2026-06-29T06:56:09.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-2-6.py",
-      "id": "1-5BZmMcImkTZfnOURIB9qAeM28QQfwU6",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:47:53.961Z",
-      "modified_time": "2026-06-29T02:41:20.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-2-5.py",
-      "id": "1wtsmjGMG2HKNpWmjKXhgEGgbaBY8PsRR",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:47:53.608Z",
-      "modified_time": "2026-06-29T02:40:54.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-2-4.py",
-      "id": "15BZdr3pnht6xDr9LxXyqasVA7BhRwxyt",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:47:53.841Z",
-      "modified_time": "2026-06-29T02:40:19.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-2-3.py",
-      "id": "1QP6OWNnR2Z8SuXaZxFYdw3g6FmkNnJ2Z",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:44:21.914Z",
-      "modified_time": "2026-06-29T02:38:47.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-2-2.py",
-      "id": "1L26FGilWr7v-wps-_HW613bsmGtEYyMB",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:44:21.680Z",
-      "modified_time": "2026-06-29T02:38:39.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-2-1.py",
-      "id": "1EsJdhq4Jr8eVXtSEbz38l3WCz58AUi8O",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:44:21.946Z",
-      "modified_time": "2026-06-29T02:38:07.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-1-3.py",
-      "id": "1DcbzlHi74DTmWT7fZ9Pfbz5r1B89_xQg",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:31:56.963Z",
-      "modified_time": "2026-06-29T02:33:56.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-1-2.py",
-      "id": "1KS6PHoLaVjDdcNy0A5a4by_sB0OfxYG9",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:31:56.747Z",
-      "modified_time": "2026-06-29T02:33:35.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "3-1-1.py",
-      "id": "1ukpWUk4WnhJvT3YRD8MxOwXV0oCTeoss",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T12:31:57.181Z",
-      "modified_time": "2026-06-29T02:32:07.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "2-3.py",
-      "id": "15DtQg-8sbHwzJn8p66mceDV26HhlRZYj",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T11:16:20.400Z",
-      "modified_time": "2026-06-26T03:42:54.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "2-2.py",
-      "id": "1_nudxUoCORdRagIDwbHyAI95M0vnCnNr",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T11:16:20.154Z",
-      "modified_time": "2026-06-26T03:42:36.000Z"
-    },
-    {
-      "day": "Day6",
-      "source_title": "2-1.py",
-      "id": "1SOawoPe4pUG5aexo6FhFlneTeTQATqnr",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-29T11:16:20.244Z",
-      "modified_time": "2026-06-26T03:42:13.000Z"
-    },
-    {
-      "day": "Day5",
-      "source_title": "4.상태변화 분석.pdf",
-      "id": "1mnP5oY4ztCE7iWK0dX_UyBiGpw0iR7YB",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-26T11:03:06.511Z",
-      "modified_time": "2026-06-26T11:15:03.539Z"
-    },
-    {
-      "day": "Day5",
-      "source_title": "3.Hardamard Gate 개념 이해.pdf",
-      "id": "1axTsaG1OMMtZ7r7FHCb_yg8Op-XRafxl",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-26T12:02:34.817Z",
-      "modified_time": "2026-06-26T09:52:10.000Z"
-    },
-    {
-      "day": "Day2",
-      "source_title": "1.왜 Quantum Computing이 필요한가.pdf",
-      "id": "1ZiCHxwVhS98V-9USsmsVFlK2LifnsVcj",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-23T13:58:11.174Z",
-      "modified_time": "2026-06-23T08:12:49.000Z"
-    },
-    {
-      "day": "Day2",
-      "source_title": "2.Bit와 Qubit.pdf",
-      "id": "1HS_zl8uOZO_9zfbIl-9wOuunnGzWOxOn",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-23T13:58:17.295Z",
-      "modified_time": "2026-06-23T08:11:27.000Z"
-    },
-    {
-      "day": "Day2",
-      "source_title": "3.Quantum Feature Sapce.pdf",
-      "id": "1Thw9uNUQ2p_dw0SV9NbSndZyEfhIqtNb",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-23T13:58:22.688Z",
-      "modified_time": "2026-06-23T08:09:40.000Z"
-    },
-    {
-      "day": "Day2",
-      "source_title": "4.QML에서 Quantum의 역할.pdf",
-      "id": "1qJNYZOupguCR_vIj3fus-ZDaPakwO9iI",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-23T13:22:44.885Z",
-      "modified_time": "2026-06-23T08:08:33.000Z"
-    },
-    {
-      "day": "Day1",
-      "source_title": "2.표현력의 한계.pdf",
-      "id": "1JXESUqxsbIMvyp7QA4R1z7aMRFP7rg2M",
-      "mime_type": "application/pdf",
-      "created_time": "2026-06-22T12:30:27.470Z",
-      "modified_time": "2026-06-22T12:30:12.000Z"
-    },
-    {
-      "day": "Day1",
-      "source_title": "3-3.py",
-      "id": "1dRMTrKFuFxdKXyIUzs7ioVuym4xNzKXX",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-22T13:53:38.746Z",
-      "modified_time": "2026-06-21T11:03:40.000Z"
-    },
-    {
-      "day": "Day1",
-      "source_title": "3-2.py",
-      "id": "1Uqh9OGZAmU_w55_QQGpxNgBMGXVYALGX",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-22T13:53:39.071Z",
-      "modified_time": "2026-06-21T10:57:45.000Z"
-    },
-    {
-      "day": "Day1",
-      "source_title": "3-1.py",
-      "id": "1uKLjjWthYbrd5qTvfNOBFWpNEhiyLwfG",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-22T13:37:40.868Z",
-      "modified_time": "2026-06-21T10:11:37.000Z"
-    },
-    {
-      "day": "Day1",
-      "source_title": "1-2.py",
-      "id": "1tiFPoQ8XyDOqki5npYsTnLp3KlcP-z1M",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-22T11:31:45.936Z",
-      "modified_time": "2026-06-21T03:25:41.000Z"
-    },
-    {
-      "day": "Day1",
-      "source_title": "1-1.py",
-      "id": "1qk0vwcj_Urlus1n1jJhNytupHN1F0ZnE",
-      "mime_type": "text/x-python-script",
-      "created_time": "2026-06-22T11:28:59.145Z",
-      "modified_time": "2026-06-21T03:24:56.000Z"
-    }
-  ]
+  "manifest_missing_drive_files": []
 }
