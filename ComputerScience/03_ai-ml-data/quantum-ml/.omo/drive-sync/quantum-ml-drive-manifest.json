@@ -3507,12 +3507,47 @@
           ],
           "local_install": false
         }
+      },
+      "1qKc88TCR6_N3dJ3PclwrwUa1IXzHAPFZ": {
+        "day": "Day33",
+        "source_title": "1-1.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-06T11:37:22.180Z",
+        "modified_time": "2026-08-06T11:25:18.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day33/1-1.py",
+        "artifact_path": "1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-07T12:39:51+09:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-07T12:39:51+09:00",
+          "surface": "google-colab-cli",
+          "session": "run-6c6166",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.log",
+          "marker": "COLAB_DAY33_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day33/1-1.py",
+          "remote_dependencies": [
+            "torch"
+          ],
+          "remote_dependency_install": false,
+          "local_install": false
+        }
       }
   },
   "last_scan": {
-    "scanned_at": "2026-08-06T09:13:47+09:00",
+    "scanned_at": "2026-08-07T12:39:51+09:00",
     "status": "pass",
     "folders_scanned": {
+      "Day33": 1,
       "Day32": 0,
       "Day31": 6,
       "Day30": 0,
@@ -3546,11 +3581,11 @@
       "Day2": 4,
       "Day1": 6
     },
-    "tracked_current_count": 136,
-    "changed_tracked_count": 6,
+    "tracked_current_count": 142,
+    "changed_tracked_count": 1,
     "manifest_missing_count": 0,
     "ambiguous_count": 0,
-    "note": "Day1-Day32 scanned through the Google Drive connector: 142 files total, 6 new Day31 Python scripts, 0 modified, 136 current, 0 missing, and no nested folders. The six sources were downloaded exactly, converted to Colab-ready notebooks under neural-network, statically validated, and executed successfully on remote Colab session run-f4b2df. Day30 and Day32 are empty."
+    "note": "Day1-Day33 scanned through the Google Drive connector: 143 files total, 1 new Day33 Python script, 0 modified, 142 current, 0 missing, and no nested folders. The source was downloaded exactly, converted to a Colab-ready notebook under neural-network, statically validated, and executed successfully on remote Colab session run-6c6166. Day29, Day30, and Day32 are empty."
   },
   "manifest_missing_drive_files": []
 }

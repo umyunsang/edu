@@ -1,0 +1,11 @@
+Quantum ML Day33 remote Colab execution
+Command: ~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-07/day33_source_execution.py
+Session: run-6c6166
+Remote dependencies installed: none; torch 2.11.0+cpu was already available
+Local dependency installation: not performed
+
+Observed output: input shape torch.Size([1, 2]), output shape torch.Size([1, 1]), total trainable parameters 17
+COLAB_SOURCE_OK Day33/1-1.py
+COLAB_DAY33_SOURCE_EXECUTION_OK
+Result: PASS (exit code 0)
+Session terminated normally.

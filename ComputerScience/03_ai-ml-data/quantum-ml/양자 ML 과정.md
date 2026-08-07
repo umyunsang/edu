@@ -150,3 +150,4 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day28 Neural Network 구조 분석 실습: `1.quantum-ml-overview/neural-network/day28_1_1_neural_network_structure_practice.ipynb`
 - Day31 QNN 구성 요소 확인 실습: `1.quantum-ml-overview/neural-network/day31_2_1_qnn_components_practice.ipynb`
 - Day31 Parameterized Circuit·EstimatorQNN 생성·Forward 분석 실습: `1.quantum-ml-overview/neural-network/day31_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day31_3_5_estimator_qnn_forward_analysis_practice.ipynb`까지
+- Day33 PyTorch 기본 모델 실행 실습: `1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb`
