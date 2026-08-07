@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-17'
+updated: '2026-07-23'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -126,3 +126,28 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day18 frequency encoding·expectation·time evolution·measurement 실습: `1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb`부터 `day18_4_4_measurement_probability_oscillation_practice.ipynb`까지
 - Day19 quantum loss parameter sweep 실습: `1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb`
 - Day19 loss function 실습: `1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb`
+- Day20 manual learning cycle 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_2_manual_learning_cycle_practice.ipynb`
+- Day20 loss landscape·parameter sweep·target loss curve 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_3_loss_landscape_practice.ipynb`부터 `day20_2_5_target_loss_curve_practice.ipynb`까지
+- Day21 공통 objective function·COBYLA·SPSA·학습 시각화 실습: `1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb`부터 `day21_3_4_quantum_learning_visualization_practice.ipynb`까지
+- Day21 학습 전후 비교·optimizer 비교·parameter 저장 실습: `1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb`부터 `day21_4_3_learning_result_parameter_persistence_practice.ipynb`까지
+- Day22 Classical Kernel에서 Quantum Kernel으로 실습: `1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb`
+- Day23 Fidelity quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day23_3_1_fidelity_quantum_kernel_practice.ipynb`
+- Day23 Pauli feature map quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day23_3_2_pauli_feature_map_quantum_kernel_practice.ipynb`
+- Day23 quantum kernel matrix 검증 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_1_quantum_kernel_matrix_validation_practice.ipynb`
+- Day23 quantum kernel heatmap 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_2_quantum_kernel_heatmap_practice.ipynb`
+- Day23 quantum kernel 품질 평가 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_3_quantum_kernel_quality_evaluation_practice.ipynb`
+- Day24 Classical SVM baseline 실습: `1.quantum-ml-overview/iris-classification/day24_1_1_classical_svm_baseline_practice.ipynb`
+- Day24 Iris QSVC 분류 실습: `1.quantum-ml-overview/iris-classification/day24_2_1_qsvc_iris_classifier_practice.ipynb`
+- Day25 QSVM 학습 데이터 준비 실습: `1.quantum-ml-overview/iris-classification/day25_3_1_qsvm_training_data_preparation_practice.ipynb`
+- Day25 QSVC 모델 생성 실습: `1.quantum-ml-overview/iris-classification/day25_3_2_qsvc_model_construction_practice.ipynb`
+- Day25 QSVM 학습 실습: `1.quantum-ml-overview/iris-classification/day25_3_3_qsvm_training_practice.ipynb`
+- Day25 QSVM 예측 실습: `1.quantum-ml-overview/iris-classification/day25_3_4_qsvm_prediction_practice.ipynb`
+- Day26 분류 평가 지표와 Confusion Matrix 실습: `1.quantum-ml-overview/iris-classification/day26_1_1_classification_metrics_confusion_matrix_practice.ipynb`
+- Day26 QSVM 성능 평가 실습: `1.quantum-ml-overview/iris-classification/day26_4_1_qsvm_performance_evaluation_practice.ipynb`
+- Day27 QSVM 성능 평가 연속 실습: `1.quantum-ml-overview/iris-classification/day27_2_1_qsvm_environment_setup_practice.ipynb`부터 `day27_2_10_qsvm_performance_report_practice.ipynb`까지
+- Day27 Classical SVM 성능 기준선 실습: `1.quantum-ml-overview/iris-classification/day27_4_1_classical_svm_performance_baseline_practice.ipynb`
+- Day27 QSVM 성능 분석과 개선 전략 실습: `1.quantum-ml-overview/iris-classification/day27_4_2_qsvm_performance_analysis_improvement_practice.ipynb`
+- Day28 Neural Network 구조 분석 실습: `1.quantum-ml-overview/neural-network/day28_1_1_neural_network_structure_practice.ipynb`
+- Day31 QNN 구성 요소 확인 실습: `1.quantum-ml-overview/neural-network/day31_2_1_qnn_components_practice.ipynb`
+- Day31 Parameterized Circuit·EstimatorQNN 생성·Forward 분석 실습: `1.quantum-ml-overview/neural-network/day31_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day31_3_5_estimator_qnn_forward_analysis_practice.ipynb`까지
+- Day33 PyTorch 기본 모델 실행 실습: `1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb`
