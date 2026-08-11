@@ -153,3 +153,5 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day33 PyTorch 기본 모델 실행 실습: `1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb`
 - Day34 TorchConnector·PyTorch 연동 및 QNN 환경·생성·적용·weight·forward·입력 변화 실습: `1.quantum-ml-overview/neural-network/day34_2_1_torchconnector_pytorch_integration_practice.ipynb`부터 `day34_3_6_qnn_input_change_practice.ipynb`까지
 - Day34 QNN 지원 모듈: `1.quantum-ml-overview/neural-network/day34_create_qnn_support_module.ipynb`, `day34_torch_connector_support_module.ipynb`
+- Day34 QNN weight 변화·gradient·batch forward·전체 검증 실습: `1.quantum-ml-overview/neural-network/day34_3_7_qnn_weight_change_practice.ipynb`부터 `day34_3_10_qnn_end_to_end_validation_practice.ipynb`까지
+- Day35 TSP brute-force 기준선 실습: `1.quantum-ml-overview/qaoa-basics/day35_1_1_tsp_brute_force_baseline_practice.ipynb`
