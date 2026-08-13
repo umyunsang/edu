@@ -155,3 +155,4 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day34 QNN 지원 모듈: `1.quantum-ml-overview/neural-network/day34_create_qnn_support_module.ipynb`, `day34_torch_connector_support_module.ipynb`
 - Day34 QNN weight 변화·gradient·batch forward·전체 검증 실습: `1.quantum-ml-overview/neural-network/day34_3_7_qnn_weight_change_practice.ipynb`부터 `day34_3_10_qnn_end_to_end_validation_practice.ipynb`까지
 - Day35 TSP brute-force 기준선 실습: `1.quantum-ml-overview/qaoa-basics/day35_1_1_tsp_brute_force_baseline_practice.ipynb`
+- Day37 매개변수화 회로·parameter binding·objective function·고전 optimizer·비용/초깃값/optimizer 비교 실습: `1.quantum-ml-overview/qml-pipeline/day37_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day37_3_8_optimizer_comparison_practice.ipynb`까지

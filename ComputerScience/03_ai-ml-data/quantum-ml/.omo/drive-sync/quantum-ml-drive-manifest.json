@@ -4157,10 +4157,346 @@
         ],
         "local_install": false
       }
-    }
+    },
+      "1NK7QGqcXwZAjSqWIyU8eAPh_fot-pfB9": {
+        "day": "Day37",
+        "source_title": "3-1.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T12:46:05.077Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-1.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_1_parameterized_quantum_circuit_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-1.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "1VQ3KqJ4MGri2UkDJ5eywSUgxGqaobVEp": {
+        "day": "Day37",
+        "source_title": "3-2.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T12:53:16.883Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-2.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_2_parameter_binding_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-2.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "15sW696EVvx-mpR_rPduY3P_aghs7nPVA": {
+        "day": "Day37",
+        "source_title": "3-3.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T13:14:59.785Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-3.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_3_objective_function_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-3.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "1a_uYUGcFkq_VeKAuFtbuj_0fAlUobYwH": {
+        "day": "Day37",
+        "source_title": "3-4.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T13:26:57.492Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-4.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_4_classical_optimizer_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-4.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "1sFmU4gztYsHe0vuTrahw50dzBQtLrBcK": {
+        "day": "Day37",
+        "source_title": "3-5.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T13:36:01.140Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-5.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_5_quantum_circuit_objective_function_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-5.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "1HNmkaNMUqx2ItSbnTZ8ryjWGnTvTiTL9": {
+        "day": "Day37",
+        "source_title": "3-6.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T13:45:58.026Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-6.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_6_cost_parameter_history_visualization_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-6.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "1VZbsx1M9htyZA2zWkK4f1_RF6NB9oI0Z": {
+        "day": "Day37",
+        "source_title": "3-7.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T13:52:31.187Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-7.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_7_initial_parameter_comparison_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-7.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      },
+      "135VSvPm88eL3UTnmR4R6yVzkk4z4jIaW": {
+        "day": "Day37",
+        "source_title": "3-8.py",
+        "mime_type": "text/x-python-script",
+        "created_time": "2026-08-12T13:58:08.863Z",
+        "modified_time": "2026-08-11T04:24:11.000Z",
+        "raw_path": ".omo/drive-sync/raw/Day37/3-8.py",
+        "artifact_path": "1.quantum-ml-overview/qml-pipeline/day37_3_8_optimizer_comparison_practice.ipynb",
+        "processed_as": "colab-ready-ipynb",
+        "processed_at": "2026-08-13T07:09:13+07:00",
+        "local_execution": false,
+        "validation": {
+          "json_tool": "pass",
+          "ast_parse": "pass",
+          "raw_notebook_match": "pass",
+          "raw_drive_match": "pass"
+        },
+        "colab_execution": {
+          "status": "pass",
+          "executed_at": "2026-08-13T07:09:13+07:00",
+          "surface": "google-colab-cli",
+          "session": "run-77f72a",
+          "command": "~/.local/bin/colab run --timeout 1200 .omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "runner_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.py",
+          "log_path": ".omo/drive-sync/colab-runs/2026-08-13/day37_source_execution.log",
+          "marker": "COLAB_DAY37_SOURCE_EXECUTION_OK",
+          "source_marker": "COLAB_SOURCE_OK Day37/3-8.py",
+          "remote_dependencies": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "remote_dependencies_installed": [
+            "qiskit",
+            "numpy",
+            "scipy",
+            "matplotlib"
+          ],
+          "local_install": false
+        }
+      }
   },
   "last_scan": {
-    "scanned_at": "2026-08-11T07:09:21+07:00",
+    "scanned_at": "2026-08-13T07:09:13+07:00",
     "status": "pass",
     "folders_scanned": {
       "Day1": 6,
@@ -4197,13 +4533,15 @@
       "Day32": 0,
       "Day33": 1,
       "Day34": 13,
-      "Day35": 1
+      "Day35": 1,
+      "Day36": 0,
+      "Day37": 8
     },
-    "tracked_current_count": 152,
-    "changed_tracked_count": 5,
+    "tracked_current_count": 157,
+    "changed_tracked_count": 8,
     "manifest_missing_count": 0,
     "ambiguous_count": 0,
-    "note": "Day1-Day35 scanned through the Google Drive connector: 157 files total, 5 new, 0 modified, 152 current, 0 missing, and no nested folders. Five Python sources were preserved, converted to Colab-ready notebooks, statically validated, and executed successfully through the remote Colab CLI. Day3, Day4, Day29, Day30, and Day32 are empty."
+    "note": "Day1-Day37 scanned through the Google Drive connector: 165 files total, 8 new, 0 modified, 157 current, 0 missing, and no nested folders. Eight Day37 Python sources were preserved, converted to Colab-ready notebooks, statically validated, and executed successfully through the remote Colab CLI. Day3, Day4, Day29, Day30, Day32, and Day36 are empty."
   },
   "manifest_missing_drive_files": []
 }
