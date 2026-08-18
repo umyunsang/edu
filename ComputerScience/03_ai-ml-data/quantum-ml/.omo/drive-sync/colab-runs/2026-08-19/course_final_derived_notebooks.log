@@ -1,0 +1,866 @@
+[colab] Creating session 'run-ad144d'...
+[colab] Session READY (run-ad144d). Executing /tmp/quantum-ml-implementation.wIBjhB/repo/ComputerScience/03_ai-ml-data/quantum-ml/.omo/drive-sync/colab-runs/2026-08-19/course_final_derived_notebooks_runner.py...
+XOR table
+X1 X2 | Y
+0  0  | 0
+0  1  | 1
+1  0  | 1
+1  1  | 0
+<Figure size 500x500 with 1 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpse818mky.png]
+예측 결과: [0 0 0 0]
+정답: [0 1 1 0]
+정확도: 0.5
+<Figure size 500x500 with 1 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpb3raw191.png]
+새 feature: X1 * X2
+확장된 입력
+[[0 0 0]
+ [0 1 0]
+ [1 0 0]
+ [1 1 1]]
+예측 결과: [1 1 1 0]
+정답: [0 1 1 0]
+정확도: 0.75
+RBF SVM 예측 결과: [0 1 1 0]
+정답: [0 1 1 0]
+정확도: 1.0
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=1/12 path=01.quantum-foundations/01.why-quantum-and-qml/supplement_02_xor_expressive_power_classical_baselines_lab.ipynb
+<Figure size 500x400 with 1 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpp362v7_i.png]
+First classical point: [-1.    -0.976]
+Scaled angles: [0.273 0.252]
+Encoded amplitudes: [0.528+0.273j 0.474-0.021j 0.479-0.02j  0.35 -0.262j]
+Probability sum: 0.9999999999999998
+<Figure size 1200x300 with 4 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmp4fu2m514.png]
+<Figure size 600x500 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpdhf_dcpv.png]
+Kernel shape: (48, 48)
+Mean same-class similarity: 0.5448183958708225
+Mean different-class similarity: 0.1936025810530454
+<Figure size 600x500 with 1 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpxi1lf286.png]
+Training accuracy from kernel score: 1.000
+repetitions=1: same-class mean=0.550, different-class mean=0.175
+repetitions=2: same-class mean=0.545, different-class mean=0.194
+repetitions=3: same-class mean=0.716, different-class mean=0.599
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=2/12 path=01.quantum-foundations/01.why-quantum-and-qml/week01_04_qml_quantum_role_numpy_feature_map_lab.ipynb
+3-2-1.py: run a Hadamard circuit and print counts
+3-2-2.py: convert counts into P(0) and P(1)
+3-2-3.py: store [P(0), P(1)] as a probability vector
+3-2-4.py: wrap the conversion in a helper for |0>
+3-2-5.py: reuse the helper for H|0>
+3-2-6.py: reuse the helper for X|0>
+        ┌───┐ ░ ┌─┐
+     q: ┤ H ├─░─┤M├
+        └───┘ ░ └╥┘
+meas: 1/═════════╩═
+                 0 
+counts: {'1': 506, '0': 494}
+P(0): 0.494
+P(1): 0.506
+probability vector: [0.494, 0.506]
+3-2-4.py (|0>)
+counts: {'0': 1000}
+[P(0), P(1)]: [1.0, 0.0]
+3-2-5.py (H|0>)
+counts: {'1': 514, '0': 486}
+[P(0), P(1)]: [0.486, 0.514]
+3-2-6.py (X|0>)
+counts: {'1': 1000}
+[P(0), P(1)]: [0.0, 1.0]
+<Figure size 1200x300 with 3 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpr3jcbqtl.png]
+        ┌───┐┌───┐ ░ ┌─┐
+     q: ┤ X ├┤ H ├─░─┤M├
+        └───┘└───┘ ░ └╥┘
+meas: 1/══════════════╩═
+                      0 
+counts: {'0': 484, '1': 516}
+[P(0), P(1)]: [0.484, 0.516]
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=3/12 path=01.quantum-foundations/02.bits-qubits-and-state/day06_derived_03_02_01_to_03_02_06_measurement_probability_vectors_lab.ipynb
+2-1.py: shots=10
+2-2.py: shots=100
+2-3.py: shots=1000
+        ┌───┐ ░ ┌─┐
+     q: ┤ H ├─░─┤M├
+        └───┘ ░ └╥┘
+meas: 1/═════════╩═
+                 0 
+shots=10: {'0': 7, '1': 3}
+shots=100: {'1': 52, '0': 48}
+shots=1000: {'1': 508, '0': 492}
+shots | P(0)  | P(1)  | max error from 0.5
+------|-------|-------|-------------------
+   10 | 0.700 | 0.300 | 0.200
+  100 | 0.480 | 0.520 | 0.020
+ 1000 | 0.492 | 0.508 | 0.008
+<Figure size 1200x300 with 3 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmp4twhbsny.png]
+shots=5000: {'1': 2466, '0': 2534}
+P(0)=0.507, P(1)=0.493
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=4/12 path=01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_02_01_to_02_03_hadamard_shot_convergence_lab.ipynb
+3-1-1.py: measure |00> without Hadamard gates
+3-1-2.py: apply H to qubit 0, then measure
+3-1-3.py: apply H to qubits 0 and 1, then measure
+
+3-1-1.py - |00>
+         ░ ┌─┐   
+   q_0: ─░─┤M├───
+         ░ └╥┘┌─┐
+   q_1: ─░──╫─┤M├
+         ░  ║ └╥┘
+meas: 2/════╩══╩═
+            0  1 
+
+3-1-2.py - H on q0
+        ┌───┐ ░ ┌─┐   
+   q_0: ┤ H ├─░─┤M├───
+        └───┘ ░ └╥┘┌─┐
+   q_1: ──────░──╫─┤M├
+              ░  ║ └╥┘
+meas: 2/═════════╩══╩═
+                 0  1 
+
+3-1-3.py - H on q0 and q1
+        ┌───┐ ░ ┌─┐   
+   q_0: ┤ H ├─░─┤M├───
+        ├───┤ ░ └╥┘┌─┐
+   q_1: ┤ H ├─░──╫─┤M├
+        └───┘ ░  ║ └╥┘
+meas: 2/═════════╩══╩═
+                 0  1 
+3-1-1.py (|00>)
+counts: {'00': 1000}
+probabilities: {'00': 1.0}
+3-1-2.py (H on q0)
+counts: {'01': 484, '00': 516}
+probabilities: {'00': 0.516, '01': 0.484}
+3-1-3.py (H on q0 and q1)
+counts: {'01': 247, '11': 253, '10': 239, '00': 261}
+probabilities: {'00': 0.261, '01': 0.247, '10': 0.239, '11': 0.253}
+<Figure size 1200x300 with 3 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpq35rdup1.png]
+              ░ ┌─┐   
+   q_0: ──────░─┤M├───
+        ┌───┐ ░ └╥┘┌─┐
+   q_1: ┤ H ├─░──╫─┤M├
+        └───┘ ░  ║ └╥┘
+meas: 2/═════════╩══╩═
+                 0  1 
+{'00': 493, '10': 507}
+{'00': 0.493, '10': 0.507}
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=5/12 path=01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab.ipynb
+4-1.py: measure |0> without a gate
+4-2.py: apply H, then measure
+4-3.py: apply X, then measure
+4-4.py: apply H and then X, then measure
+
+4-1.py - I
+         ░ ┌─┐
+     q: ─░─┤M├
+         ░ └╥┘
+meas: 1/════╩═
+            0 
+
+4-2.py - H
+        ┌───┐ ░ ┌─┐
+     q: ┤ H ├─░─┤M├
+        └───┘ ░ └╥┘
+meas: 1/═════════╩═
+                 0 
+
+4-3.py - X
+        ┌───┐ ░ ┌─┐
+     q: ┤ X ├─░─┤M├
+        └───┘ ░ └╥┘
+meas: 1/═════════╩═
+                 0 
+
+4-4.py - H then X
+        ┌───┐┌───┐ ░ ┌─┐
+     q: ┤ H ├┤ X ├─░─┤M├
+        └───┘└───┘ ░ └╥┘
+meas: 1/══════════════╩═
+                      0 
+4-1.py (I)
+counts: {'0': 1000}
+[P(0), P(1)]: [1.0, 0.0]
+4-2.py (H)
+counts: {'0': 498, '1': 502}
+[P(0), P(1)]: [0.498, 0.502]
+4-3.py (X)
+counts: {'1': 1000}
+[P(0), P(1)]: [0.0, 1.0]
+4-4.py (H then X)
+counts: {'0': 502, '1': 498}
+[P(0), P(1)]: [0.502, 0.498]
+<Figure size 1400x300 with 4 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpe6wkemld.png]
+H probability vector:        [0.498, 0.502]
+H then X probability vector: [0.502, 0.498]
+absolute difference:         [0.0040000000000000036, 0.0040000000000000036]
+        ┌───┐┌───┐ ░ ┌─┐
+     q: ┤ X ├┤ H ├─░─┤M├
+        └───┘└───┘ ░ └╥┘
+meas: 1/══════════════╩═
+                      0 
+counts: {'0': 514, '1': 486}
+[P(0), P(1)]: [0.514, 0.486]
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=6/12 path=01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab.ipynb
+X shape: (1000, 2)
+y shape: (1000,)
+Class counts: {np.int64(0): 498, np.int64(1): 502}
+<Figure size 600x600 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpb5ipfkq_.png]
+<Figure size 600x600 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpidr6levk.png]
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=7/12 path=02.circuits-and-encoding/02.feature-encoding/day01_03_02_synthetic_binary_classification_dataset_lab.ipynb
+X shape: (1000, 20)
+y shape: (1000,)
+PCA shape: (1000, 2)
+Explained variance ratio: [0.251 0.191]
+Total explained variance: 0.4424095693187854
+<Figure size 800x600 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpvwutexw_.png]
+Total explained variance: 0.6174246442760658
+<Figure size 800x600 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpf_1729np.png]
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=8/12 path=02.circuits-and-encoding/02.feature-encoding/day01_03_03_pca_projection_and_explained_variance_lab.ipynb
+| sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm) | 
+species_id | species                                                            
+---|---|---|---|---|---|---                                                     
+0 | 5.1 | 3.5 | 1.4 | 0.2 | 0 | setosa                                          
+1 | 4.9 | 3.0 | 1.4 | 0.2 | 0 | setosa                                          
+2 | 4.7 | 3.2 | 1.3 | 0.2 | 0 | setosa                                          
+3 | 4.6 | 3.1 | 1.5 | 0.2 | 0 | setosa                                          
+4 | 5.0 | 3.6 | 1.4 | 0.2 | 0 | setosa                                          
+| species | count                                                               
+---|---|---                                                                     
+0 | setosa | 50                                                                 
+1 | versicolor | 50                                                             
+2 | virginica | 50                                                              
+| sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm)   
+---|---|---|---|---                                                             
+| mean | std | mean | std | mean | std | mean | std                             
+species |  |  |  |  |  |  |  |                                                  
+setosa | 5.01 | 0.35 | 3.43 | 0.38 | 1.46 | 0.17 | 0.25 | 0.11                  
+versicolor | 5.94 | 0.52 | 2.77 | 0.31 | 4.26 | 0.47 | 1.33 | 0.20              
+virginica | 6.59 | 0.64 | 2.97 | 0.32 | 5.55 | 0.55 | 2.03 | 0.27               
+<Figure size 600x400 with 1 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmptegn_noh.png]
+Train samples: 112
+Test samples: 38
+Baseline test accuracy: 0.921
+
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        12
+  versicolor       0.86      0.92      0.89        13
+   virginica       0.92      0.85      0.88        13
+
+    accuracy                           0.92        38
+   macro avg       0.92      0.92      0.92        38
+weighted avg       0.92      0.92      0.92        38
+
+<Figure size 500x400 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpf9ggdhwe.png]
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=9/12 path=04.quantum-kernel-classification/01.iris-qsvm/day01_01_01_iris_environment_eda_logistic_knn_baselines_lab.ipynb
+==================================================
+Iris Dataset Information
+==================================================
+Feature Names
+['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+
+Target Names
+['setosa' 'versicolor' 'virginica']
+First 5 Features
+[[5.1 3.5 1.4 0.2]
+ [4.9 3.  1.4 0.2]
+ [4.7 3.2 1.3 0.2]
+ [4.6 3.1 1.5 0.2]
+ [5.  3.6 1.4 0.2]]
+
+First 5 Labels
+[0 0 0 0 0]
+Feature Shape: (150, 4)
+Label Shape: (150,)
+Train Data: (120, 4)
+Test Data: (30, 4)
+Model Training Complete
+Prediction Result
+[1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 2 2 2 2 0 0]
+
+Accuracy: 100.0 %
+Actual Label
+[1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 2 2 2 2 0 0]
+
+Predicted Label
+[1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 2 2 2 2 0 0]
+New Flower Prediction
+Predicted Label: 0
+Flower Name: setosa
+<Figure size 800x600 with 2 Axes>
+
+[Image saved to: /var/folders/yx/hh120pwn38g8vm2l1gsljd640000gn/T/tmpp19yc1se.png]
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=10/12 path=04.quantum-kernel-classification/01.iris-qsvm/day01_01_02_iris_logistic_regression_and_visualization_lab.ipynb
+Dataset ready: /content/netflix_titles.csv
+
+======================================================================
+Netflix Quantum ML Mini Project - Dataset Analysis
+======================================================================
+
+======================================================================
+STEP 1. Netflix Dataset Load
+======================================================================
+Dataset Path : netflix_titles.csv
+Rows         : 8,807
+Columns      : 12
+
+======================================================================
+STEP 2. Dataset Preview
+======================================================================
+  show_id     type                  title         director  \
+0      s1    Movie   Dick Johnson Is Dead  Kirsten Johnson   
+1      s2  TV Show          Blood & Water              NaN   
+2      s3  TV Show              Ganglands  Julien Leclercq   
+3      s4  TV Show  Jailbirds New Orleans              NaN   
+4      s5  TV Show           Kota Factory              NaN   
+
+                                                cast        country  \
+0                                                NaN  United States   
+1  Ama Qamata, Khosi Ngema, Gail Mabalane, Thaban...   South Africa   
+2  Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabi...            NaN   
+3                                                NaN            NaN   
+4  Mayur More, Jitendra Kumar, Ranjan Raj, Alam K...          India   
+
+           date_added  release_year rating   duration  \
+0  September 25, 2021          2020  PG-13     90 min   
+1  September 24, 2021          2021  TV-MA  2 Seasons   
+2  September 24, 2021          2021  TV-MA   1 Season   
+3  September 24, 2021          2021  TV-MA   1 Season   
+4  September 24, 2021          2021  TV-MA  2 Seasons   
+
+                                           listed_in  \
+0                                      Documentaries   
+1    International TV Shows, TV Dramas, TV Mysteries   
+2  Crime TV Shows, International TV Shows, TV Act...   
+3                             Docuseries, Reality TV   
+4  International TV Shows, Romantic TV Shows, TV ...   
+
+                                         description  
+0  As her father nears the end of his life, filmm...  
+1  After crossing paths at a party, a Cape Town t...  
+2  To protect his family from a powerful drug lor...  
+3  Feuds, flirtations and toilet talk go down amo...  
+4  In a city of coaching centers known to train I...  
+
+======================================================================
+STEP 3. Dataset Structure
+======================================================================
+[Columns]
+ 1. show_id
+ 2. type
+ 3. title
+ 4. director
+ 5. cast
+ 6. country
+ 7. date_added
+ 8. release_year
+ 9. rating
+10. duration
+11. listed_in
+12. description
+
+[Data Types]
+show_id         object
+type            object
+title           object
+director        object
+cast            object
+country         object
+date_added      object
+release_year     int64
+rating          object
+duration        object
+listed_in       object
+description     object
+dtype: object
+
+[Dataset Info]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 8807 entries, 0 to 8806
+Data columns (total 12 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   show_id       8807 non-null   object
+ 1   type          8807 non-null   object
+ 2   title         8807 non-null   object
+ 3   director      6173 non-null   object
+ 4   cast          7982 non-null   object
+ 5   country       7976 non-null   object
+ 6   date_added    8797 non-null   object
+ 7   release_year  8807 non-null   int64 
+ 8   rating        8803 non-null   object
+ 9   duration      8804 non-null   object
+ 10  listed_in     8807 non-null   object
+ 11  description   8807 non-null   object
+dtypes: int64(1), object(11)
+memory usage: 825.8+ KB
+
+======================================================================
+STEP 4. Missing Value Analysis
+======================================================================
+              missing_count missing_ratio(%)
+director               2634            29.91
+country                 831             9.44
+cast                    825             9.37
+date_added               10             0.11
+rating                    4             0.05
+duration                  3             0.03
+show_id                   0             0.00
+type                      0             0.00
+title                     0             0.00
+release_year              0             0.00
+listed_in                 0             0.00
+description               0             0.00
+
+======================================================================
+STEP 5. Duplicate Analysis
+======================================================================
+Total Rows     : 8,807
+Duplicate Rows : 0
+Result         : 중복 데이터 없음
+
+======================================================================
+STEP 6. Target Analysis
+======================================================================
+         count  ratio(%)
+type                    
+Movie     6131     69.62
+TV Show   2676     30.38
+
+Classification Problem
+----------------------
+Target : type
+Class 0 candidate : Movie
+Class 1 candidate : TV Show
+
+======================================================================
+STEP 7. Duration / Data Leakage Analysis
+======================================================================
+[Movie Duration Samples]
+ type duration
+Movie   90 min
+Movie   91 min
+Movie  125 min
+Movie  104 min
+Movie  127 min
+Movie   91 min
+Movie   67 min
+Movie   94 min
+Movie  161 min
+Movie   61 min
+
+[TV Show Duration Samples]
+   type  duration
+TV Show 2 Seasons
+TV Show  1 Season
+TV Show  1 Season
+TV Show 2 Seasons
+TV Show  1 Season
+TV Show 9 Seasons
+TV Show  1 Season
+TV Show  1 Season
+TV Show  1 Season
+TV Show 4 Seasons
+
+[Leakage Check]
+Movie 중 'min' 포함 비율       : 100.00%
+TV Show 중 'Season' 포함 비율 : 100.00%
+
+주의: duration의 단위 자체가 Movie / TV Show 정보를 거의 직접적으로 나타낼 수 있습니다.
+따라서 이후 기본 Classification Feature에서는 duration을 제외합니다.
+
+======================================================================
+STEP 8. Feature Candidate Review
+======================================================================
+다음 단계에서 사용할 Feature 후보
+
+release_year    dtype=int64      missing=0
+rating          dtype=object     missing=4
+listed_in       dtype=object     missing=0
+country         dtype=object     missing=831
+description     dtype=object     missing=0
+
+Feature Engineering Plan
+------------------------
+release_year -> Numeric Feature
+rating       -> rating_encoded
+listed_in    -> genre_count
+country      -> country_count
+description  -> description_length
+
+======================================================================
+STEP 9. Dataset Analysis Summary
+======================================================================
+Dataset Size : 8,807 rows
+Columns      : 12
+Target       : type
+Classes      : Movie / TV Show
+
+Important Finding
+-----------------
+duration은 Target과 매우 강하게 연결되어 있으므로 Data Leakage 관점에서 주의가 필요합니다.
+
+Next Step
+---------
+02_preprocessing.py에서 Target Encoding과 Feature Engineering을 수행합니다.
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=11/12 path=07.capstone/01.netflix-qml-project/day39_project_01_01_netflix_dataset_quality_and_leakage_audit_lab.ipynb
+Dataset ready: /content/netflix_titles.csv
+
+======================================================================
+Netflix Quantum ML Mini Project - Preprocessing
+======================================================================
+
+======================================================================
+STEP 1. Netflix Dataset Load
+======================================================================
+Dataset Path : netflix_titles.csv
+Rows         : 8,807
+Columns      : 12
+
+======================================================================
+STEP 2. Target Encoding
+======================================================================
+Target Mapping
+--------------
+Movie   -> 0
+TV Show -> 1
+
+[Target Distribution]
+type     target
+Movie    0         6131
+TV Show  1         2676
+Name: count, dtype: int64
+
+======================================================================
+STEP 3. release_year Feature
+======================================================================
+   release_year  release_year_feature
+0          2020                  2020
+1          2021                  2021
+2          2021                  2021
+3          2021                  2021
+4          2021                  2021
+5          2021                  2021
+6          2021                  2021
+7          1993                  1993
+8          2021                  2021
+9          2021                  2021
+
+======================================================================
+STEP 4. Rating Encoding
+======================================================================
+[Original Rating Distribution]
+rating
+TV-MA       3207
+TV-14       2160
+TV-PG        863
+R            799
+PG-13        490
+TV-Y7        334
+TV-Y         307
+PG           287
+TV-G         220
+NR            80
+G             41
+TV-Y7-FV       6
+NaN            4
+NC-17          3
+UR             3
+66 min         1
+74 min         1
+84 min         1
+Name: count, dtype: int64
+
+[Rating Mapping]
+66 min          -> 0
+74 min          -> 1
+84 min          -> 2
+G               -> 3
+NC-17           -> 4
+NR              -> 5
+PG              -> 6
+PG-13           -> 7
+R               -> 8
+TV-14           -> 9
+TV-G            -> 10
+TV-MA           -> 11
+TV-PG           -> 12
+TV-Y            -> 13
+TV-Y7           -> 14
+TV-Y7-FV        -> 15
+UR              -> 16
+
+Missing Rating -> -1
+
+======================================================================
+STEP 5. Genre Count
+======================================================================
+                                           listed_in  genre_count
+0                                      Documentaries            1
+1    International TV Shows, TV Dramas, TV Mysteries            3
+2  Crime TV Shows, International TV Shows, TV Act...            3
+3                             Docuseries, Reality TV            2
+4  International TV Shows, Romantic TV Shows, TV ...            3
+5                 TV Dramas, TV Horror, TV Mysteries            3
+6                           Children & Family Movies            1
+7   Dramas, Independent Movies, International Movies            3
+8                       British TV Shows, Reality TV            2
+9                                   Comedies, Dramas            2
+
+======================================================================
+STEP 6. Country Count
+======================================================================
+                                             country  country_count
+0                                      United States              1
+1                                       South Africa              1
+2                                                NaN              0
+3                                                NaN              0
+4                                              India              1
+5                                                NaN              0
+6                                                NaN              0
+7  United States, Ghana, Burkina Faso, United Kin...              6
+8                                     United Kingdom              1
+9                                      United States              1
+
+======================================================================
+STEP 7. Description Length
+======================================================================
+                                         description  description_length
+0  As her father nears the end of his life, filmm...                  27
+1  After crossing paths at a party, a Cape Town t...                  27
+2  To protect his family from a powerful drug lor...                  27
+3  Feuds, flirtations and toilet talk go down amo...                  24
+4  In a city of coaching centers known to train I...                  24
+5  The arrival of a charismatic young priest brin...                  23
+6  Equestria's divided. But a bright-eyed hero be...                  25
+7  On a photo shoot in Ghana, an American model s...                  28
+8  A talented batch of amateur bakers face off in...                  26
+9  A woman adjusting to life after a loss contend...                  29
+
+======================================================================
+STEP 8. Feature Candidate Review
+======================================================================
+Feature Candidates
+------------------
+1. release_year_feature
+2. rating_encoded
+3. genre_count
+4. country_count
+5. description_length
+
+[Feature Preview]
+   release_year_feature  rating_encoded  genre_count  country_count  \
+0                  2020               7            1              1   
+1                  2021              11            3              1   
+2                  2021              11            3              0   
+3                  2021              11            2              0   
+4                  2021              11            3              1   
+5                  2021              11            3              0   
+6                  2021               6            1              0   
+7                  1993              11            3              6   
+8                  2021               9            2              1   
+9                  2021               7            2              1   
+
+   description_length  target  
+0                  27       0  
+1                  27       1  
+2                  27       1  
+3                  24       1  
+4                  24       1  
+5                  23       1  
+6                  25       0  
+7                  28       0  
+8                  26       1  
+9                  29       0  
+
+[Feature Data Types]
+release_year_feature    int64
+rating_encoded          int64
+genre_count             int64
+country_count           int64
+description_length      int64
+target                  int64
+dtype: object
+
+======================================================================
+STEP 9. Quantum-ready Feature Selection
+======================================================================
+Selected Features
+-----------------
+1. release_year_feature
+2. rating_encoded
+3. genre_count
+4. description_length
+
+X Shape : (8807, 4)
+y Shape : (8807,)
+
+[X Preview]
+   release_year_feature  rating_encoded  genre_count  description_length
+0                  2020               7            1                  27
+1                  2021              11            3                  27
+2                  2021              11            3                  27
+3                  2021              11            2                  24
+4                  2021              11            3                  24
+
+[y Preview]
+0    0
+1    1
+2    1
+3    1
+4    1
+Name: target, dtype: int64
+
+======================================================================
+STEP 10. Preprocessed Data Quality Check
+======================================================================
+[Missing Values]
+release_year_feature    0
+rating_encoded          0
+genre_count             0
+country_count           0
+description_length      0
+target                  0
+dtype: int64
+
+[Data Types]
+release_year_feature    int64
+rating_encoded          int64
+genre_count             int64
+country_count           int64
+description_length      int64
+target                  int64
+dtype: object
+
+[Basic Statistics]
+       release_year_feature  rating_encoded  genre_count  country_count  \
+count               8807.00         8807.00      8807.00        8807.00   
+mean                2014.18           10.01         2.19           1.14   
+std                    8.82            1.97         0.78           0.76   
+min                 1925.00           -1.00         1.00           0.00   
+25%                 2013.00            9.00         2.00           1.00   
+50%                 2017.00           11.00         2.00           1.00   
+75%                 2019.00           11.00         3.00           1.00   
+max                 2021.00           16.00         3.00          12.00   
+
+       description_length   target  
+count             8807.00  8807.00  
+mean                23.88     0.30  
+std                  2.84     0.46  
+min                 10.00     0.00  
+25%                 22.00     0.00  
+50%                 24.00     0.00  
+75%                 26.00     1.00  
+max                 48.00     1.00  
+
+======================================================================
+STEP 11. Create Preprocessed Dataset
+======================================================================
+Before Cleaning : 8,807
+After Cleaning  : 8,807
+Removed Rows    : 0
+
+[Preprocessed Dataset]
+  show_id                             title     type  target  \
+0      s1              Dick Johnson Is Dead    Movie       0   
+1      s2                     Blood & Water  TV Show       1   
+2      s3                         Ganglands  TV Show       1   
+3      s4             Jailbirds New Orleans  TV Show       1   
+4      s5                      Kota Factory  TV Show       1   
+5      s6                     Midnight Mass  TV Show       1   
+6      s7  My Little Pony: A New Generation    Movie       0   
+7      s8                           Sankofa    Movie       0   
+8      s9     The Great British Baking Show  TV Show       1   
+9     s10                      The Starling    Movie       0   
+
+   release_year_feature  rating_encoded  genre_count  country_count  \
+0                  2020               7            1              1   
+1                  2021              11            3              1   
+2                  2021              11            3              0   
+3                  2021              11            2              0   
+4                  2021              11            3              1   
+5                  2021              11            3              0   
+6                  2021               6            1              0   
+7                  1993              11            3              6   
+8                  2021               9            2              1   
+9                  2021               7            2              1   
+
+   description_length  
+0                  27  
+1                  27  
+2                  27  
+3                  24  
+4                  24  
+5                  23  
+6                  25  
+7                  28  
+8                  26  
+9                  29  
+
+======================================================================
+STEP 12. Save Preprocessed Dataset
+======================================================================
+Saved : data/netflix_preprocessed.csv
+Rows  : 8,807
+Columns : 9
+
+======================================================================
+STEP 13. Preprocessing Summary
+======================================================================
+Dataset Size : 8,807 rows
+Columns      : 9
+
+Target
+------
+Movie   -> 0
+TV Show -> 1
+
+Quantum-ready Features
+----------------------
+- release_year_feature
+- rating_encoded
+- genre_count
+- description_length
+
+Excluded Feature
+----------------
+duration -> Data Leakage 가능성 때문에 기본 Classification Feature에서 제외
+
+Next Step
+---------
+03_quantum_sample.py에서 Quantum 실험을 위한 Sampling과 데이터 구성을 수행합니다.
+COURSE_FINAL_DERIVED_NOTEBOOK_OK=12/12 path=07.capstone/01.netflix-qml-project/day39_project_01_02_netflix_classical_feature_preparation_for_qml_lab.ipynb
+COURSE_FINAL_DERIVED_NOTEBOOKS_OK=12/12
+[colab] Stopping session 'run-ad144d'...
+[colab] Session terminated.
+COLAB_CLI_EXIT_STATUS=0

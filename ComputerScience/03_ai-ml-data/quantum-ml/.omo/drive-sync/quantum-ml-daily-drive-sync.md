@@ -1,56 +1,44 @@
 # Quantum ML Daily Google Drive Sync
 
-## Source
+## Source and scope
 
-- Google Drive folder: https://drive.google.com/drive/folders/1efBVhTfekDukwBtYe7aPrsa4lNhaeXnl
-- Current observed structure: `Day1` through `Day8` subfolders.
-- File types observed: PDF lecture files and Python practice files.
+- Google Drive is observed as `Day1` through `Day39`, including nested `Day39/Project`.
+- Source types are Python practice files, lecture PDFs, and the raw-only Netflix CSV.
+- Preserve Drive IDs, original titles, raw storage, receipts, and static/Colab validation evidence.
 
-## Local Destination Rules
+## Public routing
 
-- Keep the public course surface in the existing shallow topic folders under this directory.
-- Keep raw downloaded Drive files under `.omo/drive-sync/raw/<Day>/` for audit and repeatability.
-- Keep sync state under `.omo/drive-sync/quantum-ml-drive-manifest.json`.
-- Update `양자 ML 과정.md` when a new processed artifact is added to a topic folder.
-- Do not install notebook dependencies locally. Use static validation for generated notebooks before remote execution.
-- Execute newly generated Python-practice notebook sources through the Colab CLI after static validation. Colab runtime dependency installation is allowed only on the remote Colab VM and must be recorded in the run log.
-- After Drive processing, static validation, and required Colab CLI execution pass, commit and push only the quantum-ml sync artifacts. Preserve unrelated dirty vault changes by staging explicit paths only.
+- The only public roots are:
+- `01.quantum-foundations/`
+- `02.circuits-and-encoding/`
+- `03.variational-learning-and-kernels/`
+- `04.quantum-kernel-classification/`
+- `05.quantum-neural-networks/`
+- `06.qaoa-and-combinatorial-optimization/`
+- `07.capstone/`
+- Future publication destinations are exactly these implemented concept subfolders:
+- `01.quantum-foundations/01.why-quantum-and-qml/`
+- `01.quantum-foundations/02.bits-qubits-and-state/`
+- `01.quantum-foundations/03.gates-measurement-and-entanglement/`
+- `02.circuits-and-encoding/01.quantum-circuits-and-qml/`
+- `02.circuits-and-encoding/02.feature-encoding/`
+- `02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/`
+- `03.variational-learning-and-kernels/01.loss-and-optimization/`
+- `03.variational-learning-and-kernels/02.quantum-kernels/`
+- `04.quantum-kernel-classification/01.iris-qsvm/`
+- `05.quantum-neural-networks/01.classical-neural-network-baseline/`
+- `05.quantum-neural-networks/02.estimator-qnn/`
+- `05.quantum-neural-networks/03.torchconnector-hybrid-qnn/`
+- `06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline/`
+- `06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/`
+- `06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/`
+- `07.capstone/01.netflix-qml-project/`
+- File each future artifact into its matching destination above; retain Day/source identity in the filename.
+- Store downloaded bytes at `.omo/drive-sync/raw/<Day>/` (or `raw/Day39/Project/`) and never move the raw-only CSV into the public tree.
 
-## Processing Rules
+## Processing and publication
 
-- Detect changes by Drive file ID plus `modified_time`.
-- Download only files that are new or whose `modified_time` changed since the manifest.
-- For PDF files, normalize the filename when needed, then file it into a shallow topic folder that matches the content/title.
-- For Python practice files, save the raw `.py`, convert it to a Colab-ready `.ipynb` in the matching topic folder, validate the notebook JSON plus Python syntax statically, then execute the source content through `~/.local/bin/colab run`.
-- Because `colab run` executes `.py` scripts rather than `.ipynb` files, use the raw source or a self-contained runner generated from the raw source as the runtime proof for the corresponding notebook artifact.
-- Store Colab execution logs under `.omo/drive-sync/colab-runs/YYYY-MM-DD/` and record the command, runner path, log path, dependency installs, success marker, and pass/fail status in the manifest.
-- Preserve the original Drive title in the manifest even when the local artifact uses a corrected or normalized name.
-
-## Git Publication Rules
-
-- Commit and push are part of the automation only after the run status is PASS.
-- Before committing, run the relevant static validations and confirm Colab CLI execution logs contain the expected success marker.
-- Stage explicit paths for this lane only: `.omo/drive-sync/`, `1.quantum-ml-overview/`, and `양자 ML 과정.md`.
-- Do not stage unrelated vault changes outside the `quantum-ml` sync lane.
-- If push is rejected because the remote moved, run `git pull --rebase origin main`, rerun validation, then push.
-- Record the commit hash, push result, and any remaining unrelated dirty worktree changes in the run log.
-
-## Current Routing Hints
-
-- `Hadamard`, `H`, `CX`, Bell-state, and superposition practice belongs under `1.quantum-ml-overview/hadamard-gate/` unless the content clearly belongs elsewhere.
-- `state`, gate effects, or measurement probability practice belongs under `1.quantum-ml-overview/state-change-analysis/`.
-- loss surface, binary classification dataset, PCA projection, or pipeline practice belongs under `1.quantum-ml-overview/qml-pipeline/`.
-- Iris classifier practice belongs under `1.quantum-ml-overview/iris-classification/`.
-- QML role material belongs under `1.quantum-ml-overview/quantum-role/`.
-
-## Daily Automation Contract
-
-Each run should leave a concise log under `.omo/drive-sync/runs/YYYY-MM-DD.md` with:
-
-- Drive folders scanned.
-- New or changed files detected.
-- Local artifacts written or skipped because already current.
-- Static validation commands and pass/fail results.
-- Colab CLI execution command, pass/fail result, log path, and success marker for each newly generated Python-practice notebook batch.
-- Commit hash and push result when publication succeeds.
-- Any files that need user review because routing was ambiguous.
+- Detect by Drive ID and `modified_time`; preserve the original Drive title in the manifest.
+- Validate generated notebooks statically, then use Colab only for approved remote execution. Do not install dependencies locally.
+- Record command, runner, log, dependency installs, marker, and result in a dated receipt.
+- Stage explicit approved paths only; never broadly stage `.omo/drive-sync/`, the course tree, or the repository.

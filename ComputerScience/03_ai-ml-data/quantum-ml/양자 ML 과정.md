@@ -17,7 +17,7 @@ tags:
 - machine-learning
 title: 양자 ML 과정
 type: lecture
-updated: '2026-07-23'
+updated: '2026-08-19'
 ---
 
 graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
@@ -30,135 +30,243 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 
 방학 동안 진행하는 머신러닝 기반 양자컴퓨팅 과정의 수업 노트 진입점입니다.
 
-## 그래프 연결
-
-- 분야: [[ComputerScience/03_ai-ml-data/AI ML 데이터 인터페이스|AI ML 데이터 인터페이스]]
-- 과목: [[ComputerScience/00_graph-interfaces/courses/양자 ML 인터페이스|양자 ML 인터페이스]]
-- 브리지: [[ComputerScience/00_graph-interfaces/bridges/AI 구현 브리지|AI 구현 브리지]]
-- 브리지: [[ComputerScience/00_graph-interfaces/bridges/수학 알고리즘 브리지|수학 알고리즘 브리지]]
-
 ## 수업 자료
 
-- 강의 노트와 실습 파일은 커리큘럼 주제 폴더에 추가합니다.
-- 실습 노트북은 `notebooks/practice/`처럼 깊은 하위 폴더를 만들지 않고 주제 폴더 바로 아래에 둡니다.
 - 양자 역학의 깊은 이론은 이 과정에서 깊게 다루지 않습니다.
+- Day27은 `output/*.npy`, `*.pkl`, `*.csv`를 공유하는 순서형 실습입니다. 환경 설정부터 성능 보고서까지 순서대로 실행하세요.
+- Day34는 `create_qnn`과 `torch_connector` 지원 모듈을 선행하는 순서형 QNN 실습입니다.
+- Netflix CSV는 `.omo/drive-sync/raw/Day39/Project/`의 raw-only 데이터셋이며 Capstone 실습의 사전 조건입니다.
 
-## 커리큘럼 구조
+## 구현된 커리큘럼
 
-- `1.quantum-ml-overview/` — 양자 ML 개요
-- `2.qml-structure/` — QML 구조 이해
-- `1.quantum-ml-overview/qml-pipeline/` — QML 파이프라인
-- `1.quantum-ml-overview/qaoa-basics/` — QAOA 기초 및 Cost·Mixer Layer 실습
-- `1.quantum-ml-overview/netflix-qml-project/` — Netflix 데이터 기반 QML 미니 프로젝트
-- `1.quantum-ml-overview/entanglement-and-cnot/` — Entanglement와 CNOT 실습
-- `4.qml-models/` — QML 모델
-- `5.qnn-and-hybrid/` — 양자 신경망(QNN) 및 Hybrid
-- `6.performance-comparison-and-qaoa-basics/` — 성능 비교 및 QAOA 기초
-- `7.qaoa-extension-and-industry-applications/` — QAOA 확장 및 산업 적용
-- `8.mini-project/` — 미니 프로젝트
+### 01.quantum-foundations/01.why-quantum-and-qml
 
-## 현재 자료 배치
+- [[01.quantum-foundations/01.why-quantum-and-qml/day01_02_expressive_power_limit_lecture.pdf|표현력의 한계]]
+- [[01.quantum-foundations/01.why-quantum-and-qml/day02_01_why_quantum_computing_lecture.pdf|Quantum Computing이 필요한가]]
+- [[01.quantum-foundations/01.why-quantum-and-qml/supplement_02_xor_expressive_power_classical_baselines_lab.ipynb|supplement_02_xor_expressive_power_classical_baselines_lab]]
+- [[01.quantum-foundations/01.why-quantum-and-qml/week01_04_qml_quantum_role_numpy_feature_map_lab.ipynb|week01_04_qml_quantum_role_numpy_feature_map_lab]]
 
-- Hadamard Gate 개념 강의자료: `1.quantum-ml-overview/hadamard-gate/3. Hadamard Gate 개념 이해.pdf`
-- Hadamard 측정 shots 실습: `1.quantum-ml-overview/hadamard-gate/2_hadamard_shots_practice.ipynb`
-- 2-qubit Hadamard superposition 실습 3-1: `1.quantum-ml-overview/hadamard-gate/3_1_two_qubit_hadamard_superposition.ipynb`
-- 상태변화 분석 강의자료: `1.quantum-ml-overview/state-change-analysis/4. 상태변화 분석.pdf`
-- 측정 probability vector 실습 3-2: `1.quantum-ml-overview/state-change-analysis/3_2_measurement_probability_vectors.ipynb`
-- single-qubit gate effects 실습 4: `1.quantum-ml-overview/state-change-analysis/4_single_qubit_gate_effects.ipynb`
-- Quantum Computing 필요성 강의자료: `1.quantum-ml-overview/why-quantum-computing/1. 왜 Quantum Computing이 필요한가.pdf`
-- Bit와 Qubit 강의자료: `1.quantum-ml-overview/bit-and-qubit/2. Bit와 Qubit.pdf`
-- Quantum Feature Space 강의자료: `1.quantum-ml-overview/quantum-feature-space/3. Quantum Feature Space.pdf`
-- QML에서 Quantum의 역할 강의자료: `1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf`
-- QML에서 Quantum의 역할 실습: `1.quantum-ml-overview/quantum-role/4_qml_quantum_role_practice.ipynb`
-- Iris 실습: `1.quantum-ml-overview/iris-classification/`
-- 표현력의 한계 강의자료: `1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf`
-- 표현력의 한계 실습: `1.quantum-ml-overview/expressive-power-limit/2_xor_expressive_power_practice.ipynb`
-- QML 파이프라인 실습 3-1: `1.quantum-ml-overview/qml-pipeline/3_1_loss_surface_visualization.ipynb`
-- QML 파이프라인 실습 3-2: `1.quantum-ml-overview/qml-pipeline/3_2_binary_classification_dataset.ipynb`
-- QML 파이프라인 실습 3-3: `1.quantum-ml-overview/qml-pipeline/3_3_pca_projection_visualization.ipynb`
-- CNOT basis-state 실습 3-1: `1.quantum-ml-overview/entanglement-and-cnot/3_1_cnot_basis_state_practice.ipynb`
-- Hadamard superposition 실습 3-2: `1.quantum-ml-overview/entanglement-and-cnot/3_2_hadamard_superposition_practice.ipynb`
-- Bell state 실습 3-3: `1.quantum-ml-overview/entanglement-and-cnot/3_3_bell_state_practice.ipynb`
-- Bell measurement 실습 4-1: `1.quantum-ml-overview/entanglement-and-cnot/4_1_bell_measurement_practice.ipynb`
-- Bell circuit 실습 4-2-1: `1.quantum-ml-overview/entanglement-and-cnot/4_2_1_bell_circuit_practice.ipynb`
-- CNOT measurement 실습 4-2-2: `1.quantum-ml-overview/entanglement-and-cnot/4_2_2_cnot_measurement_practice.ipynb`
-- Hadamard measurement 실습 4-2-3: `1.quantum-ml-overview/entanglement-and-cnot/4_2_3_hadamard_measurement_practice.ipynb`
-- classical random bits 실습 4-3-1: `1.quantum-ml-overview/entanglement-and-cnot/4_3_1_classical_random_bits_practice.ipynb`
-- Bell histogram 실습 4-3-2: `1.quantum-ml-overview/entanglement-and-cnot/4_3_2_bell_histogram_practice.ipynb`
-- Day9 X gate 측정 실습: `1.quantum-ml-overview/state-change-analysis/day9_x_2_1_x_gate_measurement_practice.ipynb`
-- Day9 Z/H/Y gate 측정 실습: `1.quantum-ml-overview/state-change-analysis/`
-- Day9 feature-encoded circuit 실습: `1.quantum-ml-overview/quantum-feature-space/day9_4_1_feature_encoded_entangling_circuit_practice.ipynb`
-- Day9 ZZ feature map 실습: `1.quantum-ml-overview/quantum-feature-space/day9_zz_4_4_feature_map_reps1_practice.ipynb`
-- Day10 H/X gate 순서 측정 실습: `1.quantum-ml-overview/state-change-analysis/day10_2_1_hx_xh_order_measurement_practice.ipynb`
-- Day10 multi-qubit rotation/entanglement 실습: `1.quantum-ml-overview/state-change-analysis/day10_2_2_multi_qubit_rotation_entanglement_practice.ipynb`
+### 01.quantum-foundations/02.bits-qubits-and-state
 
-- Quantum Gate 개념 강의자료: `1.quantum-ml-overview/quantum-gate/1. Quantum Gate 개념.pdf`
-- Quantum Circuit 개요 강의자료: `1.quantum-ml-overview/quantum-circuit/1. Quantum Circuit 개요.pdf`
-- Quantum Circuit과 QML 강의자료: `1.quantum-ml-overview/qml-circuit/4. Quantum Circuit과 QML.pdf`
-- Day11 feature map circuit 실습: `1.quantum-ml-overview/qml-circuit/day11_1_1_feature_map_circuit_practice.ipynb`
-- Day11 quantum circuit 측정 실습: `1.quantum-ml-overview/quantum-circuit/`
-- Day11 QML feature map ansatz 실습: `1.quantum-ml-overview/qml-circuit/day11_4_1_qml_feature_map_ansatz_practice.ipynb`
-- Day12 customer feature encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day12_1_2_customer_feature_encoding_practice.ipynb`
-- Day12 parameterized feature map 실습: `1.quantum-ml-overview/quantum-feature-space/day12_2_1_parameterized_feature_map_practice.ipynb`
-- Day12 Quantum Feature Space 종합 실습: `1.quantum-ml-overview/quantum-feature-space/day12_2_full_quantum_feature_space_lab.ipynb`
-- Day13 feature map ansatz 측정 실습: `1.quantum-ml-overview/qml-circuit/day13_2_1_feature_map_ansatz_measurement_practice.ipynb`
-- Day13 Mini QML Pipeline 실습: `1.quantum-ml-overview/qml-pipeline/day13_4_1_mini_qml_pipeline_practice.ipynb`
-- Day14 single-feature angle encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_1_single_feature_angle_encoding_practice.ipynb`
-- Day14 two-feature angle encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_2_two_feature_angle_encoding_practice.ipynb`
-- Day14 multi-feature angle encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_3_multi_feature_angle_encoding_practice.ipynb`
-- Day14 basis/angle/hybrid encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_4_basis_angle_hybrid_encoding_practice.ipynb`
-- Day14 customer hybrid encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day14_1_5_customer_hybrid_encoding_practice.ipynb`
-- Day14 QML end-to-end workflow 실습: `1.quantum-ml-overview/qml-pipeline/day14_2_1_qml_end_to_end_workflow_practice.ipynb`
-- Day15 ZZ feature map와 quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day15_1_1_zz_feature_map_quantum_kernel_practice.ipynb`
-- Day15 amplitude encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_1_amplitude_encoding_workflow_practice.ipynb`
-- Day15 amplitude encoding 시뮬레이션 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_2_amplitude_encoding_simulation_practice.ipynb`
-- Day15 amplitude encoding 함수화 실습: `1.quantum-ml-overview/quantum-feature-space/day15_2_3_amplitude_encoding_function_practice.ipynb`
-- Day15 basis/angle/amplitude encoding 비교 실습: `1.quantum-ml-overview/quantum-feature-space/day15_3_1_encoding_comparison_practice.ipynb`
-- Day6 Hadamard shots 실습: `1.quantum-ml-overview/hadamard-gate/day6_2_1_hadamard_10_shots_practice.ipynb`, `day6_2_2_hadamard_100_shots_practice.ipynb`, `day6_2_3_hadamard_1000_shots_practice.ipynb`
-- Day6 two-qubit Hadamard 실습: `1.quantum-ml-overview/hadamard-gate/day6_3_1_1_two_qubit_basis_measurement_practice.ipynb`, `day6_3_1_2_single_hadamard_two_qubit_practice.ipynb`, `day6_3_1_3_two_hadamard_two_qubit_practice.ipynb`
-- Day6 상태·확률 벡터 실습: `1.quantum-ml-overview/state-change-analysis/day6_3_2_1_hadamard_counts_practice.ipynb`부터 `day6_3_2_6_x_state_probability_practice.ipynb`까지
-- Day6 상태 히스토그램 실습: `1.quantum-ml-overview/state-change-analysis/day6_4_1_zero_state_histogram_practice.ipynb`부터 `day6_4_4_hx_gate_histogram_practice.ipynb`까지
-- Day7 Bell state 측정 실습: `1.quantum-ml-overview/entanglement-and-cnot/day7_2_1_bell_state_measurement_practice.ipynb`
-- Day16 single/multi/combined Pauli feature map 실습: `1.quantum-ml-overview/quantum-feature-space/day16_2_1_single_pauli_feature_maps_practice.ipynb`부터 `day16_2_3_combined_pauli_feature_maps_practice.ipynb`까지
-- Day16 Pauli feature map Iris 실습: `1.quantum-ml-overview/quantum-feature-space/day16_2_4_pauli_feature_map_iris_practice.ipynb`
-- Day16 센서 phase encoding 실습: `1.quantum-ml-overview/quantum-feature-space/day16_3_1_sensor_phase_normalization_practice.ipynb`부터 `day16_3_4_phase_interference_measurement_practice.ipynb`까지
-- Day17 parameter sweep·binding 실습: `1.quantum-ml-overview/qml-circuit/day17_1_1_parameter_sweep_practice.ipynb`, `day17_1_2_parameter_binding_state_analysis_practice.ipynb`
-- Day17 RealAmplitudes ansatz 실습: `1.quantum-ml-overview/qml-circuit/day17_2_1_real_amplitudes_ansatz_practice.ipynb`
-- Day18 Strongly Entangling Layers 실습: `1.quantum-ml-overview/qml-circuit/day18_3_1_strongly_entangling_layers_practice.ipynb`
-- Day18 frequency encoding·expectation·time evolution·measurement 실습: `1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb`부터 `day18_4_4_measurement_probability_oscillation_practice.ipynb`까지
-- Day19 quantum loss parameter sweep 실습: `1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb`
-- Day19 loss function 실습: `1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb`
-- Day20 manual learning cycle 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_2_manual_learning_cycle_practice.ipynb`
-- Day20 loss landscape·parameter sweep·target loss curve 실습: `1.quantum-ml-overview/qml-pipeline/day20_2_3_loss_landscape_practice.ipynb`부터 `day20_2_5_target_loss_curve_practice.ipynb`까지
-- Day21 공통 objective function·COBYLA·SPSA·학습 시각화 실습: `1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb`부터 `day21_3_4_quantum_learning_visualization_practice.ipynb`까지
-- Day21 학습 전후 비교·optimizer 비교·parameter 저장 실습: `1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb`부터 `day21_4_3_learning_result_parameter_persistence_practice.ipynb`까지
-- Day22 Classical Kernel에서 Quantum Kernel으로 실습: `1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb`
-- Day23 Fidelity quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day23_3_1_fidelity_quantum_kernel_practice.ipynb`
-- Day23 Pauli feature map quantum kernel 실습: `1.quantum-ml-overview/quantum-feature-space/day23_3_2_pauli_feature_map_quantum_kernel_practice.ipynb`
-- Day23 quantum kernel matrix 검증 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_1_quantum_kernel_matrix_validation_practice.ipynb`
-- Day23 quantum kernel heatmap 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_2_quantum_kernel_heatmap_practice.ipynb`
-- Day23 quantum kernel 품질 평가 실습: `1.quantum-ml-overview/quantum-feature-space/day23_4_3_quantum_kernel_quality_evaluation_practice.ipynb`
-- Day24 Classical SVM baseline 실습: `1.quantum-ml-overview/iris-classification/day24_1_1_classical_svm_baseline_practice.ipynb`
-- Day24 Iris QSVC 분류 실습: `1.quantum-ml-overview/iris-classification/day24_2_1_qsvc_iris_classifier_practice.ipynb`
-- Day25 QSVM 학습 데이터 준비 실습: `1.quantum-ml-overview/iris-classification/day25_3_1_qsvm_training_data_preparation_practice.ipynb`
-- Day25 QSVC 모델 생성 실습: `1.quantum-ml-overview/iris-classification/day25_3_2_qsvc_model_construction_practice.ipynb`
-- Day25 QSVM 학습 실습: `1.quantum-ml-overview/iris-classification/day25_3_3_qsvm_training_practice.ipynb`
-- Day25 QSVM 예측 실습: `1.quantum-ml-overview/iris-classification/day25_3_4_qsvm_prediction_practice.ipynb`
-- Day26 분류 평가 지표와 Confusion Matrix 실습: `1.quantum-ml-overview/iris-classification/day26_1_1_classification_metrics_confusion_matrix_practice.ipynb`
-- Day26 QSVM 성능 평가 실습: `1.quantum-ml-overview/iris-classification/day26_4_1_qsvm_performance_evaluation_practice.ipynb`
-- Day27 QSVM 성능 평가 연속 실습: `1.quantum-ml-overview/iris-classification/day27_2_1_qsvm_environment_setup_practice.ipynb`부터 `day27_2_10_qsvm_performance_report_practice.ipynb`까지
-- Day27 Classical SVM 성능 기준선 실습: `1.quantum-ml-overview/iris-classification/day27_4_1_classical_svm_performance_baseline_practice.ipynb`
-- Day27 QSVM 성능 분석과 개선 전략 실습: `1.quantum-ml-overview/iris-classification/day27_4_2_qsvm_performance_analysis_improvement_practice.ipynb`
-- Day28 Neural Network 구조 분석 실습: `1.quantum-ml-overview/neural-network/day28_1_1_neural_network_structure_practice.ipynb`
-- Day31 QNN 구성 요소 확인 실습: `1.quantum-ml-overview/neural-network/day31_2_1_qnn_components_practice.ipynb`
-- Day31 Parameterized Circuit·EstimatorQNN 생성·Forward 분석 실습: `1.quantum-ml-overview/neural-network/day31_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day31_3_5_estimator_qnn_forward_analysis_practice.ipynb`까지
-- Day33 PyTorch 기본 모델 실행 실습: `1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb`
-- Day34 TorchConnector·PyTorch 연동 및 QNN 환경·생성·적용·weight·forward·입력 변화 실습: `1.quantum-ml-overview/neural-network/day34_2_1_torchconnector_pytorch_integration_practice.ipynb`부터 `day34_3_6_qnn_input_change_practice.ipynb`까지
-- Day34 QNN 지원 모듈: `1.quantum-ml-overview/neural-network/day34_create_qnn_support_module.ipynb`, `day34_torch_connector_support_module.ipynb`
-- Day34 QNN weight 변화·gradient·batch forward·전체 검증 실습: `1.quantum-ml-overview/neural-network/day34_3_7_qnn_weight_change_practice.ipynb`부터 `day34_3_10_qnn_end_to_end_validation_practice.ipynb`까지
-- Day35 TSP brute-force 기준선 실습: `1.quantum-ml-overview/qaoa-basics/day35_1_1_tsp_brute_force_baseline_practice.ipynb`
-- Day37 매개변수화 회로·parameter binding·objective function·고전 optimizer·비용/초깃값/optimizer 비교 실습: `1.quantum-ml-overview/qml-pipeline/day37_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day37_3_8_optimizer_comparison_practice.ipynb`까지
-- Day37 QAOA Cost Hamiltonian 목적 함수 비교 실습: `1.quantum-ml-overview/qml-pipeline/day37_3_9_qaoa_cost_hamiltonian_objective_practice.ipynb`
-- Day38 QAOA 환경·Import·첫 실행·고전 해 비교 실습: `1.quantum-ml-overview/qaoa-basics/day38_1_1_qaoa_environment_check_practice.ipynb`부터 `day38_1_4_qaoa_classical_comparison_practice.ipynb`까지
-- Day39 Cost Parameter·Cost Layer·Gamma 효과·Mixer Layer·Parameterized QAOA Circuit 실습: `1.quantum-ml-overview/qaoa-basics/day39_2_1_cost_parameter_practice.ipynb`부터 `day39_2_6_parameterized_qaoa_circuit_practice.ipynb`까지
-- Day39 Netflix QML 데이터 분석·Quantum-ready Feature Engineering 프로젝트: `1.quantum-ml-overview/netflix-qml-project/day39_project_1_1_netflix_dataset_analysis.ipynb`, `day39_project_1_2_netflix_quantum_feature_engineering.ipynb`
+- [[01.quantum-foundations/02.bits-qubits-and-state/day02_02_bit_and_qubit_lecture.pdf|Bit와 Qubit]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_01_hadamard_counts_lab.ipynb|day06_03_02_01_hadamard_counts_lab]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_02_hadamard_probability_lab.ipynb|day06_03_02_02_hadamard_probability_lab]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_03_probability_vector_lab.ipynb|day06_03_02_03_probability_vector_lab]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_04_zero_state_probability_lab.ipynb|day06_03_02_04_zero_state_probability_lab]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_05_hadamard_state_probability_lab.ipynb|day06_03_02_05_hadamard_state_probability_lab]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_06_x_state_probability_lab.ipynb|day06_03_02_06_x_state_probability_lab]]
+- [[01.quantum-foundations/02.bits-qubits-and-state/day06_derived_03_02_01_to_03_02_06_measurement_probability_vectors_lab.ipynb|day06_derived_03_02_01_to_03_02_06_measurement_probability_vectors_lab]]
+
+### 01.quantum-foundations/03.gates-measurement-and-entanglement
+
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day05_03_hadamard_gate_concepts_lecture.pdf|Hadamard Gate 개념 이해]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day05_04_quantum_state_transition_analysis_lecture.pdf|상태변화 분석]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_01_hadamard_10_shots_lab.ipynb|day06_02_01_hadamard_10_shots_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_02_hadamard_100_shots_lab.ipynb|day06_02_02_hadamard_100_shots_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_03_hadamard_1000_shots_lab.ipynb|day06_02_03_hadamard_1000_shots_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_01_two_qubit_basis_measurement_lab.ipynb|day06_03_01_01_two_qubit_basis_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_02_single_hadamard_two_qubit_lab.ipynb|day06_03_01_02_single_hadamard_two_qubit_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_03_two_hadamard_two_qubit_lab.ipynb|day06_03_01_03_two_hadamard_two_qubit_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_01_zero_state_histogram_lab.ipynb|day06_04_01_zero_state_histogram_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_02_hadamard_histogram_lab.ipynb|day06_04_02_hadamard_histogram_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_03_x_gate_histogram_lab.ipynb|day06_04_03_x_gate_histogram_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_04_hx_gate_histogram_lab.ipynb|day06_04_04_hx_gate_histogram_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_02_01_to_02_03_hadamard_shot_convergence_lab.ipynb|day06_derived_02_01_to_02_03_hadamard_shot_convergence_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab.ipynb|day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab.ipynb|day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day07_02_01_bell_state_measurement_lab.ipynb|day07_02_01_bell_state_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_01_quantum_gate_concepts_lecture.pdf|Quantum Gate 개념]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_01_cnot_basis_state_lab.ipynb|day08_03_01_cnot_basis_state_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_02_hadamard_superposition_lab.ipynb|day08_03_02_hadamard_superposition_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_03_bell_state_lab.ipynb|day08_03_03_bell_state_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_01_bell_measurement_lab.ipynb|day08_04_01_bell_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_01_bell_circuit_lab.ipynb|day08_04_02_01_bell_circuit_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_02_cnot_measurement_lab.ipynb|day08_04_02_02_cnot_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_03_hadamard_measurement_lab.ipynb|day08_04_02_03_hadamard_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_03_01_classical_random_bits_lab.ipynb|day08_04_03_01_classical_random_bits_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_03_02_bell_histogram_lab.ipynb|day08_04_03_02_bell_histogram_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_10_xx_identity_measurement_lab.ipynb|day09_02_10_xx_identity_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_11_hh_identity_measurement_lab.ipynb|day09_02_11_hh_identity_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_12_hzh_phase_flip_measurement_lab.ipynb|day09_02_12_hzh_phase_flip_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_x_02_01_x_gate_measurement_lab.ipynb|day09_x_02_01_x_gate_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_05_y_gate_measurement_lab.ipynb|day09_y_02_05_y_gate_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_06_xy_gate_measurement_lab.ipynb|day09_y_02_06_xy_gate_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_07_x_y_gate_comparison_lab.ipynb|day09_y_02_07_x_y_gate_comparison_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_02_z_gate_measurement_lab.ipynb|day09_z_02_02_z_gate_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_03_xz_gate_measurement_lab.ipynb|day09_z_02_03_xz_gate_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_04_hzh_gate_measurement_lab.ipynb|day09_z_02_04_hzh_gate_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day10_02_01_hx_xh_order_measurement_lab.ipynb|day10_02_01_hx_xh_order_measurement_lab]]
+- [[01.quantum-foundations/03.gates-measurement-and-entanglement/day10_02_02_multi_qubit_rotation_entanglement_lab.ipynb|day10_02_02_multi_qubit_rotation_entanglement_lab]]
+
+### 02.circuits-and-encoding/01.quantum-circuits-and-qml
+
+- [[02.circuits-and-encoding/01.quantum-circuits-and-qml/day10_01_quantum_circuit_lecture.pdf|Quantum Circuit 이란 ?]]
+- [[02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_01_01_feature_map_circuit_lab.ipynb|day11_01_01_feature_map_circuit_lab]]
+- [[02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_01_hadamard_measurement_lab.ipynb|day11_03_01_hadamard_measurement_lab]]
+- [[02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_02_superposition_rotation_entanglement_lab.ipynb|day11_03_02_superposition_rotation_entanglement_lab]]
+- [[02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_03_composite_gate_measurement_lab.ipynb|day11_03_03_composite_gate_measurement_lab]]
+- [[02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_04_quantum_circuit_and_qml_lecture.pdf|Quantum Circuit과 QML]]
+
+### 02.circuits-and-encoding/02.feature-encoding
+
+- [[02.circuits-and-encoding/02.feature-encoding/day01_03_02_synthetic_binary_classification_dataset_lab.ipynb|day01_03_02_synthetic_binary_classification_dataset_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day01_03_03_pca_projection_and_explained_variance_lab.ipynb|day01_03_03_pca_projection_and_explained_variance_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day02_03_quantum_feature_space_lecture.pdf|Quantum Feature Space]]
+- [[02.circuits-and-encoding/02.feature-encoding/day02_04_quantum_role_in_qml_lecture.pdf|QML에서 Quantum의 역할]]
+- [[02.circuits-and-encoding/02.feature-encoding/day09_04_01_feature_encoded_entangling_circuit_lab.ipynb|day09_04_01_feature_encoded_entangling_circuit_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day09_04_02_feature_encoded_no_cx_circuit_lab.ipynb|day09_04_02_feature_encoded_no_cx_circuit_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day09_04_03_feature_encoded_cx_circuit_lab.ipynb|day09_04_03_feature_encoded_cx_circuit_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day09_zz_04_04_feature_map_reps1_lab.ipynb|day09_zz_04_04_feature_map_reps1_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day09_zz_04_05_feature_map_dim3_lab.ipynb|day09_zz_04_05_feature_map_dim3_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day09_zz_04_06_feature_map_reps3_lab.ipynb|day09_zz_04_06_feature_map_reps3_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day12_01_02_customer_feature_encoding_lab.ipynb|day12_01_02_customer_feature_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day12_02_01_parameterized_feature_map_lab.ipynb|day12_02_01_parameterized_feature_map_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day12_02_full_quantum_feature_space_lab.ipynb|day12_02_full_quantum_feature_space_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day14_01_01_single_feature_angle_encoding_lab.ipynb|day14_01_01_single_feature_angle_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day14_01_02_two_feature_angle_encoding_lab.ipynb|day14_01_02_two_feature_angle_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day14_01_03_multi_feature_angle_encoding_lab.ipynb|day14_01_03_multi_feature_angle_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day14_01_04_basis_angle_hybrid_encoding_lab.ipynb|day14_01_04_basis_angle_hybrid_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day14_01_05_customer_hybrid_encoding_lab.ipynb|day14_01_05_customer_hybrid_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day15_02_01_amplitude_encoding_workflow_lab.ipynb|day15_02_01_amplitude_encoding_workflow_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day15_02_02_amplitude_encoding_simulation_lab.ipynb|day15_02_02_amplitude_encoding_simulation_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day15_02_03_amplitude_encoding_function_lab.ipynb|day15_02_03_amplitude_encoding_function_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day15_03_01_encoding_comparison_lab.ipynb|day15_03_01_encoding_comparison_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_02_01_single_pauli_feature_maps_lab.ipynb|day16_02_01_single_pauli_feature_maps_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_02_02_multi_pauli_feature_maps_lab.ipynb|day16_02_02_multi_pauli_feature_maps_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_02_03_combined_pauli_feature_maps_lab.ipynb|day16_02_03_combined_pauli_feature_maps_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_02_04_pauli_feature_map_iris_lab.ipynb|day16_02_04_pauli_feature_map_iris_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_03_01_sensor_phase_normalization_lab.ipynb|day16_03_01_sensor_phase_normalization_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_03_02_sensor_phase_encoding_circuit_lab.ipynb|day16_03_02_sensor_phase_encoding_circuit_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_03_03_sensor_phase_statevector_lab.ipynb|day16_03_03_sensor_phase_statevector_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day16_03_04_phase_interference_measurement_lab.ipynb|day16_03_04_phase_interference_measurement_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day18_04_01_frequency_encoding_lab.ipynb|day18_04_01_frequency_encoding_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day18_04_02_frequency_expectation_curve_lab.ipynb|day18_04_02_frequency_expectation_curve_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day18_04_03_time_evolution_statevector_lab.ipynb|day18_04_03_time_evolution_statevector_lab]]
+- [[02.circuits-and-encoding/02.feature-encoding/day18_04_04_measurement_probability_oscillation_lab.ipynb|day18_04_04_measurement_probability_oscillation_lab]]
+
+### 02.circuits-and-encoding/03.ansatz-and-parameterized-circuits
+
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day11_04_01_qml_feature_map_ansatz_lab.ipynb|day11_04_01_qml_feature_map_ansatz_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day13_02_01_feature_map_ansatz_measurement_lab.ipynb|day13_02_01_feature_map_ansatz_measurement_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day13_04_01_mini_qml_pipeline_lab.ipynb|day13_04_01_mini_qml_pipeline_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day14_02_01_qml_end_to_end_workflow_lab.ipynb|day14_02_01_qml_end_to_end_workflow_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_01_01_parameter_sweep_lab.ipynb|day17_01_01_parameter_sweep_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_01_02_parameter_binding_state_analysis_lab.ipynb|day17_01_02_parameter_binding_state_analysis_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_02_01_real_amplitudes_ansatz_lab.ipynb|day17_02_01_real_amplitudes_ansatz_lab]]
+- [[02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day18_03_01_pennylane_strongly_entangling_classifier_training_lab.ipynb|day18_03_01_pennylane_strongly_entangling_classifier_training_lab]]
+
+### 03.variational-learning-and-kernels/01.loss-and-optimization
+
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day01_03_01_quadratic_loss_surface_visualization_lab.ipynb|day01_03_01_quadratic_loss_surface_visualization_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day19_01_01_quantum_loss_parameter_sweep_lab.ipynb|day19_01_01_quantum_loss_parameter_sweep_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day19_02_01_loss_function_lab.ipynb|day19_02_01_loss_function_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_02_manual_learning_cycle_lab.ipynb|day20_02_02_manual_learning_cycle_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_03_loss_landscape_lab.ipynb|day20_02_03_loss_landscape_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_04_parameter_sweep_prediction_lab.ipynb|day20_02_04_parameter_sweep_prediction_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_05_target_loss_curve_lab.ipynb|day20_02_05_target_loss_curve_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_01_common_quantum_objective_function_lab.ipynb|day21_03_01_common_quantum_objective_function_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_02_cobyla_optimizer_lab.ipynb|day21_03_02_cobyla_optimizer_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_03_spsa_optimizer_lab.ipynb|day21_03_03_spsa_optimizer_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_04_quantum_learning_visualization_lab.ipynb|day21_03_04_quantum_learning_visualization_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_01_before_after_learning_comparison_lab.ipynb|day21_04_01_before_after_learning_comparison_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_02_optimizer_comparison_lab.ipynb|day21_04_02_optimizer_comparison_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_03_learning_result_parameter_persistence_lab.ipynb|day21_04_03_learning_result_parameter_persistence_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_01_parameterized_quantum_circuit_lab.ipynb|day37_03_01_parameterized_quantum_circuit_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_02_parameter_binding_lab.ipynb|day37_03_02_parameter_binding_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_03_objective_function_lab.ipynb|day37_03_03_objective_function_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_04_classical_optimizer_lab.ipynb|day37_03_04_classical_optimizer_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_05_quantum_circuit_objective_function_lab.ipynb|day37_03_05_quantum_circuit_objective_function_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_06_cost_parameter_history_visualization_lab.ipynb|day37_03_06_cost_parameter_history_visualization_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_07_initial_parameter_comparison_lab.ipynb|day37_03_07_initial_parameter_comparison_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_08_optimizer_comparison_lab.ipynb|day37_03_08_optimizer_comparison_lab]]
+- [[03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_09_toy_trigonometric_objective_landscape_optimization_lab.ipynb|day37_03_09_toy_trigonometric_objective_landscape_optimization_lab]]
+
+### 03.variational-learning-and-kernels/02.quantum-kernels
+
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day15_01_01_zz_feature_map_quantum_kernel_lab.ipynb|day15_01_01_zz_feature_map_quantum_kernel_lab]]
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day22_01_01_classical_to_quantum_kernel_lab.ipynb|day22_01_01_classical_to_quantum_kernel_lab]]
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day23_03_01_fidelity_quantum_kernel_lab.ipynb|day23_03_01_fidelity_quantum_kernel_lab]]
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day23_03_02_pauli_feature_map_quantum_kernel_lab.ipynb|day23_03_02_pauli_feature_map_quantum_kernel_lab]]
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day23_04_01_example_kernel_matrix_structure_and_psd_validation_lab.ipynb|day23_04_01_example_kernel_matrix_structure_and_psd_validation_lab]]
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day23_04_02_example_kernel_matrix_heatmap_lab.ipynb|day23_04_02_example_kernel_matrix_heatmap_lab]]
+- [[03.variational-learning-and-kernels/02.quantum-kernels/day23_04_03_quantum_kernel_quality_evaluation_lab.ipynb|day23_04_03_quantum_kernel_quality_evaluation_lab]]
+
+### 04.quantum-kernel-classification/01.iris-qsvm
+
+- [[04.quantum-kernel-classification/01.iris-qsvm/day01_01_01_iris_environment_eda_logistic_knn_baselines_lab.ipynb|day01_01_01_iris_environment_eda_logistic_knn_baselines_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day01_01_02_iris_logistic_regression_and_visualization_lab.ipynb|day01_01_02_iris_logistic_regression_and_visualization_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day24_01_01_classical_svm_baseline_lab.ipynb|day24_01_01_classical_svm_baseline_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day24_02_01_qsvc_iris_classifier_lab.ipynb|day24_02_01_qsvc_iris_classifier_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day25_03_01_qsvm_training_data_preparation_lab.ipynb|day25_03_01_qsvm_training_data_preparation_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day25_03_02_qsvc_model_construction_lab.ipynb|day25_03_02_qsvc_model_construction_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day25_03_03_qsvm_training_lab.ipynb|day25_03_03_qsvm_training_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day25_03_04_qsvm_prediction_lab.ipynb|day25_03_04_qsvm_prediction_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day26_01_01_classification_metrics_confusion_matrix_lab.ipynb|day26_01_01_classification_metrics_confusion_matrix_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day26_04_01_qsvm_performance_evaluation_lab.ipynb|day26_04_01_qsvm_performance_evaluation_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_01_qsvm_environment_setup_lab.ipynb|day27_02_01_qsvm_environment_setup_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_02_qsvm_data_preparation_lab.ipynb|day27_02_02_qsvm_data_preparation_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_03_qsvm_training_lab.ipynb|day27_02_03_qsvm_training_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_04_qsvm_prediction_lab.ipynb|day27_02_04_qsvm_prediction_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_05_qsvm_accuracy_analysis_lab.ipynb|day27_02_05_qsvm_accuracy_analysis_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_06_qsvm_precision_recall_f1_lab.ipynb|day27_02_06_qsvm_precision_recall_f1_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_07_qsvm_classification_report_lab.ipynb|day27_02_07_qsvm_classification_report_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_08_qsvm_confusion_matrix_lab.ipynb|day27_02_08_qsvm_confusion_matrix_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_09_qsvm_roc_auc_lab.ipynb|day27_02_09_qsvm_roc_auc_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_02_10_qsvm_performance_report_lab.ipynb|day27_02_10_qsvm_performance_report_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_04_01_classical_svm_performance_baseline_lab.ipynb|day27_04_01_classical_svm_performance_baseline_lab]]
+- [[04.quantum-kernel-classification/01.iris-qsvm/day27_04_02_qsvm_performance_analysis_improvement_lab.ipynb|day27_04_02_qsvm_performance_analysis_improvement_lab]]
+
+### 05.quantum-neural-networks/01.classical-neural-network-baseline
+
+- [[05.quantum-neural-networks/01.classical-neural-network-baseline/day28_01_01_neural_network_structure_lab.ipynb|day28_01_01_neural_network_structure_lab]]
+- [[05.quantum-neural-networks/01.classical-neural-network-baseline/day33_01_01_pytorch_basic_model_lab.ipynb|day33_01_01_pytorch_basic_model_lab]]
+
+### 05.quantum-neural-networks/02.estimator-qnn
+
+- [[05.quantum-neural-networks/02.estimator-qnn/day31_02_01_qnn_components_lab.ipynb|day31_02_01_qnn_components_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day31_03_01_parameterized_quantum_circuit_lab.ipynb|day31_03_01_parameterized_quantum_circuit_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day31_03_02_estimator_qnn_preparation_lab.ipynb|day31_03_02_estimator_qnn_preparation_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day31_03_03_estimator_qnn_construction_lab.ipynb|day31_03_03_estimator_qnn_construction_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day31_03_04_estimator_qnn_forward_pass_lab.ipynb|day31_03_04_estimator_qnn_forward_pass_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day31_03_05_estimator_qnn_forward_analysis_lab.ipynb|day31_03_05_estimator_qnn_forward_analysis_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day34_03_02_estimator_qnn_creation_lab.ipynb|day34_03_02_estimator_qnn_creation_lab]]
+- [[05.quantum-neural-networks/02.estimator-qnn/day34_create_qnn_support_module_lab.ipynb|day34_create_qnn_support_module_lab]]
+
+### 05.quantum-neural-networks/03.torchconnector-hybrid-qnn
+
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_02_01_torchconnector_pytorch_integration_lab.ipynb|day34_02_01_torchconnector_pytorch_integration_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_01_torchconnector_environment_lab.ipynb|day34_03_01_torchconnector_environment_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_03_torchconnector_application_lab.ipynb|day34_03_03_torchconnector_application_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_04_quantum_weight_parameter_analysis_lab.ipynb|day34_03_04_quantum_weight_parameter_analysis_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_05_qnn_forward_batch_lab.ipynb|day34_03_05_qnn_forward_batch_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_06_qnn_input_change_lab.ipynb|day34_03_06_qnn_input_change_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_07_qnn_weight_change_lab.ipynb|day34_03_07_qnn_weight_change_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_08_qnn_gradient_calculation_lab.ipynb|day34_03_08_qnn_gradient_calculation_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_09_qnn_batch_forward_training_lab.ipynb|day34_03_09_qnn_batch_forward_training_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_10_qnn_end_to_end_validation_lab.ipynb|day34_03_10_qnn_end_to_end_validation_lab]]
+- [[05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_torch_connector_support_module_lab.ipynb|day34_torch_connector_support_module_lab]]
+
+### 06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline
+
+- [[06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline/day35_01_01_tsp_brute_force_baseline_lab.ipynb|day35_01_01_tsp_brute_force_baseline_lab]]
+
+### 06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers
+
+- [[06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/day38_01_02_qaoa_import_object_setup_lab.ipynb|day38_01_02_qaoa_import_object_setup_lab]]
+- [[06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/day38_01_04_qaoa_classical_comparison_lab.ipynb|day38_01_04_qaoa_classical_comparison_lab]]
+
+### 06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution
+
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day38_01_01_qaoa_environment_check_lab.ipynb|day38_01_01_qaoa_environment_check_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day38_01_03_first_qaoa_execution_lab.ipynb|day38_01_03_first_qaoa_execution_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_01_cost_parameter_lab.ipynb|day39_02_01_cost_parameter_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_02_cost_layer_lab.ipynb|day39_02_02_cost_layer_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_03_cost_circuit_output_lab.ipynb|day39_02_03_cost_circuit_output_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_04_gamma_parameter_effect_lab.ipynb|day39_02_04_gamma_parameter_effect_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_05_mixer_layer_lab.ipynb|day39_02_05_mixer_layer_lab]]
+- [[06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_06_parameterized_qaoa_circuit_lab.ipynb|day39_02_06_parameterized_qaoa_circuit_lab]]
+
+### 07.capstone/01.netflix-qml-project
+
+- [[07.capstone/01.netflix-qml-project/day39_project_01_01_netflix_dataset_quality_and_leakage_audit_lab.ipynb|day39_project_01_01_netflix_dataset_quality_and_leakage_audit_lab]]
+- [[07.capstone/01.netflix-qml-project/day39_project_01_02_netflix_classical_feature_preparation_for_qml_lab.ipynb|day39_project_01_02_netflix_classical_feature_preparation_for_qml_lab]]
