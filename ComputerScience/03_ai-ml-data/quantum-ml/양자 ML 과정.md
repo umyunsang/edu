@@ -48,6 +48,8 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - `1.quantum-ml-overview/` — 양자 ML 개요
 - `2.qml-structure/` — QML 구조 이해
 - `1.quantum-ml-overview/qml-pipeline/` — QML 파이프라인
+- `1.quantum-ml-overview/qaoa-basics/` — QAOA 기초 및 Cost·Mixer Layer 실습
+- `1.quantum-ml-overview/netflix-qml-project/` — Netflix 데이터 기반 QML 미니 프로젝트
 - `1.quantum-ml-overview/entanglement-and-cnot/` — Entanglement와 CNOT 실습
 - `4.qml-models/` — QML 모델
 - `5.qnn-and-hybrid/` — 양자 신경망(QNN) 및 Hybrid
@@ -156,3 +158,7 @@ related:: [[ComputerScience/00_graph-interfaces/courses/머신러닝 인터페�
 - Day34 QNN weight 변화·gradient·batch forward·전체 검증 실습: `1.quantum-ml-overview/neural-network/day34_3_7_qnn_weight_change_practice.ipynb`부터 `day34_3_10_qnn_end_to_end_validation_practice.ipynb`까지
 - Day35 TSP brute-force 기준선 실습: `1.quantum-ml-overview/qaoa-basics/day35_1_1_tsp_brute_force_baseline_practice.ipynb`
 - Day37 매개변수화 회로·parameter binding·objective function·고전 optimizer·비용/초깃값/optimizer 비교 실습: `1.quantum-ml-overview/qml-pipeline/day37_3_1_parameterized_quantum_circuit_practice.ipynb`부터 `day37_3_8_optimizer_comparison_practice.ipynb`까지
+- Day37 QAOA Cost Hamiltonian 목적 함수 비교 실습: `1.quantum-ml-overview/qml-pipeline/day37_3_9_qaoa_cost_hamiltonian_objective_practice.ipynb`
+- Day38 QAOA 환경·Import·첫 실행·고전 해 비교 실습: `1.quantum-ml-overview/qaoa-basics/day38_1_1_qaoa_environment_check_practice.ipynb`부터 `day38_1_4_qaoa_classical_comparison_practice.ipynb`까지
+- Day39 Cost Parameter·Cost Layer·Gamma 효과·Mixer Layer·Parameterized QAOA Circuit 실습: `1.quantum-ml-overview/qaoa-basics/day39_2_1_cost_parameter_practice.ipynb`부터 `day39_2_6_parameterized_qaoa_circuit_practice.ipynb`까지
+- Day39 Netflix QML 데이터 분석·Quantum-ready Feature Engineering 프로젝트: `1.quantum-ml-overview/netflix-qml-project/day39_project_1_1_netflix_dataset_analysis.ipynb`, `day39_project_1_2_netflix_quantum_feature_engineering.ipynb`
