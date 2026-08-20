@@ -204,6 +204,8 @@ graph TD
 *   **LGAimer**: LG AI 연구원 해커톤 및 교육 과정 ([[LGAimer/LG Aimers 9기 지원서 초안|지원서 초안]])
     *   [[LGAimer/LG Aimers 8기/LG_Aimers_Certificate.pdf|🏆 LG Aimers 8기 이수증 (LLM Compression)]]
     *   [[LGAimer/LG Aimers 8기/『LLM Application & Evaluation』 강의자료 Download.pdf|LLM Application & Evaluation 자료]]
+*   **QRC 2026**: Quantum Reframing Challenge · 메가존 클라우드 · KISTI · 한국양자융합센터 (예선 참가, 팀 부산사립대Goat)
+    *   [[Hackathon/QRC2026/qrc2026_neutron_router.pdf|📄 NEUTRON ROUTER 예선 기획서 (QPE 기반 정밀 계산 라우팅)]]
 *   **양자컴퓨팅 특강**: 메가존 클라우드 · 동아대 G-LAMP 연구소 공동 진행 (2일 단기 과정)
     *   [[certifications/MEGAZONE_Quantum_Computing_Certificate.pdf|🏆 양자컴퓨팅 이론 및 실습 2일 단기 특강 과정 수료증]]
 *   **자격증**: 데이터분석준전문가(ADsP), 정보처리기사 등 ([[certifications/체크리스트|체크리스트]])
