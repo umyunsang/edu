@@ -202,8 +202,10 @@ graph TD
 ## 🏆 대외 활동 & 자격증 (Extracurricular)
 
 *   **LGAimer**: LG AI 연구원 해커톤 및 교육 과정 ([[LGAimer/LG Aimers 9기 지원서 초안|지원서 초안]])
-    *   [[LGAimer/LG_Aimers_Certificate.pdf|🏆 LG Aimers 8기 이수증 (LLM Compression)]]
-    *   [[LGAimer/『LLM Application & Evaluation』 강의자료 Download.pdf|LLM Application & Evaluation 자료]]
+    *   [[LGAimer/LG Aimers 8기/LG_Aimers_Certificate.pdf|🏆 LG Aimers 8기 이수증 (LLM Compression)]]
+    *   [[LGAimer/LG Aimers 8기/『LLM Application & Evaluation』 강의자료 Download.pdf|LLM Application & Evaluation 자료]]
+*   **양자컴퓨팅 특강**: 메가존 클라우드 · 동아대 G-LAMP 연구소 공동 진행 (2일 단기 과정)
+    *   [[certifications/MEGAZONE_Quantum_Computing_Certificate.pdf|🏆 양자컴퓨팅 이론 및 실습 2일 단기 특강 과정 수료증]]
 *   **자격증**: 데이터분석준전문가(ADsP), 정보처리기사 등 ([[certifications/체크리스트|체크리스트]])
     *   [[certifications/체크리스트|자격증 취득 체크리스트]]
 
