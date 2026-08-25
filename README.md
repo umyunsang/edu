@@ -211,7 +211,7 @@ graph TD
 *   **양자컴퓨팅 특강**: 메가존 클라우드 · 동아대 G-LAMP 연구소 공동 진행 (2일 단기 과정)
     *   [[certifications/MEGAZONE_Quantum_Computing_Certificate.pdf|🏆 양자컴퓨팅 이론 및 실습 2일 단기 특강 과정 수료증]]
 *   **Python으로 시작하는 머신러닝**: AI·ML 개론, Python 프로그래밍 기초, 진로·산업체 특강 (58시간, 2024.07.29~08.16)
-    *   [[Programs/Python-ML/Python_Machine_Learning_Certificate.pdf|🏆 Python으로 시작하는 머신러닝 이수증]]
+    *   [[ComputerScience/03_ai-ml-data/ml-projects/Python_Machine_Learning_Certificate.pdf|🏆 Python으로 시작하는 머신러닝 이수증]]
 *   **자격증**: 데이터분석준전문가(ADsP), 정보처리기사 등 ([[certifications/체크리스트|체크리스트]])
     *   [[certifications/체크리스트|자격증 취득 체크리스트]]
 
