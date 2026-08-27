@@ -232,4 +232,57 @@ graph TD
 - 특정 기술 스택: `content:Python` 또는 `tag:#python` (사용 시)
 
 ---
-<p align="right">Last Updated: 2026-05-28</p>
+
+## 🤖 사람과 LLM이 같이 읽는 아카이브
+
+이 저장소는 **하나의 마크다운 집합을 두 종류의 독자**가 읽는다.
+
+| 독자 | 읽는 도구 | 의존하는 단서 |
+| :--- | :--- | :--- |
+| **사람** | Obsidian | 위키링크, Graph View, 콜아웃, Mermaid, LaTeX, PDF 페이지 임베드 |
+| **LLM / 에이전트** | [OpenKnowledge](https://github.com/inkeep/open-knowledge) MCP, Claude Code, Codex | 프론트매터, 폴더 가이드(`.ok/frontmatter.yml`), 출처 원장, 스킬 |
+
+전체 규격은 **[[docs/knowledge-schema|docs/knowledge-schema.md]]** 에 있다.
+
+### 레이어 구조
+
+| 레이어 | 위치 | 역할 |
+| :--- | :--- | :--- |
+| ① 원본 | `<course>/pdf/*.pdf` (Git LFS) | 변하지 않는 근거 |
+| ② 정리문서 | `<course>/NN. 제목.md` | 사람이 읽는 층 |
+| ③ 그래프 | `ComputerScience/00_graph-interfaces/` | 관계의 층 |
+| ④ 에이전트 | `.ok/frontmatter.yml`, `wiki/meta/ledgers/`, `.agents/skills/` | LLM이 읽는 층 |
+
+### 도구
+
+| 도구 | 역할 |
+| :--- | :--- |
+| [OpenKnowledge](https://github.com/inkeep/open-knowledge) | 에이전트 탐색·검색·린트, MCP 서버 `open-knowledge`, 폴더별 에이전트 가이드 |
+| [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) | 출처(provenance) 원장과 vault 검증 |
+
+```bash
+npx -y @inkeep/open-knowledge@latest start --open   # 웹 에디터 + MCP 서버
+```
+
+### 강의 PDF → 정리문서 파이프라인
+
+```bash
+git lfs pull --include="<course>/pdf/*"
+python3 scripts/pdf_lecture_extract.py "<course>/pdf/01_Foo.pdf" --render none
+#   → 에이전트가 .agents/skills/lecture-pdf-to-note 규격으로 정리문서 작성
+node scripts/check_mermaid.mjs --dir "<course>"     # Mermaid 문법 검증
+python3 scripts/register_pdf_sources.py            # 출처 원장 동기화
+```
+
+정리문서는 한 노트에 **표 · Mermaid 3종 이상 · 콜아웃 · LaTeX · PDF 페이지 임베드**를 섞어 쓴다.
+
+### 진행 현황
+
+| 항목 | 수치 |
+| :--- | ---: |
+| 출처 원장에 등록된 원본 PDF | 403 |
+| 새 규격으로 재작성된 수업 | 1 / 38 (`parallel-distributed-computing`) |
+| 폴더별 에이전트 가이드 | 55 |
+
+---
+<p align="right">Last Updated: 2026-08-28</p>

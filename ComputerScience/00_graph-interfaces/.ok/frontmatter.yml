@@ -1,0 +1,9 @@
+# 이 파일은 OpenKnowledge가 에이전트에게 폴더의 의미를 알려주는 가이드다.
+# 사람은 Obsidian 폴더 트리를 보고, LLM은 이 설명을 본다.
+# scripts/generate_folder_guides.py 로 생성됨 — 손으로 고쳐도 되지만 스크립트도 같이 갱신할 것.
+title: "그래프 인터페이스"
+description: "Obsidian Graph View에 실제 노드로 보이는 구조 레이어. 단계(stages), 브리지(bridges), 과목 인터페이스(courses), 2026 GraphRAG 아카이브(archive-kg)의 커뮤니티·개념·근거 노드가 있다. 여기 있는 노트는 강의 내용이 아니라 **다른 노트를 연결하는 구조물**이다. 특정 주제의 실제 내용을 찾을 때가 아니라, 아카이브의 지도를 볼 때 읽는다."
+tags:
+  - graph
+  - structure
+  - moc
