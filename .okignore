@@ -10,3 +10,24 @@
 #   drafts/        # exclude a directory
 #   *.draft.md     # exclude files matching a pattern
 #   !keep.md       # re-include a file .gitignore excluded
+
+# ── 바이너리 원본 제외 ────────────────────────────────────────────
+# 이 저장소 콘텐츠 2.68GB 중 PDF 82%, PNG 7.8%, PPTX 4.4% = 약 94%가
+# 바이너리이고 마크다운은 0.8%(22MB)뿐이다.
+# OpenKnowledge는 히스토리/타임라인용 shadow repo(.git/ok)에 콘텐츠를
+# 통째로 스냅샷하므로, 바이너리를 포함하면 초기 import가 수 시간 걸린다.
+#
+# 원본 파일은 저장소에 그대로 남고 Obsidian에서는 정상적으로 보인다.
+# (PDF 페이지 임베드는 Obsidian PDF++ 로 읽는 것이 기본 경로다.
+#  docs/knowledge-schema.md 의 시각화 규격 참고)
+*.pdf
+*.pptx
+*.ppt
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp4
+*.mov
+*.zip
