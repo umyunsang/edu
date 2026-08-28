@@ -14,7 +14,7 @@ created: "2026-08-29"
 updated: "2026-08-29"
 ---
 
-# Machine Learning 강의 노트
+## 강의 노트
 
 ## 회귀와 최적화
 
