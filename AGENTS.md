@@ -34,7 +34,7 @@ frontmatter, folder guides, the source ledger, and the OpenKnowledge MCP server.
 ## Layer Model
 
 | Layer | Where | Who reads it |
-|:--|:--|:--|
+| :-- | :-- | :-- |
 | Source of record | `<course>/sources/*.pdf` (Git LFS) | extraction and evidence workflow only |
 | Study notes | `<course>/notes/NN. 제목.md` | humans in OpenKnowledge and Obsidian |
 | Graph structure | `ComputerScience/00_graph-interfaces/` | Obsidian Graph View |
@@ -43,7 +43,7 @@ frontmatter, folder guides, the source ledger, and the OpenKnowledge MCP server.
 ## Tooling
 
 | Tool | Role here | Key paths |
-|:--|:--|:--|
+| :-- | :-- | :-- |
 | **OpenKnowledge** (`ok`) | agent navigation, search, lint, MCP server `open-knowledge` | `.ok/config.yml`, `.okignore`, `.mcp.json`, per-folder `.ok/frontmatter.yml` |
 | **claude-obsidian** | provenance and vault linting | `.claude-obsidian.json`, `wiki/`, `inbox/`, `.raw/` |
 
@@ -58,12 +58,11 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 ## Repository Scripts
 
 | Script | Purpose |
-|:--|:--|
+| :-- | :-- |
 | `scripts/pdf_lecture_extract.py` | lecture PDF → extraction bundle (`text.md`, `meta.json`, page PNGs) |
 | `scripts/register_pdf_sources.py` | register PDFs in `wiki/meta/ledgers/source-ledger.json` (reads sha256 from LFS pointers, no full download needed) |
 | `scripts/generate_folder_guides.py` | (re)generate per-folder `.ok/frontmatter.yml` agent guides — idempotent |
 | `scripts/check_mermaid.mjs` | validate every ` ```mermaid ` block with the real Mermaid parser |
-
 
 ## Vault Structure
 
@@ -88,6 +87,9 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 - **Math**: Use `$...$` or `$$...$$` only when the source actually contains the equation.
 - **Diagrams**: Use valid Mermaid code blocks for relationships, sequences, and workflows.
 - **Visual findings**: Re-query the OpenKnowledge palette while authoring. Use the official chart, stat-cards, custom-svg, or interactive-control starter whenever the source supplies the required data shape.
+- **Visual roles**: A lecture note needs at least two distinct information-bearing visual roles; a course index needs learning-path, document-map, and coverage roles; a practice note needs workflow and measured-result roles. HTML preview has no unconditional quota.
+- **Density baseline**: Ten meaningful components per lecture note is the review floor. A lower count requires a source-sparsity explanation; duplicate or decorative components never satisfy the floor.
+- **Template flexibility**: The root template is a starting skeleton. Add, delete, or reorder sections to match the source instead of preserving a common two-section shape.
 - **Components**: Preserve official starter structure, theme tokens, and control flow. Replace only source-backed labels and data literals.
 - **Delivery**: Combine compact conclusions, selective bullets, and visuals. Do not write an essay or reduce the whole document to one bullet list.
 - **Language**: Notes are primarily in Korean (한국어).
@@ -117,7 +119,9 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 - Keep official HTML nodes, IDs, inline CSS, theme tokens, and JavaScript control flow intact; change only source-backed display text and data literals.
 - Preserve source errors in a warning instead of silently correcting them.
 - Do not use wikilinks, Dataview fields, hierarchical tags, original-PDF images, PDF links, or visible `p.N` citations in rewritten notes.
-- Every lecture, course-index, and practice note keeps `slides: true`. OpenKnowledge lint/audit and Slidev build/export are separate required gates.
+- Every lecture, course-index, and practice note keeps `slides: true` and uses `---` separators between logical slide units.
+- Run OpenKnowledge lint with fixes immediately after template instantiation, then a scoped audit whose `ran` includes `markdownlint`, `frontmatter`, `okf`, and `links`.
+- Slidev build/export success proves compilation and export only. Raw Slidev does not render OpenKnowledge `html preview` or `Tabs/Tab`; such documents cannot receive a Slidev visual-compatibility PASS without an official adapter or separately approved compatibility layer.
 - Directory naming remains field interface first, canonical course folder second — e.g., `03_ai-ml-data/machine-learning`, `04_systems-infrastructure/operating-systems`.
 - Relationship typing is deferred until the source-backed rewrite is complete.
 
@@ -127,8 +131,10 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 node scripts/check_mermaid.mjs --dir "ComputerScience"
 npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 python3 scripts/register_pdf_sources.py
-slidev build "<note>.md" --out ".slidev-build"
-slidev export "<note>.md" --format png --output ".slidev-export.png"
+slidev build "<note>.md" --out "/tmp/<note>-slidev-build"
+slidev export "<note>.md" --output "/tmp/<note>-slidev.pdf"
 ```
 
-A gate fails when OpenKnowledge reports lint, link, or Mermaid problems; when a template placeholder or palette example value remains; when Slidev reports an unresolved component; or when build/export exits non-zero. Browser, preview URL, DOM, screenshot, and rsvg checks are not part of this workflow.
+Also run the OpenKnowledge MCP audit on the exact course path and confirm that `ran` includes `markdownlint`, `frontmatter`, `okf`, and `links`.
+
+A gate fails when OpenKnowledge reports lint, link, OKF, frontmatter, or Mermaid problems; when a template placeholder or palette example value remains; when sibling notes reuse substantive prose, table rows, Mermaid edges, or visual payloads; when Slidev reports an unresolved component; or when build/export exits non-zero. A successful Slidev build/export is not viewport or component-fidelity evidence. Browser, preview URL, DOM, screenshot, and rsvg checks are not part of this workflow.

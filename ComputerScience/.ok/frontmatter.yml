@@ -1,23 +1,56 @@
 title: Computer Science & AI 커리큘럼
-description: "학부 전 과정의 강의 아카이브. 모든 과목은 프로젝트 루트의 lecture-note, course-index,
-  practice-note 템플릿만 상속한다. 작성 규칙: (1) 기존 정리문서와 삭제된 Git 이력을 구조·문장 앵커로 쓰지 않고 현재
-  sources PDF, 추출 텍스트, 실행 완료 노트북만 근거로 삼는다. (2) 원본 PDF 이미지, PDF 링크, 텍스트 페이지 인용은
-  공개 노트에 넣지 않는다. (3) PDF의 실제 주제 순서·예시·절차·수치·오류를 빠짐없이 반영하며 형제 문서 간 일반
-  문장·표·질문·시각자료 복제를 금지한다. (4) 장문 서술과 전면 개조식 모두 피하고 짧은 결론·핵심 불릿·공식 시각 컴포넌트를 조합한다.
-  (5) 문서마다 관계·절차를 보여 주는 Mermaid 또는 동등한 구조 시각화가 있어야 한다. source에 수치·비율·범위가 있으면
-  OpenKnowledge palette v1을 다시 호출해 공식 html preview starter를 반드시 사용한다: 동일 단위 2~5개
-  비음수 비교는 chart, 축을 공유하지 않는 독립 지표는 stat-cards, 실제 part/whole은 custom-svg, 실제
-  min/max/step/default가 있는 변수는 interactive-control. 어떤 gate도 통과하지 못하면 값을 발명하지 않고
-  Mermaid·Tabs·표로 설명한다. (6) palette starter의 HTML node 순서와 개수, id, inline CSS,
-  theme token, JS 제어 흐름을 보존하며 source-backed 표시문자와 data literal만 교체한다. 임의
-  SVG·HTML·CSS·JS, 외부 fetch, 하드코딩 색상, 장식용 시각화는 금지한다. (7) 같은 사실을 산문·표·시각화에 반복하지
-  않는다. 시각화는 새로운 관계·비교·조절 정보를 전달해야 한다. (8) Callout은 오류·위험·핵심 경계, Accordion은 선택적
-  심화, Math는 원문에 실제 수식이 있을 때만 사용한다. (9) 위키링크, Dataview, 계층 태그를 쓰지 않고 문서 링크는 표준
-  Markdown 상대 링크만 사용한다. (10) 원본 오류는 조용히 고치지 않고 warning에 명시한다. (11) 모든 강의·실습·인덱스
-  문서는 slides: true를 유지한다. OpenKnowledge write 경고·lint·audit, Mermaid parse, 미치환
-  placeholder 검사, Slidev CLI build/export와 unresolved component 경고가 모두 깨끗해야 한다.
-  브라우저·preview URL·DOM·스크린샷 검증은 하지 않는다. (12) 관계 타입 부여는 전체 재작성 완료 뒤 별도 단계에서
-  수행한다."
+description: >-
+  학부 전 과정 강의 아카이브. 모든 과목은 프로젝트 루트의 lecture-note, course-index, practice-note
+  템플릿만 상속한다.
+
+
+  작성 계약:
+
+  1. 기존 정리문서와 삭제된 Git 이력을 구조·문장 앵커로 쓰지 않고 현재 sources PDF, 추출 텍스트, 실행 완료 노트북만 근거로
+  삼는다.
+
+  2. 원본 PDF 이미지, PDF 링크, visible p.N 인용은 공개 노트에 넣지 않는다.
+
+  3. 템플릿은 시작 골격일 뿐이다. 원본의 실제 주제 수와 순서에 맞춰 H2를 추가·삭제·재배열하고, 형제 문서 사이의 일반 문장·표
+  행·질문·Mermaid edge·시각 payload 복제를 금지한다.
+
+  4. 장문 서술과 전면 불릿화를 모두 피한다. 짧은 결론, 선택적 불릿, 공식 시각 컴포넌트를 결합한다.
+
+  5. 강의 노트는 서로 다른 역할의 정보 시각화가 최소 2개여야 한다: 관계·절차·비교를 전달하는 Mermaid·Tabs·표 중 하나와,
+  근거·종합·수량을 전달하는 표·Math·palette starter 중 하나. 과목 인덱스는 학습 경로·문서 표·coverage 표의
+  3역할, 실습 노트는 실행 흐름·실측 결과의 2역할을 갖는다. HTML preview 최소치는 0이며 source data gate가 열릴
+  때만 사용한다.
+
+  6. source에 수치·비율·범위가 있으면 OpenKnowledge palette v1을 다시 호출한다. 동일 단위 2~5개 비음수 비교는
+  chart, 축을 공유하지 않는 독립 지표는 stat-cards, 정확한 part/whole은 custom-svg, 정확한
+  min/max/step/default/unit이 있는 변수는 interactive-control을 쓴다. 빈 배열·전부 0·N/A·임의
+  기본값·예제 데이터는 실패다.
+
+  7. palette starter의 HTML node 순서·개수, id, inline CSS, theme token, JS 제어 흐름은
+  보존하고 source-backed 표시문자와 data literal만 교체한다. 임의 SVG·HTML·CSS·JS, 외부 fetch,
+  하드코딩 색상, 장식용 시각화는 금지한다.
+
+  8. 같은 사실을 산문·표·시각화에 반복하지 않는다. 문서당 10개 의미 구성요소는 품질 기준선이며, 미달이면 source가 희박하다는
+  근거와 제외 사유를 과정 보고에 남긴다. 개수 채우기를 위한 중복 컴포넌트는 실패다.
+
+  9. Callout은 오류·위험·핵심 경계, details는 선택적 심화, Math는 원문에 실제 수식이 있을 때만 사용한다. 원본 오류는
+  조용히 고치지 않고 warning에 명시한다.
+
+  10. 위키링크, Dataview, 계층 태그를 쓰지 않고 문서 링크는 표준 Markdown 상대 링크만 사용한다.
+
+  11. 모든 강의·실습·인덱스 문서는 slides: true와 논리 구간별 Slidev separator를 유지한다.
+
+  12. 저장 직후 OpenKnowledge lint fix를 실행하고, scoped audit의 ran에
+  markdownlint·frontmatter·okf·links가 모두 포함되며 오류·경고가 0인지 확인한다. Mermaid parser,
+  미치환 placeholder, palette 예제 fingerprint, 형제 문서 중복 payload도 별도 검사한다.
+
+  13. Slidev build/export 성공은 컴파일·내보내기 PASS일 뿐 viewport나 OpenKnowledge 컴포넌트 렌더
+  PASS가 아니다. 현재 raw Slidev는 html preview와 Tabs/Tab을 렌더하지 않으므로 해당 문서는 공식 adapter가
+  생기거나 별도 승인이 있기 전까지 Slidev visual compatibility PASS를 선언하지 않는다. 브라우저·preview
+  URL·DOM·스크린샷·rsvg 검증은 하지 않는다.
+
+  14. 과목 단위로 문서 수·콜아웃·html preview·details·Tabs·슬라이드 임베드 수와 문서별 시각 역할을 보고한다. 관계
+  타입 부여는 전체 재작성 뒤 별도 단계에서 수행한다.
 tags:
   - curriculum
   - archive
