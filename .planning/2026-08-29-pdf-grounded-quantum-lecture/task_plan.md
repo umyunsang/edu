@@ -47,3 +47,7 @@ All note content previously written by any delegated lane is rejected and may be
 - All lecture/practice/index templates must include `slides: true` where the document is intended to open as a deck.
 - OpenKnowledge's slides plugin is a user-scoped desktop preference and is not agent-settable through project config. Every eligible note still carries `slides: true`; render checking uses the installed Slidev CLI only.
 - Slidev's exporter dependency is installed at `@slidev/cli/node_modules/playwright-chromium` (v1.61.0), with Chromium and headless-shell revision 1228 available in the Playwright cache.
+- Current root authority is exactly three templates: `lecture-note`, `course-index`, and `practice-note`; no same-name `ComputerScience` override remains.
+- Template probes pass OpenKnowledge lint/audit and raw Slidev build/export, but this is not a visual-fidelity PASS for OpenKnowledge-only components.
+- Official OpenKnowledge 0.64.2 provides no Slidev adapter. `html preview` and `Tabs/Tab` are incompatible with raw Slidev 52.19.1, while Mermaid, KaTeX, and the five base GFM alerts are the confirmed common subset.
+- Course authoring remains paused at this boundary: either Slidev is accepted as a compile/export-only gate for OpenKnowledge-native visuals, or a separately authorized compatibility layer is required. Do not invent that layer under the current official-components-only contract.

@@ -129,3 +129,15 @@
 - Confirmed `ComputerScience/.ok/templates/` has same-name local templates that override root templates and contain superseded image/PDF-link rules.
 - User changed the render gate: all rewritten documents receive `slides: true`; render validation uses Slidev CLI, not browser-based QA.
 - Official OpenKnowledge template/palette guidance and the local markdown-slides skill were re-read before authoring the project templates.
+
+## 2026-08-29 project-template reset completed; Slidev fidelity blocked
+
+- Created the project-root `.ok/templates/lecture-note.md`, `course-index.md`, and `practice-note.md` as the only three default templates. Removed the obsolete same-name `ComputerScience/.ok/templates/` overrides, so deep course folders inherit the root contract.
+- Kept the templates as short skeletons. They require `slides: true`, logical `---` slide boundaries, source-derived section order, source-backed visual slots, and no embedded palette example data.
+- Recalled OpenKnowledge palette v1. The authoritative embed starters remain `chart`, `stat-cards`, `custom-svg`, and `interactive-control`; source-shape gates and starter-preservation rules now live in `AGENTS.md` and `ComputerScience/.ok/frontmatter.yml` rather than being copied into every note.
+- Added durable gates for visual roles, the 10-meaningful-component review floor, source-sparsity exceptions, sibling-note duplication, placeholder/sample-data rejection, and truthful validation labels.
+- Instantiated all three templates in a temporary folder and verified OpenKnowledge lint/audit: 4 documents scanned, `markdownlint`, `frontmatter`, `okf`, and `links` all ran with zero findings. The temporary folder was deleted afterward.
+- Verified raw Slidev 52.19.1 build and export for all three template probes: 3/3 builds and 3/3 PDF exports exited zero; exported decks were 5, 5, and 6 pages. `playwright-chromium` 1.61.0 is installed in Slidev's dependency tree.
+- Validator originality audit found no tracked drift in `.ok/config.yml`, `scripts/check_mermaid.mjs`, `scripts/graph_check.py`, or any tracked `scripts/` file. `.ok/okf/**` is ignored and has no Git authority, so it was preserved rather than guessed or overwritten.
+- The global OpenKnowledge setting file has `slides.enabled: true`, but the running MCP process still reports `false`; treat the current service state as stale until OpenKnowledge is restarted or otherwise reloads user settings.
+- Critical blocker: OpenKnowledge 0.64.2 has no official OK-to-Slidev adapter. Raw Slidev renders Mermaid, KaTeX, and the five base GFM alerts, but it does not execute `html preview` and has no `Tabs/Tab` component. Build/export success therefore proves compilation only, not OpenKnowledge visual fidelity. No course rewrite may receive a Slidev visual-compatibility PASS until this contract conflict is resolved.
