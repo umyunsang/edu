@@ -17,29 +17,20 @@ updated: '2026-08-28'
 
 ## 정리문서
 
-모두 `notes/` 에 있다. 총 19편.
+모두 `notes/` 에 있다. 총 10편.
 
 | 문서 | 다루는 내용 |
 | :-- | :-- |
-| [01. Word Count - 빅데이터 분석의 첫 걸음](<./notes/01-WordCount.md>) | — |
-| [02. MapReduce - 분산 데이터 처리의 핵심](<./notes/02-MapReduce.md>) | — |
-| [03. Hadoop - 빅데이터 분산 처리의 핵심](<./notes/03_Hadoop.md>) | — |
-| [04. 병렬 컴퓨팅 - Python을 활용한 분산 처리](<./notes/04-ParallelComputation.md>) | — |
-| [05. PySpark - Apache Spark를 활용한 대규모 분산 처리](<./notes/05-PySpark.md>) | — |
-| [06. Spark DataFrames - 구조화된 데이터 처리](<./notes/06-SparkDataFrames.md>) | — |
-| [07-PandasSeries](<./notes/07-PandasSeries.md>) | — |
-| [08-PandaDataframes](<./notes/08-PandaDataframes.md>) | — |
-| [BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API](<./notes/BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API.md>) | — |
-| [DAU_BigDataAnalytics_06_(Variable_Selection)](<./notes/DAU_BigDataAnalytics_06_(Variable_Selection).md>) | — |
-| [DAU_CSE408_Pandas,_Geopandas](<./notes/DAU_CSE408_Pandas,_Geopandas.md>) | — |
-| [K-POP 아티스트 인기도 분석 시스템: YouTube 데이터 기반 분기별 트렌드 예측 및 시각화](<./notes/K-POP 아티스트 인기도 분석 시스템.md>) | — |
-| [Docker 컨테이너 실행](<./notes/MLFlow 과제.md>) | — |
-| [빅데이터분석 기본 개념문제 풀이](<./notes/개념문제_풀이.md>) | — |
-| [빅데이터 분석 시험 대비 총정리 (실전 예시 중심)](<./notes/빅데이터 분석 시험 대비 총정리 (실전 예시 중심.md>) | — |
-| [아키텍처 다이어그램 텍스트 버전](<./notes/아키텍처 다이어그램 텍스트 버전.md>) | — |
-| [아키텍처 다이어그램](<./notes/아키텍처 다이어그램.md>) | — |
-| [빅데이터 분석 연습문제 풀이](<./notes/연습문제_풀이.md>) | — |
-| [빅데이터 분석 시험 대비 이론 정리](<./notes/이론정리.md>) | — |
+| [01. 빅데이터 분석의 범위](./notes/01.%20빅데이터%20분석의%20범위.md) | 데이터 일반화와 분석 모델 |
+| [02. 하둡과 분산 아키텍처](./notes/02.%20하둡과%20분산%20아키텍처.md) | HDFS·MapReduce·데이터 지역성 |
+| [03. Apache Spark 미리보기](./notes/03.%20Apache%20Spark%20미리보기.md) | shell·HDFS·SQL·Streaming 입문 |
+| [04-1. Apache Spark의 배경](./notes/04-1.%20Apache%20Spark의%20배경.md) | Spark History·Essentials |
+| [04-2. Spark RDD와 워크플로](./notes/04-2.%20Spark%20RDD와%20워크플로.md) | RDD·변환·반복 처리 |
+| [05. 데이터 통계 기초](./notes/05.%20데이터%20통계%20기초.md) | 확률·확률변수·분포 |
+| [06. 변수 선택](./notes/06.%20변수%20선택.md) | Feature vector·feature selection |
+| [07. 스트리밍 알고리즘](./notes/07.%20스트리밍%20알고리즘.md) | single pass·요약·sampling |
+| [08. 다목적 최적화](./notes/08.%20다목적%20최적화.md) | MOOP·파레토·트레이드오프 |
+| [09. MLFlow 설치와 실행](./notes/09.%20MLFlow%20설치와%20실행.md) | Docker·tracking·model registration |
 
 ## 원본 자료
 
