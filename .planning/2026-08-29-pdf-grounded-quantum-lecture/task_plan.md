@@ -21,7 +21,7 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 4. [complete] Rebuild the remaining quantum-lecture notes with zero source-slide embeds.
 5. [complete] Count quantum-lecture components and source-slide embeds; all notes clear the quality floor.
 6. [complete] Run scoped markdown, frontmatter, OKF, and link validation; report the quantum-lecture metrics.
-7. [in_progress] Repeat phases 2 through 6 course-by-course for every course with source PDFs, starting with quantum-ml.
+7. [in_progress] Repeat phases 2 through 6 course-by-course for every course with source PDFs. Completed quantum-lecture and quantum-ml; next is neural-networks.
 8. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
 9. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
 
