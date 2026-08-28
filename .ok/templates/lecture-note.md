@@ -21,8 +21,6 @@ created: "{{date}}"
 updated: "{{date}}"
 ---
 
-# {강의 제목}
-
 > [!abstract]
 > {핵심 질문과 한 줄 결론}
 

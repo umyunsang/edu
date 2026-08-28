@@ -19,8 +19,6 @@ created: "{{date}}"
 updated: "{{date}}"
 ---
 
-# {과목명}
-
 > [!abstract]
 > {이 과목이 다루는 범위와 도달 목표}
 
