@@ -1,95 +1,119 @@
 ---
-title: 병렬 · 분산처리
-description: 'Stanford CS149 기반. 병렬성의 동기, 멀티코어 아키텍처, ISPC, 작업 분배와 스케줄링, 지역성·통신·경합,
-  GPU/CUDA, MPI. 학기: 3-1.'
-type: course-index
-tags:
-- course
-- 3-1
+aliases:
+  - 분산처리 인덱스
+  - 병렬 분산처리 MOC
 course: parallel-distributed-computing
-semester: 3-1
-status: draft
 created: '2026-08-28'
+date: '2026-08-28'
+semester: '3-1'
+source: ''
+status: stable
+tags:
+  - index
+  - systems
+  - distributed
+  - 3-1
+title: 00. 병렬 분산처리 인덱스
+type: index
 updated: '2026-08-28'
 ---
 
-> [!abstract] 이 과목은
-> Stanford CS149 기반. 병렬성의 동기, 멀티코어 아키텍처, ISPC, 작업 분배와 스케줄링, 지역성·통신·경합, GPU/CUDA, MPI. 학기: 3-1.
+# 00. 병렬 분산처리 인덱스
+
+> [!abstract] 이 과목 한 줄
+> Stanford CS149를 기반으로, **왜 병렬이어야 하는가**(동기)부터
+> **어떻게 병렬로 짜는가**(ISPC · CUDA · MPI)까지를 한 학기에 훑는다.
+> 모든 정리문서는 `pdf/` 의 원본 강의자료를 근거로 다시 작성되었다.
 
 ## 학습 경로
 
-번호는 강의 진도 순이다. 앞 문서를 읽었다는 전제로 다음 문서가 쓰인다.
-
 ```mermaid
-flowchart LR
-    N0["01. 왜 병렬 처리인가"]
-    N1["02. 병렬 컴퓨터의 기본 아키텍처"]
-    N2["03. 멀티코어 아키텍처 II - 지연…"]
-    N3["04. 병렬 프로그래밍 기본"]
-    N4["05. 성능 최적화 I - 작업 분배와…"]
-    N5["06. 지역성·통신·경합"]
-    N6["07. CUDA 설치와 개발 환경"]
-    N7["08. GPU 아키텍처와 CUDA 프로…"]
-    N8["09. GPU 아키텍처와 CUDA 프로…"]
-    N9["11. MPI 병렬 프로그래밍 I"]
-    N10["12. MPI 병렬 프로그래밍 II"]
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
-    N5 --> N6
-    N6 --> N7
-    N7 --> N8
-    N8 --> N9
-    N9 --> N10
+flowchart TD
+    N01["01. 왜 병렬 처리인가<br/>동기 · 지역성 · 전력"] --> N02["02. 기본 아키텍처<br/>멀티코어 · SIMD · 멀티스레딩"]
+    N02 --> N03["03. 멀티코어 II<br/>지연 · 대역폭 · ISPC"]
+    N03 --> N04["04. 병렬 프로그래밍 기본<br/>분해 · 할당 · 조율"]
+    N04 --> N05["05. 성능 최적화 I<br/>작업 분배 · 스케줄링"]
+    N05 --> N06["06. 지역성 · 통신 · 경합"]
+    N06 --> N07["07. CUDA 설치와 개발 환경"]
+    N07 --> N08["08. GPU · CUDA II"]
+    N08 --> N09["09. GPU · CUDA III"]
+    N09 --> N11["11. MPI I<br/>분산 메모리 · 점대점"]
+    N11 --> N12["12. MPI II<br/>집단통신 · 클러스터"]
+
+    style N01 fill:#339af0,color:#fff
+    style N06 fill:#339af0,color:#fff
+    style N09 fill:#51cf66,color:#fff
+    style N12 fill:#fcc419,color:#333
 ```
 
-## 정리문서
+## 세 개의 프로그래밍 모델
 
-모두 `notes/` 에 있다. 총 11편.
+이 과목은 결국 **같은 문제를 세 가지 방식으로 병렬화**하는 법을 가르친다.
 
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [01. 왜 병렬 처리인가](<./notes/01. 왜 병렬 처리인가.md>) | — |
-| [02. 병렬 컴퓨터의 기본 아키텍처](<./notes/02. 병렬 컴퓨터의 기본 아키텍처.md>) | — |
-| [03. 멀티코어 아키텍처 II - 지연·대역폭과 ISPC](<./notes/03. 멀티코어 아키텍처 II - 지연·대역폭과 ISPC.md>) | — |
-| [04. 병렬 프로그래밍 기본](<./notes/04. 병렬 프로그래밍 기본.md>) | — |
-| [05. 성능 최적화 I - 작업 분배와 스케줄링](<./notes/05. 성능 최적화 I - 작업 분배와 스케줄링.md>) | — |
-| [06. 지역성·통신·경합](<./notes/06. 지역성·통신·경합.md>) | — |
-| [07. CUDA 설치와 개발 환경](<./notes/07. CUDA 설치와 개발 환경.md>) | — |
-| [08. GPU 아키텍처와 CUDA 프로그래밍 II](<./notes/08. GPU 아키텍처와 CUDA 프로그래밍 II.md>) | — |
-| [09. GPU 아키텍처와 CUDA 프로그래밍 III](<./notes/09. GPU 아키텍처와 CUDA 프로그래밍 III.md>) | — |
-| [11. MPI 병렬 프로그래밍 I](<./notes/11. MPI 병렬 프로그래밍 I.md>) | — |
-| [12. MPI 병렬 프로그래밍 II](<./notes/12. MPI 병렬 프로그래밍 II.md>) | — |
+| 모델 | 병렬 단위 | 메모리 | 다루는 노트 |
+| :-- | :-- | :-- | :-- |
+| **SIMD / ISPC** | gang 안의 program instance | 공유 (레인 간) | 03 |
+| **CUDA** | grid → block → thread | 계층적 (전역·공유·레지스터) | 08, 09 |
+| **MPI** | rank (프로세스) | 분산 (메시지 전달) | 11, 12 |
 
-## 원본 자료
+## 전체 노트
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 21건.
+| # | 노트 | 근거 원본 | 페이지 |
+| :-- | :-- | :-- | --: |
+| 01 | 왜 병렬 처리인가 | `01_WhyParallelism.pdf` | 139 |
+| 02 | 병렬 컴퓨터의 기본 아키텍처 | `02_기본아키텍츠_update.pdf` | 104 |
+| 03 | 멀티코어 아키텍처 II — 지연·대역폭과 ISPC | `03_multicore2-update_0416.pdf` + `03_multicore2-ispc_update.pdf` | 116 + 101 |
+| 04 | 병렬 프로그래밍 기본 | `04_Parallel Programming 기본.pdf` | 58 |
+| 05 | 성능 최적화 I — 작업 분배와 스케줄링 | `05_Performance Optimization I ....pdf` | 75 |
+| 06 | 지역성·통신·경합 | `06_Locality_Communication_Contention.pdf` | 68 |
+| 07 | CUDA 설치와 개발 환경 | `07_GPU Architecture & CUDAProgramming_v01.pdf` | 47 |
+| 08 | GPU 아키텍처와 CUDA 프로그래밍 II | `08_GPU Architecture & CUDAProgramming_v02.pdf` | 110 |
+| 09 | GPU 아키텍처와 CUDA 프로그래밍 III | `09_GPU Architecture & CUDAProgramming_v03.pdf` | 99 |
+| 11 | MPI 병렬 프로그래밍 I | `11_MPI 프로그래밍_V_01.pdf` | 39 |
+| 12 | MPI 병렬 프로그래밍 II | `12_MPI 프로그래밍_V_02.pdf` | 41 |
 
-- `01_WhyParallelism.pdf`
-- `02_기본아키텍츠_update 2.pdf`
-- `02_기본아키텍츠_update.pdf`
-- `03_multicore2-ispc_update 2.pdf`
-- `03_multicore2-ispc_update.pdf`
-- `03_multicore2-update_0416 2.pdf`
-- `03_multicore2-update_0416.pdf`
-- `03_multicore2-강의자료업데이트_0415.pdf`
-- `04_Parallel Programming 기본 2.pdf`
-- `04_Parallel Programming 기본.pdf`
-- `05_Performance Optimization I Work Distribution and Scheduling.pdf`
-- `06_Locality_Communication_Contention.pdf`
-- `07_GPU Architecture & CUDAProgramming_v01.pdf`
-- `08_GPU Architecture & CUDAProgramming_v02.pdf`
-- `09_GPU Architecture & CUDAProgramming_v03 2.pdf`
-- `09_GPU Architecture & CUDAProgramming_v03.pdf`
-- `11_MPI 프로그래밍_V_01 2.pdf`
-- `11_MPI 프로그래밍_V_01.pdf`
-- `12_MPI 프로그래밍_V_02 2.pdf`
-- `12_MPI 프로그래밍_V_02.pdf`
-- `쿠다.pdf`
+> [!info] 10번 강의가 없는 이유
+> 원본 강의자료 `pdf/` 에 10번 덱이 존재하지 않는다. 번호는 원본 파일명을 그대로 따랐다.
+
+## 이 과목의 큰 그림
+
+```mermaid
+mindmap
+  root(("병렬 · 분산처리"))
+    ("왜")
+      ("Dennard 스케일링 종말")
+      ("전력 = 열 = 배터리")
+      ("데이터 이동 에너지")
+    ("무엇으로")
+      ("멀티코어")
+      ("SIMD 레인")
+      ("하드웨어 멀티스레딩")
+      ("GPU SM")
+    ("어떻게")
+      ("분해 · 할당 · 조율")
+      ("정적 vs 동적 스케줄링")
+      ("work stealing")
+    ("어디까지")
+      ("공유 메모리 · ISPC")
+      ("이기종 · CUDA")
+      ("분산 메모리 · MPI")
+```
+
+## 원본 강의자료
+
+원본 PDF는 `pdf/` 에 Git LFS로 보관된다. 정리문서를 다시 쓸 때는 반드시 원본을 근거로 삼는다.
+
+```bash
+git lfs pull --include="ComputerScience/04_systems-infrastructure/parallel-distributed-computing/pdf/*"
+python3 scripts/pdf_lecture_extract.py "<...>/pdf/01_WhyParallelism.pdf" --render none
+```
+
+작성 규격은 lecture-pdf-to-note 스킬과
+지식 스키마를 따른다.
 
 ## 관련 과목
 
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+- [운영체제 — 스레드와 멀티태스킹](<../operating-systems/notes/스레드와 멀티테스킹.md>)
+- [컴퓨터 구조 — 파이프라이닝](<../computer-architecture/notes/5. 파이프 라이닝.md>)
+- [리눅스 시스템](<../linux/notes/1. 리눅스의 기본.md>)
+- [컨테이너 오케스트레이션](<../container-orchestration/notes/도커 기초.md>)
