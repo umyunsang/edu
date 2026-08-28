@@ -81,3 +81,5 @@
 - Active parallel courses: operating-systems and database-systems.
 - Completed `operating-systems`: 15 notes plus README, 60 callouts / 30 HTML previews / 30 details / 15 Tabs / 15 Mermaid / 0 source embeds; 16-document audit and lint clean. Valid assessment notes use 90–92; source-less MYBOX materials, an operational handout, and a duplicate are explicitly excluded.
 - Active parallel courses: database-systems and linux.
+- Completed `database-systems`: 17 notes plus README, 68 callouts / 17 HTML previews / 17 details / 17 Tabs / 17 Mermaid / 0 source embeds; 18-document audit and lint clean. Two exercise notes use the required 90–91 numbering; highlights were not used as a density substitute.
+- Active parallel courses: linux and computer-networks.
