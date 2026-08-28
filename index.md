@@ -20,3 +20,4 @@ okf_version: "0.2"
 * [docs](./docs/index.md)
 * [LGAimer](./LGAimer/index.md)
 * [scripts](./scripts/index.md)
+* [template-validation](./template-validation/index.md)
