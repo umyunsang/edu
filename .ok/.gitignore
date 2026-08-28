@@ -18,3 +18,9 @@ state.json
 server.lock
 sync-state.json
 last-spawn-error.log
+
+# .ok/okf/ holds the OKF lint plugin's schemas, rendered from the plugin on
+# boot so agents can read the contract they are told governs a document. A
+# generated artifact — regenerated whenever the plugin's copy changes, and
+# never read back — so it is not committed.
+okf/
