@@ -16,6 +16,7 @@
 - Replaced `notes/02. 양자클라우드 Braket 기초 사용법.md`; fixed one blockquote-spacing warning and verified a clean scoped audit.
 - Began the physics and linear-algebra source pass; verified eigenvector and unitary-transformation evidence slides.
 - Verified rendered evidence for dimension growth and Rayleigh-Ritz; excluded missing render pages from the evidence plan.
+- Verified both Schrödinger-equation slides for direct embedding in the third note.
 
 ## Errors
 
