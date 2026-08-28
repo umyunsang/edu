@@ -77,8 +77,8 @@ flowchart TB
 
 | # | 노트 | 다루는 것 |
 | :-- | :-- | :-- |
-| 04 | [RAG의 원리와 파이프라인](<./notes/RAG LangChain 04. RAG의 원리와 파이프라인.md>) | 검색과 생성의 연결 |
-| 19 | [데이터 로드와 검색 최적화](<./notes/RAG LangChain 19. 데이터 로드와 검색 최적화.md>) | 분할·검색·재정렬 |
+| 04 | [RAG의 원리와 파이프라인](<notes/04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md>) | 검색과 생성의 연결 |
+| 19 | [데이터 로드와 검색 최적화](<notes/19.%20%EA%B2%80%EC%83%89%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%99%80%20LlamaIndex%C2%B7%EB%B2%A1%ED%84%B0%20%EC%A0%80%EC%9E%A5%EC%86%8C.md>) | 분할·검색·재정렬 |
 | 51 | [LlamaIndex와 벡터 저장소](<./notes/RAG LangChain 51. LlamaIndex와 벡터 저장소.md>) | 인덱스·벡터·메타데이터 |
 | 82 | [LangChain 모듈과 에이전트](<./notes/RAG LangChain 82. LangChain 모듈과 에이전트.md>) | 체인·에이전트·도구·추적 |
 | 109 | [Runnable, LCEL, 프롬프트](<./notes/RAG LangChain 109. Runnable, LCEL, 프롬프트.md>) | 입력·출력 계약의 조합 |
