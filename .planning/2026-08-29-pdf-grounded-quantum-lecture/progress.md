@@ -42,6 +42,8 @@
 - Rewrote the stale `양자 ML 과정.md` guide to remove 174 dead notebook links and present a source-free course map.
 - Quantum-ml course gate passed: 11 documents / 66 callouts / 27 HTML previews / 12 details / 5 Tabs / 0 direct source-slide embeds. The scoped audit is clean and the notes contain no text-form slide-page citations.
 - Next course: neural-networks.
+- Completed neural-networks public-source conversion: it had no direct source-image embeds, but 26 visible text-only slide citation blocks and five PDF-page footer references were removed. Markdown auto-fix resolved the resulting blank lines.
+- Neural-networks course gate passed: 5 documents / 34 callouts / 5 HTML previews / 6 details / 4 Tabs / 0 direct source-slide embeds. The scoped audit is clean and no visible PDF-page citations remain.
 
 ## Errors
 
