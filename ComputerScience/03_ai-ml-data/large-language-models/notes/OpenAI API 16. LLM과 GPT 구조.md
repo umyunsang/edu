@@ -8,86 +8,90 @@ tags:
   - attention
 course: large-language-models
 semester: extracurricular
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-29'
-updated: '2026-08-29'
+aliases: []
+created: 2026-08-29
+updated: 2026-08-29
 ---
 
 > [!abstract] 한 줄 요약
-> GPT 계열은 입력을 토큰 표현으로 바꾸고, 문맥 관계를 계산한 뒤, 다음 토큰의 확률 분포에서 출력을 이어 붙인다.
+> GPT는 토큰을 표현으로 바꾸고 앞선 문맥에 주의를 배분해 다음 토큰의 확률을 계산한다.
 
-“모델이 문장을 안다”는 표현은 편리하지만 모호하다. 강의의 구조 관점에서는 입력 토큰을 벡터로 표현하고, 여러 층에서 관계를 갱신하며, 마지막에 다음 토큰 후보의 점수를 계산하는 과정으로 풀어야 한다.
+## 이 노트의 지도
 
 ```mermaid
-flowchart LR
-  A["텍스트"] --> B["토큰화"]
-  B --> C["임베딩과 위치 정보"]
-  C --> D["Transformer 층"]
-  D --> E["다음 토큰 분포"]
-  E --> F["생성된 텍스트"]
+flowchart TB
+    subgraph Input[입력]
+        direction LR
+        A[토큰 입력] --> B[표현 변환]
+    end
+    subgraph Decision[판단]
+        direction LR
+        C[주의 계산] --> D[다음 예측]
+    end
+    B --> C
 ```
 
-## 구성 요소의 역할
+## 1. 토큰에서 확률까지
 
-| 구성 요소 | 하는 일 | 결과가 나빠질 때 의심할 점 |
-| :-- | :-- | :-- |
-| Tokenizer | 문자열을 모델이 다룰 단위로 나눈다 | 낯선 표기·길이·비용 추정 |
-| Embedding | 토큰에 수치 표현을 부여한다 | 의미 차이를 충분히 담는가 |
-| Position 정보 | 토큰 순서를 구분한다 | 같은 단어의 위치 차이가 사라지는가 |
-| Attention 층 | 문맥 안의 관련 위치를 반영한다 | 중요한 단서가 입력에 있는가 |
-| 출력 층 | 다음 토큰 후보를 점수화한다 | 생성 제어와 종료 조건이 적절한가 |
+텍스트는 토큰 단위로 나뉘고, 각 토큰은 임베딩과 위치 정보를 통해 모델 내부 표현이 된다. ==다음 토큰 예측== 는 앞선 문맥이 주어졌을 때 뒤에 올 토큰의 분포를 계산하는 학습 목표.
 
-> [!note] 다음 토큰 예측
-> 언어 모델은 한 번에 완성 문장을 꺼내기보다, 현재까지의 토큰을 조건으로 다음 토큰 후보의 분포를 반복해서 계산하는 방식으로 설명할 수 있다.
+> [!note] 판단 기준
+> 그럴듯한 문장을 만든다는 사실과 사실성·근거·안전성이 보장된다는 사실은 다르다.
 
-```html preview h=180
-<div style="font-family:system-ui,sans-serif;padding:18px;color:var(--foreground)">
-  <div style="font-weight:700;margin-bottom:10px">생성은 하나의 답을 고르는 일이 아니라 후보 분포를 갱신하는 일이다</div>
-  <div style="display:flex;gap:8px;align-items:end;height:88px">
-    <div style="flex:1;height:32%;background:var(--chart-4);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:58%;background:var(--chart-3);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:88%;background:var(--chart-1);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:46%;background:var(--chart-2);border-radius:var(--radius) var(--radius) 0 0"></div>
-  </div>
-  <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted-foreground);margin-top:7px"><span>후보 A</span><span>후보 B</span><span>선택 후보</span><span>후보 D</span></div>
-</div>
-```
+## 2. 주의 메커니즘
 
-## 구조를 읽는 관점
-
-<Tabs>
-<Tab label="표현">
-
-토큰 임베딩은 모델 내부에서 문자열을 다루기 위한 좌표다. 같은 단어라도 주변 문맥에 따라 이후 층에서 다른 표현으로 갱신될 수 있다.
-
-</Tab>
-<Tab label="관계">
-
-Attention은 특정 위치가 다른 위치를 얼마나 참고할지를 계산한다. 그래서 질문의 핵심 명사와 앞 문장의 조건이 함께 반영될 수 있다.
-
-</Tab>
-<Tab label="생성">
-
-출력은 후보들 사이의 선택 문제다. 온도·확률 절단 같은 생성 제어는 모델 지식 자체가 아니라 후보를 고르는 방식을 바꾼다.
-
-</Tab>
-</Tabs>
+주의는 현재 토큰이 문맥의 어느 부분을 참고할지 가중치를 정하는 계산이다.
 
 <details>
-<summary>왜 위치 정보가 필요한가</summary>
+<summary>주의의 간단한 표현</summary>
 
-Attention은 여러 토큰 사이의 관계를 계산하지만, 토큰만 놓고 보면 순서 자체는 구분되지 않는다. 따라서 “누가 누구에게 무엇을 했는가”처럼 순서가 의미를 바꾸는 언어를 처리하려면 위치에 대한 정보가 결합되어야 한다.
+질의·키·값을 이용한 가중 합은 다음처럼 쓸 수 있다.
+
+$$
+\operatorname{Attention}(Q,K,V) = \operatorname{softmax}\!\left(\frac{QK^{\mathsf T}}{\sqrt{d_k}}\right)V
+$$
 
 </details>
 
-> [!tip] 시험형 질문으로 바꾸기
-> “Tokenizer·Embedding·Attention·출력 층을 한 문장으로 연결하라”는 질문에 답할 수 있으면, 구성 요소를 단편적으로 외운 것이 아니다.
+## 데이터로 보기
 
-## 정리
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <label for="amt" style="font-size:14px;font-weight:600">예시 문맥 토큰 수</label>
+  <div id="out" style="font-size:30px;font-weight:700;color:var(--chart-1);margin:6px 0">토큰 12</div>
+  <input id="amt" type="range" min="1" max="64" step="1" value="12"
+    style="width:100%;accent-color:var(--primary)" />
+  <p style="font-size:13px;color:var(--muted-foreground)">값을 바꿔 문맥 길이와 계산·검토 범위의 관계를 생각한다.</p>
+  <script>
+    var amt = document.getElementById('amt');
+    var out = document.getElementById('out');
+    amt.addEventListener('input', function () {
+      out.textContent = '토큰 ' + Number(amt.value).toLocaleString();
+    });
+  </script>
+</div>
+```
 
-- GPT 구조는 입력 표현, 문맥 관계 계산, 다음 토큰 선택의 반복으로 볼 수 있다.
-- ==Attention은 문맥을 참고하는 방식==이고, Tokenizer는 입력 단위를 정하는 방식이다.
-- 생성 품질은 모델 구조뿐 아니라 주어진 문맥과 후보 선택 방식에도 좌우된다.
+> [!important] 해석의 경계
+> 토큰 수는 모델의 실제 최대 문맥이나 품질을 표시하지 않는다. 모델·요청·입력 내용에 따라 확인한다.
 
-> [!warning] 혼동 방지
-> “Transformer”와 “GPT”는 같은 범위의 말이 아니다. 전자는 강의가 설명하는 핵심 아키텍처이고, 후자는 그 계열을 활용한 언어 모델의 한 범주다.
+## 핵심 정리
+
+| 개념 | 정의 | 왜 중요한가 |
+| :-- | :-- | :-- |
+| 토큰 | 모델이 읽는 입력 단위 | 길이·비용·절단 위치에 영향 |
+| 임베딩 | 토큰의 수치 표현 | 관계 계산의 입력 |
+| 주의 | 문맥에 대한 가중 참조 | 다음 토큰 예측의 근거 |
+
+## 관련 개념
+
+- Tokenizer: 문자열을 토큰으로 나누는 방식
+- Embedding: 토큰·문서의 수치 표현
+
+> [!question]- 스스로 점검
+> **Q.** 다음 토큰 예측 모델이 긴 글의 사실성을 자동으로 보장하지 않는 이유는 무엇인가?
+>
+> **A.** 예측 목표는 문맥에서 그럴듯한 다음 단위를 고르는 것이며, 외부 사실 검증이나 출처 확인은 별도 과정이기 때문이다.

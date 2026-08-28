@@ -8,86 +8,88 @@ tags:
   - streaming
 course: large-language-models
 semester: extracurricular
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-29'
-updated: '2026-08-29'
+aliases: []
+created: 2026-08-29
+updated: 2026-08-29
 ---
 
 > [!abstract] 한 줄 요약
-> 대화형 생성은 메시지 목록을 입력으로 받아, 역할·문맥·생성 제어를 통해 다음 응답을 만든다.
+> 대화형 생성은 역할·문맥·부분 응답·도구 결과를 순서와 상태로 관리해야 한다.
 
-대화 API를 이해할 때 핵심 객체는 단일 문자열이 아니라 ==역할과 내용을 가진 메시지의 순서==다. 사용자의 새 질문만 보내는 것과 이전 응답까지 포함해 보내는 것은 모델이 볼 수 있는 문맥을 바꾼다.
+## 이 노트의 지도
 
 ```mermaid
-sequenceDiagram
-  participant U as 사용자
-  participant A as 앱
-  participant M as 모델
-  U->>A: 새 메시지
-  A->>M: 역할이 있는 메시지 목록
-  M-->>A: 부분 또는 완성 응답
-  A-->>U: 화면 갱신
-  A->>A: 필요한 문맥 저장
+flowchart TB
+    subgraph Input[입력]
+        direction LR
+        A[메시지 구성] --> B[모델 생성]
+    end
+    subgraph Decision[판단]
+        direction LR
+        C[부분 수신] --> D[상태 갱신]
+    end
+    B --> C
 ```
 
-## 메시지 설계
+## 1. 메시지와 역할
 
-| 요소 | 맡는 역할 | 설계 질문 |
-| :-- | :-- | :-- |
-| system·developer 성격의 지시 | 응답의 기준·제약을 제시 | 무엇을 반드시 지켜야 하는가 |
-| user 메시지 | 현재 요청을 제공 | 질문과 입력 자료가 충분한가 |
-| assistant 메시지 | 이전 답변을 문맥으로 유지 | 어떤 대화 기록이 필요한가 |
-| 생성 옵션 | 길이·다양성·종료 조건을 조절 | 일관성과 다양성 중 무엇이 중요한가 |
-| 도구 요청 | 모델 밖의 기능을 연결 | 결과를 어떻게 검증할 것인가 |
+시스템·사용자·도구 등 역할이 다르면 같은 문장도 대화에서 맡는 책임과 해석이 달라진다. ==대화 문맥== 는 현재 응답을 만들 때 모델에 전달되는 메시지와 상태의 묶음.
 
-> [!important] 문맥은 자동으로 남지 않는다
-> 대화 기록을 다음 요청에 포함해야 모델이 그 흐름을 참조할 수 있다. 따라서 기록을 얼마나 보낼지와 무엇을 요약할지는 애플리케이션의 설계 문제다.
+> [!note] 판단 기준
+> 모든 대화를 무한히 전달하기보다 작업에 필요한 맥락을 선택하고 민감 정보는 남기지 않는다.
 
-```html preview h=180
-<div style="font-family:system-ui,sans-serif;padding:18px;color:var(--foreground)">
-  <div style="font-weight:700;margin-bottom:12px">완성 응답과 스트리밍 응답의 차이</div>
-  <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <div style="flex:1;min-width:220px;padding:14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b>완성 후 전달</b><br><span style="font-size:12px;color:var(--muted-foreground)">응답 전체가 준비된 뒤 화면에 표시</span><div style="height:9px;margin-top:12px;background:var(--border);border-radius:var(--radius)"></div></div>
-    <div style="flex:1;min-width:220px;padding:14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b style="color:var(--chart-2)">스트리밍</b><br><span style="font-size:12px;color:var(--muted-foreground)">생성 조각을 받아 순차적으로 갱신</span><div style="display:flex;gap:5px;margin-top:12px"><span style="flex:1;height:9px;background:var(--chart-2);border-radius:var(--radius)"></span><span style="flex:1;height:9px;background:var(--chart-2);border-radius:var(--radius)"></span><span style="flex:1;height:9px;background:var(--border);border-radius:var(--radius)"></span></div></div>
-  </div>
-</div>
-```
+## 2. 스트리밍의 상태 관리
 
-## 동작을 나눠 보기
-
-<Tabs>
-<Tab label="일반 응답">
-
-완성된 응답 객체를 받은 뒤 내용을 표시한다. 후처리와 기록을 한 번에 다루기 편하다.
-
-</Tab>
-<Tab label="스트리밍">
-
-생성 조각이 도착할 때마다 화면을 갱신한다. 사용자가 먼저 반응을 보지만, 중간 상태·취소·종료 처리를 설계해야 한다.
-
-</Tab>
-<Tab label="도구 연결">
-
-모델이 함수나 외부 도구의 사용을 제안할 수 있다. 실제 실행과 결과 검증은 애플리케이션이 맡는다.
-
-</Tab>
-</Tabs>
+부분 응답은 즉시 보여 줄 수 있지만, 중단·오류·도구 호출·완료 상태를 구분해 누적해야 한다.
 
 <details>
-<summary>대화가 길어질수록 필요한 정책</summary>
+<summary>부분 응답 처리 체크</summary>
 
-모든 기록을 계속 보내면 입력이 길어지고 핵심이 흐려질 수 있다. 최근 메시지는 그대로 두고, 오래된 대화는 목표·제약·결론 중심으로 요약하는 식의 보존 정책을 미리 정한다.
+- 시작·진행·완료 상태를 구분한다.
+- 중단된 응답을 완성본으로 저장하지 않는다.
+- 도구 결과와 모델 텍스트의 출처를 구분한다.
 
 </details>
 
-> [!tip] 응답 종료를 확인하자
-> 화면에 텍스트가 보인다고 작업이 완전한 것은 아니다. 길이 제한, 중단, 도구 호출 대기 같은 종료 상태를 함께 기록하면 다음 처리를 결정할 수 있다.
+## 데이터로 보기
 
-## 정리
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <label for="amt" style="font-size:14px;font-weight:600">예시 수신 청크 수</label>
+  <div id="out" style="font-size:30px;font-weight:700;color:var(--chart-1);margin:6px 0">청크 5</div>
+  <input id="amt" type="range" min="1" max="20" step="1" value="5"
+    style="width:100%;accent-color:var(--primary)" />
+  <p style="font-size:13px;color:var(--muted-foreground)">값을 바꿔 부분 수신과 최종 완료를 구분하는 상태 관리를 생각한다.</p>
+  <script>
+    var amt = document.getElementById('amt');
+    var out = document.getElementById('out');
+    amt.addEventListener('input', function () {
+      out.textContent = '청크 ' + Number(amt.value).toLocaleString();
+    });
+  </script>
+</div>
+```
 
-- 대화형 생성의 입력은 메시지 하나가 아니라 역할이 있는 메시지 목록이다.
-- 스트리밍은 생성 방식을 바꾸지 않고 ==응답을 전달하는 시점==을 바꾼다.
-- 도구 사용은 모델의 제안과 실제 실행을 분리해 다뤄야 한다.
+> [!important] 해석의 경계
+> 청크 수는 지연 시간이나 품질 수치가 아니다. 실제 네트워크·모델·요청 조건에 따라 달라진다.
 
-> [!warning] 운영 관점
-> 대화 기록을 무한히 쌓는 구현은 비용·지연·문맥 혼선을 키울 수 있다. 문맥 보존의 기준을 코드 밖의 요구사항으로 먼저 정한다.
+## 핵심 정리
+
+| 개념 | 정의 | 왜 중요한가 |
+| :-- | :-- | :-- |
+| 역할 | 메시지의 책임 구분 | 지시와 맥락을 관리 |
+| 스트리밍 | 부분 응답을 순차 수신 | 반응성을 높이되 상태 관리 필요 |
+| 도구 호출 | 외부 작업 요청 | 입력·결과·오류를 분리 |
+
+## 관련 개념
+
+- API 계약: 요청과 응답 구조를 검증하는 방법
+- 도구 안전성: 외부 실행 전 권한과 결과를 확인하는 방법
+
+> [!question]- 스스로 점검
+> **Q.** 스트리밍 응답을 바로 최종 답으로 취급하면 왜 위험한가?
+>
+> **A.** 중단·오류·도구 호출이 남은 상태일 수 있어 완료 신호와 결과 구조를 확인해야 하기 때문이다.

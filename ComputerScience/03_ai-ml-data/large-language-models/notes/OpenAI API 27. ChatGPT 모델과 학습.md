@@ -8,83 +8,90 @@ tags:
   - fine-tuning
 course: large-language-models
 semester: extracurricular
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-29'
-updated: '2026-08-29'
+aliases: []
+created: 2026-08-29
+updated: 2026-08-29
 ---
 
-> [!abstract] 핵심 구분
-> 같은 모델을 사용하는 것과, 예시를 프롬프트에 넣는 것과, 추가 데이터로 모델을 조정하는 것은 서로 다른 개입이다.
+> [!abstract] 한 줄 요약
+> 대화형 모델의 행동은 프롬프트 속 사례, 학습 데이터, 선호·안전 기준이 서로 다른 시간 범위에서 바꾼다.
 
-강의는 GPT 계열의 확장과 대화형 모델 학습을 함께 다룬다. 이때 중요한 것은 버전명을 줄 세우는 일이 아니라, **사용자가 모델 행동에 영향을 주는 세 층**을 구분하는 것이다.
+## 이 노트의 지도
 
 ```mermaid
-flowchart TD
-  A["기본 언어 모델"] --> B["지시를 따르는 대화형 모델"]
-  B --> C["프롬프트 안의 예시"]
-  B --> D["추가 학습 데이터"]
-  C --> E["현재 요청에 맞춘 행동"]
-  D --> F["특정 작업에 맞춘 조정"]
+flowchart TB
+    subgraph Input[입력]
+        direction LR
+        A[요청 맥락] --> B[사례 제시]
+    end
+    subgraph Decision[판단]
+        direction LR
+        C[행동 조정] --> D[응답 평가]
+    end
+    B --> C
 ```
 
-## 세 가지 조정 방식
+## 1. 세 가지 적응 경로
 
-| 방식 | 무엇을 바꾸나 | 강의에서 보는 용도 | 주의점 |
-| :-- | :-- | :-- | :-- |
-| 기본 호출 | 요청의 입력만 바꾼다 | 질의·요약·번역 | 지시가 모호하면 결과도 흔들린다 |
-| In-Context Learning | 프롬프트에 예시를 넣는다 | 형식·패턴을 즉시 보여 주기 | 예시가 토큰 예산을 사용한다 |
-| Fine-Tuning | 학습 데이터로 모델을 조정한다 | 반복되는 전문 작업 | 데이터 품질·형식 검증이 필요하다 |
-| 역할 지시 | 대화의 기준과 제약을 부여한다 | 응답 톤·범위 설정 | 사용자 요청과 충돌할 수 있다 |
+In-Context Learning은 요청 안의 사례로, Fine-Tuning은 학습 데이터로, 대화형 정렬은 선호·안전 신호로 행동을 조정한다. ==적응== 는 새 과제·형식·선호에 맞춰 모델의 출력을 바꾸는 과정.
 
-> [!important] 결정 기준
-> 반복되는 형식이 단순하고 예시 몇 개로 충분하면 먼저 프롬프트를 설계한다. 데이터가 지속적으로 쌓이고 작업 정의가 안정적일 때 Fine-Tuning을 검토한다.
+> [!note] 판단 기준
+> 세 경로는 서로 대체 관계가 아니다. 반복성·데이터·평가 가능성에 따라 선택한다.
 
-```html preview h=170
-<div style="font-family:system-ui,sans-serif;padding:18px;color:var(--foreground)">
-  <div style="font-weight:700;margin-bottom:12px">모델 행동에 개입하는 깊이</div>
-  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
-    <div style="padding:12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b>요청</b><br><span style="font-size:12px;color:var(--muted-foreground)">현재 질문</span></div>
-    <div style="padding:12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b style="color:var(--chart-3)">예시</b><br><span style="font-size:12px;color:var(--muted-foreground)">현재 문맥</span></div>
-    <div style="padding:12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b style="color:var(--chart-5)">추가 학습</b><br><span style="font-size:12px;color:var(--muted-foreground)">지속적 조정</span></div>
-  </div>
-</div>
-```
+## 2. 대화형 응답의 평가
 
-## 학습 흐름을 해석하는 법
-
-<Tabs>
-<Tab label="사전 학습">
-
-대규모 텍스트에서 다음 토큰 예측을 반복해 언어 패턴과 표현을 학습하는 단계로 설명된다.
-
-</Tab>
-<Tab label="대화 정렬">
-
-질문에 답하고 지시를 따르는 대화형 상호작용을 목표로 행동을 조정하는 단계다.
-
-</Tab>
-<Tab label="작업 적응">
-
-프롬프트 예시 또는 별도의 Fine-Tuning으로 특정 업무의 입력·출력 형식을 안정시키는 단계다.
-
-</Tab>
-</Tabs>
+유용함뿐 아니라 사실성, 안전성, 지시 준수, 맥락 유지가 함께 검토 대상이 된다.
 
 <details>
-<summary>In-Context Learning과 Fine-Tuning을 고르는 질문</summary>
+<summary>학습 경로를 고르는 질문</summary>
 
-“이 요청의 예시는 매번 달라지는가?”와 “입력·출력 형식이 오랫동안 고정되는가?”를 먼저 묻는다. 전자라면 문맥 안의 예시가, 후자라면 학습 데이터 기반 조정이 더 자연스러운 후보가 된다.
+- 요청 안에 사례를 넣어도 되는가
+- 반복 작업과 안정된 데이터가 있는가
+- 원하는 행동을 독립 사례로 평가할 수 있는가
 
 </details>
 
-> [!tip] 입력을 분리해 쓰기
-> 역할, 작업, 제약, 예시, 실제 질문을 구획해 적으면 결과가 어긋났을 때 어느 부분을 수정할지 추적하기 쉽다.
+## 데이터로 보기
 
-## 정리
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px">
+  <div id="cards" style="display:flex;gap:14px;flex-wrap:wrap"></div>
+  <script>
+    var stats = [["맥락 사례","1","요청 안 조정","var(--chart-1)"],["학습 데이터","1","반복 행동","var(--chart-2)"],["응답 평가","1","채택 근거","var(--chart-3)"]];
+    document.getElementById('cards').innerHTML = stats.map(function (s) {
+      return '<div style="flex:1;min-width:150px;padding:16px;background:var(--card);' +
+        'color:var(--card-foreground);border:1px solid var(--border);' +
+        'border-radius:var(--radius)">' +
+        '<div style="font-size:13px;color:var(--muted-foreground)">' + s[0] + '</div>' +
+        '<div style="font-size:26px;font-weight:700;margin-top:4px">' + s[1] + '</div>' +
+        '<div style="font-size:12px;font-weight:600;margin-top:4px;color:' + s[3] + '">' +
+        s[2] + '</div>' +
+        '</div>';
+    }).join('');
+  </script>
+</div>
+```
 
-- 모델 계열의 발전은 더 큰 모델이라는 한 축만으로 설명되지 않는다.
-- ==In-Context Learning은 현재 프롬프트 안에서 일어나는 적응==이고, Fine-Tuning은 학습 데이터로 이루어지는 적응이다.
-- 대화형 모델은 역할 지시와 메시지 맥락을 통해 응답의 형태를 조정한다.
+> [!important] 해석의 경계
+> 카드의 1은 성능 값이 아니라 세 적응 경로의 확인 요소를 뜻한다.
 
-> [!warning] 범위 주의
-> 강의에 나온 모델명·세부 비교는 당시 수업의 예시다. 이 노트는 최신 모델 목록이나 배포 상태를 확정하지 않는다.
+## 핵심 정리
+
+| 개념 | 정의 | 왜 중요한가 |
+| :-- | :-- | :-- |
+| ICL | 요청 안의 예시로 적응 | 빠른 과제별 실험 |
+| Fine-Tuning | 데이터로 행동을 조정 | 반복 형식의 일관성 검토 |
+| 평가 | 응답을 기준과 비교 | 유용함과 위험을 구분 |
+
+## 관련 개념
+
+- 프롬프트: 요청 안의 역할·형식·사례 설계
+- Fine-Tuning: 데이터 기반 행동 조정
+
+> [!question]- 스스로 점검
+> **Q.** 대화형 모델을 평가할 때 유용함 하나만 보면 안 되는 이유는 무엇인가?
+>
+> **A.** 도움이 되는 것처럼 보여도 사실 오류·안전 위반·문맥 불일치가 있을 수 있어 여러 기준을 분리해야 한다.
