@@ -38,6 +38,12 @@
 - Its measured structure is 5 callouts, 2 HTML previews, 2 details blocks, 1 Tabs block, 1 Mermaid diagram, and 5 embedded rendered slides.
 - The note explicitly distinguishes source-captured interface state, source filename typo, and unverified GHZ execution.
 
+## Third-note evidence map
+
+- The physics and linear-algebra source explicitly links eigenvectors, unitary transformation, tensor products, quantum state, Schrödinger equation, and Rayleigh-Ritz.
+- Verified slides define an eigenvector as a nonzero vector whose direction is maintained by a linear transformation, and describe unitary transformations as norm-preserving and reversible.
+- The available evidence set also illustrates density loss with increasing dimension and states the Rayleigh-Ritz energy lower-bound inequality. The source has no p011 or p016 rendered asset, so those pages will not be cited as image evidence.
+
 ## Open questions
 
 - Exact PDF-to-current-note mapping and per-PDF slide asset availability.
