@@ -63,3 +63,9 @@
 - Scoped OpenKnowledge audits are clean: quantum-lecture 8 docs, quantum-ml 11 docs, neural-networks 5 docs.
 - Keep the separate risk visible: most quantum-lecture diagrams still use tiny projected mobile type; that is not an overflow defect and was not silently redesigned in this pass.
 - Began three isolated course lanes: generative-ai-fine-tuning, large-language-models, and ai-system-design.
+
+## 2026-08-29 Parallel course gates
+
+- Completed `generative-ai-fine-tuning`: 8 notes plus README, 32 callouts / 16 HTML previews / 8 details / 8 Tabs / 0 source embeds; 9-document audit and lint clean. Preserved three source typos explicitly rather than correcting them.
+- Completed `ai-system-design`: 5 notes plus README, 25 callouts / 12 HTML previews / 10 details / 5 Tabs / 9 Mermaid / 0 source embeds; 6-document audit and lint clean. Treated the identical week-4 extracts as one source without inventing sparse details.
+- `large-language-models` is in final README and course-gate validation. Reused the free lane for `computer-vision` reconstruction.
