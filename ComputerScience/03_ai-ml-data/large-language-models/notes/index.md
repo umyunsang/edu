@@ -5,6 +5,7 @@
 * [04. RAG의 원리와 인덱싱](./04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md) - 외부 지식을 검색해 생성 입력을 보강하는 RAG의 목적과 로딩·분할·임베딩·저장 절차를 정리한다.
 * [19. 검색 최적화와 LlamaIndex·벡터 저장소](./19.%20%EA%B2%80%EC%83%89%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%99%80%20LlamaIndex%C2%B7%EB%B2%A1%ED%84%B0%20%EC%A0%80%EC%9E%A5%EC%86%8C.md) - 검색기와 재순위화, LlamaIndex의 데이터 구조, Chroma·FAISS 벡터 저장소를 하나의 검색 설계로 연결한다.
 * [Chat Completion 대화 설계와 편집](./73.%20Chat%20Completion%20%EB%8C%80%ED%99%94%20%EC%84%A4%EA%B3%84%EC%99%80%20%ED%8E%B8%EC%A7%91.md) - 메시지 역할과 응답 구조, 문맥 유지, 출력 제어, 문장 편집 사례를 구분하고 원문의 API 충돌과 키 노출 위험을 식별한다.
+* [GPT 구조와 학습 전략](./19.%20GPT%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%ED%95%99%EC%8A%B5%20%EC%A0%84%EB%9E%B5.md) - GPT의 디코더 구조, 세대별 확장, 문맥 학습과 미세조정, RLHF의 역할을 원본 수치와 함께 정리한다.
 * [NLP 처리에서 어텐션까지](./01.%20NLP%20%EC%B2%98%EB%A6%AC%EC%97%90%EC%84%9C%20%EC%96%B4%ED%85%90%EC%85%98%EA%B9%8C%EC%A7%80.md) - 자연어 처리의 발전 흐름과 7단계 처리 과정, Seq2Seq의 병목 및 Attention의 해결 관점을 정리한다.
 * [OpenAI API 04. LLM과 NLP의 발전](./OpenAI%20API%2004.%20LLM%EA%B3%BC%20NLP%EC%9D%98%20%EB%B0%9C%EC%A0%84.md) - 규칙 기반 처리에서 확률 모델, 순환 신경망, Transformer로 이어지는 언어 처리 관점의 변화를 정리한다.
 * [OpenAI API 106. Tokenizer와 Embedding](./OpenAI%20API%20106.%20Tokenizer%EC%99%80%20Embedding.md) - 토큰화가 입력 단위와 비용을 정하고, 임베딩이 의미 기반 검색을 위한 수치 표현을 제공하는 과정을 정리한다.
