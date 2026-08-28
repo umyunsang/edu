@@ -37,3 +37,4 @@
 # (제외되면 OK 가 no-such-file 로 보고 렌더링하지 않는다)
 !**/assets/*.png
 !**/assets/*.jpg
+!**/assets/*.webp
