@@ -13,6 +13,7 @@
 - Began the Braket source pass and recorded the first two visually verified console states.
 - Verified the IonQ hardware and notebook-creation slides; the Braket note can now distinguish provider characteristics from the console workflow.
 - Verified the notebook stop action and recorded that the source does not show a GHZ run result.
+- Replaced `notes/02. 양자클라우드 Braket 기초 사용법.md`; fixed one blockquote-spacing warning and verified a clean scoped audit.
 
 ## Errors
 

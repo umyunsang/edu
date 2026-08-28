@@ -32,6 +32,12 @@
 - The next verified slides show an IonQ hardware claim and the notebook-instance creation screen; current interface screenshots are treated as the source's captured state, not a claim about today's AWS console.
 - The final verified workflow slide exposes the notebook action menu with a stop action. The source's GHZ slide is only a section marker, so it will not be used as evidence for a successful execution.
 
+## Second-note verification
+
+- `02. 양자클라우드 Braket 기초 사용법.md` passed OpenKnowledge markdownlint, frontmatter, OKF, and link checks with zero findings.
+- Its measured structure is 5 callouts, 2 HTML previews, 2 details blocks, 1 Tabs block, 1 Mermaid diagram, and 5 embedded rendered slides.
+- The note explicitly distinguishes source-captured interface state, source filename typo, and unverified GHZ execution.
+
 ## Open questions
 
 - Exact PDF-to-current-note mapping and per-PDF slide asset availability.
