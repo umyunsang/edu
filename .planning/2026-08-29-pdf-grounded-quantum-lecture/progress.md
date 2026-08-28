@@ -69,3 +69,6 @@
 - Completed `generative-ai-fine-tuning`: 8 notes plus README, 32 callouts / 16 HTML previews / 8 details / 8 Tabs / 0 source embeds; 9-document audit and lint clean. Preserved three source typos explicitly rather than correcting them.
 - Completed `ai-system-design`: 5 notes plus README, 25 callouts / 12 HTML previews / 10 details / 5 Tabs / 9 Mermaid / 0 source embeds; 6-document audit and lint clean. Treated the identical week-4 extracts as one source without inventing sparse details.
 - `large-language-models` is in final README and course-gate validation. Reused the free lane for `computer-vision` reconstruction.
+- Completed `large-language-models`: 16 notes plus README, 64 callouts / 16 HTML previews / 16 details / 16 Tabs / 0 source embeds; 17-document audit and lint clean. Two source faults are visible warnings, not silent corrections.
+- Completed `computer-vision`: 6 valid lecture notes plus README, 39 callouts / 12 HTML previews / 13 details / 6 Tabs / 6 Mermaid / 0 source embeds; 7-document audit and lint clean. Excluded declared duplicate PDFs and left three zero-text exam sources undocumented rather than infer content.
+- Active parallel courses: machine-learning and big-data-analysis.
