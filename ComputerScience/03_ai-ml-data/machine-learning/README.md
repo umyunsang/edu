@@ -1,62 +1,56 @@
 ---
-title: 머신러닝
-description: '회귀, SVM, RNN, Transformer. 학기: 3-1.'
-type: course-index
-tags:
-- course
-- 3-1
+title: "Machine Learning 학습 노트"
+description: "회귀, 분류, 시퀀스, 이미지, Transformer를 다루는 학습 노트 모음"
+type: lecture
 course: machine-learning
-semester: 3-1
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+semester: "2025-1"
+status: stable
+created: "2026-08-29"
+updated: "2026-08-29"
+tags:
+  - machine-learning
 ---
 
-> [!abstract] 이 과목은
-> 회귀, SVM, RNN, Transformer. 학기: 3-1.
+이 과목은 회귀·분류에서 시퀀스 모델과 이미지·Transformer까지, 입력 표현·학습 규칙·검증 관점을 연결해 정리한다. 각 노트는 독립적으로 읽을 수 있고, 같은 주제 안에서는 아래 순서로 학습할 수 있다.
 
-## 정리문서
+## 회귀 분석
 
-모두 `notes/` 에 있다. 총 8편.
+- [01. 선형 회귀 이론](<./notes/01. 선형 회귀 이론.md>)
+- [01. 단일 선형 회귀 - LSM과 경사 하강법](<./notes/01. 단일 선형 회귀 - LSM과 경사 하강법.md>)
+- [01. 선형 회귀 실습 설계](<./notes/01. 선형 회귀 실습 설계.md>)
+- [01. 다중 선형 회귀](<./notes/01. 다중 선형 회귀.md>)
+- [01. 우버 요금 다중 선형 회귀](<./notes/01. 우버 요금 다중 선형 회귀.md>)
 
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [Simple Linear Regression](<./notes/LSM, GDM 선형 회귀모델.md>) | — |
-| [Linear Regression](<./notes/Linear Regression.md>) | — |
-| [Multiple Linear Regression](<./notes/Multiple_Linear_Regression.md>) | — |
-| [Quadratic Programming 기반 SVM(Support Vector Machine)](<./notes/QP SVM.md>) | — |
-| [SVM](<./notes/SVM.md>) | — |
-| [x_train: 정규화가 완료된 학습용 입력 데이터](<./notes/대비문제.md>) | — |
-| [머신러닝 핵심 수학 개념](<./notes/머신러닝 핵심 수학 개념.md>) | — |
-| [Multiple Linear Regression with Uber Dataset](<./notes/우버데이터_Multiple_Linear_Regression.md>) | — |
+## 분류와 거리 기반 학습
 
-## 원본 자료
+- [01. SVM의 마진과 경사 하강법](<./notes/01. SVM의 마진과 경사 하강법.md>)
+- [01. QP 기반 SVM과 마진](<./notes/01. QP 기반 SVM과 마진.md>)
+- [01. SVM 실습과 결정 경계](<./notes/01. SVM 실습과 결정 경계.md>)
+- [01. 엔트로피, 결정 트리와 KNN](<./notes/01. 엔트로피, 결정 트리와 KNN.md>)
+- [01. 결정 트리와 KNN 실습](<./notes/01. 결정 트리와 KNN 실습.md>)
+- [01. 머신러닝 대비 문제](<./notes/01. 머신러닝 대비 문제.md>)
+- [01. SVM과 KNN 대비 문제](<./notes/01. SVM과 KNN 대비 문제.md>)
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 21건.
+## 시퀀스와 언어 표현
 
-- `11주차_실습_CNN, U_Net.pdf`
-- `14주차_머신러닝_Transformer_강의자료 2.pdf`
-- `14주차_머신러닝_Transformer_강의자료.pdf`
-- `14주차_머신러닝_Word2Vec(RNN-LSTM 리뷰포함).pdf`
-- `20250415_Suport_vector_machine_실습 강의자료.pdf`
-- `250401_Linear_Regression_실습.pdf`
-- `250508_머신러닝_03분반_엔트로피(결정트리,KNN).pdf`
-- `250520_Decision_Tree_KNN_실습자료.pdf`
-- `LSM, GDM 선형 회귀모델.pdf`
-- `Linear_Regression_이론.pdf`
-- `Multiple_Linear_Regression.pdf`
-- `QP SVM.pdf`
-- `SVM.pdf`
-- `대비문제.pdf`
-- `머신러닝 중간고사 대비문제.pdf`
-- `머신러닝_03분반_13주차_강의영상_(RNN,LSTM))_판서.pdf`
-- `머신러닝_12주차_250522_Super Resolution using CNN.pdf`
-- `머신러닝_RNN_LSTM.pdf`
-- `머신러닝_Transformer-예시.pdf`
-- `머신러닝_실습_RNN_LSTM.pdf`
-- `우버데이터_Multiple_Linear_Regression.pdf`
+- [01. RNN과 LSTM 기초](<./notes/01. RNN과 LSTM 기초.md>)
+- [01. RNN·LSTM 판서 자료의 텍스트 추출 한계](<./notes/01. RNN·LSTM 판서 자료의 텍스트 추출 한계.md>)
+- [01. Word2Vec과 순환 신경망 리뷰](<./notes/01. Word2Vec과 순환 신경망 리뷰.md>)
+- [01. RNN·LSTM 실습](<./notes/01. RNN·LSTM 실습.md>)
 
-## 관련 과목
+## 이미지 모델
 
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+- [01. CNN과 U-Net 실습](<./notes/01. CNN과 U-Net 실습.md>)
+- [01. CNN 기반 초해상도](<./notes/01. CNN 기반 초해상도.md>)
+
+## Transformer
+
+- [01. Transformer 언어 모델링](<./notes/01. Transformer 언어 모델링.md>)
+- [01. Transformer Self-Attention](<./notes/01. Transformer Self-Attention.md>)
+- [01. Transformer 예시 자료의 텍스트 추출 한계](<./notes/01. Transformer 예시 자료의 텍스트 추출 한계.md>)
+
+## 읽기 기준
+
+- 모델을 볼 때는 입력 표현, 학습 규칙, 평가 기준을 함께 확인한다.
+- 수치 결과는 데이터 분할과 전처리 조건을 분리해 해석한다.
+- 본문 텍스트가 충분하지 않은 자료는 추정하지 않고 텍스트 추출 한계 노트로 구분한다.
