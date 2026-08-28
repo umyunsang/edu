@@ -1,8 +1,6 @@
-# 이 파일은 OpenKnowledge가 에이전트에게 폴더의 의미를 알려주는 가이드다.
-# 사람은 Obsidian 폴더 트리를 보고, LLM은 이 설명을 본다.
-# scripts/generate_folder_guides.py 로 생성됨 — 손으로 고쳐도 되지만 스크립트도 같이 갱신할 것.
-title: "코딩 테스트"
-description: "알고리즘 문제 풀이 정리. 강의자료 없이 문제 풀이 노트만 있다. 학기: extracurricular. 원본 강의자료는 `pdf/` 에 있고, 그것을 근거로 쓴 정리문서가 이 폴더 루트에 있다. 정리문서를 새로 쓰거나 다시 쓸 때는 `.agents/skills/lecture-pdf-to-note` 스킬을 따른다."
+title: 코딩 테스트
+description: '알고리즘 문제 풀이 정리. 강의자료 없이 문제 풀이 노트만 있다. 학기: extracurricular.'
 tags:
-  - course
-  - semester/extracurricular
+- course
+- extracurricular
+semester: extracurricular

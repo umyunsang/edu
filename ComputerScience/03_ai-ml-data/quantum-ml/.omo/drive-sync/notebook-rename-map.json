@@ -1,702 +1,702 @@
 {
  "count": 174,
- "note": "quantum-ml 기준 상대경로. 양자 ML 과정.md 링크 갱신용.",
+ "note": "quantum-ml 기준 상대경로. 2단계 폴더 재배치로 new 는 work/ 평면.",
  "map": [
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day01_01_01_iris_environment_eda_logistic_knn_baselines_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/01_iris_environment_eda_logistic_knn_baselines.ipynb"
+   "new": "work/01_iris_environment_eda_logistic_knn_baselines.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day01_01_02_iris_logistic_regression_and_visualization_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/02_iris_logistic_regression_and_visualization.ipynb"
+   "new": "work/02_iris_logistic_regression_and_visualization.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day24_01_01_classical_svm_baseline_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/03_classical_svm_baseline.ipynb"
+   "new": "work/03_classical_svm_baseline.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day24_02_01_qsvc_iris_classifier_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/04_qsvc_iris_classifier.ipynb"
+   "new": "work/04_qsvc_iris_classifier.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_01_qsvm_training_data_preparation_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/05_qsvm_training_data_preparation.ipynb"
+   "new": "work/05_qsvm_training_data_preparation.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_02_qsvc_model_construction_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/06_qsvc_model_construction.ipynb"
+   "new": "work/06_qsvc_model_construction.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_03_qsvm_training_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/07_qsvm_training.ipynb"
+   "new": "work/07_qsvm_training.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_04_qsvm_prediction_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/08_qsvm_prediction.ipynb"
+   "new": "work/08_qsvm_prediction.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day26_01_01_classification_metrics_confusion_matrix_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/09_classification_metrics_confusion_matrix.ipynb"
+   "new": "work/09_classification_metrics_confusion_matrix.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day26_04_01_qsvm_performance_evaluation_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/10_qsvm_performance_evaluation.ipynb"
+   "new": "work/10_qsvm_performance_evaluation.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_01_qsvm_environment_setup_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/11_qsvm_environment_setup.ipynb"
+   "new": "work/11_qsvm_environment_setup.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_02_qsvm_data_preparation_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/12_qsvm_data_preparation.ipynb"
+   "new": "work/12_qsvm_data_preparation.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_03_qsvm_training_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/13_qsvm_training.ipynb"
+   "new": "work/13_qsvm_training.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_04_qsvm_prediction_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/14_qsvm_prediction.ipynb"
+   "new": "work/14_qsvm_prediction.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_05_qsvm_accuracy_analysis_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/15_qsvm_accuracy_analysis.ipynb"
+   "new": "work/15_qsvm_accuracy_analysis.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_06_qsvm_precision_recall_f1_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/16_qsvm_precision_recall_f1.ipynb"
+   "new": "work/16_qsvm_precision_recall_f1.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_07_qsvm_classification_report_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/17_qsvm_classification_report.ipynb"
+   "new": "work/17_qsvm_classification_report.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_08_qsvm_confusion_matrix_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/18_qsvm_confusion_matrix.ipynb"
+   "new": "work/18_qsvm_confusion_matrix.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_09_qsvm_roc_auc_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/19_qsvm_roc_auc.ipynb"
+   "new": "work/19_qsvm_roc_auc.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_10_qsvm_performance_report_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/20_qsvm_performance_report.ipynb"
+   "new": "work/20_qsvm_performance_report.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_04_01_classical_svm_performance_baseline_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/21_classical_svm_performance_baseline.ipynb"
+   "new": "work/21_classical_svm_performance_baseline.ipynb"
   },
   {
    "old": "04.quantum-kernel-classification/01.iris-qsvm/day27_04_02_qsvm_performance_analysis_improvement_lab.ipynb",
-   "new": "04.quantum-kernel-classification/01.iris-qsvm/22_qsvm_performance_analysis_improvement.ipynb"
+   "new": "work/22_qsvm_performance_analysis_improvement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_01_hadamard_10_shots_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/01_hadamard_10_shots.ipynb"
+   "new": "work/01_hadamard_10_shots.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_02_hadamard_100_shots_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/02_hadamard_100_shots.ipynb"
+   "new": "work/02_hadamard_100_shots.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_03_hadamard_1000_shots_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/03_hadamard_1000_shots.ipynb"
+   "new": "work/03_hadamard_1000_shots.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_01_two_qubit_basis_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/04_two_qubit_basis_measurement.ipynb"
+   "new": "work/04_two_qubit_basis_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_02_single_hadamard_two_qubit_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/05_single_hadamard_two_qubit.ipynb"
+   "new": "work/05_single_hadamard_two_qubit.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_03_two_hadamard_two_qubit_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/06_two_hadamard_two_qubit.ipynb"
+   "new": "work/06_two_hadamard_two_qubit.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_01_zero_state_histogram_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/07_zero_state_histogram.ipynb"
+   "new": "work/07_zero_state_histogram.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_02_hadamard_histogram_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/08_hadamard_histogram.ipynb"
+   "new": "work/08_hadamard_histogram.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_03_x_gate_histogram_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/09_x_gate_histogram.ipynb"
+   "new": "work/09_x_gate_histogram.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_04_hx_gate_histogram_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/10_hx_gate_histogram.ipynb"
+   "new": "work/10_hx_gate_histogram.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_02_01_to_02_03_hadamard_shot_convergence_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/11_hadamard_shot_convergence.ipynb"
+   "new": "work/11_hadamard_shot_convergence.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/12_two_qubit_hadamard_comparison.ipynb"
+   "new": "work/12_two_qubit_hadamard_comparison.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/13_single_qubit_gate_effects.ipynb"
+   "new": "work/13_single_qubit_gate_effects.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day07_02_01_bell_state_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/14_bell_state_measurement.ipynb"
+   "new": "work/14_bell_state_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_01_cnot_basis_state_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/15_cnot_basis_state.ipynb"
+   "new": "work/15_cnot_basis_state.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_02_hadamard_superposition_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/16_hadamard_superposition.ipynb"
+   "new": "work/16_hadamard_superposition.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_03_bell_state_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/17_bell_state.ipynb"
+   "new": "work/17_bell_state.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_01_bell_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/18_bell_measurement.ipynb"
+   "new": "work/18_bell_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_01_bell_circuit_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/19_bell_circuit.ipynb"
+   "new": "work/19_bell_circuit.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_02_cnot_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/20_cnot_measurement.ipynb"
+   "new": "work/20_cnot_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_03_hadamard_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/21_hadamard_measurement.ipynb"
+   "new": "work/21_hadamard_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_03_01_classical_random_bits_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/22_classical_random_bits.ipynb"
+   "new": "work/22_classical_random_bits.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_03_02_bell_histogram_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/23_bell_histogram.ipynb"
+   "new": "work/23_bell_histogram.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_10_xx_identity_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/24_xx_identity_measurement.ipynb"
+   "new": "work/24_xx_identity_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_11_hh_identity_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/25_hh_identity_measurement.ipynb"
+   "new": "work/25_hh_identity_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_12_hzh_phase_flip_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/26_hzh_phase_flip_measurement.ipynb"
+   "new": "work/26_hzh_phase_flip_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_x_02_01_x_gate_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/27_x_gate_measurement.ipynb"
+   "new": "work/27_x_gate_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_05_y_gate_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/28_y_gate_measurement.ipynb"
+   "new": "work/28_y_gate_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_06_xy_gate_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/29_xy_gate_measurement.ipynb"
+   "new": "work/29_xy_gate_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_07_x_y_gate_comparison_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/30_x_y_gate_comparison.ipynb"
+   "new": "work/30_x_y_gate_comparison.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_02_z_gate_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/31_z_gate_measurement.ipynb"
+   "new": "work/31_z_gate_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_03_xz_gate_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/32_xz_gate_measurement.ipynb"
+   "new": "work/32_xz_gate_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_04_hzh_gate_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/33_hzh_gate_measurement.ipynb"
+   "new": "work/33_hzh_gate_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day10_02_01_hx_xh_order_measurement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/34_hx_xh_order_measurement.ipynb"
+   "new": "work/34_hx_xh_order_measurement.ipynb"
   },
   {
    "old": "01.quantum-foundations/03.gates-measurement-and-entanglement/day10_02_02_multi_qubit_rotation_entanglement_lab.ipynb",
-   "new": "01.quantum-foundations/03.gates-measurement-and-entanglement/35_multi_qubit_rotation_entanglement.ipynb"
+   "new": "work/35_multi_qubit_rotation_entanglement.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_01_hadamard_counts_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/01_hadamard_counts.ipynb"
+   "new": "work/01_hadamard_counts.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_02_hadamard_probability_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/02_hadamard_probability.ipynb"
+   "new": "work/02_hadamard_probability.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_03_probability_vector_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/03_probability_vector.ipynb"
+   "new": "work/03_probability_vector.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_04_zero_state_probability_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/04_zero_state_probability.ipynb"
+   "new": "work/04_zero_state_probability.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_05_hadamard_state_probability_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/05_hadamard_state_probability.ipynb"
+   "new": "work/05_hadamard_state_probability.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_06_x_state_probability_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/06_x_state_probability.ipynb"
+   "new": "work/06_x_state_probability.ipynb"
   },
   {
    "old": "01.quantum-foundations/02.bits-qubits-and-state/day06_derived_03_02_01_to_03_02_06_measurement_probability_vectors_lab.ipynb",
-   "new": "01.quantum-foundations/02.bits-qubits-and-state/07_measurement_probability_vectors.ipynb"
+   "new": "work/07_measurement_probability_vectors.ipynb"
   },
   {
    "old": "01.quantum-foundations/01.why-quantum-and-qml/week01_04_qml_quantum_role_numpy_feature_map_lab.ipynb",
-   "new": "01.quantum-foundations/01.why-quantum-and-qml/01_qml_quantum_role_numpy_feature_map.ipynb"
+   "new": "work/01_qml_quantum_role_numpy_feature_map.ipynb"
   },
   {
    "old": "01.quantum-foundations/01.why-quantum-and-qml/supplement_02_xor_expressive_power_classical_baselines_lab.ipynb",
-   "new": "01.quantum-foundations/01.why-quantum-and-qml/02_xor_expressive_power_classical_baselines.ipynb"
+   "new": "work/02_xor_expressive_power_classical_baselines.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day01_03_02_synthetic_binary_classification_dataset_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/01_synthetic_binary_classification_dataset.ipynb"
+   "new": "work/01_synthetic_binary_classification_dataset.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day01_03_03_pca_projection_and_explained_variance_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/02_pca_projection_and_explained_variance.ipynb"
+   "new": "work/02_pca_projection_and_explained_variance.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day09_04_01_feature_encoded_entangling_circuit_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/03_feature_encoded_entangling_circuit.ipynb"
+   "new": "work/03_feature_encoded_entangling_circuit.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day09_04_02_feature_encoded_no_cx_circuit_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/04_feature_encoded_no_cx_circuit.ipynb"
+   "new": "work/04_feature_encoded_no_cx_circuit.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day09_04_03_feature_encoded_cx_circuit_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/05_feature_encoded_cx_circuit.ipynb"
+   "new": "work/05_feature_encoded_cx_circuit.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day09_zz_04_04_feature_map_reps1_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/06_feature_map_reps1.ipynb"
+   "new": "work/06_feature_map_reps1.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day09_zz_04_05_feature_map_dim3_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/07_feature_map_dim3.ipynb"
+   "new": "work/07_feature_map_dim3.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day09_zz_04_06_feature_map_reps3_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/08_feature_map_reps3.ipynb"
+   "new": "work/08_feature_map_reps3.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day12_01_02_customer_feature_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/09_customer_feature_encoding.ipynb"
+   "new": "work/09_customer_feature_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day12_02_01_parameterized_feature_map_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/10_parameterized_feature_map.ipynb"
+   "new": "work/10_parameterized_feature_map.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day12_02_full_quantum_feature_space_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/11_full_quantum_feature_space.ipynb"
+   "new": "work/11_full_quantum_feature_space.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day14_01_01_single_feature_angle_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/12_single_feature_angle_encoding.ipynb"
+   "new": "work/12_single_feature_angle_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day14_01_02_two_feature_angle_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/13_two_feature_angle_encoding.ipynb"
+   "new": "work/13_two_feature_angle_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day14_01_03_multi_feature_angle_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/14_multi_feature_angle_encoding.ipynb"
+   "new": "work/14_multi_feature_angle_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day14_01_04_basis_angle_hybrid_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/15_basis_angle_hybrid_encoding.ipynb"
+   "new": "work/15_basis_angle_hybrid_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day14_01_05_customer_hybrid_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/16_customer_hybrid_encoding.ipynb"
+   "new": "work/16_customer_hybrid_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day15_02_01_amplitude_encoding_workflow_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/17_amplitude_encoding_workflow.ipynb"
+   "new": "work/17_amplitude_encoding_workflow.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day15_02_02_amplitude_encoding_simulation_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/18_amplitude_encoding_simulation.ipynb"
+   "new": "work/18_amplitude_encoding_simulation.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day15_02_03_amplitude_encoding_function_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/19_amplitude_encoding_function.ipynb"
+   "new": "work/19_amplitude_encoding_function.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day15_03_01_encoding_comparison_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/20_encoding_comparison.ipynb"
+   "new": "work/20_encoding_comparison.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_02_01_single_pauli_feature_maps_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/21_single_pauli_feature_maps.ipynb"
+   "new": "work/21_single_pauli_feature_maps.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_02_02_multi_pauli_feature_maps_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/22_multi_pauli_feature_maps.ipynb"
+   "new": "work/22_multi_pauli_feature_maps.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_02_03_combined_pauli_feature_maps_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/23_combined_pauli_feature_maps.ipynb"
+   "new": "work/23_combined_pauli_feature_maps.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_02_04_pauli_feature_map_iris_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/24_pauli_feature_map_iris.ipynb"
+   "new": "work/24_pauli_feature_map_iris.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_03_01_sensor_phase_normalization_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/25_sensor_phase_normalization.ipynb"
+   "new": "work/25_sensor_phase_normalization.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_03_02_sensor_phase_encoding_circuit_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/26_sensor_phase_encoding_circuit.ipynb"
+   "new": "work/26_sensor_phase_encoding_circuit.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_03_03_sensor_phase_statevector_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/27_sensor_phase_statevector.ipynb"
+   "new": "work/27_sensor_phase_statevector.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day16_03_04_phase_interference_measurement_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/28_phase_interference_measurement.ipynb"
+   "new": "work/28_phase_interference_measurement.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day18_04_01_frequency_encoding_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/29_frequency_encoding.ipynb"
+   "new": "work/29_frequency_encoding.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day18_04_02_frequency_expectation_curve_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/30_frequency_expectation_curve.ipynb"
+   "new": "work/30_frequency_expectation_curve.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day18_04_03_time_evolution_statevector_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/31_time_evolution_statevector.ipynb"
+   "new": "work/31_time_evolution_statevector.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/02.feature-encoding/day18_04_04_measurement_probability_oscillation_lab.ipynb",
-   "new": "02.circuits-and-encoding/02.feature-encoding/32_measurement_probability_oscillation.ipynb"
+   "new": "work/32_measurement_probability_oscillation.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day11_04_01_qml_feature_map_ansatz_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/01_qml_feature_map_ansatz.ipynb"
+   "new": "work/01_qml_feature_map_ansatz.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day13_02_01_feature_map_ansatz_measurement_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/02_feature_map_ansatz_measurement.ipynb"
+   "new": "work/02_feature_map_ansatz_measurement.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day13_04_01_mini_qml_pipeline_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/03_mini_qml_pipeline.ipynb"
+   "new": "work/03_mini_qml_pipeline.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day14_02_01_qml_end_to_end_workflow_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/04_qml_end_to_end_workflow.ipynb"
+   "new": "work/04_qml_end_to_end_workflow.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_01_01_parameter_sweep_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/05_parameter_sweep.ipynb"
+   "new": "work/05_parameter_sweep.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_01_02_parameter_binding_state_analysis_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/06_parameter_binding_state_analysis.ipynb"
+   "new": "work/06_parameter_binding_state_analysis.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_02_01_real_amplitudes_ansatz_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/07_real_amplitudes_ansatz.ipynb"
+   "new": "work/07_real_amplitudes_ansatz.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day18_03_01_pennylane_strongly_entangling_classifier_training_lab.ipynb",
-   "new": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/08_pennylane_strongly_entangling_classifier_training.ipynb"
+   "new": "work/08_pennylane_strongly_entangling_classifier_training.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_01_01_feature_map_circuit_lab.ipynb",
-   "new": "02.circuits-and-encoding/01.quantum-circuits-and-qml/01_feature_map_circuit.ipynb"
+   "new": "work/01_feature_map_circuit.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_01_hadamard_measurement_lab.ipynb",
-   "new": "02.circuits-and-encoding/01.quantum-circuits-and-qml/02_hadamard_measurement.ipynb"
+   "new": "work/02_hadamard_measurement.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_02_superposition_rotation_entanglement_lab.ipynb",
-   "new": "02.circuits-and-encoding/01.quantum-circuits-and-qml/03_superposition_rotation_entanglement.ipynb"
+   "new": "work/03_superposition_rotation_entanglement.ipynb"
   },
   {
    "old": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_03_composite_gate_measurement_lab.ipynb",
-   "new": "02.circuits-and-encoding/01.quantum-circuits-and-qml/04_composite_gate_measurement.ipynb"
+   "new": "work/04_composite_gate_measurement.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day31_02_01_qnn_components_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/01_qnn_components.ipynb"
+   "new": "work/01_qnn_components.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day31_03_01_parameterized_quantum_circuit_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/02_parameterized_quantum_circuit.ipynb"
+   "new": "work/02_parameterized_quantum_circuit.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day31_03_02_estimator_qnn_preparation_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/03_estimator_qnn_preparation.ipynb"
+   "new": "work/03_estimator_qnn_preparation.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day31_03_03_estimator_qnn_construction_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/04_estimator_qnn_construction.ipynb"
+   "new": "work/04_estimator_qnn_construction.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day31_03_04_estimator_qnn_forward_pass_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/05_estimator_qnn_forward_pass.ipynb"
+   "new": "work/05_estimator_qnn_forward_pass.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day31_03_05_estimator_qnn_forward_analysis_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/06_estimator_qnn_forward_analysis.ipynb"
+   "new": "work/06_estimator_qnn_forward_analysis.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day34_03_02_estimator_qnn_creation_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/07_estimator_qnn_creation.ipynb"
+   "new": "work/07_estimator_qnn_creation.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/02.estimator-qnn/day34_create_qnn_support_module_lab.ipynb",
-   "new": "05.quantum-neural-networks/02.estimator-qnn/08_create_qnn_support_module.ipynb"
+   "new": "work/08_create_qnn_support_module.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/01.classical-neural-network-baseline/day28_01_01_neural_network_structure_lab.ipynb",
-   "new": "05.quantum-neural-networks/01.classical-neural-network-baseline/01_neural_network_structure.ipynb"
+   "new": "work/01_neural_network_structure.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/01.classical-neural-network-baseline/day33_01_01_pytorch_basic_model_lab.ipynb",
-   "new": "05.quantum-neural-networks/01.classical-neural-network-baseline/02_pytorch_basic_model.ipynb"
+   "new": "work/02_pytorch_basic_model.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_02_01_torchconnector_pytorch_integration_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/01_torchconnector_pytorch_integration.ipynb"
+   "new": "work/01_torchconnector_pytorch_integration.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_01_torchconnector_environment_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/02_torchconnector_environment.ipynb"
+   "new": "work/02_torchconnector_environment.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_03_torchconnector_application_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/03_torchconnector_application.ipynb"
+   "new": "work/03_torchconnector_application.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_04_quantum_weight_parameter_analysis_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/04_quantum_weight_parameter_analysis.ipynb"
+   "new": "work/04_quantum_weight_parameter_analysis.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_05_qnn_forward_batch_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/05_qnn_forward_batch.ipynb"
+   "new": "work/05_qnn_forward_batch.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_06_qnn_input_change_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/06_qnn_input_change.ipynb"
+   "new": "work/06_qnn_input_change.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_07_qnn_weight_change_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/07_qnn_weight_change.ipynb"
+   "new": "work/07_qnn_weight_change.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_08_qnn_gradient_calculation_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/08_qnn_gradient_calculation.ipynb"
+   "new": "work/08_qnn_gradient_calculation.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_09_qnn_batch_forward_training_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/09_qnn_batch_forward_training.ipynb"
+   "new": "work/09_qnn_batch_forward_training.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_10_qnn_end_to_end_validation_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/10_qnn_end_to_end_validation.ipynb"
+   "new": "work/10_qnn_end_to_end_validation.ipynb"
   },
   {
    "old": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_torch_connector_support_module_lab.ipynb",
-   "new": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/11_torch_connector_support_module.ipynb"
+   "new": "work/11_torch_connector_support_module.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/day38_01_02_qaoa_import_object_setup_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/01_qaoa_import_object_setup.ipynb"
+   "new": "work/01_qaoa_import_object_setup.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/day38_01_04_qaoa_classical_comparison_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/02_qaoa_classical_comparison.ipynb"
+   "new": "work/02_qaoa_classical_comparison.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline/day35_01_01_tsp_brute_force_baseline_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline/01_tsp_brute_force_baseline.ipynb"
+   "new": "work/01_tsp_brute_force_baseline.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day38_01_01_qaoa_environment_check_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/01_qaoa_environment_check.ipynb"
+   "new": "work/01_qaoa_environment_check.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day38_01_03_first_qaoa_execution_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/02_first_qaoa_execution.ipynb"
+   "new": "work/02_first_qaoa_execution.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_01_cost_parameter_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/03_cost_parameter.ipynb"
+   "new": "work/03_cost_parameter.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_02_cost_layer_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/04_cost_layer.ipynb"
+   "new": "work/04_cost_layer.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_03_cost_circuit_output_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/05_cost_circuit_output.ipynb"
+   "new": "work/05_cost_circuit_output.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_04_gamma_parameter_effect_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/06_gamma_parameter_effect.ipynb"
+   "new": "work/06_gamma_parameter_effect.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_05_mixer_layer_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/07_mixer_layer.ipynb"
+   "new": "work/07_mixer_layer.ipynb"
   },
   {
    "old": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_06_parameterized_qaoa_circuit_lab.ipynb",
-   "new": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/08_parameterized_qaoa_circuit.ipynb"
+   "new": "work/08_parameterized_qaoa_circuit.ipynb"
   },
   {
    "old": "07.capstone/01.netflix-qml-project/day39_project_01_01_netflix_dataset_quality_and_leakage_audit_lab.ipynb",
-   "new": "07.capstone/01.netflix-qml-project/01_netflix_dataset_quality_and_leakage_audit.ipynb"
+   "new": "work/01_netflix_dataset_quality_and_leakage_audit.ipynb"
   },
   {
    "old": "07.capstone/01.netflix-qml-project/day39_project_01_02_netflix_classical_feature_preparation_for_qml_lab.ipynb",
-   "new": "07.capstone/01.netflix-qml-project/02_netflix_classical_feature_preparation_for_qml.ipynb"
+   "new": "work/02_netflix_classical_feature_preparation_for_qml.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day01_03_01_quadratic_loss_surface_visualization_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/01_quadratic_loss_surface_visualization.ipynb"
+   "new": "work/01_quadratic_loss_surface_visualization.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day19_01_01_quantum_loss_parameter_sweep_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/02_quantum_loss_parameter_sweep.ipynb"
+   "new": "work/02_quantum_loss_parameter_sweep.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day19_02_01_loss_function_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/03_loss_function.ipynb"
+   "new": "work/03_loss_function.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_02_manual_learning_cycle_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/04_manual_learning_cycle.ipynb"
+   "new": "work/04_manual_learning_cycle.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_03_loss_landscape_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/05_loss_landscape.ipynb"
+   "new": "work/05_loss_landscape.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_04_parameter_sweep_prediction_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/06_parameter_sweep_prediction.ipynb"
+   "new": "work/06_parameter_sweep_prediction.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_05_target_loss_curve_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/07_target_loss_curve.ipynb"
+   "new": "work/07_target_loss_curve.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_01_common_quantum_objective_function_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/08_common_quantum_objective_function.ipynb"
+   "new": "work/08_common_quantum_objective_function.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_02_cobyla_optimizer_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/09_cobyla_optimizer.ipynb"
+   "new": "work/09_cobyla_optimizer.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_03_spsa_optimizer_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/10_spsa_optimizer.ipynb"
+   "new": "work/10_spsa_optimizer.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_04_quantum_learning_visualization_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/11_quantum_learning_visualization.ipynb"
+   "new": "work/11_quantum_learning_visualization.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_01_before_after_learning_comparison_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/12_before_after_learning_comparison.ipynb"
+   "new": "work/12_before_after_learning_comparison.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_02_optimizer_comparison_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/13_optimizer_comparison.ipynb"
+   "new": "work/13_optimizer_comparison.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_03_learning_result_parameter_persistence_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/14_learning_result_parameter_persistence.ipynb"
+   "new": "work/14_learning_result_parameter_persistence.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_01_parameterized_quantum_circuit_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/15_parameterized_quantum_circuit.ipynb"
+   "new": "work/15_parameterized_quantum_circuit.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_02_parameter_binding_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/16_parameter_binding.ipynb"
+   "new": "work/16_parameter_binding.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_03_objective_function_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/17_objective_function.ipynb"
+   "new": "work/17_objective_function.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_04_classical_optimizer_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/18_classical_optimizer.ipynb"
+   "new": "work/18_classical_optimizer.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_05_quantum_circuit_objective_function_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/19_quantum_circuit_objective_function.ipynb"
+   "new": "work/19_quantum_circuit_objective_function.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_06_cost_parameter_history_visualization_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/20_cost_parameter_history_visualization.ipynb"
+   "new": "work/20_cost_parameter_history_visualization.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_07_initial_parameter_comparison_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/21_initial_parameter_comparison.ipynb"
+   "new": "work/21_initial_parameter_comparison.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_08_optimizer_comparison_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/22_optimizer_comparison.ipynb"
+   "new": "work/22_optimizer_comparison.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_09_toy_trigonometric_objective_landscape_optimization_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/01.loss-and-optimization/23_toy_trigonometric_objective_landscape_optimization.ipynb"
+   "new": "work/23_toy_trigonometric_objective_landscape_optimization.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day15_01_01_zz_feature_map_quantum_kernel_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/01_zz_feature_map_quantum_kernel.ipynb"
+   "new": "work/01_zz_feature_map_quantum_kernel.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day22_01_01_classical_to_quantum_kernel_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/02_classical_to_quantum_kernel.ipynb"
+   "new": "work/02_classical_to_quantum_kernel.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day23_03_01_fidelity_quantum_kernel_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/03_fidelity_quantum_kernel.ipynb"
+   "new": "work/03_fidelity_quantum_kernel.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day23_03_02_pauli_feature_map_quantum_kernel_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/04_pauli_feature_map_quantum_kernel.ipynb"
+   "new": "work/04_pauli_feature_map_quantum_kernel.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day23_04_01_example_kernel_matrix_structure_and_psd_validation_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/05_example_kernel_matrix_structure_and_psd_validation.ipynb"
+   "new": "work/05_example_kernel_matrix_structure_and_psd_validation.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day23_04_02_example_kernel_matrix_heatmap_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/06_example_kernel_matrix_heatmap.ipynb"
+   "new": "work/06_example_kernel_matrix_heatmap.ipynb"
   },
   {
    "old": "03.variational-learning-and-kernels/02.quantum-kernels/day23_04_03_quantum_kernel_quality_evaluation_lab.ipynb",
-   "new": "03.variational-learning-and-kernels/02.quantum-kernels/07_quantum_kernel_quality_evaluation.ipynb"
+   "new": "work/07_quantum_kernel_quality_evaluation.ipynb"
   }
  ]
 }
