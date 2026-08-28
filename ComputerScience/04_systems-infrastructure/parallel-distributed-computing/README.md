@@ -108,7 +108,6 @@ git lfs pull --include="ComputerScience/04_systems-infrastructure/parallel-distr
 python3 scripts/pdf_lecture_extract.py "<...>/pdf/01_WhyParallelism.pdf" --render none
 ```
 
-작성 규격은 lecture-pdf-to-note 스킬과
 지식 스키마를 따른다.
 
 ## 관련 과목
