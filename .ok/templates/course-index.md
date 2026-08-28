@@ -20,7 +20,7 @@ created: "{{date}}"
 updated: "{{date}}"
 ---
 
-> [!abstract]
+> [!NOTE]
 > {과목 범위와 도달 목표}
 
 ---
@@ -42,6 +42,8 @@ updated: "{{date}}"
 ## 범위 시각화
 
 {source-backed coverage visual}
+
+---
 
 ## 근거 범위
 
