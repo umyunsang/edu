@@ -9,40 +9,26 @@ kg_level: 4
 kg_role: source-note
 semester: 2-1
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/algorithms
-- type/lecture
+- algorithms
+- lecture
 title: 트리 (TREE)
 type: lecture
 updated: '2026-05-05'
 ---
-
-domain:: [[ComputerScience/01_programming-foundations/프로그래밍 기초 인터페이스|프로그래밍 기초 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/2단계 전공 핵심 인터페이스|2단계 전공 핵심 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/자료구조 인터페이스|자료구조 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/수학 알고리즘 브리지|수학 알고리즘 브리지]]
-up:: [[ComputerScience/01_programming-foundations/data-structures/3. 큐/큐|큐]]
-prerequisites:: [[ComputerScience/01_programming-foundations/python-programming/1. 변수와 자료형|1. 변수와 자료형]]
-related:: [[ComputerScience/01_programming-foundations/data-structures/4. 트리/AVL|AVL]], [[ComputerScience/01_programming-foundations/data-structures/시험/기말/기말_데이터구조 답지|기말_데이터구조 답지]], [[ComputerScience/01_programming-foundations/data-structures/시험/중간/중간_데이터구조 답지|중간_데이터구조 답지]], [[ComputerScience/01_programming-foundations/data-structures/5. 정렬/정렬|정렬]], [[ComputerScience/01_programming-foundations/data-structures/1. 리스트/단순 연결 리스트|단순 연결 리스트]], [[ComputerScience/01_programming-foundations/data-structures/2. 스택/스택|스택]], [[ComputerScience/01_programming-foundations/data-structures/1. 리스트/리스트|리스트]], [[ComputerScience/01_programming-foundations/data-structures/5. 정렬/1705817_엄윤상_데이터구조_4주차과제|1705817_엄윤상_데이터구조_4주차과제]], [[ComputerScience/01_programming-foundations/data-structures/2. 스택/Stack|Stack]], [[ComputerScience/01_programming-foundations/data-structures/3. 큐/Queue|Queue]], [[ComputerScience/01_programming-foundations/data-structures/1. 리스트/이중 연결 리스트|이중 연결 리스트]], [[ComputerScience/01_programming-foundations/data-structures/1. 리스트/원형 연결 리스트|원형 연결 리스트]], [[ComputerScience/01_programming-foundations/data-structures/2. 스택/전위, 후위 표기법|전위, 후위 표기법]], [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/실습과제/트리 만들기|트리 만들기]], [[ComputerScience/03_ai-ml-data/ml-projects/Sklearn/Classifier/DecisionTree/Decision_Tree|Decision_Tree]], [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/Pop Quiz 풀이/Pop Quiz 2 풀이|Pop Quiz 2 풀이]], [[ComputerScience/01_programming-foundations/coding-test/자료구조/1. 배열과 리스트|1. 배열과 리스트]], [[ComputerScience/01_programming-foundations/coding-test/자료구조/5. 스택과 큐|5. 스택과 큐]], [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/Pop Quiz 풀이/Pop Quiz 1 풀이|Pop Quiz 1 풀이]], [[ComputerScience/05_software-engineering/programming-languages/교재/4장_교재_문제|4장_교재_문제]], [[ComputerScience/01_programming-foundations/coding-test/자료구조/2. 구간 합|2. 구간 합]], [[ComputerScience/01_programming-foundations/coding-test/자료구조/3. 투 포인터|3. 투 포인터]], [[ComputerScience/01_programming-foundations/python-programming/3. 반복문|3. 반복문]], [[ComputerScience/01_programming-foundations/python-programming/5. 리스트, 튜플, 딕셔너리|5. 리스트, 튜플, 딕셔너리]], [[ComputerScience/01_programming-foundations/coding-test/자료구조/4. 슬라이딩 윈도우|4. 슬라이딩 윈도우]], [[알고리즘_기말고사_정리|기말고사_정리]], [[ComputerScience/01_programming-foundations/python-programming/8. 객체 지향 프로그래밍|8. 객체 지향 프로그래밍]], [[ComputerScience/01_programming-foundations/python-programming/중간/답지|답지]], [[ComputerScience/01_programming-foundations/python-programming/4. 조건문|4. 조건문]], [[ComputerScience/01_programming-foundations/python-programming/7. 파일 읽기와 쓰기|7. 파일 읽기와 쓰기]], [[ComputerScience/01_programming-foundations/python-programming/지뢰찾기/지뢰찾기|지뢰찾기]], [[ComputerScience/01_programming-foundations/python-programming/2. 연산자|2. 연산자]], [[ComputerScience/01_programming-foundations/python-programming/6. 함수|6. 함수]], [[ComputerScience/01_programming-foundations/python-programming/문제풀이/프로그래머스 Python 기초 문제 1-10|프로그래머스 Python 기초 문제 1-10]], [[ComputerScience/01_programming-foundations/python-programming/문제풀이/프로그래머스 Python 기초 문제 11-20|프로그래머스 Python 기초 문제 11-20]], [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/중간고사_정리|중간고사_정리]], [[ComputerScience/01_programming-foundations/coding-test/정렬/1. 버블 정렬|1. 버블 정렬]], [[ComputerScience/01_programming-foundations/python-programming/중간시험 범위|중간시험 범위]], [[ComputerScience/05_software-engineering/programming-languages/필기/6. 데이터 타입|6. 데이터 타입]], [[ComputerScience/05_software-engineering/programming-languages/과제/9장 레포트|9장 레포트]], [[ComputerScience/05_software-engineering/programming-languages/필기/1. 기본사항|1. 기본사항]], [[ComputerScience/05_software-engineering/programming-languages/필기/2. 프로그래밍 언어의 발전사|2. 프로그래밍 언어의 발전사]], [[ComputerScience/01_programming-foundations/java-programming/4. 연산자|4. 연산자]], [[ComputerScience/05_software-engineering/programming-languages/교재/3장_교재_문제|3장_교재_문제]], [[ComputerScience/05_software-engineering/programming-languages/7장-12장 연습문제 종합|7장-12장 연습문제 종합]], [[ComputerScience/01_programming-foundations/coding-basics/3. 알고리즘과 프로그래밍 언어/연산자|연산자]], [[ComputerScience/05_software-engineering/programming-languages/교재/6장_교재_문제|6장_교재_문제]], [[ComputerScience/05_software-engineering/programming-languages/필기/5. 이름, 바인딩, 영역|5. 이름, 바인딩, 영역]], [[ComputerScience/05_software-engineering/programming-languages/필기/0. 명령어 집합|0. 명령어 집합]], [[ComputerScience/05_software-engineering/programming-languages/과제/5장 연습문제|5장 연습문제]], [[ComputerScience/05_software-engineering/programming-languages/과제/5장 연습문제 (제출용)|5장 연습문제 (제출용)]], [[ComputerScience/05_software-engineering/programming-languages/교재/5장_교재_문제|5장_교재_문제]], [[ComputerScience/05_software-engineering/programming-languages/필기/4. 재귀 하강 파싱|4. 재귀 하강 파싱]], [[ComputerScience/05_software-engineering/programming-languages/과제/3장 제출용|3장 제출용]], [[ComputerScience/05_software-engineering/programming-languages/필기/3. 구문론|3. 구문론]], [[ComputerScience/05_software-engineering/programming-languages/과제/3장 연습문제 (과제)|3장 연습문제 (과제)]], [[ComputerScience/05_software-engineering/programming-languages/과제/4장 재귀 하강 파서 연습문제|4장 재귀 하강 파서 연습문제]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/자료구조 지식그래프|자료구조]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/자료구조 지식그래프|자료구조]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/자료구조 근거 인덱스|자료구조 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/데이터 구조|데이터 구조]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/단순 연결 리스트|단순 연결 리스트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/원형 연결 리스트|원형 연결 리스트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/이중 연결 리스트|이중 연결 리스트]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/data-structures/스택과 큐|스택과 큐]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
 #### 트리(TREE) 정의 
 - 트리는 나무 모양의 자료구조 
 	- 계층적인 관계를 가진 자료의 표현에 매우 유용 
 	- 비선형 자료구조, 계층구조 
-	![[data-structures__트리 (TREE__트리(TREE) 정의.png]]
+	<!-- 원본 이미지 없음: data-structures__트리 (TREE__트리(TREE) 정의.png -->
 - 활용 예시: 운영체제의 파일시스템, 탐색 트리, 우선순위 큐, 결정 트리 등
 
 #### 트리(TREE) 관련 용어
 
-![[data-structures__트리 (TREE__트리(TREE) 관련 용어.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__트리(TREE) 관련 용어.png -->
 
 | 용어     | 내용                                                        |
 | ------ | --------------------------------------------------------- |
@@ -61,16 +47,16 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 중첩된 집합
 	- 중첩된 괄호
 	- 들여쓰기 (indentation)
-	![[data-structures__트리 (TREE__트리(TREE) 표기 방법.png]]
+	<!-- 원본 이미지 없음: data-structures__트리 (TREE__트리(TREE) 표기 방법.png -->
 
 #### 트리(TREE) 표현법
 - 방법1 : N-링크표현
 	- 자식의 개수에 제한이 없는 트리 (genderal TREE)
-		![[data-structures__트리 (TREE__트리(TREE) 표현법.png]]
+		<!-- 원본 이미지 없음: data-structures__트리 (TREE__트리(TREE) 표현법.png -->
 
 - 방법2: 왼쪽 자식 – 오른쪽 형제
 
-	![[data-structures__트리 (TREE__트리(TREE) 표현법 2.png]]
+	<!-- 원본 이미지 없음: data-structures__트리 (TREE__트리(TREE) 표현법 2.png -->
 
 #### 이진 트리 (Binary TREE)
 - 모든 노드가 최대 2개의 자식만을 가질 수 있는 트리
@@ -87,7 +73,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 #### 이진 트리 (Binary TREE) 종류
 
-![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류.png -->
 
 - 포화 이진 트리 (full binary tree)
 	- 트리의 각 레벨에 노드가 꽉 차 있는 이진 트리
@@ -96,23 +82,23 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 마지막 레벨에서는 노드가 꽉 차 있지 않아도 되지만 중간에 빈 곳이 있으면 안 됨 
 	- “포화 이진 트리는 항상 완전 이진 트리”는 성립, “완전 이진 트리는 항상 포화 이진 트리”는 성립되지 않음
 	
-	![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류 2.png]]
+	<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류 2.png -->
 	
 - 균형 이진 트리 (balanced binary tree)
 	- 높이 균형 이진 트리 (height-balanced binary tree) 
 	- 모든 노드에서 좌우 서브 트리의 높이 차이가 1 이하인 트리를 말하며, 높이 차이가 1 초과할 경우 경사트리
 	
-	![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류 3.png]]
+	<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 (Binary TREE) 종류 3.png -->
 
 #### 이진 트리 (Binary TREE) 와 배열 자료형의 관계
 
-![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 와 배열 자료형의 관계.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 (Binary TREE) 와 배열 자료형의 관계.png -->
 
 - 이진 트리의 특성을 활용한 배열 자료형에 저장할 경우 탐색 및 활용이 용이함 
 - 배열의 첫 인덱스는 건너띄고, 두번째 인덱스 부터 저장 
 - 루트 노드부터 각 레벨로 내려오고, 각 레벨은 왼쪽에서 오른쪽으로 순차적으로 저장
 
-![[data-structures__트리 (TREE__이진 트리 (Binary TREE) 와 배열 자료형의 관계 2.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 (Binary TREE) 와 배열 자료형의 관계 2.png -->
 
 **Quiz**
 	문제 1. "D"의 부모 노드는? -> B
@@ -120,7 +106,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 #### 이진 트리 구현을 위한 클래스
 
-![[data-structures__트리 (TREE__이진 트리 구현을 위한 클래스.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 구현을 위한 클래스.png -->
 ```python
 class TreeNode:
 	def __init__(self, value, left=None, right=None):
@@ -158,7 +144,7 @@ def preorder_recursive(node):
 		preorder_recursive(node.left)
 		preorder_recursive(node.right)
 ```
-![[data-structures__트리 (TREE__이진 트리 출력방법.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 출력방법.png -->
 
 **2. 중위순회 출력 (inorder traversal) : L(left)V(root)R(right)**
 
@@ -170,7 +156,7 @@ def inorder_recursive(node):
 		inorder_recursive(node.right)
 ```
 
-![[data-structures__트리 (TREE__이진 트리 출력방법 2.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 출력방법 2.png -->
 
 **3. 후위순회 출력 (postorder traversal) : L(left)R(right)V(root)
 
@@ -182,7 +168,7 @@ def postorder_recursive(node):
 		print(node.value, end=' ')
 ```
 
-![[data-structures__트리 (TREE__이진 트리 출력방법 3.png]]
+<!-- 원본 이미지 없음: data-structures__트리 (TREE__이진 트리 출력방법 3.png -->
 
 #### 전체 노드의 수 구하기
 - 왼쪽 서브 트리의 노드 수와 오른쪽 서브 트리의 노드 수의 합

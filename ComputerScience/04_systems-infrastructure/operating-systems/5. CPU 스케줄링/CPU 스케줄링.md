@@ -9,28 +9,14 @@ kg_level: 4
 kg_role: source-note
 semester: 2-2
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/systems
-- type/lecture
+- systems
+- lecture
 title: CPU 스케줄링
 type: lecture
 updated: '2026-05-05'
 ---
-
-domain:: [[ComputerScience/04_systems-infrastructure/시스템 인프라 인터페이스|시스템 인프라 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/2단계 전공 핵심 인터페이스|2단계 전공 핵심 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/운영체제 인터페이스|운영체제 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/시스템 운영 브리지|시스템 운영 브리지]]
-up:: [[ComputerScience/04_systems-infrastructure/operating-systems/4. 스레드와 멀티테스킹/스레드와 멀티테스킹|스레드와 멀티테스킹]]
-prerequisites:: [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]], [[ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본|1. 리눅스의 기본]]
-related:: [[ComputerScience/04_systems-infrastructure/operating-systems/과제/FCFS/FCFS CPU 스케줄링 구현 과제|FCFS CPU 스케줄링 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/6. 스레드 동기화/스레드 동기화|스레드 동기화]], [[ComputerScience/04_systems-infrastructure/operating-systems/12. 저장 장치 관리/대용량 저장 장치 관리|대용량 저장 장치 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/SJF/SJF CPU 스케줄링 구현 과제|SJF CPU 스케줄링 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/SRTF/SRTF CPU 스케줄링 구현 과제|SRTF CPU 스케줄링 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/1. OS의 시작과 발전/OS의 시작과 발전|OS의 시작과 발전]], [[ComputerScience/04_systems-infrastructure/operating-systems/2. 컴퓨터 시스템과 운영체제/컴퓨터 시스템과 OS|컴퓨터 시스템과 OS]], [[ComputerScience/04_systems-infrastructure/operating-systems/7. 교착상태/교착상태|교착상태]], [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/3장문제|3장문제]], [[ComputerScience/04_systems-infrastructure/operating-systems/시험/기말 정리|기말 정리]], [[ComputerScience/04_systems-infrastructure/operating-systems/9. 페이징 메모리 관리/페이징 메모리 관리|페이징 메모리 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/10. 가상 메모리/가상 메모리|가상 메모리]], [[ComputerScience/04_systems-infrastructure/operating-systems/8. 메모리관리/메모리 관리|메모리 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/11. 파일 시스템 관리/파일 시스템 관리|파일 시스템 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/MemoryAlloc/메모리 할당 알고리즘 구현 과제|메모리 할당 알고리즘 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/Page/페이지 교체 알고리즘 구현 과제|페이지 교체 알고리즘 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/Banker/Banker Algorithm 구현 과제|Banker Algorithm 구현 과제]], [[ComputerScience/04_systems-infrastructure/operating-systems/과제/sum/sum.c|sum.c]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다|쿠다]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/애플 M4 CPU/애플 M4 CPU|애플 M4 CPU]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/CUDA 프로그램 연습 및 CUDA API 이해|CUDA 프로그램 연습 및 CUDA API 이해]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/1. 기억 장치 시스템의 개요|1. 기억 장치 시스템의 개요]], [[ComputerScience/04_systems-infrastructure/linux/9. 프로세스|9. 프로세스]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/1. Why Parallelism|1. Why Parallelism]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/5. 파이프 라이닝|5. 파이프 라이닝]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/1. 제어 장치의 기능|1. 제어 장치의 기능]], [[ComputerScience/04_systems-infrastructure/linux/4. 리눅스 권한|4. 리눅스 권한]], [[ComputerScience/04_systems-infrastructure/container-orchestration/파드(Pod)|파드(Pod)]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/3. 명령어 사이클|3. 명령어 사이클]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/1. 프로세스 구성과 동작|1. 프로세스 구성과 동작]], [[ComputerScience/04_systems-infrastructure/linux/3. 리눅스 셸|3. 리눅스 셸]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/4. 컴퓨터 명령어|4. 컴퓨터 명령어]], [[ComputerScience/04_systems-infrastructure/linux/10. 도커|10. 도커]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/2. 주기억 장치|2. 주기억 장치]], [[ComputerScience/04_systems-infrastructure/container-orchestration/도커|도커]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/6. CISC와 RISC|6. CISC와 RISC]], [[ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초|도커 기초]], [[ComputerScience/04_systems-infrastructure/linux/2. 리눅스 VI|2. 리눅스 VI]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/2. 제어 장치의 종류|2. 제어 장치의 종류]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/3. 캐시 기억 장치|3. 캐시 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/4. 가상 기억 장치|4. 가상 기억 장치]], [[ComputerScience/04_systems-infrastructure/linux/8. 데이터베이스|8. 데이터베이스]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/5. 주소 지정 방식|5. 주소 지정 방식]], [[ComputerScience/04_systems-infrastructure/linux/5. 플라스크|5. 플라스크]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/2. 정수 표현|2. 정수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/5. 에러 검출 코드|5. 에러 검출 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/4. 프로세서 제어|4. 프로세서 제어]], [[ComputerScience/04_systems-infrastructure/linux/6. REST|6. REST]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/3. 레지스터|3. 레지스터]], [[ComputerScience/04_systems-infrastructure/container-orchestration/쿠버네티스 설치|쿠버네티스 설치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/2. 산술 논리 연산 장치|2. 산술 논리 연산 장치]], [[ComputerScience/04_systems-infrastructure/linux/0. 리눅스 소개|0. 리눅스 소개]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/4. 디지털 코드|4. 디지털 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/1. 진법과 진법 변환|1. 진법과 진법 변환]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/3. 실수 표현|3. 실수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/1. 논리 게이트|1. 논리 게이트]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/3. 카르노 맵|3. 카르노 맵]], [[certifications/information-processing/필기/1. 프로그래밍 언어 활용|1. 프로그래밍 언어 활용]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/2. 불 대수|2. 불 대수]], [[ComputerScience/04_systems-infrastructure/container-orchestration/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]], [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/라우팅 알고리즘|라우팅 알고리즘]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/4. 조합 논리 회로|4. 조합 논리 회로]], [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드|ClusterIP 서비스 설정 및 가이드]], [[ComputerScience/04_systems-infrastructure/linux/7. 회원 가입 및 로그인|7. 회원 가입 및 로그인]], [[ComputerScience/04_systems-infrastructure/container-orchestration/LoadBalancer 설치 및 설정 가이드|LoadBalancer 설치 및 설정 가이드]], [[ComputerScience/04_systems-infrastructure/container-orchestration/Ingress 설정 정리|Ingress 설정 정리]], [[ComputerScience/04_systems-infrastructure/computer-architecture/중간 시험 범위|중간 시험 범위]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/04_systems-infrastructure/computer-networks/8. 무선통신 시스템/무선통신 시스템|무선통신 시스템]], [[certifications/information-processing/실기/C언어 실기 오답노트|오답노트]], [[ComputerScience/04_systems-infrastructure/computer-networks/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP)|인터넷 프로토콜(IP)]], [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크|통신과 컴퓨터 네트워크]], [[ComputerScience/04_systems-infrastructure/computer-networks/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]], [[ComputerScience/04_systems-infrastructure/computer-networks/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송|유선 및 무선 데이터 전송]], [[certifications/체크리스트|체크리스트]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/운영체제 지식그래프|운영체제]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/운영체제 지식그래프|운영체제]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/운영체제 근거 인덱스|운영체제 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/fcfs|fcfs]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/메모리 관리|메모리 관리]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/srtf|srtf]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/operating-systems/파일 시스템 관리|파일 시스템 관리]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
 ## 1. CPU 스케줄링 개요
@@ -107,7 +93,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 
 #### 선점 스케줄링과 비선점 스케줄링
 
-![[operating-systems__CPU 스케줄링__선점 스케줄링과 비선점 스케줄링.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__선점 스케줄링과 비선점 스케줄링.png -->
 #### 기아와 에이징
 
 ## 3. CPU 스케줄링 알고리즘
@@ -127,7 +113,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- **호위 효과(convoy effect) 발생** 
 		- 긴 스레드가 CPU를 오래 사용하면, 늦게 도착한 짧은 스레드 오래 대기
 
-![[operating-systems__CPU 스케줄링__FCFS(First Come First Served)(비선점 스케줄링.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__FCFS(First Come First Served)(비선점 스케줄링.png -->
 #### Shortest Job First(SJF; 비선점 스케줄링)
 **가장 짧은 스레드 우선 처리**
 - 알고리즘 
@@ -146,7 +132,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 문제점 
 	- 실행 시간의 **예측이 불가능**하므로 현실에서는 거의 사용되지 않음
 
-![[operating-systems__CPU 스케줄링__Shortest Job First(SJF; 비선점 스케줄링.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__Shortest Job First(SJF; 비선점 스케줄링.png -->
 
 #### Shortest Remaining Time First(SRTF; 선점 스케줄링) 
 **남은 시간이 짧은 스레드가 준비 큐에 들어오면 이를 우선 처리**
@@ -167,7 +153,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 문제점 
 	- 실행 시간 예측이 불가능하므로 현실에서는 거의 사용되지 않음
 
-![[operating-systems__CPU 스케줄링__Shortest Remaining Time First(SRTF; 선점 스케줄링.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__Shortest Remaining Time First(SRTF; 선점 스케줄링.png -->
 #### ==Round-Robin(RR; 선점 스케줄링)==
 스레드들을 돌아가면서 할당된 시간(타임 슬라이스)만큼 실행
 - 알고리즘 
@@ -185,9 +171,9 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 잦은 스케줄링으로 전체 스케줄링 오버헤드 큼. 특히 타임 슬라이스가 작을 때 더욱 큼 
 	- 균형된 처리율 : **타임슬라이스가 크면 FCFS에 가까움, 적으면 SJF/SRTF에 가까움** 늦게 도착한 짧은 스레드는 FCFS보다 빨리 완료되고, 긴 스레드는 SJF보다 빨리 완료됨
 - 타임 슬라이스 = 1ms 일 때
-	![[operating-systems__CPU 스케줄링__Round-Robin(RR; 선점 스케줄링.png]]
+	<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__Round-Robin(RR; 선점 스케줄링.png -->
 - 타임 슬라이스 = 2ms 일 때
-	![[operating-systems__CPU 스케줄링__Round-Robin(RR; 선점 스케줄링) 2.png]]
+	<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__Round-Robin(RR; 선점 스케줄링) 2.png -->
 
 #### Priority Scheduling(ready Queue 1개)
 우선 순위를 기반으로 하는 스케줄링. 가장 높은 순위의 스레드 먼저 실행
@@ -234,7 +220,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 예) 전체 스레드를 백그라운드 스레드와 포그라운드 스레드의 2개의 그룹으로 구성 
 	- 예) 시스템 스레드, 대화식 스레드, 배치 스레드 등 3개의 레벨로 나누고 시스템 스레드를 우선적으로 스케줄링
 
-![[operating-systems__CPU 스케줄링__Multilevel queue scheduling(MLQ; ready queu.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__Multilevel queue scheduling(MLQ; ready queu.png -->
 
 #### Multilevel feedback queue scheduling(MLFQ; 선점/비선점 스케줄링 둘 다 구현 가능)
 큐만 n개의 우선순위 레벨을 둠. 스레드는 동일한 우선순위 
@@ -265,13 +251,13 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 성능 이슈 
 	- 짧거나 입출력이 빈번한 스레드, 혹은 대화식 스레드를 높은 레벨의 큐에서 빨리 실행 -> CPU 활용률이 높음
 
-![[operating-systems__CPU 스케줄링__Multilevel feedback queue scheduling(MLFQ.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__Multilevel feedback queue scheduling(MLFQ.png -->
 
 ---
 ## 실전 스케줄링 사례
 
-![[operating-systems__CPU 스케줄링__실전 스케줄링 사례.png]]
-![[operating-systems__CPU 스케줄링__실전 스케줄링 사례 2.png]]
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__실전 스케줄링 사례.png -->
+<!-- 원본 이미지 없음: operating-systems__CPU 스케줄링__실전 스케줄링 사례 2.png -->
 
 ## 4. 멀티 코어 cpu에서의 스케줄링
 - 멀티코어 시스템에서 싱글 코어 CPU 스케줄링을 사용할 때 문제점 

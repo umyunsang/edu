@@ -9,31 +9,17 @@ kg_level: 4
 kg_role: source-note
 semester: 2-2
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/open-source
-- type/lecture
+- open-source
+- lecture
 title: HTML JavaScript 기초 연습문제
 type: lecture
 updated: '2026-05-05'
 ---
 
-domain:: [[ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스|소프트웨어 엔지니어링 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/2단계 전공 핵심 인터페이스|2단계 전공 핵심 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/오픈소스 소프트웨어 인터페이스|오픈소스 소프트웨어 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/오픈소스 delivery 브리지|오픈소스 delivery 브리지]]
-up:: [[ComputerScience/05_software-engineering/open-source-software/3. 문서 객체 모델/문서 객체 모델(DOM)|문서 객체 모델(DOM)]]
-prerequisites:: [[ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 실습|Spring Boot 기초 실습]]
-related:: [[ComputerScience/05_software-engineering/open-source-software/0. Html. javascript 기초/html, javascript 기초|html, javascript 기초]], [[ComputerScience/05_software-engineering/open-source-software/3. 문서 객체 모델/문서 객체 모델 연습문제|연습문제]], [[ComputerScience/05_software-engineering/open-source-software/1. 이벤트 이해하기/이벤트 이해하기|이벤트 이해하기]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/1. 음성 인식 요구 사항|1. 음성 인식 요구 사항]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/배경사진 요구사항|배경사진 요구사항]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/slot 요구사항|slot 요구사항]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/TTS 요구 사항|TTS 요구 사항]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/음성 인식 고객 추가 요구사항|음성 인식 고객 추가 요구사항]], [[ComputerScience/05_software-engineering/open-source-software/2. 자바스크립트 객체 다루기/자바스크립트 객체 다루기|자바스크립트 객체 다루기]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/Framework|Framework]], [[ComputerScience/05_software-engineering/open-source-software/2. 자바스크립트 객체 다루기/자바스크립트 객체 다루기 연습문제|연습문제]], [[ComputerScience/05_software-engineering/open-source-software/1. 이벤트 이해하기/연습 문제|연습 문제]], [[ComputerScience/05_software-engineering/web-programming/6. HTML 기초2/HTML 기초 실습2|HTML 기초 실습2]], [[ComputerScience/05_software-engineering/web-programming/4. 쿠키와 세션/쿠키와 세션 확인문제|확인문제]], [[ComputerScience/05_software-engineering/web-programming/1. HTML 기초/HTML 기초 연습문제|연습문제]], [[ComputerScience/05_software-engineering/web-programming/1. HTML 기초/HTML 기초 실습|HTML 기초 실습]], [[ComputerScience/05_software-engineering/web-programming/6. HTML 기초2/HTML 기초2 문제 풀이|문제 풀이]], [[ComputerScience/05_software-engineering/web-programming/7. 웹 시스템 제작/웹 시스템 제작|웹 시스템 제작]], [[ComputerScience/05_software-engineering/web-programming/7. 웹 시스템 제작/웹 시스템 제작 문제 풀이|문제 풀이]], [[ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 확인문제|확인문제]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/기말시험 범위 및 연습문제|기말시험 범위 및 연습문제]], [[ComputerScience/05_software-engineering/programming-languages/7장-12장 연습문제 종합|7장-12장 연습문제 종합]], [[ComputerScience/05_software-engineering/web-programming/4. 쿠키와 세션/쿠키와 세션|쿠키와 세션]], [[ComputerScience/05_software-engineering/web-programming/2. Spring Boot 개발 환경 세팅/Spring Boot 개발 환경 세팅 확인문제|확인문제]], [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/데이터베이스|데이터베이스]], [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/MYSQL|MYSQL]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week0 - Orientation|Week0 - Orientation]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week2 - Plan, Track & Visualize|Week2 - Plan, Track & Visualize]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week6 - GitHub Actions|Week6 - GitHub Actions]], [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/데이터베이스 확인문제|확인문제]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week3 - Teamwork & Collaborative Development|Week3 - Teamwork & Collaborative Development]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week4 - Asynchronous Work|Week4 - Asynchronous Work]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week5 - Open & Inner Source Software Delivery|Week5 - Open & Inner Source Software Delivery]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week1 - Metrics That Matter|Week1 - Metrics That Matter]], [[ComputerScience/05_software-engineering/programming-languages/과제/5장 연습문제 (제출용)|5장 연습문제 (제출용)]], [[ComputerScience/05_software-engineering/programming-languages/과제/5장 연습문제|5장 연습문제]], [[ComputerScience/05_software-engineering/database-systems/12. 데이터베이스 응용 기술/데이터베이스 응용 기술|데이터베이스 응용 기술]], [[ComputerScience/05_software-engineering/database-systems/1. 기본 개념/기본 개념|기본 개념]], [[ComputerScience/05_software-engineering/programming-languages/필기/5. 이름, 바인딩, 영역|5. 이름, 바인딩, 영역]], [[ComputerScience/05_software-engineering/programming-languages/교재/5장_교재_문제|5장_교재_문제]], [[ComputerScience/05_software-engineering/database-systems/4. 데이터 모델링/데이터 모델링|데이터 모델링]], [[ComputerScience/05_software-engineering/database-systems/5. 관계 데이터 모델/관계 데이터 모델 (용어 암기)|관계 데이터 모델 (용어 암기)]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/오픈소스 소프트웨어 지식그래프|오픈소스 소프트웨어]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/오픈소스 소프트웨어 지식그래프|오픈소스 소프트웨어]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/오픈소스 소프트웨어 근거 인덱스|오픈소스 소프트웨어 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/utf 8|utf 8]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/meta charset|meta charset]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/doctype|doctype]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/link rel|link rel]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/open-source-software/input type|input type]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
-
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 3 html, javascript.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 3 html, javascript.png -->
 ```html
 <!-- html 주석처리 방법 -->
 ```
@@ -45,17 +31,17 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 /* css 주석 처리 */
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 5 input 412 S97 2A o.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 5 input 412 S97 2A o.png -->
 ```html
 <input type='text' name=''>
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quizs6 ‘SAS AN lea At HES.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quizs6 ‘SAS AN lea At HES.png -->
 ```html
 <button onclick="startTest()">테스트 시작</button>
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 7 cra Css 4 BES SIN.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 7 cra Css 4 BES SIN.png -->
 ```html
 <style>
 	body { padding:20px; background:yellow;}
@@ -64,7 +50,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 </style>
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 8 css S quiz.css tYS.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 8 css S quiz.css tYS.png -->
 ```html
 <head>
     <meta charset="UTF-8">
@@ -79,7 +65,7 @@ h1 {color:blue;background:cyan;}
 button {background:pink;}
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 9 javascript 22 quiz.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 9 javascript 22 quiz.png -->
 ```html
 <script src="quiz.js"> </script>
 ```
@@ -100,17 +86,17 @@ function checkAnswers() {
 }
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 10 TS tt SN 8% ala B.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 10 TS tt SN 8% ala B.png -->
 - **document.getElementById('a1')**: HTML 문서에서 특정 `id(a1)`를 가진 요소를 선택하는 메서드.
 - **a1** : js 변수
 -  **value**: 사용자가 입력한 텍스트 값을 가져오는 속성.
 -  **trim()**: 사용자가 입력한 값에서 앞뒤 공백을 제거하는 메서드 (중간 공백은 X)
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 1 document.getElemen.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 1 document.getElemen.png -->
  - `.value`는 사용자가 `<input>` 필드에 입력한 값을 가져옵니다.
  - `.textContent`는 `<h3>` 요소의 텍스트 내용을 변경하여 화면에 표시합니다.
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 12 St 22M. 1H SAA.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 12 St 22M. 1H SAA.png -->
 ```html
 <body>
 	10<sup>2</sup>은? <input type="text" id="a4"> <br><br>
@@ -128,7 +114,7 @@ if (a5.toLowerCase() === "625") score++;
 }
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 13 5B Cf Obl sb Bee.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 13 5B Cf Obl sb Bee.png -->
 ```html
 <body>
 <h3 id="good"></h3>
@@ -146,7 +132,7 @@ function checkAnswers() {
 }
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 14 AWS BASD VRES qui.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 14 AWS BASD VRES qui.png -->
 ```html
 <!DOCTYPE html>
 <html>
@@ -191,7 +177,7 @@ function checkAnswers() {
 </html>
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 15 who.htmidM 2H 3SR.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 15 who.htmidM 2H 3SR.png -->
 ```js
 const image = document.getElementById('image');
 const who = document.getElementById('who').value.trim();
@@ -204,12 +190,12 @@ else image.src = 'static/쏘리.png';
 - who ==
 - static/
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 16 who.htmi2 HEA BH.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 16 who.htmi2 HEA BH.png -->
 ```html
 <button onclick="showImage()">사진</button>
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 17, aera Ve Sab HS A.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 17, aera Ve Sab HS A.png -->
 ```js
 if (who == "당근" || who == "당") image.src = 'static/당근.png';
 else if (who == "양파" || who == "양") image.src = 'static/양파.png';
@@ -217,10 +203,10 @@ else if (who == "식빵" || who == "식") image.src = 'static/식빵.png';
 else image.src = 'static/쏘리.png';
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 18 WZ MES ST NA.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 18 WZ MES ST NA.png -->
 
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 19 BAS AE HES ATHY S.png]]
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 20 BE HE Bt input bo.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 19 BAS AE HES ATHY S.png -->
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 20 BE HE Bt input bo.png -->
 ```js
 function calculate(op) {
     // html에서 입력한 숫자 2개 가져와서 숫자로 변환 후 num1, num2에 넣음
@@ -257,16 +243,16 @@ function boxclear() {
 }
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 21 alert4tat prompt4.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 21 alert4tat prompt4.png -->
 - alert창은 일반적으로 사용자한데 메세지 전달
 - prompt창은 사용자한데 입력을 받음
 
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 22 parseFloat(), par.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 22 parseFloat(), par.png -->
 - 괄호안 문자열의 자료형을 변환 함
 
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 23 SIMI5AM body Bry.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 23 SIMI5AM body Bry.png -->
 ```js
 // (1) 화면 바탕색바꾸기
 document.body.style.backgroundColor = co;
@@ -274,17 +260,17 @@ document.body.style.backgroundColor = co;
 document.getElementById("co").style.color = co;
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 24 AIMS js cra BUBWE.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 24 AIMS js cra BUBWE.png -->
 ```js
 return st.color != "";
 ```
 
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 25 AIMS, AIMS BO att.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 25 AIMS, AIMS BO att.png -->
 - return 을 적어주면 더 좋다
 
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 26 SIMS GreferS HE Y.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 26 SIMS GreferS HE Y.png -->
 ```js
     if (co == "") {
         alert("색을 입력해 주세요"); return
@@ -295,12 +281,12 @@ return st.color != "";
 ```
 
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 27 SIMI5°%M placehol.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 27 SIMI5°%M placehol.png -->
 - value는 검은 글자이면서 사람이 입력했다고 생각하고 값이 넘어간다
 - placehoder는 회색 글자이면서 값이 안 넘어 간다
 
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 28 AWMIS2 ore eb SUS.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 28 AWMIS2 ore eb SUS.png -->
 ```js 
 alert(`${co}는 존재하지 않는 색입니다. 다시 작성해 주세요 ^^`);
 ```
@@ -317,7 +303,7 @@ sum = parseInt(n) + 100;
 document.write(`정수변환n + 100 ==>  + ${sum} + <hr>`);
 ```
 ---
-![[open-source-software__HTML JavaScript 기초 연습문제__Quiz 29 BS UND HES SYte S.png]]
+<!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 29 BS UND HES SYte S.png -->
 ```html
 <!DOCTYPE html>
 <html>

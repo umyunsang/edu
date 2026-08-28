@@ -4,9 +4,9 @@ aliases:
 created: '2026-07-22'
 status: approved
 tags:
-  - type/specification
-  - domain/reference-layer
-  - status/approved
+  - specification
+  - reference-layer
+  - approved
 title: Edu LLM-readable reference layer Stage 1-5 설계
 type: specification
 updated: '2026-07-22'

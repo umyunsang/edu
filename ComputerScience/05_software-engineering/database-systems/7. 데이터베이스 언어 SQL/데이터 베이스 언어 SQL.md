@@ -9,28 +9,14 @@ kg_level: 4
 kg_role: source-note
 semester: 2-2
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/db
-- type/lecture
+- db
+- lecture
 title: 데이터 베이스 언어 SQL
 type: lecture
 updated: '2026-05-05'
 ---
-
-domain:: [[ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스|소프트웨어 엔지니어링 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/2단계 전공 핵심 인터페이스|2단계 전공 핵심 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/데이터베이스 인터페이스|데이터베이스 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/데이터 서비스 브리지|데이터 서비스 브리지]], [[ComputerScience/00_graph-interfaces/bridges/오픈소스 delivery 브리지|오픈소스 delivery 브리지]]
-up:: [[ComputerScience/05_software-engineering/소프트웨어 엔지니어링 인터페이스|소프트웨어 엔지니어링 인터페이스]]
-prerequisites:: [[ComputerScience/01_programming-foundations/python-programming/1. 변수와 자료형|1. 변수와 자료형]], [[ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본|1. 리눅스의 기본]]
-related:: [[ComputerScience/05_software-engineering/database-systems/7. 데이터베이스 언어 SQL/뷰(view)|뷰(view)]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/7장 문제|7장 문제]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/중간 주관식 예상(답)|중간 주관식 예상(답)]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/레포트|레포트]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/중간 주관식 예상|중간 주관식 예상]], [[ComputerScience/05_software-engineering/database-systems/5. 관계 데이터 모델/관계 데이터 모델 (용어 암기)|관계 데이터 모델 (용어 암기)]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/데이터베이스 연습문제|데이터베이스 연습문제]], [[ComputerScience/05_software-engineering/database-systems/2. 관리 시스템/관리 시스템|관리 시스템]], [[ComputerScience/05_software-engineering/database-systems/3. DB 시스템/DB 시스템|DB 시스템]], [[ComputerScience/05_software-engineering/database-systems/1. 기본 개념/기본 개념|기본 개념]], [[ComputerScience/05_software-engineering/database-systems/13. 데이터 과학과 빅데이터/데이터 과학과 빅데이터|데이터 과학과 빅데이터]], [[ComputerScience/05_software-engineering/database-systems/11. 보안과 권한 관리/보안과 권한 관리|보안과 권한 관리]], [[ComputerScience/05_software-engineering/database-systems/12. 데이터베이스 응용 기술/데이터베이스 응용 기술|데이터베이스 응용 기술]], [[ComputerScience/05_software-engineering/database-systems/0. 시험/기말시험 범위 및 연습문제|기말시험 범위 및 연습문제]], [[ComputerScience/05_software-engineering/database-systems/4. 데이터 모델링/데이터 모델링|데이터 모델링]], [[ComputerScience/05_software-engineering/database-systems/9. 정규화/정규화|정규화]], [[ComputerScience/05_software-engineering/database-systems/10. 회복과 병행제어/회복과 병행 제어|회복과 병행 제어]], [[ComputerScience/05_software-engineering/database-systems/8. 데이터베이스 설계/데이터베이스 설계|데이터베이스 설계]], [[ComputerScience/05_software-engineering/database-systems/9. 정규화/고급 정규형|고급 정규형]], [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/데이터베이스 확인문제|확인문제]], [[ComputerScience/05_software-engineering/web-programming/6. HTML 기초2/HTML 기초2 문제 풀이|문제 풀이]], [[ComputerScience/03_ai-ml-data/ai-system-design/주문 및 결제 AI 시스템 개발|주문 및 결제 AI 시스템 개발]], [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/MYSQL|MYSQL]], [[ComputerScience/04_systems-infrastructure/linux/8. 데이터베이스|8. 데이터베이스]], [[ComputerScience/03_ai-ml-data/ai-system-design/아키텍쳐/주요 데이터 흐름/장바구니에 메뉴 추가|장바구니에 메뉴 추가]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/08-PandaDataframes|08-PandaDataframes]], [[ComputerScience/03_ai-ml-data/ai-system-design/아키텍쳐/주요 데이터 흐름/주문 생성|주문 생성]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/06-SparkDataFrames|06-SparkDataFrames]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/07-PandasSeries|07-PandasSeries]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/DAU_CSE408_Pandas,_Geopandas|DAU_CSE408_Pandas,_Geopandas]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/05-PySpark|05-PySpark]], [[ComputerScience/03_ai-ml-data/ai-system-design/3주차/3주차 발표자료|3주차 발표자료]], [[ComputerScience/03_ai-ml-data/ai-system-design/스마트 오더 플랫폼 B2B 어드민 기능 제안|스마트 오더 플랫폼 B2B 어드민 기능 제안]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/DAU_BigDataAnalytics_06_(Variable_Selection)|DAU_BigDataAnalytics_06_(Variable_Selection)]], [[ComputerScience/04_systems-infrastructure/linux/7. 회원 가입 및 로그인|7. 회원 가입 및 로그인]], [[certifications/information-processing/필기/1. 프로그래밍 언어 활용|1. 프로그래밍 언어 활용]], [[ComputerScience/05_software-engineering/web-programming/1. HTML 기초/HTML 기초 실습|HTML 기초 실습]], [[ComputerScience/05_software-engineering/web-programming/7. 웹 시스템 제작/웹 시스템 제작 문제 풀이|문제 풀이]], [[certifications/체크리스트|체크리스트]], [[ComputerScience/01_programming-foundations/python-programming/5. 리스트, 튜플, 딕셔너리|5. 리스트, 튜플, 딕셔너리]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/03_Hadoop|03_Hadoop]], [[ComputerScience/05_software-engineering/web-programming/6. HTML 기초2/HTML 기초 실습2|HTML 기초 실습2]], [[ComputerScience/05_software-engineering/programming-languages/필기/6. 데이터 타입|6. 데이터 타입]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/01-WordCount|01-WordCount]], [[ComputerScience/05_software-engineering/open-source-software/고객님 요구사항/1. 음성 인식 요구 사항|1. 음성 인식 요구 사항]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/02-MapReduce|02-MapReduce]], [[ComputerScience/04_systems-infrastructure/linux/0. 리눅스 소개|0. 리눅스 소개]], [[ComputerScience/05_software-engineering/web-programming/7. 웹 시스템 제작/웹 시스템 제작|웹 시스템 제작]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/K-POP 아티스트 인기도 분석 시스템|K-POP 아티스트 인기도 분석 시스템]], [[ComputerScience/05_software-engineering/web-programming/5. 데이터베이스/데이터베이스|데이터베이스]], [[ComputerScience/03_ai-ml-data/ai-system-design/아키텍쳐/주요 데이터 흐름/AI 메뉴 추천|AI 메뉴 추천]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/빅데이터 분석 시험 대비 총정리 (실전 예시 중심|시험정리]], [[ComputerScience/05_software-engineering/web-programming/3. Spring Boot 기초/Spring Boot 기초 확인문제|확인문제]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/04-ParallelComputation|04-ParallelComputation]], [[ComputerScience/03_ai-ml-data/ai-system-design/아키텍쳐/주요 데이터 흐름/메뉴 조회|메뉴 조회]], [[ComputerScience/05_software-engineering/programming-languages/필기/2. 프로그래밍 언어의 발전사|2. 프로그래밍 언어의 발전사]], [[ComputerScience/03_ai-ml-data/ai-system-design/3주차/AI 챗봇 특허 저작권 보호 전략 발표 스크립트|AI 챗봇 특허 저작권 보호 전략 발표 스크립트]], [[ComputerScience/05_software-engineering/programming-languages/필기/1. 기본사항|1. 기본사항]], [[ComputerScience/05_software-engineering/web-programming/1. HTML 기초/HTML 기초 연습문제|연습문제]], [[ComputerScience/01_programming-foundations/python-programming/8. 객체 지향 프로그래밍|8. 객체 지향 프로그래밍]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/개념문제_풀이|개념문제_풀이]], [[ComputerScience/04_systems-infrastructure/linux/2. 리눅스 VI|2. 리눅스 VI]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/아키텍처 다이어그램 텍스트 버전|아키텍처 다이어그램 텍스트 버전]], [[certifications/information-processing/실기/C언어 실기 오답노트|오답노트]], [[ComputerScience/04_systems-infrastructure/linux/3. 리눅스 셸|3. 리눅스 셸]], [[ComputerScience/04_systems-infrastructure/linux/6. REST|6. REST]], [[ComputerScience/04_systems-infrastructure/linux/10. 도커|10. 도커]], [[ComputerScience/03_ai-ml-data/ai-system-design/ot/AI 시스템 아이디어 기획 요구사항 정의 발표 스크립트|AI 시스템 아이디어 기획 요구사항 정의 발표 스크립트]], [[ComputerScience/04_systems-infrastructure/linux/4. 리눅스 권한|4. 리눅스 권한]], [[ComputerScience/03_ai-ml-data/big-data-analysis/Converted_MD/BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API|BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/아키텍처 다이어그램|아키텍처 다이어그램]], [[ComputerScience/04_systems-infrastructure/linux/5. 플라스크|5. 플라스크]], [[ComputerScience/01_programming-foundations/python-programming/3. 반복문|3. 반복문]], [[ComputerScience/03_ai-ml-data/ai-system-design/아키텍쳐/시스템 구성도|시스템 구성도]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/연습문제_풀이|연습문제_풀이]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/이론정리|이론정리]], [[ComputerScience/01_programming-foundations/python-programming/문제풀이/프로그래머스 Python 기초 문제 1-10|프로그래머스 Python 기초 문제 1-10]], [[ComputerScience/04_systems-infrastructure/linux/9. 프로세스|9. 프로세스]], [[ComputerScience/01_programming-foundations/python-programming/4. 조건문|4. 조건문]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/MLFlow 과제|MLFlow 과제]], [[ComputerScience/01_programming-foundations/python-programming/중간시험 범위|중간시험 범위]], [[ComputerScience/01_programming-foundations/python-programming/7. 파일 읽기와 쓰기|7. 파일 읽기와 쓰기]], [[ComputerScience/01_programming-foundations/python-programming/6. 함수|6. 함수]], [[ComputerScience/01_programming-foundations/python-programming/중간/답지|답지]], [[ComputerScience/01_programming-foundations/python-programming/지뢰찾기/지뢰찾기|지뢰찾기]], [[ComputerScience/01_programming-foundations/python-programming/2. 연산자|2. 연산자]], [[ComputerScience/01_programming-foundations/python-programming/문제풀이/프로그래머스 Python 기초 문제 11-20|프로그래머스 Python 기초 문제 11-20]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/데이터베이스 지식그래프|데이터베이스]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/데이터베이스 지식그래프|데이터베이스]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/데이터베이스 근거 인덱스|데이터베이스 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/thank you|thank you]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/sql|sql]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/관계 데이터 모델|관계 데이터 모델]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터 모델링|데이터 모델링]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/database-systems/데이터베이스 설계|데이터베이스 설계]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
 
 ---
 ## 1. SQL의 소개
@@ -58,7 +44,7 @@ revoke grant commit rollback
 	- 보안을 위해 데이터에 대한 접근 및 사용 권한을 사용자별로 부여하거나 취소 하는 기능을 제공
 
 #### ==아마 시험 ?==
-![[database-systems__데이터 베이스 언어 SQL__아마 시험.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__아마 시험.png -->
 ## 2. SQL을 이용한 데이터 정의
 #### ==테이블 생성 : CREATE TABLE 문 (암기)==
 ```SQL
@@ -84,7 +70,7 @@ CREATE TABLE 테이블_이름 (
 		- 예) 적립금 INT DEFAULT 0 
 		- 예) 담당자 VARCHAR(10) DEFAULT ‘방경아'
 - 속성의 데이터 타입
-	![[database-systems__데이터 베이스 언어 SQL__테이블 생성 CREATE TABLE 문 (암기.png]]
+	<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__테이블 생성 CREATE TABLE 문 (암기.png -->
 - **키의 정의** 
 	- PRIMARY KEY 
 		- 기본키를 지정하는 키워드 
@@ -116,13 +102,13 @@ CREATE TABLE 테이블_이름 (
 		- 예) CONSTRAINT CHK_CPY CHECK(제조업체 = ‘한빛제과’)
 
 #### 참조 무결성 제약조건 유지를 위한 투플 삭제 예
-![[database-systems__데이터 베이스 언어 SQL__참조 무결성 제약조건 유지를 위한 투플 삭제 예.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__참조 무결성 제약조건 유지를 위한 투플 삭제 예.png -->
 - ON DELETE NO ACTION : 부서 테이블의 투플을 삭제하지 못하게 함 
 - ON DELETE CASCADE : 사원 테이블에서 홍보부에 근무하는 정소화 사원 투플도 함께 삭제 
 - ON DELETE SET NULL : 사원 테이블에서 정소화 사원의 소속부서 속성 값을 NULL로 변경 
 - ON DELETE SET DEFAULT : 사원 테이블에서 정소화 사원의 소속부서 속성 값을 기본 값으로 변경
 #### 고객 테이블 생성을 위한 CREATE TABLE 문 작성 예
-![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예.png -->
 ```sql
 CREATE TABLE 고객 (
 	고객아이디 VARCHAR(20) NOT NULL,
@@ -135,7 +121,7 @@ CREATE TABLE 고객 (
 );
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 2.png -->
 ```sql
 CREATE TABLE 제품 (
 	제품번호 CHAR(3) NOT NULL,
@@ -148,7 +134,7 @@ CREATE TABLE 제품 (
 );
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 3.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 3.png -->
 ```sql
 CREATE TABLE 주문 (
 	주문번호 CHAR(3) NOT NULL,
@@ -163,7 +149,7 @@ CREATE TABLE 주문 (
 );
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 4.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__고객 테이블 생성을 위한 CREATE TABLE 문 작성 예 4.png -->
 ```sql
 CREATE TABLE 배송업체 (
 	업체번호 CHAR(3) NOT NULL,
@@ -189,7 +175,7 @@ ALTER TABLE 테이블이름
 ALTER TABLE 테이블_이름
 	ADD 속성_이름 데이터_타입 [NOT NULL] [DEFAULT 기본_값];
 ```
-![[database-systems__데이터 베이스 언어 SQL__테이블 변경 ALTER TABLE 문.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__테이블 변경 ALTER TABLE 문.png -->
 ```SQL
 ALTER TABLE 고객 ADD 가입날짜 DATETIME;
 ```
@@ -202,7 +188,7 @@ ALTER TABLE 테이블_이름 DROP COLUMN 속성_이름;
 	- 속성 삭제가 수행되지 않음 
 	- 관련된 제약조건이나 참조하는 다른 속성을 먼저 삭제해야 함
 
-![[database-systems__데이터 베이스 언어 SQL__테이블 변경 ALTER TABLE 문 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__테이블 변경 ALTER TABLE 문 2.png -->
 ```SQL
 ALTER TABLE 고객 DROP COLUMN 가입날짜;
 ```
@@ -238,33 +224,33 @@ FROM 테이블_리스트;
 		- 결과 테이블에서만 계산된 결과 값이 출력됨 
 			- 속성의 값이 실제로 변경되는 것은 아님
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문.png -->
 ```SQL
 SELECT 고객아이디, 고객이름, 등급 FROM 고객;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 2.png -->
 ```SQL
 SELECT * FROM 고객;
 ```
 - 모든 속성을 검색할 때는 속성의 이름을 전부 나열하지 않고 * 사용 가능
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 3.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 3.png -->
 ```SQL
 SELECT ALL 제조업체 FROM 제품;
 ```
 - 결과 테이블에서 제조업체가 중복 됨
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 4.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 4.png -->
 ```SQL
 SELECT DISTINCT 제조업체 FROM 제품;
 ```
 - 결과 테이블에서 제조업체가 한 번씩만 나타남
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 5.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 5.png -->
 ```SQL
 SELECT 제품명, 단가 AS 가격 FROM 제품;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 6.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 6.png -->
 ```SQL
 SELECT 제품명, 단가 +500 AS "조정 단가" FROM 제품;
 ```
@@ -283,23 +269,23 @@ FROM 테이블_리스트
 			- 예) ‘2022-12-01’ < ‘2022-12-02’ 
 		- 조건에서 문자나 날짜 값은 작은따옴표로 묶어서 표현
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색.png -->
 ```SQL
 SELECT 제품명, 재고량, 단가 FROM 제품 WHERE 제조업체='한빛제과';
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 2.png -->
 ```SQL
 SELECT 주문제품, 수량, 주문일자 
 FROM 주문 
 WHERE 주문고객='apple' AND 수량>=15;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 3.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 3.png -->
 ```sql
 SELECT 주문제품, 수량, 주문일자, 주문고객 
 FROM 주문 
 WHERE 주문고객='apple' OR 수량>=15;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 4.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 4.png -->
 ```sql
 SELECT 제품명, 단가, 제조업체 FROM 제품 WHERE 단가>=2000 AND 단가<=3000;
 ```
@@ -308,15 +294,15 @@ SELECT 제품명, 단가, 제조업체 FROM 제품 WHERE 단가>=2000 AND 단가
 	- LIKE 키워드를 이용해 **부분적으로 일치하는 데이터** 검색 
 	- 문자열을 이용하는 조건에만 LIKE 키워드 사용 가능
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 6.png]]
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 5.png]]
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 8.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 6.png -->
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 5.png -->
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 8.png -->
 ```sql
 SELECT 고객이름, 나이, 등급, 적립금
 FROM 고객
 WHERE 고객이름 LIKE '김%';
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 9.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 9.png -->
 ```SQL
 SELECT 고객아이디, 고객이름, 등급
 FROM 고객
@@ -329,13 +315,13 @@ WHERE 고객아이디 LIKE '_____'; /* Access 에서는 '?????'
 	- IS NOT NULL 키워드를 이용해 특정 속성의 값이 널 값이 아닌지를 비교 
 	- 검색 조건에서 널 값은 다른 값과 크기를 비교하면 결과가 모두 거짓이 됨
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 10.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 10.png -->
 ```SQL
 SELECT 고객이름
 FROM 고객
 WHERE 나이 IS NULL;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 11.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 11.png -->
 ```SQL
 SELECT 고객이름
 FROM 고객
@@ -355,13 +341,13 @@ FROM 테이블_리스트
 		-  널 값은 오름차순에서는 맨 마지막에 출력되고, 내림차순에서는 맨 먼저 출력됨 
 		-  여러 기준에 따라 정렬하려면 정렬 기준이 되는 속성들을 차례대로 제시
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 12.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 12.png -->
 ```SQL
 SELECT 고객이름, 등급, 나이
 FROM 고객
 ORDER BY 나이 DESC; /* DESC : 내림차순 */
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 13.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 13.png -->
 ```SQL
 SELECT 주문고객, 주문제품, 수량, 주문일자
 FROM 주문
@@ -370,23 +356,23 @@ ORDER BY 주문제품 ASC, 수량 DESC; /* ASC : 오름차순, DESC : 내림차�
 ```
 - P01 제품이 맨 먼저 출력되고, P03 제품 중에는 수량이 22인 제품이 먼저 출력됨됨
 ---
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 7.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 7.png -->
 - 집계 함수를 이용한 검색
 	- 집계 함수 사용 시 주의 사항 
 		- 집계 함수는 널인 속성 값은 제외하고 계산함 
 		- 집계 함수는 WHERE 절에서는 사용할 수 없고, SELECT 절이나 HAVING 절에서만 사용 가능
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 14.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 14.png -->
 ```SQL
 SELECT AVG(단가) FROM 제품; /* AVG : 속성 값의 평균 */
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 15.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 15.png -->
 ```SQL
 SELECT SUM(재고량) AS '재고량 합계'
 FROM 제품
 WHERE 제조업체 = '한빛제과'; /* SUM : 속성 값의 합계 , AS : 속성명 지정 */
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 16.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 16.png -->
 ```SQL
 /* 1. 고객아이디 속성을 이용해 계산하는 경우 */
 SELECT COUNT(고객아이디)  AS 고객수 FROM 고객;
@@ -398,7 +384,7 @@ SELECT COUNT(*) AS 고객수 FROM 고객;
 - 널인 속성 값은 제외하고 개수 계산
 - 정확한 개수를 계산하기 위해서는 보통 **기본키 속성이나 별을 주로 사용**
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 17.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 17.png -->
 ```SQL
 SELECT COUNT(DISTINCT 제조업체) AS '제조업체 수' FROM 제품;
 ```
@@ -418,7 +404,7 @@ FROM 테이블_리스트
 	- HAVING 키워드와 함께 그룹에 대한 조건 작성 가능 
 	- 그룹을 나누는 기준이 되는 속성을 SELECT 절에도 작성하는 것이 좋음
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 18.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 18.png -->
 ```SQL
 SELECT 주문제품, SUM(수량) AS 총주문수량
 FROM 주문
@@ -427,13 +413,13 @@ GROUP BY 주문제품;
 - 그룹을 나누는 기준이 되는 '주문제품' 속성을 SELECT 절에도 작성하는 것이 좋음
 - 동일 제품을 주문한 투플을 모아 그룹으로 만들고, 그룹별로 수량의 합계를 계산
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 19.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 19.png -->
 ```SQL
 SELECT 제조업체, COUNT(*) AS 제품수, MAX(단가) AS 최고가
 FROM 제품
 GROUP BY 제조업체;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 20.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 20.png -->
 ```SQL
 SELECT 제조업체, COUNT(*) AS 제품수, MAX(단가) AS 최고가
 FROM 제품
@@ -441,13 +427,13 @@ GROUP BY 제조업체 HAVING COUNT(*) >= 3;
 ```
 - 집계 함수를 이용한 조건은 WHERE 절에는 작성할 수 없고, HAVING 절에서 작성 가능
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 21.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 21.png -->
 ```SQL
 SELECT 등급, COUNT(*) AS 고객수, AVG(적립금) AS 평균적립금
 FROM 고객
 GROUP BY 등급 HAVING AVG(적립금) >= 1000;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 22.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 22.png -->
 ```SQL
 SELECT 주문제품, 주문고객, SUM(수량) AS 총주문수량
 FROM 주문
@@ -472,13 +458,13 @@ FROM 테이블1 INNER JOIN 테이블2 ON 조인조건
 [ WHERE 검색조건 ]
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 23.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 23.png -->
 ```SQL
 SELECT 제품.제품명
 FROM 제품, 주문
 WHERE 주문.주문고객 ='banana' AND 제품.제품번호 = 주문.주문제품;
 ```
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 24.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 24.png -->
 ```SQL
 SELECT 주문.주문제품, 주문.주문일자
 FROM 고객, 주문
@@ -490,7 +476,7 @@ WHERE c.나이 >= 30 AND c.고객아이디 = o.주문고객;
 ```
 - FROM 절에서 테이블의 이름을 대신하는 단순한 별명을 제시하여 질의문을 작성하는 것도 좋음
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 25.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 25.png -->
 ```SQL
 SELECT 제품.제품명
 FROM 고객, 제품, 주문
@@ -512,7 +498,7 @@ FROM 테이블1 LEFT; RIGHT; FULL OUTER JOIN 테이블2 ON 조인조건
 		- 왼쪽 외부 조인, 오른쪽 외부 조인, 완전 외부 조인
 
 ---
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 26.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 26.png -->
 - 부속 질의문을 이용한 검색
 	- SELECT 문 안에 또 다른 SELECT 문을 포함하는 **질의**
 		- 상위 질의문(주 질의문): 다른 SELECT 문을 포함하는 SELECT 문 
@@ -525,7 +511,7 @@ FROM 테이블1 LEFT; RIGHT; FULL OUTER JOIN 테이블2 ON 조인조건
 		- 단일 행 부속 질의문은 비교 연산자(=, <>, >, >=, <, <=) 사용 가능 
 		- 다중 행 부속 질의문은 비교 연산자 사용 불가
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 27.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 27.png -->
 ```sql
 SELECT 제품명, 단가
 FROM 제품
@@ -534,7 +520,7 @@ WHERE 제조업체 = (SELECT 제조업체 FROM 제품 WHERE 제품명 ='달콤�
 ```
 - ‘달콤비스킷’의 제조업체는 ‘한빛제과’만 존재 → **단일 행 부속 질의문 (비교 연산자 = 이용)**
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 28.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 28.png -->
 ```SQL
 SELECT 고객이름, 적립금
 FROM 고객
@@ -542,7 +528,7 @@ WHERE 적립금 = (SELECT MAX(적립금) FROM 고객);
 ```
 - 최대 적립금은 단일 값이므로 단일 행 부속 질의문 **(비교 연산자 = 이용)**
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 29.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 29.png -->
 ```SQL
 SELECT 제품명, 제조업체
 FROM 제품
@@ -550,7 +536,7 @@ WHERE 제품번호 IN (SELECT 주문제품 FROM 주문 WHERE 주문고객 ='bana
 ```
 - ‘banana’ 고객이 주문한 제품은 여러 개이므로 → **다중 행 부속 질의문 (IN 연산자 이용)**
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 30.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 30.png -->
 ```SQL
 SELECT 제품명, 제조업체
 FROM 제품
@@ -558,7 +544,7 @@ WHERE 제품번호 NOT IN (SELECT 주문제품 FROM 주문 WHERE 주문고객 ='
 ```
 - 부속 질의문의 결과 값 중에서 일치하는 것이 없어야 조건이 참이 되는 **NOT IN** 연산자 이용
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 31.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 31.png -->
 ```SQL
 SELECT 제품명, 단가, 제조업체
 FROM 제품
@@ -568,7 +554,7 @@ WHERE 단가 > ANY (SELECT 단가 FROM 제품 WHERE 제조업체='대한식품')
 ```
 - 대한식품이 제조한 제품은 단가가 4,500원인 그냥만두와 1,200원인 얼큰라면
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 32.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 검색 SELECT 문 (조건 검색 32.png -->
 ```SQL
 SELECT 고객이름
 FROM 고객
@@ -594,7 +580,7 @@ VALUES (속성값_리스트);
 	- VALUES 키워드와 함께 삽입할 속성 값들을 나열 
 	- **INTO 절의 속성 이름과 VALUES 절의 값은 순서대로 일대일 대응되어야 함**
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 삽입 INSERT 문.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 삽입 INSERT 문.png -->
 ```SQL
 INSERT
 INTO 고객(고객아이디, 고객이름, 나이, 등급, 직업, 적립금)
@@ -605,7 +591,7 @@ INTO 고객
 VALUES ('strawberry', '최유경', 30, 'vip', '공무원', 100);
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 삽입 INSERT 문 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 삽입 INSERT 문 2.png -->
 ```SQL
 INSERT 
 INTO 고객(고객아이디, 고객이름, 나이, 등급, 적립금)
@@ -654,20 +640,20 @@ SET 속성_이름1 = 값1, ...
 - WHERE 절에 제시된 조건을 만족하는 투플만 속성 값을 수정 
 	- WHERE 절을 생략하면 테이블에 존재하는 모든 투플을 대상으로 수정
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문.png -->
 ```sql
 UPDATE 제품
 SET 제품명='통큰파이'
 WHERE 제품번호='p03';
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문 2.png -->
 ```SQL
 UPDATE 제품
 SET 단가 = 단가 *1.1;
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문 3.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 수정 UPDATE 문 3.png -->
 ```SQL
 UPDATE 주문 
 SET 수량 = 5
@@ -685,14 +671,14 @@ FROM 테이블_이름
 - WHERE 절에 제시한 조건을 만족하는 투플만 삭제 
 	- WHERE 절을 생략하면 테이블에 존재하는 모든 투플을 삭제해 빈 테이블이 됨
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억.png -->
 ```SQL
 DELETE
 FROM 주문
 WHERE 주문일자='2022-05-22';
 ```
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억 2.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억 2.png -->
 ```SQL
 DELETE
 FROM 주문
@@ -700,7 +686,7 @@ WHERE 주문고객 IN (SELECT 고객아이디 FROM 고객 WHERE 고객이름='�
 ```
 - 부속 질의문을 포함한 DELETE 문
 
-![[database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억 3.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__데이터 삭제 DELETE 문(UPDATE문과 구조가 다르니 꼭 기억 3.png -->
 ```SQL
 DELETE
 FROM 주문;
@@ -725,4 +711,4 @@ OX문제
 
 ## PNG 시각자료
 
-![[database-systems__데이터 베이스 언어 SQL__CREATE TABLE & 0 S_01S.png]]
+<!-- 원본 이미지 없음: database-systems__데이터 베이스 언어 SQL__CREATE TABLE & 0 S_01S.png -->

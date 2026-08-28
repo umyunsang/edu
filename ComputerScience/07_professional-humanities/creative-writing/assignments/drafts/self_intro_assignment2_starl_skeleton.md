@@ -5,19 +5,6 @@ kg_level: 4
 kg_role: source-note
 ---
 
-domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/6단계 전문 확장 인터페이스|6단계 전문 확장 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/창의적 글쓰기 인터페이스|창의적 글쓰기 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/산출물 포트폴리오 브리지|산출물 포트폴리오 브리지]]
-up:: [[ComputerScience/07_professional-humanities/creative-writing/중간고사_창의적글쓰기_정리|중간고사_창의적글쓰기_정리]]
-related:: [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_ax_archive_draft|self_intro_ax_archive_draft]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]], [[ComputerScience/07_professional-humanities/creative-writing/docs/WRITING_WORKFLOW|WRITING_WORKFLOW]], [[ComputerScience/07_professional-humanities/creative-writing/Creative Writing Course Instructions|AGENTS]], [[ComputerScience/07_professional-humanities/creative-writing/templates/writing-assignment|writing-assignment]], [[ComputerScience/07_professional-humanities/creative-writing/knowledge/source_map|source_map]], [[ComputerScience/07_professional-humanities/creative-writing/docs/CODEX_RAG_NOTES|CODEX_RAG_NOTES]], [[제목 AI 데이터센터의 한계, 양자컴퓨터가 답이다|퀴즈]], [[LGAimer/LG Aimers 9기 지원서 초안|LG Aimers 9기 지원서 초안]], [[ComputerScience/07_professional-humanities/degree-portfolio/GovOn 온프레미스 AI 발표 스크립트|GovOn 온프레미스 AI 발표 스크립트]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/md/Week0 - Orientation|Week0 - Orientation]], [[ComputerScience/07_professional-humanities/classics-reading/멋진신세계|멋진신세계]], [[ComputerScience/03_ai-ml-data/ai-system-design/주문 및 결제 AI 시스템 개발|주문 및 결제 AI 시스템 개발]], [[ComputerScience/07_professional-humanities/degree-portfolio/PDF_인쇄_완전가이드|PDF_인쇄_완전가이드]], [[ComputerScience/07_professional-humanities/degree-portfolio/졸업학점|졸업학점]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/특허_processed|특허_processed]], [[ComputerScience/07_professional-humanities/intellectual-property/5. 특허/특허 제도|특허 제도]], [[ComputerScience/07_professional-humanities/intellectual-property/6. 특허 명세서/특허 명세서 작성법|특허 명세서 작성법]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/1. IPAT 기출문제 지식재산권_답안통합|1. IPAT 기출문제 지식재산권_답안통합]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/07_professional-humanities/intellectual-property/4. 디자인 제도 및 등록요건/디자인 제도의 목적과 개념|디자인 제도의 목적과 개념]], [[ComputerScience/07_professional-humanities/intellectual-property/1. 소개/특허의 역사|소개]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/상표_processed|상표_processed]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/창의적 글쓰기 지식그래프|창의적 글쓰기]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/창의적 글쓰기 지식그래프|창의적 글쓰기]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/창의적 글쓰기 근거 인덱스|창의적 글쓰기 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/source id|source id]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/pdf path|pdf path]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/창의적글쓰기 강의자료 중핵교양|창의적글쓰기 강의자료 중핵교양]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/creative writing|creative writing]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/중간고사 창의적글쓰기 정리|중간고사 창의적글쓰기 정리]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
-
 # 2차 과제 자기소개서 STARL 스켈레톤
 
 ## 과제 조건 정리
@@ -58,7 +45,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Con
 
 ### DECO 비교과 근거
 
-- 근거 문서: [[deco_extracurricular_evidence]]
+- 근거 문서: [deco_extracurricular_evidence](<./deco_extracurricular_evidence.md>)
 - 정규 교과 밖에서 스스로 신청하고 수료한 흐름이 확인된다. 다만 학교 방학특강 성격이 강하므로 제출문에서는 보조 근거로만 사용한다.
 - 2024년에는 머신러닝과 커리어 프로그램, 2025년에는 MCP 기반 AI Agent와 개발자 튜토리얼, 2026년에는 NCS 핵심직무역량 집중교육으로 이어진다.
 - 자기소개서 본문에서는 미수료/탈락 항목은 쓰지 않고, 수료한 프로그램만 `자발적 학습`, `진로 탐색`, `기술 관심의 지속성` 근거로 사용한다.

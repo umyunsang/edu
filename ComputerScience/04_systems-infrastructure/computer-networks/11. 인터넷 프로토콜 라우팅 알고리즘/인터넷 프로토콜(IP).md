@@ -9,40 +9,26 @@ kg_level: 4
 kg_role: source-note
 semester: 2-2
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/systems
-- type/lecture
+- systems
+- lecture
 title: 인터넷 프로토콜(IP)
 type: lecture
 updated: '2026-05-05'
 ---
 
-domain:: [[ComputerScience/04_systems-infrastructure/시스템 인프라 인터페이스|시스템 인프라 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/4단계 시스템 실전 인터페이스|4단계 시스템 실전 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/컴퓨터네트워크 인터페이스|컴퓨터네트워크 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/시스템 운영 브리지|시스템 운영 브리지]]
-up:: [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/라우팅 알고리즘|라우팅 알고리즘]]
-prerequisites:: [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
-related:: [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/04_systems-infrastructure/computer-networks/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍|TCP와 소켓 프로그래밍]], [[ComputerScience/04_systems-infrastructure/computer-networks/9. 네트워크 계층/네트워크 계층|네트워크 계층]], [[ComputerScience/04_systems-infrastructure/computer-networks/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델|네트워크 분류와 계층 모델]], [[ComputerScience/04_systems-infrastructure/computer-networks/7. LAN의 특징과 규격/LAN의 특징과 규격|LAN의 특징과 규격]], [[ComputerScience/04_systems-infrastructure/computer-networks/5. 통신망과 특징/통신망과 특징|통신망과 특징]], [[ComputerScience/04_systems-infrastructure/computer-networks/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]], [[ComputerScience/04_systems-infrastructure/computer-networks/12. 네트워크 계층 작업과 프로토콜/네트워크 계층 작업과 프로토콜|네트워크 계층 작업과 프로토콜]], [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크|통신과 컴퓨터 네트워크]], [[ComputerScience/04_systems-infrastructure/computer-networks/8. 무선통신 시스템/무선통신 시스템|무선통신 시스템]], [[ComputerScience/04_systems-infrastructure/computer-networks/13. 전송 계층/전송 계층|전송 계층]], [[ComputerScience/04_systems-infrastructure/computer-networks/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송|유선 및 무선 데이터 전송]], [[ComputerScience/04_systems-infrastructure/computer-networks/3. 신호 처리/신호 처리|신호 처리]], [[ComputerScience/04_systems-infrastructure/computer-networks/16. 보안/네트워크 보안|네트워크 보안]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 퀴즈|기말 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/Routing Information Protocol (RIP)|Routing Information Protocol (RIP)]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/중간 퀴즈|중간 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/5. 에러 검출 코드|5. 에러 검출 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/4. 컴퓨터 명령어|4. 컴퓨터 명령어]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/2. 주기억 장치|2. 주기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/3. 캐시 기억 장치|3. 캐시 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/5. 파이프 라이닝|5. 파이프 라이닝]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/5. 주소 지정 방식|5. 주소 지정 방식]], [[ComputerScience/04_systems-infrastructure/container-orchestration/쿠버네티스 설치|쿠버네티스 설치]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다|쿠다]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/1. 논리 게이트|1. 논리 게이트]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/4. 가상 기억 장치|4. 가상 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/2. 불 대수|2. 불 대수]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/3. 레지스터|3. 레지스터]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/2. 제어 장치의 종류|2. 제어 장치의 종류]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/1. 프로세스 구성과 동작|1. 프로세스 구성과 동작]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/2. 정수 표현|2. 정수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/1. 기억 장치 시스템의 개요|1. 기억 장치 시스템의 개요]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/1. Why Parallelism|1. Why Parallelism]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/4. 디지털 코드|4. 디지털 코드]], [[ComputerScience/04_systems-infrastructure/operating-systems/시험/기말 정리|기말 정리]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/CUDA 프로그램 연습 및 CUDA API 이해|CUDA 프로그램 연습 및 CUDA API 이해]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/3. 카르노 맵|3. 카르노 맵]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/1. 제어 장치의 기능|1. 제어 장치의 기능]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/6. CISC와 RISC|6. CISC와 RISC]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/4. 프로세서 제어|4. 프로세서 제어]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/1. 진법과 진법 변환|1. 진법과 진법 변환]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/3. 실수 표현|3. 실수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/2. 산술 논리 연산 장치|2. 산술 논리 연산 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/3. 명령어 사이클|3. 명령어 사이클]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/애플 M4 CPU/애플 M4 CPU|애플 M4 CPU]], [[ComputerScience/04_systems-infrastructure/computer-architecture/중간 시험 범위|중간 시험 범위]], [[ComputerScience/04_systems-infrastructure/operating-systems/12. 저장 장치 관리/대용량 저장 장치 관리|대용량 저장 장치 관리]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/4. 조합 논리 회로|4. 조합 논리 회로]], [[ComputerScience/04_systems-infrastructure/operating-systems/8. 메모리관리/메모리 관리|메모리 관리]], [[ComputerScience/04_systems-infrastructure/container-orchestration/파드(Pod)|파드(Pod)]], [[ComputerScience/04_systems-infrastructure/operating-systems/10. 가상 메모리/가상 메모리|가상 메모리]], [[ComputerScience/04_systems-infrastructure/operating-systems/11. 파일 시스템 관리/파일 시스템 관리|파일 시스템 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/2. 컴퓨터 시스템과 운영체제/컴퓨터 시스템과 OS|컴퓨터 시스템과 OS]], [[ComputerScience/04_systems-infrastructure/operating-systems/1. OS의 시작과 발전/OS의 시작과 발전|OS의 시작과 발전]], [[ComputerScience/04_systems-infrastructure/operating-systems/9. 페이징 메모리 관리/페이징 메모리 관리|페이징 메모리 관리]], [[ComputerScience/04_systems-infrastructure/linux/6. REST|6. REST]], [[ComputerScience/04_systems-infrastructure/operating-systems/7. 교착상태/교착상태|교착상태]], [[ComputerScience/04_systems-infrastructure/operating-systems/6. 스레드 동기화/스레드 동기화|스레드 동기화]], [[ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초|도커 기초]], [[ComputerScience/04_systems-infrastructure/operating-systems/5. CPU 스케줄링/CPU 스케줄링|CPU 스케줄링]], [[ComputerScience/04_systems-infrastructure/linux/10. 도커|10. 도커]], [[ComputerScience/04_systems-infrastructure/linux/8. 데이터베이스|8. 데이터베이스]], [[ComputerScience/04_systems-infrastructure/container-orchestration/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]], [[ComputerScience/04_systems-infrastructure/container-orchestration/도커|도커]], [[ComputerScience/04_systems-infrastructure/linux/2. 리눅스 VI|2. 리눅스 VI]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/컴퓨터네트워크 근거 인덱스|컴퓨터네트워크 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/kakao id|kakao id]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층|네트워크 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/전송 계층|전송 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/신호 처리|신호 처리]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
-
 ---
 ## 1. 인터넷 프로토콜(IP)의 작업
 #### 네트워크 계층과 IP의 이해
-![[computer-networks__인터넷 프로토콜(IP__네트워크 계층과 IP의 이해.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__네트워크 계층과 IP의 이해.png -->
 - IP의 작업은 매우 많음
 	- 네트워크 계층의 가장 중요한 작업은 라우팅
 	- IP 주소 체계와 도메인 주소를 관리
 	- IP – MAC 주소변환
 	- 네트워크를 여러개의 서브넷으로 분할하고 다른 기종의 LAN을 연결하는 역할
 #### 서비스 요구사항(Quality of Services; QoS)
-![[computer-networks__인터넷 프로토콜(IP__서비스 요구사항(Quality of Services; QoS.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__서비스 요구사항(Quality of Services; QoS.png -->
 - 네트워크에게 요구되는 사양은 신뢰성, 지연, 지터, 대역폭 
 - 각 응용프로그램 마다 요구사항은 다름 (표 11-1 참조)
 	- 이메일 서비스: 높은 신뢰성을 필요, 지연, 지터, 대역폭은 낮아도 상관없음
@@ -60,20 +46,20 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 타임아웃보다 더 효과적인 방법은 패킷을 천천히 전송하는 것 -> 슬라이딩 윈도우 크기 줄이기
 	- 패킷과 패킷의 전송간격을 조정
 	- 혼잡 완화 방법
-		![[computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control.png]]
+		<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control.png -->
 
-![[computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control 2.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control 2.png -->
 - 초크 패킷은 **윈도우의 크기를 줄일 때는 사용되는 패킷** -> 분필을 뜻하는 초크는 혼잡제어에 사용되는 빈 패킷을 의미
 - 윈도우의 크기를 줄이자는 의미로 **상대방 호스트에게 보내는 빈 패킷이 초크 패킷**
 	- >초크패킷을 받은 호스트는 윈도우를 줄임
 - IP 헤더에서 초크 패킷의 역할을 하는 필드가 **ECN** 
 
-![[computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control 3.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control 3.png -->
 - 패킷의 흐름을 **일정간격으로 조절**하면 혼잡이 완화됨 -> 윈도우 크기가 10인 경우 10개의 패킷 을 0.1초 간격으로 보내는 것과 1초 간격으로 보내는 것은 혼잡에 미치는 결과가 다름
 - 버퍼를 이용한 혼잡제어 알고리즘이 토큰 버킷 알고리즘 
 	- 일정하지 않은 간격으로 도착하는 패킷을 버킷에 넣고, 보내는 쪽에서는 일정간격을 맞추어 천천히 패킷을 처리하는 알고리즘
 
-![[computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control 4.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__혼잡제어(congestion control 4.png -->
 - 토큰 버킷(Token Bucket)이란 
 	- 양동이 안에 토큰을 넣는다는 뜻으로, 양동이에 토큰이 있을 때만 요청을 처리하는 알고리즘 
 	- 일정한 시간마다 양동이에 제어용 토큰이 생성되고, 요청이 들어온다면 양동이에 토큰이 있는지 확인하고 응답하는 방식 
@@ -83,60 +69,60 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 	- 요청 큐가 가득 차거나 양동이에 토큰이 없어서 요청을 거부할 땐 429 Too Many Requests를 반환
 
 #### ==패킷 단편화==
-![[computer-networks__인터넷 프로토콜(IP__패킷 단편화.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__패킷 단편화.png -->
 - LAN 마다 패킷의 처리능력이 다를 뿐 아니라 다룰 수 있는 패킷의 크기도 다름 -> 처음 보낸 패 킷이 **여러개로 조각나서 배달되는 경우가 발생**
 - LAN이 끝나는 지점에서 원래의 패킷으로 합쳐서 보내주면 큰 문제는 없음 -> 문제는 그림의 왼쪽과 같이 **3개로 분리된 채로 인터넷을 돌아다니는 경우**
 
-![[computer-networks__인터넷 프로토콜(IP__패킷 단편화 2.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__패킷 단편화 2.png -->
 - 패킷의 맨 앞의 3개의 필드는 패킷 분할과 관련하여 헤더에 있는 값
 	- 가장 맨 앞이 Identification Number(ID Number) 필드: 그림에서는 21 -> 잘려나간 패킷이 여러 개 있는 경우, 같은 패킷에 있는 데이터인지를 확이 할 수 있는 필드
 	- 두 번째 필드는 Fragment Offset: 옵셋은 기준위치로부터 얼마큼 떨어졌는지를 나타냄 - > Fragment Offset은 분할되기 전 패킷 데이터로 부터 얼마큼 떨어진 위치에 있는 데이터인 지를 알려줌
 	- 3번째 필드는 More Fragment이다. **More Fragment가 1이면 맨 마지막 패킷**이라는 의미, 0이 면 패킷이 분할되어 뒤따르는 패킷이 더 있다는 의미
 
-![[computer-networks__인터넷 프로토콜(IP__패킷 단편화 3.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__패킷 단편화 3.png -->
 - b) 2개로 분할 그림은 원본이 2개로 분할된 경우 
 	- ID Number 21로 두 개의 패킷이 하나의 패킷에서 분할 -> 앞의 패킷의 Fragment Offset 0 - > 이는 원래 데이터의 0번째 위치라는 의미
 	- Fragment Offset의 7은 원래 데이터의 7번째 위치에 있었다는 것을 알려줌
 	- 앞 패킷의 More Fragment 0이 뒤로 패킷이 더 있다는 것을 알려주고, 뒷 패킷의 More Fragment 1은 패킷의 끝을 알려줌
 
-![[computer-networks__인터넷 프로토콜(IP__패킷 단편화 4.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__패킷 단편화 4.png -->
 - c) 3개로 분할, 순서가 바뀌어 도착한 경우 
 	- 가장 앞 패킷은 Fragment offset이 0인 맨 앞의 패킷, 중간의 Fragment offset이 7이 원본의 마지막 패킷, Fragment offset이 3이 원본의 두번째 패킷
 	- 받는 쪽에서는 패킷이 3개로 분할되었는지 혹은 4개나 5개로 분할되었는지 알지 못함 -> 중간 패킷의 More fragment 1을 보면 더 이상 분할된 패킷이 없다는 것을 알게 됨
 #### 터널링(tunneling)
-![[computer-networks__인터넷 프로토콜(IP__터널링(tunneling.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__터널링(tunneling.png -->
 - 서로 다른 종류의 통신망을 사용하여 인터넷에 접속하는 경우 -> 집에 있는 무선 공유기 고장으로 스마트폰의 핫스팟 기능을 이용하여 노트북을 인터넷에 연결하는 경우
 - 무선 전화통신망은 IP 패킷과는 다른 종류의 헤더를 사용 -> 패킷이 인터넷 망이 아닌 구간을 통 과할 때 어떻게 해야 하는가의 문제가 발생
 - **터널링 혹은 IP 터널링 -> 기존의 IP 패킷을 무선 전화망에서 사용하는 패킷에 집어넣고, 무선 전화망과 인터넷이 연결되는 곳까지 보냄. 이후 IP 패킷으로 전송**
 
 ## 2. IP 헤더 분석
 #### IPv4 헤더
-![[computer-networks__인터넷 프로토콜(IP__IPv4 헤더.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__IPv4 헤더.png -->
 - IPv4의 헤더 : 32비트(4바이트)를 기준으로 나눔
 - 위에서부터 다섯 번째 줄까지 필수부분이고, 나머지는 옵션부분, IP 헤더의 필수 부분은 5 x 4바이트 = 20바이트이고, 옵션은 없을 수 있으며, 있더라도 4바이트씩 증가
 
-![[computer-networks__인터넷 프로토콜(IP__IPv4 헤더 2.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__IPv4 헤더 2.png -->
 - Version : IP 버전 번호, IPv4임으로 4가 들어가 있음
 - **IHL** : IHL은 **IP Header Length**의 약자. 옵션을 포함한 IP 헤더 길이를 나타냄. 언제나 4바이트 기준. 옵션이 없는 경우 IHL에는 **5가 들어가 있음** -> 1줄이 4바이트임으로 20바이트 크기의 헤더가 됨
 - Services(QoS) : 1번 줄의 8번에서 15번 비트까지는 원래 Quality of Service를 명시. 일반적인 인터넷에 서는 **무시**
 - ECN : **14번과 15번 비트**는 ECN 필드이다. ECN은 **혼잡제어**와 관련된 필드. ECN은 ECT 비트와 CE 비트 두 개로 구성. ECN는 TCP의 요청에 의해 사용되는 필드이며 14장 TCP와 소켓 프로그래밍에서 자세히 설명
 - Total Length : Total Length는 **헤더를 포함하여 전체 패킷의 크기**를 나타냄 -> IHL과 달리 Total Length에 있는 값은 바이트를 의미. 200이면 헤더를 포함하여 전체 크기가 200바이트라는 의미
 
-![[computer-networks__인터넷 프로토콜(IP__IPv4 헤더 3.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__IPv4 헤더 3.png -->
 - Identification Number: 패킷 번호를 의미하며, 분할 된 패킷 중 원본 패킷이 무엇인지 확인하는데 사용. 같은 Identification Number를 가진 패킷은 원본에서 분할된 패킷. 
 - DF : DF는 **Don’t Fragment**의 약자이며, 목적지의 호스트가 나눠진 패킷을 하나로 만들 수 없는 경우 패킷을 분할하지 못하도록 만든 필드. 이 필드가 1이 되면 패킷을 분할하지 못함. 
 - MF : MF는 More Fragment의 약자이며 앞서 패킷 단편화에서 설명한 필드. 0이면 뒤로 패킷이 더 있다는 의미이며, 1이면 마지막 패킷이라는 의미. 
 - Fragment Offset : Fragment Offset은 앞서 패킷 단편화에서 설명한 필드. 현재 가지고 있는 데이터가 원본 데이터에서 어느 위치인지를 나타낸다. 바이트로 표시되며, 0이면 맨 앞의 패킷
 - 
 
-![[computer-networks__인터넷 프로토콜(IP__IPv4 헤더 4.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__IPv4 헤더 4.png -->
 - **Time to Live** : 패킷이 목적지에 도착하지 못하고 인터넷에서 계속 살아 있는 경우가 **좀비패킷** -> 좀비패킷이 많아 질 경우 **네트워크에 부담이 커짐**. **패킷이 살아 있을 수 있는 시간**을 기록한 것이 Time to Live. TTL에 명시된 시간을 넘어서 네트워크를 돌아다니다 라우터를 만나면 해당 패킷을 폐기. 라우터 마다 시간의 오차가 있을 수 있어 **홉으로 표시**하는 추세. 
 - Transport Protocol : 전송 계층에는 TCP 뿐 아니라 UDP와 같은 여러 종류의 프로토콜들이 있음. 해당 패킷을 전송계층에 있는 어떤 프로토콜에게 전달해야하는지 명시. 
 - Header Checksum : 헤더에 **에러가 있는지 없는지를 검사**하는 **16비트 코드**가 Header Checksum에 들어 있다. 에러검사 코드 중 체크썸Checksum 방식을 사용. 헤더만 검사. 
 - IP헤더 4번 줄의 Source Address는 보내는 호스트의 IP 주소를 나타내며, 5번 줄 Destination Address는 받는 호스트의 IP 주소를 의미.
 
 #### IPv6 헤더 -> IoT 시대에 쓸 수 있는 형태
-![[computer-networks__인터넷 프로토콜(IP__IPv6 헤더 - IoT 시대에 쓸 수 있는 형태.png]]
+<!-- 원본 이미지 없음: computer-networks__인터넷 프로토콜(IP__IPv6 헤더 - IoT 시대에 쓸 수 있는 형태.png -->
 - IPv6의 크기는 40바이트 고정이다. IPv4와 같은 옵션은 없음. 
 - IPv6 헤더에서 Source Address 16바이트(128비트)와 Destination Address 16바이트. 
 - 1번 줄 -> Version 필드에는 버전 번호 6이 들어감. 

@@ -9,27 +9,14 @@ kg_level: 4
 kg_role: source-note
 semester: 3-1
 source: ''
-status: seedling
+status: draft
 tags:
-- math/discrete
-- type/project
+- discrete
+- project
 title: 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 type: project
 updated: '2026-05-05'
 ---
-
-domain:: [[ComputerScience/02_math-theory/수학 이론 인터페이스|수학 이론 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/2단계 전공 핵심 인터페이스|2단계 전공 핵심 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/수리논리학 인터페이스|수리논리학 인터페이스]]
-up:: [[ComputerScience/02_math-theory/mathematical-logic/논리학 개론|논리학 개론]]
-prerequisites:: [[ComputerScience/02_math-theory/discrete-mathematics/4. 그래프/그래프|그래프]]
-related:: [[ComputerScience/02_math-theory/mathematical-logic/프로젝트/2차 컨펌|2차 컨펌]], [[ComputerScience/02_math-theory/mathematical-logic/프로젝트/신호 특징 분석 결과|신호 특징 분석 결과]], [[ComputerScience/02_math-theory/mathematical-logic/프로젝트/ASD Feature 발굴|ASD Feature 발굴]], [[ComputerScience/02_math-theory/mathematical-logic/프로젝트/1차 컨펌|1차 컨펌]], [[ComputerScience/02_math-theory/mathematical-logic/동아설계도|동아설계도]], [[ComputerScience/05_software-engineering/database-systems/9. 정규화/정규화|정규화]], [[ComputerScience/02_math-theory/discrete-mathematics/과제/Discrete mathematics Assignment|Discrete mathematics Assignment]], [[ComputerScience/01_programming-foundations/data-structures/2. 스택/Stack|Stack]], [[ComputerScience/02_math-theory/probability-statistics/4.Bayes_theorem/Bayes theorem 문제 풀이|문제 풀이]], [[ComputerScience/02_math-theory/discrete-mathematics/과제/과제 번역|과제 번역]], [[ComputerScience/02_math-theory/discrete-mathematics/3. 관계와 함수/관계와 함수|관계와 함수]], [[ComputerScience/02_math-theory/discrete-mathematics/2. 집합 및 집합 연산/집합 및 집합 연산|집합 및 집합 연산]], [[ComputerScience/02_math-theory/discrete-mathematics/1. 수학적 모델과 논리/수학적 모델과 논리|수학적 모델과 논리]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/수리논리학 지식그래프|수리논리학]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/수리논리학 지식그래프|수리논리학]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/수리논리학 근거 인덱스|수리논리학 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/mathematical-logic/특징별 분석|특징별 분석]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/mathematical-logic/음향 신호 특징 분석 결과|음향 신호 특징 분석 결과]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/mathematical-logic/이상 탐지|이상 탐지]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/mathematical-logic/과제 번역|과제 번역]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/mathematical-logic/논리학 개론|논리학 개론]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
 # 이상 탐지(ASD)를 위한 최적의 Feature Engineering
@@ -226,31 +213,31 @@ if __name__ == "__main__":
 ### 생성된 시각화 파일
 1. STFT Magnitude & Phase:
    - `normal_stft_mag.png` (177KB)
-	    ![[3-1_mathematical-logic__normal_stft_mag.png]]
+	    <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_stft_mag.png -->
    - `normal_stft_phase.png` (683KB)
-	   ![[3-1_mathematical-logic__normal_stft_phase.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_stft_phase.png -->
    - `anomaly_stft_mag.png` (233KB)
-	   ![[3-1_mathematical-logic__anomaly_stft_mag.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_stft_mag.png -->
    - `anomaly_stft_phase.png` (683KB)
-	   ![[3-1_mathematical-logic__anomaly_stft_phase.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_stft_phase.png -->
 
 2. Mel Spectrogram:
    - `normal_mel.png` (151KB)
-	   ![[3-1_mathematical-logic__normal_mel.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_mel.png -->
    - `anomaly_mel.png` (152KB)
-	   ![[3-1_mathematical-logic__anomaly_mel.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_mel.png -->
 
 3. MFCC:
    - `normal_mfcc.png` (40KB)
-	   ![[3-1_mathematical-logic__normal_mfcc.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_mfcc.png -->
    - `anomaly_mfcc.png` (42KB)
-	   ![[3-1_mathematical-logic__anomaly_mfcc.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_mfcc.png -->
 
 4. Spectral Contrast:
    - `normal_contrast.png` (30KB)
-	   ![[3-1_mathematical-logic__normal_contrast.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_contrast.png -->
    - `anomaly_contrast.png` (30KB)
-	   ![[3-1_mathematical-logic__anomaly_contrast.png]]
+	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_contrast.png -->
 
 ### 특징별 분석
 

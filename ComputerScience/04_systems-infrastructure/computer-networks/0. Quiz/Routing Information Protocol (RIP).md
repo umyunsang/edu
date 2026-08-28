@@ -9,28 +9,14 @@ kg_level: 4
 kg_role: source-note
 semester: 2-2
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/systems
-- type/lecture
+- systems
+- lecture
 title: Routing Information Protocol (RIP)
 type: lecture
 updated: '2026-05-05'
 ---
-
-domain:: [[ComputerScience/04_systems-infrastructure/시스템 인프라 인터페이스|시스템 인프라 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/4단계 시스템 실전 인터페이스|4단계 시스템 실전 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/컴퓨터네트워크 인터페이스|컴퓨터네트워크 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/시스템 운영 브리지|시스템 운영 브리지]]
-up:: [[ComputerScience/04_systems-infrastructure/computer-networks/14. TCP와 소켓 프로그래밍/TCP와 소켓 프로그래밍|TCP와 소켓 프로그래밍]]
-prerequisites:: [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
-related:: [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/중간 퀴즈|중간 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 퀴즈|기말 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/라우팅 알고리즘|라우팅 알고리즘]], [[ComputerScience/04_systems-infrastructure/computer-networks/5. 통신망과 특징/통신망과 특징|통신망과 특징]], [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크|통신과 컴퓨터 네트워크]], [[ComputerScience/04_systems-infrastructure/computer-networks/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP)|인터넷 프로토콜(IP)]], [[ComputerScience/04_systems-infrastructure/computer-networks/9. 네트워크 계층/네트워크 계층|네트워크 계층]], [[ComputerScience/04_systems-infrastructure/computer-networks/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델|네트워크 분류와 계층 모델]], [[ComputerScience/04_systems-infrastructure/computer-networks/7. LAN의 특징과 규격/LAN의 특징과 규격|LAN의 특징과 규격]], [[ComputerScience/04_systems-infrastructure/computer-networks/12. 네트워크 계층 작업과 프로토콜/네트워크 계층 작업과 프로토콜|네트워크 계층 작업과 프로토콜]], [[ComputerScience/04_systems-infrastructure/computer-networks/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]], [[ComputerScience/04_systems-infrastructure/computer-networks/8. 무선통신 시스템/무선통신 시스템|무선통신 시스템]], [[ComputerScience/04_systems-infrastructure/computer-networks/3. 신호 처리/신호 처리|신호 처리]], [[ComputerScience/04_systems-infrastructure/computer-networks/16. 보안/네트워크 보안|네트워크 보안]], [[ComputerScience/04_systems-infrastructure/computer-networks/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송|유선 및 무선 데이터 전송]], [[ComputerScience/04_systems-infrastructure/computer-networks/13. 전송 계층/전송 계층|전송 계층]], [[ComputerScience/02_math-theory/discrete-mathematics/3. 관계와 함수/관계와 함수|관계와 함수]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/1. 논리 게이트|1. 논리 게이트]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/5. 주소 지정 방식|5. 주소 지정 방식]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/CUDA 프로그램 연습 및 CUDA API 이해|CUDA 프로그램 연습 및 CUDA API 이해]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/2. 불 대수|2. 불 대수]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/2. 산술 논리 연산 장치|2. 산술 논리 연산 장치]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/1. Why Parallelism|1. Why Parallelism]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/3. 레지스터|3. 레지스터]], [[ComputerScience/04_systems-infrastructure/computer-architecture/중간 시험 범위|중간 시험 범위]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/4. 컴퓨터 명령어|4. 컴퓨터 명령어]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/5. 파이프 라이닝|5. 파이프 라이닝]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/2. 주기억 장치|2. 주기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/1. 프로세스 구성과 동작|1. 프로세스 구성과 동작]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/6. CISC와 RISC|6. CISC와 RISC]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/4. 가상 기억 장치|4. 가상 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/4. 조합 논리 회로|4. 조합 논리 회로]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/3. 명령어 사이클|3. 명령어 사이클]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/1. 기억 장치 시스템의 개요|1. 기억 장치 시스템의 개요]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/5. 에러 검출 코드|5. 에러 검출 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/1. 제어 장치의 기능|1. 제어 장치의 기능]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/2. 정수 표현|2. 정수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/3. 캐시 기억 장치|3. 캐시 기억 장치]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다|쿠다]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/4. 디지털 코드|4. 디지털 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/2. 제어 장치의 종류|2. 제어 장치의 종류]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/3. 실수 표현|3. 실수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/1. 진법과 진법 변환|1. 진법과 진법 변환]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/4. 프로세서 제어|4. 프로세서 제어]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/3. 카르노 맵|3. 카르노 맵]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/애플 M4 CPU/애플 M4 CPU|애플 M4 CPU]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/컴퓨터네트워크 근거 인덱스|컴퓨터네트워크 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/kakao id|kakao id]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/s03 301 01호실|s03 301 01호실]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/section|section]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층|네트워크 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/전송 계층|전송 계층]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
 
 ---
 # Chapter 1. Routing Information Protocol (RIP)
@@ -45,7 +31,7 @@ Most dynamic routing protocols are based on one of two distributed algorithms: D
 
 Throughout this book, we’ll be using a fictional network called TraderMary to illustrate the concepts with which we’re working. TraderMary is a distributed network with nodes in New York, Chicago, and Ames, Iowa, as shown in Figure 2-1
 
-![[computer-networks__Routing Information Protocol (RIP__Getting RIP Runnin.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Getting RIP Runnin.png -->
 
 As a distributed process, RIP needs to be configured on every router in the network:
 ```
@@ -233,7 +219,7 @@ The routers are now ready to update their neighbors with these routes.
 
 RIP updates are encapsulated in UDP. The well-known port number for RIP updates is 520. The format of a RIP packet is shown in Figure 2-2
 
-![[computer-networks__Routing Information Protocol (RIP__RIP Update.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__RIP Update.png -->
 
 Figure 2-2. Format of RIP update packet
 
@@ -421,7 +407,7 @@ The flush timer is set to when an update is received. When the flush timer expir
 
 Let’s consider [Figure 2-3](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch02s03.html#iprouting-CHP-2-FIG-3 "Figure 2-3. Three routers connected using Ethernet segments"). Here is a snapshot of _A_’s routing table (when all entities are up):
 
-![[computer-networks__Routing Information Protocol (RIP__Convergence.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Convergence.png -->
 
 Figure 2-3. Three routers connected using Ethernet segments
 
@@ -482,7 +468,7 @@ The route remains in hold-down until the hold-down timer expires or until the ro
 
 The events just described are illustrated in [Figure 2-4](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch02s03.html#iprouting-CHP-2-FIG-4 "Figure 2-4. Route convergence after a failure").
 
-![[computer-networks__Routing Information Protocol (RIP__Convergence 2.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Convergence 2.png -->
 
 Figure 2-4. Route convergence after a failure
 
@@ -498,7 +484,7 @@ We couldn’t illustrate the details of the invalid, hold-down, and flush timers
 
 Consider a simple network with two routers connected to each other (Figure 2-5).
 
-![[computer-networks__Routing Information Protocol (RIP__Split horizon.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Split horizon.png -->
 Figure 2-5. Split horizon
 
 Let’s say that router _A_ lost its connection to `172.18.1.0`, but before it could update _B_ about this change, _B_ sent _A_ its full routing table, including `172.18.1.0` at one hop. Router _A_ now assumes that _B_ has a connection to `172.18.1.0` at one hop, so _A_ installs a route to `172.18.1.0` at two hops via _B_. _A_’s next update to _B_ announces `172.18.1.0` at two hops, so _B_ adjusts its route `172.18.1.0` to three hops via _A_! This cycle continues until the route metric reaches 16, at which stage the route update is discarded.
@@ -509,7 +495,7 @@ Split horizon solves this problem by proposing a simple solution: when a router 
 
 Split horizon works well for two routers directly connected to each other. However, consider the following network (shown in [Figure 2-6](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch02s03.html#iprouting-CHP-2-FIG-6 "Figure 2-6. Counting to infinity")).
 
-![[computer-networks__Routing Information Protocol (RIP__Counting to infini.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Counting to infini.png -->
 Figure 2-6. Counting to infinity
 
 Let’s say that router _A_ stopped advertising network _X_ to its neighbors _B_ and _E_. Routers _B_, _D_, and _E_ will finally purge the route to _X_, but router _C_ may still advertise _X_ to _D_ (without violating split horizon). _D_, in turn, will advertise _X_ to _E_, and _E_ will advertise _X_ to _A_. Thus, the router (_C_) that did not purge _X_ from its table can propagate a bad route.
@@ -677,7 +663,7 @@ In RIP, the default route is represented as the IP address `0.0.0.0`. This is c
 
 One situation in which default routes can be employed in an intranet is in a core network that has branch offices hanging off it ([Figure 2-7](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch02s06.html#iprouting-CHP-2-FIG-7 "Figure 2-7. Branch offices only need a default route")).
 
-![[computer-networks__Routing Information Protocol (RIP__1.6 Default Route.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__1.6 Default Route.png -->
 Figure 2-7. Branch offices only need a default route
 
 Consider the topology of this figure. Since the branch offices have only one connection (to the core), all routes to the core network and to other branches can be replaced with a single default route pointing toward the core network. This implies that the size of the routing table in the branch offices is just the number of directly connected networks plus the default route.
@@ -736,7 +722,7 @@ Yet another use of default routes is in maintaining reachability between a routi
 
 Some host machines listen to RIP updates in “quiet” or “silent” mode ([Figure 2-8](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch02s06.html#iprouting-CHP-2-FIG-8 "Figure 2-8. RIP routes to hosts")). These hosts do not respond to requests for RIP routes or issue regular RIP updates. Listening to RIP provides redundancy to the hosts in a scenario in which multiple routers are connected to a segment. If the routers have similar routing tables, it may make sense to send only the default route (`0.0.0.0`) to hosts.
 
-![[computer-networks__Routing Information Protocol (RIP__Routes to hosts.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Routes to hosts.png -->
 Figure 2-8. RIP routes to hosts
 
 ## 1.7 Fine-Tuning RIP
@@ -851,7 +837,7 @@ The following section gets us started with configuring IGRP.
 
 TraderMary’s network, shown in Figure 3-1
 
-![[computer-networks__Routing Information Protocol (RIP__2.1 Getting IGRP R.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__2.1 Getting IGRP R.png -->
 Figure 3-1. TraderMary’s network
 
 Like RIP, IGRP is a distributed protocol that needs to be configured on every router in the network:
@@ -1021,7 +1007,7 @@ The AS number allows the network administrator to define routing domains; router
 
 Let’s say that TraderMary created a subsidiary in Africa and that the new topology is as shown in [Figure 3-2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-FIG-2 "Figure 3-2. TraderMary’s U.S. and African networks").
 
-![[computer-networks__Routing Information Protocol (RIP__2.2.1 IGRP Autonom.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__2.2.1 IGRP Autonom.png -->
 Figure 3-2. TraderMary’s U.S. and African networks
 
 Note that IGRP is running in the U.S. and Africa with AS numbers of 10 and 20, respectively. The U.S. routers now exchange IGRP routes with each other, as before, and the routers _Nairobi_ and _Casablanca_ exchange IGRP updates with each other. IGRP updates are processed only between routers running the same AS number, so _NewYork_ and _Nairobi_ do not exchange IGRP updates with each other. We will see this in more detail later, when we look at the format of an IGRP update.
@@ -1151,7 +1137,7 @@ Later in this chapter we will see how modifications to the bandwidth and delay p
 
 IGRP updates are directly encapsulated in IP with the protocol field (in the IP header) set to 9. The format of an IGRP packet is shown in [Figure 3-3](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-FIG-3 "Figure 3-3. Format of an IGRP update packet").
 
-![[computer-networks__Routing Information Protocol (RIP__2.2.2.3 IGRP routi.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__2.2.2.3 IGRP routi.png -->
 Figure 3-3. Format of an IGRP update packet
 
 Just like RIP, IGRP allows a station to request routes. This allows a router that has just booted up to request the routing table from its neighbors instead of waiting for the next cycle of updates, which could be as much as 90 seconds later for IGRP.
@@ -1503,7 +1489,7 @@ The default behavior of IGRP installs parallel routes to a destination only if a
 
 Equal-cost load balancing works well almost all the time. However, consider TraderMary’s network again. Say that TraderMary adds a node in London. Since traffic to London is critical, the network is engineered with two links from New York: one running at 128 kbps and another running at 56 kbps. [Figure 3-4](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-FIG-4 "Figure 3-4. Unequal-cost load balancing") shows unequal-cost load balancing.
 
-![[computer-networks__Routing Information Protocol (RIP__Unequal metric (co.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Unequal metric (co.png -->
 Figure 3-4. Unequal-cost load balancing
 
 The routers are first configured as follows:
@@ -1741,7 +1727,7 @@ IGRP summarizes network numbers when crossing a major network-number boundary, j
 
 However, route summarization does not work well in discontiguous networks. Consider the discontiguous network in [Figure 3-5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s04.html#iprouting-CHP-3-FIG-5 "Figure 3-5. Contiguous and discontiguous networks"). Router _X_ will receive advertisements for `10.0.0.0` from both routers _A_ and _B_. If _X_ sent packets with the destination `10.1.1.1` to _B_, the packet would be lost -- _B_ would have to drop the packet because it would not have a route for `10.1.1.1` in its table. Likewise, if _X_ sent packets with the destination `10.2.1.1` to _A_, the packet would be lost -- _A_ would have to drop the packet because it would not have a route for `10.2.1.1`.
 
-![[computer-networks__Routing Information Protocol (RIP__2.4 Route Summariz.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__2.4 Route Summariz.png -->
 Figure 3-5. Contiguous and discontiguous networks
 
 Both IGRP and RIP networks must be designed in contiguous blocks of major network numbers.
@@ -1750,7 +1736,7 @@ Both IGRP and RIP networks must be designed in contiguous blocks of major networ
 
 IGRP tracks default routes in the exterior section of its routing updates. A router receiving `10.0.0.0` in the exterior section of a routing update would mark `10.0.0.0` as a default route and install its next hop to `10.0.0.0` as the _gateway of last resort_ . Consider the network in [Figure 3-6](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s05.html#iprouting-CHP-3-FIG-6 "Figure 3-6. Branch offices only need a default route") as an example in which a core router connects to several branch routers in remote sites.
 
-![[computer-networks__Routing Information Protocol (RIP__2.5 Default Routes.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__2.5 Default Routes.png -->
 Figure 3-6. Branch offices only need a default route
 
 The core router is configured as follows:
@@ -1997,7 +1983,7 @@ This chapter focuses on EIGRP’s enhancements over IGRP: the use of DUAL; and t
 
 TraderMary’s network, shown in [Figure 4-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04.html#iprouting-CHP-4-FIG-1 "Figure 4-1. TraderMary’s network"), can be configured to run EIGRP as follows.
 
-![[computer-networks__Routing Information Protocol (RIP__3.1 Getting EIGRP.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.1 Getting EIGRP.png -->
 Figure 4-1. TraderMary’s network
 
 Just like RIP and IGRP, EIGRP is a distributed protocol that needs to be configured on every router in the network:
@@ -2267,7 +2253,7 @@ These processes are described in detail in the following sections.
 
 Just like RIP and IGRP, EIGRP calculates the lowest cost to reach a destination based on updates from neighbors. An update from a router _R_ contains the cost to reach the destination network _N_ from _R_. This cost is referred to as the _reported distance_ (RD). _NewYork_ receives an update from _Ames_ with a cost of 281,600, which is _Ames_’s cost to reach `172.16.100.0`. In other words, the RD for _Ames_ to reach `172.160.100.0` as reported to _NewYork_ is 281,600. Just like _Ames_, _Chicago_ will report its cost to reach `172.16.100.0`. _Chicago_’s RD is 2,195,456 (see [Figure 4-2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-2 "Figure 4-2. Ames is a feasible successor for 172.16.100.0")).
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.3.1 Reported d.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.3.1 Reported d.png -->
 Figure 4-2. Ames is a feasible successor for 172.16.100.0
 
 #### 3.3.3.2 Feasible distance and successor
@@ -2284,7 +2270,7 @@ The feasibility condition is a test for _loop freedom_ : if the FC is met, the
 
 Let’s illustrate this concept with another example. Consider the network in [Figure 4-3](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-3 "Figure 4-3. Loop freedom"). The metric values used in this example have been simplified to small numbers to make it easier to follow the concept.
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.3.4 Loop freed.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.3.4 Loop freed.png -->
 Figure 4-3. Loop freedom
 
 Router _A_’s best route to network _N_ is via router _B_, and the cost of this path is 100 (_A_’s FD to _N_ is 100). Router _X_ also knows how to get to network _N_; _X_ advertises _N_ to _A_ in an update packet (_A_ copies this information into its topology table). In the event that _A_’s link to _B_ fails, _A_ can use the route to _N_ via _X_ if _X_ does not use _A_ to get to _N_ (in other words, if the path is loop-free). Thus, the key question for _A_ to answer is whether or not the path that _X_ advertises is loop-free.
@@ -2342,7 +2328,7 @@ Notice that _Ames_ (`172.16.251.2`) did not become a feasible successor, even 
 
 _Ames_’s metric to `172.16.50.0` is 2,195,456 (line 11). This will be the metric that _Ames_ reports to _NewYork_. The RD is thus 2,195,456. _NewYork_’s FD to `172.16.50.0` is 2,195,456. The RD and the FD are equal, which is not surprising given the topology: both _NewYork_ and _Ames_ have identical paths to `172.16.50.0` -- a T-1 link, a router, and the destination Ethernet segment. Since the condition for feasible successor is that RD < FD, _Ames_ is not an FS for `172.16.50.0` (see [Figure 4-4](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-4 "Figure 4-4. Ames is not a feasible successor for 172.16.50.0")).
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.3.5 Topology t.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.3.5 Topology t.png -->
 Figure 4-4. Ames is not a feasible successor for 172.16.50.0
 
 The output of **show ip eigrp topology** shows only feasible successors. The output of **show ip eigrp topology all-links** shows all neighbors, whether feasible successors or not.
@@ -2366,7 +2352,7 @@ The next section contains two examples of DUAL reevaluating its topology table. 
 
 Let’s say that the _NewYork_ → _Chicago_ link fails ([Figure 4-5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-5 "Figure 4-5. Link failure")).
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.3.6 Convergenc.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.3.6 Convergenc.png -->
 Figure 4-5. Link failure
 
 _NewYork_’s routing table shows that `172.16.100.0` and `172.16.50.0` are learned via this link (_Serial0_):
@@ -2500,7 +2486,7 @@ Following the IP header is an EIGRP header. Key fields in the EIGRP header are a
 - The _AS number_ identifies the EIGRP process issuing the packet. The EIGRP process receiving the packet will process the packet only if the receiving EIGRP process has the same AS number; otherwise, the packet will be discarded.
     
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.5 EIGRP Packet.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.5 EIGRP Packet.png -->
 Figure 4-6. Format of EIGRP packets
 
 The fields following the EIGRP header depend on the opcode field. Of particular interest to routing engineers is the information in updates. We will ignore the other types of EIGRP messages and focus on IP internal route updates and IP external route updates.
@@ -2515,7 +2501,7 @@ Internal and external routes are represented differently in the EIGRP update.
 
 Internal routes have a _type_ field of 0x0102. The metric information contained with the route is much like IGRP’s (see [Chapter 2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03.html "Chapter 3. Interior Gateway Routing Protocol (IGRP)")). However, there are two new fields: _next hop_ and _prefix length_. [Figure 4-7](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-7 "Figure 4-7. EIGRP internal route") shows the value field for the IP internal route.
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.5.1 Internal r.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.5.1 Internal r.png -->
 Figure 4-7. EIGRP internal route
 
 The next hop identifies the router to send packets destined for _destination_, the network number of the destination. In general, the next hop field for internal routes will be the IP address of the router on the interface on which it is issuing the update.
@@ -2540,7 +2526,7 @@ it will advertise `172.16.250.0` with a prefix length of 30.
 
 Additional fields are required to represent the source from which external routes are derived, as shown in [Figure 4-8](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-8 "Figure 4-8. EIGRP external route").
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.5.2 External r.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.5.2 External r.png -->
 Figure 4-8. EIGRP external route
 
 The next hop field identifies the router to send packets destined for _destination_, the network number of the destination. This field was absent in the IGRP update. Let’s look at what this field signifies.
@@ -2664,7 +2650,7 @@ The default behavior of EIGRP is to summarize on network-number boundaries. Thi
 
 Say TraderMary’s network expands again, this time with a node in Shannon. Shannon gets connected to the London office via a 56-kbps link, as shown in [Figure 4-9](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s05.html#iprouting-CHP-4-FIG-9 "Figure 4-9. Route summarization").
 
-![[computer-networks__Routing Information Protocol (RIP__3.5.1 Automatic Su.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.5.1 Automatic Su.png -->
 Figure 4-9. Route summarization
 
 Shannon has three Ethernet segments with an IP subnet on each: `172.20.100.0/24`, `172.20.101.0/24`, and `172.20.102.0/24`. The routers in London and Shannon are configured to run EIGRP 10 in keeping with the routing protocol in use in the U.S. _Shannon_ will advertise `172.20.0.0/16` to _London_ because the serial link from _London_ to _Shannon_ represents a network-number boundary (`172.20.0.0/172.16.0.0`). _Shannon_ itself will see all `172.16.0.0` subnets (without summarization) because it has a directly connected `172.16.0.0` network.
@@ -2685,7 +2671,7 @@ The route to _null0_ ensures that if _Shannon_ receives a packet for which i
 
 Now, let’s muddy the picture up a bit. TraderMary acquires a small company in Ottawa which also happens to use a `172.20.0.0` subnet -- `172.20.1.0`! The new picture looks something like [Figure 4-10](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s05.html#iprouting-CHP-4-FIG-10 "Figure 4-10. TraderMary’s networks in Shannon and Ottawa").
 
-![[computer-networks__Routing Information Protocol (RIP__3.5.1 Automatic Su 2.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.5.1 Automatic Su 2.png -->
 Figure 4-10. TraderMary’s networks in Shannon and Ottawa
 
 Ottawa is also configured to run EIGRP 10 with a link from _NewYork_. Since the IP address on the link is `172.16.0.0`, _Ottawa_ will send a summary update of `172.20.0.0` to _NewYork_.
@@ -2815,7 +2801,7 @@ EIGRP tracks default routes in the external section of its routing updates. Cand
 
 Default routes are most often used to support branch offices that have only one or two connections to the core network (see [Figure 4-11](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s06.html#iprouting-CHP-4-FIG-11 "Figure 4-11. Branch offices only need a default route")).
 
-![[computer-networks__Routing Information Protocol (RIP__3.6 Default Routes.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.6 Default Routes.png -->
 Figure 4-11. Branch offices only need a default route
 
 The core router is configured as follows:
@@ -3020,7 +3006,7 @@ DV protocols have to set up special mechanisms to guard against bad routing info
 
 Dijkstra’s algorithm is a wonderful tool but, as we shall see in more detail later, the SPF algorithm is expensive in terms of CPU utilization. The cost of running the algorithm increases quickly as the network topology grows. This would be a problem but, given OSPF’s hierarchical structure, the network is divided into “small” areas, and the SPF algorithm is executed by each router only on its intra-area topology. So how do routers in two different areas communicate with each other? All areas summarize their routes to a special area called the _backbone area_ or _area 0_. The backbone area in turn summarizes routes to all attached areas. Hence, traffic between any two areas must pass through the backbone area (see [Figure 6-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06.html#iprouting-CHP-6-FIG-1 "Figure 6-1. Overview of OSPF areas")).
 
-![[computer-networks__Routing Information Protocol (RIP__Chapter 4. Open Sh.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Chapter 4. Open Sh.png -->
 Figure 6-1. Overview of OSPF areas
 
 OSPF derives its name from Dijkstra’s SPF algorithm; the prefix “O” signifies that it’s an “open” protocol and so is described in an “open” book that everyone can access. That open book is RFC 2328, thanks to John Moy. In contrast, IGRP and EIGRP are Cisco _proprietary_ protocols. Multiple vendors support OSPF.
@@ -3033,7 +3019,7 @@ In this section, we will configure OSPF on a small network. In later sections, w
 
 TraderMary’s network, shown in [Figure 6-2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06.html#iprouting-CHP-6-FIG-2 "Figure 6-2. TraderMary’s network"), can be configured to run OSPF as follows.
 
-![[computer-networks__Routing Information Protocol (RIP__3.1 Getting OSPF R.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.1 Getting OSPF R.png -->
 Figure 6-2. TraderMary’s network
 
 Like RIP and IGRP, OSPF is a distributed protocol that needs to be configured on every router in the network:
@@ -3277,7 +3263,7 @@ Table 4-2. Driving distances
 
 The output would be the shortest paths from New York to all other cities in the graph. A geographical view of [Table 4-2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s03.html#iprouting-CHP-6-TABLE-2 "Table 6-2. Driving distances") is contained in [Figure 6-3](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s03.html#iprouting-CHP-6-FIG-3 "Figure 6-3. Geographical view of driving distances").
 
-![[computer-networks__Routing Information Protocol (RIP__3.3 Definitions an.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3 Definitions an.png -->
 Figure 6-3. Geographical view of driving distances
 
 There are six nodes in this graph: New York, Chicago, Boston, Toronto, Detroit, and Washington. There are nine edges in the graph, each represented by the distance between a pair of vertices. The SPF algorithm works as follows:
@@ -3307,7 +3293,7 @@ Unlike flat networks such as RIP and IGRP in which each router has the same resp
 
 The _backbone area_ is of special significance in OSPF because all other areas must connect to it. The area ID of (or `0.0.0.0`) is reserved for the backbone. [Figure 6-4](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s03.html#iprouting-CHP-6-FIG-4 "Figure 6-4. OSPF architecture: a high-level view") shows an OSPF network comprised of a backbone area and three other areas -- areas 1, 2, and 3. Note that all inter-area traffic must pass through the backbone area, which implies that backbone routers must possess the complete topological database for the network.
 
-![[computer-networks__Routing Information Protocol (RIP__3.3.1 Backbone Are.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.1 Backbone Are.png -->
 Figure 6-4. OSPF architecture: a high-level view
 
 ### 3.3.2 Backbone Router
@@ -3446,7 +3432,7 @@ _Au type_
 _Authentication data_
 	The authentication data.
 
-![[computer-networks__Routing Information Protocol (RIP__3.4 How OSPF Works.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4 How OSPF Works.png -->
 Figure 4-5. Format of an OSPF header
 
 ### 3.4.1 Neighbor Discovery: The Hello Protocol
@@ -3455,7 +3441,7 @@ Every router generates OSPF hello packets on every OSPF-enabled interface. Hel
 
 Each hello packet contains the fields described in the following sections. The format of a hello packet is shown in [Figure 4-6](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-FIG-6 "Figure 6-6. Format of hello packet").
 
-![[computer-networks__Routing Information Protocol (RIP__3.4.1 Neighbor Dis.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4.1 Neighbor Dis.png -->
 Figure 4-6. Format of hello packet
 
 #### 3.4.1.1 Router ID
@@ -3534,7 +3520,7 @@ ip ospf hello-interval _`seconds`_
 
 OSPF defines several optional capabilities that a router may or may not support. The options field is one octet long, as shown in [Figure 4-7](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-FIG-7 "Figure 6-7. Format of the options field").
 
-![[computer-networks__Routing Information Protocol (RIP__3.4.1.7 Options.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4.1.7 Options.png -->
 Figure 4-7. Format of the options field
 
 Routers that support demand circuits set the DC bit; NSSA support is signified using the N bit. The E bit signifies that the router accepts external LSAs -- stub routers turn off this bit. The T bit signifies the support of multiple types of service.
@@ -3689,7 +3675,7 @@ The _database description (DD) packet_ is used to describe the contents of the
 
 The LSA header ([Figure 4-8](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-FIG-8 "Figure 6-8. Format of an LSA header")) uniquely identifies a piece of the OSPF network topology. The key fields in the LSA header are the _advertising router_ , _LS type_ , and _link state ID_ . The advertising router is the router ID of the originator of the LSA. The LS type identifies the type of the LSA that follows. The link state ID depends on the LS type, as shown in [Table 4-3](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-TABLE-3 "Table 6-3. LS type and link state ID").
 
-![[computer-networks__Routing Information Protocol (RIP__3.4.5 Database Exc.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4.5 Database Exc.png -->
 Figure 4-8. Format of an LSA header
 
 Table 4-3. LS type and link state ID
@@ -3710,12 +3696,12 @@ In response to a link state request, a router issues a link state update contain
 
 All LS updates are acknowledged in _link state acknowledgment packets_ (see [Figure 4-9](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-FIG-9 "Figure 6-9. Database description, link state request, link state update, and link state acknowledgment packets")).
 
-![[computer-networks__Routing Information Protocol (RIP__3.4.5 Database Exc 2.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4.5 Database Exc 2.png -->
 Figure 4-9. Database description, link state request, link state update, and link state acknowledgment packets
 
 There are six types of LSA records, each representing a different piece of the network topology. We’ll use TraderMary’s network with a French extension ([Figure 4-10](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-FIG-10 "Figure 6-10. TraderMary’s network with a French extension")) to take a closer look at the various LSA types.
 
-![[computer-networks__Routing Information Protocol (RIP__3.4.5 Database Exc 3.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4.5 Database Exc 3.png -->
 Figure 4-10. TraderMary’s network with a French extension
 
 TraderMary’s network in New York is configured as follows. _NewYork2_ is an ABR with a serial link in area 1 to router _Paris_ (line 15).
@@ -4132,7 +4118,7 @@ TraderMary is planning to establish a new office in Paris with an area ID of 2. 
 
 In our example in [Figure 6-11](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s07.html#iprouting-CHP-6-FIG-11 "Figure 6-11. Virtual link to area 2"), a virtual link may be defined from _NewYork2_ to _Paris2_ through area 1.
 
-![[computer-networks__Routing Information Protocol (RIP__4.7 Virtual Links.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__4.7 Virtual Links.png -->
 Figure 6-11. Virtual link to area 2
 
 The syntax for configuring a virtual link is as follows:
@@ -4404,7 +4390,7 @@ Let’s look at examples of each of these options.
 
 _NewYork2_ is set up with a serial interface to support Frame Relay PVCs to offices in Miami and New Orleans, as shown in [Figure 6-12](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s10.html#iprouting-CHP-6-FIG-12 "Figure 6-12. TraderMary’s Frame Relay network").
 
-![[computer-networks__Routing Information Protocol (RIP__4.10 NBMA Networks.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__4.10 NBMA Networks.png -->
 Figure 6-12. TraderMary’s Frame Relay network
 
 The command **ip ospf network broadcast** (lines 52, 53, and 55) makes OSPF believe that the attached network is multi-access, like an Ethernet segment. However, since the network has no true broadcast capability, the priorities on _NewYork2_, _Miami_, and _NewOrleans_ must be specified to force _NewYork2_ to be the DR on the NBMA network. _NewYork2_ will become the DR while the state of the interface on _Miami_ and _NewOrleans_ will be DRother (implying that the interface has not been elected the DR). _NewYork2_ uses the default priority of 1. _Miami_ and _NewOrleans_ are configured with a priority value of (lines 54 and 56), which makes them ineligible for DR election.
@@ -4684,44 +4670,44 @@ These OSPF benefits come at a price:
 
 ## PNG 시각자료
 
-![[computer-networks__Routing Information Protocol (RIP__- left none get b.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__- left none get b.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__ptelstens SENSES.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__ptelstens SENSES.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__H 18 M Pivot $ 0.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__H 18 M Pivot $ 0.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Pcxly 0) Pcxly.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Pcxly 0) Pcxly.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__xX it X 1.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__xX it X 1.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Ao 6-14 WERBZIO B.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Ao 6-14 WERBZIO B.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Aol 6-6 7PM a.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Aol 6-6 7PM a.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__o https github.co.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__o https github.co.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__of GIOLE, C1.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__of GIOLE, C1.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__CRE) 22 sxe sete.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__CRE) 22 sxe sete.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Example.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Example.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Routing Procotol.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Routing Procotol.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__B2 4-3 Of8 ZH.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__B2 4-3 Of8 ZH.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__ARORA Senay.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__ARORA Senay.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__7,2 1,21 24 (comp.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__7,2 1,21 24 (comp.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Let A {0,1,2,3.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Let A {0,1,2,3.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__Ol 4-12 SBPaSt OF.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Ol 4-12 SBPaSt OF.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__HOHHOAS AS SAO SA.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__HOHHOAS AS SAO SA.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__ae 47 HAlet Ze.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__ae 47 HAlet Ze.png -->
 
-![[computer-networks__Routing Information Protocol (RIP__B2 42 SBHS 01st D.png]]
+<!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__B2 42 SBHS 01st D.png -->
 
-![[computer-architecture__1. 기억 장치 시스템의 개요__기억 장치 시스템에서 액세스 속도, 가격, 용량의 ᄀ.png]]
+<!-- 원본 이미지 없음: computer-architecture__1. 기억 장치 시스템의 개요__기억 장치 시스템에서 액세스 속도, 가격, 용량의 ᄀ.png -->

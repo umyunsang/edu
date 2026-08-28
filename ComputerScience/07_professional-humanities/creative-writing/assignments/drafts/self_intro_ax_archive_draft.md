@@ -5,19 +5,6 @@ kg_level: 4
 kg_role: source-note
 ---
 
-domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/6단계 전문 확장 인터페이스|6단계 전문 확장 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/창의적 글쓰기 인터페이스|창의적 글쓰기 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/산출물 포트폴리오 브리지|산출물 포트폴리오 브리지]]
-up:: [[ComputerScience/07_professional-humanities/creative-writing/중간고사_창의적글쓰기_정리|중간고사_창의적글쓰기_정리]]
-related:: [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_full_draft|self_intro_assignment2_full_draft]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_assignment2_starl_skeleton|self_intro_assignment2_starl_skeleton]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/self_intro_complexity_hardest_experience|self_intro_complexity_hardest_experience]], [[ComputerScience/07_professional-humanities/creative-writing/assignments/drafts/deco_extracurricular_evidence|deco_extracurricular_evidence]], [[ComputerScience/07_professional-humanities/creative-writing/Creative Writing Course Instructions|AGENTS]], [[ComputerScience/07_professional-humanities/creative-writing/docs/CODEX_RAG_NOTES|CODEX_RAG_NOTES]], [[ComputerScience/07_professional-humanities/creative-writing/docs/WRITING_WORKFLOW|WRITING_WORKFLOW]], [[ComputerScience/07_professional-humanities/creative-writing/templates/writing-assignment|writing-assignment]], [[ComputerScience/07_professional-humanities/creative-writing/knowledge/source_map|source_map]], [[제목 AI 데이터센터의 한계, 양자컴퓨터가 답이다|퀴즈]], [[ComputerScience/03_ai-ml-data/ai-system-design/ot/AI 시스템 아이디어 기획 요구사항 정의 발표 스크립트|AI 시스템 아이디어 기획 요구사항 정의 발표 스크립트]], [[LGAimer/LG Aimers 9기 지원서 초안|LG Aimers 9기 지원서 초안]], [[ComputerScience/07_professional-humanities/degree-portfolio/GovOn 온프레미스 AI 발표 스크립트|GovOn 온프레미스 AI 발표 스크립트]], [[ComputerScience/03_ai-ml-data/large-language-models/검색 증강 생성 RAG/RAG|RAG]], [[ComputerScience/07_professional-humanities/classics-reading/멋진신세계|멋진신세계]], [[ComputerScience/07_professional-humanities/degree-portfolio/PDF_인쇄_완전가이드|PDF_인쇄_완전가이드]], [[ComputerScience/07_professional-humanities/degree-portfolio/졸업학점|졸업학점]], [[ComputerScience/07_professional-humanities/intellectual-property/6. 특허 명세서/특허 명세서 작성법|특허 명세서 작성법]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/상표_processed|상표_processed]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/특허_processed|특허_processed]], [[ComputerScience/07_professional-humanities/intellectual-property/5. 특허/특허 제도|특허 제도]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/IPAT_기출문제|IPAT_기출문제]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/1. IPAT 기출문제 지식재산권_답안통합|1. IPAT 기출문제 지식재산권_답안통합]], [[ComputerScience/07_professional-humanities/intellectual-property/4. 디자인 제도 및 등록요건/디자인 제도의 목적과 개념|디자인 제도의 목적과 개념]], [[ComputerScience/07_professional-humanities/intellectual-property/기출문제/processed/지식재산권_processed|지식재산권_processed]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/창의적 글쓰기 지식그래프|창의적 글쓰기]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/창의적 글쓰기 지식그래프|창의적 글쓰기]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/창의적 글쓰기 근거 인덱스|창의적 글쓰기 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/source id|source id]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/pdf path|pdf path]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/창의적글쓰기 강의자료 중핵교양|창의적글쓰기 강의자료 중핵교양]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/creative writing|creative writing]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/creative-writing/중간고사 창의적글쓰기 정리|중간고사 창의적글쓰기 정리]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Contextual Summarize|Contextual Summarize]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Creative Generation|Creative Generation]]
-
 # AX 시대, 지식을 선별하고 연결하는 사람
 
 형식: 자기소개서 과제 초안 - `1. 직무와 관련된 경험`, `2. 지속적 경험`
@@ -78,5 +65,5 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Con
 - 자기소개서에서 `지속성`은 작성자의 노력, 특성, 강점이 언제부터 시작되었고 어떤 과정과 결과를 거쳤는지를 보여 주는 요소다. [강의자료 p.92]
 - 자기소개서 평가에서는 경험의 원인, 과정, 결과를 구체적으로 서술하여 자기점검과 자기성찰 능력을 보여 주는 것이 중요하다. [강의자료 p.93]
 - 자기소개서 작성 전략은 `소제목 + STARL` 구조를 활용할 수 있다. [강의자료 p.97]
-- 아카이브 README는 컴퓨터공학 및 AI 전공 과정을 체계적으로 정리하고, AI/ML·시스템·수학·개발 트랙이 연결되는 구조를 제시한다. [[커리큘럼 관계 정리|edu README]]
+- 아카이브 README는 컴퓨터공학 및 AI 전공 과정을 체계적으로 정리하고, AI/ML·시스템·수학·개발 트랙이 연결되는 구조를 제시한다. [edu README](<../../../../../커리큘럼 관계 정리.md>)
 - 로컬 Git 기준 전체 커밋 수는 1872개로 확인된다. 단, 이는 현재 로컬 저장소에서 확인한 수치이므로 제출 본문에는 구체 숫자를 넣지 않았다.

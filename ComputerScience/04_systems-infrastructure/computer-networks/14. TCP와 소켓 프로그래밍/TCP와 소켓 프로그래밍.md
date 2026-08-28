@@ -9,34 +9,20 @@ kg_level: 4
 kg_role: source-note
 semester: 2-2
 source: ''
-status: seedling
+status: draft
 tags:
-- cs/systems
-- type/lecture
+- systems
+- lecture
 title: TCP와 소켓 프로그래밍
 type: lecture
 updated: '2026-05-05'
 ---
 
-domain:: [[ComputerScience/04_systems-infrastructure/시스템 인프라 인터페이스|시스템 인프라 인터페이스]]
-stage:: [[ComputerScience/00_graph-interfaces/stages/4단계 시스템 실전 인터페이스|4단계 시스템 실전 인터페이스]]
-module:: [[ComputerScience/00_graph-interfaces/courses/컴퓨터네트워크 인터페이스|컴퓨터네트워크 인터페이스]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/시스템 운영 브리지|시스템 운영 브리지]]
-up:: [[ComputerScience/04_systems-infrastructure/시스템 인프라 인터페이스|시스템 인프라 인터페이스]]
-prerequisites:: [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/과제_CacheFriendly코딩실습|과제_CacheFriendly코딩실습]]
-related:: [[ComputerScience/04_systems-infrastructure/computer-networks/11. 인터넷 프로토콜 라우팅 알고리즘/인터넷 프로토콜(IP)|인터넷 프로토콜(IP)]], [[ComputerScience/04_systems-infrastructure/computer-networks/6. 데이터 링크 계층의 작업/데이터 링크 계층의 작업 (2 계층)|데이터 링크 계층의 작업 (2 계층)]], [[ComputerScience/04_systems-infrastructure/computer-networks/2. 네트워크 분류와 계층 모델/네트워크 분류와 계층 모델|네트워크 분류와 계층 모델]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 암기 정리|기말 암기 정리]], [[ComputerScience/04_systems-infrastructure/computer-networks/7. LAN의 특징과 규격/LAN의 특징과 규격|LAN의 특징과 규격]], [[ComputerScience/04_systems-infrastructure/computer-networks/9. 네트워크 계층/네트워크 계층|네트워크 계층]], [[ComputerScience/04_systems-infrastructure/computer-networks/1. 통신과 컴퓨터네트워크/통신과 컴퓨터 네트워크|통신과 컴퓨터 네트워크]], [[ComputerScience/04_systems-infrastructure/computer-networks/8. 무선통신 시스템/무선통신 시스템|무선통신 시스템]], [[ComputerScience/04_systems-infrastructure/computer-networks/12. 네트워크 계층 작업과 프로토콜/네트워크 계층 작업과 프로토콜|네트워크 계층 작업과 프로토콜]], [[ComputerScience/04_systems-infrastructure/computer-networks/4. 유선 및 무선 데이터 전송/유선 및 무선 데이터 전송|유선 및 무선 데이터 전송]], [[ComputerScience/04_systems-infrastructure/computer-networks/5. 통신망과 특징/통신망과 특징|통신망과 특징]], [[ComputerScience/04_systems-infrastructure/computer-networks/10. 라우팅 알고리즘/라우팅 알고리즘|라우팅 알고리즘]], [[ComputerScience/04_systems-infrastructure/computer-networks/3. 신호 처리/신호 처리|신호 처리]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/기말 퀴즈|기말 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-networks/16. 보안/네트워크 보안|네트워크 보안]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/Routing Information Protocol (RIP)|Routing Information Protocol (RIP)]], [[ComputerScience/04_systems-infrastructure/computer-networks/0. Quiz/중간 퀴즈|중간 퀴즈]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/2. 주기억 장치|2. 주기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/5. 에러 검출 코드|5. 에러 검출 코드]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/4. 컴퓨터 명령어|4. 컴퓨터 명령어]], [[ComputerScience/04_systems-infrastructure/operating-systems/8. 메모리관리/메모리 관리|메모리 관리]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/3. 레지스터|3. 레지스터]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/3. 캐시 기억 장치|3. 캐시 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/4. 프로세서 제어|4. 프로세서 제어]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/쿠다|쿠다]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/2. 제어 장치의 종류|2. 제어 장치의 종류]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/CUDA 프로그램 연습 및 CUDA API 이해|CUDA 프로그램 연습 및 CUDA API 이해]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/5. 파이프 라이닝|5. 파이프 라이닝]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/5. 주소 지정 방식|5. 주소 지정 방식]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/1. 프로세스 구성과 동작|1. 프로세스 구성과 동작]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/1. 논리 게이트|1. 논리 게이트]], [[ComputerScience/04_systems-infrastructure/parallel-distributed-computing/1. Why Parallelism|1. Why Parallelism]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/1. 제어 장치의 기능|1. 제어 장치의 기능]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/1. 기억 장치 시스템의 개요|1. 기억 장치 시스템의 개요]], [[ComputerScience/03_ai-ml-data/ml-projects/Pandas/데이터 분석 및 처리 과정 요약|데이터 분석 및 처리 과정 요약]], [[ComputerScience/03_ai-ml-data/big-data-analysis/md/빅데이터 분석 시험 대비 총정리 (실전 예시 중심|시험정리]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/6. CISC와 RISC|6. CISC와 RISC]], [[ComputerScience/04_systems-infrastructure/computer-architecture/5. 기억 장치/4. 가상 기억 장치|4. 가상 기억 장치]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/2. 불 대수|2. 불 대수]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/2. 정수 표현|2. 정수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/4. 디지털 코드|4. 디지털 코드]], [[ComputerScience/04_systems-infrastructure/operating-systems/시험/기말 정리|기말 정리]], [[ComputerScience/02_math-theory/mathematical-logic/프로젝트/신호 특징 분석 결과|신호 특징 분석 결과]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/3. 카르노 맵|3. 카르노 맵]], [[ComputerScience/04_systems-infrastructure/operating-systems/11. 파일 시스템 관리/파일 시스템 관리|파일 시스템 관리]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/애플 M4 CPU/애플 M4 CPU|애플 M4 CPU]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/1. 진법과 진법 변환|1. 진법과 진법 변환]], [[ComputerScience/04_systems-infrastructure/computer-architecture/중간 시험 범위|중간 시험 범위]], [[ComputerScience/04_systems-infrastructure/computer-architecture/1. 데이터의 표현/3. 실수 표현|3. 실수 표현]], [[ComputerScience/04_systems-infrastructure/computer-architecture/3. 중앙 처리 장치/2. 산술 논리 연산 장치|2. 산술 논리 연산 장치]], [[ComputerScience/04_systems-infrastructure/operating-systems/2. 컴퓨터 시스템과 운영체제/컴퓨터 시스템과 OS|컴퓨터 시스템과 OS]], [[ComputerScience/04_systems-infrastructure/computer-architecture/4. 제어 장치/3. 명령어 사이클|3. 명령어 사이클]], [[ComputerScience/04_systems-infrastructure/container-orchestration/Ingress 설정 정리|Ingress 설정 정리]], [[ComputerScience/04_systems-infrastructure/computer-architecture/2. 디지털 논리 회로/4. 조합 논리 회로|4. 조합 논리 회로]], [[ComputerScience/04_systems-infrastructure/operating-systems/12. 저장 장치 관리/대용량 저장 장치 관리|대용량 저장 장치 관리]], [[ComputerScience/04_systems-infrastructure/linux/8. 데이터베이스|8. 데이터베이스]], [[ComputerScience/04_systems-infrastructure/operating-systems/7. 교착상태/교착상태|교착상태]], [[ComputerScience/04_systems-infrastructure/container-orchestration/ClusterIP 서비스 설정 및 가이드|ClusterIP 서비스 설정 및 가이드]], [[ComputerScience/04_systems-infrastructure/container-orchestration/NodePort 서비스 설정 및 가이드|NodePort 서비스 설정 및 가이드]], [[ComputerScience/04_systems-infrastructure/linux/6. REST|6. REST]], [[ComputerScience/04_systems-infrastructure/operating-systems/9. 페이징 메모리 관리/페이징 메모리 관리|페이징 메모리 관리]], [[ComputerScience/04_systems-infrastructure/operating-systems/3. 프로세스와 프로세스 관리/프로세스와 프로세스 관리|프로세스와 프로세스 관리]], [[ComputerScience/04_systems-infrastructure/container-orchestration/도커 기초|도커 기초]], [[ComputerScience/04_systems-infrastructure/linux/7. 회원 가입 및 로그인|7. 회원 가입 및 로그인]], [[ComputerScience/04_systems-infrastructure/linux/5. 플라스크|5. 플라스크]], [[ComputerScience/04_systems-infrastructure/operating-systems/1. OS의 시작과 발전/OS의 시작과 발전|OS의 시작과 발전]], [[ComputerScience/04_systems-infrastructure/linux/1. 리눅스의 기본|1. 리눅스의 기본]], [[ComputerScience/04_systems-infrastructure/operating-systems/10. 가상 메모리/가상 메모리|가상 메모리]], [[ComputerScience/04_systems-infrastructure/linux/3. 리눅스 셸|3. 리눅스 셸]], [[ComputerScience/04_systems-infrastructure/linux/10. 도커|10. 도커]], [[ComputerScience/04_systems-infrastructure/container-orchestration/도커|도커]], [[ComputerScience/04_systems-infrastructure/container-orchestration/파드(Pod)|파드(Pod)]], [[ComputerScience/04_systems-infrastructure/operating-systems/6. 스레드 동기화/스레드 동기화|스레드 동기화]]
-
-kg_parent:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
-kg_profile:: [[ComputerScience/00_graph-interfaces/archive-kg/courses/컴퓨터네트워크 지식그래프|컴퓨터네트워크]]
-kg_evidence:: [[ComputerScience/00_graph-interfaces/archive-kg/evidence/컴퓨터네트워크 근거 인덱스|컴퓨터네트워크 근거 인덱스]]
-kg_concepts:: [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/kakao id|kakao id]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/네트워크 계층|네트워크 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/전송 계층|전송 계층]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/cpu|cpu]], [[ComputerScience/00_graph-interfaces/archive-kg/concepts/computer-networks/신호 처리|신호 처리]]
-kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fact Retrieval|Fact Retrieval]], [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Complex Reasoning|Complex Reasoning]]
-
 ---
 ## 1. 전송 계층 관련 프로토콜 분석
 #### TCP 헤더 분석
 - 전송계층이 해야 할 일 (TCP 헤더에 모두 있음)
-	![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석.png]]
+	<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석.png -->
 	- 다양한 응용 프로그램들이 인터넷을 사용할 수 있는 **멀티 인터페이스**(TSAP)를 제공
 	- 전송된 **데이터의 무결성**을 보장
 	- 네트워크의 상태는 매우 유동적이기 때문에 이에 맞추어 **혼잡 제어**
@@ -44,25 +30,25 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - 전송계층이 해야 하는 대표적인 작업을 담당하는 프로토콜이 TCP(Transmission Control Protocal)
 - 응용 프로그램이 소켓을 통해 인터넷으로 전달할 데이터를 보내면 TCP는 TCP 헤더를 붙여서 IP로 내려 보냄
 - IP는 IP 헤더를 붙여 이더넷으로 내려 보내면 이더넷이 데이터를 전송.
-	![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 2.png]]
+	<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 2.png -->
 - TCP 헤더는 IP헤더와 마찬가지로 32비트(4바이트)를 기준으로 나눔 -> TCP 헤더의 필수 부분은 5 x 4바이트 = 20바이트, 옵션은 없을 수 있으며, 있더라도 4바이트씩 증가
 
-![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 3.png]]
-![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 4.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 3.png -->
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 4.png -->
 - TCP를 사용하는 모든 응용 프로그램들이(process) 포트를 사용하여 구분되기 때문에 **보내는 쪽 포트**(Source Port)와 **받는 쪽 포트**(Destination Port) 둘 다 표시하여 보냄
 - TCP의 구조상, 받는 쪽 포트를 알아야지만 데이터를 보낼 수 있음
 	- 받는 쪽의 응용 프로그램이 웹 데몬(HTTPD)와 같이 잘 알려진 소프트웨어라면 **0에서 1023번 까지의 well-known 포트 번호**를 가지고 있음
 - 포트번호의 길이는 16비트이다. 따라서 0에서 65535까지의 포트번호를 가짐
 - 일반적인 응용 프로그램이라면 1024번 이상 65535이하의 임의의 값을 포트번호로 할당 받음
 
-![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 5.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 5.png -->
 - 네트워크에서 데이터를 전송하는 과정에서 순서가 **뒤바뀌거나 사라지는 문제**가 발생.
 - 데이터 전송에는 2번줄 Sequence Number(일련번호)와 3번줄 Acknowledge Number(ACK 번호)를 사용
 - 일련번호와 ACK 번호는 연결을 설정하고 해제하는데도 사용
 - 컴퓨터가 켜진 후 꺼질 때 까지 무수히 많은 수의 데이터를 전송하기 때문에 일련번호와 ACK 번호는 충분히 커야 함
 - 일련번호와 ACK 번호에 32비트를 할당하였기 때문에 0부터 $2^{32}$ - 1까지, **약 42억개의 번호**를 사용 할 수 있음.
 
-![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 6.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 6.png -->
 - **THL** : THL은 TCP Header Length의 약자. **옵션을 포함한 TCP 헤더 길이**를 나타냄. 데이터는 포함 되지 않음. THL 필드에 들어 있는 값은 4 바이트 단위의 줄의 길이를 의미. 따라서 **옵션이 없는 경우에는 THL에는 5**가 들어 있음.
 - ==**ECE**== : IP 헤더에서 ECN필드와 연동되는 필드가 ECE. ECE는 ECN-Echo로 부름. IP 헤더에서 ECN은 **혼잡제어**에 사용되며, 네트워크에 혼잡이 발생 하여 패킷이 제대로 전달되지 않을 경우 활성화 됨(ECE가 1). 
 	- ECE를 ECN-Echo라 부르는 이유는 IP의 ECN이 네트워크가 혼잡하여 윈도우 크기를 줄인다고 결정하면, TCP의 ECE가 1로 바뀌기 때문.
@@ -76,19 +62,19 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - **RST** : RST는 Reset을 의미한다. 연결 설정이나 연결 해제가 원만히 이루어지지 않을 경우 RST는 필드를 1로 만들면 **리셋하자는 의미**.
 - **Window Size** : 슬라이딩 윈도우 프로토콜의 **윈도우 크기**(ACK없이 받을 수 있는 데이터 크기)를 나타냄. 윈도우의 크기 필드가 16비트 이기 때문에 윈도우의 최대 크기(ACK 없이 보낼 수 있는 데이터의 개수)는 65536($2^{16}$)개. 
 
-![[computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 7.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__TCP 헤더 분석 7.png -->
 - **Checksum** : 에러 검사 코드인 체크썸Checksum이 들어 있으며 크기는 16비트. **TCP의 체크썸은 헤더와 데이터 모두 검사**.
 - **Urgent Pointer** : Urgent Pointer는 4번 줄 **URG(Urgent)가 1이 되면** 의미가 생기는 필드. 통신을 하던 중 **긴급하게 처리해야 하는 데이터가 있다면**, URG가 1이 됨. URG가 1이 된 경우, 데이터 중 긴급하게 처리 되어야 하는 위치(주소)를 Urgent Pointer가 가지고 있음.
 #### UDP
 - TCP의 작업은 부담스러운 경우를 위해 만든 프로토콜이 UDP, 영어로 User Datagram Protocol.
 - 안정성보다는 **속도나 실시간**을 요구하는 네트워크 통신에는 UDP/IP를 사용.
 - UDP 헤더
-	![[computer-networks__TCP와 소켓 프로그래밍__UDP.png]]
+	<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__UDP.png -->
 	- 1번 줄은 TCP 헤더와 마찬가지로 보내는 쪽 포트(Source Port)와 받는 쪽 포트(Destination Port).
 	- 2번줄 **UDP Length**는 **데이터를 포함한 UPD의 전체 길이**를 나타냄. 표시 단위는 바이트. 
 	- 헤더를 포함한 UDP 전체에 대하여 에러검출 코드로 체크썸을 사용.
 #### RTP(4.5 계층)
-![[computer-networks__TCP와 소켓 프로그래밍__RTP(4.5 계층.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__RTP(4.5 계층.png -->
 - RTP는 스트리밍 데이터의 전송을 위해 설계된 **실시간 전송 프로토콜**
 - 주로 동영상 스트리밍, 화상통신과 같은 멀티미디어 통신에 사용
 - TCP나 UDP는 운영체제가 인터넷을 사용하는 응용 프로그램에게 제공하는 통신 서비스
@@ -97,7 +83,7 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 - RTP는 **지터 보상, 패킷 손실, 느린 전송 감지** 기능들을 제공.
 - RTP는 **일 대 일 통신 뿐 아니라 멀티캐스트**를 통해 여러 곳에 데이터를 전송할 수 있게 해 줌.
 
-![[computer-networks__TCP와 소켓 프로그래밍__RTP(4.5 계층 2.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__RTP(4.5 계층 2.png -->
 - 옵션을 제외한 RTP 헤더의 기본 크기는 3줄(12바이트)이다. 헤더의 옵션은 4바이트 단위로 증가. 
 - ver (version): RTP 버전 번호이며 현재는 2. 
 - P (padding): RTP 마지막에 **패딩 데이터**가 존재하는 경우 1이 되는 필드. 
@@ -111,12 +97,12 @@ kg_query_mode:: [[ComputerScience/00_graph-interfaces/archive-kg/query-modes/Fac
 #### 혼잡제어
 - 혼잡제어를 위해서 TCP에서는 ECE와 CWR 필드가 사용되고 IP에서는 ECN이 사용됨.
 - 혼잡제어를 위해서는 TCP의 연결설정 단계에서 양쪽이 ECN을 사용할 것인지를 합의해야 함.
-	![[computer-networks__TCP와 소켓 프로그래밍__혼잡제어.png]]
+	<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__혼잡제어.png -->
 	- 혼잡제어를 사용을 원하는 호스트 A는 연결설정에서 SYN, CWR, ECE 필드를 1로 만들어 보냄 -> 이를 받은 호스트 B는 혼잡제어에 동의 할 경우 SYN, ACK, ECE 필드를 1로 만들어 보냄.
-	![[computer-networks__TCP와 소켓 프로그래밍__혼잡제어 2.png]]
+	<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__혼잡제어 2.png -->
 	- 만약 호스트 B가 혼잡제어가 필요 없다고 판단되는 경우에는 SYN, ACK만 보낸다. 이 경우 혼잡제어는 무시.
 
-![[computer-networks__TCP와 소켓 프로그래밍__혼잡제어 3.png]]
+<!-- 원본 이미지 없음: computer-networks__TCP와 소켓 프로그래밍__혼잡제어 3.png -->
 - 양쪽이 혼잡제어에 동의하는 경우. 
 - TCP의 윈도우 크기를 줄이도록 결정하는 것은 IP의 ECN 필드, ECN은 ECT비트와 CE 비트 두 개로 구성 -> ECN 필드가 (0, 0)으로 설정되면 혼잡제어를 안 한다는 의미 -> (0, 1) 혹은 (1, 0)으로 설정되면 라우터에게 혼잡제어를 하라는 의미(ECT 상태). 
 - 라우터에서 혼잡이 발견되면 라우터는 받는 쪽(호스트 B)로 ECN 필드를 (1, 1)로 만들어 보냄(CE 상태) -> 호스트 B는 TCP의 ECE를 1로 만들어 호스트 A에게 보냄 -> ECE를 받은 호스트 A는 슬라이딩 윈도우의 크기를 줄이고, ECE에 대한 확인으로 CWR을 1로 만들어 보냄.

@@ -10,16 +10,14 @@ source: pdf/
 source_pages: 0
 source_sha256: ""
 source_type: lecture-slides
-status: seedling
+status: draft
 tags:
-  - type/lecture
+  - lecture
 title: ""
 type: lecture
 updated: 2026-08-28
 ---
 
-domain:: 
-module:: 
 source:: 
 
 > [!abstract] 한 줄 요약

@@ -12,19 +12,13 @@ semester: summer
 source: ''
 status: draft
 tags:
-- type/lecture
+- lecture
 - quantum-computing
 - machine-learning
 title: 양자 ML 과정
 type: lecture
 updated: '2026-08-19'
 ---
-
-graph:: [지식그래프 허브](<../../00_graph-interfaces/지식그래프 허브.md>)
-domain:: [AI ML 데이터 인터페이스](<../AI ML 데이터 인터페이스.md>)
-module:: [양자 ML 인터페이스](<../../00_graph-interfaces/courses/양자 ML 인터페이스.md>)
-bridge:: [AI 구현 브리지](<../../00_graph-interfaces/bridges/AI 구현 브리지.md>), [수학 알고리즘 브리지](<../../00_graph-interfaces/bridges/수학 알고리즘 브리지.md>)
-related:: [머신러닝 인터페이스](<../../00_graph-interfaces/courses/머신러닝 인터페이스.md>), [머신러닝](<../machine-learning/머신러닝 핵심 수학 개념.md>), [최적화 수학](<../../02_math-theory/optimization-math/1. Matrix/1. Matrix.md>)
 
 > [!info] 강의 정리문서는 인덱스에서
 > 원본 강의 PDF를 근거로 재작성한 정리문서 10편은 [00. 양자 ML 인덱스](<00. 양자 ML 인덱스.md>) 에 모여 있다.

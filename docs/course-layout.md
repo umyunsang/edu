@@ -9,14 +9,12 @@ semester: extracurricular
 source: ''
 status: stable
 tags:
-  - type/index
+  - index
   - meta
 title: 과목 폴더 표준 — 모든 수업 폴더의 동일한 배치
 type: index
 updated: '2026-08-28'
 ---
-
-schema:: [지식 스키마](<knowledge-schema.md>)
 
 [지식 스키마](<knowledge-schema.md>)가 **파일의 규격**을 정한다면,
 이 문서는 **파일이 놓이는 자리**를 정한다. 모든 과목 폴더는 예외 없이 같은 배치를 따른다.

@@ -9,27 +9,14 @@ kg_level: 4
 kg_role: source-note
 semester: 4-1
 source: ''
-status: seedling
+status: draft
 tags:
-- meta/extracurricular
-- type/lecture
+- extracurricular
+- lecture
 title: 퀴즈
 type: lecture
 updated: '2026-05-05'
 ---
-
-domain:: [[ComputerScience/07_professional-humanities/전문 교양 인터페이스|전문 교양 인터페이스]]
-stage:: [[6단계 전문 확장 인터페이스]]
-module:: [[창의적 글쓰기 인터페이스]]
-bridge:: [[산출물 포트폴리오 브리지]]
-up:: [[중간고사_창의적글쓰기_정리]]
-related:: [[writing-assignment]], [[WRITING_WORKFLOW]], [[self_intro_assignment2_starl_skeleton]], [[Creative Writing Course Instructions|AGENTS]], [[deco_extracurricular_evidence]], [[CODEX_RAG_NOTES]], [[source_map]], [[self_intro_ax_archive_draft]], [[self_intro_assignment2_full_draft]], [[self_intro_complexity_hardest_experience]], [[GovOn 온프레미스 AI 발표 스크립트]], [[멋진신세계]], [[PDF_인쇄_완전가이드]], [[졸업학점]]
-
-kg_parent:: [[창의적 글쓰기 지식그래프|창의적 글쓰기]]
-kg_profile:: [[창의적 글쓰기 지식그래프|창의적 글쓰기]]
-kg_evidence:: [[창의적 글쓰기 근거 인덱스]]
-kg_concepts:: [[source id]], [[pdf path]], [[창의적글쓰기 강의자료 중핵교양]], [[creative writing]], [[중간고사 창의적글쓰기 정리]]
-kg_query_mode:: [[Contextual Summarize]], [[Creative Generation]]
 
 ## 제목: AI 데이터센터의 한계, 양자컴퓨터가 답이다
 
