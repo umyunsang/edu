@@ -72,3 +72,6 @@
 - Completed `large-language-models`: 16 notes plus README, 64 callouts / 16 HTML previews / 16 details / 16 Tabs / 0 source embeds; 17-document audit and lint clean. Two source faults are visible warnings, not silent corrections.
 - Completed `computer-vision`: 6 valid lecture notes plus README, 39 callouts / 12 HTML previews / 13 details / 6 Tabs / 6 Mermaid / 0 source embeds; 7-document audit and lint clean. Excluded declared duplicate PDFs and left three zero-text exam sources undocumented rather than infer content.
 - Active parallel courses: machine-learning and big-data-analysis.
+- Completed `machine-learning`: 21 notes plus README, 84 callouts / 21 HTML previews / 21 details / 21 Tabs / 21 Mermaid / 0 source embeds; 22-document audit and lint clean. Two extraction limits are explicit warnings with no invented reconstruction.
+- Completed `big-data-analysis`: 10 notes plus README, 41 callouts / 20 HTML previews / 20 details / 10 Tabs / 10 Mermaid / 0 source embeds; 11-document audit and lint clean. Declared duplicate and out-of-scope problem-set PDFs remain undocumented.
+- Active parallel courses: ml-projects and artificial-intelligence.
