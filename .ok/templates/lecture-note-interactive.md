@@ -1,8 +1,8 @@
 ---
 template:
-  title: 강의 정리문서 — 관계·절차
-  description: 정량값이나 조절 범위가 없는 강의에 사용. Mermaid로 관계·절차를 시각화하고 Callout·Accordion·표를
-    source 구조에 맞게 배치한다.
+  title: 강의 정리문서 — 인터랙티브 제어
+  description: source가 실제 최솟값·최댓값·간격과 매개변수 효과를 제공할 때 사용. 공식 interactive-control
+    starter만 사용한다.
   tags:
     - lecture
     - openknowledge
@@ -46,6 +46,25 @@ flowchart TB
 
 - **{핵심어}:** {정의·조건·예시}
 - **{근거}:** {원본에서 확인한 수치·절차·관계}
+
+## 매개변수 효과 탐색
+
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <label for="amt" style="font-size:14px;font-weight:600">__SOURCE_PARAMETER_LABEL__</label>
+  <div id="out" style="font-size:30px;font-weight:700;color:var(--chart-1);margin:6px 0">__SOURCE_INITIAL_VALUE__</div>
+  <input id="amt" type="range" min="__SOURCE_MIN__" max="__SOURCE_MAX__" step="__SOURCE_STEP__" value="__SOURCE_INITIAL_VALUE__"
+    style="width:100%;accent-color:var(--primary)" />
+  <p style="font-size:13px;color:var(--muted-foreground)">__SOURCE_INTERACTION_GUIDANCE__</p>
+  <script>
+    var amt = document.getElementById('amt');
+    var out = document.getElementById('out');
+    amt.addEventListener('input', function () {
+      out.textContent = Number(amt.value).toLocaleString();
+    });
+  </script>
+</div>
+```
 
 <details>
 <summary>{선택적 심화 내용}</summary>

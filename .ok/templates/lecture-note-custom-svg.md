@@ -1,8 +1,7 @@
 ---
 template:
-  title: 강의 정리문서 — 관계·절차
-  description: 정량값이나 조절 범위가 없는 강의에 사용. Mermaid로 관계·절차를 시각화하고 Callout·Accordion·표를
-    source 구조에 맞게 배치한다.
+  title: 강의 정리문서 — 비율·기하
+  description: source가 비율·진행률·원형 기하를 직접 제공할 때 사용. 공식 custom-svg starter의 데이터와 접근성 문구만 교체한다.
   tags:
     - lecture
     - openknowledge
@@ -46,6 +45,25 @@ flowchart TB
 
 - **{핵심어}:** {정의·조건·예시}
 - **{근거}:** {원본에서 확인한 수치·절차·관계}
+
+## 비율 또는 기하 시각화
+
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;display:flex;align-items:center;gap:20px;color:var(--foreground)">
+  <svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="__SOURCE_ARIA_LABEL__">
+    <circle cx="60" cy="60" r="46" stroke-width="14" style="fill: none; stroke: var(--border)" />
+    <circle cx="60" cy="60" r="46" stroke-width="14"
+      stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="__SOURCE_DASHOFFSET__"
+      transform="rotate(-90 60 60)" style="fill: none; stroke: var(--chart-1)" />
+    <text x="60" y="67" text-anchor="middle" font-size="22" font-weight="700"
+      style="fill: var(--foreground)">__SOURCE_PERCENT__</text>
+  </svg>
+  <div>
+    <div style="font-weight:600;font-size:15px">__SOURCE_METRIC_TITLE__</div>
+    <div style="font-size:13px;color:var(--muted-foreground);margin-top:2px">__SOURCE_METRIC_CONTEXT__</div>
+  </div>
+</div>
+```
 
 <details>
 <summary>{선택적 심화 내용}</summary>
