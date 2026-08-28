@@ -113,3 +113,6 @@
 - All Terra agents were interrupted. New delegated work uses `gpt-5.6-sol` with xhigh reasoning only.
 - Three Sol lanes are now running read-only: exact duplicate forensics for notes 01/15/26, whole-course duplicate and missing-topic audit, and independent PDF-segment mapping for 01/15/26/40/46/50/62/72.
 - No further course authoring is accepted until the generative-ai-fine-tuning source-depth gate is redesigned and demonstrated on these documents.
+- The Sol audits rejected all 8 notes and README: source-specific visible density was only about 5% to 35%, all 8 visuals used invented or mismatched values, and the shared template scaffold dominated the documents.
+- The two 82-page PDFs have different hashes but identical extracted page text, so they count as one content authority. The new independent segments are 01=1-14, 15=15-25, 26=26-39, 40=40-45, 46=46-49, 50=50-61, 62=62-71, 72=72-82.
+- Three Sol xhigh authoring lanes now own disjoint note sets (01/15/26, 40/46/50, 62/72). They must full-replace from the extracts, meet segment-specific prose-depth targets without padding, use no invented math/data, and leave README until all 8 notes pass the new coverage/duplication gate.
