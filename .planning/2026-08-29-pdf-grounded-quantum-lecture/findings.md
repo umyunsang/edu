@@ -25,6 +25,7 @@
 - The Grover/Shor source is 59 pages, but rendered slide assets exist only through p042; p043 through p059 will not be used as image evidence.
 - A verified operator slide shows controlled gates and the identity $HXH=Z$. The inspected p018 asset is only a Binary Sudoku section divider, so it will not carry a technical claim.
 - A Grover iteration slide directly shows uniform superposition rotating toward a target state. A QFT slide describes extracting hidden periodicity and presents an asymptotic speed comparison; the rewrite will preserve this as a source claim rather than make a broad performance promise.
+- The Grover oracle slide shows an XOR-based Binary Sudoku constraint structure. The inspected public/private-key slide provides cryptography context but not a Shor factoring procedure, so it will be used only as scoped context if at all.
 
 ## First-note evidence map
 

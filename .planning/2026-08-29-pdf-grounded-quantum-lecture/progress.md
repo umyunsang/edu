@@ -22,6 +22,7 @@
 - Completed a read-only non-Markdown source inventory for all 38 course folders and integrated the repository scope numbers.
 - Began the Grover/Shor source pass; verified one operator evidence slide and rejected a section-divider slide as technical grounding.
 - Verified the Grover amplitude-rotation and QFT-periodicity slides for direct evidence use.
+- Verified an oracle-structure slide and restricted a public-key slide to contextual rather than procedural use.
 
 ## Errors
 
