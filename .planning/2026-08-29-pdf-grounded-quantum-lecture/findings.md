@@ -33,6 +33,12 @@
 - Its measured structure is 4 callouts, 2 HTML previews, 2 details blocks, 1 Tabs block, 1 Mermaid diagram, and 4 embedded rendered slides.
 - The note explicitly limits QFT's displayed speed comparison to the source's QFT stage and records the absent p043-p059 rendered evidence.
 
+## VQA evidence map
+
+- The VQA source identifies repeated measurements to select a maximum or minimum bounded value, VQE as a ground-state-energy problem, Ansatz families, and a molecular-energy workflow.
+- The inspected p008 image is a bounded-problem example without a VQA mechanism, while p027 is a valid Ansatz visual. The next evidence set will use a direct VQE definition and flowchart.
+- Direct VQE and VQE-flow slides define VQE as finding ground-state energy and show molecular inputs, an Ansatz, optimizer/measurement conditions, and molecular-energy analysis as an iterative workflow.
+
 ## First-note evidence map
 
 - `01. 양자 기초 게이트 설명` maps to the 31-page gate PDF and its matching extracted text bundle.
