@@ -1,8 +1,8 @@
-# Task Plan: PDF-grounded quantum-lecture rewrite
+# Task Plan: PDF-grounded edu rewrite
 
 ## Goal
 
-Rebuild every `quantum-lecture` lecture note from its current PDF, extracted text, and rendered slide assets; make each note a high-quality visual learning artifact in OpenKnowledge.
+Rebuild every lecture note in each edu course with source PDFs from its current PDF, extracted text, and rendered slide assets; make each note a high-quality visual learning artifact in OpenKnowledge.
 
 ## Hard boundaries
 
@@ -19,6 +19,9 @@ Rebuild every `quantum-lecture` lecture note from its current PDF, extracted tex
 3. [in_progress] Rebuild remaining quantum-lecture notes, saving each completed note through OpenKnowledge.
 4. [pending] Count course-level components and slide embeds; fix any quality-floor gap.
 5. [pending] Run scoped graph and markdown validation; report the course metrics and next course decision.
+6. [pending] Repeat phases 1 through 5 course-by-course for every course with source PDFs.
+7. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
+8. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
 
 ## Quality floor per lecture note
 

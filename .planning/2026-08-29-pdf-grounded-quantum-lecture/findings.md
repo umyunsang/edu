@@ -12,6 +12,7 @@
 - Start with `quantum-lecture` because it is the explicitly identified visual-quality gap and can be rebuilt without consulting deleted material.
 - The original PDF plus its extracted text and matching rendered image assets are the sole evidence substrate for rewritten lecture notes.
 - Defer every graph relationship label until all notes in this course have been rewritten.
+- User authorized repository-wide continuation with the same evidence and visual-quality contract; the five explicitly source-empty courses remain out of scope for note creation.
 
 ## First-note evidence map
 
