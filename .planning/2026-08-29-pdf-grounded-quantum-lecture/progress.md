@@ -31,6 +31,7 @@
 - A first broad direct-image grep identified five current quantum-lecture notes, but it crossed `sources/` and `work/` and hit an OpenKnowledge read-scope warning.
 - That broad result is not treated as a repository-wide completion check; every future visual scan is constrained to the course `notes/` directory.
 - Began retrofitting the five identified notes so all former slide locations become original SVG or HTML-preview learning visuals. Underlying PDFs and assets remain private evidence files.
+- Retrofitted `notes/01. 양자 기초 게이트 설명.md`: replaced its five direct slide images with five independent SVG learning diagrams and verified a clean OpenKnowledge audit plus zero direct `../assets/` image matches in that note.
 
 ## Errors
 
