@@ -37,3 +37,4 @@
 ### Actions Taken
 - Received a new Claude ACP ENOENT for cache `fca12915ff656968` and started a separate bounded recovery lane.
 - Confirmed the exact Claude ACP 0.70.0 registry package, launcher cwd, and a structurally incomplete npx cache.
+- Confirmed native Claude Code 2.1.250 and a compatible Node runtime; ruled out PATH and declared engine incompatibility.

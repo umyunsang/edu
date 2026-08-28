@@ -25,6 +25,9 @@
 - OpenKnowledge's registry cache independently pins `claude-acp` version 0.70.0 to the same npm package with no extra registry arguments.
 - Cache `fca12915ff656968` has a populated `node_modules` tree but no root `package.json`, no root/package lock metadata, and no `node_modules/.bin`; this matches the proven interrupted-reify structure from the Codex incident.
 - The OpenKnowledge server log associates the reported ENOENT directly with `agentId: claude-acp` and thread `f2e60e46-a587-48af-a2bc-8946c8715522`.
+- The partial Claude cache contains 3,968 ordinary files and zero symlinks; its adapter manifest declares `.bin` target `claude-agent-acp` and Node `>=22`, but npm never created the executable link.
+- Installed Node 26.7.0 satisfies the adapter engine requirement. Native Claude Code resolves to `/Users/um-yunsang/.local/bin/claude` version 2.1.250, so missing Claude CLI/PATH is not the current failure.
+- npm's rolling log cleanup has already removed the original 10:58 install log, so the exact terminating event is unavailable; the interrupted-reify conclusion is an inference from the same complete structural signature as the proven Codex cache failure.
 
 ## Technical Decisions
 | Decision | Rationale |
