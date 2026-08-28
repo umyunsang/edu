@@ -28,6 +28,8 @@
 - The partial Claude cache contains 3,968 ordinary files and zero symlinks; its adapter manifest declares `.bin` target `claude-agent-acp` and Node `>=22`, but npm never created the executable link.
 - Installed Node 26.7.0 satisfies the adapter engine requirement. Native Claude Code resolves to `/Users/um-yunsang/.local/bin/claude` version 2.1.250, so missing Claude CLI/PATH is not the current failure.
 - npm's rolling log cleanup has already removed the original 10:58 install log, so the exact terminating event is unavailable; the interrupted-reify conclusion is an inference from the same complete structural signature as the proven Codex cache failure.
+- The partial Claude cache was preserved as `/Users/um-yunsang/.npm/_npx/fca12915ff656968.broken-20260828T1205KST`.
+- Re-running the exact pinned launcher rebuilt root manifests, lock metadata, and `.bin/claude-agent-acp`; the installation command exited cleanly with no lingering ACP process.
 
 ## Technical Decisions
 | Decision | Rationale |
