@@ -21,6 +21,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ## CIFAR10
 
 ```python
@@ -121,5 +122,7 @@ torch.save(network.state_dict(), "../../Backpropagation/CIFAR10/mlp_mnist.pth")
 ```
 
 # # Epoch: 20 Loss = 0.098194  
+
 # Learning finished  
+
 # Accuracy: 0.5516999959945679

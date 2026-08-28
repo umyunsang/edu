@@ -20,19 +20,23 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ### Cats and sharks
+
 ```
 Quiz: Cats and sharks
 4 cats and 3 sharks in a bag. 3 drawn.
 What is P(1 cat and 2 sharks drawn)?
 
 Define:
-	S = Pick 3 distinct items
-	E = 1 distinct cat, 2 distinct sharks
+ S = Pick 3 distinct items
+ E = 1 distinct cat, 2 distinct sharks
 ```
+
 주어진 가방에는 4마리의 고양이와 3마리의 상어가 있으며, 3마리를 뽑습니다. 우리는 1마리의 고양이와 2마리의 상어를 뽑을 확률, 즉 $P(1 \text{ cat and } 2 \text{ sharks drawn})$을 구하고자 합니다.
 
 먼저, 문제를 더 쉽게 다루기 위해 사건을 정의해봅시다:
+
 - $S$: 3개의 구별되는 항목을 선택하는 경우
 - $E$: 1개의 구별되는 고양이와 2개의 구별되는 상어를 선택하는 경우
 
@@ -45,7 +49,9 @@ Define:
 이제 이러한 값들을 대입하여 확률을 계산할 수 있습니다
 
 ---
+
 ### Counting? Probability? Distinctness?
+
 ```
 Quiz: Counting? Probability? Distinctness?
 We choose 3 books from a set of 4 distinct (distinguishable) and 2 indistinct (indistinguishable) books.
@@ -56,7 +62,7 @@ Let event E = our choice excludes one or both indistinct books.
 2. What is P(E) ?
 ```
 
-우리는 총 6권의 책 중에서 3권을 선택하는 문제를 다루고 있습니다. 이 중에서 구별 가능한 책 4권과 구별할 수 없는 책 2권이 있습니다. 
+우리는 총 6권의 책 중에서 3권을 선택하는 문제를 다루고 있습니다. 이 중에서 구별 가능한 책 4권과 구별할 수 없는 책 2권이 있습니다.
 
 1. 사건 $E$의 구별 가능한 결과의 수를 계산합니다.
    - 구별 가능한 책을 3권 선택하는 경우의 수: $C(4, 3) = 4$
@@ -68,11 +74,14 @@ Let event E = our choice excludes one or both indistinct books.
    - 따라서 사건 $E$가 발생할 확률은 $\frac{16}{20} = \frac{4}{5}$입니다.
 
 따라서 올바른 답은 다음과 같습니다:
+
 1. 사건 $E$의 구별 가능한 결과의 수는 16입니다.
 2. 사건 $E$가 발생할 확률 $P(E)$는 $\frac{4}{5}$입니다.
 
 ---
+
 ## Any Poker Straight
+
 ```
 Quiz: Any Poker Straight
 Consider equally likely 5-card poker hands.
@@ -81,13 +90,13 @@ Consider equally likely 5-card poker hands.
 What is P(Poker straight) ?
 ```
 
-우선, "straight"를 형성하기 위해서는 5장의 카드가 연속된 순서로 있어야 합니다. 예를 들어, 2, 3, 4, 5, 6과 같이 연속된 카드들이 포함되어야 합니다. 
+우선, "straight"를 형성하기 위해서는 5장의 카드가 연속된 순서로 있어야 합니다. 예를 들어, 2, 3, 4, 5, 6과 같이 연속된 카드들이 포함되어야 합니다.
 
 1. 스트레이트를 형성하는 모든 경우의 수는 총 10가지입니다.
 2. 각 숫자를 결정하는 방법은 4가지가 있습니다.
 3. 각 카드의 모양을 선택하는 방법은 모두 4가지가 있습니다.
 
-따라서 스트레이트를 형성하는 경우의 수는 $10 \times 4^5$입니다. 
+따라서 스트레이트를 형성하는 경우의 수는 $10 \times 4^5$입니다.
 
 모든 5장의 카드를 고르는 경우의 수는 $52 \times 51 \times 50 \times 49 \times 48$입니다.
 
@@ -96,7 +105,9 @@ $$P(\text{Poker straight}) = \frac{10 \times 4^5}{52 \times 51 \times 50 \times 
 이것을 계산하면 확률을 얻을 수 있습니다.
 
 ---
-###  Chip defect detection 문제
+
+### Chip defect detection 문제
+
 ```
 Quiz: Chip defect detection
 n chips are manufactured, 1 of which is defective.
@@ -116,7 +127,9 @@ $$P(\text{defective chip is in k selected chips}) = \frac{E}{C(n, k)} = \frac{C(
 따라서 정리하면, 불량 칩이 선택될 확률은 $\frac{k}{n}$입니다.
 
 ---
+
 ### Serendipity
+
 ```
 Quiz: Serendipity
 - The population of Stanford is n = 17,000 people.
@@ -131,13 +144,13 @@ What is the probability that you see at least one friend in the room?
 
 1. 먼저, 친구를 볼 수 없는 경우의 확률을 계산합니다.
 2. 그 다음, 이를 이용하여 친구를 볼 확률을 구합니다.
-	
-	친구가 없는 조합의 수는 다음과 같이 계산됩니다:
-	$$\text{친구가 없는 조합의 수} = C(17000 - 100, 223)$$
-	전체 조합의 수는 17,000명 중에서 223명을 선택하는 조합의 수입니다:$$\text{전체 조합의 수} = C(17000, 223)$$
-	따라서 친구를 볼 수 없는 확률은 다음과 같습니다:
-	$$P(\text{See no friend}) = \frac{C(17000 - 100, 223)}{C(17000, 223)}$$
-	이제 이 확률을 이용하여 친구를 볼 확률을 구할 수 있습니다.
-	$$P(\text{See at least one friend}) = 1 - \frac{C(17000 - 100, 223)}{C(17000, 223)}$$$$P(\text{See at least one friend}) = 1 - \frac{C(16900, 223)}{C(17000, 223)}$$ 결과는 다음과 같습니다:
-	$$P(\text{See no friend}) \approx 0.2653$$$$P(\text{See at least one friend}) \approx 0.7347$$
-	따라서, 친구를 적어도 한 명 볼 확률은 약 0.7347 또는 약 73.47%입니다.
+ 
+ 친구가 없는 조합의 수는 다음과 같이 계산됩니다:
+ $$\text{친구가 없는 조합의 수} = C(17000 - 100, 223)$$
+ 전체 조합의 수는 17,000명 중에서 223명을 선택하는 조합의 수입니다:$$\text{전체 조합의 수} = C(17000, 223)$$
+ 따라서 친구를 볼 수 없는 확률은 다음과 같습니다:
+ $$P(\text{See no friend}) = \frac{C(17000 - 100, 223)}{C(17000, 223)}$$
+ 이제 이 확률을 이용하여 친구를 볼 확률을 구할 수 있습니다.
+ $$P(\text{See at least one friend}) = 1 - \frac{C(17000 - 100, 223)}{C(17000, 223)}$$$$P(\text{See at least one friend}) = 1 - \frac{C(16900, 223)}{C(17000, 223)}$$ 결과는 다음과 같습니다:
+ $$P(\text{See no friend}) \approx 0.2653$$$$P(\text{See at least one friend}) \approx 0.7347$$
+ 따라서, 친구를 적어도 한 명 볼 확률은 약 0.7347 또는 약 73.47%입니다.

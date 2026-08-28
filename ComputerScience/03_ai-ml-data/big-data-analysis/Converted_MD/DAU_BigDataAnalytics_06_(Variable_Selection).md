@@ -58,8 +58,9 @@ spark
 ~~~
 
 # 데이터셋 다운로드
-본 데이터는 포트투갈 은행의 직접 마케팅 캠페인에 관련된 데이터임. 마케팅 캠페인은 전화에 기반하여 실시되었음. 
-https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+
+본 데이터는 포트투갈 은행의 직접 마케팅 캠페인에 관련된 데이터임. 마케팅 캠페인은 전화에 기반하여 실시되었음.
+<https://archive.ics.uci.edu/ml/datasets/Bank+Marketing>
 
 # 목표: 고객이 정기예금에 가입하였는지 안했는지를 예측하는 것
 
@@ -73,7 +74,9 @@ https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
 !unzip bank.zip -d data/
 
 ~~~
+
 Output:
+
 ~~~
 Archive:  bank.zip
   inflating: data/bank-full.csv      
@@ -181,7 +184,9 @@ def missing_calculation(df, miss_percentage=0.80):
 df.describe().toPandas()
 
 ~~~
+
 Output:
+
 ~~~
   summary                 age      job  ...            previous poutcome      y
 0   count               45211    45211  ...               45211    45211  45211
@@ -203,7 +208,9 @@ missing_df, missing_vars_selected = missing_calculation(df)
 missing_df
 
 ~~~
+
 Output:
+
 ~~~
         index  missing_count  missing_percentage
 0         age              0                 0.0
@@ -253,7 +260,9 @@ char_vars, num_vars = variable_type(df)
 char_vars
 
 ~~~
+
 Output:
+
 ~~~
 ['job',
  'marital',
@@ -272,7 +281,9 @@ Output:
 num_vars
 
 ~~~
+
 Output:
+
 ~~~
 ['age', 'balance', 'day', 'duration', 'campaign', 'pdays', 'previous']
 
@@ -321,7 +332,9 @@ df = rename_columns(df, char_vars)
 df.dtypes
 
 ~~~
+
 Output:
+
 ~~~
 [('age', 'int'),
  ('balance', 'int'),
@@ -347,7 +360,9 @@ Output:
 df.describe().toPandas()
 
 ~~~
+
 Output:
+
 ~~~
   summary                 age  ...             poutcome                    y
 0   count               45211  ...                45211                45211
@@ -396,7 +411,9 @@ features_list.remove(target_variable_name)
 features_list
 
 ~~~
+
 Output:
+
 ~~~
 ['age',
  'balance',
@@ -427,7 +444,9 @@ df = assemble_vectors(df, features_list, target_variable_name)
 df.show()
 
 ~~~
+
 Output:
+
 ~~~
 +---+--------------------+---+-------+---+--------+--------+-----+--------+----+-------+---------+-------+-------+----+-------+-----+--------+
 |  y|            features|age|balance|day|duration|campaign|pdays|previous| job|marital|education|default|housing|loan|contact|month|poutcome|
@@ -461,7 +480,9 @@ only showing top 20 rows
 df.schema
 
 ~~~
+
 Output:
+
 ~~~
 StructType(List(StructField(y,DoubleType,false),StructField(features,VectorUDT,true),StructField(age,IntegerType,true),StructField(balance,IntegerType,true),StructField(day,IntegerType,true),StructField(duration,IntegerType,true),StructField(campaign,IntegerType,true),StructField(pdays,IntegerType,true),StructField(previous,IntegerType,true),StructField(job,DoubleType,false),StructField(marital,DoubleType,false),StructField(education,DoubleType,false),StructField(default,DoubleType,false),StructField(housing,DoubleType,false),StructField(loan,DoubleType,false),StructField(contact,DoubleType,false),StructField(month,DoubleType,false),StructField(poutcome,DoubleType,false)))
 
@@ -471,7 +492,9 @@ StructType(List(StructField(y,DoubleType,false),StructField(features,VectorUDT,t
 df.schema["features"].metadata["ml_attr"]["attrs"]
 
 ~~~
+
 Output:
+
 ~~~
 {'nominal': [{'idx': 7,
    'name': 'job',
@@ -544,7 +567,9 @@ features_df = features_df.loc[:, ['idx', 'name']]
 features_df
 
 ~~~
+
 Output:
+
 ~~~
    idx       name
 0    0        age
@@ -606,7 +631,9 @@ df = scaled_assemble_vectors(df, features_list, target_variable_name)
 df.show()
 
 ~~~
+
 Output:
+
 ~~~
 +---+--------------------+--------------------+---+-------+---+--------+--------+-----+--------+----+-------+---------+-------+-------+----+-------+-----+--------+
 |  y|           features2|            features|age|balance|day|duration|campaign|pdays|previous| job|marital|education|default|housing|loan|contact|month|poutcome|
@@ -644,7 +671,9 @@ Principal Component Analysis
 df.describe().toPandas()
 
 ~~~
+
 Output:
+
 ~~~
   summary                    y  ...               month             poutcome
 0   count                45211  ...               45211                45211
@@ -668,7 +697,9 @@ result = model.transform(df).select("pcaFeatures")
 result.show(truncate=False)
 
 ~~~
+
 Output:
+
 ~~~
 +------------------------------------------------------------+
 |pcaFeatures                                                 |
@@ -702,7 +733,9 @@ only showing top 20 rows
 model.pc.toArray()
 
 ~~~
+
 Output:
+
 ~~~
 array([[-3.41021399e-04,  2.79524640e-04,  2.58353293e-03],
        [-9.99998245e-01,  1.83654726e-03,  1.13892524e-04],
@@ -727,7 +760,9 @@ array([[-3.41021399e-04,  2.79524640e-04,  2.58353293e-03],
 model.explainedVariance
 
 ~~~
+
 Output:
+
 ~~~
 DenseVector([0.9918, 0.0071, 0.0011])
 
@@ -747,7 +782,9 @@ plt.bar(x, y)
 plt.plot(x, z)
 
 ~~~
+
 Output:
+
 ~~~
 [<matplotlib.lines.Line2D at 0x7f617e6be590>]<Figure size 432x288 with 1 Axes>
 
@@ -761,7 +798,9 @@ result = model.transform(df).select("pcaFeatures")
 result.show(truncate=False)
 
 ~~~
+
 Output:
+
 ~~~
 +------------------------------------------------------------+
 |pcaFeatures                                                 |
@@ -795,7 +834,9 @@ only showing top 20 rows
 model.explainedVariance
 
 ~~~
+
 Output:
+
 ~~~
 DenseVector([0.1434, 0.0987, 0.0787])
 
@@ -812,7 +853,9 @@ df_svd_vector = df.rdd.map(lambda x: x['features'].toArray())
 df_svd_vector
 
 ~~~
+
 Output:
+
 ~~~
 PythonRDD[208] at RDD at PythonRDD.scala:53
 
@@ -836,7 +879,9 @@ V = svd.V       # The V factor is a local dense matrix.
 U.rows.collect()
 
 ~~~
+
 Output:
+
 ~~~
 [DenseVector([-0.003, 0.0026, 0.0011, 0.0048, 0.0087]),
  DenseVector([-0.0, 0.0021, 0.0005, 0.0049, 0.006]),
@@ -1846,7 +1891,9 @@ Output:
 s
 
 ~~~
+
 Output:
+
 ~~~
 DenseVector([709656.9403, 74266.7144, 22052.8227, 6458.1862, 1846.0544])
 
@@ -1856,7 +1903,9 @@ DenseVector([709656.9403, 74266.7144, 22052.8227, 6458.1862, 1846.0544])
 V
 
 ~~~
+
 Output:
+
 ~~~
 DenseMatrix(16, 5, [-0.0053, -0.9994, -0.002, -0.0335, -0.0003, -0.005, -0.0001, -0.0003, ..., -0.0064, 0.0045, -0.0003, 0.0016, -0.0013, 0.0028, 0.0086, 0.0011], 0)
 
@@ -1880,7 +1929,9 @@ print("Selected Indices: ", chi_selector.selectedFeatures)
 result.show()
 
 ~~~
+
 Output:
+
 ~~~
 ChiSqSelector output with top 6 features selected
 Selected Indices:  [0, 1, 2, 3, 4, 5]
@@ -1921,7 +1972,9 @@ features_df['chisq_importance'] = features_df['idx'].apply(lambda x: 1 if x in c
 features_df
 
 ~~~
+
 Output:
+
 ~~~
    idx       name  chisq_importance
 0    0        age                 1
@@ -1953,7 +2006,9 @@ rf_model = rf.fit(df)
 rf_model.featureImportances
 
 ~~~
+
 Output:
+
 ~~~
 SparseVector(16, {0: 0.0321, 1: 0.0021, 2: 0.0061, 3: 0.453, 4: 0.0031, 5: 0.0129, 6: 0.0437, 7: 0.0165, 8: 0.0031, 9: 0.0049, 10: 0.0, 11: 0.0241, 12: 0.0025, 13: 0.022, 14: 0.1248, 15: 0.2492})
 
@@ -1976,7 +2031,9 @@ features_df.sort_values("Importance", ascending=False, inplace=True)
 features_df
 
 ~~~
+
 Output:
+
 ~~~
    idx       name  chisq_importance  Importance
 3    3   duration                 1    0.453019
@@ -2008,7 +2065,9 @@ plt.xlabel("Importance Score")
 plt.ylabel("Variable Importance")
 
 ~~~
+
 Output:
+
 ~~~
 Text(0, 0.5, 'Variable Importance')<Figure size 432x288 with 1 Axes>
 
@@ -2043,7 +2102,9 @@ column_names = list(features_df['name'])
 column_names
 
 ~~~
+
 Output:
+
 ~~~
 ['age',
  'balance',
@@ -2079,7 +2140,9 @@ corr_df = pd.DataFrame(matrix, columns=column_names, index=column_names)
 corr_df
 
 ~~~
+
 Output:
+
 ~~~
                 age   balance       day  ...   contact     month  poutcome
 age        1.000000  0.097783 -0.009120  ...  0.122114  0.089717  0.012238
@@ -2110,7 +2173,9 @@ final_corr_df = final_corr_df[final_corr_df['col1'] != final_corr_df['col2']]
 final_corr_df
 
 ~~~
+
 Output:
+
 ~~~
          col1      col2  correlation_value
 0     housing  poutcome           0.000527
@@ -2133,7 +2198,9 @@ Output:
 column_names
 
 ~~~
+
 Output:
+
 ~~~
 ['age',
  'balance',
@@ -2162,7 +2229,9 @@ sns.set(rc = {'figure.figsize':(15,8)})
 ax = sns.heatmap(matrix, annot=True)
 
 ~~~
+
 Output:
+
 ~~~
 <Figure size 1080x576 with 2 Axes>
 
@@ -2173,7 +2242,9 @@ correlation_cutoff = 0.65 #custom parameter
 final_corr_df[final_corr_df['correlation_value'] > correlation_cutoff]
 
 ~~~
+
 Output:
+
 ~~~
          col1      col2  correlation_value
 238  poutcome     pdays           0.709008
@@ -2260,7 +2331,9 @@ output, shorlisted_output = clf.transform(df)
 output
 
 ~~~
+
 Output:
+
 ~~~
                 age   balance       day  ...   contact     month  poutcome
 age        1.000000  0.097783 -0.009120  ...  0.122114  0.089717  0.012238
@@ -2288,7 +2361,9 @@ poutcome   0.012238  0.037272 -0.072629  ... -0.169951  0.234792  1.000000
 shorlisted_output
 
 ~~~
+
 Output:
+
 ~~~
          col1      col2  correlation_value
 238  poutcome     pdays           0.709008
@@ -2346,7 +2421,9 @@ score_table['final_score'] = score_table.sum(axis=1)
 score_table.sort_values('final_score', ascending=0)
 
 ~~~
+
 Output:
+
 ~~~
         name  Decision Tree  Gradient Boosting  Random Forest  final_score
 3   duration              1                  1              1            3
@@ -2418,7 +2495,9 @@ output, shorlisted_output = pipelineModel.transform(df)
 shorlisted_output
 
 ~~~
+
 Output:
+
 ~~~
               col1          col2  correlation_value
 2142  features2_15         pdays           0.709008

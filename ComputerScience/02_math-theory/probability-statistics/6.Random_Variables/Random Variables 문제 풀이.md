@@ -20,7 +20,9 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ### Example random variable
+
 ```
 Quiz: Example random variable
 Consider 5 flips of a coin which comes up heads with probability p.
@@ -42,6 +44,7 @@ $$P(Y = k) = C(5, k) \times p^k \times (1-p)^{5-k}$$
 ---
 
 ### Lying with statistics
+
 ```
 Quiz: Lying with statistics
 A school has 3 classes with 5, 10, and 150 students.
@@ -54,6 +57,7 @@ What is the average class size?
 - Randomly choose a student with equal probability.
 - Y = size of chosen class
 ```
+
 1. Interpretation 1에 따른 해석:
    - 먼저, 모든 클래스가 동일한 확률로 선택되는 경우를 고려합니다. 이 경우, 각 클래스가 선택될 확률은 $1/3$입니다.
    - 각 클래스의 크기를 해당 클래스가 선택될 확률로 가중하여 합산하면 평균 클래스 크기를 구할 수 있습니다.

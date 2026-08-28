@@ -20,9 +20,10 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-#ComputerScience #인공지능 #perceptron 
- 
+# ComputerScience #인공지능 #perceptron
+
 ---
+
 ### 다층 퍼셉트론(Multi Layer Perceptron, MLP)
 
 다층 퍼셉트론(MLP)은 인공 신경망의 한 종류로, 여러 층의 뉴런들이 서로 완전히 연결된 구조를 가집니다. 각 층은 입력층(input layer), 은닉층(hidden layer), 출력층(output layer)으로 구성되며, 각 뉴런은 이전 층의 모든 뉴런과 연결되어 있습니다. 이를 수식으로 표현하면 다음과 같습니다:

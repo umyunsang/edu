@@ -20,6 +20,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Maximum A Posteriori
 
 MAP(Most A Posteriori) 추정은 파라미터를 추정하는 또 다른 방법으로, MLE(Maximum Likelihood Estimator)와는 조금 다른 접근 방식을 취합니다. MLE가 데이터가 주어졌을 때 파라미터 값이 가장 가능성이 높은 값을 선택한다면, MAP는 주어진 데이터를 고려할 때 파라미터의 가장 가능성이 높은 값을 선택하는 것입니다. 수식적으로는 다음과 같이 표현됩니다.
@@ -38,6 +39,7 @@ $$\theta_{\text{MAP}} = \underset{\theta}{\operatorname{argmax }} \text{ } \prod
 $$\theta_{\text{MAP}} = \underset{\theta}{\operatorname{argmax }} \text{ } \left( \log (g(\theta)) + \sum_{i=1}^n \log(f(X_i | \theta)) \right)$$
 
 베이지안 용어를 사용하면, MAP 추정은 $\theta$ 에 대한 "사후 분포"의 모드입니다. MLE 방정식과 MAP 방정식을 나란히 비교하면 MAP가 로그의 사전항을 더한 정확히 동일한 함수의 argmax임을 알 수 있습니다.
+
 - log prior + log-likelihood
 
 <!-- 원본 이미지 없음: probability-statistics__Maximum A Posteriori.png -->

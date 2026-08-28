@@ -19,25 +19,30 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ## DOM 이해하기
+
 #### HTML 태그가 객체 형태인 이유
 <!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__HTML 태그가 객체 형태인 이유.png -->
 #### 웹 시스템 관련 객체 (가장 상위 객체는 window)
+
 - **Array, String, Math, Date 객체**
-	- 데이터를 보관하고 처리하도록 자바스크립트에서 제공하는 기본 객체 (수업자료 2장 참고) 
-- **문서 객체모델(DOM)의 객체** 
-	- 자바스크립트가 손쉽게 객체에 접근하여 읽고 조작하도록 제공됨
-	- DOM의 가장 상위는 document 객체 
-- **event 객체** 
-	- 이벤트 발생시 생성되며 이벤트 관련 많은 정보를 담고 있음 (수업자료 1장 참고) 
-- **기타 브라우저 객체모델(BOM)의 객체** 
-	- 웹브라우저와 관련된 내용을 객체 형태로 만든 것 (soon)
+ 	- 데이터를 보관하고 처리하도록 자바스크립트에서 제공하는 기본 객체 (수업자료 2장 참고)
+- **문서 객체모델(DOM)의 객체**
+ 	- 자바스크립트가 손쉽게 객체에 접근하여 읽고 조작하도록 제공됨
+ 	- DOM의 가장 상위는 document 객체
+- **event 객체**
+ 	- 이벤트 발생시 생성되며 이벤트 관련 많은 정보를 담고 있음 (수업자료 1장 참고)
+- **기타 브라우저 객체모델(BOM)의 객체**
+ 	- 웹브라우저와 관련된 내용을 객체 형태로 만든 것 (soon)
 
 ## DOM 객체 다루기 : HTML 요소 접근하기
 <!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__DOM 객체 다루기 HTML 요소 접근하기.png -->
 
 ---
+
 #### 예제1. HTML 요소 1개에 접근하기 (화면 결과는?)
+
 ```html
 <body>
     <p id="ice">딸기</p>
@@ -48,9 +53,13 @@ updated: '2026-05-05'
     </script>
 </body>
 ```
+
 - 딸기 -> 아이스크림으로 변경 됨, 초코는 그대로 출력 됨
+
 ---
+
 #### 예제2. HTML 요소 여러 개에 접근하기 (화면 결과는?)
+
 ```html
 <body>
     <p>carrot 아니다</p>
@@ -73,6 +82,7 @@ updated: '2026-05-05'
     </script>
 </body>
 ```
+
 >[!출력결과]
 >carrot 아니다
 >carrot 1
@@ -82,9 +92,13 @@ updated: '2026-05-05'
 >tagarr[0] = carrot
 >tagarr[1] = carrot 1
 >tagarr[2] = carrot 2
+
 - getElementsByClassName, getElementsByTagName 꼭 기억
+
 ---
+
 #### 예제3. HTML 요소 여러 개에 태그선택자로 접근하기 (화면 결과는?)
+
 ```html
 <body>
     <p class="carrot">carrot 1</p>
@@ -108,6 +122,7 @@ updated: '2026-05-05'
     </script>
 </body>
 ```
+
 >[!출력결과]
 >carrot 1
 carrot 2
@@ -116,20 +131,27 @@ ice
 carrotarr[0] = carrot 1  
 carrotarr[1] = carrot 2  
 icearr[0] = ice
+
 - querySelectorAll(".carrot") : 복수로 받을때 .(점)이 필요
 - querySelectorAll("#ice") : 하나만 받을때 #(샵)이 필요
+
 ---
+
 #### \<form> 내부 경우 기존과는 다르게 접근 가능
+
 ```html
 <form name="myform">
-	<input type="text" name="userId">
+ <input type="text" name="userId">
 </form>
 <script>
-	const id1 = document.myform.userId;
+ const id1 = document.myform.userId;
 </script>
 ```
+
 ---
+
 #### 예제4. form 안의 input 문자열 읽기
+
 ```html
 <body>
     <form name="myform">
@@ -152,11 +174,15 @@ icearr[0] = ice
     </script>
 </body>
 ```
+
 >[!출력결과]
 ><!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__예제4. form 안의 input 문자열 읽기.png -->
 - const id = document.myform.userId , const pw = document.myform.password 가능하다
+
 ---
+
 #### 예제5. textarea 문자열 읽기
+
 ```html
 <body>
     <textarea id="text" rows="5" cols="20"></textarea><br>
@@ -172,12 +198,16 @@ icearr[0] = ice
     </script>
 </body>
 ```
+
 >[!출력결과]
 ><!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__예제5. textarea 문자열 읽기.png -->
 - st : textarea를 가르키는게 아니고 textarea 안에 내용물을 가져온다
 - textarea의 문자열은 getElementById로 받는다
+
 ---
+
 #### 예제6. 체크박스 값 1개 읽기
+
 ```html
 <body>
     <input type="checkbox" id="myCheckbox">본인 맞습니다.<br>
@@ -196,11 +226,15 @@ icearr[0] = ice
     </script>
 </body>
 ```
+
 >[!출력결과]
 ><!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__예제6. 체크박스 값 1개 읽기.png -->
 - 체크박스 값 1개를 읽을 때는 getElemnetById로 받는다
+
 ---
+
 #### 예제7. 체크박스 값 여러 개 읽기
+
 ```html
 <body>
     <input type="checkbox" name="myAdd" value="3000">추가샐러드 3000원<br>
@@ -222,11 +256,15 @@ icearr[0] = ice
     </script>
 </body>
 ```
+
 >[!출력결과]
 ><!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__예제7. 체크박스 값 여러 개 읽기.png -->
 - name속성은 getElementsByName으로 받는다
+
 ---
+
 #### 예제8. 리디오버튼에서 값 읽기
+
 ```html
 <body>
     <input type="radio" name="color" value="red" checked>RED<br>
@@ -249,13 +287,17 @@ icearr[0] = ice
     </script>
 </body>
 ```
+
 >[!출력결과]
 ><!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__예제8. 리디오버튼에서 값 읽기.png -->
 - getElementsByName("color") 로 받을 수 도 있음
 - querySelectorAll("[type='radio']")
-	- 대괄호([])를 사용해서 type전부를 가져 올 수 있음
+ 	- 대괄호([])를 사용해서 type전부를 가져 올 수 있음
+
 ---
+
 #### 예제9. 드롭박스에서 값 읽기
+
 ```html
 <body>
     <p>키우고 싶은 동물은</p>
@@ -280,15 +322,19 @@ icearr[0] = ice
     </script>
 </body>
 ```
+
 >[!출력결과]
 ><!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__예제9. 드롭박스에서 값 읽기.png -->
 - s.addEventListener("change", getSelect);
-	- on change 아님, getSelect() 괄호 필요없다
+ 	- on change 아님, getSelect() 괄호 필요없다
 - 옵션태그에 별도로 value값이 없으면 태그 옆의 값이 value가 된다
 - const i = s.selectedIndex;
-	- 인덱스 번호를 가져옴
+ 	- 인덱스 번호를 가져옴
+
 ---
+
 #### 예제10. 문자열 회전시키기
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -315,14 +361,18 @@ icearr[0] = ice
 </body>
 </html>
 ```
+
 >[!출력]
 >![](../../../../image/20241124-0652-05.0386461.mp4)
+
 - h 변수 : string이 아니라 \<h1> 객체 자체를 가르킴
 - setInterval(rotateString, 500) : rotateString() 함수를 0.5초 마다 실행함
-	- 콜백함수 (매개인자로 함수명 괄호없이 이름만 사용)
+ 	- 콜백함수 (매개인자로 함수명 괄호없이 이름만 사용)
 
 ---
+
 #### 예제11. 속성 변경 (사진 체인지)
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -349,11 +399,14 @@ icearr[0] = ice
 </body>
 </html>
 ```
+
 >[!출력]
 >![](../../../../image/20241124-0653-54.0598573.mp4)
 
 ---
+
 #### 예제12. 스타일 변경 (색, 모서리)
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -382,18 +435,22 @@ icearr[0] = ice
 </body>
 </html>
 ```
+
 >[!출력]
 >![](../../../../image/20241124-0649-55.3171642.mp4)
 
 ---
+
 ## HTML 노드 추가 및 삭제
 <!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__HTML 노드 추가 및 삭제.png -->
 - document.
-	- createElement()
+ 	- createElement()
 - 부모.
-	- appendChild(node)
-	- removeChild(node)
+ 	- appendChild(node)
+ 	- removeChild(node)
+
 #### 예제13. 노드 추가하기
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -421,19 +478,23 @@ icearr[0] = ice
 </body>
 </html>
 ```
+
 >[!출력]
 >![](../../../../image/20241125-0146-43.5711252.mp4)
--  태그 객체 생성 (아직 화면에 띄운것은 아님)
-	- const node = document.createElement("a");
+
+- 태그 객체 생성 (아직 화면에 띄운것은 아님)
+ 	- const node = document.createElement("a");
 - 속성을 채우기
-	- node.href = urlarr[i];
-    - node.innerHTML = `<hr>${namearr[i]}`;
+ 	- node.href = urlarr[i];
+  - node.innerHTML = `<hr>${namearr[i]}`;
 - 화면에 띄우기
-	- document.getElementById("h").appendChild(node);
-		- 부모.appendChild(node);
+ 	- document.getElementById("h").appendChild(node);
+  		- 부모.appendChild(node);
 
 ---
+
 #### 예제14. 노드 삭제하기
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -467,18 +528,22 @@ icearr[0] = ice
 </body>
 </html>
 ```
+
 >[!출력]
 ><!-- 원본 이미지 없음: 20241125-0158-35.1867824.mp4 -->
 - 코딩 상 'b4 삭제하라' 인데 b4는 삭제 안되었다 왜그럴까 ?
-	- 부모노드가 달라서 (div의 자식이 아니여서)
+ 	- 부모노드가 달라서 (div의 자식이 아니여서)
 
 ---
+
 ## 테이블 요소 추가/삭제
 <!-- 원본 이미지 없음: open-source-software__문서 객체 모델(DOM__테이블 요소 추가 삭제.png -->
 - insertRow() : tr 추가
 - insertCell() : td 추가
 - deleteRow() : tr 삭제
+
 #### 예제15. 행 추가 및 삭제
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -522,6 +587,7 @@ icearr[0] = ice
 </html>
 
 ```
+
 >[!출력]
 ><!-- 원본 이미지 없음: 20241125-0227-34.0973394.mp4 -->
 

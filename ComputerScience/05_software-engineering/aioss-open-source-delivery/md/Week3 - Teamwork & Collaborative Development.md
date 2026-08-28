@@ -45,7 +45,7 @@ week: '3'
 ### 혼자 vs 팀 (Solo vs Team)
 
 | 혼자 개발 (Solo Dev) | 팀 협업 (Team Collaboration) |
-|---|---|
+| --- | --- |
 | 제한된 관점 (Limited Perspective) | 다양한 관점과 아이디어 |
 | 지식 사일로 (Knowledge Silo) | 지식 공유 및 상호 학습 |
 | 단일 실패 지점 (SPOF) | 위험 분산 (Risk Distribution) |
@@ -60,12 +60,14 @@ week: '3'
 > 팀원 몇 명이 갑자기 프로젝트에서 이탈했을 때(버스에 치이는 등), 프로젝트가 중단되거나 망하게 되는가?
 
 **Danger Zone (BF = 1)**
+
 - 특정 1명에게 지식 집중
 - 단일 실패 지점 (SPOF)
 - 휴가/퇴사 시 프로젝트 마비
 - 인수인계 불가능한 상태
 
 **Safe Zone (BF >= 3)**
+
 - 지식 공유 활성화
 - 페어 프로그래밍 문화
 - 철저한 문서화
@@ -84,6 +86,7 @@ week: '3'
 - 명확한 역할 분담과 안전한 배포 프로세스
 
 **주요 특징**
+
 - 복잡하지만 매우 체계적인 구조
 - 대규모 팀 및 정기적인 릴리스 주기에 적합
 - 명확한 환경 분리 지원 (Dev, Staging, Prod)
@@ -107,7 +110,7 @@ main (프로덕션)
 ```
 
 | 브랜치 | 설명 |
-|---|---|
+| --- | --- |
 | `main` | 언제나 배포 가능한 프로덕션 코드 |
 | `develop` | 다음 버전을 위한 개발 통합 브랜치 |
 | `feature/*` | 단위 기능 개발 (develop에서 분기) |
@@ -135,12 +138,14 @@ main (Production)
 ```
 
 **주요 특징**
+
 - 단순하고 직관적 구조
 - 작은 팀/스타트업 적합
 - 지속적 배포(CD) 최적화
 - Main = Always Deployable
 
 > [!important] 핵심 규칙
+>
 > 1. **main** 브랜치는 항상 배포 가능한 상태 유지
 > 2. 새 작업은 항상 **main**에서 브랜치 생성
 > 3. 브랜치는 **설명적인 이름** 사용 (feature/*)
@@ -150,7 +155,7 @@ main (Production)
 ### 브랜치 네이밍 컨벤션
 
 | Prefix | 설명 |
-|---|---|
+| --- | --- |
 | `feature/` | 새로운 기능 개발 (New features) |
 | `fix/` | 버그 수정 (Bug fixes) |
 | `docs/` | 문서 작업 (Documentation) |
@@ -159,12 +164,12 @@ main (Production)
 | `chore/` | 빌드, 설정 등 기타 작업 |
 
 ```bash
-$ git checkout -b feature/user-authentication
-$ git checkout -b fix/login-validation-error
-$ git checkout -b docs/api-documentation
-$ git checkout -b refactor/user-service
-$ git checkout -b test/add-integration-tests
-$ git checkout -b chore/update-dependencies
+git checkout -b feature/user-authentication
+git checkout -b fix/login-validation-error
+git checkout -b docs/api-documentation
+git checkout -b refactor/user-service
+git checkout -b test/add-integration-tests
+git checkout -b chore/update-dependencies
 ```
 
 ## Pull Request 마스터하기 (Mastering Pull Requests)
@@ -188,11 +193,13 @@ $ git checkout -b chore/update-dependencies
 명확하고 설명적인 제목은 리뷰어에게 변경 사항의 목적을 즉시 전달하며, 검색과 관리의 효율성을 높입니다.
 
 **나쁜 예 (Bad Examples)**
+
 - `"Update"` - 너무 모호하여 리뷰어가 코드를 열어보기 전까지 내용을 짐작할 수 없습니다.
 - `"Fix bug"`
 - `"Changes"`
 
 **좋은 예 (Good Examples)**
+
 - `[Feature] Add user authentication with JWT`
 - `[Fix] Resolve login validation error on empty email`
 - `[Refactor] Extract user service logic to separate module`
@@ -247,6 +254,7 @@ $ git checkout -b chore/update-dependencies
 **파일 위치**: `.github/pull_request_template.md`
 
 **핵심 구성 요소**
+
 - 변경 사항 요약 (Summary)
 - 변경 타입 (Type)
 - 관련 Issue (Link)
@@ -279,7 +287,7 @@ $ git checkout -b chore/update-dependencies
 ### PR 크기 가이드
 
 | Small PR (100-200 lines) | Medium PR (200-500 lines) | Large PR (500+ lines) |
-|---|---|---|
+| --- | --- | --- |
 | 빠른 리뷰 완료 (< 1시간) | 리뷰 시간 다소 증가 | 리뷰하기 매우 어려움 |
 | 높은 코드 품질 유지 | 여전히 관리 가능한 수준 | 오류 발생 가능성 높음 |
 | **적극 권장!** | 복잡도에 따라 주의 필요 | **여러 PR로 분할 필수** |
@@ -314,12 +322,14 @@ $ git checkout -b chore/update-dependencies
 ### 체계적으로 리뷰하기 (Systematic Review)
 
 **기능 및 신뢰성 (Functionality)**
+
 - 코드가 요구사항을 충족하는가? (Does the code meet all functional requirements?)
 - 테스트가 충분한가? (Is there sufficient unit and integration test coverage?)
 - 버그나 오류가 없는가? (Are there any obvious logic errors or edge cases missed?)
 - 성능 문제는 없는가? (Are there any N+1 queries or inefficient algorithms?)
 
 **품질 및 유지보수 (Quality)**
+
 - 보안 취약점은 없는가? (Check for SQL injection, XSS, and data exposure.)
 - 코드가 읽기 쉬운가? (Is the code clean, readable, and self-explanatory?)
 - 일관된 스타일을 따르는가? (Does it follow the team's coding conventions and linting rules?)
@@ -328,11 +338,13 @@ $ git checkout -b chore/update-dependencies
 ### 건설적인 피드백 (Constructive Feedback)
 
 **나쁜 코멘트 (Bad Comments)**
+
 - "이 코드는 끔찍해요." - 비난적이고 구체적이지 않음
 - "왜 이렇게 했나요?" - 공격적으로 들릴 수 있는 질문
 - "다시 작성하세요." - 이유나 방향 제시 없음
 
 **좋은 코멘트 (Good Comments)**
+
 - "이 부분을 함수로 추출하면 재사용성이 높아질 것 같습니다." - 구체적인 제안과 이유 설명
 - "성능을 위해 이 루프를 최적화하는 건 어떨까요?" - 부드러운 제안형 어조 (Open Question)
 - "이 로직에 대한 주석을 추가하면 이해하기 더 쉬울 것 같습니다." - 개선 효과 언급
@@ -340,7 +352,7 @@ $ git checkout -b chore/update-dependencies
 ### 코멘트 태그 사용 (Comment Tags)
 
 | 태그 | 설명 |
-|---|---|
+| --- | --- |
 | `[MUST]` | 반드시 수정이 필요한 사항. 로직 오류, 보안 취약점, 스타일 가이드 위반 등. |
 | `[SHOULD]` | 수정을 강력히 권장하는 사항. 더 나은 방법이나 개선안이 있을 때. |
 | `[NITS]` | 사소한 제안 ("Nitpick"). 공백, 오타, 개인적 선호 등. 수정하지 않아도 무방함. |
@@ -349,6 +361,7 @@ $ git checkout -b chore/update-dependencies
 | `[PRAISE]` | 잘 작성된 코드에 대한 칭찬과 격려. 긍정적 피드백. |
 
 **Usage Examples**
+
 - `[MUST]` 이 함수는 `null` 입력에 대한 체크가 빠져있어 런타임 에러가 발생할 수 있습니다.
 - `[SHOULD]` 변수명 `val`은 의미가 모호합니다. `userInputValue`로 변경하면 더 명확할 것 같습니다.
 - `[NITS]` 여기 불필요한 공백 라인이 2줄 있네요. 제거 부탁드립니다.
@@ -369,6 +382,7 @@ PR 제출 전 반드시 확인해야 할 체크리스트 (Before You Submit PR):
 ### 피드백 수용 태도 (Attitude)
 
 **좋은 태도 (Do's)**
+
 - 감사 표시 (Say Thank You)
 - 질문에 답변 (Answer Questions)
 - 건설적으로 토론 (Discussion)
@@ -376,6 +390,7 @@ PR 제출 전 반드시 확인해야 할 체크리스트 (Before You Submit PR):
 - 배우는 자세 (Open Mind)
 
 **피해야 할 태도 (Don'ts)**
+
 - 방어적 태도 (Defensive)
 - 피드백 무시 (Ignore)
 - 감정적 반응 (Emotional)
@@ -419,6 +434,7 @@ function calculateTotal(items) {
 ### GitHub Actions로 자동 체크
 
 **자동화 항목:**
+
 - **Lint Code**: ESLint를 실행하여 코드 스타일과 문법 오류를 자동으로 검사합니다. 실패 시 PR에 코멘트를 남깁니다.
 - **Run Tests**: 단위 테스트(npm test)를 실행하고 Codecov를 통해 커버리지 리포트를 생성합니다.
 - **Security Scan**: Snyk 등의 도구를 사용하여 의존성 패키지의 보안 취약점을 스캔합니다.
@@ -531,7 +547,7 @@ reviewGroups:
 ### Type (타입) 분류
 
 | Type | 설명 |
-|---|---|
+| --- | --- |
 | `feat` | 새로운 기능 추가 (New feature) |
 | `fix` | 버그 수정 (Bug fix) |
 | `refactor` | 코드 리팩토링 (기능/로직 변경 없음) |
@@ -625,6 +641,7 @@ Settings > Branches > Add branch protection rule
 **Branch name pattern**: `main`
 
 **설정 항목:**
+
 - **Require pull request reviews before merging**
   - Required approving reviews: 2
   - Dismiss stale approvals on new commits
@@ -676,12 +693,14 @@ jobs:
 ### 1. 소통 (Communication)
 
 **DON'T (지양할 태도)**
+
 - 공격적이거나 방어적인 태도
 - 모호한 표현 (Vague Expressions)
 - 답변 지연 및 무시
 - 감정적인 반응 (Emotional Reactivity)
 
 **DO (권장하는 태도)**
+
 - 명확하고 정중하게 표현하기
 - 이모지로 감정 전달 (Soften Tone)
 - 질문을 환영하는 분위기 조성
@@ -693,7 +712,7 @@ jobs:
 **Essential Documentation Checklist:**
 
 | 항목 | 유형 |
-|---|---|
+| --- | --- |
 | 아키텍처 결정 | ADR |
 | API 명세 | Specification |
 | 설정 방법 | Setup Guide |
@@ -709,11 +728,13 @@ jobs:
 Two developers, one machine
 
 **Driver (코딩하는 사람)**
+
 - 키보드를 잡고 실제 코드를 작성
 - 현재의 문제 해결에 집중 (전술적 사고)
 - 구문(Syntax) 및 세부 구현 담당
 
 **Navigator (관찰하는 사람)**
+
 - 전체적인 방향 제시 및 리뷰
 - 큰 그림을 보며 설계 검토 (전략적 사고)
 - 실시간 오류 발견 및 대안 제시
@@ -723,11 +744,13 @@ Two developers, one machine
 ### 4. 지식 공유 (Knowledge Sharing)
 
 **Interactive & Synchronous**
+
 - **Tech Talk (기술 발표)**: 정기적인 기술 세미나 및 노하우 공유
 - **Lunch & Learn**: 점심 시간을 활용한 캐주얼한 학습 세션
 - **Pair Programming**: 실시간 코드 작성과 즉각적인 피드백
 
 **Documentation & Review**
+
 - **문서화 (Documentation)**: ADR, API 명세, 온보딩 가이드 작성
 - **코드 리뷰 (Code Review)**: 코드 품질 향상 및 도메인 지식 전파
 - **Internal Wiki**: 팀의 지식 베이스 구축 및 유지보수
@@ -740,13 +763,17 @@ Two developers, one machine
 > Feature 브랜치 전략을 사용하여 안전하게 코드를 변경하고 PR을 통해 병합하는 전체 과정을 경험하는 것입니다.
 
 1. **Feature 브랜치 생성**: 메인 브랜치에서 새로운 작업 브랜치를 생성합니다.
+
    ```bash
    git checkout -b feature/login-page
    ```
+
 2. **코드 변경 및 커밋**: 의미 있는 단위로 작업을 수행하고 Conventional Commits 규칙을 따릅니다.
+
    ```bash
    git commit -m "feat: add login form UI"
    ```
+
 3. **Pull Request 생성**: GitHub 저장소로 푸시 후 웹 인터페이스에서 PR을 생성합니다. 템플릿에 맞춰 설명을 작성하세요.
 4. **자체 리뷰 및 체크리스트**: 리뷰어를 지정하기 전에 스스로 코드를 검토하고 PR 체크리스트를 모두 완료합니다.
 5. **CI 통과 확인**: 자동화된 테스트와 Lint 검사가 통과되었는지 확인합니다 (All checks passed).
@@ -793,7 +820,7 @@ Two developers, one machine
 ### 협업 도구 (Collaboration Tools)
 
 | 카테고리 | 도구 |
-|---|---|
+| --- | --- |
 | PR 관리 (PR Management) | GitHub, GitLab, Bitbucket |
 | 코드 리뷰 (Code Review) | ReviewNB, Gerrit, Phabricator |
 | 페어 프로그래밍 (Pair Programming) | VS Code Live Share, Tuple, Pop |
@@ -816,6 +843,7 @@ Two developers, one machine
 ### Golden Rules
 
 > [!important] 효율적이고 건강한 협업 문화를 만들기 위해 반드시 지켜야 할 5가지 핵심 원칙
+>
 > 1. **PR은 200줄 이내로**: 리뷰어가 집중할 수 있는 Small Batch Size를 유지하세요.
 > 2. **리뷰는 24시간 이내에**: 동료의 작업이 블로킹되지 않도록 신속하게 피드백하세요.
 > 3. **커밋은 의미 단위로**: 하나의 커밋은 하나의 논리적 변경 사항만 포함해야 합니다.

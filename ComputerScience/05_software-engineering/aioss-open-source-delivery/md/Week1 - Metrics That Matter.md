@@ -37,7 +37,7 @@ week: '1'
 ### 학습 목표
 
 | 목표 | 설명 |
-|---|---|
+| --- | --- |
 | **핵심 메트릭 이해** | 소프트웨어 전달 성능을 측정하는 핵심 메트릭의 개념과 필요성을 명확히 이해합니다. |
 | **DORA Metrics 적용** | DORA의 4가지 핵심 지표(Lead Time, Frequency, MTTR, Failure Rate)를 실무에 적용합니다. |
 | **Flow Metrics 활용** | Flow Metrics(Cycle Time, Throughput 등)를 활용하여 개발 프로세스 흐름을 최적화합니다. |
@@ -71,7 +71,7 @@ Google의 **DevOps Research and Assessment (DORA)** 팀이 6년 이상의 연구
 ### DORA Metrics 개요
 
 | 지표 | 분류 | 설명 |
-|---|---|---|
+| --- | --- | --- |
 | **Lead Time for Changes** (변경 리드 타임) | SPEED | 코드 커밋부터 코드가 프로덕션 환경에 성공적으로 배포되기까지 걸리는 시간입니다. |
 | **Deployment Frequency** (배포 빈도) | SPEED | 성공적인 소프트웨어를 프로덕션 환경에 배포하는 빈도입니다. (예: 일일 배포 횟수) |
 | **Mean Time to Recovery** (평균 복구 시간, MTTR) | STABILITY | 프로덕션 환경에서 서비스 중단이나 장애가 발생했을 때, 이를 복구하는 데 걸리는 평균 시간입니다. |
@@ -90,7 +90,7 @@ Commit → Build → Test → Review → Deploy → Production (Total Lead Time)
 #### 성과 수준
 
 | Performance Level | Lead Time | 의미 및 특징 |
-|---|---|---|
+| --- | --- | --- |
 | **Elite** | 1시간 미만 | 진정한 지속적 배포(Continuous Deployment) 달성. 커밋 즉시 배포되는 수준. |
 | **High** | 1일 ~ 1주 | 매우 빠른 피드백 사이클. 주 단위 스프린트보다 빠르게 배포 가능. |
 | **Medium** | 1주 ~ 1개월 | 정기적 배포. 일반적인 스크럼/스프린트 주기에 맞춘 배포 속도. |
@@ -109,6 +109,7 @@ Commit → Build → Test → Review → Deploy → Production (Total Lead Time)
 GitHub Actions를 활용하여 코드 커밋부터 병합까지의 시간을 자동으로 계산하여 Lead Time for Changes 지표를 추적할 수 있습니다.
 
 > [!tip] 작동 원리
+>
 > - Pull Request가 **Merged**(병합)될 때 트리거
 > - 첫 커밋 시간(First Commit)과 병합 시간(Merge Time) 추출
 > - 두 시간의 차이를 초 단위로 계산하여 출력
@@ -147,7 +148,7 @@ jobs:
 #### 성과 수준
 
 | Performance Level | Deployment Frequency | 의미 및 특징 |
-|---|---|---|
+| --- | --- | --- |
 | **Elite** | 하루에 여러 번 | On-demand 배포. 비즈니스 요구사항에 따라 필요할 때 즉시 배포 가능한 상태. |
 | **High** | 주 1회 ~ 일 1회 | 자주 배포(Frequent Deployment). 지속적 전달(CD)이 안정적으로 정착된 단계. |
 | **Medium** | 월 1회 ~ 주 1회 | 정기 배포. 스프린트 종료 등 일정 주기에 맞춰 배포가 이루어지는 단계. |
@@ -166,6 +167,7 @@ jobs:
 GitHub Actions의 **deployment** 이벤트를 활용하여 프로덕션 배포 횟수와 환경 정보를 자동으로 기록합니다.
 
 > [!tip] 핵심 포인트
+>
 > - **Deployment 이벤트**: 배포 생성 시 자동으로 트리거됨
 > - **실시간 로깅**: 배포 시점(Date)과 대상 환경(Environment) 기록
 > - **데이터 활용**: 추후 주간/월간 배포 횟수 집계에 활용 가능
@@ -200,7 +202,7 @@ jobs:
 #### 성과 수준
 
 | Performance Level | MTTR Criteria | 의미 및 특징 |
-|---|---|---|
+| --- | --- | --- |
 | **Elite** | 1시간 미만 | **즉각 복구** - 장애 감지 및 복구가 고도로 자동화되어 사용자 영향을 최소화함. |
 | **High** | 1시간 ~ 1일 | **빠른 복구** - 체계적인 대응 프로세스와 온콜 시스템으로 하루 이내 서비스 정상화. |
 | **Medium** | 1일 ~ 1주 | **정상 복구** - 수동 개입이 필요하며 복잡한 문제 해결을 위해 수일이 소요될 수 있음. |
@@ -219,6 +221,7 @@ jobs:
 MTTR(평균 복구 시간)을 단축하기 위해서는 장애 발생을 **즉시 감지**하는 것이 필수적입니다. GitHub Actions를 사용하여 주기적인 헬스 체크를 자동화할 수 있습니다.
 
 > [!tip] 구성 요소
+>
 > - **Schedule**: 5분 간격(*/5) 실행
 > - **Curl**: HTTP 상태 코드 확인 (-f 옵션)
 > - **Alert**: 실패 시 알림 전송 로직 수행
@@ -262,7 +265,7 @@ $$\text{Change Failure Rate} = \frac{\text{실패한 배포 수}}{\text{전체 �
 #### 성과 수준
 
 | Performance Level | Failure Rate | 의미 및 특징 |
-|---|---|---|
+| --- | --- | --- |
 | **Elite** | 0% - 15% | 매우 안정적. 배포 실패가 거의 없으며, 높은 신뢰성을 보장함. |
 | **High** | 16% - 30% | 안정적. 관리 가능한 수준의 실패율이며, 빠른 복구가 가능함. |
 | **Medium** | 31% - 45% | 보통. 배포 실패가 종종 발생하며, 품질 관리 개선이 필요함. |
@@ -281,6 +284,7 @@ $$\text{Change Failure Rate} = \frac{\text{실패한 배포 수}}{\text{전체 �
 프로덕션 배포의 성공 및 실패 여부를 자동으로 감지하여 Change Failure Rate(변경 실패율) 계산을 위한 기초 데이터를 수집합니다.
 
 > [!tip] 모니터링 포인트
+>
 > - `deployment_status` 이벤트 활용
 > - 배포 상태(success/failure) 실시간 확인
 > - 실패 시 알림 전송 또는 메트릭 저장소 기록
@@ -333,6 +337,7 @@ DORA Metrics가 '결과'를 측정한다면, Flow Metrics는 가치가 전달되
 GitHub API를 활용하여 작업이 실제로 시작된 시점부터 완료될 때까지의 시간을 측정하기 위해 GitHub Issue의 이벤트 로그를 분석합니다.
 
 > [!tip] 계산 로직
+>
 > - **Start Time**: 이슈에 "In Progress" 라벨이 붙은 시점을 추출
 > - **End Time**: 이슈가 Closed(완료)된 시점
 > - **Cycle Time**: (End Time - Start Time)을 시간 단위로 변환
@@ -375,6 +380,7 @@ def calculate_cycle_time(issue_number):
 $$\text{Cycle Time} = \frac{\text{WIP}}{\text{Throughput}}$$
 
 **변수 정의:**
+
 - **Cycle Time**: 작업 시작부터 완료까지의 시간
 - **WIP**: 동시에 진행 중인 작업의 수
 - **Throughput**: 단위 시간당 완료되는 작업 수
@@ -398,6 +404,7 @@ $$\text{Cycle Time} = \frac{\text{WIP}}{\text{Throughput}}$$
 WIP(Work In Progress) 제한은 동시에 진행되는 작업의 수를 물리적으로 제한하여 멀티태스킹을 방지하고 작업 흐름을 개선하는 핵심 기법입니다.
 
 > [!tip] WIP 제한의 효과
+>
 > - 컨텍스트 스위칭 비용 최소화 (집중도 향상)
 > - 병목 구간(Bottleneck)의 즉각적인 시각화
 > - 리드 타임(Lead Time) 단축 및 예측 가능성 증대
@@ -436,6 +443,7 @@ $$\text{Throughput} = \frac{\text{Items}}{\text{Time}}$$
 GitHub Actions의 스케줄러를 활용하여 **주 단위 완료 작업 수**를 자동으로 집계하고 리포팅합니다.
 
 > [!tip] 작동 원리
+>
 > - `schedule` 트리거: 정해진 시간(매주 일요일) 실행
 > - `gh issue list`: GitHub CLI로 이슈 목록 조회
 > - 닫힌(closed) 이슈만 필터링하여 개수 집계
@@ -472,6 +480,7 @@ Code Coverage, Technical Debt 등 소프트웨어의 내부 건전성을 평가�
 $$\text{Coverage} = \frac{\text{실행된 라인 수}}{\text{전체 라인 수}} \times 100\%$$
 
 **왜 중요한가?**
+
 - 테스트 누락 영역 식별
 - 소프트웨어 안정성 지표
 - 불필요한 코드(Dead Code) 감지
@@ -480,7 +489,7 @@ $$\text{Coverage} = \frac{\text{실행된 라인 수}}{\text{전체 라인 수}}
 #### Code Coverage 목표 수준
 
 | 구분 | 수준 | 설명 |
-|---|---|---|
+| --- | --- | --- |
 | **최소 수준** | 70% | 프로젝트의 안정성을 보장하기 위한 최소한의 마지노선입니다. 이보다 낮으면 리스크가 큽니다. |
 | **권장 수준** | 80-90% | 대부분의 버그를 사전에 차단하고 높은 유지보수성을 확보할 수 있는 가장 이상적인 구간입니다. |
 | **주의 사항** | - | 100% 수치 달성에 집착하지 마세요. 의미 없는 테스트보다 **테스트의 품질**이 훨씬 중요합니다. |
@@ -490,6 +499,7 @@ $$\text{Coverage} = \frac{\text{실행된 라인 수}}{\text{전체 라인 수}}
 GitHub Actions를 활용하여 테스트 실행부터 커버리지 리포트 업로드, 그리고 목표 수치 달성 여부까지 자동으로 검증하는 파이프라인입니다.
 
 > [!tip] 주요 단계
+>
 > - **Run Tests**: `npm test -- --coverage`로 실행
 > - **Upload**: Codecov 액션을 사용하여 결과 저장
 > - **Check Threshold**: 커버리지가 80% 미만일 경우 빌드 실패 처리
@@ -529,7 +539,7 @@ jobs:
 #### 금융 부채 vs 기술 부채
 
 | 항목 | 설명 |
-|---|---|
+| --- | --- |
 | **개념** | 지금 당장 부족한 자원을 빌려 쓰는 것 |
 | **원금** | 저품질 코드, 부족한 설계, 미비한 테스트 |
 | **이자** | 유지보수 난이도 증가, 버그 수정 시간 증가 |
@@ -538,7 +548,7 @@ jobs:
 #### Technical Debt 측정 방법
 
 | SonarQube | Code Climate | DeepSource |
-|---|---|---|
+| --- | --- | --- |
 | **Code Smells**: 유지보수성 저해 요소 | **GPA Score**: 코드 품질 등급 산정 | **Auto Review**: 자동화된 코드 리뷰 |
 | **Bugs**: 신뢰성 문제 및 오류 | **Maintainability**: 유지보수 용이성 평가 | **Anti-patterns**: 안티 패턴 실시간 감지 |
 | **Vulnerabilities**: 보안 취약점 | **Duplication**: 코드 중복도 분석 | **Performance**: 성능 저하 요소 식별 |
@@ -548,6 +558,7 @@ jobs:
 GitHub Actions와 SonarCloud를 연동하여 PR 단계에서부터 기술 부채를 식별하고 차단합니다.
 
 > [!tip] 주요 설정 포인트
+>
 > - **fetch-depth: 0**: 정확한 분석을 위해 전체 Git 히스토리 필요
 > - **Secrets 관리**: SONAR_TOKEN 등 민감 정보 보호
 > - **Quality Gate**: 기준 미달 시 빌드를 실패시켜 배포 차단
@@ -586,6 +597,7 @@ jobs:
 간단한 Bash 스크립트를 사용하여 지난 주 동안 변경된(추가/삭제) 코드 라인 수를 집계하고 코드 변동률(Churn)을 측정합니다.
 
 > [!tip] 핵심 명령어
+>
 > - `git log --numstat`: 파일별 변경 라인 수 출력
 > - `awk`: 텍스트 데이터를 처리하여 합계 계산
 > - 추가된 줄(Added)과 삭제된 줄(Removed)의 총합이 Churn
@@ -624,7 +636,7 @@ awk '{
 ### 커스텀 대시보드 개요
 
 | 구성 요소 | 설명 |
-|---|---|
+| --- | --- |
 | **Prometheus (데이터 저장)** | Pull 방식의 메트릭 수집 및 시계열 데이터베이스(TSDB)를 통해 대용량 데이터를 효율적으로 저장하고 PromQL로 쿼리합니다. |
 | **Grafana (시각화)** | Prometheus 등 다양한 데이터 소스를 통합하여, 직관적인 그래프와 차트로 구성된 유연한 실시간 대시보드를 제공합니다. |
 | **Exporters (데이터 수집)** | OS, 데이터베이스, 애플리케이션 등 다양한 시스템의 상태를 Prometheus가 이해할 수 있는 포맷으로 노출합니다. |
@@ -635,6 +647,7 @@ awk '{
 오픈소스 모니터링 표준인 **Prometheus**와 시각화 도구 **Grafana**를 Docker Compose로 손쉽게 구축할 수 있습니다.
 
 > [!tip] 구성 요소
+>
 > - **Prometheus (9090)**: 메트릭 수집 및 시계열 DB 저장
 > - **Grafana (3000)**: 수집된 데이터의 시각화 대시보드
 > - **Volumes**: 설정 파일 및 데이터 영구 저장소 연결
@@ -662,6 +675,7 @@ services:
 정기적인 스케줄에 따라 GitHub API를 호출하여 프로젝트 메트릭을 수집하고, 이를 저장소에 기록하여 시계열 데이터를 구축합니다.
 
 > [!tip] 주요 프로세스
+>
 > - **Schedule Trigger**: `cron`을 사용하여 매일 자정에 자동 실행
 > - **Data Collection**: `gh api`로 기여자 통계 등 데이터 추출
 > - **Persistence**: 결과를 JSON 파일로 저장 후 Git에 커밋/푸시
@@ -695,7 +709,7 @@ jobs:
 현재 상태를 정확히 파악하는 것이 개선의 첫 걸음입니다.
 
 | 지표 | 설명 |
-|---|---|
+| --- | --- |
 | **Lead Time for Changes** | 코드 커밋부터 배포까지의 시간 |
 | **Deployment Frequency** | 프로덕션 배포 빈도 |
 | **Mean Time to Recovery** | 장애 발생 시 복구 평균 시간 |
@@ -710,6 +724,7 @@ SMART 원칙을 적용합니다:
 | **Specific** (구체적) | **Measurable** (측정 가능) | **Achievable** (달성 가능) | **Relevant** (관련성) | **Time-bound** (기한) |
 
 > [!example] SMART Goal Example
+>
 > - **현재 (Current State)**: Lead Time: 5일 (배포까지 평균 5일 소요)
 > - **목표 (Target State)**: Lead Time: 1일 (3개월 내 달성, Time-bound)
 
@@ -721,6 +736,7 @@ SMART 원칙을 적용합니다:
 4. **학습 및 반영** - 다음 액션 결정
 
 > [!example] 실전 적용 예시: Lead Time 단축
+>
 > - **가설**: "자동화된 테스트를 파이프라인에 추가하면 수동 검증 시간이 줄어들어 Lead Time이 감소할 것이다."
 > - **실험**: 주요 기능에 대한 단위 테스트를 작성하고 GitHub Actions CI 파이프라인에 통합한다.
 > - **측정**: 배포까지의 Lead Time 변화를 2주간 추적한다. (예: 5일 → 3일로 단축 확인)
@@ -745,18 +761,21 @@ DORA Metrics 수집 자동화, 대시보드 구축 및 개선 계획 수립 실�
 GitHub Actions를 활용하여 소프트웨어 전달 성능 지표를 자동으로 수집하고 리포팅하는 파이프라인을 구축합니다.
 
 **단계:**
+
 1. **GitHub Actions 워크플로우 작성**: Pull Request 및 Deployment 이벤트에 반응하는 `.yml` 워크플로우 파일을 생성합니다.
 2. **4가지 핵심 지표 자동 계산**: Lead Time, Deployment Frequency, MTTR, Change Failure Rate를 계산하는 로직을 구현합니다.
 3. **결과 데이터 저장**: 계산된 메트릭 데이터를 JSON 형식으로 Artifact에 저장하거나 별도 브랜치에 커밋합니다.
 4. **주간 보고서 자동 생성**: 매주 수집된 데이터를 요약하여 Issue 또는 Slack 알림으로 전송하는 잡(Job)을 추가합니다.
 
 > [!note] 제출 형식
+>
 > - GitHub 리포지토리 URL 제출
 > - 워크플로우 파일 포함 (`.github/workflows/metrics.yml`)
 > - 실행 성공 로그 스크린샷 1부
 > - README.md에 구현 방법 간략 기술
 
 > [!important] 평가 포인트
+>
 > - **자동화 완성도**: 수동 개입 없이 메트릭이 수집되는가?
 > - **정확성**: 지표 계산 로직이 DORA 정의에 부합하는가?
 > - **코드 품질**: 워크플로우 스크립트의 가독성 및 재사용성
@@ -766,18 +785,21 @@ GitHub Actions를 활용하여 소프트웨어 전달 성능 지표를 자동으
 수집된 데이터를 시각화하여 팀의 소프트웨어 전달 성능을 실시간으로 파악할 수 있는 대시보드를 구축합니다.
 
 **단계:**
+
 1. **GitHub API로 메트릭 수집**: REST 또는 GraphQL API를 사용하여 필요한 메타데이터(이슈, PR, 커밋 등)를 주기적으로 가져옵니다.
 2. **시각화 도구 선택**: Grafana, Chart.js, D3.js 등 프로젝트 규모와 팀의 기술 스택에 적합한 시각화 라이브러리를 선정합니다.
 3. **실시간 대시보드 구현**: 주요 지표(Cycle Time, 배포 빈도 등)를 차트 형태로 구성하여 웹 페이지나 모니터링 툴에 띄웁니다.
 4. **README 뱃지 추가**: 프로젝트 README.md 상단에 현재 상태(빌드 성공, 커버리지, 최신 배포일 등)를 보여주는 실시간 뱃지를 부착합니다.
 
 > [!note] 제출 형식
+>
 > - 대시보드 접속 URL 또는 스크린샷
 > - 구현 코드 (Frontend/Backend 리포지토리)
 > - 사용된 API 및 도구 명세서
 > - README에 부착된 뱃지 확인 링크
 
 > [!important] 평가 포인트
+>
 > - **가시성**: 데이터가 직관적으로 이해하기 쉬운가?
 > - **실시간성**: 지표가 최신 상태를 잘 반영하는가?
 > - **유용성**: 팀의 의사결정에 실질적 도움이 되는가?
@@ -787,18 +809,21 @@ GitHub Actions를 활용하여 소프트웨어 전달 성능 지표를 자동으
 현재 프로젝트의 상태를 데이터 기반으로 분석하고, 병목 지점을 해결하기 위한 구체적인 개선 목표와 실행 계획을 수립합니다.
 
 **단계:**
+
 1. **현재 프로젝트 메트릭 측정**: GitHub Insights 및 구축한 대시보드를 활용하여 현재의 Lead Time, 배포 빈도 등 베이스라인 데이터를 수집합니다.
 2. **병목 지점 분석**: 측정된 데이터를 바탕으로 개발 프로세스 중 가장 시간이 많이 소요되거나 오류가 잦은 병목 구간을 식별합니다.
 3. **개선 목표 설정**: 분석 결과를 토대로 SMART 원칙(구체적, 측정가능, 달성가능, 관련성, 기한)에 입각한 개선 목표를 설정합니다.
 4. **실행 계획 작성**: 목표 달성을 위해 도입할 자동화 도구, 프로세스 변경, 테스트 전략 등을 포함한 구체적인 액션 플랜을 작성합니다.
 
 > [!note] 제출 형식
+>
 > - 개선 계획 보고서 (PDF 또는 Markdown)
 > - 현재 메트릭 상태 스크린샷 첨부
 > - 예상 성과 및 일정표(Roadmap)
 > - GitHub 저장소 내 `IMPROVEMENT.md` 파일로 제출
 
 > [!important] 평가 포인트
+>
 > - **데이터 기반 분석**: 주관적 느낌이 아닌 측정 데이터에 근거했는가?
 > - **목표의 적절성**: SMART 원칙을 준수하여 목표를 설정했는가?
 > - **실행 가능성**: 구체적이고 현실적인 전략인가?
@@ -812,7 +837,7 @@ GitHub Actions를 활용하여 소프트웨어 전달 성능 지표를 자동으
 ### 도구 (Tools)
 
 | 메트릭 수집 | 코드 품질 | 시각화 |
-|---|---|---|
+| --- | --- | --- |
 | Sleuth | SonarQube | Grafana |
 | LinearB | CodeClimate | Kibana |
 | Haystack | Codacy | DataDog |

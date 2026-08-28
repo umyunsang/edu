@@ -20,12 +20,17 @@ updated: '2026-05-05'
 ---
 
 ---
+
 #### yaml 파일 구조 확인하는 법
+
 ```bash
 kubectl explain [po,rs,dp].spec
 ```
+
 ## 파드(Pod)
+
 #### Pod 상태 확인 명령어
+
 ```shell
 # pod 정보
 kubectl get po
@@ -39,17 +44,19 @@ kubectl logs <pod-name>
 watch  -n 1  kubectl  get  po    # 1초마다 업데이트
 ```
 
-| **상태**                | **설명**                                           |
+| **상태** | **설명** |
 | --------------------- | ------------------------------------------------ |
-| **Pending**           | Pod이 Master Node에 전달되었으나, 특정 Node에 스케줄링되지 않은 상태. |
-| **ContainerCreating** | 특정 Node에 스케줄링 후, 컨테이너를 생성 중인 상태.                 |
-| **Running**           | Pod이 정상적으로 생성되어 모든 컨테이너가 실행 중인 상태.               |
-| **Completed**         | 모든 컨테이너가 정상적으로 실행 완료 후 종료된 상태.                   |
-| **Error**             | Pod 또는 컨테이너 실행 중 문제가 발생한 상태.                     |
-| **CrashLoopBackOff**  | 컨테이너가 실행 중 반복적으로 실패하며 재시작을 시도하는 상태.              |
+| **Pending** | Pod이 Master Node에 전달되었으나, 특정 Node에 스케줄링되지 않은 상태. |
+| **ContainerCreating** | 특정 Node에 스케줄링 후, 컨테이너를 생성 중인 상태. |
+| **Running** | Pod이 정상적으로 생성되어 모든 컨테이너가 실행 중인 상태. |
+| **Completed** | 모든 컨테이너가 정상적으로 실행 완료 후 종료된 상태. |
+| **Error** | Pod 또는 컨테이너 실행 중 문제가 발생한 상태. |
+| **CrashLoopBackOff** | 컨테이너가 실행 중 반복적으로 실패하며 재시작을 시도하는 상태. |
 
 ---
+
 #### 파드의 Restart 정책
+
 - **`Always`** (기본값): 항상 재시작. 서비스형 애플리케이션에 적합.
 - **`OnFailure`**: 실패 시에만 재시작. 배치 작업에 적합.
 - **`Never`**: 종료 후 재시작 안 함. 단발성 작업에 적합.
@@ -67,10 +74,14 @@ spec:
     image: busybox
     command: ["sh", "-c", "echo Hello Kubernetes; exit 1"]
 ```
+
 - `restartPolicy`는 Pod 레벨에서만 설정 가능.
 - 기본값은 `Always`이므로 필요에 따라 수정해야 함.
+
 ---
+
 #### 파드 내부 컨테이너를 조작하는 명령어
+
 ```bash
 # 파드 내부로 접속 (쉘 실행)
 kubectl exec -it <파드이름> -- /bin/bash
@@ -94,11 +105,15 @@ kubectl logs <파드이름> -c <컨테이너이름> # 특정 컨테이너 로그
 # 파드 상태 자세히 확인
 kubectl describe pod <파드이름>
 ```
+
 ---
-###### Quiz1. www 라는 이름으로 pod를 생성하시고, 이때 사용되는 이미지는 nginx:1.12, 현재 디렉토리에 index.html 파일을 만들고, 해당 파일을 www pod의 /usr/share/nginx/html 디렉토리로 복사하여, 기본 웹페이지를 변경하세요.
+
+###### Quiz1. www 라는 이름으로 pod를 생성하시고, 이때 사용되는 이미지는 nginx:1.12, 현재 디렉토리에 index.html 파일을 만들고, 해당 파일을 www pod의 /usr/share/nginx/html 디렉토리로 복사하여, 기본 웹페이지를 변경하세요
 
 >[! www pod를 생성하기]
+
 1. yaml 파일을 이용해 생성하기
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -109,28 +124,35 @@ spec:
   - name: www
     image: nginx:1.12
 ```
+
 ```bash
 kubectl apply -f www.yaml    # www pod 생성 명령어
 ```
-2. run 명령어로 생성
+1. run 명령어로 생성
+
 ```bash
 kubectl run www --image nginx:1.12
 ```
 
 >[!index.html 생성 후 pod로 전송]
+
 ```bash
 echo hello > index.html
 kubectl cp ./index.html www:/usr/share/nginx/html
 ```
-###### Quiz2. 해당 pod의 ip 주소를 확인하여 master에서 curl ip주소로 웹페이지를 확인해 봅니다.
+
+###### Quiz2. 해당 pod의 ip 주소를 확인하여 master에서 curl ip주소로 웹페이지를 확인해 봅니다
 
 >[! IP확인 후 curl로 html 열기]
+
 ```bash
 # ip 주소 확인
 kubectl get po -o wide
 curl http://0.0.0.0
 ```
+
 ---
+
 ##### 사이드카 패턴(Sidecar Pattern)
 
 - **주 애플리케이션 컨테이너의 보조 역할을 하는 컨테이너를 함께 실행**하여 추가적인 기능(로깅, 모니터링, 데이터 동기화 등)을 제공하는 패턴입니다.
@@ -159,8 +181,11 @@ spec:
 > **설명:** 두 컨테이너는 동일한 파드 내에서 실행되므로 네트워크와 볼륨을 공유합니다. 사이드카 컨테이너를 활용하여 애플리케이션의 기능을 확장하거나 보완할 수 있습니다.
 
 ---
+
 ## 디플로이먼트(deplyment)
+
 #### 레플리카셋(replicaset)
+
 ```yaml
 apiVersion: apps/v1          # API 버전, ReplicaSet은 apps/v1에서 지원
 kind: ReplicaSet             # 오브젝트 유형은 ReplicaSet
@@ -184,8 +209,11 @@ spec:
 - **ReplicaSet**은 정의된 수만큼의 Pod 복제본을 유지하며, 특정 조건(Pod 삭제 등)에서 원하는 상태를 자동으로 복구합니다.
 - `selector`와 `template`의 레이블이 일치해야 Pod가 관리됩니다.
 - 주로 Deployment를 통해 관리되지만, 단독으로도 사용 가능합니다.
+
 ---
+
 #### scale 명령어
+
 ```bash
 # ReplicaSet의 복제본 수를 조정하는 명령어
 kubectl scale rs myrs --replicas=5
@@ -200,7 +228,9 @@ kubectl scale rs myrs --replicas=5
 > 이 명령어는 `replicas` 값을 조정하여 Pod의 수를 늘리거나 줄일 때 사용합니다. Deployment에도 동일한 방식으로 적용 가능합니다.
 
 ---
+
 #### 롤아웃과 롤백
+
 ```bash
 # 새로운 버전의 배포를 확인
 kubectl rollout status deployment my-deployment
@@ -213,20 +243,21 @@ kubectl rollout undo deployment my-deployment --to-revision=2
 
 # 업데이트 횟수 및 버전 확인
 kubectl rollout history deploy my-deployment
-	kubectl rollout history deploy my-deployment --revision <number>
+ kubectl rollout history deploy my-deployment --revision <number>
 ```
 
 - **롤아웃**:
-    - `rollout status`: 현재 배포 상태를 확인하여 정상적으로 진행 중인지 확인
-    - 새 버전이 제대로 배포되었는지 상태를 확인 가능
+  - `rollout status`: 현재 배포 상태를 확인하여 정상적으로 진행 중인지 확인
+  - 새 버전이 제대로 배포되었는지 상태를 확인 가능
 - **롤백**:
-    - `rollout undo`: 이전 배포 상태로 복구
-    - `--to-revision`: 특정 버전으로 롤백
-    - 롤백을 통해 잘못된 배포를 빠르게 원상복구 가능
+  - `rollout undo`: 이전 배포 상태로 복구
+  - `--to-revision`: 특정 버전으로 롤백
+  - 롤백을 통해 잘못된 배포를 빠르게 원상복구 가능
 
 > 롤아웃과 롤백은 주로 Deployment에 적용되며, 안전한 배포와 신속한 복구를 지원합니다.
 
 ---
+
 #### scale 명령어
 
 ```bash
@@ -243,6 +274,7 @@ kubectl scale rs myrs --replicas=5
 > 이 명령어는 `replicas` 값을 조정하여 Pod의 수를 늘리거나 줄일 때 사용합니다. Deployment에도 동일한 방식으로 적용 가능합니다.
 
 ---
+
 #### 롤아웃과 롤백
 
 ```bash
@@ -257,16 +289,17 @@ kubectl rollout undo deployment my-deployment --to-revision=2
 ```
 
 - **롤아웃**:
-    - `rollout status`: 현재 배포 상태를 확인하여 정상적으로 진행 중인지 확인
-    - 새 버전이 제대로 배포되었는지 상태를 확인 가능
+  - `rollout status`: 현재 배포 상태를 확인하여 정상적으로 진행 중인지 확인
+  - 새 버전이 제대로 배포되었는지 상태를 확인 가능
 - **롤백**:
-    - `rollout undo`: 이전 배포 상태로 복구
-    - `--to-revision`: 특정 버전으로 롤백
-    - 롤백을 통해 잘못된 배포를 빠르게 원상복구 가능
+  - `rollout undo`: 이전 배포 상태로 복구
+  - `--to-revision`: 특정 버전으로 롤백
+  - 롤백을 통해 잘못된 배포를 빠르게 원상복구 가능
 
 > 롤아웃과 롤백은 주로 Deployment에 적용되며, 안전한 배포와 신속한 복구를 지원합니다.
 
 ---
+
 #### 롤링 업데이트와 Recreate
 
 ```yaml
@@ -292,9 +325,9 @@ spec:
 ```
 
 - **롤링 업데이트**:
-    - 새 버전을 점진적으로 배포하면서 기존 Pod를 순차적으로 종료 및 대체
-    - 무중단 배포가 가능하며, `maxSurge`와 `maxUnavailable`을 사용해 배포 속도와 여유 리소스를 조정
-    - 예: 위 YAML 설정은 새 Pod를 1개 추가(`maxSurge`)하고, 기존 Pod를 1개씩 삭제(`maxUnavailable`)
+  - 새 버전을 점진적으로 배포하면서 기존 Pod를 순차적으로 종료 및 대체
+  - 무중단 배포가 가능하며, `maxSurge`와 `maxUnavailable`을 사용해 배포 속도와 여유 리소스를 조정
+  - 예: 위 YAML 설정은 새 Pod를 1개 추가(`maxSurge`)하고, 기존 Pod를 1개씩 삭제(`maxUnavailable`)
 
 ```yaml
 apiVersion: apps/v1
@@ -316,12 +349,13 @@ spec:
 ```
 
 - **Recreate**:
-    - 기존 Pod를 모두 삭제한 후 새 Pod를 생성
-    - 서비스 중단이 발생할 수 있으나, 데이터 충돌 가능성이 적고 단순한 배포에 유용
+  - 기존 Pod를 모두 삭제한 후 새 Pod를 생성
+  - 서비스 중단이 발생할 수 있으나, 데이터 충돌 가능성이 적고 단순한 배포에 유용
 
 > 롤링 업데이트는 지속적인 서비스 제공이 중요한 환경에 적합하며, Recreate는 빠르고 단순한 배포가 필요한 상황에 적합합니다.
 
 ---
+
 #### 업데이트 명령어
 
 ```bash
@@ -340,7 +374,9 @@ kubectl set image deployment <deployment-name> <container-name>=<new-image>
 ```bash
 kubectl rollout status deployment <deployment-name>
 ```
+
 ---
+
 ## 쿠버네티스 서비스란?
 
 **쿠버네티스 서비스**는 클러스터 내부에 있는 **Pod들 간의 네트워크 통신**을 안정적으로 제공하기 위해 사용됩니다. Pod는 동적으로 생성되고 삭제되며 IP 주소가 변경될 수 있는데, 서비스는 이러한 Pod를 **고정된 네트워크 엔드포인트로 연결**할 수 있는 추상화를 제공합니다.
@@ -355,9 +391,10 @@ kubectl rollout status deployment <deployment-name>
     - NodePort 또는 LoadBalancer 서비스를 통해 클러스터 외부에서 Pod에 접근할 수 있습니다.
 
 ---
+
 #### 서비스 유형
 
-1. **ClusterIP (기본값)**    
+1. **ClusterIP (기본값)**
     - 클러스터 내부에서만 접근 가능한 IP 주소를 제공.
     - 내부 애플리케이션 간 통신에 적합.
 2. **NodePort**

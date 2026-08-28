@@ -21,8 +21,9 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ## Data Augmentation
-	`데이터 확장`
+ `데이터 확장`
 
 ```python
 import torch

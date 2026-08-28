@@ -21,7 +21,8 @@ updated: '2026-05-05'
 
 ---
 
-### Quiz #1:
+### Quiz #1
+
 클라이언트로부터 서버로 자료 전송 방식 2가지는 ( )방식과 ( )방식입니다.
 
 - 정답:
@@ -29,7 +30,8 @@ updated: '2026-05-05'
 
 ---
 
-### Quiz #2:
+### Quiz #2
+
 주소창에 "/airplane/login"이면 login.html을 띄워주는 Controller의 메소드를 작성하세요.
 
 ```java
@@ -40,7 +42,9 @@ public String showLoginPage() {
 ```
 
 ---
-### Quiz #3:
+
+### Quiz #3
+
 wise.html (보내는 쪽), wiseAnswer.html (받는 쪽), controller에 들어갈 메소드 코딩
 
 - ## MyController
@@ -48,18 +52,18 @@ wise.html (보내는 쪽), wiseAnswer.html (받는 쪽), controller에 들어갈
 ```java
 @Controller
 public class MyController {
-	@GetMapping("/wise")
-	public String wise() {
-	return "wise";
-	}
-	
-	@PostMapping("/wise/answer")
-	public String wiseAnswer(@RequestParam("pname") String pname, @RequestParam("word") String word, Model mo) {
-	
-	mo.addAttribute("pname", pname);
-	mo.addAttribute("word", word);
-	return "wiseAnswer";
-	}
+ @GetMapping("/wise")
+ public String wise() {
+ return "wise";
+ }
+ 
+ @PostMapping("/wise/answer")
+ public String wiseAnswer(@RequestParam("pname") String pname, @RequestParam("word") String word, Model mo) {
+ 
+ mo.addAttribute("pname", pname);
+ mo.addAttribute("word", word);
+ return "wiseAnswer";
+ }
 }
 ```
 
@@ -92,8 +96,8 @@ public class MyController {
 <body style=background-color:aqua>
 <h2> <strong>오늘의 명언</strong></h2><p>
 <table border = "1">
-	<tr> <th>위인 <td th:text="${pname}">
-	<tr> <th>명언 <td th:text="${word}">
+ <tr> <th>위인 <td th:text="${pname}">
+ <tr> <th>명언 <td th:text="${word}">
 </table>
 </body>
 </html>
@@ -101,8 +105,9 @@ public class MyController {
 
 ---
 
-### Quiz #4:
-수업자료 3장 ex03Answer.html에서 
+### Quiz #4
+
+수업자료 3장 ex03Answer.html에서
 
 (1) 전체바탕색 말고 color 글자 부분의 바탕색만 바꿔 보세요.
 
@@ -126,7 +131,8 @@ public class MyController {
 
 ---
 
-### Quiz #5 
+### Quiz #5
+
 노란 화면에서 입력한 빵 정보가 핑크 화면 에 뜨도록 코딩하세요.
 
 - ### bread.html

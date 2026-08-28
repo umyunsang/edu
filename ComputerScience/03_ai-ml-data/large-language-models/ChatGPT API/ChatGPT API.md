@@ -20,29 +20,33 @@ updated: '2026-05-05'
 ---
 
 ---
+
 #### ChatGPT의 API 연동
-- 요청 매개변수 설정 
-	- model : 사용할 모델 지정. " gpt‐3.5‐turbo" 모델 사용 
-	- content : ChatGPT에 전달할 입력 텍스트 
-- API 응답 처리 
-	- API 요청에 대한 응답은 JSON 형식으로 반환 됨 
-	- 응답에서 `response.choices[0].content`를 사용하여 생성된 텍스트를 추출 
-- 다양한 요청 및 응답 처리 
-	- 다양한 유형의 대화와 작업을 수행 가능 
-- 예외 처리 
-	- API 요청 중에 발생할 수 있는 예외 상황을 처리하는 코드 추가 
-- 보안 및 비용 관리 
-	- API 키를 보안 유지하고, 사용량을 모니터링하고 비용을 관리 
-- 테스트 및 디버깅 
-	- 요청과 응답을 테스트하고 디버그하여 ChatGPT를 올바르게 통합
-- OpenAI 계정 및 API 키 생성 
-	- OpenAI 웹사이트(https://openai.com/blog/openai-api)에 가입하고 로그인 
-	- 대시보드에서 API 키를 생성하고 해당 키를 안전한 곳에 보관
-- 필요한 라이브러리 설치 
-	- `pip install openai`
+
+- 요청 매개변수 설정
+ 	- model : 사용할 모델 지정. " gpt‐3.5‐turbo" 모델 사용
+ 	- content : ChatGPT에 전달할 입력 텍스트
+- API 응답 처리
+ 	- API 요청에 대한 응답은 JSON 형식으로 반환 됨
+ 	- 응답에서 `response.choices[0].content`를 사용하여 생성된 텍스트를 추출
+- 다양한 요청 및 응답 처리
+ 	- 다양한 유형의 대화와 작업을 수행 가능
+- 예외 처리
+ 	- API 요청 중에 발생할 수 있는 예외 상황을 처리하는 코드 추가
+- 보안 및 비용 관리
+ 	- API 키를 보안 유지하고, 사용량을 모니터링하고 비용을 관리
+- 테스트 및 디버깅
+ 	- 요청과 응답을 테스트하고 디버그하여 ChatGPT를 올바르게 통합
+- OpenAI 계정 및 API 키 생성
+ 	- OpenAI 웹사이트(<https://openai.com/blog/openai-api)에> 가입하고 로그인
+ 	- 대시보드에서 API 키를 생성하고 해당 키를 안전한 곳에 보관
+- 필요한 라이브러리 설치
+ 	- `pip install openai`
+
 #### OpenAI API Endpoint 및 모델 호환성
-- https://platform.openai.com/docs/models#model-endpoint-compatibility 
-- post 요청 endpoint url → https://api.openai.com/v1/chat/completions
+
+- <https://platform.openai.com/docs/models#model-endpoint-compatibility>
+- post 요청 endpoint url → <https://api.openai.com/v1/chat/completions>
 
 |**Endpoint**|**지원 모델**|
 |---|---|
@@ -58,9 +62,12 @@ updated: '2026-05-05'
 |`/v1/realtime (beta)`|gpt-4o-realtime-preview, gpt-4o-realtime-preview-2024-10-01|
 
 ---
+
 #### POST 요청 Assistants API 실습
-- POST 요청을 https://api.openai.com/v1/assistants 엔드포인트에 보내는 것은 주로 새로 운 AI 어시스턴트를 생성하는 데 사용됩니다. 
+
+- POST 요청을 <https://api.openai.com/v1/assistants> 엔드포인트에 보내는 것은 주로 새로 운 AI 어시스턴트를 생성하는 데 사용됩니다.
 - 어시스턴트는 다양한 기능을 수행할 수 있지만, 그 기능은 사용자가 설정하고 정의한 파라 미터와 구성에 따라 달라집니다.
+
 ```python
 import requests
 
@@ -84,6 +91,7 @@ print(response.text)
 ```
 
 >[!Assiatants 실습 결과]
+>
 >```json
 >{
 > "id": "asst_vnNwlG5P9cJcaoQiwdDGo3zN",
@@ -103,11 +111,14 @@ print(response.text)
 >```
 
 ---
+
 #### Create chat completion
-- post 요청 URL https://api.openai.com/v1/chat/completions 
-- client.chat.completions.create () : 채팅 세션을 시작 
+
+- post 요청 URL <https://api.openai.com/v1/chat/completions>
+- client.chat.completions.create () : 채팅 세션을 시작
 - messages: 대화 내역을 나타내는 메시지 리스트
-	- 각 메시지는 메시지를 보내는 주체를 나타내는 role과 메시지의 내용 content 필드를 가 집니다
+ 	- 각 메시지는 메시지를 보내는 주체를 나타내는 role과 메시지의 내용 content 필드를 가 집니다
+
 ```python
 from openai import OpenAI
 
@@ -126,6 +137,7 @@ print(completion.choices[0].message)
 ```
 
 >[!Create chat completion의 response]
+>
 >```json
 >{
 >  "id": "chatcmpl-123", 
@@ -190,7 +202,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 response = client.chat.completions.create(
     model="gpt-4o",
     messages=[{"role": "user",
-	    "content": [{"type": "text", "text": "What's in this image?"},
+     "content": [{"type": "text", "text": "What's in this image?"},
             {"type": "image_url","image_url": {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg",},},],}],
     max_tokens=300,)
 
@@ -198,14 +210,18 @@ print(response.choices[0])
 ```
 
 >[!출력결과]
+>
 >```JSON
 >Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='The image shows a wooden boardwalk leading through a green field or wetland area. The sky is blue with some clouds, and there are trees and bushes in the background. It looks like a peaceful natural landscape.', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None))
 >```
 
 ---
+
 #### 스트리밍 방식으로 대화형 AI 모델의 응답 처리
+
 - 스트리밍 옵션 모델의 응답을 실시간으로 여러 부분으로 나뉘어서 받을 수 있으며,각 부분이 준비되는 즉시 처리할 수 있습니다.
 - 특히 긴 대화나 실시간 인터랙션이 필요한 애플리케이션에 유용합니다.
+
 ```python
 from openai import OpenAI
 
@@ -228,6 +244,7 @@ for chunk in completion:
 ```
 
 >[!출력결과]
+>
 >```JSON
 >ChoiceDelta(content='', function_call=None, refusal=None, role='assistant', tool_calls=None)
 >ChoiceDelta(content='Hello', function_call=None, refusal=None, role=None, tool_calls=None)
@@ -243,7 +260,9 @@ for chunk in completion:
 >```
 
 ---
+
 #### 특정 도구(tools)를 활용하는 채팅 세션 생성
+
 ```PYTHON
 from openai import OpenAI
 
@@ -277,12 +296,15 @@ print(completion)
 ```
 
 >[!출력결과]
+>
 >```JSON
 >ChatCompletion(id='chatcmpl-ArfhMUARdUH3iaivxerHbcS2G0FON', choices=[Choice(finish_reason='tool_calls', index=0, logprobs=None, message=ChatCompletionMessage(content=None, refusal=None, role='assistant', audio=None, function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_SmIyiHCcTn6LOrk1ob424YcV', function=Function(arguments='{"location":"Boston, MA"}', name='get_current_weather'), type='function')]))], created=1737355036, model='gpt-4o-2024-08-06', object='chat.completion', service_tier='default', system_fingerprint='fp_4691090a87', usage=CompletionUsage(completion_tokens=18, prompt_tokens=80, total_tokens=98, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=0, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))
 >```
 
 ---
+
 #### 프로프트 엔지니어링
+
 :모델로부터 올바른 출력을 얻기 위해 프롬프트를 제작하는 과정
 
 >모델에 정확한 지시사항, 예시 및 필요한 맥락 정보(모델의 훈련 데이터에 포함되지 않은 개인적이거나 전문적인 정보 등)를 제공함으로써 모델의 출력 품질과 정확성을 향상시킬 수 있습니다.
@@ -306,7 +328,9 @@ print(completion)
 |**`best_of`**|서버 측에서 `best_of` 개만큼 결과를 생성하고 가장 좋은 결과를 반환|`1`|더 나은 결과를 원할 경우 `best_of` 값을 증가시켜 더 많은 결과 생성|
 |**`logit_bias`**|지정한 토큰의 생성 가능성을 감소시키는 값 (토큰 ID에 대해 설정)|없음|특정 토큰을 더 적게 생성하게 하여 필터링|
 |**`user`**|최종 사용자 ID, 이 값을 설정하면 특정 사용자와 관련된 데이터를 추적할 수 있음|없음|사용자 맞춤형 응답을 제공하기 위해 사용자의 ID를 설정|
+
 ##### 질의 응답 실습
+
 ```python
 from openai import OpenAI
 
@@ -326,7 +350,9 @@ response = client.completions.create(
 response_text = response.choices[0].text
 print("응답 텍스트:", response_text.strip())
 ```
+
 ##### 요약 실습
+
 ```PYTHON
 from openai import OpenAI
 
@@ -346,7 +372,9 @@ response = client.completions.create(
 response_text = response.choices[0].text
 print("요약 텍스트:", response_text.strip())
 ```
+
 ##### 번역 실습
+
 ```PYTHON
 from openai import OpenAI
 
@@ -366,17 +394,18 @@ print("번역 텍스트:", response_text.strip())
 ```
 
 ---
+
 #### ChatCompletion 클래스와 함수
 
 - **ChatCompletion.create()의 장점**
-	- **대화 문맥 유지**: 이전 대화 내용을 바탕으로 연속적인 대화가 가능, 복잡한 대화 기반 작업에 적합.
-	- **다양한 파라미터 제어**: 여러 파라미터를 통해 출력 텍스트의 성격과 길이를 제어할 수 있음.
-	- **간단한 API 호출**: 간단한 API 호출로 강력한 자연어 생성 성능을 제공.
+ 	- **대화 문맥 유지**: 이전 대화 내용을 바탕으로 연속적인 대화가 가능, 복잡한 대화 기반 작업에 적합.
+ 	- **다양한 파라미터 제어**: 여러 파라미터를 통해 출력 텍스트의 성격과 길이를 제어할 수 있음.
+ 	- **간단한 API 호출**: 간단한 API 호출로 강력한 자연어 생성 성능을 제공.
 
 - **ChatCompletion.create()의 한계**
-	- **문맥 손실**: 높은 토큰 수 제한(4096~32,768 토큰)을 초과할 경우 문맥이 손실될 수 있음.
-	- **정보 반복**: 반복적인 대화에서는 모델이 불필요한 정보를 반복할 가능성 있음.
-	- **응답 시간 및 비용**: 사용량에 따라 응답 시간이 길어지고, 비용이 증가할 수 있음.
+ 	- **문맥 손실**: 높은 토큰 수 제한(4096~32,768 토큰)을 초과할 경우 문맥이 손실될 수 있음.
+ 	- **정보 반복**: 반복적인 대화에서는 모델이 불필요한 정보를 반복할 가능성 있음.
+ 	- **응답 시간 및 비용**: 사용량에 따라 응답 시간이 길어지고, 비용이 증가할 수 있음.
 
 ```python
 import openai
@@ -386,7 +415,7 @@ response = client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
         {"role": "system", "content": "당신은 유용한 조수입니다."},
-    	{"role": "user", "content": "AI가 무엇인가요??"}
+     {"role": "user", "content": "AI가 무엇인가요??"}
     ],
     temperature=0.2,
     max_tokens=150,
@@ -396,6 +425,7 @@ print(response.choices[0].message)
 ```
 
 #### Chat 대화 실습
+
 ```PYTHON
 import openai
 
@@ -428,7 +458,9 @@ response = openai.chat.completions.create(
 print("Assistant Response:")
 print(response.choices[0].message.content)
 ```
+
 #### ChatCompletion으로 문장 교정 실습
+
 ```python
 import openai
 
@@ -455,7 +487,9 @@ print("Original Text:\n", file_content)
 print(response.choices[0].message.content)
 
 ```
-####  Image generation 실습
+
+#### Image generation 실습
+
 ```python
 from openai import OpenAI
 
@@ -471,7 +505,9 @@ response = client.images.generate(
 
 print(response.data[0].url)
 ```
+
 #### masked Image edit 실습
+
 ```python
 from openai import OpenAI
 
@@ -488,7 +524,9 @@ response = client.images.edit(
 
 print(response.data[0].url)
 ```
+
 #### Image Variation 실습
+
 ```python
 from openai import OpenAI
 
@@ -506,14 +544,15 @@ print(response.data[0].url)
 
 ### Tokenizer
 
-- LLM에서는 텍스트를 토큰이라는 최소 단위로 분할해서 처리합니다. 
-- tiktoken은 OpenAI 모델과 사용할 수 있는 빠른 BPE 토크나이저 라이브러리입니다 
-	- https://github.com/openai/tiktoken 
-- BPE(Byte Pair Encoding) 특성 
-	- 역변환이 가능하고 손실이 없어 원본 텍스트로 토큰을 다시 변환할 수 있다. 
-	- 토크나이저의 훈련 데이터에 없는 임의의 텍스트에서도 작동함 
-	- 텍스트를 압축(토큰 시퀀스는 원본 텍스트에 해당하는 바이트보다 짧으며 각 토큰은 평균적으로약 4바이트에 해당함) 
-	- 모델이 일반적인 부분 단어를 인식할 수 있도록 합니다. (예 : "ing"는 영어에서 흔한 부분 단어이므로 BPE 인코딩은 종종 "encoding"을 "encod"와 "ing"와 같은 토큰으로 분리)
+- LLM에서는 텍스트를 토큰이라는 최소 단위로 분할해서 처리합니다.
+- tiktoken은 OpenAI 모델과 사용할 수 있는 빠른 BPE 토크나이저 라이브러리입니다
+ 	- <https://github.com/openai/tiktoken>
+- BPE(Byte Pair Encoding) 특성
+ 	- 역변환이 가능하고 손실이 없어 원본 텍스트로 토큰을 다시 변환할 수 있다.
+ 	- 토크나이저의 훈련 데이터에 없는 임의의 텍스트에서도 작동함
+ 	- 텍스트를 압축(토큰 시퀀스는 원본 텍스트에 해당하는 바이트보다 짧으며 각 토큰은 평균적으로약 4바이트에 해당함)
+ 	- 모델이 일반적인 부분 단어를 인식할 수 있도록 합니다. (예 : "ing"는 영어에서 흔한 부분 단어이므로 BPE 인코딩은 종종 "encoding"을 "encod"와 "ing"와 같은 토큰으로 분리)
+
 #### Tokenizer 인코딩 방식
 
 1. **Byte-Pair Encoding (BPE)**
@@ -533,25 +572,29 @@ print(response.data[0].url)
 #### Tokenizer 인코딩 모델
 
 - **cl100k_base**  
-    - **설명**: "cl100k" 시리즈에 속하는 기본 설정으로, 큰 언어 모델이나 복잡한 언어 처리 작업을 위해 설계되었습니다. "100k"는 사용되는 토큰의 수나 다양성을 의미합니다.
+  - **설명**: "cl100k" 시리즈에 속하는 기본 설정으로, 큰 언어 모델이나 복잡한 언어 처리 작업을 위해 설계되었습니다. "100k"는 사용되는 토큰의 수나 다양성을 의미합니다.
 - **p50_base**
-    - **설명**: "p50" 시리즈의 기본 인코딩 설정으로, 특정 도메인이나 용도에 맞춰 최적화된 텍스트 인코딩 방식입니다.
+  - **설명**: "p50" 시리즈의 기본 인코딩 설정으로, 특정 도메인이나 용도에 맞춰 최적화된 텍스트 인코딩 방식입니다.
 - **gpt2**
-    - **설명**: OpenAI의 GPT-2 언어 모델의 인코딩 모델로, BPE(Byte Pair Encoding)를 사용하여 텍스트를 효율적으로 압축하고, 모델이 언어의 구조를 더 잘 학습할 수 있게 돕습니다.
+  - **설명**: OpenAI의 GPT-2 언어 모델의 인코딩 모델로, BPE(Byte Pair Encoding)를 사용하여 텍스트를 효율적으로 압축하고, 모델이 언어의 구조를 더 잘 학습할 수 있게 돕습니다.
+
 #### titoken 라이브러리 주요 함수
 
 - **get_encoding(name)**
-    - **설명**: 인코딩 이름을 매개변수로 전달하면, 해당 인코딩 설정에 따라 초기화된 `Encoding` 객체를 반환합니다.
+  - **설명**: 인코딩 이름을 매개변수로 전달하면, 해당 인코딩 설정에 따라 초기화된 `Encoding` 객체를 반환합니다.
 - **Encoding 클래스**
-    - **설명**: 텍스트를 토큰으로 변환하는 데 필요한 모든 설정을 포함하는 클래스입니다. 특정 패턴, 특수 토큰, 병합 가능한 순위 등을 설정하여 인스턴스를 생성할 수 있습니다. 기본 제공 인코딩 외에 사용자 정의 인코딩을 생성할 수 있습니다.
+  - **설명**: 텍스트를 토큰으로 변환하는 데 필요한 모든 설정을 포함하는 클래스입니다. 특정 패턴, 특수 토큰, 병합 가능한 순위 등을 설정하여 인스턴스를 생성할 수 있습니다. 기본 제공 인코딩 외에 사용자 정의 인코딩을 생성할 수 있습니다.
 - **encode(text)**
-    - **설명**: 텍스트 문자열을 입력받아 해당 인코딩 방식에 따라 토큰의 시퀀스로 변환합니다.
+  - **설명**: 텍스트 문자열을 입력받아 해당 인코딩 방식에 따라 토큰의 시퀀스로 변환합니다.
 - **decode(tokens)**
-    - **설명**: 토큰의 시퀀스를 입력으로 받아 원래의 텍스트 문자열로 복원합니다.
+  - **설명**: 토큰의 시퀀스를 입력으로 받아 원래의 텍스트 문자열로 복원합니다.
 - **add_special_token(token, id)**
-    - **설명**: 새로운 특수 토큰을 인코딩 설정에 추가합니다. 특수 토큰은 텍스트 내에서 특별한 의미를 가지는 문자열을 처리할 때 사용되며, 고유한 식별자(id)와 함께 등록됩니다.
+  - **설명**: 새로운 특수 토큰을 인코딩 설정에 추가합니다. 특수 토큰은 텍스트 내에서 특별한 의미를 가지는 문자열을 처리할 때 사용되며, 고유한 식별자(id)와 함께 등록됩니다.
+
 ---
+
 #### Tokenizer 실습
+
 ```python
 #pip install tiktoken
 import tiktoken
@@ -570,7 +613,9 @@ print(enc.decode(tokens))
 # 분할된 상태로 디코딩을 실행
 print(enc.decode_tokens_bytes(tokens))
 ```
+
 #### 한국어 tokenizer 인토딩 실습
+
 ```python
 # cl100k_base
 ko_tokens = enc.encode("독도는 우리땅")

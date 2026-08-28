@@ -19,7 +19,7 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-#ComputerScience #웹프로그래밍 
+# ComputerScience #웹프로그래밍
 
 ---
 우리가 3장에서 배운 내용의 핵심은 자료 보내기 받기!!
@@ -28,9 +28,10 @@ updated: '2026-05-05'
 그런데, 쇼핑을 한다고 생각해보면 화면 순서 미리 알 수 없음
 
 즉, 화면끼리 넘기기만 하는 게 아니라 제 3의 장소(장바구니)에 넣어놨다가 나중에 필요할 때 꺼내 씀
+
 #### 1. MyController.java
 
-1. **@Controller 어노테이션**: 
+1. **@Controller 어노테이션**:
    - 자바 클래스의 맨 위에 `@Controller` 어노테이션이 있어야 해당 클래스가 컨트롤러의 역할을 수행합니다.
 
 2. **컨트롤러 메소드 순서**:
@@ -54,6 +55,7 @@ updated: '2026-05-05'
 8. **GET <-> POST 변경 방법**:
    - 보내는 HTML `<form>` 태그의 action 속성을 `"get"` 또는 `"post"`로 변경합니다.
    - 받는 컨트롤러의 어노테이션을 `@Get` 또는 `@Post` Mapping으로 변경합니다.
+
 ```java
 @Controller
 public class MyController {
@@ -125,6 +127,7 @@ public class MyController {
 ```
 
 #### 2. home.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -143,6 +146,7 @@ public class MyController {
 ```
 
 #### 3. ex01.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -160,8 +164,9 @@ public class MyController {
 ```
 
 #### 4. ex01Answer.html
-	1. <strong th:text="${변수}">
-		th:text는 태그 속성 : 무조건 태그안에 있어해
+ 1. <strong th:text="${변수}">
+  th:text는 태그 속성 : 무조건 태그안에 있어해
+
 ```html
 <!DOCTYPE html>
 <!-- <html xmlns:th="http://www.thymeleaf.org"> 시험에선 안써도 됨 -->
@@ -175,6 +180,7 @@ public class MyController {
 ```
 
 #### 5. ex02.html
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -184,16 +190,17 @@ public class MyController {
 <form method="post" action="/ex02/answer">
 이름 : <input type="text" name="mname"><p>
 직급 : <select name="po">
-		<option>사원
-		<option>대리
-		<option>팀장
-		<option>임원 </select><p>
+  <option>사원
+  <option>대리
+  <option>팀장
+  <option>임원 </select><p>
  <input type ="submit" value="확인">
 </form >
 </body></html>
 ```
 
 #### 6. ex02Answer.html
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -209,8 +216,8 @@ public class MyController {
 ```
 
 #### 7. ex03.html
-	1.<option value="aqua">시원한 아쿠아
-		전송할 데이터와 화면에 보이는 데이터를 분리
+ 1.<option value="aqua">시원한 아쿠아
+  전송할 데이터와 화면에 보이는 데이터를 분리
 
 ```html
 <!DOCTYPE html>
@@ -221,10 +228,10 @@ public class MyController {
 <form method="post" action="/ex03/answer">
 이름 : <input type="text" name="mname"><p>
 좋아하는 색 : <select name="color">
-			<option value="aqua">시원한 아쿠아
-			<option value="lime">라임색이 좋아요!
-			<option value="orange">상큼한 오렌지색
-			<option value="white">역시 흰색 최고
+   <option value="aqua">시원한 아쿠아
+   <option value="lime">라임색이 좋아요!
+   <option value="orange">상큼한 오렌지색
+   <option value="white">역시 흰색 최고
 </select ><p>
 <input type ="submit" value="보내기">
 </form >
@@ -232,10 +239,11 @@ public class MyController {
 ```
 
 #### 8. ex03Answer.html
-	1.<title th:text="|${변수}+하드코딩|">
-		변수와 하드코딩을 섞을땐 "" 안에 ||를 사용하면 됨
-	2.<body th:style="|background-color: ${변수}">
-		이하 내용 동일
+ 1.<title th:text="|${변수}+하드코딩|">
+  변수와 하드코딩을 섞을땐 "" 안에 ||를 사용하면 됨
+ 2.<body th:style="|background-color: ${변수}">
+  이하 내용 동일
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -252,9 +260,11 @@ th:text="${color}">color</strong>입니다.
 ```
 
 #### 9. ex04.html
+
 1. th:each -> 반복문
 2. th:each="a:${arr}"> : arr 리스트 인덱스 0부터 a 변수에 선언
 3. th:text="${a}"> : a 변수 출력
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -267,7 +277,9 @@ th:text="${color}">color</strong>입니다.
 <tr id ="ftr"> <th> 회원 ID
 <tr th:each="a:${arr}"> <td th:text="${a}">
 ```
+
 #### 10. ex04.css
+
 ```css
 @charset "UTF-8";
 body {background-color:#ECE0F8;}

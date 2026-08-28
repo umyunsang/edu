@@ -20,6 +20,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ```mermaid
 graph LR
     A["Client: Send Chat Message"] --> B("Backend: /chat Router");

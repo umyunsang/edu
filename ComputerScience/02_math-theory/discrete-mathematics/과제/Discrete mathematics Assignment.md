@@ -26,7 +26,7 @@ updated: '2026-05-05'
 - **`convert_columns_to_lowercase(df)`**: 모든 문자열 열을 소문자로 변환합니다.
 - **`normalize_age_column(df)`**: 나이(age) 열에서 공백을 제거하고 정수로 변환합니다.
 
-2. 이러한 함수들을 함수 합성을 사용하여 단일 파이프라인으로 결합하세요.
+1. 이러한 함수들을 함수 합성을 사용하여 단일 파이프라인으로 결합하세요.
 
 ---
 
@@ -38,7 +38,7 @@ updated: '2026-05-05'
 - DataFrame의 작업 전후의 형태(shape)를 로그에 기록합니다.
 - 함수의 실행 시간을 로그에 기록합니다.
 
-2. 이 데코레이터를 모든 데이터 정리 함수에 적용하세요.
+1. 이 데코레이터를 모든 데이터 정리 함수에 적용하세요.
 
 ---
 
@@ -49,6 +49,7 @@ updated: '2026-05-05'
 3. 처리된 DataFrame(정리된 결과)을 출력하세요.
 
 ## Exaple Code Structure
+
 ```python
 import pandas as pd
 import time

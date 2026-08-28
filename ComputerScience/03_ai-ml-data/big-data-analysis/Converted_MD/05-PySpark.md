@@ -26,6 +26,7 @@ updated: '2026-05-05'
 PySpark는 Apache Spark의 Python API로, 대규모 데이터를 효율적으로 처리하기 위한 분산 컴퓨팅 프레임워크입니다. 이 실습에서는 PySpark의 핵심 개념과 실제 활용법을 학습합니다.
 
 ### 🎯 학습 목표
+
 - Apache Spark의 기본 개념과 아키텍처 이해
 - RDD(Resilient Distributed Dataset)의 활용법
 - Spark의 Transformations과 Actions 이해
@@ -34,6 +35,7 @@ PySpark는 Apache Spark의 Python API로, 대규모 데이터를 효율적으로
 ## 🚀 Apache Spark 소개
 
 ### 📋 **Spark의 역사**
+
 - **2014년 첫 릴리즈**: Apache Spark 공식 출시
 - **창시자**: [Matei Zaharia](http://people.csail.mit.edu/matei)의 수업과제로 시작
 - **학술적 배경**: 박사학위 논문으로 제시된 혁신적인 기술
@@ -43,16 +45,19 @@ PySpark는 Apache Spark의 Python API로, 대규모 데이터를 효율적으로
 ### 🔧 **Spark의 핵심 특징**
 
 #### 🎯 **빠르고 범용적인 클러스터 컴퓨팅**
+
 - **고성능**: 메모리 기반 처리로 Hadoop MapReduce보다 10-100배 빠름
 - **범용성**: 다양한 데이터 처리 작업에 활용 가능
 - **확장성**: 수백 대의 서버로 확장 가능한 분산 처리
 
 #### 🌐 **다양한 언어 지원**
+
 - **Java, Scala, Python**: 고수준 API 제공
 - **최적화된 엔진**: 일반적인 실행 그래프를 지원하는 효율적인 엔진
 - **통합 환경**: 하나의 프레임워크에서 다양한 작업 처리
 
 #### 📊 **빅데이터 처리 연산자**
+
 - **기본 연산**: `map`, `filter`, `groupby`, `join`
 - **복잡한 계산**: 구조화된 패턴으로 복잡한 데이터 처리
 - **최적화**: 자동으로 최적화되는 분산 처리
@@ -60,6 +65,7 @@ PySpark는 Apache Spark의 Python API로, 대규모 데이터를 효율적으로
 ### 🛠️ **Spark 생태계**
 
 #### 📋 **핵심 컴포넌트**
+
 - **[Spark SQL](https://spark.apache.org/docs/latest/sql-programming-guide.html)**: 구조화된 데이터 처리를 위한 SQL API
 - **[MLlib](https://spark.apache.org/docs/latest/ml-guide.html)**: 머신러닝을 위한 라이브러리
 - **[GraphX](https://spark.apache.org/docs/latest/graphx-programming-guide.html)**: 그래프 처리를 위한 라이브러리
@@ -72,6 +78,7 @@ RDD는 Apache Spark의 기본적인 데이터 추상화로, 대규모 분산 데
 ### 📚 **RDD의 핵심 특징**
 
 #### 🎯 **RDD의 정의**
+
 - **읽기 전용 (Read-only)**: 생성 후 수정할 수 없는 불변 데이터 구조
 - **병렬 (Parallel)**: 여러 코어에서 동시에 처리 가능
 - **분산 (Distributed)**: 클러스터의 여러 노드에 분산 저장
@@ -80,21 +87,25 @@ RDD는 Apache Spark의 기본적인 데이터 추상화로, 대규모 분산 데
 #### 🔧 **RDD의 동작 원리**
 
 ##### 📋 **데이터 분산**
+
 - **클러스터 분산**: 데이터가 클러스터 내 여러 노드에 분산 저장
 - **자동 할당**: Spark 프레임워크가 자동으로 데이터와 작업을 노드에 할당
 - **투명성**: 프로그래머는 분산 처리를 신경 쓸 필요 없음
 
 ##### ⚡ **병렬 처리**
+
 - **함수 적용**: 콜렉션의 모든 요소에 함수를 병렬로 적용
 - **새로운 RDD 생성**: 변환 작업을 통해 새로운 RDD 생성
 - **최적화**: Spark가 자동으로 최적의 실행 계획 수립
 
 ##### 🛡️ **오류 복구**
+
 - **자동 재생성**: 노드 장애 시 RDD를 자동으로 재생성
 - **데이터 복제**: 중요한 데이터를 여러 노드에 복제하여 안정성 확보
 - **체크포인트**: 주기적으로 중간 결과를 저장하여 복구 시간 단축
 
 ### 💡 **RDD의 장점**
+
 - **단순성**: 복잡한 분산 처리를 간단한 API로 처리
 - **효율성**: 메모리 기반 처리로 빠른 성능
 - **안정성**: 자동 오류 복구로 안정적인 처리
@@ -107,26 +118,31 @@ Spark 프로그램은 체계적인 단계를 거쳐 데이터를 처리합니다
 ### 📋 **4단계 생명주기**
 
 #### 1️⃣ **데이터 입력 (Data Input)**
+
 - **외부 데이터**: 파일, 데이터베이스, 스트림에서 RDD 생성
 - **메모리 데이터**: 드라이버 프로그램의 컬렉션을 병렬화
 - **분산 저장**: 데이터를 클러스터의 여러 노드에 분산
 
 #### 2️⃣ **데이터 변환 (Transformations)**
+
 - **변환 함수**: `filter()`, `map()`, `flatMap()` 등 사용
 - **새로운 RDD**: 기존 RDD로부터 새로운 RDD 정의
 - **지연 실행**: 실제 계산은 Action이 호출될 때까지 지연
 
 #### 3️⃣ **캐싱 (Caching)**
+
 - **중간 결과 저장**: 재사용될 RDD를 메모리에 캐시
 - **성능 최적화**: 반복 계산을 피하여 처리 속도 향상
 - **메모리 관리**: 중요한 데이터만 선택적으로 캐시
 
 #### 4️⃣ **액션 실행 (Actions)**
+
 - **계산 실행**: `count()`, `collect()`, `saveAsTextFile()` 등 실행
 - **최적화**: Spark가 자동으로 최적의 실행 계획 수립
 - **결과 반환**: 최종 결과를 드라이버 프로그램에 반환
 
 ### 💡 **생명주기의 장점**
+
 - **지연 실행**: 불필요한 계산을 피하여 효율성 증대
 - **자동 최적화**: Spark가 자동으로 최적의 실행 계획 수립
 - **메모리 효율성**: 필요한 데이터만 메모리에 유지
@@ -139,18 +155,21 @@ Spark에서 데이터 처리는 두 가지 주요 연산 유형으로 구분됩�
 ### 📋 **연산의 두 가지 유형**
 
 #### 🔄 **Transformations (변환)**
+
 - **특징**: 데이터를 변환하지만 즉시 실행되지 않음
 - **지연 실행 (Lazy)**: Action이 호출될 때까지 실제 계산을 지연
 - **새로운 RDD 생성**: 기존 RDD로부터 새로운 RDD를 정의
 - **최적화**: 여러 변환을 하나의 작업으로 최적화 가능
 
 #### 🎯 **Actions (액션)**
+
 - **특징**: 실제 계산을 수행하고 결과를 반환
 - **즉시 실행**: 호출되는 순간 계산이 시작됨
 - **결과 반환**: 드라이버 프로그램에 최종 결과 전달
 - **트리거**: Transformations의 실행을 트리거하는 역할
 
 ### 💡 **Lazy Evaluation의 장점**
+
 - **최적화**: 불필요한 중간 계산을 피하여 효율성 증대
 - **메모리 절약**: 필요한 데이터만 메모리에 유지
 - **성능 향상**: 여러 변환을 하나의 작업으로 통합하여 성능 향상
@@ -163,16 +182,19 @@ Transformations는 RDD를 변환하여 새로운 RDD를 생성하는 함수들�
 ### 📋 **주요 Transformation 함수들**
 
 #### 🎯 **기본 변환 함수**
+
 - **`map()`**: 각 요소에 함수를 적용하여 새로운 RDD 생성
 - **`flatMap()`**: 각 요소를 여러 요소로 확장하여 평면화
 - **`filter()`**: 조건을 만족하는 요소만 필터링
 
 #### 🔧 **고급 변환 함수**
+
 - **`mapPartitions()`**: 각 파티션에 함수를 적용
 - **`mapPartitionsWithIndex()`**: 파티션 인덱스와 함께 함수 적용
 - **`sample()`**: 데이터 샘플링
 
 #### 📊 **집계 및 정렬 함수**
+
 - **`groupBy()`**: 키를 기준으로 그룹화
 - **`groupByKey()`**: 키-값 쌍에서 키 기준 그룹화
 - **`reduceByKey()`**: 키별로 값들을 집계
@@ -180,17 +202,21 @@ Transformations는 RDD를 변환하여 새로운 RDD를 생성하는 함수들�
 - **`sortByKey()`**: 키 기준 정렬
 
 #### 🔗 **결합 함수**
+
 - **`union()`**: 두 RDD를 결합
 - **`intersection()`**: 교집합 계산
 - **`distinct()`**: 중복 제거
 - **`join()`**: 두 RDD를 조인
 
 ### 💡 **Transformation의 특징**
+
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 - **불변성**: 기존 RDD를 변경하지 않고 새로운 RDD 생성
 - **최적화**: 여러 변환을 하나의 작업으로 최적화
 - **분산 처리**: 클러스터의 여러 노드에서 병렬 실행
+
 #### 🔧 **추가 Transformation 함수들**
+
 - **`cogroup()`**: 여러 RDD를 키별로 그룹화
 - **`cartesian()`**: 두 RDD의 카르테시안 곱 계산
 - **`pipe()`**: 외부 프로그램과 데이터 파이프라인 연결
@@ -202,30 +228,36 @@ Transformations는 RDD를 변환하여 새로운 RDD를 생성하는 함수들�
 ## 🎯 Actions - 실제 계산 실행
 
 Actions는 RDD에서 실제 계산을 수행하고 결과를 반환하는 함수들입니다. Action이 호출되면 모든 이전 Transformations이 실행됩니다.
+
 ### 📋 **주요 Action 함수들**
 
 #### 🎯 **기본 집계 함수**
+
 - **`reduce()`**: 모든 요소를 하나의 값으로 집계
 - **`count()`**: RDD의 요소 개수 반환
 - **`first()`**: 첫 번째 요소 반환
 - **`take(n)`**: 처음 n개 요소 반환
 
 #### 📊 **샘플링 및 정렬 함수**
+
 - **`takeSample()`**: 무작위 샘플링
 - **`takeOrdered()`**: 정렬된 순서로 요소 반환
 - **`countByKey()`**: 키별 요소 개수 계산
 
 #### 💾 **저장 함수**
+
 - **`saveAsTextFile()`**: 텍스트 파일로 저장
 - **`saveAsSequenceFile()`**: 시퀀스 파일로 저장
 - **`saveAsObjectFile()`**: 객체 파일로 저장
 - **`saveToCassandra()`**: Cassandra 데이터베이스에 저장
 
 #### 🔄 **반복 및 수집 함수**
+
 - **`collect()`**: 모든 요소를 드라이버에 수집
 - **`foreach()`**: 각 요소에 함수를 적용
 
 ### 💡 **Action의 특징**
+
 - **즉시 실행**: 호출되는 순간 계산 시작
 - **결과 반환**: 드라이버 프로그램에 최종 결과 전달
 - **트리거**: 모든 이전 Transformations 실행
@@ -238,17 +270,20 @@ PySpark는 Python에서 Apache Spark를 사용할 수 있게 해주는 API로, P
 ### 📚 **PySpark의 기술적 특징**
 
 #### 🔧 **Py4J 기반 아키텍처**
+
 - **Py4J 활용**: Java 객체에 동적으로 접근할 수 있는 Python 프로그램 구현
 - **JVM 연동**: Python과 Java Virtual Machine 간의 효율적인 통신
 - **동적 바인딩**: 런타임에 Java 객체와 메소드에 접근
 
 #### 🎯 **PySpark의 장점**
+
 - **Python 친화적**: Python 개발자에게 익숙한 API 제공
 - **풍부한 생태계**: NumPy, Pandas 등 Python 라이브러리와 연동
 - **간결한 코드**: 복잡한 분산 처리를 간단한 코드로 구현
 - **빠른 프로토타이핑**: 데이터 과학자들이 빠르게 실험 가능
 
 ### 💡 **PySpark의 활용 분야**
+
 - **데이터 분석**: 대규모 데이터셋의 탐색적 분석
 - **머신러닝**: MLlib를 활용한 분산 머신러닝
 - **스트림 처리**: 실시간 데이터 스트림 처리
@@ -261,18 +296,21 @@ SparkContext는 Spark 애플리케이션의 진입점으로, 클러스터와의 
 ### 📋 **SparkContext의 역할**
 
 #### 🎯 **핵심 기능**
+
 - **클러스터 연결**: Spark 클러스터와의 연결을 관리
 - **RDD 생성**: 외부 데이터로부터 RDD를 생성
 - **리소스 관리**: 메모리, CPU 등 클러스터 리소스 할당
 - **작업 스케줄링**: 작업을 클러스터의 여러 노드에 분배
 
 #### 🔧 **사용 방법**
+
 - **인스턴스 생성**: `pyspark.SparkContext` 객체 생성
 - **메소드 호출**: SparkContext 인스턴스에서 메소드 호출
 - **자동 할당**: 일반적으로 `sc` 변수에 자동으로 할당
 - **생명주기**: 애플리케이션 시작부터 종료까지 유지
 
 ### 💡 **SparkContext의 중요성**
+
 - **진입점**: 모든 Spark 작업의 시작점
 - **리소스 관리**: 클러스터 리소스의 효율적 활용
 - **작업 조율**: 분산 작업의 조율과 관리
@@ -281,11 +319,13 @@ SparkContext는 Spark 애플리케이션의 진입점으로, 클러스터와의 
 ### 🔧 **RDD 생성 방법**
 
 #### 📋 **parallelize 메소드**
+
 - **기능**: Python 컬렉션을 RDD로 변환
 - **용도**: 작은 데이터셋을 분산 처리하기 위해 사용
 - **제한**: 메모리에 모든 데이터를 로드해야 하므로 대용량 데이터에는 부적합
 
 #### 🌐 **실제 데이터 소스**
+
 - **대용량 파일**: HDFS, S3 등에서 대용량 파일 읽기
 - **데이터베이스**: HBase, Cassandra 등 NoSQL 데이터베이스
 - **스트림**: 실시간 데이터 스트림 처리
@@ -296,6 +336,7 @@ SparkContext는 Spark 애플리케이션의 진입점으로, 클러스터와의 
 ### 📋 **PySpark 설정 및 환경 구성**
 
 #### 🔧 **라이브러리 경로 문제**
+
 - **문제**: PySpark가 기본적으로 `sys.path`에 없어서 라이브러리를 찾을 수 없음
 - **해결책**: `site-package`에 pyspark를 심볼릭 링크하거나 런타임에 `sys.path`에 추가
 - **추천 도구**: [findspark](https://github.com/minrk/findspark) 라이브러리 활용
@@ -341,6 +382,7 @@ print("RDD 객체:", rdd)
 ```
 
 ### 💡 **RDD 생성의 특징**
+
 - **분산 저장**: 데이터가 클러스터의 여러 노드에 분산 저장
 - **병렬 처리**: 각 요소를 독립적으로 병렬 처리 가능
 - **지연 실행**: 실제 계산은 Action이 호출될 때까지 지연
@@ -353,12 +395,14 @@ print("RDD 객체:", rdd)
 **목표**: 생성된 RDD에 대해 기본적인 Transformation과 Action 연산을 수행해보기
 
 #### 🔧 **요구사항**
+
 1. **map() 함수**: 각 요소에 제곱 연산 적용
 2. **filter() 함수**: 짝수만 필터링
 3. **collect() 함수**: 결과를 드라이버에 수집
 4. **count() 함수**: 요소 개수 계산
 
 #### 💡 **구현 힌트**
+
 ```python
 # 1. map() - 각 요소에 제곱 연산 적용
 squared_rdd = rdd.map(lambda x: x ** 2)
@@ -374,12 +418,14 @@ print("짝수 개수:", even_rdd.count())
 ```
 
 ### 🎯 **예상 결과**
+
 - **제곱 결과**: [0, 1, 4, 9, 16, 25, 36, 49]
 - **짝수만**: [0, 2, 4, 6]
 - **총 요소 개수**: 8
 - **짝수 개수**: 4
 
 ### 💡 **학습 포인트**
+
 - **지연 실행**: Transformation은 Action이 호출될 때까지 실행되지 않음
 - **분산 처리**: 각 연산이 클러스터의 여러 노드에서 병렬로 실행
 - **메모리 효율성**: 필요한 데이터만 메모리에 유지
@@ -388,6 +434,7 @@ print("짝수 개수:", even_rdd.count())
 ## 📝 연습문제 5.2: 텍스트 파일 처리
 
 ### 📋 **요구사항**
+
 - **faker 패키지**: 임의 텍스트를 생성하는 라이브러리
 - **파일 생성**: `sample.txt` 파일을 생성
 - **RDD 로드**: `textFile` 함수를 사용하여 파일을 RDD로 로드
@@ -395,11 +442,13 @@ print("짝수 개수:", even_rdd.count())
 ### 🔧 **faker 패키지 활용**
 
 #### 📚 **faker의 기능**
+
 - **임의 텍스트**: 다양한 형태의 가짜 데이터 생성
 - **다양한 데이터**: 이름, 주소, 프로필 등 생성 가능
 - **다국어 지원**: 한국어 데이터 생성 시 `ko_KR` 매개변수 사용
 
 #### 💡 **구현 방법**
+
 ```python
 from faker import Faker
 
@@ -417,6 +466,7 @@ print("파일에서 읽은 라인 수:", text_rdd.count())
 ```
 
 ### 🎯 **학습 목표**
+
 - **텍스트 처리**: 대용량 텍스트 파일의 분산 처리
 - **RDD 생성**: 외부 파일로부터 RDD 생성
 - **데이터 탐색**: 텍스트 데이터의 기본 통계 확인
@@ -437,17 +487,19 @@ rdd = sc.textFile("sample.txt")
 ## 📥 Collect - 데이터 수집
 
 ### 📋 **Collect의 특징**
+
 - **Action**: 실제 계산을 수행하는 액션 함수
 - **드라이버 반환**: RDD의 모든 요소를 드라이버에 단일 리스트로 반환
 - **메모리 주의**: 대용량 데이터의 경우 메모리 부족 위험
 
-*출처: https://i.imgur.com/DUO6ygB.png*
+*출처: <https://i.imgur.com/DUO6ygB.png>*
 
 ### 🎯 **연습문제 5.3: Collect 연산**
 
 **목표**: `sample.txt` 파일에서 읽은 텍스트를 collect() 함수로 수집하기
 
 #### 💡 **구현 방법**
+
 ```python
 # 텍스트 파일의 모든 라인을 드라이버에 수집
 collected_data = rdd.collect()
@@ -456,6 +508,7 @@ print("총 라인 수:", len(collected_data))
 ```
 
 ### ⚠️ **주의사항**
+
 - **메모리 사용량**: 모든 데이터가 드라이버 메모리에 로드됨
 - **네트워크 트래픽**: 클러스터의 모든 노드에서 드라이버로 데이터 전송
 - **대용량 데이터**: 큰 데이터셋의 경우 `take()` 함수 사용 권장
@@ -463,14 +516,16 @@ print("총 라인 수:", len(collected_data))
 ## 🗺️ Map - 데이터 변환
 
 ### 📋 **Map의 특징**
+
 - **Transformation**: 데이터를 변환하지만 즉시 실행되지 않음
 - **Narrow 연산**: 각 파티션 내에서 독립적으로 실행
 - **새로운 RDD**: 기존 RDD의 각 요소에 함수를 적용하여 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
-*출처: http://i.imgur.com/PxNJf0U.png*
+*출처: <http://i.imgur.com/PxNJf0U.png>*
 
 ### 💡 **Map 연산의 동작 원리**
+
 - **1:1 매핑**: 각 입력 요소에 대해 정확히 하나의 출력 요소 생성
 - **병렬 처리**: 각 파티션에서 독립적으로 함수 적용
 - **데이터 변환**: 원본 데이터를 변환하여 새로운 데이터 생성
@@ -489,6 +544,7 @@ print("제곱 결과:", squared_rdd.collect())
 ```
 
 ### 💡 **Map 연산의 활용**
+
 - **데이터 변환**: 각 요소에 수학적 연산 적용
 - **타입 변환**: 문자열을 숫자로 변환
 - **필드 추출**: 복잡한 객체에서 특정 필드 추출
@@ -501,12 +557,14 @@ print("제곱 결과:", squared_rdd.collect())
 **목표**: `sample.txt` 파일의 텍스트 데이터에 대해 Map 연산을 활용하여 데이터 처리하기
 
 #### 🔧 **요구사항**
+
 1. **텍스트 길이 계산**: 각 라인의 문자 수 계산
 2. **단어 수 계산**: 각 라인의 단어 수 계산
 3. **대문자 변환**: 모든 텍스트를 대문자로 변환
 4. **결과 확인**: 처리된 결과를 확인
 
 #### 💡 **구현 방법**
+
 ```python
 # 1. 텍스트 길이 계산
 line_lengths = rdd.map(lambda line: len(line))
@@ -522,11 +580,13 @@ print("대문자 변환 결과:", uppercase_lines.collect())
 ```
 
 ### 🎯 **예상 결과**
+
 - **라인 길이**: 각 텍스트 라인의 문자 수
 - **단어 수**: 각 라인의 단어 개수
 - **대문자**: 모든 텍스트가 대문자로 변환된 결과
 
 ### 💡 **학습 포인트**
+
 - **Map의 활용**: 다양한 데이터 변환 작업에 Map 연산 사용
 - **지연 실행**: Transformation은 Action이 호출될 때까지 실행되지 않음
 - **병렬 처리**: 각 라인이 독립적으로 병렬 처리됨
@@ -537,6 +597,7 @@ print("대문자 변환 결과:", uppercase_lines.collect())
 **목표**: `sleep(1)`을 포함한 함수로 Map 연산의 병렬 처리 확인
 
 #### 💡 **구현 방법**
+
 ```python
 import time
 
@@ -554,6 +615,7 @@ print("총 소요 시간:", end_time - start_time, "초")
 ```
 
 ### 💡 **병렬 처리 확인**
+
 - **순차 처리**: 8개 요소 × 1초 = 8초 소요
 - **병렬 처리**: 여러 코어에서 동시 실행으로 8초보다 훨씬 빠름
 - **성능 향상**: CPU 코어 수에 비례한 성능 향상
@@ -561,18 +623,20 @@ print("총 소요 시간:", end_time - start_time, "초")
 ## 🔍 Filter - 데이터 필터링
 
 ### 📋 **Filter의 특징**
+
 - **Transformation**: 조건을 만족하는 요소만 필터링
 - **Narrow 연산**: 각 파티션 내에서 독립적으로 실행
 - **새로운 RDD**: 조건을 만족하는 요소들로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **Filter 연산의 동작 원리**
+
 - **조건 검사**: 각 요소에 대해 조건(predicate) 함수 적용
 - **선택적 포함**: 조건을 만족하는 요소만 새로운 RDD에 포함
 - **병렬 처리**: 각 파티션에서 독립적으로 필터링 수행
 - **성능 최적화**: Narrow 연산으로 네트워크 통신 최소화
 
-*출처: http://i.imgur.com/GFyji4U.png*
+*출처: <http://i.imgur.com/GFyji4U.png>*
 
 ### 🎯 **Filter 연산 예제**
 
@@ -591,6 +655,7 @@ print("3의 배수:", multiples_of_3.collect())
 ```
 
 ### 💡 **Filter 연산의 활용**
+
 - **데이터 정리**: 불필요한 데이터 제거
 - **조건부 선택**: 특정 조건을 만족하는 데이터만 선택
 - **데이터 분할**: 데이터를 여러 그룹으로 분할
@@ -599,12 +664,14 @@ print("3의 배수:", multiples_of_3.collect())
 ## 🔄 FlatMap - 데이터 평면화
 
 ### 📋 **FlatMap의 특징**
+
 - **Transformation**: 각 요소를 여러 요소로 확장하여 평면화
 - **Narrow 연산**: 각 파티션 내에서 독립적으로 실행
 - **새로운 RDD**: 확장된 요소들로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **FlatMap 연산의 동작 원리**
+
 - **함수 적용**: 각 요소에 함수를 적용하여 리스트 생성
 - **평면화**: 생성된 리스트들을 하나의 평면 리스트로 변환
 - **병렬 처리**: 각 파티션에서 독립적으로 처리 수행
@@ -623,11 +690,13 @@ print("확장된 데이터:", expanded_rdd.collect())
 ```
 
 ### 💡 **FlatMap vs Map의 차이점**
+
 - **Map**: 1:1 매핑 (각 입력 → 1개 출력)
 - **FlatMap**: 1:N 매핑 (각 입력 → 여러 출력, 평면화)
 - **용도**: 중첩된 구조를 평면화할 때 유용
 
 ### 🎯 **FlatMap의 활용**
+
 - **텍스트 처리**: 문장을 단어로 분할
 - **데이터 확장**: 하나의 레코드를 여러 레코드로 분할
 - **중첩 구조 처리**: 리스트의 리스트를 평면 리스트로 변환
@@ -640,12 +709,14 @@ print("확장된 데이터:", expanded_rdd.collect())
 **목표**: `sample.txt` 파일의 텍스트 데이터에 대해 FlatMap 연산을 활용하여 단어 단위로 분할하기
 
 #### 🔧 **요구사항**
+
 1. **단어 분할**: 각 라인을 단어로 분할
 2. **평면화**: 모든 단어를 하나의 평면 리스트로 변환
 3. **중복 제거**: 고유한 단어만 추출
 4. **결과 확인**: 처리된 결과를 확인
 
 #### 💡 **구현 방법**
+
 ```python
 # 1. 단어로 분할 및 평면화
 words_rdd = rdd.flatMap(lambda line: line.split())
@@ -663,11 +734,13 @@ print(f"고유 단어 수: {unique_count}")
 ```
 
 ### 🎯 **예상 결과**
+
 - **모든 단어**: 텍스트에서 추출된 모든 단어의 리스트
 - **고유한 단어**: 중복이 제거된 고유한 단어들
 - **통계**: 총 단어 수와 고유 단어 수
 
 ### 💡 **학습 포인트**
+
 - **FlatMap의 활용**: 텍스트 데이터를 단어 단위로 분할
 - **데이터 평면화**: 중첩된 구조를 평면 구조로 변환
 - **중복 제거**: `distinct()` 함수를 사용한 중복 제거
@@ -678,6 +751,7 @@ print(f"고유 단어 수: {unique_count}")
 **목표**: `sample.txt` 파일의 텍스트를 정리하여 단어로 분할하기
 
 #### 💡 **구현 방법**
+
 ```python
 # 텍스트 정리: 소문자 변환, 구두점 제거, 단어 분할
 cleaned_words = rdd.flatMap(lambda line: 
@@ -694,12 +768,14 @@ print("정리된 단어:", cleaned_words.collect())
 ## 📊 GroupBy - 데이터 그룹화
 
 ### 📋 **GroupBy의 특징**
+
 - **Transformation**: 데이터를 키별로 그룹화
 - **Wide 연산**: 여러 파티션 간 데이터 이동 필요
 - **새로운 RDD**: 키별로 그룹화된 데이터로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **GroupBy 연산의 동작 원리**
+
 - **키 생성**: 사용자 정의 함수를 사용하여 각 요소에 대해 키 생성
 - **그룹화**: 같은 키를 가진 요소들을 하나의 그룹으로 묶음
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
@@ -718,12 +794,14 @@ print("그룹화된 결과:", [(k, list(v)) for (k, v) in grouped_names.collect(
 ```
 
 ### 💡 **GroupBy의 활용**
+
 - **데이터 분류**: 특정 기준으로 데이터를 분류
 - **통계 분석**: 그룹별 통계 계산
 - **데이터 집계**: 그룹별로 데이터 집계
 - **패턴 분석**: 그룹별 패턴 분석
 
 ### ⚠️ **GroupBy 사용 시 주의사항**
+
 - **성능 영향**: Wide 연산으로 인한 네트워크 통신 증가
 - **메모리 사용**: 그룹화된 데이터의 메모리 사용량 증가
 - **대안**: `reduceByKey()` 함수 사용 권장 (더 효율적)
@@ -731,12 +809,14 @@ print("그룹화된 결과:", [(k, list(v)) for (k, v) in grouped_names.collect(
 ## 🔑 GroupByKey - 키별 데이터 그룹화
 
 ### 📋 **GroupByKey의 특징**
+
 - **Transformation**: 키-값 쌍에서 키별로 그룹화
 - **Wide 연산**: 여러 파티션 간 데이터 이동 필요
 - **새로운 RDD**: 키별로 그룹화된 값들로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **GroupByKey 연산의 동작 원리**
+
 - **키별 그룹화**: 같은 키를 가진 값들을 하나의 그룹으로 묶음
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
@@ -756,12 +836,14 @@ print("그룹화된 결과:", result)
 ```
 
 ### 💡 **GroupByKey의 활용**
+
 - **데이터 집계**: 키별로 데이터를 그룹화하여 집계
 - **통계 분석**: 그룹별 통계 계산
 - **데이터 분류**: 키별로 데이터를 분류
 - **패턴 분석**: 그룹별 패턴 분석
 
 ### ⚠️ **GroupByKey 사용 시 주의사항**
+
 - **성능 영향**: Wide 연산으로 인한 네트워크 통신 증가
 - **메모리 사용**: 그룹화된 데이터의 메모리 사용량 증가
 - **대안**: `reduceByKey()` 함수 사용 권장 (더 효율적)
@@ -769,12 +851,14 @@ print("그룹화된 결과:", result)
 ## 🔗 Join - 데이터 조인
 
 ### 📋 **Join의 특징**
+
 - **Transformation**: 두 RDD를 키를 기준으로 조인
 - **Wide 연산**: 여러 파티션 간 데이터 이동 필요
 - **새로운 RDD**: 조인된 데이터로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **Join 연산의 동작 원리**
+
 - **키 매칭**: 두 RDD에서 같은 키를 가진 요소들을 찾아 조인
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
@@ -797,12 +881,14 @@ print("조인 결과:", joined.collect())
 ```
 
 ### 💡 **Join의 활용**
+
 - **데이터 결합**: 두 데이터셋을 키를 기준으로 결합
 - **관계 분석**: 관련된 데이터 간의 관계 분석
 - **데이터 보강**: 한 데이터셋에 다른 데이터셋의 정보 추가
 - **통계 분석**: 결합된 데이터를 이용한 통계 분석
 
 ### ⚠️ **Join 사용 시 주의사항**
+
 - **성능 영향**: Wide 연산으로 인한 네트워크 통신 증가
 - **메모리 사용**: 조인된 데이터의 메모리 사용량 증가
 - **키 분포**: 키의 분포가 균등하지 않으면 성능 저하
@@ -811,12 +897,14 @@ print("조인 결과:", joined.collect())
 ## 🔍 Distinct - 중복 제거
 
 ### 📋 **Distinct의 특징**
+
 - **Transformation**: 중복된 요소를 제거하여 고유한 요소만 유지
 - **Wide 연산**: 여러 파티션 간 데이터 이동 필요
 - **새로운 RDD**: 중복이 제거된 데이터로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **Distinct 연산의 동작 원리**
+
 - **중복 검사**: 모든 요소를 비교하여 중복된 요소를 찾음
 - **데이터 이동**: 여러 파티션 간 데이터 이동이 필요 (Wide 연산)
 - **성능 고려**: 네트워크 통신이 많이 발생하므로 신중한 사용 필요
@@ -835,12 +923,14 @@ print("중복 제거된 데이터:", unique_data.collect())
 ```
 
 ### 💡 **Distinct의 활용**
+
 - **데이터 정리**: 중복된 데이터를 제거하여 데이터 품질 향상
 - **고유값 분석**: 데이터의 고유한 값들만 분석
 - **메모리 절약**: 중복 제거로 메모리 사용량 감소
 - **성능 향상**: 중복이 제거된 데이터로 처리 속도 향상
 
 ### ⚠️ **Distinct 사용 시 주의사항**
+
 - **성능 영향**: Wide 연산으로 인한 네트워크 통신 증가
 - **메모리 사용**: 중복 제거를 위한 추가 메모리 사용
 - **데이터 크기**: 큰 데이터셋의 중복 제거는 시간이 오래 걸림
@@ -849,12 +939,14 @@ print("중복 제거된 데이터:", unique_data.collect())
 ## 🔑 KeyBy - 키 생성
 
 ### 📋 **KeyBy의 특징**
+
 - **Transformation**: 각 요소에 대해 키를 생성하여 키-값 쌍으로 변환
 - **Narrow 연산**: 각 파티션 내에서 독립적으로 실행
 - **새로운 RDD**: 키-값 쌍으로 구성된 새로운 RDD 생성
 - **지연 실행**: Action이 호출될 때까지 실제 계산 지연
 
 ### 💡 **KeyBy 연산의 동작 원리**
+
 - **키 생성**: 사용자 정의 함수를 사용하여 각 요소에 대해 키 생성
 - **키-값 쌍**: 생성된 키와 원본 값을 키-값 쌍으로 변환
 - **병렬 처리**: 각 파티션에서 독립적으로 처리 수행
@@ -873,12 +965,14 @@ print("키-값 쌍:", keyed_names.collect())
 ```
 
 ### 💡 **KeyBy의 활용**
+
 - **키 생성**: 데이터에 대해 의미 있는 키 생성
 - **그룹화 준비**: 그룹화 작업을 위한 키-값 쌍 생성
 - **조인 준비**: 조인 작업을 위한 키-값 쌍 생성
 - **데이터 변환**: 단순한 데이터를 키-값 구조로 변환
 
 ### 🎯 **KeyBy의 장점**
+
 - **유연성**: 사용자 정의 함수로 다양한 키 생성 가능
 - **성능**: Narrow 연산으로 효율적인 처리
 - **확장성**: 대용량 데이터에 대해서도 빠른 처리
@@ -887,6 +981,7 @@ print("키-값 쌍:", keyed_names.collect())
 ## 🎯 Actions - 실제 계산 실행
 
 ### 📋 **Actions의 특징**
+
 - **실제 계산**: Transformation의 지연 실행을 트리거하여 실제 계산 수행
 - **결과 반환**: 드라이버 프로그램에 최종 결과 반환
 - **즉시 실행**: 호출되는 순간 계산이 시작됨
@@ -895,12 +990,14 @@ print("키-값 쌍:", keyed_names.collect())
 ### 🔄 Map-Reduce 연산
 
 #### 📋 **Map-Reduce의 특징**
+
 - **Action**: 실제 계산을 수행하는 액션 함수
 - **드라이버 반환**: 모든 요소를 집계하여 드라이버에 단일 결과 반환
 - **쌍별 연산**: 요소들을 쌍별로 연산하여 부분 결과 생성
 - **최종 집계**: 부분 결과들을 최종적으로 집계
 
 #### 💡 **Map-Reduce의 동작 원리**
+
 - **Map 단계**: 각 요소에 함수를 적용하여 변환
 - **Reduce 단계**: 변환된 결과들을 쌍별로 연산하여 집계
 - **병렬 처리**: 여러 파티션에서 동시에 처리 수행
@@ -921,12 +1018,14 @@ print("제곱의 합:", result)
 ```
 
 ### 💡 **Map-Reduce의 활용**
+
 - **집계 연산**: 데이터의 합계, 평균, 최대값, 최소값 계산
 - **통계 분석**: 데이터의 통계적 특성 분석
 - **데이터 변환**: 데이터를 변환한 후 집계
 - **성능 최적화**: 여러 연산을 하나의 작업으로 통합
 
 ### 🎯 **Map-Reduce의 장점**
+
 - **효율성**: 여러 연산을 하나의 작업으로 통합하여 성능 향상
 - **병렬 처리**: 여러 파티션에서 동시에 처리 수행
 - **메모리 효율성**: 중간 결과를 메모리에 유지하지 않음
@@ -935,12 +1034,14 @@ print("제곱의 합:", result)
 ### 📊 통계 함수들
 
 #### 📋 **통계 함수의 특징**
+
 - **Action**: 실제 계산을 수행하는 액션 함수
 - **드라이버 반환**: 통계 결과를 드라이버에 반환
 - **수치 연산**: 숫자형 RDD에 대해서만 사용 가능
 - **즉시 실행**: 호출되는 순간 계산이 시작됨
 
 #### 🔧 **주요 통계 함수들**
+
 - **`max()`**: 최대값 계산
 - **`min()`**: 최소값 계산
 - **`sum()`**: 합계 계산
@@ -951,12 +1052,14 @@ print("제곱의 합:", result)
 ### 🔢 CountByKey - 키별 개수 계산
 
 #### 📋 **CountByKey의 특징**
+
 - **Action**: 실제 계산을 수행하는 액션 함수
 - **드라이버 반환**: 키별 개수를 드라이버에 반환
 - **키-값 쌍**: 키-값 쌍 RDD에 대해서만 사용 가능
 - **즉시 실행**: 호출되는 순간 계산이 시작됨
 
 #### 💡 **CountByKey의 동작 원리**
+
 - **키별 집계**: 같은 키를 가진 요소들의 개수를 계산
 - **결과 반환**: 키와 개수의 매핑을 드라이버에 반환
 - **병렬 처리**: 여러 파티션에서 동시에 처리 수행
@@ -976,20 +1079,24 @@ print("키별 개수:", key_counts)
 ```
 
 ### 💡 **CountByKey의 활용**
+
 - **빈도 분석**: 각 키의 출현 빈도 분석
 - **데이터 분포**: 키별 데이터 분포 확인
 - **통계 분석**: 키별 통계적 특성 분석
 - **데이터 검증**: 키별 데이터의 일관성 검증
 
 ### 🎯 **CountByKey의 장점**
+
 - **효율성**: 키별 개수를 한 번에 계산
 - **병렬 처리**: 여러 파티션에서 동시에 처리 수행
 - **메모리 효율성**: 중간 결과를 메모리에 유지하지 않음
 - **자동 최적화**: Spark가 자동으로 최적의 실행 계획 수립
 
 # 키별 개수 계산
+
 key_counts = rdd.countByKey()
 print("키별 개수:", key_counts)
+
 ```
 
 ## 📚 학습 요약
@@ -1024,6 +1131,7 @@ sc.stop()
 ```
 
 ### ⚠️ **중요 사항**
+
 - **리소스 해제**: SparkContext를 사용한 후 반드시 `stop()` 호출
 - **메모리 정리**: 사용한 메모리와 리소스를 정리
 - **클러스터 종료**: 로컬 클러스터를 안전하게 종료
@@ -1036,6 +1144,7 @@ sc.stop()
 **목표**: Apache Spark를 사용하여 완전한 WordCount 프로그램을 구현하기
 
 #### 🔧 **요구사항**
+
 1. **텍스트 파일 읽기**: `sample.txt` 파일을 RDD로 로드
 2. **단어 분할**: 각 라인을 단어로 분할
 3. **단어 정리**: 소문자 변환, 구두점 제거
@@ -1043,6 +1152,7 @@ sc.stop()
 5. **결과 정렬**: 빈도순으로 정렬하여 상위 10개 단어 출력
 
 #### 💡 **구현 방법**
+
 ```python
 # 1. 텍스트 파일 읽기
 text_rdd = sc.textFile("sample.txt")
@@ -1071,11 +1181,13 @@ for word, count in top_words:
 ```
 
 ### 🎯 **예상 결과**
+
 - **단어 빈도**: 각 단어의 출현 빈도
 - **정렬된 결과**: 빈도순으로 정렬된 단어 목록
 - **상위 10개**: 가장 많이 출현한 10개 단어
 
 ### 💡 **학습 포인트**
+
 - **완전한 파이프라인**: 텍스트 파일부터 결과 출력까지
 - **Spark 연산 활용**: `flatMap()`, `map()`, `reduceByKey()`, `sortBy()`
 - **성능 최적화**: Narrow 연산과 Wide 연산의 적절한 활용
@@ -1089,25 +1201,25 @@ for word, count in top_words:
 - `rdd.reduceByKey` to get all occurences
 - `rdd.takeOrdered`to get sorted frequencies of words
 
-All documentation is available [here](https://spark.apache.org/docs/2.1.0/api/python/pyspark.html?highlight=textfile#pyspark.SparkContext) for textFile and [here](https://spark.apache.org/docs/2.1.0/api/python/pyspark.html?highlight=textfile#pyspark.RDD) for RDD. 
+All documentation is available [here](https://spark.apache.org/docs/2.1.0/api/python/pyspark.html?highlight=textfile#pyspark.SparkContext) for textFile and [here](https://spark.apache.org/docs/2.1.0/api/python/pyspark.html?highlight=textfile#pyspark.RDD) for RDD.
 
 For a global overview see the Transformations section of the [programming guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
 
 ## SparkSession
 
-Since SPARK 2.0.0,  SparkSession provides a single point 
+Since SPARK 2.0.0,  SparkSession provides a single point
 of entry to interact with Spark functionality and
-allows programming Spark with DataFrame and Dataset APIs. 
+allows programming Spark with DataFrame and Dataset APIs.
 
-###  $\pi$ computation example
+### $\pi$ computation example
 
 - We can estimate an approximate value for $\pi$ using the following Monte-Carlo method:
 
-1.    Inscribe a circle in a square
-2.    Randomly generate points in the square
-3.    Determine the number of points in the square that are also in the circle
-4.    Let $r$ be the number of points in the circle divided by the number of points in the square, then $\pi \approx 4 r$.
-    
+1. Inscribe a circle in a square
+2. Randomly generate points in the square
+3. Determine the number of points in the square that are also in the circle
+4. Let $r$ be the number of points in the circle divided by the number of points in the square, then $\pi \approx 4 r$.
+
 - Note that the more points generated, the better the approximation
 
 See [this tutorial](https://computing.llnl.gov/tutorials/parallel_comp/#ExamplesPI).

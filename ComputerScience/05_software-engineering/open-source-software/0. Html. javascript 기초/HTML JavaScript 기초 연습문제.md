@@ -23,32 +23,38 @@ updated: '2026-05-05'
 ```html
 <!-- html 주석처리 방법 -->
 ```
+
 ```javascript
 // jjavascript 주석처리 방법
 /* jjavascript 주석처리 방법*/
 ```
+
 ```css
 /* css 주석 처리 */
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 5 input 412 S97 2A o.png -->
 ```html
 <input type='text' name=''>
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quizs6 ‘SAS AN lea At HES.png -->
 ```html
 <button onclick="startTest()">테스트 시작</button>
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 7 cra Css 4 BES SIN.png -->
 ```html
 <style>
-	body { padding:20px; background:yellow;}
-	h1 {color:blue;background:cyan;}
-	button {background:pink;}
+ body { padding:20px; background:yellow;}
+ h1 {color:blue;background:cyan;}
+ button {background:pink;}
 </style>
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 8 css S quiz.css tYS.png -->
 ```html
@@ -64,6 +70,7 @@ body { padding:20px; background:yellow;}
 h1 {color:blue;background:cyan;}
 button {background:pink;}
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 9 javascript 22 quiz.png -->
 ```html
@@ -85,22 +92,25 @@ function checkAnswers() {
     document.getElementById('result').textContent = score + "개 맞았습니다.";
 }
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 10 TS tt SN 8% ala B.png -->
 - **document.getElementById('a1')**: HTML 문서에서 특정 `id(a1)`를 가진 요소를 선택하는 메서드.
 - **a1** : js 변수
--  **value**: 사용자가 입력한 텍스트 값을 가져오는 속성.
--  **trim()**: 사용자가 입력한 값에서 앞뒤 공백을 제거하는 메서드 (중간 공백은 X)
+- **value**: 사용자가 입력한 텍스트 값을 가져오는 속성.
+- **trim()**: 사용자가 입력한 값에서 앞뒤 공백을 제거하는 메서드 (중간 공백은 X)
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 1 document.getElemen.png -->
- - `.value`는 사용자가 `<input>` 필드에 입력한 값을 가져옵니다.
- - `.textContent`는 `<h3>` 요소의 텍스트 내용을 변경하여 화면에 표시합니다.
+- `.value`는 사용자가 `<input>` 필드에 입력한 값을 가져옵니다.
+- `.textContent`는 `<h3>` 요소의 텍스트 내용을 변경하여 화면에 표시합니다.
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 12 St 22M. 1H SAA.png -->
 ```html
 <body>
-	10<sup>2</sup>은? <input type="text" id="a4"> <br><br>
-	25<sup>2</sup>은? <input type="test" id="a5"> <br><br>
+ 10<sup>2</sup>은? <input type="text" id="a4"> <br><br>
+ 25<sup>2</sup>은? <input type="test" id="a5"> <br><br>
 </body>
 ```
 
@@ -113,6 +123,7 @@ if (a4.toLowerCase() === "100") score++;
 if (a5.toLowerCase() === "625") score++;
 }
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 13 5B Cf Obl sb Bee.png -->
 ```html
@@ -126,11 +137,12 @@ function checkAnswers() {
     if (score==5)
         document.getElementById('good').textContent = "참 잘했어요!!";
     else if (score==0)
-	    document.getElementById('good').textContent = "try again";
+     document.getElementById('good').textContent = "try again";
     else
-	    document.getElementById('good').textContent = "";
+     document.getElementById('good').textContent = "";
 }
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 14 AWS BASD VRES qui.png -->
 ```html
@@ -176,6 +188,7 @@ function checkAnswers() {
 </body>
 </html>
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 15 who.htmidM 2H 3SR.png -->
 ```js
@@ -186,14 +199,17 @@ else if (who == "양파") image.src = 'static/양파.png';
 else if (who == "식빵") image.src = 'static/식빵.png';
 else image.src = 'static/쏘리.png';
 ```
+
 - value.trim()
 - who ==
 - static/
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 16 who.htmi2 HEA BH.png -->
 ```html
 <button onclick="showImage()">사진</button>
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 17, aera Ve Sab HS A.png -->
 ```js
@@ -202,6 +218,7 @@ else if (who == "양파" || who == "양") image.src = 'static/양파.png';
 else if (who == "식빵" || who == "식") image.src = 'static/식빵.png';
 else image.src = 'static/쏘리.png';
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 18 WZ MES ST NA.png -->
 
@@ -242,6 +259,7 @@ function boxclear() {
     document.getElementById('result').value = "";
 }
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 21 alert4tat prompt4.png -->
 - alert창은 일반적으로 사용자한데 메세지 전달
@@ -259,6 +277,7 @@ document.body.style.backgroundColor = co;
 // (2) input박스 글자색 바꾸기
 document.getElementById("co").style.color = co;
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 24 AIMS js cra BUBWE.png -->
 ```js
@@ -287,9 +306,10 @@ return st.color != "";
 
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 28 AWMIS2 ore eb SUS.png -->
-```js 
+```js
 alert(`${co}는 존재하지 않는 색입니다. 다시 작성해 주세요 ^^`);
 ```
+
 ```js
 let n, sum;
 
@@ -302,6 +322,7 @@ document.write(`n + 100 ==>  + ${sum} + <hr>`);
 sum = parseInt(n) + 100;
 document.write(`정수변환n + 100 ==>  + ${sum} + <hr>`);
 ```
+
 ---
 <!-- 원본 이미지 없음: open-source-software__HTML JavaScript 기초 연습문제__Quiz 29 BS UND HES SYte S.png -->
 ```html

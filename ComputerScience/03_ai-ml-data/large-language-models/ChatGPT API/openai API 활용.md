@@ -20,11 +20,14 @@ updated: '2026-05-05'
 ---
 
 ---
+
 #### openai API  활용
-    
+
 >[!<문제1>]
->post 요청 endpoint url [https://api.openai.com/v1/embeddings](https://api.openai.com/v1/embeddings) 임베딩 요청을 합니다 
+>post 요청 endpoint url [https://api.openai.com/v1/embeddings](https://api.openai.com/v1/embeddings) 임베딩 요청을 합니다
+>
 >- 로컬의 엑셀파일(naver_news.xlsx)에서 0번 행의 제목 셀을 임베딩 요청하고 응답 임베딩 결과를 출력하는 코드를 구현하시오
+>
 ```python
 import pandas as pd
 import requests
@@ -72,6 +75,7 @@ print("Embedding:", embedding)
 ---
 >[!<문제2>]
 >openai  SDK를 사용해서 말하는 고양이에 대한 짧은 이야기를  창작한 결과를 출력하는 코드를 구현하시오
+
 ```python
 import openai
 api_key = OPENAI_API_KEY
@@ -98,6 +102,7 @@ print(response.choices[0].message)
 
 >[!<문제3>]
 >openai  SDK를 사용해서 로컬에서 nomuhun.txt파일을 읽어서 3문장으로 요약결과를 출력하는 코드를 구현하시오
+
 ```python
 with open('./data/nomuhun.txt', 'r', encoding='utf-8') as file:
     file_content = file.read()
@@ -146,6 +151,7 @@ def get_movie_recommendation(age, gender, genre, country, mood) :
     except  openai.error.OpenAIError as e :
         return f"오류가 발생했습니다 : {str(e)}"       
 ```
+
 ```bash
 age = input("나이를 입력하세요")
 gender = input("성별 입력하세요 (예: 남성, 여성)")

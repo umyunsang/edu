@@ -19,26 +19,31 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # 이상 탐지(ASD)를 위한 최적의 Feature Engineering
 
 ## 1. STFT와 함께 넣을 수 있는 최적의 Feature 조합
 
 ### 1) Magnitude와 Phase 정보 분리
+
 - STFT의 복소수 표현을 Magnitude와 Phase로 분리
 - 이상 탐지에서 Phase 정보는 기계 소리의 미세한 변화를 포착하는데 중요
 - 입력 형태: `(Batch, 2, Freq, Time)`
 
 ### 2) Mel Spectrogram
+
 - 인간의 청각 특성을 반영하여 주파수 대역을 비선형적으로 표현
 - 이상 소리는 특정 주파수 대역에서 발생하는 경우가 많아 Mel scale이 효과적
 - 입력 형태: `(Batch, 1, Mel_bins, Time)`
 
 ### 3) MFCC (Mel-Frequency Cepstral Coefficients)
+
 - 음향 신호의 음색(timbre) 정보를 잘 포착
 - 기계 소리의 특성 변화를 효과적으로 표현
 - 입력 형태: `(Batch, n_mfcc, Time)`
 
 ### 4) Spectral Contrast
+
 - 주파수 대역 간의 대비를 측정
 - 정상 상태와 이상 상태의 주파수 특성 차이를 강조
 - 입력 형태: `(Batch, n_bands, Time)`
@@ -46,11 +51,13 @@ updated: '2026-05-05'
 ## 2. STFT 없이 동일한 Data Type으로 입력할 수 있는 최적의 방법
 
 ### 1) Wavelet Transform
+
 - 다중 해상도 분석이 가능하여 시간-주파수 정보를 효과적으로 표현
 - 이상 탐지에서 중요한 일시적인 변화를 잘 포착
 - 입력 형태: `(Batch, Scales, Time)` - STFT와 동일한 2D 형태
 
 ### 2) Self-Supervised Learning 기반 특징
+
 - wav2vec 2.0이나 BYOL-Audio 같은 사전 학습 모델 활용
 - 음향 데이터의 고수준 특징을 자동으로 학습
 - 입력 형태: `(Batch, Hidden_dim, Time)`
@@ -206,38 +213,40 @@ if __name__ == "__main__":
 ---
 
 ---
+
 # 음향 신호 특징 분석 결과
 
 ## 2. 특징 추출 및 시각화 결과
 
 ### 생성된 시각화 파일
+
 1. STFT Magnitude & Phase:
    - `normal_stft_mag.png` (177KB)
-	    <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_stft_mag.png -->
+     <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_stft_mag.png -->
    - `normal_stft_phase.png` (683KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_stft_phase.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_stft_phase.png -->
    - `anomaly_stft_mag.png` (233KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_stft_mag.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_stft_mag.png -->
    - `anomaly_stft_phase.png` (683KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_stft_phase.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_stft_phase.png -->
 
 2. Mel Spectrogram:
    - `normal_mel.png` (151KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_mel.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_mel.png -->
    - `anomaly_mel.png` (152KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_mel.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_mel.png -->
 
 3. MFCC:
    - `normal_mfcc.png` (40KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_mfcc.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_mfcc.png -->
    - `anomaly_mfcc.png` (42KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_mfcc.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_mfcc.png -->
 
 4. Spectral Contrast:
    - `normal_contrast.png` (30KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_contrast.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__normal_contrast.png -->
    - `anomaly_contrast.png` (30KB)
-	   <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_contrast.png -->
+    <!-- 원본 이미지 없음: 3-1_mathematical-logic__anomaly_contrast.png -->
 
 ### 특징별 분석
 

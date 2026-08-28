@@ -21,10 +21,10 @@ updated: '2026-05-05'
 ---
 
 ---
-` 3. Learning rate control  
-	` • 1 ~ 74 epoch: 0.001  `
-	` • 75 ~ 149 epoch: 0.0005`  
-	` • 150 ~ 200 epoch: 0.00025`
+`3. Learning rate control  
+ ` • 1 ~ 74 epoch: 0.001  `
+ ` • 75 ~ 149 epoch: 0.0005`  
+ ` • 150 ~ 200 epoch: 0.00025`
 
 <!-- 원본 이미지 없음: artificial-intelligence__CNN 모델 정의__6) Training loop.png -->
 

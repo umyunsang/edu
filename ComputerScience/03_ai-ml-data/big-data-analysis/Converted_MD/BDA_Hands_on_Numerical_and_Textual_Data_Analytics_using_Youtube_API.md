@@ -22,17 +22,20 @@ updated: '2026-05-05'
 # BDA_Hands_on_Numerical_and_Textual_Data_Analytics_using_Youtube_API
 
 # Youtube API와 함께하는 핸즈온 튜토리얼
+
 Youtube는 No1인 비디오 공유 플랫폼이다. 1억명 사용자들은 수천억시간의 비디오를 소비하고 매분마다 500시간의 컨텐츠가 업로드된다.
 
-다양한 형태와 장르의 영상들이 존재한다. 주로 뮤직비디오, 강좌, 버라이어티 쇼, 드라마, 상품 리뷰 등 녹화된 방송들이 게시되기도 한다. 한편, 홈쇼핑, 게이밍 대회 와 같은 영상들은 실시간으로 스트리밍 되기도 한다. 
+다양한 형태와 장르의 영상들이 존재한다. 주로 뮤직비디오, 강좌, 버라이어티 쇼, 드라마, 상품 리뷰 등 녹화된 방송들이 게시되기도 한다. 한편, 홈쇼핑, 게이밍 대회 와 같은 영상들은 실시간으로 스트리밍 되기도 한다.
 
 빅데이터 4V(Volume, Velocity, Variety, Veracity) 측면에서 Youtube 관련 데이터를 관심있어야하는 이유는 다음과 같다.
+
 - Volume: 10억명의 사용자가 생성하고 관람하는 데이터는 엄청나게 많다.
 - Velocity: 다양한 스트리밍 채널에서 사용자들은 수초내에 수백개의 메시지와 함께 커뮤니케이션 및 보기가 가능하다.
 - Variety: 동영상 데이터 뿐만 아니라, 구조화된  데이터(통계치, 메타데이터)와 비구조화된 텍스트(채팅, 댓글)들을 다룰 수 있다.
 - Veracity: Youtube 영상 자체가 특정 사실에 대해 불확실 정보를 포함할 수 있으며, 영상에 대한 정보가 잘못 표기될 수도 있다.
 
 # 본 튜토리얼의 기본 목표
+
 1. Youtube API를 이용하여 영상을 검색하거나 관련된 정보를 수집할 수 있다.
 2. 수집된 정보로부터 간략한 통계자료
 3. 실시간 채팅메세지 분석을 진행한다.
@@ -42,6 +45,7 @@ Youtube는 No1인 비디오 공유 플랫폼이다. 1억명 사용자들은 수�
 Copyright 2023 by datasciencelabs.org
 
 # 사전조건
+
 1. Youtube API를 활용하기 위해서는 Google API Python Client Library.로부터 API Key를 발급받아야 한다.
 2. 개인 컴퓨터를 사용하는 경우, 가능한 Linux를 이용해서 설치(install)부분을 설치완료해야한다.
 
@@ -55,7 +59,9 @@ Conda install
 # condacolab.install()
 
 ~~~
+
 Output:
+
 ~~~
 [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m[33m
 [0m✨🍰✨ Everything looks OK!
@@ -73,7 +79,9 @@ install the google api python client
 # !conda install -c conda-forge google-api-python-client
 
 ~~~
+
 Output:
+
 ~~~
 Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
 Solving environment: \ | / - \ | / - \ | / - \ | / - done
@@ -364,14 +372,16 @@ Executing transaction: | / - \ | / - \ | / - \ | / -
 ~~~
 
 # API documentation
+
 구체적인 Youtube API[https://developers.google.com/youtube/v3] 다음 링크에 있는 문서를 참고하시기 바랍니다.
 
 API Reference
-https://developers.google.com/youtube/v3/docs
+<https://developers.google.com/youtube/v3/docs>
 
 ## Query Template
 
 PYTHON API는 다음과 같이 api.(resources).(method) 형태로 구성된다.
+
 ```
 # To perform list method on playlists resource
 request = youtube.playlists().list(
@@ -391,7 +401,7 @@ Search resource: contains information about a Youtube video, channel or playlist
 Video resource: representes a Youtube Video
 
 Part parameter
-https://developers.google.com/youtube/v3/docs/search/list#parameters
+<https://developers.google.com/youtube/v3/docs/search/list#parameters>
 
 a comma-separated list of one or more search resource properties that the API response will include. Set the parameter value to snippet.
 
@@ -465,6 +475,7 @@ Pagetoken
 ~~~
 
 #### Exercise
+
 page token 넣어 지속적으로 다음결과를 출력해보기
 
 ~~~python
@@ -472,9 +483,11 @@ page token 넣어 지속적으로 다음결과를 출력해보기
 ~~~
 
 #### Exercise
+
 응답으로부터 VideoId, 게시일, 타이틀명을 직접 접근하여 가져오기
 
 # 유튜브 통계 데이터 분석하기
+
 유튜브는 소셜미디어 플랫폼으로 게시된 비디오에 대해 다양한 반응들을 파악할 수 있다.
 예로 snippet에는 (viewCount, likeCount, dislikeCount, favoriteCount, commentCount) 등을 파악할 수있다.
 또한, duration은 contentDetails에서 파악할 수 있다.
@@ -547,7 +560,9 @@ busan_videos = pd.DataFrame(data=busan_stat_info)
 busan_videos.shape
 
 ~~~
+
 Output:
+
 ~~~
 (50, 7)
 
@@ -557,7 +572,9 @@ Output:
 busan_videos.head(10)
 
 ~~~
+
 Output:
+
 ~~~
             id  duration     views   likes  dislikes  favorites  comments
 0  Qh3wrmSUqaI  PT10M22S   1257913   11747         0          0       652
@@ -579,7 +596,9 @@ show its decriptive statistics
 busan_videos.describe()
 
 ~~~
+
 Output:
+
 ~~~
               views          likes  dislikes  favorites    comments
 count  5.000000e+01      50.000000      50.0       50.0    50.00000
@@ -601,7 +620,9 @@ draw its historgram that shows the distribtuion of numerical data
 busan_videos.hist(bins=100)
 
 ~~~
+
 Output:
+
 ~~~
 array([[<Axes: title={'center': 'views'}>,
         <Axes: title={'center': 'likes'}>],
@@ -619,7 +640,9 @@ busan_videos.to_csv('busan_video_statistics.csv')
 ~~~
 
 #### Exercise
-1만건이 넘는 특정 키워드에 관한 영상들을 검색하여 이로부터 의미있는 통계치 데이터를 추출하시오. 
+
+1만건이 넘는 특정 키워드에 관한 영상들을 검색하여 이로부터 의미있는 통계치 데이터를 추출하시오.
+
 - nextPageToken을 이용하여 데이터를 1만건 이상 수집
 - 데이터를 Panda Dataframe로 변환
 - 의미있는 분석 결과에 대해 이야기할 것
@@ -661,7 +684,9 @@ def download_captions(youtube, video_id, api_key):
 download_captions(youtube, 'O5xeyoRL95U', API_KEY)
 
 ~~~
+
 Output:
+
 ~~~
 ['AUieDabMHuli-HcCo36ri76VN71k289-x9omXb7vgfJq6VKt_2A', 'AUieDaZxtX3HAntbRQhGmW7zi8YVU-wyP1ihw3BNE3R_']
 An HTTP error 401 occurred: b'{\n  "error": {\n    "code": 401,\n    "message": "API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://cloud.google.com/docs/authentication",\n    "errors": [\n      {\n        "message": "Login Required.",\n        "domain": "global",\n        "reason": "required",\n        "location": "Authorization",\n        "locationType": "header"\n      }\n    ],\n    "status": "UNAUTHENTICATED"\n  }\n}\n'
@@ -695,7 +720,9 @@ chatID = r['items'][0]['liveStreamingDetails']['activeLiveChatId']
 chatID
 
 ~~~
+
 Output:
+
 ~~~
 'Cg0KC01GSFliMW9SSktvKicKGFVDTktrbXM3Vl9yUVBxZVNjaUN3bUM3URILTUZIWWIxb1JKS28'
 
@@ -732,7 +759,9 @@ for item in response['items']:
 chat_messages[0]
 
 ~~~
+
 Output:
+
 ~~~
 {'authorChannelId': 'UCqoxZvPcT35HhB13Jas6-4g',
  'authoChannelName': '༺Møøค🐉༻ණ',
@@ -742,6 +771,7 @@ Output:
 ~~~
 
 #### Exercise
+
 채팅메시지는 각 요청마다 2000개의 메시지를 가져온다. 5초 주기 time.sleep(5)로 요청하여 메세지를 가져와 파일 혹은 데이터프레임에 축적하는 프로그램을 구현하라.
 
 ~~~python
@@ -749,7 +779,7 @@ Output:
 
 ~~~
 
-#### Exercise 
+#### Exercise
 
 채팅메세지에서 가장 많이 이야기한 사람을 찾는 알고리즘을 구현하라.
 
@@ -761,8 +791,8 @@ Output:
 # 자연어 텍스트 처리하기
 
 Natural Language Processing(NLP)은 언어학, 컴퓨터과학, 인공지능 학문분야들이 서로 결합하여 수행하는 학문이다. 현재 유사어(Synonyms), 오류(Errors) 등 다양한 도전문제들에 대해서 많은 연구들이 진행되고 있다.
-https://monkeylearn.com/blog/natural-language-processing-challenges/
-현재 BERT 등 고도화된 사전학습된 언어 모델들이 이용가능하다. 
+<https://monkeylearn.com/blog/natural-language-processing-challenges/>
+현재 BERT 등 고도화된 사전학습된 언어 모델들이 이용가능하다.
 
 또한, 일반적인 자연어 처리는  여러개의 컴포넌트가 구성된 파이프라인(Pipeline) 형태가 설계된다는 점을 알고 있어야한다. Tokenizer, 를 시작으로, tagger, parser, .. 등등 다양한 형태로 분석을 진행하고 추출된 정보를 doc 모델 에 저장한다. 따라서, 목적이나 요구사항에 따라 적절하게 구성해야 한다.
 
@@ -774,7 +804,9 @@ CUDA Version 확인
 !nvcc --version
 
 ~~~
+
 Output:
+
 ~~~
 nvcc: NVIDIA (R) Cuda compiler driver
 Copyright (c) 2005-2022 NVIDIA Corporation
@@ -792,7 +824,9 @@ install spacy
 !python -m spacy download en_core_web_sm
 
 ~~~
+
 Output:
+
 ~~~
 Collecting package metadata (current_repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
 Solving environment: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
@@ -1305,7 +1339,7 @@ You can now load the package via spacy.load('en_core_web_sm')
 Spacy에는 POS Tagging, Morphology, Lemmatization, Dependency Parse, Named Entities, Entity Linking, Tokenization, Merging & splitting, Sentence segmentation 등의 다양한 특징을 가지고 있다.
 
 시간적인 여유가 있다면 다음 리소스를 차근히 해보는 것도 좋다.
-https://spacy.io/usage/linguistic-features#pos-tagging
+<https://spacy.io/usage/linguistic-features#pos-tagging>
 
 우리는 spacytextblob를 이용한 감성분석(혹은 극성분석)을 진행하고자 한다. spacytextblob는 감성분석을 위햏 spacy 버전용 TextBlob라고 생각하면 ㄴ된다.
 
@@ -1321,7 +1355,9 @@ install spacytextblob
 !python -m textblob.download_corpora
 
 ~~~
+
 Output:
+
 ~~~
 [nltk_data] Downloading package brown to /root/nltk_data...
 [nltk_data]   Package brown is already up-to-date!
@@ -1364,7 +1400,9 @@ doc = nlp(text)
 doc._.blob.polarity # 극성 [-1.0, 1.0]  [매우 부정, 매우 긍정]
 
 ~~~
+
 Output:
+
 ~~~
 -0.125
 
@@ -1374,7 +1412,9 @@ Output:
 doc._.blob.subjectivity # 주관성 [0.0, 1.0] [객관적, 매우 주관]
 
 ~~~
+
 Output:
+
 ~~~
 0.9
 
@@ -1384,7 +1424,9 @@ Output:
 doc._.blob.sentiment_assessments.assessments # 판단에 대한 평가 점수 ( 극성, 주관성, )
 
 ~~~
+
 Output:
+
 ~~~
 [(['really', 'horrible'], -1.0, 1.0, None),
  (['worst', '!'], -1.0, 1.0, None),
@@ -1394,15 +1436,17 @@ Output:
 ~~~
 
 #### Exercise
+
 특정 유튜브 영상에서, 채팅 메세지의 긍정/부정에 대해서 통계화된 자료(평균 값, 비율 등)과 함께 적절한 예와 함께 설명하시오.
 
-Consideration: 
+Consideration:
 채팅메세지는 문법에 맞지 않는 다양한 표현이 존재할 수 있다. 예를 들어, 약어 형태나 축약 단어형태가 존재할 수 있다. 이러한 부분을 해결하기 위해서는 어떻게 해야할지 고민해보자.
 
 # 유튜브 자막 데이터 분석하기
 
-유튜브 영상의 일부는 자막을 제공한다. 자막은 해당 컨텐츠를 이해하기 위한 중요한 부분정의 하나이다. 
- - 영화의
+유튜브 영상의 일부는 자막을 제공한다. 자막은 해당 컨텐츠를 이해하기 위한 중요한 부분정의 하나이다.
+
+- 영화의
 
 ~~~python
 YOUTUBE_ID_FOR_ANALYSIS = "2bP_KuBrXSc" #@param {type:"string"}
@@ -1411,6 +1455,7 @@ YOUTUBE_ID_FOR_ANALYSIS = "2bP_KuBrXSc" #@param {type:"string"}
 
 youtube_transcript_api는 api key 필요없이 직접적으로 자막을 가져올 수 있다.
 주요기능은 다음과 같다.
+
 - ID에 의한 자막 추출
 - 언어별로 찾기
 - 자동생성 된것인지 수동적으로 생성된것인지를 판별
@@ -1421,7 +1466,9 @@ install YouTubeTranscriptApi
 !pip install pip install youtube-transcript-api
 
 ~~~
+
 Output:
+
 ~~~
 Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (23.0.1)
@@ -1443,7 +1490,7 @@ Successfully installed install-1.3.5 youtube-transcript-api-0.5.0
 
 ## message format of youtube-transcript-api
 
-따라서 다음과 같이 메세지 정보를 파악할 수 있다. 참고: https://pypi.org/project/youtube-transcript-api/
+따라서 다음과 같이 메세지 정보를 파악할 수 있다. 참고: <https://pypi.org/project/youtube-transcript-api/>
 
 ```
 print(
@@ -1469,6 +1516,7 @@ transcript = YouTubeTranscriptApi.get_transcript(YOUTUBE_ID_FOR_ANALYSIS)
 ~~~
 
 해당 자막 시작하는 시간(start), 해당 자막의 내용(text), 해당 자막이 완료되는 종료시점(duration)으로 추출된다.
+
 ```
 [
     {
@@ -1492,7 +1540,9 @@ for trans in transcript:
   print(trans)
 
 ~~~
+
 Output:
+
 ~~~
 {'text': 'hello and welcome back to another video', 'start': 0.0, 'duration': 3.54}
 {'text': 'on this channel', 'start': 2.1, 'duration': 3.84}
@@ -1967,11 +2017,13 @@ Output:
 ~~~
 
 #### Exercise
-주관성이 높은 영상과 객관성이 높은 영상을 임의적으로 선택하고 이에 대한 주관성/객관성 분석을 실시하여라. 
+
+주관성이 높은 영상과 객관성이 높은 영상을 임의적으로 선택하고 이에 대한 주관성/객관성 분석을 실시하여라.
 
 만약 가능하다면, 많은 영상을 보유한 특정 키워드가 주관성/객관성 혹은 긍정/부정에 영향을 받는 것이 있는지 가정하고 실시하시오.
 
 #### Consideration
+
 구어체인경우, 대다수가 완전한 문장이 아니고, 시간의 단위가 매우 짧다. 이를 어떻게 해결할지에 대해 고민하시오.
 
 기본적으로는, 우리는 5분단위로 취합할수도 있으며, 혹은 300 words 내외 기준으로 취합할 수 도 있다.
@@ -1990,13 +2042,15 @@ $H(X)=-Σ^{n}_{i=1}P(x_i) log P(x_i)$
 python itertools를 이용하여 진행해보시기 바랍니다
 
 # 요 약
+
 YouTube API뿐만 아니라, Panopto, Brightcove, Vimeo, IBM Watson Media 등 다양한 비디오 플랫폼이 존재한다. 본 튜토리얼은 영상이 아닌 영상에 관련된 메타데이터(숫자, 텍스트)를 어떻게 분석해야하는지에 다루었다.
 
 # 나아갈 방향
+
 - 유튜브의 특정 카테고리의 특징을 반영한 서비스를 개발해 본다.
-   - 왜 해당 서비스를 해야하는가? 
-   - 단순 키워드에만 의존하는 것이 아닌가?
-- 음성적인 부분과, 시각적인 부분을 함께 고려한 서비스를 개발해 본다. 
+  - 왜 해당 서비스를 해야하는가?
+  - 단순 키워드에만 의존하는 것이 아닌가?
+- 음성적인 부분과, 시각적인 부분을 함께 고려한 서비스를 개발해 본다.
 - 다양한 주제로 한 서비스를 모색해 본다.
 
 *** 빅데이터 분석은 하나의 컴포넌트가 아닌, 여러개의 컴포넌트로 구성되는 파이프라인을 잘 설계하는 것이 큰 중요한 부분임을 알고 있어야 한다.

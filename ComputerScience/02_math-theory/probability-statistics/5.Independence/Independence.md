@@ -19,9 +19,10 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-#ComputerScience #확률과통계 
+# ComputerScience #확률과통계
 
 ---
+
 1. **Definition: Independence (정의: 독립)**:
    - 두 사건이 독립이라는 것은 하나의 사건의 결과가 다른 사건의 결과에 영향을 미치지 않는 것을 의미합니다.
    - 수식: $P(A \cap B) = P(A) \times P(B)$

@@ -19,9 +19,11 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Quadratic Programming 기반 SVM(Support Vector Machine)
 
 ## 1. scikit-learn 라이브러리를 활용한 SVM 구현
+
 scikit-learn의 SVC 클래스를 사용하여 SVM 모델을 구현하고 학습시킵니다.
 
 ```python
@@ -37,6 +39,7 @@ visualize_svm(clf.coef_[0], clf.intercept_)
 <!-- 원본 이미지 없음: 3-1_machine-learning__Pasted image 20250415173546.png -->
 
 ## 2. 마진 계산
+
 학습된 SVM 모델의 마진 크기를 계산합니다.
 
 ```python

@@ -30,11 +30,11 @@ updated: '2026-05-05'
 ### 모델 종류
 
 1. **omni-moderation-latest**
-    
+
     - 최신 모델로, 더 많은 분류 옵션 제공.
     - 멀티 모달 입력(텍스트와 이미지)을 지원.
 2. **text-moderation-latest (Legacy)**
-    
+
     - 구형 모델로, 텍스트 입력만 지원.
     - 분류 옵션이 제한적.
 

@@ -21,6 +21,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ## Dropout
 
 ```python
@@ -134,7 +135,6 @@ torch.save(network.state_dict(), "../../Backpropagation/Vanishing Gradient/mlp_m
 
 ```
 
-  
 Epoch: 100 Loss = 0.004778
 Learning finished
 Accuracy: 0.7955999970436096

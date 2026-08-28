@@ -20,6 +20,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ### Fine-Tuning 실습: JSONL 형식 데이터 준비 및 검증, Fine-Tuning 과정
 
 #### 1. JSONL 학습 데이터 준비

@@ -19,14 +19,17 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Multiple Linear Regression
 
 >[!note] 핵심 개념
+>
 >- **다중 선형 회귀(Multiple Linear Regression)**: 여러 개의 독립 변수를 사용하여 종속 변수를 예측하는 모델
 >- **최소 제곱법(Least Square Method)**: $$\theta = (X^T \cdot X)^{-1} \cdot (X^T \cdot Y)$$를 통해 최적의 회귀 계수를 찾는 방법
 >- **가우시안 정규화**: 데이터를 평균 0, 표준편차 1로 변환하여 스케일을 통일
 
 >[!tip] 데이터 분석 결과
+>
 >- 주택 가격에 가장 큰 영향을 미치는 요인:
 >    1. 실내 면적 (상관계수: 0.702)
 >    2. 건축 품질 등급 (상관계수: 0.667)
@@ -34,11 +37,13 @@ updated: '2026-05-05'
 >- MSE가 0.33~0.46 범위로, 모델의 예측 성능이 양호함
 
 >[!warning] 주의사항
+>
 >1. 데이터 전처리 시 결측치 제거와 정규화가 필수
 >2. 새로운 데이터 예측 시 반드시 정규화 후 입력
 >3. 예측 결과 해석 시 역정규화 필요
 
 >[!example] 모델 사용 예시
+>
 >```python
 ># 입력 데이터 정규화
 >sqft_living = (실제면적 - mean_sqft_living) / std_sqft_living
@@ -52,6 +57,7 @@ updated: '2026-05-05'
 >```
 
 ---
+
 ## Import packages
 
 ```python
@@ -120,6 +126,7 @@ correlation_matrix
 ```
 
 상관계수 행렬 분석 결과:
+
 - 주택 가격(price)과 가장 높은 상관관계를 보이는 변수들:
   - sqft_living (0.702): 주택의 실내 면적
   - grade (0.667): 주택의 건축 품질과 디자인 등급
@@ -223,6 +230,7 @@ print(MSE(Y_test, Y_hat))
 ## 새로운 데이터에 대한 예측
 
 가우시안 정규화와 역정규화:
+
 - 정규화: $$x' = \frac{x - \mu}{\sigma}$$
 - 역정규화: $$x = x' \cdot \sigma + \mu$$
 

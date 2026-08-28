@@ -19,9 +19,11 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Multiple Linear Regression with Uber Dataset
 
 >[!note] 다중 선형 회귀란?
+>
 >- 여러 개의 독립 변수를 사용하여 종속 변수를 예측하는 통계적 방법
 >- 수식: $$Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n + \epsilon$$
 >- $\beta_0$ : 절편, $\beta_1$ ~ $\beta_n$ : 회귀 계수, $\epsilon$ : 오차항
@@ -40,13 +42,14 @@ np.set_printoptions(precision=6, suppress=True)
 ## 데이터셋 로딩
 
 >[!info] Modified Uber Dataset
+>
 >- **종속 변수**: fare_amount (우버 요금 지불 금액)
 >- **독립 변수**:
->    - pickup_x: 승객 탑승 x 좌표
->    - pickup_y: 승객 탑승 y 좌표
->    - dropoff_x: 승객 하차 x 좌표
->    - dropoff_y: 승객 하차 y 좌표
->    - passenger_count: 탑승 승객 수
+>   - pickup_x: 승객 탑승 x 좌표
+>   - pickup_y: 승객 탑승 y 좌표
+>   - dropoff_x: 승객 하차 x 좌표
+>   - dropoff_y: 승객 하차 y 좌표
+>   - passenger_count: 탑승 승객 수
 
 ```python
 # Download dataset file
@@ -77,12 +80,14 @@ data['L2_distance'] = np.sqrt((data['pickup_x'] - data['dropoff_x'])**2 + (data[
 
 data # L1/L2_distance 열이 정상적으로 계산/추가되었는지 확인
 ```
+
 ## 데이터셋 전처리
 
 >[!important] 가우시안 정규화 (Gaussian Normalization)
+>
 >- 데이터를 평균이 0, 표준편차가 1인 정규분포 형태로 변환
 >- 수식: $$x' = \frac{x - \mu}{\sigma}$$
->- 목적: 
+>- 목적:
 >    1. 서로 다른 스케일의 특성들을 동일한 스케일로 변환
 >    2. 모델의 학습 안정성과 성능 향상
 >    3. 이상치의 영향 감소
@@ -113,27 +118,39 @@ print(Y_train.shape)
 ## Least Square Method 기반 선형 회귀 모델 구현
 
 >[!note] 최소 제곱법 (Least Square Method)
+>
 >- 예측값과 실제값의 차이(오차)의 제곱합을 최소화하는 방법
+>
 >>[!important] 수식
+>>
 >>```python
 >>XT = X.T
 >>```
+>>
 >>$$X^\top$$
+>>
 >>```python
 >>XTX = np.dot(XT, X)
 >>```
+>>
 >>$$X^\top X$$
+>>
 >>```python
 >>XTX_inverse = np.linalg.inv(XTX)
 >>```
+>>
 >>$$\left(X^\top X\right)^{-1}$$
+>>
 >>```python
 >>XTY = np.dot(XT, Y)
 >>```
+>>
 >>$$X^\top Y$$
+>>
 >>```python
 >>self.theta = np.dot(XTX_inverse, XTY)
 >>```
+>>
 >>$$\theta = \left(X^\top X\right)^{-1} X^\top Y$$
 
 ```python
@@ -209,6 +226,7 @@ x = x' \cdot \sigma + \mu
 $$
 
 >[!example] 새로운 데이터에 대한 예측
+>
 >```python
 ># 가우시안 정규화/역정규화를 위한 평균, 표준편차 저장
 >mean_array = data.mean()
@@ -246,6 +264,7 @@ $$
 >```
 
 >[!warning] 주의사항
+>
 >1. 새로운 데이터 예측 시 반드시 정규화 필요
 >2. 예측 결과는 역정규화하여 해석
 >3. L1, L2 거리는 실제 거리와 비례하도록 계산

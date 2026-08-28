@@ -20,15 +20,17 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ### Defining the likelihood of data
 
 데이터 샘플은 n개의 독립 동일 분포(iid)를 가진 확률 변수 $X_1, X_2, \dots, X_n$ 으로 이루어져 있습니다. 여기서 각 $X_i$는 밀도(또는 질량) 함수 $f(X_i|θ)$에서 뽑혔습니다.
 
 가능도 질문:
-	매개변수 θ가 주어졌을 때 샘플 ($X_1, X_2, \dots, X_n$)이 얼마나 가능한가요?
+ 매개변수 θ가 주어졌을 때 샘플 ($X_1, X_2, \dots, X_n$)이 얼마나 가능한가요?
 
 가능도 함수 L(θ)는 다음과 같이 정의됩니다:
 $$L(\theta) = f(X_1,X_2,...,X_n|\theta)=\prod_{i=1}^n f(X_i|\theta)$$
+
 ### Maximum Likelihood Estimator
 
 주어진 분포 $f(X_i|\theta)$로부터 뽑힌 n개의 독립 동일 분포(iid) 확률 변수 $X_1, X_2, \dots, X_n$의 샘플을 고려합니다.
@@ -43,7 +45,7 @@ $$L(\theta) = \prod_{i=1}^n f(X_i|\theta)$$
 
 이 때, $X_i$가 연속형일 경우 $f(X_i|\theta)$는 확률 밀도 함수(PDF)이고, 이산형일 경우 확률 질량 함수(PMF)입니다.
 
-추가로, 최대 우도 추정량 $\theta_{MLE}$은 로그-우도 함수(log-likelihood function) $LL(\theta)$를 최대화하는 값이기도 합니다. 
+추가로, 최대 우도 추정량 $\theta_{MLE}$은 로그-우도 함수(log-likelihood function) $LL(\theta)$를 최대화하는 값이기도 합니다.
 
 로그-우도 함수 $LL(\theta)$는 가능도 함수의 로그를 취한 것으로, 다음과 같이 정의됩니다:
 $$LL(\theta)= \log L(\theta) = \log\left(\prod_{i=1}^n f(X_i|\theta)\right)=\sum_{i=1}^n \log f(X_i|\theta)$$
@@ -61,7 +63,7 @@ $$
 
 $$
 LL(\theta) = \sum_{i=1}^n \log p^{x_i}(1-p)^{1-x_i}$$
-$$= \sum_{i=1}^n x_i (\log p) + (1 - x_i) \log(1-p)$$ 
+$$= \sum_{i=1}^n x_i (\log p) + (1 - x_i) \log(1-p)$$
 $$= Y \log p + (n - Y) \log(1-p)
 $$
 

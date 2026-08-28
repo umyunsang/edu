@@ -21,6 +21,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ## ExponentialLR
 
 ExponentialLR은 PyTorch와 같은 딥러닝 프레임워크에서 제공하는 학습률 스케줄링 방법 중 하나입니다. 이 방법은 학습률을 지수적으로 감소시키는 방법으로, 학습의 각 에폭(epoch) 또는 일정한 주기마다 학습률을 감소시킵니다.
@@ -30,6 +31,7 @@ ExponentialLR은 PyTorch와 같은 딥러닝 프레임워크에서 제공하는 
 $$\text{lr} = \text{initial\_lr} \times \text{gamma}^{\text{epoch}}$$
 
 여기서,
+
 - $\text{lr}$은 현재 학습률,
 - $\text{initial\_lr}$은 초기 학습률,
 - $\text{gamma}$는 감소 비율,
@@ -131,6 +133,7 @@ $$
 $$
 
 여기서,
+
 - $\text{lr}$은 현재 학습률,
 - $\text{initial\_lr}$은 초기 학습률,
 - $\text{gamma}$는 감소 비율,

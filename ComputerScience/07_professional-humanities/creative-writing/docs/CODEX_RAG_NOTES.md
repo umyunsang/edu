@@ -15,8 +15,8 @@ Codex는 작업 전 `AGENTS.md`를 읽고, 글로벌 지침과 프로젝트 지�
 
 참고:
 
-- https://developers.openai.com/codex/guides/agents-md
-- https://developers.openai.com/codex/learn/best-practices
+- <https://developers.openai.com/codex/guides/agents-md>
+- <https://developers.openai.com/codex/learn/best-practices>
 
 ## Skill 사용
 
@@ -24,7 +24,7 @@ Codex는 작업 전 `AGENTS.md`를 읽고, 글로벌 지침과 프로젝트 지�
 
 참고:
 
-- https://developers.openai.com/codex/skills
+- <https://developers.openai.com/codex/skills>
 
 ## 로컬 RAG 기본값
 
@@ -44,7 +44,7 @@ OpenAI File Search는 Responses API에서 사용할 수 있는 hosted tool이며
 
 참고:
 
-- https://developers.openai.com/api/docs/guides/tools-file-search
-- https://developers.openai.com/api/docs/guides/retrieval
-- https://developers.openai.com/api/docs/assistants/tools/file-search#how-it-works
-- https://developers.openai.com/codex/mcp
+- <https://developers.openai.com/api/docs/guides/tools-file-search>
+- <https://developers.openai.com/api/docs/guides/retrieval>
+- <https://developers.openai.com/api/docs/assistants/tools/file-search#how-it-works>
+- <https://developers.openai.com/codex/mcp>

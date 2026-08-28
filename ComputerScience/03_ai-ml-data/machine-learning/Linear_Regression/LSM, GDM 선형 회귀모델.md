@@ -19,9 +19,11 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Simple Linear Regression
 
 ### 데이터셋 로딩 및 전처리
+
 - kc_house_data: 미국 워싱턴주 시애틀 지역의 주택 가격 데이터를 포함한 공개 데이터셋
 - **price: 주택의 판매 가격 (종속 변수, 목표 값).**
 - **sqft_living: 주택의 실내 면적 (평방 피트).**
@@ -80,22 +82,31 @@ X_test: (4323, 1), Y_test: (4323, 1)
 ## Least Square Method 기반 선형 회귀 모델 작성
 
 - 크기를 입력 받고 모두 1로 채워진 행렬 생성:
+
   ```python
   arr = np.ones(size)
   ```
+
 - 2개 이상 행렬을 가로로 쌓기:
+
   ```python
   arr = np.hstack([a, b])
   ```
+
 - 행렬 곱 (dot product):
+
   ```python
   arr = np.dot(a, b)
   ```
+
 - 전치 행렬:
+
   ```python
   arr = a.T
   ```
+
 - 역 행렬:
+
   ```python
   arr = np.linalg.inv(a)
   ```
@@ -103,7 +114,7 @@ X_test: (4323, 1), Y_test: (4323, 1)
 - Least Square Method:
 $$\theta = (X^T \cdot X)^{-1} \cdot (X^T \cdot Y)$$
 
->[!important] 
+>[!important]
 > 최소제곱법은 데이터의 잔차 제곱합을 최소화하여 최적의 파라미터를 찾는 방법입니다.
 
 >[!warning]
@@ -164,7 +175,7 @@ class LinearRegression_LSM():
         return pred
 ```
 
-###  X_train, Y_train 데이터를 이용한 linear regression 수행 (학습)
+### X_train, Y_train 데이터를 이용한 linear regression 수행 (학습)
 
 ```python
 model_LSM = LinearRegression_LSM()
@@ -172,10 +183,12 @@ theta = model_LSM.fit(X_train, Y_train)
 
 print(f"W = {theta[0]}, b = {theta[1]}")
 ```
+
 >[!success]
 >W = [0.70406843], b = [0.00267388]
 
 ### X_test, Y_test 데이터를 이용한 linear regression 성능 검증 (테스트)
+
 ```python
 Y_pred = model_LSM.predict(X_test)
 
@@ -192,6 +205,7 @@ plt.show()
 ><!-- 원본 이미지 없음: 3-1_machine-learning__Pasted image 20250421120853.png -->
 
 ---
+
 ## Gradient Descent Method 기반 선형 회귀 모델 작성
 
 - **Parameters:**
@@ -283,13 +297,16 @@ class LinearRegression_GDM():
 ```
 
 ### 학습
+
 ```python
 model_GDM = LinearRegression_GDM(iteration=1000, learning_rate=0.1)
 theta = model_GDM.fit(X_train, Y_train)
 
 print(f"W = {theta[0]}, b = {theta[1]}")
 ```
+
 ### 성능 검증
+
 ```python
 Y_pred = model_GDM.predict(X_test)
 

@@ -21,8 +21,9 @@ updated: '2026-05-05'
 
 ---
 
-**Quiz #1:** 
+**Quiz #1:**
 spring은 java 기반 웹 애플리케이션을 만들 수 있는 framework입니다. 이번 학기 우리가 배우는 ( )는 복잡한 설정 없이 spring 개발을 할 수 있도록 도와줍니다. 괄호 안에 뭐가 들어갈까요?
+
 - (1) php
 - (2) jsp
 - (3) node.js
@@ -32,8 +33,9 @@ spring은 java 기반 웹 애플리케이션을 만들 수 있는 framework입�
 
 ---
 
-**Quiz #2:** 
+**Quiz #2:**
 front-end VS back-end 구분하세요.
+
 - html
 - spring boot
 - javascript
@@ -44,12 +46,14 @@ front-end VS back-end 구분하세요.
 - django
 
 **정답:**
+
 - Front-end: html, javascript, css
 - Back-end: spring boot, php, jsp, node.js, django
 
 ---
 
 **Quiz #3:** OX 문제
+
 1) spring boot를 개발하려면 꼭 jdk를 설치해야 한다. (O)
 2) spring boot를 개발하려면 꼭 eclipse를 설치해야 한다. (X)
 3) python웹 및 go웹은 백엔드 아니고 프론트엔드이다. (X)
@@ -57,10 +61,11 @@ front-end VS back-end 구분하세요.
 
 ---
 
-**Quiz #4:** 
+**Quiz #4:**
 2장에서 우리가 설치한 두 가지가 무엇이며, 각각 왜 설치했는지 설명하세요.
 (jdk와 이클립스 설치했음)
 
 **정답:**
+
 - JDK(Java Development Kit): 자바 언어로 프로그램을 개발하고 실행할 수 있도록 필요한 도구들을 제공하는 개발 키트입니다. Spring Boot 프레임워크를 사용하기 위해서는 Java 개발 환경이 필요하므로 JDK를 설치했습니다.
 - 이클립스(Eclipse): 통합 개발 환경(IDE)으로, Java 프로그래밍을 위한 코드 편집, 디버깅, 컴파일 등의 기능을 제공합니다. Spring Boot 프로젝트를 효율적으로 관리하고 개발하기 위해 이클립스를 설치했습니다.

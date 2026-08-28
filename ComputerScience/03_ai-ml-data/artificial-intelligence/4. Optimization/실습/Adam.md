@@ -26,26 +26,31 @@ Adam(Adaptive Moment Estimation)은 경사 하강법 최적화 알고리즘의 �
 Adam은 다음과 같은 식으로 계산됩니다.
 
 1. 모멘텀(momentum) 계산:
+
 $$
 v_t = \beta_1 v_{t-1} + (1 - \beta_1) \nabla J(\theta_t)
 $$
-2. RMSProp 계산:
+1. RMSProp 계산:
+
 $$
 s_t = \beta_2 s_{t-1} + (1 - \beta_2) (\nabla J(\theta_t))^2
 $$
-3. 보정된 모멘텀(momentum) 및 RMSProp 계산:
+1. 보정된 모멘텀(momentum) 및 RMSProp 계산:
+
 $$
 \hat{v}_t = \frac{v_t}{1 - \beta_1^t}
 $$
 $$
 \hat{s}_t = \frac{s_t}{1 - \beta_2^t}
 $$
-4. 매개변수 업데이트:
+1. 매개변수 업데이트:
+
 $$
 \theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{\hat{s}_t} + \epsilon} \hat{v}_t
 $$
 
 여기서,
+
 - $v_t$는 시간 $t$에서의 모멘텀 벡터입니다.
 - $s_t$는 시간 $t$에서의 RMSProp 벡터입니다.
 - $\beta_1$은 모멘텀(momentum)의 지수 감소 비율입니다.

@@ -44,6 +44,7 @@ week: '6'
 GitHub 저장소에서 직접 실행되는 **자동화 플랫폼**으로, 개발 워크플로우를 저장소 내에서 이벤트 기반으로 자동 실행한다.
 
 **주요 용도:**
+
 - CI/CD (지속적 통합/배포)
 - 테스트 자동화
 - 코드 품질 체크
@@ -54,6 +55,7 @@ GitHub 저장소에서 직접 실행되는 **자동화 플랫폼**으로, 개발
 ### 왜 GitHub Actions인가?
 
 **주요 장점:**
+
 - GitHub 네이티브 통합
 - Public 레포 무료
 - 강력한 Marketplace 생태계
@@ -62,7 +64,7 @@ GitHub 저장소에서 직접 실행되는 **자동화 플랫폼**으로, 개발
 - 간단한 YAML 설정
 
 | 기능 | GitHub Actions | Jenkins | GitLab CI | CircleCI |
-|------|---------------|---------|-----------|----------|
+| ------ | --------------- | --------- | ----------- | ---------- |
 | 설정 난이도 | 매우 쉬움 | 복잡 | 쉬움 | 쉬움 |
 | 호스팅 | GitHub 제공 | 자체 호스팅 | GitLab 제공 | 클라우드 |
 | 가격 | 무료* | 무료 | 무료* | 무료* |
@@ -97,7 +99,7 @@ jobs:                       # 작업 정의
 **각 키워드 설명:**
 
 | 키워드 | 설명 |
-|--------|------|
+| -------- | ------ |
 | `name` | 워크플로우 식별 이름 |
 | `on` | 이벤트 트리거 (push, pull_request, schedule, workflow_dispatch, release, issues 등) |
 | `jobs` | 작업 정의 집합, 기본 병렬 실행 |
@@ -107,7 +109,7 @@ jobs:                       # 작업 정의
 ### Event (이벤트) 트리거 종류
 
 | 이벤트 | 설명 |
-|-------|------|
+| ------- | ------ |
 | `push` | 코드 커밋을 저장소에 푸시하거나 태그를 푸시할 때. 가장 기본적인 CI 트리거 |
 | `pull_request` | PR이 생성되거나 업데이트될 때. 코드 리뷰 전 자동 테스트 |
 | `schedule` | POSIX cron 구문으로 주기적 실행 |
@@ -118,21 +120,25 @@ jobs:                       # 작업 정의
 ### Job & Runner
 
 **Job** — 워크플로우 내 독립적 작업 단위
+
 - 기본 병렬 실행
 - `needs`로 순차 실행 가능
 - 별도 Runner에서 실행
 
 **Runner** — Job을 실제로 실행하는 서버 환경
+
 - **GitHub-hosted**: `ubuntu-latest`, `windows-latest`, `macos-latest`
 - **Self-hosted**: 자체 서버 사용
 
 ### Step vs Action
 
 **Step** — Job 내 순차 실행 개별 작업 단위
+
 - `uses`: 외부 Action 사용
 - `run`: 셸 명령 실행
 
 **Action** — 복잡한 작업을 캡슐화한 재사용 가능 단위 (Plugin)
+
 - Public Actions (Marketplace)
 - Private Actions
 - Docker Container Actions
@@ -693,15 +699,19 @@ jobs:
 ## 핵심 요약
 
 ### Workflow Structure
+
 Event(트리거) + Jobs(작업) + Steps(단계)의 계층 구조를 명확히 이해해야 한다.
 
 ### Checkout First
+
 대부분의 작업에서 `actions/checkout@v3`는 필수적인 첫 단계이다.
 
 ### Security First
+
 API 키나 토큰은 절대 코드에 하드코딩하지 말고 `Secrets`를 사용한다.
 
 ### Matrix Builds
+
 다양한 OS와 언어 버전에서 동시에 테스트하여 호환성을 확보한다.
 
 ### Best Practices

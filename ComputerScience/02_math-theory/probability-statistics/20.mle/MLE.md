@@ -71,7 +71,7 @@ $$
 
 $$
 LL(\theta) = \sum_{i=1}^n \log p^{x_i}(1-p)^{1-x_i}$$
-$$= \sum_{i=1}^n x_i (\log p) + (1 - x_i) \log(1-p)$$ 
+$$= \sum_{i=1}^n x_i (\log p) + (1 - x_i) \log(1-p)$$
 $$= Y \log p + (n - Y) \log(1-p)
 $$
 

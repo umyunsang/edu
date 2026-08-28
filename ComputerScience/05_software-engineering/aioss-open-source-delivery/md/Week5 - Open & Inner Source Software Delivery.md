@@ -110,7 +110,7 @@ Q1. 상업적 사용 허용?
 #### Permissive 라이선스 (소스 공개 의무 없음)
 
 | License | 특징 | 대표 사례 |
-|---------|------|----------|
+| --------- | ------ | ---------- |
 | **MIT** | 가장 널리 사용, 상업적 사용/수정/배포 자유, 라이선스 고지 필수 | React, Vue.js, Node.js, jQuery |
 | **Apache 2.0** | MIT 유사 + 특허 보호 포함, 상표권 제한, CLA 연계 | Android, Kubernetes, TensorFlow |
 | **BSD** | 극도로 간결, 제약 최소화 (2-Clause/3-Clause), 학술 연구 유래 | FreeBSD, Django, Flask, Nginx |
@@ -120,7 +120,7 @@ Q1. 상업적 사용 허용?
 #### Copyleft 라이선스 (강한 공유)
 
 | License | 특징 | 대표 사례 |
-|---------|------|----------|
+| --------- | ------ | ---------- |
 | **GPL** | 상업적 사용/수정/배포 가능, 수정 시 전체 소스 공개 의무, 파생 저작물도 GPL 전염 | Linux Kernel (v2), GNU Tools (v3) |
 | **LGPL** | GPL보다 조건 완화, 동적 링크 시 소스 공개 불필요, 라이브러리 자체 수정 시엔 공개 | Qt (일부 모듈), GTK+ |
 | **AGPL** | GPL보다 가장 강력한 제약, 네트워크 서비스(SaaS) 시에도 공개 의무 | MongoDB (과거 버전), Nextcloud |
@@ -130,11 +130,13 @@ Q1. 상업적 사용 허용?
 #### 기타 라이선스
 
 **MPL (Mozilla Public License)**
+
 - Permissive와 Copyleft의 중간 지점
 - **파일 단위 공개:** 수정한 파일만 공개하면 되고, 나머지는 자유
 - 대표 사례: Firefox, Thunderbird, LibreOffice
 
 **Creative Commons (CC)**
+
 - 소프트웨어 코드가 아닌 **문서/이미지/디자인 등 콘텐츠용** 라이선스
 - **CC0:** Public Domain (저작권 포기)
 - **CC-BY:** 저작자 표시
@@ -185,12 +187,14 @@ README.md에 포함할 핵심 섹션:
 ### 문서화: 기여 가이드 및 행동 강령
 
 **CONTRIBUTING.md** — 기여 프로세스 안내 문서:
+
 - Fork & Clone 방법
 - 브랜치 전략 (예: `feature/`, `fix/` 접두사)
 - 커밋 메시지 컨벤션 (Conventional Commits 등)
 - PR 생성 절차 및 템플릿
 
 **Code of Conduct** — 행동 강령:
+
 - 긍정적 행동 장려 (환영, 존중, 포용)
 - 부정적 행동 금지 (괴롭힘, 차별, 비하)
 - **Contributor Covenant** 표준 채택 권장
@@ -206,7 +210,7 @@ README.md에 포함할 핵심 섹션:
 #### 코드 기여
 
 | 유형 | 설명 |
-|------|------|
+| ------ | ------ |
 | **버그 수정 (Bug Fixes)** | 초보자가 시작하기 좋은 영역, 재현 가능한 버그를 찾아 수정 |
 | **기능 추가 (New Features)** | Proposal 단계부터 시작, 메인테이너와 사전 논의 권장 |
 | **성능 개선 (Performance)** | 알고리즘/메모리/리소스 최적화 |
@@ -250,6 +254,7 @@ label:"good first issue" is:issue is:open
 ```
 
 추천 큐레이션 사이트:
+
 - **Good First Issue** — [goodfirstissue.dev](https://goodfirstissue.dev)
 - **First Contributions** — [firstcontributions.github.io](https://firstcontributions.github.io)
 - **Up For Grabs** — [up-for-grabs.net](https://up-for-grabs.net)
@@ -319,7 +324,7 @@ Fixes #123
 ### Inner Source vs Open Source
 
 | 측면 | Open Source | Inner Source |
-|------|------------|-------------|
+| ------ | ------------ | ------------- |
 | **가시성** | 전 세계 공개 (Public) | 조직 내부만 (Private/Internal) |
 | **기여자** | 누구나 참여 가능 | 조직 구성원 (Employees) |
 | **라이선스** | OSS 라이선스 (MIT, GPL 등) | 내부 정책 및 보안 규정 |
@@ -329,19 +334,23 @@ Fixes #123
 ### Inner Source 이점
 
 **빠른 혁신**
+
 - 부서 간 장벽 제거
 - 코드 재사용성 증가
 - 시장 출시 시간 단축
 
 **협업 문화**
+
 - 지식 공유 및 멘토링 활성화
 - 사일로(Silo) 방지
 
 **품질 향상**
+
 - 공개적 코드 리뷰를 통한 품질 보증
 - 베스트 프랙티스 전파
 
 **인재 육성**
+
 - 다양한 내부 프로젝트 참여 기회
 - 오픈소스 방식의 개발 경험
 
@@ -357,7 +366,7 @@ Fixes #123
 #### 2. 도구 준비
 
 | 영역 | 도구 예시 |
-|------|----------|
+| ------ | ---------- |
 | VCS & Collaboration | GitHub Enterprise, GitLab |
 | Internal Package Registry | npm, Maven, PyPI 사설 레지스트리 |
 | CI/CD Pipeline | GitHub Actions, Jenkins |
@@ -366,16 +375,19 @@ Fixes #123
 #### 3. 가이드라인
 
 **기여 프로세스:**
+
 - 명확한 이슈/PR 템플릿
 - 브랜치 전략 표준화
 - 커밋 메시지 규칙 (Conventional Commits)
 
 **코드 리뷰 기준:**
+
 - 린트/스타일 자동화 (ESLint, Prettier 등)
 - 필수 리뷰어 지정 (CODEOWNERS)
 - 테스트 커버리지 준수
 
 **라이선스/보안:**
+
 - 내부 라이선스 정책 수립
 - 의존성 패키지 보안 스캔 (Dependabot, Snyk)
 - Secret 키 포함 여부 점검
@@ -383,7 +395,7 @@ Fixes #123
 #### 4. 인센티브
 
 | 유형 | 내용 |
-|------|------|
+| ------ | ------ |
 | **기여 인정 (Recognition)** | 공개적 칭찬, '이달의 기여자' 선정 |
 | **커리어 발전 (Career)** | 인사 평가 반영, 포트폴리오 활용 |
 | **학습 기회 (Learning)** | 기술 컨퍼런스 참가, 외부 전문가 멘토링 |
@@ -398,13 +410,14 @@ Fixes #123
 OSS 기여 조직 vs 비기여 조직 비교 (State of DevOps Report):
 
 | 지표 | 개선 효과 |
-|------|----------|
+| ------ | ---------- |
 | **Lead Time for Changes** | **1.75x** 더 빠름 |
 | **Deployment Frequency** | **1.5x** 더 자주 배포 |
 | **Time to Restore** | **1.5x** 복구 속도 향상 |
 | **Change Failure Rate** | **-20%** 장애율 감소 |
 
 **비즈니스 성과:**
+
 - Time-to-Market 획기적 단축
 - 고객 피드백 반영 속도 증가
 - 개발자 경험(DX) 개선

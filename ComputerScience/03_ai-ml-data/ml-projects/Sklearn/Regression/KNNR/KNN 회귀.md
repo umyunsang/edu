@@ -19,9 +19,11 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # 농어(length, weight) 데이터 분석 및 회귀 모델 비교
 
 ## 데이터 시각화
+
 농어의 길이와 무게 데이터를 시각화하여 데이터의 분포를 확인합니다.
 
 ```python
@@ -40,6 +42,7 @@ plt.show()
 ```
 
 ## 훈련 세트와 테스트 세트로 데이터 분리
+
 데이터를 훈련 세트와 테스트 세트로 분리합니다.
 
 ```python
@@ -53,6 +56,7 @@ test_input = test_input.reshape(-1, 1)
 ## KNN 회귀 모델
 
 ### 모델 생성 및 학습
+
 KNN 회귀 모델을 생성하고 학습시킵니다.
 
 ```python
@@ -63,6 +67,7 @@ knr.fit(train_input, train_target)
 ```
 
 ### 모델 평가
+
 모델의 $R^2$ 점수를 통해 평가합니다.
 
 ```python
@@ -71,6 +76,7 @@ print(f"R^2 score: {score}")
 ```
 
 ### 예측 및 MAE 계산
+
 예측값과 실제값의 차이를 MAE(평균 절대 오차)로 계산합니다.
 
 ```python
@@ -82,6 +88,7 @@ print(f"Mean Absolute Error: {mae}")
 ```
 
 ### 과대 적합, 과소 적합 확인
+
 훈련 세트와 테스트 세트의 $R^2$ 점수를 비교하여 과대 적합 및 과소 적합 여부를 확인합니다.
 
 ```python
@@ -90,6 +97,7 @@ print(f"Test R^2 score: {knr.score(test_input, test_target)}")
 ```
 
 ### 이웃 수 변경
+
 이웃 수를 3으로 설정하여 과소 적합을 해결합니다.
 
 ```python
@@ -100,6 +108,7 @@ print(f"Test R^2 score (k=3): {knr.score(test_input, test_target)}")
 ```
 
 ### 회귀의 한계 확인
+
 모델이 입력값의 범위를 벗어난 경우 예측 결과를 확인합니다.
 
 ```python
@@ -109,6 +118,7 @@ print(f"Predicted weight for length 100 cm: {knr.predict([[100]])}")
 ## 선형 회귀 모델
 
 ### 모델 생성 및 학습
+
 선형 회귀 모델을 생성하고 학습시킵니다.
 
 ```python
@@ -121,6 +131,7 @@ print(f"Linear Regression Coefficients: {lr.coef_}, Intercept: {lr.intercept_}")
 ```
 
 ### 선형 회귀 결과 시각화
+
 선형 회귀 결과를 시각화합니다.
 
 ```python
@@ -133,6 +144,7 @@ plt.show()
 ```
 
 ### 모델 평가
+
 선형 회귀 모델의 $R^2$ 점수를 통해 평가합니다.
 
 ```python
@@ -143,6 +155,7 @@ print(f"Test R^2 score (Linear Regression): {lr.score(test_input, test_target)}"
 ## 2차 다항 회귀 모델
 
 ### 데이터 변환
+
 2차 다항 회귀를 위해 데이터를 변환합니다.
 
 ```python
@@ -151,6 +164,7 @@ test_poly = np.column_stack((test_input ** 2, test_input))
 ```
 
 ### 모델 생성 및 학습
+
 2차 다항 회귀 모델을 생성하고 학습시킵니다.
 
 ```python
@@ -161,6 +175,7 @@ print(f"Polynomial Regression Coefficients: {lr.coef_}, Intercept: {lr.intercept
 ```
 
 ### 다항 회귀 결과 시각화
+
 2차 다항 회귀 결과를 시각화합니다.
 
 ```python
@@ -174,6 +189,7 @@ plt.show()
 ```
 
 ### 모델 평가
+
 2차 다항 회귀 모델의 $R^2$ 점수를 통해 평가합니다.
 
 ```python

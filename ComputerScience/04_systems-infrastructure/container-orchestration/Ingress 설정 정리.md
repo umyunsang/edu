@@ -20,6 +20,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ### **Ingress 설정 정리**
 
 ### 1. **Ingress-NGINX 설치**
@@ -165,11 +166,11 @@ kubectl describe ing myingress   # 상세 정보 확인
 #### 4.1. **호스트 파일 수정**
 
 - **Windows**: `C:\Windows\System32\drivers\etc\hosts`
-    
+
 - **Linux/Mac**: `/etc/hosts`
-    
+
 - 파일의 **마지막 줄**에 다음 내용 추가:
-    
+
 ```
 192.168.11.231 www.uys1998.com www.guru2025.co.kr
 ```
@@ -181,9 +182,9 @@ kubectl describe ing myingress   # 상세 정보 확인
 ### 5. **Ingress 동작 확인**
 
 - **URL 접속**:
-    - [http://www.uys1998.com](http://www.uys1998.com/) → 기본 `nginx-main`
-    - [http://www.uys1998.com/blue](http://www.uys1998.com/blue) → `nginx-blue`
-    - [http://www.uys1998.com/green](http://www.uys1998.com/green) → `nginx-green`
-    - [http://www.guru2025.co.kr](http://www.guru2025.co.kr/) → `httpd-main`
+  - [http://www.uys1998.com](http://www.uys1998.com/) → 기본 `nginx-main`
+  - [http://www.uys1998.com/blue](http://www.uys1998.com/blue) → `nginx-blue`
+  - [http://www.uys1998.com/green](http://www.uys1998.com/green) → `nginx-green`
+  - [http://www.guru2025.co.kr](http://www.guru2025.co.kr/) → `httpd-main`
 
 ---

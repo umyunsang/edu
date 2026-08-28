@@ -21,8 +21,9 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Batch Normalization
-	MLP 재정의 : self.bn = nn.BatchNorm1d(100) 추가
+ MLP 재정의 : self.bn = nn.BatchNorm1d(100) 추가
 
 ```python
 import torch
@@ -110,6 +111,7 @@ torch.save(network.state_dict(), "../../Backpropagation/Vanishing Gradient/mlp_m
 ```
 
 # 결과값
+
 Epoch: 100 Loss = 0.037444
 Learning finished
 Accuracy: 0.805400013923645

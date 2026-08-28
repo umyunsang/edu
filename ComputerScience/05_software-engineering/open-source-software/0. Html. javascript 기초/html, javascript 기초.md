@@ -19,6 +19,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # QUIZ.1
 
 ```html
@@ -51,7 +52,8 @@ updated: '2026-05-05'
 </html>
 ```
 
-#### 주요 설명:
+#### 주요 설명
+
 1. **function checkAnswers()**: 함수 선언. 사용자가 퀴즈를 제출할 때 실행되는 함수.
 2. **let score = 0;**: 퀴즈 점수를 저장할 변수를 선언하고 초기값으로 0을 지정.
 3. **document.getElementById('a1').value.trim()**:
@@ -62,9 +64,11 @@ updated: '2026-05-05'
 5. **document.getElementById('result').textContent**: `result`라는 id를 가진 요소의 내용을 변경하여 점수를 표시.
 
 ---
+
 ### `.value` vs `.textContent` 비교
 
 #### 1. `.value`
+
 - **용도**: 주로 **`input`**, **`textarea`** 같은 **입력 요소의 값**을 가져오거나 설정할 때 사용.
 - **적용 대상**: `<input>`, `<textarea>`, `<select>`와 같은 사용자 입력을 받는 요소들.
 - **읽기/쓰기 가능**: 사용자가 입력한 값을 읽거나 수정할 수 있음.
@@ -76,6 +80,7 @@ let userInput = document.getElementById('a1').value;
 위 코드에서 `.value`는 사용자가 `<input>` 필드에 입력한 값을 가져옵니다.
 
 #### 2. `.textContent`
+
 - **용도**: 요소의 **텍스트 내용을 가져오거나 설정**할 때 사용.
 - **적용 대상**: 주로 **일반적인 HTML 요소들**(`<div>`, `<span>`, `<p>`, `<h1>`, `<h3>` 등)에 적용. 해당 요소 내부의 텍스트 내용을 가져오거나 설정함.
 - **읽기/쓰기 가능**: 요소의 텍스트 내용을 읽고 수정할 수 있음.
@@ -87,14 +92,17 @@ document.getElementById('result').textContent = "점수: 3개";
 위 코드에서 `.textContent`는 `<h3>` 요소의 텍스트 내용을 변경하여 화면에 표시합니다.
 
 ---
+
 ### 1. **`let` 키워드**
 
 - **변경 가능성**: `let`으로 선언한 변수는 재할당이 가능합니다. 즉, 변수를 초기화한 후에 다른 값으로 변경할 수 있습니다.
+
 ### 2. **`const` 키워드**
 
 - **변경 불가능성**: `const`로 선언된 변수는 재할당이 불가능합니다. 한 번 값을 할당하면, 이후에 값을 변경할 수 없습니다.
 
 ---
+
 # who.html
 
 ```html
@@ -131,6 +139,7 @@ document.getElementById('result').textContent = "점수: 3개";
 </body>
 </html>
 ```
+
 - **`<input type="text" id="who">`**: 사용자가 텍스트를 입력할 수 있는 입력 필드입니다. 여기서 사용자가 입력한 값에 따라 특정 이미지를 변경하게 됩니다.
 - **`<button onclick="showImage()">사진</button>`**: "사진" 버튼을 클릭하면 `showImage()` 함수가 실행됩니다.
 - **`<img id="image" src="static/나는.png" alt="사진을 가져오지 못했습니다.">`**: 초기 이미지를 표시하는 요소입니다. `id="image"`는 자바스크립트에서 이 요소에 접근할 수 있도록 해줍니다. `src` 속성은 이미지 파일의 경로를 지정하며, `alt` 속성은 이미지를 불러올 수 없을 때 대신 표시될 텍스트를 정의합니다.
@@ -154,12 +163,13 @@ image.src = 'static/쏘리.png'; }
 ```
 
 - **조건문**: 사용자가 입력한 값(`who`)에 따라 `image` 요소의 `src` 속성을 변경합니다.
-    - `who`가 "당근" 또는 "당"일 경우 `image.src = 'static/당근.png'`로 설정하여 "당근" 이미지로 변경합니다.
-    - `who`가 "양파" 또는 "양"일 경우 `image.src = 'static/양파.png'`로 설정합니다.
-    - `who`가 "식빵" 또는 "식"일 경우 `image.src = 'static/식빵.png'`로 설정합니다.
-    - 위의 조건에 맞지 않으면 `image.src = 'static/쏘리.png'`로 설정하여 기본적으로 "쏘리" 이미지를 표시합니다.
+  - `who`가 "당근" 또는 "당"일 경우 `image.src = 'static/당근.png'`로 설정하여 "당근" 이미지로 변경합니다.
+  - `who`가 "양파" 또는 "양"일 경우 `image.src = 'static/양파.png'`로 설정합니다.
+  - `who`가 "식빵" 또는 "식"일 경우 `image.src = 'static/식빵.png'`로 설정합니다.
+  - 위의 조건에 맞지 않으면 `image.src = 'static/쏘리.png'`로 설정하여 기본적으로 "쏘리" 이미지를 표시합니다.
 
 ---
+
 # ex3.js
 
 ```js
@@ -190,10 +200,13 @@ function calculate(op) {
 }
 
 ```
+
 ### 1. **`parseFloat()`**
+
 `parseFloat()` 함수는 문자열을 실수(float)로 변환하는 역할을 합니다. 문자열 안에 숫자 형식이 있을 경우, 그 숫자를 반환하며, 문자열에 포함된 숫자 외의 문자는 무시됩니다.
 
-#### 예시:
+#### 예시
+
 ```javascript
 parseFloat("123.45");    // 123.45
 parseFloat("123.45abc"); // 123.45 (문자 'abc'는 무시)
@@ -202,14 +215,17 @@ parseFloat("abc123.45"); // NaN (숫자가 앞에 없으므로 변환 불가)
 
 - **역할:** 문자열을 실수로 변환. 숫자가 포함된 문자열만을 처리하며, 숫자로 변환할 수 없는 경우 `NaN`을 반환합니다.
 
-#### 주의점:
+#### 주의점
+
 - `parseFloat()`은 정수도 변환할 수 있지만, 항상 실수로 처리합니다.
 - 숫자 이외의 문자가 뒤에 붙어있으면 그 문자는 무시되지만, 앞에 있으면 변환할 수 없습니다.
 
 ### 2. **`isNaN()`**
+
 `isNaN()` 함수는 주어진 값이 `NaN`(Not-a-Number)인지 확인하는 역할을 합니다. 이 함수는 숫자가 아닌 값이나, 숫자로 변환할 수 없는 값을 만나면 `true`를 반환합니다.
 
-#### 예시:
+#### 예시
+
 ```javascript
 isNaN(123);          // false (숫자이므로)
 isNaN("123");        // false (숫자로 변환 가능하므로)
@@ -220,11 +236,14 @@ isNaN(parseFloat("abc")); // true (변환 실패로 NaN 반환)
 
 - **역할:** 입력값이 숫자가 아닌지를 검사하여, `NaN`일 경우 `true`를 반환합니다.
 
-#### 주의점:
+#### 주의점
+
 - `isNaN()`은 숫자가 아닌 값인지 확인할 때만 사용해야 합니다. 예를 들어, `isNaN(null)`은 `false`를 반환합니다. 이는 자바스크립트의 암묵적 타입 변환으로 `null`이 `0`으로 변환되기 때문입니다.
 
 ---
+
 # ex4.js
+
 ```js
 let n, sum;
 
@@ -237,11 +256,13 @@ document.write("n + 100 ==> " + sum + "<hr>");
 sum = parseInt(n) + 100;
 document.write("정수변환n + 100 ==> " + sum + "<hr>");
 ```
+
 - `document.write()`는 HTML 문서에 실시간으로 내용을 출력합니다.
 - `prompt()`는 사용자의 입력을 받고, 그 결과는 문자열입니다.
 - 문자열과 숫자를 더하면 문자열 연결이 되고, `parseInt()`를 사용하면 문자열을 정수로 변환할 수 있습니다.
 
 # ex5.js
+
 ```js
 function changeColor() {
     const co = document.getElementById("co").value;
@@ -261,4 +282,5 @@ function changeColor() {
     else return true;
   }
 ```
+
 -

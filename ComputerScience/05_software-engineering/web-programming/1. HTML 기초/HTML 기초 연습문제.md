@@ -19,19 +19,21 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-#ComputerScience #웹프로그래밍 #기본태그 
+# ComputerScience #웹프로그래밍 #기본태그
 
 ---
+
 ### 웹프로그래밍의 종류
+
 - front - end
-	- HTML (CSS, JavaScript)
+ 	- HTML (CSS, JavaScript)
 - back - end (회사)
-	- PHP
-	- Python 웹
-	- Node.js 등등
+ 	- PHP
+ 	- Python 웹
+ 	- Node.js 등등
 - database (데이터 저장)
-	- SQL
-	- NoSQL
+ 	- SQL
+ 	- NoSQL
 
 ---
 
@@ -139,29 +141,32 @@ Quiz #8: 좌측 소스를 수정해서 우측 화면이 나오도록 하세요
 Quiz #9: <mark style="background: #FFB86CA6;">CSS 기초 문제입니다.</mark>
 
 (1) sony를 파란색으로 바꿔보세요. (id속성 이용)
+
 ```html
 <style>
-	#blue {color:blue}
+ #blue {color:blue}
 <body><td id="blue">sony</body>
 ```
+
 (2) sony외에 손흥민도 파란색으로 바꿔보세요. (class속성 이용)
+
 ```html
 <style>
-	.blue {color:blue}
+ .blue {color:blue}
 <body><td class="blue">손흥민</body>
 ```
 
 ---
 
 Quiz #10: 첫 과제!
-	(1) 좌측화면하고 최대한 똑같이 구현
-	(2) 타이틀에는 본인 학번 이름 
-	(3) form은 넣어도 되고 안 넣어도 무관 
-	(4) 테이블은 4행 4열입니다. 들어있는 내용은 개성있게 바꿔보세요.
-	(5) ID : 앞부분에  를 넣어서 ID, 이름, 학년, 내용 세로 줄 최대한 정렬되도록
-	(6) type= ”text” 박스 크기 조절은 size=50 이런 식으로 속성 넣어주시면 됩니다. 
-	(7) 맨 마지막 라인(이상 2주차...) 진하게
-	
+ (1) 좌측화면하고 최대한 똑같이 구현
+ (2) 타이틀에는 본인 학번 이름
+ (3) form은 넣어도 되고 안 넣어도 무관
+ (4) 테이블은 4행 4열입니다. 들어있는 내용은 개성있게 바꿔보세요.
+ (5) ID : 앞부분에  를 넣어서 ID, 이름, 학년, 내용 세로 줄 최대한 정렬되도록
+ (6) type= ”text” 박스 크기 조절은 size=50 이런 식으로 속성 넣어주시면 됩니다.
+ (7) 맨 마지막 라인(이상 2주차...) 진하게
+ 
 ```html
 <!DOCTYPE html>
 <html>

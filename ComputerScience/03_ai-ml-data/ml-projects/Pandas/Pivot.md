@@ -36,6 +36,7 @@ print(df)
 ```
 
 출력:
+
 ```
     상품  재질      가격
 0  시계   금  500000
@@ -60,6 +61,7 @@ print(new_df)
 ```
 
 출력:
+
 ```
 재질       금      백금       은
 상품                            
@@ -94,6 +96,7 @@ df_2 = pd.DataFrame({
 각 DataFrame의 내용을 출력해 봅니다.
 
 출력 `df_1`:
+
 ```
      A   B   C
 가  a10 b10 c10
@@ -102,6 +105,7 @@ df_2 = pd.DataFrame({
 ```
 
 출력 `df_2`:
+
 ```
      B   C   D
 다  b23 c23 d23
@@ -122,6 +126,7 @@ print(df_3)
 ```
 
 출력:
+
 ```
       A    B    C    D
 가    a10  b10  c10  NaN
@@ -145,6 +150,7 @@ print(df_4)
 ```
 
 출력:
+
 ```
       B    C
 가    b10  c10
@@ -177,6 +183,7 @@ print('inner \n', df_1.merge(df_2, how='inner', on='B'))
 ```
 
 출력:
+
 ```
 left outer 
      A   B   C_x   C_y    D

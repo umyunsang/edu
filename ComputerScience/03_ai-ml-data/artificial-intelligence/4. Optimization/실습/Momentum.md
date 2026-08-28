@@ -34,6 +34,7 @@ v_t &= \beta v_{t-1} + \alpha \nabla J(\theta_t) \\
 $$
 
 여기서,
+
 - $v_t$는 시간 $t$에서의 모멘텀(momentum) 벡터입니다.
 - $\beta$ 는 모멘텀 상수(momentum coefficient)로, 일반적으로 0.9와 같은 값으로 설정됩니다.
 - $\alpha$ 는 학습률(learning rate)입니다.

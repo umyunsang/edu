@@ -20,7 +20,9 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ### Website testing 문제
+
 ```
 Quiz: Website testing
 - 100 people are presented with a new wesite design.
@@ -30,6 +32,7 @@ Quiz: Website testing
 
 What is P(CEO endorses change)? Give a numerical approximation.
 ```
+
 **방법 1: 이항 분포**
 
 $X$를 사이트에서 시간이 증가한 사람들의 수로 정의합니다. 우리는 $X$가 $n=100$ (시도 횟수)와 $p=0.5$ (성공 확률 - 이 경우 사이트를 더 잘 만드는 새로운 디자인이 시간을 더 많이 보내도록 만드는 확률)인 이항 분포를 따른다는 것을 알고 있습니다.
@@ -55,18 +58,21 @@ $$P(X < 65) = \sum_{x=0}^{64} \binom{100}{x} (0.5)^x (0.5)^{100-x}$$
 $$P(X \geq 65) = 1 - P\left(Z < \frac{65 - \mu}{\sigma}\right)$$
 
 여기서 $Z$는 표준 정규 분포를 나타냅니다. $\mu = 50$, $\sigma = 5$로 대입하여 $P(X \geq 65)$를 계산할 수 있습니다.
+
 ### Continuity correction
+
 두 번째 방법의 결과가 첫 번째 방법의 결과와 살짝 다를 수 있는 이유는 연속성 수정(Continuity correction) 때문입니다.
 
 연속성 수정은 이항 분포를 정규 분포로 근사할 때, 이산적인 이항 분포를 연속적인 정규 분포로 근사하는 과정에서 발생하는 근사 오차를 보정하는데 사용됩니다. 이 항상 정확하지는 않지만, 일반적으로 좀 더 정확한 근사를 제공합니다.
 
-첫 번째 방법에서는 이항 분포를 정확하게 사용하여 $P(X \geq 65)$를 계산합니다. 하지만 두 번째 방법에서는 정규 분포를 사용하여 이항 분포를 근사하므로 연속성 수정을 적용해야 합니다. 
+첫 번째 방법에서는 이항 분포를 정확하게 사용하여 $P(X \geq 65)$를 계산합니다. 하지만 두 번째 방법에서는 정규 분포를 사용하여 이항 분포를 근사하므로 연속성 수정을 적용해야 합니다.
 
 연속성 수정을 적용하면 $X \geq 65$를 $X > 64.5$로 취급합니다. 즉, 이항 분포의 확률을 정규 분포의 확률로 근사할 때, 64.5와 같은 연속적인 값을 기준으로 하여 계산을 합니다.
 
 따라서 두 번째 방법에서는 $P(X \geq 65)$를 $P(X > 64.5)$로 근사하여 계산하므로, 조금 다른 결과를 얻을 수 있습니다.
 
 ---
+
 ### Hello dice rolls, my old friends
 
 ```
@@ -87,6 +93,7 @@ sixes : 3
 $$P(X_1=k_1, X_2=k_2, ..., X_r=k_r)=\frac{{n!}}{{k_1!\cdot k_2!\cdot ...\cdot k_r!}}\cdot p_1^{k_1}\cdot p_2^{k_2}\cdot ...\cdot p_r^{k_r}$$
 
 여기서,
+
 - $n$은 시행 횟수입니다. (주사위를 던지는 횟수)
 - $r$은 카테고리의 수입니다. (주사위의 면의 수)
 - $X_i$는 $i$번째 카테고리의 발생 횟수입니다.
@@ -99,18 +106,18 @@ $$P(X_1=k_1, X_2=k_2, ..., X_r=k_r)=\frac{{n!}}{{k_1!\cdot k_2!\cdot ...\cdot k_
 
 주어진 문제에서의 다항 분포의 확률을 계산하면 다음과 같습니다:
 
-	$P=\frac{{7!}}{{1!\cdot 1!\cdot 0!\cdot 2!\cdot 0!\cdot 3!}}\cdot \left(\frac{1}{6}\right)^1\cdot \left(\frac{1}{6}\right)^1\cdot \left(\frac{1}{6}\right)^0\cdot \left(\frac{1}{6}\right)^2\cdot \left(\frac{1}{6}\right)^0\cdot \left(\frac{1}{6}\right)^3$
-	
-	$P=\frac{{7!}}{{1!\cdot 1!\cdot 2!\cdot 3!}}\cdot \left(\frac{1}{6}\right)^7$
-	
-	$P=\frac{{7!}}{{1\cdot 1\cdot 2\cdot 3\cdot 720}}\cdot \frac{1}{{6^7}}$
-	
-	$P=\frac{{5040}}{{2\cdot 6^7}}$
-	
-	$P=\frac{{5040}}{{2\cdot 279936}}$
-	
-	$P=\frac{{5040}}{{559872}}$
-	
-	$P≈0.0090$
+ $P=\frac{{7!}}{{1!\cdot 1!\cdot 0!\cdot 2!\cdot 0!\cdot 3!}}\cdot \left(\frac{1}{6}\right)^1\cdot \left(\frac{1}{6}\right)^1\cdot \left(\frac{1}{6}\right)^0\cdot \left(\frac{1}{6}\right)^2\cdot \left(\frac{1}{6}\right)^0\cdot \left(\frac{1}{6}\right)^3$
+ 
+ $P=\frac{{7!}}{{1!\cdot 1!\cdot 2!\cdot 3!}}\cdot \left(\frac{1}{6}\right)^7$
+ 
+ $P=\frac{{7!}}{{1\cdot 1\cdot 2\cdot 3\cdot 720}}\cdot \frac{1}{{6^7}}$
+ 
+ $P=\frac{{5040}}{{2\cdot 6^7}}$
+ 
+ $P=\frac{{5040}}{{2\cdot 279936}}$
+ 
+ $P=\frac{{5040}}{{559872}}$
+ 
+ $P≈0.0090$
 
 따라서, 주어진 확률은 약 0.0090 또는 약 0.90%입니다.

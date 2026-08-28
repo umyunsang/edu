@@ -22,24 +22,27 @@ updated: '2026-05-05'
 # DAU_CSE408_Pandas,_Geopandas
 
 # 동아대학교 컴퓨터AI공학부
+
 ## CSE408: 빅데이터 분석
 
 이번 프로그램에서는 Colab환경에서 로컬모드로 [Apache Spark](https://spark.apache.org)을 사용하는 방법을 배웁니다.
 
-Credits 은 천세진(sjchun@dau.ac.kr)에 있습니다
+Credits 은 천세진(<sjchun@dau.ac.kr>)에 있습니다
 
-# 목적: 본 자료는 빅데이터분석의 수업진행을 위한 기초 부분입니다. 
+# 목적: 본 자료는 빅데이터분석의 수업진행을 위한 기초 부분입니다
+
 해당 예제를 통해서 여러분과 관련된 다양한 형태로 변화/발전 시키는 것이 매우 중요합니다.
 
 1. 목적에 따라 데이터를 변경하실줄 알아야합니다. 예를 들어, 버스정류장 주소 대신에 전기차 충전소 주소를 변경하여 사용할줄 알아야합니다.
 
-2. 또한, 데이터를 적절하게 가공/변환하는 능력이 필요합니다. 여러분이 제공받는 데이터는 구체적이지 못할수도 있습니다. 예를 들면, 3개월치 데이터의 평균 이나 구 단위의 주소 정보 등이 될수 있습니다. 
+2. 또한, 데이터를 적절하게 가공/변환하는 능력이 필요합니다. 여러분이 제공받는 데이터는 구체적이지 못할수도 있습니다. 예를 들면, 3개월치 데이터의 평균 이나 구 단위의 주소 정보 등이 될수 있습니다.
 
 3. 어떠한 문제해결 하고자  혹은 어떠한 영향/관계가 있는지 등 다양한 파악하는 능력이 프로젝트의 수행범위를 최소화하는데 큰 도움을 줍니다. 예를 들면, 내가 어떠한 입력을 받아서 어떠한 출력을 얻을려는가? 예로, 버스정류장 정류소의 위경도 자료를 받아서 버스 정류장을 지도에 배치 하는것?
 
 4. 고급 방법(연구나 창업, 경진대회)에 접근하기 위해서는, 해당 문제 해결을 위한 기본 메서드(baseline methods라고 함) 혹은 최신의 방법은 무엇이 있는지를 파악해야합니다. 인터넷검색, 블로그보다는 논문을 통해서 자료를 얻는 것이 제일 구체화되고 정확하며, 최신 접근법을 획득할 수 있습니다.
 
 # Setup
+
 아래 Colab 코드를 실행하여 pySpark를 설치합니다. 현재 프로그램을 수행할때마다 pySpark를 설치해야합니다. 추후에는 pySpark를 여러분의 구글 드라이브에 설치하여  설치시간을 최소할 할 것입니다.
 
 ~~~python
@@ -77,7 +80,9 @@ for file in file_list:
   print(file['title'])
 
 ~~~
+
 Output:
+
 ~~~
 SBJ_2107_003.zip
 DAU_CSE408_Colab_02_(PySpark_Complete).ipynb
@@ -88,7 +93,9 @@ DAU_CSE408_Colab_02_(PySpark_Complete).ipynb
 !unzip SBJ_2107_003.zip
 
 ~~~
+
 Output:
+
 ~~~
 Archive:  SBJ_2107_003.zip
   inflating: 10.부산시남구_공시지가.geojson  
@@ -120,7 +127,7 @@ import matplotlib.pyplot as plt
 
 # 데이터 알아보기
 
-[COMPAS](https://compas.lh.or.kr/)는 도시문제 해결의 방향성을 제시하는 한국토지주택공사 데이터 분석 플랫폼입니다. 
+[COMPAS](https://compas.lh.or.kr/)는 도시문제 해결의 방향성을 제시하는 한국토지주택공사 데이터 분석 플랫폼입니다.
 
 교통, 화재 예측, 도시환경, 트래픽, 신호등  체계, 버스노선, 미세먼지, 도시녹지, 교통사고예방, 횡단보도 신호체계, 어린이보호구역 사고 예측, 불법 주정차 단속 카메라 설치 위치 분석 에 대한 주제로 진행합니다.
 
@@ -139,7 +146,9 @@ BusStops = pd.read_csv('7.부산시남구_버스정류소정보.csv')
 BusStops.dtypes
 
 ~~~
+
 Output:
+
 ~~~
 stn_no      float64
 stn_id        int64
@@ -156,7 +165,9 @@ dtype: object
 BusStops.head(10)
 
 ~~~
+
 Output:
+
 ~~~
    stn_no     stn_id        stn_nm         lon        lat stn_info
 0  7002.0  180710101         동부변전소  129.094314  35.147485       일반
@@ -184,7 +195,9 @@ df_sub = BusStops[select_columns]
 df_sub.head()
 
 ~~~
+
 Output:
+
 ~~~
    stn_no     stn_id        stn_nm
 0  7002.0  180710101         동부변전소
@@ -201,7 +214,9 @@ Output:
 print("총 {0} 개의 버스 정류장이 있습니다".format(BusStops.shape[0]))
 
 ~~~
+
 Output:
+
 ~~~
 총 182 개의 버스 정류장이 있습니다
 
@@ -210,15 +225,17 @@ Output:
 한글폰트가 깨지기 때문에 폰트를 설치하고자 합니다.
 
 # 지도에 데이터를 시각화하기
+
 지도에 데이터를 표시하기 위해서는 다양한 방법이 존재합니다.
+
 1. 대응되는 지도 데이터(SHEX 파일)를 직접적으로 받는 방법
 2. folium 라이브러리를 사용한 방법
 
  2-1. 기본 - Openstreet map
- 
+
  2-2. 국내- vwworld map을 사용하는 방법
 
-국내 지도를 활용하여 특정 정보를 출력하기 위해서는 전자지도 자료가 필요합니다. 해당 전자지도는 행정안전부에서 제공하고 있습니다. 
+국내 지도를 활용하여 특정 정보를 출력하기 위해서는 전자지도 자료가 필요합니다. 해당 전자지도는 행정안전부에서 제공하고 있습니다.
 
 전자지도 다운로드 받기 [https://www.juso.go.kr/addrlink/devLayerRequestWrite.do]
 
@@ -228,7 +245,9 @@ geopandas 라이브러리는 geojson 및 lat/lon(위경도) 기반의 좌표계�
 !pip install geopandas
 
 ~~~
+
 Output:
+
 ~~~
 Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Collecting geopandas
@@ -283,7 +302,7 @@ geometry = gpd.points_from_xy(df.lon, df.lat)
 
 ~~~
 
-https://datascienceschool.net/03%20machine%20learning/03.04.01%20%EC%A7%80%EB%A6%AC%20%EC%A0%95%EB%B3%B4%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B2%98%EB%A6%AC.html
+<https://datascienceschool.net/03%20machine%20learning/03.04.01%20%EC%A7%80%EB%A6%AC%20%EC%A0%95%EB%B3%B4%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%B2%98%EB%A6%AC.html>
 
 좌표계 변환
 
@@ -306,7 +325,9 @@ geo_df = geo_df.to_crs(5179)
 geo_df
 
 ~~~
+
 Output:
+
 ~~~
       stn_no     stn_id        stn_nm         lon        lat stn_info  \
 0     7002.0  180710101         동부변전소  129.094314  35.147485       일반   
@@ -344,7 +365,9 @@ unique_df = geo_df.drop_duplicates(subset=['stn_nm'])
 unique_df
 
 ~~~
+
 Output:
+
 ~~~
       stn_no     stn_id        stn_nm         lon        lat stn_info  \
 0     7002.0  180710101         동부변전소  129.094314  35.147485       일반   
@@ -393,7 +416,9 @@ gis developer [ http://www.gisdeveloper.co.kr/?p=2332]
 !unzip EMD_202302.zip -d map
 
 ~~~
+
 Output:
+
 ~~~
 Archive:  SIG_202302.zip
   inflating: map/sig.dbf             
@@ -435,7 +460,9 @@ font_download_url = "https://fonts.google.com/download?family=Noto%20Sans%20KR"
 change_matplotlib_font(font_download_url)
 
 ~~~
+
 Output:
+
 ~~~
 font family:  ['Noto Sans KR']
 
@@ -447,7 +474,9 @@ sig = gpd.read_file("map/sig.shp", encoding='cp949')
 sig
 
 ~~~
+
 Output:
+
 ~~~
     SIG_CD    SIG_ENG_NM SIG_KOR_NM  \
 0    11110     Jongno-gu        종로구   
@@ -485,7 +514,9 @@ emd = gpd.read_file("map/emd.shp", encoding='cp949')
 emd
 
 ~~~
+
 Output:
+
 ~~~
         EMD_CD       EMD_ENG_NM EMD_KOR_NM  \
 0     11110101    Cheongun-dong        청운동   
@@ -523,7 +554,9 @@ adm_div = pd.read_csv('국토교통부_전국 법정동_20221031.csv', encoding=
 adm_div.head(5)
 
 ~~~
+
 Output:
+
 ~~~
         법정동코드  시도명 시군구명 읍면동명    리명    순위        생성일자 삭제일자  과거법정동코드
 0  4223033031  강원도  삼척시  노곡면  상군천리  11.0  1995-01-01  NaN      NaN
@@ -542,7 +575,9 @@ selected_div = selected_div0[selected_div0['시군구명'] == '남구']
 selected_div.head(10)
 
 ~~~
+
 Output:
+
 ~~~
             법정동코드    시도명 시군구명 읍면동명   리명   순위        생성일자        삭제일자  \
 18996  2629000000  부산광역시   남구  NaN  NaN  7.0  1995-01-01         NaN   
@@ -575,7 +610,9 @@ namgu = selected_div['법정동코드'].values.tolist()
 namgu
 
 ~~~
+
 Output:
+
 ~~~
 [2629000000,
  2629010100,
@@ -597,7 +634,9 @@ emd0 = emd[emd['EMD_CD'].str.startswith('26290')]
 emd0
 
 ~~~
+
 Output:
+
 ~~~
        EMD_CD     EMD_ENG_NM EMD_KOR_NM  \
 577  26290106   Daeyeon-dong        대연동   
@@ -622,7 +661,9 @@ sig0 = sig[sig['SIG_CD'].str.contains('26290')]
 sig0
 
 ~~~
+
 Output:
+
 ~~~
    SIG_CD SIG_ENG_NM SIG_KOR_NM  \
 31  26290     Nam-gu         남구   
@@ -652,7 +693,9 @@ plt.savefig('overlay_map.png')
 plt.show()
 
 ~~~
+
 Output:
+
 ~~~
 <Figure size 1200x1200 with 1 Axes>
 
@@ -666,7 +709,9 @@ Output:
 !pip install -U folium
 
 ~~~
+
 Output:
+
 ~~~
 Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: folium in /usr/local/lib/python3.9/dist-packages (0.14.0)
@@ -687,7 +732,9 @@ df_center = geo_df.loc[geo_df['stn_nm'] == '석포초등학교'][:1]
 df_center['lon']
 
 ~~~
+
 Output:
+
 ~~~
 87    129.089865
 Name: lon, dtype: float64
@@ -713,7 +760,9 @@ m = folium.Map(location=center, tiles='Stamen Toner', zoom_start=zoom)
 geo_df.dtypes
 
 ~~~
+
 Output:
+
 ~~~
 stn_no       float64
 stn_id         int64
@@ -737,7 +786,9 @@ geo_df[["lon", "lat"]] = geo_df[["lon", "lat"]].apply(pd.to_numeric)
 geo_df.dtypes
 
 ~~~
+
 Output:
+
 ~~~
 stn_no       float64
 stn_id         int64
@@ -761,7 +812,7 @@ for index, row in geo_df.iterrows():
 
 vworld 는 국토교통부에서 운영 중인 공간정보 오픈 플랫폼입니다. vworld 지도를 활용하기 위해서는 회원 가입 후, OpenAPI 인증키를 발급 받아야 합니다.
 
-인증키 발급 : http://www.vworld.kr/dev/v4dv_apikey_s001.do
+인증키 발급 : <http://www.vworld.kr/dev/v4dv_apikey_s001.do>
 
 인증키는 회원 가입 시 등록한 이메일 주소로 발송됩니다.
 88CB4452-84A2-3D71-AFF6-BEDD2EA4F234
@@ -784,7 +835,9 @@ for index, row in geo_df.iterrows():
 m1
 
 ~~~
+
 Output:
+
 ~~~
 <folium.folium.Map at 0x7f86919e03d0>
 

@@ -19,6 +19,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>

@@ -100,11 +100,11 @@ public class Diary {
 }
 ```
 
-`@GeneratedValue(strategy = GenerationType.IDENTITY)`: 
-	`이 어노테이션은 우리가 데이터베이스에 데이터를 추가할 때 자동으로 번호를 매기는 기능을 설정합니다. 이 경우, 데이터베이스가 자동으로 번호를 증가시켜줄 것입니다. 그래서 우리는 번호를 따로 지정할 필요가 없습니다.
+`@GeneratedValue(strategy = GenerationType.IDENTITY)`:
+ `이 어노테이션은 우리가 데이터베이스에 데이터를 추가할 때 자동으로 번호를 매기는 기능을 설정합니다. 이 경우, 데이터베이스가 자동으로 번호를 증가시켜줄 것입니다. 그래서 우리는 번호를 따로 지정할 필요가 없습니다.
 `
-`@CreationTimestamp`: 
-	`이 어노테이션은 새로운 데이터를 만들 때 자동으로 그 시간을 저장합니다. 우리는 이 어노테이션을 사용하여 새로운 일기를 작성할 때의 시간을 wdate 필드에 저장할 수 있습니다. 그러면 우리는 직접 시간을 설정할 필요 없이 자동으로 현재 시간이 기록됩니다.`
+`@CreationTimestamp`:
+ `이 어노테이션은 새로운 데이터를 만들 때 자동으로 그 시간을 저장합니다. 우리는 이 어노테이션을 사용하여 새로운 일기를 작성할 때의 시간을 wdate 필드에 저장할 수 있습니다. 그러면 우리는 직접 시간을 설정할 필요 없이 자동으로 현재 시간이 기록됩니다.`
 
 ---
 <!-- 원본 이미지 없음: web-programming__HTML 기초2 문제 풀이__Quiz 6 BYYSS MAAN diaryRepjava S UGtNA.png -->
@@ -116,6 +116,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface diaryRep extends JpaRepository<diary, Integer> {
 }
 ```
+
 `<diary, Integer>`은 `JpaRepository` 인터페이스를 사용할 때 필요한 두 가지 타입 매개변수입니다.
 
 1. **diary**: 이것은 엔티티 클래스의 타입입니다. 즉, 우리가 데이터베이스에서 관리하고자 하는 엔티티의 클래스입니다. Spring Data JPA는 이 클래스를 기반으로 데이터베이스와 상호작용합니다. `JpaRepository`를 상속한 인터페이스에서 `Diary` 클래스를 사용하여 어떤 종류의 엔티티를 다룰 것인지를 명시합니다.
@@ -131,16 +132,16 @@ package com.web.p5;
 
 @Controller
 public class DiaryController {
-	
-	@Autowired
-	private diaryRep drep;
-	
-	@GetMapping("/diary")
-	public String diary(){
-		return "diary";
-	}
-	
-	@GetMapping("/diary/insert")
+ 
+ @Autowired
+ private diaryRep drep;
+ 
+ @GetMapping("/diary")
+ public String diary(){
+  return "diary";
+ }
+ 
+ @GetMapping("/diary/insert")
     public String diaryInsert(@RequestParam String je,
                               @RequestParam String nae,
                               RedirectAttributes re) {
@@ -151,18 +152,18 @@ public class DiaryController {
         re.addAttribute("msg", "저장되었습니다.");
         return "redirect:/diary/popup";
     }
-	
-	@GetMapping("/diary/popup")
-	public String diaryPopup(@RequestParam String msg, Model mo){
-		mo.addAttribute("msg", msg);
-		return "diaryPopup";
-	}
-	
-	@GetMapping("/diary/list")
-	public String diaryList(Model mo){
-		mo.addAttribute("arr", drep.findAll());
-		return "diaryList";
-	}
+ 
+ @GetMapping("/diary/popup")
+ public String diaryPopup(@RequestParam String msg, Model mo){
+  mo.addAttribute("msg", msg);
+  return "diaryPopup";
+ }
+ 
+ @GetMapping("/diary/list")
+ public String diaryList(Model mo){
+  mo.addAttribute("arr", drep.findAll());
+  return "diaryList";
+ }
 }
 ```
 
@@ -197,13 +198,13 @@ package com.web.p5;
 
 @Entity
 public class survey {
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY) 
-	public Integer no;
-	public String userid;
-	public String artist;
-	public String musician;
-	@CreationTimestamp 
-	public LocalDateTime sdate;
+ @Id @GeneratedValue(strategy = GenerationType.IDENTITY) 
+ public Integer no;
+ public String userid;
+ public String artist;
+ public String musician;
+ @CreationTimestamp 
+ public LocalDateTime sdate;
 }
 ```
 
@@ -224,27 +225,27 @@ public interface surveyRep extends JpaRepository<survey, Integer> {
 @GetMapping("/survery5")
 public String survery5(HttpSession se, Model mo) {
 
-	String userid = (String)se.getAttribute("userid");
-	String artist = (String)se.getAttribute("artist");
-	String musician = (String)se.getAttribute("musician");
-	
-	mo.addAttribute("userid", userid);
-	mo.addAttribute("artist", artist);
-	mo.addAttribute("musician", musician);
-	
-	mo.addAttribute("userid", se.getAttribute("userid"));
-	mo.addAttribute("artist", se.getAttribute("artist"));
-	mo.addAttribute("musician", se.getAttribute("musician"));
-	
+ String userid = (String)se.getAttribute("userid");
+ String artist = (String)se.getAttribute("artist");
+ String musician = (String)se.getAttribute("musician");
+ 
+ mo.addAttribute("userid", userid);
+ mo.addAttribute("artist", artist);
+ mo.addAttribute("musician", musician);
+ 
+ mo.addAttribute("userid", se.getAttribute("userid"));
+ mo.addAttribute("artist", se.getAttribute("artist"));
+ mo.addAttribute("musician", se.getAttribute("musician"));
+ 
 
-	if (userid != null) {
-		survey s = new survey();
-		s.userid = userid;
-		s.artist = artist;
-		s.musician = musician;
-		srep.save(s);
-	}
-	return "survery5";
+ if (userid != null) {
+  survey s = new survey();
+  s.userid = userid;
+  s.artist = artist;
+  s.musician = musician;
+  srep.save(s);
+ }
+ return "survery5";
 }
 ```
 
@@ -263,8 +264,8 @@ public String survery5(HttpSession se, Model mo) {
 ```java
 @GetMapping("/survey/list")
 public String surveyList(Model mo) {
-	mo.addAttribute("arr", srep.findAll());
-	return "surveyList";
+ mo.addAttribute("arr", srep.findAll());
+ return "surveyList";
 }
 ```
 

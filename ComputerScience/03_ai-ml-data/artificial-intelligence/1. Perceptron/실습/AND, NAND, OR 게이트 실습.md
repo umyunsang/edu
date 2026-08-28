@@ -23,6 +23,7 @@ updated: '2026-05-05'
 ---
 
 ### AND 게이트
+
 ```python
 import numpy as np  
   

@@ -19,7 +19,7 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-#ComputerScience #확률과통계 
+# ComputerScience #확률과통계
 
 ---
 **Expectation(기대값)**:
@@ -39,15 +39,15 @@ $$E[X] = \sum_{x=1}^{6} x \cdot P(X=x)$$
 
 1. **선형성(Linearity of Expectation)**:
 $$E[aX + b] = aE[X] + b$$
-	여기서 \( a \)와 \( b \)는 상수입니다.
+ 여기서 \( a \)와 \( b \)는 상수입니다.
 
 2. **확률 변수의 합의 기대값(Expected Value of the Sum of Random Variables)**:
-	$$E[X+Y] = E[X] + E[Y]$$
-	두 확률 변수의 합의 기대값은 각 확률 변수의 기대값의 합과 같습니다.
+ $$E[X+Y] = E[X] + E[Y]$$
+ 두 확률 변수의 합의 기대값은 각 확률 변수의 기대값의 합과 같습니다.
 
 3. **Unconcious Statistician의 법칙(Law of Unconcious Statistician)**:
-	$$E[g(X)] = \sum_{x} g(x) \cdot P(X=x)$$
-	확률 변수 \( X \)의 함수 \( g(X) \)의 기대값은 함수를 적용한 후의 값들에 대한 기대값을 구하는 것과 같습니다. 이것은 \( g(X) \)의 분포를 명시적으로 알지 못할 때 유용하게 사용됩니다.
+ $$E[g(X)] = \sum_{x} g(x) \cdot P(X=x)$$
+ 확률 변수 \( X \)의 함수 \( g(X) \)의 기대값은 함수를 적용한 후의 값들에 대한 기대값을 구하는 것과 같습니다. 이것은 \( g(X) \)의 분포를 명시적으로 알지 못할 때 유용하게 사용됩니다.
 
 4. **상수의 기대값(Expectation of a Constant)**:
-	상수의 기대값은 그 상수 자체입니다.$$E[c] = c $$
+ 상수의 기대값은 그 상수 자체입니다.$$E[c] = c $$

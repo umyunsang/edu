@@ -26,6 +26,7 @@ updated: '2026-05-05'
 Spark DataFrames는 대용량 구조화된 데이터를 효율적으로 처리하기 위한 고수준 API입니다. 이 실습에서는 DataFrames의 핵심 개념과 실제 활용법을 학습합니다.
 
 ### 🎯 학습 목표
+
 - Spark DataFrames의 기본 개념과 특징 이해
 - RDD와 DataFrames의 차이점 파악
 - 구조화된 데이터 처리 방법 학습
@@ -34,6 +35,7 @@ Spark DataFrames는 대용량 구조화된 데이터를 효율적으로 처리�
 ## 🚀 Spark DataFrames 소개
 
 ### 📋 **DataFrames의 핵심 특징**
+
 - **접근성 향상**: "빅데이터" 엔지니어가 아닌 더 넓은 사용자층이 분산 처리의 힘을 활용
 - **영감의 원천**: R과 Python(Pandas)의 데이터 프레임에서 영감을 받아 설계
 - **현대적 설계**: 현대적인 빅데이터와 데이터 사이언스 애플리케이션을 지원하도록 처음부터 설계
@@ -42,6 +44,7 @@ Spark DataFrames는 대용량 구조화된 데이터를 효율적으로 처리�
 ## 📚 참고 자료
 
 ### 🔗 **추가 학습 자료**
+
 - [Spark SQL, DataFrames and Datasets Guide](https://spark.apache.org/docs/latest/sql-programming-guide.html)
   - Apache Spark 공식 문서: DataFrames와 Datasets 가이드
 - [Introduction to DataFrames - Python](https://docs.databricks.com/spark/latest/dataframes-datasets/introduction-to-dataframes-python.html)
@@ -52,28 +55,33 @@ Spark DataFrames는 대용량 구조화된 데이터를 효율적으로 처리�
 ## 📊 DataFrames의 핵심 개념
 
 ### 🎯 **DataFrames란?**
+
 - **선호되는 추상화**: Spark에서 가장 선호되는 데이터 추상화
 - **강타입 컬렉션**: 분산된 요소들의 강타입 컬렉션
 - **RDD 기반**: Resilient Distributed Datasets(RDD) 위에 구축
 - **불변성**: 생성 후 변경할 수 없는 불변 데이터 구조
 
 ### 🔧 **DataFrames의 주요 기능**
+
 - **계보 추적**: 데이터 계보 정보를 추적하여 손실된 데이터를 효율적으로 재계산
 - **병렬 처리**: 요소 컬렉션에 대한 병렬 연산 지원
 - **최적화**: 지능적인 최적화와 코드 생성으로 성능 향상
 
 ### 🏗️ **DataFrames 생성 방법**
+
 - **기존 컬렉션 병렬화**: Pandas DataFrames 등 기존 컬렉션을 병렬화
 - **기존 DataFrames 변환**: 기존 DataFrames를 변환하여 새로운 DataFrames 생성
 - **파일에서 로드**: HDFS나 기타 스토리지 시스템의 파일에서 로드 (예: Parquet)
 
 ### 🚀 **DataFrames의 주요 특징**
+
 - **확장성**: 단일 노트북의 킬로바이트부터 대규모 클러스터의 페타바이트까지 확장
 - **다양한 형식 지원**: 광범위한 데이터 형식과 스토리지 시스템 지원
 - **통합성**: Spark를 통한 모든 빅데이터 도구 및 인프라와의 원활한 통합
 - **다국어 지원**: Python, Java, Scala, R을 위한 API 제공
 
 ### 🔄 **DataFrames vs RDDs**
+
 - **사용자 친화적**: 다른 프로그래밍 언어의 데이터 프레임에 익숙한 사용자에게 친숙한 API
 - **프로그래밍 용이성**: 기존 Spark 사용자에게 RDD보다 더 쉬운 프로그래밍 환경 제공
 - **성능 향상**: 지능적인 최적화와 코드 생성을 통한 성능 개선
@@ -83,11 +91,13 @@ Spark DataFrames는 대용량 구조화된 데이터를 효율적으로 처리�
 ### 🚀 **PySpark Shell 실행**
 
 #### 📋 **기본 실행 방법**
+
 ```bash
 pyspark
 ```
 
 #### 💡 **PySpark Shell의 특징**
+
 - **대화형 환경**: REPL(Read-Eval-Print Loop) 방식의 대화형 개발 환경
 - **자동 설정**: SparkContext와 SparkSession이 자동으로 생성
 - **즉시 실행**: 코드를 입력하면 즉시 실행되어 결과 확인 가능
@@ -117,6 +127,7 @@ SparkSession available as 'spark'.
 ```
 
 ### 💡 **출력 해석**
+
 - **Python 버전**: Python 3.6.5 사용
 - **경고 메시지**: 네이티브 Hadoop 라이브러리 로드 실패 (정상적인 현상)
 - **로그 레벨**: 기본 로그 레벨이 "WARN"으로 설정
@@ -153,12 +164,14 @@ only showing top 20 rows
 ### 📋 **DataFrames의 지연 실행**
 
 #### 🎯 **Lazy Evaluation의 특징**
+
 - **RDD와 동일**: DataFrames도 RDD와 마찬가지로 지연 실행(lazy)
 - **쿼리 계획**: Transformations은 쿼리 계획에 기여하지만 실제로는 아무것도 실행하지 않음
 - **실행 트리거**: Actions가 호출될 때 쿼리가 실행됨
 - **최적화**: 지연 실행을 통해 불필요한 계산을 피하고 성능을 최적화
 
 #### 💡 **Lazy Evaluation의 장점**
+
 - **성능 최적화**: 불필요한 중간 계산을 피하여 효율성 증대
 - **메모리 절약**: 필요한 데이터만 메모리에 유지
 - **자동 최적화**: Spark가 자동으로 최적의 실행 계획 수립
@@ -167,6 +180,7 @@ only showing top 20 rows
 ### 🔧 **Transformation 예제**
 
 #### 📋 **주요 Transformation 함수들**
+
 - **`filter()`**: 조건을 만족하는 행만 필터링
 - **`select()`**: 특정 컬럼만 선택
 - **`drop()`**: 특정 컬럼 제거
@@ -176,8 +190,9 @@ only showing top 20 rows
 ### 🎯 **Action 예제**
 
 #### 📋 **주요 Action 함수들**
+
 - **`count()`**: 행의 개수 계산
-- **`collect()`**: 모든 데이터를 드라이버에 수집 
+- **`collect()`**: 모든 데이터를 드라이버에 수집
 - **`show()`**: 데이터를 테이블 형태로 표시
 - **`head()`**: 처음 몇 개 행 반환
 - **`take()`**: 지정된 개수만큼 행 반환
@@ -185,6 +200,7 @@ only showing top 20 rows
 ## 🏗️ Python에서 DataFrames 생성
 
 ### 📋 **DataFrames 생성 방법**
+
 - **기존 컬렉션**: Python 리스트나 딕셔너리에서 생성
 - **파일 읽기**: CSV, JSON, Parquet 등 다양한 형식의 파일에서 로드
 - **데이터베이스**: JDBC를 통한 데이터베이스 연결
@@ -215,6 +231,7 @@ sc = spark.sparkContext
 ```
 
 ### 💡 **설정 설명**
+
 - **PYSPARK_PYTHON**: PySpark가 사용할 Python 인터프리터 경로 설정
 - **SparkSession**: DataFrames 작업을 위한 진입점
 - **SparkContext**: RDD 작업을 위한 진입점
@@ -234,6 +251,7 @@ sqlContext = SQLContext(sc)  # SQLContext 생성
 ```
 
 ### 💡 **설정 설명**
+
 - **SparkConf**: Spark 애플리케이션 설정
 - **setAppName**: 애플리케이션 이름 설정
 - **setMaster**: 마스터 노드 설정 (local[*]는 로컬의 모든 코어 사용)
@@ -250,6 +268,7 @@ df = sqlContext.read.json("data/people.json")
 ```
 
 ### 💡 **데이터 로드 방법**
+
 - **JSON 파일**: `read.json()` 메소드 사용
 - **CSV 파일**: `read.csv()` 메소드 사용
 - **Parquet 파일**: `read.parquet()` 메소드 사용
@@ -263,6 +282,7 @@ df.show(24)
 ```
 
 ### 💡 **show() 메소드의 특징**
+
 - **기본값**: `show()`는 처음 20개 행만 표시
 - **개수 지정**: `show(n)`으로 표시할 행 수 지정 가능
 - **테이블 형태**: 데이터를 테이블 형태로 깔끔하게 표시
@@ -271,6 +291,7 @@ df.show(24)
 ## 🔍 Schema Inference - 스키마 추론
 
 ### 📋 **스키마 추론이란?**
+
 - **자동 스키마**: Spark가 데이터의 구조를 자동으로 분석하여 스키마 생성
 - **구조화된 데이터**: JSON, Parquet 등 구조화된 형식에서 자동으로 스키마 추론
 - **비구조화 데이터**: 텍스트 파일 등에서는 수동으로 스키마 정의 필요
@@ -278,6 +299,7 @@ df.show(24)
 ### 🎯 **실습: irmar.txt 파일 분석**
 
 #### 📋 **데이터 특징**
+
 - **파일명**: `irmar.txt`
 - **구조**: 구조화된 데이터이지만 자체 설명 스키마가 없음
 - **형식**: JSON이 아니므로 Spark가 자동으로 스키마를 추론할 수 없음
@@ -295,6 +317,7 @@ for line in rdd.take(10):
 ```
 
 ### 💡 **코드 설명**
+
 - **`textFile()`**: 텍스트 파일을 RDD로 읽기
 - **`take(10)`**: 처음 10개 행만 가져오기
 - **`print(line)`**: 각 행을 출력하여 데이터 구조 확인
@@ -302,23 +325,27 @@ for line in rdd.take(10):
 ## 🎯 실습 연습문제
 
 ### 📋 **연습문제 목표**
+
 - **DataFrames 생성**: 다양한 방법으로 DataFrames 생성
 - **데이터 조작**: 필터링, 선택, 변환 등 기본 연산 수행
 - **스키마 이해**: 데이터의 구조와 타입 파악
 - **실제 활용**: 실제 데이터 분석 작업에 DataFrames 적용
 
 ### 📚 **참고 자료**
+
 - [DataFrames API documentation](http://spark.apache.org/docs/2.3.1/api/python/index.html)
   - Apache Spark 공식 DataFrames API 문서
 
 ### 🎯 **실습 데이터: irmar.csv 파일**
 
 #### 📋 **데이터 구조**
+
 - **파일 경로**: `/tmp/irmar.csv`
 - **데이터 형식**: 각 행은 한 사람에 대한 동일한 정보를 포함
 - **구조화된 데이터**: CSV 형식의 구조화된 데이터
 
 #### 📊 **데이터 필드**
+
 - **name**: 사람의 이름
 - **phone**: 전화번호
 - **office**: 사무실 번호
@@ -338,6 +365,7 @@ rdd = sc.textFile("data/irmar.csv")
 ```
 
 ### 💡 **코드 설명**
+
 - **`namedtuple`**: 구조화된 데이터를 처리하기 위한 Python 클래스
 - **`textFile()`**: 텍스트 파일을 RDD로 읽기
 - **CSV 처리**: 쉼표로 구분된 데이터를 처리
@@ -356,6 +384,7 @@ def str_to_bool(s):
 ```
 
 ### 💡 **코드 설명**
+
 - **`namedtuple`**: 구조화된 데이터를 처리하기 위한 Python 클래스
 - **`Person`**: 각 필드를 가진 구조체 정의
 - **`str_to_bool()`**: 문자열을 불린 값으로 변환
@@ -377,10 +406,11 @@ def map_to_person(line):
 ```
 
 ### 💡 **코드 설명**
+
 - **`split(";")`**: 세미콜론으로 구분된 데이터를 분리
 - **`Person` 객체**: 각 필드를 가진 구조화된 데이터
 - **`str_to_bool()`**: hdr 필드를 불린 값으로 변환
-    
+
 ### 🔧 **RDD를 DataFrame으로 변환**
 
 ```python
@@ -392,6 +422,7 @@ df = people_rdd.toDF()
 ```
 
 ### 💡 **코드 설명**
+
 - **`map(map_to_person)`**: 각 라인을 Person 객체로 변환
 - **`toDF()`**: RDD를 DataFrame으로 변환
 - **DataFrame**: 구조화된 데이터를 처리하기 위한 고수준 API
@@ -415,6 +446,7 @@ df.show()
 ### 🔍 **Schema - 데이터 구조 확인**
 
 #### **스키마란?**
+
 - **정의**: DataFrame의 컬럼 구조와 데이터 타입을 정의
 - **역할**: 데이터 검증, 최적화, SQL 쿼리 지원
 - **자동 추론**: Spark가 데이터를 분석하여 스키마를 자동으로 생성
@@ -427,6 +459,7 @@ df.printSchema()
 ```
 
 ### 💡 **코드 설명**
+
 - **`printSchema()`**: DataFrame의 스키마를 트리 형태로 출력
 - **컬럼 정보**: 컬럼명, 데이터 타입, null 허용 여부
 - **중첩 구조**: 복잡한 데이터 타입의 중첩 구조도 표시
@@ -434,6 +467,7 @@ df.printSchema()
 ### 📊 **Display - 데이터 시각화**
 
 #### **Display란?**
+
 - **정의**: Jupyter Notebook에서 DataFrame을 시각적으로 표시
 - **장점**: 테이블 형태의 깔끔한 출력
 - **기능**: 정렬, 필터링, 페이지네이션 지원
@@ -497,6 +531,7 @@ df.filter(df["organization"] == "R2").show()
 ### 🔗 **Filter + Select - 복합 연산**
 
 #### **복합 연산이란?**
+
 - **정의**: Filter와 Select를 조합하여 사용하는 연산
 - **용도**: 조건에 맞는 데이터에서 필요한 컬럼만 선택
 - **성능**: 데이터 처리 단계를 최적화하여 효율성 향상
@@ -509,6 +544,7 @@ df2 = df.filter(df["organization"] == "R2").select(df['name'], df['team1'])
 ```
 
 ### 💡 **코드 설명**
+
 - **`filter()`**: organization이 "R2"인 행만 선택
 - **`select()`**: name과 team1 컬럼만 선택
 - **체이닝**: 두 연산을 연결하여 효율적으로 처리
@@ -521,6 +557,7 @@ df2.show()
 ```
 
 ### 💡 **코드 설명**
+
 - **`show()`**: 필터링된 DataFrame의 내용을 표시
 - **결과**: R2 조직의 이름과 팀1 정보만 출력
 - **효율성**: 필요한 데이터만 처리하여 성능 최적화
@@ -528,6 +565,7 @@ df2.show()
 ### 📊 **OrderBy - 데이터 정렬**
 
 #### **OrderBy란?**
+
 - **정의**: DataFrame의 행을 특정 컬럼 기준으로 정렬하는 연산
 - **용도**: 데이터를 특정 순서로 정렬하여 분석 용이성 향상
 - **성능**: 정렬 연산은 비용이 높으므로 필요한 경우에만 사용
@@ -542,6 +580,7 @@ df2.show()
 ```
 
 ### 💡 **코드 설명**
+
 - **`filter()`**: R2 조직의 데이터만 선택
 - **`select()`**: 이름과 직책 컬럼만 선택
 - **`orderBy()`**: 직책 기준으로 정렬
@@ -550,6 +589,7 @@ df2.show()
 ### 📊 **GroupBy - 데이터 그룹화**
 
 #### **GroupBy란?**
+
 - **정의**: DataFrame의 행을 특정 컬럼 기준으로 그룹화하는 연산
 - **용도**: 그룹별 집계 연산 수행
 - **성능**: 그룹화 연산은 비용이 높으므로 신중하게 사용
@@ -580,6 +620,7 @@ df.groupby(df["hdr"]).count().show()
 ### ⚠️ **중요한 주의사항**
 
 #### **GroupedData.count() vs DataFrame.count()**
+
 - **`GroupedData.count()`**: 그룹화된 데이터의 개수를 계산하는 **Transformation**
 - **`DataFrame.count()`**: 전체 DataFrame의 행 수를 계산하는 **Action**
 - **차이점**: GroupedData.count()는 지연 실행, DataFrame.count()는 즉시 실행
@@ -592,6 +633,7 @@ df.filter(df["hdr"]).count()
 ```
 
 ### 💡 **코드 설명**
+
 - **`filter()`**: hdr가 True인 행만 선택
 - **`count()`**: 선택된 행의 개수를 즉시 계산 (Action)
 - **결과**: 정수 값 반환
@@ -604,6 +646,7 @@ df.filter(df['hdr']).select("name").show()
 ```
 
 ### 💡 **코드 설명**
+
 - **`filter()`**: hdr가 True인 행만 선택
 - **`select()`**: name 컬럼만 선택
 - **`show()`**: 결과를 테이블 형태로 표시
@@ -616,6 +659,7 @@ df.groupBy(df["organization"]).count().show()
 ```
 
 ### 💡 **코드 설명**
+
 - **`groupBy()`**: organization 컬럼 기준으로 그룹화
 - **`count()`**: 각 그룹의 개수 계산
 - **`show()`**: 결과를 테이블 형태로 표시
@@ -623,14 +667,18 @@ df.groupBy(df["organization"]).count().show()
 ### 🎯 **실습 연습문제**
 
 #### **연습문제 목표**
+
 - **INSA 교수 수 계산**: INSA 소속 교수(PR+MC)의 총 수
 - **STATS 팀 MC 수 계산**: STATS 팀의 MC(마스터 코스) 학생 수
 
 #### **해결 방법**
+
 1. **필터링**: 특정 조건에 맞는 데이터만 선택
 2. **집계**: 선택된 데이터의 개수 계산
 3. **결과 확인**: 계산된 결과를 표시
+
 #### **추가 연습문제**
+
 - **HDR 보유자 수**: MC+CR 중 HDR을 보유한 사람의 수
 - **지도 비율 계산**: 학생 지도 비율 (DOC / HDR)
 - **조직별 인원 수**: 각 조직의 총 인원 수
@@ -638,11 +686,14 @@ df.groupBy(df["organization"]).count().show()
 - **최대 HDR 팀**: HDR을 가장 많이 보유한 팀 찾기
 
 #### **해결 힌트**
+
 - **필터링**: `filter()` 함수로 조건에 맞는 데이터 선택
 - **그룹화**: `groupBy()` 함수로 데이터 그룹화
 - **집계**: `count()`, `sum()`, `avg()` 등으로 통계 계산
 - **정렬**: `orderBy()` 함수로 결과 정렬
+
 #### **고급 연습문제**
+
 - **조직별 DOC 학생 수**: 각 조직의 DOC 학생 수
 - **최대 DOC 팀**: DOC 학생을 가장 많이 보유한 팀
 - **CNRS 비연구직**: CNRS 소속이지만 CR나 DR이 아닌 사람들
@@ -655,6 +706,7 @@ sc.stop()
 ```
 
 ### 💡 **코드 설명**
+
 - **`sc.stop()`**: SparkContext 종료
 - **리소스 해제**: 메모리와 연결 리소스 해제
 - **중요**: 프로그램 종료 시 반드시 호출해야 함
@@ -668,12 +720,14 @@ sc.stop()
 ### 🎯 **학습 목표 달성**
 
 #### **이번 실습에서 배운 내용**
+
 - **DataFrame 생성**: RDD를 DataFrame으로 변환
 - **데이터 조작**: select, filter, groupBy, orderBy 연산
 - **집계 연산**: count, sum, avg 등 통계 함수
 - **체이닝**: 여러 연산을 연결하여 효율적으로 처리
 
 #### **다음 단계**
+
 - **SQL 쿼리**: DataFrame을 SQL로 쿼리하는 방법
 - **고급 집계**: 복잡한 집계 연산 수행
 - **성능 최적화**: DataFrame 연산의 성능 최적화

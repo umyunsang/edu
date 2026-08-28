@@ -23,7 +23,7 @@ updated: '2026-05-05'
 ---
 <!-- 원본 이미지 없음: artificial-intelligence__패키지 선언__CIFAR10 2G - CNNS 0 3 ¢t F (VGGNet.png -->
 
-####  Skip connection 실습  
+#### Skip connection 실습  
 
 ```python
 # 패키지 선언  

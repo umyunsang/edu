@@ -27,7 +27,7 @@ python3 tools/search_sources.py "5문단"
 python3 tools/search_sources.py "MECE"
 ```
 
-4. 필요한 페이지 원문을 직접 확인한다.
+1. 필요한 페이지 원문을 직접 확인한다.
 
 ```bash
 sed -n '1,220p' knowledge/source_text/pages/26-1창의적글쓰기_강의자료_중핵교양/page-024.txt

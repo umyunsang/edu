@@ -19,6 +19,7 @@ updated: '2026-05-05'
 ---
 
 ---
+
 # Chapter 1. Routing Information Protocol (RIP)
 
 RIP is the first in a family of dynamic routing protocols that we will look at closely. Dynamic routing protocols _automatically_ compute routing tables_,_ freeing the network administrator from the task of specifying routes to every network using static routes. Indeed, given the complexity of and number of routes in most networks, static routing usually is not even an option.
@@ -34,6 +35,7 @@ Throughout this book, we’ll be using a fictional network called TraderMary to
 <!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__Getting RIP Runnin.png -->
 
 As a distributed process, RIP needs to be configured on every router in the network:
+
 ```
 hostname NewYork
 ...
@@ -98,9 +100,9 @@ network 172.16.0.0
 What does it mean to list the network numbers participating in RIP?
 
 1. Router _NewYork_ will include directly connected `172.16.0.0` subnets in its updates to neighboring routers. For example, `172.16.1.0` will now be included in updates to the routers _Chicago_ and _Ames_.
-    
+
 2. _NewYork_ will receive and process RIP updates on its `172.16.0.0` interfaces from other routers running RIP. For example, _NewYork_ will receive RIP updates from _Chicago_ and _Ames_.
-    
+
 3. By exclusion, network `192.168.1.0`, connected to _NewYork_, will not be advertised to _Chicago_ or _Ames_, and _NewYork_ will not process any RIP updates received on _Ethernet0_ (if there is another router on that segment)
 
 Next, let’s verify that all the routers are seeing all the `172.16.0.0` subnets:
@@ -232,6 +234,7 @@ If you look closely at the update you will see that a key piece of information i
 ### RIP Metric
 
 The RIP metric is simply a measure of the number of hops to a destination network. `172.16.100.0`, which is directly connected to _Ames_, is zero hops from _Ames_ but one hop from _NewYork_ and _Chicago_. You can see RIP metrics in the routing table:
+
 ```
 NewYork>sh ip route
 ...
@@ -277,15 +280,14 @@ The RIP metrics we saw in the previous examples were 1 or 2. It turns out that a
 The following rules summarize the steps a router takes when it receives a RIP update:
 
 1. If the destination network number is unknown to the router, install the route using the source IP address of the update (provided the hop count is less than 16).
-    
+
 2. If the destination network number is known to the router but the update contains a smaller metric, modify the routing table entry with the new next hop and metric.
-    
+
 3. If the destination network number is known to the router but the update contains a larger metric, ignore the update.
-    
+
 4. If the destination network number is known to the router and the update contains a higher metric that is from the same next hop as in the table, update the metric.
-    
+
 5. If the destination network number is known to the router and the update contains the same metric from a different next hop, RFC 1058 calls for this update to be ignored, in general. However, Cisco differs from the standard here and installs up to four parallel paths to the same destination. These parallel paths are then used for load balancing.
-    
 
 Thus, when the first update from _Ames_ reaches _NewYork_ with the network `172.16.100.0`, _NewYork_ installs the route with a hop count of 1 using rule 1. _NewYork_ will also receive `172.16.100.0` in a subsequent update from _Chicago_ (after _Chicago_ itself has learned the route from _Ames_), but _NewYork_ will discard this route because of rule 3.
 
@@ -377,13 +379,12 @@ In fast switching, the first packet for a new destination causes a routing table
 Changes -- planned and unplanned -- are normal in any network:
 
 - A serial link breaks
-    
+
 - A new serial link is added to a network
-    
+
 - A router or hub loses power or malfunctions
-    
+
 - A new LAN segment is added to a network
-    
 
 All routers in the routing domain will not reflect these changes right away. This is because RIP routers rely on their direct neighbors for routing updates, which in turn rely on another set of neighbors. The routing process that is set into motion from the time of a network change (such as the failure of a link) until all routers correctly reflect the change is referred to as convergence. During convergence, routing connectivity between some parts of the network may be lost and, hence, an important question that is frequently asked is “How long will the network take to converge after such-and-such failure in the network?” The answer depends on a number of factors, including the network topology and the timers that have been defined for the routing protocol.
 
@@ -547,6 +548,7 @@ NewYork-config#timers basic 10 25 30 40
 However, RIP timers should not be modified without a detailed understanding of how RIP works. Potential problems with decreasing the timer values are that updates will be issued more frequently and can cause congestion on low-bandwidth networks, and that congestion in the network is more likely to cause routes to go into hold-down; this, in turn, can cause route flapping.
 
 ---
+
 #### Warning
 
 Do not modify RIP timers unless absolutely necessary. If you modify RIP timers, make sure that all routers have the same timers.
@@ -585,9 +587,8 @@ network 192.100.2.0
 How would the router associate subnet masks with these routes?
 
 - If the router has an interface on a network number received in an update, it would associate the same mask with the update as it does with its own interface. Consequently, RIP does not permit Variable Length Subnet Masks (VLSM).
-    
+
 - If the router does not have an interface on the network number received in an update, it would assume a natural mask for the network number.
-    
 
 _SantaFe_’s routing table would look like this:
 
@@ -814,13 +815,13 @@ _Portland_ would prefer the default via _core1_ because the metric from _cor
 RIP is a relatively simple protocol, easy to configure and very reliable. The robustness of RIP is evident from the fact that various implementations of RIP differ in details and yet work well together. A standard for RIP wasn’t put forth until 1988 (by Charles Hedrick, in RFC 1058). Small, homogeneous networks are a good match for RIP. However, as networks grow, other routing protocols may look more attractive for several reasons:
 
 - The RIP metric does not account for link bandwidth or delay.
-    
+
 - The exchange of full routing updates every 30 seconds does not scale for large networks -- the overhead of generating and processing all routes can be high.
-    
+
 - RIP convergence times can be too long.
-    
+
 - Subnet mask information is not exchanged in RIP updates, so Variable Length Subnet Masks are not supported.
-    
+
 - The RIP metric restricts the network diameter to 15 hops.
 
 # Chapter 2. Interior Gateway Routing Protocol (IGRP)
@@ -908,11 +909,10 @@ network 172.16.0.0
 What does it mean to list the network numbers participating in IGRP?
 
 1. _NewYork_ will include directly connected `172.16.0.0` subnets in its updates to neighboring routers. For example, `172.16.1.0` will now be included in updates to the routers _Chicago_ and _Ames_.
-    
+
 2. _NewYork_ will receive and process IGRP updates on its `172.16.0.0` interfaces from other routers running IGRP 10. For example, _NewYork_ will receive IGRP updates from _Chicago_ and _Ames_.
-    
+
 3. By exclusion, network `192.168.1.0`, connected to _NewYork,_ will not be advertised to _Chicago_ or _Ames_, and _NewYork_ will not process any IGRP updates received on _Ethernet0_ (if there is another router on that segment).
-    
 
 Next, let’s verify that all the routers are seeing all the `172.16.0.0` subnets. Here is _NewYork_’s routing table:
 
@@ -1093,7 +1093,7 @@ Table 3-1. Default bandwidth and delay values
 |                            |                   |               |
 
  All serial interfaces on Cisco routers are configured with the same _default_ bandwidth (1,544 kbits/s) and delay (20,000 ms) parameters.
- 
+
 The reliability and load values are dynamically computed by the router as five-minute exponentially weighted averages.
 
 #### 2.2.2.2 Modifying interface bandwidth, delay, and MTU
@@ -1147,13 +1147,13 @@ The destination IP address in IGRP updates is `255.255.255.255`. The source IP 
 Each update packet contains three types of routes:
 
 _Interior_ routes
-	Contain subnet information for the major network number associated with the address of the interface to which the update is being sent. If the IGRP update is being sent on a broadcast network, the internal routes are subnet numbers from the same major network number that is configured in the broadcast media.
+ Contain subnet information for the major network number associated with the address of the interface to which the update is being sent. If the IGRP update is being sent on a broadcast network, the internal routes are subnet numbers from the same major network number that is configured in the broadcast media.
 
 _System_ routes
-	Contain major network numbers that may have been summarized when a network-number boundary was crossed.
+ Contain major network numbers that may have been summarized when a network-number boundary was crossed.
 
 _Exterior_ routes
-	Represent candidates for the default route. Unlike RIP, which uses `0.0.0.0` to represent the default, IGRP uses specific network numbers as candidates for the default by tagging the routes as exterior.
+ Represent candidates for the default route. Unlike RIP, which uses `0.0.0.0` to represent the default, IGRP uses specific network numbers as candidates for the default by tagging the routes as exterior.
 
 Interior, system, and exterior routes appear in order in each update packet. The count of interior, system, and exterior routes identifies the route type for each route entry.
 
@@ -1176,21 +1176,21 @@ When an update is received for a route, it contains the bandwidth, delay, reliab
 The following list defines bandwidth, delay, reliability, load, and MTU for a path:
 
 Bandwidth
-	The bandwidth for a path is the minimum bandwidth in the path to the destination network. Compare a network to a sequence of pipes for the transmission of a fluid; the slowest pipe (or the thinnest pipe) will dictate the rate of flow of the fluid. Thus, if a path to a network is through an Ethernet segment, a T-1 line, and another Ethernet segment, the path bandwidth will be 1,544 kbps (see [Table 3-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-TABLE-1 "Table 3-1. Default bandwidth and delay values")).
+ The bandwidth for a path is the minimum bandwidth in the path to the destination network. Compare a network to a sequence of pipes for the transmission of a fluid; the slowest pipe (or the thinnest pipe) will dictate the rate of flow of the fluid. Thus, if a path to a network is through an Ethernet segment, a T-1 line, and another Ethernet segment, the path bandwidth will be 1,544 kbps (see [Table 3-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-TABLE-1 "Table 3-1. Default bandwidth and delay values")).
 
 Delay
-	The delay for a path is the sum of all delay values on the path to the destination network. The IGRP unit of delay is in tens of microseconds. A path through a network via an Ethernet segment, a T-1 line, and another Ethernet segment will have a path delay of 22,000 ms or 2,200 IGRP delay units (see [Table 3-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-TABLE-1 "Table 3-1. Default bandwidth and delay values")).
+ The delay for a path is the sum of all delay values on the path to the destination network. The IGRP unit of delay is in tens of microseconds. A path through a network via an Ethernet segment, a T-1 line, and another Ethernet segment will have a path delay of 22,000 ms or 2,200 IGRP delay units (see [Table 3-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-TABLE-1 "Table 3-1. Default bandwidth and delay values")).
 
 The IGRP update packet has three octets to represent delay (in units of tens of microseconds). The largest value of delay that can be represented is 224 x 10 ms, which is roughly 167.7 seconds. 167.7 seconds is thus the maximum possible delay value for an IGRP network. All ones in the delay field are also used to indicate that the network indicated is _unreachable_.
 
 Reliability
-	The reliability for a path is the reliability of the least reliable link in the path.
+ The reliability for a path is the reliability of the least reliable link in the path.
 
 Load
-	The load for a path is the load on the most heavily loaded link in the path.
+ The load for a path is the load on the most heavily loaded link in the path.
 
 MTU
-	The MTU represents the smallest MTU along the path. MTU is currently not used in computing the metric.
+ The MTU represents the smallest MTU along the path. MTU is currently not used in computing the metric.
 
 Note that, in addition to these parameters, the update packet includes the hop count to the destination. The default maximum hop count for IGRP is 100. This default can be modified with the command:
 
@@ -1216,6 +1216,7 @@ Routing entry for 172.16.100.0 255.255.255.0
       Reliability 255/255, minimum MTU 1500 bytes
       Loading 1/255, Hops 2
 ```
+
 #### 2.2.2.5 IGRP composite metric
 
 The path metric of bandwidth, delay, reliability, load, and MTU needs to be expressed as a composite metric for you to be able to compare paths. The default behavior of Cisco routers considers only bandwidth and delay in computing the composite metric (the parameters reliability, load, and MTU are ignored):
@@ -1273,7 +1274,7 @@ There are two paths to consider:
     _BandW_ = 10,000,000/1,544 = 6,476
     _Delay_ = 2,000 + 100 = 2,100
     _Metric_ = _BandW_ + _Delay_ = 8,576
-    
+
 2. _NewYork_ → _Chicago_ → _Ames_ to `172.16.100.0`.
     Bandwidth values in the path: (serial link) 1,544 kbits/s, (serial link) 1,544 kbits/s, (Ethernet segment) 10,000 kbits/s
     Delay values in the path: (serial link) 2,000, (serial link) 2,000, (Ethernet segment) 100
@@ -1281,7 +1282,6 @@ There are two paths to consider:
     _BandW_ = 10,000,000/56 = 6,476
     _Delay_ = 2,000 + 2,000 + 100 = 4,100
     _Metric_ = _BandW_ + _Delay_ = 10,576
-    
 
 _NewYork_ will prefer to route via the first path because the metric is smaller. Why does _NewYork_ use a bandwidth of 1,544 for the 56-kbps link to _Ames_? Go back to [Table 3-1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch03s02.html#iprouting-CHP-3-TABLE-1 "Table 3-1. Default bandwidth and delay values") and you will see that the default bandwidth and delay values of 1,544 kbps and 20,000 ms apply to all serial interfaces, regardless of the speed of the modem device attached to the router port.
 
@@ -1438,7 +1438,7 @@ Let’s now go back to TraderMary’s network and corroborate the metric values 
     _BandW_ = 10,000,000/56 = 178,571
     _Delay_ = 2,000 + 100 = 2100
     _Metric_ = _BandW_ + _Delay_ = 180,671
-    
+
 2. _NewYork_ → _Chicago_ → _Ames_ → `172.16.100.0`
     Bandwidth values in the path: (serial link) 1,544 kbits/s, (serial link) 1,544 kbits/s, (Ethernet segment) 10,000 kbits/s
     Smallest bandwidth in the path: 1,544
@@ -1467,15 +1467,14 @@ Each network number received in the update is checked for validity. Illegal netw
 The rules for processing IGRP updates are:
 
 1. If the destination network number is unknown to the router, install the route using the source IP address of the update (provided the route is not indicated as unreachable).
-    
+
 2. If the destination network number is known to the router but the update contains a smaller metric, modify the routing table entry with the new next hop and metric.
-    
+
 3. If the destination network number is known to the router but the update contains a larger metric, ignore the update.
-    
+
 4. If the destination network number is known to the router and the update contains a higher metric that is from the same next hop as in the table, update the metric.
-    
+
 5. If the destination network number is known to the router and the update contains the same metric from a different next hop, install the route as long as the maximum number of paths to the same destination is not exceeded. These parallel paths are then used for load balancing. Note that the default maximum number of paths to a single destination is six in IOS Releases 11.0 or later.
-    
 
 ### 2.2.3 Parallel Paths
 
@@ -1668,26 +1667,24 @@ One key area to look at in the routing table is the timer values. The format tha
 
 You should also be familiar with the number of major network numbers (two in the previous output -- 172.16.0.0 and 192.168.1.0) and the number of subnets in each (six in 172.16.0.0 and one in 192.168.1.0). In most small to mid-sized networks, these counts will change only when networks are added or subtracted.
 
-  
-
 ---
  The concept of an _outgoing_ interface is best illustrated with an example. In TraderMary’s network, the outgoing interfaces from _NewYork_ to 172.16.100.0 will be _NewYork_ interface _Serial0_, _Chicago_ interface _Serial_, and _Ames_ interface _Ethernet0_. When computing the metric for _NewYork_ to 172.16.100.0, we will use the IGRP parameters of bandwidth, delay, load, reliability, and MTU for these interfaces. We will not use the IGRP parameters from interfaces. However, unless they have been modified, the parameters on this second set of interfaces would be identical to the first.
- 
+
 ## 2.3 Speeding Up Convergence
 
 Like RIP, IGRP implements hold-downs, split horizon, triggered updates, and poison reverse (see [Chapter 2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch02.html "Chapter 2. Routing Information Protocol (RIP)") for details on these convergence methods). Like RIP, IGRP also maintains an update timer, an invalid timer, a hold-down timer, and a flush timer for every route in the routing table:
 
 Update timer (default value: 90 seconds)
-	After sending a routing update, IGRP sets the update timer to 0. When the timer expires, IGRP issues another routing update.
+ After sending a routing update, IGRP sets the update timer to 0. When the timer expires, IGRP issues another routing update.
 
 Invalid timer (default value: 270 seconds)
-	Every time a router receives an update for a route, it sets the invalid timer to 0. The expiration of the invalid timer indicates that the source of the routing information is suspect. Even though the route is declared invalid, packets are still forwarded to the next hop specified in the routing table. Note that prior to the expiration of the invalid timer, IGRP would process any updates received by updating the route’s timers.
+ Every time a router receives an update for a route, it sets the invalid timer to 0. The expiration of the invalid timer indicates that the source of the routing information is suspect. Even though the route is declared invalid, packets are still forwarded to the next hop specified in the routing table. Note that prior to the expiration of the invalid timer, IGRP would process any updates received by updating the route’s timers.
 
 Hold-down timer (default value: 280 seconds)
-	When the invalid timer expires, the route automatically enters the hold-down phase. During hold-down all updates regarding the route are disregarded -- it is assumed that the network may not have converged and that there may be bad routing information circulating in the network. The hold-down timer is started when the invalid timer expires.
+ When the invalid timer expires, the route automatically enters the hold-down phase. During hold-down all updates regarding the route are disregarded -- it is assumed that the network may not have converged and that there may be bad routing information circulating in the network. The hold-down timer is started when the invalid timer expires.
 
 Flush timer (default value: 630 seconds)
-	Every time a router receives an update for a route, it sets the flush timer to 0. When the flush timer expires, the route is removed from the routing table and the router is ready to receive a new route update. Note that the flush timer overrides the hold-down timer.
+ Every time a router receives an update for a route, it sets the flush timer to 0. When the flush timer expires, the route is removed from the routing table and the router is ready to receive a new route update. Note that the flush timer overrides the hold-down timer.
 
 ### 2.3.1 Setting Timers
 
@@ -1806,13 +1803,12 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 40/50/80 ms
 Here are the steps we followed in the creation of the default route:
 
 1. Network `10.0.0.0` was flagged as a default route by _core1_ (line 5).
-    
+
 2. Network `10.0.0.0` was defined via a static route (line 6).
-    
+
 3. The default route was redistributed into IGRP, which then placed the route in the exterior section of its update message to _branch1_ (line 3).
-    
+
 4. A default metric was attached to the redistribution (line 4).
-    
 
 There are a few things to note when creating default routes in IGRP. First, IGRP does not use `0.0.0.0` as a default route. Thus, if `0.0.0.0` were defined in place of `10.0.0.0`, IGRP would not convey it. Second, how should one choose which network number to flag as a default route? In the previous example, the network `10.0.0.0` does not need to be a real network number configured on an interface; it could just be a fictitious number (that does not exist as a real number in the network) to which all default traffic will be sent. Using a fictitious number instead of a real network number as the default route can have certain advantages. For example, a fictitious network number will not go down if an interface goes down. Further, changing the ideal candidate for the default route can be much easier with fictitious network numbers than with real network numbers.
 
@@ -1879,11 +1875,10 @@ Note that it is also possible to set up one router (say, _core1_) as primary an
 Router _branch1_ is configured to perform classful route lookups (see line 7 in the previous code block). A classful route lookup works as follows:
 
 1. Upon receiving a packet, the router first determines the major network number for the destination. If the destination IP address is `172.16.1.1`, the major network number is `172.16.0.0`. If the destination IP address is `192.168.1.1`, the major network number is `192.168.1.0`.
-    
+
 2. Next, the router checks to see if this major network number exists in the routing table. If the major network number exists in the routing table (`172.16.0.0` does), the router checks for the destination’s subnet. In our example, _branch1_ would look for the subnet `172.16.1.0`. If this subnet exists in the table, the packet will be forwarded to the next hop specified in the table. If the subnet does not exist in the table, the packet will be dropped.
-    
+
 3. If the major network number does not exist in the routing table, the router looks for a default route. If a default route exists, the packet will be forwarded as specified by the default route. If there is no default route in the routing table, the packet will be dropped.
-    
 
 Router _branch1_ is able to ping `192.168.1.1` as a consequence of rule 3:
 
@@ -1948,11 +1943,10 @@ Classless route lookup, the other option, is discussed in [Chapter 5](https://l
 IGRP has the robustness of RIP but adds a major new feature -- route metrics based on bandwidth and delay. This feature -- along with the ease with which it can be configured and deployed -- has made IGRP tremendously popular for small to mid-sized networks. However, IGRP does not address several problems that also affect RIP:
 
 - The exchange of full routing updates does not scale for large networks -- the overhead of generating and processing all routes in the AS can be high.
-    
+
 - IGRP convergence times can be too long.
-    
+
 - Subnet mask information is not exchanged in IGRP updates, so Variable Length Subnet Masks (VLSM) and discontiguous address spaces are not supported.
-    
 
 These issues may be too significant to overlook in large IP networks in which address-space conservation may necessitate VLSM, full route updates would be so large that they would consume significant network resources (serial links to branches tend to saturate quickly, and smaller routers may consume a lot of CPU power just to process all the routes at every update interval), and the convergence times may be too long because of the network diameter. Even small to mid-sized networks may choose not to implement IGRP if convergence time is an issue.
 
@@ -2060,11 +2054,10 @@ network 172.16.0.0
 What does it mean to list the network numbers participating in EIGRP?
 
 1. Router _NewYork_ will include directly connected `172.16.0.0` subnets in its updates to neighboring routers. For example, `172.16.1.0` will now be included in updates to the routers _Chicago_ and _Ames_.
-    
+
 2. _NewYork_ will receive and process EIGRP updates on its `172.16.0.0` interfaces from other routers running EIGRP 10. For example, _NewYork_ will receive EIGRP updates from _Chicago_ and _Ames_.
-    
+
 3. By exclusion, network `192.168.1.0`, connected to _NewYork,_ will not be advertised to _Chicago_ or _Ames_, and _NewYork_ will not process any EIGRP updates received on _Ethernet0_ (if there is another router on that segment).
-    
 
 The routing tables for _NewYork_, _Chicago_, and _Ames_ will show all `172.16.0.0` subnets. Here is _NewYork_’s table:
 
@@ -2127,7 +2120,7 @@ network 172.16.0.0
 network 192.168.1.0
 ```
 
-Each EIGRP process is identified by an autonomous system (AS) number, just like IGRP processes. Routers with the _same_ AS numbers will exchange routing information with each other, resulting in a _routing domain_ . Routers with dissimilar AS numbers will not exchange any routing information by default. However, routes from one routing domain can be leaked into another domain through the redistribution commands 
+Each EIGRP process is identified by an autonomous system (AS) number, just like IGRP processes. Routers with the _same_ AS numbers will exchange routing information with each other, resulting in a _routing domain_ . Routers with dissimilar AS numbers will not exchange any routing information by default. However, routes from one routing domain can be leaked into another domain through the redistribution commands
 
 Compare the routing table in this section with the corresponding table for IGRP in [Chapter 2]. The essential contents are identical: the same routes with the same next hops. However, the route metrics look much bigger and the route update times are very high. IGRP routes would have timed out a while ago.
 
@@ -2166,6 +2159,7 @@ The constants k1, k2, k3, k4, and k5 can be modified with the following command:
 ```
 metric weights tos k1 k2 k3 k4 k5
 ```
+
 ### Warning
 
 Cisco strongly recommends _not_ modifying the k1, k2, k3, k4, and k5 values for EIGRP.
@@ -2181,11 +2175,10 @@ RIP and IGRP employ a battery of techniques to reduce the likelihood of routing 
 DUAL can support IP, IPX, and AppleTalk. A protocol-dependent module encapsulates DUAL messages and handles interactions with the routing table. In summary, DUAL requires:
 
 1. A method for the discovery of new neighbors and their loss (see the next section, [Section 3.3.1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-SECT-3.1 "Neighbor Relationship")).
-    
+
 2. Reliable transmission of update packets between neighbors (see the later section [Section 3.3.2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-SECT-3.2 "Reliable Transport Protocol")).
-    
+
 3. Protocol-dependent modules that can encapsulate DUAL traffic in IP, IPX, or AppleTalk. This text will deal only with EIGRP in IP networks (see the later section [Section 3.3.4](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-SECT-3.4 "Protocol-Dependent Module")).
-    
 
 I’ll end this section with a discussion of EIGRP packet formats.
 
@@ -2194,9 +2187,8 @@ I’ll end this section with a discussion of EIGRP packet formats.
 A router discovers a neighbor when it receives its first hello packet on a directly connected network. The router requests DUAL to send a full route update to the new neighbor. In response, the neighbor sends its full route update. Thus, a new neighbor relationship is established in the following steps:
 
 1. When a router _A_ receives a hello packet from a new neighbor _B_, _A_ sends its topology table to router _B_ in unicast updates with the _initialization bit_ turned on.
-    
+
 2. When router _B_ receives a packet with the initialization bit on, it sends its topology table to router _A_.
-    
 
 The interval between hello packets from any EIGRP-speaking router on a network is five seconds (by default) on most media types. Each hello packet advertises _hold-time_ _--_ the length of time the neighbor should consider the sender up. The default hold-time is 15 seconds. If no hellos are received for the duration of the hold-time, DUAL is informed that the neighbor is down. Thus, in addition to detecting a new neighbor, hello packets are also used to detect the loss of a neighbor.
 
@@ -2338,11 +2330,10 @@ Note the “P” for “passive state” in the left margin of each route entry 
 Any of the following events can cause DUAL to reevaluate its feasible successors:
 
 - The transition in the state of a directly connected link
-    
+
 - A change in the metric of a directly connected link
-    
+
 - An update from a neighbor
-    
 
 If DUAL finds a feasible successor in its own topology table after one of these events, the route remains in passive state. If DUAL cannot find a feasible successor in its topology table, it will send a query to all its neighbors and the route will transition to _active state_ .
 
@@ -2382,13 +2373,12 @@ Let’s start with `172.16.100.0`. DUAL checks the topology table for `172.16.
 Since _Serial0_ is down, the only feasible successor is `172.16.251.2` (_Ames_). Let’s review how _Ames_ qualifies as an FS. The FS check is:
 
 - RD < FD.
-    
+
 - RD=281,600 (line 13).
-    
+
 - FD=2,707,456 (line 12).
-    
+
 - Since 281,600 < 2,707,456, _Ames_ qualifies as an FS.
-    
 
 In plain words, this implies that the path available to _NewYork_ via _Ames_ (the FS) is independent of the primary path that just failed. DUAL installs _Ames_ as the new successor for `172.16.100.0`.
 
@@ -2476,15 +2466,14 @@ EIGRP packets are encapsulated directly in IP with the protocol field set to 88.
 Following the IP header is an EIGRP header. Key fields in the EIGRP header are as follows, and are also shown in [Figure 4-6](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-FIG-6 "Figure 4-6. Format of EIGRP packets"):
 
 - The _opcode_ field specifies the EIGRP packet type (update, query, reply, hello).
-    
+
 - The _checksum_ applies to the entire EIGRP packet, excluding the IP header.
-    
+
 - The rightmost bit in the _flags_ field is the initialization bit and is used in establishing a new neighbor relationship (see [Section 3.3.1](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-SECT-3.1 "Neighbor Relationship") earlier in this chapter).
-    
+
 - The _sequence_ and _ack_ fields are used to send messages reliably (see [Section 3.3.2](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch04s03.html#iprouting-CHP-4-SECT-3.2 "Reliable Transport Protocol") earlier in this chapter).
-    
+
 - The _AS number_ identifies the EIGRP process issuing the packet. The EIGRP process receiving the packet will process the packet only if the receiving EIGRP process has the same AS number; otherwise, the packet will be discarded.
-    
 
 <!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.3.5 EIGRP Packet.png -->
 Figure 4-6. Format of EIGRP packets
@@ -2541,8 +2530,6 @@ Candidate default routes are marked by setting the flags field to 0x02. A flags 
 
 The other parameters in the external route packet are similar to those in IGRP.
 
-  
-
 ---
 
  Unlike RIP and IGRP, EIGRP updates are _not_ periodic. EIGRP updates are sent only when there is a topological change in the network.
@@ -2560,7 +2547,7 @@ Let’s say that the network architect decided to subdivide `172.16.250.0` usi
 3. `172.16.250.8`
 4. ...
 
-1. `172.16.250.252`
+5. `172.16.250.252`
 
 The serial links in TraderMary’s network can be readdressed using these subnets:
 
@@ -2901,6 +2888,7 @@ The command to clear and reestablish neighbor relationships is:
 ```
 clear ip eigrp neighbors [_`ip address`_ | _`interface`_]
 ```
+
 #### Tip
 
 Repeatedly clearing all neighbor relationships causes the loss of routes (and the loss of packets to those routes). Besides, repeatedly issuing **clear** commands usually does not fix the problem.
@@ -2952,6 +2940,7 @@ EIGRP uses the bandwidth that is configured on an interface to decide how much E
 ```
 ip bandwidth percent eigrp _`AS-number percentage`_
 ```
+
 ### 3.7.4 Network Logs
 
 Check the output of the **show logging** command for EIGRP/DUAL messages. For example, the following message:
@@ -3355,38 +3344,38 @@ Any area that can be configured as a stub area but needs to support an external 
 The OSPF topological database is composed of link state advertisements (LSAs). OSPF routers originate LSAs describing a piece of the network topology; these LSAs are flooded to other routers that then compose a database of LSAs. There are several types of LSAs, each originating at a different router and describing a different component of the network topology. The various types of LSAs are:
 
 Router LSA (type 1)
-	A router LSA describes a router’s links (or interfaces). All routers originate router LSAs. A router LSA is flooded to all intra-area routers.
+ A router LSA describes a router’s links (or interfaces). All routers originate router LSAs. A router LSA is flooded to all intra-area routers.
 
 Network LSA (type 2)
-	A network LSA describes a broadcast network (such as an Ethernet segment) or a non-broadcast multi-access (NBMA) network (such as Frame Relay). All routers attached to the broadcast/NBMA network are described in the LSA. A network LSA is flooded to all intra-area routers.
+ A network LSA describes a broadcast network (such as an Ethernet segment) or a non-broadcast multi-access (NBMA) network (such as Frame Relay). All routers attached to the broadcast/NBMA network are described in the LSA. A network LSA is flooded to all intra-area routers.
 
 Summary LSA (type 3)
-	A summary LSA describes IP networks in another area. The summary LSA is originated by an ABR and flooded outside the area. Summary LSAs are flooded to routers in all OSPF areas except totally stubby areas.
+ A summary LSA describes IP networks in another area. The summary LSA is originated by an ABR and flooded outside the area. Summary LSAs are flooded to routers in all OSPF areas except totally stubby areas.
 
 ASBR summary LSA (type 4)
-	ASBR summary LSAs describe the route to an ASBR. The mask associated with these LSAs is 32 bits long because the route they advertise is to a host -- the IP address of the ASBR. ASBR summary LSAs originate at ASBRs. ASBR summary LSAs are flooded to routers in all OSPF areas except stub areas.
+ ASBR summary LSAs describe the route to an ASBR. The mask associated with these LSAs is 32 bits long because the route they advertise is to a host -- the IP address of the ASBR. ASBR summary LSAs originate at ASBRs. ASBR summary LSAs are flooded to routers in all OSPF areas except stub areas.
 
 External LSA (type 5)
-	External LSAs describe routes external to the OSPF process (in another autonomous system). An external route can be a default route. External LSAs originate at the ASBR. External LSAs are flooded throughout the OSPF network, except to stub areas.
+ External LSAs describe routes external to the OSPF process (in another autonomous system). An external route can be a default route. External LSAs originate at the ASBR. External LSAs are flooded throughout the OSPF network, except to stub areas.
 
 NSSA external LSA (type 7)
-	NSSA external LSAs describe routes to external networks (in another autonomous system) connected to the NSSA. Unlike type 5 external LSAs, NSSA external LSAs are flooded only within the NSSA. Optionally, type 7 LSAs may be translated to type 5 LSAs at the ABR and flooded as type 5 LSAs.
+ NSSA external LSAs describe routes to external networks (in another autonomous system) connected to the NSSA. Unlike type 5 external LSAs, NSSA external LSAs are flooded only within the NSSA. Optionally, type 7 LSAs may be translated to type 5 LSAs at the ABR and flooded as type 5 LSAs.
 
 ### 3.3.11 OSPF Route Types
 
 Every router in OSPF uses its local topological database as input to the SPF algorithm. The SPF algorithm yields the shortest path to every known destination, which is then used to populate the IP routing table as one of four route types:
 
 Intra-area route
-	An intra-area route describes the route to a destination within the area.
+ An intra-area route describes the route to a destination within the area.
 
 Inter-area route
-	An inter-area route describes the route to a destination in another area. The path to the destination comprises an intra-area path, a path through the backbone area and an intra-area path in the destination network’s area. An inter-area route is sometimes referred to as a summary route.
+ An inter-area route describes the route to a destination in another area. The path to the destination comprises an intra-area path, a path through the backbone area and an intra-area path in the destination network’s area. An inter-area route is sometimes referred to as a summary route.
 
 External route (type 1)
-	An external route describes the route to a destination outside the AS. The cost of a type 1 external route is the sum of the costs of reaching the destination in the external network and the cost of reaching the ASBR advertising the route.
+ An external route describes the route to a destination outside the AS. The cost of a type 1 external route is the sum of the costs of reaching the destination in the external network and the cost of reaching the ASBR advertising the route.
 
 External route (type 2)
-	An external route describes the route to a destination outside the AS. The cost of a type 2 external route is the cost of reaching the destination in the external network only; it does not include the cost of reaching the ASBR advertising the route.
+ An external route describes the route to a destination outside the AS. The cost of a type 2 external route is the cost of reaching the destination in the external network only; it does not include the cost of reaching the ASBR advertising the route.
 
 When routing a packet, the routing table is scanned for the most specific match. For example, say that the destination IP address in the packet is `10.1.1.254` and the routing table contains entries for `10.1.1.0/24` and `10.1.1.192/26`. The most specific match will be the route `10.1.1.192/26`. Now, what if `10.1.1.192/26` was known as an intra-area route and an inter-area route? OSPF prefers routes in the following order: intra-area routes (most preferred), inter-area routes, type 1 external routes, and type 2 external routes (least preferred).
 
@@ -3405,32 +3394,32 @@ The OSPF version in use. The current version number is 2.
 
 _Type_
 There are five types of OSPF packets:
-	Type 1 : Hello packets, described in the next section.
-	Type 2 : Database description packets, described later under [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
-	Type 3 : Link state requests, described in [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
-	Type 4 : Link state updates, described in [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
-	Type 5 : Link state acknowledgments, described in [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
+ Type 1 : Hello packets, described in the next section.
+ Type 2 : Database description packets, described later under [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
+ Type 3 : Link state requests, described in [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
+ Type 4 : Link state updates, described in [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
+ Type 5 : Link state acknowledgments, described in [Section 4.4.5](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-SECT-4.5 "Database Exchange").
 
 _Packet length_
-	The length of the OSPF packet, including the header.
+ The length of the OSPF packet, including the header.
 
 _Router ID_
-	The router ID of the router originating the OSPF packet.
+ The router ID of the router originating the OSPF packet.
 
 _Area ID_
-	The area ID of the network on which this packet is being sent.
+ The area ID of the network on which this packet is being sent.
 
 _Checksum_
-	The checksum for the entire packet, including the header.
+ The checksum for the entire packet, including the header.
 
 _Au type_
-	The type of authentication scheme in use. The possible values for this field are:
-		0 : No authentication
-		1 : Clear-text password authentication
-		2 : MD5 checksum
+ The type of authentication scheme in use. The possible values for this field are:
+  0 : No authentication
+  1 : Clear-text password authentication
+  2 : MD5 checksum
 
 _Authentication data_
-	The authentication data.
+ The authentication data.
 
 <!-- 원본 이미지 없음: computer-networks__Routing Information Protocol (RIP__3.4 How OSPF Works.png -->
 Figure 4-5. Format of an OSPF header
@@ -3490,25 +3479,29 @@ Since the router ID is critical to the OSPF process, it is important for the net
 Note the following points:
 
 1. Since the router ID is needed only to represent the router in the SPF graph, it is not required that OSPF advertise the router ID. However, if the router ID is advertised, it will be represented as a stub link in a router LSA.
-    
+
 2. A mask of `255.255.255.255` may be chosen for the loopback interface to conserve on network addresses, as in the earlier example.
-    
+
 3. If the router ID is not advertised, any unique address can be used to represent the router ID -- the use of nonreserved IP addresses will not cause any routing-table conflicts.
-    
 
 #### 3.4.1.2 Area ID
+
 The area ID of the interface on which the OSPF packet is being sent.
 
 #### 3.4.1.3 Checksum
+
 The checksum pertaining to the hello packet.
 
 #### 3.4.1.4 Authentication
+
 The authentication method and authentication data.
 
 #### 3.4.1.5 Network mask
+
 The network mask of the interface on which the hello packet is being sent.
 
 #### 3.4.1.6 Hello-interval
+
 The duration between hello packets. The default value of hello-interval is 10 seconds on most interfaces.
 
 The hello-interval can be modified with the following command in interface configuration mode:
@@ -3516,6 +3509,7 @@ The hello-interval can be modified with the following command in interface conf
 ```
 ip ospf hello-interval _`seconds`_
 ```
+
 #### 3.4.1.7 Options
 
 OSPF defines several optional capabilities that a router may or may not support. The options field is one octet long, as shown in [Figure 4-7](https://learning.oreilly.com/library/view/ip-routing/0596002750/ch06s04.html#iprouting-CHP-6-FIG-7 "Figure 6-7. Format of the options field").
@@ -3526,14 +3520,17 @@ Figure 4-7. Format of the options field
 Routers that support demand circuits set the DC bit; NSSA support is signified using the N bit. The E bit signifies that the router accepts external LSAs -- stub routers turn off this bit. The T bit signifies the support of multiple types of service.
 
 #### 3.4.1.8 Router priority
+
 A router with a higher priority takes precedence in the DR election algorithm. A value of makes the router ineligible for DR/BDR election. The default value of this field is 1.
 
 #### 3.4.1.9 Router dead-interval
+
 If no hello packets are received for the duration of the dead-interval_,_ the neighbor is declared dead. This value can be altered with the following command in interface configuration mode:
 
 ```
 ip ospf dead-interval _`value`_
 ```
+
 #### 3.4.1.10 Designated router (DR)
 
 The designated router for multi-access networks. This field is set to `0.0.0.0` if no DR has been elected on the network.
@@ -3569,20 +3566,18 @@ DR/BDR election can be described in the following steps. Remember that the DR/BD
 The following description assumes that a router _R_ has just been turned up on a multi-access network:
 
 1. On becoming active on a multi-access network, the OSPF process on router _R_ begins receiving hellos from neighbors on its interface to the multi-access network. If the hellos indicate that there already are a DR and a BDR, the DR/BDR election process is terminated (even if _R_’s OSPF priority is higher than the current DR/BDR priority).
-    
+
 2. If hellos from neighbors indicate that there is no active BDR on the network, the router with the highest priority is elected the BDR. If the highest priority is shared by more than one router, the router with the highest router ID wins.
-    
+
 3. If there is no active DR on the network, the BDR is promoted to DR.
-    
 
 The following can be stated as corollaries of the above rules:
 
 1. If a DR and BDR have already been elected, bringing up a new router (even with a higher priority) will not alter the identities of the DR/BDR.
-    
+
 2. If there is only one DR-eligible router on a multi-access network, that router will become the DR.
-    
+
 3. If there are only two DR-elegible routers on a multi-access network, one will be the DR and the other, the BDR.
-    
 
 A router with a higher priority takes precedence during DR election. A priority value of indicates that the router is ineligible for DR election. The default priority value is 1. Routers with low memory and CPU resources should be made ineligible for DR election.
 
@@ -3618,25 +3613,25 @@ Note that _NewYork_ is the DR on _Ethernet0_. Since there is no other router 
 The state of an interface can have one of the following values:
 
 Down
-	The interface state is down as indicated by lower-level protocols, and no OSPF traffic has been sent or received yet.
+ The interface state is down as indicated by lower-level protocols, and no OSPF traffic has been sent or received yet.
 
 Loopback
-	The interface is looped and will be advertised in LSAs as a host route.
+ The interface is looped and will be advertised in LSAs as a host route.
 
 Point-to-point
-	The interface is up and is recognized as a serial interface or a virtual link. After entering the point-to-point state, the neighbors will attempt to establish adjacency.
+ The interface is up and is recognized as a serial interface or a virtual link. After entering the point-to-point state, the neighbors will attempt to establish adjacency.
 
 Waiting
-	This state applies only to broadcast/NBMA networks on which the router is attempting to identify the DR/BDR.
+ This state applies only to broadcast/NBMA networks on which the router is attempting to identify the DR/BDR.
 
 DR
-	This router is the DR on the attached network.
+ This router is the DR on the attached network.
 
 Backup
-	This router is the BDR on the attached network.
+ This router is the BDR on the attached network.
 
 DRother
-	This router is neither the DR nor the BDR on the attached network. The router will form adjacencies with the DR and BDR (if they exist).
+ This router is neither the DR nor the BDR on the attached network. The router will form adjacencies with the DR and BDR (if they exist).
 
 As an example, the state of _NewYork_’s interface to _Chicago_ is point-to-point (line 12) and _NewYork_ and _Chicago_ have established adjacency (lines 13 and 14):
 
@@ -3653,6 +3648,7 @@ As an example, the state of _NewYork_’s interface to _Chicago_ is point-to-
 14      **`Adjacent with neighbor 69.1.1.1`** 
       Suppress hello for 0 neighbor(s)
 ```
+
 ### 3.4.4 Neighbor Relationship
 
 Not all neighbors establish adjacency. Neighbors may stay at “2-way” or enter into a “Full” relationship, depending on the type of network, as follows:
@@ -3833,6 +3829,7 @@ In our example, the link data field (in line 23) specifies the IP address of _N
          Number of TOS metrics: 0
           TOS 0 Metrics: 10
 ```
+
 #### 3.4.5.2 Network LSA (type 2)
 
 A network LSA describes broadcast/NBMA networks. The network LSA is originated by the DR and describes all attached routers.
@@ -3859,6 +3856,7 @@ The LSA in the following example is self-originated, as seen in the advertising 
 26    **`Attached Router: 192.168.1.1`**  
 27    **`Attached Router: 192.168.1.4`**
 ```
+
 #### 3.4.5.3 Summary LSA (type 3)
 
 A summary LSA is advertised by an ABR and describes inter-area routes.
@@ -3896,6 +3894,7 @@ The summary LSAs in the following example are originated by _NewYork2_ (`192.1
 33   **`Network Mask: /24`**                                
     TOS: 0     Metric: 1795
 ```
+
 #### 3.4.5.4 ASBR summary LSA (type 4)
 
 An ASBR summary LSA describes the route to the ASBR. The mask associated with a type 4 LSA is 32 bits long because the route advertised is to a host -- the host being the ASBR. ASBR summary LSAs are originated by ABRs.
@@ -3921,6 +3920,7 @@ The link state ID (line 34) in this example describes the router ID of _Paris_,
      Network Mask: /0
        TOS: 0     Metric: 1785
 ```
+
 #### 3.4.5.5 External LSA (type 5)
 
 External LSAs originate at ASBRs and describe routes external to the OSPF process. External LSAs are flooded throughout the OSPF network, with the exception of stub areas.
@@ -4475,15 +4475,14 @@ The following sections provide a partial and ad hoc checklist to use when execut
 Building a large, unstructured OSPF network is courting disaster. The design of the OSPF network must be clearly defined: all changes in the OSPF environment must bear the imprint of the OSPF architecture. For example, when adding a new router, the network engineer must answer the following questions:
 
 - Will the router be an area router, a stub router, or an ABR?
-    
+
 - If the router is an ABR or an ASBR, what routes should the router summarize?
-    
+
 - What impact would the failure of the router have on OSPF routing?
-    
+
 - Will this router be a DR/BDR?
-    
+
 - How will this router affect the performance of other OSPF routers?
-    
 
 ### 4.11.2 IP Addressing
 
@@ -4518,17 +4517,16 @@ If the number of routers on a multi-access network exceeds 12 to 15 and the DR/B
 To summarize the routes:
 
 - Allocate address blocks for each area based on bit boundaries. As areas grow, keep in mind that the area may ultimately need to be split into two. If possible, allocate addresses within an area in contiguous blocks to allow summarization at the time of the split.
-    
+
 - Summarize into the backbone at the ABR (as opposed to summarizing into the nonbackbone area). This reduces the sizes of the LS database in the backbone area and the LS databases in the nonbackbone areas.
-    
+
 - Route summarization has the advantage that a route-flap in a subnet (that has been summarized) does not trigger an LSA to be flooded, reducing the OSPF processing overhead.
-    
+
 - If an area has multiple ABRs and one ABR announces more specific routes, all the traffic will flow to that router. This is good if this is the desired effect. Otherwise, if you intend to use all ABRs equally, all ABRs must have identical summary statements.
-    
+
 - Summarize external routes at the ASBR.
-    
+
 - Golden rule: summarize, summarize, summarize.
-    
 
 ### 4.11.9 VLSM
 
@@ -4636,6 +4634,7 @@ To change these timers, use the following command under the OSPF configuration:
 ```
 timers spf <_`schedule delay in seconds`_> <_`hold-time in seconds`_>
 ```
+
 ### 4.12.7 Using the LS Database
 
 Since the LS database is the input to the SPF algorithm, you can analyze it to troubleshoot missing routes. Analyzing the LS database can be particularly useful when you’re working with stub areas, totally stubby areas, or NSSAs, since these areas block certain LSAs.
@@ -4661,11 +4660,11 @@ Furthermore, OSPF does not tie up network bandwidth and CPU resources in periodi
 These OSPF benefits come at a price:
 
 - OSPF is a complex protocol requiring a structured topology. A haphazard environment, without a plan for network addresses, route summarization, LS database sizes, and router performance, will yield a real mess.
-    
+
 - A highly trained staff is required to engineer and operate a large OSPF network.
-    
+
 - OSPF maintains an LS database that requires sizeable memory, and the SPF algorithm can hog CPU resources if the size of the topology database has grown out of bounds. Splitting an area to reduce the size of the LS database may not be straightforward, depending on the topology of the area.
-    
+
 - OSPF assumes a hierarchical network topology -- migrating a network from another protocol to OSPF requires extensive planning.
 
 ## PNG 시각자료

@@ -19,9 +19,10 @@ type: lecture
 updated: '2026-05-05'
 ---
 
-#ComputerScience #확률과통계 
+# ComputerScience #확률과통계
 
 ---
+
 ### **Geometric Random Variable:**
 
 - **Notation:** $X \sim \text{Geo}(p)$
@@ -31,7 +32,7 @@ updated: '2026-05-05'
 - **PMF equation:** $$P(X = k) = (1-p)^{k-1} p$$                                                                                               (단, $k$는 1 이상의 양의 정수)
 - **Expectation:** $$E(X) = \frac{1}{p}$$
 - **Variance:** $$\text{Var}(X) = \frac{1-p}{p^2}$$
-- **PMF graph:** 시행 횟수에 따른 확률을 나타내는 그래프로, 시행 횟수가 증가할수록 확률이 감소합니다. 
+- **PMF graph:** 시행 횟수에 따른 확률을 나타내는 그래프로, 시행 횟수가 증가할수록 확률이 감소합니다.
 
 ### **Negative Binomial Random Variable:**
 
