@@ -45,4 +45,5 @@ All note content previously written by any delegated lane is rejected and may be
 - The project root had no `.ok/templates/`, so agents had no project-wide authoring contract. `ComputerScience/.ok/templates/` existed but its same-name templates overrode any future root template and still required slide images/PDF links, contradicting the current copyright rule.
 - Authoring stays paused while root project templates are created and every same-name folder override is aligned or removed.
 - All lecture/practice/index templates must include `slides: true` where the document is intended to open as a deck.
-- OpenKnowledge's documented slides plugin is enabled through project config; render checking thereafter uses Slidev CLI builds only.
+- OpenKnowledge's slides plugin is a user-scoped desktop preference and is not agent-settable through project config. Every eligible note still carries `slides: true`; render checking uses the installed Slidev CLI only.
+- Slidev's exporter dependency is installed at `@slidev/cli/node_modules/playwright-chromium` (v1.61.0), with Chromium and headless-shell revision 1228 available in the Playwright cache.

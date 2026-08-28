@@ -2,6 +2,11 @@
 
 ## 2026-08-29
 
+- Installed `playwright-chromium` 1.61.0 in Slidev's module-resolution path without replacing the existing global `playwright` executable.
+- Installed Chromium and Chromium headless-shell revision 1228 under the Playwright cache.
+- Verified `slidev export` completes without `--executable-path`.
+- The dependency gate passes. The probe still reports an unresolved OpenKnowledge `<Tab>` component under raw Slidev, so this export does not establish document-component compatibility.
+
 - Began the `quantum-lecture` course unit.
 - Confirmed OpenKnowledge content root and read the target folder before writing.
 - Loaded the official OpenKnowledge palette for visual authoring.
