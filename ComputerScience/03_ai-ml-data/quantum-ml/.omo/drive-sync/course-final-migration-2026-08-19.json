@@ -1,0 +1,3506 @@
+{
+  "schema_version": 1,
+  "design_id": "DS@v1",
+  "base_skeleton": "SK@v2",
+  "base_head": "a90aa57af8aa5de4e85b6d916cfadd6334990177",
+  "generated_on": "2026-08-19",
+  "public_asset_count": 184,
+  "notebook_count": 174,
+  "pdf_count": 10,
+  "stage_counts": {
+    "01.quantum-foundations": 50,
+    "02.circuits-and-encoding": 48,
+    "03.variational-learning-and-kernels": 30,
+    "04.quantum-kernel-classification": 22,
+    "05.quantum-neural-networks": 21,
+    "06.qaoa-and-combinatorial-optimization": 11,
+    "07.capstone": 2
+  },
+  "subfolder_counts": {
+    "01.quantum-foundations/01.why-quantum-and-qml": 4,
+    "01.quantum-foundations/02.bits-qubits-and-state": 8,
+    "01.quantum-foundations/03.gates-measurement-and-entanglement": 38,
+    "02.circuits-and-encoding/01.quantum-circuits-and-qml": 6,
+    "02.circuits-and-encoding/02.feature-encoding": 34,
+    "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits": 8,
+    "03.variational-learning-and-kernels/01.loss-and-optimization": 23,
+    "03.variational-learning-and-kernels/02.quantum-kernels": 7,
+    "04.quantum-kernel-classification/01.iris-qsvm": 22,
+    "05.quantum-neural-networks/01.classical-neural-network-baseline": 2,
+    "05.quantum-neural-networks/02.estimator-qnn": 8,
+    "05.quantum-neural-networks/03.torchconnector-hybrid-qnn": 11,
+    "06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline": 1,
+    "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers": 2,
+    "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution": 8,
+    "07.capstone/01.netflix-qml-project": 2
+  },
+  "entries": [
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf",
+      "proposed_path": "01.quantum-foundations/01.why-quantum-and-qml/day01_02_expressive_power_limit_lecture.pdf",
+      "drive_id": "1JXESUqxsbIMvyp7QA4R1z7aMRFP7rg2M",
+      "day": "Day1",
+      "source_title": "2.표현력의 한계.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day1/2.표현력의 한계.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Feature engineering과 XOR의 선형 분리 불가능성을 Logistic Regression 실습으로 보여 주고, 비선형 표현이 필요한 이유를 도입한다.",
+      "relation_action": "표지 제목은 직접 확인했지만 hybrid placement는 이 자료의 동기 부여 역할을 근거로 한 보수적 합성이다. source-local 숫자와 불균일한 lecture-materials 중첩을 제거하고 raw path와 payload는 유지한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "17eb28cb2887be6e5d4650711546419a075300ee46cb6fe5167e4e8c0781172b",
+      "visible_title": "표현력의 한계"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/why-quantum-computing/1. 왜 Quantum Computing이 필요한가.pdf",
+      "proposed_path": "01.quantum-foundations/01.why-quantum-and-qml/day02_01_why_quantum_computing_lecture.pdf",
+      "drive_id": "1ZiCHxwVhS98V-9USsmsVFlK2LifnsVcj",
+      "day": "Day2",
+      "source_title": "1.왜 Quantum Computing이 필요한가.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day2/1.왜 Quantum Computing이 필요한가.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Classical Computing과 Quantum Computing을 비교하고 classical bit와 계산 표현의 한계, quantum computing의 등장 배경을 설명하는 과정 동기 자료다.",
+      "relation_action": "표지는 선행 '왜' 없이 표시되지만 내부 breadcrumb는 '왜 Quantum Computing이 필요한가'를 사용한다. proposed stem은 공통 의미를 보존하고 source-local 숫자만 정규화한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "32eb9481bbaed579c4e5f5b46a25a6d248701d83e803e3b5da682e5d5bd10aa4",
+      "visible_title": "Quantum Computing이 필요한가"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/expressive-power-limit/2_xor_expressive_power_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/01.why-quantum-and-qml/supplement_02_xor_expressive_power_classical_baselines_lab.ipynb",
+      "drive_id": null,
+      "day": null,
+      "source_title": [
+        "1.quantum-ml-overview/expressive-power-limit/lecture-materials/2. 표현력의 한계.pdf"
+      ],
+      "raw_path": null,
+      "provenance_kind": "curated_derived_from_pdf",
+      "evidence_tag": "near_match_only",
+      "content_summary": "NumPy/scikit-learn XOR lab comparing raw-feature LogisticRegression, an interaction feature, and nonlinear SVC with decision-boundary visualizations.",
+      "relation_action": "Add an explicit derived-from edge to the PDF; retain this as a curated supplement rather than a one-to-one Drive artifact. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-role/4_qml_quantum_role_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/01.why-quantum-and-qml/week01_04_qml_quantum_role_numpy_feature_map_lab.ipynb",
+      "drive_id": null,
+      "day": null,
+      "source_title": [
+        "1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf"
+      ],
+      "raw_path": null,
+      "provenance_kind": "curated_derived_from_pdf",
+      "evidence_tag": "near_match_only",
+      "content_summary": "NumPy-only manual two-qubit feature-state and fidelity-kernel construction over synthetic XOR-style points, with probability and kernel visualizations.",
+      "relation_action": "Add an explicit derived-from edge to the Week01 QML-role PDF; do not describe the NumPy implementation as Qiskit execution. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 3,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/bit-and-qubit/2. Bit와 Qubit.pdf",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day02_02_bit_and_qubit_lecture.pdf",
+      "drive_id": "1HS_zl8uOZO_9zfbIl-9wOuunnGzWOxOn",
+      "day": "Day2",
+      "source_title": "2.Bit와 Qubit.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day2/2.Bit와 Qubit.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "고전 bit의 정보 표현과 한계를 출발점으로 qubit의 중첩, 상태 표현, 측정 개념을 소개하는 양자 정보 기초 자료다.",
+      "relation_action": "현재 folder와 표지 의미는 정확하다. source-local 숫자를 zero-padded Day/section grammar로 이동하고 semantic stem만 ASCII snake_case로 바꾼다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "59999076fc4711eb7fa241586afdf30207daa3486a5ae51a7ba77908f3afd28d",
+      "visible_title": "Bit와 Qubit"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_1_hadamard_counts_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_01_hadamard_counts_lab.ipynb",
+      "drive_id": "1EsJdhq4Jr8eVXtSEbz38l3WCz58AUi8O",
+      "day": "Day06",
+      "source_title": "3-2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_2_hadamard_probability_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_02_hadamard_probability_lab.ipynb",
+      "drive_id": "1L26FGilWr7v-wps-_HW613bsmGtEYyMB",
+      "day": "Day06",
+      "source_title": "3-2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_3_probability_vector_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_03_probability_vector_lab.ipynb",
+      "drive_id": "1QP6OWNnR2Z8SuXaZxFYdw3g6FmkNnJ2Z",
+      "day": "Day06",
+      "source_title": "3-2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_4_zero_state_probability_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_04_zero_state_probability_lab.ipynb",
+      "drive_id": "15BZdr3pnht6xDr9LxXyqasVA7BhRwxyt",
+      "day": "Day06",
+      "source_title": "3-2-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_5_hadamard_state_probability_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_05_hadamard_state_probability_lab.ipynb",
+      "drive_id": "1wtsmjGMG2HKNpWmjKXhgEGgbaBY8PsRR",
+      "day": "Day06",
+      "source_title": "3-2-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_3_2_6_x_state_probability_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_06_x_state_probability_lab.ipynb",
+      "drive_id": "1-5BZmMcImkTZfnOURIB9qAeM28QQfwU6",
+      "day": "Day06",
+      "source_title": "3-2-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-2-6.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/3_2_measurement_probability_vectors.ipynb",
+      "proposed_path": "01.quantum-foundations/02.bits-qubits-and-state/day06_derived_03_02_01_to_03_02_06_measurement_probability_vectors_lab.ipynb",
+      "drive_id": null,
+      "day": "Day06",
+      "source_title": [
+        "Day6/3-2-1.py",
+        "Day6/3-2-2.py",
+        "Day6/3-2-3.py",
+        "Day6/3-2-4.py",
+        "Day6/3-2-5.py",
+        "Day6/3-2-6.py"
+      ],
+      "raw_path": null,
+      "provenance_kind": "curated_derived_many_to_one",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Qiskit/Aer synthesis converting counts to probability vectors for basis, Hadamard, and X-prepared one-qubit states.",
+      "relation_action": "Add one many-to-one derived provenance record for the six Day6 source exercises. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/3. Hadamard Gate 개념 이해.pdf",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day05_03_hadamard_gate_concepts_lecture.pdf",
+      "drive_id": "1axTsaG1OMMtZ7r7FHCb_yg8Op-XRafxl",
+      "day": "Day5",
+      "source_title": "3.Hardamard Gate 개념 이해.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day5/3.Hardamard Gate 개념 이해.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Quantum gate의 역할을 설명한 뒤 Hadamard gate가 basis state를 중첩 상태로 준비하는 원리와 QML 관점의 의미를 소개한다.",
+      "relation_action": "raw source의 'Hardamard' 오탈자는 provenance에 보존하고 public semantic stem은 표지의 정확한 'Hadamard'를 사용한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "891223ae80b9f70f8ce99dd446038935fb842b7e119243ae3057e0afccf8029b",
+      "visible_title": "Hadamard Gate 개념 이해"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/4. 상태변화 분석.pdf",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day05_04_quantum_state_transition_analysis_lecture.pdf",
+      "drive_id": "1mnP5oY4ztCE7iWK0dX_UyBiGpw0iR7YB",
+      "day": "Day5",
+      "source_title": "4.상태변화 분석.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day5/4.상태변화 분석.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Basis state에서 H gate 적용, H 반복, H/X 적용 순서를 AerSimulator와 histogram으로 관찰하는 gate 상태 변화 실습이다.",
+      "relation_action": "PDF 내부 section-label drift와 결과 표기 오탈자는 감사에만 기록하고 이번 migration에서는 payload를 고치지 않는다. public 이름과 위치만 정규화한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "aecd106696fda330697bb91f6d7696a7ef7ff28307dfb74c73ce60df5e9031ab",
+      "visible_title": "상태변화 분석"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/day6_2_1_hadamard_10_shots_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_01_hadamard_10_shots_lab.ipynb",
+      "drive_id": "1SOawoPe4pUG5aexo6FhFlneTeTQATqnr",
+      "day": "Day06",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/day6_2_2_hadamard_100_shots_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_02_hadamard_100_shots_lab.ipynb",
+      "drive_id": "1_nudxUoCORdRagIDwbHyAI95M0vnCnNr",
+      "day": "Day06",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/day6_2_3_hadamard_1000_shots_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_03_hadamard_1000_shots_lab.ipynb",
+      "drive_id": "15DtQg-8sbHwzJn8p66mceDV26HhlRZYj",
+      "day": "Day06",
+      "source_title": "2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/2-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure.",
+      "relation_action": "Keep this distinct Day/source path and record exact-code duplicate_of Day11/3-1.py; do not delete or merge silently.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/day6_3_1_1_two_qubit_basis_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_01_two_qubit_basis_measurement_lab.ipynb",
+      "drive_id": "1ukpWUk4WnhJvT3YRD8MxOwXV0oCTeoss",
+      "day": "Day06",
+      "source_title": "3-1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/day6_3_1_2_single_hadamard_two_qubit_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_02_single_hadamard_two_qubit_lab.ipynb",
+      "drive_id": "1KS6PHoLaVjDdcNy0A5a4by_sB0OfxYG9",
+      "day": "Day06",
+      "source_title": "3-1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-1-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/day6_3_1_3_two_hadamard_two_qubit_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_03_01_03_two_hadamard_two_qubit_lab.ipynb",
+      "drive_id": "1DcbzlHi74DTmWT7fZ9Pfbz5r1B89_xQg",
+      "day": "Day06",
+      "source_title": "3-1-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/3-1-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_4_1_zero_state_histogram_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_01_zero_state_histogram_lab.ipynb",
+      "drive_id": "1mRzjgPPwM93a3ZszxDTJytGwh-Cwa7EX",
+      "day": "Day06",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_4_2_hadamard_histogram_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_02_hadamard_histogram_lab.ipynb",
+      "drive_id": "18siQXlzVAaFxHh-GznZJoIGkejoDS7qf",
+      "day": "Day06",
+      "source_title": "4-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_4_3_x_gate_histogram_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_03_x_gate_histogram_lab.ipynb",
+      "drive_id": "1MRNSqZB-zaStvNpcFbD5kO1-5LCmQ4n7",
+      "day": "Day06",
+      "source_title": "4-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day6_4_4_hx_gate_histogram_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_04_04_hx_gate_histogram_lab.ipynb",
+      "drive_id": "14ZPK80v5y6mQAAc4p22Pcj-Wstuv2Bzm",
+      "day": "Day06",
+      "source_title": "4-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day6/4-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,X] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/2_hadamard_shots_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_02_01_to_02_03_hadamard_shot_convergence_lab.ipynb",
+      "drive_id": null,
+      "day": "Day06",
+      "source_title": [
+        "Day6/2-1.py",
+        "Day6/2-2.py",
+        "Day6/2-3.py"
+      ],
+      "raw_path": null,
+      "provenance_kind": "curated_derived_many_to_one",
+      "evidence_tag": "contradicts_premise",
+      "content_summary": "Qiskit/Aer Hadamard measurement synthesis comparing 10, 100, and 1000 shots, normalized probabilities, and sampling error.",
+      "relation_action": "In the code cell containing `%pip install -q qiskit qiskit-aer`, change that exact line to `# %pip install -q qiskit qiskit-aer`; keep the surrounding import guard and instructions unchanged. Add one many-to-one derived provenance record. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse",
+        "comment_percent_pip_line"
+      ],
+      "colab_badge_url_count": 3,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/hadamard-gate/3_1_two_qubit_hadamard_superposition.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab.ipynb",
+      "drive_id": null,
+      "day": "Day06",
+      "source_title": [
+        "Day6/3-1-1.py",
+        "Day6/3-1-2.py",
+        "Day6/3-1-3.py"
+      ],
+      "raw_path": null,
+      "provenance_kind": "curated_derived_many_to_one",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Qiskit/Aer synthesis comparing two-qubit basis, single-H, and double-H measurement distributions.",
+      "relation_action": "Add one many-to-one derived provenance record for the three Day6 source exercises. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/4_single_qubit_gate_effects.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab.ipynb",
+      "drive_id": null,
+      "day": "Day06",
+      "source_title": [
+        "Day6/4-1.py",
+        "Day6/4-2.py",
+        "Day6/4-3.py",
+        "Day6/4-4.py"
+      ],
+      "raw_path": null,
+      "provenance_kind": "curated_derived_many_to_one",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Qiskit/Aer synthesis comparing I, H, X, and H-then-X one-qubit measurement distributions.",
+      "relation_action": "Add one many-to-one derived provenance record for the four Day6 source exercises. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/day7_2_1_bell_state_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day07_02_01_bell_state_measurement_lab.ipynb",
+      "drive_id": "1Lq0PzBIsYkaLmZRTwZ-nNS2UtHPuKX-Z",
+      "day": "Day07",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day7/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/quantum-gate/1. Quantum Gate 개념.pdf",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_01_quantum_gate_concepts_lecture.pdf",
+      "drive_id": "1QF21-fLkey7MurTyqa5a1b2Di04Y5fND",
+      "day": "Day8",
+      "source_title": "1.Quantum Gate 개념.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day8/1.Quantum Gate 개념.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Classical logic gate와 quantum gate를 비교하고 state transformation, 대표 X/Y/Z/H/CNOT/rotation gate, QML feature transformation 역할을 정리한다.",
+      "relation_action": "표지와 current topic은 정확하다. source-local 숫자를 Day/section grammar에 통합하고 gate foundations stage로 이동한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "2dcd67d6c57b9c216ce6c219c49538ba9067c207a34bf7f8b704dbaa5f618430",
+      "visible_title": "Quantum Gate 개념"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/3_1_cnot_basis_state_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_01_cnot_basis_state_lab.ipynb",
+      "drive_id": "1C6bKbtut_BsZSmI3vr5Tm-z4nYGlODfj",
+      "day": "Day08",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/3_2_hadamard_superposition_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_02_hadamard_superposition_lab.ipynb",
+      "drive_id": "1V_BdwzK_aqMj1XcQTycxITq1dNo-5_F_",
+      "day": "Day08",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/3_3_bell_state_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_03_bell_state_lab.ipynb",
+      "drive_id": "1YVazSFPi6JlSEB7Igjarmr9a6JH9Wb5s",
+      "day": "Day08",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/4_1_bell_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_01_bell_measurement_lab.ipynb",
+      "drive_id": "1NsLjgxHgjjCz_CPPbrObcXUHnARyItjs",
+      "day": "Day08",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/4_2_1_bell_circuit_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_01_bell_circuit_lab.ipynb",
+      "drive_id": "1lxrn6tyr82qf6Y5X3u5Zmz1mqeNvDEFm",
+      "day": "Day08",
+      "source_title": "4-2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-2-1.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/4_2_2_cnot_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_02_cnot_measurement_lab.ipynb",
+      "drive_id": "1ZKm_pEWM7oQ7cjhaGaLR0YGMDvVp0U-X",
+      "day": "Day08",
+      "source_title": "4-2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-2-2.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/4_2_3_hadamard_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_02_03_hadamard_measurement_lab.ipynb",
+      "drive_id": "1S3qEE7o9YeX6aUmRi2kbL-O72DB99Otv",
+      "day": "Day08",
+      "source_title": "4-2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-2-3.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/4_3_1_classical_random_bits_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_03_01_classical_random_bits_lab.ipynb",
+      "drive_id": "1_KgglO3WH0MPQ5VDh5dxzFnDtHcgulUn",
+      "day": "Day08",
+      "source_title": "4-3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/entanglement-and-cnot/4_3_2_bell_histogram_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_04_03_02_bell_histogram_lab.ipynb",
+      "drive_id": "1C-c4HOswAALIV3IKAGYKoZKtgItQ9IW1",
+      "day": "Day08",
+      "source_title": "4-3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day8/4-3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_2_10_xx_identity_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_10_xx_identity_measurement_lab.ipynb",
+      "drive_id": "1WVr4u863kkZLfyUlE-sFdneSpHtSfOuK",
+      "day": "Day09",
+      "source_title": "2-10.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/2-10.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_2_11_hh_identity_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_11_hh_identity_measurement_lab.ipynb",
+      "drive_id": "1sj63yYdN02xOWXZECt-lEw83i4GNFz_B",
+      "day": "Day09",
+      "source_title": "2-11.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/2-11.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_2_12_hzh_phase_flip_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_02_12_hzh_phase_flip_measurement_lab.ipynb",
+      "drive_id": "1Zv6P0ovzySXDSxNjK9Mc-ai3UX7SZ9U9",
+      "day": "Day09",
+      "source_title": "2-12.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/2-12.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,Z] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_x_2_1_x_gate_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_x_02_01_x_gate_measurement_lab.ipynb",
+      "drive_id": "1BXiNcCtnuaj5BZGFYRSCmQ5_b1wEV72O",
+      "day": "Day09",
+      "source_title": "X-2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/X-2-1.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_y_2_5_y_gate_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_05_y_gate_measurement_lab.ipynb",
+      "drive_id": "1JH0B0-BDXnJ6O2zVsJCeaBWe5GPB_s-d",
+      "day": "Day09",
+      "source_title": "Y-2-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/Y-2-5.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[Y] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_y_2_6_xy_gate_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_06_xy_gate_measurement_lab.ipynb",
+      "drive_id": "1dwUX2KxedEcncMYmmyvON7wEHA7bl8u7",
+      "day": "Day09",
+      "source_title": "Y-2-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/Y-2-6.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X,Y] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_y_2_7_x_y_gate_comparison_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_y_02_07_x_y_gate_comparison_lab.ipynb",
+      "drive_id": "1v2sRiCnWnKREU66UfoY3YRjB2diq5_OK",
+      "day": "Day09",
+      "source_title": "Y-2-7.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/Y-2-7.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X,Y] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_z_2_2_z_gate_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_02_z_gate_measurement_lab.ipynb",
+      "drive_id": "16rBBAEekO49zrk8O1jQNjV5njNLnS-gv",
+      "day": "Day09",
+      "source_title": "Z-2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/Z-2-2.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[Z] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_z_2_3_xz_gate_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_03_xz_gate_measurement_lab.ipynb",
+      "drive_id": "1D-4Kzrj4Pr9qArca22vnMpN9ZTdAFN2z",
+      "day": "Day09",
+      "source_title": "Z-2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/Z-2-3.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[X,Z] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day9_z_2_4_hzh_gate_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day09_z_02_04_hzh_gate_measurement_lab.ipynb",
+      "drive_id": "110KeoWqdIr9g_sYfcerdO6WfL0Pmfkpl",
+      "day": "Day09",
+      "source_title": "Z-2-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/Z-2-4.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,Z] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day10_2_1_hx_xh_order_measurement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day10_02_01_hx_xh_order_measurement_lab.ipynb",
+      "drive_id": "1YOwgp-tBtShNVllyxIt8XksydeoNaY5c",
+      "day": "Day10",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day10/2-1.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,X] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/state-change-analysis/day10_2_2_multi_qubit_rotation_entanglement_practice.ipynb",
+      "proposed_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day10_02_02_multi_qubit_rotation_entanglement_lab.ipynb",
+      "drive_id": "15y9Kv0u4ElcmEoFnDZ02pDPnaYFHLYmG",
+      "day": "Day10",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day10/2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,RX,RY,RZ,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/quantum-circuit/1. Quantum Circuit 개요.pdf",
+      "proposed_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day10_01_quantum_circuit_lecture.pdf",
+      "drive_id": "18Li9kVIGmc6_id9-jpO2__t41z4foacF",
+      "day": "Day10",
+      "source_title": "1.Quantum Circuit 개요.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day10/1.Quantum Circuit 개요.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Quantum circuit을 초기화, 순차 gate 적용, measurement로 이어지는 시간 흐름으로 설명하고 구성 요소와 gate 순서 의존성을 소개한다.",
+      "relation_action": "현재 filename의 '개요'와 visible title 'Quantum Circuit 이란 ?'가 exact match가 아니다. proposed stem은 어느 한 표현도 과도하게 단정하지 않는 중립적 'quantum_circuit'을 사용하고 question mark는 filesystem name에서 제거한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "78455b55e3536296a6f93b09192d0b4f760b6a37f530f21ba38abf5694109024",
+      "visible_title": "Quantum Circuit 이란 ?"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day11_1_1_feature_map_circuit_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_01_01_feature_map_circuit_lab.ipynb",
+      "drive_id": "1MaWn3rB0oB9KrMKdBo-iUxhdFrq_N581",
+      "day": "Day11",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day11/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,RY,RZ,CX]. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-circuit/day11_3_1_hadamard_measurement_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_01_hadamard_measurement_lab.ipynb",
+      "drive_id": "1kCq1l65ZxRzp1Wtr0e6IpL6LXsfxIigG",
+      "day": "Day11",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day11/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure.",
+      "relation_action": "Keep this distinct Day/source path and record exact-code duplicate_of Day6/2-3.py; do not delete or merge silently.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-circuit/day11_3_2_superposition_rotation_entanglement_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_02_superposition_rotation_entanglement_lab.ipynb",
+      "drive_id": "1HDymjIZ07WLujLAhSWjLiA74Vd2rGq1a",
+      "day": "Day11",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day11/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,RX,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-circuit/day11_3_3_composite_gate_measurement_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_03_composite_gate_measurement_lab.ipynb",
+      "drive_id": "1ITk1RqSi5y_f2w-pedU7PvTp86QbRoey",
+      "day": "Day11",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day11/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,X,RX,RY,RZ,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/qml-circuit/4. Quantum Circuit과 QML.pdf",
+      "proposed_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_04_quantum_circuit_and_qml_lecture.pdf",
+      "drive_id": "1EZeauyZMPqX_YUqXKeE4ENHtwIjTX5GA",
+      "day": "Day11",
+      "source_title": "4.Quantum Circuit과 QML.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day11/4.Quantum Circuit과 QML.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Feature map과 RealAmplitudes ansatz를 compose하고 measurement, parameter binding, AerSimulator, histogram으로 첫 QML circuit을 조립하는 실습 자료다.",
+      "relation_action": "PDF slide order의 bound_circuit 정의 전 참조는 별도 content anomaly로 유지한다. 이번 migration은 payload를 수정하지 않고 Day/section/type naming과 stage placement만 바꾼다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "2f27628a7896de510b7c1237b7cdba2cf8e2804031adb259b320ec7cd7e07c25",
+      "visible_title": "Quantum Circuit과 QML"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/3_2_binary_classification_dataset.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day01_03_02_synthetic_binary_classification_dataset_lab.ipynb",
+      "drive_id": "1Uqh9OGZAmU_w55_QQGpxNgBMGXVYALGX",
+      "day": "Day01",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day1/3-2.py",
+      "provenance_kind": "manifest_adapted_extended_source",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Frameworks: scikit-learn. Quantum: no quantum primitive in executable cells. Classical: none. Data: synthetic binary classification data. Actions: visualize.",
+      "relation_action": "Record adapted/extended provenance instead of exact-source provenance. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/3_3_pca_projection_visualization.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day01_03_03_pca_projection_and_explained_variance_lab.ipynb",
+      "drive_id": "1dRMTrKFuFxdKXyIUzs7ioVuym4xNzKXX",
+      "day": "Day01",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day1/3-3.py",
+      "provenance_kind": "manifest_adapted_extended_source",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Frameworks: scikit-learn. Quantum: no quantum primitive in executable cells. Classical: PCA. Data: synthetic binary classification data. Actions: train/optimize, visualize.",
+      "relation_action": "Record adapted/extended provenance instead of exact-source provenance. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 3,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/3. Quantum Feature Space.pdf",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day02_03_quantum_feature_space_lecture.pdf",
+      "drive_id": "1Thw9uNUQ2p_dw0SV9NbSndZyEfhIqtNb",
+      "day": "Day2",
+      "source_title": "3.Quantum Feature Sapce.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day2/3.Quantum Feature Sapce.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Classical feature space를 quantum encoding으로 고차원 quantum feature space에 옮기는 흐름과 표현력, 분리 가능성의 의미를 설명한다.",
+      "relation_action": "raw source의 'Sapce' 오탈자는 provenance에 그대로 남기고 proposed public name에서는 표지의 'Space'로 교정한다. PDF payload는 수정하지 않는다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "3bfa335d3f69ea59be3de772fedc11eb19b2ca35356697b99ba9dbbdc623b2cb",
+      "visible_title": "Quantum Feature Space"
+    },
+    {
+      "asset_type": "pdf",
+      "current_path": "1.quantum-ml-overview/quantum-role/week1_qml_quantum_role.pdf",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day02_04_quantum_role_in_qml_lecture.pdf",
+      "drive_id": "1qJNYZOupguCR_vIj3fus-ZDaPakwO9iI",
+      "day": "Day2",
+      "source_title": "4.QML에서 Quantum의 역할.pdf",
+      "raw_path": ".omo/drive-sync/raw/Day2/4.QML에서 Quantum의 역할.pdf",
+      "provenance_kind": "manifest_pdf_exact_payload_pair",
+      "evidence_tag": "near_match_only",
+      "content_summary": "QML pipeline에서 quantum encoding, ZZ feature map, 회로 시각화, measurement가 담당하는 데이터 변환 역할을 첫 Qiskit 실습과 연결한다.",
+      "relation_action": "현재 'week1' stem은 표지 제목이 아니고 exact lineage는 Day2다. week drift를 제거하고 visible title과 source section을 반영한 이름으로 교체한다.",
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "payload_sha256": "ace7cb5fd3a71247a41e130adea436e9643421de2026be7231ab514d818be702",
+      "visible_title": "QML에서 Quantum의 역할"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day9_4_1_feature_encoded_entangling_circuit_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day09_04_01_feature_encoded_entangling_circuit_lab.ipynb",
+      "drive_id": "1RSAFSJqLQ6mVGhhEvRbv0PMyF9RIPiMl",
+      "day": "Day09",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[H,RX,RY,RZ,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day9_4_2_feature_encoded_no_cx_circuit_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day09_04_02_feature_encoded_no_cx_circuit_lab.ipynb",
+      "drive_id": "1Juwb-NCGhlPJ0ldaIxB5TCgp9cVc9X7J",
+      "day": "Day09",
+      "source_title": "4-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/4-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[H,RX,RY,RZ] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day9_4_3_feature_encoded_cx_circuit_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day09_04_03_feature_encoded_cx_circuit_lab.ipynb",
+      "drive_id": "1q11apzgDBJ6WBX83AFwMwHoCcQO_SAoT",
+      "day": "Day09",
+      "source_title": "4-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/4-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[H,RX,RY,RZ,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day9_zz_4_4_feature_map_reps1_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day09_zz_04_04_feature_map_reps1_lab.ipynb",
+      "drive_id": "1qMZbB2Q2DsDIKHixAg0pCRNMPZYsBn43",
+      "day": "Day09",
+      "source_title": "ZZ-4-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/ZZ-4-4.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: . Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day9_zz_4_5_feature_map_dim3_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day09_zz_04_05_feature_map_dim3_lab.ipynb",
+      "drive_id": "1OsT_Wv2NoPkGqbFEVLXfLCjT-C_hoNCg",
+      "day": "Day09",
+      "source_title": "ZZ-4-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/ZZ-4-5.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: . Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day9_zz_4_6_feature_map_reps3_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day09_zz_04_06_feature_map_reps3_lab.ipynb",
+      "drive_id": "1kdRtoZJWnAi8iwjkdtT1s3dR3NdB1Kz8",
+      "day": "Day09",
+      "source_title": "ZZ-4-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day9/ZZ-4-6.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: . Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day12_1_2_customer_feature_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day12_01_02_customer_feature_encoding_lab.ipynb",
+      "drive_id": "1HUuSQ_y_YdtEaazAHH-r_mOdnarh__DY",
+      "day": "Day12",
+      "source_title": "1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day12/1-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RY,RZ,CX] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day12_2_1_parameterized_feature_map_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day12_02_01_parameterized_feature_map_lab.ipynb",
+      "drive_id": "1kP7bE2E7MB4ztyXVQzYsZFCsFBz1a5xb",
+      "day": "Day12",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day12/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,RY,CX]. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day12_2_full_quantum_feature_space_lab.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day12_02_full_quantum_feature_space_lab.ipynb",
+      "drive_id": "1i8P-Z3F9nptED8ONVe1fq20d4jbKiaJX",
+      "day": "Day12",
+      "source_title": "2-full.py",
+      "raw_path": ".omo/drive-sync/raw/Day12/2-full.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, pandas. Quantum: QuantumCircuit[H,RY,CX] with measurement/counts and Statevector analysis. Classical: none. Data: inline customer feature vectors. Actions: build, bind/sweep, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day14_1_1_single_feature_angle_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day14_01_01_single_feature_angle_encoding_lab.ipynb",
+      "drive_id": "1TzBTERR3iKt2TA2nwgebOJ2TY0kz6Wiy",
+      "day": "Day14",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day14/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day14_1_2_two_feature_angle_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day14_01_02_two_feature_angle_encoding_lab.ipynb",
+      "drive_id": "1rTollzQUqqkbuxcLwfoCtKzjrKEegBnI",
+      "day": "Day14",
+      "source_title": "1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day14/1-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day14_1_3_multi_feature_angle_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day14_01_03_multi_feature_angle_encoding_lab.ipynb",
+      "drive_id": "10mDOeLSe9NCgls9XBtHXPs-Kl-hvJ2u4",
+      "day": "Day14",
+      "source_title": "1-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day14/1-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day14_1_4_basis_angle_hybrid_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day14_01_04_basis_angle_hybrid_encoding_lab.ipynb",
+      "drive_id": "1TnMFXD88T4mqBqs68Z5Wlk58jwS_Zsda",
+      "day": "Day14",
+      "source_title": "1-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day14/1-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QuantumCircuit[X,RY] with measurement/counts and Statevector analysis. Classical: MinMaxScaler. Data: inline customer feature vectors. Actions: build, simulate/measure, state/expectation, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day14_1_5_customer_hybrid_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day14_01_05_customer_hybrid_encoding_lab.ipynb",
+      "drive_id": "1Vw0hXsNtpSOS1Olw4paHxtNxPD9V7bcc",
+      "day": "Day14",
+      "source_title": "1-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day14/1-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QuantumCircuit[X,RY] with measurement/counts and Statevector analysis. Classical: MinMaxScaler. Data: simulator shots/counts. Actions: build, simulate/measure, state/expectation, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day15_2_1_amplitude_encoding_workflow_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day15_02_01_amplitude_encoding_workflow_lab.ipynb",
+      "drive_id": "1-Hbf_DSBi87D3umr5J8Qf0jaQ5zCI2Kq",
+      "day": "Day15",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day15/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit with measurement/counts and Statevector analysis. Classical: none. Data: inline customer feature vectors. Actions: build, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day15_2_2_amplitude_encoding_simulation_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day15_02_02_amplitude_encoding_simulation_lab.ipynb",
+      "drive_id": "1vqp72rKiCjL_2qLDvksAaDPqp4VJ5ORU",
+      "day": "Day15",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day15/2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit with measurement/counts and Statevector analysis. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day15_2_3_amplitude_encoding_function_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day15_02_03_amplitude_encoding_function_lab.ipynb",
+      "drive_id": "1Ey9He1SLPzuIPnSy8Va-HpZiJSt3IgJ9",
+      "day": "Day15",
+      "source_title": "2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day15/2-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit with measurement/counts and Statevector analysis. Classical: none. Data: inline customer feature vectors. Actions: build, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day15_3_1_encoding_comparison_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day15_03_01_encoding_comparison_lab.ipynb",
+      "drive_id": "1e7fCN31EJWS9OhzN-LF9W2TiBWwqAoXN",
+      "day": "Day15",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day15/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, scikit-learn, NumPy. Quantum: QuantumCircuit[X,RY] with measurement/counts and Statevector analysis. Classical: MinMaxScaler. Data: inline customer feature vectors. Actions: build, simulate/measure, state/expectation, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_2_1_single_pauli_feature_maps_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_02_01_single_pauli_feature_maps_lab.ipynb",
+      "drive_id": "1r_brD_40ICVoG3K8hOVE6zrysmABe2IN",
+      "day": "Day16",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/2-1.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: . Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_2_2_multi_pauli_feature_maps_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_02_02_multi_pauli_feature_maps_lab.ipynb",
+      "drive_id": "1e3lah1bFiasDu_Rszs46zKt8t8DzsBnH",
+      "day": "Day16",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/2-2.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: . Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_2_3_combined_pauli_feature_maps_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_02_03_combined_pauli_feature_maps_lab.ipynb",
+      "drive_id": "1ynMnCFPUyVvMMn6MZjiINImEipQZF0J_",
+      "day": "Day16",
+      "source_title": "2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/2-3.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: PauliFeatureMap. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_2_4_pauli_feature_map_iris_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_02_04_pauli_feature_map_iris_lab.ipynb",
+      "drive_id": "1fXZ6VQBPZKqabQqEadHfMSCEqI-50lbN",
+      "day": "Day16",
+      "source_title": "2-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/2-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: . Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: bind/sweep, simulate/measure, train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_3_1_sensor_phase_normalization_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_03_01_sensor_phase_normalization_lab.ipynb",
+      "drive_id": "1vf1tuw2V04itMtn1htj5H5irT3MqhKxE",
+      "day": "Day16",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline sensor/phase values. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_3_2_sensor_phase_encoding_circuit_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_03_02_sensor_phase_encoding_circuit_lab.ipynb",
+      "drive_id": "1Il3POBBvltfIbi2sY5xTEZfAoQ0iwma_",
+      "day": "Day16",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/3-2.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[H]. Classical: none. Data: inline sensor/phase values. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_3_3_sensor_phase_statevector_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_03_03_sensor_phase_statevector_lab.ipynb",
+      "drive_id": "1Bvu9phqagkhlTGb80RaLzPrmxDwI9SIN",
+      "day": "Day16",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/3-3.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[H] and Statevector analysis. Classical: none. Data: inline sensor/phase values. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day16_3_4_phase_interference_measurement_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day16_03_04_phase_interference_measurement_lab.ipynb",
+      "drive_id": "1_wdi7kPJq4tks46R4PDHAktywCx-gCJt",
+      "day": "Day16",
+      "source_title": "3-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day16/3-4.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[H] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_1_frequency_encoding_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day18_04_01_frequency_encoding_lab.ipynb",
+      "drive_id": "1XFgRGEG3TPv1YBzvJN79I-Hhr6L5OH4q",
+      "day": "Day18",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts and Statevector analysis. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_2_frequency_expectation_curve_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day18_04_02_frequency_expectation_curve_lab.ipynb",
+      "drive_id": "1BKTr7VTvu6n5FliC2N6h0ttSVzmFTlga",
+      "day": "Day18",
+      "source_title": "4-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_3_time_evolution_statevector_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day18_04_03_time_evolution_statevector_lab.ipynb",
+      "drive_id": "1p-Jsxk0gb44C13BPNp5ty6PEcXqBCXKT",
+      "day": "Day18",
+      "source_title": "4-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day18_4_4_measurement_probability_oscillation_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/02.feature-encoding/day18_04_04_measurement_probability_oscillation_lab.ipynb",
+      "drive_id": "1ytICO0Ki2dpPOnrD7k52hKldqW9yfLIt",
+      "day": "Day18",
+      "source_title": "4-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day18/4-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day11_4_1_qml_feature_map_ansatz_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day11_04_01_qml_feature_map_ansatz_lab.ipynb",
+      "drive_id": "16n4vBwY6ZX_rf71PoTS2TWlQMPLl85nX",
+      "day": "Day11",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day11/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: . Classical: none. Data: simulator shots/counts. Actions: bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day13_2_1_feature_map_ansatz_measurement_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day13_02_01_feature_map_ansatz_measurement_lab.ipynb",
+      "drive_id": "1EsMQNwFQWca7JIdVMY98kciu3sqYCHPa",
+      "day": "Day13",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day13/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: . Classical: none. Data: simulator shots/counts. Actions: bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day13_4_1_mini_qml_pipeline_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day13_04_01_mini_qml_pipeline_lab.ipynb",
+      "drive_id": "1iijieuKSyfKyydHVOmvW454e-b26qOnl",
+      "day": "Day13",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day13/4-1.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: . Classical: none. Data: simulator shots/counts. Actions: bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day14_2_1_qml_end_to_end_workflow_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day14_02_01_qml_end_to_end_workflow_lab.ipynb",
+      "drive_id": "1cFDXgd4p6RzuCGs8Wdt8AJI7ZV7R2RXS",
+      "day": "Day14",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day14/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: . Classical: none. Data: simulator shots/counts. Actions: bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day17_1_1_parameter_sweep_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_01_01_parameter_sweep_lab.ipynb",
+      "drive_id": "1ENI0eRESBtPspF5qAsKiIwLE3FCyqlup",
+      "day": "Day17",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day17/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, pandas, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts and Statevector analysis. Classical: none. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day17_1_2_parameter_binding_state_analysis_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_01_02_parameter_binding_state_analysis_lab.ipynb",
+      "drive_id": "1-rd07eOcqOISgOv6VjSmOoj2sdI2LVP-",
+      "day": "Day17",
+      "source_title": "1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day17/1-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, pandas, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts and Statevector analysis. Classical: none. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day17_2_1_real_amplitudes_ansatz_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day17_02_01_real_amplitudes_ansatz_lab.ipynb",
+      "drive_id": "1zw_fON1LxoBeqWKC5dmj-UBEf8XnyPXd",
+      "day": "Day17",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day17/2-1.py",
+      "provenance_kind": "manifest_newline_normalized_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: Statevector. Classical: none. Data: simulator shots/counts. Actions: bind/sweep, simulate/measure, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-circuit/day18_3_1_strongly_entangling_layers_practice.ipynb",
+      "proposed_path": "02.circuits-and-encoding/03.ansatz-and-parameterized-circuits/day18_03_01_pennylane_strongly_entangling_classifier_training_lab.ipynb",
+      "drive_id": "1Zl55F7au6uuTUCvSaA8TT_Afqu3RvpGt",
+      "day": "Day18",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day18/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: PennyLane, scikit-learn, NumPy. Quantum: PennyLane AngleEmbedding/StronglyEntanglingLayers expectation circuit. Classical: MinMaxScaler, metrics accuracy,confusion matrix. Data: inline analytic parameters or no external dataset. Actions: train/optimize, evaluate, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/3_1_loss_surface_visualization.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day01_03_01_quadratic_loss_surface_visualization_lab.ipynb",
+      "drive_id": "1uKLjjWthYbrd5qTvfNOBFWpNEhiyLwfG",
+      "day": "Day01",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day1/3-1.py",
+      "provenance_kind": "manifest_ast_equivalent_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: NumPy. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": "Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day19_1_1_quantum_loss_parameter_sweep_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day19_01_01_quantum_loss_parameter_sweep_lab.ipynb",
+      "drive_id": "1uqamonrSc4fO_fFL9cOYIxBClUlBIkbC",
+      "day": "Day19",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day19/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day19_2_1_loss_function_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day19_02_01_loss_function_lab.ipynb",
+      "drive_id": "1xdO62v01jwP05E9_uOT6UBontBFPeV1y",
+      "day": "Day19",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day19/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: NumPy. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day20_2_2_manual_learning_cycle_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_02_manual_learning_cycle_lab.ipynb",
+      "drive_id": "1oJWKQ_36YwQD8cXJ_6uo8eLsdpfMWT3K",
+      "day": "Day20",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day20_2_3_loss_landscape_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_03_loss_landscape_lab.ipynb",
+      "drive_id": "13ViCMKzcHCi-eYkVr6MdH5sm942LqAS-",
+      "day": "Day20",
+      "source_title": "2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day20_2_4_parameter_sweep_prediction_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_04_parameter_sweep_prediction_lab.ipynb",
+      "drive_id": "1GvrmcpZOVbkYbS9FkRqStcfF_yPXJ5sM",
+      "day": "Day20",
+      "source_title": "2-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day20_2_5_target_loss_curve_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day20_02_05_target_loss_curve_lab.ipynb",
+      "drive_id": "12W2VxSWx6og0O_wbxL9q3dRmS2Lp3rNU",
+      "day": "Day20",
+      "source_title": "2-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day20/2-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_3_1_common_quantum_objective_function_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_01_common_quantum_objective_function_lab.ipynb",
+      "drive_id": "1kyDEquqtIVAeD4fOhPRk95NtqXwuBl6N",
+      "day": "Day21",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_3_2_cobyla_optimizer_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_02_cobyla_optimizer_lab.ipynb",
+      "drive_id": "1yNHba_PxzrjpajrVACtFdKmXthFrSB-t",
+      "day": "Day21",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Algorithms, Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: COBYLA. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_3_3_spsa_optimizer_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_03_spsa_optimizer_lab.ipynb",
+      "drive_id": "1iFA3o0L3ASVb08zwhyhRyXdNe567IILm",
+      "day": "Day21",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Algorithms, Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: COBYLA, SPSA. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_3_4_quantum_learning_visualization_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_03_04_quantum_learning_visualization_lab.ipynb",
+      "drive_id": "1zBEaL1mI16QH7fOTlP-KQbuo7CFboltB",
+      "day": "Day21",
+      "source_title": "3-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/3-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Algorithms, Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] with measurement/counts. Classical: COBYLA, SPSA. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_4_1_before_after_learning_comparison_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_01_before_after_learning_comparison_lab.ipynb",
+      "drive_id": "178vNRh5LYoNSlaEIhEtYOY-rQlIceCVb",
+      "day": "Day21",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Algorithms, Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY,RZ,CX] and Statevector analysis. Classical: COBYLA. Data: inline analytic parameters or no external dataset. Actions: build, bind/sweep, state/expectation, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_4_2_optimizer_comparison_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_02_optimizer_comparison_lab.ipynb",
+      "drive_id": "1algoH6pLdb8cuNFFZ7X18P1G8eCOK96t",
+      "day": "Day21",
+      "source_title": "4-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/4-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Algorithms, Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY,RZ,CX] and Statevector analysis. Classical: COBYLA, SPSA. Data: inline analytic parameters or no external dataset. Actions: build, bind/sweep, state/expectation, train/optimize, predict, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day21_4_3_learning_result_parameter_persistence_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day21_04_03_learning_result_parameter_persistence_lab.ipynb",
+      "drive_id": "1eQOYdBLDhueyQdsyp7m4sk6rlhWQuVRC",
+      "day": "Day21",
+      "source_title": "4-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day21/4-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Algorithms, Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY,RZ,CX] and Statevector analysis. Classical: COBYLA. Data: inline analytic parameters or no external dataset. Actions: build, bind/sweep, state/expectation, train/optimize, persist.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_1_parameterized_quantum_circuit_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_01_parameterized_quantum_circuit_lab.ipynb",
+      "drive_id": "1NK7QGqcXwZAjSqWIyU8eAPh_fot-pfB9",
+      "day": "Day37",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RY]. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_2_parameter_binding_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_02_parameter_binding_lab.ipynb",
+      "drive_id": "1VQ3KqJ4MGri2UkDJ5eywSUgxGqaobVEp",
+      "day": "Day37",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY]. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, bind/sweep, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_3_objective_function_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_03_objective_function_lab.ipynb",
+      "drive_id": "15sW696EVvx-mpR_rPduY3P_aghs7nPVA",
+      "day": "Day37",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: NumPy. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_4_classical_optimizer_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_04_classical_optimizer_lab.ipynb",
+      "drive_id": "1a_uYUGcFkq_VeKAuFtbuj_0fAlUobYwH",
+      "day": "Day37",
+      "source_title": "3-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: SciPy, NumPy. Quantum: no quantum primitive in executable cells. Classical: SciPy minimize. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_5_quantum_circuit_objective_function_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_05_quantum_circuit_objective_function_lab.ipynb",
+      "drive_id": "1sFmU4gztYsHe0vuTrahw50dzBQtLrBcK",
+      "day": "Day37",
+      "source_title": "3-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: QuantumCircuit[RY] and Statevector analysis and StatevectorEstimator. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_6_cost_parameter_history_visualization_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_06_cost_parameter_history_visualization_lab.ipynb",
+      "drive_id": "1HNmkaNMUqx2ItSbnTZ8ryjWGnTvTiTL9",
+      "day": "Day37",
+      "source_title": "3-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-6.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: SciPy, NumPy. Quantum: no quantum primitive in executable cells. Classical: SciPy minimize. Data: inline analytic parameters or no external dataset. Actions: train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_7_initial_parameter_comparison_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_07_initial_parameter_comparison_lab.ipynb",
+      "drive_id": "1VZbsx1M9htyZA2zWkK4f1_RF6NB9oI0Z",
+      "day": "Day37",
+      "source_title": "3-7.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-7.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: SciPy, NumPy. Quantum: no quantum primitive in executable cells. Classical: SciPy minimize. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_8_optimizer_comparison_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_08_optimizer_comparison_lab.ipynb",
+      "drive_id": "135VSvPm88eL3UTnmR4R6yVzkk4z4jIaW",
+      "day": "Day37",
+      "source_title": "3-8.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-8.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: SciPy, NumPy. Quantum: no quantum primitive in executable cells. Classical: SciPy minimize. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qml-pipeline/day37_3_9_qaoa_cost_hamiltonian_objective_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/01.loss-and-optimization/day37_03_09_toy_trigonometric_objective_landscape_optimization_lab.ipynb",
+      "drive_id": "1_jfjby1AOl5dTvDG4rawHziqlCLcOvQU",
+      "day": "Day37",
+      "source_title": "3-9.py",
+      "raw_path": ".omo/drive-sync/raw/Day37/3-9.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "contradicts_premise",
+      "content_summary": "Frameworks: SciPy, NumPy. Quantum: no quantum primitive in executable cells. Classical: SciPy minimize. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": "Rename as toy trigonometric objective-landscape optimization; do not claim a QAOA cost Hamiltonian.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day15_1_1_zz_feature_map_quantum_kernel_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day15_01_01_zz_feature_map_quantum_kernel_lab.ipynb",
+      "drive_id": "1R9DqKNUsB2GkRZ1eOOcuc2t1J7KiLKLL",
+      "day": "Day15",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day15/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, NumPy. Quantum: FidelityQuantumKernel with ZZFeatureMap. Classical: MinMaxScaler. Data: synthetic two-moons data. Actions: bind/sweep, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move"
+      ],
+      "colab_badge_url_count": 0,
+      "badge_url_status": "zero"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day22_1_1_classical_to_quantum_kernel_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day22_01_01_classical_to_quantum_kernel_lab.ipynb",
+      "drive_id": "1-DbnEd3fXCXIGTpbLdT0pdp8ppwVFKar",
+      "day": "Day22",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day22/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer, NumPy. Quantum: Statevector. Classical: none. Data: inline analytic parameters or no external dataset. Actions: bind/sweep, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day23_3_1_fidelity_quantum_kernel_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day23_03_01_fidelity_quantum_kernel_lab.ipynb",
+      "drive_id": "1NByuHCM0BbCHbxtu4lQV6aiNW695k6JQ",
+      "day": "Day23",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day23/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, NumPy. Quantum: FidelityQuantumKernel with ZZFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day23_3_2_pauli_feature_map_quantum_kernel_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day23_03_02_pauli_feature_map_quantum_kernel_lab.ipynb",
+      "drive_id": "1RboAnGMinsA5KDxY6NwgzSHyAbix7k3k",
+      "day": "Day23",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day23/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, NumPy. Quantum: FidelityQuantumKernel with PauliFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day23_4_1_quantum_kernel_matrix_validation_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day23_04_01_example_kernel_matrix_structure_and_psd_validation_lab.ipynb",
+      "drive_id": "1OCeJU_8ic4gyBOiqxain0xpG8I_5fJ1i",
+      "day": "Day23",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day23/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: NumPy. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day23_4_2_quantum_kernel_heatmap_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day23_04_02_example_kernel_matrix_heatmap_lab.ipynb",
+      "drive_id": "15_El7s4CYmrJSuCq3nWE9vGW1ldM7jRN",
+      "day": "Day23",
+      "source_title": "4-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day23/4-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: NumPy. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/quantum-feature-space/day23_4_3_quantum_kernel_quality_evaluation_practice.ipynb",
+      "proposed_path": "03.variational-learning-and-kernels/02.quantum-kernels/day23_04_03_quantum_kernel_quality_evaluation_lab.ipynb",
+      "drive_id": "1imEXiW6JDWMkDpreuSGY0bnY0qhjK3fZ",
+      "day": "Day23",
+      "source_title": "4-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day23/4-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, NumPy. Quantum: FidelityQuantumKernel with ZZFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: build, train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/01_iris_colab_setup.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day01_01_01_iris_environment_eda_logistic_knn_baselines_lab.ipynb",
+      "drive_id": "1qk0vwcj_Urlus1n1jJhNytupHN1F0ZnE",
+      "day": "Day01",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day1/1-1.py",
+      "provenance_kind": "manifest_divergent_adaptation",
+      "evidence_tag": "contradicts_premise",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: LogisticRegression, KNN, StandardScaler, metrics accuracy,classification report. Data: Iris via sklearn loader. Actions: train/optimize, predict, evaluate, visualize.",
+      "relation_action": "Reclassify the manifest edge as a divergent adaptation; do not claim the notebook preserves Day1/1-1.py. Collapse duplicate current-path Colab badges to one canonical badge targeting the proposed notebook path.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite",
+        "duplicate_badge_collapse"
+      ],
+      "colab_badge_url_count": 2,
+      "badge_url_status": "multiple_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/1_iris_classification_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day01_01_02_iris_logistic_regression_and_visualization_lab.ipynb",
+      "drive_id": "1tiFPoQ8XyDOqki5npYsTnLp3KlcP-z1M",
+      "day": "Day01",
+      "source_title": "1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day1/1-2.py",
+      "provenance_kind": "manifest_adapted_extended_source",
+      "evidence_tag": "near_match_only",
+      "content_summary": "Frameworks: scikit-learn. Quantum: no quantum primitive in executable cells. Classical: LogisticRegression, metrics accuracy. Data: Iris via sklearn loader. Actions: train/optimize, predict, evaluate, visualize.",
+      "relation_action": "Record adapted/extended provenance instead of exact-source provenance.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day24_1_1_classical_svm_baseline_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day24_01_01_classical_svm_baseline_lab.ipynb",
+      "drive_id": "1WN9s62s-MteHpdJYp3FNn8VEf23qU8JL",
+      "day": "Day24",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day24/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: classical SVC, metrics accuracy,classification report,confusion matrix. Data: Iris via sklearn loader. Actions: train/optimize, predict, evaluate.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day24_2_1_qsvc_iris_classifier_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day24_02_01_qsvc_iris_classifier_lab.ipynb",
+      "drive_id": "1_g22tTfMdGucJTUJB91TDkx5V9wBcNB6",
+      "day": "Day24",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day24/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize, predict.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day25_3_1_qsvm_training_data_preparation_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_01_qsvm_training_data_preparation_lab.ipynb",
+      "drive_id": "1hwy3KT9mAFlncbPx4ZkO44MOPpmcRjuk",
+      "day": "Day25",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day25_3_2_qsvc_model_construction_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_02_qsvc_model_construction_lab.ipynb",
+      "drive_id": "17DjHCsIS45FhPnKwayVdomeusCE05MnN",
+      "day": "Day25",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day25_3_3_qsvm_training_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_03_qsvm_training_lab.ipynb",
+      "drive_id": "1FQ0zt29e7a1N-ScThp2_4gudI3_ovs5I",
+      "day": "Day25",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day25_3_4_qsvm_prediction_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day25_03_04_qsvm_prediction_lab.ipynb",
+      "drive_id": "1HuQZhxi5Fzow39IXMdxWCQP78b8Rsx26",
+      "day": "Day25",
+      "source_title": "3-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day25/3-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize, predict, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day26_1_1_classification_metrics_confusion_matrix_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day26_01_01_classification_metrics_confusion_matrix_lab.ipynb",
+      "drive_id": "16Oy2SRdifnrza0TdMuRLfNOmeS4FAZvE",
+      "day": "Day26",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day26/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics accuracy,precision,recall,F1,classification report,confusion matrix. Data: inline analytic parameters or no external dataset. Actions: evaluate, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day26_4_1_qsvm_performance_evaluation_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day26_04_01_qsvm_performance_evaluation_lab.ipynb",
+      "drive_id": "1TYXgRqCP_VdPUw_PYnOMw9ZQVY6IWvU6",
+      "day": "Day26",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day26/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: classical SVC, MinMaxScaler, metrics accuracy,precision,recall,F1,classification report,confusion matrix. Data: Iris via sklearn loader. Actions: build, train/optimize, predict, evaluate, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_1_qsvm_environment_setup_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_01_qsvm_environment_setup_lab.ipynb",
+      "drive_id": "18TjFMkxCs04ep1GA0uVYZirpm6VloCrO",
+      "day": "Day27",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, scikit-learn, pandas, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: MinMaxScaler, metrics accuracy,precision,recall,F1,classification report,confusion matrix,ROC/AUC. Data: Iris via sklearn loader. Actions: evaluate, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_2_qsvm_data_preparation_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_02_qsvm_data_preparation_lab.ipynb",
+      "drive_id": "1-TyU4FezNAEcb2x69oyQ92mRHyrVgmB2",
+      "day": "Day27",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: MinMaxScaler. Data: Iris via sklearn loader. Actions: train/optimize, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_3_qsvm_training_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_03_qsvm_training_lab.ipynb",
+      "drive_id": "1ePTskqNEOmUuIpkdr5cXPupPLjAlPmLb",
+      "day": "Day27",
+      "source_title": "2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: none. Data: persisted Day27 QSVC arrays/models/metrics. Actions: train/optimize, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_4_qsvm_prediction_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_04_qsvm_prediction_lab.ipynb",
+      "drive_id": "1uHBK0xTj5_zN7uwfMbCLq2kmVjaWoPbG",
+      "day": "Day27",
+      "source_title": "2-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: pandas, NumPy. Quantum: QSVC with FidelityQuantumKernel and ZZFeatureMap. Classical: none. Data: persisted Day27 QSVC arrays/models/metrics. Actions: predict, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_5_qsvm_accuracy_analysis_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_05_qsvm_accuracy_analysis_lab.ipynb",
+      "drive_id": "18eAW6pt0bgcEwlzLk6oh_BycjZrDRiD7",
+      "day": "Day27",
+      "source_title": "2-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics accuracy. Data: persisted Day27 QSVC arrays/models/metrics. Actions: evaluate, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_6_qsvm_precision_recall_f1_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_06_qsvm_precision_recall_f1_lab.ipynb",
+      "drive_id": "1RkcdgcM_x2L53AmcI7KBingn-qTJoYsB",
+      "day": "Day27",
+      "source_title": "2-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-6.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics accuracy,precision,recall,F1. Data: persisted Day27 QSVC arrays/models/metrics. Actions: evaluate, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_7_qsvm_classification_report_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_07_qsvm_classification_report_lab.ipynb",
+      "drive_id": "1D01zMCLSjq9WSF7N3c3PV_4GFRZM-P-t",
+      "day": "Day27",
+      "source_title": "2-7.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-7.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics classification report. Data: persisted Day27 QSVC arrays/models/metrics. Actions: evaluate, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_8_qsvm_confusion_matrix_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_08_qsvm_confusion_matrix_lab.ipynb",
+      "drive_id": "1O01k9oul1OIoysuEdZQvUygATihK5WPJ",
+      "day": "Day27",
+      "source_title": "2-8.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-8.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics confusion matrix. Data: persisted Day27 QSVC arrays/models/metrics. Actions: evaluate, visualize, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_9_qsvm_roc_auc_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_09_qsvm_roc_auc_lab.ipynb",
+      "drive_id": "1NmqYVA0AJ33hdt1IdqnMmG7W3SDXCvnp",
+      "day": "Day27",
+      "source_title": "2-9.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-9.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics ROC/AUC. Data: persisted Day27 QSVC arrays/models/metrics. Actions: evaluate, visualize, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_2_10_qsvm_performance_report_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_02_10_qsvm_performance_report_lab.ipynb",
+      "drive_id": "1Rf35zK7cKksLRktpkKHVoRumlCJq3Orx",
+      "day": "Day27",
+      "source_title": "2-10.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/2-10.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: pandas. Quantum: no quantum primitive in executable cells. Classical: none. Data: persisted Day27 QSVC arrays/models/metrics. Actions: persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_4_1_classical_svm_performance_baseline_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_04_01_classical_svm_performance_baseline_lab.ipynb",
+      "drive_id": "1N91cAxAm3B1wUsFaHZtxc9bWJCEBe6EJ",
+      "day": "Day27",
+      "source_title": "4-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/4-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, NumPy. Quantum: no quantum primitive in executable cells. Classical: classical SVC, metrics accuracy,precision,recall,F1,classification report,confusion matrix. Data: persisted Day27 QSVC arrays/models/metrics. Actions: train/optimize, predict, evaluate, persist.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/iris-classification/day27_4_2_qsvm_performance_analysis_improvement_practice.ipynb",
+      "proposed_path": "04.quantum-kernel-classification/01.iris-qsvm/day27_04_02_qsvm_performance_analysis_improvement_lab.ipynb",
+      "drive_id": "1RrludV-1auIMLqgr55AIIVvT-2vnjVkW",
+      "day": "Day27",
+      "source_title": "4-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day27/4-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: scikit-learn, pandas, NumPy. Quantum: no quantum primitive in executable cells. Classical: metrics classification report. Data: persisted Day27 QSVC arrays/models/metrics. Actions: evaluate, visualize.",
+      "relation_action": "Keep in an explicitly ordered shared workspace and preserve the output/*.npy, *.pkl, and *.csv handoff contract; later notebooks are not standalone.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day28_1_1_neural_network_structure_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/01.classical-neural-network-baseline/day28_01_01_neural_network_structure_lab.ipynb",
+      "drive_id": "1ZXrwsHXaHhRA3yFGadqfXsqFIeVh3iER",
+      "day": "Day28",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day28/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: PyTorch. Quantum: no quantum primitive in executable cells. Classical: PyTorch MLP, PyTorch linear layer. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day33_1_1_pytorch_basic_model_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/01.classical-neural-network-baseline/day33_01_01_pytorch_basic_model_lab.ipynb",
+      "drive_id": "1qKc88TCR6_N3dJ3PclwrwUa1IXzHAPFZ",
+      "day": "Day33",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day33/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: PyTorch. Quantum: no quantum primitive in executable cells. Classical: PyTorch MLP, PyTorch linear layer. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day31_2_1_qnn_components_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day31_02_01_qnn_components_lab.ipynb",
+      "drive_id": "1o2x85Wkwd9WZ6bU0HBtAqFs9drym-kFK",
+      "day": "Day31",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day31/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: SparsePauliOp, ZZFeatureMap, RealAmplitudes. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day31_3_1_parameterized_quantum_circuit_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day31_03_01_parameterized_quantum_circuit_lab.ipynb",
+      "drive_id": "1MPrhKrao8Jy1yuETv_1U7_BU3mlSACV-",
+      "day": "Day31",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day31/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: . Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day31_3_2_estimator_qnn_preparation_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day31_03_02_estimator_qnn_preparation_lab.ipynb",
+      "drive_id": "1ujrU8IjLE3GouZ68nUFLm_tdQqEArXxn",
+      "day": "Day31",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day31/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: Statevector, SparsePauliOp. Classical: none. Data: inline analytic parameters or no external dataset. Actions: state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day31_3_3_estimator_qnn_construction_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day31_03_03_estimator_qnn_construction_lab.ipynb",
+      "drive_id": "1HSuQC1ryrxXnS3U8gI9W3avynW2BgdL_",
+      "day": "Day31",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day31/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day31_3_4_estimator_qnn_forward_pass_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day31_03_04_estimator_qnn_forward_pass_lab.ipynb",
+      "drive_id": "1ah73_APIOqHQO4Ekwm49CUx16D_Mx-oE",
+      "day": "Day31",
+      "source_title": "3-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day31/3-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, NumPy. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day31_3_5_estimator_qnn_forward_analysis_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day31_03_05_estimator_qnn_forward_analysis_lab.ipynb",
+      "drive_id": "130XFm2NpMh-E3XgIx2lKw8OtHZoM1V6p",
+      "day": "Day31",
+      "source_title": "3-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day31/3-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, NumPy. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_2_estimator_qnn_creation_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day34_03_02_estimator_qnn_creation_lab.ipynb",
+      "drive_id": "1Iryf68vZcRjKLMcAmiNr2071VYf_AIiM",
+      "day": "Day34",
+      "source_title": "3-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, NumPy. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_create_qnn_support_module.ipynb",
+      "proposed_path": "05.quantum-neural-networks/02.estimator-qnn/day34_create_qnn_support_module_lab.ipynb",
+      "drive_id": "1JnWOQ-eCQFoDHvGncBd4nyjkN4Sac_kh",
+      "day": "Day34",
+      "source_title": "create_qnn.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/create_qnn.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_2_1_torchconnector_pytorch_integration_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_02_01_torchconnector_pytorch_integration_lab.ipynb",
+      "drive_id": "1qd1AEqmSj1AYmY7EwLmtD74e40q1SnIK",
+      "day": "Day34",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, PyTorch. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, TorchConnector, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_1_torchconnector_environment_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_01_torchconnector_environment_lab.ipynb",
+      "drive_id": "1H8CPX4uMsWI3JgnGyq2T71H2Aoh6aoZF",
+      "day": "Day34",
+      "source_title": "3-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, PyTorch, NumPy. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, TorchConnector, SparsePauliOp observable. Classical: PyTorch linear layer. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_3_torchconnector_application_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_03_torchconnector_application_lab.ipynb",
+      "drive_id": "1cx5cf4kc2VDhNbfcPW7GQa9LMzleETJP",
+      "day": "Day34",
+      "source_title": "3-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, PyTorch, NumPy. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, TorchConnector, SparsePauliOp observable. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_4_quantum_weight_parameter_analysis_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_04_quantum_weight_parameter_analysis_lab.ipynb",
+      "drive_id": "13UneY10CddU9UI8MgEOm1AIca7luvrya",
+      "day": "Day34",
+      "source_title": "3-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, PyTorch, NumPy. Quantum: EstimatorQNN, ZZFeatureMap, RealAmplitudes, TorchConnector, SparsePauliOp observable. Classical: Adam/gradient updates. Data: inline analytic parameters or no external dataset. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_5_qnn_forward_batch_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_05_qnn_forward_batch_lab.ipynb",
+      "drive_id": "1j5t7LBApEXsosjt4vB6N3W7D5WNoOqyw",
+      "day": "Day34",
+      "source_title": "3-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: PyTorch, NumPy. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_6_qnn_input_change_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_06_qnn_input_change_lab.ipynb",
+      "drive_id": "1f0xdn_CUgONhq_vyEsIBzGIIzpxZjTED",
+      "day": "Day34",
+      "source_title": "3-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-6.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: PyTorch. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_7_qnn_weight_change_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_07_qnn_weight_change_lab.ipynb",
+      "drive_id": "1VIeLw6zvTfbEVcF6LWadJAhUm1r4rPI5",
+      "day": "Day34",
+      "source_title": "3-7.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-7.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: PyTorch. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_8_qnn_gradient_calculation_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_08_qnn_gradient_calculation_lab.ipynb",
+      "drive_id": "1CTM31PqOJLk6vOxv3vaemCc8AQYlRlDE",
+      "day": "Day34",
+      "source_title": "3-8.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-8.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: PyTorch. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: MSE loss, Adam/gradient updates. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_9_qnn_batch_forward_training_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_09_qnn_batch_forward_training_lab.ipynb",
+      "drive_id": "1tTWKpzkWPLJSToWvMbIxYUBHZu6yWfmu",
+      "day": "Day34",
+      "source_title": "3-9.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-9.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: PyTorch. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: MSE loss, Adam/gradient updates. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_3_10_qnn_end_to_end_validation_practice.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_03_10_qnn_end_to_end_validation_lab.ipynb",
+      "drive_id": "1hc7oW5pIII5wv2iD8abWHAkWEyIKUIs9",
+      "day": "Day34",
+      "source_title": "3-10.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/3-10.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: PyTorch. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: MSE loss, Adam/gradient updates. Data: inline analytic parameters or no external dataset. Actions: train/optimize.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/neural-network/day34_torch_connector_support_module.ipynb",
+      "proposed_path": "05.quantum-neural-networks/03.torchconnector-hybrid-qnn/day34_torch_connector_support_module_lab.ipynb",
+      "drive_id": "1tNe2XRrI0d9vsOF2LL9BBTyEzf2X5s1S",
+      "day": "Day34",
+      "source_title": "torch_connector.py",
+      "raw_path": ".omo/drive-sync/raw/Day34/torch_connector.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "insufficient",
+      "content_summary": "Frameworks: Qiskit ML, Qiskit/Aer, PyTorch. Quantum: helper-backed EstimatorQNN/TorchConnector workflow. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": "Move with the Day34 helper dependency set and provide importable create_qnn.py/torch_connector.py files or inline equivalent definitions before claiming standalone Colab execution.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day35_1_1_tsp_brute_force_baseline_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/01.tsp-classical-baseline/day35_01_01_tsp_brute_force_baseline_lab.ipynb",
+      "drive_id": "1L2EFHFTNe44kxIjjMx1LIogJR2S9rKVT",
+      "day": "Day35",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day35/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Python/NumPy-style built-ins. Quantum: no quantum primitive in executable cells. Classical: brute-force permutations. Data: inline four-city TSP distance table. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day38_1_2_qaoa_import_object_setup_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/day38_01_02_qaoa_import_object_setup_lab.ipynb",
+      "drive_id": "1BdyiW4jc7p52mF-tOxUyUcwJFniopc_M",
+      "day": "Day38",
+      "source_title": "1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day38/1-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Optimization, Qiskit/Aer. Quantum: QAOA with QuadraticProgram/MinimumEigenOptimizer/StatevectorSampler. Classical: COBYLA. Data: inline binary quadratic program. Actions: build, state/expectation.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day38_1_4_qaoa_classical_comparison_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/02.qaoa-objectives-and-optimizers/day38_01_04_qaoa_classical_comparison_lab.ipynb",
+      "drive_id": "1z8mBwsuUn03ynTCoLDUP3Ei52wEVDBxf",
+      "day": "Day38",
+      "source_title": "1-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day38/1-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Optimization, Qiskit/Aer. Quantum: QAOA with QuadraticProgram/MinimumEigenOptimizer/StatevectorSampler. Classical: COBYLA. Data: inline binary quadratic program. Actions: build, state/expectation, train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day38_1_1_qaoa_environment_check_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day38_01_01_qaoa_environment_check_lab.ipynb",
+      "drive_id": "1XYpja9HJEiSSXtt0Cfic6pFFiZTbXeu3",
+      "day": "Day38",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day38/1-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Optimization, Qiskit Algorithms, Qiskit/Aer. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day38_1_3_first_qaoa_execution_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day38_01_03_first_qaoa_execution_lab.ipynb",
+      "drive_id": "13ohnKaDQ4FlWpZ4EQD9CGrnbjVQJPXC-",
+      "day": "Day38",
+      "source_title": "1-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day38/1-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit Optimization, Qiskit/Aer. Quantum: QAOA with QuadraticProgram/MinimumEigenOptimizer/StatevectorSampler. Classical: COBYLA. Data: inline binary quadratic program. Actions: build, state/expectation, train/optimize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day39_2_1_cost_parameter_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_01_cost_parameter_lab.ipynb",
+      "drive_id": "1f_FkvVAzUbCyPY6QmmHo73Kbwp8-UMiq",
+      "day": "Day39",
+      "source_title": "2-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/2-1.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: no quantum primitive in executable cells. Classical: none. Data: inline analytic parameters or no external dataset. Actions: inspect/compute.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day39_2_2_cost_layer_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_02_cost_layer_lab.ipynb",
+      "drive_id": "1LLe8p_o7_3_REHP4toWB1p47z3-qUrNb",
+      "day": "Day39",
+      "source_title": "2-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/2-2.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RZZ]. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day39_2_3_cost_circuit_output_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_03_cost_circuit_output_lab.ipynb",
+      "drive_id": "1lCNb-X_dhKrcxqvs--v5tmAp2eUSl3iZ",
+      "day": "Day39",
+      "source_title": "2-3.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/2-3.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[RZZ]. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day39_2_4_gamma_parameter_effect_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_04_gamma_parameter_effect_lab.ipynb",
+      "drive_id": "16NSgDsaEURmc6sIUwU5CV8bQfc4nXxWv",
+      "day": "Day39",
+      "source_title": "2-4.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/2-4.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,RX,RZZ] with measurement/counts. Classical: none. Data: simulator shots/counts. Actions: build, bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day39_2_5_mixer_layer_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_05_mixer_layer_lab.ipynb",
+      "drive_id": "13kBHRRUdeorzJof5mkfamhJCqtHzJkJg",
+      "day": "Day39",
+      "source_title": "2-5.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/2-5.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QAOA with QuadraticProgram/MinimumEigenOptimizer/StatevectorSampler. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, bind/sweep, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/qaoa-basics/day39_2_6_parameterized_qaoa_circuit_practice.ipynb",
+      "proposed_path": "06.qaoa-and-combinatorial-optimization/03.qaoa-layers-and-execution/day39_02_06_parameterized_qaoa_circuit_lab.ipynb",
+      "drive_id": "1pT8HrZInGryuuNt2TIbZ_NwSHvNrg-6o",
+      "day": "Day39",
+      "source_title": "2-6.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/2-6.py",
+      "provenance_kind": "manifest_exact_source",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: Qiskit/Aer. Quantum: QuantumCircuit[H,RX,RZZ] with measurement/counts. Classical: none. Data: inline analytic parameters or no external dataset. Actions: build, bind/sweep, simulate/measure, visualize.",
+      "relation_action": null,
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/netflix-qml-project/day39_project_1_1_netflix_dataset_analysis.ipynb",
+      "proposed_path": "07.capstone/01.netflix-qml-project/day39_project_01_01_netflix_dataset_quality_and_leakage_audit_lab.ipynb",
+      "drive_id": "16IMIqunaAWtaekYwET8ZdZBAhmdQUxTq",
+      "day": "Day39",
+      "source_title": "1-1.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/Project/1-1.py",
+      "provenance_kind": "manifest_source_with_notebook_bootstrap",
+      "evidence_tag": "directly_supported",
+      "content_summary": "Frameworks: pandas. Quantum: no quantum primitive in executable cells. Classical: none. Data: netflix_titles.csv. Actions: inspect/compute.",
+      "relation_action": "Declare the repository-dataset bootstrap as a notebook-only augmentation while preserving the exact raw source cell.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    },
+    {
+      "asset_type": "notebook",
+      "current_path": "1.quantum-ml-overview/netflix-qml-project/day39_project_1_2_netflix_quantum_feature_engineering.ipynb",
+      "proposed_path": "07.capstone/01.netflix-qml-project/day39_project_01_02_netflix_classical_feature_preparation_for_qml_lab.ipynb",
+      "drive_id": "1tFIewbfZ-AeNfxg4W7WchaxmOgqG8pLO",
+      "day": "Day39",
+      "source_title": "1-2.py",
+      "raw_path": ".omo/drive-sync/raw/Day39/Project/1-2.py",
+      "provenance_kind": "manifest_source_with_notebook_bootstrap",
+      "evidence_tag": "contradicts_premise",
+      "content_summary": "Frameworks: pandas. Quantum: no quantum primitive in executable cells. Classical: none. Data: netflix_titles.csv. Actions: persist.",
+      "relation_action": "Declare the repository-dataset bootstrap as a notebook-only augmentation while preserving the exact raw source cell. Rename to remove the unsupported quantum-feature-engineering claim.",
+      "allowed_content_changes": [
+        "path_move",
+        "colab_path_url_rewrite"
+      ],
+      "colab_badge_url_count": 1,
+      "badge_url_status": "single_current"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User request: 1주차 QML PDF 자료를 정합한 shallow quantum-ml 폴더에 저장하고, PDF 내용을 deep하게 확인한 뒤 실습코드를 Jupyter notebook 파일로 생성하고, scoped git commit/push까지 완료한다.
+Constraints: preserve existing shallow quantum-ml layout; avoid local package installation and local notebook execution unless explicitly requested; validate notebook statically; use protected iCloud repo through Terminal.app logs; git operations must be pathspec-scoped under ComputerScience/03_ai-ml-data/quantum-ml.
+Success criteria: C1 PDF copied into a correct week-1/topic folder with source PDF preserved; C2 notebook is PDF-grounded, Colab-ready, and statically valid; C3 scoped commit is pushed to origin/main without staging unrelated vault changes.

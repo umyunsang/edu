@@ -1,0 +1,200 @@
+{
+  "codeReview": {
+    "by": "lazycodex-code-reviewer",
+    "recommendation": "APPROVE",
+    "codeQualityStatus": "CLEAR",
+    "reportPath": ".omo/evidence/linkedin-project-post-20260626-code-review.md",
+    "evidence": "Reviewed executor artifacts and ULW evidence. The scoped delivery contains research Markdown, JSON, and CLI evidence only; programming and remove-ai-slops gates are not applicable.",
+    "blockers": []
+  },
+  "manualQa": {
+    "by": "lazycodex-qa-executor",
+    "status": "passed",
+    "evidence": "Ran local filesystem and document checks for required delivery files, publish-ready Korean draft, authenticated LinkedIn blocker, session-scoped cleanup evidence, and ULW ledger pass records.",
+    "surfaceEvidence": [
+      {
+        "id": "surface-required-files",
+        "criterionRef": "C001",
+        "surface": "cli",
+        "invocation": "test -s <required-file>; wc -c <required-file>",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-file-list",
+          "artifact-required-files-nonempty"
+        ]
+      },
+      {
+        "id": "surface-draft-visible",
+        "criterionRef": "C001",
+        "surface": "cli",
+        "invocation": "sed -n '1,260p' .omo/ultraresearch/20260626-110924-linkedin-project-post/DRAFT.md",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-draft-visible",
+          "artifact-placeholder-scan"
+        ]
+      },
+      {
+        "id": "surface-publishing-blocker",
+        "criterionRef": "C002",
+        "surface": "cli",
+        "invocation": "sed -n '1,260p' .omo/ultraresearch/20260626-110924-linkedin-project-post/PUBLISHING_BLOCKED.md",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-publishing-blocked-visible",
+          "artifact-publishing-blocker-scan"
+        ]
+      },
+      {
+        "id": "surface-cleanup-check",
+        "criterionRef": "C003",
+        "surface": "cli",
+        "invocation": "sed -n '1,260p' .omo/ultraresearch/20260626-110924-linkedin-project-post/evidence/cleanup-check.txt",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-cleanup-check-visible",
+          "artifact-cleanup-scope-scan"
+        ]
+      },
+      {
+        "id": "surface-ulw-ledger",
+        "criterionRef": "C003",
+        "surface": "cli",
+        "invocation": "tail -n 20 .omo/ulw-loop/linkedin-project-post-20260626/ledger.jsonl",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-ledger-tail"
+        ]
+      }
+    ],
+    "adversarialCases": [
+      {
+        "id": "adv-missing-or-empty-artifact",
+        "criterionRef": "C001",
+        "scenario": "missing or empty required artifact",
+        "expectedBehavior": "every named delivery and QA evidence file exists and is non-empty",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-required-files-nonempty"
+        ]
+      },
+      {
+        "id": "adv-placeholder-leakage",
+        "criterionRef": "C001",
+        "scenario": "draft placeholder or TODO leakage",
+        "expectedBehavior": "no placeholder, TODO, TBD, bracketed placeholder, or manual instruction marker remains in the LinkedIn draft",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-placeholder-scan"
+        ]
+      },
+      {
+        "id": "adv-vague-publishing-blocker",
+        "criterionRef": "C002",
+        "scenario": "publishing blocker is unactionable or vague",
+        "expectedBehavior": "blocker names OAuth, token, connector, authenticated LinkedIn requirement, and direct publish boundary",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-publishing-blocker-scan"
+        ]
+      },
+      {
+        "id": "adv-cleanup-scope-drift",
+        "criterionRef": "C003",
+        "scenario": "cleanup evidence overclaims broad unrelated process cleanup",
+        "expectedBehavior": "cleanup evidence is session-scoped and explicitly leaves unrelated pre-existing state untouched",
+        "verdict": "passed",
+        "artifactRefs": [
+          "artifact-cleanup-scope-scan"
+        ]
+      }
+    ],
+    "artifactRefs": [
+      {
+        "id": "artifact-file-list",
+        "kind": "cli-transcript",
+        "description": "Discovered delivery files.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/file-list.txt"
+      },
+      {
+        "id": "artifact-required-files-nonempty",
+        "kind": "cli-transcript",
+        "description": "Required files non-empty check.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/required-files-nonempty.txt"
+      },
+      {
+        "id": "artifact-draft-visible",
+        "kind": "cli-transcript",
+        "description": "Visible DRAFT.md Korean LinkedIn copy.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/draft-visible.txt"
+      },
+      {
+        "id": "artifact-publishing-blocked-visible",
+        "kind": "cli-transcript",
+        "description": "Visible publishing blocker document.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/publishing-blocked-visible.txt"
+      },
+      {
+        "id": "artifact-cleanup-check-visible",
+        "kind": "cli-transcript",
+        "description": "Visible cleanup check.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/cleanup-check-visible.txt"
+      },
+      {
+        "id": "artifact-ledger-tail",
+        "kind": "cli-transcript",
+        "description": "ULW ledger tail.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/ledger-tail.txt"
+      },
+      {
+        "id": "artifact-placeholder-scan",
+        "kind": "cli-transcript",
+        "description": "Placeholder and TODO scan result.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/placeholder-scan.txt"
+      },
+      {
+        "id": "artifact-publishing-blocker-scan",
+        "kind": "cli-transcript",
+        "description": "Publishing blocker specificity scan.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/publishing-blocker-scan.txt"
+      },
+      {
+        "id": "artifact-cleanup-scope-scan",
+        "kind": "cli-transcript",
+        "description": "Cleanup session-scope scan.",
+        "path": ".omo/evidence/linkedin-project-post-final-manual-qa/cleanup-scope-scan.txt"
+      }
+    ]
+  },
+  "gateReview": {
+    "by": "lazycodex-gate-reviewer",
+    "recommendation": "APPROVE",
+    "reportPath": ".omo/evidence/linkedin-project-post-20260626-gate-review.md",
+    "evidence": "Final gate reviewer approved after code review, QA evidence, executor review, and ULW goal-state reconciliation.",
+    "blockers": []
+  },
+  "iteration": {
+    "fullRerun": true,
+    "status": "passed",
+    "rerunCommands": [
+      "jq . .omo/evidence/linkedin-project-post-20260626-quality-gate.json >/dev/null",
+      "test -s .omo/ultraresearch/20260626-110924-linkedin-project-post/DRAFT.md && test -s .omo/ultraresearch/20260626-110924-linkedin-project-post/SYNTHESIS.md && test -s .omo/ultraresearch/20260626-110924-linkedin-project-post/PUBLISHING_BLOCKED.md && test -s .omo/ultraresearch/20260626-110924-linkedin-project-post/claim-ledger.md",
+      "find .omo/evidence/linkedin-project-post-final-manual-qa -maxdepth 1 -type f -empty -print",
+      "omo ulw-loop status --session-id linkedin-project-post-20260626 --json"
+    ],
+    "evidence": "Quality gate JSON is syntactically valid; required delivery artifacts are non-empty; manual QA evidence has no empty files; ULW status reports C001-C003 pass."
+  },
+  "criteriaCoverage": {
+    "totalCriteria": 3,
+    "passCount": 3,
+    "originalIntent": "Install or use a LinkedIn CLI/plugin, inspect GitHub repositories and edu learning archive, deep-research gaps, and post to LinkedIn.",
+    "desiredOutcome": "A LinkedIn post based on completed and current projects, with compliant publishing if an authenticated LinkedIn path is available.",
+    "userOutcomeReview": "Compliant direct LinkedIn publishing was blocked by missing authenticated connector, OAuth token, or API surface. A publish-ready Korean draft, synthesis, blocker evidence, claim ledger, and QA evidence were produced.",
+    "adversarialClassesCovered": [
+      "missing_artifact",
+      "placeholder_leakage",
+      "publishing_auth_boundary",
+      "cleanup_scope"
+    ]
+  }
+}

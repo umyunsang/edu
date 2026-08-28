@@ -1,0 +1,77 @@
+# Task Plan: OpenKnowledge ACP npm ENOENT recovery
+
+## Goal
+Restore both Codex and Claude ACP startup in OpenKnowledge and verify each registry launcher completes initialization without broken npx cache errors.
+
+## Next Step
+Deliver the verified Claude ACP recovery and instruct the user to start a fresh Claude thread in OpenKnowledge.
+
+## Current Phase
+Phase 9
+
+## Phases
+
+### Phase 1: Failure capture and discovery
+- [x] Record the exact reported ENOENT and ACP symptom
+- [x] Inspect the npm debug log and broken cache entry
+- [x] Identify the configured ACP launcher and environment
+- **Status:** complete
+
+### Phase 2: Root-cause diagnosis
+- [x] Classify cache, launcher, PATH, or package-version failure
+- [x] Choose the smallest reversible recovery
+- **Status:** complete
+
+### Phase 3: Contained recovery
+- [x] Preserve evidence and repair only the faulty cache/config surface
+- [x] Reinstall or pin the launcher only if directly supported
+- **Status:** complete
+
+### Phase 4: Testing and verification
+- [x] Run the exact launcher outside the app
+- [x] Verify ACP initialization or equivalent protocol startup
+- [x] Confirm no new npm ENOENT log is produced
+- **Status:** complete
+
+### Phase 5: Delivery
+- [x] Record root cause, changes, and verification evidence
+- [x] Deliver fresh-thread instruction; application restart is not required by the verified launcher state
+- **Status:** complete
+
+### Phase 6: Claude failure capture and diagnosis
+- [x] Inspect the reported npm log and partial cache structure
+- [x] Confirm OpenKnowledge's exact Claude ACP package and launcher cwd
+- [x] Choose the smallest reversible recovery
+- **Status:** complete
+
+### Phase 7: Claude contained recovery
+- [x] Quarantine only the proven partial Claude npx cache
+- [x] Rebuild it with the exact registry-pinned launcher
+- **Status:** complete
+
+### Phase 8: Claude ACP verification
+- [x] Verify rebuilt cache metadata and executable link
+- [x] Complete a real ACP initialize handshake
+- [x] Confirm no new npm ENOENT and no diagnostic processes remain
+- **Status:** complete
+
+### Phase 9: Claude delivery
+- [x] Record root cause, recovery, and scoped verification evidence
+- [x] Deliver fresh Claude-thread instruction
+- **Status:** complete
+
+## Decisions Made
+| Decision | Rationale |
+|----------|-----------|
+| Start with live launcher and log evidence | The npx cache path is a symptom; launcher ownership determines the safe fix. |
+| Quarantine the exact cache directory instead of synthesizing missing files | The interrupted install also lacks `.bin` and lock metadata, so a manual manifest would preserve corruption. |
+| Validate with a real ACP SDK initialize request | Process startup alone would not prove protocol readiness. |
+| Reuse the proven single-cache quarantine pattern for Claude | The Claude cache has the same missing finalization artifacts, while registry, PATH, permissions, runtime engine, and native CLI checks are healthy. |
+
+## Errors Encountered
+| Error | Resolution |
+|-------|------------|
+| init-session.sh was not executable | Invoked the same provided script through `sh`; initialization succeeded. |
+| Broad `rg` over `~/.codex` generated an oversized result | Exclude session archives and search only app-owned bounded files. |
+| Non-TTY session closed stdin before an interactive handshake could be written | Replaced it with an SDK client that owns the child process pipes. |
+| A preliminary interactive probe remained running after stdin closed | Terminated only that diagnostic npm process tree after the successful SDK check. |
