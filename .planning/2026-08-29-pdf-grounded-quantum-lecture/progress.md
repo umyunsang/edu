@@ -100,4 +100,5 @@
 - `ai-system-design` has completed the same per-note inventory and static validation. Its next lane is ml-projects.
 - `generative-ai-fine-tuning` and `large-language-models` have completed the official-template rewrite and a 24-document individual component/recipe review. Their next lane is machine-learning.
 - `big-data-analysis` has completed the same official-template rewrite with static OpenKnowledge validation only. Its next lane is operating-systems.
+- `ml-projects` has completed its per-note inventory and static validation, documenting sparse or incorrect extraction rather than inferring it. Its next lane is linux.
 - All previous quality and progress metrics below are historical rejected output, not acceptance evidence.
