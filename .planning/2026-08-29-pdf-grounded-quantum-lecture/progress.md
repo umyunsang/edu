@@ -26,6 +26,7 @@
 - Replaced `notes/01-1. 양자 알고리즘 소개 — Grover와 Shor.md` and verified a clean scoped audit.
 - Began the VQA source pass; separated a contextual bounded-problem example from a usable Ansatz visual.
 - Verified direct VQE-definition and molecular-workflow evidence slides.
+- Replaced `notes/03-1. 화학 알고리즘 소개 — VQA.md` and verified a clean scoped audit.
 
 ## Errors
 
