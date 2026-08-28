@@ -1,5 +1,12 @@
 # Findings: PDF-grounded quantum-lecture rewrite
 
+## 2026-08-29 superseding authoring contract
+
+- Every earlier note result, component count, asset-embedding decision, and render check below is rejected historical context, not reusable acceptance evidence.
+- Public notes must be rewritten in place using only the official OpenKnowledge lecture-note template, native components, Tabs, and unmodified palette starters populated from the extracted source facts.
+- Do not embed PDF/assets images or text-only PDF page references. Do not invent SVG/CSS/JS components.
+- Do not use browsers, preview URLs, screenshots, DOM inspection, or any rendering verification. Validation is limited to OpenKnowledge write/edit warnings, lint, audit, and Mermaid write warnings.
+
 ## Directly supported
 
 - `quantum-lecture` has 8 lecture notes, a `sources/` directory, and an `assets/` directory.

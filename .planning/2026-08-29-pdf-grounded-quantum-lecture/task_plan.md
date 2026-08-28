@@ -2,13 +2,13 @@
 
 ## Goal
 
-Rebuild every lecture note in each edu course from its source PDFs and extracted text while replacing every direct original-PDF visual embed with an original SVG or HTML-preview learning visual.
+Rebuild every lecture note in each edu course from its source PDFs and extracted text using only the official OpenKnowledge lecture-note template, native components, and palette starters.
 
 ## Hard boundaries
 
 - Never inspect deleted notes through Git history.
 - Do not embed rendered source slides or any original-PDF-derived image in a note. Keep source PDFs and rendered assets private as evidence material, but do not delete those underlying source assets without separate authorization.
-- Replace each removed source visual with an original abstracted SVG or HTML-preview learning visual; do not reproduce the source slide's layout or text.
+- Do not invent a visual component or hand-roll an SVG/CSS/JS pattern. Use only the official palette starters where a visual adds explanatory value, preserving their structure and theme tokens.
 - Do not add Obsidian wikilinks, Dataview, or hierarchical tags.
 - Preserve source errors and mark them as source errors when present.
 - Do not commit or push until the user requests it; never stage unrelated or dot-directory changes.
@@ -25,6 +25,6 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 
 ## Quality floor per lecture note
 
-- At least 10 meaningful visual/interactive components across callouts, `html preview`, `details`, `Tabs`, Mermaid, highlights, math, and embedded slide images.
+- At least 10 meaningful components across official callouts, `html preview` palette starters, `details`, `Tabs`, Mermaid, highlights, and math.
 - Zero direct source-slide image embeds.
-- At least one purpose-built SVG or HTML-preview visual when it adds explanatory value; not decorative repetition.
+- Use an official palette visual starter when it adds explanatory value; never add decorative repetition.
