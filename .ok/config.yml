@@ -61,3 +61,5 @@ contentRules:
     enabled: true
   frontmatter:
     enabled: true
+validation:
+  links: error
