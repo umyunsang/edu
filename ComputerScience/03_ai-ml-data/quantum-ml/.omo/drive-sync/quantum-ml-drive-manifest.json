@@ -470,7 +470,7 @@
    "created_time": "2026-07-06T09:58:33.781Z",
    "modified_time": "2026-07-06T14:14:21.623Z",
    "raw_path": ".omo/drive-sync/raw/Day8/1.Quantum Gate 개념.pdf",
-   "artifact_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day08_01_quantum_gate_concepts_lecture.pdf",
+   "artifact_path": "sources/day08_01_quantum_gate_concepts_lecture.pdf",
    "processed_as": "pdf",
    "processed_at": "2026-07-07T00:06:28.465038+00:00"
   },
@@ -481,7 +481,7 @@
    "created_time": "2026-07-06T09:55:45.871Z",
    "modified_time": "2026-07-06T14:13:03.218Z",
    "raw_path": ".omo/drive-sync/raw/Day10/1.Quantum Circuit 개요.pdf",
-   "artifact_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day10_01_quantum_circuit_lecture.pdf",
+   "artifact_path": "sources/day10_01_quantum_circuit_lecture.pdf",
    "processed_as": "pdf",
    "processed_at": "2026-07-07T00:06:28.465038+00:00"
   },
@@ -492,7 +492,7 @@
    "created_time": "2026-07-06T14:13:10.111Z",
    "modified_time": "2026-07-06T14:12:05.000Z",
    "raw_path": ".omo/drive-sync/raw/Day11/4.Quantum Circuit과 QML.pdf",
-   "artifact_path": "02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_04_quantum_circuit_and_qml_lecture.pdf",
+   "artifact_path": "sources/day11_04_quantum_circuit_and_qml_lecture.pdf",
    "processed_as": "pdf",
    "processed_at": "2026-07-07T00:06:28.465038+00:00"
   },
@@ -850,7 +850,7 @@
    "created_time": "2026-06-22T12:30:27.470Z",
    "modified_time": "2026-06-22T12:30:12.000Z",
    "raw_path": ".omo/drive-sync/raw/Day1/2.표현력의 한계.pdf",
-   "artifact_path": "01.quantum-foundations/01.why-quantum-and-qml/day01_02_expressive_power_limit_lecture.pdf",
+   "artifact_path": "sources/day01_02_expressive_power_limit_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
@@ -942,7 +942,7 @@
    "created_time": "2026-06-23T13:58:11.174Z",
    "modified_time": "2026-06-23T08:12:49.000Z",
    "raw_path": ".omo/drive-sync/raw/Day2/1.왜 Quantum Computing이 필요한가.pdf",
-   "artifact_path": "01.quantum-foundations/01.why-quantum-and-qml/day02_01_why_quantum_computing_lecture.pdf",
+   "artifact_path": "sources/day02_01_why_quantum_computing_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
@@ -954,7 +954,7 @@
    "created_time": "2026-06-23T13:58:17.295Z",
    "modified_time": "2026-06-23T08:11:27.000Z",
    "raw_path": ".omo/drive-sync/raw/Day2/2.Bit와 Qubit.pdf",
-   "artifact_path": "01.quantum-foundations/02.bits-qubits-and-state/day02_02_bit_and_qubit_lecture.pdf",
+   "artifact_path": "sources/day02_02_bit_and_qubit_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
@@ -966,7 +966,7 @@
    "created_time": "2026-06-23T13:58:22.688Z",
    "modified_time": "2026-06-23T08:09:40.000Z",
    "raw_path": ".omo/drive-sync/raw/Day2/3.Quantum Feature Sapce.pdf",
-   "artifact_path": "02.circuits-and-encoding/02.feature-encoding/day02_03_quantum_feature_space_lecture.pdf",
+   "artifact_path": "sources/day02_03_quantum_feature_space_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
@@ -978,7 +978,7 @@
    "created_time": "2026-06-23T13:22:44.885Z",
    "modified_time": "2026-06-23T08:08:33.000Z",
    "raw_path": ".omo/drive-sync/raw/Day2/4.QML에서 Quantum의 역할.pdf",
-   "artifact_path": "02.circuits-and-encoding/02.feature-encoding/day02_04_quantum_role_in_qml_lecture.pdf",
+   "artifact_path": "sources/day02_04_quantum_role_in_qml_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
@@ -990,7 +990,7 @@
    "created_time": "2026-06-26T11:03:06.511Z",
    "modified_time": "2026-06-26T11:15:03.539Z",
    "raw_path": ".omo/drive-sync/raw/Day5/4.상태변화 분석.pdf",
-   "artifact_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day05_04_quantum_state_transition_analysis_lecture.pdf",
+   "artifact_path": "sources/day05_04_quantum_state_transition_analysis_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
@@ -1002,7 +1002,7 @@
    "created_time": "2026-06-26T12:02:34.817Z",
    "modified_time": "2026-06-26T09:52:10.000Z",
    "raw_path": ".omo/drive-sync/raw/Day5/3.Hardamard Gate 개념 이해.pdf",
-   "artifact_path": "01.quantum-foundations/03.gates-measurement-and-entanglement/day05_03_hadamard_gate_concepts_lecture.pdf",
+   "artifact_path": "sources/day05_03_hadamard_gate_concepts_lecture.pdf",
    "processed_as": "existing-artifact-reconciled",
    "processed_at": "2026-07-12T00:06:26.584Z",
    "local_execution": false
