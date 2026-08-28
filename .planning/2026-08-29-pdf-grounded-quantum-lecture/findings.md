@@ -14,6 +14,18 @@
 - Defer every graph relationship label until all notes in this course have been rewritten.
 - User authorized repository-wide continuation with the same evidence and visual-quality contract; the five explicitly source-empty courses remain out of scope for note creation.
 
+## Repository source inventory
+
+- 33 of 38 course folders have source PDFs: 476 PDFs and 9,817 rendered WebP slide assets in total.
+- `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` have no PDFs or assets and will retain no reconstructed notes.
+- The five remaining quantum-lecture PDFs have usable asset coverage: Grover/Shor 40, VQA 39, QML 24, SQD 26, and hardware 37 rendered pages.
+
+## Grover-Shor evidence map
+
+- The Grover/Shor source is 59 pages, but rendered slide assets exist only through p042; p043 through p059 will not be used as image evidence.
+- A verified operator slide shows controlled gates and the identity $HXH=Z$. The inspected p018 asset is only a Binary Sudoku section divider, so it will not carry a technical claim.
+- A Grover iteration slide directly shows uniform superposition rotating toward a target state. A QFT slide describes extracting hidden periodicity and presents an asymptotic speed comparison; the rewrite will preserve this as a source claim rather than make a broad performance promise.
+
 ## First-note evidence map
 
 - `01. 양자 기초 게이트 설명` maps to the 31-page gate PDF and its matching extracted text bundle.
