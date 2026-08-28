@@ -29,11 +29,10 @@ updated: '2026-08-29'
 
 ```mermaid
 flowchart LR
-    A["생성형 AI와 멀티모달"] --> B["디자인 탐색과 제어"]
-    B --> C["LoRA와 지시 튜닝"]
-    C --> D["이미지 학습 데이터 설계"]
-    D --> E["제조 생성 설계"]
-    E --> F["Physical AI와 DRL"]
+    A["생성형 AI·멀티모달·디자인 제어"] --> B["LoRA와 지시 튜닝"]
+    B --> C["이미지 학습 데이터 설계"]
+    C --> D["제조 생성 설계"]
+    D --> E["Physical AI와 DRL"]
 ```
 
 > [!TIP]
