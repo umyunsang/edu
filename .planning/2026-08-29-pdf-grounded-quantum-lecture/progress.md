@@ -108,6 +108,8 @@
 ## 2026-08-29 Source-depth and duplication reset
 
 - User identified that generative-ai-fine-tuning notes 01, 15, and 26 contain the same substance despite different titles. This confirms that the previous component-count/template gate did not establish PDF coverage or note distinctness.
+- User rejected every note produced by every previous lane, across all courses. All prior completion statements, source maps, component counts, lint/audit results, and claimed course gates are non-acceptance history only.
+- Existing note files are not deleted without separate authorization; they may be read only to locate defects and must never anchor new structure, wording, depth, or visual choices.
 - All Terra agents were interrupted. New delegated work uses `gpt-5.6-sol` with xhigh reasoning only.
 - Three Sol lanes are now running read-only: exact duplicate forensics for notes 01/15/26, whole-course duplicate and missing-topic audit, and independent PDF-segment mapping for 01/15/26/40/46/50/62/72.
 - No further course authoring is accepted until the generative-ai-fine-tuning source-depth gate is redesigned and demonstrated on these documents.

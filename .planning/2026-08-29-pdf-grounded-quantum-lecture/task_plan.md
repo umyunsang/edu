@@ -4,6 +4,8 @@
 
 Rebuild every lecture note in each edu course from its source PDFs and extracted text using only the official OpenKnowledge lecture-note template, native components, and palette starters.
 
+All note content previously written by any delegated lane is rejected and may be inspected only to locate defects, never as an authoring anchor.
+
 ## Hard boundaries
 
 - Never inspect deleted notes through Git history.
