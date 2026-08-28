@@ -10,7 +10,7 @@
 
 ## Global Constraints
 
-- Authority: [approved design](../specs/2026-07-22-edu-reference-layer-stage1-5-design.md), this master plan, and the five linked stage plans.
+- Authority: [approved design](<../specs/2026-07-22-edu-reference-layer-stage1-5-design.md>), this master plan, and the five linked stage plans.
 - Source vault is read-only. No source overwrite, deletion, rename, content normalization, or metadata repair is authorized.
 - `.omo/**` is retired and must not be read, executed, created, modified, staged, or used as acceptance evidence.
 - Registry, raw runs, canonical JSONL/Parquet, models, databases, logs, and reports live outside the vault and Git under a configured `0700` root; files containing source-derived data use `0600`.
@@ -22,12 +22,12 @@
 
 ## Plan Set and Execution Order
 
-1. [Stage 2 Task 1 — isolated runtime foundation](2026-07-22-edu-reference-layer-stage2-extraction-canonicalization.md#task-1-lock-and-attest-the-isolated-extraction-runtime)
-2. [Stage 1 — Inventory and registry](2026-07-22-edu-reference-layer-stage1-inventory-registry.md)
-3. [Stage 2 Tasks 2–9 — Extraction and canonicalization](2026-07-22-edu-reference-layer-stage2-extraction-canonicalization.md)
-4. [Stage 3 — Search and graph adapters](2026-07-22-edu-reference-layer-stage3-search-graph-adapters.md)
-5. [Stage 4 — Read-only MCP and clients](2026-07-22-edu-reference-layer-stage4-mcp-clients.md)
-6. [Stage 5 — Evaluation and operations](2026-07-22-edu-reference-layer-stage5-evaluation-operations.md)
+1. [Stage 2 Task 1 — isolated runtime foundation](<./2026-07-22-edu-reference-layer-stage2-extraction-canonicalization.md#task-1-lock-and-attest-the-isolated-extraction-runtime>)
+2. [Stage 1 — Inventory and registry](<./2026-07-22-edu-reference-layer-stage1-inventory-registry.md>)
+3. [Stage 2 Tasks 2–9 — Extraction and canonicalization](<./2026-07-22-edu-reference-layer-stage2-extraction-canonicalization.md>)
+4. [Stage 3 — Search and graph adapters](<./2026-07-22-edu-reference-layer-stage3-search-graph-adapters.md>)
+5. [Stage 4 — Read-only MCP and clients](<./2026-07-22-edu-reference-layer-stage4-mcp-clients.md>)
+6. [Stage 5 — Evaluation and operations](<./2026-07-22-edu-reference-layer-stage5-evaluation-operations.md>)
 
 The first pass executes Stage 1→5 against the digest-frozen representative corpus. The second pass reuses the same locked pipeline in deterministic batches of at most 100 assets or 512 MiB, with an oversized single asset in its own batch, until the frozen full-vault population closes.
 
@@ -78,7 +78,7 @@ Expected: no output.
 **Files:**
 - Execute: Stage-2 plan Task 1 only
 
-- [ ] Execute [Stage-2 Task 1](2026-07-22-edu-reference-layer-stage2-extraction-canonicalization.md#task-1-lock-and-attest-the-isolated-extraction-runtime) exactly once before Stage-1 live census or any media extraction. That task is the sole file/commit owner for the runtime project, manifest code, schema, tests, Java receipt, and `uv.lock`.
+- [ ] Execute [Stage-2 Task 1](<./2026-07-22-edu-reference-layer-stage2-extraction-canonicalization.md#task-1-lock-and-attest-the-isolated-extraction-runtime>) exactly once before Stage-1 live census or any media extraction. That task is the sole file/commit owner for the runtime project, manifest code, schema, tests, Java receipt, and `uv.lock`.
 - [ ] Record its verified runtime-manifest digest in the Stage-1 selection/publication evidence and reuse the same digest through Stage 5. Any later dependency/model change creates a new lock and restarts the golden Stage 1→5 sequence.
 
 ### Task 2: Execute golden-corpus Stage 1→5

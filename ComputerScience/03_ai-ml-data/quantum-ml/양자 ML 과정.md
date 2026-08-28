@@ -21,7 +21,7 @@ updated: '2026-08-19'
 ---
 
 > [!info] 강의 정리문서는 인덱스에서
-> 원본 강의 PDF를 근거로 재작성한 정리문서 10편은 [00. 양자 ML 인덱스](<00. 양자 ML 인덱스.md>) 에 모여 있다.
+> 원본 강의 PDF를 근거로 재작성한 정리문서 10편은 [00. 양자 ML 인덱스](<./00. 양자 ML 인덱스.md>) 에 모여 있다.
 > 이 노트는 과정 전체의 **진입점**으로 남는다.
 
 방학 동안 진행하는 머신러닝 기반 양자컴퓨팅 과정의 수업 노트 진입점입니다.
@@ -37,14 +37,14 @@ updated: '2026-08-19'
 
 ### 01.quantum-foundations/01.why-quantum-and-qml
 
-- [표현력의 한계](<01.quantum-foundations/01.why-quantum-and-qml/day01_02_expressive_power_limit_lecture.pdf>)
-- [Quantum Computing이 필요한가](<01.quantum-foundations/01.why-quantum-and-qml/day02_01_why_quantum_computing_lecture.pdf>)
+- [표현력의 한계](<./01.quantum-foundations/01.why-quantum-and-qml/day01_02_expressive_power_limit_lecture.pdf>)
+- [Quantum Computing이 필요한가](<./01.quantum-foundations/01.why-quantum-and-qml/day02_01_why_quantum_computing_lecture.pdf>)
 - [supplement_02_xor_expressive_power_classical_baselines_lab](<01.quantum-foundations/01.why-quantum-and-qml/supplement_02_xor_expressive_power_classical_baselines_lab.ipynb>)
 - [week01_04_qml_quantum_role_numpy_feature_map_lab](<01.quantum-foundations/01.why-quantum-and-qml/week01_04_qml_quantum_role_numpy_feature_map_lab.ipynb>)
 
 ### 01.quantum-foundations/02.bits-qubits-and-state
 
-- [Bit와 Qubit](<01.quantum-foundations/02.bits-qubits-and-state/day02_02_bit_and_qubit_lecture.pdf>)
+- [Bit와 Qubit](<./01.quantum-foundations/02.bits-qubits-and-state/day02_02_bit_and_qubit_lecture.pdf>)
 - [day06_03_02_01_hadamard_counts_lab](<01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_01_hadamard_counts_lab.ipynb>)
 - [day06_03_02_02_hadamard_probability_lab](<01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_02_hadamard_probability_lab.ipynb>)
 - [day06_03_02_03_probability_vector_lab](<01.quantum-foundations/02.bits-qubits-and-state/day06_03_02_03_probability_vector_lab.ipynb>)
@@ -55,8 +55,8 @@ updated: '2026-08-19'
 
 ### 01.quantum-foundations/03.gates-measurement-and-entanglement
 
-- [Hadamard Gate 개념 이해](<01.quantum-foundations/03.gates-measurement-and-entanglement/day05_03_hadamard_gate_concepts_lecture.pdf>)
-- [상태변화 분석](<01.quantum-foundations/03.gates-measurement-and-entanglement/day05_04_quantum_state_transition_analysis_lecture.pdf>)
+- [Hadamard Gate 개념 이해](<./01.quantum-foundations/03.gates-measurement-and-entanglement/day05_03_hadamard_gate_concepts_lecture.pdf>)
+- [상태변화 분석](<./01.quantum-foundations/03.gates-measurement-and-entanglement/day05_04_quantum_state_transition_analysis_lecture.pdf>)
 - [day06_02_01_hadamard_10_shots_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_01_hadamard_10_shots_lab.ipynb>)
 - [day06_02_02_hadamard_100_shots_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_02_hadamard_100_shots_lab.ipynb>)
 - [day06_02_03_hadamard_1000_shots_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day06_02_03_hadamard_1000_shots_lab.ipynb>)
@@ -71,7 +71,7 @@ updated: '2026-08-19'
 - [day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_03_01_01_to_03_01_03_two_qubit_hadamard_comparison_lab.ipynb>)
 - [day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day06_derived_04_01_to_04_04_single_qubit_gate_effects_lab.ipynb>)
 - [day07_02_01_bell_state_measurement_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day07_02_01_bell_state_measurement_lab.ipynb>)
-- [Quantum Gate 개념](<01.quantum-foundations/03.gates-measurement-and-entanglement/day08_01_quantum_gate_concepts_lecture.pdf>)
+- [Quantum Gate 개념](<./01.quantum-foundations/03.gates-measurement-and-entanglement/day08_01_quantum_gate_concepts_lecture.pdf>)
 - [day08_03_01_cnot_basis_state_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_01_cnot_basis_state_lab.ipynb>)
 - [day08_03_02_hadamard_superposition_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_02_hadamard_superposition_lab.ipynb>)
 - [day08_03_03_bell_state_lab](<01.quantum-foundations/03.gates-measurement-and-entanglement/day08_03_03_bell_state_lab.ipynb>)
@@ -96,19 +96,19 @@ updated: '2026-08-19'
 
 ### 02.circuits-and-encoding/01.quantum-circuits-and-qml
 
-- [Quantum Circuit 이란 ?](<02.circuits-and-encoding/01.quantum-circuits-and-qml/day10_01_quantum_circuit_lecture.pdf>)
+- [Quantum Circuit 이란 ?](<./02.circuits-and-encoding/01.quantum-circuits-and-qml/day10_01_quantum_circuit_lecture.pdf>)
 - [day11_01_01_feature_map_circuit_lab](<02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_01_01_feature_map_circuit_lab.ipynb>)
 - [day11_03_01_hadamard_measurement_lab](<02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_01_hadamard_measurement_lab.ipynb>)
 - [day11_03_02_superposition_rotation_entanglement_lab](<02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_02_superposition_rotation_entanglement_lab.ipynb>)
 - [day11_03_03_composite_gate_measurement_lab](<02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_03_03_composite_gate_measurement_lab.ipynb>)
-- [Quantum Circuit과 QML](<02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_04_quantum_circuit_and_qml_lecture.pdf>)
+- [Quantum Circuit과 QML](<./02.circuits-and-encoding/01.quantum-circuits-and-qml/day11_04_quantum_circuit_and_qml_lecture.pdf>)
 
 ### 02.circuits-and-encoding/02.feature-encoding
 
 - [day01_03_02_synthetic_binary_classification_dataset_lab](<02.circuits-and-encoding/02.feature-encoding/day01_03_02_synthetic_binary_classification_dataset_lab.ipynb>)
 - [day01_03_03_pca_projection_and_explained_variance_lab](<02.circuits-and-encoding/02.feature-encoding/day01_03_03_pca_projection_and_explained_variance_lab.ipynb>)
-- [Quantum Feature Space](<02.circuits-and-encoding/02.feature-encoding/day02_03_quantum_feature_space_lecture.pdf>)
-- [QML에서 Quantum의 역할](<02.circuits-and-encoding/02.feature-encoding/day02_04_quantum_role_in_qml_lecture.pdf>)
+- [Quantum Feature Space](<./02.circuits-and-encoding/02.feature-encoding/day02_03_quantum_feature_space_lecture.pdf>)
+- [QML에서 Quantum의 역할](<./02.circuits-and-encoding/02.feature-encoding/day02_04_quantum_role_in_qml_lecture.pdf>)
 - [day09_04_01_feature_encoded_entangling_circuit_lab](<02.circuits-and-encoding/02.feature-encoding/day09_04_01_feature_encoded_entangling_circuit_lab.ipynb>)
 - [day09_04_02_feature_encoded_no_cx_circuit_lab](<02.circuits-and-encoding/02.feature-encoding/day09_04_02_feature_encoded_no_cx_circuit_lab.ipynb>)
 - [day09_04_03_feature_encoded_cx_circuit_lab](<02.circuits-and-encoding/02.feature-encoding/day09_04_03_feature_encoded_cx_circuit_lab.ipynb>)
