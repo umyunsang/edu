@@ -20,7 +20,6 @@
 # 원본 파일은 저장소에 그대로 남고 Obsidian에서는 정상적으로 보인다.
 # (PDF 페이지 임베드는 Obsidian PDF++ 로 읽는 것이 기본 경로다.
 #  docs/knowledge-schema.md 의 시각화 규격 참고)
-*.pdf
 *.pptx
 *.ppt
 *.png
