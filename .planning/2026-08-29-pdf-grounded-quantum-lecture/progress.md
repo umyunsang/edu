@@ -44,6 +44,7 @@
 - Next course: neural-networks.
 - Completed neural-networks public-source conversion: it had no direct source-image embeds, but 26 visible text-only slide citation blocks and five PDF-page footer references were removed. Markdown auto-fix resolved the resulting blank lines.
 - Neural-networks course gate passed: 5 documents / 34 callouts / 5 HTML previews / 6 details / 4 Tabs / 0 direct source-slide embeds. The scoped audit is clean and no visible PDF-page citations remain.
+- Selected `ComputerScience/03_ai-ml-data/generative-ai-fine-tuning` as the next newly reconstructed course: it has two PDFs, 42 private rendered assets, and no notes directory yet. Its extracted text bundles were located; public notes will be authored without asset embeds.
 
 ## Errors
 
