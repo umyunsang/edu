@@ -76,7 +76,7 @@ flowchart LR
 
 ```html preview h=185
 <div style="font-family:system-ui,sans-serif;padding:14px;color:var(--foreground);background:var(--card);border:1px solid var(--border);border-radius:var(--radius)">
-<svg viewBox="0 0 720 135" width="100%" role="img" aria-label="QML 학습에서 회로 결과가 고전 해석을 거쳐 다음 실험 설계로 돌아가는 독자 제작 순환 도식">
+<svg viewBox="0 -16 720 167" width="100%" role="img" aria-label="QML 학습에서 회로 결과가 고전 해석을 거쳐 다음 실험 설계로 돌아가는 독자 제작 순환 도식">
   <text x="18" y="23" font-size="15" font-weight="700" fill="currentColor">QML 학습은 한 번의 회로 실행이 아니라 해석과 재설계의 순환이다</text>
   <g transform="translate(229 76)" font-family="system-ui,sans-serif">
     <circle r="49" fill="none" stroke="var(--chart-4)" stroke-width="8" stroke-dasharray="235 72" transform="rotate(-35)"/><path d="M-34-35l18-3-7 17z" fill="var(--chart-4)"/>
