@@ -28,6 +28,9 @@
 - Began the VQA source pass; separated a contextual bounded-problem example from a usable Ansatz visual.
 - Verified direct VQE-definition and molecular-workflow evidence slides.
 - Replaced `notes/03-1. 화학 알고리즘 소개 — VQA.md` and verified a clean scoped audit.
+- A first broad direct-image grep identified five current quantum-lecture notes, but it crossed `sources/` and `work/` and hit an OpenKnowledge read-scope warning.
+- That broad result is not treated as a repository-wide completion check; every future visual scan is constrained to the course `notes/` directory.
+- Began retrofitting the five identified notes so all former slide locations become original SVG or HTML-preview learning visuals. Underlying PDFs and assets remain private evidence files.
 
 ## Errors
 
