@@ -7,7 +7,7 @@ created: '2026-08-28'
 date: '2026-08-28'
 semester: extracurricular
 source: ''
-status: evergreen
+status: stable
 tags:
   - type/index
   - meta
@@ -16,11 +16,9 @@ type: index
 updated: '2026-08-28'
 ---
 
-schema:: [[docs/knowledge-schema|지식 스키마]]
+schema:: [지식 스키마](<knowledge-schema.md>)
 
-# 과목 폴더 표준
-
-[[docs/knowledge-schema|지식 스키마]]가 **파일의 규격**을 정한다면,
+[지식 스키마](<knowledge-schema.md>)가 **파일의 규격**을 정한다면,
 이 문서는 **파일이 놓이는 자리**를 정한다. 모든 과목 폴더는 예외 없이 같은 배치를 따른다.
 
 ## 표준 배치
@@ -42,7 +40,7 @@ ComputerScience/<분야>/<과목>/
 ## 왜 이 배치인가
 
 | 규칙 | 이유 |
-|:--|:--|
+| :-- | :-- |
 | **정리문서는 루트에 평면** | Obsidian 위키링크가 `[[01. 주제]]` 로 단순해지고, 폴더를 파고들 필요가 없다 |
 | **번호 접두 `NN.`** | 파일 정렬이 곧 학습 순서. 인덱스와 사이드바가 같은 순서로 보인다 |
 | **PDF는 `pdf/` 한 곳** | `.okignore` 의 `*.pdf` 와 맞물려 OpenKnowledge 인덱스에서 통째로 빠진다 |
@@ -84,7 +82,7 @@ flowchart LR
 기존 과목을 이 표준으로 옮길 때 적용하는 결정 규칙이다.
 
 | 원본 위치 | 대상 | 비고 |
-|:--|:--|:--|
+| :-- | :-- | :-- |
 | 아무 곳의 `*.pdf` | `pdf/` | 이름 충돌 시 원래 상위 폴더명을 접두로 붙인다 |
 | 아무 곳의 `*.ipynb` `*.py` `*.sql` `*.java` `*.c` `*.cpp` | `code/` | 하위 구조는 평탄화하되 충돌 시 폴더명 접두 |
 | 아무 곳의 `*.docx` `*.xlsx` `*.csv` `*.png` `*.zip` | `assets/` | |
@@ -93,7 +91,7 @@ flowchart LR
 
 > [!warning] `.omo` · `.planning` · `.codex` 등은 건드리지 않는다
 > 에이전트 작업 흔적은 `.okignore` · `.gitignore` 관할이며 이 표준의 대상이 아니다.
-
+>
 > [!note] 예외 — 모듈형 과정
 > `quantum-ml` 처럼 원본이 **모듈 계층**(`01.foundations/…`)으로 배포된 과정은
 > PDF 원본 구조를 보존한다. 정리문서는 동일하게 루트에 평면 배치한다.
