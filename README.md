@@ -266,17 +266,6 @@ graph TD
 npx -y @inkeep/open-knowledge@latest start --open   # 웹 에디터 + MCP 서버
 ```
 
-### 강의 PDF → 정리문서 파이프라인
-
-```bash
-git lfs pull --include="<course>/pdf/*"
-python3 scripts/pdf_lecture_extract.py "<course>/pdf/01_Foo.pdf" --render none
-#   → 에이전트가 .agents/skills/lecture-pdf-to-note 규격으로 정리문서 작성
-node scripts/check_mermaid.mjs --dir "<course>"     # Mermaid 문법 검증
-python3 scripts/register_pdf_sources.py            # 출처 원장 동기화
-```
-
-정리문서는 한 노트에 **표 · Mermaid 3종 이상 · 콜아웃 · LaTeX · PDF 페이지 임베드**를 섞어 쓴다.
 
 ### 진행 현황
 

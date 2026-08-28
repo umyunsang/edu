@@ -69,19 +69,6 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 | `scripts/generate_folder_guides.py` | (re)generate per-folder `.ok/frontmatter.yml` agent guides — idempotent |
 | `scripts/check_mermaid.mjs` | validate every ` ```mermaid ` block with the real Mermaid parser |
 
-## Writing a Lecture Note From a PDF
-
-Follow `.agents/skills/lecture-pdf-to-note/SKILL.md`. Summary:
-
-1. `git lfs pull --include="<course>/pdf/*"`
-2. `python3 scripts/pdf_lecture_extract.py "<course>/pdf/01_Foo.pdf" --render none`
-3. Write `<course>/NN. 제목.md` from the bundle — Korean, restructured, never copied verbatim
-4. Mix **at least 4 kinds of visualization** (tables, ≥3 distinct Mermaid types, callouts, LaTeX, PDF page embeds)
-5. `node scripts/check_mermaid.mjs "<note>"` until zero failures
-6. `python3 scripts/register_pdf_sources.py`
-
-Never invent content that is not in the slides. Never create `![[image.png]]` embeds for images
-that do not exist — use `![[pdf/file.pdf#page=N]]` with a text explanation instead.
 
 ## Vault Structure
 

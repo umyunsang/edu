@@ -211,8 +211,8 @@ def main() -> None:
             ctitle, cdesc, sem = meta
             full = (
                 f"{cdesc} 학기: {sem}. "
-                "원본 강의자료는 `pdf/` 에 있고, 그것을 근거로 쓴 정리문서가 이 폴더 루트에 있다. "
-                "정리문서를 새로 쓰거나 다시 쓸 때는 `.agents/skills/lecture-pdf-to-note` 스킬을 따른다."
+                "원본 강의자료는 `sources/` 에, 슬라이드 렌더 이미지는 `assets/` 에 있고, "
+                "그것을 근거로 쓴 정리문서가 `notes/` 에 있다."
             )
             write(
                 course / ".ok" / "frontmatter.yml",
