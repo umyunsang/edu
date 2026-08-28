@@ -141,3 +141,13 @@
 - Validator originality audit found no tracked drift in `.ok/config.yml`, `scripts/check_mermaid.mjs`, `scripts/graph_check.py`, or any tracked `scripts/` file. `.ok/okf/**` is ignored and has no Git authority, so it was preserved rather than guessed or overwritten.
 - The global OpenKnowledge setting file has `slides.enabled: true`, but the running MCP process still reports `false`; treat the current service state as stale until OpenKnowledge is restarted or otherwise reloads user settings.
 - Critical blocker: OpenKnowledge 0.64.2 has no official OK-to-Slidev adapter. Raw Slidev renders Mermaid, KaTeX, and the five base GFM alerts, but it does not execute `html preview` and has no `Tabs/Tab` component. Build/export success therefore proves compilation only, not OpenKnowledge visual fidelity. No course rewrite may receive a Slidev visual-compatibility PASS until this contract conflict is resolved.
+
+## 2026-08-29 approved local Slidev compatibility layer
+
+- Implemented the separately approved local addon under `packages/slidev-addon-openknowledge/` and pinned the project toolchain in `package.json`/`package-lock.json`.
+- Added source-contract and negative-control fixtures under `tests/slidev-compat/`; fixtures materialize only in temporary directories, not in the vault.
+- `npm run test:slidev-compat` passes: source contract, raw Slidev negative control, addon build, CLI export/static assertions. The required final label remains `VISUAL/INTERACTION COMPATIBILITY UNVERIFIED`.
+- Proved root-addon inheritance from a temporary deep course path with Slidev build and a four-page CLI export; removed the probe document, its generated index entry, and both transient build directories afterward.
+- Repaired durable authority drift in `AGENTS.md` and `ComputerScience/.ok/frontmatter.yml`: lecture/index sources are PDF+extract only, prior lane bodies/gates are rejected, `start --open` and the write-capable ledger script were removed from the default rewrite gate, and validation uses the pinned local addon/toolchain.
+- OpenKnowledge audit for `AGENTS.md` and the cleaned course index ran markdownlint/frontmatter/okf/links with zero findings. Root template files remain hidden-path artifacts that OpenKnowledge refuses to audit directly, so no direct template-audit PASS is claimed.
+- First resumed proving course: `ComputerScience/03_ai-ml-data/generative-ai-fine-tuning`; a Sol xhigh lane is rebuilding the source map before any note write.

@@ -95,3 +95,10 @@
 
 - Exact PDF-to-current-note mapping and per-PDF slide asset availability.
 - Whether any source slide contains an error that needs a note-level caveat.
+# 2026-08-29 approved Slidev compatibility authority
+
+- Raw Slidev 52.19.1 is an explicit negative control: exit zero alone does not prove OpenKnowledge component support.
+- The approved project-local addon is loaded through root `package.json` `slidev.addons`, so it applies when the entry note is nested deep under a course folder.
+- The compatibility surface is limited to official OpenKnowledge source syntax: all 15 callout types and `+/-` folds, Tabs/Tab, `html preview`, Highlight, hidden comments, Mermaid, and KaTeX. It does not authorize new note-side components or custom visual patterns.
+- `npm run test:slidev-compat` is the canonical integration command. Its PASS scope is source recognition, component registration, build, export, static markers, PDF page count, and text inclusion/exclusion.
+- Viewport fit, clipping, color/contrast, font fidelity, SVG/Mermaid/KaTeX appearance, responsive layout, and interaction are not established and must be reported as `VISUAL/INTERACTION COMPATIBILITY UNVERIFIED`.

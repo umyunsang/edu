@@ -38,7 +38,7 @@ All note content previously written by any delegated lane is rejected and may be
 - Write for scanning rather than essay reading: short keyword-led bullets, numbered procedures, and compact lead sentences. Do not use long narrative paragraphs or turn the entire note into one bullet list.
 - Choose official components by information shape: Mermaid for flow/relationships, Tabs and tables for comparison, stat-cards/charts for source quantities, interactive-control for source-backed parameter effects, details for optional depth, and callouts for errors/risks. Diversity must improve comprehension, not satisfy a count.
 - Keep the document substantial by distributing source-backed information across compact bullets and multiple appropriate official visuals. Do not reduce source coverage to make the note shorter, and do not inflate length with narrative prose; each visual must carry information that prose does not merely repeat.
-- Treat Slidev compilation as the render gate: a note is not render-valid merely because OpenKnowledge lint/audit is clean.
+- Treat the pinned Slidev build/export/static suite as the CLI gate: a note is not CLI-valid merely because OpenKnowledge lint/audit is clean. Viewport fit, visual fidelity, and interaction remain explicitly unverified.
 
 ## 2026-08-29 Project-template and Slidev reset
 
@@ -48,6 +48,6 @@ All note content previously written by any delegated lane is rejected and may be
 - OpenKnowledge's slides plugin is a user-scoped desktop preference and is not agent-settable through project config. Every eligible note still carries `slides: true`; render checking uses the installed Slidev CLI only.
 - Slidev's exporter dependency is installed at `@slidev/cli/node_modules/playwright-chromium` (v1.61.0), with Chromium and headless-shell revision 1228 available in the Playwright cache.
 - Current root authority is exactly three templates: `lecture-note`, `course-index`, and `practice-note`; no same-name `ComputerScience` override remains.
-- Template probes pass OpenKnowledge lint/audit and raw Slidev build/export, but this is not a visual-fidelity PASS for OpenKnowledge-only components.
-- Official OpenKnowledge 0.64.2 provides no Slidev adapter. `html preview` and `Tabs/Tab` are incompatible with raw Slidev 52.19.1, while Mermaid, KaTeX, and the five base GFM alerts are the confirmed common subset.
-- Course authoring remains paused at this boundary: either Slidev is accepted as a compile/export-only gate for OpenKnowledge-native visuals, or a separately authorized compatibility layer is required. Do not invent that layer under the current official-components-only contract.
+- Added the separately approved project-local `slidev-addon-openknowledge` compatibility layer and pinned Slidev 52.19.1 toolchain. It maps the official OpenKnowledge source syntax for 15 callout variants and folds, Tabs/Tab, `html preview`, Highlight, hidden comments, Mermaid, and KaTeX into the Slidev build path without changing note Markdown.
+- The synthetic source contract, raw-Slidev negative control, addon build, CLI export, static markers, PDF page count, and hidden-text assertions pass through `npm run test:slidev-compat`.
+- Actual deep-path inheritance was also proven with a temporary course-level probe and then removed. Course authoring may resume, but viewport fit, colors, typography, clipping, responsive behavior, and component interaction remain `VISUAL/INTERACTION COMPATIBILITY UNVERIFIED`; no browser-based check is authorized.
