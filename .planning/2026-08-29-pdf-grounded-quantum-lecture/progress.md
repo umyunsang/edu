@@ -77,3 +77,5 @@
 - Active parallel courses: ml-projects and artificial-intelligence.
 - Completed `ml-projects`: 10 notes plus README, 40 callouts / 20 HTML previews / 20 details / 10 Tabs / 10 Mermaid / 0 source embeds; 11-document audit and lint clean. Used no notebook evidence because no notebooks exist; excluded only the personal certificate and duplicate files.
 - Active parallel courses: artificial-intelligence and operating-systems.
+- Completed `artificial-intelligence`: 29 notes plus README, 116 callouts / 29 HTML previews / 29 details / 29 Tabs / 0 source embeds; 30-document audit and lint clean. Six source issues remain warnings rather than corrected material.
+- Active parallel courses: operating-systems and database-systems.
