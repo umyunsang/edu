@@ -1,71 +1,41 @@
 ---
 title: 머신러닝 프로젝트
-description: 'SKLearn·Pandas·LangChain 기반 프로젝트 과제. 학기: 3-1.'
+description: Python·고전 머신러닝·RAG 실습을 연결하는 학습 노트
 type: course-index
 tags:
 - course
-- 3-1
+- machine-learning
 course: ml-projects
 semester: 3-1
 status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
 ---
 
-> [!abstract] 이 과목은
-> SKLearn·Pandas·LangChain 기반 프로젝트 과제. 학기: 3-1.
+> [!abstract]
+> 이 과목은 Python 데이터 처리, 고전 머신러닝 모형, 점진 학습, 결정 트리, RAG 챗봇을 하나의 프로젝트 학습 흐름으로 정리한다.
 
-## 정리문서
+## 학습 노트
 
-모두 `notes/` 에 있다. 총 25편.
+| 원본 | 노트 | 핵심 질문 |
+| :-- | :-- | :-- |
+| 01_K-NN | [K-최근접 이웃 분류](<./notes/01. K-최근접 이웃 분류.md>) | 가까운 이웃의 다수결은 어떻게 분류를 만드는가? |
+| 02_Regression_K-NN | [K-최근접 이웃 회귀](<./notes/02. K-최근접 이웃 회귀.md>) | 이웃의 타깃 평균은 어떤 수치를 예측하는가? |
+| 03_Regression_Lin&poly | [선형 회귀와 다항 특성](<./notes/03. 선형 회귀와 다항 특성.md>) | 입력 표현을 넓히면 선형 모형은 어떻게 달라지는가? |
+| 04_Regression_Multiple | [다중 회귀와 특성 공학](<./notes/04. 다중 회귀와 특성 공학.md>) | 여러 특성과 조합 특성은 어떻게 쓰는가? |
+| 05_Regression_Logistic | [로지스틱 회귀와 클래스 확률](<./notes/05. 로지스틱 회귀와 클래스 확률.md>) | 점수는 어떻게 확률 분포가 되는가? |
+| 06_Regression_Incremental learning | [점진 학습과 확률적 경사 하강법](<./notes/06. 점진 학습과 확률적 경사 하강법.md>) | 도착하는 데이터로 모형을 어떻게 갱신하는가? |
+| 07_DecisionTree_before | [결정 트리와 가지치기](<./notes/07. 결정 트리와 가지치기.md>) | 질문 기반 분류기를 어떻게 일반화하는가? |
+| 2024세미나자료 | [Python 데이터와 평균제곱오차](<./notes/01. Python 데이터와 평균제곱오차.md>) | 데이터를 이름으로 다루고 오차를 어떻게 읽는가? |
+| LangChain_RAG | [LangChain 기반 RAG 챗봇](<./notes/01. LangChain 기반 RAG 챗봇.md>) | 검색 문맥을 답변에 어떻게 연결하는가? |
+| 인공지능특강 | [퍼셉트론과 벡터화](<./notes/01. 퍼셉트론과 벡터화.md>) | 가중합 분류와 배열 연산은 어떻게 이어지는가? |
 
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [Pandas DataFrame 이해하기](<./notes/Dataframe.md>) | — |
-| [**Decision Tree를 활용한 와인 데이터 분류**](<./notes/Decision_Tree.md>) | — |
-| [KNN 분류](<./notes/KNN 분류.md>) | — |
-| [KNN 회귀](<./notes/KNN 회귀.md>) | — |
-| [LangChain](<./notes/LangChain.md>) | — |
-| [Numpy 기초](<./notes/Numpy 기초.md>) | — |
-| [DataFrame 생성](<./notes/Pivot.md>) | — |
-| [**SGDClassifier  사용한 물고기 데이터 분류**](<./notes/SGDClassifier.md>) | — |
-| [Pandas Series 이해하기](<./notes/Series.md>) | — |
-| [x 축의 위치를 지정하는 배열](<./notes/bar 막대 그래프.md>) | — |
-| [랜덤 시드 설정 (재현성을 위해)](<./notes/boxplot 주식 그래프.md>) | — |
-| [10x10 크기의 랜덤 데이터 배열 생성](<./notes/imshow 이미지 그래프.md>) | — |
-| [logistic](<./notes/logistic.md>) | — |
-| [데이터와 관련된 정보](<./notes/pie 원형 그래프.md>) | — |
-| [데이터 포인트 개수](<./notes/scatter 산점도 그래프.md>) | — |
-| [2x2 그리드로 서브플롯 생성](<./notes/subplot  예제.md>) | — |
-| [2x3 그리드로 서브플롯 생성](<./notes/subplot 생성.md>) | — |
-| [구구단 프로그램](<./notes/구구단 프로그램.md>) | — |
-| [그래프 스타일](<./notes/그래프 스타일.md>) | — |
-| [기본 라인 그래프 그리기 (기본 x 값 [0, 1, 2, 3])](<./notes/기본 그래프.md>) | — |
-| [다중 선형 회귀](<./notes/다중 선형 회귀.md>) | — |
-| [데이터 분석 및 처리 과정 요약](<./notes/데이터 분석 및 처리 과정 요약.md>) | — |
-| [성적입력 프로그램](<./notes/성적입력 프로그램.md>) | — |
-| [실력과제](<./notes/실력과제.md>) | — |
-| [x 축 데이터 생성: 0부터 2π까지 200개의 점](<./notes/크기조정 및 그리드.md>) | — |
+## 학습 경로
 
-## 원본 자료
+Python과 데이터 → 분류와 회귀 → 특성 공학과 검증 → 점진 학습과 트리 → RAG 챗봇
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 13건.
+> [!note]
+> 각 노트는 원본 강의의 개념을 독립적으로 재구성했다. 원본 PDF와 슬라이드 이미지는 노트에 삽입하지 않는다.
 
-- `01_K-NN.pdf`
-- `02_Regression_K-NN.pdf`
-- `03_Regression_Lin&poly.pdf`
-- `04_Regression_Multiple.pdf`
-- `05_Regression_Logistic.pdf`
-- `06_Regression_Incremental learning.pdf`
-- `07_DecisionTree_before.pdf`
-- `2024세미나자료 2.pdf`
-- `2024세미나자료.pdf`
-- `LangChain_RAG.pdf`
-- `Python_Machine_Learning_Certificate.pdf`
-- `인공지능특강 2.pdf`
-- `인공지능특강.pdf`
+## 원본 자료 상태
 
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+- `2024세미나자료 2.pdf`, `인공지능특강 2.pdf`는 같은 자료의 macOS 복제본으로 별도 노트를 만들지 않았다.
+- `Python_Machine_Learning_Certificate.pdf`는 개인 이수 증명서이며 학습용 강의 자료가 아니므로 노트에서 제외했다.

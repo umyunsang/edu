@@ -1,87 +1,61 @@
 ---
-title: 인공지능
-description: '퍼셉트론·역전파·CNN. CIFAR10 CNN 실습이 포함된다. 학기: 2-1.'
+title: "인공지능 학습 노트"
+description: "퍼셉트론, 최적화, CNN과 이미지 분류를 다루는 학습 노트"
 type: course-index
-tags:
-- course
-- 2-1
 course: artificial-intelligence
-semester: 2-1
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+semester: "2024-1"
+status: stable
+created: "2026-08-29"
+updated: "2026-08-29"
+tags:
+  - artificial-intelligence
 ---
 
-> [!abstract] 이 과목은
-> 퍼셉트론·역전파·CNN. CIFAR10 CNN 실습이 포함된다. 학기: 2-1.
+이 과목은 퍼셉트론에서 시작해 다층 신경망, 역전파, 최적화, 일반화, CNN 기반 이미지 분류까지를 연결한다. 각 문서는 독립적으로 읽을 수 있으며 아래 순서는 개념의 의존 관계를 고려한 학습 경로다.
 
-## 정리문서
+## 퍼셉트론·MLP·역전파
 
-모두 `notes/` 에 있다. 총 25편.
+- [01. Perceptron 논리 게이트 실습](<./notes/01. Perceptron 논리 게이트 실습.md>)
+- [01. Perceptron 이론 - 신경망 구성](<./notes/01. Perceptron 이론 - 신경망 구성.md>)
+- [01. Perceptron 이론 - 활성화와 최적화](<./notes/01. Perceptron 이론 - 활성화와 최적화.md>)
+- [01. MLP 이론 - 다층 표현](<./notes/01. MLP 이론 - 다층 표현.md>)
+- [01. MLP 실습 - 모델 구성](<./notes/01. MLP 실습 - 모델 구성.md>)
+- [01. MLP 실습 - 학습과 평가](<./notes/01. MLP 실습 - 학습과 평가.md>)
+- [01. Backpropagation의 연쇄 법칙](<./notes/01. Backpropagation의 연쇄 법칙.md>)
+- [01. Backpropagation의 가중치 갱신](<./notes/01. Backpropagation의 가중치 갱신.md>)
+- [01. Vanishing Gradient Effect](<./notes/01. Vanishing Gradient Effect.md>)
+- [01. Vanishing Gradient 완화](<./notes/01. Vanishing Gradient 완화.md>)
 
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [AND, NAND, OR 게이트 실습](<./notes/AND, NAND, OR 게이트 실습.md>) | — |
-| [AND, NAND, OR 게이트](<./notes/AND, NAND, OR 게이트.md>) | — |
-| [Training dataset 다운로드](<./notes/Adam.md>) | — |
-| [Backpropagation](<./notes/Backpropagation.md>) | — |
-| [Batch Normalization](<./notes/Batch Normalization.md>) | — |
-| [CIFAR10 MLP 이미지 분류 중간 실습시험](<./notes/CIFAR10 MLP 이미지 분류 중간 실습시험.md>) | — |
-| [GPU를 사용할지 여부를 확인합니다.](<./notes/CIFAR10.md>) | — |
-| [CNN 모델 정의](<./notes/CNN 모듈.md>) | — |
-| [Data Augmentation](<./notes/Data Augmentation.md>) | — |
-| [GPU를 사용할지 여부를 확인합니다.](<./notes/Dropout.md>) | — |
-| [CNN 모델 정의](<./notes/LR control.md>) | — |
-| [Training dataset 다운로드](<./notes/LearningRateControl.md>) | — |
-| [2. 데이터셋 준비](<./notes/MLP (Multi Layer Perceptron).md>) | — |
-| [MLP 이론](<./notes/MLP 이론.md>) | — |
-| [Training dataset 다운로드](<./notes/Momentum.md>) | — |
-| [Training dataset 다운로드](<./notes/ResNet.md>) | — |
-| [SLP (Single Layer Perceptron)](<./notes/SLP (Single Layer Perceptron).md>) | — |
-| [패키지 선언](<./notes/UMNet.md>) | — |
-| [패키지 선언](<./notes/VGG.md>) | — |
-| [Training dataset 다운로드](<./notes/VGGCA.md>) | — |
-| [Training dataset 다운로드](<./notes/VGGDense.md>) | — |
-| [패키지 선언](<./notes/VGGskip.md>) | — |
-| [CNN 모델 정의](<./notes/pooling.md>) | — |
-| [패키지 선언](<./notes/시험 예상 문제.md>) | — |
-| [GPU를 사용할지 여부를 확인합니다.](<./notes/활성화 함수 변경.md>) | — |
+## 최적화와 일반화
 
-## 원본 자료
+- [01. Optimization 이론 - 손실과 경사](<./notes/01. Optimization 이론 - 손실과 경사.md>)
+- [01. Optimizer - 모멘텀](<./notes/01. Optimizer - 모멘텀.md>)
+- [01. Optimizer - 적응적 학습률](<./notes/01. Optimizer - 적응적 학습률.md>)
+- [01. Overfitting - 일반화 진단](<./notes/01. Overfitting - 일반화 진단.md>)
+- [01. Overfitting - 규제와 조기 종료](<./notes/01. Overfitting - 규제와 조기 종료.md>)
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 29건.
+## 이미지 분류와 CNN
 
-- `24_인공지능_중간고사.pdf`
-- `AI 아바타 만들기 (실습).pdf`
-- `Backpropagation (이론) 2.pdf`
-- `Backpropagation (이론).pdf`
-- `CIFAR10 (실습).pdf`
-- `CNN (실습).pdf`
-- `CNN (이론) 2.pdf`
-- `CNN (이론).pdf`
-- `CNN Backpropagation(이론) 2.pdf`
-- `CNN Backpropagation(이론).pdf`
-- `CNN 주요설계모듈(실습) 2.pdf`
-- `CNN 주요설계모듈(실습).pdf`
-- `CNN 주요설계모듈(이론).pdf`
-- `MLP(실습) 2.pdf`
-- `MLP(실습).pdf`
-- `MLP(이론).pdf`
-- `Optimization(이론).pdf`
-- `Optimizer 2.pdf`
-- `Optimizer.pdf`
-- `Overfitting 2.pdf`
-- `Overfitting.pdf`
-- `Perceptron (실습).pdf`
-- `Perceptron (이론) 2.pdf`
-- `Perceptron (이론).pdf`
-- `VGGNet (실습).pdf`
-- `Vanishing Gradient Effect 2.pdf`
-- `Vanishing Gradient Effect.pdf`
-- `필기 과제 2.pdf`
-- `필기 과제.pdf`
+- [01. CIFAR-10 분류 실습](<./notes/01. CIFAR-10 분류 실습.md>)
+- [01. CNN 분류 실습](<./notes/01. CNN 분류 실습.md>)
+- [01. CNN의 합성곱 원리](<./notes/01. CNN의 합성곱 원리.md>)
+- [01. CNN의 공간 크기와 채널](<./notes/01. CNN의 공간 크기와 채널.md>)
+- [01. CNN Backpropagation - AlexNet 구조](<./notes/01. CNN Backpropagation - AlexNet 구조.md>)
+- [01. CNN Backpropagation - AlexNet 정규화](<./notes/01. CNN Backpropagation - AlexNet 정규화.md>)
+- [01. CNN 설계 모듈 실습 - 연결 구조](<./notes/01. CNN 설계 모듈 실습 - 연결 구조.md>)
+- [01. CNN 설계 모듈 실습 - Conv2d 매개변수](<./notes/01. CNN 설계 모듈 실습 - Conv2d 매개변수.md>)
+- [01. CNN 주요 설계 모듈 이론](<./notes/01. CNN 주요 설계 모듈 이론.md>)
+- [01. VGGNet 실습](<./notes/01. VGGNet 실습.md>)
 
-## 관련 과목
+## 실습 과제와 자료 한계
 
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+- [01. 중간고사 - MLP 기반 CIFAR-10 분류](<./notes/01. 중간고사 - MLP 기반 CIFAR-10 분류.md>)
+- [01. AI 아바타 만들기 실습](<./notes/01. AI 아바타 만들기 실습.md>)
+- [01. 필기 과제 자료의 텍스트 추출 한계](<./notes/01. 필기 과제 자료의 텍스트 추출 한계.md>)
+- [01. 필기 과제 2 텍스트 추출 한계](<./notes/01. 필기 과제 2 텍스트 추출 한계.md>)
+
+## 읽기 기준
+
+- 입력 표현, 모델 구조, 손실과 평가 기준을 함께 확인한다.
+- 실습 결과는 데이터 분할과 하이퍼파라미터를 분리해 기록한다.
+- 읽을 수 있는 본문이 충분하지 않은 자료는 추정하지 않고 텍스트 추출 한계로 구분한다.
