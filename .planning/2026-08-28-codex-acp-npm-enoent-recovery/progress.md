@@ -3,7 +3,7 @@
 ## Session: 2026-08-28
 
 ### Current Status
-- **Phase:** 5 - Delivery complete
+- **Phase:** 6 - Claude failure capture and diagnosis
 - **Started:** 2026-08-28
 
 ### Actions Taken
@@ -31,3 +31,8 @@
 | Recursive log search traversed huge Codex session JSONL files | Narrowed future inspection to OpenKnowledge-owned files and bounded file sizes. |
 | `write_stdin` found the non-TTY session's stdin closed | Used an ACP SDK client with explicit child pipes. |
 | Preliminary interactive diagnostic remained alive | Sent SIGTERM to the single test npm parent; children exited. |
+
+## Follow-up: Claude ACP recovery
+
+### Actions Taken
+- Received a new Claude ACP ENOENT for cache `fca12915ff656968` and started a separate bounded recovery lane.

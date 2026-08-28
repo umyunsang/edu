@@ -1,13 +1,13 @@
-# Task Plan: Codex ACP npm ENOENT recovery
+# Task Plan: OpenKnowledge ACP npm ENOENT recovery
 
 ## Goal
-Restore the desktop app's Codex ACP startup and verify that its configured launcher completes initialization without the broken npx cache error.
+Restore both Codex and Claude ACP startup in OpenKnowledge and verify each registry launcher completes initialization without broken npx cache errors.
 
 ## Next Step
-Deliver the verified recovery and tell the user to start a fresh Codex thread in OpenKnowledge.
+Capture the new Claude failure, identify its exact registry package, and inspect only cache `fca12915ff656968` before recovery.
 
 ## Current Phase
-Phase 5
+Phase 6
 
 ## Phases
 
@@ -37,6 +37,28 @@ Phase 5
 - [x] Record root cause, changes, and verification evidence
 - [x] Deliver fresh-thread instruction; application restart is not required by the verified launcher state
 - **Status:** complete
+
+### Phase 6: Claude failure capture and diagnosis
+- [ ] Inspect the reported npm log and partial cache structure
+- [ ] Confirm OpenKnowledge's exact Claude ACP package and launcher cwd
+- [ ] Choose the smallest reversible recovery
+- **Status:** in_progress
+
+### Phase 7: Claude contained recovery
+- [ ] Quarantine only the proven partial Claude npx cache
+- [ ] Rebuild it with the exact registry-pinned launcher
+- **Status:** pending
+
+### Phase 8: Claude ACP verification
+- [ ] Verify rebuilt cache metadata and executable link
+- [ ] Complete a real ACP initialize handshake
+- [ ] Confirm no new npm ENOENT and no diagnostic processes remain
+- **Status:** pending
+
+### Phase 9: Claude delivery
+- [ ] Record root cause, recovery, and scoped verification evidence
+- [ ] Deliver fresh Claude-thread instruction
+- **Status:** pending
 
 ## Decisions Made
 | Decision | Rationale |

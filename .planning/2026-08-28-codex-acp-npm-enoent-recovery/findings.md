@@ -4,6 +4,7 @@
 - Fix `initialize failed: ACP connection closed` for Codex startup.
 - Resolve npm `ENOENT` for `/Users/um-yunsang/.npm/_npx/c8b015f66c7988d7/package.json`.
 - Preserve unrelated project and user configuration.
+- Fix Claude `initialize failed: ACP connection closed` and the missing `/Users/um-yunsang/.npm/_npx/fca12915ff656968/package.json` without disturbing the verified Codex recovery.
 
 ## Research Findings
 - Reported failure indicates an `npx` ephemeral install directory exists or is referenced while its root `package.json` is missing.
