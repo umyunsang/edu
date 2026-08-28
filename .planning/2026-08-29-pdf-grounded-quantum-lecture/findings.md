@@ -13,6 +13,7 @@
 - The original PDF plus its extracted text and matching rendered image assets are the sole evidence substrate for rewritten lecture notes.
 - Defer every graph relationship label until all notes in this course have been rewritten.
 - User authorized repository-wide continuation with the same evidence and visual-quality contract; the five explicitly source-empty courses remain out of scope for note creation.
+- User superseded the rendered-slide evidence rule: all direct original-PDF image embeds must be removed from notes and replaced by original SVG or HTML-preview visuals. Source PDFs and assets stay private evidence material until separately authorized for deletion.
 
 ## Repository source inventory
 

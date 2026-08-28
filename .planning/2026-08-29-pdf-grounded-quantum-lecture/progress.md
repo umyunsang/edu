@@ -19,6 +19,7 @@
 - Verified both Schrödinger-equation slides for direct embedding in the third note.
 - Replaced `notes/03. 양자컴퓨팅을 위한 물리 및 선형대수.md` and verified a clean scoped audit.
 - User authorized extending the same workflow from quantum-lecture to all source-backed edu courses.
+- User redirected the visual policy: remove every direct source-slide embed from notes and use original SVG or HTML-preview visuals instead.
 - Completed a read-only non-Markdown source inventory for all 38 course folders and integrated the repository scope numbers.
 - Began the Grover/Shor source pass; verified one operator evidence slide and rejected a section-divider slide as technical grounding.
 - Verified the Grover amplitude-rotation and QFT-periodicity slides for direct evidence use.
