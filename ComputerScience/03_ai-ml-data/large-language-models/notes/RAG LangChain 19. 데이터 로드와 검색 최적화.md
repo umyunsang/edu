@@ -8,88 +8,89 @@ tags:
   - rerank
 course: large-language-models
 semester: extracurricular
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-29'
-updated: '2026-08-29'
+aliases: []
+created: 2026-08-29
+updated: 2026-08-29
 ---
 
-> [!abstract] 핵심 질문
-> 검색 결과가 나쁘면 모델을 바꾸기 전에, 데이터가 어떻게 들어오고 어떻게 나뉘고 어떤 후보가 살아남는지부터 살펴야 한다.
+> [!abstract] 한 줄 요약
+> 검색 품질은 임베딩 모델 하나가 아니라 문서 범위·분할·메타데이터·검색·재정렬의 연쇄 결과다.
 
-강의의 RAG 실습은 데이터 로더, 텍스트 분할, 벡터 인덱싱, Retriever, Rerank를 연속된 결정으로 다룬다. 한 단계의 선택이 다음 단계의 입력을 바꾸므로, 검색 품질은 단일 파라미터가 아니라 파이프라인의 산물이다.
+## 이 노트의 지도
 
 ```mermaid
-flowchart LR
-  A["문서 원천"] --> B["Data Loader"]
-  B --> C["Text Splitter"]
-  C --> D["Embedding과 Index"]
-  D --> E["Retriever"]
-  E --> F["Rerank"]
-  F --> G["생성 문맥"]
+flowchart TB
+    subgraph Input[입력]
+        direction LR
+        A[문서 로드] --> B[청크 분할]
+    end
+    subgraph Decision[판단]
+        direction LR
+        C[후보 검색] --> D[재정렬]
+    end
+    B --> C
 ```
 
-## 단계마다 남길 질문
+## 1. 문서에서 청크까지
 
-| 단계 | 선택 | 품질에 미치는 영향 | 관찰 지표 |
-| :-- | :-- | :-- | :-- |
-| Data Load | 원천과 메타데이터 | 누락·중복·형식 오류 | 로드 수·문서 내용 |
-| Text Split | 조각 크기와 겹침 | 문맥 보존·검색 정밀도 | 조각의 완결성 |
-| Index | 표현과 저장 구조 | 비교 가능한 후보 공간 | 검색 가능 여부 |
-| Retrieval | 후보 수와 방식 | 관련 문서 회수 | 상위 결과의 관련성 |
-| Rerank | 후보 재정렬 | 문맥의 우선순위 | 최종 문맥 품질 |
+문서를 작은 단위로 나누면 검색 대상의 초점은 좋아질 수 있지만, 중요한 맥락이 끊길 위험도 생긴다. ==청크== 는 검색과 생성에 쓰기 위해 문서를 나눈 정보 단위.
 
-> [!note] 분할은 압축이 아니다
-> 텍스트 분할은 긴 자료를 작게 만드는 작업이 아니라, 질문에 필요한 문맥이 한 조각 안에 남도록 경계를 정하는 작업이다.
+> [!note] 판단 기준
+> 청크 크기와 겹침은 하나의 정답이 아니라 질문 유형·문서 구조·평가 결과로 정한다.
 
-```html preview h=180
-<div style="font-family:system-ui,sans-serif;padding:18px;color:var(--foreground)">
-  <div style="font-weight:700;margin-bottom:12px">후보는 넓게 찾고, 문맥은 좁게 고른다</div>
-  <div style="display:flex;gap:7px;align-items:end;height:78px">
-    <div style="flex:1;height:90%;background:var(--chart-4);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:72%;background:var(--chart-3);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:55%;background:var(--chart-2);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:35%;background:var(--border);border-radius:var(--radius) var(--radius) 0 0"></div>
-    <div style="flex:1;height:20%;background:var(--border);border-radius:var(--radius) var(--radius) 0 0"></div>
-  </div>
-  <div style="font-size:12px;color:var(--muted-foreground);margin-top:7px">검색 후보 → 재정렬 후 상위 문맥</div>
-</div>
-```
+## 2. Retrieval과 Rerank
 
-## 최적화의 초점
-
-<Tabs>
-<Tab label="회수율">
-
-정답에 필요한 조각이 후보에 들어오는지를 본다. 너무 좁은 검색은 관련 문서를 처음부터 놓칠 수 있다.
-
-</Tab>
-<Tab label="정밀도">
-
-상위 후보가 질문과 얼마나 직접 관련되는지 본다. 불필요한 문맥이 많으면 생성이 핵심을 놓칠 수 있다.
-
-</Tab>
-<Tab label="다양성">
-
-유사한 조각만 반복해서 가져오지 않도록 조절한다. 서로 다른 근거를 함께 보게 하는 검색 전략이 필요할 수 있다.
-
-</Tab>
-</Tabs>
+초기 검색은 넓게 후보를 찾고, 재정렬은 질문과 더 맞는 후보를 앞에 두는 역할을 한다.
 
 <details>
-<summary>Rerank를 별도 단계로 두는 이유</summary>
+<summary>검색 품질 체크</summary>
 
-초기 검색은 빠르게 넓은 후보를 찾는 데 초점을 둔다. Rerank는 그 후보 안에서 질문과의 관련성을 더 세밀하게 비교해, 제한된 생성 문맥에 어떤 조각을 넣을지 결정한다.
+- 문서 형식과 제외 규칙
+- 청크 경계와 메타데이터
+- 후보 수와 재정렬 기준
+- 근거와 답변의 연결
 
 </details>
 
-> [!tip] 실패 사례를 보관한다
-> 검색 실패를 “답이 틀림”으로 한 줄 기록하지 말고, 로딩 누락·분할 경계·검색 누락·재정렬 실패 중 어디였는지 붙여 둔다.
+## 데이터로 보기
 
-## 정리
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <label for="amt" style="font-size:14px;font-weight:600">예시 청크 길이</label>
+  <div id="out" style="font-size:30px;font-weight:700;color:var(--chart-1);margin:6px 0">단위 600</div>
+  <input id="amt" type="range" min="100" max="2000" step="100" value="600"
+    style="width:100%;accent-color:var(--primary)" />
+  <p style="font-size:13px;color:var(--muted-foreground)">값을 바꿔 정보 집중도와 문맥 보존 사이의 절충을 생각한다.</p>
+  <script>
+    var amt = document.getElementById('amt');
+    var out = document.getElementById('out');
+    amt.addEventListener('input', function () {
+      out.textContent = '단위 ' + Number(amt.value).toLocaleString();
+    });
+  </script>
+</div>
+```
 
-- 데이터 로드·분할·인덱싱·검색·재정렬은 하나의 품질 사슬이다.
-- ==Rerank는 넓게 찾은 후보를 생성 문맥에 맞게 다시 고르는 단계==다.
-- 검색 최적화는 정답률 하나보다 실패 단계의 식별에서 시작한다.
+> [!important] 해석의 경계
+> 값은 특정 문서의 최적 길이나 검색 품질을 의미하지 않는다. 질의·문서·평가 집합에서 검증한다.
 
-> [!warning] 측정의 함정
-> 상위 몇 개 결과가 자연스러워 보여도 질문 유형이 바뀌면 실패할 수 있다. 다양한 질문과 경계 사례로 검색 결과를 확인한다.
+## 핵심 정리
+
+| 개념 | 정의 | 왜 중요한가 |
+| :-- | :-- | :-- |
+| 분할 | 문서를 검색 단위로 나눔 | 질문과 근거의 초점을 바꾼다 |
+| 검색 | 후보 문서를 찾음 | 근거 선택의 첫 단계 |
+| 재정렬 | 후보 순서를 다시 조정 | 상위 문서의 관련성을 높인다 |
+
+## 관련 개념
+
+- RAG: 검색 결과를 생성 맥락으로 연결하는 방식
+- 벡터 저장소: 임베딩과 메타데이터를 찾는 저장 구조
+
+> [!question]- 스스로 점검
+> **Q.** 청크를 작게 만들면 항상 검색이 좋아지는가?
+>
+> **A.** 아니다. 필요한 맥락이 끊기거나 후보가 너무 세분화될 수 있어 질문과 평가 결과에 맞춰 조절해야 한다.

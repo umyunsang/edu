@@ -8,90 +8,89 @@ tags:
   - tools
 course: large-language-models
 semester: extracurricular
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-29'
-updated: '2026-08-29'
+aliases: []
+created: 2026-08-29
+updated: 2026-08-29
 ---
 
-> [!abstract] 핵심 구분
-> 체인은 정해진 단계를 연결하고, 에이전트는 주어진 목표에 따라 어떤 도구와 단계를 쓸지 선택하는 실행 주체로 설명할 수 있다.
+> [!abstract] 한 줄 요약
+> 체인은 미리 정한 흐름을, 에이전트는 관찰에 따라 도구와 다음 단계를 고르는 흐름을 다룬다.
 
-강의의 LangChain 파트는 모델, 프롬프트, 출력 파서, 체인, 도구, 에이전트, 메모리, 추적을 연결한다. 이 구성은 기능 목록이 아니라, 입력을 만들고 실행을 선택하며 결과를 검증하는 책임의 분리로 읽을 수 있다.
+## 이 노트의 지도
 
 ```mermaid
-flowchart LR
-  A["사용자 목표"] --> B["Prompt"]
-  B --> C["Model"]
-  C --> D["Output Parser"]
-  D --> E["Chain 결과"]
-  A --> F["Agent"]
-  F --> G["Tool 선택"]
-  G --> H["도구 결과"]
-  H --> F
-  F --> I["최종 응답"]
+flowchart TB
+    subgraph Input[입력]
+        direction LR
+        A[입력 해석] --> B[도구 선택]
+    end
+    subgraph Decision[판단]
+        direction LR
+        C[결과 관찰] --> D[다음 행동]
+    end
+    B --> C
 ```
 
-## 구성 요소의 책임
+## 1. 체인과 에이전트
 
-| 요소 | 역할 | 실패를 볼 위치 |
-| :-- | :-- | :-- |
-| Prompt | 모델에 줄 입력을 구성 | 지시·변수·예시 누락 |
-| Model | 생성 또는 판단을 수행 | 모델 설정·응답 상태 |
-| Output Parser | 결과를 필요한 형식으로 변환 | 형식 불일치·파싱 실패 |
-| Chain | 정해진 단계를 조합 | 단계 연결·입출력 이름 |
-| Tool | 외부 기능을 수행 | 입력 검증·반환값 |
-| Agent | 도구와 다음 행동을 선택 | 목표 해석·반복·종료 |
-| Memory | 대화 또는 상태를 보존 | 오래된 정보·범위 초과 |
-| Tracing | 실행 경로를 관찰 | 지연·오류·비용 |
+체인은 정해진 입력·출력 연결을 재현하기 좋고, 에이전트는 상황에 따라 도구 사용과 다음 행동을 선택한다. ==도구 호출== 는 모델 출력이 아닌 외부 기능·데이터·작업을 요청하는 단계.
 
-> [!important] Agent는 권한 위임이 아니다
-> 에이전트가 도구를 선택한다는 말은 도구가 어떤 입력을 받고 어떤 결과를 낼지 정의할 필요가 없다는 뜻이 아니다. 각 도구에는 입력 검증, 권한 범위, 실패 처리, 결과 검수가 있어야 한다.
+> [!note] 판단 기준
+> 도구 호출은 모델의 언어 능력과 별개로 권한·입력 검증·실행 기록이 필요하다.
 
-```html preview h=180
-<div style="font-family:system-ui,sans-serif;padding:18px;color:var(--foreground)">
-  <div style="font-weight:700;margin-bottom:12px">고정 흐름과 선택 흐름</div>
-  <div style="display:flex;gap:12px;flex-wrap:wrap">
-    <div style="flex:1;min-width:230px;padding:14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b>Chain</b><br><span style="font-size:12px;color:var(--muted-foreground)">정해진 입력 → 정해진 단계 → 정해진 출력</span></div>
-    <div style="flex:1;min-width:230px;padding:14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card)"><b style="color:var(--chart-3)">Agent</b><br><span style="font-size:12px;color:var(--muted-foreground)">목표에 따라 도구·순서를 선택하고 관찰</span></div>
-  </div>
-</div>
-```
+## 2. 추적과 메모리
 
-## 실행 흐름의 선택
-
-<Tabs>
-<Tab label="체인">
-
-입력과 단계가 미리 정해진 작업에 적합하다. 데이터 흐름이 예측 가능하므로 테스트와 재현이 비교적 쉽다.
-
-</Tab>
-<Tab label="에이전트">
-
-질문에 따라 필요한 도구나 순서가 달라질 수 있는 작업을 다룬다. 선택 이유와 종료 조건을 기록해야 디버깅할 수 있다.
-
-</Tab>
-<Tab label="메모리·추적">
-
-메모리는 대화 문맥 또는 실행 상태를 보존하고, 추적은 어떤 입력·도구·응답을 거쳤는지 관찰한다. 둘 다 민감 데이터 범위를 고려한다.
-
-</Tab>
-</Tabs>
+실행 기록은 어떤 입력·도구·결과가 최종 답에 영향을 줬는지 확인하게 하고, 메모리는 저장 범위와 민감 정보를 설계해야 한다.
 
 <details>
-<summary>도구 호출 전후에 확인할 것</summary>
+<summary>에이전트 실행 체크</summary>
 
-호출 전에는 입력 형식·권한·비용·타임아웃을 점검한다. 호출 후에는 결과의 출처·형식·실패 여부를 확인하고, 그 결과를 다음 프롬프트에 넣어도 되는지 검토한다.
+- 도구를 쓸 조건
+- 허용된 입력과 권한
+- 결과 검증과 실패 처리
+- 추적 로그와 메모리 보존 범위
 
 </details>
 
-> [!tip] 관찰 가능성을 설계에 넣기
-> 에이전트가 예상과 다르게 행동하면 마지막 답변만 보지 말고, 프롬프트·도구 선택·도구 입력·반환값·종료 이유를 순서대로 추적한다.
+## 데이터로 보기
 
-## 정리
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <label for="amt" style="font-size:14px;font-weight:600">예시 도구 호출 단계</label>
+  <div id="out" style="font-size:30px;font-weight:700;color:var(--chart-1);margin:6px 0">단계 3</div>
+  <input id="amt" type="range" min="1" max="8" step="1" value="3"
+    style="width:100%;accent-color:var(--primary)" />
+  <p style="font-size:13px;color:var(--muted-foreground)">값을 바꿔 다단계 실행이 늘수록 관찰·검증 지점도 늘어난다는 점을 생각한다.</p>
+  <script>
+    var amt = document.getElementById('amt');
+    var out = document.getElementById('out');
+    amt.addEventListener('input', function () {
+      out.textContent = '단계 ' + Number(amt.value).toLocaleString();
+    });
+  </script>
+</div>
+```
 
-- Chain은 정해진 처리를 연결하고, Agent는 도구 선택이 필요한 실행 흐름을 다룬다.
-- ==도구는 모델의 말이 아니라 검증 가능한 입력·출력을 가진 함수==로 관리한다.
-- 메모리와 추적은 편의 기능이면서 개인정보·비용 관리 대상이기도 하다.
+> [!important] 해석의 경계
+> 단계 수는 실제 성능이나 안전성을 뜻하지 않는다. 도구 권한과 결과 검증은 각 단계에서 필요하다.
 
-> [!warning] 무한 실행 방지
-> 도구 호출과 재시도에는 횟수·시간·비용의 한도를 둔다. 에이전트가 실패를 설명하지 못한 채 같은 행동을 반복하지 않도록 종료 조건을 명시한다.
+## 핵심 정리
+
+| 개념 | 정의 | 왜 중요한가 |
+| :-- | :-- | :-- |
+| 체인 | 정해진 실행 연결 | 재현 가능한 흐름 구성 |
+| 에이전트 | 상황에 따른 다음 행동 선택 | 유연하지만 관찰 필요 |
+| 추적 | 실행의 기록 | 원인 분석과 검증을 돕는다 |
+
+## 관련 개념
+
+- API 계약: 도구의 입력·출력 형식을 확인하는 방법
+- 보안 경계: 외부 실행 전 권한과 영향을 검토하는 방법
+
+> [!question]- 스스로 점검
+> **Q.** 에이전트가 도구를 선택할 수 있으면 왜 더 많은 검증이 필요한가?
+>
+> **A.** 언어 출력이 실제 외부 작업으로 이어질 수 있어, 권한·입력·결과·실패 처리를 명시해야 하기 때문이다.

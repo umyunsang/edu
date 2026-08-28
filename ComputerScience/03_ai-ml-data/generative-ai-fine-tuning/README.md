@@ -1,6 +1,6 @@
 ---
 title: 생성형 AI 파인튜닝
-description: 생성형 AI의 멀티모달 제작, LoRA, 지시문 데이터, 생성 설계와 강화학습을 다루는 과목 정리.
+description: 생성형 AI의 제작 흐름과 파인튜닝·LoRA·생성 설계·강화학습을 학습 질문 중심으로 연결한 과목 인덱스.
 type: course-index
 tags:
   - course
@@ -9,41 +9,75 @@ tags:
 course: generative-ai-fine-tuning
 semester: extracurricular
 status: draft
+aliases: []
 created: 2026-08-28
 updated: 2026-08-29
 ---
-> [!abstract] 이 과목은
-> 생성형 AI의 제작 흐름을 이해하고, LoRA·지시문 데이터·생성 설계처럼 목적형 모델 조정에 필요한 판단 기준을 익힌다.
 
-## 학습 흐름
+> [!abstract] 생성형 결과를 만드는 일과 모델 행동을 조정하는 일을 구분하고, 데이터·제약·평가로 반복 가능한 판단을 만드는 과정이다.
+
+## 학습 경로
 
 ```mermaid
-flowchart LR
-    A["생성형 AI의 역할"] --> B["멀티모달 제작"]
-    B --> C["디자인 탐색과 제어"]
-    C --> D["LoRA와 데이터"]
-    D --> E["생성 설계와 강화학습"]
+flowchart TB
+    subgraph Make[제작]
+        direction LR
+        A[생성] --> B[멀티모달]
+    end
+    subgraph Tune[조정]
+        direction LR
+        C[LoRA] --> D[평가]
+    end
+    B --> C
 ```
 
-## 정리 문서
+## 학습 범위
 
-| 시작 슬라이드 | 문서 | 다루는 내용 |
-| :--: | :-- | :-- |
-| 01 | [생성형 AI와 파인튜닝](./notes/01.%20생성형%20AI와%20파인튜닝.md) | 생성형 AI와 파인튜닝의 역할 구분 |
-| 15 | [멀티모달 생성 워크플로](./notes/15.%20멀티모달%20생성%20워크플로.md) | 텍스트·이미지·영상 제작의 반복 검토 |
-| 26 | [디자인 탐색과 제어](./notes/26.%20디자인%20탐색과%20제어.md) | 제약 기반 탐색과 노드 워크플로 |
-| 40 | [LoRA와 파라미터 효율 미세조정](./notes/40.%20LoRA와%20파라미터%20효율%20미세조정.md) | 저랭크 업데이트와 어댑터 |
-| 46 | [지시문 데이터와 대화 파인튜닝](./notes/46.%20지시문%20데이터와%20대화%20파인튜닝.md) | 시드·확장·필터링·대화 데이터 |
-| 50 | [이미지 LoRA 학습과 적용](./notes/50.%20이미지%20LoRA%20학습과%20적용.md) | 이미지 데이터 준비와 가중치 검토 |
-| 62 | [제조 생성 설계와 성능 평가](./notes/62.%20제조%20생성%20설계와%20성능%20평가.md) | 다양성·새로움·공학 성능의 결합 |
-| 72 | [강화학습과 생성 설계의 기초](./notes/72.%20강화학습과%20생성%20설계의%20기초.md) | 보상 설계, 시뮬레이션, 기초 모델 지도 |
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px">
+  <div id="cards" style="display:flex;gap:14px;flex-wrap:wrap"></div>
+  <script>
+    var stats = [
+      ['학습 노트', '8', '현재 재구성 범위', 'var(--chart-1)'],
+      ['핵심 흐름', '4', '제작·조정·평가·탐색', 'var(--chart-2)'],
+      ['수식 중심', '3', 'LoRA·평가·보상', 'var(--chart-3)']
+    ];
+    document.getElementById('cards').innerHTML = stats.map(function (s) {
+      return '<div style="flex:1;min-width:150px;padding:16px;background:var(--card);' +
+        'color:var(--card-foreground);border:1px solid var(--border);' +
+        'border-radius:var(--radius)">' +
+        '<div style="font-size:13px;color:var(--muted-foreground)">' + s[0] + '</div>' +
+        '<div style="font-size:26px;font-weight:700;margin-top:4px">' + s[1] + '</div>' +
+        '<div style="font-size:12px;font-weight:600;margin-top:4px;color:' + s[3] + '">' +
+        s[2] + '</div>' +
+        '</div>';
+    }).join('');
+  </script>
+</div>
+```
 
-> [!note] 읽는 순서
-> 위 표의 순서는 원문 강의가 전개되는 시작 슬라이드 번호를 따른다. 각 문서는 원문 이미지 대신 독자 제작 도식과 텍스트 기반 설명으로 재구성했다.
+> [!important] 인덱스의 경계
+> 이 인덱스는 공개 노트의 학습 경로만 정리한다. 원본 PDF·자산·페이지 근거는 포함하지 않는다.
 
-## 학습 시 확인할 것
+## 노트 목록
 
-- 프롬프트로 해결할 문제와 추가 학습이 필요한 문제를 구분한다.
-- 데이터에서 학습해야 할 속성과 우연히 반복된 속성을 분리한다.
-- 생성 결과의 시각적 인상과 실제 사용 가능성·성능을 나누어 평가한다.
-- 원문에 있는 표기 오류는 해당 노트 안에서 별도로 표시한다.
+| # | 노트 | 다루는 것 |
+| :-- | :-- | :-- |
+| 01 | [생성형 AI와 파인튜닝](<./notes/01. 생성형 AI와 파인튜닝.md>) | 프롬프트와 데이터 조정의 선택 |
+| 15 | [멀티모달 생성 워크플로](<./notes/15. 멀티모달 생성 워크플로.md>) | 의도·참조·변환·검토의 반복 |
+| 26 | [디자인 탐색과 제어](<./notes/26. 디자인 탐색과 제어.md>) | 제약 기반 후보 탐색과 평가 |
+| 40 | [LoRA와 파라미터 효율 미세조정](<./notes/40. LoRA와 파라미터 효율 미세조정.md>) | 저랭크 업데이트와 어댑터 |
+| 46 | [지시문 데이터와 대화 파인튜닝](<./notes/46. 지시문 데이터와 대화 파인튜닝.md>) | 시드·필터·대화 데이터 |
+| 50 | [이미지 LoRA 학습과 적용](<./notes/50. 이미지 LoRA 학습과 적용.md>) | 데이터 범위·강도·비교 평가 |
+| 62 | [제조 생성 설계와 성능 평가](<./notes/62. 제조 생성 설계와 성능 평가.md>) | 다양성·새로움·공학 성능 |
+| 72 | [강화학습과 생성 설계의 기초](<./notes/72. 강화학습과 생성 설계의 기초.md>) | 상태·행동·보상·검증 |
+
+## 이 과목이 연결되는 곳
+
+- **prerequisite** — 프롬프트·데이터·기초 모델 이해 : 조정과 평가의 입력이 된다.
+- **applies-to** — 콘텐츠 제작·제품 설계·모델 운영 : 목적별 모델 행동을 검토하는 데 쓴다.
+
+> [!question]- 학습 순서 점검
+> **Q.** LoRA를 먼저 학습하기 전에 확인할 개념은 무엇인가?
+>
+> **A.** 생성 작업의 목표, 반복성, 데이터 대표성, 독립 평가 기준이다.

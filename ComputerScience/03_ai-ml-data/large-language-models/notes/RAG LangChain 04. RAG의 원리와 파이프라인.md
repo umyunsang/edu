@@ -8,86 +8,95 @@ tags:
   - llm
 course: large-language-models
 semester: extracurricular
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-29'
-updated: '2026-08-29'
+aliases: []
+created: 2026-08-29
+updated: 2026-08-29
 ---
 
 > [!abstract] 한 줄 요약
-> RAG는 모델 파라미터를 매번 바꾸지 않고, 질문과 관련된 외부 지식을 찾아 생성의 문맥에 넣는 접근이다.
+> RAG는 모델 파라미터를 바꾸지 않고, 질문에 맞는 외부 지식을 검색해 생성 맥락에 연결하는 방식이다.
 
-강의는 고정된 지식, 도메인 전문성, 상황 맥락, 사실처럼 보이는 잘못된 답변을 언어 모델의 한계로 제시하고, 검색 결과를 생성에 결합하는 방식으로 RAG를 설명한다. 중요한 점은 검색이 답을 대신하는 것이 아니라 ==생성이 참고할 근거 후보를 제공==한다는 것이다.
+## 이 노트의 지도
 
 ```mermaid
-flowchart LR
-  A["질문"] --> B["질의 표현"]
-  B --> C["관련 문서 검색"]
-  C --> D["문맥 구성"]
-  D --> E["LLM 생성"]
-  E --> F["응답 평가"]
-  G["지식 원천"] --> H["로딩과 인덱싱"]
-  H --> C
+flowchart TB
+    subgraph Input[입력]
+        direction LR
+        A[질문 입력] --> B[문서 검색]
+    end
+    subgraph Decision[판단]
+        direction LR
+        C[맥락 구성] --> D[답변 검토]
+    end
+    B --> C
 ```
 
-## 파이프라인의 다섯 단계
+## 1. 검색과 생성의 결합
 
-| 단계 | 하는 일 | 산출물 | 실패를 의심할 때 |
-| :-- | :-- | :-- | :-- |
-| Loading | 여러 원천에서 데이터를 가져온다 | 원문과 메타데이터 | 자료가 누락·오염됨 |
-| Indexing | 검색 가능한 표현을 만든다 | 인덱스·벡터 | 의미가 잘리지 않음 |
-| Storing | 인덱스를 보존한다 | 재사용 가능한 저장소 | 버전·동기화 혼선 |
-| Querying | 질문과 관련 후보를 찾는다 | 문서 조각 | 질문과 무관한 검색 |
-| Evaluation | 검색·응답 품질을 본다 | 측정 결과 | 그럴듯함만 평가함 |
+RAG는 질문과 문서의 관계를 검색한 뒤, 선택한 근거를 모델 입력에 넣어 답변을 생성한다. ==검색 증강== 는 생성 전에 외부 문서 후보를 찾아 필요한 맥락을 추가하는 방식.
 
-> [!important] RAG가 보장하지 않는 것
-> 외부 문서를 넣었다고 답변이 자동으로 정확해지지는 않는다. 검색된 문서의 품질·시점·관련성과 생성이 그 문서를 충실히 사용했는지를 별도로 점검해야 한다.
+> [!note] 판단 기준
+> 검색 결과가 있다고 해서 답변이 자동으로 근거를 정확히 사용하거나 최신이라는 뜻은 아니다.
 
-```html preview h=175
-<div style="font-family:system-ui,sans-serif;padding:18px;color:var(--foreground)">
-  <div style="font-weight:700;margin-bottom:11px">RAG는 지식과 답변 사이에 검색 단계를 둔다</div>
-  <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-    <div style="padding:10px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius)">질문</div><span style="color:var(--muted-foreground)">→</span>
-    <div style="padding:10px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);color:var(--chart-3)">관련 문맥</div><span style="color:var(--muted-foreground)">→</span>
-    <div style="padding:10px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius)">생성 답변</div>
-  </div>
-</div>
-```
+## 2. 파이프라인의 평가
 
-## RAG의 가치를 판단하는 관점
-
-<Tabs>
-<Tab label="최신성">
-
-모델 내부 지식만으로 부족한 자료를 검색 대상에 넣을 수 있다. 단, 원천의 갱신 주기와 색인 시점을 함께 관리해야 한다.
-
-</Tab>
-<Tab label="전문성">
-
-도메인 자료를 연결해 특정 업무 문맥을 제공할 수 있다. 자료의 권위·접근 권한·개인정보 경계가 중요하다.
-
-</Tab>
-<Tab label="신뢰성">
-
-검색 결과를 근거 후보로 삼아 답변을 검토하기 쉬워진다. 하지만 관련 문서를 찾는 것과 그 문서를 정확히 인용하는 것은 다른 평가 항목이다.
-
-</Tab>
-</Tabs>
+로드·분할·색인·검색·생성·평가 중 어느 단계가 실패했는지 분리해야 개선 방법을 고를 수 있다.
 
 <details>
-<summary>평가를 둘로 나누는 이유</summary>
+<summary>RAG 검토 순서</summary>
 
-검색 평가는 “관련 문서를 찾았는가”를 보고, 생성 평가는 “찾은 문서를 바탕으로 질문에 맞게 답했는가”를 본다. 두 결과를 합치면 어느 단계가 실패했는지 알기 어렵다.
+- 어떤 문서를 포함·제외할지
+- 어떻게 분할·메타데이터화할지
+- 어떤 기준으로 검색·재정렬할지
+- 답변이 근거를 사용했는지
 
 </details>
 
-> [!tip] 첫 실습의 범위
-> 자료 원천 하나, 질문 유형 하나, 평가 질문 몇 개로 시작한다. 저장소·모델·체인을 한꺼번에 바꾸면 개선 원인을 분리할 수 없다.
+## 데이터로 보기
 
-## 정리
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <h3 style="margin:0 0 14px;font-size:15px;font-weight:600">RAG 검토 단계</h3>
+  <div id="bars" style="display:flex;align-items:flex-end;gap:14px;height:170px"></div>
+  <script>
+    var data = [["로드",1],["분할",1],["검색",1],["생성",1],["평가",1]];
+    var max = Math.max.apply(null, data.map(function (d) { return d[1]; }));
+    document.getElementById('bars').innerHTML = data.map(function (d, i) {
+      return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;' +
+        'gap:6px;height:100%;justify-content:flex-end">' +
+        '<span style="font-size:12px;font-weight:600">' + d[1] + '</span>' +
+        '<div style="width:100%;height:' + (d[1] / max * 100) + '%;' +
+        'background:var(--chart-' + (i + 1) + ');' +
+        'border-radius:var(--radius) var(--radius) 0 0"></div>' +
+        '<span style="font-size:12px;color:var(--muted-foreground)">' + d[0] + '</span>' +
+        '</div>';
+    }).join('');
+  </script>
+</div>
+```
 
-- RAG는 검색과 생성을 연결해 외부 지식을 문맥으로 제공한다.
-- ==검색 품질과 생성 품질은 분리해 평가==해야 한다.
-- 로딩·색인·저장·질의·평가는 모두 시스템의 품질을 좌우한다.
+값 1은 각 단계가 분리된 실패 지점을 가진다는 표시이며, 검색 품질 수치가 아니다.
 
-> [!warning] 신뢰성의 경계
-> 검색 결과가 있다고 해서 결과 문서가 최신·정확·권위 있다고 단정하지 않는다. 원천 자체의 품질 검토는 RAG 밖에서 계속 필요하다.
+> [!important] 해석의 경계
+> 이 차트는 정확도·재현율·답변 품질을 나타내지 않는다. 실제 평가 집합과 측정 정의가 필요하다.
+
+## 핵심 정리
+
+| 개념 | 정의 | 왜 중요한가 |
+| :-- | :-- | :-- |
+| 로드 | 문서를 시스템에 넣음 | 검색 대상 범위를 정한다 |
+| 검색 | 질문에 맞는 후보 선택 | 생성 맥락의 근거 |
+| 생성 | 근거와 질문으로 답변 작성 | 최종 답의 품질 확인 필요 |
+
+## 관련 개념
+
+- Tokenizer와 Embedding: 문서와 질문을 비교 가능한 표현으로 만드는 과정
+- 평가 설계: 검색과 답변 실패를 분리하는 방법
+
+> [!question]- 스스로 점검
+> **Q.** RAG에서 답변이 틀렸을 때 모델만 고치면 안 되는 이유는 무엇인가?
+>
+> **A.** 문서 선택·분할·검색·맥락 구성·생성 중 어디서 실패했는지에 따라 해결 방법이 다르기 때문이다.
