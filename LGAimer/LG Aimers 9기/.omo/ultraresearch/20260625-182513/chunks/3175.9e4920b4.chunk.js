@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgrm_carpediem_lms=self.webpackChunkgrm_carpediem_lms||[]).push([[3175],{43175:function(e,a,c){c(47313);a.Z=c.p+"static/media/reader.e7a86a0cad592529f09fb99cc77f1823.svg"}}]);

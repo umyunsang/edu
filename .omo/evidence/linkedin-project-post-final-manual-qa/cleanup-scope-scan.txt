@@ -1,7 +1,0 @@
-2:session-scoped tmux:
-3:none
-4:session-scoped processes:
-5:none
-6:subagents:
-7:closed: 019f01b2-492c, 019f01b2-53c2, 019f01b2-60b1, 019f01b2-6b87, 019f01b2-7620, 019f01b2-859a
-9:unrelated pre-existing tmux/playwright processes were observed in the broad scan and intentionally not touched.

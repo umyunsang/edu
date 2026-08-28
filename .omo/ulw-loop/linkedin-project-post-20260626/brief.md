@@ -1,1 +1,0 @@
-Research GitHub repositories and the local edu Obsidian archive, fill missing context with ultraresearch, synthesize a LinkedIn post about completed/current projects, and publish it to LinkedIn if an authenticated publishing surface is available; otherwise produce a publish-ready draft plus blocked evidence for the missing LinkedIn auth/tool surface.

@@ -1,7 +1,0 @@
-{
-  "name": "linkedin-cli",
-  "version": "1.0.0",
-  "description": "LinkedIn data extraction CLI - Fetch profiles, companies, jobs, and posts. Professional networking OSINT tool."
-}
-linkedin-cli (0.1.4)
-Available versions: 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0

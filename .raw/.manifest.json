@@ -1,6 +1,0 @@
-{
-  "address_map": {},
-  "description": "Ingest delta tracker. Source payloads are create-only.",
-  "sources": {},
-  "version": 1
-}
