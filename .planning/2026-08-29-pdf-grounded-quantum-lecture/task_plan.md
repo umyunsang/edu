@@ -15,7 +15,7 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 
 ## Phases
 
-1. [in_progress] Reject every prior course output and prior gate result. Rebuild in place from source PDFs/extracts with the official OpenKnowledge skill, lecture-note template, palette starters, and project Mermaid skill as the exclusive component contract.
+1. [in_progress] Reject every prior course output and prior gate result, including the thin and duplicated template-driven notes. Rebuild in place from source PDFs/extracts with the official OpenKnowledge skill, lecture-note template, palette starters, and project Mermaid skill as the component contract, while deriving each document's substance and section order from its own PDF segment.
 2. [pending] Per course, read its sources and the official template before writing; apply only official markdown-native components, Tabs, and unmodified palette-starter structures populated with source-grounded data.
 3. [pending] Keep the copyright override: omit source slide images and text-only page citations despite the template's evidence-image section.
 4. [pending] Per course, validate only through OpenKnowledge write/edit warnings, lint, audit, and Mermaid write warnings. Do not open browsers, use preview URLs, take screenshots, or perform DOM/render verification.
@@ -28,3 +28,4 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 - At least 10 meaningful components across official callouts, `html preview` palette starters, `details`, `Tabs`, Mermaid, highlights, and math.
 - Zero direct source-slide image embeds.
 - Use an official palette visual starter when it adds explanatory value; never add decorative repetition.
+- Component count is not a proxy for source coverage. Each note must preserve the distinct concepts, examples, procedures, equations, caveats, and narrative depth of its assigned PDF segment, with no copied generic body between sibling notes.

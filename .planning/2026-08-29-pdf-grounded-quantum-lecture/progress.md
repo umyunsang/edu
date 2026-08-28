@@ -104,3 +104,10 @@
 - `machine-learning` has completed its 21-note rewrite and static validation, including two deliberately limited notes for source-text gaps. Its next lane is artificial-intelligence.
 - `operating-systems` has completed a second per-note anti-repetition correction and static validation, retaining no note for the text-empty source. Its next lane is database-systems.
 - All previous quality and progress metrics below are historical rejected output, not acceptance evidence.
+
+## 2026-08-29 Source-depth and duplication reset
+
+- User identified that generative-ai-fine-tuning notes 01, 15, and 26 contain the same substance despite different titles. This confirms that the previous component-count/template gate did not establish PDF coverage or note distinctness.
+- All Terra agents were interrupted. New delegated work uses `gpt-5.6-sol` with xhigh reasoning only.
+- Three Sol lanes are now running read-only: exact duplicate forensics for notes 01/15/26, whole-course duplicate and missing-topic audit, and independent PDF-segment mapping for 01/15/26/40/46/50/62/72.
+- No further course authoring is accepted until the generative-ai-fine-tuning source-depth gate is redesigned and demonstrated on these documents.
