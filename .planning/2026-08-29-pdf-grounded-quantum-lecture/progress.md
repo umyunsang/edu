@@ -35,6 +35,9 @@
 - Retrofitted the Braket, physics/linear algebra, Grover/Shor, and VQA notes in the same way, replacing 18 additional source-image embeds with independent SVG visualizations.
 - Each retrofitted note passed its scoped OpenKnowledge audit. The authoritative course-scoped scan of `quantum-lecture/notes/` now returns zero direct `../assets/` image embeds.
 - The remaining QML, SQD, and hardware notes will be authored directly under the source-free publication rule.
+- Rewrote QML, SQD, and hardware from their extracted source text with original visual components only; each passed a clean scoped audit and contains zero direct asset image embeds.
+- Completed the quantum-lecture course gate: 8 documents / 36 callouts / 46 HTML previews / 17 details / 10 Tabs / 0 direct source-slide embeds. All eight documents pass markdownlint, frontmatter, OKF, and link checks.
+- Moving to the quantum-ml course for the next source-free inventory and retrofit pass.
 
 ## Errors
 
