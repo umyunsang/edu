@@ -1,41 +1,46 @@
 ---
 title: 머신러닝 프로젝트
-description: Python·고전 머신러닝·RAG 실습을 연결하는 학습 노트
+description: Python 배열·고전 머신러닝·LangChain 기반 챗봇 노트를 연결하는 학습 인덱스
 type: course-index
-tags:
-- course
-- machine-learning
+tags: [course, machine-learning]
 course: ml-projects
 semester: 3-1
 status: draft
+aliases: []
 ---
 
-> [!abstract]
-> 이 과목은 Python 데이터 처리, 고전 머신러닝 모형, 점진 학습, 결정 트리, RAG 챗봇을 하나의 프로젝트 학습 흐름으로 정리한다.
+> [!abstract] 학습 경로
+> 데이터 표현에서 시작해 거리 기반 모델, 선형 모형, 트리, 점진 학습, 언어 모델 애플리케이션으로 확장한다.
 
-## 학습 노트
+## 학습 지도
 
-| 원본 | 노트 | 핵심 질문 |
+```mermaid
+flowchart TB
+    A[데이터] --> B[예측 모델]
+    B --> C[응용]
+```
+
+## 노트
+
+| 순서 | 주제 | 노트 |
 | :-- | :-- | :-- |
-| 01_K-NN | [K-최근접 이웃 분류](<./notes/01. K-최근접 이웃 분류.md>) | 가까운 이웃의 다수결은 어떻게 분류를 만드는가? |
-| 02_Regression_K-NN | [K-최근접 이웃 회귀](<./notes/02. K-최근접 이웃 회귀.md>) | 이웃의 타깃 평균은 어떤 수치를 예측하는가? |
-| 03_Regression_Lin&poly | [선형 회귀와 다항 특성](<./notes/03. 선형 회귀와 다항 특성.md>) | 입력 표현을 넓히면 선형 모형은 어떻게 달라지는가? |
-| 04_Regression_Multiple | [다중 회귀와 특성 공학](<./notes/04. 다중 회귀와 특성 공학.md>) | 여러 특성과 조합 특성은 어떻게 쓰는가? |
-| 05_Regression_Logistic | [로지스틱 회귀와 클래스 확률](<./notes/05. 로지스틱 회귀와 클래스 확률.md>) | 점수는 어떻게 확률 분포가 되는가? |
-| 06_Regression_Incremental learning | [점진 학습과 확률적 경사 하강법](<./notes/06. 점진 학습과 확률적 경사 하강법.md>) | 도착하는 데이터로 모형을 어떻게 갱신하는가? |
-| 07_DecisionTree_before | [결정 트리와 가지치기](<./notes/07. 결정 트리와 가지치기.md>) | 질문 기반 분류기를 어떻게 일반화하는가? |
-| 2024세미나자료 | [Python 데이터와 평균제곱오차](<./notes/01. Python 데이터와 평균제곱오차.md>) | 데이터를 이름으로 다루고 오차를 어떻게 읽는가? |
-| LangChain_RAG | [LangChain 기반 RAG 챗봇](<./notes/01. LangChain 기반 RAG 챗봇.md>) | 검색 문맥을 답변에 어떻게 연결하는가? |
-| 인공지능특강 | [퍼셉트론과 벡터화](<./notes/01. 퍼셉트론과 벡터화.md>) | 가중합 분류와 배열 연산은 어떻게 이어지는가? |
+| 1 | 거리 기반 분류 | [K-최근접 이웃 분류](./notes/01.%20K-%EC%B5%9C%EA%B7%BC%EC%A0%91%20%EC%9D%B4%EC%9B%83%20%EB%B6%84%EB%A5%98.md) |
+| 2 | 문맥 기반 언어 모델 응용 | [LangChain 기반 RAG 챗봇](./notes/01.%20LangChain%20%EA%B8%B0%EB%B0%98%20RAG%20%EC%B1%97%EB%B4%87.md) |
+| 3 | 데이터와 오차 | [Python 데이터와 평균제곱오차](./notes/01.%20Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80%20%ED%8F%89%EA%B7%A0%EC%A0%9C%EA%B3%B1%EC%98%A4%EC%B0%A8.md) |
+| 4 | 배열 연산 | [퍼셉트론과 벡터화](./notes/01.%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%EA%B3%BC%20%EB%B2%A1%ED%84%B0%ED%99%94.md) |
+| 5 | 거리 기반 회귀 | [K-최근접 이웃 회귀](./notes/02.%20K-%EC%B5%9C%EA%B7%BC%EC%A0%91%20%EC%9D%B4%EC%9B%83%20%ED%9A%8C%EA%B7%80.md) |
+| 6 | 선형·다항 모형 | [선형 회귀와 다항 특성](./notes/03.%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EC%99%80%20%EB%8B%A4%ED%95%AD%20%ED%8A%B9%EC%84%B1.md) |
+| 7 | 다중 특성과 변환 | [다중 회귀와 특성 공학](./notes/04.%20%EB%8B%A4%EC%A4%91%20%ED%9A%8C%EA%B7%80%EC%99%80%20%ED%8A%B9%EC%84%B1%20%EA%B3%B5%ED%95%99.md) |
+| 8 | 클래스 확률 | [로지스틱 회귀와 클래스 확률](./notes/05.%20%EB%A1%9C%EC%A7%80%EC%8A%A4%ED%8B%B1%20%ED%9A%8C%EA%B7%80%EC%99%80%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%ED%99%95%EB%A5%A0.md) |
+| 9 | 연속 데이터 학습 | [점진 학습과 확률적 경사 하강법](./notes/06.%20%EC%A0%90%EC%A7%84%20%ED%95%99%EC%8A%B5%EA%B3%BC%20%ED%99%95%EB%A5%A0%EC%A0%81%20%EA%B2%BD%EC%82%AC%20%ED%95%98%EA%B0%95%EB%B2%95.md) |
+| 10 | 트리 기반 분류 | [결정 트리와 가지치기](./notes/07.%20%EA%B2%B0%EC%A0%95%20%ED%8A%B8%EB%A6%AC%EC%99%80%20%EA%B0%80%EC%A7%80%EC%B9%98%EA%B8%B0.md) |
 
-## 학습 경로
+<details>
+<summary>출처 매핑</summary>
 
-Python과 데이터 → 분류와 회귀 → 특성 공학과 검증 → 점진 학습과 트리 → RAG 챗봇
+거리 기반 분류부터 결정 트리까지는 각각의 번호가 붙은 강의 추출 텍스트에 대응한다. 배열·MSE·벡터화는 2024세미나자료 추출 텍스트, 챗봇 노트는 LangChain_RAG 추출 텍스트를 사용했다.
 
-> [!note]
-> 각 노트는 원본 강의의 개념을 독립적으로 재구성했다. 원본 PDF와 슬라이드 이미지는 노트에 삽입하지 않는다.
+</details>
 
-## 원본 자료 상태
-
-- `2024세미나자료 2.pdf`, `인공지능특강 2.pdf`는 같은 자료의 macOS 복제본으로 별도 노트를 만들지 않았다.
-- `Python_Machine_Learning_Certificate.pdf`는 개인 이수 증명서이며 학습용 강의 자료가 아니므로 노트에서 제외했다.
+> [!warning] source warning
+> 퍼셉트론의 가중합·활성화 설명은 제공된 추출 텍스트에서 확인되지 않아 해당 노트에 주장으로 넣지 않았다. RAG의 세부 검색 절차도 추출 근거가 희소해 기록하지 않았다.
