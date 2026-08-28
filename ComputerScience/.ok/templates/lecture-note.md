@@ -1,8 +1,8 @@
 ---
 template:
   title: 강의 정리문서
-  description: 강의 PDF를 근거로 쓰는 수업 정리문서. 콜아웃·Mermaid·KaTeX·html preview
-    차트·Accordion·Tabs 를 쓴다. 상세 규칙은 ComputerScience 폴더 설명 참고.
+  description: 강의 PDF를 근거로 쓰는 수업 정리문서. 증거는 렌더된 슬라이드 페이지 이미지로만 남긴다.
+    콜아웃·Mermaid·KaTeX·html preview 차트·Accordion 을 쓴다.
   tags:
     - lecture
     - openknowledge
@@ -16,7 +16,6 @@ source: ""
 source_pages: 0
 status: draft
 aliases: []
-prerequisite: []
 created: "{{date}}"
 updated: "{{date}}"
 ---
@@ -32,14 +31,25 @@ flowchart LR
     B --> C["{도달점}"]
 ```
 
-## 1. {첫 번째 주제}
+%% 증거 규칙 — 반드시 지킬 것
+   슬라이드 근거는 **렌더된 페이지 이미지**로만 남긴다. `p.12` 같은 페이지 번호 표기나
+   PDF 링크만 적는 것은 근거가 아니다. 절차는 이렇다—
+   1. `.ok/local/pdf-extract/<도메인>__<과목>__<slug>/pages/pNNN.png` 에서 해당 페이지를 고른다
+   2. `<과목>/assets/<slug>-pNNN.png` 로 복사한다 (인용하는 페이지만 복사한다)
+   3. 아래처럼 임베드하고, alt 텍스트에 그림이 무엇을 보이는지 적는다
+   한 노트당 5–8장을 목표로 한다. %%
 
-> [!quote] 슬라이드 근거
-> `pdf/{파일명}.pdf` p.{n}
+## 1. {첫 번째 주제}
 
 {설명}. =={핵심 용어}== 는 {정의}.
 
+![{그림 번호·제목 — 이 슬라이드가 보이는 것}](<../assets/{slug}-p{NNN}.png>)
+
+{그림에서 눈여겨볼 점 하나}.
+
 ## 2. {두 번째 주제}
+
+![{그림 번호·제목 — 이 슬라이드가 보이는 것}](<../assets/{slug}-p{NNN}.png>)
 
 <details>
 <summary>유도 과정</summary>
@@ -83,8 +93,12 @@ $$
 
 ## 관련 개념
 
-- **prerequisite** — {선수 노트 링크} : {왜 먼저 봐야 하는가}
-- **uses** — {도구 노트 링크} : {무엇에 도구로 쓰는가}
+%% 라벨은 5종만 쓴다: prerequisite · elaborates · contrasts · applies · evidences
+   반대 방향은 적지 않는다 (backlink 가 자동 계산된다). contrasts 만 양쪽에 적는다.
+   속한 과목은 폴더 경로가 말하므로 간선으로 적지 않는다. %%
+
+- **prerequisite** — [{선수 노트}](<./{선수 노트}.md>) : {왜 먼저 봐야 하는가}
+- **applies** — [{응용 대상 노트}](<./{응용 대상 노트}.md>) : {무엇에 쓰는가}
 
 > [!question]- 스스로 점검
 > **Q.** {질문}
@@ -93,4 +107,4 @@ $$
 
 ## 출처
 
-- `pdf/{파일명}.pdf` ({n}p)
+- [{파일명}.pdf](<../sources/{파일명}.pdf>) — {n}쪽. 본문에 인용한 슬라이드는 위 이미지로 남겼다.
