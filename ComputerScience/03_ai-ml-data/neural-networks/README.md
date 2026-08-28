@@ -95,5 +95,5 @@ flowchart LR
 
 ## 이 과정이 연결되는 곳
 
-- **applies-to** — [양자 ML 인덱스](<../quantum-ml/00. 양자 ML 인덱스.md>) : Variational Circuit 의 학습 구조가 여기 신경망과 같은 틀이다
-- **contrasts** — [04. Quantum Feature Space](<../quantum-ml/04. Quantum Feature Space.md>) : 같은 XOR 한계를 층이 아니라 공간 확장으로 푸는 접근
+- **applies-to** — [양자 ML 인덱스](<../quantum-ml/README.md>) : Variational Circuit 의 학습 구조가 여기 신경망과 같은 틀이다
+- **contrasts** — [04. Quantum Feature Space](<../quantum-ml/notes/04. Quantum Feature Space.md>) : 같은 XOR 한계를 층이 아니라 공간 확장으로 푸는 접근

@@ -24,15 +24,15 @@ updated: '2026-05-28'
 
 ## 과목 인터페이스
 
-- [인공지능](<./artificial-intelligence/3. Backpropagation/이론/Backpropagation.md>)
-- [머신러닝](<./machine-learning/머신러닝 핵심 수학 개념.md>)
-- [ML 프로젝트](<./ml-projects/Pandas/데이터 분석 및 처리 과정 요약.md>)
+- [인공지능](<./artificial-intelligence/notes/Backpropagation.md>)
+- [머신러닝](<./machine-learning/notes/머신러닝 핵심 수학 개념.md>)
+- [ML 프로젝트](<./ml-projects/notes/데이터 분석 및 처리 과정 요약.md>)
 - 뉴럴네트워크
-- [빅데이터분석](<./big-data-analysis/md/K-POP 아티스트 인기도 분석 시스템.md>)
-- [컴퓨터비전](<./computer-vision/중간고사_컴퓨터비전_정밀분석_정리.md>)
-- [LLM](<./large-language-models/검색 증강 생성 RAG/RAG.md>)
-- [AI 시스템 설계](<./ai-system-design/주문 및 결제 AI 시스템 개발.md>)
-- [생성형 AI 파인튜닝](<./generative-ai-fine-tuning/생성형 AI 파인튜닝 프로젝트 주제.md>)
+- [빅데이터분석](<./big-data-analysis/notes/K-POP 아티스트 인기도 분석 시스템.md>)
+- [컴퓨터비전](<./computer-vision/notes/중간고사_컴퓨터비전_정밀분석_정리.md>)
+- [LLM](<./large-language-models/notes/RAG.md>)
+- [AI 시스템 설계](<./ai-system-design/notes/주문 및 결제 AI 시스템 개발.md>)
+- [생성형 AI 파인튜닝](<./generative-ai-fine-tuning/notes/생성형 AI 파인튜닝 프로젝트 주제.md>)
 
 ## 선수 분야
 
