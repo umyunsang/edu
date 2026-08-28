@@ -6,7 +6,7 @@ pdf_lecture_extract.py — 강의 PDF를 "LLM이 읽을 수 있는 추출 번들
 정리문서 작성은 에이전트(Claude Code / Codex / OpenKnowledge MCP)의 몫이고,
 이 스크립트는 그 에이전트가 읽을 수 있는 **근거 자료**를 만든다.
 
-출력 번들 (기본: .ok/local/pdf-extract/<slug>/)
+출력 번들 (기본: .ok/local/pdf-extract/<도메인>__<과목>__<slug>/)
   meta.json      PDF 메타데이터 + sha256 + 페이지별 텍스트 밀도 + 렌더링된 페이지 목록
   text.md        페이지별 레이아웃 보존 텍스트 (```page N ... ``` 블록)
   pages/pNNN.png 텍스트가 빈약한(=내용이 이미지에 있는) 페이지만 선택적으로 렌더링
@@ -52,6 +52,25 @@ def slugify(name: str) -> str:
     name = re.sub(r"[\\/:*?\"<>|]+", "-", name)
     name = re.sub(r"\s+", "-", name.strip())
     return name[:120] or "untitled"
+
+
+def bundle_key(pdf: Path) -> str:
+    """번들 디렉토리 이름 = ``<도메인>__<과목>__<파일slug>``.
+
+    PDF 파일명만으로 키를 만들면 과목이 다른 동명 파일이 서로를 덮어쓴다.
+    실측(2026-08-28): 476개 중 ``2장_확인문제`` 가 open-source-software 와
+    web-programming 사이에서 1건 충돌한다. 과목 경로를 접두로 붙여 격리한다.
+
+    ``<과목>/sources/`` 밖의 PDF 는 접두를 붙일 근거가 없으므로 파일 slug 만 쓴다.
+    """
+    stem = slugify(pdf.stem)
+    parent = pdf.parent
+    if parent.name != "sources":
+        return stem
+    subject = parent.parent.name
+    domain = parent.parent.parent.name
+    prefix = "__".join(p for p in (domain, subject) if p)
+    return f"{slugify(prefix)}__{stem}" if prefix else stem
 
 
 def file_sha256(path: Path) -> str:
@@ -140,7 +159,7 @@ def extract(pdf: Path, out_root: Path, dpi: int, min_chars: int,
     if pages <= 0:
         die(f"{pdf}: 페이지 수를 읽지 못했습니다 (손상 PDF?)")
 
-    bundle = out_root / slugify(pdf.stem)
+    bundle = out_root / bundle_key(pdf)
     bundle.mkdir(parents=True, exist_ok=True)
 
     texts = page_texts(pdf, pages)
