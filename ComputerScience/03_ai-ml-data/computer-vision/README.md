@@ -1,63 +1,92 @@
 ---
-title: 컴퓨터비전
-description: '영상처리, 기하변환, 특징점(SIFT·ORB), 스테레오. 학기: 4-1.'
+title: "00. 컴퓨터 비전 인덱스"
+description: 영상 처리·특징·기하·깊이의 질문을 순서대로 연결하는 학습 진입점.
 type: course-index
-tags:
-- course
-- 4-1
+tags: []
 course: computer-vision
-semester: 4-1
+semester: "4-1"
+source: ""
+source_pages: 0
 status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+aliases: []
+created: "2026-08-29"
+updated: "2026-08-29"
 ---
 
-> [!abstract] 이 과목은
-> 영상처리, 기하변환, 특징점(SIFT·ORB), 스테레오. 학기: 4-1.
+> [!abstract] 한 줄 요약
+> 컴퓨터 비전은 픽셀을 처리하고, 대응과 기하를 거쳐 장면의 구조를 추정하는 학습 흐름이다.
 
-## 정리문서
+## 이 과정의 지도
 
-모두 `notes/` 에 있다. 총 6편.
+```mermaid
+flowchart TB
+    subgraph Core[핵심]
+        direction LR
+        A[영상] --> B[처리]
+    end
+    B --> C[기하]
+    C --> D[이해]
+```
 
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [01. 컴퓨터 비전 개요](./notes/01.%20컴퓨터%20비전%20개요.md) | 비전의 주요 문제와 학습 흐름 |
-| [02. 2D 영상 처리와 기하 변환](./notes/02.%202D%20영상%20처리와%20기하%20변환.md) | 명암·모폴로지·동차 좌표·OpenCV 배열 |
-| [03. 코너·분할과 영상 품질](./notes/03.%20코너·분할과%20영상%20품질.md) | Harris·SLIC·N-cut·PSNR·SSIM |
-| [04. 특징 매칭과 호모그래피](./notes/04.%20특징%20매칭과%20호모그래피.md) | 대응점·호모그래피·RANSAC |
-| [05. 스테레오 비전과 깊이 추정](./notes/05.%20스테레오%20비전과%20깊이%20추정.md) | disparity·깊이 지도·스테레오 매칭 |
-| [06. 3D 기하와 카메라 파라미터](./notes/06.%203D%20기하와%20카메라%20파라미터.md) | 좌표 변환·캘리브레이션·보정 |
+<Tabs>
+  <Tab label="표현">2D 영상에서 밝기·경계·영역을 어떻게 표현하는지 점검한다.</Tab>
+  <Tab label="대응">특징과 매칭으로 서로 다른 관측을 연결한다.</Tab>
+  <Tab label="복원">카메라와 시차를 이용해 깊이·좌표를 추정한다.</Tab>
+</Tabs>
 
-## 원본 자료
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px">
+  <div id="cards" style="display:flex;gap:14px;flex-wrap:wrap"></div>
+  <script>
+    var stats = [
+      ['2D', '처리', '픽셀과 변환', 'var(--chart-1)'],
+      ['대응', '매칭', '특징과 모델', 'var(--chart-2)'],
+      ['3D', '복원', '깊이와 카메라', 'var(--chart-3)']
+    ];
+    document.getElementById('cards').innerHTML = stats.map(function (s) {
+      return '<div style="flex:1;min-width:150px;padding:16px;background:var(--card);' +
+        'color:var(--card-foreground);border:1px solid var(--border);' +
+        'border-radius:var(--radius)">' +
+        '<div style="font-size:13px;color:var(--muted-foreground)">' + s[0] + '</div>' +
+        '<div style="font-size:26px;font-weight:700;margin-top:4px">' + s[1] + '</div>' +
+        '<div style="font-size:12px;font-weight:600;margin-top:4px;color:' + s[3] + '">' +
+        s[2] + '</div>' +
+        '</div>';
+    }).join('');
+  </script>
+</div>
+```
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 16건.
+<details>
+<summary>과정 사용법</summary>
 
-- `1_overview_v1.1.pdf`
-- `2_2D_Image_Processing_v1.1.pdf`
-- `3_2D_Image_Processing_2_v1.1 2.pdf`
-- `3_2D_Image_Processing_2_v1.1.pdf`
-- `4_Feature_Extraction_and_Matching_v1.5.pdf`
-- `5_Stereo_Vision_v1.5 2.pdf`
-- `5_Stereo_Vision_v1.5.pdf`
-- `6_3D_Geometry_and_Camera_Parameters_v1.1 2.pdf`
-- `6_3D_Geometry_and_Camera_Parameters_v1.1.pdf`
-- `LMS.pdf`
-- `중간고사_컴퓨터비전_정밀분석_정리 2.pdf`
-- `중간고사_컴퓨터비전_정밀분석_정리.pdf`
-- `컴퓨터비전_기말고사_예상문항 2.pdf`
-- `컴퓨터비전_기말고사_예상문항.pdf`
-- `컴퓨터비전_기말고사_정리 2.pdf`
-- `컴퓨터비전_기말고사_정리.pdf`
+각 노트에서 입력·가정·출력을 먼저 구분한 뒤, 표와 점검 질문으로 오류 조건을 되짚는다.
 
-## 실습
+</details>
 
-직접 만든 코드와 산출물이다. `work/` 에 있고 총 19건.
+> [!tip] 학습 순서
+> ==픽셀 표현==을 이해한 뒤 대응과 카메라 기하를 읽으면 깊이와 복원의 조건을 더 분명하게 구분할 수 있다.
 
-| 종류 | 개수 |
-| :-- | --: |
-| `.ipynb` | 19 |
+## 노트 목록
 
-## 관련 과목
+- [컴퓨터 비전 개요](<./notes/01. 컴퓨터 비전 개요.md>)
+- [2D 영상 처리와 기하 변환](<./notes/02. 2D 영상 처리와 기하 변환.md>)
+- [코너·분할과 영상 품질](<./notes/03. 코너·분할과 영상 품질.md>)
+- [특징 매칭과 호모그래피](<./notes/04. 특징 매칭과 호모그래피.md>)
+- [스테레오 비전과 깊이 추정](<./notes/05. 스테레오 비전과 깊이 추정.md>)
+- [3D 기하와 카메라 파라미터](<./notes/06. 3D 기하와 카메라 파라미터.md>)
 
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+| 구간 | 학습 질문 | 다음 연결 |
+| :-- | :-- | :-- |
+| 2D | 픽셀과 좌표를 어떻게 다루는가 | 특징 |
+| 대응 | 같은 장면점을 어떻게 찾는가 | 기하 |
+| 3D | 깊이와 카메라를 어떻게 추정하는가 | 장면 이해 |
+
+> [!question]- 스스로 점검
+> **Q.** 이 과정에서 결과를 해석하기 전에 먼저 적어야 할 세 가지는 무엇인가?
+>
+> **A.** 입력 관측, 기하·모델 가정, 원하는 출력이다.
+
+## 출처
+
+- 공개 노트에는 원본 강의 자료, 자산 이미지, 페이지 단위 근거를 포함하지 않는다.
