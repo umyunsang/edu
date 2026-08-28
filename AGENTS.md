@@ -9,19 +9,14 @@ kg_level: 4
 kg_role: support
 semester: extracurricular
 source: ''
-status: seedling
+status: stable
 tags:
-- type/lecture
+  - agent-guidance
+  - openknowledge
 title: AGENTS.md
 type: lecture
-updated: '2026-05-05'
+updated: '2026-08-29'
 ---
-
-graph:: [[ComputerScience/00_graph-interfaces/지식그래프 허브|지식그래프 허브]]
-bridge:: [[ComputerScience/00_graph-interfaces/bridges/아카이브 운영 브리지|아카이브 운영 브리지]]
-related:: [[CLAUDE|CLAUDE]]
-
-# AGENTS.md
 
 This file provides guidance to AI agents (Claude Code, Codex, OpenCode, Pi) working in this repository.
 
@@ -40,8 +35,8 @@ frontmatter, folder guides, the source ledger, and the OpenKnowledge MCP server.
 
 | Layer | Where | Who reads it |
 |:--|:--|:--|
-| Source of record | `<course>/pdf/*.pdf` (Git LFS) | extraction script only |
-| Study notes | `<course>/NN. 제목.md` | humans in Obsidian |
+| Source of record | `<course>/sources/*.pdf` (Git LFS) | extraction and evidence workflow only |
+| Study notes | `<course>/notes/NN. 제목.md` | humans in OpenKnowledge and Obsidian |
 | Graph structure | `ComputerScience/00_graph-interfaces/` | Obsidian Graph View |
 | Agent metadata | `.ok/frontmatter.yml`, `wiki/meta/ledgers/`, `.agents/skills/` | LLMs |
 
@@ -85,15 +80,17 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 - `image/` — Shared image assets referenced from notes
 - `.obsidian/` — Vault configuration, plugins, themes
 
-## Obsidian Conventions
+## Authoring Conventions
 
-- **Internal links**: Use `[[wikilink]]` syntax, not standard markdown links
-- **Image embeds**: Use `![[3-2_neural-network__image.png]]` format; images are stored in `/image/`
-- **Math**: LaTeX via `$...$` and `$$...$$` (Quick LaTeX + Extended MathJax plugins installed)
-- **Diagrams**: Mermaid code blocks (Mermaid Tools plugin installed)
-- **Properties**: YAML frontmatter when present
-- **Callouts**: `> [!type]` syntax for info/warning/note blocks
-- **Language**: Notes are primarily in Korean (한국어)
+- **Project templates**: Start every lecture, course index, and practice note from the inherited root templates in `.ok/templates/`.
+- **Links**: Use standard Markdown relative links. Wikilinks and wiki embeds are prohibited in rewritten course notes.
+- **Source privacy**: Do not embed source-slide images, PDFs, or visible page citations in public study notes.
+- **Math**: Use `$...$` or `$$...$$` only when the source actually contains the equation.
+- **Diagrams**: Use valid Mermaid code blocks for relationships, sequences, and workflows.
+- **Visual findings**: Re-query the OpenKnowledge palette while authoring. Use the official chart, stat-cards, custom-svg, or interactive-control starter whenever the source supplies the required data shape.
+- **Components**: Preserve official starter structure, theme tokens, and control flow. Replace only source-backed labels and data literals.
+- **Delivery**: Combine compact conclusions, selective bullets, and visuals. Do not write an essay or reduce the whole document to one bullet list.
+- **Language**: Notes are primarily in Korean (한국어).
 
 ## Installed Plugins
 
@@ -110,16 +107,19 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 
 ## Working with This Vault
 
-- When creating or editing notes, always use Obsidian Flavored Markdown (wikilinks, callouts, embeds)
-- Graph relationships should prefer explicit interface nodes and wikilink fields: `domain::`, `stage::`, `module::`, `bridge::`, `schema::`, `source_model::`, `relation_type::`, `tech_stack::`, `research::`, `ecosystem::`, `competency::`
-- Keep `related::` to **8 links maximum**. Some legacy notes have dozens injected by an old script;
-  that is a defect, not a pattern to copy — it wrecks Graph View and wastes LLM context
-- Directory naming: field interface first, canonical course folder second — e.g., `03_ai-ml-data/machine-learning`, `04_systems-infrastructure/operating-systems`
-- Images should go in `/image/` and be referenced with `![[filename]]`
-- PDF export is configured for A4, no margins, no title — respect these settings when formatting
-- Notes may contain code blocks in Python, Java, JavaScript, C (CUDA), SQL, and shell
-- Prefer Mermaid over ` ```html preview ` embeds: the latter renders in OpenKnowledge but shows as
-  a raw code block in Obsidian, and Obsidian is the primary human interface
+- Read every in-scope Markdown file and perform every Markdown mutation through OpenKnowledge MCP.
+- Do not use an existing or Git-deleted study note as the authoring anchor; derive structure and substance from current source PDFs, extracts, and executed notebooks.
+- Read the target folder and inherited template menu before writing.
+- Call the OpenKnowledge palette while drafting every source-backed note. Quantitative or interactive findings must not remain prose-only when an official starter gate is satisfied.
+- Use `chart` only for 2–5 comparable, non-negative values on one unit and axis; at least one value must be positive.
+- Use `stat-cards` for independent source metrics, `custom-svg` for an exact part-to-whole ratio, and `interactive-control` only for a source-defined minimum, maximum, step, and default.
+- Never invent source values, interpolate missing values, fetch external data, or leave palette example values in a note.
+- Keep official HTML nodes, IDs, inline CSS, theme tokens, and JavaScript control flow intact; change only source-backed display text and data literals.
+- Preserve source errors in a warning instead of silently correcting them.
+- Do not use wikilinks, Dataview fields, hierarchical tags, original-PDF images, PDF links, or visible `p.N` citations in rewritten notes.
+- Every lecture, course-index, and practice note keeps `slides: true`. OpenKnowledge lint/audit and Slidev build/export are separate required gates.
+- Directory naming remains field interface first, canonical course folder second — e.g., `03_ai-ml-data/machine-learning`, `04_systems-infrastructure/operating-systems`.
+- Relationship typing is deferred until the source-backed rewrite is complete.
 
 ## Verification Before Committing
 
@@ -127,4 +127,8 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 node scripts/check_mermaid.mjs --dir "ComputerScience"
 npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 python3 scripts/register_pdf_sources.py
+slidev build "<note>.md" --out ".slidev-build"
+slidev export "<note>.md" --format png --output ".slidev-export.png"
 ```
+
+A gate fails when OpenKnowledge reports lint, link, or Mermaid problems; when a template placeholder or palette example value remains; when Slidev reports an unresolved component; or when build/export exits non-zero. Browser, preview URL, DOM, screenshot, and rsvg checks are not part of this workflow.
