@@ -19,6 +19,17 @@
 - Rendered assets for Pauli summary, S-dagger, H-Z-H basis change, parameterized rotation, and CNOT entanglement are present and visually verified.
 - The first note will embed those assets directly from `../assets/`; no `pdf p.N` citation block will be carried over.
 
+## First-note verification
+
+- `01. 양자 기초 게이트 설명.md` passed OpenKnowledge markdownlint, frontmatter, OKF, and link checks with zero findings.
+- Its measured structure is 6 callouts, 2 HTML previews, 2 details blocks, 1 Tabs block, 1 Mermaid diagram, and 5 embedded rendered slides.
+- Both HTML previews contain purpose-built inline SVG visuals: an interactive $R_y$ amplitude view and a CNOT control-target diagram.
+
+## Second-note evidence map
+
+- The Braket source is a 12-page console walkthrough, not a general AWS reference; every procedure in the rewrite will be limited to what the captured interface shows.
+- The first two verified slides show the Braket dashboard and device list, including a region selector and availability states.
+
 ## Open questions
 
 - Exact PDF-to-current-note mapping and per-PDF slide asset availability.

@@ -15,8 +15,8 @@ Rebuild every `quantum-lecture` lecture note from its current PDF, extracted tex
 ## Phases
 
 1. [complete] Establish the OpenKnowledge component palette, source-to-note map, and quantum-ml density baseline.
-2. [in_progress] Rebuild the first lecture note from PDF/extract/assets and validate rendering/lint.
-3. [pending] Rebuild remaining quantum-lecture notes, saving each completed note through OpenKnowledge.
+2. [complete] Rebuild the first lecture note from PDF/extract/assets and validate rendering/lint.
+3. [in_progress] Rebuild remaining quantum-lecture notes, saving each completed note through OpenKnowledge.
 4. [pending] Count course-level components and slide embeds; fix any quality-floor gap.
 5. [pending] Run scoped graph and markdown validation; report the course metrics and next course decision.
 
