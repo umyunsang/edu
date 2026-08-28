@@ -79,9 +79,9 @@ flowchart TB
 | :-- | :-- | :-- |
 | 04 | [RAG의 원리와 파이프라인](<notes/04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md>) | 검색과 생성의 연결 |
 | 19 | [데이터 로드와 검색 최적화](<notes/19.%20%EA%B2%80%EC%83%89%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%99%80%20LlamaIndex%C2%B7%EB%B2%A1%ED%84%B0%20%EC%A0%80%EC%9E%A5%EC%86%8C.md>) | 분할·검색·재정렬 |
-| 51 | [LlamaIndex와 벡터 저장소](<./notes/RAG LangChain 51. LlamaIndex와 벡터 저장소.md>) | 인덱스·벡터·메타데이터 |
-| 82 | [LangChain 모듈과 에이전트](<./notes/RAG LangChain 82. LangChain 모듈과 에이전트.md>) | 체인·에이전트·도구·추적 |
-| 109 | [Runnable, LCEL, 프롬프트](<./notes/RAG LangChain 109. Runnable, LCEL, 프롬프트.md>) | 입력·출력 계약의 조합 |
+| 51 | [LlamaIndex와 벡터 저장소](<notes/51.%20LangChain%20%EC%B2%B4%EC%9D%B8%C2%B7%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%C2%B7%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20LCEL.md>) | 인덱스·벡터·메타데이터 |
+| 82 | [LangChain 모듈과 에이전트](<notes/82.%20Few-shot%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%C2%B7%EB%AA%A8%EB%8D%B8%C2%B7%EC%B6%9C%EB%A0%A5%20%ED%8C%8C%EC%84%9C%EC%99%80%20%EB%8F%84%EA%B5%AC.md>) | 체인·에이전트·도구·추적 |
+| 109 | [Runnable, LCEL, 프롬프트](<notes/109.%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%C2%B7API%20%ED%82%A4%EC%99%80%20%EB%B3%B4%EC%B6%A9%20%EC%82%AC%EB%A1%80.md>) | 입력·출력 계약의 조합 |
 
 ## 이 과목이 연결되는 곳
 
