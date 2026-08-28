@@ -101,4 +101,5 @@
 - `generative-ai-fine-tuning` and `large-language-models` have completed the official-template rewrite and a 24-document individual component/recipe review. Their next lane is machine-learning.
 - `big-data-analysis` has completed the same official-template rewrite with static OpenKnowledge validation only. Its next lane is operating-systems.
 - `ml-projects` has completed its per-note inventory and static validation, documenting sparse or incorrect extraction rather than inferring it. Its next lane is linux.
+- `machine-learning` has completed its 21-note rewrite and static validation, including two deliberately limited notes for source-text gaps. Its next lane is artificial-intelligence.
 - All previous quality and progress metrics below are historical rejected output, not acceptance evidence.
