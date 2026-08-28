@@ -98,4 +98,5 @@
 - `neural-networks` has also completed the same rewrite and its per-note component inventory (all notes remain above the meaningful-component floor after excluding common template structure). Its next lane is ai-system-design.
 - `computer-vision` has completed the official-template rewrite with one topic-relevant palette starter per document and OpenKnowledge static validation only. Its next lane is big-data-analysis.
 - `ai-system-design` has completed the same per-note inventory and static validation. Its next lane is ml-projects.
+- `generative-ai-fine-tuning` and `large-language-models` have completed the official-template rewrite and a 24-document individual component/recipe review. Their next lane is machine-learning.
 - All previous quality and progress metrics below are historical rejected output, not acceptance evidence.
