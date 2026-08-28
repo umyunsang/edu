@@ -28,8 +28,8 @@ Markdown notes are organized by content domain, with semester history preserved 
 The vault is **dual-readable by design**: humans read it in Obsidian, agents read it through
 frontmatter, folder guides, the source ledger, and the OpenKnowledge MCP server.
 
-> **Read `docs/knowledge-schema.md` first.** It is the authoritative spec for frontmatter,
-> visualization rules, folder guides, and the verification pipeline. This file is the short version.
+> **Read `ComputerScience/.ok/frontmatter.yml` and the applicable inherited template in `.ok/templates/` first.**
+> Together they are the current authority for source scope, visualization rules, and the verification pipeline.
 
 ## Layer Model
 
