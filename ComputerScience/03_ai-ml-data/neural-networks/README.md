@@ -1,99 +1,104 @@
 ---
-title: 00. 신경망 인덱스
-description: 퍼셉트론의 한계에서 출발해 학습을 실제로 동작시키는 기술까지, 신경망 과정 5편의 진입점.
+title: "00. 신경망 인덱스"
+description: "퍼셉트론에서 학습 기술까지 이어지는 신경망 강의 노트 5편의 진입점이다."
 type: course-index
 tags:
   - deep-learning
   - index
 course: neural-networks
 semester: 3-1
-status: stable
+status: draft
 aliases:
   - 신경망 인덱스
   - Neural Networks MOC
   - AIE309
-created: 2026-08-28
-updated: 2026-08-28
+created: "2026-08-28"
+updated: "2026-08-29"
 ---
-> [!abstract] 이 과정이 다루는 것
-> 직선 하나로 XOR을 못 가르는 데서 시작해,
-> 층을 쌓고 · 손실을 정의하고 · 기울기를 효율적으로 구하고 · 실제로 돌아가게 만드는 까지.
+
+> [!abstract] 한 줄 요약
+> 이 과정은 ==판별==에서 시작해 활성화·학습·역전파·학습 기술로 신경망의 학습 흐름을 연결한다.
 
 ## 학습 경로
 
 ```mermaid
-flowchart LR
-    N1["01. 퍼셉트론<br/>한계를 본다"] --> N2["02. 인공신경망과<br/>활성화 함수"]
-    N2 --> N3["03. 신경망 학습<br/>손실과 기울기"]
-    N3 --> N4["04. 오차역전파법<br/>빠르게 구하기"]
-    N4 --> N5["05. 학습 기술들<br/>실제로 돌아가게"]
+flowchart TB
+    A[퍼셉트론] --> B[활성화]
+    B --> C[학습]
+    C --> D[역전파]
+    D --> E[학습 기술]
 ```
 
-다섯 편이 하나의 질문을 순서대로 밀고 나간다 — 각 편이 앞 편이 남긴 문제를 받는다.
+## 노트 목록
 
-| # | 노트 | 남기는 문제 |
+| # | 노트 | 다루는 것 |
 | :-- | :-- | :-- |
-| 01 | [퍼셉트론](<./notes/01. 퍼셉트론.md>) | 직선 하나로는 XOR을 못 가른다 |
-| 02 | [인공신경망과 활성화 함수](<./notes/02. 인공신경망과 활성화 함수.md>) | 층은 쌓았는데, 무엇을 기준으로 학습하나 |
-| 03 | [신경망 학습](<./notes/03. 신경망 학습.md>) | 기울기를 수치미분으로 구하면 3억 번 계산이다 |
-| 04 | [오차역전파법](<./notes/04. 오차역전파법.md>) | 기울기는 구했는데 학습이 잘 안 된다 |
-| 05 | [학습 기술들](<./notes/05. 학습 기술들.md>) | — |
+| 01 | [퍼셉트론](./notes/01.%20퍼셉트론.md) | 가중합, 임계값, 논리 게이트 |
+| 02 | [인공신경망과 활성화 함수](./notes/02.%20인공신경망과%20활성화%20함수.md) | 활성화 함수, 행렬, 순전파 |
+| 03 | [신경망 학습](./notes/03.%20신경망%20학습.md) | 손실, 기울기, 경사하강 |
+| 04 | [오차역전파법](./notes/04.%20오차역전파법.md) | 계산 그래프, 연쇄법칙 |
+| 05 | [학습 기술들](./notes/05.%20학습%20기술들.md) | 옵티마이저, 정규화, 검증 |
 
-## 원본 자료
+<details>
+<summary>읽는 순서</summary>
+
+각 노트는 앞 단계의 용어를 다음 단계의 입력으로 사용한다. 퍼셉트론의 판별식에서 시작해, 활성화 함수·행렬 연산, 손실과 기울기, 역전파, 학습 안정화 기법 순으로 읽는다.
+
+</details>
+
+<Tabs>
+  <Tab label="기초">
+    [01. 퍼셉트론](./notes/01.%20퍼셉트론.md)과 [02. 인공신경망과 활성화 함수](./notes/02.%20인공신경망과%20활성화%20함수.md)에서 단위 계산과 층 연산을 다룬다.
+  </Tab>
+  <Tab label="학습">
+    [03. 신경망 학습](./notes/03.%20신경망%20학습.md)과 [04. 오차역전파법](./notes/04.%20오차역전파법.md)에서 손실의 미분과 전달을 다룬다.
+  </Tab>
+  <Tab label="운영">
+    [05. 학습 기술들](./notes/05.%20학습%20기술들.md)에서 갱신·초기화·정규화·검증을 다룬다.
+  </Tab>
+</Tabs>
 
 ```html preview
-<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
-  <h3 style="margin:0 0 4px;font-size:15px;font-weight:600">강의별 슬라이드 분량</h3>
-  <p style="margin:0 0 16px;font-size:13px;color:var(--muted-foreground)">
-    뒤로 갈수록 분량이 늘어난다 — 05번은 01번의 일곱 배다.
-  </p>
-  <div id="pg" style="display:flex;align-items:flex-end;gap:16px;height:160px"></div>
+<div style="font-family:system-ui,sans-serif;padding:20px">
+  <div id="cards" style="display:flex;gap:14px;flex-wrap:wrap"></div>
   <script>
-    var d = [['01', 7], ['02', 30], ['03', 30], ['04', 34], ['05', 51]];
-    var mx = 51;
-    document.getElementById('pg').innerHTML = d.map(function (x, i) {
-      return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;' +
-        'gap:6px;height:100%;justify-content:flex-end">' +
-        '<span style="font-size:13px;font-weight:700">' + x[1] + 'p</span>' +
-        '<div style="width:100%;height:' + (x[1] / mx * 100) + '%;' +
-        'background:var(--chart-' + (i + 1) + ');' +
-        'border-radius:var(--radius) var(--radius) 0 0"></div>' +
-        '<span style="font-size:12px;color:var(--muted-foreground)">' + x[0] + '</span>' +
+    var stats = [
+      ['강의 노트', '5편', '현재 인덱스의 실제 노트', 'var(--chart-2)'],
+      ['학습 단계', '5단계', '판별에서 학습 기술까지', 'var(--chart-1)'],
+      ['읽기 방향', '1개', '앞 노트에서 다음 노트로', 'var(--chart-5)']
+    ];
+    document.getElementById('cards').innerHTML = stats.map(function (s) {
+      return '<div style="flex:1;min-width:150px;padding:16px;background:var(--card);' +
+        'color:var(--card-foreground);border:1px solid var(--border);' +
+        'border-radius:var(--radius)">' +
+        '<div style="font-size:13px;color:var(--muted-foreground)">' + s[0] + '</div>' +
+        '<div style="font-size:26px;font-weight:700;margin-top:4px">' + s[1] + '</div>' +
+        '<div style="font-size:12px;font-weight:600;margin-top:4px;color:' + s[3] + '">' +
+        s[2] + '</div>' +
         '</div>';
     }).join('');
   </script>
 </div>
 ```
 
+> [!tip] 사용 방법
+> 표의 노트를 순서대로 읽고, 각 노트의 “스스로 점검”에서 식과 역할을 다시 확인한다.
+
 <details>
-<summary>노트–PDF 대응표</summary>
+<summary>공개 노트의 근거 경계</summary>
 
-| 노트 | 원본 파일 | 페이지 |
-| :-- | :-- | --: |
-| 01 | `pdf/2장_퍼셉트론.pdf` | 7 |
-| 02 | `pdf/3장_인공신경망.pdf` | 30 |
-| 03 | `pdf/AIE309_4장_신경망학습.pdf` | 30 |
-| 04 | `pdf/AIE309_5장_오차역전파.pdf` | 34 |
-| 05 | `pdf/AIE309_6장_학습기술들.pdf` | 51 |
-
-모든 강의가 『밑바닥부터 시작하는 딥러닝』(사이토 고키, 한빛미디어)를 자료 출처로 말한다.
+각 강의 노트는 현재 로컬 추출문을 바탕으로 재작성했다. 원본 PDF 링크, 쪽수 표기, 원본 슬라이드 이미지와 assets 임베드는 포함하지 않는다.
 
 </details>
 
-> [!note] 원본 PDF 메타데이터 이상
-> 다섯 개 원본 PDF 전부 제목 메타데이터가 `The Effect of Mo or W on TiC Coarsening in HSLA Steel` 로 박혀 있다.
-> 내용과 무관한 다른 문서의 제목이며, 템플릿 재사용 흔적으로 보인다. 본문 내용에는 영향이 없다.
+> [!warning] 소스 경고
+> 현재 추출문의 PDF 메타데이터 title은 수업 주제와 일치하지 않는 경우가 있어, 각 노트에서 그 경고와 사용 범위를 명시한다.
 
-## 이 과정을 관통하는 두 숫자
+<details>
+<summary>스스로 점검</summary>
 
-| 숫자 | 출처 | 의미 |
-| --: | :-- | :-- |
-| **39,760** | 03번 | 2층 신경망(784→50→10)의 학습 변수 개수 |
-| **397,600,000** | 03번 | 수치미분으로 10,000 epoch 를 돌릴 때 필요한 계산 횟수 |
+**Q.** 학습 기술들은 어느 단계 다음에 읽는가?
 
-두 번째 숫자가 04번(역전파)이 존재하는 이유다.
+**A.** 이 인덱스의 경로에서는 오차역전파 다음 단계다.
 
-## 이 과정이 연결되는 곳
-
-- **applies** — [양자 ML 인덱스](<../quantum-ml/README.md>) : Variational Circuit 의 학습 구조가 여기 신경망과 같은 틀이다
-- **contrasts** — [04. Quantum Feature Space](<../quantum-ml/notes/04. Quantum Feature Space.md>) : 같은 XOR 한계를 층이 아니라 공간 확장으로 푸는 접근
+</details>
