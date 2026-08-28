@@ -16,9 +16,9 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 ## Phases
 
 1. [complete] Establish the OpenKnowledge component palette, source-to-note map, and quantum-ml density baseline.
-2. [in_progress] Inventory every direct source-slide image embed in current notes and define an original-visual replacement rule.
-3. [pending] Retrofit completed quantum-lecture notes, replacing every source slide embed with original SVG or HTML preview visuals.
-4. [pending] Rebuild remaining quantum-lecture notes with zero source-slide embeds.
+2. [complete] Inventory direct source-slide embeds in the existing quantum-lecture notes and define the original-visual replacement rule. Future inventory remains course-scoped.
+3. [complete] Retrofit the five completed quantum-lecture notes, replacing every source slide embed with original SVG or HTML preview visuals.
+4. [in_progress] Rebuild remaining quantum-lecture notes with zero source-slide embeds.
 5. [pending] Count course-level components and source-slide embeds; fix any quality-floor gap.
 6. [pending] Run scoped graph and markdown validation; report the course metrics and next course decision.
 7. [pending] Repeat phases 2 through 6 course-by-course for every course with source PDFs.

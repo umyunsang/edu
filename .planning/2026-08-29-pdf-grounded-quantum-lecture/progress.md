@@ -32,6 +32,9 @@
 - That broad result is not treated as a repository-wide completion check; every future visual scan is constrained to the course `notes/` directory.
 - Began retrofitting the five identified notes so all former slide locations become original SVG or HTML-preview learning visuals. Underlying PDFs and assets remain private evidence files.
 - Retrofitted `notes/01. 양자 기초 게이트 설명.md`: replaced its five direct slide images with five independent SVG learning diagrams and verified a clean OpenKnowledge audit plus zero direct `../assets/` image matches in that note.
+- Retrofitted the Braket, physics/linear algebra, Grover/Shor, and VQA notes in the same way, replacing 18 additional source-image embeds with independent SVG visualizations.
+- Each retrofitted note passed its scoped OpenKnowledge audit. The authoritative course-scoped scan of `quantum-lecture/notes/` now returns zero direct `../assets/` image embeds.
+- The remaining QML, SQD, and hardware notes will be authored directly under the source-free publication rule.
 
 ## Errors
 
