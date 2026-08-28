@@ -45,6 +45,12 @@
 - The available evidence set also illustrates density loss with increasing dimension and states the Rayleigh-Ritz energy lower-bound inequality. The source has no p011 or p016 rendered asset, so those pages will not be cited as image evidence.
 - The two Schrödinger slides expose the time-evolution equation, wavefunction-probability interpretation, time-independent form, and energy eigenvalue equation; both are eligible for embedded source grounding.
 
+## Third-note verification
+
+- `03. 양자컴퓨팅을 위한 물리 및 선형대수.md` passed OpenKnowledge markdownlint, frontmatter, OKF, and link checks with zero findings.
+- Its measured structure is 5 callouts, 2 HTML previews, 2 details blocks, 1 Tabs block, 1 Mermaid diagram, and 6 embedded rendered slides.
+- Missing physics render assets remained excluded; the note uses no substitute page-text citation for them.
+
 ## Open questions
 
 - Exact PDF-to-current-note mapping and per-PDF slide asset availability.
