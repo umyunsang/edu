@@ -92,4 +92,6 @@
 - Do not open browsers, resolve preview URLs, take screenshots, inspect DOM output, or run any rendering verification.
 - Required contract for every rework: the official OpenKnowledge skill, lecture-note template, components-and-visuals guidance, palette starters, and project Mermaid skill. Use only official native components, Tabs, and palette-starter structures; do not infer, hand-roll, or add components.
 - The user copyright policy still overrides only the template's source-image/page-citation examples: public notes omit source PDF/assets images and textual page citations.
+- Root coordinates scope, source boundaries, and integration only. In-place rewrites are owned by Terra xhigh agents; no browser, preview, screenshot, DOM, or local-renderer operation is permitted.
+- The first reset drafts exposed another rejected pattern: mechanically placing multiple palette starters in a note. Writers are now replacing those drafts with topic-relevant selections only, while retaining the 10 meaningful-component floor.
 - All previous quality and progress metrics below are historical rejected output, not acceptance evidence.
