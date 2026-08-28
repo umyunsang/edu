@@ -30,12 +30,15 @@
 - npm's rolling log cleanup has already removed the original 10:58 install log, so the exact terminating event is unavailable; the interrupted-reify conclusion is an inference from the same complete structural signature as the proven Codex cache failure.
 - The partial Claude cache was preserved as `/Users/um-yunsang/.npm/_npx/fca12915ff656968.broken-20260828T1205KST`.
 - Re-running the exact pinned launcher rebuilt root manifests, lock metadata, and `.bin/claude-agent-acp`; the installation command exited cleanly with no lingering ACP process.
+- A real ACP SDK initialize request succeeded with protocol version 1 and agent `@agentclientprotocol/claude-agent-acp` version 0.70.0.
+- The latest post-verification npm log contains no `ENOENT` or npm error code, all diagnostic Claude ACP processes exited, and the live OpenKnowledge server remained running.
 
 ## Technical Decisions
 | Decision | Rationale |
 |----------|-----------|
 | Rename the exact partial cache and let npm rebuild it | Reversible, scoped to the proven faulty state, and restores all derived metadata together. |
 | Keep stale global `@openai/codex@0.120.0` untouched | PATH resolves the healthy signed Homebrew cask 0.150.1; unrelated cleanup is outside this incident. |
+| Keep native Claude and OpenKnowledge configuration unchanged | The failure was before wrapper startup; both runtime and registry compatibility checks passed. |
 
 ## Issues Encountered
 | Issue | Resolution |

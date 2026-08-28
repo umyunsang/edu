@@ -39,3 +39,13 @@
 - Confirmed the exact Claude ACP 0.70.0 registry package, launcher cwd, and a structurally incomplete npx cache.
 - Confirmed native Claude Code 2.1.250 and a compatible Node runtime; ruled out PATH and declared engine incompatibility.
 - Quarantined only the incomplete Claude cache and rebuilt it with OpenKnowledge's exact registry-pinned command.
+- Completed a real Claude ACP protocol v1 initialize handshake and verified clean process/log teardown.
+
+### Claude Test Results
+| Test | Expected | Actual | Status |
+|------|----------|--------|--------|
+| Rebuilt Claude cache | Root manifests, lock metadata, and `.bin/claude-agent-acp` exist | All expected artifacts exist | PASS |
+| Exact Claude launcher | Adapter starts without cache ENOENT | Launcher installed and exited cleanly | PASS |
+| Claude ACP initialize | Protocol response from Claude ACP 0.70.0 | Protocol v1 response received | PASS |
+| Latest npm log | No ENOENT/error code | No matching error entries | PASS |
+| Process teardown | No diagnostic Claude ACP child remains | No matching process remains | PASS |

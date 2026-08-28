@@ -4,10 +4,10 @@
 Restore both Codex and Claude ACP startup in OpenKnowledge and verify each registry launcher completes initialization without broken npx cache errors.
 
 ## Next Step
-Run an SDK-level Claude ACP initialize handshake and confirm clean logs/process teardown.
+Deliver the verified Claude ACP recovery and instruct the user to start a fresh Claude thread in OpenKnowledge.
 
 ## Current Phase
-Phase 8
+Phase 9
 
 ## Phases
 
@@ -50,15 +50,15 @@ Phase 8
 - **Status:** complete
 
 ### Phase 8: Claude ACP verification
-- [ ] Verify rebuilt cache metadata and executable link
-- [ ] Complete a real ACP initialize handshake
-- [ ] Confirm no new npm ENOENT and no diagnostic processes remain
-- **Status:** in_progress
+- [x] Verify rebuilt cache metadata and executable link
+- [x] Complete a real ACP initialize handshake
+- [x] Confirm no new npm ENOENT and no diagnostic processes remain
+- **Status:** complete
 
 ### Phase 9: Claude delivery
-- [ ] Record root cause, recovery, and scoped verification evidence
-- [ ] Deliver fresh Claude-thread instruction
-- **Status:** pending
+- [x] Record root cause, recovery, and scoped verification evidence
+- [x] Deliver fresh Claude-thread instruction
+- **Status:** complete
 
 ## Decisions Made
 | Decision | Rationale |
