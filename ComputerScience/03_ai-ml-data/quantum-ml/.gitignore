@@ -1,0 +1,10 @@
+# 노트북 실행 부산물 — 재실행하면 그대로 재생성된다.
+# 입력 데이터셋(netflix_titles.csv)과 지원 모듈(create_qnn.py 등)은 추적한다.
+**/output/
+**/data/
+*.pkl
+*.npy
+angle.png
+basis.png
+parameter.json
+.ipynb_checkpoints/
