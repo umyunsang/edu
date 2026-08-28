@@ -1,0 +1,25 @@
+{
+  "name": "edu-openknowledge-slidev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test:slidev-compat": "node tests/slidev-compat/run-cli.mjs",
+    "test:slidev-compat:source": "node --test tests/slidev-compat/*.test.mjs"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.19.1",
+    "@slidev/parser": "52.19.1",
+    "@slidev/theme-default": "0.25.0",
+    "@slidev/types": "52.19.1",
+    "katex": "0.18.4",
+    "mermaid": "11.17.2",
+    "playwright-chromium": "1.61.0",
+    "slidev-addon-openknowledge": "file:packages/slidev-addon-openknowledge",
+    "vue": "3.5.41"
+  },
+  "slidev": {
+    "addons": [
+      "slidev-addon-openknowledge"
+    ]
+  }
+}
