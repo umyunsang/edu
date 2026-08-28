@@ -51,7 +51,7 @@ frontmatter, folder guides, the source ledger, and the OpenKnowledge MCP server.
 Do not migrate notes into `wiki/sources/` or `external-sources/`.
 
 ```bash
-npx -y @inkeep/open-knowledge@latest start --open   # web editor + MCP
+npx -y @inkeep/open-knowledge@latest start          # MCP service; do not auto-open a browser
 npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 ```
 
@@ -110,7 +110,7 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 ## Working with This Vault
 
 - Read every in-scope Markdown file and perform every Markdown mutation through OpenKnowledge MCP.
-- Do not use an existing or Git-deleted study note as the authoring anchor; derive structure and substance from current source PDFs, extracts, and executed notebooks.
+- Reject all prior lane note bodies and gate results. For lecture notes and course indexes, derive structure and substance only from current source PDFs and extracts; use executed notebooks only for practice notes. Existing notes may be inspected only to locate defects, and deleted notes must never be read through Git history.
 - Read the target folder and inherited template menu before writing.
 - Call the OpenKnowledge palette while drafting every source-backed note. Quantitative or interactive findings must not remain prose-only when an official starter gate is satisfied.
 - Use `chart` only for 2–5 comparable, non-negative values on one unit and axis; at least one value must be positive.
@@ -121,18 +121,18 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 - Do not use wikilinks, Dataview fields, hierarchical tags, original-PDF images, PDF links, or visible `p.N` citations in rewritten notes.
 - Every lecture, course-index, and practice note keeps `slides: true` and uses `---` separators between logical slide units.
 - Run OpenKnowledge lint with fixes immediately after template instantiation, then a scoped audit whose `ran` includes `markdownlint`, `frontmatter`, `okf`, and `links`.
-- Slidev build/export success proves compilation and export only. Raw Slidev does not render OpenKnowledge `html preview` or `Tabs/Tab`; such documents cannot receive a Slidev visual-compatibility PASS without an official adapter or separately approved compatibility layer.
+- Use the pinned project-local Slidev toolchain and `slidev-addon-openknowledge`. Build/export success proves CLI compilation, component registration, static export, and the explicit test assertions only; viewport fit, visual fidelity, and interaction remain unverified. Never label them PASS without separately authorized visual testing.
 - Directory naming remains field interface first, canonical course folder second — e.g., `03_ai-ml-data/machine-learning`, `04_systems-infrastructure/operating-systems`.
 - Relationship typing is deferred until the source-backed rewrite is complete.
 
 ## Verification Before Committing
 
 ```bash
+npm run test:slidev-compat
 node scripts/check_mermaid.mjs --dir "ComputerScience"
 npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
-python3 scripts/register_pdf_sources.py
-slidev build "<note>.md" --out "/tmp/<note>-slidev-build"
-slidev export "<note>.md" --output "/tmp/<note>-slidev.pdf"
+./node_modules/.bin/slidev build "<note>.md" --out "/tmp/<note>-slidev-build"
+./node_modules/.bin/slidev export "<note>.md" --output "/tmp/<note>-slidev.pdf"
 ```
 
 Also run the OpenKnowledge MCP audit on the exact course path and confirm that `ran` includes `markdownlint`, `frontmatter`, `okf`, and `links`.
