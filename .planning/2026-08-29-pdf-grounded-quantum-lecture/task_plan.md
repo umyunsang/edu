@@ -14,13 +14,15 @@ All note content previously written by any delegated lane is rejected and may be
 - Do not add Obsidian wikilinks, Dataview, or hierarchical tags.
 - Preserve source errors and mark them as source errors when present.
 - Do not commit or push until the user requests it; never stage unrelated or dot-directory changes.
+- Every rewritten study note must carry `slides: true` in frontmatter so OpenKnowledge can open it as a Slidev job.
+- Render validation is performed only with the Slidev CLI build path. Do not use browser, preview URL, screenshot, DOM, or rsvg checks.
 
 ## Phases
 
 1. [in_progress] Reject every prior course output and prior gate result, including the thin and duplicated template-driven notes. Rebuild in place from source PDFs/extracts with the official OpenKnowledge skill, lecture-note template, palette starters, and project Mermaid skill as the component contract, while deriving each document's substance and section order from its own PDF segment.
 2. [pending] Per course, read its sources and the official template before writing; apply only official markdown-native components, Tabs, and unmodified palette-starter structures populated with source-grounded data.
 3. [pending] Keep the copyright override: omit source slide images and text-only page citations despite the template's evidence-image section.
-4. [pending] Per course, validate only through OpenKnowledge write/edit warnings, lint, audit, and Mermaid write warnings. Do not open browsers, use preview URLs, take screenshots, or perform DOM/render verification.
+4. [pending] Per course, validate through OpenKnowledge write/edit warnings, lint, audit, Mermaid write warnings, and Slidev CLI build. Do not open browsers, use preview URLs, take screenshots, or perform DOM/rsvg verification.
 5. [pending] Report course component totals only after the official-template rewrite; no prior totals are accepted.
 6. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
 7. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
@@ -36,3 +38,11 @@ All note content previously written by any delegated lane is rejected and may be
 - Write for scanning rather than essay reading: short keyword-led bullets, numbered procedures, and compact lead sentences. Do not use long narrative paragraphs or turn the entire note into one bullet list.
 - Choose official components by information shape: Mermaid for flow/relationships, Tabs and tables for comparison, stat-cards/charts for source quantities, interactive-control for source-backed parameter effects, details for optional depth, and callouts for errors/risks. Diversity must improve comprehension, not satisfy a count.
 - Keep the document substantial by distributing source-backed information across compact bullets and multiple appropriate official visuals. Do not reduce source coverage to make the note shorter, and do not inflate length with narrative prose; each visual must carry information that prose does not merely repeat.
+- Treat Slidev compilation as the render gate: a note is not render-valid merely because OpenKnowledge lint/audit is clean.
+
+## 2026-08-29 Project-template and Slidev reset
+
+- The project root had no `.ok/templates/`, so agents had no project-wide authoring contract. `ComputerScience/.ok/templates/` existed but its same-name templates overrode any future root template and still required slide images/PDF links, contradicting the current copyright rule.
+- Authoring stays paused while root project templates are created and every same-name folder override is aligned or removed.
+- All lecture/practice/index templates must include `slides: true` where the document is intended to open as a deck.
+- OpenKnowledge's documented slides plugin is enabled through project config; render checking thereafter uses Slidev CLI builds only.
