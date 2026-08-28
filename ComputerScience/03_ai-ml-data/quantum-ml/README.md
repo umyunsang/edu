@@ -65,6 +65,20 @@ flowchart TB
 > [!tip] 순서의 이유
 > ==상태 표현==을 이해한 뒤 게이트와 회로를 읽으면, 측정값을 단순한 숫자가 아니라 설계 결과로 해석할 수 있다.
 
+## 노트 목록
+
+- [표현력의 한계](<./notes/01. 표현력의 한계.md>)
+- [왜 양자 컴퓨팅인가](<./notes/02. 왜 양자 컴퓨팅인가.md>)
+- [Bit와 Qubit](<./notes/03. Bit와 Qubit.md>)
+- [Quantum Feature Space](<./notes/04. Quantum Feature Space.md>)
+- [QML에서 Quantum의 역할](<./notes/05. QML에서 Quantum의 역할.md>)
+- [Hadamard Gate](<./notes/06. Hadamard Gate.md>)
+- [상태변화 분석](<./notes/07. 상태변화 분석.md>)
+- [Quantum Gate 개념](<./notes/08. Quantum Gate 개념.md>)
+- [Quantum Circuit](<./notes/09. Quantum Circuit.md>)
+- [Quantum Circuit과 QML](<./notes/10. Quantum Circuit과 QML.md>)
+- [양자 ML 과정](<./notes/양자 ML 과정.md>)
+
 | 구간 | 주된 질문 | 다음 단계 |
 | :-- | :-- | :-- |
 | 기초 | 무엇을 표현하는가 | 상태 |
