@@ -56,3 +56,10 @@
 | Requested physics-slide render p011 does not exist | 1 | Enumerated the exact asset family; embed only available pages and avoid a textual page citation. |
 | Verification script used an invalid quoted object shorthand before any tool call | 1 | Pass the path variable as a normal object property in the corrected read-only request. |
 | Verification script's command template literal was rejected by the host parser | 1 | Build safe grep commands with ordinary string concatenation. |
+## 2026-08-29 SVG overflow gate
+
+- Completed SVG-only rendering QA without opening whole note pages: quantum-lecture 46 SVGs, quantum-ml 20 SVGs, neural-networks 3 SVGs.
+- Fixed confirmed geometry faults in 7 visuals across 6 notes: quantum-lecture 4, quantum-ml 2, neural-networks 1. Every repaired SVG was rerendered at 320px and 390px without clipping or horizontal overflow.
+- Scoped OpenKnowledge audits are clean: quantum-lecture 8 docs, quantum-ml 11 docs, neural-networks 5 docs.
+- Keep the separate risk visible: most quantum-lecture diagrams still use tiny projected mobile type; that is not an overflow defect and was not silently redesigned in this pass.
+- Began three isolated course lanes: generative-ai-fine-tuning, large-language-models, and ai-system-design.
