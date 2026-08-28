@@ -22,7 +22,7 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 5. [complete] Count quantum-lecture components and source-slide embeds; all notes clear the quality floor.
 6. [complete] Run scoped markdown, frontmatter, OKF, and link validation; report the quantum-lecture metrics.
 7. [complete] Render and repair inline SVG learning visuals in the completed courses. Confirmed clipping or horizontal overflow was fixed with 320px and 390px SVG renders; mobile typography is recorded separately rather than silently hidden.
-8. [in_progress] Resume phases 2 through 6 course-by-course for every course with source PDFs. Parallel owned lanes: generative-ai-fine-tuning, large-language-models, and ai-system-design.
+8. [in_progress] Quality-reset every completed and future course against the official OpenKnowledge template, palette, component/preview guidance, KaTeX syntax, and Mermaid layout skill. Replace the production-line marker recipe with purpose-built themed HTML previews, charts, interactive controls, responsive SVG, and concise Mermaid. New quality-rebuild agents use `gpt-5.6-terra` at `xhigh`.
 9. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
 10. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
 
