@@ -96,4 +96,5 @@
 - The first reset drafts exposed another rejected pattern: mechanically placing multiple palette starters in a note. Writers are now replacing those drafts with topic-relevant selections only, while retaining the 10 meaningful-component floor.
 - `quantum-lecture` and `quantum-ml` have now been rewritten under the superseding contract. Their only recorded validation surface is OpenKnowledge write/edit warnings plus lint/audit and Mermaid write warnings; no rendering claim is attached. The next independent course lane is computer-vision.
 - `neural-networks` has also completed the same rewrite and its per-note component inventory (all notes remain above the meaningful-component floor after excluding common template structure). Its next lane is ai-system-design.
+- `computer-vision` has completed the official-template rewrite with one topic-relevant palette starter per document and OpenKnowledge static validation only. Its next lane is big-data-analysis.
 - All previous quality and progress metrics below are historical rejected output, not acceptance evidence.
