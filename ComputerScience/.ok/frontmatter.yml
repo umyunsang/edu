@@ -1,9 +1,18 @@
-# 이 파일은 OpenKnowledge가 에이전트에게 폴더의 의미를 알려주는 가이드다.
-# 사람은 Obsidian 폴더 트리를 보고, LLM은 이 설명을 본다.
-# scripts/generate_folder_guides.py 로 생성됨 — 손으로 고쳐도 되지만 스크립트도 같이 갱신할 것.
-title: "Computer Science & AI 커리큘럼"
-description: "학부 전 과정의 강의 아카이브. 8개 분야 인터페이스 폴더 아래에 수업 폴더가 있고, 각 수업 폴더는 원본 강의자료(`pdf/`)와 그것을 근거로 쓴 정리문서(폴더 루트 `.md`)로 구성된다. 학년/학기는 폴더가 아니라 각 노트의 `semester` 프론트매터에 기록된다. 노트 작성 규격은 `docs/knowledge-schema.md` 를 따른다."
+title: Computer Science & AI 커리큘럼
+description: "학부 전 과정의 강의 아카이브. 8개 분야 폴더 아래에 수업 폴더가 있고, 각 수업 폴더는 원본 강의자료(pdf/)와
+  그것을 근거로 쓴 정리문서(폴더 루트 .md)로 구성된다. —— 작성 규칙: (1) 모든 노트는 lecture-note 템플릿에서 시작한다.
+  (2) 정량·비교·분포 데이터는 반드시 html preview 차트로 보여준다 — 산문과 표만으로 끝내지 않는다. (3) 차트·카드의 색은
+  var(--chart-1..5), var(--foreground), var(--card), var(--border),
+  var(--radius) 토큰만 쓴다. hex 하드코딩은 다크모드에서 깨진다. (4) mermaid 에도 style fill 로 색을
+  지정하지 않는다. 지원 문법은 flowchart·sequence·class·state·ER·gantt·pie 이며 mindmap 은 지원되지
+  않는다. (5) 긴 유도·전체 코드·곁가지는 <details> 로 접는다. 자가점검 문답은 > [!question]- 로 접는다. (6)
+  정의가 처음 등장하는 핵심 용어는 ==하이라이트== 한다. (7) 같은 개념의 수식·코드·직관을 나란히 볼 때는 <Tabs> 를 쓴다.
+  (8) 문서 간 참조는 표준 마크다운 링크만 쓴다. 위키링크 [[...]] 는 쓰지 않는다. (9) Obsidian 전용
+  문법(Dataview 인라인 필드 domain:: module:: 등)은 쓰지 않는다. (10) 관계는 타입을 밝힌다 —
+  prerequisite / uses / generalizes / contrasts / applies-to / taught-in 중 하나를
+  고르고 한 줄 이유를 붙인다. 타입 없는 related 나열은 금지한다. (11) 모든 사실 진술은 슬라이드 페이지를 근거로 달고, 가능하면
+  assets/ 의 페이지 PNG 를 임베드한다."
 tags:
   - curriculum
   - archive
-  - obsidian
+  - openknowledge
