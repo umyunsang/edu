@@ -21,9 +21,10 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 4. [complete] Rebuild the remaining quantum-lecture notes with zero source-slide embeds.
 5. [complete] Count quantum-lecture components and source-slide embeds; all notes clear the quality floor.
 6. [complete] Run scoped markdown, frontmatter, OKF, and link validation; report the quantum-lecture metrics.
-7. [in_progress] Repeat phases 2 through 6 course-by-course for every course with source PDFs. Completed quantum-lecture, quantum-ml, and neural-networks; selected generative-ai-fine-tuning next.
-8. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
-9. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
+7. [in_progress] Render and repair only inline SVG learning visuals in the completed courses. Test the SVG viewBox, text boundaries, and 390px container width; fix confirmed clipping or horizontal overflow before proceeding.
+8. [pending] Resume phases 2 through 6 course-by-course for every course with source PDFs after the SVG render gate passes. Completed source conversion: quantum-lecture, quantum-ml, and neural-networks; generative-ai-fine-tuning remains next for reconstruction.
+9. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
+10. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
 
 ## Quality floor per lecture note
 
