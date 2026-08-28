@@ -79,3 +79,5 @@
 - Active parallel courses: artificial-intelligence and operating-systems.
 - Completed `artificial-intelligence`: 29 notes plus README, 116 callouts / 29 HTML previews / 29 details / 29 Tabs / 0 source embeds; 30-document audit and lint clean. Six source issues remain warnings rather than corrected material.
 - Active parallel courses: operating-systems and database-systems.
+- Completed `operating-systems`: 15 notes plus README, 60 callouts / 30 HTML previews / 30 details / 15 Tabs / 15 Mermaid / 0 source embeds; 16-document audit and lint clean. Valid assessment notes use 90–92; source-less MYBOX materials, an operational handout, and a duplicate are explicitly excluded.
+- Active parallel courses: database-systems and linux.
