@@ -1,136 +1,95 @@
 ---
-title: 00. 양자 ML 인덱스
-description: 양자머신러닝 과정의 진입점. 고전 모델의 한계에서 시작해 첫 QML 회로 조립까지 10편의 학습 경로를 안내한다.
+title: quantum-ml
+description: quantum-ml 과목의 진입점. 정리문서·원본 자료·실습을 잇는다.
 type: course-index
 tags:
-  - quantum
-  - qml
-  - index
+- course
 course: quantum-ml
-semester: summer
-status: stable
-aliases:
-  - 양자 ML 인덱스
-  - Quantum ML MOC
-  - QML 학습 경로
-created: 2026-08-28
-updated: 2026-08-28
+semester: ''
+status: draft
+created: '2026-08-28'
+updated: '2026-08-28'
 ---
-> [!abstract] 이 과정이 다루는 것
-> 고전 머신러닝이 **표현력에서 막히는 지점**에서 출발해,
-> 양자 상태·게이트·회로를 차례로 쌓고, 마지막에 처음으로 QML 회로를 조립한다.
 
 ## 학습 경로
 
+번호는 강의 진도 순이다. 앞 문서를 읽었다는 전제로 다음 문서가 쓰인다.
+
 ```mermaid
-flowchart TB
-    subgraph M1["동기 — 왜 양자인가"]
-        N1["01. 표현력의 한계"] --> N2["02. 왜 양자 컴퓨팅인가"]
-    end
-    subgraph M2["기초 — 상태와 공간"]
-        N3["03. Bit와 Qubit"] --> N4["04. Quantum Feature Space"]
-        N4 --> N5["05. QML에서 Quantum의 역할"]
-    end
-    subgraph M3["연산 — 게이트"]
-        N6["06. Hadamard Gate"] --> N7["07. 상태변화 분석"]
-        N7 --> N8["08. Quantum Gate 개념"]
-    end
-    subgraph M4["조립 — 회로"]
-        N9["09. Quantum Circuit"] --> N10["10. Quantum Circuit과 QML"]
-    end
-    M1 --> M2
-    M2 --> M3
-    M3 --> M4
+flowchart LR
+    N0["01. 표현력의 한계"]
+    N1["02. 왜 양자 컴퓨팅인가"]
+    N2["03. Bit와 Qubit"]
+    N3["04. Quantum Feature S…"]
+    N4["05. QML에서 Quantum의 역할"]
+    N5["06. Hadamard Gate"]
+    N6["07. 상태변화 분석"]
+    N7["08. Quantum Gate 개념"]
+    N8["09. Quantum Circuit"]
+    N9["10. Quantum Circuit과 …"]
+    N0 --> N1
+    N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6
+    N6 --> N7
+    N7 --> N8
+    N8 --> N9
 ```
 
-## 노트 목록
+## 정리문서
 
-| # | 노트 | 다루는 것 |
-| :-- | :-- | :-- |
-| 01 | [표현력의 한계](<./notes/01. 표현력의 한계.md>) | XOR 데이터로 선형 모델이 무너지는 것을 직접 확인 |
-| 02 | [왜 양자 컴퓨팅인가](<./notes/02. 왜 양자 컴퓨팅인가.md>) | 고전 컴퓨팅과의 근본적 차이 |
-| 03 | [Bit와 Qubit](<./notes/03. Bit와 Qubit.md>) | 값과 상태의 구분 |
-| 04 | [Quantum Feature Space](<./notes/04. Quantum Feature Space.md>) | 데이터가 도착하는 고차원 공간 |
-| 05 | [QML에서 Quantum의 역할](<./notes/05. QML에서 Quantum의 역할.md>) | Encoding → Feature Map → Variational → Measurement 4단계 |
-| 06 | [Hadamard Gate](<./notes/06. Hadamard Gate.md>) | 중첩을 만드는 가장 기본 게이트 |
-| 07 | [상태변화 분석](<./notes/07. 상태변화 분석.md>) | Gate 추가·반복·순서가 상태를 바꾸는 방식 |
-| 08 | [Quantum Gate 개념](<./notes/08. Quantum Gate 개념.md>) | 유니터리 연산과 대표 게이트 5종 |
-| 09 | [Quantum Circuit](<./notes/09. Quantum Circuit.md>) | 게이트를 순서대로 나열한 계산 구조 |
-| 10 | [Quantum Circuit과 QML](<./notes/10. Quantum Circuit과 QML.md>) | Feature Map + Ansatz 로 첫 QML 회로 조립 |
+모두 `notes/` 에 있다. 총 11편.
+
+| 문서 | 다루는 내용 |
+| :-- | :-- |
+| [01. 표현력의 한계](<./notes/01. 표현력의 한계.md>) | XOR 데이터로 선형 모델의 한계를 직접 확인하고, Feature Engineering이 왜 필요해지는지를 실습으로 보인다. |
+| [02. 왜 양자 컴퓨팅인가](<./notes/02. 왜 양자 컴퓨팅인가.md>) | AI 발전의 다음 단계로 양자가 거론되는 이유를, Bit의 물리적 한계와 데이터 폭증이라는 두 방향에서 정리한다. |
+| [03. Bit와 Qubit](<./notes/03. Bit와 Qubit.md>) | Bit를 늘리는 것으로 해결되지 않는 네 가지 문제를 짚고, 그 대안으로 Qubit이 등장한 과정을 정리한다. |
+| [04. Quantum Feature Space](<./notes/04. Quantum Feature Space.md>) | Feature Space의 정의에서 출발해, 고전 데이터를 양자 상태로 옮기는 3단계와 그것이 표현력을 높이는 이유를 정리한다. |
+| [05. QML에서 Quantum의 역할](<./notes/05. QML에서 Quantum의 역할.md>) | QML을 Encoding → Feature Map → Variational Circuit → Measurement 네 단계로 분해하고, 각 단계가 맡는 일과 Classical ML과의 차이를 정리한다. |
+| [06. Hadamard Gate](<./notes/06. Hadamard Gate.md>) | Quantum Gate가 값이 아니라 상태를 바꾸는 연산임을 세우고, H Gate가 왜 단순한 50/50 생성기가 아닌지를 설명한다. |
+| [07. 상태변화 분석](<./notes/07. 상태변화 분석.md>) | Gate가 큐비트의 가능성 구조를 어떻게 바꾸는지를 세 실습으로 확인한다 — Gate 추가, 반복 적용, 순서 변경. |
+| [08. Quantum Gate 개념](<./notes/08. Quantum Gate 개념.md>) | Quantum Gate를 유니터리 행렬 연산으로 정의하고, 대표 게이트 5종(X·Y·Z·H·CNOT)을 Logic Gate와 대조해 정리한다. |
+| [09. Quantum Circuit](<./notes/09. Quantum Circuit.md>) | 게이트를 순서대로 나열해 회로를 만들고, 회로 구조의 다섯 요소가 왜 결과를 바꾸는지를 정리한다. |
+| [10. Quantum Circuit과 QML](<./notes/10. Quantum Circuit과 QML.md>) | Feature Map 뒤에 학습되는 Variational Circuit을 붙여 첫 QML 회로를 8단계로 조립하고, 1,000회 측정 분포를 읽는다. |
+| [양자 ML 과정](<./notes/양자 ML 과정.md>) | — |
 
 ## 원본 자료
 
-모든 노트는 강의 PDF를 근거로 쓴다. 분량은 강의마다 크게 다르다.
+교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 11건.
 
-```html preview
-<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
-  <h3 style="margin:0 0 4px;font-size:15px;font-weight:600">강의별 슬라이드 분량</h3>
-  <p style="margin:0 0 16px;font-size:13px;color:var(--muted-foreground)">
-    10번과 07번이 가장 무겁다 — 둘 다 실습이 많은 회차다.
-  </p>
-  <div id="pg" style="display:flex;align-items:flex-end;gap:9px;height:150px"></div>
-  <script>
-    var d = [['01', 10], ['02', 5], ['03', 5], ['04', 5], ['05', 11],
-             ['06', 6], ['07', 14], ['08', 7], ['09', 7], ['10', 17]];
-    var mx = 17;
-    document.getElementById('pg').innerHTML = d.map(function (x, i) {
-      return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;' +
-        'gap:5px;height:100%;justify-content:flex-end">' +
-        '<span style="font-size:12px;font-weight:600">' + x[1] + '</span>' +
-        '<div style="width:100%;height:' + (x[1] / mx * 100) + '%;' +
-        'background:var(--chart-' + ((i % 5) + 1) + ');' +
-        'border-radius:var(--radius) var(--radius) 0 0"></div>' +
-        '<span style="font-size:12px;color:var(--muted-foreground)">' + x[0] + '</span>' +
-        '</div>';
-    }).join('');
-  </script>
-</div>
-```
+- `ICTIS_AI_Quantum_Computing_160H_Certificate.pdf`
+- `day01_02_expressive_power_limit_lecture.pdf`
+- `day02_01_why_quantum_computing_lecture.pdf`
+- `day02_02_bit_and_qubit_lecture.pdf`
+- `day02_03_quantum_feature_space_lecture.pdf`
+- `day02_04_quantum_role_in_qml_lecture.pdf`
+- `day05_03_hadamard_gate_concepts_lecture.pdf`
+- `day05_04_quantum_state_transition_analysis_lecture.pdf`
+- `day08_01_quantum_gate_concepts_lecture.pdf`
+- `day10_01_quantum_circuit_lecture.pdf`
+- `day11_04_quantum_circuit_and_qml_lecture.pdf`
 
-<details>
-<summary>노트–PDF 대응표</summary>
+## 실습
 
-| 노트 | 원본 파일 | 페이지 |
-| :-- | :-- | --: |
-| 01 | `day01_02_expressive_power_limit_lecture.pdf` | 10 |
-| 02 | `day02_01_why_quantum_computing_lecture.pdf` | 5 |
-| 03 | `day02_02_bit_and_qubit_lecture.pdf` | 5 |
-| 04 | `day02_03_quantum_feature_space_lecture.pdf` | 5 |
-| 05 | `day02_04_quantum_role_in_qml_lecture.pdf` | 11 |
-| 06 | `day05_03_hadamard_gate_concepts_lecture.pdf` | 6 |
-| 07 | `day05_04_quantum_state_transition_analysis_lecture.pdf` | 14 |
-| 08 | `day08_01_quantum_gate_concepts_lecture.pdf` | 7 |
-| 09 | `day10_01_quantum_circuit_lecture.pdf` | 7 |
-| 10 | `day11_04_quantum_circuit_and_qml_lecture.pdf` | 17 |
+직접 만든 코드와 산출물이다. `work/` 에 있고 총 210건.
 
-</details>
+| 종류 | 개수 |
+| :-- | --: |
+| `.ipynb` | 174 |
+| `.pkl` | 12 |
+| `.csv` | 9 |
+| `.npy` | 6 |
+| `.png` | 4 |
+| `.py` | 2 |
 
-> [!warning] 원본 자료의 알려진 결함
-> 재작성 과정에서 원본 슬라이드 자체의 문제를 발견했다. 각 노트에 명시해 둠.
->
-> - **07번** — 실습 번호 라벨이 뒤바뀜 있다 (p.8은 "실습 3"인데 내용은 반복, p.9~12는 "실습 2"인데 내용은 순서 비교)
-> - **05번** — p.9가 "Feature Map 이해" 라벨이지만 내용은 Variational Circuit
-> - **01번** — 같은 실습의 정확도가 p.8은 0.5, p.9는 0.75로 다르게 적혀 있다
+## 슬라이드 이미지
 
-## 모듈 구성
+정리문서가 근거로 인라인 임베드하는 강의 슬라이드다. `assets/` 에 87장.
 
-원본 강의는 일곱 모듈로 나뉘어 있다. 이 인덱스가 다루는 10편은 그중 앞 두 모듈에 해당한다.
+## 관련 과목
 
-| 모듈 | 주제 | 이 인덱스 포함 |
-| :-- | :-- | :--: |
-| `01.quantum-foundations` | 양자 기초·상태·게이트 | ✓ |
-| `02.circuits-and-encoding` | 회로와 인코딩 | ✓ |
-| `03.variational-learning-and-kernels` | 변분 학습과 커널 | — |
-| `04.quantum-kernel-classification` | 양자 커널 분류 | — |
-| `05.quantum-neural-networks` | 양자 신경망 | — |
-| `06.qaoa-and-combinatorial-optimization` | QAOA와 조합 최적화 | — |
-| `07.capstone` | 종합 프로젝트 | — |
-
-> [!note] 나머지 모듈은 왜 비어 있는가
-> `03` 이후 모듈은 강의 PDF가 없고 **실습 노트북으로만** 구성돼 있다.
-> 해당 구간의 정리문서는 노트북을 근거로 별도 작성한다.
-
-## 이 과정이 연결되는 곳
-
-- **prerequisite** — [신경망 인덱스](<../neural-networks/README.md>) : 고전 신경망의 학습 구조를 알면 Variational Circuit이 쉽게 읽힌다
-- **uses** — [양자 ML 과정](<./notes/양자 ML 과정.md>) : 전체 과정 개요와 모듈 구성
+> [!note] 아직 비어 있다
+> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
