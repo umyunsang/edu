@@ -57,6 +57,8 @@
 contentRules:
   okf:
     enabled: true
+    generate:
+      index: true
   markdownlint:
     enabled: true
   frontmatter:
