@@ -75,3 +75,5 @@
 - Completed `machine-learning`: 21 notes plus README, 84 callouts / 21 HTML previews / 21 details / 21 Tabs / 21 Mermaid / 0 source embeds; 22-document audit and lint clean. Two extraction limits are explicit warnings with no invented reconstruction.
 - Completed `big-data-analysis`: 10 notes plus README, 41 callouts / 20 HTML previews / 20 details / 10 Tabs / 10 Mermaid / 0 source embeds; 11-document audit and lint clean. Declared duplicate and out-of-scope problem-set PDFs remain undocumented.
 - Active parallel courses: ml-projects and artificial-intelligence.
+- Completed `ml-projects`: 10 notes plus README, 40 callouts / 20 HTML previews / 20 details / 10 Tabs / 10 Mermaid / 0 source embeds; 11-document audit and lint clean. Used no notebook evidence because no notebooks exist; excluded only the personal certificate and duplicate files.
+- Active parallel courses: artificial-intelligence and operating-systems.
