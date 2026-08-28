@@ -26,3 +26,5 @@
 | OpenKnowledge exec rejected `nl`, which is outside its read-command allowlist | 1 | Use the structured lint result for line diagnostics instead. |
 | OpenKnowledge exec rejected a grep pattern containing code-fence backticks | 1 | Count component markers with individual safe patterns instead. |
 | Requested physics-slide render p011 does not exist | 1 | Enumerated the exact asset family; embed only available pages and avoid a textual page citation. |
+| Verification script used an invalid quoted object shorthand before any tool call | 1 | Pass the path variable as a normal object property in the corrected read-only request. |
+| Verification script's command template literal was rejected by the host parser | 1 | Build safe grep commands with ordinary string concatenation. |
