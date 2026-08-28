@@ -85,3 +85,11 @@
 - Active parallel courses: linux and computer-networks.
 - Completed `linux`: 15 notes plus README, 60 callouts / 30 HTML previews / 30 details / 15 Tabs / 15 Mermaid / 0 source embeds; 16-document audit and lint clean. The absent week 12, a duplicate week 4, and one week-label mismatch are explicit source issues.
 - Active parallel courses: computer-networks and computer-architecture.
+## 2026-08-29 Full rejection and official-template reset
+
+- The user rejected every previous note rewrite, component count, SVG/render check, and course gate. None of the earlier completion entries are accepted.
+- Do not delete the existing notes without a separate deletion instruction; rewrite them in place.
+- Do not open browsers, resolve preview URLs, take screenshots, inspect DOM output, or run any rendering verification.
+- Required contract for every rework: the official OpenKnowledge skill, lecture-note template, components-and-visuals guidance, palette starters, and project Mermaid skill. Use only official native components, Tabs, and palette-starter structures; do not infer, hand-roll, or add components.
+- The user copyright policy still overrides only the template's source-image/page-citation examples: public notes omit source PDF/assets images and textual page citations.
+- All previous quality and progress metrics below are historical rejected output, not acceptance evidence.

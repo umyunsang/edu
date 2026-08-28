@@ -15,16 +15,13 @@ Rebuild every lecture note in each edu course from its source PDFs and extracted
 
 ## Phases
 
-1. [complete] Establish the OpenKnowledge component palette, source-to-note map, and quantum-ml density baseline.
-2. [complete] Inventory direct source-slide embeds in the existing quantum-lecture notes and define the original-visual replacement rule. Future inventory remains course-scoped.
-3. [complete] Retrofit the five completed quantum-lecture notes, replacing every source slide embed with original SVG or HTML preview visuals.
-4. [complete] Rebuild the remaining quantum-lecture notes with zero source-slide embeds.
-5. [complete] Count quantum-lecture components and source-slide embeds; all notes clear the quality floor.
-6. [complete] Run scoped markdown, frontmatter, OKF, and link validation; report the quantum-lecture metrics.
-7. [complete] Render and repair inline SVG learning visuals in the completed courses. Confirmed clipping or horizontal overflow was fixed with 320px and 390px SVG renders; mobile typography is recorded separately rather than silently hidden.
-8. [in_progress] Quality-reset every completed and future course against the official OpenKnowledge template, palette, component/preview guidance, KaTeX syntax, and Mermaid layout skill. Replace the production-line marker recipe with purpose-built themed HTML previews, charts, interactive controls, responsive SVG, and concise Mermaid. New quality-rebuild agents use `gpt-5.6-terra` at `xhigh`.
-9. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
-10. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
+1. [in_progress] Reject every prior course output and prior gate result. Rebuild in place from source PDFs/extracts with the official OpenKnowledge skill, lecture-note template, palette starters, and project Mermaid skill as the exclusive component contract.
+2. [pending] Per course, read its sources and the official template before writing; apply only official markdown-native components, Tabs, and unmodified palette-starter structures populated with source-grounded data.
+3. [pending] Keep the copyright override: omit source slide images and text-only page citations despite the template's evidence-image section.
+4. [pending] Per course, validate only through OpenKnowledge write/edit warnings, lint, audit, and Mermaid write warnings. Do not open browsers, use preview URLs, take screenshots, or perform DOM/render verification.
+5. [pending] Report course component totals only after the official-template rewrite; no prior totals are accepted.
+6. [pending] Leave `java-programming`, `coding-test`, `degree-portfolio`, `container-orchestration`, and `mathematical-logic` without reconstructed notes because their sources are empty.
+7. [pending] After all rewrites, add graph relationship types in the separately authorized post-rewrite pass.
 
 ## Quality floor per lecture note
 
