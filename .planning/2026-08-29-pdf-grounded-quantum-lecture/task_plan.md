@@ -27,7 +27,9 @@ All note content previously written by any delegated lane is rejected and may be
 
 ## Quality floor per lecture note
 
-- At least 10 meaningful components across official callouts, `html preview` palette starters, `details`, `Tabs`, Mermaid, highlights, and math.
+- Cover every substantive heading, example, procedure, source quantity, caveat, and error in the assigned PDF segment, or explicitly record why a sparse fragment cannot support prose.
+- At least 10 meaningful components may be used where the source supports them, but component count never substitutes for explanation depth.
 - Zero direct source-slide image embeds.
-- Use an official palette visual starter when it adds explanatory value; never add decorative repetition.
+- Use an official palette visual starter only when its labels and values are directly grounded in the assigned source segment; otherwise omit it. Never invent numeric data for visual density.
 - Component count is not a proxy for source coverage. Each note must preserve the distinct concepts, examples, procedures, equations, caveats, and narrative depth of its assigned PDF segment, with no copied generic body between sibling notes.
+- Before a course gate, compare sibling notes for duplicated substantive prose, identical generic tables/questions, repeated visual data, and shared source facts. Any unexplained overlap rejects the entire course batch.
