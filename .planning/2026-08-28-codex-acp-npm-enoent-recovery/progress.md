@@ -3,7 +3,7 @@
 ## Session: 2026-08-28
 
 ### Current Status
-- **Phase:** 3 - Contained recovery
+- **Phase:** 5 - Delivery complete
 - **Started:** 2026-08-28
 
 ### Actions Taken
@@ -12,13 +12,22 @@
 - Confirmed OpenKnowledge 0.64.1 is the active desktop host and the edu vault is open from `/Users/um-yunsang/work/edu`.
 - Confirmed the referenced npx cache directory exists without `package.json`.
 - Identified the exact registry-pinned ACP package and confirmed the initial npx install was interrupted mid-reify.
+- Quarantined only the partial cache and rebuilt it with OpenKnowledge's exact launcher command.
+- Verified cache manifests, executable symlink, and a successful ACP protocol initialize response.
+- Stopped all diagnostic ACP processes after verification.
 
 ### Test Results
 | Test | Expected | Actual | Status |
 |------|----------|--------|--------|
+| Rebuilt cache structure | Root manifests, lock metadata, and `.bin/codex-acp` exist | All expected artifacts exist | PASS |
+| Exact launcher process | `codex-acp` and nested Codex app-server start | Both processes started without ENOENT | PASS |
+| ACP initialize | Protocol response from Codex ACP 1.7.0 | Protocol v1 response received | PASS |
+| Latest npm log | No ENOENT/error code | No matching error entries | PASS |
 
 ### Errors
 | Error | Resolution |
 |-------|------------|
 | `permission denied` invoking planning initializer directly | Re-ran through `sh`; files were created. |
 | Recursive log search traversed huge Codex session JSONL files | Narrowed future inspection to OpenKnowledge-owned files and bounded file sizes. |
+| `write_stdin` found the non-TTY session's stdin closed | Used an ACP SDK client with explicit child pipes. |
+| Preliminary interactive diagnostic remained alive | Sent SIGTERM to the single test npm parent; children exited. |
