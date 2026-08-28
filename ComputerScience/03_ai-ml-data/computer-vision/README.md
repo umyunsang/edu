@@ -17,18 +17,16 @@ updated: '2026-08-28'
 
 ## 정리문서
 
-모두 `notes/` 에 있다. 총 8편.
+모두 `notes/` 에 있다. 총 6편.
 
 | 문서 | 다루는 내용 |
 | :-- | :-- |
-| [Computer_Vision_1_overview_v1.1](<./notes/Computer_Vision_1_overview_v1.1.md>) | — |
-| [Computer_Vision_2_2D_Image_Processing_v1.1](<./notes/Computer_Vision_2_2D_Image_Processing_v1.1.md>) | — |
-| [Computer_Vision_3_2D_Image_Processing_2_v1.1](<./notes/Computer_Vision_3_2D_Image_Processing_2_v1.1.md>) | — |
-| [Computer_Vision_4_Feature_Extraction_and_Matching_v1.5](<./notes/Computer_Vision_4_Feature_Extraction_and_Matching_v1.5.md>) | — |
-| [Computer_Vision_5_Stereo_Vision_v1.0](<./notes/Computer_Vision_5_Stereo_Vision_v1.0.md>) | — |
-| [컴퓨터비전 중간고사 정리](<./notes/중간고사_컴퓨터비전_정밀분석_정리.md>) | — |
-| [기말고사 컴퓨터비전 예상문항](<./notes/컴퓨터비전_기말고사_예상문항.md>) | — |
-| [기말고사 컴퓨터비전 정리](<./notes/컴퓨터비전_기말고사_정리.md>) | — |
+| [01. 컴퓨터 비전 개요](./notes/01.%20컴퓨터%20비전%20개요.md) | 비전의 주요 문제와 학습 흐름 |
+| [02. 2D 영상 처리와 기하 변환](./notes/02.%202D%20영상%20처리와%20기하%20변환.md) | 명암·모폴로지·동차 좌표·OpenCV 배열 |
+| [03. 코너·분할과 영상 품질](./notes/03.%20코너·분할과%20영상%20품질.md) | Harris·SLIC·N-cut·PSNR·SSIM |
+| [04. 특징 매칭과 호모그래피](./notes/04.%20특징%20매칭과%20호모그래피.md) | 대응점·호모그래피·RANSAC |
+| [05. 스테레오 비전과 깊이 추정](./notes/05.%20스테레오%20비전과%20깊이%20추정.md) | disparity·깊이 지도·스테레오 매칭 |
+| [06. 3D 기하와 카메라 파라미터](./notes/06.%203D%20기하와%20카메라%20파라미터.md) | 좌표 변환·캘리브레이션·보정 |
 
 ## 원본 자료
 
