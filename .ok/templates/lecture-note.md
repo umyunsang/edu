@@ -1,8 +1,8 @@
 ---
 template:
-  title: 강의 정리문서 — 관계·절차
-  description: 정량값이나 조절 범위가 없는 강의에 사용. Mermaid로 관계·절차를 시각화하고 Callout·Accordion·표를
-    source 구조에 맞게 배치한다.
+  title: 강의 정리문서
+  description: PDF·추출 텍스트의 실제 순서를 따르며 관계는 Mermaid, source 수치·범위가 있으면 palette v1
+    chart·stat-cards·custom-svg·interactive-control을 반드시 사용하는 강의 노트.
   tags:
     - lecture
     - openknowledge
@@ -22,6 +22,7 @@ slides: true
 created: "{{date}}"
 updated: "{{date}}"
 ---
+
 > [!abstract]
 > {핵심 질문과 한 줄 결론}
 
@@ -46,6 +47,10 @@ flowchart TB
 
 - **{핵심어}:** {정의·조건·예시}
 - **{근거}:** {원본에서 확인한 수치·절차·관계}
+
+## 시각적 설명
+
+{필수: palette v1을 다시 호출해 source 정보 형태에 맞는 chart·stat-cards·custom-svg·interactive-control 또는 Tabs·표를 삽입한다. 수치·단위·범위가 없으면 값을 만들지 않고 Mermaid·표로 설명한다}
 
 <details>
 <summary>{선택적 심화 내용}</summary>
