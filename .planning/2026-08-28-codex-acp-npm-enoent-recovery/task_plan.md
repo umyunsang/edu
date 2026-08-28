@@ -4,28 +4,28 @@
 Restore the desktop app's Codex ACP startup and verify that its configured launcher completes initialization without the broken npx cache error.
 
 ## Next Step
-Capture the failing npm log, Codex/Node toolchain, process state, and ACP launcher configuration.
+Wait for launcher/toolchain audits, then quarantine the single partial npx cache and rerun the registry-pinned ACP command.
 
 ## Current Phase
-Phase 1
+Phase 2
 
 ## Phases
 
 ### Phase 1: Failure capture and discovery
 - [x] Record the exact reported ENOENT and ACP symptom
-- [ ] Inspect the npm debug log and broken cache entry
-- [ ] Identify the configured ACP launcher and environment
-- **Status:** in_progress
+- [x] Inspect the npm debug log and broken cache entry
+- [x] Identify the configured ACP launcher and environment
+- **Status:** complete
 
 ### Phase 2: Root-cause diagnosis
-- [ ] Classify cache, launcher, PATH, or package-version failure
-- [ ] Choose the smallest reversible recovery
-- **Status:** pending
+- [x] Classify cache, launcher, PATH, or package-version failure
+- [x] Choose the smallest reversible recovery
+- **Status:** complete
 
 ### Phase 3: Contained recovery
 - [ ] Preserve evidence and repair only the faulty cache/config surface
 - [ ] Reinstall or pin the launcher only if directly supported
-- **Status:** pending
+- **Status:** in_progress
 
 ### Phase 4: Testing and verification
 - [ ] Run the exact launcher outside the app
@@ -42,6 +42,7 @@ Phase 1
 | Decision | Rationale |
 |----------|-----------|
 | Start with live launcher and log evidence | The npx cache path is a symptom; launcher ownership determines the safe fix. |
+| Quarantine the exact cache directory instead of synthesizing missing files | The interrupted install also lacks `.bin` and lock metadata, so a manual manifest would preserve corruption. |
 
 ## Errors Encountered
 | Error | Resolution |
