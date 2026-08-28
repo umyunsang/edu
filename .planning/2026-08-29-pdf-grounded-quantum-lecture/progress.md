@@ -23,6 +23,7 @@
 - Began the Grover/Shor source pass; verified one operator evidence slide and rejected a section-divider slide as technical grounding.
 - Verified the Grover amplitude-rotation and QFT-periodicity slides for direct evidence use.
 - Verified an oracle-structure slide and restricted a public-key slide to contextual rather than procedural use.
+- Replaced `notes/01-1. 양자 알고리즘 소개 — Grover와 Shor.md` and verified a clean scoped audit.
 
 ## Errors
 

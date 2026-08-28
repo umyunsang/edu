@@ -27,6 +27,12 @@
 - A Grover iteration slide directly shows uniform superposition rotating toward a target state. A QFT slide describes extracting hidden periodicity and presents an asymptotic speed comparison; the rewrite will preserve this as a source claim rather than make a broad performance promise.
 - The Grover oracle slide shows an XOR-based Binary Sudoku constraint structure. The inspected public/private-key slide provides cryptography context but not a Shor factoring procedure, so it will be used only as scoped context if at all.
 
+## Grover-Shor verification
+
+- `01-1. 양자 알고리즘 소개 — Grover와 Shor.md` passed OpenKnowledge markdownlint, frontmatter, OKF, and link checks with zero findings.
+- Its measured structure is 4 callouts, 2 HTML previews, 2 details blocks, 1 Tabs block, 1 Mermaid diagram, and 4 embedded rendered slides.
+- The note explicitly limits QFT's displayed speed comparison to the source's QFT stage and records the absent p043-p059 rendered evidence.
+
 ## First-note evidence map
 
 - `01. 양자 기초 게이트 설명` maps to the 31-page gate PDF and its matching extracted text bundle.
