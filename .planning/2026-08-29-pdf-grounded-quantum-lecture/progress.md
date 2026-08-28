@@ -11,6 +11,8 @@
 - Replaced `notes/01. 양자 기초 게이트 설명.md` through OpenKnowledge with a PDF-grounded, visually structured note.
 - Corrected its two initial markdown lint warnings and verified a clean scoped audit, including asset-link integrity.
 - Began the Braket source pass and recorded the first two visually verified console states.
+- Verified the IonQ hardware and notebook-creation slides; the Braket note can now distinguish provider characteristics from the console workflow.
+- Verified the notebook stop action and recorded that the source does not show a GHZ run result.
 
 ## Errors
 

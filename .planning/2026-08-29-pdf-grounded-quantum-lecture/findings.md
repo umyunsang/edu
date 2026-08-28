@@ -29,6 +29,8 @@
 
 - The Braket source is a 12-page console walkthrough, not a general AWS reference; every procedure in the rewrite will be limited to what the captured interface shows.
 - The first two verified slides show the Braket dashboard and device list, including a region selector and availability states.
+- The next verified slides show an IonQ hardware claim and the notebook-instance creation screen; current interface screenshots are treated as the source's captured state, not a claim about today's AWS console.
+- The final verified workflow slide exposes the notebook action menu with a stop action. The source's GHZ slide is only a section marker, so it will not be used as evidence for a successful execution.
 
 ## Open questions
 
