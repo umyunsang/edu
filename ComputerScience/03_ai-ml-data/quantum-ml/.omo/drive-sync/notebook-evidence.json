@@ -11,8 +11,9 @@
  "counts": {
   "total": 174,
   "by_fidelity": {
-   "faithful": 171,
+   "faithful": 167,
    "rewritten": 1,
+   "expression_differs": 4,
    "support_module": 2
   },
   "with_figures": 47,
@@ -426,7 +427,7 @@
    "lecture_pdf": [
     "sources/day01_02_expressive_power_limit_lecture.pdf"
    ],
-   "fidelity": "faithful",
+   "fidelity": "expression_differs",
    "cells": {
     "code": 1,
     "markdown": 2
@@ -460,7 +461,7 @@
    "lecture_pdf": [
     "sources/day01_02_expressive_power_limit_lecture.pdf"
    ],
-   "fidelity": "faithful",
+   "fidelity": "expression_differs",
    "cells": {
     "code": 5,
     "markdown": 7
@@ -767,7 +768,7 @@
    "lecture_pdf": [
     "sources/day01_02_expressive_power_limit_lecture.pdf"
    ],
-   "fidelity": "faithful",
+   "fidelity": "expression_differs",
    "cells": {
     "code": 10,
     "markdown": 13
@@ -862,7 +863,7 @@
    "lecture_pdf": [
     "sources/day01_02_expressive_power_limit_lecture.pdf"
    ],
-   "fidelity": "faithful",
+   "fidelity": "expression_differs",
    "cells": {
     "code": 5,
     "markdown": 8
