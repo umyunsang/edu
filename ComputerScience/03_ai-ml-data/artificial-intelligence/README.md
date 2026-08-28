@@ -2,7 +2,7 @@
 title: 인공지능
 course: artificial-intelligence
 type: lecture-index
-status: active
+status: stable
 tags: []
 ---
 
