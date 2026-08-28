@@ -4,10 +4,10 @@
 Restore both Codex and Claude ACP startup in OpenKnowledge and verify each registry launcher completes initialization without broken npx cache errors.
 
 ## Next Step
-Capture the new Claude failure, identify its exact registry package, and inspect only cache `fca12915ff656968` before recovery.
+Quarantine cache `fca12915ff656968`, rebuild it with the pinned Claude ACP command, then perform a protocol handshake.
 
 ## Current Phase
-Phase 6
+Phase 7
 
 ## Phases
 
@@ -39,15 +39,15 @@ Phase 6
 - **Status:** complete
 
 ### Phase 6: Claude failure capture and diagnosis
-- [ ] Inspect the reported npm log and partial cache structure
-- [ ] Confirm OpenKnowledge's exact Claude ACP package and launcher cwd
-- [ ] Choose the smallest reversible recovery
-- **Status:** in_progress
+- [x] Inspect the reported npm log and partial cache structure
+- [x] Confirm OpenKnowledge's exact Claude ACP package and launcher cwd
+- [x] Choose the smallest reversible recovery
+- **Status:** complete
 
 ### Phase 7: Claude contained recovery
 - [ ] Quarantine only the proven partial Claude npx cache
 - [ ] Rebuild it with the exact registry-pinned launcher
-- **Status:** pending
+- **Status:** in_progress
 
 ### Phase 8: Claude ACP verification
 - [ ] Verify rebuilt cache metadata and executable link
@@ -66,6 +66,7 @@ Phase 6
 | Start with live launcher and log evidence | The npx cache path is a symptom; launcher ownership determines the safe fix. |
 | Quarantine the exact cache directory instead of synthesizing missing files | The interrupted install also lacks `.bin` and lock metadata, so a manual manifest would preserve corruption. |
 | Validate with a real ACP SDK initialize request | Process startup alone would not prove protocol readiness. |
+| Reuse the proven single-cache quarantine pattern for Claude | The Claude cache has the same missing finalization artifacts, while registry, PATH, permissions, runtime engine, and native CLI checks are healthy. |
 
 ## Errors Encountered
 | Error | Resolution |
