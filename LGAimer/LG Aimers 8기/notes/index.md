@@ -11,3 +11,4 @@
 * [07. Lightweight LLM — 비용·서빙·스마트 라우팅](./07.%20Lightweight%20LLM%20%E2%80%94%20%EB%B9%84%EC%9A%A9%C2%B7%EC%84%9C%EB%B9%99%C2%B7%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EB%9D%BC%EC%9A%B0%ED%8C%85.md)
 * [08. 딥러닝 자연어처리와 LLM Agent — 기초부터 응용까지](./08.%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC%EC%99%80%20LLM%20Agent%20%E2%80%94%20%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EC%9D%91%EC%9A%A9%EA%B9%8C%EC%A7%80.md)
 * [09. LLM Decoding — Greedy·Beam·Sampling과 고급 추론](./09.%20LLM%20Decoding%20%E2%80%94%20Greedy%C2%B7Beam%C2%B7Sampling%EA%B3%BC%20%EA%B3%A0%EA%B8%89%20%EC%B6%94%EB%A1%A0.md)
+* [LG Aimers 8기 강의 흐름 지도](./00.%20LG%20Aimers%208%EA%B8%B0%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md)

@@ -15,3 +15,7 @@
 ## source-index
 
 * [LG Aimers 9기 강의자료 원소스](./LG%20Aimers%209%EA%B8%B0%20%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C%20%EC%9B%90%EC%86%8C%EC%8A%A4.md)
+
+## Subdirectories
+
+* [notes](./notes/index.md)
