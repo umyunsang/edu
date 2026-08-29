@@ -1,0 +1,1250 @@
+### [Page 1]
+스트리밍알고리즘(Streaming Algorithms):
+Data without a disk
+빅데이터분석
+컴퓨터AI공학부
+천세진
+
+
+
+### [Page 2]
+동아대학교
+컴퓨터AI공학부
+◼우리는언제데이터집합이언제종료될지모른다
+⚫저장할수가없다
+⚫반복적으로접근하는것은비실용적이다
+⚫데이터는빠르게시스템에도착한다
+⚫데이터베이스에추가하는것이올바르지않을수도있다
+◼데이터가디스크저장에적합하지않으면,
+◼일반화(Generalize)나요약(Summarize)하는것은어떠한가?
+2
+강의목표
+
+
+| 강의목표 ◼ 우리는 언제 데이터 집합이 언제 종료될지 모른다 ⚫ 저장할 수가 없다 ⚫ 반복적으로 접근하는 것은 비실용적이다 ⚫ 데이터는 빠르게 시스템에 도착한다 ⚫ 데이터베이스에 추가하는 것이 올바르지 않을 수도 있다 ◼ 데이터가 디스크 저장에 적합하지 않으면, ◼ 일반화(Generalize)나 요약(Summarize)하는 것은 어떠한 가? |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 2 | 동아대학교 |
+
+
+### [Page 3]
+동아대학교
+컴퓨터AI공학부
+3
+배치와 스트림 처리와의 차이
+https://www.confluent.io/blog/every-company-is-
+becoming-software/
+
+
+| 배치와 스트림 처리와의 차이 https://www.confluent.io/blog/every-company-is- becoming-software/ |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 3 | 동아대학교 |
+
+
+### [Page 4]
+동아대학교
+컴퓨터AI공학부
+◼우리는 언제 데이터 집합이 언제 종료될지 모른다
+⚫저장할 수가 없다
+⚫반복적으로 접근하는 것은 비실용적이다
+⚫데이터는 빠르게 시스템에 도착한다
+⚫데이터베이스에 추가하는 것이 올바르지 않을 수도 있다
+◼데이터가 디스크 저장에 적합하지 않으면,
+◼일반화(Generalize)나 요약(Summarize)하는 것은 어떠한 가?
+4
+강의목표
+구글 검색 쿼리
+위성 이미지 데이터
+텍스트 메세지
+클릭 스트림
+140Hz 빈도의 데이터 수집
+
+
+| 강의목표 ◼ 우리는 언제 데이터 집합이 언제 종료될지 모른다 ⚫ 저장할 수가 없다 ⚫ 반복적으로 접근하는 것은 비실용적이다 ⚫ 데이터는 빠르게 시스템에 도착한다 ⚫ 데이터베이스에 추가하는 것이 올바르지 않을 수도 있다 ◼ 데이터가 디스크 저장에 적합하지 않으면, ◼ 일반화(Generalize)나 요약(Summarize)하는 것은 어떠한 가? 구글 검색 쿼리 위성 이미지 데이터 140Hz 빈도의 데이터 수집 텍스트 메세지 클릭 스트림 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 4 | 동아대학교 |
+
+
+### [Page 5]
+동아대학교
+컴퓨터AI공학부
+◼O(N)으로 데이터를 처리하고 싶다
+⚫데이터 한번만 패싱(single pass)하면서 보는 수준
+5
+강의목표
+처리
+(Process)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+
+
+| 강의목표 ◼ O(N)으로 데이터를 처리하고 싶다 ⚫ 데이터 한번만 패싱(single pass)하면서 보는 수준 처리 데이터 출력 데이터 입력 (Process) (RECORD GONE) (RECORD IN) |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 5 | 동아대학교 |
+
+
+### [Page 6]
+동아대학교
+컴퓨터AI공학부
+◼일반화된 스트림 처리 모델(General Stream Processing Model)
+◼샘플링(Sampling)
+◼조건에 따른 필터링(Filtering data according to a criteria)
+◼구분 요소를 카운팅(Counting Distinct Elements)
+6
+Streaming Topics
+
+
+| Streaming Topics ◼ 일반화된 스트림 처리 모델(General Stream Processing Model) ◼ 샘플링(Sampling) ◼ 조건에 따른 필터링(Filtering data according to a criteria) ◼ 구분 요소를 카운팅(Counting Distinct Elements) |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 6 | 동아대학교 |
+
+
+### [Page 7]
+동아대학교
+컴퓨터AI공학부
+7
+스트림 처리 구조
+스탠딩 쿼리(Standing Queries):
+저장과 영원히 실행
+스탠딩 쿼리(Standing Queries):
+저장과 영원히 실행
+Ad-Hoc(애드혹 쿼리):
+한번 평가
+-- 기대되는 일부 혹은 스트림의 요
+약을 저장하는 것
+Ad-Hoc(애드혹 쿼리):
+한번 평가
+-- 기대되는 일부 혹은 스트림의 요
+약을 저장하는 것
+스트림 질의를 위한 처리
+(Process
+for stream queries)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+
+
+| 스트림 처리 구조 스트림 질의를 위한 처리 데이터 출력 데이터 입력 (Process (RECORD GONE) (RECORD IN) for stream queries) Ad-Hoc(애드혹 쿼리): 스탠딩 쿼리(Standing Queries): 한번 평가 저장과 영원히 실행 -- 기대되는 일부 혹은 스트림의 요 약을 저장하는 것 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 7 | 동아대학교 |
+
+
+### [Page 8]
+동아대학교
+컴퓨터AI공학부
+8
+스트림 처리 구조
+스탠딩 쿼리(Standing Queries):
+저장과 영원히 실행
+스탠딩 쿼리(Standing Queries):
+저장과 영원히 실행
+Ad-Hoc(애드혹 쿼리):
+한번 평가
+-- 기대되는 일부 혹은 스트림의 요
+약을 저장하는 것
+Ad-Hoc(애드혹 쿼리):
+한번 평가
+-- 기대되는 일부 혹은 스트림의 요
+약을 저장하는 것
+스트림 질의를 위한 처리
+(Process
+for stream queries)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+어떻게 우리는 이것을 다룰 수 있을까?
+예로, 지금까지 본 값들의 평균은 무엇인가?
+
+
+| 스트림 처리 구조 스트림 질의를 위한 처리 데이터 출력 데이터 입력 (Process (RECORD GONE) (RECORD IN) for stream queries) Ad-Hoc(애드혹 쿼리): 스탠딩 쿼리(Standing Queries): 한번 평가 저장과 영원히 실행 -- 기대되는 일부 혹은 스트림의 요 약을 저장하는 것 어떻게 우리는 이것을 다룰 수 있을까? 예로, 지금까지 본 값들의 평균은 무엇인가? |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 8 | 동아대학교 |
+
+
+### [Page 9]
+동아대학교
+컴퓨터AI공학부
+9
+스트림 처리 구조
+스트림 질의를 위한 처리
+(Process
+for stream queries)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+전형적인 데이터베이스 관리와 중요한 차이
+- 입력은 시스템 스태프(staff)에 의해 제어되지 않습니다.
+- 입력의 타이밍/비율은 대부분 알 수 없습니다
+
+
+| 스트림 처리 구조 스트림 질의를 위한 처리 데이터 출력 데이터 입력 (Process (RECORD GONE) (RECORD IN) for stream queries) 전형적인 데이터베이스 관리와 중요한 차이 - 입력은 시스템 스태프(staff)에 의해 제어되지 않습니다. - 입력의 타이밍/비율은 대부분 알 수 없습니다 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 9 | 동아대학교 |
+
+
+### [Page 10]
+동아대학교
+컴퓨터AI공학부
+10
+스트림 처리 구조
+스트림 질의를 위한 처리
+(Process
+for stream queries)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+전형적인 데이터베이스 관리와 중요한 차이
+- 입력은 시스템 스태프(staff)에 의해 제어되지 않습니다.
+- 입력의 타이밍/비율은 대부분 알 수 없습니다
+
+
+| 스트림 처리 구조 스트림 질의를 위한 처리 데이터 출력 데이터 입력 (Process (RECORD GONE) (RECORD IN) for stream queries) 전형적인 데이터베이스 관리와 중요한 차이 - 입력은 시스템 스태프(staff)에 의해 제어되지 않습니다. - 입력의 타이밍/비율은 대부분 알 수 없습니다 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 10 | 동아대학교 |
+
+
+### [Page 11]
+동아대학교
+컴퓨터AI공학부
+11
+스트림 처리 구조
+하나의 레코드 대신에,
+레코드들에 대한 슬라이딩 윈도우를 위치시킨다
+.., 5, 2, 23, 11, 23 ,52, 12, 23, 45, 23
+스트림 질의를 위한 처리
+(Process
+for stream queries)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+슬라이딩 윈도우
+
+
+| 스트림 처리 구조 스트림 질의를 위한 처리 데이터 출력 데이터 입력 (Process (RECORD GONE) (RECORD IN) for stream queries) 하나의 레코드 대신에, 레코드들에 대한 슬라이딩 윈도우를 위치시킨다 .., 5, 2, 23, 11, 23 ,52, 12, 23, 45, 23 슬라이딩 윈도우 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 11 | 동아대학교 |
+
+
+### [Page 12]
+동아대학교
+컴퓨터AI공학부
+12
+General Stream Processing Model
+…, 1, 2, 32, 323, 523, 112
+Processor
+입력 스트림
+레코드의 스트림(a stream of records)
+레코드 대신 튜플(tuples) 혹은 요소(elements)라고도 함
+이론적으로, 어떠한 것도 될수 있음. 검색 질의, 숫자, 비트, 이미지 파일 등
+(Generalization,
+Summarization)
+출력 스트림
+
+
+| General Stream Processing Model …, 1, 2, 32, 323, 523, 112 Processor 출력 스트림 입력 스트림 (Generalization, Summarization) 레코드의 스트림(a stream of records) 레코드 대신 튜플(tuples) 혹은 요소(elements)라고도 함 이론적으로, 어떠한 것도 될수 있음. 검색 질의, 숫자, 비트, 이미지 파일 등 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 12 | 동아대학교 |
+
+
+### [Page 13]
+동아대학교
+컴퓨터AI공학부
+13
+General Stream Processing Model
+…, 1, 2, 32, 323, 523, 112
+Processor
+입력 스트림
+(Generalization,
+Summarization)
+출력 스트림
+Ad-hoc queries: one-time 질의
+Standing
+queries
+데이터가 들어올 때마다, 
+항상 수행되는 쿼리
+
+
+| General Stream Processing Model Ad-hoc queries: one-time 질의 …, 1, 2, 32, 323, 523, 112 Processor 입력 스트림 Standing 출력 스트림 queries (Generalization, Summarization) 데이터가 들어올 때마다, 항상 수행되는 쿼리 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 13 | 동아대학교 |
+
+
+### [Page 14]
+동아대학교
+컴퓨터AI공학부
+14
+General Stream Processing Model
+…, 1, 2, 32, 323, 523, 112
+Processor
+입력 스트림
+(Generalization,
+Summarization)
+출력 스트림
+Ad-hoc queries: one-time 질의
+Standing
+queries
+제한된
+메모리
+
+
+| General Stream Processing Model Ad-hoc queries: one-time 질의 …, 1, 2, 32, 323, 523, 112 Processor 입력 스트림 Standing 출력 스트림 queries (Generalization, Summarization) 제한된 메모리 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 14 | 동아대학교 |
+
+
+### [Page 15]
+동아대학교
+컴퓨터AI공학부
+15
+General Stream Processing Model
+…, 1, 2, 32, 323, 523, 112
+Processor
+입력 스트림
+(Generalization,
+Summarization)
+출력 스트림
+Ad-hoc queries: one-time 질의
+Standing
+queries
+제한된
+메모리
+디스크 저장소
+디스크 저장소
+빠른 질의에 대해 적절하지 않음
+
+
+| General Stream Processing Model Ad-hoc queries: one-time 질의 …, 1, 2, 32, 323, 523, 112 Processor 입력 스트림 Standing 출력 스트림 queries (Generalization, Summarization) 제한된 디스크 저장소 메모리 빠른 질의에 대해 적절하지 않음 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 15 | 동아대학교 |
+
+
+### [Page 16]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+16
+샘플링(Sampling)
+처리
+(Process)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 처리 데이터 출력 데이터 입력 (Process) (RECORD GONE) (RECORD IN) |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 16 | 동아대학교 |
+
+
+### [Page 17]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+17
+샘플링(Sampling)
+처리
+(Process)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+유지해야하는 
+데이터?
+유지해야하는 
+데이터?
+제한된
+메모리
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 처리 데이터 출력 데이터 입력 (Process) (RECORD GONE) (RECORD IN) 유지해야하는 데이터? 제한된 메모리 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 17 | 동아대학교 |
+
+
+### [Page 18]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+18
+샘플링(Sampling)
+처리
+(Process)
+데이터 입력
+(RECORD IN)
+데이터 출력
+(RECORD GONE)
+유지해야하는 
+데이터?
+유지해야하는 
+데이터?
+제한된
+메모리
+미래에 수행될
+데이터
+통계 분석 실시
+통계 분석 실시
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 처리 데이터 출력 데이터 입력 (Process) (RECORD GONE) (RECORD IN) 유지해야하는 데이터? 미래에 수행될 데이터 제한된 통계 분석 실시 메모리 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 18 | 동아대학교 |
+
+
+### [Page 19]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+◼간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성
+19
+샘플링(Sampling)
+유지해야하는 
+데이터?
+유지해야하는 
+데이터?
+제한된
+메모리
+record = stream.next()
+if random() <= .05: # 5% 확률로 유지
+memory.write(record)
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 ◼ 간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성 record = stream.next() if random() <= .05: # 5% 확률로 유지 memory.write(record) 유지해야하는 데이터? 제한된 메모리 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 19 | 동아대학교 |
+
+
+### [Page 20]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+◼간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성
+◼문제점: 레코드/튜플은 통계적인 분석을 위한 분석 단위가 될 수 없음
+⚫users_ids for searches, tweets; locations_ids for satellite images
+20
+샘플링(Sampling)
+제한된
+메모리
+미래에 수행될
+데이터
+통계 분석 실시
+통계 분석 실시
+record = stream.next()
+if random() <= .05: # 5% 확률로 유지
+memory.write(record)
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 ◼ 간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성 record = stream.next() if random() <= .05: # 5% 확률로 유지 memory.write(record) ◼ 문제점: 레코드/튜플은 통계적인 분석을 위한 분석 단위가 될 수 없음 ⚫ users ids for searches, tweets; locations ids for satellite images _ _ 미래에 수행될 데이터 제한된 통계 분석 실시 메모리 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 20 | 동아대학교 |
+
+
+### [Page 21]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+◼간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성
+◼문제점: 레코드/튜플은 통계적인 분석을 위한 분석 단위가 될 수 없음
+⚫users_ids for searches, tweets; locations_ids for satellite images
+◼해결책: hash into N= 1/perc buckets; 1 버킷을 유지한다
+21
+샘플링(Sampling)
+record = stream.next()
+if random() <= perc: # perc% 확률로 유지
+memory.write(record)
+If hash(record[‘user_id’]) == 1: # 유지
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 ◼ 간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성 record = stream.next() if random() <= perc: # perc% 확률로 유지 memory.write(record) ◼ 문제점: 레코드/튜플은 통계적인 분석을 위한 분석 단위가 될 수 없음 ⚫ users ids for searches, tweets; locations ids for satellite images _ _ ◼ 해결책: hash into N= 1/perc buckets; 1 버킷을 유지한다 If hash(record[‘user id’]) == 1: # 유지 _ |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 21 | 동아대학교 |
+
+
+### [Page 22]
+동아대학교
+컴퓨터AI공학부
+◼통계적인 분석을 위한 랜덤 샘플링을 생성
+◼간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성
+◼문제점: 레코드/튜플은 통계적인 분석을 위한 분석 단위가 될 수 없음
+⚫users_ids for searches, tweets; locations_ids for satellite images
+◼해결책: hash into N= 1/perc buckets; 1 버킷을 유지한다
+⚫Hash 함수를 저장소만 필요하고; 이것은 standing query가 될 것임
+22
+샘플링(Sampling)
+record = stream.next()
+if random() <= perc: # perc% 확률로 유지
+memory.write(record)
+If hash(record[‘user_id’]) == 1: # 유지
+
+
+| 샘플링(Sampling) ◼ 통계적인 분석을 위한 랜덤 샘플링을 생성 ◼ 간단한 해결책: 도착하는 레코드에 대해 랜덤 숫자를 생성 record = stream.next() if random() <= perc: # perc% 확률로 유지 memory.write(record) ◼ 문제점: 레코드/튜플은 통계적인 분석을 위한 분석 단위가 될 수 없음 ⚫ users ids for searches, tweets; locations ids for satellite images _ _ ◼ 해결책: hash into N= 1/perc buckets; 1 버킷을 유지한다 If hash(record[‘user id’]) == 1: # 유지 _ ⚫ Hash 함수를 저장소만 필요하고; 이것은 standing query가 될 것임 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 22 | 동아대학교 |
+
+
+### [Page 23]
+동아대학교
+컴퓨터AI공학부
+◼Tuples(K,V)
+⚫K는 key이고 V는 value
+◼Key에 중심을 두어 sample을 수행해야함.
+⚫(K,V)의 쌍으로 중심을 두면 안됨.
+23
+Sampling의Generalization
+
+
+| Sampling의 Generalization ◼ Tuples(K,V) ⚫ K는 key이고 V는 value ◼ Key에 중심을 두어 sample을 수행해야함. ⚫ (K,V)의 쌍으로 중심을 두면 안됨. |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 23 | 동아대학교 |
+
+
+### [Page 24]
+동아대학교
+컴퓨터AI공학부
+◼Data = Tuples of the form (EmpID, Dept, Salary)
+◼Query: 부서 내 salary의 average range는 무엇인가?
+24
+Example: Salary Ranges
+EmpID
+Dept
+Salary
+111
+AI
+50000
+222
+CE
+40000
+442
+CE
+50000
+333
+AI
+40000
+
+
+| Example: Salary Ranges ◼ Data = Tuples of the form (EmpID, Dept, Salary) ◼ Query: 부서 내 salary의 average range는 무엇인가? EmpID Dept Salary 111 AI 50000 222 CE 40000 442 CE 50000 333 AI 40000 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 24 | 동아대학교 |
+
+| EmpID | Dept | Salary |
+| --- | --- | --- |
+| 111 | AI | 50000 |
+| 222 | CE | 40000 |
+| 442 | CE | 50000 |
+| 333 | AI | 40000 |
+
+
+### [Page 25]
+동아대학교
+컴퓨터AI공학부
+◼Sample m items uniformly from stream
+⚫Approximate costly computation on small sample
+◼Challenge: don’t know how long stream is
+◼Two solution
+⚫Reservoir sampling
+⚫Min-wise sampling
+25
+샘플링(Sampling)
+
+
+| 샘플링(Sampling) m ◼ Sample items uniformly from stream ⚫ Approximate costly computation on small sample ◼ Challenge: don’t know how long stream is ◼ Two solution ⚫ Reservoir sampling ⚫ Min-wise sampling |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 25 | 동아대학교 |
+
+
+### [Page 26]
+동아대학교
+컴퓨터AI공학부
+◼Sample first m items
+◼N 번째 아이템을 확률 m / n 과 함께 Sample
+◼If sampled, 랜덤으로 이전의 sampled 아이템과 변경
+◼스트림 길이가 k일 때의 확률: 1/k
+◼단점: 병렬처리가 어려움
+26
+Reservoir sampling
+
+
+| Reservoir sampling m ◼ Sample first items m / n ◼ N 번째 아이템을 확률 과 함께 Sample ◼ If sampled, 랜덤으로 이전의 sampled 아이템과 변경 ◼ 스트림 길이가 k일 때의 확률: 1/k ◼ 단점: 병렬처리가 어려움 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 26 | 동아대학교 |
+
+
+### [Page 27]
+동아대학교
+컴퓨터AI공학부
+◼https://github.com/vikotse/Reservoir-
+Sampling/blob/master/reservoir_sampling_py36.py
+27
+Code: Reservoir_sampling
+
+
+| Code: Reservoir sampling _ ◼ https://github.com/vikotse/Reservoir- Sampling/blob/master/reservoir sampling py36.py _ _ |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 27 | 동아대학교 |
+
+
+### [Page 28]
+동아대학교
+컴퓨터AI공학부
+◼속성 x값을 갖는 데이터를 선택하기
+◼예제: 스팸필터를 위한 40B 안전한 이메일 주소가주어졌을 때
+⚫The Bloom Filter (대략적으로, false positives 수락하나 false negatives
+은 허용하지 않음)
+▪어떤 값이 집합에 속해 있는가?를 검사하는 필터 및 이를 구성하는 자료형
+28
+Filtering Data
+
+
+| Filtering Data ◼ 속성 x값을 갖는 데이터를 선택하기 ◼ 예제: 스팸필터를 위한 40B 안전한 이메일 주소가 주어졌을 때 ⚫ The Bloom Filter (대략적으로, false positives 수락하나 false negatives 은 허용하지 않음) ▪ 어떤 값이 집합에 속해 있는가?를 검사하는 필터 및 이를 구성하는 자료형 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 28 | 동아대학교 |
+
+
+### [Page 29]
+동아대학교
+컴퓨터AI공학부
+29
+Bloom Filter를 쓰는 예
+
+
+| Bloom Filter를 쓰는 예 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 29 | 동아대학교 |
+
+
+### [Page 30]
+동아대학교
+컴퓨터AI공학부
+◼A collection of hash functions
+30
+Hash families
+
+
+| Hash families ◼ A collection of hash functions |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 30 | 동아대학교 |
+
+
+### [Page 31]
+동아대학교
+컴퓨터AI공학부
+◼Bloom filter 알고리즘
+31
+Filtering Data
+
+
+| Filtering Data ◼ Bloom filter 알고리즘 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 31 | 동아대학교 |
+
+
+### [Page 32]
+동아대학교
+컴퓨터AI공학부
+◼데이터 스트림에 요소 S가 있다고 가정하고,
+우리는 S가 이전에 보았던 것인지를 알고 싶어함
+◼각 해쉬 함수와 함께 h_k(S)를 계산
+⚫모든 계산된 비트 위치가 1인 경우, 우리는 S를 이전에 보았다고 할 수 있음
+⚫물론, 우리는 잘못 인지할 수 있음
+▪다른 입력이 동일한 비트를 만들어 낼 수 있음
+◼적어도 하나의 비트가 0이라면, 우리는 S는 이전에 보았던 것이
+아님을 이야기할 수 있음
+32
+Filtering Data: Bloom filter
+
+
+| Filtering Data: Bloom filter ◼ 데이터 스트림에 요소 S가 있다고 가정하고, 우리는 S가 이전에 보았던 것인지를 알고 싶어함 ◼ 각 해쉬 함수와 함께 h k(S)를 계산 _ ⚫ 모든 계산된 비트 위치가 1인 경우, 우리는 S를 이전에 보았다고 할 수 있음 ⚫ 물론, 우리는 잘못 인지할 수 있음 ▪ 다른 입력이 동일한 비트를 만들어 낼 수 있음 ◼ 적어도 하나의 비트가 0이라면, 우리는 S는 이전에 보았던 것이 아님을 이야기할 수 있음 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 32 | 동아대학교 |
+
+
+### [Page 33]
+동아대학교
+컴퓨터AI공학부
+Stream 
+element
+H1
+H2
+Filter 
+contents
+25
+59
+85
+64
+33
+Example
+필터의 크기는 11 bits
+H1는 홀수 비트를 선택
+H2는 짝수 비트를 선택
+
+
+| Example 필터의 크기는 11 bits H1는 홀수 비트를 선택 H2는 짝수 비트를 선택 Stream H1 H2 Filter element contents 25 59 85 64 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 33 | 동아대학교 |
+
+| Stream element | H1 | H2 | Filter contents |
+| --- | --- | --- | --- |
+| 25 |  |  |  |
+| 59 |  |  |  |
+| 85 |  |  |  |
+| 64 |  |  |  |
+
+
+### [Page 34]
+동아대학교
+컴퓨터AI공학부
+◼FP(False Positives)가 존재한다는 점만 유의할 것
+34
+Bloom Filter
+
+
+| Bloom Filter ◼ FP(False Positives)가 존재한다는 점만 유의할 것 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 34 | 동아대학교 |
+
+
+### [Page 35]
+동아대학교
+컴퓨터AI공학부
+35
+Confusion Matrix(오차 행렬)
+
+
+| Confusion Matrix(오차 행렬) |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 35 | 동아대학교 |
+
+
+### [Page 36]
+동아대학교
+컴퓨터AI공학부
+◼False positives에 대한 심화분석
+◼가정: m개의 다트를 동등한 확률의 n개 타겟에 던진다고 하자
+◼타겟이 적어도 하나의 다트를 얻을 확률은?
+◼타겟 (n) = 비트수 
+◼던진 다트(km) = 아이템의 해쉬 값
+⚫km = m개 원소 x k 개 해시
+36
+Throwing Darts
+
+
+| Throwing Darts ◼ False positives에 대한 심화분석 ◼ 가정: m개의 다트를 동등한 확률의 n개 타겟에 던진다고 하자 ◼ 타겟이 적어도 하나의 다트를 얻을 확률은? ◼ 타겟 (n) = 비트수 ◼ 던진 다트 (km) = 아이템의 해쉬 값 ⚫ km = m개 원소 x k 개 해시 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 36 | 동아대학교 |
+
+
+### [Page 37]
+동아대학교
+컴퓨터AI공학부
+◼m개의 다트와 n개의 타겟이 존재
+◼타겟이 적어도 하나의 다트를 얻을 확률은?
+37
+Throwing Darts
+( 1  - 1/n ) 
+처음 다트를 던질때, 어떤 타겟이 다트에 의해 히트되지 않을 확률
+= 해시 1회 시 특정 비트 안 맞을 확률
+
+
+| Throwing Darts ◼ m개의 다트와 n개의 타겟이 존재 ◼ 타겟이 적어도 하나의 다트를 얻을 확률은? ( 1 - 1/n ) 처음 다트를 던질때, 어떤 타겟이 다트에 의해 히트되지 않을 확률 = 해시 1회 시 특정 비트 안 맞을 확률 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 37 | 동아대학교 |
+
+
+### [Page 38]
+동아대학교
+컴퓨터AI공학부
+◼m개의 다트와 n개의 타겟이 존재
+◼타겟이 적어도 하나의 다트를 얻을 확률은?
+38
+Throwing Darts
+( 1  - 1/n ) 
+K개의 해시일때,
+k
+( 1  - 1/n ) 
+km
+M개 원소 일때,
+M개 원소 삽입 후 특정 비트가 0일 확률
+
+
+| Throwing Darts ◼ m개의 다트와 n개의 타겟이 존재 ◼ 타겟이 적어도 하나의 다트를 얻을 확률은? km k ( 1 - 1/n ) ( 1 - 1/n ) K개의 해시일때, M개 원소 일때, M개 원소 삽입 후 특정 비트가 0일 확률 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 38 | 동아대학교 |
+
+
+### [Page 39]
+동아대학교
+컴퓨터AI공학부
+◼m개의 다트와 n개의 타겟이 존재
+◼타겟이 적어도 하나의 다트를 얻을 확률은?
+39
+Throwing Darts
+( 1  - 1/n ) 
+적어도 하나의 다트가 타켓에 맞출 확률
+= 특정 비트가 1이 될 확률
+1 -
+km
+
+
+| Throwing Darts ◼ m개의 다트와 n개의 타겟이 존재 ◼ 타겟이 적어도 하나의 다트를 얻을 확률은? km 1 - ( 1 - 1/n ) 적어도 하나의 다트가 타켓에 맞출 확률 = 특정 비트가 1이 될 확률 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 39 | 동아대학교 |
+
+
+### [Page 40]
+동아대학교
+컴퓨터AI공학부
+◼m개의 다트와 n개의 타겟이 존재
+◼False Positive 조건
+⚫새 원소 x가 들어왔을때, 해시 k개 위치가 모두 1이면 
+◼FP 확률
+40
+Throwing Darts
+( 1  - 1/n ) 
+)
+( 1 -
+km
+k
+lim
+𝑛→∞1 −1
+𝑛
+𝑛
+= 1/𝑒
+
+
+| Throwing Darts ◼ m개의 다트와 n개의 타겟이 존재 ◼ False Positive 조건 ⚫ 새 원소 x가 들어왔을때, 해시 k개 위치가 모두 1이면 ◼ FP 확률 k km ( 1 - ( 1 - 1/n ) ) 𝑛 1 lim 1 − = 1/𝑒 𝑛→∞ 𝑛 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 40 | 동아대학교 |
+
+
+### [Page 41]
+동아대학교
+컴퓨터AI공학부
+◼주어진 배열의 1의 비율 =
+FN의 확률 비율=1 −𝑒−𝑘𝑚
+𝑛
+⚫n의 타겟, km은 다트의 수(x원소의 수)
+◼예제: 109 다트, 8*109 타겟
+⚫1의 비율 = 0.1175
+41
+Throwing Darts
+
+
+| Throwing Darts ◼ 주어진 배열의 1의 비율 = 𝑘𝑚 − FN의 확률 비율 = 1 − 𝑒 𝑛 ⚫ n의 타겟, km은 다트의 수(x원소의 수) ◼ 예제: 109 다트, 8*109 타겟 ⚫ 1의 비율 = 0.1175 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 41 | 동아대학교 |
+
+
+### [Page 42]
+동아대학교
+컴퓨터AI공학부
+◼m = 1 billion, n = 8 billions bits
+⚫k = 1: 0.1175
+⚫k = 2: 0.0489
+◼Optimal value of k:
+⚫n / m  * ln(2) = 5.54 ~ 6
+▪ln(2) = 0.69
+⚫Error at k = 6
+▪
+1 −𝑒−3
+4
+6
+= 0.0216
+42
+Optimal number of hash functions
+
+
+| Optimal number of hash functions ◼ m = 1 billion, n = 8 billions bits ⚫ k = 1: 0.1175 ⚫ k = 2: 0.0489 ◼ Optimal value of k: ⚫ n / m * ln(2) = 5.54 ~ 6 ▪ ln(2) = 0.69 ⚫ Error at k = 6 6 3 ▪ − 1 − 𝑒 4 = 0.0216 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 42 | 동아대학교 |
+
+
+### [Page 43]
+동아대학교
+컴퓨터AI공학부
+◼FP(False Positives)가 존재한다는 점만 유의할 것
+43
+(Again) Bloom Filter
+
+
+| (Again) Bloom Filter ◼ FP(False Positives)가 존재한다는 점만 유의할 것 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 43 | 동아대학교 |
+
+
+### [Page 44]
+동아대학교
+컴퓨터AI공학부
+◼Better than Linear search and Binary search
+◼주어진 오류(False Positives)값을 만족하는 BF의 크기 생성
+⚫False positive의 확률(p)= 1 −𝑒−𝑚
+𝑛
+⚫𝑛= −(𝑚∗ln 𝑝)/(ln 2 2)
+◼적절한 Hash function의 개수도 결정
+⚫n / m  * ln(2)
+44
+Bloom Filters (Medium level)
+https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-
+implementation/
+
+
+| Bloom Filters (Medium level) ◼ Better than Linear search and Binary search ◼ 주어진 오류(False Positives)값을 만족하는 BF의 크기 생성 𝑚 − ⚫ False positive의 확률(p) = 1 − 𝑒 𝑛 ⚫ 2 𝑛 = −(𝑚 ∗ ln 𝑝 )/(ln 2 ) ◼ 적절한 Hash function의 개수도 결정 ⚫ n / m * ln(2) https://www.geeksforgeeks.org/bloom-filters-introduction-and-python- implementation/ |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 44 | 동아대학교 |
+
+
+### [Page 45]
+동아대학교
+컴퓨터AI공학부
+◼No false negative를 보장하고, 제한된 메모리로 동작
+⚫비싼 비용의 Checking 이전에 전처리 시 훌륭한 방법임
+⚫병렬 처리가 가능
+⚫False negative
+▪SPAM ID인데 스팸이 아니라고 하는 경우
+◼False positives가 존재하다 (SPAM ID가 아닌데 스팸이라고 하는 경우)
+⚫Hash function의 수에 따라 오류율이 달라질 수 있으며,
+최적화된 개수를 찾는 것도 매우 중요
+45
+Bloom Filter: Wrap-up
+
+
+| Bloom Filter: Wrap-up ◼ No false negative를 보장하고, 제한된 메모리로 동작 ⚫ 비싼 비용의 Checking 이전에 전처리 시 훌륭한 방법임 ⚫ 병렬 처리가 가능 ⚫ False negative ▪ SPAM ID인데 스팸이 아니라고 하는 경우 ◼ False positives가 존재하다 (SPAM ID가 아닌데 스팸이라고 하는 경우) ⚫ Hash function의 수에 따라 오류율이 달라질 수 있으며, 최적화된 개수를 찾는 것도 매우 중요 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 45 | 동아대학교 |
+
+
+### [Page 46]
+동아대학교
+컴퓨터AI공학부
+◼Moments(순간):
+⚫가정: m_i 는 데이터 내 구분 요소 i의 개수
+⚫스트림의 K번째 순간은
+⚫0번째 순간: 구분된 요소의 개수
+⚫1번째 순간: 스트림의 길이
+⚫2번째 순간: 제곱의 합 
+46
+Counting Moments
+
+
+| Counting Moments ◼ Moments(순간): ⚫ 가정: m i 는 데이터 내 구분 요소 i의 개수 _ ⚫ 스트림의 K번째 순간은 ⚫ 0번째 순간: 구분된 요소의 개수 ⚫ 1번째 순간: 스트림의 길이 ⚫ 2번째 순간: 제곱의 합 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 46 | 동아대학교 |
+
+
+### [Page 47]
+동아대학교
+컴퓨터AI공학부
+◼다른 단어들이 웹사이트에서 얼마나 많이 발견되었는가?
+⚫웹페이지를 크롤링할때
+◼각 고객마다 요청한 다른 웹페이지가 얼마나 있는가?
+◼지난 주에 판매한 고유한 상품의 개수는 몇 개인가?
+47
+Applications
+
+
+| Applications ◼ 다른 단어들이 웹사이트에서 얼마나 많이 발견되었는가? ⚫ 웹페이지를 크롤링할때 ◼ 각 고객마다 요청한 다른 웹페이지가 얼마나 있는가? ◼ 지난 주에 판매한 고유한 상품의 개수는 몇 개인가? |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 47 | 동아대학교 |
+
+
+### [Page 48]
+동아대학교
+컴퓨터AI공학부
+◼N개의 요소를 최소 log2 𝑁비트에 매핑하는 해쉬함수를 선택
+◼r(e): The number of trailing 0s
+⚫h(a) = 12, 1100 (binary) r(a) = 2
+⚫R = max
+𝑎
+𝑟(𝑎)
+◼구분된 요소의 추정 개수 = 2^R
+48
+Flajolet-Martin Approach
+
+
+| Flajolet-Martin Approach ◼ N개의 요소를 최소 비트에 매핑하는 해쉬함수를 선택 log 𝑁 2 ◼ r(e): The number of trailing 0s ⚫ h(a) = 12, 1100 (binary) r(a) = 2 ⚫ R = max 𝑟(𝑎) 𝑎 ◼ 구분된 요소의 추정 개수 = 2^R |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 48 | 동아대학교 |
+
+
+### [Page 49]
+동아대학교
+컴퓨터AI공학부
+◼0번째 순간
+49
+Counting Moments
+응용:
+Counting…
+문서 내 구분된 언어
+구분된 웹사이트
+사이트에 방문한  유저
+알렉사/시리 에 요청한 고유한 질의
+응용:
+Counting…
+문서 내 구분된 언어
+구분된 웹사이트
+사이트에 방문한  유저
+알렉사/시리 에 요청한 고유한 질의
+One solution: Set을 유지(hashmap, dictionary, heap)
+문제점: 메모리 내 많은 것을 유지할 수 없음; 디스크 저장은 매우 느림
+
+
+| Counting Moments 응용: Counting… 문서 내 구분된 언어 ◼ 0번째 순간 구분된 웹사이트 사이트에 방문한 유저 알렉사/시리 에 요청한 고유한 질의 One solution: Set을 유지(hashmap, dictionary, heap) 문제점: 메모리 내 많은 것을 유지할 수 없음; 디스크 저장은 매우 느림 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 49 | 동아대학교 |
+
+
+### [Page 50]
+동아대학교
+컴퓨터AI공학부
+◼0번째 순간
+50
+Counting Moments
+응용:
+Counting…
+문서 내 구분된 언어
+구분된 웹사이트
+사이트에 방문한  유저
+알렉사/시리 에 요청한 고유한 질의
+응용:
+Counting…
+문서 내 구분된 언어
+구분된 웹사이트
+사이트에 방문한  유저
+알렉사/시리 에 요청한 고유한 질의
+One solution: Set을 유지(hashmap, dictionary, heap)
+문제점: 메모리 내 많은 것을 유지할 수 없음; 디스크 저장은 매우 느림
+스트리밍 솔루션: Flajolet-Martin(FM) 알고리즘  O(n)
+일반적인 아이디어:
+n - 관찰된 요소들의 (예상되는) 전체 개수
+해쉬 함수 h를 사용하여 각 요소를 매핑하고 log2 n 비트로 매핑
+R   # 마지막부분의 0의 최대 수
+스트림 데이터가 들어올때, 각 스트림 데이터 e:
+r(e) = trailZero(h(e)) # h(e)를 이용하여 trailing 0의 수를 계산
+R = r(e)    if r[e] > R
+추정되는 구분된 요소의 수는 = 2^R
+
+
+| Counting Moments 응용: Counting… 문서 내 구분된 언어 ◼ 0번째 순간 구분된 웹사이트 사이트에 방문한 유저 알렉사/시리 에 요청한 고유한 질의 One solution: Set을 유지(hashmap, dictionary, heap) 문제점: 메모리 내 많은 것을 유지할 수 없음; 디스크 저장은 매우 느림 스트리밍 솔루션: Flajolet-Martin(FM) 알고리즘 O(n) 일반적인 아이디어: n - 관찰된 요소들의 (예상되는) 전체 개수 해쉬 함수 h를 사용하여 각 요소를 매핑하고 log2 n 비트로 매핑 R # 마지막부분의 0의 최대 수 스트림 데이터가 들어올때, 각 스트림 데이터 e: r(e) = trailZero(h(e)) # h(e)를 이용하여 trailing 0의 수를 계산 R = r(e) if r[e] > R 추정되는 구분된 요소의 수는 = 2^R |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 50 | 동아대학교 |
+
+
+### [Page 51]
+동아대학교
+컴퓨터AI공학부
+◼0번째 순간
+51
+Counting Moments
+응용:
+Counting…
+문서 내 구분된 언어
+구분된 웹사이트
+사이트에 방문한  유저
+알렉사/시리 에 요청한 고유한 질의
+응용:
+Counting…
+문서 내 구분된 언어
+구분된 웹사이트
+사이트에 방문한  유저
+알렉사/시리 에 요청한 고유한 질의
+One solution: Set을 유지(hashmap, dictionary, heap)
+문제점: 메모리 내 많은 것을 유지할 수 없음; 디스크 저장은 매우 느림
+스트리밍 솔루션: Flajolet-Martin(FM) 알고리즘  O(n)
+일반적인 아이디어:
+n - 관찰된 요소들의 (예상되는) 전체 개수
+해쉬 함수 h를 사용하여 각 요소를 매핑하고 log2 n 비트로 매핑
+R   # 마지막부분의 0의 최대 수
+스트림 데이터가 들어올때, 각 스트림 데이터 e:
+r(e) = trailZero(h(e)) # h(e)를 이용하여 trailing 0의 수를 계산
+R = r(e)    if r[e] > R
+추정되는 구분된 요소의 수는 = 2^R
+실용적인 부분은 문제가 있음
+Multiple hash functions을 이용하여 결합
+1. log n 크기의 그룹으로 파티션
+2. 그룹의 평균(mean)을 취하고
+3. . 그룹의 평균의 중간값(median)을 취함
+실용적인 부분은 문제가 있음
+Multiple hash functions을 이용하여 결합
+1. log n 크기의 그룹으로 파티션
+2. 그룹의 평균(mean)을 취하고
+3. . 그룹의 평균의 중간값(median)을 취함
+
+
+| Counting Moments 응용: Counting… 문서 내 구분된 언어 ◼ 0번째 순간 구분된 웹사이트 사이트에 방문한 유저 알렉사/시리 에 요청한 고유한 질의 One solution: Set을 유지(hashmap, dictionary, heap) 문제점: 메모리 내 많은 것을 유지할 수 없음; 디스크 저장은 매우 느림 스트리밍 솔루션: Flajolet-Martin(FM) 알고리즘 O(n) 일반적인 아이디어: n - 관찰된 요소들의 (예상되는) 전체 개수 해쉬 함수 h를 사용하여 각 요소를 매핑하고 log2 n 비트로 매핑 R # 마지막부분의 0의 최대 수 스트림 데이터가 들어올때, 각 스트림 데이터 e: 실용적인 부분은 문제가 있음 r(e) = trailZero(h(e)) # h(e)를 이용하여 trailing 0의 수를 계산 Multiple hash functions을 이용하여 결합 R = r(e) if r[e] > R 추정되는 구분된 요소의 수는 = 2^R 1. log n 크기의 그룹으로 파티션 2. 그룹의 평균(mean)을 취하고 3. . 그룹의 평균의 중간값(median)을 취함 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 51 | 동아대학교 |
+
+
+### [Page 52]
+동아대학교
+컴퓨터AI공학부
+◼Input stream = [1,3,2,1,2,3,4,3,1,2,3]
+◼Hash function, h(x) = 6x + 1 mod 5
+52
+Example: Counting Moments (not Scale)
+h(1) = 2
+h(3) = 4
+h(2) = 3
+h(1) = 2
+h(2) = 3
+h(3) = 4
+h(4) = 0
+h(3) = 4
+h(1) = 2
+h(2) = 3
+h(3) = 3
+h(1) = 2
+
+
+| Example: Counting Moments (not Scale) ◼ Input stream = [1,3,2,1,2,3,4,3,1,2,3] ◼ Hash function, h(x) = 6x + 1 mod 5 h(1) = 2 h(4) = 0 h(3) = 4 h(3) = 4 h(2) = 3 h(1) = 2 h(1) = 2 h(2) = 3 h(2) = 3 h(3) = 3 h(3) = 4 h(1) = 2 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 52 | 동아대학교 |
+
+
+### [Page 53]
+동아대학교
+컴퓨터AI공학부
+◼Input stream = [1,3,2,1,2,3,4,3,1,2,3]
+◼Hash function, h(x) = 6x + 1 mod 5
+53
+Example: Counting Moments (not Scale)
+h(1) = 2 = 010
+h(3) = 4 = 100
+h(2) = 3 = 011
+h(1) = 2 = 010
+h(2) = 3 = 011
+h(3) = 4 = 100
+h(4) = 0 = 000
+h(3) = 4 = 100
+h(1) = 2 = 010
+h(2) = 3 = 011
+h(3) = 3 = 100
+h(1) = 2 = 010
+
+
+| Example: Counting Moments (not Scale) ◼ Input stream = [1,3,2,1,2,3,4,3,1,2,3] ◼ Hash function, h(x) = 6x + 1 mod 5 h(1) = 2 = 010 h(4) = 0 = 000 h(3) = 4 = 100 h(3) = 4 = 100 h(2) = 3 = 011 h(1) = 2 = 010 h(1) = 2 = 010 h(2) = 3 = 011 h(2) = 3 = 011 h(3) = 3 = 100 h(3) = 4 = 100 h(1) = 2 = 010 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 53 | 동아대학교 |
+
+
+### [Page 54]
+동아대학교
+컴퓨터AI공학부
+◼Input stream = [1,3,2,1,2,3,4,3,1,2,3]
+◼Hash function, h(x) = 6x + 1 mod 5
+54
+Example: Counting Moments (not Scale)
+h(1) = 2 = 010
+h(3) = 4 = 100
+h(2) = 3 = 011
+h(1) = 2 = 010
+h(2) = 3 = 011
+h(3) = 4 = 100
+h(4) = 0 = 000
+h(3) = 4 = 100
+h(1) = 2 = 010
+h(2) = 3 = 011
+h(3) = 3 = 100
+h(1) = 2 = 010
+1
+2
+
+
+| Example: Counting Moments (not Scale) ◼ Input stream = [1,3,2,1,2,3,4,3,1,2,3] ◼ Hash function, h(x) = 6x + 1 mod 5 h(1) = 2 = 010 h(4) = 0 = 000 h(3) = 4 = 100 h(3) = 4 = 100 h(2) = 3 = 011 h(1) = 2 = 010 1 2 h(1) = 2 = 010 h(2) = 3 = 011 h(2) = 3 = 011 h(3) = 3 = 100 h(3) = 4 = 100 h(1) = 2 = 010 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 54 | 동아대학교 |
+
+
+### [Page 55]
+동아대학교
+컴퓨터AI공학부
+◼Input stream = [1,3,2,1,2,3,4,3,1,2,3]
+◼Hash function, h(x) = 6x + 1 mod 5
+55
+Example: Counting Moments (not Scale)
+h(1) = 2 = 010 =1
+h(3) = 4 = 100 =2
+h(2) = 3 = 011 =0
+h(1) = 2 = 010 =1
+h(2) = 3 = 011 =0
+h(3) = 4 = 100 =2
+h(4) = 0 = 000 =0
+h(3) = 4 = 100 =2
+h(1) = 2 = 010 =1
+h(2) = 3 = 011 =0
+h(3) = 3 = 100 =2
+h(1) = 2 = 010 =1
+
+
+| Example: Counting Moments (not Scale) ◼ Input stream = [1,3,2,1,2,3,4,3,1,2,3] ◼ Hash function, h(x) = 6x + 1 mod 5 h(1) = 2 = 010 =1 h(4) = 0 = 000 =0 h(3) = 4 = 100 =2 h(3) = 4 = 100 =2 h(2) = 3 = 011 =0 h(1) = 2 = 010 =1 h(1) = 2 = 010 =1 h(2) = 3 = 011 =0 h(2) = 3 = 011 =0 h(3) = 3 = 100 =2 h(3) = 4 = 100 =2 h(1) = 2 = 010 =1 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 55 | 동아대학교 |
+
+
+### [Page 56]
+동아대학교
+컴퓨터AI공학부
+◼Input stream = [1,3,2,1,2,3,4,3,1,2,3]
+◼Hash function, h(x) = 6x + 1 mod 5
+56
+Example: Counting Moments (not Scale)
+h(1) = 2 = 010 =1
+h(3) = 4 = 100 =2
+h(2) = 3 = 011 =0
+h(1) = 2 = 010 =1
+h(2) = 3 = 011 =0
+h(3) = 4 = 100 =2
+h(4) = 0 = 000 =0
+h(3) = 4 = 100 =2
+h(1) = 2 = 010 =1
+h(2) = 3 = 011 =0
+h(3) = 3 = 100 =2
+h(1) = 2 = 010 =1
+R= 2
+2^R = 2^2 = 4 [ 1,3,2,4 ]
+
+
+| Example: Counting Moments (not Scale) ◼ Input stream = [1,3,2,1,2,3,4,3,1,2,3] ◼ Hash function, h(x) = 6x + 1 mod 5 h(1) = 2 = 010 =1 h(4) = 0 = 000 =0 h(3) = 4 = 100 =2 h(3) = 4 = 100 =2 h(2) = 3 = 011 =0 h(1) = 2 = 010 =1 h(1) = 2 = 010 =1 h(2) = 3 = 011 =0 h(2) = 3 = 011 =0 h(3) = 3 = 100 =2 h(3) = 4 = 100 =2 h(1) = 2 = 010 =1 R= 2 2^R = 2^2 = 4 [ 1,3,2,4 ] |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 56 | 동아대학교 |
+
+
+### [Page 57]
+동아대학교
+컴퓨터AI공학부
+◼h(a)가 적어도r의 0으로 끝날 확률은 2−𝑟
+◼따라서, m개의 서로 다른 원소들 중에서
+tail 길이가 r이 아닐 확률은 1- 2−𝑟
+◼M개의 요소들 가운데 r의 tail을 가진 찾지 못할 확률은
+⚫1 −2−𝑟𝑚
+57
+Why it works
+
+
+| Why it works ◼ h(a)가 적어도 r의 0으로 끝날 확률은 −𝑟 2 ◼ 따라서, m개의 서로 다른 원소들 중에서 tail 길이가 r이 아닐 확률은 1- −𝑟 2 ◼ M개의 요소들 가운데 r의 tail을 가진 찾지 못할 확률은 ⚫ −𝑟 𝑚 1 − 2 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 57 | 동아대학교 |
+
+
+### [Page 58]
+동아대학교
+컴퓨터AI공학부
+◼스트림 처리 구조
+⚫Standing queries, Single pass
+◼스트림 처리에 대한 주제
+⚫일반적인 모델
+⚫샘플링
+⚫데이터 필터링
+⚫구분된 요소 카운팅
+58
+요약
+
+
+| 요약 ◼ 스트림 처리 구조 ⚫ Standing queries, Single pass ◼ 스트림 처리에 대한 주제 ⚫ 일반적인 모델 ⚫ 샘플링 ⚫ 데이터 필터링 ⚫ 구분된 요소 카운팅 |  |  |
+| --- | --- | --- |
+| 컴퓨터AI공학부 | 58 | 동아대학교 |
