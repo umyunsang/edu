@@ -1,0 +1,506 @@
+### [Page 1]
+1
+웹프로그래밍
+2장. Spring Boot 개발환경세팅
+동아대학교컴퓨터•AI공학부
+양선
+웹프2장
+
+
+
+### [Page 2]
+환경세팅순서
+•
+➢2장
+• JDK 설치
+• Eclipse 설치
+• Spring Boot Project 생성(database 연결없음)
+➢5장
+• MySQL 설치
+• Spring Boot Project 생성(database 연결)
+2
+웹프2장
+“수업은이클립스로진행하지만ide 선택은자유”
+
+
+
+### [Page 3]
+3
+웹프2장
+1. JDK 설치
+•
+version (17이상) 뜨면JDK 설치완료되었다는의미
+•
+반면“실행할수있는파일아니다” 메세지나오면지금부터 설치시작
+✓Ubuntu는터미널에서설치
+✓Windows는설치파일다운로드부터시작하겠습니다.
+•
+Windows 명령프롬프트에서(Ubuntu 경우터미널에서)
+    javac –version 엔터
+
+
+
+### [Page 4]
+웹프2장
+4
+▪https://www.oracle.com/java/technologies/downloads/
+JDK 다운로드
+윈도우경우exe파일
+OS 선택 
+최신JDK 21 및안정성있는JDK 17 이있는데, 둘중하나설치
+
+
+
+### [Page 5]
+웹프2장
+5
+파일설치끝나면Program Files 
+밑에Java 폴더생김
+(jdk-17 폴더로들어가세요)
+그다음Java 폴더확인후
+주소복사
+
+
+
+### [Page 6]
+웹프2장
+6
+환경변수설정하면끝!
+(1) 윈도우검색→ “환경변수”라고입력
+(2) 환경변수버튼클릭
+1.
+JAVA_HOME   → C:\Program Files\Java\jdk-17
+2.
+Path → C:\Program Files\Java\jdk-17\bin 추가
+3.
+Classpath → C:\Program Files\Java\jdk-17\lib 추가
+                       . 추가
+• 오타피하려면수작업타이핑하지말고, 탐색창에서경로카피해서사용하세요
+• 환경변수설정까지다했으면p. 3 처럼명령프롬프트창에 javac –version 해보세요.
+(3) 시스템변수3개편집
+앞에서복사한주소
+
+
+
+### [Page 7]
+웹프2장
+7
+▪
+터미널에서sudo apt install openjdk-17-jdk 엔터후기다립니다.
+✓
+특정버전➔ sudo apt install openjdk-17-jdk
+▪
+설치 끝나면환경변수설치위해sudo gedit ~/.bashrc 엔터  
+✓vi로편집해도되고, 파일관리자에서.bashrc 파일을더블클릭해서편집해도
+됩니다.
+▪
+이파일 맨끝에다음과같이세줄추가후저장하고닫음
+▪
+터미널로돌아와서source ~/.bashrc 엔터(스크립트고친거바로적용)
+▪
+잘진행하셨다면echo $JAVA_HOME 엔터 했을때
+     /usr/lib/jvm/java-17-openjdk-am64 와같은경로가한줄출력됩니다.
+▪
+여기까지하면Ubuntu JDK 설치끝! 
+# JAVA_HOME settings 
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64  
+export PATH=${PATH}:${JAVA_HOME}/bin
+Ubuntu JDK 설치순서
+
+
+
+### [Page 8]
+웹프2장
+8
+2. 이클립스Enterprise 설치
+⚫
+수업은Eclipse로진행하지만, Intellij 등 개발툴은자유롭게선택하세요!
+
+
+
+### [Page 9]
+웹프2장
+9
+(1)  firefox에서https://www.eclipse.org/downloads/ 접속후 다운로드
+Ubuntu Eclipse 설치(pp. 9-15)
+Korea가맨위에있으면 좋고, 혹시
+우리나라아니면밑에Select 
+Another Mirror 클릭해서Korea
+찾아서다운로드
+
+
+
+### [Page 10]
+웹프2장
+10
+(2) 다운로드폴더에있는tar.gz 파일을“여기에압축풀기(Extract here)＂하면
+    폴더생김
+새로생긴폴더
+“여기화면사진은제노트북에서찍은거라서, 
+604 화면하고는다를수있어요”
+
+
+
+### [Page 11]
+웹프2장
+11
+(3)  새로생긴폴더안에계속들어가서eclipse-inst 더블클릭
+
+
+
+### [Page 12]
+웹프2장
+12
+(4) 팝업창뜨면INSTALL
+설치한jdk 버전숫자가자동으로
+뜹니다.
+
+
+
+### [Page 13]
+웹프2장
+13
+(5)  Java and Web 선택→ 라이센스동의하라고하면accept → 계속진행하면서
+launch 클릭하면이클립스열리면서웰컴창뜹니다. (웰컴창은닫아도됩니다)
+
+
+
+### [Page 14]
+웹프2장
+14
+(6)  나중에다시이클립스실행하려면 ➔ 설치할때지정한곳에eclipse 폴더있음
+
+
+
+### [Page 15]
+웹프2장
+15
+(7)  계속들어가면eclipse 실행파일보입니다. → 더블클릭
+→ 그다음부터는Windows랑동일(p. 18 로점프하세요)
+
+
+
+### [Page 16]
+16
+웹프2장
+▪https://www.eclipse.org/downloads/packages
+(2) 이클립스다운로드
+install 해도되지만, 그냥편하게zip파일다운받아서압축만푸는걸로!
+OS 선택 
+
+
+
+### [Page 17]
+17
+웹프2장
+어디서다운받을지결정
+혹시다운로드잘안되면               
+화면에click here 찾아보세요!
+• 다운받은zip파일을각자편한폴더에
+압축해제하면끝
+Korea가맨위에있으면 바로다운받고좋고, 
+혹시우리나라아니면멀어서시간걸릴수
+있으므로, 밑에Select Another Mirror 
+클릭해서Korea 찾아서다운로드
+
+
+
+### [Page 18]
+18
+웹프2장
+다운받은zip파일을압축해제후이클립스시작
+(1) 압축해제후
+eclipse.exe 실행
+(2) eclipse 열때시간좀걸려요. 
+인내심가지고기다려주세요.
+V
+(3) workspace 지정
+ (소스등을저장하는폴더)
+기본폴더그냥사용해도무난하며, 
+ 다른폴더지정해도됩니다.
+
+
+
+### [Page 19]
+이클립스에Spring Tools 4 설치
+19
+웹프2장
+1) 상단에[Help → Eclipse Marketplace] 메뉴
+선택후spring 으로검색
+2) Spring Tools 4 찾은후install
+3) 체크된거외에딱히더체크하지말고Confirm
+4) Review Licenses 화면에서accept 하라고하면
+I accept.. 선택후Finish 버튼
+
+
+
+### [Page 20]
+이클립스에Spring Tools 4 설치
+20
+웹프2장
+4) 혹시Authority 뭐라뭐라나오면ALways 선택→팝업창Yes →밑에Trust 선택 
+5) 화면우측맨밑에설치상황(시간걸림) 
+6) 기다리다가이클립스restart하겠냐고물으면Restart Now 버튼클릭하시면됩니다.
+
+
+
+### [Page 21]
+Spring Starter Project 선택
+21
+웹프2장
+1) [File → New] 메뉴 선택후 맨 밑에
+Other 선택
+2) spring이라고검색후 Spring Starter 
+Project 선택
+3) Next 클릭
+V
+
+
+
+### [Page 22]
+웹프2장
+22
+Project 상세정보선택
+V
+jdk 버전하고
+일치해야
+
+
+
+### [Page 23]
+웹프2장
+23
+Dependencies 선택
+V
+1) web 으로검색후Thymeleaf와
+Spring Web 선택
+2) (아직database는연결안함)
+3) Finish 클릭하면생성시작
+4) 화면우측하단보면진행상황
+나옵니다. (처음에는시간좀걸
+려요!!)
+괄호없는최신버전선택
+Spring Boot 버전은빠르게올라갑니다.
+
+
+
+### [Page 24]
+[Window → Preferences] 메뉴를선택하여enco로검색합니다. 
+Workspace가UTF-8인지확인하고, HTML과CSS도UTF-8로변경해주세요.
+인코딩은UTF-8 로통일
+웹프2장
+24
+V
+
+
+
+### [Page 25]
+p1 프로젝트실행
+웹프2장
+25
+Run (Spring Boot App 실행) 했을때(단축키Ctrl-F11) 
+빨간네모켜지면서Started 나오면웹서버준비완료
+멈추고싶으면빨간네모클릭
+(빨간네모보인다는건현재
+실행중이라는의미)
+
+
+
+### [Page 26]
+웹프2장
+26
+웹브라우저로접속
+• Started가나왔다? == 내컴퓨터가웹서버로서성공적으로작동한다!
+• 웹브라우저로나의웹서버에접속하려면?  ➔localhost:8080
+“Started가나와서내컴퓨터가웹서버가능해졌지만, 
+아직코딩한거는하나도없어서위와같은오류메세지가
+보이는것입니다. (이오류메세지가나왔다는의미는웹서버는
+잘구동되었다는의미)”
+
+
+
+### [Page 27]
+웹애플리케이션의동작원리
+웹프2장
+27
+②  웹페이지를요청한다.
+④ 찾은웹페이지를보낸다.
+[클라이언트측(사용자)]
+front-end
+[서
+버
+측]
+back-end
+③ 해당웹페이지를
+찾는다. 
+웹브라우저
+웹서버
+▪웹애플리케이션은웹(인터넷)을기반으로실행되는애플리케이션
+▪즉, 브라우저로접근하여사용되는응용소프트웨어
+
+
+
+### [Page 28]
+웹프2장
+28
+static 폴더안에index.html 만들기
+1) static 폴더우클릭
+2) [New → Other]
+3) html 엔터후HTML File 선택
+→ Next
+4) 파일이름은정확히index.html 
+(약속된이름)
+V
+
+
+
+### [Page 29]
+웹프2장
+29
+별도컨트롤러코딩없으면index.html 이첫화면이됩니다. 
+코딩후이버튼누르면바뀐소스
+내용으로웹서버가재구동됩니다.
+(빨간네모:stop, 초록세모:start)
+
+
+
+### [Page 30]
+웹프2장
+30
+첫Spring Boot 코딩실행결과
+(1) 크롬에서접속한경우
+(2) [Window – Web Browser – 0번internal] 선택후
+이클립스내부브라우저사용가능합니다. 이브라우저를localhost 
+접속하는경우에는주소창에http:// 붙여주세요.
+지구모양클릭하면내부
+브라우저실행
+
+
+
+### [Page 31]
+웹프2장
+31
+외부에서내웹서버에접속
+(1) 
+started 되어있는내
+웹서버컴퓨터의ip값이
+172.xx.xxx.xx 라고
+가정했을때
+(2) 
+다른컴퓨터혹은폰에서주소에
+http://172.xx.xxx.xx:8080 이라고넣고
+접속해보세요.
+(웹서버방화벽등등세팅환경에따라서
+될수도있고안될수도있습니다!)
+
+
+
+### [Page 32]
+웹프2장
+32
+[Tip 1] 이클립스html 코딩할때커서가자기마음대로이동하는오류
+[Window → Preferences] 
+들어간후좌측에서
+General →Editors →File 
+Associations 선택합니다. 
+html 파일선택후후
+하단에서HTML Editor 선
+택후Default 버틀을클
+릭합니다.
+이제이클립스html 소스
+를새로열면에디터를
+변경한다는팝업창이뜹
+니다. 그리고이제정상적
+으로코딩이가능합니다.
+
+
+
+### [Page 33]
+웹프2장
+33
+[Tip 2] java.lang.ClassNotFoundException 오류
+(1)
+Project 메뉴에Build Automatically (혹시해제되어있다면) 체크하고
+(2)
+Project 메뉴– Properties – 좌측Java Build Path 선택– 여러탭중Order 
+and Export 선택– JRE System Library 체크– Apply and Close 버튼클릭
+(3)
+Project 메뉴– clean 한후
+(4)
+Run (혹은 Run As 로가서Spring Boot App 선택)
+혹시이그림처럼빨간x 표시있고
+(unbound) 라고되어있다면
+이문제부터해결해야합니다.
+구글에서
+“jre system library unbound” 
+라고검색하면해결방법나옵니다.
+
+
+
+### [Page 34]
+웹프2장
+34
+[Tip 3] Port 8080 was already in use 오류
+•
+이미예전에설치한다른소프트웨어가8080 사용중일수도있고
+•
+우리가Spring Boot를이미실행시켜서현재웹서버로서8080 포트를사용
+중인데, 종료버튼누르지도않고다시실행시키는경우가있습니다. 
+•
+혹은종료버튼눌렀는데도내부적으로아직8080 포트를잡고있을수도
+있습니다.
+해결방법(1) 
+먼저이클립스의Relaunch 버튼( 
+) 을클릭해봅니다. 이버튼은 “현재
+실행중인거종료시키고다시론치하겠다”는의미이므로 8080 오류
+없어지고실행잘될수있습니다.
+(만약Relaunch 버튼클릭해서웹서버를다시구동시켜도해결이안된다면
+다음페이지로)
+      
+
+
+
+### [Page 35]
+웹프2장
+35
+[Tip 3] Port 8080 was already in use 오류
+해결방법(2) 
+8080을강제적으로종료시키는방법이있습니다. 
+Windows 경우➔명령프롬프트를관리자권한으로실행한후에
+netstat –ano | findstr 8080 하신후8080에해당하는pid 찾아서그번호를
+킬하면됩니다. 예를들어위화면처럼13016 경우
+taskkill /f /pid 13016 하시면됩니다.
+리눅스경우➔ 터미널에서ps –ef | grep tomcat 해서번호찾은후, 
+(이번에도13016 이라고가정했을때) kill -9 13016 하시면됩니다.
+or 조건에사용되는바기호입니다.
+
+
+
+### [Page 36]
+웹프2장
+36
+[Tip 3] Port 8080 was already in use 오류
+해결방법(3) 
+혹시, 개인적으로8080을사용하는다른소프트웨어를이미개발중이라서 
+웹프수업에서8080을사용하기힘든경우에는 
+Spring Boot 포트를변경하면됩니다. application.properties 파일열어서
+server.port=8081 한줄추가하시면우리웹서버는8081 포트를사용하게
+됩니다.
+
+
+
+### [Page 37]
+웹프2장
+37
+[Tip 4] 이클립스퍼스펙티브확인
+웹프시간에는Java EE 그림이
+선택되어있어야합니다.
+그리고이그림클릭했을때
+좌측처럼Java EE (default)
+라고되어있는이클립스를
+사용하셔야합니다.
+(혹시좌측그림과다른창이
+뜨면, 웹프코딩안되는자바
+전용이클립스를사용하시고계실
+가능성큽니다)
+

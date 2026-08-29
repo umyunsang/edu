@@ -1,10 +1,45 @@
-# Index
+---
+title: "web-programming"
+type: "overview"
+tags:
+  - "web-programming"
+  - "overview"
+  - "index"
+course: "web-programming"
+semester: "2-1"
+status: "stable"
+authority: "primary"
+created: "2026-08-29"
+updated: "2026-08-29"
+---
 
-## lecture
+# 📚 웹 프로그래밍 및 Spring Boot 백엔드 아키텍처 (Web Programming & Spring Boot) 전체 강의 로드맵
 
-* [01. 웹 표준과 HTML5 시맨틱 구조](./01.%20%EC%9B%B9%20%ED%91%9C%EC%A4%80%EA%B3%BC%20HTML5%20%EC%8B%9C%EB%A7%A8%ED%8B%B1%20%EA%B5%AC%EC%A1%B0.md) - 웹의 동작 원리(HTTP/HTTPS, 클라이언트-서버 모델), W3C 웹 표준, HTML5 시맨틱 태그 및 웹 접근성 가이드라인을 학습한다.
-* [01. 웹 프로그래밍 — HTML·Spring Boot·세션·데이터베이스](./01.%20%EC%9B%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%E2%80%94%20HTML%C2%B7Spring%20Boot%C2%B7%EC%84%B8%EC%85%98%C2%B7%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.md) - 웹 문서 기초에서 Spring Boot 실행·데이터베이스·쿠키와 세션·웹 시스템 제작으로 이어지는 흐름을 정리한다.
-* [02. CSS3 스타일링과 반응형 레이아웃(Flexbox·Grid)](./02.%20CSS3%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81%EA%B3%BC%20%EB%B0%98%EC%9D%91%ED%98%95%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%28Flexbox%C2%B7Grid%29.md) - CSS 박스 모델(Box Model), 미디어 쿼리(Media Query), 1차원 Flexbox와 2차원 CSS Grid 레이아웃을 인터랙티브 레이아웃 시뮬레이터로 학습한다.
-* [03. 모던 자바스크립트(ES6+)와 DOM 조작](./03.%20%EB%AA%A8%EB%8D%98%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%28ES6%2B%29%EC%99%80%20DOM%20%EC%A1%B0%EC%9E%91.md) - ES6+ 문법(let/const, 화살표 함수, 구조분해할당, 템플릿 리터럴), DOM 트리 탐색 및 이벤트 리스너/버블링 캡처링 메커니즘을 학습한다.
-* [04. 비동기 자바스크립트와 Fetch API·RESTful 연동](./04.%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80%20Fetch%20API%C2%B7RESTful%20%EC%97%B0%EB%8F%99.md) - 이벤트 루프와 콜스택/태스크 큐, 프로미스(Promise)와 async/await 비동기 처리, Fetch API를 활용한 RESTful 백엔드 연동을 학습한다.
-* [web-programming 강의 흐름 지도](./00.%20web-programming%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 14개의 순서·쪽수·학습 점검을 연결한다.
+HTTP 애플리케이션 프로토콜(Stateless, HTTP/1.1 vs HTTP/2 vs HTTP/3, 메서드 멱등성 및 상태 코드), 엔터프라이즈 자바 웹의 표준 Spring Boot 프레임워크와 IoC/DI(생성자 주입의 불변성 및 순환 참조 방지), Spring MVC의 프론트 컨트롤러 아키텍처(DispatcherServlet $\to$ HandlerMapping $\to$ Controller $\to$ ViewResolver/HttpMessageConverter), 객체-관계 매핑(ORM) 표준 JPA와 영속성 컨텍스트(1차 캐시, 쓰기 지연, 지연 로딩 Lazy Loading), 그리고 웹 상태 유지 보안 기법(HttpOnly/Secure 쿠키 vs JSESSIONID 세션 vs 분산 무상태 JWT 토큰 인증)까지 웹 풀스택 백엔드 엔지니어링을 체계적으로 다룹니다.
+
+---
+
+## 🗺️ 강의 목차 (Curriculum Overview)
+
+```mermaid
+graph TD
+    N1["01. HTTP 프로토콜과 웹 아키텍처<br/>Stateless & Methods (GET·POST·PUT·DELETE) & Status Codes"] --> N2["02. Spring Boot 프레임워크와 IoC·DI<br/>Inversion of Control & Constructor DI & Bean Lifecycle"]
+    N2 --> N3["03. MVC 아키텍처와 요청 처리 파이프라인<br/>DispatcherServlet & @RestController & Thymeleaf SSR"]
+    N3 --> N4["04. 데이터 영속성과 Spring Data JPA<br/>ORM & Persistence Context 1st Cache & HikariCP Pool"]
+    N4 --> N5["05. 웹 보안과 세션·인증 아키텍처<br/>Cookies (HttpOnly) & Session (JSESSIONID) & JWT Token"]
+```
+
+---
+
+## 📑 개별 정리 문서 목록
+
+1. [01. HTTP 프로토콜과 웹 아키텍처 - 클라이언트-서버 모델, HTTP 메서드(GET·POST), 상태 코드와 헤더](file:///Users/um-yunsang/work/edu/ComputerScience/05_software-engineering/web-programming/notes/01.%20HTTP%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EA%B3%BC%20%EC%9B%B9%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%84%9C%EB%B2%84%20%EB%AA%A8%EB%8D%B8,%20HTTP%20%EB%A9%94%EC%84%9C%EB%93%9C(GET%C2%B7POST),%20%EC%83%81%ED%83%9C%20%EC%BD%94%EB%93%9C%EC%99%80%20%ED%97%A4%EB%8D%94.md)
+   - HTTP 5대 응답 코드 계열, 메서드 안전성 및 멱등성 매트릭스, 대화형 HTTP 메서드/상태코드 검증기
+2. [02. Spring Boot 프레임워크와 IoC·DI - 제어의 역전(IoC), 의존성 주입(DI)과 스프링 빈 생명주기](file:///Users/um-yunsang/work/edu/ComputerScience/05_software-engineering/web-programming/notes/02.%20Spring%20Boot%20%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC%EC%99%80%20IoC%C2%B7DI%20-%20%EC%A0%9C%EC%96%B4%EC%9D%98%20%EC%97%AD%EC%A0%84(IoC),%20%EC%9D%98%EC%A1%B4%EC%84%B1%20%EC%A3%BC%EC%9E%85(DI)%EA%B3%BC%20%EC%8A%A4%ED%94%84%EB%A7%81%20%EB%B9%88%20%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0.md)
+   - Spring IoC Container 구조, 3대 DI 주입 방식 비교 매트릭스, 대화형 DI 패턴 안정성 검증기
+3. [03. MVC 아키텍처와 요청 처리 파이프라인 - DispatcherServlet, 컨트롤러 매핑과 Thymeleaf 템플릿](file:///Users/um-yunsang/work/edu/ComputerScience/05_software-engineering/web-programming/notes/03.%20MVC%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%99%80%20%EC%9A%94%EC%B2%AD%20%EC%B2%98%EB%A6%AC%20%ED%8C%8C%EC%9D%B4%ED%48%C2%B0%EB%9D%BC%EC%9D%B8%20-%20DispatcherServlet,%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%EB%A7%A4%ED%5C%ED%95%91%EA%B3%BC%20Thymeleaf%20%ED%85%9C%ED%94%8C%EB%A6%BF.md)
+   - DispatcherServlet 7단계 처리 흐름, `@Controller` vs `@RestController` 비교, 대화형 요청 라우팅 시뮬레이터
+4. [04. 데이터 영속성과 Spring Data JPA - ORM 원리, 엔티티 매핑(@Entity), 커넥션 풀(HikariCP)](file:///Users/um-yunsang/work/edu/ComputerScience/05_software-engineering/web-programming/notes/04.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%98%81%EC%86%8D%EC%84%B1%EA%B3%BC%20Spring%20Data%20JPA%20-%20ORM%20%EC%9B%90%EB%A6%AC,%20%EC%97%94%ED%8B%B0%ED%8B%B0%20%EB%A7%A4%ED%5C%ED%95%91(@Entity),%20%EC%BB%A4%EB%84%A5%EC%85%98%20%ED%92%80(HikariCP).md)
+   - 영속성 컨텍스트 1차 캐시 및 쓰기 지연 저장소, 지연 로딩(Lazy) vs 즉시 로딩(Eager), 대화형 JPA 1차 캐시 시뮬레이터
+5. [05. 웹 보안과 세션·인증 아키텍처 - 쿠키(HttpOnly·Secure) vs 세션(JSESSIONID), JWT와 토큰 기반 인증](file:///Users/um-yunsang/work/edu/ComputerScience/05_software-engineering/web-programming/notes/05.%20%EC%9B%B9%20%EB%B3%B4%EC%95%88%EA%B3%BC%20%EC%84%B8%EC%85%98%C2%B7%EC%9D%B8%EC%A6%9D%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%20-%20%EC%BF%A0%ED%82%A4(HttpOnly%C2%B7Secure)%20vs%20%EC%84%B8%EC%85%98(JSESSIONID),%20JWT%EC%99%80%20%ED%86%A0%ED%81%B0%20%EA%B8%B0%EB%B0%98%20%EC%9D%B8%EC%A6%9D.md)
+   - 세션 vs JWT 토큰 장단점 비교 매트릭스, Redis 세션 클러스터링, 대화형 웹 인증 아키텍처 선택기

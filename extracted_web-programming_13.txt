@@ -1,0 +1,438 @@
+### [Page 1]
+1
+웹프로그래밍
+7장. 웹시스템제작
+[회원관리부분]
+동아대학교컴퓨터•AI공학부
+양선
+7장회원관리시스템
+데이터베이스연결후에는이클립스내부브라우저말고
+크롬, 엣지등의브라우저사용권장(오류메세지확인이편해요)
+
+
+
+### [Page 2]
+2
+회원테이블
+7장회원관리시스템
+drop table if exists member;
+create table member (
+ id varchar(10)not null primary key, 
+ pw varchar(10) not null,
+ name varchar(30) not null,
+ phone varchar(15) not null,
+ mileage int not null, 
+ rdate datetime not null
+);
+
+
+
+### [Page 3]
+7장회원관리시스템
+3
+엔티티(member.java)
+package com.web.p5;
+import java.time.LocalDateTime;
+import org.hibernate.annotations.CreationTimestamp;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+@Entity 
+public class member {
+ 
+ @Id public String id;
+ 
+ public String pw;
+ 
+ public String name;
+ 
+ public String phone;
+ 
+ public Integer mileage; 
+ 
+ @CreationTimestamp public LocalDateTime rdate;
+ 
+ 
+} // class
+/* database의member 테이블이름과똑같이 */
+
+
+
+### [Page 4]
+7장회원관리시스템
+4
+리파지토리(memberRep.java)
+package com.web.p5;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+public interface memberRep extends JpaRepository<member, String> {
+ 
+@Query("select count(id) from member") 
+ 
+int memberCount();
+ 
+} // interface
+
+
+
+### [Page 5]
+7장회원관리시스템
+5
+컨트롤러(MyController.java)
+package com.web.p5;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import jakarta.servlet.http.HttpSession;
+@Controller
+public class MyController {
+  @Autowired
+  private memberRep mrep;
+  /* 여기메소드추가*/
+  
+} // class
+
+
+
+### [Page 6]
+7장회원관리시스템
+6
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>로그인</title>
+<style> body {background-color:#EFF2FB; } 
+  span {color:gray; font-size:0.7em;} 
+  button {margin-right:20px; } 
+  img { width:280px; height:330px; }
+</style></head>
+<body>
+<div align="center">
+   <h1>Van Gogh AIRLINES</h1> 
+  <form method="get" action="/login/check">  
+     ID: <input type="text" name="id" required> <p> 
+     <button>login</button> 
+     <a href="/member"> 회원가입</a> <p> 
+  </form>  
+  <img src="/Sunflowers.jpg" alt="해바라기명화">
+  <br> 
+  <span>반고흐명화(출처:위키백과)</span>
+</div>
+</body> 
+</html>
+login.html ("/login") – 로그인화면
+@GetMapping("/login")
+  public String login() {
+  return "login";
+  }
+
+
+
+### [Page 7]
+7장회원관리시스템
+7
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>회원가입</title>
+<style>
+  body {background-color:#F8ECE0; } 
+  fieldset {background-color:#FBF8EF; }
+  button {margin-left:20px; } 
+ 
+</style></head>
+<body>
+<form method="get" action="/member/insert"><p>
+  <fieldset> 
+  <legend><strong>회원정보를입력하세요</strong></legend><br>
+  <table>
+   <tr> <td>ID <td><input type="text" name="id" required>
+   <tr> <td>PW <td><input type="text" name="pw" required>
+   <tr> <td>이름<td><input type="text" name="name" required> 
+   <tr> <td>폰<td><input type="text" name="phone" required>
+  </table><br>
+  </fieldset> <br>  
+  <a href="/login">취소(로그인화면으로)</a>
+  <button>등록</button>  
+</form>
+</body></html>
+member.html ("/member") - 회원가입화면
+@GetMapping("/member")
+public String member() { 
+  return "member";
+}
+
+
+
+### [Page 8]
+7장회원관리시스템
+8
+회원가입 insert 메소드("/member/insert")
+@GetMapping("/member/insert")
+public String memberInsert(@RequestParam("id") String id, 
+@RequestParam("pw") String pw, 
+@RequestParam("name") String name, 
+@RequestParam("phone") String phone, RedirectAttributes re) {
+if( mrep.existsById(id) ) { 
+re.addAttribute("msg", id+"는이미사용되고있는아이디입니다.");
+re.addAttribute("url", "back");
+}
+else {
+member m = new member();
+m.id = id;  m.pw = pw;  m.name = name;  m.phone = phone; m.mileage = 0;
+mrep.save(m); 
+re.addAttribute("msg", id+"님, 반갑습니다!! (로그인화면으로이동)");
+re.addAttribute("url", "/login"); 
+}
+return "redirect:/popup"; 
+}
+
+
+| @GetMapping("/member/insert") |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| public String |  | memberInsert |  |  | (@RequestParam("id") String id, |
+|  |  |  |  | @RequestParam("pw") String pw, |  |
+|  |  |  |  | @RequestParam("name") String name, |  |
+|  |  |  |  | @RequestParam("phone") String phone, |  |
+
+| member m = new member(); |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| m.id = id; m.pw = pw; m.name = name; |  |  | m.phone |  | = phone; | m.mileage |  | = 0; |
+| mrep.save | (m) | ; |  |  |  |  |  |  |
+
+
+### [Page 9]
+7장회원관리시스템
+9
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8">
+<title>안내글</title></head> 
+<body> 
+<script th:inline="javascript">
+    m = [[${msg}]];
+    u = [[${url}]];
+    alert(m);
+    if(u == 'back')
+        history.back();
+    else
+        location.href = u;
+</script>
+</body></html>
+popup.html ("/popup") – 팝업화면
+<참고> 아래처럼코딩하시면
+빨간오류표시사라집니다.
+@GetMapping("/popup")
+public String popup(@RequestParam("msg") String msg, 
+ 
+ 
+@RequestParam("url") String url, Model mo) {
+    mo.addAttribute("msg",msg);
+    mo.addAttribute("url",url);
+    return "popup";
+}
+
+
+
+### [Page 10]
+7장회원관리시스템
+10
+로그인아이디체크메소드("/login/check")
+@GetMapping("/login/check")
+public String loginCheck(HttpSession se, 
+ 
+ 
+ 
+    @RequestParam("id") String id,
+ 
+ 
+ 
+    RedirectAttributes re) { 
+ 
+    if(mrep.existsById(id)) { 
+    
+se.setAttribute("id", id);  
+ 
+ 
+ 
+        return "redirect:/menu"; 
+ 
+    }
+    else {
+ 
+re.addAttribute("msg", id
+ 
+               +"는미등록아이디입니다. 확인후로그인부탁드립니다.");
+ 
+re.addAttribute("url", "/login");
+ 
+return "redirect:/popup";
+    } 
+ 
+}
+
+
+
+### [Page 11]
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>메뉴</title> 
+<style>  body { background-color:lime; }
+#sp1 { color:blue; }
+</style></head>
+<body>
+<h2>SELECTION</h2><hr>
+<span id="sp1" th:text="${id}">id</span>님, 
+어떤업무를하시겠습니까?<hr><p>
+<ul>
+<li>항공권예매
+<li>예약조회
+<li>체크인
+  <li>출도착조회
+<li><a href="/myinfo">나의정보</a>    <li>게시판(Q&A)    
+<li><a href="/airinfo" 
+onclick="window.open(this.href,'_blank','width=300,height=300,left=300,location=no');
+return false;">항공사정보</a>                          
+<li><a href="/logout">로그아웃</a> 
+</ul>
+<ol th:if="${id}=='admin'">   
+<li><a href="/member/list">
+전체회원리스트(admin only)</a> 
+<li>전체출도착내역(admin only) 
+<li>게시판답변등록(admin only) 
+</ol>
+</body></html>
+11
+7장회원관리시스템
+menu.html ("/menu") – 선택화면 
+@GetMapping("/menu")
+public String menu(HttpSession se, Model mo) {
+  mo.addAttribute("id", se.getAttribute("id"));
+  return "menu";
+}
+
+
+
+### [Page 12]
+7장회원관리시스템
+12
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>나의정보</title>
+<style>  body {background-color:rgb(185, 253, 130);}
+  #sp1 { color:blue; } 
+  table { width:300px; }   
+</style></head>
+<body>
+<h3><span id="sp1" th:text="${m.id}">id</span>님의정보</h3>
+<table>
+  <tr><td>비번<td><input  th:value="${m.pw}" disabled>
+  <tr><td>이름<td><input th:value="${m.name}" disabled>  
+  <tr><td>폰
+<td><input  th:value="${m.phone}" disabled>
+  <tr><td>마일리지<td><input th:value="${m.mileage}" disabled>
+  <tr><td>가입일시<td><input  th:value="${m.rdate}" disabled>
+</table><p>  
+<a href="/menu">메뉴로돌아가기</a> 
+</body></html>
+myinfo.html ("/myinfo") – 나의정보조회 
+@GetMapping("/myinfo")
+ public String myinfo(HttpSession se, Model mo) { 
+     String id = (String)se.getAttribute("id");  
+     mo.addAttribute("m",mrep.findById(id).get());
+     return "myinfo"; 
+ 
+ }
+
+
+
+### [Page 13]
+7장회원관리시스템
+13
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8">
+<title>항공사정보</title>
+<style>
+  body { background-color:rgb(220, 220, 220); } 
+</style></head>
+<body>
+항공사이름: Van Gogh AIRLINES <p>
+설립일자: 2024-03-01 <p>
+총회원수: [[${mcount}]] 명
+</body></html>
+airinfo.html ("/airinfo ") – 항공사정보 
+@GetMapping("/airinfo")
+   public String airinfo(Model mo) {
+ 
+mo.addAttribute("mcount",mrep.memberCount());
+     return "airinfo";  
+   }
+
+
+
+### [Page 14]
+7장회원관리시스템
+14
+memberList.html ("/member/list") – 회원 리스트화면
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8">
+<title>회원리스트</title>
+<style>
+ body {background-color:rgb(255, 255, 128);}
+ table {width: 600px;}
+ #td1 { color:blue; font-weight:bold;}
+ #td2 {color:red; text-align:right;}
+</style></head>
+<body><div align="center">
+<h3> 전체회원리스트(id 순)</h3>
+<table border="1">
+  <tr> <th>id <th>pw <th>name <th>phone <th>잔액<th>가입일시
+<tr th:each="a:${arr}"> 
+    <td th:text="${a.id}" id="td1">id
+    <td th:text="${a.pw}">pw
+    <td th:text="${a.name}">name
+    <td th:text="${a.phone}">phone
+    <td th:text="${a.mileage}" id="td2">mileage    
+    <td th:text="${a.rdate}">rdate
+</table><br>
+<a href="/menu">메뉴로돌아가기</a> 
+</div></body></html>
+@GetMapping("/member/list")
+  public String memberList(Model mo) {
+    mo.addAttribute("arr", mrep.findAll());
+    return "memberList";
+  }
+
+
+
+### [Page 15]
+7장회원관리시스템
+15
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8">
+<title>logout</title>
+<style>
+  body { background-color: #FBEFF5;}
+  #s1 { color:blue; }  .s2 { color:gray; font-size:0.8em; } 
+  img { width: 300px; height: 220px; }
+</style></head>
+<body><div align="center">
+<span id="s1" th:text="${id}">id</span> 님께서로그아웃하셨습니다.<p> 
+다음에또만나요!!<p>
+<span class="s2">
+(아래그림을클릭하시면첫화면으로이동합니다.)</span><br> 
+<a href="/login"><img src="/zakkabye.jpg" alt="바이바이그림"></a><br>
+<span class="s2">(그림출처: N사웹툰daehak ilgi)</span>
+</div>
+</body></html>
+logout.html ("/logout") – 로그아웃화면 
+@GetMapping("/logout")
+public String logout(HttpSession se, Model mo) {
+   mo.addAttribute("id", se.getAttribute("id"));
+   se.invalidate();
+   return "logout";
+}
+
