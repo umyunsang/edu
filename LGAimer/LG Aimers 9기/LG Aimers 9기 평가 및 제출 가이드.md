@@ -22,6 +22,7 @@ updated: '2026-05-05'
 cohort:: [LG Aimers 9기](<./LG Aimers 9기.md>)
 
 1. 리더 보드
+
 ### 평가 산식
 
 최종 점수는 기본 모델 대비 성능 비율과 추론 시간 감소 비율의 가중 합산으로 계산됩니다.
@@ -29,23 +30,25 @@ cohort:: [LG Aimers 9기](<./LG Aimers 9기.md>)
 $$Score = (Performance\ Norm \times 0.5) + (Speed\ Norm \times 0.5)$$
 
 #### 1) 성능 비율 (Performance Norm)
+
 기본 모델(**EXAONE-4.0-1.2B**)의 성능 대비 제출 모델의 성능 비율입니다.
 $$Performance\ Norm = \frac{Performance_{target}}{Performance_{base}}$$
 
 #### 2) 추론 시간 감소 비율 (Speed Norm)
+
 기본 모델 대비 토큰당 추론 시간($T_{per\_token}$)의 감소 비율을 의미합니다.
 $$Speed\ Norm = \frac{T_{base} - T_{target}}{T_{base}}$$
 
 ---
 
-			해당 시간에는 모델 로드, 평가 데이터에 대한 추론, 결과값 파싱 등 모든 처리 과정이 포함되며, 이 전체 추론 실행 시간은 규칙으로 지정한 시간 제한(20분) 이내에 완료되어야 합니다.
+   해당 시간에는 모델 로드, 평가 데이터에 대한 추론, 결과값 파싱 등 모든 처리 과정이 포함되며, 이 전체 추론 실행 시간은 규칙으로 지정한 시간 제한(20분) 이내에 완료되어야 합니다.
 
-			반면, 평가 산식에 반영되는 추론 시간은 모델이 평가용 벤치마크 데이터셋에 대해 실제로 추론을 수행한 시간만을 기준으로 측정한 '토큰 당 추론 시간'입니다.
+   반면, 평가 산식에 반영되는 추론 시간은 모델이 평가용 벤치마크 데이터셋에 대해 실제로 추론을 수행한 시간만을 기준으로 측정한 '토큰 당 추론 시간'입니다.
 
 Public score : 전체 테스트 데이터 100%
-			※ 테스트 데이터는 비공개 벤치셋으로 구성되어 있습니다.
+   ※ 테스트 데이터는 비공개 벤치셋으로 구성되어 있습니다.
 
-2. 평가 방식
+1. 평가 방식
 LG Aimers 수료 조건
 Phase1을 이수하고 Phase2의 Public Score (LB: 0.5) 초과
 기준 점수는 기본 모델(EXAONE-4.0-1.2B) 대비 성능·효율 개선을 반영한 기준
@@ -55,7 +58,7 @@ Phase1을 이수하고 Phase2의 Public Score (LB: 0.5) 초과
 Public 상위팀(약 100명)은 코드 및 PPT 필수 제출 대상
 코드 제출과 검증를 모두 통과한 Public 상위팀(약 100명)이 오프라인 해커톤(Phase3) 진출
 
-3. 코드 제출 대회 가이드
+2. 코드 제출 대회 가이드
 본 대회는 submit.zip 파일을 제출하는 방식의 '코드 제출 대회'로 진행됩니다.
 
 참가자는 아래와 같은 구조로 submit.zip을 구성하여 제출해야 합니다.
@@ -103,70 +106,72 @@ CUDA : 12.8
 
 1) 설치 패키지(라이브러리)
 
-torch==2.9.0+cu128 
-numpy==2.2.6 
-pandas==2.3.3 
-transformers==4.57.3 
-tokenizers==0.22.1 
-accelerate==1.10.1 
-datasets==4.4.1 
-huggingface-hub==0.36.0 
-safetensors==0.7.0 
-sentencepiece==0.2.1 
-protobuf==6.33.2 
-evaluate==0.4.6 
-rouge_score==0.1.2 
-sacrebleu==2.5.1 
-tqdm==4.67.1 
-regex==2025.11.3 
-nltk==3.9.2 
-compressed-tensors==0.13.0 
-math-verify==0.8.0 
-antlr4-python3-runtime==4.11.0 
-sympy==1.14.0 
-langdetect==1.0.9 
-immutabledict==4.2.2 
+torch==2.9.0+cu128
+numpy==2.2.6
+pandas==2.3.3
+transformers==4.57.3
+tokenizers==0.22.1
+accelerate==1.10.1
+datasets==4.4.1
+huggingface-hub==0.36.0
+safetensors==0.7.0
+sentencepiece==0.2.1
+protobuf==6.33.2
+evaluate==0.4.6
+rouge_score==0.1.2
+sacrebleu==2.5.1
+tqdm==4.67.1
+regex==2025.11.3
+nltk==3.9.2
+compressed-tensors==0.13.0
+math-verify==0.8.0
+antlr4-python3-runtime==4.11.0
+sympy==1.14.0
+langdetect==1.0.9
+immutabledict==4.2.2
 torch-c-dlpack-ext==0.1.4
 vllm==0.14.1
- 
 
-2) 설치 시스템 패키지
+1) 설치 시스템 패키지
 
-python3.11 
-python3.11-distutils 
-python3-pip 
-python3.11-dev 
-build-essential 
-git 
+python3.11
+python3.11-distutils
+python3-pip
+python3.11-dev
+build-essential
+git
 git-lfs
-ninja-build 
-libomp-dev 
-libblas3 
-liblapack3 
-gfortran 
-libatlas-base-dev 
-curl 
-wget 
-ca-certificates 
-unzip 
+ninja-build
+libomp-dev
+libblas3
+liblapack3
+gfortran
+libatlas-base-dev
+curl
+wget
+ca-certificates
+unzip
 procps
 cmake
 tzdata
 libxcb1
 
-3) 모델 서빙 스펙 
+1) 모델 서빙 스펙
 
 본 대회는 참가자가 제출한 EXAONE-4.0-1.2B 경량화 모델을 대상으로, 고정된 vLLM 서빙 환경에서 추론을 수행하여 평가합니다.
-		① 추론 엔진 (Inference Engine)
+  ① 추론 엔진 (Inference Engine)
 Inference Engine: vLLM (version: 0.14.1)
 Model Interface: HuggingFace AutoModelForCausalLM 호환
 제출된 모델은 다음 호출이 가능해야 하며, 토크나이저는 모델과 함께 제공되어야 합니다.
+
 # tokenizer
+
 AutoTokenizer.from_pretrained(MODEL, trust_remote_code=True, local_files_only=True)
 
 # model
+
 AutoModelForCausalLM.from_pretrained(MODEL, trust_remote_code=True)
-		② vLLM Serving 옵션
+  ② vLLM Serving 옵션
 아래 옵션은 채점 서버에서 고정 적용됩니다.
 tensor_parallel_size = 1
 gpu_memory_utilization = 0.85
@@ -176,6 +181,7 @@ apply_chat_template = true
 
 📌 유의사항
 제출 시 발생하는 오류의 종류는 두 가지로 정의되며, 일일 제출 횟수 반영에 대한 기준이 다르므로 반드시 숙지하여 진행해야 합니다.
+
 1) 설치 오류 : 제출하는 submit.zip 내부 구조가 불일치한 경우 -> 일일 제출 횟수 반영되지 않음
 예) submit.zip 파일 안에 ./model 폴더로 되어 있지 않은 경우, 폴더명이 model이 아닌 경우
 2) 제출 오류 : script.py 코드 실행 후 발생하는 모든 오류 -> 일일 제출 횟수 반영됨

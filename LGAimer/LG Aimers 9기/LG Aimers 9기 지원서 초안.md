@@ -24,6 +24,7 @@ cohort:: [LG Aimers 9기](<./LG Aimers 9기.md>)
 # LG Aimers 9기 지원서 초안
 
 > [!note] 작성 근거
+>
 > - 9기 콘셉트: LG AI연구원 주관 청년 AI 전문가 양성 프로그램, 국내 최고 교수진의 AI 강의와 LG 계열사 실제 데이터 해커톤, 특히 9기는 `AI + 야구` 및 LG 스포츠 / LG 트윈스 데이터분석팀 협업 기반 야구 데이터 해커톤으로 공개됨.
 > - 8기 경험: `LG Aimers / LLM Compression` 수료, `EXAONE 모델 경량화` 해커톤, 성능과 추론 속도를 함께 보는 평가 구조, `vLLM` 및 HuggingFace 호환 모델 제출 환경을 학습함.
 > - 글쓰기 적용 기준: 창의적 글쓰기 강의자료의 Technical Writing 3C, 독자 중심 서술, Power Writing의 `주장-근거-사례-주장강조`, 자기소개서의 `구체적 경험-과정-결과-발전 가능성` 구조를 반영함.
