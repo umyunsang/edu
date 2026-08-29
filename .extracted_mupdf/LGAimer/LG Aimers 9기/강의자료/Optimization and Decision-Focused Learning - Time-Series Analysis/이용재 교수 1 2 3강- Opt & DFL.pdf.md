@@ -1,0 +1,1898 @@
+## --- [Page 1] ---
+Optimization and 
+Decision-Focused Learning
+
+Yongjae Lee
+Department of Industrial Engineering
+
+## --- [Page 2] ---
+Topics
+
+▪1. Introduction to Convex Optimization
+
+▪2. Convex optimization problems
+
+▪3. Decision-focused learning
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+1
+
+## --- [Page 3] ---
+Chapter 1
+
+Introduction to Convex Optimization
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+2
+
+## --- [Page 4] ---
+What is optimization?
+
+▪Finding the best solution given some constraints
+
+▪Mathematical optimization
+
+– 𝑥= (𝑥1, … , 𝑥𝑛): optimization variables (or decision variables)
+
+– 𝑓0: ℝ𝑛→ℝ: objective function
+
+– 𝑓𝑖: ℝ𝑛→ℝ, 𝑖= 1, … , 𝑚: constraint functions
+
+– Optimal solution 𝒙∗has the smallest value of 𝑓0 among all
+
+vectors that satisfy the constraints
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+3
+
+minimize
+𝑓0(𝑥)
+subject to 𝑓𝑖𝑥≤𝑏𝑖, 𝑖= 1, … , 𝑚
+
+## --- [Page 5] ---
+What is optimization?
+
+▪Examples
+
+– Portfolio optimization
+
+• Variables: amounts invested in different assets (stocks, bonds,…)
+• Constraints: budget, max/min investment per asset, 
+minimum required return, …
+• Objective: overall risk (e.g. return variance)
+
+– Device sizing in electronic circuits
+
+• Variables: device widths and lengths
+• Constraints: manufacturing limits, timing requirements, 
+maximum area
+• Objective: power consumption
+
+– Data fitting (or statistics, machine learning)
+
+• Variables: model parameters
+• Constraints: prior information, parameter limits
+• Objective: measure of misfit or prediction error
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+4
+
+## --- [Page 6] ---
+What is optimization?
+
+▪Solving optimization problems
+
+– General optimization problems
+
+• Very difficult to solve
+• Methods involve some compromise
+
+› E.g. very long computation time, or not always finding the solution
+
+– Exceptions
+
+• Certain problem classes can be solved efficiently and reliably
+
+› Least-squares problems
+› Linear programming problems
+› Convex optimization problems
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+5
+
+## --- [Page 7] ---
+What is optimization?
+
+▪Comparison with machine learning (generally speaking)
+
+– Optimization is based on mathematical modeling of decisions
+
+and their consequences
+– Machine learning tries to learn the mapping between
+
+decisions and its consequences through data
+
+▪Are they completely different? No
+
+– Optimization needs domain knowledge and data to
+
+determine appropriate mathematical models and parameters
+– Machine learning may also take a modeling-based approach
+
+– Recently, reinforcement learning and sampling-based large-
+
+scale optimization techniques are very closely related
+– More importantly, “learning” involves optimization
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+6
+
+## --- [Page 8] ---
+What is convex optimization?
+
+▪General optimization is like climbing a mountain
+
+– You are going to the highest peak
+
+▪A problem
+
+– There can be many peaks
+
+• You have to identify the highest peak
+before you climb
+
+▪A bigger problem
+
+– You are blindfolded
+
+• What can you do now? You are screwed!
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+7
+
+## --- [Page 9] ---
+What is convex optimization?
+
+▪A good news
+
+– For convex optimization problems, there is only one peak
+
+– So, if you just go to a higher point for each step,
+
+you will get to the peak eventually
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+8
+
+These don’t exist
+in convex optimization
+
+## --- [Page 10] ---
+What is convex optimization?
+
+▪General optimization problems
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+9
+
+Convex optimization problems
+
+Non-convex optimization problems
+
+Linear 
+programming 
+problems
+
+Difficult to solve
+
+Can be solved
+efficiently
+
+Easy to solve
+
+## --- [Page 11] ---
+Least-squares
+
+▪Solving least-square problems
+
+– Analytical solution: 𝑥∗= 𝐴𝑇𝐴−1𝐴𝑇𝑏
+– Reliable and efficient algorithms and software
+– Computation time proportional to 𝑛2𝑘(𝐴∈ℝ𝑘×𝑛)
+
+• Less if structured
+– A mature technology
+
+▪Using least-squares
+
+– Least-squares problems are easy to recognize
+– A few standard techniques increase flexibility
+
+• e.g. including weights, adding regularization terms
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+10
+
+minimize
+𝐴𝑥−𝑏2
+
+2
+
+## --- [Page 12] ---
+Least-squares – An example
+
+▪Polynomial regression
+
+– Want to fit data { 𝑥𝑖, 𝑦𝑖}𝑖=1
+
+𝑘
+to
+𝑦= 𝛽0 + 𝛽1𝑥+ 𝛽2𝑥2 + ⋯+ 𝛽𝑛𝑥𝑛
+
+– Then, we have
+
+𝑦𝑖= 𝛽0 + 𝛽1𝑥𝑖+ 𝛽2𝑥𝑖
+
+2 + ⋯+ 𝛽𝑛𝑥𝑖
+𝑛+ 𝜀𝑖,
+𝑖= 1, … , 𝑘
+– These can be written as follows
+
+𝑦1
+𝑦2
+𝑦3
+
+⋮
+𝑦𝑘
+
+=
+
+1
+𝑥1
+𝑥1
+
+2
+
+1
+𝑥2
+𝑥2
+
+2
+
+1
+𝑥3
+𝑥3
+
+2
+
+⋯
+𝑥1
+
+𝑛
+
+⋯
+𝑥2
+
+𝑛
+
+⋯
+𝑥3
+
+𝑛
+
+⋮
+⋮
+⋮
+1
+𝑥𝑘
+𝑥𝑘
+
+2
+⋱
+⋮
+⋯
+𝑥𝑘
+
+𝑛
+
+𝛽0
+𝛽1
+𝛽2
+
+⋮
+𝛽𝑛
+
++
+
+𝜀1
+𝜀2
+𝜀3
+
+⋮
+𝜀𝑘
+𝒚
+=
+𝑿
+𝜷+ 𝜺
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+11
+
+minimize
+𝑿𝜷−𝒚2
+
+2
+
+## --- [Page 13] ---
+Linear programming
+
+▪Solving linear programs
+
+– No analytical formula for solution
+– Reliable and efficient algorithms and software
+– Computation time proportional to 𝑛2𝑚 if 𝑚≥𝑛
+
+• Less if structured
+
+▪Using linear programming
+
+– Not as easy to recognize as least squares problems
+– A few standard tricks to convert problems into linear programs
+
+• E.g. problems involving ℓ1- or ℓ∞-norms, piecewise-linear 
+functions
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+12
+
+minimize
+𝑐𝑇𝑥
+
+subject to 𝑎𝑖
+
+𝑇𝑥≤𝑏𝑖,
+𝑖= 1, … , 𝑚
+
+## --- [Page 14] ---
+Convex optimization problem
+
+▪Objective and constraint functions are convex
+
+– Function 𝑓(𝑥) is convex if and only if
+
+𝑓𝑡𝑥1 + 1 −𝑡𝑥2 ≤𝑡𝑓𝑥1 + 1 −𝑡𝑓𝑥2 ,
+0 ≤𝑡≤1
+
+▪Includes least-squares problems and linear programs as special cases
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+13
+
+minimize
+𝑓0(𝑥)
+subject to 𝑓𝑖(𝑥) ≤𝑏𝑖,
+𝑖= 1, … , 𝑚
+
+Jensen’s inequality
+
+## --- [Page 15] ---
+Convex optimization problem
+
+▪Solving convex optimization problems
+
+– No analytical solution
+– Reliable and efficient algorithms
+– Computation time (roughly) proportional to max{𝑛3, 𝑛2𝑚, 𝐹},
+
+where 𝐹 is cost of evaluating 𝑓𝑖’s and their second derivatives
+– Almost a technology
+
+▪Using convex optimization
+
+– Often difficult to recognize
+– Many tricks for transforming problem into convex form
+– Surprisingly many problems can be solved via convex
+
+optimization
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+14
+
+## --- [Page 16] ---
+Example – Why formulation matters?
+
+▪𝑚lamps illuminating 𝑛(small, flat) patches
+
+– Intensity 𝐼𝑘at patch k depends linearly on lamp powers 𝑝𝑗:
+
+𝐼𝑘= σ𝑗=1
+
+𝑚
+𝑎𝑘𝑗𝑝𝑗,
+𝑎𝑘𝑗= 𝑟𝑘𝑗
+
+−2 max{cos 𝜃𝑘𝑗, 0}
+
+– Problem: achieve desired illumination 𝐼𝑑𝑒𝑠 with bounded
+
+lamp powers
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+15
+
+minimize
+max
+𝑘=1,…,𝑛| log 𝐼𝑘−log 𝐼𝑑𝑒𝑠|
+
+subject to
+0 ≤𝑝𝑗≤𝑝max,
+𝑖= 1, … , 𝑚
+
+## --- [Page 17] ---
+Example – Why formulation matters?
+
+▪How to solve?
+
+1.
+Use uniform power: 𝑝𝑗= 𝑝, vary 𝑝
+
+2.
+Use least-squares:
+
+round 𝑝𝑗 if 𝑝𝑗> 𝑝max or 𝑝𝑗< 0
+
+3.
+Use weighted least-squares:
+
+iteratively adjust weights 𝑤𝑗until 0 ≤𝑝𝑗≤𝑝𝑚𝑎𝑥
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+16
+
+minimize
+෍
+
+𝑘=1
+
+𝑛
+
+𝐼𝑘−𝐼𝑑𝑒𝑠2
+
+minimize
+σ𝑘=1
+
+𝑛
+𝐼𝑘−𝐼𝑑𝑒𝑠2 + σ𝑗=1
+
+𝑚
+𝑤𝑗𝑝𝑗−𝑝max/2
+
+2
+
+## --- [Page 18] ---
+Example – Why formulation matters?
+
+▪How to solve?
+
+4.
+Use linear programming:
+
+which can be solved via linear programming
+
+»
+»
+vs
+
+– Of course these are approximate (suboptimal) solutions
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+17
+
+minimize
+max
+𝑘=1,…,𝑛| 𝐼𝑘−𝐼𝑑𝑒𝑠|
+
+subject to
+0 ≤𝑝𝑗≤𝑝max,
+𝑗= 1, … , 𝑚
+
+## --- [Page 19] ---
+Example – Why formulation matters?
+
+▪How to solve?
+
+5.
+Use convex optimization: problem is equivalent to
+
+where ℎ𝑢= max{𝑢, Τ
+1 𝑢}
+
+– 𝑓0 is convex because maximum of convex functions is convex
+– Exact solution obtained with
+
+effort ≈modest factor × least-squares effort
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+18
+
+minimize
+𝑓0 𝑝= max
+
+𝑘=1,…,𝑛ℎ(
+Τ
+𝐼𝑘𝐼𝑑𝑒𝑠)
+
+subject to
+0 ≤𝑝𝑗≤𝑝max,
+𝑗= 1, … , 𝑚
+
+## --- [Page 20] ---
+Example – Why formulation matters?
+
+▪Additional constraints
+
+– Does adding 1 or 2 below complicate the problem?
+
+1.
+No more than half of total power is in any 10 lamps
+2.
+No more than half of the lamps are on (𝑝𝑗> 0)
+
+– Answer
+
+• With (1), it is still easy to solve
+• With (2), extremely difficult
+
+– Lessons
+
+• (untrained) intuition doesn’t always work
+• Without the proper background, very easy problems can 
+appear quite similar to very difficult problems
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+19
+
+## --- [Page 21] ---
+Chapter 2
+
+Optimization Problems
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+20
+
+## --- [Page 22] ---
+Optimization problem in standard form
+
+– 𝑥∈ℝ𝑛 is the optimization variable (or decision variable)
+– 𝑓0: ℝ𝑛→ℝ is the objective or cost function
+– 𝑓𝑖: ℝ𝑛→ℝ, 𝑖= 1, … , 𝑚 are the inequality constraint functions
+– ℎ𝑖: ℝ𝑛→ℝ, 𝑖= 1, … , 𝑝 are the equality constraint functions
+
+– Optimal value:
+
+𝑝∗= inf 𝑓0 𝑥
+𝑓𝑖𝑥≤0, 𝑖= 1, … , 𝑚, ℎ𝑖𝑥= 0, 𝑖= 1, … , 𝑝}
+• 𝑝∗= ∞if problem is infeasible (no 𝑥satisfies the constraints)
+• 𝑝∗= −∞if problem is unbounded below
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+21
+
+minimize
+𝑓0(𝑥)
+subject to 𝑓𝑖(𝑥) ≤0,
+𝑖= 1, … , 𝑚
+
+ℎ𝑖𝑥= 0,
+𝑖= 1, … , 𝑝
+
+## --- [Page 23] ---
+Optimal and locally optimal points
+
+▪𝑥 is feasible if 𝑥∈𝐝𝐨𝐦𝑓0 and it satisfies the constraints
+
+▪A feasible 𝑥 is optimal if 𝑓0 𝑥= 𝑝∗
+
+– 𝑋opt is the set of optimal points
+
+▪𝑥 is locally optimal if there is an 𝑅> 0 s.t. 𝑥 is optimal for
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+22
+
+minimize 
+(over 𝑧)
+
+𝑓0(𝑧)
+
+subject to
+𝑓𝑖(𝑧) ≤0,
+𝑖= 1, … , 𝑚
+
+ℎ𝑖𝑧= 0,
+𝑖= 1, … , 𝑝
+
+𝑧−𝑥2 ≤𝑅
+
+## --- [Page 24] ---
+Optimal and locally optimal points
+
+▪Examples (with 𝑛= 1, 𝑚= 𝑝= 0, i.e., unconstrained)
+
+– 𝑓0 𝑥= 1/𝑥, 𝐝𝐨𝐦𝑓0 = ℝ++
+
+• 𝑝∗= 0, no optimal point
+
+– 𝑓0 𝑥= −log 𝑥, 𝐝𝐨𝐦𝑓0 = ℝ++
+
+• 𝑝∗= −∞, unbounded below
+
+– 𝑓0 𝑥= 𝑥log 𝑥, 𝐝𝐨𝐦𝑓0 = ℝ++
+
+• 𝑝∗= −1/𝑒, 𝑥= 1/𝑒is optimal
+
+– 𝑓0 𝑥= 𝑥3 −3𝑥
+
+• 𝑝∗= −∞, local optimum at 𝑥= 1
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+23
+
+## --- [Page 25] ---
+Convex set
+
+▪Line segment between 𝑥1 and 𝑥2: all points
+
+𝑥= 𝜃𝑥1 + 1 −𝜃𝑥2,
+0 ≤θ ≤1
+
+– All convex combinations between 𝑥1 and 𝑥2
+
+▪Convex set: contains line segment between any two points
+
+in the set
+
+𝑥1, 𝑥2 ∈𝐶, 0 ≤𝜃≤1 ⇒𝜃𝑥1 + 1 −𝜃𝑥2 ∈𝐶
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+24
+
+## --- [Page 26] ---
+Convex set
+
+▪Generalizing convex combination
+
+– 𝑘points
+
+• 𝑥1, … , 𝑥𝑘∈𝐶⇒𝜃1𝑥1 + ⋯+ 𝜃𝑘𝑥𝑘∈𝐶
+
+› where 𝜃1 + ⋯+ 𝜃𝑘= 1 and 𝜃1, … , 𝜃𝑘≥0
+– Infinite sum
+
+• 𝑥𝑖∈𝐶for 𝑖= 1, 2, … ⇒σ𝑖=1
+∞𝜃𝑖𝑥𝑖∈𝐶
+
+› where σ𝑖=1
+
+∞𝜃𝑖= 1 and 𝜃𝑖≥0 for 𝑖= 1, 2, …
+– Integral
+
+• 𝑥∈𝐶⇒׬𝐶𝑝𝑥𝑥𝑑𝑥∈𝐶
+
+› where ׬𝐶𝑝𝑥𝑑𝑥= 1 and 𝑝𝑥≥0 for all 𝑥∈𝐶
+
+– Probability distribution
+
+• 𝑥is a random variable  ⇒𝔼𝑥∈𝐶
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+25
+
+## --- [Page 27] ---
+Convex function
+
+▪𝑓: ℝ𝑛→ℝis convex if 𝐝𝐨𝐦𝑓is a convex set and
+
+𝒇𝜽𝒙+ 𝟏−𝜽𝒚≤𝜽𝒇𝒙+ 𝟏−𝜽𝒇(𝒚)
+
+– for all 𝑥, 𝑦∈𝐝𝐨𝐦𝑓, 0 ≤𝜃≤1
+
+– 𝑓is concave if −𝑓is convex
+– 𝑓is strictly convex if 𝐝𝐨𝐦𝑓is convex and
+
+𝑓𝜃𝑥+ 1 −𝜃𝑦< 𝜃𝑓𝑥+ 1 −𝜃𝑓(𝑦)
+for 𝑥, 𝑦∈𝐝𝐨𝐦𝑓, 𝑥≠𝑦, 0 < 𝜃< 1
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+26
+
+Jensen’s inequality
+
+## --- [Page 28] ---
+Convex optimization problem
+
+▪Standard form convex optimization problem
+
+– 𝑓0, 𝑓1, … , 𝑓𝑚are convex; equality constraints are affine
+
+– Often written as
+
+– Important property: feasible set of a convex optimization
+
+problem is convex
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+27
+
+minimize
+𝑓0(𝑥)
+subject to 𝑓𝑖(𝑥) ≤0,
+𝑖= 1, … , 𝑚
+
+𝑎𝑖
+
+𝑇𝑥= 𝑏𝑖,
+𝑖= 1, … , 𝑝
+
+minimize
+𝑓0(𝑥)
+
+subject to
+𝑓𝑖(𝑥) ≤0,
+𝑖= 1, … , 𝑚
+
+𝐴𝑥= 𝑏
+
+## --- [Page 29] ---
+Convex optimization problem
+
+▪Example
+
+– 𝑓0 is convex; feasible set 𝑥1, 𝑥2
+𝑥1 = −𝑥2 ≤0} is convex
+
+– But, not a convex problem: 𝑓1 non-convex, ℎ1 non-affine
+
+– Equivalent (but not identical) to the following convex problem
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+28
+
+minimize
+𝑓0 𝑥= 𝑥1
+
+2 + 𝑥2
+2
+
+subject to 𝑓1 𝑥=
+Τ
+𝑥1
+1 + 𝑥2
+2 ≤0
+
+ℎ1 𝑥= 𝑥1 + 𝑥2 2 = 0
+
+minimize
+𝑥1
+
+2 + 𝑥2
+2
+
+subject to 𝑥1 ≤0
+
+𝑥1 + 𝑥2 = 0
+
+## --- [Page 30] ---
+Optimality criterion for differentiable 𝒇𝟎
+
+▪𝑥 is optimal if and only if it is feasible and
+
+𝛻𝑓0 𝑥𝑇𝑦−𝑥≥0
+for all feasible 𝑦
+
+– If nonzero, −𝛻𝑓0 𝑥 defines a supporting hyperplane to
+
+feasible set 𝑋 at 𝑥
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+29
+
+Notice that for all 𝑥, 𝑦∈𝐝𝐨𝐦𝑓0,
+𝑓0 𝑦≥𝑓0 𝑥+ 𝛻𝑓0 𝑥𝑇𝑦−𝑥.
+𝑥 being optimal means 𝑓0 𝑦≥𝑓0 𝑥
+
+## --- [Page 31] ---
+Linear program (LP)
+
+– with 𝐺∈ℝ𝑚×𝑛and 𝐴∈ℝ𝑝×𝑛
+
+– Convex problem with affine objective and constraint functions
+
+– Feasible set is a polyhedron
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+30
+
+minimize
+𝑐𝑇𝑥+ 𝑑
+subject to 𝐺𝑥⪯ℎ
+
+𝐴𝑥= 𝑏
+
+## --- [Page 32] ---
+Linear program (LP)
+
+▪Examples
+
+– Diet problem
+
+• Choose quantities 𝑥1, … , 𝑥𝑛 of 𝑛 foods
+• One unit of food 𝑗 costs 𝑐𝑗, contains amount 𝑎𝑖𝑗 of nutrient 𝑖
+
+• Healthy diet requires nutrient 𝑖 in quantity at least 𝑏𝑖
+
+• To find cheapest healthy diet, solve
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+31
+
+minimize
+𝑐𝑇𝑥
+subject to
+𝐴𝑥⪰𝑏, 𝑥⪰0
+
+## --- [Page 33] ---
+Linear program (LP)
+
+▪Examples
+
+– Piecewise-linear minimization
+
+• Minimizing a piecewise-linear, convex function
+
+• is equivalent to the following epigraph problem
+
+• can be expressed using 𝑚separate inequalities
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+32
+
+minimize
+max
+𝑖=1,…,𝑚(𝑎𝑖
+
+𝑇𝑥+ 𝑏𝑖)
+
+minimize
+𝑡
+
+subject to
+max
+𝑖=1,…,𝑚(𝑎𝑖
+
+𝑇𝑥+ 𝑏𝑖) ≤𝑡
+
+minimize
+𝑡
+
+subject to
+𝑎𝑖
+
+𝑇𝑥+ 𝑏𝑖≤𝑡,
+𝑖= 1, … , 𝑚
+
+## --- [Page 34] ---
+Quadratic program (QP)
+
+– 𝑃∈𝐒+𝒏, so objective is convex quadratic
+
+– Minimize a convex quadratic function over a polyhedron
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+33
+
+minimize
+1
+2 𝑥𝑇𝑃𝑥+ 𝑞𝑇𝑥+ 𝑟
+
+subject to 𝐺𝑥⪯ℎ
+
+𝐴𝑥= 𝑏
+
+## --- [Page 35] ---
+Quadratic program (QP)
+
+▪Examples
+
+– Least-squares and regression
+
+• Analytical solution 𝑥∗= 𝐴†𝑏(𝐴† is pseudo-inverse)
+• Can add linear constraints (e.g. 𝑙⪯𝑥⪯𝑢)
+
+– Linear program with random cost
+
+(𝑐 is random with mean ҧ𝑐and covariance Σ)
+
+• 𝔼𝑐𝑇𝑥= ҧ𝑐𝑇𝑥 and 𝐯𝐚𝐫𝑐𝑇𝑥= 𝑥𝑇Σ𝑥
+• γ > 0 is risk-aversion parameter 
+(controls trade-off between expected cost and variance (risk))
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+34
+
+minimize
+𝐴𝑥−𝑏2
+
+2
+
+minimize
+𝑐𝑇𝑥
+
+subject to
+𝐺𝑥⪯ℎ
+
+𝐴𝑥= 𝑏
+
+minimize
+𝔼𝑐𝑇𝑥+ γ 𝐯𝐚𝐫(𝑐𝑇𝑥)
+
+subject to 𝐺𝑥⪯ℎ
+
+𝐴𝑥= 𝑏
+
+## --- [Page 36] ---
+Quadratic program (QP)
+
+▪Examples
+
+– Markowitz portfolio optimization
+
+• 𝑛 number of investment assets
+
+› 𝑟𝑖= rate of return of asset 𝑖
+› 𝑟= [𝑟1 𝑟2 … 𝑟𝑛] is random with mean 𝜇and covariance Σ
+• Choose investment proportions 𝑤1, … , 𝑤𝑛on 𝑛assets
+
+› 𝑤1 + ⋯+ 𝑤𝑛= 1 (budget constraint)
+› 𝑤1, … , 𝑤𝑛≥0 (no short constraint) (can be omitted in some cases)
+• We want to minimize risk and maximize return
+
+› λ > 0 is risk-preference parameter
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+35
+
+minimize
+𝑤𝑇Σ𝑤−λ𝜇𝑇𝑤
+
+subject to
+𝟙𝑇𝑤= 1
+
+𝑤⪰0
+
+## --- [Page 37] ---
+Quadratically constrained quadratic program (QCQP)
+
+– 𝑃𝑖∈𝐒+𝒏; hence, objective and inequality constraints are
+
+convex quadratic
+– If 𝑃1, … , 𝑃𝑚∈𝐒++
+𝒏, feasible region is intersection of 𝑚
+ellipsoids and an affine set
+
+– QP include LP as a special case (𝑃= 0)
+– QCQP include QP as a special case (𝑃𝑖= 0 for all 𝑖> 0)
+– Hence, LP ⊂ QP ⊂ QCQP
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+36
+
+minimize
+1
+2 𝑥𝑇𝑃0𝑥+ 𝑞0
+𝑇𝑥+ 𝑟0
+
+subject to 1
+
+2 𝑥𝑇𝑃𝑖𝑥+ 𝑞𝑖
+𝑇𝑥+ 𝑟𝑖≤0,
+𝑖= 1, … , 𝑚
+
+𝐴𝑥= 𝑏
+
+## --- [Page 38] ---
+Quadratically constrained quadratic program (QCQP)
+
+▪Sharpe ratio maximization
+
+– It gives the same result (𝑤= 𝑦/𝑡)
+– This is a quadratically-constrained quadratic programming
+
+(QCQP) problem, which is convex
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+37
+
+maximize𝑤
+
+𝑤𝑇𝜇−𝑟𝑓
+
+𝑤𝑇Σ𝑤
+
+subject to
+𝟙𝑇𝑤= 1
+
+maximize𝑦, 𝑡
+𝑦𝑇𝜇−𝑡𝑟𝑓
+
+subject to
+𝟙𝑇𝑦= 𝑡
+
+𝑦𝑇Σ𝑦≤1
+
+𝑡≥0
+
+Sharpe ratio
+
+Sharpe ratio =
+
+𝜇𝑝−𝑟𝑓
+
+𝜎𝑝
+
+=
+
+𝑤𝑇𝜇−𝑟𝑓
+
+𝑤𝑇Σ𝑤
+A measure of return over risk
+
+## --- [Page 39] ---
+Second-order cone program (SOCP)
+
+– With 𝐴𝑖∈ℝ𝑛𝑖×𝑛, 𝑏𝑖∈ℝ𝑛𝑖, 𝐹∈ℝ𝑝×𝑛
+
+– Inequalities are called second-order cone (SOC) constraints:
+
+𝐴𝑖𝑥+ 𝑏𝑖, 𝑐𝑖
+
+𝑇𝑥+ 𝑑𝑖∈second-order cone in ℝ𝑛𝑖+1
+
+– For 𝑛𝑖= 0, reduces to an LP; if 𝑐𝑖= 0, reduces to a QCQP
+– Hence, more general than QCQP and LP
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+38
+
+minimize
+𝑓𝑇𝑥+ 𝑟0
+subject to
+𝐴𝑖𝑥+ 𝑏𝑖
+2 ≤𝑐𝑖
+𝑇𝑥+ 𝑑𝑖,
+𝑖= 1, … , 𝑚
+
+𝐹𝑥= 𝑔
+
+## --- [Page 40] ---
+Second-order cone program (SOCP)
+
+▪Example
+
+– Robust linear programming
+
+• Parameters in optimization problems are often uncertain
+• For example, in LP
+
+there can be uncertainty in 𝒄, 𝒂𝒊, 𝒃𝒊
+• Two common approaches to handling uncertainty (in 𝒂𝒊, for simplicity)
+
+› Deterministic model: constraints must hold for all 𝑎𝑖∈ℰ𝑖
+
+› Stochastic model: 𝑎𝑖 is random; constraints must hold with probability 𝜂
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+39
+
+minimize 𝒄𝑇𝑥
+
+subject to 𝒂𝒊
+
+𝑇𝑥≤𝒃𝒊, 𝑖= 1, … , 𝑚,
+
+minimize
+𝑐𝑇𝑥
+
+subject to 𝑎𝑖
+
+𝑇𝑥≤𝑏𝑖, for all 𝑎𝑖∈ℰ𝑖, 𝑖= 1, … , 𝑚
+
+minimize
+𝑐𝑇𝑥
+
+subject to 𝐩𝐫𝐨𝐛𝑎𝑖
+
+𝑇𝑥≤𝑏𝑖≥𝜂, 𝑖= 1, … , 𝑚
+
+## --- [Page 41] ---
+Second-order cone program (SOCP)
+
+▪Example
+
+– Robust linear programming (cont’d)
+
+• Deterministic approach via SOCP
+
+› Choose an ellipsoid as ℰ𝑖
+
+ℰ𝑖= ത𝑎𝑖+ 𝑃𝑖𝑢
+𝑢2 ≤1}      (ത𝑎𝑖∈ℝ𝑛, 𝑃𝑖∈ℝ𝑛×𝑛)
+› Robust LP
+
+» is equivalent to the SOCP
+
+» Since sup
+
+𝑢2≤1
+
+ത𝑎𝑖+ 𝑃𝑖𝑢𝑇𝑥= ത𝑎𝑖
+
+𝑇𝑥+ 𝑃𝑖
+
+𝑇𝑥2
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+40
+
+minimize
+𝑐𝑇𝑥
+
+subject to 𝑎𝑖
+
+𝑇𝑥≤𝑏𝑖, for all 𝑎𝑖∈ℰ𝑖, 𝑖= 1, … , 𝑚
+
+minimize
+𝑐𝑇𝑥
+
+subject to ത𝑎𝑖
+
+𝑇𝑥+ 𝑃𝑖
+
+𝑇𝑥2 ≤𝑏𝑖, 𝑖= 1, … , 𝑚
+
+
+| minimize | 𝑇 𝑐 𝑥 |
+| --- | --- |
+| subject to | 𝑇 𝒂 𝑥 ≤ 𝑏 , 𝑖 = 1, … , 𝑚 𝒊 𝑖 |
+
+## --- [Page 42] ---
+Second-order cone program (SOCP)
+
+▪Example
+
+– Robust linear programming (cont’d)
+
+• Stochastic approach via SOCP
+
+› Assume 𝑎𝑖is Gaussian with mean ത𝑎𝑖, covariance Σ𝑖(𝑎𝑖~𝒩(ത𝑎𝑖, Σ𝑖))
+
+› 𝑎𝑖
+
+𝑇𝑥is a Gaussian r.v. with mean ത𝑎𝑖
+
+𝑇𝑥, variance 𝑥𝑇Σ𝑖𝑥; hence
+
+𝐩𝐫𝐨𝐛𝑎𝑖
+
+𝑇𝑥≤𝑏𝑖= Φ
+𝑏𝑖−ത𝑎𝑖
+
+𝑇𝑥
+
+Σ𝑖
+
+Τ
+1 2𝑥
+2
+where Φ 𝑥= (1/ 2𝜋) ׬−∞
+
+𝑥𝑒−
+Τ
+𝑡2 2 𝑑𝑡is CDF of 𝒩(0,1)
+
+› Robust LP
+
+» With 𝜂≥1/2 is equivalent to the SOCP
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+41
+
+minimize
+𝑐𝑇𝑥
+
+subject to 𝐩𝐫𝐨𝐛𝑎𝑖
+
+𝑇𝑥≤𝑏𝑖≥𝜂, 𝑖= 1, … , 𝑚
+
+minimize
+𝑐𝑇𝑥
+
+subject to ത𝑎𝑖
+
+𝑇𝑥+ Φ−1 𝜂
+Σ𝑖
+
+Τ
+1 2𝑥
+2 ≤𝑏𝑖, 𝑖= 1, … , 𝑚
+
+
+| minimize | 𝑇 𝑐 𝑥 |
+| --- | --- |
+| subject to | 𝑇 𝒂 𝑥 ≤ 𝑏 , 𝑖 = 1, … , 𝑚 𝒊 𝑖 |
+
+## --- [Page 43] ---
+Semidefinite program (SDP)
+
+– 𝐺, 𝐹1, … , 𝐹𝑛∈𝐒𝑘and 𝐴∈ℝ𝑝×𝑛
+
+– Inequality constraint is called linear matrix inequality (LMI)
+– Includes problems with multiple LMI constraints: for example,
+
+𝑥1 ෠𝐹1 + ⋯+ 𝑥𝑛෠𝐹𝑛+ 𝐺⪯0,
+𝑥1 ෨𝐹1 + ⋯+ 𝑥𝑛෨𝐹𝑛+ 𝐺⪯0
+
+is equivalent to single LMI
+
+𝑥1
+
+෠𝐹1
+0
+0
+෨𝐹1
+
++ 𝑥2
+
+෠𝐹2
+0
+0
+෨𝐹2
+
++ ⋯+ 𝑥𝑛
+
+෠𝐹𝑛
+0
+0
+෨𝐹𝑛
+
++
+෠𝐺
+0
+0
+෨𝐺⪯0
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+42
+
+minimize
+𝑐𝑇𝑥
+subject to
+𝑥1𝐹1 + 𝑥2𝐹2 + ⋯+ 𝑥𝑛𝐹𝑛+ 𝐺⪯0
+
+𝐴𝑥= 𝑏
+
+## --- [Page 44] ---
+Semidefinite program (SDP)
+
+▪Standard form semidefinite program
+
+– 𝐶, 𝐴1, … , 𝐴𝑝∈𝐒𝑛
+
+– Note that 𝐭𝐫𝐶𝑋= σ𝑖,𝑗=1
+
+𝑛
+𝐶𝑖𝑗𝑋𝑖𝑗is the form of a general 
+real-valued linear function on 𝐒𝑛
+
+• Hence, it can be regarded as a matrix version of LP
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+43
+
+minimize
+𝐭𝐫(𝐶𝑋)
+subject to
+𝐭𝐫𝐴𝑖𝑋= 𝑏𝑖,
+𝑖= 1, … , 𝑝
+
+𝑋⪰0
+
+## --- [Page 45] ---
+Hierarchy of convex optimization problems
+
+▪CP: cone program
+
+▪SDP: Semi-definite program
+
+▪SOCP: Second-order cone program
+
+▪QP: quadratic program
+
+▪LP: linear program
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+44
+
+## --- [Page 46] ---
+Chapter 3
+
+Decision-focused learning
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+45
+
+## --- [Page 47] ---
+ML-based decision making process
+
+▪Issues in usual ML-based decision making process
+
+– Predict-then-optimize
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+46
+
+Prediction
+Decision Making
+
+input
+
+Machine Learning
+Optimization
+
+## --- [Page 48] ---
+ML-based decision making process
+
+▪Issues in usual ML-based decision making process
+
+– Predict-then-optimize
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+47
+
+Predictions should contain errors
+
+(Garbage in garbage out)
+
+Prediction
+Decision Making
+
+input
+
+Machine Learning
+Optimization
+
+Issue 1
+
+## --- [Page 49] ---
+ML-based decision making process
+
+▪Issues in usual ML-based decision making process
+
+– Predict-then-optimize
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+48
+
+input
+
+Machine Learning
+Optimization
+
+Decision Making
+Prediction
+
+Best prediction ≠Optimal decision
+
+Issue 2
+
+## --- [Page 50] ---
+Motivating examples
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+49
+
+## --- [Page 51] ---
+Motivating examples
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+50
+
+## --- [Page 52] ---
+Motivating examples
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+51
+
+## --- [Page 53] ---
+Motivating examples
+
+▪Two different facilities
+
+– High prior inventory
+
+• In most cases, prior inventory is 
+higher than demand
+• No action required
+– Low prior inventory
+
+• In most cases, demand is higher 
+than prior inventory
+• Need to do something
+
+▪But MSE-minimizing prediction
+
+model cannot reflect this
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+52
+
+
+| Chung, T. H., Rostami, V., |  |  | Bastani | , H., & | Bastani | , O. (2022). |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Decision | - | aware learning for optimizing health supply chains. |  |  |  |  | arXiv |  | preprint arXiv:2211.08507 | . |
+
+## --- [Page 54] ---
+Motivating examples
+
+▪Minimize 𝑐𝑇𝑥within a feasible
+
+region
+
+– (a) predictions Ƹ𝑐𝐴and Ƹ𝑐𝐵have
+
+similar level of error
+
+• But, for decisions,
+𝑤∗
+Ƹ𝑐𝐴= 𝑤∗𝑐, while 𝑤∗
+Ƹ𝑐𝐵
+is very different
+– (b) predictions Ƹ𝑐𝐴and Ƹ𝑐𝐵have
+
+similar level of error
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+53
+
+
+| Elmachtoub | , A. N., & | Grigas | , P. (2022). Smart “predict, then optimize”. | Management Science | , | 68 | (1), 9 | - | 26. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+
+## --- [Page 55] ---
+Decision-focused learning
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+54
+
+▪𝒟≔{ 𝑥1, 𝑦1 , … , 𝑥𝑛, 𝑦𝑛}, a decision should be made given 𝑥
+
+▪Predict then optimize:
+
+▪Decision-focused learning
+
+𝐴𝜋𝑥= 𝑎⋆𝑓෡𝜃(𝑥)
+
+መ𝜃= arg min
+
+𝜃∈Θ ෍
+
+𝑖=1
+
+𝑛
+
+ℒ𝑝𝑟𝑒𝑑𝑓𝜃𝑥𝑖, 𝑦𝑖
+
+መ𝜃= arg min
+
+𝜃∈Θ ෍
+
+𝑖=1
+
+𝑛
+
+ℒ𝑑𝑒𝑐𝑓𝜃𝑥𝑖, 𝑦𝑖
+
+where 𝑎⋆𝑦≔arg min
+
+𝑎∈𝒜𝑐(𝑎, 𝑦)
+
+e.g., ℒ𝑝𝑟𝑒𝑑ො𝑦, 𝑦= 𝑦−ො𝑦2
+
+ℒ𝑑𝑒𝑐ො𝑦, 𝑦≔𝑐𝑎⋆ො𝑦, 𝑦
+
+## --- [Page 56] ---
+Decision-focused learning
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+55
+
+
+| Lee, Yongjae; Kim, Jang Ho; Kim, Woo Chang; Fabozzi, Frank J. (2024) “An Overview of Machine Learning for Portfolio |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| Optimization,” | Journal of Portfolio Management | , 51(2), 131 | - | 148 |
+
+## --- [Page 57] ---
+Decision-focused learning
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+56
+
+▪If everything is differentiable,
+
+▪The second term
+
+𝑑𝑎⋆𝑦
+
+𝑑𝑦
+is particularly tricky
+
+– 𝑎⋆(𝑦) may not be uniquely defined or differentiable
+
+𝑑ℒ𝑑𝑒𝑐
+
+𝑑𝜃
+= 𝑑𝑐𝑎⋆𝑓𝜃𝑥𝑖
+, 𝑦𝑖
+𝑑𝑎⋆𝑓𝜃𝑥𝑖
+
+⋅𝑑𝑎⋆𝑓𝜃𝑥𝑖
+
+𝑑𝑓𝜃𝑥𝑖
+
+⋅𝑑𝑓𝜃𝑥𝑖
+
+𝑑𝜃
+
+min
+
+𝜃∈Θ ෍
+
+𝑖=1
+
+𝑛
+
+ℒ𝑑𝑒𝑐𝑓𝜃𝑥𝑖, 𝑦𝑖
+ℒ𝑑𝑒𝑐ො𝑦, 𝑦≔𝑐𝑎⋆ො𝑦, 𝑦
+
+## --- [Page 58] ---
+Decision-focused learning
+
+▪Proxy Objectives (Surrogates)
+
+– In many cases, it is computationally challenging to minimize
+
+the decision loss
+
+• involves an inner optimization problem, 𝑎⋆𝑓𝜃(𝑥𝑖)
+• may not be differentiable
+– People have suggested to use proxy-objectives (surrogates)
+
+• Linear reparameterization by Wang et al. (2020)
+• SPO+ (Elmachtoub and Grigas, 2022)
+• Local approximation (Chung et al., 2022, Shah et al., 2022)
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+57
+
+min
+
+𝜃∈Θ ෍
+
+𝑖=1
+
+𝑛
+
+ℒ𝑑𝑒𝑐𝑓𝜃𝑥𝑖, 𝑦𝑖
+min
+
+𝜃∈Θ ෍
+
+𝑖=1
+
+𝑛
+
+መℒ𝑑𝑒𝑐𝑓𝜃𝑥𝑖, 𝑦𝑖
+
+## --- [Page 59] ---
+Decision-focused learning
+
+▪Proxy Objectives (Surrogates)
+
+– Locally optimized decision losses (LODL) by Shah et al. (2022)
+
+
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Shah, S., Wang, K., Wilder, B., Perrault, A., & |  |  | Tambe | , M. (2022). Decision | - | focused learning without decision |  |  |  |  |  |  | - | making: Lear |
+| ning locally optimized decision losses. |  | UNIST Financial Engineering Lab. Advances in Neural Information Processing Systems |  |  |  |  | , |  | 35 | , 1320 | - | 1332. |  |  |
+
+## --- [Page 60] ---
+Decision-focused learning
+
+▪Tangent-Space Projection
+
+– Prediction Error As Regret-gradient (PEAR) by Lee et al. (2026)
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+59
+
+Lee, J., Jin, S., & Lee, Y. (2026). Decision-Focused Learning via Tangent-Space Projection of Prediction Error. Forty-Third 
+International Conference on Machine Learning (ICML 2026)
+
+## --- [Page 61] ---
+Decision-focused learning
+
+▪Tangent-Space Projection
+
+– Prediction Error As Regret-gradient (PEAR) by Lee et al. (2026)
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+60
+
+Lee, J., Jin, S., & Lee, Y. (2026). Decision-Focused Learning via Tangent-Space Projection of Prediction Error. Forty-Third 
+International Conference on Machine Learning (ICML 2026)
+
+## --- [Page 62] ---
+Decision-focused learning
+
+▪If the prediction model is overly optimized for decision quality, its
+
+prediction quality can be critically degraded
+
+– may be useless for the other downstream tasks
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+61
+
+Lee, J., Jin, S., & Lee, Y. (2026). Decision-Focused Learning via Tangent-Space Projection of Prediction Error. Proceeding
+s of the 43rd International Conference on Machine Learning (ICML 2026), PMLR 306, 2026
+
+## --- [Page 63] ---
+Decision-focused learning
+
+▪If the prediction model is overly optimized for decision quality, its
+
+prediction quality can be critically degraded
+
+– may be useless for the other downstream tasks
+– often suggested to add a regularization term in decision loss
+
+minimization
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+62
+
+Jeon, H., Bae, H., Kim, C., Lee, Y., & Kim, W. C. (2025). Prediction Loss Guided Decision-Focused Learning. arXiv preprin
+t arXiv:2509.08359.
+https://arxiv.org/abs/2509.08359
+
+## --- [Page 64] ---
+Paper 1
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+63
+
+Lee, J., Jeon, H., Bae, H., & Lee, Y. (2025, November). Return Prediction for Mean-Variance P
+ortfolio Selection: How Decision-Focused Learning Shapes Forecasting Models. In Proceedings 
+of the 6th ACM International Conference on AI in Finance (pp. 114-122).
+https://dl.acm.org/doi/full/10.1145/3768292.3770423
+
+## --- [Page 65] ---
+Paper 1
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+64
+
+Lee, J., Jeon, H., Bae, H., & Lee, Y. (2025, November). Return Prediction for Mean-Variance P
+ortfolio Selection: How Decision-Focused Learning Shapes Forecasting Models. In Proceedings 
+of the 6th ACM International Conference on AI in Finance (pp. 114-122).
+https://dl.acm.org/doi/full/10.1145/3768292.3770423
+
+## --- [Page 66] ---
+Paper 1
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+65
+
+Lee, J., Jeon, H., Bae, H., & Lee, Y. (2025, November). Return Prediction for Mean-Variance P
+ortfolio Selection: How Decision-Focused Learning Shapes Forecasting Models. In Proceedings 
+of the 6th ACM International Conference on AI in Finance (pp. 114-122).
+https://dl.acm.org/doi/full/10.1145/3768292.3770423
+
+## --- [Page 67] ---
+
+
+| Paper 1 |  |
+| --- | --- |
+|  |  |
+| Lee, J., Jeon, H., Bae, H., & Lee, Y. (2025, November). Return Prediction for Mean-Variance P UNIST Financial Engineering Lab. ortfolio Selection: How Decision-Focused Learning Shapes Forecasting Models. In Proceedings 66 of the 6th ACM International C(hontftepresn:c/e/ foen lAaI bin. Fuinnainscte. a(pcp.. 1k1r4)-122). https://dl.acm.org/doi/full/10.1145/3768292.3770423 |  |
+
+## --- [Page 68] ---
+Paper 2
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+67
+
+Kim, J., Tae, I., & Lee, Y. (2025, November). Estimating Covariance for Global Minimum Varian
+ce Portfolio: A Decision-Focused Learning Approach. In Proceedings of the 6th ACM Internation
+al Conference on AI in Finance (pp. 105-113).
+https://dl.acm.org/doi/full/10.1145/3768292.3770378
+
+## --- [Page 69] ---
+Paper 2
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+68
+
+Kim, J., Tae, I., & Lee, Y. (2025, November). Estimating Covariance for Global Minimum Varian
+ce Portfolio: A Decision-Focused Learning Approach. In Proceedings of the 6th ACM Internation
+al Conference on AI in Finance (pp. 105-113).
+https://dl.acm.org/doi/full/10.1145/3768292.3770378
+
+## --- [Page 70] ---
+Paper 2
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+69
+
+Kim, J., Tae, I., & Lee, Y. (2025, November). Estimating Covariance for Global Minimum Varian
+ce Portfolio: A Decision-Focused Learning Approach. In Proceedings of the 6th ACM Internation
+al Conference on AI in Finance (pp. 105-113).
+https://dl.acm.org/doi/full/10.1145/3768292.3770378
+
+## --- [Page 71] ---
+Paper 2
+
+UNIST Financial Engineering Lab.
+
+(https://felab.unist.ac.kr)
+70
+
+Kim, J., Tae, I., & Lee, Y. (2025, November). Estimating Covariance for Global Minimum Varian
+ce Portfolio: A Decision-Focused Learning Approach. In Proceedings of the 6th ACM Internation
+al Conference on AI in Finance (pp. 105-113).
+https://dl.acm.org/doi/full/10.1145/3768292.3770378
