@@ -2,6 +2,9 @@
 
 ## lecture
 
+* [01. Perceptron 이론 - 신경망 구성과 의사결정 경계](./01.%20Perceptron%20%EC%9D%B4%EB%A1%A0%20-%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B5%AC%EC%84%B1.md) - 기호주의와 연결주의의 역사적 대립, 생물학적 뉴런과 인공 퍼셉트론의 구조적 대응, 회귀(Regression)와 분류(Classification) 응용, 2차원 결정 초평면(Decision Boundary)의 기하학적 유도를 인터랙티브 퍼셉트론 분류 시뮬레이터로 심층 학습한다.
+* [02. Perceptron 이론 - 활성화 함수와 손실 최적화](./02.%20Perceptron%20%EC%9D%B4%EB%A1%A0%20-%20%ED%99%9C%EC%84%B1%ED%99%94%EC%99%80%20%EC%B5%9C%EC%A0%81%ED%99%94.md) - 불연속 계단 함수에서 연속 시그모이드(Sigmoid)로의 확장, 이진 교차 엔트로피(BCE) 손실 함수의 수학적 유도, 경사하강법(Gradient Descent) 가중치 편미분 유도를 인터랙티브 시그모이드 확률·손실 계산기로 심층 학습한다.
+* [03. Perceptron 논리 게이트 실습과 선형 분리성 (Colab Lab)](./03.%20Perceptron%20%EB%85%BC%EB%A6%AC%20%EA%B2%8C%EC%9D%B4%ED%8A%B8%20%EC%8B%A4%EC%8A%B5.md) - Google Colab 환경에서의 AND·OR·NAND 단일 퍼셉트론 가중치·편향 설계, 진리표(Truth Table) 기반 2D 결정 경계 분리 검증 및 XOR 다층 결합 파이프라인을 인터랙티브 논리 게이트 시뮬레이터로 실습한다.
 * [AI 아바타 만들기 실습](./26.%20AI%20%EC%95%84%EB%B0%94%ED%83%80%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20%EC%8B%A4%EC%8A%B5.md) - AI 아바타 만들기 실습의 입력·계산·검증 흐름을 정리한다.
 * [artificial-intelligence 강의 흐름 지도](./00.%20artificial-intelligence%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 29개의 순서·쪽수·학습 점검을 연결한다.
 * [Backpropagation의 가중치 갱신](./13.%20Backpropagation%EC%9D%98%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EA%B0%B1%EC%8B%A0.md) - Backpropagation의 가중치 갱신의 입력·계산·검증 흐름을 정리한다.
@@ -23,9 +26,6 @@
 * [Optimizer - 적응적 학습률](./09.%20Optimizer%20-%20%EC%A0%81%EC%9D%91%EC%A0%81%20%ED%95%99%EC%8A%B5%EB%A5%A0.md) - Optimizer - 적응적 학습률의 핵심 개념과 학습 판단을 정리한다.
 * [Overfitting - 규제와 조기 종료](./11.%20Overfitting%20-%20%EA%B7%9C%EC%A0%9C%EC%99%80%20%EC%A1%B0%EA%B8%B0%20%EC%A2%85%EB%A3%8C.md) - Overfitting - 규제와 조기 종료의 핵심 개념과 학습 판단을 정리한다.
 * [Overfitting - 일반화 진단](./10.%20Overfitting%20-%20%EC%9D%BC%EB%B0%98%ED%99%94%20%EC%A7%84%EB%8B%A8.md) - Overfitting - 일반화 진단의 핵심 개념과 학습 판단을 정리한다.
-* [Perceptron 논리 게이트 실습](./03.%20Perceptron%20%EB%85%BC%EB%A6%AC%20%EA%B2%8C%EC%9D%B4%ED%8A%B8%20%EC%8B%A4%EC%8A%B5.md) - Perceptron 논리 게이트 실습의 핵심 개념과 학습 판단을 정리한다.
-* [Perceptron 이론 - 신경망 구성](./01.%20Perceptron%20%EC%9D%B4%EB%A1%A0%20-%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B5%AC%EC%84%B1.md) - Perceptron 이론 - 신경망 구성의 핵심 개념과 학습 판단을 정리한다.
-* [Perceptron 이론 - 활성화와 최적화](./02.%20Perceptron%20%EC%9D%B4%EB%A1%A0%20-%20%ED%99%9C%EC%84%B1%ED%99%94%EC%99%80%20%EC%B5%9C%EC%A0%81%ED%99%94.md) - Perceptron 이론 - 활성화와 최적화의 핵심 개념과 학습 판단을 정리한다.
 * [Vanishing Gradient Effect](./14.%20Vanishing%20Gradient%20Effect.md) - Vanishing Gradient Effect의 핵심 개념과 학습 판단을 정리한다.
 * [Vanishing Gradient 완화](./15.%20Vanishing%20Gradient%20%EC%99%84%ED%99%94.md) - Vanishing Gradient 완화의 핵심 개념과 학습 판단을 정리한다.
 * [VGGNet 실습](./24.%20VGGNet%20%EC%8B%A4%EC%8A%B5.md) - VGGNet 실습의 핵심 개념과 학습 판단을 정리한다.
