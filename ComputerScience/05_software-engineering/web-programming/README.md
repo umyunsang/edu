@@ -23,3 +23,7 @@ slides: true
 | 원본 PDF | 14개 |
 | 총 쪽수 | 222 |
 | 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |
+
+## 주제 노트
+
+- [01. 웹 프로그래밍 — HTML·Spring Boot·세션·데이터베이스](<./notes/01. 웹 프로그래밍 — HTML·Spring Boot·세션·데이터베이스.md>)

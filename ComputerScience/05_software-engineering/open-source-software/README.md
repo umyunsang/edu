@@ -23,3 +23,7 @@ slides: true
 | 원본 PDF | 11개 |
 | 총 쪽수 | 240 |
 | 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |
+
+## 주제 노트
+
+- [01. OSS 웹 프로그래밍 — HTML·CSS·JavaScript·DOM·이벤트](<./notes/01. OSS 웹 프로그래밍 — HTML·CSS·JavaScript·DOM·이벤트.md>)
