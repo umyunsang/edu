@@ -11,6 +11,7 @@ status: draft
 aliases: []
 created: "2026-08-29"
 updated: "2026-08-29"
+slides: true
 ---
 
 > [!abstract] 한 줄 요약

@@ -2,11 +2,12 @@
 title: 리눅스 시스템
 description: 리눅스 명령 환경·권한·웹 서비스·데이터·컨테이너·오픈소스 노트 인덱스
 type: course-index
-tags: [course, linux]
+tags: [ course, linux ]
 course: linux
 semester: 2-1
 status: draft
 aliases: []
+slides: true
 ---
 
 > [!abstract] 학습 경로

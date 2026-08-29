@@ -10,6 +10,7 @@ semester: "1-2"
 status: draft
 created: "2026-08-29"
 updated: "2026-08-29"
+slides: true
 ---
 
 > [!abstract] 강의 흐름

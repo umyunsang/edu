@@ -3,13 +3,14 @@ title: 학점 포트폴리오
 description: '졸업 요건과 이수 계획 정리. 학기: extracurricular.'
 type: course-index
 tags:
-- course
-- extracurricular
+  - course
+  - extracurricular
 course: degree-portfolio
 semester: extracurricular
 status: draft
 created: '2026-08-28'
 updated: '2026-08-28'
+slides: true
 ---
 
 > [!abstract] 이 과목은

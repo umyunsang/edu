@@ -14,6 +14,7 @@ aliases:
   - AIE309
 created: "2026-08-28"
 updated: "2026-08-29"
+slides: true
 ---
 
 > [!abstract] 한 줄 요약

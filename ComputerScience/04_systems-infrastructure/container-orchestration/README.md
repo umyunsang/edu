@@ -3,13 +3,14 @@ title: 컨테이너 오케스트레이션
 description: '도커와 쿠버네티스 기초. 강의자료 없이 정리 노트만 있다. 학기: extracurricular.'
 type: course-index
 tags:
-- course
-- extracurricular
+  - course
+  - extracurricular
 course: container-orchestration
 semester: extracurricular
 status: draft
 created: '2026-08-28'
 updated: '2026-08-28'
+slides: true
 ---
 
 > [!abstract] 이 과목은

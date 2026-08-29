@@ -2,11 +2,12 @@
 title: 머신러닝 프로젝트
 description: Python 배열·고전 머신러닝·LangChain 기반 챗봇 노트를 연결하는 학습 인덱스
 type: course-index
-tags: [course, machine-learning]
+tags: [ course, machine-learning ]
 course: ml-projects
 semester: 3-1
 status: draft
 aliases: []
+slides: true
 ---
 
 > [!abstract] 학습 경로

@@ -3,13 +3,14 @@ title: Java 프로그래밍
 description: '자바 문법과 객체지향 정리. 학기: extracurricular.'
 type: course-index
 tags:
-- course
-- extracurricular
+  - course
+  - extracurricular
 course: java-programming
 semester: extracurricular
 status: draft
 created: '2026-08-28'
 updated: '2026-08-28'
+slides: true
 ---
 
 > [!abstract] 이 과목은

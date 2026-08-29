@@ -3,13 +3,14 @@ title: 수리논리학
 description: '명제·술어 논리와 증명. 신호 처리 실습(STFT·MFCC) 자료가 섞여 있다. 학기: 3-1.'
 type: course-index
 tags:
-- course
-- 3-1
+  - course
+  - 3-1
 course: mathematical-logic
 semester: 3-1
 status: draft
 created: '2026-08-28'
 updated: '2026-08-28'
+slides: true
 ---
 
 > [!abstract] 이 과목은

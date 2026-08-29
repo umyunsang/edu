@@ -8,6 +8,7 @@ tags:
 course: computer-networks
 semester: "2-2"
 status: draft
+slides: true
 ---
 
 ## 강의 흐름 지도

@@ -1,6 +1,6 @@
 ---
 aliases:
-- LG Aimers 9기
+  - LG Aimers 9기
 course: lgaimer
 created: '2026-06-22'
 date: '2026-06-22'
@@ -12,12 +12,13 @@ semester: extracurricular
 source: ''
 status: stable
 tags:
-- ml
-- extracurricular
-- interface
+  - ml
+  - extracurricular
+  - interface
 title: LG Aimers 9기
 type: interface
 updated: '2026-06-25'
+slides: true
 ---
 
 previous:: [LG Aimers 8기](<../LG Aimers 8기/LG Aimers 8기.md>)

@@ -1,6 +1,6 @@
 ---
 aliases:
-- LG Aimers 8기
+  - LG Aimers 8기
 course: lgaimer
 created: '2026-06-22'
 date: '2026-06-22'
@@ -12,12 +12,13 @@ semester: extracurricular
 source: ''
 status: stable
 tags:
-- ml
-- extracurricular
-- interface
+  - ml
+  - extracurricular
+  - interface
 title: LG Aimers 8기
 type: interface
 updated: '2026-06-22'
+slides: true
 ---
 
 LG Aimers 8기 수료 및 LLM Compression/EXAONE 모델 경량화 해커톤 관련 자료를 묶는 세대 허브입니다.
