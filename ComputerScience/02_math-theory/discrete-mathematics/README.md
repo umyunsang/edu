@@ -1,50 +1,31 @@
 ---
 title: 이산수학
-description: '집합·논리·관계·그래프 이론. 알고리즘과 수리논리학의 선수 과목. 학기: 2-2.'
+description: "이산·집합·논리에서 관계·그래프·트리와 지식그래프 알고리즘, 과제까지 이어지는 강의 흐름"
 type: course-index
 tags:
-- course
-- 2-2
+  - course
+  - discrete-mathematics
 course: discrete-mathematics
-semester: 2-2
+semester: "2024-2"
 status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+created: "2026-08-29"
+updated: "2026-08-29"
 ---
 
-> [!abstract] 이 과목은
-> 집합·논리·관계·그래프 이론. 알고리즘과 수리논리학의 선수 과목. 학기: 2-2.
+> [!abstract] 강의 흐름
+> 이산수학·집합·논리 기초 → 관계와 함수 → 그래프 → 트리 → 지식그래프·알고리즘 → Homework I 순서로 읽는다.
 
 ## 정리문서
 
-모두 `notes/` 에 있다. 총 6편.
-
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [Decorator to log execution details](<./notes/Discrete mathematics Assignment.md>) | — |
-| [과제 번역](<./notes/과제 번역.md>) | — |
-| [관계와 함수](<./notes/관계와 함수.md>) | — |
-| [*fuctions을 이용해서 가변인자 받기](<./notes/그래프.md>) | — |
-| [수학적 모델과 논리](<./notes/수학적 모델과 논리.md>) | — |
-| [집합 및 집합 연산](<./notes/집합 및 집합 연산.md>) | — |
+| 순서 | 문서 | 원본 |
+| --- | --- | --- |
+| 01 | [이산수학·집합·논리 기초](<./notes/01. 이산수학·집합·논리 기초.md>) | 소개, 집합, 모델·논리 |
+| 02 | [관계와 함수](<./notes/02. 관계와 함수.md>) | 4장 |
+| 03 | [그래프의 기본 개념과 평면성](<./notes/03. 그래프의 기본 개념과 평면성.md>) | 5장 두 PDF |
+| 04 | [트리와 탐방 알고리즘](<./notes/04. 트리와 탐방 알고리즘.md>) | 6장 |
+| 05 | [지식그래프와 그래프 알고리즘](<./notes/05. 지식그래프와 그래프 알고리즘.md>) | 7장, 부록 |
+| 06 | [이산수학 과제 제출 점검](<./notes/06. 이산수학 과제 제출 점검.md>) | Homework I |
 
 ## 원본 자료
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 11건.
-
-- `1 이산수학 소개.pdf`
-- `4 관계 및 함수.pdf`
-- `5 그래프 2.pdf`
-- `5 그래프.pdf`
-- `6 트리.pdf`
-- `7 지식그래프 소개.pdf`
-- `Appendix 1 Floyd Warshall Algorithm.pdf`
-- `Appendix 2 Welch-Powell Algorithms.pdf`
-- `Discrete_Mathematics__Homework_I (1).pdf`
-- `수학적 모델과 논리.pdf`
-- `집합 및 집합연산.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+sources 폴더의 11개 PDF를 읽고 중복 그래프 자료는 하나로 합쳤다. 전체 슬라이드/PDF는 삽입하지 않았으며, 과제 문서는 제출 규칙을 별도 note로 분리했다.
