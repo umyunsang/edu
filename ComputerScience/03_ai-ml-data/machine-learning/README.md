@@ -78,7 +78,7 @@ flowchart LR
 ## 분류와 평가
 
 - [SVM 최대 마진과 힌지 손실](<notes/05.%20SVM%20%EC%B5%9C%EB%8C%80%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%ED%9E%8C%EC%A7%80%20%EC%86%90%EC%8B%A4.md>)
-- [SVM 구현 - GD와 QP](<notes/06.%20SVM%20%EA%B5%AC%ED%98%84%20-%20GD%EC%99%80%20QP.md>)
+- [SVM 구현 - GD와 QP](<notes/06.%20SVM%20%EA%B5%AC%ED%98%84%20-%20%EA%B2%BD%EC%82%AC%20%ED%95%98%EA%B0%95%EB%B2%95%28GD%29%EA%B3%BC%20QP.md>)
 - [엔트로피와 결정 트리](<notes/08.%20%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC%EC%99%80%20%EA%B2%B0%EC%A0%95%20%ED%8A%B8%EB%A6%AC.md>)
 - [KNN 분류·회귀와 직접 구현](<./notes/09. KNN 분류·회귀와 직접 구현.md>)
 - [중간고사 대비 - SVM·KNN 영화 추천](<notes/07.%20%EC%A4%91%EA%B0%84%EA%B3%A0%EC%82%AC%20%EB%8C%80%EB%B9%84%20-%20SVM%C2%B7KNN%20%EC%98%81%ED%99%94%20%EC%B6%94%EC%B2%9C.md>)
