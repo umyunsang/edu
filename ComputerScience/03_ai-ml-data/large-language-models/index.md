@@ -2,7 +2,7 @@
 
 ## course-index
 
-* [LLM 이해와 활용](./README.md) - 언어 모델 구조·생성 API·RAG·LangChain 실행 구성을 입력·출력·검증 관점에서 연결한 과목 인덱스.
+* [대규모 언어 모델과 RAG](./README.md) - 자연어 처리와 GPT 구조에서 OpenAI API, 임베딩·RAG, LangChain 실행 구조까지 이어지는 학습 경로
 
 ## Subdirectories
 

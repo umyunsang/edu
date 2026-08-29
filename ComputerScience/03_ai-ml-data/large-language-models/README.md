@@ -69,7 +69,7 @@ flowchart TB
 | 67 | [텍스트 생성과 프롬프트](<./notes/OpenAI API 67. 텍스트 생성과 프롬프트.md>) | 목적·맥락·출력 계약 |
 | 84 | [텍스트 편집과 이미지 생성](<./notes/OpenAI API 84. 텍스트 편집과 이미지 생성.md>) | 유지·변환·검수 |
 | 106 | [Tokenizer와 Embedding](<./notes/OpenAI API 106. Tokenizer와 Embedding.md>) | 입력 단위와 의미 검색 |
-| 116 | [오디오, Moderation, 추론](<notes/116.%20%ED%8C%8C%EC%9D%B8%ED%8A%9C%EB%8B%9D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%C2%B7%EC%9E%91%EC%97%85%C2%B7%ED%95%9C%EA%B3%84.md>) | 작업별 검증 경계 |
+| 116 | [오디오, Moderation, 추론](<./notes/OpenAI API 116. 오디오, Moderation, 추론.md>) | 작업별 검증 경계 |
 | 128 | [Fine-Tuning](<./notes/OpenAI API 128. Fine-Tuning.md>) | 목표·데이터·평가 분리 |
 | 139 | [개발환경과 키 관리](<./notes/OpenAI API 139. 개발환경과 키 관리.md>) | 비밀값·권한·운영 기록 |
 
