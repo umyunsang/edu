@@ -12,7 +12,7 @@
 * [RNN·LSTM 판서 자료의 텍스트 추출 한계](./01.%20RNN%C2%B7LSTM%20%ED%8C%90%EC%84%9C%20%EC%9E%90%EB%A3%8C%EC%9D%98%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 이미지 중심 판서 자료에서 공개 노트가 지켜야 할 근거 사용 경계를 정리한다.
 * [RNN과 LSTM 기초](./01.%20RNN%EA%B3%BC%20LSTM%20%EA%B8%B0%EC%B4%88.md) - 순차 상태 전달, 기울기 소실, LSTM cell state와 gate의 역할을 정리한다.
 * [RNN과 LSTM의 순환 구조](./01.%20RNN%EA%B3%BC%20LSTM%EC%9D%98%20%EC%88%9C%ED%99%98%20%EA%B5%AC%EC%A1%B0.md) - 순차 데이터의 hidden state, BPTT와 장기 의존성, LSTM cell state와 gate를 정리한다.
-* [SVM 구현 - GD와 QP](./21.%20SVM%20%EA%B5%AC%ED%98%84%20-%20GD%EC%99%80%20QP.md) - 수동 마진 갱신, 이차 계획법과 선형 SVC로 SVM 경계를 구현하는 절차를 비교한다.
+* [SVM 구현 - GD와 QP](./21.%20SVM%20%EA%B5%AC%ED%98%84%20-%20GD%EC%99%80%20QP.md) - 힌지 조건을 순회하는 GD 구현과 QP 기반 선형 SVM 절차를 구분해 정리한다.
 * [SVM 실습과 결정 경계](./01.%20SVM%20%EC%8B%A4%EC%8A%B5%EA%B3%BC%20%EA%B2%B0%EC%A0%95%20%EA%B2%BD%EA%B3%84.md) - 최대 마진 경계, 제약 조건, 경사 하강법과 이차 계획법의 SVM 학습 흐름을 정리한다.
 * [SVM 최대 마진과 힌지 손실](./02.%20SVM%20%EC%B5%9C%EB%8C%80%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%ED%9E%8C%EC%A7%80%20%EC%86%90%EC%8B%A4.md) - 선형 SVM의 결정 경계, 마진 조건, 위반 샘플 갱신과 구현 한계를 정리한다.
 * [SVM과 KNN 대비 문제](./01.%20SVM%EA%B3%BC%20KNN%20%EB%8C%80%EB%B9%84%20%EB%AC%B8%EC%A0%9C.md) - 정규화된 영화 선호도 데이터에서 다중 SVM과 KNN을 선택·평가하는 문제 해결 흐름을 정리한다.
