@@ -23,7 +23,7 @@
 * [Transformer 예시 자료의 텍스트 추출 한계](./01.%20Transformer%20%EC%98%88%EC%8B%9C%20%EC%9E%90%EB%A3%8C%EC%9D%98%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 텍스트가 거의 없는 Transformer 예시 자료의 공개 노트 근거 경계를 정리한다.
 * [U-Net 기반 특징 압축과 분류](./19.%20U-Net%20%EA%B8%B0%EB%B0%98%20%ED%8A%B9%EC%A7%95%20%EC%95%95%EC%B6%95%EA%B3%BC%20%EB%B6%84%EB%A5%98.md) - U-Net의 encoder·decoder와 skip connection, 전치 합성곱을 CIFAR-10 분류 경로와 함께 정리한다.
 * [Word2Vec과 순환 신경망 리뷰](./01.%20Word2Vec%EA%B3%BC%20%EC%88%9C%ED%99%98%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EB%A6%AC%EB%B7%B0.md) - RNN·LSTM의 한계와 Word2Vec의 분산 표현, CBOW·Skip-Gram 학습 방향을 정리한다.
-* [Word2Vec와 단어 임베딩](./33.%20Word2Vec%EC%99%80%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%B2%A0%EB%94%A9.md) - one-hot 표현의 한계와 Word2Vec embedding, CBOW·Skip-Gram 학습 방향을 정리한다.
+* [Word2Vec와 단어 임베딩](./33.%20Word2Vec%EC%99%80%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%B2%A0%EB%94%A9.md) - one-hot의 차원·거리 한계에서 출발해 Word2Vec embedding, 독립 학습, CBOW와 Skip-Gram을 정리한다.
 * [결정 트리와 KNN 실습](./01.%20%EA%B2%B0%EC%A0%95%20%ED%8A%B8%EB%A6%AC%EC%99%80%20KNN%20%EC%8B%A4%EC%8A%B5.md) - 엔트로피 감소를 찾는 결정 트리와 거리·투표로 예측하는 KNN의 실습 흐름을 정리한다.
 * [다중 선형 회귀](./01.%20%EB%8B%A4%EC%A4%91%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80.md) - 여러 특성의 정규화, 최소제곱법, MSE 평가와 주택 가격 예측 흐름을 정리한다.
 * [다중 선형 회귀와 주택 가격](./01.%20%EB%8B%A4%EC%A4%91%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A3%BC%ED%83%9D%20%EA%B0%80%EA%B2%A9.md) - kc_house_data의 상관관계와 특성 조합을 비교해 최소제곱 주택 가격 예측을 구성한다.
