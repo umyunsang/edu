@@ -1,0 +1,397 @@
+## --- [Page 1] ---
+• 코너검출(Corner detection) 알고리즘
+
+왼쪽영상의a, b, c 중오른쪽영상에서가장찾기쉬운것은?
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+## --- [Page 2] ---
+• 해리스코너검출(Harris corner detection) 알고리즘
+
+(u, v) 방향의영상의밝기의변화량
+
+보통-1 ≤ u ≤ 1, -1 ≤ v ≤ 1
+
+w(x, y) : Gaussian 필터또는1
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+| -1, -1 |  |  |
+| --- | --- | --- |
+|  |  |  |
+|  |  |  |
+|  |  | 1, 1 |
+
+## --- [Page 3] ---
+• 해리스코너검출(Harris corner detection) 알고리즘
+
+(u, v) 방향의영상의밝기의변화량
+
+보통-1 ≤ u ≤ 1, -1 ≤ v ≤ 1
+
+w(x, y) : Gaussian 필터또는1
+
+원래영상
+
+E(u, v)
+
+a가코너로가장적당
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+| -1, -1 |  |  |
+| --- | --- | --- |
+|  |  |  |
+|  |  |  |
+|  |  | 1, 1 |
+
+## --- [Page 4] ---
+• 해리스코너검출(Harris corner detection) 알고리즘
+
+Ix, Iy : x, y 방향에서의밝기변화(Sobel 에지값)
+
+where
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+## --- [Page 5] ---
+• 해리스코너검출(Harris corner detection) 알고리즘
+
+Ix, Iy : x, y 방향에서의밝기변화(Sobel 에지값)
+
+where
+
+Eigen value decomposition(고유값분해)
+
+λx, λy
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+## --- [Page 6] ---
+• 해리스코너검출(Harris corner detection) 알고리즘
+
+Ix, Iy : x, y 방향에서의밝기변화(Sobel 에지값)
+
+where
+
+Eigen value decomposition(고유값분해)
+
+λx, λy
+k: 상수
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+## --- [Page 7] ---
+• 해리스코너검출(Harris corner detection) 알고리즘
+
+
+|  | 코너 검출 |  |
+| --- | --- | --- |
+
+
+## --- [Page 8] ---
+
+
+|  | 해리스 코너 검출 실습 |  |
+| --- | --- | --- |
+
+
+| import urllib.request from google.colab.patches import cv2 imshow _ # 샘플이미지다운로드 url = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/data/sudoku.jpg' urllib.request.urlretrieve(url, 'sudoku.jpg') img = cv2.imread('sudoku.jpg') # 코너검출은그레이이미지에서수행 gray = cv2.cvtColor(img, cv2.COLOR BGR2GRAY) _ gray = np.float32(gray) # 계산정밀도를위해float32로변환 # 해리스코너검출수행 # gray: 입력영상(float32 타입) # 2: 블록크기(Block Size). 코너검출을위한윈도우크기 # 3: 소벨커널크기(Sobel Kernel Size). 미분값을계산할때사용하는커널크기 # - 0.04: Harris 코너검출방정식의k값(보통0.04~0.06 사용) dst = cv2.cornerHarris(gray, 2, 3, 0.04) | # 검출된코너점들을약간크고뚜렷하게만듦 dst = cv2.dilate(dst, None) # 영상내가장강한코너점의 값(dst.max())의1%보다큰픽셀만코너로간주 threshold = 0.01 * dst.max() # dst > threshold 조건을만족하는좌표의픽셀을빨간색[0, 0, 255]로변경 img result = img.copy() _ img result[dst > threshold] = [0, 0, 255] _ # 결과출력 print("--- [원본이미지] ---") cv2 imshow(img) _ print("\n--- [해리스코너검출결과(빨간색점)] ---") cv2 imshow(img result) _ _ |
+| --- | --- |
+
+
+## --- [Page 9] ---
+• 슈퍼픽셀(Superpixel)은픽셀보다크지만물체보다작은자잘한영역으로과잉분할(over-
+segmentation)된단위
+
+• SLIC(Simple Linear Iterative Clustering) 알고리즘
+• 각픽셀을(R, G, B, x, y)의5차원데이터로취급
+• k-means clustering과비슷하게동작(주변픽셀할당단계와cluster들의중심을갱신하는단계를반복)
+• 파라미터
+• K : 슈퍼픽셀의개수
+• Compactness : 얼마나촘촘하게뭉칠지결정
+
+SLIC 알고리즘의초기cluster들의중심
+
+
+|  | 슈퍼픽셀(Superpixel) 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 10] ---
+• 슈퍼픽셀(Superpixel)은픽셀보다크지만물체보다작은자잘한영역으로과잉분할(over-
+segmentation)된단위
+
+• SLIC(Simple Linear Iterative Clustering) 알고리즘
+• 각픽셀을(R, G, B, x, y)의5차원데이터로취급
+• k-means clustering과비슷하게동작(주변픽셀할당단계와cluster들의중심을갱신하는단계를반복)
+• 파라미터
+• K : 슈퍼픽셀의개수
+• Compactness : 얼마나촘촘하게뭉칠지결정
+
+
+|  | 슈퍼픽셀(Superpixel) 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 11] ---
+• 슈퍼픽셀(Superpixel)은픽셀보다크지만물체보다작은자잘한영역으로과잉분할(over-
+segmentation)된단위
+
+• SLIC(Simple Linear Iterative Clustering) 알고리즘
+• 각픽셀을(R, G, B, x, y)의5차원데이터로취급
+• k-means clustering과비슷하게동작(주변픽셀할당단계와cluster들의중심을갱신하는단계를반복)
+• 파라미터
+• K : 슈퍼픽셀의개수
+• Compactness : 얼마나촘촘하게뭉칠지결정
+• 장점
+• 연산효율성이커짐. 예) 픽셀수가1,000,000개인이미지를500개의슈퍼픽셀로줄이면후속알
+고리즘의계산량이크게감소
+• 영상내실제사물의경계선을어느정도보존하면서뭉쳐줌
+• 활용
+• 주로슈퍼픽셀들로그래프를만들어서활용(객체분할, 깊이추정등)
+
+
+|  | 슈퍼픽셀(Superpixel) 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 12] ---
+
+
+|  | 슈퍼픽셀(Superpixel) 분할 실습 |  |
+| --- | --- | --- |
+
+
+| import urllib.request import matplotlib.pyplot as plt from skimage.segmentation import slic, mark boundaries _ from skimage.color import label2rgb # 샘플이미지다운로드 url = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/data/butterfly.jpg' urllib.request.urlretrieve(url, 'butterfly.jpg') img = cv2.imread('butterfly.jpg') img rgb = cv2.cvtColor(img, cv2.COLOR BGR2RGB) _ _ # SLIC 알고리즘적용 segments = slic(img rgb, n segments=400, compactness=10, sigma=1, start label=1) _ _ _ # 평균색상으로채우기 superpixel avg = label2rgb(segments, img rgb, kind='avg') _ _ | # 결과시각화 plt.figure(figsize=(18, 6)) plt.subplot(1, 3, 1) plt.title("Original (Butterfly)") plt.imshow(img rgb) _ plt.axis('off') plt.subplot(1, 3, 2) plt.title("SLIC Boundaries (400 segments)") plt.imshow(mark boundaries(img rgb, segments)) _ _ plt.axis('off') plt.subplot(1, 3, 3) plt.title("Segmented (Avg Color)") plt.imshow(superpixel avg.astype('uint8')) _ plt.axis('off') plt.tight layout() _ plt.show() |
+| --- | --- |
+
+
+## --- [Page 13] ---
+• 그래프의표현
+• 그래프는현상이나사물을정점(vertex)과간선(edge)로표현
+• 그래프G=(V, E)
+• V : n개의정점집합, E : 정점간에존재하는간선집합
+• 두정점이간선으로연결되어있으면인접(adjacent)하다고함
+
+가중치를가진무방향그래프
+가중치를가진방향그래프
+
+
+|  | 최적화 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 14] ---
+• 영상의그래프표현
+• 픽셀또는슈퍼픽셀을노드(정점)로취함
+• 두노드vp, vq의유사도를아래식으로계산하여간선에부여
+• f(v)는v에해당하는픽셀의색상(R, G, B)과위치(x, y)를결합한5차원벡터
+• v가슈퍼픽셀인경우슈퍼픽셀내픽셀들의평균을사용
+
+D : 상수
+
+
+|  | 최적화 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 15] ---
+• 영상의그래프표현
+• Normalized cut(N-cut, 정규화절단)알고리즘
+• cut은영상을두영역으로분할했을때분할의좋은정도를측정해주는목적함수
+• C1과C2가클수록둘사이에간선이많아cut은덩달아커지므로cut을사용한분할알고리즘
+은영역을자잘하게분할하는경향이있음
+
+• N-cut은cut을정규화하여영역의크기에중립이되게해줌
+
+
+|  | 최적화 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 16] ---
+• 영상의그래프표현
+• Normalized cut(N-cut, 정규화절단)알고리즘
+• cut은영상을두영역으로분할했을때분할의좋은정도를측정해주는목적함수
+• C1과C2가클수록둘사이에간선이많아cut은덩달아커지므로cut을사용한분할알고리즘
+은영역을자잘하게분할하는경향이있음
+
+• N-cut은cut을정규화하여영역의크기에중립이되게해줌
+
+cut
+
+C1과C가얼마나강하게
+연결되어있는가?
+
+
+|  | 최적화 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 17] ---
+• 영상의그래프표현
+• Normalized cut(N-cut, 정규화절단)알고리즘
+• cut은영상을두영역으로분할했을때분할의좋은정도를측정해주는목적함수
+• C1과C2가클수록둘사이에간선이많아cut은덩달아커지므로cut을사용한분할알고리즘
+은영역을자잘하게분할하는경향이있음
+
+• N-cut은cut을정규화하여영역의크기에중립이되게해줌
+
+• 한계
+• 색상과거리정보에만의존하므로의미분할불가능
+
+
+|  | 최적화 분할 |  |
+| --- | --- | --- |
+
+
+## --- [Page 18] ---
+
+
+|  | 최적화 분할 실습 |  |
+| --- | --- | --- |
+
+
+| import urllib.request import matplotlib.pyplot as plt from skimage.segmentation import slic, mark boundaries _ from skimage.color import label2rgb from skimage import graph # N-Cut 계산을위한그래프모듈 # 샘플이미지로드 url = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/data/butterfly.jpg' urllib.request.urlretrieve(url, 'butterfly.jpg') img = cv2.imread('butterfly.jpg') img rgb = cv2.cvtColor(img, cv2.COLOR BGR2RGB) _ _ # 2. SLIC 슈퍼픽셀분할(Oversegmentation 상태, 400조각) labels = slic(img rgb, n segments=400, compactness=10, sigma=1, start label=1) _ _ _ | # 슈퍼픽셀들간의인접관계와색상차이를계산하여그래프생성 g = graph.rag mean color(img rgb, labels) _ _ _ # N-Cut (Normalized Cut) 적용 # thresh: 잘라낼기준값. 낮을수록더많이쪼개지고, 높을수록크게뭉침 # num cuts: 반복해서자를횟수 _ nc labels = graph.cut normalized(labels, g, thresh=1.0, num cuts=2) _ _ _ # 결과시각화준비 slic avg = label2rgb(labels, img rgb, kind='avg') # SLIC 결과 _ _ ncut avg = label2rgb(nc labels, img rgb, kind='avg') # N-Cut 결과 _ _ _ |
+| --- | --- |
+
+
+## --- [Page 19] ---
+
+
+|  | 최적화 분할 실습 |  |
+| --- | --- | --- |
+
+
+| # 최종출력 plt.figure(figsize=(20, 5)) plt.subplot(1, 4, 1) plt.title("1. Original") plt.imshow(img rgb) _ plt.axis('off') plt.subplot(1, 4, 2) plt.title("2. SLIC Boundaries") plt.imshow(mark boundaries(img rgb, labels)) _ _ plt.axis('off') plt.subplot(1, 4, 3) plt.title("3. SLIC Avg Color") plt.imshow(slic avg.astype('uint8')) _ plt.axis('off') | plt.subplot(1, 4, 4) plt.title("4. N-Cut Result") plt.imshow(ncut avg.astype('uint8')) _ plt.axis('off') plt.tight layout() _ plt.show() |
+| --- | --- |
+
+
+## --- [Page 20] ---
+• PSNR(Peak Signal-to-Noise Ratio, 최대신호대잡음비)
+• 신호(Signal, 원본영상) 대비잡음(Noise)이얼마나섞였는가를수치로나타낸것
+
+• 값이클수록좋은화질(원본에더가까운화질)
+• 약30dB 이상이면보통좋은화질로평가
+• 인간의시각시스템특성을완전히반영하지못한다는단점이있음
+
+•
+MAXI : 해당영상의픽셀이가질수있는최대값
+
+(일반적인8비트영상에서는255)
+•
+MSE : 원본과결과영상의픽셀값차이를제곱하여평균낸값
+
+dB(데시벨)
+
+
+|  | 영상의 품질 측정 지표 |  |
+| --- | --- | --- |
+
+
+## --- [Page 21] ---
+• PSNR(Peak Signal-to-Noise Ratio, 최대신호대잡음비)
+• 신호(Signal, 원본영상) 대비잡음(Noise)이얼마나섞였는가를수치로나타낸것
+
+•
+MAXI : 해당영상의픽셀이가질수있는최대값
+
+(일반적인8비트영상에서는255)
+•
+MSE : 원본과결과영상의픽셀값차이를제곱하여평균낸값
+
+dB(데시벨)
+
+JPEG : 가장많이쓰이는(정지)영상의손실압축기술
+
+
+|  | 영상의 품질 측정 지표 |  |
+| --- | --- | --- |
+
+
+## --- [Page 22] ---
+• SSIM(Structural Similarity Index Map, 구조적유사도)
+• 수치적인차이보다사람의눈에얼마나비슷하게보이는가에초점을맞춘영상품질측정지표
+• PSNR의한계: PSNR은단순히픽셀의값이얼마나달라졌는지만측정. 그러나우리눈은물체의경계
+가뭉개지거나노이즈가끼는것에훨씬민감
+• SSIM은원본영상(x)과왜곡된영상(y)을비교할때다음세가지지표를결합하여계산
+
+• 휘도(l, Luminance): 평균밝기가얼마나변했는가?
+• 대비(c, Contrast): 밝기값의표준편차가얼마나변했는가?
+• 구조(s, Structure): 두영상의픽셀간상관관계가유지되는가? (물체의형태나패턴이깨졌는가?)
+
+• SSIM은밝기가변해도물체의형태(구조)가유지되면높은점수를줌. 즉, 사람의주관적화질평가와
+더일치
+• 약0.9 이상이면우수한화질로평가
+
+보통α = β = γ = 1
+
+
+|  | 영상의 품질 측정 지표 |  |
+| --- | --- | --- |
+
+
+## --- [Page 23] ---
+• SSIM(Structural Similarity Index Map, 구조적유사도)
+• 수치적인차이보다사람의눈에얼마나비슷하게보이는가에초점을맞춘영상품질측정지표
+• PSNR의한계: PSNR은단순히픽셀의값이얼마나달라졌는지만측정. 그러나우리눈은물체의경계
+가뭉개지거나노이즈가끼는것에훨씬민감
+• SSIM은원본영상(x)과왜곡된영상(y)을비교할때다음세가지지표를결합하여계산
+
+보통α = β = γ = 1
+
+
+|  | 영상의 품질 측정 지표 |  |
+| --- | --- | --- |
+
+
+## --- [Page 24] ---
+
+
+|  | 영상의 품질 측정 실습 |  |
+| --- | --- | --- |
+
+
+| import urllib.request from skimage.metrics import structural similarity as ssim _ from google.colab.patches import cv2 imshow _ # 샘플이미지다운로드 url = ＇ https://raw.githubusercontent.com/opencv/opencv/master/samples/data/baboon.jpg＇ Urllib.request.urlretrieve(url, ＇baboon.jpg＇) Original = cv2.imread(＇baboon.jpg＇) # 영상축소및재확대(보간법적용) height, width = original.shape[:2] # 1/4 크기로축소(INTER AREA) _ small = cv2.resize(original, (width//4, height//4), interpolation=cv2.INTER AREA) _ # 다시원래크기로확대(INTER LINEAR ) _ # INTER NEAREST, INTER CUBIC로도실습 _ _ restored = cv2.resize(small, (width, height), interpolation=cv2.INTER LINEAR) _ | # PSNR 계산(OpenCV 내장함수) psnr val = cv2.PSNR(original, restored) _ # SSIM 계산(scikit-image 사용) ssim val = ssim(original, restored, channel axis=2) _ _ # 4. 결과출력 print(f"--- 품질측정결과---") print(f"PSNR: {psnr val:.2f} dB") _ print(f"SSIM: {ssim val:.4f}") _ print("----------------------") # 가로로붙여서확인 combined = np.hstack((original, restored)) print("\n[왼쪽: 원본| 오른쪽: 1/4 축소후복원본]") cv2 imshow(cv2.resize(combined, (0,0), fx=0.8, fy=0.8)) # 화면크기에맞춰조절 _ |
+| --- | --- |
+
+
+## --- [Page 25] ---
+• 영상처리알고리즘실습
+
+• 에지및코너탐지
+
+• 영상의품질측정지표
+
+
+|  | 내용 정리 |  |
+| --- | --- | --- |
+
+
+## --- [Page 26] ---
+• 영상의변환(Transform) 및필터링
+
+• 영상의특징검출및매칭기술(SIFT 등)
+
+
+|  | 다음 주 강의 내용 |  |
+| --- | --- | --- |

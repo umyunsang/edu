@@ -1,26 +1,36 @@
-## --- [Page 1] ---
+### [Page 1]
 2024-03-01
-
 1
-
 Apache Spark at-a-glance
-
 빅데이터분석
-
 천세진
+동아대학교
+컴퓨터AI공학부
+Spark shell 시작하기
+ML 알고리즘사용하기
+HDFS로부터데이터셋탐색하기
+Spark SQL, Spark Streaming
+2
+목표
 
 
 | 목표  Spark shell 시작하기  ML 알고리즘 사용하기  HDFS로부터 데이터셋 탐색하기  Spark SQL, Spark Streaming |  |  |
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 2 | 동아대학교 |
 
-## --- [Page 2] ---
+
+### [Page 2]
 2024-03-01
-
 2
-
+동아대학교
+컴퓨터AI공학부
+Spark 시작하기
+Spark History
+Spark Essentials
+Spark Examples
+3
+Chapter
 Databrick 맛보기
-
 01 시작하기
 
 
@@ -28,10 +38,20 @@ Databrick 맛보기
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 3 | 동아대학교 |
 
-## --- [Page 3] ---
-2024-03-01
 
+### [Page 3]
+2024-03-01
 3
+동아대학교
+컴퓨터AI공학부
+Cluster에따라Notebook 생성
+5
+Databricks 접속
+동아대학교
+컴퓨터AI공학부
+6
+RDD 생성해보기
+데이터생성하기
 
 
 | Databricks 접속  Cluster에 따라 Notebook 생성 |  |  |
@@ -42,10 +62,21 @@ Databrick 맛보기
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 6 | 동아대학교 |
 
-## --- [Page 4] ---
-2024-03-01
 
+### [Page 4]
+2024-03-01
 4
+동아대학교
+컴퓨터AI공학부
+7
+RDD 생성해보기
+데이터생성하기
+RDD 기반데이터를생성하기
+10보다이하값에대해서필터선택하기
+동아대학교
+컴퓨터AI공학부
+8
+Cluster 정보확인
 
 
 | RDD 생성해보기  데이터 생성하기  RDD 기반 데이터를 생성하기  10보다 이하 값에 대해서 필터 선택하기 |  |  |
@@ -56,10 +87,18 @@ Databrick 맛보기
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 8 | 동아대학교 |
 
-## --- [Page 5] ---
-2024-03-01
 
+### [Page 5]
+2024-03-01
 5
+동아대학교
+컴퓨터AI공학부
+9
+Spark UI 확인
+동아대학교
+컴퓨터AI공학부
+10
+Driver logs
 
 
 | Spark UI 확인 |  |  |
@@ -70,24 +109,34 @@ Databrick 맛보기
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 10 | 동아대학교 |
 
-## --- [Page 6] ---
+
+### [Page 6]
 2024-03-01
-
 6
-
 Spark Deconstructed
-
 01 시작하기
+동아대학교
+컴퓨터AI공학부
+12
+Log file
 
 
 | Log file |  |  |
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 12 | 동아대학교 |
 
-## --- [Page 7] ---
-2024-03-01
 
+### [Page 7]
+2024-03-01
 7
+동아대학교
+컴퓨터AI공학부
+13
+Upload data
+동아대학교
+컴퓨터AI공학부
+14
+Log Mining Example
 
 
 | Upload data |  |  |
@@ -98,10 +147,19 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 14 | 동아대학교 |
 
-## --- [Page 8] ---
-2024-03-01
 
+### [Page 8]
+2024-03-01
 8
+동아대학교
+컴퓨터AI공학부
+15
+Log Mining Example
+동아대학교
+컴퓨터AI공학부
+RDD operator graph를확인가능
+16
+Log Mining Example
 
 
 | Log Mining Example |  |  |
@@ -112,10 +170,24 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 16 | 동아대학교 |
 
-## --- [Page 9] ---
-2024-03-01
 
+### [Page 9]
+2024-03-01
 9
+동아대학교
+컴퓨터AI공학부
+17
+Log Mining Example
+block1 
+block2 
+block3 
+동아대학교
+컴퓨터AI공학부
+18
+Log Mining Example
+block1 
+block2 
+block3 
 
 
 | Log Mining Example block1 block2 block3 |  |  |
@@ -126,10 +198,31 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 18 | 동아대학교 |
 
-## --- [Page 10] ---
-2024-03-01
 
+### [Page 10]
+2024-03-01
 10
+동아대학교
+컴퓨터AI공학부
+19
+Log Mining Example
+block1 
+block2 
+block3 
+HDFS
+block 읽기
+동아대학교
+컴퓨터AI공학부
+20
+Log Mining Example
+block1 
+block2 
+block3 
+처리하고,
+데이터캐싱
+cache1
+cache2
+cache3
 
 
 | Log Mining Example HDFS block 읽기 block1 block2 block3 |  |  |
@@ -140,10 +233,28 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 20 | 동아대학교 |
 
-## --- [Page 11] ---
-2024-03-01
 
+### [Page 11]
+2024-03-01
 11
+동아대학교
+컴퓨터AI공학부
+21
+Log Mining Example
+block1 
+block2 
+block3 
+cache1
+cache2
+cache3
+동아대학교
+컴퓨터AI공학부
+22
+Log Mining Example
+block1 
+block2 
+block3 
+실행완료
 
 
 | Log Mining Example cache1 block1 cache2 block2 cache3 block3 |  |  |
@@ -154,10 +265,28 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 22 | 동아대학교 |
 
-## --- [Page 12] ---
-2024-03-01
 
+### [Page 12]
+2024-03-01
 12
+동아대학교
+컴퓨터AI공학부
+23
+Log Mining Example
+block1 
+block2 
+block3 
+실행완료
+동아대학교
+컴퓨터AI공학부
+24
+Log Mining Example
+block1 
+block2 
+block3 
+HDFS
+block 읽기
+실행완료
 
 
 | Log Mining Example 실행 완료 block1 block2 block3 |  |  |
@@ -168,10 +297,34 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 24 | 동아대학교 |
 
-## --- [Page 13] ---
-2024-03-01
 
+### [Page 13]
+2024-03-01
 13
+동아대학교
+컴퓨터AI공학부
+25
+Log Mining Example
+block1 
+block2 
+block3 
+처리하고,
+데이터캐싱
+cache1
+cache2
+cache3
+실행완료
+동아대학교
+컴퓨터AI공학부
+26
+Log Mining Example
+block1 
+block2 
+block3 
+cache1
+cache2
+cache3
+실행완료
 
 
 | Log Mining Example cache1 실행 완료 처리하고, 데이터캐싱 block1 cache2 block2 cache3 block3 |  |  |
@@ -182,10 +335,19 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 26 | 동아대학교 |
 
-## --- [Page 14] ---
-2024-03-01
 
+### [Page 14]
+2024-03-01
 14
+동아대학교
+컴퓨터AI공학부
+RDD transformations and actions
+27
+Spark Deconstructed
+동아대학교
+컴퓨터AI공학부
+28
+Spark Deconstructed
 
 
 | Spark Deconstructed  RDD transformations and actions |  |  |
@@ -196,10 +358,18 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 28 | 동아대학교 |
 
-## --- [Page 15] ---
-2024-03-01
 
+### [Page 15]
+2024-03-01
 15
+동아대학교
+컴퓨터AI공학부
+29
+Spark Deconstructed
+동아대학교
+컴퓨터AI공학부
+30
+Spark Deconstructed
 
 
 | Spark Deconstructed |  |  |
@@ -210,24 +380,38 @@ Spark Deconstructed
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 30 | 동아대학교 |
 
-## --- [Page 16] ---
+
+### [Page 16]
 2024-03-01
-
 16
-
 Simple Spark Apps
-
 01 시작하기
+동아대학교
+컴퓨터AI공학부
+Text 문서의콜렉션내에서, 각
+단어들이얼마나나타나는지
+를세기
+병렬적으로처리하는방법
+32
+Word Count
 
 
 | Word Count  Text 문서의 콜렉션 내에서, 각 단어들이 얼마나 나타나는지 를 세기  병렬적으로 처리하는 방법 |  |  |
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 32 | 동아대학교 |
 
-## --- [Page 17] ---
-2024-03-01
 
+### [Page 17]
+2024-03-01
 17
+동아대학교
+컴퓨터AI공학부
+33
+Word Count
+동아대학교
+컴퓨터AI공학부
+34
+Word Count
 
 
 | Word Count |  |  |
@@ -238,10 +422,19 @@ Simple Spark Apps
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 34 | 동아대학교 |
 
-## --- [Page 18] ---
-2024-03-01
 
+### [Page 18]
+2024-03-01
 18
+동아대학교
+컴퓨터AI공학부
+35
+Source Code
+동아대학교
+컴퓨터AI공학부
+Operator graph 생성
+36
+Source Code
 
 
 | Source Code |  |  |
@@ -252,10 +445,22 @@ Simple Spark Apps
 | --- | --- | --- |
 | 컴퓨터AI공학부 | 36 | 동아대학교 |
 
-## --- [Page 19] ---
-2024-03-01
 
+### [Page 19]
+2024-03-01
 19
+동아대학교
+컴퓨터AI공학부
+37
+Operator Graph
+동아대학교
+컴퓨터AI공학부
+Github의README.md와CHANGES.txt를사용
+특정키워드를가진라인에대해서FILTER하는RDD 생성
+각라인에대해Word Count를수행
+두RDD간조인(Join)
+38
+실습
 
 
 | Operator Graph |  |  |
