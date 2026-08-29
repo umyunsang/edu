@@ -16,4 +16,4 @@
 * [08. Quantum Gate 개념](./08.%20Quantum%20Gate%20%EA%B0%9C%EB%85%90.md) - 양자 게이트를 유니터리 행렬로 정의하고 단일·다중 큐비트 작용을 구분한다.
 * [09. Quantum Circuit](./09.%20Quantum%20Circuit.md) - 양자 회로를 상태 준비·게이트 순서·얽힘·측정이라는 읽기 순서로 정리한다.
 * [10. Quantum Circuit과 QML](./10.%20Quantum%20Circuit%EA%B3%BC%20QML.md) - 특징 인코딩 뒤에 변분 회로와 측정을 붙여 QML 회로가 학습 신호를 만드는 방식을 정리한다.
-* [quantum-ml 강의 흐름 지도](./00.%20quantum-ml%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 11개의 순서·핵심 단서·학습 점검을 연결한다.
+* [quantum-ml 강의 흐름 지도](./00.%20quantum-ml%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 11개의 순서·쪽수·학습 점검을 연결한다.
