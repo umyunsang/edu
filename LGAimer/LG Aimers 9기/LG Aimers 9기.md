@@ -22,8 +22,6 @@ updated: '2026-06-25'
 
 previous:: [LG Aimers 8기](<../LG Aimers 8기/LG Aimers 8기.md>)
 
-# LG Aimers 9기
-
 LG Aimers 9기 지원, 평가 가이드, Tabular ML, Optimization/Decision-Focused Learning, Time-Series Analysis, Mathematics for ML, 지도학습, LLM Application & Evaluation, 딥러닝 자연어처리 기초와 LLM Agent 강의자료를 묶는 세대 허브입니다.
 
 ## 핵심 연결
@@ -59,3 +57,21 @@ LG Aimers 9기 지원, 평가 가이드, Tabular ML, Optimization/Decision-Focus
 
 - 이용재 교수 1-3강: Opt & DFL
 - 이용재 교수 4-6강: Time Series
+
+---
+
+## 재구성 강의 노트
+
+- [00. LG Aimers 9기 강의 흐름 지도](<./notes/00. LG Aimers 9기 강의 흐름 지도.md>)
+- [01. Mathematics for ML — 행렬 분해의 지도](<./notes/01. Mathematics for ML — 행렬 분해의 지도.md>)
+- [02. 지도학습 — Supervised Learning Overview](<./notes/02. 지도학습 — Supervised Learning Overview.md>)
+- [03. 딥러닝 자연어처리와 LLM Agent — AI 기초](<./notes/03. 딥러닝 자연어처리와 LLM Agent — AI 기초.md>)
+- [04. Optimization & Decision-Focused Learning — 볼록 최적화](<./notes/04. Optimization & Decision-Focused Learning — 볼록 최적화.md>)
+- [05. Time-Series Analysis — 의존성·예측·딥러닝](<./notes/05. Time-Series Analysis — 의존성·예측·딥러닝.md>)
+- [06. Tabular ML — 표 형식 데이터와 과업](<./notes/06. Tabular ML — 표 형식 데이터와 과업.md>)
+- [07. Tabular ML — Classical Models](<./notes/07. Tabular ML — Classical Models.md>)
+- [08. Tabular ML — Deep Architectures](<./notes/08. Tabular ML — Deep Architectures.md>)
+- [09. Tabular ML — Representation Learning](<./notes/09. Tabular ML — Representation Learning.md>)
+- [10. Tabular ML — LLM을 표 데이터에 연결하기](<./notes/10. Tabular ML — LLM을 표 데이터에 연결하기.md>)
+- [11. Tabular ML — TabPFN과 Prior-Fitted Networks](<./notes/11. Tabular ML — TabPFN과 Prior-Fitted Networks.md>)
+- [12. LLM Decoding — 생성 제어·RAG·Speculative Decoding](<./notes/12. LLM Decoding — 생성 제어·RAG·Speculative Decoding.md>)

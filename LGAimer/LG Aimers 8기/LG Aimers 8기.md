@@ -20,8 +20,6 @@ type: interface
 updated: '2026-06-22'
 ---
 
-# LG Aimers 8기
-
 LG Aimers 8기 수료 및 LLM Compression/EXAONE 모델 경량화 해커톤 관련 자료를 묶는 세대 허브입니다.
 
 ## 핵심 연결
@@ -48,3 +46,18 @@ LG Aimers 8기 수료 및 LLM Compression/EXAONE 모델 경량화 해커톤 관�
 - AI윤리: '낯선 지능'과 함께 살아가기
 - AI윤리: AI 시대, 미래는 오지 않는다
 - AI윤리: 원칙에서 행동으로
+
+---
+
+## 재구성 강의 노트
+
+- [00. LG Aimers 8기 강의 흐름 지도](<./notes/00. LG Aimers 8기 강의 흐름 지도.md>)
+- [01. AI 윤리 — AI 시대, 미래는 오지 않는다](<./notes/01. AI 윤리 — AI 시대, 미래는 오지 않는다.md>)
+- [02. AI 윤리 — 낯선 지능과 함께 살아가기](<./notes/02. AI 윤리 — 낯선 지능과 함께 살아가기.md>)
+- [03. AI 윤리 — 원칙에서 행동으로](<./notes/03. AI 윤리 — 원칙에서 행동으로.md>)
+- [04. LLM 경량화 — Pruning·Distillation·Quantization](<./notes/04. LLM 경량화 — Pruning·Distillation·Quantization.md>)
+- [05. EXAONE — 전문가 AI와 Agentic AI](<./notes/05. EXAONE — 전문가 AI와 Agentic AI.md>)
+- [06. EXAONE 경량화 해커톤 — 분석·압축·추론·평가](<./notes/06. EXAONE 경량화 해커톤 — 분석·압축·추론·평가.md>)
+- [07. Lightweight LLM — 비용·서빙·스마트 라우팅](<./notes/07. Lightweight LLM — 비용·서빙·스마트 라우팅.md>)
+- [08. 딥러닝 자연어처리와 LLM Agent — 기초부터 응용까지](<./notes/08. 딥러닝 자연어처리와 LLM Agent — 기초부터 응용까지.md>)
+- [09. LLM Decoding — Greedy·Beam·Sampling과 고급 추론](<./notes/09. LLM Decoding — Greedy·Beam·Sampling과 고급 추론.md>)
