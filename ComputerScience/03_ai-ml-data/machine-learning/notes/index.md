@@ -7,6 +7,7 @@
 * [CNN과 U-Net 실습](./01.%20CNN%EA%B3%BC%20U-Net%20%EC%8B%A4%EC%8A%B5.md) - 이미지 분류의 공간 정보와 CNN·U-Net의 특징 추출 및 복원 흐름을 정리한다.
 * [KNN 분류·회귀와 직접 구현](./09.%20KNN%20%EB%B6%84%EB%A5%98%C2%B7%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84.md) - KNN의 거리 계산, K 선택, 분류·회귀 집계와 직접 구현 평가를 정리한다.
 * [QP 기반 SVM과 마진](./01.%20QP%20%EA%B8%B0%EB%B0%98%20SVM%EA%B3%BC%20%EB%A7%88%EC%A7%84.md) - SVC 설정과 가중치 벡터 크기로 계산하는 선형 SVM 마진을 정리한다.
+* [RNN·LSTM 시퀀스 생성 절차](./01.%20RNN%C2%B7LSTM%20%EC%8B%9C%ED%80%80%EC%8A%A4%20%EC%83%9D%EC%84%B1%20%EC%A0%88%EC%B0%A8.md) - 한글 문장을 정제하고 one-hot sequence로 바꿔 RNN·LSTM에 입력하는 생성 절차를 정리한다.
 * [RNN·LSTM 실습](./01.%20RNN%C2%B7LSTM%20%EC%8B%A4%EC%8A%B5.md) - 순차 텍스트를 벡터로 바꾸고 RNN·LSTM의 상태 갱신으로 예측하는 실습 흐름을 정리한다.
 * [RNN·LSTM 판서 자료의 텍스트 추출 한계](./01.%20RNN%C2%B7LSTM%20%ED%8C%90%EC%84%9C%20%EC%9E%90%EB%A3%8C%EC%9D%98%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 이미지 중심 판서 자료에서 공개 노트가 지켜야 할 근거 사용 경계를 정리한다.
 * [RNN과 LSTM 기초](./01.%20RNN%EA%B3%BC%20LSTM%20%EA%B8%B0%EC%B4%88.md) - 순차 상태 전달, 기울기 소실, LSTM cell state와 gate의 역할을 정리한다.
@@ -21,6 +22,7 @@
 * [Transformer 예시 자료의 텍스트 추출 한계](./01.%20Transformer%20%EC%98%88%EC%8B%9C%20%EC%9E%90%EB%A3%8C%EC%9D%98%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 텍스트가 거의 없는 Transformer 예시 자료의 공개 노트 근거 경계를 정리한다.
 * [U-Net 기반 특징 압축과 분류](./19.%20U-Net%20%EA%B8%B0%EB%B0%98%20%ED%8A%B9%EC%A7%95%20%EC%95%95%EC%B6%95%EA%B3%BC%20%EB%B6%84%EB%A5%98.md) - U-Net의 encoder·decoder, skip connection, transposed convolution과 CIFAR-10 분류 연결을 정리한다.
 * [Word2Vec과 순환 신경망 리뷰](./01.%20Word2Vec%EA%B3%BC%20%EC%88%9C%ED%99%98%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EB%A6%AC%EB%B7%B0.md) - RNN·LSTM의 한계와 Word2Vec의 분산 표현, CBOW·Skip-Gram 학습 방향을 정리한다.
+* [Word2Vec와 단어 임베딩](./33.%20Word2Vec%EC%99%80%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%B2%A0%EB%94%A9.md) - one-hot 표현의 한계와 Word2Vec embedding, CBOW·Skip-Gram 학습 방향을 정리한다.
 * [결정 트리와 KNN 실습](./01.%20%EA%B2%B0%EC%A0%95%20%ED%8A%B8%EB%A6%AC%EC%99%80%20KNN%20%EC%8B%A4%EC%8A%B5.md) - 엔트로피 감소를 찾는 결정 트리와 거리·투표로 예측하는 KNN의 실습 흐름을 정리한다.
 * [다중 선형 회귀](./01.%20%EB%8B%A4%EC%A4%91%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80.md) - 여러 특성의 정규화, 최소제곱법, MSE 평가와 주택 가격 예측 흐름을 정리한다.
 * [다중 선형 회귀와 주택 가격](./01.%20%EB%8B%A4%EC%A4%91%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A3%BC%ED%83%9D%20%EA%B0%80%EA%B2%A9.md) - 주택 특성의 상관관계와 특성 묶음별 MSE를 비교해 다중 선형 회귀 예측을 구성한다.
