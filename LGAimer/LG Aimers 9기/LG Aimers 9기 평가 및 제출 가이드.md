@@ -23,18 +23,18 @@ cohort:: [LG Aimers 9기](<./LG Aimers 9기.md>)
 
 1. 리더 보드
 
-### 평가 산식
+## 평가 산식
 
 최종 점수는 기본 모델 대비 성능 비율과 추론 시간 감소 비율의 가중 합산으로 계산됩니다.
 
 $$Score = (Performance\ Norm \times 0.5) + (Speed\ Norm \times 0.5)$$
 
-#### 1) 성능 비율 (Performance Norm)
+### 1) 성능 비율 (Performance Norm)
 
 기본 모델(**EXAONE-4.0-1.2B**)의 성능 대비 제출 모델의 성능 비율입니다.
 $$Performance\ Norm = \frac{Performance_{target}}{Performance_{base}}$$
 
-#### 2) 추론 시간 감소 비율 (Speed Norm)
+### 2) 추론 시간 감소 비율 (Speed Norm)
 
 기본 모델 대비 토큰당 추론 시간($T_{per\_token}$)의 감소 비율을 의미합니다.
 $$Speed\ Norm = \frac{T_{base} - T_{target}}{T_{base}}$$
@@ -164,11 +164,11 @@ Inference Engine: vLLM (version: 0.14.1)
 Model Interface: HuggingFace AutoModelForCausalLM 호환
 제출된 모델은 다음 호출이 가능해야 하며, 토크나이저는 모델과 함께 제공되어야 합니다.
 
-# tokenizer
+tokenizer
 
 AutoTokenizer.from_pretrained(MODEL, trust_remote_code=True, local_files_only=True)
 
-# model
+model
 
 AutoModelForCausalLM.from_pretrained(MODEL, trust_remote_code=True)
   ② vLLM Serving 옵션

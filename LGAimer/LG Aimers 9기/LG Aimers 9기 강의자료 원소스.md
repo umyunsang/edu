@@ -22,8 +22,6 @@ public_curriculum:: [LG Aimers](https://www.lgaimers.ai/)
 academy_study:: [LG AI ACADEMY study](https://academy.lgresearch.ai/study)
 research_journal:: 20260625-182513
 
-# LG Aimers 9기 강의자료 원소스
-
 이 문서는 LG Aimers 9기 강의자료의 로컬 원소스 기록입니다. 실제 다운로드 링크는 `https://academy.lgresearch.ai/study`의 로그인 세션 뒤에 있으며, 2026-06-25 18:32 KST 기준 비인증 접근은 `/login`으로 이동하거나 `RT_AUTHENTICATION_FAILURE`를 반환했습니다.
 
 ## 확인 기준
