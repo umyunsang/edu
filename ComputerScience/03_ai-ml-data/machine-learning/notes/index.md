@@ -1,22 +1,51 @@
-# Index
+---
+title: "machine-learning"
+type: "overview"
+tags:
+  - "machine-learning"
+  - "overview"
+  - "index"
+course: "machine-learning"
+semester: "2-1"
+status: "stable"
+authority: "primary"
+created: "2026-08-29"
+updated: "2026-08-29"
+---
 
-## lecture
+# 📚 머신러닝 (Machine Learning & Deep Architectures) 전체 강의 로드맵
 
-* [01. 선형 회귀 기초와 두 해법 - 최소제곱법(LSM)과 경사하강법(GDM) 대수학 (Linear Regression: LSM vs GDM)](./01.%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%20%EA%B8%B0%EC%B4%88%EC%99%80%20%EB%91%90%20%ED%95%B4%EB%B2%95.md) - 단일 및 다변량 선형 회귀의 정규 방정식(Normal Equation w = (XᵀX)⁻¹Xᵀy) 닫힌 해 유도, 경사하강법(Gradient Descent) 손실 편미분 갱신 점화식, LSM과 GDM의 복잡도 비교를 인터랙티브 선형 회귀 피팅 시뮬레이터로 심층 학습한다.
-* [05. SVM 최대 마진과 힌지 손실 - 하드·소프트 마진과 정규화 대수학 (Support Vector Machines: Margin & Hinge Loss)](./05.%20SVM%20%EC%B5%9C%EB%8C%80%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%ED%9E%8C%EC%A7%80%20%EC%86%90%EC%8B%A4.md) - 기하학적 마진(2/||w||) 최대화 유도, 슬랙 변수(ξᵢ)를 도입한 소프트 마진 SVM 최적화 문제, 힌지 손실(Hinge Loss)과 L2 규제 최적화를 인터랙티브 2D SVM 마진 분리기 시뮬레이터로 심층 학습한다.
-* [08. 엔트로피와 결정 트리 - 지니 불순도와 정보 획득량(IG) 대수학 (Decision Trees, Entropy & Gini)](./08.%20%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC%EC%99%80%20%EA%B2%B0%EC%A0%95%20%ED%8A%B8%EB%A6%AC.md) - 섀넌 엔트로피(Shannon Entropy)와 지니 불순도(Gini Impurity)의 수학적 공식화, ID3/C4.5 정보 획득량(Information Gain) 및 분할 기준, 비용 복잡도 가지치기(Pruning)를 인터랙티브 정보 획득량 계산기로 심층 학습한다.
-* [16. Transformer 언어 모델링과 인코더-디코더 - 셀프 어텐션과 위치 임베딩 대수학 (Transformers & Encoder-Decoder)](./16.%20Transformer%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%EB%A7%81%EA%B3%BC%20%EC%9D%B8%EC%BD%94%EB%8D%94-%EB%94%94%EC%BD%94%EB%8D%94.md) - 스케일드 닷 프로덕트 어텐션(Scaled Dot-Product Attention)의 분산 스케일링(√d_k) 유도, 주기 함수 기반 절대적 위치 인코딩(Positional Encoding), 인코더-디코더 잔차 연결 구조를 인터랙티브 어텐션 시뮬레이터로 심층 학습한다.
-* [17. Transformer Self-Attention과 블록 구성 - 멀티헤드 어텐션과 레이어 정규화 대수학 (Multi-Head Attention & LayerNorm)](./17.%20Transformer%20Self-Attention%EA%B3%BC%20%EB%B8%94%EB%A1%9D%20%EA%B5%AC%EC%84%B1.md) - 멀티헤드 어텐션(Multi-Head Attention)의 선형 투영 대수학, 점별 피드포워드 신경망(FFN), 레이어 정규화(LayerNorm)와 잔차 연결(Residual Connection)을 인터랙티브 트랜스포머 블록 시뮬레이터로 심층 학습한다.
-* [CNN과 LeNet-5 분류](./10.%20CNN%EA%B3%BC%20LeNet-5%20%EB%B6%84%EB%A5%98.md) - 완전연결 계층(FC)의 평탄화(Flatten) 공간 정보 손실 한계, 합성곱 연산(Convolution), 풀링(Max Pooling) 및 LeNet-5(CIFAR-10) 아키텍처를 인터랙티브 2D 합성곱 연산기로 학습한다.
-* [KNN 분류·회귀와 직접 구현](./09.%20KNN%20%EB%B6%84%EB%A5%98%C2%B7%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84.md) - K-최근접 이웃(KNN)의 거리 척도(유클리드·맨해튼), $K$값(K=1, 3, 5)에 따른 다수결(Majority Voting) 분류 및 평균 회귀를 인터랙티브 2D KNN 분류기로 실습한다.
-* [machine-learning 강의 흐름 지도](./00.%20machine-learning%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 21개의 순서·쪽수·학습 점검을 연결한다.
-* [RNN·LSTM 실습 - 훈민정음 서문 생성 모델](./14.%20RNN%C2%B7LSTM%20%EC%8B%A4%EC%8A%B5.md) - 훈민정음 서문 현대어 번역 텍스트를 이용한 단어 단위 토큰화, 원-핫 인코딩, 순환 신경망(RNN) 및 LSTM 기반 순차적 텍스트 자동 생성 파이프라인을 인터랙티브 텍스트 생성 스텝퍼로 실습한다.
-* [RNN과 LSTM의 순환 구조](./13.%20RNN%EA%B3%BC%20LSTM%EC%9D%98%20%EC%88%9C%ED%99%98%20%EA%B5%AC%EC%A1%B0.md) - 시계열·자연어 데이터 처리를 위한 순환 신경망(Vanilla RNN)의 구조와 기울기 소실(Vanishing Gradient) 한계, LSTM(Long Short-Term Memory)의 4대 게이트(Forget, Input, Candidate, Output)를 인터랙티브 셀 상태 계산기로 학습한다.
-* [SVM 구현 - 경사 하강법(GD)과 QP](./06.%20SVM%20%EA%B5%AC%ED%98%84%20-%20%EA%B2%BD%EC%82%AC%20%ED%95%98%EA%B0%95%EB%B2%95%28GD%29%EA%B3%BC%20QP.md) - SVM의 힌지 손실(Hinge Loss) 기반 경사 하강법(Subgradient Descent)과 쌍대 문제(Dual Problem)의 2차 계획법(QP, Quadratic Programming) 라그랑주 승수 해법을 인터랙티브 힌지 손실 시뮬레이터로 학습한다.
-* [U-Net 기반 특징 압축과 분류](./11.%20U-Net%20%EA%B8%B0%EB%B0%98%20%ED%8A%B9%EC%A7%95%20%EC%95%95%EC%B6%95%EA%B3%BC%20%EB%B6%84%EB%A5%98.md) - U자형 인코더-디코더(Contracting-Expanding Path), 스킵 연결(Skip Connection)을 통한 고해상도 공간 정보 복원 및 전치 합성곱(Transposed Conv)을 인터랙티브 U-Net 아키텍처 탐색기로 학습한다.
-* [Word2Vec와 단어 임베딩](./15.%20Word2Vec%EC%99%80%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%B2%A0%EB%94%A9.md) - 원-핫 인코딩의 희소성(Sparsity) 및 직교성 한계를 극복하는 분산 표현(Distributed Representation), CBOW(Continuous Bag-of-Words)와 Skip-Gram의 목적 함수, 임베딩 가중치 행렬 사상 및 벡터 연산(King - Man + Woman = Queen)을 상세히 다룬다.
-* [다중 선형 회귀와 주택 가격](./03.%20%EB%8B%A4%EC%A4%91%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A3%BC%ED%83%9D%20%EA%B0%80%EA%B2%A9.md) - 다변수 특징(면적, 방 개수, 층수 등)을 결합한 다중 선형 회귀(Multiple Linear Regression), 특성 스케일링(Standardization), 결정계수($R^2$)를 인터랙티브 주택 가격 예측기로 학습한다.
-* [단일 선형 회귀 실습 - LSM과 GDM](./02.%20%EB%8B%A8%EC%9D%BC%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%20%EC%8B%A4%EC%8A%B5%20-%20LSM%EA%B3%BC%20GDM.md) - NumPy 기반 정규방정식(LSM) 구현과 반복적 경사 하강법(GDM)의 에포크별 손실 감소 및 파라미터 수렴 과정을 인터랙티브 회귀 학습기로 실습한다.
-* [우버 요금 다중 선형 회귀](./04.%20%EC%9A%B0%EB%B2%84%20%EC%9A%94%EA%B8%88%20%EB%8B%A4%EC%A4%91%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80.md) - 위도·경도 좌표로부터 유클리드/하버사인 거리 계산, 탑승 승객 수, 시간대별 할증률을 반영한 우버(Uber) 택시 요금 다중 회귀 모델링을 인터랙티브 요금 예측기로 실습한다.
-* [중간고사 대비 - SVM·KNN 영화 추천](./07.%20%EC%A4%91%EA%B0%84%EA%B3%A0%EC%82%AC%20%EB%8C%80%EB%B9%84%20-%20SVM%C2%B7KNN%20%EC%98%81%ED%99%94%20%EC%B6%94%EC%B2%9C.md) - 고객의 액션(Action)·로맨스(Romance) 선호도 점수로부터 One-vs-Rest SVM 및 KNN 알고리즘으로 3종 영화(John Wick, The Notebook, Leon)를 추천 분류하는 과정을 인터랙티브 장르 분류기로 학습한다.
-* [초해상도와 SRCNN](./12.%20%EC%B4%88%ED%95%B4%EC%83%81%EB%8F%84%EC%99%80%20SRCNN.md) - 저해상도(LR) 이미지로부터 고해상도(HR)를 복원하는 초해상도(Super-Resolution) 원리, Bicubic 보간 및 SRCNN 3단계 계층(패치 추출·비선형 사상·재구성)을 인터랙티브 SRCNN 파이프라인으로 학습한다.
+선형 회귀의 최소제곱법(LSM) 정규 방정식과 경사하강법(GDM), 서포트 벡터 머신(SVM)의 최대 마진 초평면 및 힌지 손실·2차 계획법(QP), 의사결정나무의 정보 이득(엔트로피/지니 계수) 및 KNN, 고급 컴퓨터 비전(U-Net 분할 스킵 연결 및 SRCNN 초해상도), 순환 신경망(RNN)과 LSTM 4대 게이트 시계열 모델링, 자연어 분산 표상 Word2Vec(CBOW/Skip-Gram), 그리고 셀프 어텐션 기반의 트랜스포머(Transformer) 아키텍처까지 머신러닝의 전 과정을 포괄적으로 학습합니다.
+
+---
+
+## 🗺️ 강의 목차 (Curriculum Overview)
+
+```mermaid
+graph TD
+    N1["01. 선형 회귀와 최소제곱법 & 경사하강법<br/>LSM 정규 방정식 $\mathbf{w}^* = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}$ vs GDM 반복 갱신"] --> N2["02. 서포트 벡터 머신(SVM)과 최대 마진<br/>마진 $2/\|\mathbf{w}\|$ 최대화 & 슬랙 변수 $\xi$ & 힌지 손실 & QP"]
+    N2 --> N3["03. 의사결정나무와 비모수 분류 모델<br/>섀넌 엔트로피 & 정보 이득(IG) & 지니 불순도 & Lazy KNN"]
+    N3 --> N4["04. 고급 컴퓨터 비전 신경망<br/>U-Net U자형 인코더-디코더 스킵 연결 & SRCNN 3단계"]
+    N4 --> N5["05. 순환 신경망(RNN)과 LSTM<br/>BPTT & 기울기 소실 & 셀 상태 $C_t$ & 4대 게이트($f_t, i_t, \tilde{C}_t, o_t$)"]
+    N5 --> N6["06. 단어 임베딩과 자연어 표상<br/>원-핫 직교 한계 & 분포 가설 & Word2Vec (CBOW vs Skip-Gram)"]
+    N6 --> N7["07. 트랜스포머(Transformer)와 셀프 어텐션<br/>$\operatorname{Attention}(Q,K,V) = \operatorname{softmax}(QK^T/\sqrt{d_k})V$ & Positional Encoding"]
+```
+
+---
+
+## 📑 개별 정리 문서 목록
+
+1. [01. 선형 회귀와 최소제곱법(LSM) 및 경사하강법(GDM) - 단일·다중 회귀와 정규 방정식](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/01.%20%EC%84%A0%ED%98%95%20%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(LSM)%20%EB%B0%8F%20%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95(GDM)%20-%20%EB%8B%A8%EC%9D%BC%C2%B7%EB%8B%A4%EC%A4%91%20%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A0%95%EA%B7%9C%20%EB%B0%A9%EC%A0%95%EC%8B%9D.md)
+   - 잔차 제곱합 미분 및 정규 방정식 닫힌 해 유도, 대화형 LSM vs GDM 피팅기
+2. [02. 서포트 벡터 머신(SVM)과 최대 마진 분류 - 하드·소프트 마진, 힌지 손실과 2차 계획법(QP)](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/02.%20%EC%84%9C%ED%8F%AC%ED%8A%B8%20%EB%B2%A1%ED%84%B0%20%EB%A8%B8%EC%8B%A0(SVM)%EA%B3%BC%20%EC%B5%9C%EB%8C%80%20%EB%A7%88%EC%A7%84%20%EB%B6%84%EB%A5%98%20-%20%ED%95%98%EB%93%9C%C2%B7%EC%86%8C%ED%84%84%ED%8A%B8%20%EB%A7%88%EC%A7%84,%20%ED%9E%8C%EC%A7%80%20%EC%86%90%EC%8B%A4%EA%B3%BC%202%EC%B0%A8%20%EA%B3%84%ED%9A%8D%EB%B2%95(QP).md)
+   - 최대 마진 초평면, 슬랙 변수 $\xi$ 및 힌지 손실, 대화형 $C$ 하이퍼파라미터 마진 시뮬레이터
+3. [03. 의사결정나무와 비모수 분류 모델 - 정보 이득(엔트로피·지니 계수)과 K-최근접 이웃(KNN)](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/03.%20%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4%EC%99%80%20%EB%B9%84%EB%AA%A8%EC%88%98%20%EB%B6%84%EB%A5%98%20%EB%AA%A8%EB%8D%B8%20-%20%EC%A0%95%EB%B3%B4%20%EC%9D%B4%EB%93%9D(%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC%C2%B7%EC%A7%80%EB%8B%88%20%EA%B3%84%EC%88%98)%EA%B3%BC%20K-%EC%B5%9C%EA%B7%BC%EC%A0%91%20%EC%9D%B4%EC%9B%83(KNN).md)
+   - 섀넌 엔트로피 및 정보 이득 수식 유도, 의사결정나무 vs KNN 비교, 실시간 불순도 계산기
+4. [04. 고급 컴퓨터 비전 신경망 - U-Net 인코더-디코더 잔차 구조와 초해상도(SRCNN)](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/04.%20%EA%B3%A0%EA%B8%89%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20-%20U-Net%20%EC%9D%B8%EC%BD%94%EB%8D%94-%EB%94%94%EC%BD%94%EB%8D%94%20%EC%9E%94%EC%B0%A8%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%B4%88%ED%95%B4%EC%83%81%EB%8F%84(SRCNN).md)
+   - U-Net 수축/확장 경로 및 스킵 연결 채널 병합, SRCNN 3단계, 실시간 세그멘테이션 시뮬레이터
+5. [05. 순환 신경망(RNN)과 장단기 메모리(LSTM) - 시계열 모델링, BPTT와 4대 게이트 메커니즘](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/05.%20%EC%88%9C%ED%99%98%20%EC%8B%A0%EA%B2%BD%EB%A7%9D(RNN)%EA%B3%BC%20%EC%9E%A5%EB%8B%A8%EA%B8%B0%20%EB%A9%94%EB%AA%A8%EB%A6%AC(LSTM)%20-%20%EC%8B%9C%EA%B3%84%EC%97%B4%20%EB%AA%A8%EB%8D%B8%EB%A7%81,%20BPTT%EC%99%80%204%EB%8C%80%20%EA%B2%8C%EC%9D%B4%ED%8A%B8%20%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98.md)
+   - BPTT 기울기 소실, LSTM 셀 상태 $C_t$ 덧셈 갱신 및 3대 시그모이드 게이트, 대화형 게이트 제어기
+6. [06. 단어 임베딩과 자연어 표상 - One-Hot의 한계, 분산 표상과 Word2Vec(CBOW vs Skip-Gram)](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/06.%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%82%B4%EB%94%A9%EA%B3%BC%20%EC%9E%90%EC%97%B0%EC%96%B4%20%ED%91%9C%EC%83%81%20-%20One-Hot%EC%9D%98%20%ED%95%9C%EA%B3%84,%20%EB%B6%84%EC%82%B0%20%ED%91%9C%EC%83%81%EA%B3%BC%20Word2Vec(CBOW%20vs%20Skip-Gram).md)
+   - 분포 가설, CBOW vs Skip-Gram 모델 구조, 코사인 유사도, 대화형 단어 벡터 연산기
+7. [07. 트랜스포머(Transformer)와 셀프 어텐션 - 스케일드 닷 프로덕트, 멀티헤드 어텐션과 위치 인코딩](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/machine-learning/notes/07.%20%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%8F%AC%EB%A8%B8(Transformer)%EC%99%80%20%EC%85%80%ED%94%84%20%EC%96%B4%ED%85%90%EC%85%98%20-%20%EC%8A%A4%EC%BC%80%EC%9D%BC%EB%93%9C%20%EB%8B%B7%20%ED%94%84%EB%A1%9C%EB%8D%95%ED%8A%B8,%20%EB%A9%80%ED%8B%B0%ED%97%A4%EB%93%9C%20%EC%96%B4%ED%85%90%EC%85%98%EA%B3%BC%20%EC%9C%84%EC%B9%98%20%EC%9D%B8%EC%BD%94%EB%94%A9.md)
+   - $\operatorname{Attention}(Q,K,V)$ 수식, 삼각함수 Positional Encoding, 대화형 문맥 어텐션 가중치 매트릭스
