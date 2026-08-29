@@ -3,7 +3,7 @@
 ## lecture
 
 * [01. NLP 처리에서 어텐션까지 - 통계 언어 모델부터 어텐션 메커니즘까지 (NLP to Attention)](./01.%20NLP%20%EC%B2%98%EB%A6%AC%EC%97%90%EC%84%9C%20%EC%96%B4%ED%85%90%EC%85%98%EA%B9%8C%EC%A7%80.md) - 원-핫 인코딩, Word2Vec/GloVe 분산 표상, 순환 신경망(RNN/LSTM)의 장기 의존성(Long-term Dependency) 한계 및 바흐다나우(Bahdanau) 어텐션 메커니즘을 인터랙티브 어텐션 가중치 히트맵 시뮬레이터로 심층 학습한다.
-* [04. RAG의 원리와 인덱싱](./04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md) - 외부 지식을 검색해 생성 입력을 보강하는 RAG의 목적과 로딩·분할·임베딩·저장 절차를 정리한다.
+* [04. RAG의 원리와 인덱싱 - 검색 증강 생성과 청킹 및 하이브리드 검색 (RAG & Indexing)](./04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md) - 환각(Hallucination)을 방지하고 최신 도메인 지식을 주입하는 RAG(Retrieval-Augmented Generation) 파이프라인, 청킹(Chunking) 전략, 밀집-희소 하이브리드 검색 및 리랭킹(Cross-Encoder)을 인터랙티브 RAG 검색 시뮬레이터로 심층 학습한다.
 * [109. 개발 환경·API 키와 보충 사례](./109.%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%C2%B7API%20%ED%82%A4%EC%99%80%20%EB%B3%B4%EC%B6%A9%20%EC%82%AC%EB%A1%80.md) - 환경 변수와 추적 설정, 한국어 데이터·NLP 응용, Gemma·Groq 사례를 한 구간의 보충 내용으로 정리한다.
 * [11. Transformer와 언어 모델 계열 - MHA와 3대 아키텍처 패밀리 (Transformer & Model Families)](./11.%20Transformer%EC%99%80%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%20%EA%B3%84%EC%97%B4.md) - 트랜스포머(Transformer)의 Scaled Dot-Product Attention, Multi-Head Attention(MHA), 위치 인코딩(Positional Encoding) 및 3대 계열(Encoder-only BERT vs Decoder-only GPT vs Seq2Seq T5)을 인터랙티브 MHA 계산기로 심층 학습한다.
 * [19. GPT 구조와 학습 전략 - Decoder-Only와 인과적 마스킹 및 KV 캐싱 (GPT Architecture & KV Caching)](./19.%20GPT%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%ED%95%99%EC%8A%B5%20%EC%A0%84%EB%9E%B5.md) - GPT의 Decoder-Only 구조, 인과적 마스크(Causal Masking), 자기회귀적 다음 토큰 예측(Next-Token Prediction) 및 추론 가속의 핵심인 KV 캐시(Key-Value Caching) 메커니즘을 인터랙티브 KV 캐시 메모리 시뮬레이터로 심층 학습한다.
