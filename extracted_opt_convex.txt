@@ -1,0 +1,496 @@
+### [Page 1]
+최적화수학
+3. Convex Optimization
+
+
+
+### [Page 2]
+
+
+
+### [Page 3]
+
+
+
+### [Page 4]
+
+
+
+### [Page 5]
+
+
+
+### [Page 6]
+
+
+
+### [Page 7]
+
+
+
+### [Page 8]
+
+
+
+### [Page 9]
+
+
+
+### [Page 10]
+
+
+
+### [Page 11]
+( )
+( )
+( )
+, 
+0, 
+1
+( )
+, 
+1
+( )
+ln
+( )
+( )
+( )
+ax
+p
+p
+p
+p
+i
+p
+f x
+ax
+b
+f x
+e
+f x
+x
+x
+p
+f x
+x
+p
+f x
+x
+x
+f
+f
+x
+x
+=
++
+=
+=
+
+
+=
+
+=
+=
++
+=
+=
+
+T
+x
+a x
+b
+x
+
+
+
+### [Page 12]
+
+
+
+### [Page 13]
+
+
+
+### [Page 14]
+
+
+
+### [Page 15]
+
+
+
+### [Page 16]
+
+
+
+### [Page 17]
+
+
+
+### [Page 18]
+,
+Jensen’s inequality
+
+
+
+### [Page 19]
+
+
+
+### [Page 20]
+
+
+
+### [Page 21]
+
+
+
+### [Page 22]
+
+
+
+### [Page 23]
+
+
+
+### [Page 24]
+
+
+
+### [Page 25]
+
+
+
+### [Page 26]
+
+
+
+### [Page 27]
+
+
+
+### [Page 28]
+
+
+
+### [Page 29]
+
+
+
+### [Page 30]
+
+
+
+### [Page 31]
+
+
+
+### [Page 32]
+
+
+
+### [Page 33]
+
+
+
+### [Page 34]
+Gradient Descent Method
+1
+k
+k
+k
+k
+x
+x
+t
+x
++ =
++
+
+(
+)
+k
+k
+x
+f x
+
+= −
+
+
+
+### [Page 35]
+
+
+
+### [Page 36]
+
+
+
+### [Page 37]
+  4
+2
+2
+  2
+−
+
+
+= 
+
+−
+
+
+A
+1
+( )
+2
+f
+=
+T
+x
+x Ax
+0
+(2,3)
+=
+x
+1
+4
+kt =
+3
+??
+=
+x
+Minimize
+
+
+
+### [Page 38]
+
+
+
+### [Page 39]
+Exact line search method
+
+
+
+### [Page 40]
+  4
+2
+2
+  2
+−
+
+
+= 
+
+−
+
+
+A
+1
+( )
+2
+f
+=
+T
+x
+x Ax
+0
+(2,3)
+=
+x
+3
+??
+=
+x
+Minimize
+
+
+
+### [Page 41]
+
+
+
+### [Page 42]
+
+
+
+### [Page 43]
+
+
+
+### [Page 44]
+Backtracking line search method
+
+
+
+### [Page 45]
+
+
+
+### [Page 46]
+  4
+2
+2
+  2
+−
+
+
+= 
+
+−
+
+
+A
+1
+( )
+2
+f
+=
+T
+x
+x Ax
+0
+(2,3)
+=
+x
+3
+??
+=
+x
+Minimize
+0
+1
+1
+1, 
+, 
+2
+2
+t
+
+
+=
+=
+=
+
+
+
+### [Page 47]
+
+
+
+### [Page 48]
+Linear regression analysis
+
+
+
+### [Page 49]
+
+
+
+### [Page 50]
+
+
+
+### [Page 51]
+
+
+
+### [Page 52]
+Multivariate analysis
+
+
+
+### [Page 53]
+
+
+
+### [Page 54]
+
+
+
+### [Page 55]
+
+
+
+### [Page 56]
+
+
+
+### [Page 57]
+Conjugate gradient method
+kt
+=
++
+k+1
+k
+k
+x
+x
+d
+k
+T
+t = −
+T
+k
+k
+k
+k
+g
+d
+d
+Ad
+i
+i
+T
+i
+i
+= −
++
+T
+k+1
+k
+k
+g
+A d
+d
+g
+d
+d Ad
+
+
+
+### [Page 58]
+Newton’s Method
+=
++
+k+1
+k
+k
+x
+x
+h
+(
+)
+(
+)
+Hf
+f
+= −
+k
+k
+k
+x
+h
+x
+
+
+
+### [Page 59]
+https://www.semanticscholar.org/paper/Nonlinear-Conjugate-Gradient-Method-
+Efremov/3984af3ad7e6411c06c98f609d34e43c726fd7ef
+
+
+
+### [Page 60]
+Question?
+
