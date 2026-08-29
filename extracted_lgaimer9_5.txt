@@ -1,0 +1,595 @@
+### [Page 1]
+#3. Deep Architectures for Tabular Data
+Instructor: Hankook Lee @ Efficient Learning Lab., Sungkyunkwan University
+1
+
+
+
+### [Page 2]
+Lecture Overview
+• This lecture covers deep neural networks for tabular data
+• Why deep learning?
+• MLP-based architectures: How can simple MLPs be made truly competitive?
+• ResNet-MLP (2021), MLP-PLR (2022), RealMLP (2024), TabR (2024), ModernNCA (2025), TabM (2025)
+• Attention-based architectures: How to model interactions among features 
+and samples?
+• TabTransformer (2020), FT-Transformer (2021), NPT (2021), SAINT (2021), T2G-Former (2023), 
+ExcelFormer (2024), AMFormer (2024)
+2
+
+
+
+### [Page 3]
+Tree-based Models Are Still Strong
+• Tree-based models remain highly competitive for tabular prediction
+Empirical Findings:
+• NNs are biased to overly smooth solutions
+• Uninformative features affect more MLP-like NNs
+• Data are non invariant by rotation
+3
+Grinsztajn et al., Why do tree-based models still outperform deep learning on tabular data?, NeurIPS 2022
+
+
+
+### [Page 4]
+Then, Why Deep Learning?
+• Learnable Representations
+• Neural models can learn embeddings for categorical and numerical features, 
+capturing richer similarity and structure than raw values alone
+• End-to-end Feature Interactions
+• MLPs and Transformers can jointly learn complex non-linear interactions 
+among features, rather than constructing them via sequential tree splits
+• Extensibility Beyond Standard Prediction
+• Neural architectures naturally extend to pretraining, retrieval, multitask 
+learning, and multimodal modeling with text, images, or time series
+4
+
+
+
+### [Page 5]
+Simple MLP Baselines
+• Build plain & ResNet-like MLPs on a tabular row 𝐱∈ℝ𝑑
+• Treats every numerical column as a single scalar feeding a dense layer
+• Categorical features need one-hot or learned embeddings 
+5
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+Plain MLP
+ResNet-like MLP
+
+
+
+### [Page 6]
+Simple MLP Baselines
+• Build plain & ResNet-like MLPs on a tabular row 𝐱∈ℝ𝑑
+• Treats every numerical column as a single scalar feeding a dense layer
+• Categorical features need one-hot or learned embeddings 
+6
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+
+
+
+### [Page 7]
+Simple MLP Baselines
+• Build plain & ResNet-like MLPs on a tabular row 𝐱∈ℝ𝑑
+• Treats every numerical column as a single scalar feeding a dense layer
+• Categorical features need one-hot or learned embeddings 
+• Main takeaways
+• MLP is still a good sanity check
+• ResNet turns out to be an effective baseline that none of the competitors 
+can consistently outperform
+• Tuning makes simple models such as MLP and ResNet competitive
+→ Recommend tuning baselines when possible
+• There is still no universal solution among DL models and GBDT
+7
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+
+
+
+### [Page 8]
+Better Embedding for Numerical Features
+• A simple way: taking each numerical feature as a single scalar input
+Limitations:
+• Each numerical feature is represented by only one scalar value
+• The model must learn complex patterns only after raw features are mixed
+• Threshold-like patterns
+• Local variations across value ranges
+• Irregular relationships with the target
+8
+Gorishniy et al., On Embeddings for Numerical Features in Tabular Deep Learning, NeurIPS 2022
+MLP
+𝐱∈ℝ4
+
+
+
+### [Page 9]
+Better Embedding for Numerical Features
+• An alternative: taking each numerical feature as a single vector
+• 𝐳𝑖= 𝑓𝑖𝑥𝑖∈ℝ𝑑𝑖, 𝑓𝑖is the embedding function for the i-th numerical feature
+• Each numerical feature is embedded independently
+• (Q) Which embedding function is effective for numerical features?
+9
+Gorishniy et al., On Embeddings for Numerical Features in Tabular Deep Learning, NeurIPS 2022
+Embedding
+MLP (or other architectures)
+𝐱∈ℝ4
+𝑓1
+𝑓2
+𝑓3
+𝑓4
+
+
+
+### [Page 10]
+Better Embedding for Numerical Features
+1. Piecewise Linear Encoding (PLE)
+• Bins can be constructed from quantiles or target-aware splits
+2. Periodic Activation Functions
+• 𝑐𝑖are trainable parameters initialized from 𝒩0, 𝜎
+10
+Gorishniy et al., On Embeddings for Numerical Features in Tabular Deep Learning, NeurIPS 2022
+
+
+
+### [Page 11]
+Better Embedding for Numerical Features
+• Feature-wise embedding consistently improves performance 
+11
+Gorishniy et al., On Embeddings for Numerical Features in Tabular Deep Learning, NeurIPS 2022
+
+
+
+### [Page 12]
+Better Embedding for Numerical Features
+• MLP with better embeddings outperforms tree-based and 
+Transformer-based models
+• Main Takeaway:
+• For tabular deep learning, how numerical features are represented can 
+matter as much as the choice of backbone
+12
+Gorishniy et al., On Embeddings for Numerical Features in Tabular Deep Learning, NeurIPS 2022
+
+
+
+### [Page 13]
+A Better Training Recipe for MLPs 
+• Observation: Many tabular DNN papers compare against weak or 
+insufficiently tuned MLP baselines
+• Question: Are MLPs really weak for tabular data?
+• Holzmüller et al. (2024) argue that a simple MLP can be strong with:
+• Robust preprocessing
+• Better numerical and categorical feature representations
+• Improved initialization and training schedules
+• Meta-tuned default hyperparameters
+13
+Holzmüller et al., Better by Default: Strong Pre-Tuned MLPs and Boosted Trees on Tabular Data, NeurIPS 2024
+
+
+
+### [Page 14]
+A Better Training Recipe for MLPs 
+14
+Holzmüller et al., Better by Default: Strong Pre-Tuned MLPs and Boosted Trees on Tabular Data, NeurIPS 2024
+• RealMLP improves a vanilla MLP:
+• Robust preprocessing
+• Numerical and categorical embeddings
+• Learnable feature scaling
+• Improved activations, initialization, 
+and regularization
+• A meta-tuned default recipe
+• Tune the default recipe 
+on many meta-train datasets
+• Apply it to new datasets 
+without expensive per-dataset HPO
+
+
+
+### [Page 15]
+A Better Training Recipe for MLPs 
+• A carefully designed, meta-tuned MLP achieves a strong 
+accuracy-efficiency trade-off on unseen tabular datasets
+15
+Holzmüller et al., Better by Default: Strong Pre-Tuned MLPs and Boosted Trees on Tabular Data, NeurIPS 2024
+
+
+
+### [Page 16]
+Deep Learning from Nearest Neighbors
+• Motivation: Similar rows can provide useful information for prediction
+• KNN uses nearby training samples directly
+• Neural networks usually compress training data into model parameters
+• Question: Can we combine neural representations with nearest-
+neighbor reasoning?
+• Two recent directions
+• TabR: Retrieve similar training samples and use them inside a neural network
+• ModernNCA: Learn an embedding space where soft nearest-neighbor 
+prediction works well
+16
+
+
+
+### [Page 17]
+Retrieval-Augmented Tabular Prediction
+• TabR is a MLP with a kNN-like retrieval module
+• Retrieve neighbors on the embedding space from the candidate set
+• Use both neighbor representations and neighbor labels
+• Add retrieved information to the target representation before prediction
+17
+Gorishniy et al., TabR: Tabular Deep Learning Meets Nearest Neighbors, ICLR 2024
+
+
+
+### [Page 18]
+Retrieval-Augmented Tabular Prediction
+• TabR is a MLP with a kNN-like retrieval module
+• Retrieve neighbors on the embedding space from the candidate set
+• Use both neighbor representations and neighbor labels
+• Add retrieved information to the target representation before prediction
+18
+Gorishniy et al., TabR: Tabular Deep Learning Meets Nearest Neighbors, ICLR 2024
+
+
+
+### [Page 19]
+Retrieval-Augmented Tabular Prediction
+• The retrieval module works as attention:
+• Retrieve only the top-m relevant neighbors
+• Use context labels and the difference between target and neighbor samples
+19
+Gorishniy et al., TabR: Tabular Deep Learning Meets Nearest Neighbors, ICLR 2024
+
+
+
+### [Page 20]
+Retrieval-Augmented Tabular Prediction
+• TabR (1) becomes a new strong deep learning solution and 
+(2) demonstrates a good potential of the retrieval-based approach
+20
+Gorishniy et al., TabR: Tabular Deep Learning Meets Nearest Neighbors, ICLR 2024
+
+
+
+### [Page 21]
+ModernNCA
+• ModernNCA revisits Neighborhood Components Analysis (NCA) 
+with a learnable embedding function (i.e., neural network) 𝝓
+• This is also known as soft nearest neighbor (soft-NN)
+• Why "modern"?
+• Better embedding with a neural network and PLR-style numerical encoding
+• Better optimization
+• Efficient neighborhood training with Stochastic Neighborhood Sampling (SNS)
+• Simpler and faster than more complex retrieval-based models such as TabR
+21
+Ye et al., Revisiting Nearest Neighbor for Tabular Data: A Deep Tabular Baseline Two Decades Later, ICLR 2025
+
+
+
+### [Page 22]
+TabR vs ModernNCA
+Takeaway: Neighborhood information is a powerful inductive bias 
+for tabular deep learning.
+22
+Method
+Key Idea
+Prediction Mechanism
+TabR
+Add retrieved neighbor information inside a neural network
+Encoder + retrieval module + predictor
+ModernNCA
+Learn a space where soft nearest-neighbor prediction works
+Weighted average of neighbor labels
+
+
+| Method | Key Idea | Prediction Mechanism |
+| --- | --- | --- |
+| TabR | Add retrieved neighbor information inside a neural network | Encoder + retrieval module + predictor |
+| ModernNCA | Learn a space where soft nearest-neighbor prediction works | Weighted average of neighbor labels |
+
+
+### [Page 23]
+TabM: MLP with Ensemble
+• Observation: Most tabular DL methods have focused on building a 
+stronger single predictor through:
+• Better feature representations
+• Better training recipes
+• Attention or retrieval mechanisms
+• Ensembling has been largely overlooked in tabular deep learning!
+• Question: Can we efficiently train an ensemble of neural predictors?
+• Is ensembling effective for tabular prediction?
+• Can we obtain ensemble benefits through parameter sharing?
+23
+Gorishniy et al., TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling, ICLR 2025
+
+
+
+### [Page 24]
+TabM: MLP with Ensemble
+• How to build an ensemble?
+• Deep Ensemble: Train multiple MLPs independently
+• Packed-Ensemble: Pack multiple MLPs into one and train them jointly
+• TabM & TabMmini: Share most parameters across ensemble members
+24
+Gorishniy et al., TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling, ICLR 2025
+
+
+
+### [Page 25]
+TabM: MLP with Ensemble
+• How to build an ensemble?
+• Deep Ensemble: Train multiple MLPs independently
+• Packed-Ensemble: Pack multiple MLPs into one and train them jointly
+• TabM & TabMmini: Share most parameters across ensemble members
+25
+Parameter-efficient ensembles can outperform 
+both a single MLP and a conventional deep ensemble
+Gorishniy et al., TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling, ICLR 2025
+
+
+
+### [Page 26]
+TabM: MLP with Ensemble
+26
+Gorishniy et al., TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling, ICLR 2025
+
+
+
+### [Page 27]
+Summary: MLP-based Architectures
+• Simple MLPs can be strong models for tabular prediction 
+when designed and trained carefully, e.g.:
+• Richer representations for numerical and categorical features
+• Better preprocessing and training recipes
+• Neighborhood information from similar training samples
+• Efficient ensembling of multiple predictors
+MLP-based models remain a strong/flexible direction for tabular data
+Next: Attention-based Architectures
+27
+
+
+
+### [Page 28]
+What is Attention?
+• Attention identifies relevant relationships among items and 
+aggregates information accordingly
+• Attention can flexibly capture interactions among items
+• Attention has been widely used across diverse domains, including text, 
+images, time-series, and so on
+• Scaled dot-product attention
+28
+
+
+
+### [Page 29]
+What is Attention?
+• Self-Attention and Cross-Attention
+29
+
+
+
+### [Page 30]
+Why Attention for Tabular Data?
+• Tabular prediction often depends on interactions among columns
+• E.g., "Debt" becomes meaningful when considered together with "Income"
+• A tabular row can be represented as a set of column tokens
+• Numerical and categorical features are embedded into vectors
+• Attention allows each feature token to incorporate information from other 
+relevant features
+• Attention operation is permutation-equivariant
+• Tabular columns have no natural order
+• Reordering feature tokens should not change the prediction
+30
+
+
+
+### [Page 31]
+TabTransformer
+• Core idea: Treat each categorical column as a token, and pass these 
+tokens through a Transformer
+• Each categorical embedding becomes contextualized 
+by all other categorical values
+• What about numerical features?
+• Numerical columns are kept as scalars
+• They are concatenated with the contextual 
+categorical embeddings before the MLP head
+31
+Huang et al., TabTransformer: Tabular Data Modeling Using Contextual Embeddings, 2020
+
+
+
+### [Page 32]
+FT-Transformer
+• FT-Transformer = Feature Tokenizer + Transformer
+• Feature Tokenizer
+• This transforms the input features to embeddings 𝑇∈ℝ𝑘×𝑑
+• Numerical features are linearly transformed
+• Categorical features are mapped through
+the lookup table
+32
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+
+
+
+### [Page 33]
+FT-Transformer
+• FT-Transformer = Feature Tokenizer + Transformer
+• Transformer
+• Append [CLS] token to the embedding sequence
+• Apply Transformer layers with PreNorm
+• The final representation of the [CLS] token is used for prediction
+33
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+
+
+
+### [Page 34]
+FT-Transformer
+• TabTransformer vs FT-Transformer
+34
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+
+
+
+### [Page 35]
+FT-Transformer
+• FT-Transformer outperforms MLP and GBDT baselines
+35
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+
+
+
+### [Page 36]
+FT-Transformer
+• FT-Transformer provides a standard template for attention-based 
+modeling of tabular data
+• Treat each column as a feature token
+• Linearly project numerical features
+• Embed categorical features through lookup tables
+• Apply self-attention across feature tokens to model feature interactions
+36
+Gorishniy et al., Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021
+Embedding
+Transformer
+Row
+Feature Tokens
+
+
+
+### [Page 37]
+Attention across Data Samples
+• Limitation of feature-wise attention:
+FT-Transformer processes each row independently
+• However, related samples provide useful information for prediction
+• E.g., nearest-neighbor prediction works well in tabular data
+• Question: Can a model learn interactions among data samples?
+• E.g., modeling a relationship between sample A and sample B
+• This could be combined with feature-wise attention
+• E.g., sample A's first column A1 ↔︎sample B's second column B2
+37
+
+
+
+### [Page 38]
+Non-Parametric Transformers (NPTs)
+• Prior work: parametric modeling
+• Models learn parameters 𝜃from training data 𝒟train =
+𝑥𝑖, 𝑦𝑖
+𝑖=1
+𝑛
+to maximize the likelihood 𝑝𝑦𝑥; 𝜃
+• This does not consider direct dependencies between datapoints
+• NPTs consider additional flexibility of using training data directly
+• Maximize the likelihood 𝑝𝑦𝑥, 𝒟train; 𝜃
+38
+Kossen et al., Self-Attention Between Datapoints: Going Beyond Individual Input-Output Pairs in Deep Learning, NeurIPS 2021
+
+
+
+### [Page 39]
+Non-Parametric Transformers (NPTs)
+• NPT Architecture:
+• NPTs take as input the entire dataset and masking matrix
+• Learn to predict masked data from unmasked data such as masked language modeling
+• Two types of attention:
+• Attention Between Datapoints – flatten and apply multi-head self-attention (MHSA)
+• Attention Between Attributes – apply MHSA independently to each row
+39
+Kossen et al., Self-Attention Between Datapoints: Going Beyond Individual Input-Output Pairs in Deep Learning, NeurIPS 2021
+
+
+
+### [Page 40]
+Non-Parametric Transformers (NPTs)
+• Empirical Analysis
+• NPTs can learn to predict using attention between datapoints
+40
+Kossen et al., Self-Attention Between Datapoints: Going Beyond Individual Input-Output Pairs in Deep Learning, NeurIPS 2021
+
+
+
+### [Page 41]
+SAINT 
+• Self-Attention and Intersample Attention Transformer (SAINT)
+• Similar to NPTs – Feature-wise self-attention & Intersample attention
+• Additional contribution: Contrastive and denoising pre-training for label-
+limited settings
+41
+Somepalli et al., SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training, 2021
+
+
+
+### [Page 42]
+Attention across Data Samples
+• Main Idea
+• Allow samples to interact with other samples during prediction via attention
+• Related rows can provide useful contextual information
+• Strengths
+• Captures sample-level relationships
+• Acts like a learned, flexible version of nearest-neighbor reasoning
+• Useful when similar samples provide complementary evidence
+• Limitations
+• Higher computational and memory cost
+• Requires care to avoid target leakage
+42
+
+
+
+### [Page 43]
+Exploiting Better Structure for Interactions
+Recent architectures redesign attention to better model feature 
+interactions in tabular data
+• T2G-Former: Guide feature interactions using a relation graph
+43
+Yan et al., T2G-Former: Organizing Tabular Features into Relation Graphs Promotes Heterogeneous Feature Interaction, AAAI 2023
+
+
+
+### [Page 44]
+Exploiting Better Structure for Interactions
+Recent architectures redesign attention to better model feature 
+interactions in tabular data
+• ExcelFormer: Restrict harmful information flow between features
+44
+Chen et al., ExcelFormer: A neural network surpassing GBDTs on tabular data, KDD 2024
+
+
+
+### [Page 45]
+Exploiting Better Structure for Interactions
+Recent architectures redesign attention to better model feature 
+interactions in tabular data
+• AMFormer: Model arithmetic feature interactions explicitly
+45
+Cheng et al., Arithmetic Feature Interaction Is Necessary for Deep Tabular Learning, AAAI 2024
+
+
+
+### [Page 46]
+Summary: Attention-based Architectures
+• Attention-based models focus on learning interactions
+• Feature-level interactions within each row
+• Sample-level interactions across rows
+• Structured or constrained interactions for tabular data
+• Recent models improve plain self-attention by asking
+• Which features should interact?
+• Which samples should interact?
+• Which interactions should be restricted or emphasized?
+Attention gives tabular models a flexible way to model relationships 
+among features and samples
+46
+
+
+
+### [Page 47]
+Summary
+• Tabular deep learning is not only about deeper networks
+• Tree-based models remain strong baselines
+• Deep models become attractive when representation learning, 
+interactions, retrieval, or extensibility matter
+• The key is designing the right inductive bias for tabular data
+47
+
+
+
+### [Page 48]
+Thank You for Your Attention!
+48
+

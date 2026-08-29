@@ -1,0 +1,385 @@
+### [Page 1]
+[2026 LG Aimers 8기]
+LG의거대언어모델,
+EXAONE
+
+
+
+### [Page 2]
+EXAONE, 최근화제의모델
+이미지출처: (왼) 아이뉴스24 (https://www.inews24.com/view/1903787)
+(오) 이비뉴스산업경제(https://www.ebn.co.kr/news/articleView.html?idxno=1673101)
+
+
+
+### [Page 3]
+LG가지향하는전문가AI는『전문가에게더높은전문가역량을제공』하는것
+General AI는자료초안작성, 개념이해등비전문가에게쉽게낮은수준의전문역량을제공
+⇨초보자/ 비전문가에게빠른시간에어느정도수준의결과물을제공하나, 비숙련자대체우려
+『전문가AI』를기반으로『비전문가에게도수준높은전문지식을전달』추구
+Expert AI는전문가입장에서필요한지식을제공하여, 보다높은수준의결과물을생성할수있게도움
+⇨수만명의전문가가힘을합쳐야하는분야에서도, AI와인간의협력을통해성과창출가능
+
+
+
+### [Page 4]
+Journey of EXAONE
+Graphical abstract: High efficiency non-dopant blue organic light-emitting diodes based on anthracene-based fluorophores with molecular design of charge transport and red-shifted emission proof
+EXAONE 1.0 EXAONE 2.0 EXAONE 3.0
+2021.12
+2023.7
+2024.8
+2025.7
+EXAONE 4.0
+EXAONE Deep
+2025.3
+EXAONE 3.5
+2024.12
+LG AI연구원은 출범후독자 개발한 생성형 AI 모델 EXAONE을 통해
+산업 현장에 적용 가능한 전문가 AI를 만들어 가고있음
+
+
+
+### [Page 5]
+1. 차세대AI 혁명의시작Agentic AI
+2. LG의AI 모델, EXAONE
+3. EXAONE 활용사례
+Contents
+
+
+
+### [Page 6]
+차세대AI 혁명의시작
+Agentic AI
+1
+Chapter
+
+
+
+### [Page 7]
+AI 업계에없어도올해한번쯤은들어왔을단어
+우리는어느덧AI의 의의의 의의의의
+ 의의의의
+.
+의의의의
+의의
+: 의의의의의의
+, DeepSeek
+의의의의
+, 의의의의
+X 의의
+(’25/4/14 의의)
+
+
+
+### [Page 8]
+Deep Learning
+Generative AI
+Agentic AI 
+Agentic AI : 우리가마주한차세대AI 혁명
+이미지출처: Google Deepmind 유튜브, OpenAI, ONUG 홈페이지 (발췌 편집)
+
+
+
+### [Page 9]
+일상속적용을위해Agentic AI로
+Agentic AI
+생성형AI
+사전학습데이터기반답변생성
+텍스트부터음성, 영상 등 멀티모달 수행
+콘텐츠생성, 단위 업무자동화등활용
+사람의사고과정을AI가 학습해 수행
+지시없이도자율적으로판단
+일상생활과산업에서행동으로현실화
+
+
+
+### [Page 10]
+LG의AI 모델
+EXAONE
+2
+Chapter
+
+
+
+### [Page 11]
+Stanford HAI Index Report 2025
+2024년 Notable AI Model에 한국 1개 등재
+
+
+
+### [Page 12]
+Agentic AI 기반모델EXAONE
+美EPOCH AI “Notable AI Models” 
+성능∙ 경제성 ∙ 신뢰성 모두확보
+
+
+
+### [Page 13]
+Agentic AI를위한고성능추론특화모델
+EXAONE Deep
+
+
+
+### [Page 14]
+GTC 2025 에서공개(’25.3월, 미국)
+※ GTC 2025 : 엔비디아의 연례 개발자 컨퍼런스
+※ 이미지: (좌) 중앙일보, Financial Times   (우) GTC 2025 행사장 부스
+
+
+
+### [Page 15]
+수학 영역에서 타 모델대비뛰어난 성능
+의의 
+
+
+
+### [Page 16]
+과학/코딩 영역에서 타 모델대비뛰어난 성능
+의의 
+
+
+
+### [Page 17]
+2025 의의의의
+의의
+의의의의
+의의
+2024 의의
+의의
+의의의의의
+의의
+의의
+의의/의의/의의의
+ 의의의
+의의
+의의
+의의의의
+의의
+의의
+의의
+의의/의의/의의
+의의의
+ 의
+의의
+의의의
+의의의
+의의의
+의의
+의의
+2025 의의
+의의
+의의의의의
+의의
+의의
+경쟁모델대비효율성확보
+의의의
+90
+80
+94.5
+66.1
+59.5
+86.7
+80
+89.9
+71.5
+65.9
+AIME 2024
+AIME 2025
+CSAT 2025
+GPQA Diamond
+LiveCodeBench
+EXAONE Deep 32B
+Deepseek-R1 (671B)
+32B vs 671B (EXAONE Deep vs DeepSeek)
+
+
+| 94.5 90 EXAONE Deep 32B 80 89.9 Deepseek-R1 (671B) 86.7 80 66.1 59.5 71.5 65.9 |  |
+| --- | --- |
+| AIME 2024 AIME 2025 CSAT 2025 GPQA Diamond LiveCodeBench 2024 의의 의의 의의의의의 2025 의의 의의 의의의의의 2025 의의의의 의의 의의 /의의 /의의의 의의의 의의 의의 /의의 /의의 의의의 의 의의 의의 의의 의의 의의의의 의의 의의 의의 의의의의 의의 의의 의의 의의의 의의의 의의의 의의 의의 |  |
+
+
+### [Page 18]
+"수학, 과학, 코딩실력이뛰어나면서,
+일반영역도뛰어난모델이필요하다"
+EXAONE 4.0
+
+
+
+### [Page 19]
+EXAONE 4.0
+추론통합Hybrid 모델
+전문영역지식학습을통한전문성강화
+Agentic AI를구현하기위한다채로운기능설계
+고성능32B 모델&
+On-device용1.2B 모델 
+EXAONE 3.5 대비
+4배증가한긴문맥
+(128K 토큰) 처리능력
+Agent 구현을위한
+MCP & 
+Function Calling 지원
+
+
+
+### [Page 20]
+일반/추론영역글로벌최고수준성능
+의의 
+
+
+
+### [Page 21]
+글로벌Frontier급모델과경쟁할수있는수준
+의의 
+
+
+
+### [Page 22]
+데이터신뢰성확보
+의의의
+학습데이터의법적리스크를분석하는Agent AI
+
+
+
+### [Page 23]
+26%
+45 배
+0.1%
+의의의
+의의
+의의
+의의
+의의
+의의
+LG의AI Agent vs 사람전문가와의비교
+의의의
+데이터신뢰성확보
+학습데이터의법적리스크를분석하는Agent AI
+
+
+
+### [Page 24]
+EXAONE
+활용사례
+3
+Chapter
+
+
+
+### [Page 25]
+내손안의AI 비서
+의의
+의의
+의의
+노트북용 On-Device AI
+통화 Agent
+
+
+
+### [Page 26]
+의의
+의의
+의의
+주가예측 ∙ 포트폴리오최적화하는AI ETF
+1) SP500 : S&P 500 지수.  SPY : SPDR S&P 500 ETF Trust
+의의 의의 의ETF
+의의
+의의의
+(~’25 의3의21의)
+SP500
++29.44%
+SPY
++31.66%
+LQAI
++31.97%
+최근6개월수익률그래프
+S&P500 대비높은수익률달성(’25년3월기준)
+
+
+| 의의 의의 의 ETF | 의의 의의의 (~’25 의 3의21의) |
+| --- | --- |
+| SP500 | +29.44% |
+| SPY | +31.66% |
+| LQAI | +31.97% |
+
+
+### [Page 27]
+의의
+의의
+의의
+암발생예측인자발굴(병리 이미지)
+이미지출처: 머니투데이(https://www.mt.co.kr/industry/2025/11/10/2025110920050233691)
+EXAONE Path
+
+
+
+### [Page 28]
+의의
+의의
+의의
+난치병치료신약개발
+1
+의의
+의의
+의의
+의의의
+의의
+2
+의의의
+의의
+의의
+의의의
+3
+의의의의의
+의의
+의의
+의의의의
+의의
+UPMC: University of Pittsburgh Medical Center     The Jackson Laboratory: 
+의의의
+의의의
+의의의
+의의의의
+ 
+EXAONE Discovery 연구기반활용
+
+
+
+### [Page 29]
+의의
+의의
+의의
+그 외 다양한산업 도메인에 활발히 적용 중
+출처: 머니투데이(https://www.mt.co.kr/industry/2025/11/11/2025111017063178421)
+LG 디스플레이
+LG 화학
+AI 어시스턴트'하이디'
+하루평균업무생산성
+10% 향상
+생산, 스케쥴링자동화
+LG 유플러스
+LG 이노텍
+통화어플리케이션'익시오' 
+제조결함탐지, 
+생산라인데이터분석
+LG 
+에너지솔루션
+LG 전자
+성능분석, 불량패턴예측
+AI 품질예측시스템, 
+데이터분석자동화
+
+
+
+### [Page 30]
+Thank you
+
+
+
+### [Page 31]
+EXAONE 4.0
+Model Download
+EXAONE 4.0
+Technical Report
+Try EXAONE!
+

@@ -1,0 +1,179 @@
+### [Page 1]
+AI 윤리란무엇인가?
+‘낯선지능’과함께살아가기
+이상욱
+한양대학교철학과& 인공지능학과
+유네스코세계과학기술윤리위원회의장단
+HY 과학기술윤리〮법〮정책센터장
+
+
+
+### [Page 2]
+인공신경망기반AI의원리
+➢인공신경망(Artificial Neural Network)
+은인간두뇌의신경망구조을모방한것
+이기는하지만차이점이공통점보다많다.
+➢핵심은계산단위인노드(~신경세포)는우
+리가이해할수있는의미를부여할수없
+는‘숫자’이고학습과예측모두이숫자들
+의계산을통해이루어진다는점이다. ('자
+각없는수행')
+➢그러므로인공신경망기반AI는설계원리
+적으로불투명하다. (Cf. 반투명상자)
+
+
+
+### [Page 3]
+AI의‘낯선’ 특징3가지
+1) ‘자각없는수행‘
+>> 의식적경험의부재
+2) ‘이해할수없는실패‘
+>> 진정한이해의부재
+3) ‘계산과실재의간극‘
+>> ‘몸‘이없는사이버존재
+
+
+
+### [Page 4]
+엄청나게똑똑한인공지능
+[Prompt] What is the reason for one of the meanings of 'bounty' to be subsidies?
+[Answer] The reason for one of the meanings of 'bounty' to be subsidies is due to the 
+historical evolution of the word's usage. Originally, 'bounty' referred to a reward or 
+payment offered for a specific action, often by a government. This could be for things 
+like killing a harmful animal, capturing a criminal, or even encouraging certain 
+behaviors like enlistment in the military. Over time, this meaning expanded to include 
+financial incentives or subsidies provided by governments to support specific industries 
+or activities. 
+For example, governments might offer bounties (subsidies) to farmers for producing 
+certain crops, to encourage domestic production and support agricultural industries. 
+Similarly, bounties might be given to companies developing renewable energy 
+technologies, to promote innovation and combat climate change. 
+Essentially, the core concept of 'bounty' as a reward or incentive remained, but its 
+application broadened to encompass government-funded support for various 
+economic and social goals.
+[Gemini Output, free version, 2024.12.25]
+
+
+
+### [Page 5]
+당황스럽게(?) 멍청한인공지능
+[Prompt] Show me an image of Paris 
+at night, which does not include Eiffel 
+tower.
+[Answer] You got it! Here's an image 
+of Paris at night, showcasing its 
+beauty without the Eiffel Tower:
+As you can see, Paris still exudes a 
+captivating charm even without its 
+iconic landmark. The city's streets, 
+buildings, and bridges are adorned 
+with twinkling lights, creating a 
+magical atmosphere.
+[Gemini Output, free version, 2024.12.25]
+
+
+
+### [Page 6]
+인간과는다른방식으로지적인AI 
+(ARC Prize)
+
+
+
+### [Page 7]
+계산과실재의간극
+
+
+
+### [Page 8]
+윤리(倫理) vs. Ethics
+➢윤리: “사람으로서마땅히행하거나지켜야할도리” (표준국어대사전)
+<< 우리말에서윤리란개인이누구에게나명백하게도리에어긋나는행동을
+하는것과긴밀하게관련되는개념
+➢Ethics:  “A set of moral principles, especially ones relating to or affirming 
+a specified group, field, or form of conduct” (OED)
+<< 어원을따져보면ethics는고대그리스어에서‘인격character’을뜻하는단어
+ethos, 그리고라틴어에서‘관습customs’을뜻하는단어mores와깊은관련됨. 
+Mores는moral(도덕적)의어원이기도함. 
+>> 우리말의‘사회적’과거의같은범위를다루되본질적으로규범적판단을
+요구한다는차별점이있음.
+참고자료: 고등과학원웹진<HORIZON> https://horizon.kias.re.kr/17815/
+
+
+
+### [Page 9]
+인간만이공감할수있을까?
+‘공감’으로무엇을의미하는지에따라답이
+다르다.
+Cf.) ‘감정없는감정로봇/인공지능’의등장
+(Affective Computing)
+MIT 컴퓨터공학자Weizenbaum의‘ELIZA’ 
+프로젝트(1965): 사람들은‘진짜’ 사람보다
+사람이아닌것이분명한인공지능/로봇과
+내밀한이야기를나누는것을더편해할수
+있다.
+ChatGPT에게‘위안’을얻는사람들…
+현명하게공감하는능력을키우는것이중
+요하다!
+
+
+
+### [Page 10]
+윤리란무엇인가?
+우리말의‘윤리(倫理)’와영어의ethics의
+의미차이에주목할필요가있다.
+서양의ethics는고대그리스의(제한된) 
+직접민주주의전통에서도시국가의운영
+을위해필요한시민의핵심역량에서유래
+예를들어, 같은그리스도시국가중에서
+도아테네와스파르타의에토스는상당히
+달랐다!
+
+
+
+### [Page 11]
+AI 윤리의생생한사례
+이처럼AI 윤리란바람직한방향으로인공
+지능을개발하고활용하고위한여러규범
+적원칙과과정에대해논의하고사회적합
+의를통해이를실천해나가는적극적의미
+로이해되어야한다.
+OpenAI CEO 샘알트먼의해임과복직사
+건은실리콘밸리내에서‘안전한’ 인공지능
+개발을두고서로다른윤리관이충돌하고
+있음을잘보여준다. 
+실리콘밸리에서도서로다른‘에토스를가
+진연구자들이경쟁을벌이고있음을잘보
+여준다.
+
+
+
+### [Page 12]
+전문직윤리와윤리적설계(Ethics By Design)
+전문직윤리(professional ethics): 특정
+전문가‘집단‘에게제한적으로요구되는
+책무와내부규율, 일반적으로사회적영
+향력과지위가높은집단에게책무성으로
+서요구됨. (예: 의료윤리, 법률가윤리)
+역사적으로전문가집단윤리는집단의결
+속력과사회적지위향상을위해도입됨. 
+(예: 공학윤리)
+IEEE의‘윤리적으로정렬될설계‘ 노력>> 
+인공지능윤리설계표준정립으로이어지
+고있음. (Cf. ISO)
+
+
+
+### [Page 13]
+강의내용정리
+인공지능은분명‘똑똑하지만‘ 인간에게는매우낯선방식으로지적인결과
+물을산출한다. 인공지능과상호작용할때이점을항상유의해야한다.
+온라인프로그램인인공지능과물리적공간에서작동하는로봇은상당히
+다른기술이라는점도기억해둘필요가있다.
+인공지능의‘탁월한’ 공감능력은위험할수있다! (인간다운‘현명한‘ 공감
+능력을길러야한다.)
+인공지능윤리란인류에게막대한영향을끼칠잠재력을갖춘새로운기술
+인인공지능을어떻게개발하고활용하는것이바람직한지에대해사회적
+논의과정을거쳐규범을만들어나가는과정전체에관련된다.
+인공지능윤리는이런의미에서어떤것을가로막는것이아니라바람직한
+방향으로인공지능이개발될수있도록돕는역할을한다!
+
