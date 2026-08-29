@@ -22,7 +22,7 @@
 * [Transformer 언어 모델링](./01.%20Transformer%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md) - 언어 모델의 확률 할당, 자기회귀·양방향 예측, Transformer 응용 흐름을 정리한다.
 * [Transformer 언어 모델링과 인코더-디코더](./01.%20Transformer%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%EB%A7%81%EA%B3%BC%20%EC%9D%B8%EC%BD%94%EB%8D%94-%EB%94%94%EC%BD%94%EB%8D%94.md) - 언어 모델의 다음 단어 확률에서 Transformer의 embedding, 위치 정보, encoder-decoder 흐름까지 정리한다.
 * [Transformer 예시 자료의 텍스트 추출 한계](./01.%20Transformer%20%EC%98%88%EC%8B%9C%20%EC%9E%90%EB%A3%8C%EC%9D%98%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 텍스트가 거의 없는 Transformer 예시 자료의 공개 노트 근거 경계를 정리한다.
-* [U-Net 기반 특징 압축과 분류](./19.%20U-Net%20%EA%B8%B0%EB%B0%98%20%ED%8A%B9%EC%A7%95%20%EC%95%95%EC%B6%95%EA%B3%BC%20%EB%B6%84%EB%A5%98.md) - U-Net의 encoder·decoder, skip connection, transposed convolution과 CIFAR-10 분류 연결을 정리한다.
+* [U-Net 기반 특징 압축과 분류](./19.%20U-Net%20%EA%B8%B0%EB%B0%98%20%ED%8A%B9%EC%A7%95%20%EC%95%95%EC%B6%95%EA%B3%BC%20%EB%B6%84%EB%A5%98.md) - U-Net의 encoder·decoder, skip connection, 전치 합성곱과 CIFAR-10 분류 연결을 정리한다.
 * [Word2Vec과 순환 신경망 리뷰](./01.%20Word2Vec%EA%B3%BC%20%EC%88%9C%ED%99%98%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EB%A6%AC%EB%B7%B0.md) - RNN·LSTM의 한계와 Word2Vec의 분산 표현, CBOW·Skip-Gram 학습 방향을 정리한다.
 * [Word2Vec와 단어 임베딩](./33.%20Word2Vec%EC%99%80%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%B2%A0%EB%94%A9.md) - one-hot 표현의 한계와 Word2Vec embedding, CBOW·Skip-Gram 학습 방향을 정리한다.
 * [결정 트리와 KNN 실습](./01.%20%EA%B2%B0%EC%A0%95%20%ED%8A%B8%EB%A6%AC%EC%99%80%20KNN%20%EC%8B%A4%EC%8A%B5.md) - 엔트로피 감소를 찾는 결정 트리와 거리·투표로 예측하는 KNN의 실습 흐름을 정리한다.
