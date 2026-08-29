@@ -18,7 +18,9 @@
 * [SVM과 KNN 대비 문제](./01.%20SVM%EA%B3%BC%20KNN%20%EB%8C%80%EB%B9%84%20%EB%AC%B8%EC%A0%9C.md) - 정규화된 영화 선호도 데이터에서 다중 SVM과 KNN을 선택·평가하는 문제 해결 흐름을 정리한다.
 * [SVM의 마진과 경사 하강법](./01.%20SVM%EC%9D%98%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%EA%B2%BD%EC%82%AC%20%ED%95%98%EA%B0%95%EB%B2%95.md) - 선형 SVM의 마진 조건, 힌지 손실 갱신, 결정 경계 해석을 정리한다.
 * [Transformer Self-Attention](./01.%20Transformer%20Self-Attention.md) - Transformer의 인코더·디코더와 self-attention, 잔차 연결·정규화의 역할을 정리한다.
+* [Transformer Self-Attention과 블록 구성](./21.%20Transformer%20Self-Attention%EA%B3%BC%20%EB%B8%94%EB%A1%9D%20%EA%B5%AC%EC%84%B1.md) - Q·K·V의 역할, self-attention 가중치, multi-head 결합과 encoder-decoder 블록을 정리한다.
 * [Transformer 언어 모델링](./01.%20Transformer%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%EB%A7%81.md) - 언어 모델의 확률 할당, 자기회귀·양방향 예측, Transformer 응용 흐름을 정리한다.
+* [Transformer 언어 모델링과 인코더-디코더](./01.%20Transformer%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%EB%A7%81%EA%B3%BC%20%EC%9D%B8%EC%BD%94%EB%8D%94-%EB%94%94%EC%BD%94%EB%8D%94.md) - 언어 모델의 다음 단어 확률에서 Transformer의 embedding, 위치 정보, encoder-decoder 흐름까지 정리한다.
 * [Transformer 예시 자료의 텍스트 추출 한계](./01.%20Transformer%20%EC%98%88%EC%8B%9C%20%EC%9E%90%EB%A3%8C%EC%9D%98%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 텍스트가 거의 없는 Transformer 예시 자료의 공개 노트 근거 경계를 정리한다.
 * [U-Net 기반 특징 압축과 분류](./19.%20U-Net%20%EA%B8%B0%EB%B0%98%20%ED%8A%B9%EC%A7%95%20%EC%95%95%EC%B6%95%EA%B3%BC%20%EB%B6%84%EB%A5%98.md) - U-Net의 encoder·decoder, skip connection, transposed convolution과 CIFAR-10 분류 연결을 정리한다.
 * [Word2Vec과 순환 신경망 리뷰](./01.%20Word2Vec%EA%B3%BC%20%EC%88%9C%ED%99%98%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EB%A6%AC%EB%B7%B0.md) - RNN·LSTM의 한계와 Word2Vec의 분산 표현, CBOW·Skip-Gram 학습 방향을 정리한다.
