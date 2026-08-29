@@ -1,0 +1,191 @@
+### [Page 1]
+
+
+
+### [Page 2]
+아두이노입력이해하기
+1.
+두개의점퍼케이블로스위치실습하기
+2.
+푸시버튼으로디지털입력이해하기
+3.
+3색RGB LED를연결하여무지개색
+표현하기
+
+
+
+### [Page 3]
+점퍼케이블로스위치실습
+void setup()
+{
+pinMode (13, OUTPUT);
+// 13번에연결된LED 사용
+pinMode (12, INPUT); 
+// 12번핀입력선언
+digitalWrite (12, HIGH); 
+// 12번핀내부풀업저항활성화
+}
+void loop()
+{
+int sw_input = digitalRead (12);    // 12번핀입력값sw_input변수에저장
+if (sw_input == LOW) 
+// 점퍼케이블을서로연결하면,
+{
+digitalWrite (13, HIGH);        // LED 켜짐
+}
+else 
+// 점퍼케이블을연결하지않으면,
+{
+digitalWrite (13, LOW);        // LED 꺼짐
+}
+}
+두개의점퍼케이블로스위치실습하기
+
+
+
+### [Page 4]
+풀업저항의스위치를On/Off했을때입력상태
+풀업저항은전원쪽에저항을달아주는것을말한다. 따라서스위치가On(닫힘)되면
+논리입력은0(Low)이되고Off(열림)되면논리입력은1(High)이된다.
+두개의점퍼케이블로스위치실습하기
+
+
+
+### [Page 5]
+풀다운저항의스위치를On/Off했을때입력상태
+풀다운저항은GND 쪽에저항을달아주는것을말한다. 따라서스위치가On(닫힘)되면논
+리입력은1(High)이되고Off(열림)되면논리입력은0(Low)이된다.
+두개의점퍼케이블로스위치실습하기
+
+
+
+### [Page 6]
+푸시버튼연결
+푸시버튼은4개의커넥터를가지고있고브레드보드의소켓간격과맞다. 1번과2번그리고3번과
+4번은항상연결되어있고푸시버튼을누르면1번과4번그리고2번과3번이연결된다. 
+즉푸시버튼을누르면1번, 2번, 3번, 4번모든핀이연결되는것이다.
+푸시버튼으로디지털입력이해하기
+
+
+
+### [Page 7]
+푸시버튼연결
+const int buttonPin = 2; 
+// 푸시버튼의핀번호2
+const int ledPin = 13; 
+// 아두이노보드의LED 핀번호13
+int buttonState = 0; 
+// 입력핀의상태값을저장하는변수
+void setup()
+{
+pinMode (ledPin, OUTPUT); 
+// LED 핀출력설정
+pinMode (buttonPin, INPUT); 
+// 푸시버튼입력설정
+}
+void loop()
+{
+buttonState = digitalRead (buttonPin); 
+// 2번핀입력상태값저장
+if (buttonState == HIGH) 
+// buttonState변수가HIGH(1)이면
+{ 
+// 즉, 푸시버튼이눌렸다면,
+digitalWrite (ledPin, HIGH); 
+// LED 켜짐
+}
+else 
+// 버튼조작이없으면,
+{
+digitalWrite (ledPin, LOW); 
+// LED 꺼짐
+}
+}
+푸시버튼이눌리지않은상태에서는LOW(0)로
+상태값이읽히는것이기때문에이회로에서
+사용된저항은풀다운저항이다.
+푸시버튼으로디지털입력이해하기
+
+
+
+### [Page 8]
+푸시버튼연결
+const int buttonPin = 2; 
+// 푸시버튼의핀번호2
+const int ledPin = 13; 
+// 아두이노보드의LED 핀번호13
+int ledState = HIGH; 
+// 출력핀의현재상태
+int buttonState; 
+// 입력핀의현재상태값
+int lastButtonState = LOW; 
+// 입력핀의이전상태값
+long lastDebounceTime = 0; 
+// 버튼입력값이변경된최근시간
+long debounceDelay = 50; 
+// 디바운싱시간
+void setup()
+{
+pinMode (buttonPin, INPUT); 
+// 푸시버튼입력설정
+pinMode (ledPin, OUTPUT);
+// LED 핀출력설정
+digitalWrite (ledPin, ledState); 
+// LED 상태초기화. 최초LED 켜짐
+}
+void loop()
+{
+int reading = digitalRead (buttonPin);
+// 버튼의상태값을reading 변수에저장
+if (reading != lastButtonState) 
+// 버튼의상태값이변경되면,
+{
+lastDebounceTime = millis(); 
+// 디바운싱값을현재시간으로초기화
+}
+// 디바운싱값이50을넘기면, 읽은스위치상태를현재스위치상태로간주
+if ( (millis() - lastDebounceTime) > debounceDelay)
+{
+if (reading != buttonState) 
+// 버튼상태가변경되었다면,
+{
+buttonState = reading;
+if (buttonState == HIGH) 
+// 버튼상태가HIGH일때만,
+{
+ledState = !ledState; 
+// LED 상태변경
+}
+}
+}
+digitalWrite (ledPin, ledState); 
+// 13번LED에LED 상태값반영
+lastButtonState = reading; 
+// 버튼입력값을저장
+}
+푸시버튼으로디지털입력이해하기
+
+
+
+### [Page 9]
+스위치채터링
+푸시버튼으로디지털입력이해하기
+
+
+
+### [Page 10]
+캐소드공통형RGB LED와푸시버튼연결
+RGB LED 연결회로에푸시버튼을추가하여버튼을누를때마다“빨, 주, 노, 초, 파, 남, 보”
+무지개색이표시되도록한다.
+3색RGB LED를연결하여무지개색표현하기
+
+
+
+### [Page 11]
+3색RGB LED를연결하여무지개색표현하기
+
+
+
+### [Page 12]
+3색RGB LED를연결하여무지개색표현하기
+
