@@ -1,0 +1,1250 @@
+### [Page 1]
+4 관계(Relation)와함수(Functions)
+컴퓨터AI공학부
+천세진
+
+
+
+### [Page 2]
+동아대학교
+2021
+“an activity or purpose natural to or intended for a person or 
+thing.”
+사람이나 사물에 자연스럽거나 의도된 활동이나 목적
+“a relationship or expression involving one or more variables.”
+“the function (bx + c)”
+한 개 이상의 변수를 포함하는 관계나 표현
+Synonyms(동의어): behavior, task, activity, action
+2
+Function
+
+
+
+### [Page 3]
+동아대학교
+2021
+3
+관계(Relation)과 함수(Function)
+
+
+
+### [Page 4]
+동아대학교
+2021
+4
+
+
+
+### [Page 5]
+동아대학교
+2021
+5
+Python function
+
+
+
+### [Page 6]
+동아대학교
+2021
+◼Instagram is a free photo and video sharing app available 
+on iPhone and Android. People can upload photos or 
+videos to our service and share them with their followers or 
+with a select group of friends. They can also view, 
+comment and like posts shared by their friends on 
+Instagram.
+◼Main functions?
+6
+What is Instagram? 
+https://help.instagram.com/424737657584573
+
+
+
+### [Page 7]
+7/112
+목차
+4.3
+경로
+4.1
+곱집합
+4.2
+관계와관계표현
+4.6
+연결관계와Warshall 알고리즘
+4.4
+관계의성질
+4.5
+역관계와합성관계
+
+
+
+### [Page 8]
+8/112
+미리보기
+❖원소와 원소 사이에 이루어지는 것
+관계란?
+• “𝑥는 𝑦를 사랑한다.”고 하면 𝑥와 𝑦는 관계가 있는 것이다.
+“𝑥는 𝑦의 형이다.”도 𝑥와 𝑦는 관계가 있는 것이다.
+“𝑥는 𝑦보다 크다.”고 하면 𝑥와 𝑦는 관계가 있는 것이다. 
+• 즉, 관계란 일반적으로 원소와 원소 사이에 이루어지는 것을 말한다.
+• 두 집합에 있는 원소와 원소 관계를 이항 관계라 하고,                                   
+세 개의 집합에 있는 원소와 원소 사이의 관계를 삼항 관계라 한다.
+
+
+
+### [Page 9]
+9/112
+미리보기
+❖페이스북과 같은 대부분의 소셜 네트워크 서비스에서는 사람들과의 
+관계를 이용하여 친구 추천이나 공통 성질을 가진 군 등 여러 가지 
+필요한 정보들을 추출하여 활용한다. 
+❖근현대 수학의 중요한 개념인 함수도 이항 관계의 특별한 경우이다. 
+우리가 컴퓨터에서 사용하고 있는 개념인 부울 대수도 이항 관계에서 
+많은 제약 조건을 만족하는 개념이다.
+❖그래프도 관계들을 표현하기 위한 개념이다.
+관계의 응용 분야는?
+
+
+
+### [Page 10]
+10/112
+미리보기
+❖두 개 이상의 집합과 집합 사이에 있는 원소와 원소 사이의 관계에 
+대해 공부한다.
+❖관계들 중에서 가장 많이 사용되고 있는 이항 관계의 개념과 
+관계의 성질에 대해서 알아보도록 하자.
+이 장에서 배우는 내용은? 
+
+
+
+### [Page 11]
+Functions 1
+Definition: Let A and B be nonempty sets. A 
+function f from A to B, denoted f: A B is an 
+assignment of each element of A to exactly one 
+element of B. We write f(a) = b if b is the unique 
+element of B assigned by the function f to the 
+element a of A. 
+• Functions are sometimes
+called mappings
+or transformations.
+
+
+
+### [Page 12]
+Functions 2
+A function f: A B can also be defined as a subset of 
+A× B (a relation). This subset is restricted to be a relation 
+where no two elements of the relation have the same 
+first element. 
+Specifically, a function f from A to B contains one, and 
+only one ordered pair (a, b) for every element a∈A.
+(
+)
+,
+x x
+A
+y y
+B
+x y
+f
+
+
+
+
+→
+
+
+
+
+
+
+
+
+
+and
+(
+)
+(
+)
+1
+2
+1
+2
+1
+2
+,
+,
+,
+,
+x y y
+x y
+f
+x y
+f
+y
+y
+
+
+
+
+
+
+→
+=
+
+
+
+
+
+
+
+
+
+### [Page 13]
+Functions 3
+Given a function f: A B:
+•
+We say f maps A to B or f is a mapping from  A to B.
+•
+A is called the domain of f.
+•
+B is called the codomain of f.
+•
+If f(a) = b, 
+• then b is called the image of a under f.
+• a is called the preimage of b.
+•
+The range of f is the set of all images of points in A under f. We denot
+e it by f(A).
+•
+Two functions are equal when they have the same domain, the same 
+codomain and map each element of the domain to the same element 
+of the codomain.
+Jump to long description
+
+
+
+### [Page 14]
+Representing Functions
+Functions may be specified in different ways:
+• An explicit statement of the assignment. Students and grades example
+.
+• A formula.
+( )
+1
+f x
+x
+=
++
+• A computer program.
+• A Java program that when given an integer n, produces th
+e nth Fibonacci Number (covered in the next section and a
+lso in Chapter 5).
+
+
+
+### [Page 15]
+Questions
+f(a) = ?
+z
+The image of d is ?
+z
+The domain of f is ?
+A
+The codomain of f is ?
+B
+The preimage of y is ?
+b
+f(A) = ?
+{y,z}
+The preimage(s) of z is (are) ?
+{a,c,d}
+
+
+
+### [Page 16]
+Question on Functions and Sets
+If
+:
+f A
+B
+→
+and S is a subset of A, then
+( )
+( )
+
+
+f S
+f s
+s
+S
+=
+
+|
+f {a,b,c,} is ?
+{y,z}
+f {c,d} is ?
+{z}
+
+
+
+### [Page 17]
+
+
+
+### [Page 18]
+18/112
+순서쌍& 곱집합
+• 순서쌍 (𝒂, 𝒃, 𝒄)는 세 개의 집합 각각에서 원소를 하나씩 뽑아 표현한 
+것으로 첫 번째 원소는 𝒂, 두 번째 원소는 𝒃, 세 번째 원소는 𝒄이다.
+• 이런 순서쌍들로 이루어진 집합을 곱집합이라 한다.
+Product set 또는 Cartesian product
+
+
+
+### [Page 19]
+19/112
+곱집합
+집합 A = {x, y, z}와 B = {1, 2, 3}의 곱집합 A × B.
+
+
+
+### [Page 20]
+20/112
+곱집합
+• 순서쌍 (𝑎, 𝑏, 𝑐)는 세 개의 집합에서 원소를 뽑아 표현한 것이다.
+• 곱집합 𝐴× 𝐵× 𝐶는 세 개의 집합 𝐴, 𝐵, 𝐶에 대해 𝑎∈𝐴, 𝑏∈𝐵, 𝑐∈𝐶인
+모든 순서쌍 (𝑎, 𝑏, 𝑐)들의 집합을 말한다.
+순서쌍이나 곱집합의 확장
+
+
+
+### [Page 21]
+21/112
+곱집합
+곱집합의 개념은 𝒏개의 집합에 대해서도 확장 가능
+• 어떤 집합 𝐴1, 𝐴2, ⋯, 𝐴𝑛에 대해서 
+𝑎1∈𝐴1, 𝑎2∈𝐴2, ⋯, 𝑎𝑛∈𝐴𝑛인 𝑛차의 순서쌍 (𝑎1, 𝑎2, ⋯, 𝑎𝑛)을
+집합 𝐴1, 𝐴2, ⋯, 𝐴𝑛의 곱집합이라고 하고, 𝐴1 × 𝐴2 × ⋯× 𝐴𝑛 또는 ς𝑖=1
+𝑛
+𝐴𝑖로 
+나타낸다.
+• 만약 집합 𝐴와 𝐵가 같은 집합이라면 𝐴 × 𝐴대신에 𝐴2으로 쓰며, 
+마찬가지로 𝐴 × 𝐴 × ⋯ × 𝐴대신에 𝐴𝑛을 쓴다.
+• 예를 들면, R3 은R × R × R을 나타낸다.
+
+
+
+### [Page 22]
+22/112
+곱집합[참고설명]
+출처 : Wikipedia, https://ko.wikipedia.org/wiki/곱집합
+Note
+참고용
+
+
+
+### [Page 23]
+23/112
+곱집합[참고설명]
+Note
+참고용
+
+
+
+### [Page 24]
+
+
+
+### [Page 25]
+Functions 1
+Definition: Let A and B be nonempty sets. A function f from A to B, 
+denoted f: A B is an assignment of each element of A to exactly one 
+element of B. We write f(a) = b if b is the unique element of B assigned 
+by the function f to the element a of A. 
+• Functions are sometimes
+called mappings
+or transformations.
+
+
+
+### [Page 26]
+26/112
+이항관계
+• 𝑹의 정의역(domain) : 𝑅에 속한 순서쌍에서 모든 첫 번째 원소의 집합이고 Dom(𝑅)로 
+표기
+• 𝑹의 치역(range) : 𝑅에 속한 순서쌍에서 모든 두 번째 원소의 집합이고                    
+Ran(𝑅)로 표기
+• 공변역(codomain) : 𝐵집합의 전체 원소로서 치역은 공변역의 부분집합이 된다.
+• 𝐴＝𝐵이면, 즉 𝑅이 𝐴에서 𝐴로 가는 관계(𝑅⊆𝐴×𝐴)이면 𝑅는 𝐴에 관한관계라 한다.
+
+
+
+### [Page 27]
+27/112
+이항관계
+• 이항 관계를 확장하면 세 개의 집합 𝑨, 𝑩, 𝑪에 대해 
+삼항 관계 𝑹은 𝑨×𝑩×𝑪의 부분 집합들이고
+𝒙 ∈ 𝑨, 𝒚 ∈ 𝑩, 𝒛 ∈ 𝑪에 대해 순서쌍 (𝒙, 𝒚, 𝒛)∈𝑹이면                                                      
+𝑹은 삼항 관계에 있다고 한다.
+• 이런 관계는 𝒏항 관계까지 확장 가능하다. 
+• 우리는 이항 관계만을 다루므로 앞으로 관계라고 하면 이항 관계를 말한다.
+
+
+
+### [Page 28]
+28/112
+이항관계[참고설명]
+출처 : Wikipedia, https://ko.wikipedia.org/wiki/이항관계
+Note
+
+
+
+### [Page 29]
+29/112
+이항관계[참고설명]
+출처 : Wikipedia, https://ko.wikipedia.org/wiki/이항관계
+Note
+
+
+
+### [Page 30]
+30/112
+항등관계
+
+
+
+### [Page 31]
+31/112
+항등관계
+
+
+
+### [Page 32]
+32/112
+관계표현
+① 화살표 그림(arrow diagram)
+집합 사이의 관계를 표시하는 방법 : 화살표 그림, 관계 행렬, 유향 그래프
+• 서로 다른 두 개의 원에 각각 A의 원소와 B의 원소를 써넣은 후 
+𝑎∈𝐴와 𝑏∈𝐵가 관계가 있으면 𝑎로부터 𝑏로 화살표를 그리는 방법
+
+
+
+### [Page 33]
+33/112
+관계표현
+② 관계 행렬(relation matrix) 
+• 𝑨와 𝑩를 각각 𝒎개와 𝒏개의 원소를 가진 유한집합이라 하자.
+• 𝑹를 𝑨에서 𝑩로의 관계라고 할 때, R를 다음과 같은 정의에 의해서
+𝒎× 𝒏 행렬 𝑴𝑅= (𝒎𝑖𝑗) 로 바꾸어 쓸 수 있다.
+• 단,                             여기서, 𝑖= 1, 2, ⋯, 𝑚이고𝑗= 1,2, ⋯, 𝑛
+1,( , )
+0,( , )
+i
+j
+ij
+i
+j
+a b
+R
+m
+a b
+R
+
+
+= 
+
+
+• 이 행렬 𝑀𝑅를 𝑅의 관계 행렬이라고 하고, 관계 행렬은 부울행렬이다. 
+• 관계 행렬로 표시할 때 𝐴에서 𝐵로 가는 관계라 하면,                                                         
+𝐴의 원소들을 열에 나열하고 𝐵의 원소들은 행에 나열하여 표시한다.
+
+
+
+### [Page 34]
+34/112
+관계표현
+
+
+
+### [Page 35]
+35/112
+관계표현
+③ 유향 그래프 (Directed graph)
+• 𝑅을 𝐴에 관한 관계라 하자.
+• 𝐴의 원소를 정점(vertex)이라고 하는 점으로 표시하고
+• 각 원소와 대응되는 정점은 𝑎𝑖와 𝑎𝑗등으로 표시되며
+• 𝑎𝑖𝑅𝑎𝑗((𝑎𝑖,𝑎𝑗)∈𝑅)이면 정점 𝑎𝑖에서 정점 𝑎𝑗까지의 방향을 갖는 간선(edge)으로 
+묶는다.
+• 이와 같이 관계를 그림으로 표시한 결과를 유향 그래프(directed graph) 라고 한다.
+• 관계를 유향 그래프로 표시하기 위해서는 𝑨에서 𝑨로 가는 관계인
+𝑨에 관한 관계일 때만 가능하다.
+
+
+
+### [Page 36]
+36/112
+관계표현
+출처 : Wikipedia, https://ko.wikipedia.org/wiki/이항관계
+유향 그래프(有向graph, 영어: digraph)는 방향을 가진 그래프이다. 방향 그래프라고도 한다. 
+단순한 방향 그래프
+
+
+
+### [Page 37]
+37/112
+관계표현
+
+
+
+### [Page 38]
+38/112
+관계표현
+
+
+
+### [Page 39]
+
+
+
+### [Page 40]
+40/112
+경로
+• 𝑎부터 시작해 𝑏까지 가는 경로가 있는지 알아보는 것이다.
+•
+[그림 4-1]에서 정점 1부터 시작하여 정점 3에서 끝나는 길이가
+4인 경로 𝜋1＝1, 2, 5, 4, 3과 자신부터 시작하여 자신에서 끝나는 경로
+𝜋2＝1, 2, 5, 1과 𝜋3＝ 2, 2 등을 찾을 수 있다. 
+
+
+
+### [Page 41]
+41/112
+경로
+•
+경로 𝜋2, 𝜋3과 같이 자신에서 시작하여 자신에서 끝나는 경로
+순환(cycle) 
+
+
+
+### [Page 42]
+42/112
+경로
+
+
+
+### [Page 43]
+43/112
+경로
+
+
+
+### [Page 44]
+44/112
+경로
+
+
+
+### [Page 45]
+45/112
+경로
+Boolean Product
+출처: 강원대, 컴퓨터공학과 http://cs.kangwon.ac.kr/~ysmoon/courses/2011_1/dm/14.pdf 
+
+
+
+### [Page 46]
+46/112
+경로(path)
+
+
+
+### [Page 47]
+47/112
+경로(path)
+•
+[예제 4-16]의 결과는 [예제 4-15]의 결과와 같다.
+•
+이는 [정리 4-2]와 같이 길이가 𝑛인 경로를 찾을 때 유향 그래프를 이용해서 찾을 수도 
+있고 관계 행렬을 이용해서 찾을 수 있기 때문이다.
+•
+유향 그래프를 이용할 때는 사람이 하나씩 찾아가므로 복잡한 그래프에서는 잘못 
+계산할 수도 있다.
+•
+반면에, 관계 행렬을 이용하면 프로그램을 이용해서 자동적으로 계산할 수 있다. 
+따라서 관계 행렬을 이용하는 방법을 추천한다. 
+•
+이젠 관계 행렬을 이용해서 길이가 𝑛인 경로를 찾기 위해 [정리 4-2]를 확장한다. 
+
+
+
+### [Page 48]
+48/112
+경로(path)
+𝝅𝟏과 𝝅𝟐의 합성(composition of 𝝅𝟏and 𝝅𝟐) 
+• 𝑎에서 시작하여 𝑏에서 끝나는 길이가 𝑛인 경로 𝜋1＝𝑎, 𝑥1, … , 𝑥𝑛−1, 𝑏와
+𝑏에서 시작하여 𝑐에서 끝나는 길이가 𝑚인 경로 𝜋2＝𝑏, 𝑦1,…,𝑦𝑚−1, 𝑐가 있을 때 
+𝜋1과 𝜋2의 합성은 길이가 𝑚+ 𝑛인 통로 𝑎, 𝑥1,…,𝑥𝑛−1, 𝑏, 𝑦1, 𝑦2,…,𝑦𝑚−1, 𝑐 이고 
+𝜋1 · 𝜋2로 표기한다. 결국 이는 𝑎에서 𝑐로의 경로가 있다는 의미이다. 
+• 𝜋1과 𝜋2의 합성이 되기 위해서는 𝜋1의 끝나는 정점과 𝜋2의 시작 정점이 같을 때만 
+가능하다.
+
+
+
+### [Page 49]
+49/112
+경로(path)
+
+
+
+### [Page 50]
+50/112
+역경로
+• 𝜋＝ 𝑎, 𝑥1, 𝑥2, … , 𝑥𝑛−1, 𝑏를 길이가 𝑛인 𝑅안에서의 경로라 하자.
+• 이때 역경로를 𝜋−1로 쓰고 𝜋−1＝𝑏, 𝑥𝑛−1, … , 𝑥2, 𝑥1, 𝑎로 정의한다. 
+역경로(inverse path)
+
+
+
+### [Page 51]
+
+
+
+### [Page 52]
+Section Summary
+Relations and Functions
+Properties of Relations
+• Reflexive Relations
+• Symmetric and Antisymmetric Relations
+• Transitive Relations
+Combining Relations
+
+
+
+### [Page 53]
+Reflexive Relations
+Definition: R is reflexive iff (a,a) ∊R for every 
+element a ∊A. Written symbolically, R is reflexive if 
+and only if
+(
+)
+x
+,
+x
+U
+x x
+R
+
+→
+
+
+
+
+
+
+### [Page 54]
+54/112
+반사관계와비반사관계
+
+
+
+### [Page 55]
+55/112
+반사관계와비반사관계
+• [예제 4-19]의 
+(c)에서 보듯이 반사 
+관계가 아니면 
+비반사 관계가 되고 
+비반사 관계가 
+아니면 반사 
+관계라고 잘못 알고 
+있으면 안 된다. 
+
+
+
+### [Page 56]
+56/112
+반사관계와비반사관계
+• 반사 관계의 관계 행렬은 주대각 원소가 모두 1이고,
+비반사 관계의 관계 행렬은 주대각 원소가 모두 0임을 알 수 있다.
+• 또한 반사 관계의 유향 그래프는 모든 정점에서 길이가 1인 순환(cycle)를 
+갖고 있고, 비반사 관계의 유향 그래프는 길이가 1인 순환을 갖는 정점이 전혀 
+없다. 
+반사와 비반사 관계의 특징
+
+
+
+### [Page 57]
+57/112
+대칭관계와비대칭관계
+R
+• 반대칭 관계를 대우 관계를 이용하여 다시 정의하면,                                
+𝑎, 𝑏∈𝐴에 대해서 𝑎≠𝑏이면 𝑎
+𝑏이거나 𝑏
+𝑎인 관계를 말한다.
+• 그리고 “𝑹이 반대칭 관계가 아니다.”라는 말은
+𝑎, 𝑏∈𝐴에 대하여 𝑎≠𝑏이면 𝑎 𝑅 𝑏이고 𝑏 𝑅 𝑎인 경우를 말한다. 
+R
+
+
+
+### [Page 58]
+Symmetric Relations
+Definition: R is symmetric iff (b,a) ∊R whenever 
+(a,b) ∊R for all a,b ∊A. Written symbolically, R is 
+symmetric if and only if 
+(
+)
+(
+)
+,
+,
+x y
+x y
+R
+y x
+R
+
+
+→
+
+
+
+
+
+
+### [Page 59]
+Antisymmetric Relations
+Definition: A relation R on a set A such that for all
+a,b ∊A if 
+(a,b) ∊R and (b,a) ∊R, then a = b  is called antisymmetric. 
+Written symbolically, R is antisymmetric if and only if 
+(
+)
+(
+)
+,
+,
+x y
+x y
+R
+y x
+R
+x
+y
+
+
+
+
+→
+=
+
+
+
+
+
+
+### [Page 60]
+60/112
+대칭관계와비대칭관계
+
+
+
+### [Page 61]
+61/112
+대칭관계와비대칭관계
+
+
+
+### [Page 62]
+62/112
+대칭관계와비대칭관계
+
+
+
+### [Page 63]
+63/112
+대칭관계와비대칭관계
+• [예제 4-24]의 관계 𝑅와 같이 순서쌍들의 정점 사이에 서로 간선이 있을 때
+이 간선을 화살표가 없이 직선으로 연결한 결과의 그림을
+무향 그래프(undirected graph) 라고 한다.
+• 무향 그래프는 화살표가 없는 것이 아니라 양쪽 방향을 의미한다.
+• 그러므로 위의 관계 𝑅의 무향 그래프는 [그림 4-2]와 같다. 
+무향 그래프
+
+
+
+### [Page 64]
+64/112
+대칭관계와비대칭관계
+• 무향 그래프에서 임의의 원소로부터 다른 임의의 원소로의 통로가 있을 때
+𝑅를 연결(connected)되어 있다고 한다.
+• 연결되어 있는 그래프를 연결 그래프(connected graph)라 한다.
+• [그림 4-3]의 그래프에서 (a)는 연결되어 있고, (b)는 연결되어 있지 않다.
+
+
+
+### [Page 65]
+Transitive Relations
+Definition: A relation R on a set A is called transitive if 
+whenever (a,b) ∊R and (b,c) ∊R, then (a,c) ∊R, for all 
+a,b,c ∊A. Written symbolically, R is transitive if and only if 
+(
+)
+(
+)
+(
+)
+,
+,
+,
+x y z
+x y
+R
+y z
+R
+x z
+R
+
+
+
+
+→
+
+
+
+
+
+
+### [Page 66]
+66/112
+추이관계
+
+
+
+### [Page 67]
+67/112
+동치관계
+(1) R는 반사 관계이므로 모든 정점들은 길이가 1인 순환을 가진다
+(2) R는 대칭 관계이므로 유향 그래프가 아닌 무향 그래프를 갖는다. 
+(3) R는 추이 관계이므로 a에서 b로 가는 간선이 있고 b에서 c로 가는
+간선이 있으면 a에서 c로 가는 간선이 존재하게 된다.
+동치 관계 그래프의 특별한 성질
+
+
+
+### [Page 68]
+68/112
+동치관계
+
+
+
+### [Page 69]
+69/112
+동치관계
+
+
+
+### [Page 70]
+70/112
+동치관계
+
+
+
+### [Page 71]
+71/112
+동치류
+• 𝑅를 집합 𝐴에 관한 동치 관계라 가정하자.
+• 𝑎∈𝐴에 대해서 집합 [𝑎]＝{𝑥∈𝐴∣𝑥𝑅𝑎}를 𝑎에 관한 동치류라 하고 [𝑎]로 
+표시한다.
+• 동치류 [𝑎]는 결코 공집합(∅)이 될 수 없다.
+왜냐하면 𝑅가 반사 관계이므로 𝑎∈[𝑎]이기 때문이다. 
+동치류(equivalence class of a)
+
+
+
+### [Page 72]
+72/112
+기타관계
+• 관계에서 𝑅,𝑆,𝑇를 반사 관계, 대칭 관계, 추이 관계라 하고, ҧ𝑅, ҧ𝑆, ҧ𝑇를
+반사 관계가 아닌 것, 대칭 관계가 아닌 것, 추이 관계가 아닌 것이라고 하면 
+• ( ҧ𝑅, ҧ𝑆, ҧ𝑇) 을 만족하는 것에는 “트리”가 있다. ([그림 4-4⒜]). 
+• ( ҧ𝑅, ҧ𝑆,𝑇) 를 만족하는 것에는 “>”이 있다([그림 4-4⒝]). 
+• ( ҧ𝑅,𝑆, ҧ𝑇) 를 만족하는 것에는 “∣𝑖−𝑗∣＝1(𝑖, 𝑗∈Z)"가 있다.([그림 4-4⒞]). 
+• ( ҧ𝑅,𝑆,𝑇) 를 만족하는 것에는 “형제 관계”가 있다([그림 4-4⒟]). 
+• (𝑅, ҧ𝑆, ҧ𝑇) 를 만족하는 것에는 “항등 관계”가 있다([그림 4-4⒠]). 
+• (R, ҧ𝑆,𝑇)를 만족하는 것에는 “≦” 혹은 “부분 순서” 가 있다([그림 4-4⒡]). 
+• (R,𝑆, ҧ𝑇)를 만족하는 것에는 “친구 관계”가 있다([그림 4-4⒢]).
+이것은 ∣𝑖−𝑗∣≦𝑚인 관계이다. 
+• (R,𝑆,𝑇)를 만족하는 것에는 “동치 관계”가 있다([그림 4-4⒣]). 
+여러 가지 관계
+SKIP
+
+
+
+### [Page 73]
+73/112
+기타관계
+SKIP
+
+
+
+### [Page 74]
+74/112
+Excercises
+Let A = {0,1,2,3} and R a relation over A: 
+R={(0,0),(0,1),(0,3),(1,1),(1,0),(2,3),(3,3)}
+• R의 유향 그래프를  그리시오, 
+• 그리고 R이 동치 관계인지를 확인하시오. 
+• 만약 동치관계가 되기 위한
+성질 중의 하나를 만족하지 않는 경우에 반례를 제시하시오
+
+
+
+### [Page 75]
+
+
+
+### [Page 76]
+76/112
+역관계와여관계
+• 𝑆도 집합 𝐴에서 𝐵로의 관계라 할 때 𝑎(𝑅∩𝑆)𝑏라는 것은
+“𝑎𝑅𝑏이고 𝑎𝑆𝑏”이며 𝑎(𝑅∪𝑆)𝑏는 “𝑎𝑅𝑏또는 𝑎𝑆𝑏”이다. 
+
+
+
+### [Page 77]
+77/112
+역관계와여관계
+
+
+
+### [Page 78]
+78/112
+역관계와여관계
+R의 여관계: {(a, a), (a, c), (b, a), (b, b), (c, a), (c, b), (c, d), (c, e), (d, a), (d, b), (d, e), (e, 
+a), (e, b), (e, c), (e, d)}
+R의 역관계: {(b, a), (d, a), (e, a), (c, b), (d, b), (e, b), (c, c), (c, d), (d, d), (e, e)}
+R과 S의 교집합: {(a, b), (b, e), (c, c), (e, e)}
+
+
+
+### [Page 79]
+79/112
+역관계와여관계
+
+
+
+### [Page 80]
+80/112
+역관계와여관계
+
+
+
+### [Page 81]
+81/112
+역관계와여관계
+
+
+
+### [Page 82]
+82/112
+합성관계
+
+
+
+### [Page 83]
+Composition 2
+
+
+
+### [Page 84]
+Note
+[출처] 컴퓨팅 사고력을 키우는 이산수학 (개정판), 한빛아카데미
+
+
+
+### [Page 85]
+• 집합 A에서 집합 B로의 관계 R과 집합 B에서 집합 C로의 관계 S가 있을 때, 
+  관계  R에 대해서 공변역이면서 관계  S에 대해서는 정의역인 집합  B가 있기 때
+  문에 관계 R과 S는 합성 가능
+• 집합 A에서 집합 B로 가는 관계 R (R:A→B)과 집합 C에서 집합 B로 가는 관계
+   S(S:C→B)의 경우는 관계 R의 공변역(집합 B)과 관계 S의 정의역(집합 C)이 같지
+  않으므로 합성관계가 성립될 수 없다.
+• 합성관계는 교환법칙이 성립하지 않음
+Note
+
+
+
+### [Page 86]
+86/112
+합성관계
+
+
+
+### [Page 87]
+87/112
+합성관계
+
+
+
+### [Page 88]
+88/112
+합성관계
+
+
+
+### [Page 89]
+89/112
+합성관계
+❖
+합성관계의 거듭제곱
+▪집합 A={a1,a2,…,am}에서 집합 B={b1,b2,…,bn}으로 가는 관계 R은 m×n 크기의 관계행렬 
+MR로 작성
+▪집합 B에서 집합 C={c1,c2,…,cs}로 가는 관계 S는 n×s 크기의 관계행렬 MS로 작성
+▪관계 S∘R은 이 두 관계행렬 MR과 MS의 부울곱으로 구함
+Note
+
+
+
+### [Page 90]
+90/112
+합성관계
+
+
+
+### [Page 91]
+91/112
+합성관계
+
+
+
+### [Page 92]
+Note
+[출처] 컴퓨팅 사고력을 키우는 이산수학 (개정판), 한빛아카데미
+
+
+
+### [Page 93]
+Note
+
+
+
+### [Page 94]
+Note
+
+
+
+### [Page 95]
+Note
+
+
+
+### [Page 96]
+
+
+
+### [Page 97]
+97/112
+연결관계와와샬알고리즘
+• 이미 1장에서,
+산술 연산에 대한 닫힘부터 집합에서의 닫힘 성질들을 설명했다.
+
+
+
+### [Page 98]
+98/112
+반사닫힘
+Reflexive closure
+
+
+
+### [Page 99]
+99/112
+반사닫힘
+Note
+[출처] 컴퓨팅 사고력을 키우는 이산수학 (개정판), 한빛아카데미
+
+
+
+### [Page 100]
+100/112
+대칭닫힘
+Symmetric closure
+
+
+
+### [Page 101]
+101/112
+대칭닫힘
+
+
+
+### [Page 102]
+102/112
+추이닫힘
+Transitive closure
+Transitive closure constructs the output 
+graph from the input graph.
+추이
+
+
+
+### [Page 103]
+103/112
+추이닫힘
+
+
+
+### [Page 104]
+104/112
+추이닫힘
+
+
+
+### [Page 105]
+105/112
+추이닫힘
+• [정리 4-8]에 의하면 𝑹의 추이 닫힘은 연결 관계 𝑹∞라는 것을 알았다. 
+• 다음 예제를 통해 확인해보자. 
+
+
+
+### [Page 106]
+Note
+[출처] 컴퓨팅 사고력을 키우는 이산수학 (개정판), 한빛아카데미
+
+
+
+### [Page 107]
+Note
+
+
+
+### [Page 108]
+Note
+
+
+
+### [Page 109]
+▪연결관계
+Note
+
+
+
+### [Page 110]
+Note
+
+
+
+### [Page 111]
+111/112
+추이닫힘
+
+
+
+### [Page 112]
+112/112
+추이닫힘
+
+
+
+### [Page 113]
+113/112
+추이닫힘
+
+
+
+### [Page 114]
+114/112
+추이닫힘
+Note
+
+
+
+### [Page 115]
+115/112
+추이닫힘
+
+
+
+### [Page 116]
+116/112
+추이닫힘
+Note
+
+
+
+### [Page 117]
+117/112
+추이닫힘
+
+
+
+### [Page 118]
+118/112
+연결관계와Warshall 알고리즘
+1) 유향 그래프를 이용하는 방법 : 복잡해지면 완전하게 구하는 것이 어려움
+2) 관계 행렬을 이용하는 방법 : 무한번 반복 계산해야 한다는 문제점
+연결관계를 구하는 방법
+❖1)과 2)의 문제점을 해결하는 방법이 Warshall 법칙
+
+
+
+### [Page 119]
+119/112
+연결관계와Warshall 알고리즘
+Warshall 알고리즘 
+행위치
+열위치
+
+
+
+### [Page 120]
+120/112
+연결관계와Warshall 알고리즘
+예제 4-41
+W0 : k=1, 
+1열위치 : (2)
+1행 위치 : (2)
+(2,2) -> 1
+
+
+
+### [Page 121]
+121/112
+연결관계와Warshall 알고리즘
+W1 : k=2, 
+2열위치 : (1,2)
+2행 위치 : (1,2,3)
+(1,1),(1,2),(1,3),
+(2,1),(2,2),(2,3)
+W2 : k=3, 
+3열위치 : (1,2)
+3행 위치 : (4)
+(1,4),(2,4) 추가
+
+
+
+### [Page 122]
+122/112
+가장작은동치관계
+
+
+
+### [Page 123]
+123/112
+가장작은동치관계
+
+
+
+### [Page 124]
+124/112
+가장작은동치관계
+
+
+
+### [Page 125]
+125/112
+가장작은동치관계
+
