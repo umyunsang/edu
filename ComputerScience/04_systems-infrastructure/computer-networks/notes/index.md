@@ -1,28 +1,54 @@
-# Index
+---
+title: "computer-networks"
+type: "overview"
+tags:
+  - "computer-networks"
+  - "overview"
+  - "index"
+course: "computer-networks"
+semester: "2-1"
+status: "stable"
+authority: "primary"
+created: "2026-08-29"
+updated: "2026-08-29"
+---
 
-## lecture
+# 📚 컴퓨터 네트워크 (Computer Networks) 전체 강의 로드맵
 
-* [01. 통신 기초와 OSI 7계층·TCP-IP 4계층 모델 - 전송 속도(bps), 패킷 교환과 프로토콜 캡슐화](./01.%20%ED%86%B5%EC%8B%A0%20%EA%B8%B0%EC%B4%88%EC%99%80%20OSI%207%EA%B3%84%EC%B8%B5%C2%B7TCP-IP%204%EA%B3%84%EC%B8%B5%20%EB%AA%A8%EB%8D%B8.md) - 데이터 통신의 기본 요소, 전송 속도(bps vs B/s)와 대역폭, 회선 교환(Circuit Switching) vs 패킷 교환(Packet Switching), OSI 7계층과 TCP/IP 4계층 모델의 계층별 역할, 그리고 PDU(헤더 추가) 캡슐화 및 역캡슐화 과정을 인터랙티브 캡슐화 시뮬레이터로 학습한다.
-* [02. 신호 처리와 전송 이론 - 나이퀴스트·섀넌 공식, 디지털 변복조(ASK·FSK·PSK·QAM)와 전송 매체](./02.%20%EC%8B%A0%ED%98%B8%20%EC%B2%98%EB%A6%AC%EC%99%80%20%EC%A0%84%EC%86%A1%20%EC%9D%B4%EB%A1%A0%20-%20%EB%82%98%EC%9D%B4%ED%80%B4%EC%8A%A4%ED%8A%B8%C2%B7%EC%84%80%EB%84%8C%20%EA%B3%B5%EC%8B%9D%20%EB%B0%8F%20%EB%B3%80%EB%B3%B5%EC%A1%B0.md) - 아날로그와 디지털 신호의 특성(진폭·주파수·위상), 나이퀴스트(Nyquist) 무잡음 채널 최대 데이터 전송률 공식, 섀넌(Shannon) 잡음 채널 용량 및 SNR(dB) 계산, 4대 디지털 변복조(ASK, FSK, PSK, QAM), 그리고 UTP/광섬유 전송 매체를 인터랙티브 섀넌 용량 계산기로 학습한다.
-* [03. 데이터 링크 계층과 오류 제어 - 프레이밍(비트 스터핑), CRC 2진 다항식 연산과 3대 ARQ 프로토콜](./03.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%A7%81%ED%81%AC%20%EA%B3%84%EC%B8%B5%EA%B3%BC%20MAC%20%EC%A0%9C%EC%96%B4%20-%20%ED%94%84%EB%A0%88%EC%9D%B4%EB%B0%8D%2C%20%EC%98%A4%EB%A5%98%20%EC%A0%9C%EC%96%B4%28CRC%29%EC%99%80%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%9C%88%EB%8F%84%EC%9A%B0.md) - 데이터 링크 계층의 3대 핵심 역할(동기화 프레이밍, 비트 스터핑 01111110), 오류 검출 기법(패리티, 1의 보수 체크섬, CRC 순환 중복 검사 2진 나눗셈), 그리고 흐름/오류 제어를 위한 3대 ARQ(Stop-and-Wait, Go-Back-N, Selective Repeat)를 인터랙티브 CRC 연산기로 학습한다.
-* [03. 신호 처리 - 나이퀴스트 전송률과 섀넌 채널 용량 대수학 (Signal Processing & Shannon Capacity)](./03.%20%EC%8B%A0%ED%98%B8%20%EC%B2%98%EB%A6%AC.md) - 잡음 없는 채널의 나이퀴스트(Nyquist) 최대 비트율(C = 2B log₂L), 유잡음 채널의 섀넌(Shannon) 채널 용량(C = B log₂(1 + SNR)), 신호 대 잡음비(SNR_dB) 변환을 인터랙티브 채널 용량 계산기로 심층 학습한다.
-* [04. 유무선 LAN 표준과 다중 접속(MAC) - 이더넷(CSMA-CD), Wi-Fi(CSMA-CA)와 은닉 노드 문제](./04.%20%EC%9C%A0%EB%AC%B4%EC%84%A0%20LAN%20%ED%91%9C%EC%A4%80%EA%B3%BC%20%EB%8B%A4%EC%A4%91%20%EC%A0%91%EC%86%8D%28MAC%29%20-%20%EC%9D%B4%EB%8D%94%EB%84%B7%28CSMA-CD%29%EA%B3%BC%20Wi-Fi%28CSMA-CA%29.md) - 공유 매체 다중 접속(MAC) 프로토콜, 유선 이더넷(IEEE 802.3)의 CSMA/CD 충돌 감지 및 2진 지수 백오프(Exponential Backoff), 무선 Wi-Fi(IEEE 802.11)의 CSMA/CA 충돌 회피, RTS/CTS 핸드셰이크를 통한 은닉 노드(Hidden Terminal) 해결, 그리고 48비트 MAC 주소 체계를 인터랙티브 CSMA/CD 시뮬레이터로 학습한다.
-* [05. 네트워크 계층과 IP 주소 체계 - IPv4 헤더, 서브네팅(CIDR), 사설 IP와 NAT·ARP·ICMP](./05.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%84%EC%B8%B5%EA%B3%BC%20IP%20%EC%A3%BC%EC%86%8C%20%EC%B2%B4%EA%B3%84%20-%20IPv4%20%ED%97%A4%EB%8D%94%2C%20%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85%28CIDR%29%2C%20NAT%EC%99%80%20ARP-ICMP.md) - IPv4 20바이트 헤더 구조(TTL, 단편화 플래그/오프셋), 클래스리스 CIDR 서브네팅 계산법($2^h - 2$), 사설 IP 대역(RFC 1918)과 포트 기반 NAT(NAPT), 주소 해석 프로토콜(ARP), 그리고 진단 제어 메시지(ICMP)를 인터랙티브 서브넷 계산기로 학습한다.
-* [06. 라우팅 알고리즘과 인터넷 라우팅 - 거리 벡터(RIP) vs 링크 상태(OSPF·다이크스트라), BGP와 AS 계층](./06.%20%EB%9D%BC%EC%9A%B0%ED%8C%85%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EB%9D%BC%EC%9A%B0%ED%8C%85%20-%20%EA%B1%B0%EB%A6%AC%20%EB%B2%A1%ED%84%B0%28RIP%29%20vs%20%EB%A7%81%ED%81%AC%20%EC%83%81%ED%83%9C%28OSPF%C2%B7%EB%8B%A4%EC%9D%B4%ED%81%AC%EC%8A%A4%ED%8A%B8%EB%9D%BC%29%20%EB%B0%8F%20BGP.md) - 라우팅과 포워딩의 차이, 거리 벡터(Bellman-Ford, Count-to-Infinity, Poisoned Reverse, RIP), 링크 상태(LSA 플러딩, Dijkstra 최단 경로 알고리즘, OSPF), 그리고 자율 시스템(AS) 간 경로 벡터 프로토콜인 BGP-4를 인터랙티브 다이크스트라 최단 경로 시뮬레이터로 학습한다.
-* [07. LAN의 특징과 규격](./07.%20LAN%EC%9D%98%20%ED%8A%B9%EC%A7%95%EA%B3%BC%20%EA%B7%9C%EA%B2%A9.md) - LLC·MAC의 분업과 이더넷의 매체 접근 방식을 이해한다.
-* [07. 전송 계층과 TCP 신뢰성 제어 - 3-Way Handshake, 슬라이딩 윈도우와 혼잡 제어(AIMD)](./07.%20%EC%A0%84%EC%86%A1%20%EA%B3%84%EC%B8%B5%EA%B3%BC%20TCP%20%EC%8B%A0%EB%A2%B0%EC%84%B1%20%EC%A0%9C%EC%96%B4%20-%203-Way%20Handshake%2C%20%ED%9D%90%EB%A6%84%20%EC%A0%9C%EC%96%B4%20%EB%B0%8F%20%ED%98%BC%EC%9E%A1%20%EC%A0%9C%EC%96%B4.md) - TCP vs UDP의 근본적 차이, TCP 3-Way Handshake 연결 수립 및 4-Way Teardown(TIME_WAIT), 수신 버퍼 기반 흐름 제어(rwnd), 네트워크 혼잡 제어 4단계(Slow Start, Congestion Avoidance, Fast Retransmit, Fast Recovery), 그리고 BSD 소켓 API를 인터랙티브 TCP 혼잡 윈도우 시뮬레이터로 학습한다.
-* [08. 네트워크 보안과 암호화 통신 - 대칭·비대칭 암호화(AES·RSA), 전자서명과 SSL-TLS 핸드셰이크](./08.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EB%B3%B4%EC%95%88%EA%B3%BC%20%EC%95%94%ED%98%B8%ED%99%94%20%ED%86%B5%EC%8B%A0%20-%20%EB%8C%80%EC%B9%AD%C2%B7%EB%B9%84%EB%8C%80%EC%B9%AD%20%EC%95%94%ED%98%B8%ED%99%94%2C%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%84%9C%EB%AA%85%EA%B3%BC%20SSL-TLS.md) - 정보 보안 3대 요소(CIA Triad), 대칭키(AES) vs 비대칭키(RSA) 암호화 알고리즘 비교, 단방향 해시 함수(SHA-256)와 전자서명(Digital Signature), 공인인증기관(CA)과 PKI 구조, 그리고 HTTPS의 핵심인 SSL/TLS 1.3 핸드셰이크를 인터랙티브 암복호화 시뮬레이터로 학습한다.
-* [08. 무선통신 시스템](./08.%20%EB%AC%B4%EC%84%A0%ED%86%B5%EC%8B%A0%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md) - 와이파이·블루투스와 CSMA/CA의 충돌 회피 맥락을 정리한다.
-* [09. 네트워크 계층](./09.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%84%EC%B8%B5.md) - IP 패킷 전달·라우팅·가상회선과 주소 체계의 관계를 정리한다.
-* [10. 라우팅 알고리즘](./10.%20%EB%9D%BC%EC%9A%B0%ED%8C%85%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md) - 정적·동적 라우팅과 최단 경로·거리 벡터·연결 상태의 차이를 정리한다.
-* [11. 인터넷 프로토콜과 라우팅](./11.%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EA%B3%BC%20%EB%9D%BC%EC%9A%B0%ED%8C%85.md) - IP의 주소·변환·QoS·혼잡 제어 관점을 함께 정리한다.
-* [12. 네트워크 계층 작업과 프로토콜](./12.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%84%EC%B8%B5%20%EC%9E%91%EC%97%85%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C.md) - 서브넷 마스크와 CIDR 표기가 네트워크·호스트 경계를 표현하는 방식을 정리한다.
-* [13. 전송 계층](./13.%20%EC%A0%84%EC%86%A1%20%EA%B3%84%EC%B8%B5.md) - 전송 계층의 응용 프로그램 인터페이스·포트·순서 제어를 이해한다.
-* [14. TCP와 소켓 프로그래밍](./14.%20TCP%EC%99%80%20%EC%86%8C%EC%BC%93%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md) - TCP 헤더·포트·순서 번호·제어 플래그가 수행하는 역할을 정리한다.
-* [16. 네트워크 보안](./16.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EB%B3%B4%EC%95%88.md) - 보안 위협의 범주와 암호화·웹 보안 프로토콜의 역할을 개념 수준에서 정리한다.
-* [computer-networks 강의 흐름 지도](./00.%20computer-networks%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 15개의 순서·쪽수·학습 점검을 연결한다.
-* [네트워크 분류와 계층 모델](./02.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EB%B6%84%EB%A5%98%EC%99%80%20%EA%B3%84%EC%B8%B5%20%EB%AA%A8%EB%8D%B8.md) - 전송 속도 단위와 헤더 오버헤드, 계층적 분업의 출발점
-* [데이터 링크 계층의 작업](./06.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%A7%81%ED%81%AC%20%EA%B3%84%EC%B8%B5%EC%9D%98%20%EC%9E%91%EC%97%85.md) - 패킷에 링크 계층 헤더를 붙여 프레임으로 만들고 LAN 노드에 전달하는 작업
-* [유선 및 무선 데이터 전송](./04.%20%EC%9C%A0%EC%84%A0%20%EB%B0%8F%20%EB%AC%B4%EC%84%A0%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%86%A1.md) - 전송매체·간섭·통신선의 역할과 유선 데이터 전달의 기초
-* [통신과 컴퓨터 네트워크](./01.%20%ED%86%B5%EC%8B%A0%EA%B3%BC%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.md) - 데이터 전달 관점에서 통신과 컴퓨터 네트워크를 이해하는 기초
-* [통신망과 특징](./05.%20%ED%86%B5%EC%8B%A0%EB%A7%9D%EA%B3%BC%20%ED%8A%B9%EC%A7%95.md) - 회선 교환의 연결 설정과 전화망의 독점 사용 특징
+물리 계층의 신호 처리 및 나이퀴스트/섀넌 채널 용량, 데이터 링크 계층의 프레이밍과 CRC/ARQ 오류 제어, 유무선 매체 접근 제어(CSMA/CD, CSMA/CA), 네트워크 계층의 IPv4 헤더·CIDR 서브네팅 및 NAT, 라우팅 알고리즘(거리 벡터 RIP vs 링크 상태 OSPF/다이크스트라 & BGP), 전송 계층의 TCP 3-Way Handshake·슬라이딩 윈도우 및 AIMD 혼잡 제어, 그리고 네트워크 보안(AES, RSA, SHA-256, SSL/TLS)까지 컴퓨터 통신 인프라의 전 계층을 체계적으로 다룹니다.
+
+---
+
+## 🗺️ 강의 목차 (Curriculum Overview)
+
+```mermaid
+graph TD
+    N1["01. 통신 기초와 OSI 7계층·TCP-IP 4계층 모델<br/>bps/대역폭 & 패킷 교환 & 프로토콜 캡슐화"] --> N2["02. 신호 처리와 전송 이론<br/>나이퀴스트 & 섀넌 채널 용량 & ASK/FSK/PSK/QAM & UTP/광섬유"]
+    N2 --> N3["03. 데이터 링크 계층과 MAC 제어<br/>비트 스터핑 & Modulo-2 CRC & Stop-and-Wait / GBN / SR ARQ"]
+    N3 --> N4["04. 유무선 LAN 표준과 다중 접속(MAC)<br/>이더넷 CSMA/CD 지수 백오프 & Wi-Fi CSMA/CA & RTS/CTS"]
+    N4 --> N5["05. 네트워크 계층과 IP 주소 체계<br/>IPv4 20B 헤더 & CIDR 서브네팅(2^h-2) & 사설 IP / NAT / ARP / ICMP"]
+    N5 --> N6["06. 라우팅 알고리즘과 인터넷 라우팅<br/>거리 벡터(Bellman-Ford/RIP) vs 링크 상태(Dijkstra/OSPF) & BGP"]
+    N6 --> N7["07. 전송 계층과 TCP 신뢰성 제어<br/>3-Way Handshake & 4-Way Teardown & Slow Start / AIMD 혼잡 제어"]
+    N7 --> N8["08. 네트워크 보안과 암호화 통신<br/>대칭키(AES) vs 공개키(RSA) & 전자서명 & TLS 1.3 핸드셰이크"]
+```
+
+---
+
+## 📑 개별 정리 문서 목록
+
+1. [01. 통신 기초와 OSI 7계층·TCP-IP 4계층 모델](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/01.%20%ED%86%B5%EC%8B%A0%20%EA%B8%B0%EC%B4%88%EC%99%80%20OSI%207%EA%B3%84%EC%층%C2%B7TCP-IP%204%EA%B3%84%EC%층%20%EB%AA%A8%EB%8D%B8.md)
+   - 전송 시간 정량 공식($T = \text{bits} / \text{bps}$), 패킷 교환 원리, PDU 캡슐화 계산기
+2. [02. 신호 처리와 전송 이론 - 나이퀴스트·섀넌 공식 및 변복조](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/02.%20%EC%8B%A0%ED%98%B8%20%EC%B2%98%EB%A6%AC%EC%99%80%20%EC%A0%84%EC%86%A1%20%EC%9D%B4%EB%A1%A0%20-%20%EB%82%98%EC%9D%B4%ED%80%B4%EC%8A%A4%ED%8A%B8%C2%B7%EC%84%80%EB%84%8C%20%EA%B3%B5%EC%8B%9D%20%EB%B0%8F%20%EB%B3%80%EB%B3%B5%EC%A1%B0.md)
+   - 나이퀴스트($2B\log_2 M$) 및 섀넌($B\log_2(1+\text{SNR})$) 공식, ASK/FSK/PSK/QAM, SNR 채널 용량 계산기
+3. [03. 데이터 링크 계층과 MAC 제어 - 프레이밍, 오류 제어(CRC)와 슬라이딩 윈도우](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/03.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%A7%81%ED%81%AC%20%EA%B3%84%EC%층%EA%B3%BC%20MAC%20%EC%A0%9C%EC%96%B4%20-%20%ED%94%84%EB%A0%88%EC%9D%B4%EB%B0%8D,%20%EC%98%A4%EB%A5%98%20%EC%A0%9C%EC%96%B4(CRC)%EC%99%80%20%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%94%A9%20%EC%9C%88%EB%8F%84%EC%9A%B0.md)
+   - 비트 스터핑 메커니즘, Modulo-2 다항식 나눗셈, 실시간 CRC 계산기, 3대 ARQ 프로토콜 비교
+4. [04. 유무선 LAN 표준과 다중 접속(MAC) - 이더넷(CSMA-CD)과 Wi-Fi(CSMA-CA)](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/04.%20%EC%9C%A0%EB%AC%B4%EC%84%A0%20LAN%20%ED%91%9C%EC%A4%80%EA%B3%BC%20%EB%8B%A4%EC%A4%91%20%EC%A0%91%EC%86%8D(MAC)%20-%20%EC%9D%B4%EB%8D%94%EB%84%B7(CSMA-CD)%EA%B3%BC%20Wi-Fi(CSMA-CA).md)
+   - CSMA/CD 2진 지수 백오프 시뮬레이터, Wi-Fi CSMA/CA 및 RTS/CTS 은닉 노드 해결
+5. [05. 네트워크 계층과 IP 주소 체계 - IPv4 헤더, 서브네팅(CIDR), NAT와 ARP-ICMP](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/05.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B3%84%EC%층%EA%B3%BC%20IP%20%EC%A3%BC%EC%86%8C%20%EC%B2%B4%EA%B3%84%20-%20IPv4%20%ED%97%A4%EB%8D%94,%20%EC%84%9C%EB%B8%8C%EB%84%A4%ED%8C%85(CIDR),%20NAT%EC%99%80%20ARP-ICMP.md)
+   - IPv4 20바이트 헤더 패킷 다이어그램, CIDR 프리픽스 기반 실시간 서브넷 마스크 계산기, NAT 및 ARP
+6. [06. 라우팅 알고리즘과 인터넷 라우팅 - 거리 벡터(RIP) vs 링크 상태(OSPF·다이크스트라) 및 BGP](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/06.%20%EB%9D%BC%EC%9A%B0%ED%8C%85%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EA%B3%BC%20%EC%9D%B8%ED%84%B0%EB%84%B7%20%EB%9D%BC%EC%9A%B0%ED%8C%85%20-%20%EA%B1%B0%EB%A6%AC%20%EB%B2%A1%ED%84%B0(RIP)%20vs%20%EB%A7%81%ED%81%AC%20%EC%83%81%ED%83%9C(OSPF%C2%B7%EB%8B%A4%EC%9D%B4%ED%81%AC%EC%8A%A4%ED%8A%B8%EB%9D%BC)%20%EB%B0%8F%20BGP.md)
+   - Bellman-Ford vs Dijkstra 알고리즘, 무한 계수 문제, 실시간 다이크스트라 최단 경로 계산기
+7. [07. 전송 계층과 TCP 신뢰성 제어 - 3-Way Handshake, 흐름 제어 및 혼잡 제어](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/07.%20%EC%A0%84%EC%86%A1%20%EA%B3%84%EC%층%EA%B3%BC%20TCP%20%EC%8B%A0%EB%A2%B0%EC%84%B1%20%EC%A0%9C%EC%96%B4%20-%203-Way%20Handshake,%20%ED%9D%90%EB%A6%84%20%EC%A0%9C%EC%96%B4%20%EB%B0%8F%20%ED%98%BC%EC%9E%A1%20%EC%A0%9C%EC%96%B4.md)
+   - TCP 3-Way Handshake & 4-Way Teardown 시퀀스, Slow Start 및 AIMD 혼잡 윈도우(CWND) 시뮬레이터
+8. [08. 네트워크 보안과 암호화 통신 - 대칭·비대칭 암호화, 디지털 서명과 SSL-TLS](file:///Users/um-yunsang/work/edu/ComputerScience/04_systems-infrastructure/computer-networks/notes/08.%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EB%B3%B4%EC%95%88%EA%B3%BC%20%EC%95%94%ED%98%B8%ED%99%94%20%ED%86%B5%EC%8B%A0%20-%20%EB%8C%80%EC%B8%AD%C2%B7%EB%89%B4%EB%8C%80%EC%B8%AD%20%EC%95%94%ED%98%B8%ED%99%94,%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%84%9C%EB%AA%85%EA%B3%BC%20SSL-TLS.md)
+   - CIA 3요소, 대칭키 AES vs 공개키 RSA, TLS 1.3 핸드셰이크 흐름, 암복호화/전자서명 시뮬레이터
