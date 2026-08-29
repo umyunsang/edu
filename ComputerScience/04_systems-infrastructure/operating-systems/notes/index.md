@@ -2,6 +2,7 @@
 
 ## lecture
 
+* [01. 운영체제 구조와 이중 모드·시스템 호출 - 커널/유저 모드, 인터럽트 벡터와 트랩(Trap)](./01.%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%EC%9D%B4%EC%A4%91%20%EB%AA%A8%EB%93%9C%C2%B7%EC%8B%9C%EC%8A%A4%ED%85%9C%20%ED%98%B8%EC%B6%9C.md) - 운영체제의 핵심 기능과 컴퓨터 시스템 하드웨어 보호 메커니즘(이중 모드 Dual-Mode Operation, 특권 명령어), 인터럽트 서비스 루틴(ISR), 시스템 호출(System Call) 트랩 처리 흐름을 인터랙티브 커널 모드 전환 시뮬레이터로 학습한다.
 * [05. CPU 스케줄링 - FCFS·SJF·SRTF와 라운드로빈 타임퀀텀 대수학 (CPU Scheduling Algorithms)](./05.%20CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md) - 비선점형 FCFS·SJF와 선점형 SRTF·라운드로빈(RR) 스케줄링 간트 차트, 평균 대기 시간(AWT)과 반환 시간(ATT) 산출 수식, 타임 퀀텀(q) 임계값 대수학을 인터랙티브 CPU 스케줄러 시뮬레이터로 심층 학습한다.
 * [07. 교착상태와 회피 - 코프만 4대 조건과 은행원 알고리즘(Banker's) 대수학 (Deadlock & Banker's Algorithm)](./07.%20%EA%B5%90%EC%B0%A9%EC%83%81%ED%83%9C%EC%99%80%20%ED%9A%8C%ED%94%BC.md) - 교착상태 성립 4대 조건(상호배제·점유대기·비선점·환형대기), 자원 할당 그래프(RAG), 안전 상태(Safe State) 판별을 위한 은행원 알고리즘(Need ≤ Work, Work ← Work + Alloc)을 인터랙티브 안전 시퀀스 계산기로 심층 학습한다.
 * [09. 페이징과 주소 변환 - 논리·물리 주소 사상과 TLB 유효 접근 시간(EAT) 대수학 (Paging & Address Translation)](./09.%20%ED%8E%98%EC%9D%B4%EC%A7%95%EA%B3%BC%20%EC%A3%BC%EC%86%8C%20%EB%B3%80%ED%99%98.md) - 페이지 번호(p)와 변위(d) 기반의 논리 주소 사상 원리, 페이지 테이블 구조, TLB 적중률(α)에 따른 2단계 메모리 유효 접근 시간(EAT = t_TLB + (2-α)t_m)을 인터랙티브 TLB 주소 변환기로 심층 학습한다.
