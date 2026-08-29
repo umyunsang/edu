@@ -98,3 +98,22 @@ FCS 필드는 이더넷 프레임의 오류 탐색을 위한 필드이며 CRC-32
 
 > [!warning] 출처 경계
 > 제공된 추출 텍스트만 사용했으며 원본 시각자료·첨부물·페이지 표기는 넣지 않았다.
+
+---
+
+## 원본 강의 흐름 인터랙티브
+
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
+  <label for="noteFlow1847515" style="font-size:14px;font-weight:600">LAN의 특징과 규격 단계</label>
+  <div id="noteFlow1847515-out" style="font-size:26px;font-weight:700;color:var(--chart-1);margin:6px 0">LAN의 특징과 규격 핵심 개념</div>
+  <input id="noteFlow1847515" type="range" min="1" max="3" step="1" value="1" style="width:100%;accent-color:var(--primary)" />
+  <p style="font-size:13px;color:var(--muted-foreground)">슬라이더를 움직이면 원본 PDF에서 정리한 이 노트의 흐름을 확인합니다.</p>
+  <script>
+    var noteFlow1847515 = document.getElementById('noteFlow1847515');
+    var noteFlow1847515Out = document.getElementById('noteFlow1847515-out');
+    var noteFlow1847515Steps = ["LAN의 특징과 규격 핵심 개념","LAN의 특징과 규격 처리 절차","LAN의 특징과 규격 검증·응용"];
+    noteFlow1847515.addEventListener('input', function () { noteFlow1847515Out.textContent = noteFlow1847515Steps[Number(noteFlow1847515.value) - 1]; });
+  </script>
+</div>
+```
