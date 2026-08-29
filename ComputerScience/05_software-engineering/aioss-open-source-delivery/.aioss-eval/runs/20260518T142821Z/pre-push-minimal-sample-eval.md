@@ -1,5 +1,5 @@
-up:: [[ComputerScience/4-1_algorithm/기말고사_정리|기말고사_정리]]
-related:: [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T142831Z/pre-push-minimal-sample-eval|pre-push-minimal-sample-eval]], [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T140543Z/solution-baseline-sample-eval|solution-baseline-sample-eval]], [[ComputerScience/4-1_AIOSS/.aioss-eval/runs/20260518T140543Z/minimal-baseline-sample-eval|minimal-baseline-sample-eval]]
+up:: [[ComputerScience/06_algorithms-graphics/algorithm-design-analysis/notes/01. 알고리즘 설계 — 효율성·분할정복·동적계획법·탐욕·NP.md|기말고사_정리]]
+related:: [[ComputerScience/05_software-engineering/aioss-open-source-delivery/.aioss-eval/runs/20260518T142831Z/pre-push-minimal-sample-eval|pre-push-minimal-sample-eval]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/.aioss-eval/runs/20260518T140543Z/solution-baseline-sample-eval|solution-baseline-sample-eval]], [[ComputerScience/05_software-engineering/aioss-open-source-delivery/.aioss-eval/runs/20260518T140543Z/minimal-baseline-sample-eval|minimal-baseline-sample-eval]]
 
 # AIOSS Sample Evaluation: pre-push-minimal
 
