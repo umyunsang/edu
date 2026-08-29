@@ -23,6 +23,7 @@
 * [OpenAI API 67. 텍스트 생성과 프롬프트](./OpenAI%20API%2067.%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8.md) - 텍스트 생성의 모델 선택, 생성 파라미터, 역할 지시, 질의·요약·번역 실습의 공통 구조를 정리한다.
 * [OpenAI API 84. 텍스트 편집과 이미지 생성](./OpenAI%20API%2084.%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%ED%8E%B8%EC%A7%91%EA%B3%BC%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%83%9D%EC%84%B1.md) - 텍스트 수정 지시와 이미지 생성·편집·변형을 입력 자료와 변환 목표의 관점에서 정리한다.
 * [OpenAI API 요청·응답과 도구 호출](./49.%20OpenAI%20API%20%EC%9A%94%EC%B2%AD%C2%B7%EC%9D%91%EB%8B%B5%EA%B3%BC%20%EB%8F%84%EA%B5%AC%20%ED%98%B8%EC%B6%9C.md) - OpenAI API의 요청 계약, 엔드포인트, 응답 구조, 스트리밍·이미지 입력·도구 호출을 하나의 실행 흐름으로 정리한다.
+* [OpenAI API 키·결제·환경변수](./144.%20OpenAI%20API%20%ED%82%A4%C2%B7%EA%B2%B0%EC%A0%9C%C2%B7%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98.md) - API 패키지 설치부터 결제·사용 한도·키 발급·환경변수 로딩까지의 흐름을 정리하고, 키 출력과 원격 설치 명령 같은 원문 보안 안티패턴을 차단한다.
 * [Transformer와 언어 모델 계열](./11.%20Transformer%EC%99%80%20%EC%96%B8%EC%96%B4%20%EB%AA%A8%EB%8D%B8%20%EA%B3%84%EC%97%B4.md) - Transformer의 핵심 구성과 인코더·디코더 역할, 자기회귀·자동인코딩 언어 모델의 차이를 정리한다.
 * [Windows AI 개발환경 구성](./131.%20Windows%20AI%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%20%EA%B5%AC%EC%84%B1.md) - Windows에서 Conda·Git·PowerShell·VS Code를 준비하는 순서를 정리하고, 원문 명령 오탈자와 관리자 권한·버전 충돌을 실행 전 점검한다.
 * [오디오·모더레이션·추론 모델 API](./104.%20%EC%98%A4%EB%94%94%EC%98%A4%C2%B7%EB%AA%A8%EB%8D%94%EB%A0%88%EC%9D%B4%EC%85%98%C2%B7%EC%B6%94%EB%A1%A0%20%EB%AA%A8%EB%8D%B8%20API.md) - 오디오 입출력과 음성 변환, 멀티모달 모더레이션, o1 계열 추론 모델의 요청 흐름과 원문 시점 한계를 구분한다.
