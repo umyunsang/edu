@@ -1,44 +1,29 @@
 ---
 title: 최적화 수학
-description: '경사하강·볼록 최적화 등 학습 알고리즘의 수학적 배경. 학기: 3-2.'
+description: "행렬에서 미적분, 볼록 최적화와 경사하강법, 과제·리포트까지 이어지는 강의 흐름"
 type: course-index
 tags:
-- course
-- 3-2
+  - course
+  - optimization-math
 course: optimization-math
-semester: 3-2
+semester: "2025-2"
 status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+created: "2026-08-29"
+updated: "2026-08-29"
 ---
 
-> [!abstract] 이 과목은
-> 경사하강·볼록 최적화 등 학습 알고리즘의 수학적 배경. 학기: 3-2.
+> [!abstract] 강의 흐름
+> 1장 행렬 → 2장 미적분 → 3장 볼록 최적화·경사하강법 → Homework 2·리포트 순서로 읽는다.
 
 ## 정리문서
 
-모두 `notes/` 에 있다. 총 3편.
-
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [1. Matrix](<./notes/1. Matrix.md>) | — |
-| [MSC087_HW2_풀이](<./notes/MSC087_HW2_풀이.md>) | — |
-| [REPORT](<./notes/연습문제 풀이.md>) | — |
+| 순서 | 문서 | 원본 |
+| --- | --- | --- |
+| 01 | [행렬 연산과 선형대수 기초](<./notes/01. 행렬 연산과 선형대수 기초.md>) | 1장 |
+| 02 | [미적분 공식과 도함수](<./notes/02. 미적분 공식과 도함수.md>) | 2장 |
+| 03 | [볼록함수와 경사하강법](<./notes/03. 볼록함수와 경사하강법.md>) | 3장 |
+| 04 | [최적화수학 과제·리포트 제출](<./notes/04. 최적화수학 과제·리포트 제출.md>) | Homework 2, report |
 
 ## 원본 자료
 
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 8건.
-
-- `MCS087_2장_미적분_v3 2.pdf`
-- `MCS087_2장_미적분_v3.pdf`
-- `MSC087_1장_행렬_v3 2.pdf`
-- `MSC087_1장_행렬_v3.pdf`
-- `MSC087_3장_볼록최적화 2.pdf`
-- `MSC087_3장_볼록최적화.pdf`
-- `MSC087_HW2.pdf`
-- `R E P O R T p156. 05 (a.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+sources 폴더의 8개 PDF를 읽었으며, 동일한 1–3장 PDF 사본은 하나의 canonical 흐름으로 통합했다. 전체 PDF는 삽입하지 않고 수식·절차·제출 조건을 텍스트와 공식 컴포넌트로 재구성했다.

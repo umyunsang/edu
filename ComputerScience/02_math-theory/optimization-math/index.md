@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [최적화 수학](./README.md) - 경사하강·볼록 최적화 등 학습 알고리즘의 수학적 배경. 학기: 3-2.
+* [최적화 수학](./README.md) - 행렬에서 미적분, 볼록 최적화와 경사하강법, 과제·리포트까지 이어지는 강의 흐름
+
+## Subdirectories
+
+* [notes](./notes/index.md)
