@@ -1,0 +1,1244 @@
+### [Page 1]
+수학적 모델과 논리
+컴퓨터AI공학부
+천세진
+
+
+
+### [Page 2]
+동아대학교
+목차
+2.3
+증명기술과프로그램검증
+2.1
+수학적모델
+2.2
+논리적추론
+2.4
+응용: 지식베이스시스템
+이 장에서 배우는 내용은? 
+❖자연과학(물리학, 생물학, 지구과학, 기상학 등), 공학(컴퓨터 과학, 인공지능 등), 
+사회과학(경제학, 사회학, 정치학 등)에서많이 사용되는 수학적 모델과 논리적 
+추론, 수학적 귀납법과 프로그램의 검증
+❖데이터베이스와 인공지능의 응용인 지식 베이스 시스템
+
+
+
+### [Page 3]
+동아대학교
+
+
+
+### [Page 4]
+동아대학교
+수학적 모델의 개념 
+수학적 모델 : 자연 현상의 문제를 수학적 식을 이용하여 푸는 것
+•
+우리가 관심을 가지는 현상(phenomenon) 혹은과정(process)
+에대해서오랜 관찰(observation)을 통해 그러한 현상 또는 과
+정이지닌 특성
+•
+수학적 모델은 수학적 모델로 되기 위한 현상이나 과정이 있
+어야하고, 수학적 모델로 되기 위한 객체(objects)들의 중요한 
+성질을 표현하기 위한수학적 구조와 현상또는 과정과 수학
+적 구조 사이를 대응시키기위한대응 관계가 필요 
+수학적 모델을 만드는 데 필요한 것
+• 정의(definition), 문장(statement), 명제(proposition), 공리(axiom), 논리 연산자, 합성 명
+제, 논리적 추론(logical inference), 결론, 정리, 증명
+
+
+
+### [Page 5]
+동아대학교
+
+
+
+### [Page 6]
+동아대학교
+Definition, Statement, Proposition
+정의(definition)
+• 용어의 뜻을 명확히 하기 위해서 사용되는 것
+• 무정의 정의 : 정의하지 않고 사용할 수 있는 일반적인 용어
+문장(statement)
+• 무정의 용어와 정의된 용어를 사용하여 만듦
+
+
+
+### [Page 7]
+동아대학교
+Propositions
+진리값(truth value)
+명제 변수(propositional variable) 
+합성 명제 : 주어진 명제들을 합성하여 새로운 명제를 만드는 것
+• 참과 거짓을 명제의 진리값이라 한다.
+• 각각 T(또는 1), F(또는 0)로 표시
+• 진리값이 아직 밝혀지지 않은 임의의 명제
+• P, Q, R, … 등으로표시 
+
+
+
+### [Page 8]
+동아대학교
+◼A proposition is a declarative sentence that is either true or false.
+◼Examples of propositions:
+⚫The Moon is made of green cheese.
+⚫Trenton is the capital of New Jersey.
+⚫Toronto is the capital of Canada.
+⚫1 + 0 = 1
+⚫0 + 0 = 2
+◼Examples that are not propositions.
+⚫Sit down!
+⚫What time is it?
+⚫x + 1 = 2
+⚫x + y = z
+8
+Propositions
+
+
+
+### [Page 9]
+동아대학교
+Logical Operation (논리 연산)
+논리 연산자(and, or, not, exclusive or, imply, equal) 
+• 논리곱(conjunction, AND, ∧)
+• 논리합(disjunction, OR, ∨)
+• 부정(negation, NOT, ￢)
+• 배타적 논리합(exclusive or, XOR, ⊕)
+• 논리 함축(implication, →)
+• 전제(premise)
+• 결론(conclusion)
+• 역(converse)
+• 대우(contraposition)
+• 이(inverse)
+• 동치(equivalence, ⇔) 
+어떤 조건 명제의 대우(對偶, 영어: contrapositive)는 그 조건 명
+제의 가정과 결론을 뒤바꾼 뒤 각각 부정을 취하여 얻는 명제
+참이라고 가정
+p이면 q이다, p → q
+
+
+
+### [Page 10]
+동아대학교
+Constructing Propositions
+◼Propositional Variables: p, q, r, s, …
+◼The proposition that is always true is denoted by T and the 
+proposition that is always false is denoted by F.
+◼Compound Propositions; constructed from logical connectives 
+and other propositions
+⚫Negation ¬
+⚫Conjunction ∧
+⚫Disjunction ∨
+⚫Implication →
+⚫Biconditional ↔
+10
+Propositional Logic
+
+
+
+### [Page 11]
+동아대학교
+Logical Operation (논리 연산)
+진리표(truth table)
+• 논리 연산에 대한 연산표
+• 참과 거짓을 나타내는 변수인 0과 1의 모든 가능한 조합과 이들 각각에 대한 관련 함수의 
+값을 0과 1(거짓과 참)로 나타내는 진리 함수의 표
+논리곱(conjunction), 논리합(disjunction), 부정(negation), Exclusive OR
+• 임의의 명제 P와 Q에 대해서
+
+
+
+### [Page 12]
+동아대학교
+Logical Implication (논리 함축)
+논리 함축 (Implication)
+• 임의의 명제 P와 Q에 대해서 논리 함축 P → Q의 
+진리값은 
+P가 참이고 Q가 거짓일 경우에만 거짓이 되고, 
+그 이외의 경우에는 모두 참이 된다. 
+• 함축(Implication) / 조건명제(Conditional Proposition)    p→q
+✓
+"비가 오면 우산을 가지고 간다."는 "비가 온다"라는 조건과 "우산을 가지고 간다"
+라는 결론이 된다. 
+✓
+이와 같이 조건과 결론의 관계로 결합된 형태를 함축, 조건명제라고 한다.
+✓
+p implies q : p는 q를 함축한다.
+✓
+if p then q 또는 p only if q : p면 q다.
+
+
+
+### [Page 13]
+동아대학교
+Logical Implication (논리 함축)
+• 수학적 논리에서의 논리 함축은 자연 언어에서의 의미와는 상당한 차이가 있다.
+• 자연 언어에서는 "오늘 비가 오면, 야구 경기는 연기한다"라는 것은 
+가정과 결론 사이의 인과 관계를 나타내지만, 수학적 논리에서의
+논리 함축 P → Q는 P와 Q가 서로 연관이 없을지라도 임의의 두명제를 결합할 수 있다.
+• 왜냐하면 명제에서는 명제의 의미나 구조와 관계없이 오직 명제들의 진리값만을 다루기 
+때문이다.
+• 논리 함축 P → Q에 대해서 Q → P를 역(converse)이라 한다.
+• ￢Q → ￢P를 대우(contrapositive)라 한다.
+• ￢P → ￢Q를 이(inverse)라고 한다.
+• 즉, 역(converse)이란 명제의 가정과 결론에 대해서 가정은 결론으로 결론은 가정으로 위치를 
+바꾼 것을 말하고, 이(inverse)는 위치는 그대로 둔 채 가정과 결론들을 부정으로 만든 것을 
+말한다. 대우란 가정과 결론의 위치도 바꾸고 가정과 결론을 부정으로 바꾸는 것을 말한다. 
+• 명제가 참이면 대우도 반드시 참이 된다. 
+
+
+
+### [Page 14]
+동아대학교
+In p → q there does not need to be any connection between the 
+antecedent or the consequent. The “meaning” of p → q depends only 
+on the truth values of p and q. 
+These implications are perfectly fine, but would not be used in ordinary 
+English.
+⚫“If the moon is made of green cheese, then I have more money than Bill 
+Gates. ”
+⚫“If the moon is made of green cheese then I’m on welfare.”
+⚫“If 1 + 1 = 3, then your grandma wears combat boots.”
+14
+Understanding Implication 1
+
+
+
+### [Page 15]
+동아대학교
+15
+Different Ways of Expressing p → q
+
+
+
+### [Page 16]
+동아대학교
+◼System and Software engineers take requirements in English and 
+express them in a precise specification language based on logic.
+◼Example: Express in propositional logic:
+◼“The automated reply cannot be sent when the file system is full”
+◼Solution: One possible solution: Let p denote “The automated reply 
+can be sent” and q denote “The file system is full.”
+16
+System Specifications
+q
+p
+→
+
+
+
+### [Page 17]
+동아대학교
+◼Definition: A list of propositions is consistent if it is possible to assign truth 
+values to the proposition variables so that each proposition is true.
+◼Exercise: Are these specifications consistent?
+⚫“The diagnostic message is stored in the buffer or it is retransmitted.”
+⚫“The diagnostic message is stored in the buffer.”
+⚫“If the diagnostic message is stored in the buffer, then it is retransmitted.”
+◼
+Solution: Let p denote “The diagnostic message is stored in the buffer.” Let q denote “The 
+diagnostic message is retransmitted” The specification can be written as: p ∨q, ¬p, p → q. When 
+p is false and q is true all three statements are true. So the specification is consistent.
+⚫What if “The diagnostic message is not retransmitted” is added.
+Solution: Now we are adding ¬q and there is no satisfying assignment. So the specification is not 
+consistent.
+17
+Consistent System Specifications
+
+
+
+### [Page 18]
+APPLICATIONS OF
+PROPOSITIONAL LOGIC
+18
+
+
+
+### [Page 19]
+동아대학교
+◼Steps to convert an English sentence to a statement in 
+propositional logic
+⚫Identify atomic propositions and represent using propositional variables.
+⚫Determine appropriate logical connectives
+◼“If I go to Harry’s or to the country, I will not go shopping.”
+⚫p: I go to Harry’s
+⚫q: I go to the country.
+⚫r:  I will go shopping.
+19
+Translating English Sentences
+
+
+
+### [Page 20]
+동아대학교
+Problem: Translate the following sentence
+into propositional logic:
+“You can access the Internet from campus only if you are a computer 
+science major or you are not a freshman.”
+One Solution: Let a, c, and f represent respectively “You can access 
+the internet from campus,” “You are a computer science major,” and 
+“You are a freshman.”
+20
+Example
+(
+)
+a
+c
+f
+→
+
+
+
+
+### [Page 21]
+PROPOSITIONAL EQUIVALENCES
+21
+
+
+
+### [Page 22]
+동아대학교
+Logical Equivalences 논리적 동치 
+논리적 동치
+• 임의의 명제 P와 Q에 대해서 논리적 동치 P⇔Q의 진리값은
+P와 Q가 모두 참이거나 모두 거짓일 경우에만 참이 되고,
+그 이외의 경우에는 모두 거짓이 된다.
+• P⇔Q는 논리 함축 P→Q와 논리 함축 Q→P의 논리곱이다.
+
+
+
+### [Page 23]
+동아대학교
+Logical Equivalences 논리적 동치 
+지금까지 설명한 합성 명제에 대한 진리표
+
+
+
+### [Page 24]
+동아대학교
+Operator precedence 연산자 우선순위표
+연산자 우선순위표
+• 합성 명제에 대해서 진리표를 작성하기 위해서는 우선순위가 정해져야 한다. 
+• 우선순위를 위해서 괄호를 사용하기도 하지만, 이 방법은 합성 명제가 길고 복잡하다면 너
+무나 많은 괄호 때문에 가독성(readability)이  떨어진다.
+• 가독성을 높이기 위해 연산자 우선순위표(operator precedence table) 사용
+• 연산자들의 우선순위와 결합법칙을 이용하여 우선순위를 정한다.
+논리 연산자들의 우선 순위
+• ¬(부정) > ∧(논리곱) > ∨(논리합) > → (논리 함축) > ⇔(논리적 동치)
+✓이러한 연산자 우선순위를 유지하고 ￢(부정)은 오른쪽 결합법칙을,
+나머지 연산자들은 왼쪽 결합법칙을 갖는다고 하자. 
+✓그러면 합성 명제 P∧Q → ￢P∨Q∧R에 괄호를 이용해서 표시하면 
+(P∧Q) → ((￢P)∨(Q∧R)) 다.
+
+
+
+### [Page 25]
+동아대학교
+Operator precedence 연산자 우선순위표
+연산자 우선순위표를 활용한 연산 결과
+• 연산자 우선순위표를 만들기 위해서는 주어진 합성 명제에서 사용하는 연
+산자들을 정방 행렬로 나열한다. 
+• 연산자들은 합성 명제에 나와 있는 것만 사용한다고 가정하므로 
+합성 명제 P∧Q → ￢P∨Q∧R에 대해서는 연산자가 ￢, ∧, → , ∨가 사용된
+다. 그리고 두 개의 스택(연산자, 피연산자)을 사용한다고 가정한다. 
+• 연산자 우선순위표의 초기 상태는 다음과 같다.
+1) 연산자가 동일할 때
+• 오른쪽 결합 법칙 : 입력 연산자 우
+선
+• 왼쪽 결합 법칙 : 스택 연산자 우선
+2) 연산자가 다를 때
+
+
+
+### [Page 26]
+동아대학교
+Operator precedence 연산자 우선순위표
+• 이 표에서 열에 있는 연산자들은 스택 속에 있는 연산자들이고,
+행에 있는 연산자들은 입력에 있는 연산자들이다.
+• 모든 항목들에 대해서 우선순위를 부여해보자. 
+✓우선 1행과 1열의 항목에 우선순위를 생각해보자. 스택 속에는 연산자 ¬가 있고, 입력에도 연
+산자가 ¬가 있는 경우이다. 이 경우에 누굴 먼저 연산해야 할까?
+✓같은 연산자이므로 연산자 우선순위가 같다. 
+✓따라서 결합법칙이 무엇인지 살펴봐야 한다. 오른쪽 결합 법칙을 가지므로 입력에 ¬ 연산을 
+먼저 수행해야 한다.
+✓그러므로 1행 1열의 우선순위는 입력에 있는 연산자가 스택 속에 있는 연산자보다 우선순위
+가 높다. 
+[행] 입력 연산자
+[열]
+스택 
+연산자
+
+
+
+### [Page 27]
+동아대학교
+Operator precedence 연산자 우선순위표
+• 같은 방법으로 주대각 원소에 있는 우선순위를 생각해보자.
+✓다른 연산자 우선순위가 같고 왼쪽 결합법칙을 취하므로 다음과 같이
+스택 속에 있는 연산자의 우선순위가 높다. 
+• 나머지 항목들도 채워보자. 
+✓연산자 ¬의 우선순위가 가장 높다고 했으므로 
+다음과 같이 연산자 ¬가 다른 연산자들보다 모두 우선순위가 높다. 
+
+
+
+### [Page 28]
+동아대학교
+Operator precedence 연산자 우선순위표
+• 두 번째로는 ∧(논리곱)이 우선순위가 높으므로 다음과 같이 항목들을 채울 수 있다.
+• 세 번째로는 ∨(논리합)이 우선순위가 높으므로 다음과 같이 항목들을 채울 수 있다.
+• 이제 연산자 우선순위표를 이용해서 괄호를 사용하는 경우와
+같은 결과가 나오는지를 두 개의 스택을 사용해서 연산해보자. 
+
+
+
+### [Page 29]
+동아대학교
+Operator precedence 연산자 우선순위표
+
+
+
+### [Page 30]
+동아대학교
+Operator precedence
+
+
+
+### [Page 31]
+동아대학교
+Operator precedence 연산자 우선순위표
+
+
+
+### [Page 32]
+동아대학교
+실습
+일반적인 합성 명제에 대해 진리표를 구하는 프로그램을 작성하라. (2주) 
+❖조건
+• 명제 변수는 많아야 3개로 제한하고, 논리 연산자도 많아야 4종류만 허용한다. 
+• 세 개의 명제 P, Q, R이 있고, 논리연산자는 and, or, not, implication 
+네 가지가 있다. 
+• 세 개의 명제와 네 개의 논리 연산자를 조합하여 합성 명제를 입력으로 주면
+그에 대한 진리표가 출력되는 프로그램을  작성하라. 
+• 단, 현재 우리가 사용하고 있는 논리 연산자의 우선 순위와 결합 법칙대로 작성한다. 
+✓논리 연산자들의 우선순위는 ￢(부정) > ∧(논리곱) > ∨(논리합) > → (논리 함축) 과 같고 ￢(부정)은 오른쪽 
+결합법칙을, 나머지 연산자들은 왼쪽 결합법칙을 갖는다. 
+•
+합성 명제 P∧Q →￢P∨Q∧R 에 대해 진리표를 만들라. 
+❖연산자 우선순위, 결합법칙을 이용한 우선 순위표 만들기
+❖진리값, 진리값 출력(전체의 합성 명제에 대한 진리표가 출력으로)
+❖2장 프로그래밍 실습 1번을 참조
+
+
+
+### [Page 33]
+동아대학교
+명제 종류
+명제의 종류 : 항진(tautology)명제, 모순(contradiction)명제, 사건(contingency)명제
+❖사건(contingency) 명제: 항진 명제도 아니고 모순 명제도 아닌 명제
+
+
+
+### [Page 34]
+동아대학교
+Identity
+항등 (Identity) ⇔
+• 논리적 동치(equivalence)란 P와 Q가 똑같은 진리값을 갖는 것을 말하고 논리적으로 동치
+인 명제로 명제들을 간단히 할 때 사용한다.
+멱등법칙 (idempotent law) : 연산을 여러 번 적용하더라도 결과가 달라지지 않는 성질
+
+
+
+### [Page 35]
+동아대학교
+Identity
+
+
+
+### [Page 36]
+PREDICATES AND QUANTIFIERS
+36
+
+
+
+### [Page 37]
+동아대학교
+Predicate 술어
+명제의 표현 : 술어와 한정자
+❖술어(Predicate)
+•
+“𝑥is tall.”이라는 문장에서 𝑥를 변수라고 하고 tall을 술어라고 한다.
+술어의 특별한 표현 방법으로 T(x)라고 표현할 수 있는데 여기서 T를 술어라 
+하고 x를 개별 변수(individual variable)라고 한다. 
+✓
+개별 변수 : 술어의 특별한 표현 방법에서 괄호 안에 나타나는 변수
+•
+일반적으로 P를 술어라 하면 P(𝑥1, 𝑥2, …, 𝑥𝑛)에서 𝑥𝑖(𝑖= 1, … , 𝑛)를
+개별 변수라 하고, P는 𝑛개의 인수(argument)를 갖는 술어라 한다.  
+[사전] Predicate : 문장 속에서 주어에 대해 진술하는 동사 이하 부분
+
+
+
+### [Page 38]
+동아대학교
+Predicate
+❖명제와 술어와의 관계
+•
+술어는 명제로 바꿀 수 있다. 이렇게 하기 위해서는 술어의 개별 변수를 한정시켜 
+주어야 한다. 술어의 개별 변수를 한정시켜주는 방법에는 개별 변수를 한 개의 
+값으로 한정시켜 주는 방법과 개별 변수를 그 변수의 한정자에 의해서 한정하는 두 
+가지 방법이 있다. 
+술어 : x,y의 관계를 나타냄 (P(x,y))
+
+
+
+### [Page 39]
+Introducing Predicate Logic
+Predicate logic uses the following new features:
+• Variables: x, y, z
+• Predicates: P(x), M(x)
+• Quantifiers (to be covered in a few slides):
+Propositional functions are a generalization of 
+propositions.
+• They contain variables and a predicate, e.g., P(x)
+• Variables can be replaced by elements from their domain.
+
+
+
+### [Page 40]
+Propositional Functions
+Propositional functions become propositions (and have truth values) when 
+their variables are each replaced by a value from the domain (or bound by a 
+quantifier, as we will see later).
+The statement P(x) is said to be the value of the propositional function P at x.
+For example, let P(x) denote “x > 0” and the domain be the integers. Then:
+P(-3)   is false.
+P(0)   is false.
+P(3)  is true.
+Often the domain is denoted by U. So in this example U is the integers.
+
+
+
+### [Page 41]
+동아대학교
+Quantifier
+한정자(quantifier)
+❖전체 한정자
+•
+기호 ∀로 표시하고 “임의의” 혹은 “모든” 등으로 읽는다. 만약 P(𝒙)가 개별 
+변수 𝒙 를 인수로 갖는 술어라고 하면 명제 “임의의 𝒙, P(𝒙)”는 “𝒙 의 모든 
+값들에 대해서 명제 P(𝒙)는 참이다.”로 해석한다. 
+❖존재 한정자
+•
+기호 ∃로 표시하고 “어떤” 혹은 “적어도 하나에 대해서” 로 읽는다. 명제 
+“어떤 𝒙, P(𝒙)”는 “명제 P(𝒙)가 참이 되는 𝒙 의 값이 존재한다.”로 해석한다.
+❖유일 한정자
+•
+기호 ∃!로 표시하고 “～에 대한 유일한 x가 존재한다.” 로 읽는다. 명제 “어떤 
+𝒙 , P(𝒙 )”는 “명제 P(𝒙 )가 참이 되는 𝒙 의 값이 유일하게 존재한다”로 해석한다. 
+
+
+
+### [Page 42]
+Quantifiers
+We need quantifiers to express the meaning of English words including all and some:
+•
+“All men are Mortal.”
+•
+“Some cats do not have fur.”
+The two most important quantifiers are:
+•
+Universal Quantifier, “For all,” symbol: 
+•
+Existential Quantifier, “There exists,” symbol: 
+We write as in x P(x) and x P(x).
+x P(x) asserts P(x) is true for every x in the domain.
+x P(x) asserts P(x) is true for some x in the domain.
+The quantifiers are said to bind the variable x in these expressions.
+Charles 
+Peirce 
+(1839-1914)
+
+
+
+### [Page 43]
+동아대학교
+Quantifier
+한정자(quantifier)
+❖전체 한정자
+•
+기호 ∀로 표시하고 “임의의” 혹은 “모든” 등으로 읽는다. 만약 P(𝒙)가 개별 
+변수 𝒙 를 인수로 갖는 술어라고 하면 명제 “임의의 𝒙, P(𝒙)”는 “𝒙 의 모든 
+값들에 대해서 명제 P(𝒙)는 참이다.”로 해석한다. 
+❖존재 한정자
+•
+기호 ∃로 표시하고 “어떤” 혹은 “적어도 하나에 대해서” 로 읽는다. 명제 
+“어떤 𝒙, P(𝒙)”는 “명제 P(𝒙)가 참이 되는 𝒙 의 값이 존재한다.”로 해석한다.
+❖유일 한정자
+•
+기호 ∃!로 표시하고 “～에 대한 유일한 x가 존재한다.” 로 읽는다. 명제 “어떤 
+𝒙 , P(𝒙 )”는 “명제 P(𝒙 )가 참이 되는 𝒙 의 값이 유일하게 존재한다”로 해석한다. 
+C#, 접근 한정자 (Access quantifier)
+[출처] Microsoft - C# 설명서
+
+
+
+### [Page 44]
+동아대학교
+◼The rules for negating quantifiers are:
+44
+De Morgan’s Laws for Quantifiers
+❑The reasoning in the table shows that:
+( )
+( )
+( )
+( )
+xP x
+x P x
+xP x
+x P x
+
+
+
+
+❑These are important. You will use these.
+
+
+
+### [Page 45]
+동아대학교
+Quantifier
+
+
+
+### [Page 46]
+동아대학교
+Qualifier
+수식어(qualifier)
+•
+영문법의 형용사와 유사한 역할을 하는 단어를 사용하여 이름을 구별하는 방법. 
+즉, 이름에 정보를 덧붙여 같은 이름들을 다르게 구별하는 것이다. 
+•
+C 언어에서 구조체 변수를 사용할 때 멤버참조연산자(.)를 사용하여
+멤버를 참조하여 사용한다.
+•
+완전 수식어(Complete qualifier), 부분 수식어(sub qualifier)
+A
+B
+C
+D
+E
+F
+B
+C
+•
+A 레코드 안에 B와 C 레코드가 있고, B 레코드 안에는 D와 E 레코드가 있다. C 
+레코드 안에는 F가 있고 D 레코드 안에는 B 레코드가 E 레코드 안에는 C 레코드가 
+다음과 같다.
+•
+F 레코드를 참조하기 위해서는 A, C, F와 같이 참조하는
+완전 수식어가 있고, F와 같이 참조하는 부분 수식어가 있다.
+
+
+| A |  |  |
+| --- | --- | --- |
+| B |  | C |
+| D | E | F |
+| B | C |  |
+
+
+### [Page 47]
+동아대학교
+Inference 논리적 추론
+
+
+
+### [Page 48]
+The Argument
+We can express the premises (above the line) 
+and the conclusion (below the line) in 
+predicate logic as an argument:
+( )
+( )
+(
+)
+(
+)
+(
+)
+   
+x Man x
+Mortal x
+Man Socrates
+Mortal Socrates
+
+→
+
+We will see shortly that this is a valid argument.
+
+
+
+### [Page 49]
+동아대학교
+Inference 논리적 추론 
+논리적 추론을 하기 위한 기본 법칙
+❖대체(substitution) : 한 명제에 있는 어떤 표현을 그것과 똑같은 의미를 지닌 
+다른 표현으로 나타내는 것
+p이다
+따라서 p 또는 Q이다
+p이면서 q이다
+따라서 p이다
+p이다
+p이면 q이다
+따라서 q이다
+q가 아니다
+p이면 q이다
+따라서 p이다
+(긍정 논법)
+(부정 논법)
+
+
+
+### [Page 50]
+동아대학교
+논리적 추론 
+p 또는 q이다
+p가 아니다
+따라서 q이다
+p이면 q이다
+q이면 r이다
+따라서 p이면 r이다
+p이다
+q이다
+따라서 p이고 q이다
+p이면 q이고, r이면 s
+이다 
+p이거나 r이다.
+따라서 q이거나 s이다
+p이면 q이고, r이면 s이다 
+q가 아니거나, s가 아니다
+따라서 p가 아니거나 r이 
+아니다
+
+
+
+### [Page 51]
+Rules of Inference for
+Propositional Logic: Modus Ponens
+   p
+q
+p
+q
+→
+
+Corresponding Tautology:
+(
+(
+))
+q
+p
+q
+q
+
+→
+→
+Example:
+Let p be “It is snowing.”
+Let q be “I will study discrete math.”
+“If it is snowing, then I will study discrete math.”
+“It is snowing.”
+“Therefore , I will study discrete math.”
+
+
+
+### [Page 52]
+Modus Tollens
+   p
+q
+p
+q
+→
+
+
+Corresponding Tautology:
+(
+(
+))
+q
+p
+q
+q
+
+
+→
+→
+Example:
+Let p be “it is snowing.”
+Let q be “I will study discrete math.”
+“If it is snowing, then I will study discrete math.”
+“I will not study discrete math.”
+“Therefore , it is not snowing.”
+
+
+
+### [Page 53]
+Hypothetical Syllogism
+   p
+q
+q
+r
+p
+r
+→
+→
+
+→
+Corresponding Tautology:
+(
+)
+(
+)
+(
+)
+(
+)
+p
+q
+q
+r
+p
+r
+→
+
+→
+→
+→
+Example:
+Let p be “it snows.”
+Let q be “I will study discrete math.”
+Let r be “I will get an A.”
+“If it snows, then I will study discrete math.”
+“If I study discrete math, I will get an A.”
+“Therefore , If it snows, I will get an A.”
+
+
+
+### [Page 54]
+Simplification
+p
+q
+p
+
+
+Corresponding Tautology:
+(
+)
+p
+q
+p
+
+→
+Example:
+Let p be “I will study discrete math.”
+Let q be “I will study English literature.”
+“I will study discrete math and English 
+literature”
+“Therefore, I will study discrete math.”
+
+
+
+### [Page 55]
+Conjunction
+      p
+q
+p
+q
+
+
+Corresponding Tautology:
+( )
+( )
+(
+)
+(
+)
+p
+q
+p
+q
+
+→
+
+Example:
+Let p be “I will study discrete math.”
+Let q be “I will study English literature.”
+“I will study discrete math.”
+“I will study English literature.”
+“Therefore, I will study discrete math and I will 
+study English literature.”
+
+
+
+### [Page 56]
+Resolution
+  p
+r
+p
+q
+q
+r
+
+
+
+
+Resolution plays an important role in 
+AI and is used in Prolog.
+Corresponding Tautology:
+(
+)
+(
+)
+(
+)
+(
+)
+p
+r
+p
+q
+q
+r
+
+
+
+→
+
+Example:
+Let p be “I will study discrete math.”
+Let r be “I will study English literature.”
+Let q be “I will study databases.”
+“I will not study discrete math or I will study English literature.”
+“I will study discrete math or I will study databases.”
+“Therefore, I will study databases or I will study English 
+literature.”
+
+
+
+### [Page 57]
+동아대학교
+논리적 추론 
+(1)
+(2)
+(3)
+결론
+
+
+
+### [Page 58]
+동아대학교
+논리적 추론 
+
+
+
+### [Page 59]
+동아대학교
+논리적 추론 
+𝑃⋀((¬𝐹⋁¬𝐴) →¬𝑃)
+∴¬(¬𝐹⋁¬𝐴)
+
+
+
+### [Page 60]
+동아대학교
+
+
+
+### [Page 61]
+동아대학교
+Proof
+
+
+
+### [Page 62]
+동아대학교
+Proof
+
+
+
+### [Page 63]
+동아대학교
+Proof 방법
+증명 문제 : 논리 함축 P → Q 를 증명하는 것이 대부분 
+❖증명 방법 : 직접 증명 방법, 간접 증명 방법
+• 직접 증명 방법 : 진리를 근거로 논리 함축 P→Q를 직접 증명하는 것
+• 간접 증명 방법 : 논리적 동치를 이용하거나 다른 특수한 방법으로 증명하는 것
+• 그 외 다음의 5가지로 나눌 수 있음
+
+
+
+### [Page 64]
+동아대학교
+Proof 방법
+논리 함축을 증명하기 위한 방법
+(1) P→Q의 vacuous 증명 방법 
+• P가 거짓이라 하면 P→Q는 항상 참이다.
+그래서 P→Q가 참인 것을 보이기 위해 P가 거짓이라는 것만 보이면 된다.
+(2) P→Q의 trivial 증명 방법 
+• Q가 참이라고 하면 P→Q는 참이다.
+그래서 P→Q가 참인 것을 보이기 위해 Q가 참이라는 것만 보이면 된다.
+
+
+
+### [Page 65]
+동아대학교
+Proof 방법
+(3) P→Q의 직접 증명 방법 
+• P가 참이라고 하면 P→Q가 참이기 위해서는 Q도 참이어야 한다.
+6x + 9y = 101
+→
+x 또는 y가 정수가 아님
+P
+Q
+(4) 간접 증명(indirect proof) 방법
+• 가정된 명제로부터 추론에 의해서 결론에 직접 도달되기가 어려운 경우에 
+간접적으로 결론이 참인 것을 이끌어내는 방법
+• 대우(Contraposition)를 이용하는 방법, 배리법(proof the contradiction), 존재 
+증명(existence proof) 등 3가지로 나누어 볼 수 있다. 
+
+
+
+### [Page 66]
+동아대학교
+Proof 방법
+①대우(contraposition)를 이용하는 방법 : P→Q와 ￢Q→￢P가 논리적으로 
+동치이므로 ￢Q→￢P가 참인 것을 증명함으로써 P→Q가 참인 것을 보여주는 것 
+(6, 28, 496, 8128, ....)
+
+
+
+### [Page 67]
+동아대학교
+Proof 방법
+②배리법 : 명제 P가 참인 것을 보여주는데 ￢P가 거짓임을 보이는 것
+(귀류법 또는 반증법이라고도 함, "Proof by Contradiction" 모순에 의한 증명"
+전제 (~P) : 가장 큰 소수는 존재한다
+
+
+
+### [Page 68]
+동아대학교
+Proof 방법
+③존재 증명 방법 : P(𝑥)를 𝑥라는 변수를 갖는 명제라고 할 때, P(𝑥)가 
+참인 𝑥가 존재함을 보이는 것이다. 즉, ∃𝑥 P(𝑥). 
+
+
+
+### [Page 69]
+동아대학교
+Proof 방법
+(5) 어떤 명제가 거짓임을 밝히기 위해 반증을이용하는 방법
+①반례에 의한 반증의 방법 : ∀𝑥P(𝑥)의 형태를 가진 명제가 거짓임을 증명하는데 편리한 
+방법으로서 명제의 부정 ∃𝑥￢P(𝑥)가 참임을 보이면 된다. 이때 𝑥를 반례라 한다. 
+② 모순에 의한 반증의 방법 : 주어진 명제가 거짓임을 보이기 위해서 그 명제가 
+참이라고 가정하여 이미 알고 있는 어떤 사실에 모순되는 결론을 유도하면 된다. 
+disproof, proof against
+contradiction
+
+
+
+### [Page 70]
+동아대학교
+Mathematical Induction
+수학적 귀납법
+❖새로운 결과를 얻기 위한 대표적인 논증 방법 : 연역법, 귀납법
+p이면 q이다
+q이면 r이다
+따라서 p이면 r이다
+
+
+
+### [Page 71]
+동아대학교
+Mathematical Induction
+수학적 귀납법
+
+
+
+### [Page 72]
+동아대학교
+Mathematical Induction
+
+
+
+### [Page 73]
+동아대학교
+Program Verification
+프로그램 검증(program verification) : 매우 어려운 문제
+
+
+
+### [Page 74]
+동아대학교
+Program Verification
+프로그램 검증(program verification) : 매우 어려운 문제
+
+
+
+### [Page 75]
+동아대학교
+정적인 방법
+프로그램의 검증 방법 : 정적(static)인 방법
+
+
+
+### [Page 76]
+동아대학교
+정적인 방법
+
+
+
+### [Page 77]
+동아대학교
+정적인 방법
+
+
+
+### [Page 78]
+동아대학교
+정적인 방법
+Note
+
+
+
+### [Page 79]
+동아대학교
+정적인 방법
+Note
+
+
+
+### [Page 80]
+동아대학교
+동적인 방법
+프로그램의 검증 방법 : 동적인 방법
+
+
+
+### [Page 81]
+동아대학교
+동적인 방법
+Note
+
+
+
+### [Page 82]
+동아대학교
+정적,동적 방법 비교
+정적 테스트 유형
+동적 테스트 유형
+동적 분석은 실제 동작 시 수행되므로 동적 분석 도구 연결 
+인터페이스 존재 필요(파일, 시리얼 등)
+모든 경로에 대해 분석하므로 TC(Test case)에 영향 없고, 
+Case 작성 소요 시간과 비용 절감
+출처 : http://blog.skby.net/소프트웨어-정적-테스트-동적
+-테스트/
+
+
+
+### [Page 83]
+동아대학교
+
+
+
+### [Page 84]
+동아대학교
+Knowledge-based System
+지식 베이스 시스템(knowledge-based system)
+인공지능(artificial intelligence)
+[WIkipedia] - 에이전트
+에이전트는 독자적으로 존재하지 않
+고 어떤 환경의 일부이거나 그 안에
+서 특정한 목적을 위해 사용자를 대
+신하여 동작하는 자율적 프로세스(시
+스템)이다. 여기서의 환경은 운영 체
+제, 네트워크 등을 지칭한다. 
+에이전트는 지식베이스와 추론 기능
+을 가지며 사용자, 자원(resource), 
+또는 다른 에이전트와의 정보교환과 
+통신을 통해 문제해결을 도모한다.
+성질: Autonomy(자율성), Social 
+ability(사회성), Reactivity(반응성), 
+Proactivity(능동성), Temporal 
+continuity(시간 연속성), Goal-
+orientedness(목표지향성)
+속성 : Mobility, Rationality, 
+Adaptability, Collaboration
+분류 : Learning agent, Interface 
+agent, Desktop agent, Internet 
+agent, Electronic commerce 
+agent 
+
+
+
+### [Page 85]
+동아대학교
+Knowledge-based System
+❖최근의 인공지능 : 기계학습과 딥 러닝이 대세
+[출처] https://www.geeksforgeeks.org/difference-between-ai-and-expert-system/ 
+
+
+
+### [Page 86]
+동아대학교
+Knowledge-based System
+❖Expert System
+
+
+
+### [Page 87]
+동아대학교
+Knowledge-based System
+• 전문가 시스템은 사실(fact)들을 저장하는 데이터베이스, 추론 규칙(rule)을 가지고 있는 지식 
+기반 시스템 그리고 사실들과 규칙으로부터 새로운 사실을 추론하는 추론 기관(inference 
+engine), 사용자들의 요구 사항들을 받는 사용자 인터페이스 등으로 구성되어 있다.
+• 추론 기관은 전문가 시스템에게 문제를 풀 수 있는 능력을 부여한다.
+❖Expert System
+[출처] https://sites.google.com/site/mrstevensonstechclassroom/hl-topics-only/4a-robotics-ai/5-expert-systems
+[출처] https://www.geeksforgeeks.org/difference-between-ai-and-expert-system/ 
+
+
+
+### [Page 88]
+동아대학교
+Knowledge-based System
+• 사용자가 추론 기관에 사용자 요구 사항
+들을 전달하면
+• 주어진 문제의 해결을 위해 추론 기관은 
+지식 기반 시스템에 있는 규칙들과 사실
+들을 저장하고 있는 데이터베이스를 탐색
+하고 새로운 사실들을 추론하고 제어한다. 
+• 이렇게 해서 얻어진 새로운 사실들을 사
+용자에게 다시 전달해주는 시스템이다. 
+
+
+
+### [Page 89]
+동아대학교
+Knowledge-based System
+
+
+
+### [Page 90]
+동아대학교
+◼SymPy
+90
+Appendix
+
+
+
+### [Page 91]
+동아대학교
+◼CLIPS
+91
+Appendix
+
