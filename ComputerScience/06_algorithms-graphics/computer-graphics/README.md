@@ -1,42 +1,25 @@
 ---
-title: 컴퓨터 그래픽스
-description: '렌더링과 그래픽스 기초. 학기: 3-2.'
+title: "computer-graphics"
+description: "원본 PDF 1개를 강의 흐름에 맞춰 정리한 색인."
 type: course-index
 tags:
-- course
-- 3-2
-course: computer-graphics
-semester: 3-2
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+  - course
+  - computer-graphics
+course: "computer-graphics"
+semester: extracurricular
+status: stable
+slides: true
 ---
 
-> [!abstract] 이 과목은
-> 렌더링과 그래픽스 기초. 학기: 3-2.
+## computer-graphics 강의 색인
 
-## 정리문서
+원본 PDF 1개를 파일명·첫 페이지 단서·쪽수 기준으로 정리했습니다. 먼저 [00. computer-graphics 강의 흐름 지도](./notes/00.%20computer-graphics%20강의%20흐름%20지도.md)를 열고, 이후 주제별 노트와 원본을 대조하세요.
 
-모두 `notes/` 에 있다. 총 8편.
+> [!note] 시각화 원칙
+> 강의 순서와 파일 관계는 Mermaid와 인터랙티브 슬라이더로 탐색합니다. 텍스트로 전달하기 어려운 원본 도식은 필요한 경우 승인된 PDF 크롭만 별도 자산으로 검토하며 전체 슬라이드·PDF는 삽입하지 않습니다.
 
-| 문서 | 다루는 내용 |
+| 항목 | 값 |
 | :-- | :-- |
-| [OpenGL 기본 구조 시험 대비](<./notes/OpenGL 기본 구조 시험 대비.md>) | — |
-| [OpenGL 폴리곤 그리기 정리](<./notes/OpenGL 폴리곤 그리기 정리.md>) | — |
-| [깊이 버퍼와 투영](<./notes/깊이-버퍼와-투영.md>) | — |
-| [OpenGL 좌표공간과 카메라](<./notes/좌표공간과-카메라.md>) | — |
-| [컴퓨터 그래픽스: 지오메트리](<./notes/지오매트리.md>) | — |
-| [컴퓨터그래픽스 기말 정리](<./notes/컴퓨터그래픽스 기말 정리.md>) | — |
-| [컴퓨터그래픽스 시험 대비 자료](<./notes/컴퓨터그래픽스-시험대비.md>) | — |
-| [0. 소개](<./notes/🖥️ 컴퓨터 그래픽스의 간략한 역사.md>) | — |
-
-## 원본 자료
-
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 1건.
-
-- `final exam.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+| 원본 PDF | 1개 |
+| 총 쪽수 | 0 |
+| 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |

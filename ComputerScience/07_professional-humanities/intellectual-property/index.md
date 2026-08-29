@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [지식재산권](./README.md) - 특허·저작권·상표 등 지식재산 제도. 학기: 3-1.
+* [intellectual-property](./README.md) - 원본 PDF 19개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

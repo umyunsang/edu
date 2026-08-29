@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [프로그래밍 언어론](./README.md) - 언어 설계 원리, 타입 체계, 실행 모델. 학기: 3-1.
+* [programming-languages](./README.md) - 원본 PDF 20개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

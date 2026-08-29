@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [창의적 글쓰기](./README.md) - MECE·로직트리·문단 구성 등 테크니컬 라이팅. 학기: 4-1.
+* [creative-writing](./README.md) - 원본 PDF 7개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

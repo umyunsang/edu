@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [컴퓨터 그래픽스](./README.md) - 렌더링과 그래픽스 기초. 학기: 3-2.
+* [computer-graphics](./README.md) - 원본 PDF 1개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

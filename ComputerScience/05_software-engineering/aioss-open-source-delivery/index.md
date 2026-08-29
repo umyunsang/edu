@@ -2,7 +2,7 @@
 
 ## course-index
 
-* [AIOSS 오픈소스 delivery](./README.md) - '메트릭·계획·협업·비동기 작업·GitHub Actions 등 오픈소스 개발 운영. 주차별 강의(md/Week0~6)와 실증
+* [aioss-open-source-delivery](./README.md) - 원본 PDF 24개를 강의 흐름에 맞춰 정리한 색인.
 
 ## Subdirectories
 

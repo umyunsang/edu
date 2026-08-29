@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [알고리즘 설계와 분석](./README.md) - '복잡도 분석, 억지기법·완전탐색, 축소정복, 분할정복, 공간으로 시간 벌기, 동적계획법, 탐욕적 기법, 백트래킹·분기한정,
+* [algorithm-design-analysis](./README.md) - 원본 PDF 25개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

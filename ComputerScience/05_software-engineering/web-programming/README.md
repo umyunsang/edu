@@ -1,61 +1,25 @@
 ---
-title: 웹 프로그래밍
-description: 'HTML/CSS/JS와 Spring Boot 기초. 학기: 2-1.'
+title: "web-programming"
+description: "원본 PDF 14개를 강의 흐름에 맞춰 정리한 색인."
 type: course-index
 tags:
-- course
-- 2-1
-course: web-programming
-semester: 2-1
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+  - course
+  - web-programming
+course: "web-programming"
+semester: extracurricular
+status: stable
+slides: true
 ---
 
-> [!abstract] 이 과목은
-> HTML/CSS/JS와 Spring Boot 기초. 학기: 2-1.
+## web-programming 강의 색인
 
-## 정리문서
+원본 PDF 14개를 파일명·첫 페이지 단서·쪽수 기준으로 정리했습니다. 먼저 [00. web-programming 강의 흐름 지도](./notes/00.%20web-programming%20강의%20흐름%20지도.md)를 열고, 이후 주제별 노트와 원본을 대조하세요.
 
-모두 `notes/` 에 있다. 총 14편.
+> [!note] 시각화 원칙
+> 강의 순서와 파일 관계는 Mermaid와 인터랙티브 슬라이더로 탐색합니다. 텍스트로 전달하기 어려운 원본 도식은 필요한 경우 승인된 PDF 크롭만 별도 자산으로 검토하며 전체 슬라이드·PDF는 삽입하지 않습니다.
 
-| 문서 | 다루는 내용 |
+| 항목 | 값 |
 | :-- | :-- |
-| [HTML 기초 실습](<./notes/HTML 기초 실습.md>) | — |
-| [HTML 기초 실습2](<./notes/HTML 기초 실습2.md>) | — |
-| [HTML 기초 연습문제](<./notes/HTML 기초 연습문제.md>) | — |
-| [HTML 기초2 문제 풀이](<./notes/HTML 기초2 문제 풀이.md>) | — |
-| [MYSQL](<./notes/MYSQL.md>) | — |
-| [Spring Boot 개발 환경 세팅 확인문제](<./notes/Spring Boot 개발 환경 세팅 확인문제.md>) | — |
-| [Spring Boot 기초 실습](<./notes/Spring Boot 기초 실습.md>) | — |
-| [Spring Boot 기초 확인문제](<./notes/Spring Boot 기초 확인문제.md>) | — |
-| [데이터베이스 확인문제](<./notes/데이터베이스 확인문제.md>) | — |
-| [데이터베이스](<./notes/데이터베이스.md>) | — |
-| [웹 시스템 제작 문제 풀이](<./notes/웹 시스템 제작 문제 풀이.md>) | — |
-| [웹 시스템 제작](<./notes/웹 시스템 제작.md>) | — |
-| [쿠키와 세션 확인문제](<./notes/쿠키와 세션 확인문제.md>) | — |
-| [쿠키와 세션](<./notes/쿠키와 세션.md>) | — |
-
-## 원본 자료
-
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 14건.
-
-- `1장_확인문제.pdf`
-- `2장_확인문제.pdf`
-- `3장_확인문제.pdf`
-- `4장_확인문제.pdf`
-- `5장_확인문제.pdf`
-- `6장_확인문제.pdf`
-- `7장_확인문제.pdf`
-- `HTML 기초 실습 2.pdf`
-- `HTML 기초.pdf`
-- `Spring Boot 개발 환경.pdf`
-- `Spring Boot 기초 실습.pdf`
-- `데이터베이스.pdf`
-- `웹 시스템 제작.pdf`
-- `쿠키와 세션.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+| 원본 PDF | 14개 |
+| 총 쪽수 | 0 |
+| 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |

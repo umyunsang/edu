@@ -1,92 +1,25 @@
 ---
-title: 프로그래밍 언어론
-description: '언어 설계 원리, 타입 체계, 실행 모델. 학기: 3-1.'
+title: "programming-languages"
+description: "원본 PDF 20개를 강의 흐름에 맞춰 정리한 색인."
 type: course-index
 tags:
-- course
-- 3-1
-course: programming-languages
-semester: 3-1
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+  - course
+  - programming-languages
+course: "programming-languages"
+semester: extracurricular
+status: stable
+slides: true
 ---
 
-> [!abstract] 이 과목은
-> 언어 설계 원리, 타입 체계, 실행 모델. 학기: 3-1.
+## programming-languages 강의 색인
 
-## 학습 경로
+원본 PDF 20개를 파일명·첫 페이지 단서·쪽수 기준으로 정리했습니다. 먼저 [00. programming-languages 강의 흐름 지도](./notes/00.%20programming-languages%20강의%20흐름%20지도.md)를 열고, 이후 주제별 노트와 원본을 대조하세요.
 
-번호는 강의 진도 순이다. 앞 문서를 읽었다는 전제로 다음 문서가 쓰인다.
+> [!note] 시각화 원칙
+> 강의 순서와 파일 관계는 Mermaid와 인터랙티브 슬라이더로 탐색합니다. 텍스트로 전달하기 어려운 원본 도식은 필요한 경우 승인된 PDF 크롭만 별도 자산으로 검토하며 전체 슬라이드·PDF는 삽입하지 않습니다.
 
-```mermaid
-flowchart LR
-    N0["0. 명령어 집합"]
-    N1["프로그래밍 언어론 - 기본사항"]
-    N2["2. 프로그래밍 언어의 발전사"]
-    N3["3. 구문론"]
-    N4["4. 재귀 하강 파싱"]
-    N5["이름, 바인딩, 영역"]
-    N6["데이터 타입"]
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-    N4 --> N5
-    N5 --> N6
-```
-
-## 정리문서
-
-모두 `notes/` 에 있다. 총 18편.
-
-| 문서 | 다루는 내용 |
+| 항목 | 값 |
 | :-- | :-- |
-| [0. 명령어 집합](<./notes/0. 명령어 집합.md>) | — |
-| [프로그래밍 언어론 - 기본사항](<./notes/1. 기본사항.md>) | — |
-| [2. 프로그래밍 언어의 발전사](<./notes/2. 프로그래밍 언어의 발전사.md>) | — |
-| [3. 구문론](<./notes/3. 구문론.md>) | — |
-| [3장 연습문제 (과제)](<./notes/3장 연습문제 (과제).md>) | — |
-| [REPORT](<./notes/3장 제출용.md>) | — |
-| [3장 복습문제](<./notes/3장_교재_문제.md>) | — |
-| [4. 재귀 하강 파싱](<./notes/4. 재귀 하강 파싱.md>) | — |
-| [4장 재귀 하강 파서 연습문제](<./notes/4장 재귀 하강 파서 연습문제.md>) | — |
-| [4장 복습문제](<./notes/4장_교재_문제.md>) | — |
-| [이름, 바인딩, 영역](<./notes/5. 이름, 바인딩, 영역.md>) | — |
-| [REPORT](<./notes/5장 연습문제 (제출용).md>) | — |
-| [5장 연습문제](<./notes/5장 연습문제.md>) | — |
-| [5장 교재 문제](<./notes/5장_교재_문제.md>) | — |
-| [데이터 타입](<./notes/6. 데이터 타입.md>) | — |
-| [6장_교재_문제](<./notes/6장_교재_문제.md>) | — |
-| [7장-12장 연습문제 종합](<./notes/7장-12장 연습문제 종합.md>) | — |
-| [REPORT](<./notes/9장 레포트.md>) | — |
-
-## 원본 자료
-
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 20건.
-
-- `0. 명령어 집합 1.pdf`
-- `1. 기본사항.pdf`
-- `2. 프로그래밍 언어의 발전사.pdf`
-- `3. 구문론.pdf`
-- `3장 연습.pdf`
-- `3장.pdf`
-- `4장.pdf`
-- `5. 이름, 바인딩, 영역.pdf`
-- `5.장.pdf`
-- `5장 연습문제.pdf`
-- `6. 데이터 타입.pdf`
-- `6장.pdf`
-- `chap00 강의소개.pdf`
-- `chap01 기본사항.pdf`
-- `chap02 프로그램밍언어 발전사.pdf`
-- `chap03-04 구문론과 파싱.pdf`
-- `chap05 이름 바인딩 영역.pdf`
-- `chap06 데이터 타입-1.pdf`
-- `chap06 데이터 타입-2.pdf`
-- `chap06 데이터 타입-3.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+| 원본 PDF | 20개 |
+| 총 쪽수 | 0 |
+| 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |

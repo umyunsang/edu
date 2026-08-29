@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [오픈소스 소프트웨어](./README.md) - JS 이벤트·객체·DOM 등 클라이언트 기초. 학기: 2-2.
+* [open-source-software](./README.md) - 원본 PDF 11개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

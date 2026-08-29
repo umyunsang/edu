@@ -2,4 +2,8 @@
 
 ## course-index
 
-* [인간환경과이해](./README.md) - 환경과 인간의 상호작용을 다루는 교양. 학기: extracurricular.
+* [인간환경과이해](./README.md) - 원본 PDF 6개를 강의 흐름에 맞춰 정리한 색인.
+
+## Subdirectories
+
+* [notes](./notes/index.md)

@@ -1,66 +1,25 @@
 ---
-title: 지식재산권
-description: '특허·저작권·상표 등 지식재산 제도. 학기: 3-1.'
+title: "intellectual-property"
+description: "원본 PDF 19개를 강의 흐름에 맞춰 정리한 색인."
 type: course-index
 tags:
-- course
-- 3-1
-course: intellectual-property
-semester: 3-1
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+  - course
+  - intellectual-property
+course: "intellectual-property"
+semester: extracurricular
+status: stable
+slides: true
 ---
 
-> [!abstract] 이 과목은
-> 특허·저작권·상표 등 지식재산 제도. 학기: 3-1.
+## intellectual-property 강의 색인
 
-## 정리문서
+원본 PDF 19개를 파일명·첫 페이지 단서·쪽수 기준으로 정리했습니다. 먼저 [00. intellectual-property 강의 흐름 지도](./notes/00.%20intellectual-property%20강의%20흐름%20지도.md)를 열고, 이후 주제별 노트와 원본을 대조하세요.
 
-모두 `notes/` 에 있다. 총 14편.
+> [!note] 시각화 원칙
+> 강의 순서와 파일 관계는 Mermaid와 인터랙티브 슬라이더로 탐색합니다. 텍스트로 전달하기 어려운 원본 도식은 필요한 경우 승인된 PDF 크롭만 별도 자산으로 검토하며 전체 슬라이드·PDF는 삽입하지 않습니다.
 
-| 문서 | 다루는 내용 |
+| 항목 | 값 |
 | :-- | :-- |
-| [1. IPAT 기출문제 지식재산권_답안통합](<./notes/1. IPAT 기출문제 지식재산권_답안통합.md>) | — |
-| [IPAT_기출문제](<./notes/IPAT_기출문제.md>) | — |
-| [디자인 제도의 목적과 개념](<./notes/디자인 제도의 목적과 개념.md>) | — |
-| [사용자 맞춤형 의자 시리즈 특허 명세서](<./notes/사용자 맞춤형 의자 시리즈 특허 명세서.md>) | — |
-| [상표_processed](<./notes/상표_processed.md>) | — |
-| [상표제도 및 등록요건](<./notes/상표제도 및 등록요건.md>) | — |
-| [저작권 제도와 등록요건](<./notes/저작권 제도와 등록요건.md>) | — |
-| [저작권_processed](<./notes/저작권_processed.md>) | — |
-| [지식재산권_processed](<./notes/지식재산권_processed.md>) | — |
-| [특허 명세서 작성법](<./notes/특허 명세서 작성법.md>) | — |
-| [특허 제도](<./notes/특허 제도.md>) | — |
-| [특허_processed](<./notes/특허_processed.md>) | — |
-| [특허명세서의 양식](<./notes/특허명세서의 양식.md>) | — |
-| [소개](<./notes/특허의 역사.md>) | — |
-
-## 원본 자료
-
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 19건.
-
-- `1. IPAT 기출문제 지식재산권_답안통합.pdf`
-- `1. 저작권제도 등록요건-(1주차-2).pdf`
-- `1.지식재산과목소개.pdf`
-- `2. 저작권제도 등록요건 2.pdf`
-- `2_명세서 작성 및 청구범위.pdf`
-- `과제2.pdf`
-- `디자인 제도 1차시.pdf`
-- `디자인 제도 2차시.pdf`
-- `명세서 작성 및 청구범위 해석(22.11.8).pdf`
-- `명세서 작성 및 청구범위 해석_강의자료(2022개론 9-1).pdf`
-- `발명의성립성신규성(4주차-2차시강의자료).pdf`
-- `발명의성립성신규성(5주차-1차시강의자료).pdf`
-- `상표제도 등록요건(1차시).pdf`
-- `상표제도 등록요건(2차시).pdf`
-- `오후 1 35 네이버 MYBOX.pdf`
-- `특허명세서 작성법.pdf`
-- `특허일반(직무발명).pdf`
-- `특허출원절차와보정-1.pdf`
-- `특허출원절차와보정-2.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+| 원본 PDF | 19개 |
+| 총 쪽수 | 0 |
+| 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |

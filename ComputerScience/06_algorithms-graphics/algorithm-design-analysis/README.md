@@ -1,64 +1,25 @@
 ---
-title: 알고리즘 설계와 분석
-description: '복잡도 분석, 억지기법·완전탐색, 축소정복, 분할정복, 공간으로 시간 벌기, 동적계획법, 탐욕적 기법, 백트래킹·분기한정,
-  NP완전과 근사 알고리즘. Pop Quiz 풀이 포함. 학기: 4-1.'
+title: "algorithm-design-analysis"
+description: "원본 PDF 25개를 강의 흐름에 맞춰 정리한 색인."
 type: course-index
 tags:
-- course
-- 4-1
-course: algorithm-design-analysis
-semester: 4-1
-status: draft
-created: '2026-08-28'
-updated: '2026-08-28'
+  - course
+  - algorithm-design-analysis
+course: "algorithm-design-analysis"
+semester: extracurricular
+status: stable
+slides: true
 ---
 
-> [!abstract] 이 과목은
-> 복잡도 분석, 억지기법·완전탐색, 축소정복, 분할정복, 공간으로 시간 벌기, 동적계획법, 탐욕적 기법, 백트래킹·분기한정, NP완전과 근사 알고리즘. Pop Quiz 풀이 포함. 학기: 4-1.
+## algorithm-design-analysis 강의 색인
 
-## 정리문서
+원본 PDF 25개를 파일명·첫 페이지 단서·쪽수 기준으로 정리했습니다. 먼저 [00. algorithm-design-analysis 강의 흐름 지도](./notes/00.%20algorithm-design-analysis%20강의%20흐름%20지도.md)를 열고, 이후 주제별 노트와 원본을 대조하세요.
 
-모두 `notes/` 에 있다. 총 5편.
+> [!note] 시각화 원칙
+> 강의 순서와 파일 관계는 Mermaid와 인터랙티브 슬라이더로 탐색합니다. 텍스트로 전달하기 어려운 원본 도식은 필요한 경우 승인된 PDF 크롭만 별도 자산으로 검토하며 전체 슬라이드·PDF는 삽입하지 않습니다.
 
-| 문서 | 다루는 내용 |
+| 항목 | 값 |
 | :-- | :-- |
-| [Pop Quiz #1 문제 풀이](<./notes/Pop Quiz 1 풀이.md>) | — |
-| [Pop Quiz #2 문제 풀이](<./notes/Pop Quiz 2 풀이.md>) | — |
-| [알고리즘_기말고사_정리](<./notes/알고리즘_기말고사_정리.md>) | — |
-| [알고리즘 중간고사 정리](<./notes/중간고사_정리.md>) | — |
-| [트리 만들기](<./notes/트리 만들기.md>) | — |
-
-## 원본 자료
-
-교수가 배포한 자료다. `sources/` 에 있고 수정하지 않는다. 총 25건.
-
-- `01장.알고리즘개요-파알.pdf`
-- `02장.알고리즘효율성분석-파알 2.pdf`
-- `02장.알고리즘효율성분석-파알.pdf`
-- `03장-억지기법과완전탐색-파알 2.pdf`
-- `03장-억지기법과완전탐색-파알.pdf`
-- `04장-축소정복기법-수정판 2.pdf`
-- `04장-축소정복기법-수정판.pdf`
-- `05장-분할정복기법-파알 2.pdf`
-- `05장-분할정복기법-파알.pdf`
-- `06장-공간으로시간벌기-수정판.pdf`
-- `07-동적계획법-보충-수정판 2.pdf`
-- `07-동적계획법-보충-수정판.pdf`
-- `07장-동적계획법-수정판 2.pdf`
-- `07장-동적계획법-수정판.pdf`
-- `08장-탐욕적기법-수정판.pdf`
-- `09장-백트래킹과분기한정-수정판-v2 2.pdf`
-- `09장-백트래킹과분기한정-수정판-v2.pdf`
-- `10장-NP완전과근사알고리즘-파알.pdf`
-- `Alg-PopQuiz-2-풀이-2.pdf`
-- `Pop Quiz 1 풀이.pdf`
-- `PopQuiz-25-1-풀이.pdf`
-- `알고리즘_기말고사_정리 2.pdf`
-- `알고리즘_기말고사_정리.pdf`
-- `중간고사_알고리즘_정밀분석_정리 2.pdf`
-- `중간고사_알고리즘_정밀분석_정리.pdf`
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+| 원본 PDF | 25개 |
+| 총 쪽수 | 0 |
+| 근거 | `sources/*.pdf`와 첫 페이지 텍스트 추출 |
