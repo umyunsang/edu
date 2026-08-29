@@ -1,44 +1,123 @@
 ---
-title: LLM 이해와 활용
-description: 언어 모델 구조·생성 API·RAG·LangChain 실행 구성을 입력·출력·검증 관점에서 연결한 과목 인덱스.
+title: 대규모 언어 모델과 RAG
+description: 자연어 처리와 GPT 구조에서 OpenAI API, 임베딩·RAG, LangChain 실행 구조까지 이어지는 학습 경로
 type: course-index
 tags:
-  - course
-  - llm
+  - large-language-model
+  - openai-api
   - rag
+  - langchain
 course: large-language-models
 semester: extracurricular
 status: draft
 aliases: []
-created: 2026-08-28
-updated: 2026-08-29
+slides: true
+created: '2026-08-29'
+updated: '2026-08-29'
 ---
 
-> [!abstract] 언어 모델의 토큰·문맥·생성 원리에서 API 계약, 검색 증강, 조합 가능한 실행 흐름까지를 검증 가능한 입출력 관점으로 학습한다.
+> [!ABSTRACT]
+> ==언어 모델의 작동 원리에서 출발해 API 실행 계약을 익히고, 외부 지식 검색과 LangChain 구성 요소로 응용 범위를 넓힌다.==
+
+- **모델 층:** NLP 처리, Attention, Transformer, GPT 학습
+- **API 층:** 요청·응답, 대화·이미지·오디오, 임베딩, 파인튜닝, 개발 환경
+- **검색 층:** 문서 분할, 벡터 저장, 검색 최적화, RAG
+- **오케스트레이션 층:** Chain, Agent, Memory, LCEL, 도구와 출력 파서
+
+---
 
 ## 학습 경로
 
 ```mermaid
-flowchart TB
-    subgraph Model[모델]
-        direction LR
-        A[토큰] --> B[생성]
-    end
-    subgraph System[시스템]
-        direction LR
-        C[RAG] --> D[조합]
-    end
-    B --> C
+flowchart LR
+    A["NLP와 Attention"] --> B["Transformer와 GPT"]
+    B --> C["OpenAI API와 멀티모달"]
+    C --> D["임베딩과 RAG"]
+    D --> E["LangChain·도구·배포"]
 ```
 
-## 학습 범위
+> [!TIP]
+> 모델 이름보다 **입력 표현 → 생성 구조 → API 계약 → 검색 근거 → 실행 관찰**의 연결을 따라가면 두 원본의 내용을 하나의 시스템으로 이해할 수 있다.
+
+---
+
+## 두 원본의 역할
+
+<Tabs>
+  <Tab label="OpenAI API">
+
+NLP와 GPT 계열의 구조·학습 흐름을 먼저 잡고, 요청·응답과 Completion·Chat, 이미지·오디오·모더레이션을 거쳐 토큰화·임베딩·Faiss, 파인튜닝, Windows 환경과 키 관리로 확장한다.
+
+  </Tab>
+  <Tab label="RAG·LangChain">
+
+외부 문서 로딩·분할·임베딩·인덱싱에서 출발해 검색 최적화와 LlamaIndex·벡터 저장소를 비교하고, Chain·Agent·Memory·LCEL과 Few-shot·파서·도구·추적 환경으로 이어 간다.
+
+  </Tab>
+</Tabs>
+
+---
+
+## 정리문서
+
+| 번호 | 문서 | 핵심 질문 | 근거 상태 |
+| :-- | :-- | :-- | :-- |
+| 01 | [NLP 처리에서 어텐션까지](notes/01.%20NLP%20처리에서%20어텐션까지.md) | 규칙 기반 처리에서 Attention까지 어떤 병목이 해결되었는가 | 반영 |
+| 11 | [Transformer와 언어 모델 계열](notes/11.%20Transformer와%20언어%20모델%20계열.md) | 인코더·디코더 구조와 언어 모델 계열은 어떻게 구분되는가 | 반영 |
+| 19 | [GPT 구조와 학습 전략](notes/19.%20GPT%20구조와%20학습%20전략.md) | GPT 규모·문맥 학습·미세조정·RLHF는 어떻게 연결되는가 | 반영 |
+| 40 | [ChatGPT 모델 선택과 활용 한계](notes/40.%20ChatGPT%20모델%20선택과%20활용%20한계.md) | 모델 선택과 활용 영역의 한계를 어떻게 판별하는가 | 반영 |
+| 49 | [OpenAI API 요청·응답과 도구 호출](notes/49.%20OpenAI%20API%20요청·응답과%20도구%20호출.md) | 요청 계약·응답 필드·스트리밍·도구 실행의 책임은 무엇인가 | 반영 |
+| 62 | [Completion API 매개변수와 텍스트 생성](notes/62.%20Completion%20API%20매개변수와%20텍스트%20생성.md) | 생성 매개변수와 legacy API 예제를 어떻게 해석하는가 | 반영 |
+| 73 | [Chat Completion 대화 설계와 편집](notes/73.%20Chat%20Completion%20대화%20설계와%20편집.md) | 메시지 역할·문맥·출력 제어를 어떻게 조합하는가 | 반영 |
+| 86 | [이미지 생성·편집·변형 API](notes/86.%20이미지%20생성·편집·변형%20API.md) | 생성·마스크 편집·변형의 입력과 제한은 어떻게 다른가 | 반영 |
+| 92 | [토큰화·임베딩·Faiss 유사도 검색](notes/92.%20토큰화·임베딩·Faiss%20유사도%20검색.md) | 텍스트가 토큰과 벡터를 거쳐 최근접 검색으로 이어지는가 | 반영 |
+| 104 | [오디오·모더레이션·추론 모델 API](notes/104.%20오디오·모더레이션·추론%20모델%20API.md) | 음성·검토·추론 모델의 요청과 시점 제약은 무엇인가 | 반영 |
+| 116 | [파인튜닝 데이터·작업·한계](notes/116.%20파인튜닝%20데이터·작업·한계.md) | 학습 데이터와 작업 생명주기를 어떻게 검증하는가 | 반영 |
+| 131 | [Windows AI 개발환경 구성](notes/131.%20Windows%20AI%20개발환경%20구성.md) | Conda·Git·PowerShell·VS Code를 어떤 순서로 준비하는가 | 반영 |
+| 144 | [OpenAI API 키·결제·환경변수](notes/144.%20OpenAI%20API%20키·결제·환경변수.md) | 결제·한도·키·환경변수를 어떻게 분리 관리하는가 | 반영 |
+| 04 | [RAG의 원리와 인덱싱](notes/04.%20RAG의%20원리와%20인덱싱.md) | 외부 자료가 검색 가능한 지식 구조로 바뀌는 과정은 무엇인가 | 반영 |
+| 19 | [검색 최적화와 LlamaIndex·벡터 저장소](notes/19.%20검색%20최적화와%20LlamaIndex·벡터%20저장소.md) | 검색기·재순위화·저장소를 어떤 기준으로 조합하는가 | 반영 |
+| 51 | [LangChain 체인·에이전트·메모리와 LCEL](notes/51.%20LangChain%20체인·에이전트·메모리와%20LCEL.md) | 고정 체인과 동적 에이전트의 실행·상태 관리는 어떻게 다른가 | 반영 |
+| 82 | [Few-shot 프롬프트·모델·출력 파서와 도구](notes/82.%20Few-shot%20프롬프트·모델·출력%20파서와%20도구.md) | 예시·모델·파서·도구를 안정된 실행 단위로 어떻게 묶는가 | 반영 |
+| 109 | [개발 환경·API 키와 보충 사례](notes/109.%20개발%20환경·API%20키와%20보충%20사례.md) | 환경 설정과 모델·데이터 보충 사례를 어떻게 구분하는가 | 반영 |
+
+---
+
+## 과정 스냅샷
+
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px">
+  <div id="cards" style="display:flex;gap:14px;flex-wrap:wrap"></div>
+  <script>
+    var stats = [
+      ['학습 노트', '18', '서로 겹치지 않는 주제 구간', 'var(--chart-2)'],
+      ['원본 파일', '2', 'OpenAI API와 RAG·LangChain', 'var(--chart-1)'],
+      ['저밀도 블록', '67', '추정하지 않고 경계 표시', 'var(--chart-5)']
+    ];
+    document.getElementById('cards').innerHTML = stats.map(function (s) {
+      return '<div style="flex:1;min-width:150px;padding:16px;background:var(--card);' +
+        'color:var(--card-foreground);border:1px solid var(--border);' +
+        'border-radius:var(--radius)">' +
+        '<div style="font-size:13px;color:var(--muted-foreground)">' + s[0] + '</div>' +
+        '<div style="font-size:26px;font-weight:700;margin-top:4px">' + s[1] + '</div>' +
+        '<div style="font-size:12px;font-weight:600;margin-top:4px;color:' + s[3] + '">' +
+        s[2] + '</div>' +
+        '</div>';
+    }).join('');
+  </script>
+</div>
+```
+
+---
+
+## 본문 배정 규모
 
 ```html preview
 <div style="font-family:system-ui,sans-serif;padding:20px;color:var(--foreground)">
-  <h3 style="margin:0 0 14px;font-size:15px;font-weight:600">현재 학습 경로의 노트 수</h3>
+  <h3 style="margin:0 0 14px;font-size:15px;font-weight:600">노트 본문에 배정된 원본 블록</h3>
   <div id="bars" style="display:flex;align-items:flex-end;gap:14px;height:170px"></div>
   <script>
-    var data = [['모델·API', 11], ['RAG·LangChain', 5]];
+    var data = [['OpenAI API', 158], ['RAG·LangChain', 125]];
     var max = Math.max.apply(null, data.map(function (d) { return d[1]; }));
     document.getElementById('bars').innerHTML = data.map(function (d, i) {
       return '<div style="flex:1;display:flex;flex-direction:column;align-items:center;' +
@@ -54,41 +133,49 @@ flowchart TB
 </div>
 ```
 
-> [!important] 인덱스의 경계
-> 이 인덱스는 공개 학습 노트의 흐름과 실제 Markdown 경로만 제공한다. 원본 PDF·자산·페이지 근거는 포함하지 않는다.
+- 두 막대는 같은 단위인 추출 블록 수만 비교한다.
+- 나머지 블록은 표지·목차·종결 화면 또는 두 원본의 중복 부록과 반복 내용이다.
+- 중복 부록은 RAG·LangChain 쪽에서 한 번만 설명하고, OpenAI API 쪽에는 별도 노트를 만들지 않는다.
 
-## 모델과 API 노트
+---
 
-| # | 노트 | 다루는 것 |
+## 범위 판정
+
+```html preview
+<div style="font-family:system-ui,sans-serif;padding:20px;display:flex;align-items:center;gap:20px;color:var(--foreground)">
+  <svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="301 of 301 source blocks reviewed">
+    <circle cx="60" cy="60" r="46" stroke-width="14" style="fill: none; stroke: var(--border)" />
+    <circle cx="60" cy="60" r="46" stroke-width="14"
+      stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="0"
+      transform="rotate(-90 60 60)" style="fill: none; stroke: var(--chart-1)" />
+    <text x="60" y="67" text-anchor="middle" font-size="22" font-weight="700"
+      style="fill: var(--foreground)">100%</text>
+  </svg>
+  <div>
+    <div style="font-weight:600;font-size:15px">원본 추출 블록 판정</div>
+    <div style="font-size:13px;color:var(--muted-foreground);margin-top:2px">301개 중 301개를 배정·중복·구조 범위로 분류</div>
+  </div>
+</div>
+```
+
+<details>
+<summary>중복·구조 범위 판정 기준</summary>
+
+- 두 원본에서 정규화 텍스트가 같은 블록은 동일한 설명을 두 노트에 반복하지 않는다.
+- 표지·목차·종결 화면은 새로운 기술 설명이 없으면 독립 노트를 만들지 않는다.
+- 텍스트가 희박한 블록은 주변 그림을 추정하지 않고 담당 노트에서 근거 한계로 표시한다.
+- 모든 공개 노트는 원본 이미지·PDF 링크·텍스트형 페이지 인용 없이 추출 내용만 재구성한다.
+
+</details>
+
+---
+
+## 근거 범위
+
+| 원본 식별자 | 담당 문서 | 판정 |
 | :-- | :-- | :-- |
-| 04 | [LLM과 NLP의 발전](<./notes/OpenAI API 04. LLM과 NLP의 발전.md>) | 언어 처리 관점의 변화 |
-| 16 | [LLM과 GPT 구조](<./notes/OpenAI API 16. LLM과 GPT 구조.md>) | 토큰·주의·다음 예측 |
-| 27 | [ChatGPT 모델과 학습](<./notes/OpenAI API 27. ChatGPT 모델과 학습.md>) | 맥락·학습·평가 적응 |
-| 44 | [API 요청과 모델 호환성](<./notes/OpenAI API 44. API 요청과 모델 호환성.md>) | 엔드포인트와 요청 계약 |
-| 57 | [Chat Completion과 스트리밍](<./notes/OpenAI API 57. Chat Completion과 스트리밍.md>) | 역할·부분 응답·상태 |
-| 67 | [텍스트 생성과 프롬프트](<./notes/OpenAI API 67. 텍스트 생성과 프롬프트.md>) | 목적·맥락·출력 계약 |
-| 84 | [텍스트 편집과 이미지 생성](<./notes/OpenAI API 84. 텍스트 편집과 이미지 생성.md>) | 유지·변환·검수 |
-| 106 | [Tokenizer와 Embedding](<./notes/OpenAI API 106. Tokenizer와 Embedding.md>) | 입력 단위와 의미 검색 |
-| 116 | [오디오, Moderation, 추론](<./notes/OpenAI API 116. 오디오, Moderation, 추론.md>) | 작업별 검증 경계 |
-| 128 | [Fine-Tuning](<./notes/OpenAI API 128. Fine-Tuning.md>) | 목표·데이터·평가 분리 |
-| 139 | [개발환경과 키 관리](<./notes/OpenAI API 139. 개발환경과 키 관리.md>) | 비밀값·권한·운영 기록 |
+| OpenAI API.pdf | NLP·GPT·API·멀티모달·임베딩·파인튜닝·환경 13편 | 고유 본문 반영, 후반 중복 부록·반복·종결 범위는 별도 노트 미생성 |
+| RAG_LangChain.pdf | RAG·검색·LangChain·도구·보충 사례 5편 | 고유 본문 반영, 표지·목차·종결 범위는 별도 노트 미생성 |
 
-## RAG와 LangChain 노트
-
-| # | 노트 | 다루는 것 |
-| :-- | :-- | :-- |
-| 04 | [RAG의 원리와 파이프라인](<notes/04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md>) | 검색과 생성의 연결 |
-| 19 | [데이터 로드와 검색 최적화](<notes/19.%20%EA%B2%80%EC%83%89%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%99%80%20LlamaIndex%C2%B7%EB%B2%A1%ED%84%B0%20%EC%A0%80%EC%9E%A5%EC%86%8C.md>) | 분할·검색·재정렬 |
-| 51 | [LlamaIndex와 벡터 저장소](<notes/51.%20LangChain%20%EC%B2%B4%EC%9D%B8%C2%B7%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%C2%B7%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20LCEL.md>) | 인덱스·벡터·메타데이터 |
-| 82 | [LangChain 모듈과 에이전트](<notes/82.%20Few-shot%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%C2%B7%EB%AA%A8%EB%8D%B8%C2%B7%EC%B6%9C%EB%A0%A5%20%ED%8C%8C%EC%84%9C%EC%99%80%20%EB%8F%84%EA%B5%AC.md>) | 체인·에이전트·도구·추적 |
-| 109 | [Runnable, LCEL, 프롬프트](<notes/109.%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%C2%B7API%20%ED%82%A4%EC%99%80%20%EB%B3%B4%EC%B6%A9%20%EC%82%AC%EB%A1%80.md>) | 입력·출력 계약의 조합 |
-
-## 이 과목이 연결되는 곳
-
-- **prerequisite** — 프로그래밍·데이터·확률 기초 : 요청·표현·평가의 바탕이 된다.
-- **applies-to** — 검색 시스템·대화 서비스·에이전트 워크플로 : 언어 모델을 실제 입력·출력 흐름에 연결한다.
-
-> [!question]- 학습 순서 점검
-> **Q.** RAG를 학습하기 전에 먼저 이해해야 할 모델 개념은 무엇인가?
->
-> **A.** 토큰·문맥·임베딩·생성 요청의 입력과 출력 구조다.
+> [!WARNING]
+> 두 원본 사이에서 넓게 겹치는 블록 쌍 17개와 정규화 텍스트가 정확히 같은 쌍 11개를 확인했다. LangSmith·외부 API 키·확장 도구 부록은 RAG·LangChain 노트에서만 담당한다. 원문에 노출된 키·조직 식별자와 잘못된 API·JSON 표기는 재현하지 않고 각 담당 노트에서 오류·보안 경계로 기록한다.
