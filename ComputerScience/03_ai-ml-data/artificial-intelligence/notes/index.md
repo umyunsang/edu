@@ -1,57 +1,13 @@
----
-title: "artificial-intelligence"
-type: "overview"
-tags:
-  - "artificial-intelligence"
-  - "overview"
-  - "index"
-course: "artificial-intelligence"
-semester: "2-1"
-status: "stable"
-authority: "primary"
-created: "2026-08-29"
-updated: "2026-08-29"
----
+# Index
 
-# 📚 인공지능 (Artificial Intelligence & Deep Learning) 전체 강의 로드맵
+## lecture
 
-단층 퍼셉트론과 XOR 문제의 선형 분리 한계, 다층 퍼셉트론(MLP)과 범용 근사 정리, 연쇄 법칙 기반의 오차역전파(Backpropagation) 수학적 유도, 경사하강법과 모멘텀/Adam 최적화, 편향-분산 트레이드오프와 정규화(Dropout, BatchNorm, L1/L2), 기울기 소실과 활성화 함수 진화(Sigmoid ➔ ReLU/GELU) 및 가중치 초기화(Xavier/He), 합성곱 신경망(CNN)의 공간 차원 수식 및 수용장, 대표 심층 비전 아키텍처(AlexNet, VGGNet, ResNet 잔차 학습), 그리고 실전 CIFAR-10 및 생성형 AI 아바타 파이프라인까지 인공지능 딥러닝 전반을 체계적으로 다룹니다.
-
----
-
-## 🗺️ 강의 목차 (Curriculum Overview)
-
-```mermaid
-graph TD
-    N1["01. 퍼셉트론과 인공신경망의 기원<br/>단층 한계(XOR) & 활성화 함수 & 선형 분리 결정 경계"] --> N2["02. 다층 퍼셉트론(MLP)과 표현력<br/>은닉층 & 범용 근사 정리 & 행렬 순전파 & Softmax"]
-    N2 --> N3["03. 오차역전파(Backpropagation)와 연쇄 법칙<br/>계산 그래프 & 국소 미분 & dL/dW 수식 유도"]
-    N3 --> N4["04. 손실 함수와 최적화(Optimizer)<br/>MSE/BCE & SGD & Momentum & RMSProp & Adam 수렴"]
-    N4 --> N5["05. 과적합(Overfitting)과 일반화 기법<br/>편향-분산 & Dropout & Batch Normalization & L1/L2 규제"]
-    N5 --> N6["06. 기울기 소실과 활성화 함수 진화<br/>Sigmoid 한계 & ReLU/GELU & Xavier vs He 초기화"]
-    N6 --> N7["07. 합성곱 신경망(CNN)의 핵심 원리<br/>Conv2D 연산 & 커널/패딩/스트라이드 공간 수식 & MaxPool"]
-    N7 --> N8["08. 심층 CNN 아키텍처와 잔차 연결<br/>AlexNet & VGGNet (3x3 중첩) & ResNet 스킵 연결(F(x)+x)"]
-    N8 --> N9["09. 실전 컴퓨터 비전 파이프라인<br/>CIFAR-10 분류기 & 확산 모델(Diffusion) 기반 AI 아바타"]
-```
-
----
-
-## 📑 개별 정리 문서 목록
-
-1. [01. 퍼셉트론과 인공신경망의 기원 - 단층 한계(XOR), 활성화 함수와 선형 분류](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/01.%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%EA%B3%BC%20%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D%EC%9D%98%20%EA%B8%B0%EC%9B%90%20-%20%EB%8B%A8%EC%층%20%ED%95%9C%EA%B3%84(XOR),%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%EC%99%80%20%EC%84%A0%ED%98%95%20%EB%B6%84%EB%A5%98.md)
-   - $z = \mathbf{w}^T \mathbf{x} + b$, XOR 선형 분리 불가 증명, 대화형 2D 퍼셉트론 분류기
-2. [02. 다층 퍼셉트론(MLP)과 표현력 - 은닉층, 범용 근사 정리와 순전파 연산](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/02.%20%EB%8B%A4%EC%층%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0(MLP)%EA%B3%BC%20%ED%91%9C%ED%98%84%EB%A0%A5%20-%20%EC%9D%80%EB%8B%89%EC%층,%20%EB%B2%94%EC%9A%A9%20%EA%B7%BC%EC%82%AC%20%EC%A0%95%EB%A6%AC%EC%99%80%20%EC%88%9C%EC%A0%84%ED%8C%8C%20%EC%97%B0%EC%82%B0.md)
-   - 범용 근사 정리, 행렬 순전파 공식, Softmax 다중 클래스 확률, 실시간 2층 MLP 연산기
-3. [03. 오차역전파(Backpropagation)와 연쇄 법칙 - 가중치 그래디언트 유도와 계산 그래프](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/03.%20%EC%98%A4%EC%B0%A8%EC%97%AD%EC%A0%84%ED%8C%8C(Backpropagation)%EC%99%80%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99%20-%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EA%B7%B8%EB%9E%98%EB%94%94%EC%96%B8%ED%8A%B8%20%EC%9C%A0%EB%8F%84%EC%99%80%20%EA%B3%84%EC%82%B0%20%EA%B7%B8%EB%9E%98%ED%94%84.md)
-   - 미분의 연쇄 법칙, 국소 그래디언트 $\delta$ 유도, 계산 그래프 시퀀스, 실시간 오차역전파 계산기
-4. [04. 손실 함수와 경사하강법 및 최적화(Optimizer) - SGD, 모멘텀, RMSProp, Adam](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/04.%20%EC%86%90%EC%8B%A4%20%ED%95%A8%EC%88%98%EC%99%80%20%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95%20%EB%B0%8F%20%EC%B5%9C%EC%A0%81%ED%99%94(Optimizer)%20-%20SGD,%20%EB%AA%A8%EB%A9%98%ED%85%80,%20RMSProp,%20Adam.md)
-   - 4대 옵티마이저 수식 비교, 안장점 탈출 메커니즘, 실시간 수렴 궤적 시뮬레이터
-5. [05. 과적합(Overfitting)과 일반화 기법 - 편향-분산 트레이드오프, 드롭아웃, 배치 정규화, L1-L2 규제](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/05.%20%EA%B3%BC%EC%A0%81%ED%95%A9(Overfitting)%EA%B3%BC%20%EC%9D%BC%EB%B0%98%ED%99%94%20%EA%B8%B0%EB%B2%95%20-%20%ED%8E%B8%ED%96%A5-%EB%B6%84%EC%82%B0%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%EC%98%A4%ED%94%84,%20%EB%93%9C%EB%A1%AD%EC%95%84%EC%9B%83,%20%EB%B0%B0%EC%B9%98%20%EC%A0%95%EA%B7%9C%ED%99%94,%20L1-L2%20%EA%B7%9C%EC%A0%9C.md)
-   - L1 vs L2 규제, Dropout 앙상블 효과, BatchNorm 4단계, 실시간 L2 가중치 감쇠 시뮬레이터
-6. [06. 기울기 소실(Vanishing Gradient)과 활성화 함수 진화 - Sigmoid의 한계, ReLU, LeakyReLU, GELU 및 가중치 초기화(Xavier-He)](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/06.%20%EA%B8%B0%EC%9A%B8%EA%B8%B0%20%EC%86%8C%EC%8B%A4(Vanishing%20Gradient)%EA%B3%BC%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%20%EC%A7%84%ED%99%94%20-%20Sigmoid%EC%9D%98%20%ED%95%9C%EA%B3%84,%20ReLU,%20LeakyReLU,%20GELU%20%EB%B0%8F%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EC%B4%88%EA%B8%B0%ED%99%94(Xavier-He).md)
-   - $\sigma'(z) \le 0.25$ 소실 수식 유도, ReLU/GELU 비포화성, Xavier/He 분산 보존, 계층별 기울기 감쇠 시뮬레이터
-7. [07. 합성곱 신경망(CNN)의 핵심 원리 - 합성곱 연산, 패딩·스트라이드 공간 차원 수식, 풀링과 채널](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/07.%20%ED%95%A9%EC%84%B1%EA%B3%B1%20%EC%8B%A0%EA%B2%BD%EB%A7%9D(CNN)%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC%20-%20%ED%95%A9%EC%84%B1%EA%B3%B1%20%EC%97%B0%EC%82%B0,%20%ED%8C%A8%EB%94%A9%C2%B7%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%EB%93%9C%20%EA%B3%B5%EA%B0%84%20%EC%B0%A8%EC%9B%90%20%EC%88%98%EC%8B%9D,%20%ED%92%80%EB%A7%81%EA%B3%BC%20%EC%Bchannel%EB%84%90.md)
-   - $O = \lfloor(W-K+2P)/S\rfloor + 1$ 공식, 가중치 공유, 실시간 Conv2D 출력 차원 & 파라미터 계산기
-8. [08. 심층 CNN 아키텍처와 잔차 연결 - AlexNet, VGGNet, ResNet의 잔차 블록과 특징 맵](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/08.%20%EC%8B%AC%EC%층%20CNN%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%99%80%20%EC%9E%94%EC%B0%A8%20%EC%97%B0%EA%B2%B0%20-%20AlexNet,%20VGGNet,%20ResNet%EC%9D%98%20%EC%9E%94%EC%B0%A8%20%EB%B8%94%EB%A1%9D%EA%B3%BC%20%ED%8A%B9%EC%A7%95%20%EB%A7%B5.md)
-   - $3 \times 3$ 중첩 수용장, ResNet $\mathcal{H}(\mathbf{x}) = \mathcal{F}(\mathbf{x}) + \mathbf{x}$ 잔차 고속도로, 실시간 스킵 연결 시뮬레이터
-9. [09. 실전 컴퓨터 비전 파이프라인 - CIFAR-10 이미지 분류 모델 학습 및 생성형 AI 아바타 실습](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/artificial-intelligence/notes/09.%20%EC%8B%A4%EC%A0%84%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20-%20CIFAR-10%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%B6%84%EB%A5%98%20%EB%AA%A8%EB%8D%B8%20%ED%95%99%EC%8A%B5%20%EB%B0%8F%20%EC%83%9D%EC%84%B1%ED%98%95%20AI%20%EC%95%84%EB%B0%94%ED%83%80%20%EC%8B%A4%EC%8A%B5.md)
-   - CIFAR-10 학습 파이프라인, 확산(Diffusion) 모델 기반 AI 아바타 3단계 워크플로, 실시간 이미지 분류기 데모
+* [01. 퍼셉트론과 인공신경망의 기원 - 단층 한계(XOR), 활성화 함수와 선형 분류](./01.%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%EA%B3%BC%20%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D%EC%9D%98%20%EA%B8%B0%EC%9B%90%20-%20%EB%8B%A8%EC%B8%B5%20%ED%95%9C%EA%B3%84%28XOR%29%2C%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%EC%99%80%20%EC%84%A0%ED%98%95%20%EB%B6%84%EB%A5%98.md) - 프랑크 로젠블랫의 단층 퍼셉트론(Single-Layer Perceptron), 가중치 합과 편향(z = w^T x + b), 계단 함수/시그모이드 활성화, AND/OR/NAND 선형 분리 가능성, 민스키-페퍼트의 XOR 비선형 분리 불가능성 증명, 그리고 다층 구조로의 확장을 인터랙티브 2D 퍼셉트론 결정 경계 시뮬레이터로 학습한다.
+* [02. 다층 퍼셉트론(MLP)과 표현력 - 은닉층, 범용 근사 정리와 순전파 연산](./02.%20%EB%8B%A4%EC%B8%B5%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%28MLP%29%EA%B3%BC%20%ED%91%9C%ED%98%84%EB%A0%A5%20-%20%EC%9D%80%EB%8B%89%EC%B8%B5%2C%20%EB%B2%94%EC%9A%A9%20%EA%B7%BC%EC%82%AC%20%EC%A0%95%EB%A6%AC%EC%99%80%20%EC%88%9C%EC%A0%84%ED%8C%8C%20%EC%97%B0%EC%82%B0.md) - 은닉층(Hidden Layer)을 통한 특징 공간 비선형 변환, 범용 근사 정리(Universal Approximation Theorem), 다층 퍼셉트론(MLP)의 행렬 기반 순전파(Forward Propagation) 연산(Z = WX + B, A = sigma(Z)), 그리고 다중 클래스 분류를 위한 소프트맥스(Softmax) 함수를 인터랙티브 2층 MLP 순전파 계산기로 학습한다.
+* [03. 오차역전파(Backpropagation)와 연쇄 법칙 - 가중치 그래디언트 유도와 계산 그래프](./03.%20%EC%98%A4%EC%B0%A8%EC%97%AD%EC%A0%84%ED%8C%8C%28Backpropagation%29%EC%99%80%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99%20-%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EA%B7%B8%EB%9E%98%EB%94%94%EC%96%B8%ED%8A%B8%20%EC%9C%A0%EB%8F%84%EC%99%80%20%EA%B3%84%EC%82%B0%20%EA%B7%B8%EB%9E%98%ED%94%84.md) - 다층 신경망 학습의 핵심인 오차역전파(Backpropagation) 알고리즘, 미분의 연쇄 법칙(Chain Rule), 계산 그래프(Computational Graph)를 통한 국소적 미분 전달, 가중치/편향에 대한 손실 함수의 편미분(dL/dW, dL/db) 유도, 그리고 에포크별 가중치 갱신을 인터랙티브 2노드 오차역전파 계산기로 학습한다.
+* [04. 손실 함수와 경사하강법 및 최적화(Optimizer) - SGD, 모멘텀, RMSProp, Adam](./04.%20%EC%86%90%EC%8B%A4%20%ED%95%A8%EC%88%98%EC%99%80%20%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95%20%EB%B0%8F%20%EC%B5%9C%EC%A0%81%ED%99%94%28Optimizer%29%20-%20SGD%2C%20%EB%AA%A8%EB%A9%98%ED%85%80%2C%20RMSProp%2C%20Adam.md) - 회귀(MSE/MAE) 및 분류(BCE/CCE) 손실 함수, 배치 경사하강법(BGD) vs 확률적 경사하강법(SGD) vs 미니배치 SGD, 관성을 이용한 Momentum, 지수이동평균 기반 학습률 감쇠 RMSProp, 그리고 1차·2차 모멘트를 결합한 Adam 옵티마이저의 수식 유도와 궤적을 인터랙티브 옵티마이저 수렴 시뮬레이터로 학습한다.
+* [05. 과적합(Overfitting)과 일반화 기법 - 편향-분산 트레이드오프, 드롭아웃, 배치 정규화, L1-L2 규제](./05.%20%EA%B3%BC%EC%A0%81%ED%95%A9%28Overfitting%29%EA%B3%BC%20%EC%9D%BC%EB%B0%98%ED%99%94%20%EA%B8%B0%EB%B2%95%20-%20%ED%8E%B8%ED%96%A5-%EB%B6%84%EC%82%B0%20%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%93%9C%EC%98%A4%ED%94%84%2C%20%EB%93%9C%EB%A1%AD%EC%95%84%EC%9B%83%2C%20%EB%B0%B0%EC%B9%98%20%EC%A0%95%EA%B7%9C%ED%99%94%2C%20L1-L2%20%EA%B7%9C%EC%A0%9C.md) - 머신러닝의 핵심 과제인 과적합(Overfitting)과 과소적합(Underfitting) 진단, 편향-분산 트레이드오프(Bias-Variance Tradeoff), L1(라쏘)/L2(리지/가중치 감쇠) 정규화 수식, 앙상블 효과를 내는 드롭아웃(Dropout), 내부 공변량 변화를 해소하는 배치 정규화(Batch Normalization), 그리고 조기 종료(Early Stopping)를 인터랙티브 규제 강도 시뮬레이터로 학습한다.
+* [06. 기울기 소실(Vanishing Gradient)과 활성화 함수 진화 - Sigmoid의 한계, ReLU, LeakyReLU, GELU 및 가중치 초기화(Xavier-He)](./06.%20%EA%B8%B0%EC%9A%B8%EA%B8%B0%20%EC%86%8C%EC%8B%A4%28Vanishing%20Gradient%29%EA%B3%BC%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%20%EC%A7%84%ED%99%94%20-%20Sigmoid%EC%9D%98%20%ED%95%9C%EA%B3%84%2C%20ReLU%2C%20LeakyReLU%2C%20GELU%20%EB%B0%8F%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EC%B4%88%EA%B8%B0%ED%99%94%28Xavier-He%29.md) - 심층 신경망에서 발생하는 기울기 소실(Vanishing Gradient) 및 폭주(Exploding Gradient)의 수학적 원인, 시그모이드(Sigmoid) 도함수의 최대값 0.25 한계, ReLU 계열(LeakyReLU, ELU, GELU)의 비포화성, 그리고 활성화 함수와 분산 보존을 위한 Xavier 및 He(Kaiming) 가중치 초기화 공식을 인터랙티브 기울기 감쇠 시뮬레이터로 학습한다.
+* [07. 합성곱 신경망(CNN)의 핵심 원리 - 합성곱 연산, 패딩·스트라이드 공간 차원 수식, 풀링과 채널](./07.%20%ED%95%A9%EC%84%B1%EA%B3%B1%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%28CNN%29%EC%9D%98%20%ED%95%B5%EC%8B%AC%20%EC%9B%90%EB%A6%AC%20-%20%ED%95%A9%EC%84%B1%EA%B3%B1%20%EC%97%B0%EC%82%B0%2C%20%ED%8C%A8%EB%94%A9%C2%B7%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%EB%93%9C%20%EA%B3%B5%EA%B0%84%20%EC%B0%A8%EC%9B%90%20%EC%88%98%EC%8B%9D%2C%20%ED%92%80%EB%A7%81%EA%B3%BC%20%EC%B1%84%EB%84%90.md) - 완전연결계층(FC)의 공간 구조 파괴 한계, 2D 합성곱(Convolution) 커널 필터링, 가중치 공유(Weight Sharing) 및 국소 수용장(Receptive Field), 패딩(Padding)과 스트라이드(Stride)에 따른 출력 텐서 공간 해상도 계산 수식, 그리고 최대 풀링(Max Pooling)을 인터랙티브 Conv2D 출력 차원 계산기로 학습한다.
+* [08. 심층 CNN 아키텍처와 잔차 연결 - AlexNet, VGGNet, ResNet의 잔차 블록과 특징 맵](./08.%20%EC%8B%AC%EC%B8%B5%20CNN%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%99%80%20%EC%9E%94%EC%B0%A8%20%EC%97%B0%EA%B2%B0%20-%20AlexNet%2C%20VGGNet%2C%20ResNet%EC%9D%98%20%EC%9E%94%EC%B0%A8%20%EB%B8%94%EB%A1%9D%EA%B3%BC%20%ED%8A%B9%EC%A7%95%20%EB%A7%B5.md) - 딥러닝 혁명을 촉발한 AlexNet(ReLU, Dropout, LRN), $3 \times 3$ 소형 필터 중첩으로 유효 수용장을 확장한 VGGNet(16/19), 계층이 깊어질 때 발생하는 최적화 성능 저하를 스킵 연결(Skip Connection / Residual Block)로 극복한 ResNet의 수식 H(x) = F(x) + x 유도를 인터랙티브 ResNet 잔차 경로 시뮬레이터로 학습한다.
+* [09. 실전 컴퓨터 비전 파이프라인 - CIFAR-10 이미지 분류 모델 학습 및 생성형 AI 아바타 실습](./09.%20%EC%8B%A4%EC%A0%84%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20-%20CIFAR-10%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%B6%84%EB%A5%98%20%EB%AA%A8%EB%8D%B8%20%ED%95%99%EC%8A%B5%20%EB%B0%8F%20%EC%83%9D%EC%84%B1%ED%98%95%20AI%20%EC%95%84%EB%B0%94%ED%83%80%20%EC%8B%A4%EC%8A%B5.md) - CIFAR-10 10개 클래스 32x32 컬러 이미지 분류 데이터 파이프라인, PyTorch 기반 CNN 모델 설계, 훈련/검증 루프, Top-1 정확도 평가 메트릭, 그리고 확산 모델(Diffusion) 기반 생성형 AI 아바타 파이프라인(텍스트 인코더, U-Net, VAE)을 인터랙티브 CIFAR-10 분류기 데모로 학습한다.
