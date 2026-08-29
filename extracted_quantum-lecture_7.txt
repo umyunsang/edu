@@ -1,0 +1,274 @@
+### [Page 1]
+Copyright 2026 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Yousung Kang, 
+yskang@megazone.com
+Quantum Innovation Lab
+Quantum Hardwares
+
+
+
+### [Page 2]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+INDEX
+1. Quantum Computers
+1. Superconducting Qubits
+1. Quantum Annealers
+1. Ion Trap Qubits
+1. Neutral Atom Qubits
+
+
+
+### [Page 3]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+1. Quantum Computers
+
+
+
+### [Page 4]
+Bit vs Qubit
+Volkswagen Aktiengesellschaft 2019.
+
+
+
+### [Page 5]
+Qubits
+2018
+1989, 2012
+1973, 2012, 2025
+
+
+
+### [Page 6]
+Analog Computing: Specialist
+Quantum Annealer
+QUBO Specialist
+Neutral Atom
+MIS Specialist
+
+
+
+### [Page 7]
+Gate-base Computing: Generalist
+Superconducting
+Ion Trap
+
+
+
+### [Page 8]
+Liers. T
+ 
+ 
+
+
+
+### [Page 9]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+2. Superconducting Qubits
+
+
+
+### [Page 10]
+Superconducting Quantum Computer
+
+
+
+### [Page 11]
+Superconductivity depends on Temperature
+Zero Electrical Resistance
+Meissner Effect
+
+
+
+### [Page 12]
+Temperature Diagram of Superconducting Quantum 
+Computer
+https://doi.org/10.1016/j.sse.2022.10858
+Room Temperature
+Mechanical Cooling
+Enthalpy cooling
+Space Temperature(2.7K)
+
+
+
+### [Page 13]
+Superconducting Qubit Circuits
+초전도 큐빗은 전기적 회로 형태로 구성🡪
+다른 큐빗과의 배열, 배치 문제 발생
+먼 큐빗과의 상호작용
+🡪다른 큐빗을 거쳐가서 형성
+
+
+
+### [Page 14]
+Properties of Superconducting Qubit
+인공 원자 사용, 낮은 온도 (15mK), 열 취약성
+🡪짧은 결맞음 시간 (coherence time)
+낮은 connectivity
+(IBM Heron 기준-3개 큐빗)
+Fast gate operating time(~ns)
+Scalable한 확장성(SOTA 2025: 156Q)
+
+
+
+### [Page 15]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+3. Ion Trap Qubits
+
+
+
+### [Page 16]
+Ion Traps
+ 
+
+
+
+### [Page 17]
+Ion Traps
+ 
+
+
+
+### [Page 18]
+Photonic Interconnect
+
+
+
+### [Page 19]
+Photon mediates Ion trap Qubits
+
+
+
+### [Page 20]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+4. Quantum Annealer
+
+
+
+### [Page 21]
+Properties of Quantum Annealer
+D-Wave Zephyr topology
+• 낮은 connectivity (20개 큐빗)
+• Advantage2: 4400Q
+• D-Wave Annealer는 Ising 문제로 변환가능한 문제만 해결가능
+🡪QUBO
+
+
+
+### [Page 22]
+QUBO
+Quadratic Unconstrained Binary Optimization
+이차 무제약 이진 최적화
+Ising Hamiltonian
+
+
+
+### [Page 23]
+Combinational Optimization Problems
+Combinational Optimization Problem
+조합 최적화 문제
+https://www.lgresearch.ai/blog/view?seq=471 
+
+
+
+### [Page 24]
+Travelling Salesman Problem
+https://www.lgresearch.ai/blog/view?seq=471 
+• TSP
+주어진 지점(노드)를 모두 방문하는 데 
+최소한의 거리(시간, 비용)이 드는 방법은 
+무엇인가
+Ex)
+여행 동선 최적화
+물류 최적화
+…
+
+
+
+### [Page 25]
+Logistic Optimization
+
+
+
+### [Page 26]
+Max-Cut Problem
+• Max-Cut
+주어진 그래프를 두 영역으로 
+나눌 때, 그래프의 간선을 최대한 
+많이 절단하는 방법은 무엇인가
+Ex)
+팀 빌딩
+자산 포트폴리오
+리스크 관리
+네트워크 차단
+…
+
+
+
+### [Page 27]
+Knapsack Problem
+• Knapsack Problem
+배낭의 제한조건(크기, 질량)에 가장 
+가치가 높은 상품을 싣는 방법은 
+무엇인가
+
+
+
+### [Page 28]
+Rectilinear Steiner Tree Packing Problem
+https://www.lgresearch.ai/blog/view?seq=471 
+• RSTPP
+주어진 점들을 서로 교차하는 선이 없이 최단거리로 잇는 방법은 무엇인가.
+
+
+
+### [Page 29]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+5. Neutral Atom Qubits
+
+
+
+### [Page 30]
+Optical Tweezer
+
+
+
+### [Page 31]
+Optical Tweezer
+
+
+
+### [Page 32]
+Rydberg Blockade
+
+
+
+### [Page 33]
+MIS problem
+Maximum Independent Set
+최대 독립 집합
+
+
+
+### [Page 34]
+Facility Location Problem
+
+
+
+### [Page 35]
+Rectilinear Steiner Tree Packing Problem
+https://www.lgresearch.ai/blog/view?seq=471 
+• 주어진 문제를 푸는 방법은 유일하지 않다.
+•
+주어진 문제를 보유한 도구에 맞게 mapping하는 것이 양자 알고리즘 설계의 
+핵심
+
+
+
+### [Page 36]
+Other Qubits
+
+
+
+### [Page 37]
+Other Qubits
+

@@ -1,0 +1,25 @@
+### [Page 1]
+Quantum Feature Space
+
+
+
+### [Page 2]
+Quantum Feature Space > Feature Space란무엇인가
+Source : Pattern Recognition and Machine Learning, The Elements of Statistical Learning
+
+
+
+### [Page 3]
+Quantum Feature Space > Quantum Feature Space 등장
+Source : IBM Quantum의Quantum Machine Learning, Quantum Computation and Quantum Information
+
+
+
+### [Page 4]
+Quantum Feature Space > 왜표현력이중요한가?
+Source : Pattern Recognition and Machine Learning, The Elements of Statistical Learning, Kernel Trick
+
+
+
+### [Page 5]
+

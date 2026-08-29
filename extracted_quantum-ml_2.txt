@@ -1,0 +1,135 @@
+### [Page 1]
+표현력의한계
+
+
+
+### [Page 2]
+표현력의한계> Feature Engineering
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 3]
+표현력의한계> XOR 문제실습
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 4]
+표현력의한계> XOR 문제실습
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 5]
+표현력의한계> XOR 문제실습
+사전준비사항
+•
+필수라이브러리설치
+import5numpy5as5np
+import5matplotlib.pyplot5as5plt
+from5sklearn.svm5import5SVC
+from5sklearn.linear_model5import5LogisticRegression
+from5sklearn.metrics5import5accuracy_score
+pip5install5numpy
+pip5install5matplotlib
+pip5install5scikit-learn
+pip5show5numpy
+pip5show5matplotlib
+pip5show5scikit-learn
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 6]
+표현력의한계> XOR 문제실습
+1.
+라이브러리선언
+import5numpy5as5np
+import5matplotlib.pyplot5as5plt
+from5sklearn.svm5import5SVC
+from5sklearn.linear_model5import5LogisticRegression
+from5sklearn.metrics5import5accuracy_score
+plt.figure(figsize=(5,55))
+for5i5in5range(len(X)):
+if5y[i]5==50:
+plt.scatter(X[i][0],5X[i][1],5marker='x',5s=150,5
+label='Y=0'5if5i5==505else5"")
+else:
+plt.scatter(X[i][0],5X[i][1],5marker='o',5s=150,5
+label='Y=1'5if5i5==515else5"")
+plt.xlabel("X1")
+plt.ylabel("X2")
+plt.title("XOR5Data")
+plt.legend()
+plt.grid(True)
+plt.show()
+X5=5np.array([
+[0,50],
+[0,51],
+[1,50],
+[1,51]
+])
+y5=5np.array([0,51,51,50])
+2.
+XOR 데이터생성
+3.
+XOR 데이터시각화
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 7]
+표현력의한계> XOR 문제실습
+4. 실행결과
+•
+XOR 데이터를시각화해보면같은클래스(Y=1)가대각선방향에위치
+하고, 다른클래스(Y=0)도대각선방향에위치함
+•
+따라서두클래스를직선하나로완벽하게구분할수없음
+•
+XOR 데이터는직선하나로분리할수없기때문에선형모델의한계를
+보여주는대표적인문제임
+•
+XOR 데이터는직선하나로구분할수없는구조를가지고있으며, 이를
+해결하기위해서는비선형모델또는새로운Feature가필요함
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 8]
+표현력의한계> XOR 문제실습
+선형모델실습> Logistic Regression
+log_model5=5LogisticRegression()
+log_model.fit(X,5y)
+y_pred5=5log_model.predict(X)
+print("예측결과:",5y_pred)
+print("정답:",5y)
+print("정확도:",5accuracy_score(y,5y_pred))
+•
+기존코드에추가
+예측결과:5[0505050]
+정답:555555[0515150]
+정확도:50.5
+•
+실행결과
+•
+Logistic Regression은직선(선형경계) 하나로데이터를구분하려고함
+•
+하지만XOR 데이터는직선하나로분리할수없는선형분리불가능(N
+on-linearly Separable) 문제임
+•
+따라서Logistic Regression은XOR 패턴을학습하지못하고낮은성능
+(50%)을보임
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 9]
+표현력의한계> XOR 문제실습
+Source : Google Machine Learning Crash Course - Feature Engineering, Christopher M. Bishop
+
+
+
+### [Page 10]
+
