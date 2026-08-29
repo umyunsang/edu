@@ -1,0 +1,716 @@
+### [Page 1]
+1/35
+Dong-A Univ. (ISPL)
+컴퓨터AI공학부 컴퓨터공학과
+2025년 1학기 머신러닝
+[실습] Convolutional Neural Network
+
+
+
+### [Page 2]
+2/35
+…
+1x
+2x
+3x
+784
+x
+
+
+
+…
+Activation function
+0y
+1y
+9y
+…
+Single Layer Perceptron 실습
+…
+1x
+2x
+3x
+784
+x
+…
+Activation function
+0y
+1y
+9y
+…
+…
+
+
+
+
+
+
+Multi Layer Perceptron 실습
+✓
+Layer1 (Input: 784, Out: 10)
+✓
+Activation function: Softmax
+✓
+Loss function: Cross Entropy
+✓
+Layer1 (Input: 784, Out: 100)
+✓
+Layer2 (Input: 100, Out: 10)
+✓
+Activation function: Softmax, Sigmoid
+✓
+Loss function: Cross Entropy
+[Remind] Classification: MNIST
+
+
+
+### [Page 3]
+3/35
+▪
+MNIST 데이터베이스 (Modified National Institute of Standards and Technology)
+•
+손으로 쓴 숫자들로 이루어진 대형 데이터베이스
+•
+Train dataset 60,000개, Test dataset 10,000개로 구성됨
+[Remind] Classification: MNIST
+
+
+
+### [Page 4]
+4/35
+▪
+MNIST 데이터셋의 perceptron 입력 방법
+•
+Perceptron의 각 노드는 한번에 1개의 값을 입력 받을 수 있음
+•
+따라서 2D 형태 이미지의 전처리가 필요함 →평탄화
+평탄화
+Perceptron
+예측 결과
+28 x 28
+784 x 1
+10 x 1
+0~9까지 숫자들의 예측 결과
+[Remind] Classification: MNIST
+
+
+
+### [Page 5]
+5/35
+[Remind] Classification: CIFAR 10
+▪CIFAR10 dataset 형상
+•
+32x32x3 (RGB) 이미지, 10개의 클래스
+•
+Train: 50,000개, Test: 10,000개
+
+
+
+### [Page 6]
+6/35
+[Remind] Classification: CIFAR 10
+▪CIFAR10 dataset 형상
+•
+32x32x3 (RGB) 이미지, 10개의 클래스
+•
+Train: 50,000개, Test: 10,000개
+CIFAR10 input image
+(32x32x3)
+평탄화
+(32x 32x 3) x 1
+3072
+예측 결과
+10 x 1
+Perceptron
+
+
+
+### [Page 7]
+7/35
+[Remind] Classification: CIFAR 10
+▪실습
+•
+Layer: 5개
+•
+Node: 100개
+•
+Activation function: ReLU
+예측 결과
+10 x 1
+CIFAR10 input image
+(32x32x3)
+평탄화
+(32x 32x 3) x 1
+3072
+…
+…
+…
+…
+…
+Input
+Output
+3072
+100
+100
+100
+100
+100
+100
+100
+100
+10
+fc1
+fc2
+fc3
+fc4
+fc5
+48%
+
+
+
+### [Page 8]
+8/35
+[Remind] Convolutional Neural Networks
+▪
+Perceptron 모델의 문제점
+•
+평탄화된 이미지를 입력으로 받아 공간적 (형상) 정보가 사라짐
+Fully connected layer
+(#weights: 7,840)
+784x10
+
+
+
+### [Page 9]
+9/35
+•
+이미지의 특성에 따라 뉴런이 다르게 활성화 됨
+Cat image by CNX OpenStax is licensed  
+under CC BY 4.0; changes made
+[Remind] Convolutional Neural Networks
+
+
+
+### [Page 10]
+10/35
+▪
+Perceptron 모델의 문제점
+•
+평탄화된 이미지를 입력으로 받아 공간적 (형상) 정보가 사라짐
+•
+CNN에 비해 필요한 weight parameter의 개수가 많음
+Fully connected layer
+(#weights: 7,840)
+5x5 Convolution layer
+(#weights: 1,600)
+[5x5x1]x64
+32
+32
+28
+28
+64
+784x10
+[Remind] Convolutional Neural Networks
+
+
+
+### [Page 11]
+11/35
+▪
+CNN 모델 개요
+•
+합성곱 연산 (Convolution)을 수행해 이미지의 특징 (Feature) 추출
+•
+이미지를 입력으로 받는 분야에서 높은 성능을 보임 (Ex. Image classification, Super-resolution, Denoising)
+Input image
+3 (Channel)
+32 (Height)
+32 (Width)
+Filter
+(Kernel)
+3x3x3 filters
+32 (Channel)
+30 (Height)
+30 (Width)
+…
+filter 1
+filter 2
+filter 32
+Feature maps
+*
+(Conv.)
+[Remind] Convolutional Neural Networks
+
+
+
+### [Page 12]
+12/35
+▪CIFAR10 dataset 형상
+•
+32x32x3 (RGB) 이미지, 10개의 클래스
+•
+Train: 50,000개, Test: 10,000개
+[실습] Convolutional Neural Networks
+CIFAR-10 dataset 예시
+LeNet-5 신경망 구조
+
+
+
+### [Page 13]
+13/35
+▪입출력 구조 확인
+평탄화
+FC layers
+예측 결과
+32 x 32 x 3
+3072 x 1
+10 x 1
+Conv. 
+layers
+예측 결과
+32 x 32 x 3
+10 x 1
+[실습] Convolutional Neural Networks: CIFAR10 classification
+
+
+
+### [Page 14]
+14/35
+▪입출력 구조 확인
+CNN model 예시
+32 x 32 x 3
+Conv. 1
+[5x5x3]x32
+28x28x32
+Conv. 2
+[5x5x32]x32
+24x24x32
+출력의 형태가 cube 이므로
+예측 결과를 확인 할 수 없음
+…
+[실습] Convolutional Neural Networks: CIFAR10 classification
+
+
+
+### [Page 15]
+15/35
+▪입출력 구조 확인
+평탄화
+FC layers
+예측 결과
+32 x 32 x 3
+3072 x 1
+10 x 1
+Conv. 
+layers
+32 x 32 x 3
+Feature maps
+평탄화
+FC layers
+예측 결과
+10 x 1
+Feature vector
+[실습] Convolutional Neural Networks: CIFAR10 classification
+
+
+
+### [Page 16]
+16/35
+▪LeNet-5 신경망 구조
+•
+2개의 convolutional layer, 3개의 fully connected layer로 구성
+Input image (CIFAR-10)
+32x32x3
+Conv 1
+[5x5x3]x6, s1, p0
+Conv 2
+[5x5x6]x16, s1, p0
+평탄화&
+FC1
+FC2
+FC3
+Output classes
+10x1
+Avg
+Pooling
+Avg
+Pooling
+[실습] Convolutional Neural Networks: CIFAR10 classification
+
+
+|  | FC2 |
+| --- | --- |
+| FC1 ng |  |
+
+
+### [Page 17]
+17/35
+▪LeNet-5 모델 구조 작성 참고사항
+•
+Filter size: 5x5, Stride: 1, Padding: 0
+LeNet-5 구조
+32x32x3
+Input image
+[5x5x3]x6, s1, p0
+ReLU
+AvgPool, k2, s2
+[5x5x6]x16, s1, p0
+ReLU
+AvgPool, k2, s2
+: Convolution layer
+: Activation function
+: Pooling layer
+: Fully connected layer
+평
+탄
+화
+84x10
+ReLU
+120x84
+ReLU
+400x120
+예측 결과
+10x1
+❖[KW x KH x C] x N
+[실습] Convolutional Neural Networks: CIFAR10 classification
+
+
+
+### [Page 18]
+18/35
+[실습] Convolutional Neural Networks: CIFAR10 classification
+▪LeNet-5 모델 구조 작성 참고사항
+•
+참고자료: https://pytorch.org/docs/stable/nn.html
+: Convolution layer
+: Activation function
+: Pooling layer
+: Fully connected layer
+
+
+
+### [Page 19]
+19/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+U-net network architecture
+
+
+
+### [Page 20]
+20/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+입력 이미지로부터 특징 학습
+학습된 Feature map으로부터 
+Segmentation map 생성
+
+
+
+### [Page 21]
+21/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+U-net network architecture
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+
+
+
+### [Page 22]
+22/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+64
+64
+
+
+
+### [Page 23]
+23/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+64
+64
+Convolution kernel
+
+
+
+### [Page 24]
+24/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+64
+64
+32
+32
+Convolution kernel
+
+
+
+### [Page 25]
+25/35
+16
+16
+32
+32
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+[5x5x3]x6, s1, p1
+ReLU
+AvgPool, k2, s2
+[5x5x3]x6, s1, p1
+ReLU
+64
+64
+Convolution kernel
+
+
+
+### [Page 26]
+26/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+U-net network architecture
+Skip connection을 통해 학습된feature map을 전달하여
+정교한 Segmentation map 생성 가능
+
+
+
+### [Page 27]
+27/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+•
+Auto encoder 구조를 이용한 입력 이미지 정보 압축 가능
+U-net network architecture
+LeNet5 network architecture
+
+
+
+### [Page 28]
+28/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+•
+Auto encoder 구조를 이용한 입력 이미지 정보 압축 가능
+입력 이미지로부터 특징 학습
+학습된 Feature map으로부터 
+Segmentation map 생성
+
+
+
+### [Page 29]
+29/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+•
+Auto encoder 구조를 이용한 입력 이미지 정보 압축 가능
+입력 이미지로부터 압축된 vector 생성
+압축된 vector로부터 입력 이미지 생성
+Encoder
+Decoder
+
+
+
+### [Page 30]
+30/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+•
+Auto encoder 구조를 이용한 입력 이미지 정보 압축 가능
+입력 이미지의 정보를 담고 있는 압축된 vector
+어떤 정보를 포함하는지 정확히 알 수 없음
+
+
+
+### [Page 31]
+31/35
+CIFAR-10 분류 실습: U-Net을 이용한 분류
+▪U-Net
+•
+2015년 Semantic Segmentation 기법으로 등장한 모델
+•
+Auto encoder 구조를 이용한 입력 이미지 정보 압축 가능
+Fully Connected layer
+84x10
+ReLU
+120x84
+ReLU
+400x120
+예측 결과
+10x1
+
+
+
+### [Page 32]
+32/35
+[실습] U-Net: CIFAR10 classification
+▪U-Net 모델 구조 작성 참고사항
+•
+Filter size: 5x5, Stride: 1, Padding: 2
+32x32x3
+Input image
+[5x5x3]x6, s1, p2
+ReLU
+AvgPool, k2, s2
+[5x5x6]x16, s1, p2
+ReLU
+[5x5x16]x24, s1, p2
+ReLU
+AvgPool, k2, s2
+[5x5x24]x32, s1, p2
+ReLU
+평
+탄
+화
+[4x4x32]x24, s2, p1
+ReLU
+[5x5x24]x16, s1, p2
+ReLU
+[4x4x16]x6, s2, p1
+ReLU
+[5x5x6]x3, s1, p2
+ReLU
+84x10
+ReLU
+120x84
+ReLU
+2048x120
+예측 결과
+10x1
+32x32x3
+Output image
+Vector
+: Transposed Convolution layer
+: Activation function
+: Pooling layer
+: Fully connected layer
+: Convolution layer
+
+
+
+### [Page 33]
+33/35
+[실습] U-Net: CIFAR10 classification
+▪U-Net 모델 구조 작성 참고사항
+•
+Transposed Convolution: Up-sampling을 하기위한 convolution layer
+•
+Feature map 크기를 N배 Up-sampling하기 위해서는 Kernel size: 2N, Stride: N, Padding = 0.5N으로 설정
+Convolution 
+Transposed Convolution 
+
+
+
+### [Page 34]
+34/35
+[실습] U-Net: CIFAR10 classification
+▪U-Net 모델 구조 작성 참고사항
+•
+Transposed Convolution: Up-sampling을 하기위한 convolution layer
+•
+Feature map 크기를 N배 Up-sampling하기 위해서는 Kernel size: 2N, Stride: N, Padding = 0.5N으로 설정
+: Transposed Convolution layer
+
+
+
+### [Page 35]
+35/35
+Questions & Answers
+Dongsan Jun (dsjun@dau.ac.kr)
+Image Signal Processing Laboratory (www.donga-ispl.kr)
+Dept. of Computer Engineering
+Dong-A University, Busan, Rep. of Korea
+
