@@ -3,7 +3,7 @@
 ## lecture
 
 * [AI 아바타 만들기 실습](./26.%20AI%20%EC%95%84%EB%B0%94%ED%83%80%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20%EC%8B%A4%EC%8A%B5.md) - AI 아바타 만들기 실습의 입력·계산·검증 흐름을 정리한다.
-* [artificial-intelligence 강의 흐름 지도](./00.%20artificial-intelligence%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 0개의 순서·핵심 단서·학습 점검을 연결한다.
+* [artificial-intelligence 강의 흐름 지도](./00.%20artificial-intelligence%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 29개의 순서·쪽수·학습 점검을 연결한다.
 * [Backpropagation의 가중치 갱신](./13.%20Backpropagation%EC%9D%98%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EA%B0%B1%EC%8B%A0.md) - Backpropagation의 가중치 갱신의 입력·계산·검증 흐름을 정리한다.
 * [Backpropagation의 연쇄 법칙](./12.%20Backpropagation%EC%9D%98%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99.md) - Backpropagation의 연쇄 법칙의 입력·계산·검증 흐름을 정리한다.
 * [CIFAR-10 분류 실습](./25.%20CIFAR-10%20%EB%B6%84%EB%A5%98%20%EC%8B%A4%EC%8A%B5.md) - CIFAR-10 분류 실습의 입력·계산·검증 흐름을 정리한다.

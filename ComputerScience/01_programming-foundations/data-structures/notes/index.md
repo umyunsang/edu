@@ -3,7 +3,7 @@
 ## lecture
 
 * [AVL 균형 트리 구현](./06.%20AVL%20%EA%B7%A0%ED%98%95%20%ED%8A%B8%EB%A6%AC%20%EA%B5%AC%ED%98%84.md) - 편향된 BST를 balance factor와 회전으로 보정하는 과정을 정리한다.
-* [data-structures 강의 흐름 지도](./00.%20data-structures%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 0개의 순서·핵심 단서·학습 점검을 연결한다.
+* [data-structures 강의 흐름 지도](./00.%20data-structures%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 22개의 순서·쪽수·학습 점검을 연결한다.
 * [비교·비교없는 정렬 알고리즘](./07.%20%EB%B9%84%EA%B5%90%C2%B7%EB%B9%84%EA%B5%90%EC%97%86%EB%8A%94%20%EC%A0%95%EB%A0%AC%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md) - 선택·삽입·힙 정렬과 버킷 기반 기수 정렬의 절차와 trade-off를 비교한다.
 * [스택과 큐 기본 연산](./03.%20%EC%8A%A4%ED%83%9D%EA%B3%BC%20%ED%81%90%20%EA%B8%B0%EB%B3%B8%20%EC%97%B0%EC%82%B0.md) - 스택의 push·pop과 큐의 enqueue·dequeue를 출입 규칙으로 비교한다.
 * [스택으로 수식 표기 변환](./04.%20%EC%8A%A4%ED%83%9D%EC%9C%BC%EB%A1%9C%20%EC%88%98%EC%8B%9D%20%ED%91%9C%EA%B8%B0%20%EB%B3%80%ED%99%98.md) - 중위 표기를 스택으로 전위·후위 표기로 바꾸는 절차를 예시와 함께 정리한다.
