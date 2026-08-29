@@ -25,12 +25,10 @@ source::
 
 ## 이 강의의 지도
 
-```mermaid
-mindmap
-  root(("주제"))
-    ("섹션 1")
-    ("섹션 2")
-    ("섹션 3")
+```html preview
+<div style="font-family:system-ui,-apple-system,sans-serif;padding:16px;background:var(--card);color:var(--card-foreground);border:1px solid var(--border);border-radius:var(--radius)">
+  <div style="font-weight:700;font-size:13px">강의 흐름 지도</div>
+</div>
 ```
 
 ## 1
@@ -41,8 +39,8 @@ mindmap
 ## 핵심 정리
 
 | 개념 | 한 줄 정의 | 왜 중요한가 |
-| :--- | :--- | :--- |
-|      |      |      |
+| --- | --- | --- |
+| 항목 | 정의 | 중요성 |
 
 > [!question]- 스스로 점검
 > **Q1.**
@@ -51,8 +49,8 @@ mindmap
 ## 슬라이드 근거
 
 | 섹션 | 슬라이드 |
-| :--- | :--- |
-| 1.   | p.   |
+| --- | --- |
+| 1. | p. |
 
 ## 관련 노트
 
