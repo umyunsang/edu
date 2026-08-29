@@ -2,4 +2,4 @@
 
 ## course-index
 
-* [컨테이너 오케스트레이션](./README.md) - 도커와 쿠버네티스 기초. 강의자료 없이 정리 노트만 있다. 학기: extracurricular.
+* [컨테이너 오케스트레이션](./README.md) - 원본 강의자료가 확인되면 Docker·Kubernetes 학습 흐름에 맞춰 재구성하는 과목 인덱스.

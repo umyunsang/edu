@@ -1,6 +1,6 @@
 ---
 title: Java 프로그래밍
-description: '자바 문법과 객체지향 정리. 학기: extracurricular.'
+description: '원본 강의자료가 확인되면 자바 문법과 객체지향 흐름에 맞춰 재구성하는 과목 인덱스.'
 type: course-index
 tags:
   - course
@@ -9,43 +9,20 @@ course: java-programming
 semester: extracurricular
 status: draft
 created: '2026-08-28'
-updated: '2026-08-28'
+updated: '2026-08-29'
 slides: true
 ---
 
 > [!abstract] 이 과목은
-> 자바 문법과 객체지향 정리. 학기: extracurricular.
+> 현재 폴더에는 강의용 원본 PDF가 없어, 출처 없는 자바 문법 노트를 새로 만들지 않는다.
 
-## 학습 경로
+## 자료 상태
 
-번호는 강의 진도 순이다. 앞 문서를 읽었다는 전제로 다음 문서가 쓰인다.
-
-```mermaid
-flowchart LR
-    N0["1. Hello Java"]
-    N1["2. 변수와 자료형"]
-    N2["3. Scanner"]
-    N3["4. 연산자"]
-    N4["5. 조건문"]
-    N0 --> N1
-    N1 --> N2
-    N2 --> N3
-    N3 --> N4
-```
+현재 확인된 항목은 과목 인덱스뿐이다. 원본 PDF가 추가되면 강의 순서를 확인하고 01., 02. 형식의 파일명으로 정리한다.
 
 ## 정리문서
 
-모두 `notes/` 에 있다. 총 5편.
+원본 PDF 부재로 재구성된 정리문서는 없다. 기존 링크는 현재 문서 트리와 맞지 않아 제거했다.
 
-| 문서 | 다루는 내용 |
-| :-- | :-- |
-| [1. Hello Java](<./notes/1. Hello Java.md>) | — |
-| [2. 변수와 자료형](<./notes/2. 변수와 자료형.md>) | — |
-| [3. Scanner](<./notes/3. Scanner.md>) | — |
-| [4. 연산자](<./notes/4. 연산자.md>) | — |
-| [5. 조건문](<./notes/5. 조건문.md>) | — |
-
-## 관련 과목
-
-> [!note] 아직 비어 있다
-> 다른 과목과의 관계는 지식그래프 4단계에서 관계 타입(`prerequisite` · `elaborates` · `contrasts` · `applies` · `evidences`)과 함께 채운다. 근거 없이 미리 이어두지 않는다.
+> [!note] 재개 조건
+> PDF가 들어오면 개념·예제·실습 순서와 상호작용 시각화를 근거와 함께 기록한다.
