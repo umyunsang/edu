@@ -1,0 +1,69 @@
+### [Page 1]
+Copyright 2026 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Yousung Kang, 
+yskang@megazone.com
+Quantum Innovation Lab
+양자클라우드 Braket 기초 사용법
+
+
+
+### [Page 2]
+AWS Braket 대시보드
+
+
+
+### [Page 3]
+AWS Braket 디바이스
+
+
+
+### [Page 4]
+AWS 마켓플레이스
+
+
+
+### [Page 5]
+AWS IonQ 디바이스
+
+
+
+### [Page 6]
+IonQ 클라우드 백엔드
+
+
+
+### [Page 7]
+IonQ 클라우드 하드웨어
+높은 정확도: 
+긴 결맞음 시간(Coherence time)
+완전 연결성(All-to-All Connectivity): 
+모든 큐비트끼리 직접 연결 가능
+
+
+
+### [Page 8]
+AWS Braket 노트북
+
+
+
+### [Page 9]
+AWS Braket 노트북
+
+
+
+### [Page 10]
+노트북 사용 종료
+
+
+
+### [Page 11]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Run the code-GHZ state
+
+
+
+### [Page 12]
+Copyright 2026 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+The gateway to all quantum computing technologies
+Thanks for Attention
+

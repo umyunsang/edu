@@ -1,0 +1,393 @@
+### [Page 1]
+Copyright 2026 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Yousung Kang, 
+yskang@megazone.com
+Quantum Innovation Lab
+Grover&Shor Algorithm
+
+
+
+### [Page 2]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+INDEX
+1. Grover Search Algorithm
+1. Binary Sudoku
+1. Shor Factorization Algorithm
+
+
+
+### [Page 3]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+1. Grover Search Algorithm
+
+
+
+### [Page 4]
+NISQ Algorithm/FT Algorithm
+Noisy Intermediate-Scale Quantum Algorithm: 중간정도 오류 양자 알고리즘
+Fault-Tolerant Algorithm                                           : 내결함성 알고리즘
+John Preskill
+
+
+
+### [Page 5]
+NISQ Algorithm
+1
+얕은 회로 (Shallow Circuits)
+2
+하이브리드 구조 (Hybrid Quantum-Classical)
+3
+변분 원리 (Variational Principle)
+4
+노이즈 강인성 (Noise Resilience)
+5
+측정 효율성 (Measurement Frugal)
+6
+문제 맞춤형 (Problem-Inspired)
+현대 수준의 양자컴퓨터에서도 잘 작동하는 알고리즘
+VQA
+VQE
+QAOA
+QMC
+Quantum Clustering
+…
+정밀한 계산 X
+많은 횟수의 반복계산으로 답을 추론
+•
+Noisy Intermediate-Scale Quantum Algorithm: 중간정도 오류 양자 알고리즘
+
+
+
+### [Page 6]
+FT Algorithm
+1
+깊은 회로 (Deep Circuits)
+2
+논리 큐빗(Logical Qubits)
+3
+양자공간 사용(Spans Full-Hilbert Space)
+4
+양자 우위(Quantum Superemency)
+5
+큐빗 효율성 (Logical Qubit Frugal)
+6
+일반적 목적 (Generalized Problem)
+확실한 양자 우위를 보여주는 미래 시대의 알고리즘
+Grover Algorithm
+(Amplitude Estimation)
+Shor Algorithm
+(Phase Estimation)
+오늘의 목표:)
+작은 규모의 Grover, Shor 알고리즘을 구현해 보기
+•
+Fault-Tolerant Algorithm                                      : 내결함성 알고리즘
+
+
+
+### [Page 7]
+Grover’s Search Algorithm
+
+
+
+### [Page 8]
+Grover’s Search Algorithm
+분야
+적용  가능 사례
+임팩트
+보안/암호
+AES 키 서치 속도 단축
+금융
+이상거래 탐색
+금융거래 모니터링 고도화
+제조 품질
+불량탐지 로직 탐색
+조기 불량 탐지 정확성 향상
+SCM/물류
+최적 공급 조합 탐색
+조합 최적화 가능성
+AI/추천
+후보 중 최고의 추천 1개 찾기
+하이브리드 ML 가능
+여러 곳에 응용이 가능하지만, 본질은 검색 알고리즘
+
+
+
+### [Page 9]
+Operator Review: Single Qubit Gate
+
+
+
+### [Page 10]
+Operator Review: Multi Qubit Gate and Identity
+
+
+
+### [Page 11]
+Initialization
+
+
+
+### [Page 12]
+Quantum Oracle: Reflection Operator
+
+
+
+### [Page 13]
+Quantum Diffusion: Amplifying Operator
+
+
+
+### [Page 14]
+Quantum Circuit Assemble
+
+
+
+### [Page 15]
+Grover Search Algorithm Iteration
+
+
+
+### [Page 16]
+Grover Search Algorithm Iteration
+
+
+
+### [Page 17]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Example 1: Grover Search Algorithm
+
+
+
+### [Page 18]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+2. Binary Sudoku
+
+
+
+### [Page 19]
+Example 2. Binary Sudoku
+
+
+
+### [Page 20]
+Example 2. Quantum Register
+
+
+
+### [Page 21]
+Logic Gate: XOR Gate
+
+
+
+### [Page 22]
+Define Grover Oracle
+
+
+
+### [Page 23]
+Define Grover Oracle
+
+
+
+### [Page 24]
+Define Grover Oracle
+
+
+
+### [Page 25]
+Define Grover Oracle
+
+
+
+### [Page 26]
+Example 2. Binary Sudoku Circuit
+
+
+
+### [Page 27]
+Example 2. Binary Sudoku Result
+
+
+
+### [Page 28]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Example 2. Binary Sudoku
+
+
+
+### [Page 29]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+3. Shor Factorization Algorithm
+
+
+
+### [Page 30]
+3. Shor Factorization Algorithm
+
+
+
+### [Page 31]
+RSA2048
+Gidney, Craig. "How to factor 2048 bit RSA integers with less than a 
+million noisy qubits." arXiv preprint arXiv:2505.15917 (2025)
+
+
+
+### [Page 32]
+Public Key and Private Key
+
+
+
+### [Page 33]
+Public Key and Private Key
+
+
+
+### [Page 34]
+RSA Algorithm
+119의 약수는?
+
+
+
+### [Page 35]
+RSA Algorithm
+ 
+
+
+
+### [Page 36]
+Shor’s Factorization Algorithm
+ 
+
+
+
+### [Page 37]
+Shor’s Factorization Algorithm
+ 
+주기🡪 Fourier Transformation을 하면 쉽게 구한다.
+양자컴퓨터는 Fourier Transform을 아주 효율적으로 한다.
+
+
+
+### [Page 38]
+Quantum part: Quantum Phase Estimation
+
+
+
+### [Page 39]
+Quantum part: Quantum Fourier Transform
+고전 이산 푸리에 변환(DFT)의 양자 버전
+목표: 양자 상태에서 숨겨진 주기(Periodicity) 정보를 
+효율적으로 추출
+속도: 고전 알고리즘 대비 지수적인 함수 속도 
+향상(Exponential Speedup) 제공
+
+
+
+### [Page 40]
+Quantum part: Fourier Basis
+
+
+
+### [Page 41]
+Quantum part: Quantum Fourier Transform
+
+
+
+### [Page 42]
+Quantum part: Quantum Fourier Transform
+
+
+
+### [Page 43]
+Quantum part: Quantum Phase Estimation
+
+
+
+### [Page 44]
+Quantum part: Phase Kickback
+
+
+
+### [Page 45]
+Quantum part: Quantum Fourier Transform
+
+
+
+### [Page 46]
+Quantum part: Quantum Phase Estimation
+
+
+
+### [Page 47]
+Quantum Part: QPE Full Circuit
+
+
+
+### [Page 48]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Example 3. Shor Factorization Algorithm
+
+
+
+### [Page 49]
+Copyright 2025 © MegazoneCloud  CORP. ALL RIGHTS RESERVED.
+Appendix.
+
+
+
+### [Page 50]
+Appendix. Mathematics Review
+
+
+
+### [Page 51]
+Appendix. Mathematics Review
+
+
+
+### [Page 52]
+Appendix. Shor’s Factorization Algorithm
+ 
+
+
+
+### [Page 53]
+Appendix. Shor’s Factorization Algorithm
+ 
+
+
+
+### [Page 54]
+Appendix. Modular Equation/Euler Theorem
+정수 N과 a가 서로소이면,
+을 만족하는 임의의 자연수 r이 존재한다.
+ mod N: N으로 나눈 나머지
+
+
+
+### [Page 55]
+ 
+
+
+
+### [Page 56]
+Appendix. Shor’s Factorization Algorithm
+ 
+
+
+
+### [Page 57]
+Appendix. Mathematical description of QPE
+
+
+
+### [Page 58]
+Appendix. From State Preparation to Phase Kickback
+
+
+
+### [Page 59]
+Appendix. From IQFT to Measurment
+• After measurement
+
