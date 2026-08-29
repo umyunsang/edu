@@ -15,6 +15,11 @@
 * [11. Overfitting - 규제 기법과 드롭아웃·조기 종료 (Regularization & Dropout)](./11.%20Overfitting%20-%20%EA%B7%9C%EC%A0%9C%EC%99%80%20%EC%A1%B0%EA%B8%B0%20%EC%A2%85%EB%A3%8C.md) - 데이터 증식(Data Augmentation), L1(Lasso)과 L2(Weight Decay) 가중치 감쇠의 기하학적 제약 조건 비교, 드롭아웃(Dropout)의 앙상블 효과 및 조기 종료(Early Stopping) 알고리즘을 인터랙티브 L1/L2 규제 시뮬레이터로 심층 학습한다.
 * [12. Backpropagation - 연쇄 법칙과 계산 그래프 (Chain Rule)](./12.%20Backpropagation%EC%9D%98%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99.md) - 다변수 합성함수의 연쇄 법칙(Chain Rule), 국소적 미분(Local Gradient)의 역방향 누적 곱셈 원리, 덧셈·곱셈 노드의 순전파 캐싱과 역전파를 인터랙티브 연쇄 법칙 계산기 시뮬레이터로 심층 학습한다.
 * [13. Backpropagation - 다층 신경망 가중치 역전파와 델타 오차 (Delta Error Rule)](./13.%20Backpropagation%EC%9D%98%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EA%B0%B1%EC%8B%A0.md) - 다층 퍼셉트론(MLP)의 오차 항(Delta Vector) 역전파 유도, 가중치 행렬 및 편향 벡터의 전치 행렬 텐서 미분 공식, 2층 신경망 수치 예제를 인터랙티브 가중치 역전파 계산기로 심층 학습한다.
+* [14. Vanishing Gradient Effect - 기울기 소실 원인과 시그모이드의 한계 (Gradient Vanishing)](./14.%20Vanishing%20Gradient%20Effect.md) - 시그모이드 도함수의 최대값 0.25 한계로 인한 역전파 기울기 지수적 소실(0.25^L) 수학적 증명, 심층 신경망 초기 계층의 가중치 미갱신 문제를 인터랙티브 계층별 기울기 소실 시뮬레이터로 심층 학습한다.
+* [15. Vanishing Gradient 완화 - 활성화 함수·초기화·잔차 연결 (Mitigation Strategies)](./15.%20Vanishing%20Gradient%20%EC%99%84%ED%99%94.md) - 기울기 소실을 극복하기 위한 3대 해법(ReLU/Leaky ReLU 활성화 함수, He/Xavier 가중치 초기화, ResNet 잔차 스킵 연결)의 수학적 원리와 Batch Normalization을 인터랙티브 활성화 함수 도함수 시뮬레이터로 심층 학습한다.
+* [16. CNN의 합성곱 원리 - 교차 상관 연산과 특징 맵 (Convolutional Neural Networks)](./16.%20CNN%EC%9D%98%20%ED%95%A9%EC%84%B1%EA%B3%B1%20%EC%9B%90%EB%A6%AC.md) - 합성곱(Convolution)과 교차 상관(Cross-Correlation)의 수학적 정의, 2D 커널 슬라이딩과 수용 영역(Receptive Field), 공간적 국소 연결성(Local Connectivity) 및 가중치 공유(Weight Sharing)를 인터랙티브 2D 합성곱 시뮬레이터로 심층 학습한다.
+* [17. CNN의 공간 크기와 채널 - 패딩, 스트라이드, 3D 텐서 (Padding, Stride & Channels)](./17.%20CNN%EC%9D%98%20%EA%B3%B5%EA%B0%84%20%ED%81%AC%EA%B8%B0%EC%99%80%20%EC%B1%84%EB%84%90.md) - 합성곱 계층의 출력 공간 해상도 계산 공식(패딩 P, 스트라이드 S, 커널 크기 K), 다중 채널(Cin, Cout) 3D 텐서 연산 및 학습 파라미터 수 도출을 인터랙티브 Conv2D 출력 차원 계산기로 심층 학습한다.
+* [18. CNN 주요 설계 모듈 이론 - 풀링, 배치 정규화, 드롭아웃 (Pooling, BatchNorm & Dropout)](./18.%20CNN%20%EC%A3%BC%EC%9A%94%20%EC%84%A4%EA%B3%84%20%EB%AA%A8%EB%93%88%20%EC%9D%B4%EB%A1%A0.md) - 최대 풀링(Max Pooling)과 평균 풀링(Avg Pooling)의 이동 불변성, 배치 정규화(BatchNorm)의 내부 공변량 변화 억제 및 가속화 원리, 드롭아웃(Dropout)의 앙상블 효과를 인터랙티브 CNN 풀링 시뮬레이터로 심층 학습한다.
 * [AI 아바타 만들기 실습](./26.%20AI%20%EC%95%84%EB%B0%94%ED%83%80%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20%EC%8B%A4%EC%8A%B5.md) - AI 아바타 만들기 실습의 입력·계산·검증 흐름을 정리한다.
 * [artificial-intelligence 강의 흐름 지도](./00.%20artificial-intelligence%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 29개의 순서·쪽수·학습 점검을 연결한다.
 * [CIFAR-10 분류 실습](./25.%20CIFAR-10%20%EB%B6%84%EB%A5%98%20%EC%8B%A4%EC%8A%B5.md) - CIFAR-10 분류 실습의 입력·계산·검증 흐름을 정리한다.
@@ -23,11 +28,6 @@
 * [CNN 분류 실습](./21.%20CNN%20%EB%B6%84%EB%A5%98%20%EC%8B%A4%EC%8A%B5.md) - CNN 분류 실습의 입력·계산·검증 흐름을 정리한다.
 * [CNN 설계 모듈 실습 - Conv2d 매개변수](./19.%20CNN%20%EC%84%A4%EA%B3%84%20%EB%AA%A8%EB%93%88%20%EC%8B%A4%EC%8A%B5%20-%20Conv2d%20%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98.md) - CNN 설계 모듈 실습 - Conv2d 매개변수의 입력·계산·검증 흐름을 정리한다.
 * [CNN 설계 모듈 실습 - 연결 구조](./20.%20CNN%20%EC%84%A4%EA%B3%84%20%EB%AA%A8%EB%93%88%20%EC%8B%A4%EC%8A%B5%20-%20%EC%97%B0%EA%B2%B0%20%EA%B5%AC%EC%A1%B0.md) - CNN 설계 모듈 실습 - 연결 구조의 입력·계산·검증 흐름을 정리한다.
-* [CNN 주요 설계 모듈 이론](./18.%20CNN%20%EC%A3%BC%EC%9A%94%20%EC%84%A4%EA%B3%84%20%EB%AA%A8%EB%93%88%20%EC%9D%B4%EB%A1%A0.md) - CNN 주요 설계 모듈 이론의 입력·계산·검증 흐름을 정리한다.
-* [CNN의 공간 크기와 채널](./17.%20CNN%EC%9D%98%20%EA%B3%B5%EA%B0%84%20%ED%81%AC%EA%B8%B0%EC%99%80%20%EC%B1%84%EB%84%90.md) - CNN의 공간 크기와 채널의 입력·계산·검증 흐름을 정리한다.
-* [CNN의 합성곱 원리](./16.%20CNN%EC%9D%98%20%ED%95%A9%EC%84%B1%EA%B3%B1%20%EC%9B%90%EB%A6%AC.md) - CNN의 합성곱 원리의 입력·계산·검증 흐름을 정리한다.
-* [Vanishing Gradient Effect](./14.%20Vanishing%20Gradient%20Effect.md) - Vanishing Gradient Effect의 핵심 개념과 학습 판단을 정리한다.
-* [Vanishing Gradient 완화](./15.%20Vanishing%20Gradient%20%EC%99%84%ED%99%94.md) - Vanishing Gradient 완화의 핵심 개념과 학습 판단을 정리한다.
 * [VGGNet 실습](./24.%20VGGNet%20%EC%8B%A4%EC%8A%B5.md) - VGGNet 실습의 핵심 개념과 학습 판단을 정리한다.
 * [중간고사 - MLP 기반 CIFAR-10 분류](./27.%20%EC%A4%91%EA%B0%84%EA%B3%A0%EC%82%AC%20-%20MLP%20%EA%B8%B0%EB%B0%98%20CIFAR-10%20%EB%B6%84%EB%A5%98.md) - 중간고사 - MLP 기반 CIFAR-10 분류의 핵심 개념과 학습 판단을 정리한다.
 * [필기 과제 2 텍스트 추출 한계](./29.%20%ED%95%84%EA%B8%B0%20%EA%B3%BC%EC%A0%9C%202%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%B6%94%EC%B6%9C%20%ED%95%9C%EA%B3%84.md) - 필기 과제 2 텍스트 추출 한계의 핵심 개념과 학습 판단을 정리한다.
