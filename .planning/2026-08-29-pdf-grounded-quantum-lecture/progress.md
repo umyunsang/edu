@@ -179,3 +179,10 @@
 - Started a fresh `machine-learning` source-only remap with three disjoint Sol xhigh lanes: exact inventory/duplicates, classical ML sources, and sequence/deep-learning sources. Prior notes, README prose, Git history, and all earlier lane maps/gates remain rejected authoring evidence.
 - Current filesystem inventory contains 21 source PDFs. This count is provisional until extract matching, duplicate-content analysis, sparse-source review, and assessment numbering are independently completed.
 - No `machine-learning` Markdown has been written in this phase. Browser, preview, DOM, screenshot, rsvg, commit, and push remain unused.
+
+## 2026-08-29 machine-learning source map accepted for authoring
+
+- Fresh inventory found 21 PDFs with 21 matching extract bundles: 510 pages and 93,784 extracted characters in total. No binary duplicate exists, but the two 46-page Transformer lecture extracts have an exact-equal 13,685-character page body; the non-` 2` source is canonical.
+- Three sources are excluded from standalone notes: the duplicate Transformer copy, a 13-page RNN/LSTM handwritten deck whose extract is empty on every page, and a 46-page Transformer example deck whose extract is label/image-only. Source images remain forbidden, so none receives a generic filler note.
+- The accepted non-overlapping map uses 18 substantive sources for 17 notes: 8 regression/SVM/tree/KNN notes, one combined 90-series assessment note, and 8 CNN/U-Net/SR/RNN/Word2Vec/Transformer notes. Prefixes follow each source segment's actual starting slide, not a course sequence.
+- Three Sol xhigh author lanes now own disjoint target files: four regression notes, five SVM/tree/assessment notes, and eight sequence/deep-learning notes. Existing rejected note bodies and README remain unread authoring evidence; obsolete files will not be removed until the new README and backlink review are complete.
