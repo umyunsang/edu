@@ -1,0 +1,552 @@
+### [Page 1]
+Neural Network
+4. 신경망학습
+
+
+
+### [Page 2]
+Rule based vs Data driven
+
+
+
+### [Page 3]
+사람이생각한알고리즘
+결과
+결과
+결과
+사람이생각한특징
+(SIFT, HOG 등)
+기계학습
+(SVM, KNN 등)
+신경망(딥러닝)
+
+
+
+### [Page 4]
+Loss function
+-
+인공신경망학습= Loss function 을낮추는과정
+J(w)
+w
+
+
+
+### [Page 5]
+One-hot encoding
+-
+Classification 을위해Label 의데이터변환
+0 = 1,0,0,0,0,0,0,0,0,0
+1 = 0,1,0,0,0,0,0,0,0,0
+2 = 0,0,1,0,0,0,0,0,0,0
+3 = 0,0,0,1,0,0,0,0,0,0
+4 = 0,0,0,0,1,0,0,0,0,0
+5 = 0,0,0,0,0,1,0,0,0,0
+6 = 0,0,0,0,0,0,1,0,0,0
+7 = 0,0,0,0,0,0,0,1,0,0
+8 = 0,0,0,0,0,0,0,0,1,0
+9 = 0,0,0,0,0,0,0,0,0,1
+
+
+
+### [Page 6]
+Mean squared error
+-
+신경망결과Probability vector 와Label vector 의distance 
+끫료끫뢰: 신경망이끫뢰라고예측한확률
+끫룂끫뢰: 라벨을원핫인코딩한후끫뢰번째좌표
+데이터셋의평균제곱오차=각데이터의평균제곱오차의평균
+(
+)
+2
+1
+2
+k
+k
+k
+E
+y
+t
+=
+−
+∑
+
+
+
+### [Page 7]
+Cross entropy error
+-
+Information theory 에서확률분포사이의거리
+끫료끫뢰: 신경망이끫뢰라고예측한확률
+끫룂끫뢰: 라벨을원핫인코딩한후끫뢰번째좌표
+라벨이끫뢰0라고하면
+데이터셋교차엔트로피오차=각데이터교차엔트로피오차평균
+log
+k
+k
+k
+E
+t
+y
+= −∑
+log
+o
+k
+E
+y
+= −
+
+
+
+### [Page 8]
+Cross entropy error
+
+
+
+### [Page 9]
+Loss functions
+
+
+
+### [Page 10]
+Numerical Differentiation
+0
+(
+)
+( )
+lim
+h
+dy
+f x
+h
+f x
+dx
+h
+→
++
+−
+=
+
+
+
+### [Page 11]
+Numerical Differentiation
+0
+0
+(
+)
+( )
+(
+)
+(
+)
+lim
+lim
+2
+h
+h
+dy
+f x
+h
+f x
+f x
+h
+f x
+h
+dx
+h
+h
+→
+→
++
+−
++
+−
+−
+=
+=
+(
+)
+(
+)
+2
+f x
+h
+f x
+h
+h
++
+−
+−
+
+
+
+### [Page 12]
+Univariable vs Multivariable
+-
+1변수함수미분
+-
+다변수함수의방향미분
+0
+(
+)
+( )
+( )
+lim
+h
+f x
+h
+f x
+f
+x
+h
+→
++
+−
+′
+=
+0
+(
+)
+( )
+( )
+lim
+h
+f
+h
+f
+D f
+h
+→
++
+−
+=
+v
+x
+v
+x
+x
+
+
+
+### [Page 13]
+Directional derivative
+
+
+
+### [Page 14]
+Partial derivative
+-
+각축방향으로미분
+(1,0,
+,0)
+0
+(0,0,
+,1)
+0
+(
+(1,0,
+,0))
+( )
+( )
+lim
+(
+(0,0,
+,1))
+( )
+( )
+lim
+h
+h
+f
+h
+f
+D
+f
+h
+f
+h
+f
+D
+f
+h
+→
+→
++
+−
+=
++
+−
+=
+x
+x
+x
+x
+x
+x
+
+
+
+
+
+i
+f
+x
+∂
+∂
+
+
+
+### [Page 15]
+Gradient (vector)
+1
+2
+(
+,
+,
+,
+)
+n
+f
+f
+f
+f
+x
+x
+x
+∂
+∂
+∂
+∇= ∂
+∂
+∂
+
+( )
+( )
+D f
+f
+= ∇
+⋅
+v
+x
+x
+v
+(
+)
+0
+0
+0
+0
+0
+0
+(
+,
+)
+( , )
+(
+,
+)
+(
+,
+)
+z
+f x
+y
+x y
+x
+y
+f x
+y
+= ∇
+⋅
+−
++
+
+
+
+### [Page 16]
+-
+함수끫뢦와점끫롢에대해
+-
+방향미분이가장커지는방향= gradient 방향, gradient의크기
+-
+가장작아지는방향= gradient 반대방향, 마이너스gradient의크기
+-
+방향미분이0이되는방향= gradient와수직방향
+( )
+( )
+( )
+cos
+( ) cos
+D f
+f
+f
+f
+θ
+θ
+= ∇
+⋅
+= ∇
+⋅
+= ∇
+v
+x
+x
+v
+x
+v
+x
+
+
+
+### [Page 17]
+Level curve
+
+
+
+### [Page 18]
+- 함수끫뢦의등위선(면)과gradient는수직
+
+
+
+### [Page 19]
+Variables
+끫뢜3
+끫룊1
+끫룊2
+끫룈21
+끫룈22
+끫뢜2
+1
+끫뢜1
+끫룈11
+끫룈12
+끫룈13
+끫룈23
+끫뢞1
+끫뢞2
+끫뢞3
+-
+weight, bias variables
+-
+input coefficients
+- Label = (0,0,1)
+
+
+
+### [Page 20]
+784
+50
+10
+-
+# of variables 
+= 784 x 50 + 50 + 50 x 10 + 10 = 39,760
+
+
+
+### [Page 21]
+Gradient Descent Method
+1
+n
+n
+f
+η
++ =
+−
+⋅∇
+x
+x
+
+
+
+### [Page 22]
+2
+2
+0
+1
+0
+1
+(
+,
+)
+f x x
+x
+x
+=
++
+
+
+
+### [Page 23]
+-
+Local minimum 또는saddle point 도출
+-
+초기위치중요
+
+
+
+### [Page 24]
+Learning rate
+
+
+
+### [Page 25]
+Stochastic Gradient Descent
+
+
+
+### [Page 26]
+784
+50
+10
+-
+2층신경망, 뉴런의수#784, #50, #10
+-
+손실함수의# of variables = 39,760
+-
+Learning rate = 0.1, # of epochs = 10,000
+-
+# of epochs 만큼weight 와bias 업데이트
+:
+j
+j
+w
+w
+f
+η
+=
+−
+⋅∇
+
+
+
+### [Page 27]
+
+
+
+### [Page 28]
+Numerical Differentiation
+-
+39,760 × 10,000번의수치미분계산이필요
+-
+affine함수, sigmoid함수, softmax, 교차엔트로피를합성한함수
+-
+Computation cost 과다
+-
+affine층, sigmoid층, softmax층, 손실함수층에서analytic derivative 와
+chain rule을써서전체미분을구함
+-
+컴퓨터가가장빨리할수있는덧셈과곱으로미분값도출
+Backpropagation
+
+
+
+### [Page 29]
+Question?
+
+
+
+### [Page 30]
+자료출처
+Deep learning from scratch, 한빛미디어, 사이토고키
+https://github.com/youbeebee/deeplearning_from_scratch
+
