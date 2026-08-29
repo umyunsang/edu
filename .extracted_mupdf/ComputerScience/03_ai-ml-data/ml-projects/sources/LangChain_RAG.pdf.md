@@ -1,0 +1,345 @@
+## --- [Page 1] ---
+1
+
+LangChain을활용한
+
+PDF 챗봇구축
+
+## --- [Page 2] ---
+contents
+
+01.  LangChain 이론
+
+03.  Prompt
+
+04.  RAG (Retrieval Augmented Generation)
+
+07.  실습(LangChain – PDF 챗봇구축)
+
+06.  LM Studio 설치및환경설정
+
+02.  LangChain 구조
+
+05.  PDF 챗봇구축전략
+
+## --- [Page 3] ---
+01. LangChain 이론
+
+3
+
+LangChain이란?
+
+언어모델로구동되는애플리케이션을개발하기위한프레임워크
+
+대표적인기능
+
+-
+데이터인식: 언어모델이다른데이터소스에연결하는기능
+
+-
+에이전트기능: 언어모델이환경과상호작용할수있도록구성하는기능
+
+구체적인방법론을제공하지않아도알아서생각해서찾아내도록하는기능
+
+ex) 기사검색, 최신동향, 인터넷검색등
+
+## --- [Page 4] ---
+01. LangChain 이론
+
+4
+
+ChatGPT 한계
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 5] ---
+01. LangChain 이론
+
+5
+
+ChatGPT 한계점극복방법=> ChatGPT 개량
+
+1.
+Fine-Tuning
+
+기존딥러닝모델의weight를조정하여원하는용도의모델로업데이트하는방법
+
+2.
+N-shot Learning
+
+0개~ n개의출력예시를제시하여, 딥러닝이용도에알맞은출력을하도록조정하는방법
+
+내가질문하고자하는정보를미리주어주고원하는답을얻는방법
+
+In-Context Learning을도와주는프레임워크가LangChain
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+
+| In | - | Context Learning |
+| --- | --- | --- |
+
+
+|  | 장점 |  | : | 어떤 |  | 분야에 |  | 잘 |  | 알고 |  | 있는 |  | 챗봇이랑 |  | 대화하고 |  | 싶다라는 |  | 문제는 |  | 대부분 |  | 해결 |  | 가능 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+
+## --- [Page 6] ---
+01. LangChain 이론
+
+6
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 7] ---
+02. LangChain 구조
+
+7
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 8] ---
+03. Prompt란
+
+8
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 9] ---
+04. RAG (Retrieval Augmented Generation)
+
+9
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 10] ---
+04. RAG (Retrieval Augmented Generation)
+
+10
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 11] ---
+04. RAG (Retrieval Augmented Generation)
+
+11
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 12] ---
+05. PDF 챗봇구축전략
+
+12
+
+참고문헌: https://www.youtube.com/watch?v=WWRCLzXxUgs&list=PLQIgLu3Wf-q_Ne8vv-ZXuJ4mztHJaQb_v
+
+## --- [Page 13] ---
+06.  LM Studio 설치및환경설정
+
+13
+
+다운로드링크[https://lmstudio.ai/]
+
+## --- [Page 14] ---
+06.  LM Studio 설치및환경설정
+
+14
+
+Teddy 검색
+
+## --- [Page 15] ---
+06.  LM Studio 설치및환경설정
+
+15
+
+EEVE-Korean-Instruct-10.8B-v1.0-gguf 선택
+
+## --- [Page 16] ---
+06.  LM Studio 설치및환경설정
+
+16
+
+EEVE-Korean-Instruct-10.8B-v1.0-gguf 선택
+
+## --- [Page 17] ---
+06.  LM Studio 설치및환경설정
+
+17
+
+[System Prompt 내용]
+
+You are a helpful AI Assistant.
+
+Please answer in Korean.
+
+## --- [Page 18] ---
+06.  LM Studio 설치및환경설정
+
+18
+
+[Advanced Configuration]
+
+Context Length: 4096
+
+Temperature: 0
+
+Tokens to generate: -1
+
+## --- [Page 19] ---
+06.  LM Studio 설치및환경설정
+
+19
+
+[Inference Parameters]
+
+기본설정값사용
+
+필요에따라조정해서
+
+사용하기
+
+## --- [Page 20] ---
+06.  LM Studio 설치및환경설정
+
+20
+
+[Prompt Format]
+
+System Message Prefix: <s>
+
+System Message Suffix: </s>
+
+User Message Prefix: \n<s>Human:
+
+User Message Suffix: </s>\n<s>Assistant:
+
+Stop Strings: <s>, </s>
+
+## --- [Page 21] ---
+06.  LM Studio 설치및환경설정
+
+21
+
+[Save Settings as Preset]
+
+Preset 설정저장하기
+
+## --- [Page 22] ---
+06.  LM Studio 설치및환경설정
+
+22
+
+## --- [Page 23] ---
+06.  LM Studio 설치및환경설정
+
+23
+
+## --- [Page 24] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+24
+
+## --- [Page 25] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+25
+
+## --- [Page 26] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+26
+
+## --- [Page 27] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+30
+
+[라이브러리]
+
+langchain==0.1.20                 pypdf==3.16.2
+
+chromadb==0.5.0                   pdf2image==1.16.3
+
+load-dotenv==0.1.0                pdfminer==20191125
+
+openai==1.30.5
+
+tiktoken==0.7.0
+
+sentence-transformers==3.0.0
+
+## --- [Page 28] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+31
+
+[말뭉치저장경로추가]
+
+경로이름: Corpus
+
+PDF 파일다운로드링크: https://m.site.naver.com/1pZ7F
+
+치과교정용스마트페이스마스크를활용한스마트교정관리.pdf 파일추가
+
+## --- [Page 29] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+32
+
+[.env 파일내용]
+
+파일이름: .env
+
+LM_LOCAL_URL=“http://localhost:1234/v1”
+
+## --- [Page 30] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+33
+
+## --- [Page 31] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+34
+
+## --- [Page 32] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+35
+
+## --- [Page 33] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+36
+
+## --- [Page 34] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+37
+
+## --- [Page 35] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+38
+
+## --- [Page 36] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+39
+
+## --- [Page 37] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+40
+
+## --- [Page 38] ---
+07.  실습(LangChain – PDF 챗봇구축)
+
+41
+
+## --- [Page 39] ---
+Thank You
+
+For Your Attention.
+
+43

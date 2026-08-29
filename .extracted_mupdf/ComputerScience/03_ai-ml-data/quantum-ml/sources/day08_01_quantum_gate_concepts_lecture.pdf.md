@@ -1,0 +1,40 @@
+## --- [Page 1] ---
+Quantum Gate 개념
+
+## --- [Page 2] ---
+© 2026 Kangwuk Heo. All Rights Reserved.
+
+Quantum Gate 개념> Quantum Gate가무엇인가?
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+
+## --- [Page 3] ---
+© 2026 Kangwuk Heo. All Rights Reserved.
+
+Quantum Gate 개념> Quantum Gate가무엇인가?
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+
+## --- [Page 4] ---
+© 2026 Kangwuk Heo. All Rights Reserved.
+
+Quantum Gate 개념> Quantum Gate가무엇인가?
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+
+## --- [Page 5] ---
+© 2026 Kangwuk Heo. All Rights Reserved.
+
+Quantum Gate 개념> 대표Quantum Gate 이해하기
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+
+## --- [Page 6] ---
+© 2026 Kangwuk Heo. All Rights Reserved.
+
+Quantum Gate 개념> QML에서Gate의의미
+
+Source : IBM Quantum Learning, Qiskit Machine Learning Documentation
+
+## --- [Page 7] ---
+© 2026 Kangwuk Heo. All Rights Reserved.
