@@ -1,9 +1,45 @@
-# Index
+---
+title: "neural-networks"
+type: "overview"
+tags:
+  - "neural-networks"
+  - "overview"
+  - "index"
+course: "neural-networks"
+semester: "2-1"
+status: "stable"
+authority: "primary"
+created: "2026-08-29"
+updated: "2026-08-29"
+---
 
-## lecture
+# 📚 인공신경망 (Neural Networks & Deep Learning Foundations) 전체 강의 로드맵
 
-* [01. 퍼셉트론(Perceptron)의 동작 원리와 논리 회로 구현](./01.%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%28Perceptron%29%EC%9D%98%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%85%BC%EB%A6%AC%20%ED%9A%8C%EB%A1%9C%20%EA%B5%AC%ED%98%84.md) - 신경 세포(Neuron)의 생물학적 메커니즘을 모방한 프랑크 로젠블랫의 인공 뉴런 퍼셉트론(Perceptron), 가중치(Weight)와 편향(Bias)에 의한 신호 전달 수식(y = h(b + w1*x1 + w2*x2)), AND/NAND/OR 게이트의 선형 분리 결정 경계와 파라미터 튜닝, 그리고 단층 구조의 한계를 다층 퍼셉트론(MLP)의 다층 비선형 조합으로 극복하는 XOR 회로 구현을 인터랙티브 논리 회로 시뮬레이터로 학습한다.
-* [02. 인공신경망(ANN)의 순전파와 활성화 함수 - 계단함수, 시그모이드, ReLU, 소프트맥스](./02.%20%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D%28ANN%29%EC%9D%98%20%EC%88%9C%EC%A0%84%ED%8C%8C%EC%99%80%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%20-%20%EA%B3%84%EB%8B%A8%ED%95%A8%EC%88%98%2C%20%EC%8B%9C%EA%B7%B8%EB%AA%A8%EC%9D%B4%EB%93%9C%2C%20ReLU%2C%20%EC%86%8C%ED%94%84%ED%8A%B8%EB%A7%A5%EC%8A%A4.md) - 신경망의 입력층에서 은닉층, 출력층으로 신호를 전달하는 순전파(Forward Propagation) 연산 메커니즘, 넘파이(NumPy) 다차원 배열 행렬 곱(np.dot)을 활용한 병렬 계산, 활성화 함수(계단 함수, 시그모이드, ReLU)의 비선형성 도입 필수성과 도함수 특성, 그리고 다중 클래스 분류를 위한 소프트맥스(Softmax) 함수의 지수 오버플로 방지 기법을 인터랙티브 활성화 함수 비교기로 학습한다.
-* [03. 신경망 학습과 손실 함수 - MSE, 교차 엔트로피 오차(CEE) 및 수치 미분 경사하강법](./03.%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%ED%95%99%EC%8A%B5%EA%B3%BC%20%EC%86%90%EC%8B%A4%20%ED%95%A8%EC%88%98%20-%20MSE%2C%20%EA%B5%90%EC%B0%A8%20%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC%20%EC%98%A4%EC%B0%A8%28CEE%29%20%EB%B0%8F%20%EC%88%98%EC%B9%98%20%EB%AF%B8%EB%B6%84%20%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95.md) - 기계학습의 핵심인 훈련 데이터 기반 매개변수 자동 학습, 손실 함수(Loss Function)로서의 평균 제곱 오차(MSE)와 교차 엔트로피 오차(CEE / Cross Entropy Error: E = -sum(t_k * ln(y_k + delta))), 미니배치(Mini-batch) 무작위 추출 및 손실 평균화, 수치 미분(Numerical Differentiation)과 중앙 차분(Central Difference), 기울기(Gradient) 벡터 산출 및 경사하강법 갱신을 인터랙티브 손실 함수 계산기로 학습한다.
-* [04. 오차역전파법(Backpropagation) - 계산 그래프, 연쇄 법칙 및 계층별 역전파 구현](./04.%20%EC%98%A4%EC%B0%A8%EC%97%AD%EC%A0%84%ED%8C%8C%EB%B2%95%28Backpropagation%29%20-%20%EA%B3%84%EC%82%B0%20%EA%B7%B8%EB%9E%98%ED%94%84%2C%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99%20%EB%B0%8F%20%EA%B3%84%EC%B8%B5%EB%B3%84%20%EC%97%AD%EC%A0%84%ED%8C%8C%20%EA%B5%AC%ED%98%84.md) - 수치 미분의 느린 속도를 해결하는 오차역전파법(Backpropagation)의 계산 그래프(Computational Graph) 표현, 미분의 연쇄 법칙(Chain Rule)에 의한 국소적 미분 전달 메커니즘, 덧셈 노드(역전파 그대로 전달)와 곱셈 노드(서로 바꾼 입력값을 곱해 전달)의 역전파 규칙, 그리고 ReLU 계층, Sigmoid 계층, Affine 계층(행렬 곱 dL/dX = dL/dY * W^T, dL/dW = X^T * dL/dY), Softmax-with-Loss 계층의 역전파 수식을 인터랙티브 계산 그래프 시뮬레이터로 학습한다.
-* [05. 신경망 학습 고도화 기술 - 매개변수 갱신(SGD·Momentum·AdaGrad·Adam), 가중치 초기화 및 정규화(Dropout·BatchNorm)](./05.%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%ED%95%99%EC%8A%B5%20%EA%B3%A0%EB%8F%84%ED%99%94%20%EA%B8%B0%EC%88%A0%20-%20%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%20%EA%B0%B1%EC%8B%A0%28SGD%C2%B7Momentum%C2%B7AdaGrad%C2%B7Adam%29%2C%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EB%B0%8F%20%EC%A0%95%EA%B7%9C%ED%99%94%28Dropout%C2%B7BatchNorm%29.md) - 신경망 학습 최적화 4대 매개변수 갱신 알고리즘(SGD의 비등방성 진동, 물리적 관성을 모방한 Momentum, 개별 파라미터 맞춤 감쇠 AdaGrad, 모멘텀+AdaGrad 융합 Adam), 활성화값 분포를 고르게 유지하기 위한 가중치 초기화(Xavier 초기화 vs He 초기화), 학습 안정화와 기울기 소실 방지를 위한 배치 정규화(Batch Normalization), 과적합을 억제하는 가중치 감쇠(Weight Decay) 및 드롭아웃(Dropout)을 인터랙티브 가중치 분포 시뮬레이터로 학습한다.
+생물학적 뉴런을 모방한 단층 퍼셉트론과 논리 회로(AND/OR/NAND/XOR) 구현, 인공신경망(ANN)의 순전파와 활성화 함수(시그모이드, ReLU, 오버플로 방지 소프트맥스), 신경망 학습과 손실 함수(MSE, 교차 엔트로피 오차 CEE, 수치 미분 기울기), 계산 그래프와 연쇄 법칙에 기반한 고속 오차역전파법(Backpropagation), 그리고 최적화 알고리즘(Momentum, AdaGrad, Adam), 가중치 초기화(Xavier, He), 정규화(Dropout, BatchNorm)까지 밑바닥부터 구현하는 딥러닝 핵심 원리를 다룹니다.
+
+---
+
+## 🗺️ 강의 목차 (Curriculum Overview)
+
+```mermaid
+graph TD
+    N1["01. 퍼셉트론의 동작 원리와 논리 회로 구현<br/>$y = h(b + w_1 x_1 + w_2 x_2)$ & 선형 분리 & 다층 XOR"] --> N2["02. 인공신경망의 순전파와 활성화 함수<br/>행렬곱 $\mathbf{Y} = \mathbf{X}\mathbf{W} + \mathbf{B}$ & Sigmoid & ReLU & Stable Softmax"]
+    N2 --> N3["03. 신경망 학습과 손실 함수<br/>MSE & 교차 엔트로피 오차(CEE) $E = -\sum t_k \ln y_k$ & 수치 미분"]
+    N3 --> N4["04. 오차역전파법(Backpropagation)<br/>계산 그래프 & 국소 미분 & Affine 계층 & Softmax-with-Loss ($y-t$)"]
+    N4 --> N5["05. 신경망 학습 고도화 기술<br/>Adam & Xavier vs He 초기화 & 배치 정규화(BatchNorm) & Dropout"]
+```
+
+---
+
+## 📑 개별 정리 문서 목록
+
+1. [01. 퍼셉트론(Perceptron)의 동작 원리와 논리 회로 구현](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/neural-networks/notes/01.%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0(Perceptron)%EC%9D%98%20%EB%8F%99%EC%9E%91%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EB%85%BC%EB%A6%AC%20%ED%9A%8C%EB%A1%9C%20%EA%B5%AC%ED%98%84.md)
+   - 퍼셉트론 수식, 편향의 물리적 의미, 다층 XOR 조합, 대화형 논리 게이트 진리표 연산기
+2. [02. 인공신경망(ANN)의 순전파와 활성화 함수 - 계단함수, 시그모이드, ReLU, 소프트맥스](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/neural-networks/notes/02.%20%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D(ANN)%EC%9D%98%20%EC%88%9C%EC%A0%84%ED%8C%8C%EC%99%80%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%20-%20%EA%B3%84%EB%8B%A8%ED%95%A8%EC%88%98,%20%EC%8B%9C%EA%B7%B8%EB%AA%A8%EC%9D%B4%EB%93%9C,%20ReLU,%20%EC%86%8C%ED%94%84%ED%8A%B8%EB%A7%A5%EC%8A%A4.md)
+   - 비선형성 도입 필수성, Stable Softmax 오버플로 방지 공식, 대화형 활성화 함수 및 도함수 계산기
+3. [03. 신경망 학습과 손실 함수 - MSE, 교차 엔트로피 오차(CEE) 및 수치 미분 경사하강법](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/neural-networks/notes/03.%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%ED%95%99%EC%8A%B5%EA%B3%BC%20%EC%86%80%EC%8B%A4%20%ED%95%A8%EC%88%98%20-%20MSE,%20%EA%B5%90%EC%B0%A8%20%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC%20%EC%98%A4%EC%B0%A8(CEE)%20%EB%B0%8F%20%EC%88%98%EC%B9%98%20%EB%AF%B8%EB%B6%84%20%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95.md)
+   - 손실 함수 연속성, 수치 미분 중앙 차분, 미니배치 CEE, 실시간 교차 엔트로피 손실 연산기
+4. [04. 오차역전파법(Backpropagation) - 계산 그래프, 연쇄 법칙 및 계층별 역전파 구현](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/neural-networks/notes/04.%20%EC%98%A4%EC%B0%A8%EC%97%AD%EC%A0%84%ED%8C%8C%EB%B2%95(Backpropagation)%20-%20%EA%B3%84%EC%82%B0%20%EA%B7%B8%EB%9E%98%ED%94%84,%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99%20%EB%B0%8F%20%EA%B3%84%EC%층%EB%B3%84%20%EC%97%AD%EC%A0%84%ED%8C%8C%20%EA%B5%AC%ED%98%84.md)
+   - 덧셈/곱셈 노드 역전파, Affine 행렬 곱 역전파, Softmax-with-Loss, 대화형 계산 그래프 역전파 시뮬레이터
+5. [05. 신경망 학습 고도화 기술 - 매개변수 갱신(SGD·Momentum·AdaGrad·Adam), 가중치 초기화 및 정규화(Dropout·BatchNorm)](file:///Users/um-yunsang/work/edu/ComputerScience/03_ai-ml-data/neural-networks/notes/05.%20%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%ED%95%99%EC%8A%B5%20%EA%B3%A0%EB%8F%84%ED%99%94%20%EA%B8%B0%EC%88%A0%20-%20%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%20%EA%B0%B1%EC%8B%A0(SGD%C2%B7Momentum%C2%B7AdaGrad%C2%B7Adam),%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EC%B4%88%EA%B8%B0%ED%99%94%20%EB%B0%8F%20%EC%A0%95%EA%B7%9C%ED%99%94(Dropout%C2%B7BatchNorm).md)
+   - 4대 옵티마이저 수식, Xavier vs He 분산 보존 공식, 배치 정규화, 대화형 가중치 초기화 적합도 검사기

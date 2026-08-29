@@ -1,0 +1,617 @@
+### [Page 1]
+컴퓨터비전
+Computer Vision
+- Overview -
+동아대학교소프트웨어대학AI학과
+2026년1학기
+임한신
+
+
+
+### [Page 2]
+•
+과목
+•
+컴퓨터비전(2026년1학기)
+•
+강의목표
+•
+2D 영상처리기술에대한이해
+•
+특징추출알고리즘및매칭알고리즘에대한이해
+•
+기초3D 기하및깊이추정개념습득
+•
+딥러닝기반객체검출기술에대한이해
+•
+기본영상이해기술에대한이해
+•
+최신컴퓨터비전기술(ViT 등) 소개
+•
+주교재
+•
+컴퓨터비전과딥러닝, 한빛출판사, 오일석저
+과목소개
+
+
+
+### [Page 3]
+•
+중간시험: 40%
+•
+기말시험: 40%
+•
+과제: 10%
+•
+출석: 10% 
+•
+합계: 100%
+•
+출석: 1회결석시1점감점, 2회지각시1회결석처리
+•
+중간시험또는기말시험에결석하는경우F 부여
+•
+본강의의수업계획및내용은사정에따라변경될수있음
+•
+본교과목은OSS 교육의일환으로오픈소스소프트웨어도구를활용하여실습과이론을병
+행합니다.
+•
+예) OpenCV, Pytorch 등
+평가방법
+
+
+
+### [Page 4]
+•
+5월5일화요일(어린이날)
+•
+컴퓨터비전1반보강일: 6월9일화요일
+•
+5월25일월요일(석가탄신일대체휴일)
+•
+컴퓨터비전2반보강일: 6월11일목요일
+보강안내
+
+
+
+### [Page 5]
+•
+컴퓨터비전은인간의시각능력을컴퓨터가모방하여데이터를이해하고처리하는기술
+•
+컴퓨터비전의입력: 일반적으로카메라등의영상센서로부터획득한영상또는비디오
+•
+즉, 컴퓨터에눈을달아주고눈으로보는것이무엇인지를알수있게해주는기술
+•
+컴퓨터비전과딥러닝의관계
+•
+컴퓨터비전≠ 딥러닝
+•
+딥러닝은컴퓨터비전의다양한문제를해결하기위한가장강력한방법
+컴퓨터비전이란?
+
+
+
+### [Page 6]
+•
+컴퓨터비전기술의응용사례
+컴퓨터비전이란?
+드론
+의료영상
+자율주행
+스마트공장
+스포츠
+소비자분석
+
+
+
+### [Page 7]
+•
+컴퓨터비전기술의응용사례
+컴퓨터비전이란?
+얼굴인식보안
+모니터링
+게임
+청소로봇
+우주탐사
+휴머노이드로봇
+지형분석
+감시
+
+
+
+### [Page 8]
+•
+1D signal 
+•
+하나의독립변수(예) 시간t)에따라변하는신호
+•
+음성신호, 1D 센서등
+•
+2D signal 
+•
+두개의독립변수(예) 공간좌표x, y)에따라변하는신호
+•
+다양한영상신호등
+•
+영상신호의특징
+•
+공간적상관성이큼. 즉, 가까이있는픽셀끼리는비슷한값을가질확률이높음
+•
+에지(edge), 코너(corner), 텍스처(texture), 패턴(pattern)과같은구조적특징이있음
+2D 영상처리및분석
+1D signal 
+2D signal(영상) 
+
+
+
+### [Page 9]
+•
+에지검출(Edge detection)
+•
+영역분할(Region segmentation)
+2D 영상처리및분석
+SLIC superpixels
+Canny 
+edge detector
+
+
+
+### [Page 10]
+•
+기하변환
+•
+샘플링(Sampling)과보간(Interpolation)
+2D 영상처리및분석
+Interpolation
+
+
+
+### [Page 11]
+•
+특징(Feature)이란?
+•
+영상내에서특정지점이나영역을다른곳과명확히구분할수있게해주는유의미한정보
+•
+특징의예시
+•
+에지(edge)
+•
+밝기값이급격히변하는경계선
+•
+코너(corner)
+•
+두개이상의에지가교차하는지점. 매칭에가장중요
+•
+텍스처(texture)
+•
+반복되는미세구조
+•
+Descriptor
+•
+특정지점주변의픽셀정보를벡터등으로요약한것
+•
+Feature map
+•
+영상의특징들이어느위치에얼마나강하나나타나는지를나타냄
+특징추출및매칭
+
+
+
+### [Page 12]
+•
+좋은특징(feature)의조건
+•
+불변성(Invariance)
+•
+크기, 회전, 각도, 조명등의변화에도특징의값이크게변하지않아야함
+•
+변별성(Distinctiveness)
+•
+코너나패턴이많은영역처럼다른영역과명확히달라야함
+•
+재현력(Repeatability)
+•
+다른조건(다른영상)에서도특징으로검출될수있어야함
+•
+….
+특징추출및매칭
+
+
+
+### [Page 13]
+•
+특징추출(Feature extraction)
+•
+원본데이터에서의미있는정보를수치벡터형태로변환하는과정
+1.
+검출(detection)
+•
+코너와에지와같은특징이될만한지점을찾음
+2.
+특징기술(description)
+•
+검출된지점주변의픽셀정보를분석하여descriptor라는벡터로변환
+•
+매칭(Matching)
+•
+둘이상의영상에서같은특징점을찾는과정
+•
+두특징들의descriptor 사이의거리를계산하여가장가까운특징점을연결
+•
+RANSAC 등의알고리즘을통해outlier를제거하고일관된매칭(inlier)만남김
+특징추출및매칭
+RANSAC
+
+
+
+### [Page 14]
+•
+3D 좌표계(3D coordinates)
+3D 기하및깊이추정
+x
+y
+X = (x, y, z, 1)
+z
+X1
+X2
+X3
+X4
+월드좌표계(World coordinates)
+→ 3D 공간의좌표계
+→ 오른손좌표계
+X1 = R1X + t1
+X2 = R2X1 + t2
+X3 = R3X2 + t3
+X4 = R4X3 + t4
+X4 = R4(R3(R2(R1X + t1) + t2) + t3) + t4
+
+
+
+### [Page 15]
+•
+핀홀카메라모델(Pinhole camera model)
+3D 기하및깊이추정
+
+
+
+### [Page 16]
+•
+깊이추정(Depth estimation)
+•
+스테레오카메라
+•
+Disparity(양안시차) : 두눈(또는두카메라) 사이의시점차이로인해발생하는영
+상간의위치차이
+•
+참고: 인간의눈은약6.5cm 떨어져있음
+3D 기하및깊이추정
+Left image
+
+
+
+### [Page 17]
+•
+깊이추정(Depth estimation)
+•
+스테레오카메라
+•
+Disparity(양안시차) : 두눈(또는두카메라) 사이의시점차이로인해발생하는영
+상간의위치차이
+•
+참고: 인간의눈은약6.5cm 떨어져있음
+3D 기하및깊이추정
+Right image
+
+
+
+### [Page 18]
+•
+깊이추정(Depth estimation)
+•
+스테레오카메라
+•
+Disparity(양안시차) : 두눈(또는두카메라) 사이의시점차이로인해발생하는영
+상간의위치차이
+•
+참고: 인간의눈은약6.5cm 떨어져있음
+3D 기하및깊이추정
+Right image
+Left image
+
+
+
+### [Page 19]
+•
+3D 기하추정(Depth estimation)
+•
+카메라칼리브레이션(Camera calibration)
+•
+실제카메라들의파라미터들을추정하는작업
+•
+즉, 3D 공간에서실제카메라가어디에위치하고어떤방향을향하고있고어디에상
+을맺히는지모델링하는작업
+3D 기하및깊이추정
+
+
+
+### [Page 20]
+•
+3D 기하추정(Depth estimation)
+•
+카메라칼리브레이션(Camera calibration)
+•
+실제카메라들의파라미터들을추정하는작업
+•
+즉, 3D 공간에서실제카메라가어디에위치하고어떤방향을향하고있고어디에상
+을맺히는지모델링하는작업
+3D 기하및깊이추정
+Camera 1
+C1
+Camera 3
+C3
+Camera 2
+C2
+Camera 4
+C4
+카메라칼리브레이션: 
+Camera 1, Camera 2, Camera 3, Camera 4
+의파라미터를구함
+
+
+
+### [Page 21]
+•
+3D 기하추정(Depth estimation)
+•
+카메라칼리브레이션(Camera calibration)
+•
+실제카메라들의파라미터들을추정하는작업
+•
+즉, 3D 공간에서실제카메라가어디에위치하고어떤방향을향하고있고어디에상
+을맺히는지모델링하는작업
+3D 기하및깊이추정
+x
+y
+z
+월드좌표계(World coordinates)
+Camera 1
+C1
+Camera 3
+C3
+Camera 2
+C2
+Camera 4
+C4
+카메라칼리브레이션: 
+Camera 1, Camera 2, Camera 3, Camera 4
+의파라미터를구함
+
+
+
+### [Page 22]
+•
+3D 기하추정(Depth estimation)
+•
+COLMAP
+•
+여러장의영상으로부터카메라위치와3D 장면을복원하는OSS
+•
+크게SfM(Structure-from-Motion)과MVS(Multi-View Stereo)의두단계로이루어짐
+•
+SfM (Structure from Motion) : 영상들속의특징점을찾아서로매칭하고, 카메라의파라
+미터를구함
+•
+MVS (Multi-View Stereo) : 영상들의모든픽셀에대한깊이정보를계산하여점구름
+(Point Cloud)이나메쉬(Mesh)를생성
+3D 기하및깊이추정
+SfM (Structure from Motion)
+MVS (Multi-View Stereo)
+
+
+
+### [Page 23]
+•
+객체검출(Object detection)
+•
+영상에서특정객체의위치와종류를동시에찾는기술
+객체검출
+
+
+
+### [Page 24]
+•
+객체검출(Object detection) 기술의분류
+•
+2-Stage detector
+•
+물체가있을법한후보영역을먼저뽑고(1st stage) 선별
+된영역을정밀하게검사(2nd stage)
+•
+대표기술: Faster-RCNN 등
+•
+1-stage detector
+•
+영상전체를한번만훑고바로위치와종류를예측
+•
+대표기술: YOLO, SSD 등
+•
+Transformer 계열detector
+•
+영상전체를Transformer로분석하고object query를이용
+해객체의위치와종류를동시에예측
+•
+대표기술: DETR 등
+객체검출
+객체검출의예
+
+
+
+### [Page 25]
+•
+영상분할(Image segmentation)
+•
+영상의각픽셀이어떤객체에속하는지분류하는기술
+•
+의미론적분할(Semantic segmentation)
+•
+영상내의모든픽셀을카테고리(클래스)별로분류(예) 사람, 자동차, 하늘, 도로…..)
+•
+인스턴스분할(Instance segmentation)
+•
+같은클래스라도개별객체(instance)를구분하여분할
+•
+범용적분할(Panoptic segmentation)
+•
+의미론적분할과인스턴스분할을합친방식
+영상이해기술
+원본영상
+의미론적분할
+인스턴스분할
+범용적분할
+
+
+
+### [Page 26]
+•
+자세추정(Pose estimation)
+•
+영상에서사람이나물체의주요관절(키포인트, 랜드마크)
+의위치를추정하는기술
+•
+일인자세추정(Single-person pose estimation)
+•
+한사람의자세만집중적으로추정
+•
+다인자세추정(Multi-person pose estimation)
+•
+여러사람의자세를동시에추정
+•
+Top-down 방식
+•
+먼저사람을찾고자세를추정
+•
+Bottom-up 방식
+•
+랜드마크를모두검출한다음랜드마크를결합
+하여사람별로자세추정
+영상이해기술
+일인자세추정의예시
+
+
+
+### [Page 27]
+•
+최신3D 복원기술
+•
+3D Gaussian Splatting
+•
+여러장의사진을바탕으로현실세계의공간이나물체
+의가상시점영상을고속/고품질로생성하는기술
+•
+3D 공간상의Gaussian들을화면에뿌려서(splatting) 영상
+을구성
+최신컴퓨터비전기술
+3DGS의기본개념
+3DGS 데모
+
+
+
+### [Page 28]
+•
+최신3D 복원기술
+•
+3D Gaussian Splatting
+•
+3DGS의응용
+•
+문화유산, 공간의자유시점이동
+•
+https://superspl.at/
+•
+3DGS의동영상적용(4DGS)
+•
+…….
+최신컴퓨터비전기술
+Super Splat 사이트
+4DGS 데모
+
+
+
+### [Page 29]
+•
+Vision Transformer(ViT)
+•
+자연어처리에사용되었던Transformer 구조를영상처리에적용한딥러닝모델
+•
+최근다양한컴퓨터비전문제의딥러닝모델로사용됨
+•
+적용분야
+•
+영상분류
+•
+객체검출
+•
+영상분할
+•
+영상이해
+•
+깊이추정
+•
+생성형AI
+•
+…
+최신컴퓨터비전기술
+Vision Transformer의기본구조
+
+
+
+### [Page 30]
+•
+로봇비전(Robot vision)
+•
+SLAM(Simultaneous Localization and Mapping)
+•
+로봇이나자율시스템이동시에자신의위치를추정하고환경지도를만드는기술
+•
+자율주행의핵심기술로로봇청소기, 드론, 서빙로봇등다양한분야에적용
+최신컴퓨터비전기술
+
+
+
+### [Page 31]
+•
+컴퓨터비전과목소개
+•
+컴퓨터비전기술의적용분야
+•
+컴퓨터비전주요분야개요
+내용정리
+
+
+
+### [Page 32]
+•
+참고사이트
+•
+https://szeliski.org/Book/
+•
+https://d2l.ai/
+•
+참고자료
+•
+R. Szeliski, Computer Vision: Algorithms and Applications, 2nd ed., Springer, 2022.
+•
+A, Torralba, P. Isola and W. T. Freeman, Foundations of Computer Vision, MIT Press, 2024
+참고자료
+
+
+
+### [Page 33]
+•
+2D 영상의특성및영상처리기술
+•
+영상의품질측정지표
+•
+OpenCV 소개및실습
+다음주강의내용
+

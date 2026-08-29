@@ -1,0 +1,322 @@
+### [Page 1]
+•
+화면의밝기(Luminance)를밝거나어둡게조정
+•
+감마조절(gamma correction)
+•
+화면의밝기를인간의시각특성에맞게비선형적으로조절하는과정
+•
+사람은어두운곳에서의변화에는민감하게반응하지만, 아주밝은곳에서의변화에는
+상대적으로둔감
+•
+아래의수식에서γ (감마, gamma)값으로화면의밝기를조절
+명암조절
+L = 보통256
+𝑓̇ : 0~255 사이밝기를0~1사이로정규화
+
+
+
+### [Page 2]
+•
+화면의밝기(Luminance)를밝거나어둡게조정
+•
+감마조절(gamma correction)
+명암조절
+γ = 0.5
+γ = 1
+γ = 2
+
+
+
+### [Page 3]
+•
+감마조절(gamma correction)
+•
+일반적인모니터는화면을어둡게출력하는성질(γ ≈ 2.2)이있음
+•
+이를상쇄하기위해영상을만들때미리화면을그만큼밝게(γ ≈ 1/2.2) 만들어서저장
+•
+두과정을거치면½.2 x 2.2 ≈ 1 이되어, 우리눈에원래의자연스러운밝기로보이게됨
+명암조절
+
+
+
+### [Page 4]
+•
+이미지내에서객체의모양이나구조를분석하고조작하는기법
+•
+구조요소(structuring element)를이용하여영역의모양을조작
+•
+기본연산
+•
+팽창(dilation) : 작은홈을메우거나끊어진영역을연결하는효과. 영역을키움
+•
+침식(erosion) : 경계에솟은돌출부분을깎는효과. 영역을작게만듦
+•
+열림(opening) : 침식한결과에팽창적용. 원래영역크기유지
+•
+닫힘(closing) : 팽창한결과에침식을적용. 원래영역크기유지
+모폴로지(Morphology)
+구조요소의예
+
+
+
+### [Page 5]
+모폴로지(Morphology) 예시
+입력영상
+구조요소
+팽창
+침식
+잘라낸영상
+팽창
+침식
+닫힘
+
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+|  | 구조 요소 |  |  |  |  |
+| 입력 영상 |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+
+### [Page 6]
+•
+Homogeneous coordinates(동차좌표계)
+•
+2차원좌표에1을추가해3차원벡터로표현
+•
+3개요소에같은값을곱하면같은좌표. 예) (-2,4,1)과(-4,8,2)는(-2,4)에해당
+기하변환
+x
+y
+(0, 0)
+(Height-1, Width-1)
+영상평면
+(Image plane)
+(100, 100)
+
+
+
+### [Page 7]
+•
+Homogeneous coordinates(동차좌표계)
+•
+2차원좌표에1을추가해3차원벡터로표현
+•
+3개요소에같은값을곱하면같은좌표. 예) (-2,4,1)과(-4,8,2)는(-2,4)에해당
+기하변환
+x
+y
+(0, 0)
+(Height-1, Width-1)
+영상평면
+(Image plane)
+(100, 100)
+(100, 100)
+Homogeneous coordinates(동차좌표계)
+(100, 100, 1)
+(200, 200, 2)
+(150, 150, 1.5)
+(100k, 100k, k)
+…
+동일한좌표
+(k : scale factor)
+
+
+
+### [Page 8]
+•
+기하변환의종류
+기하변환
+이동
+회전
+크기
+x 방향으로tx, y 방향으로
+ty 만큼이동
+원점을중심으로반시계방향으로
+θ만큼회전
+x 방향으로sx, y 방향으로
+sy 만큼크기조정
+
+
+
+### [Page 9]
+•
+기하변환의예
+•
+정사각형을x 방향으로2, y 방향으로-1만큼이동한다음반시계방향으로30도회전
+기하변환
+이동적용
+회전적용
+
+
+
+### [Page 10]
+•
+기하변환의예
+•
+정사각형을x 방향으로2, y 방향으로-1만큼이동한다음반시계방향으로30도회전
+기하변환
+•
+복합변환을위한행렬을미리곱해놓으면모든점에
+대해한번의행렬곱셈으로기하변환가능
+
+
+
+### [Page 11]
+•
+Forward mapping and Backward mapping
+•
+Forward mapping 때는변환영상에서값을받지못하는픽셀이생기는문제발생
+•
+Backward mapping 방식으로문제해결가능
+기하변환
+Forward mapping (전방변환)                      Backward mapping (후방변환) 
+
+
+
+### [Page 12]
+•
+컴퓨터비전과이미지처리를목적으로하는오픈소스라이브러리
+•
+2000년인텔리서치에서공개
+•
+현재는OpenCV Foundation에서비영리운영
+•
+함수와클래스는C/C++로개발
+•
+인터페이스언어는C, C++, 자바, 자바스크립트, 파이썬지원
+•
+교육목적, 상용목적모두무료사용가능(Apache 2.0)
+•
+가장최신버전은OpenCV 4.x
+•
+공식홈페이지: https://opencv.org
+•
+매뉴얼사이트: https://docs.opencv.org/
+•
+공식깃허브: https://github.com/opencv/opencv
+OpenCV개요
+
+
+
+### [Page 13]
+•
+구글코랩(Google Colab)
+•
+코랩에는opencv-python 라이브러리가이미설치되어있음
+•
+cv2.imshow() 함수를사용하면에러가발생하므로코랩전용출력함수를사용해야함
+•
+웹상의이미지를내려받거나영상파일을업로드해서사용가능
+실습환경
+# OpenCV의version 확인
+!pip show opencv-python
+
+
+
+### [Page 14]
+•
+OpenCV 영상출력
+영상처리실습
+Bicubic interpolation
+import urllib.request
+from google.colab.patches import cv2_imshow
+# URL 설정(OpenCV 공식깃허브저장소내샘플데이터)
+url = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/data/fruits.jpg'
+save_name = ‘fruits.jpg'
+# 파일다운로드
+urllib.request.urlretrieve(url, save_name)
+# 확인출력
+img = cv2.imread(save_name)
+cv2_imshow(img)
+
+
+
+### [Page 15]
+•
+OpenCV에서영상은numpy.ndarray 클래스형의객체임
+•
+그러므로OpenCV가다루는영상은numpy가제공하는다양한기능(함수)을사용할수있음
+•
+Matplotlib으로시각화하거나Scikit-learn, PyTorch, TensorFlow 같은딥러닝/머신러닝라이
+브러리에바로적용가능
+•
+NumPy의슬라이싱기능등을사용하면이미지의특정영역(ROI, Region of Interest)을잘
+라내거나수정하는작업용이
+•
+Numpy는내부적으로C와포트란으로구현되어있어파이썬의기본리스트보다매우빠름
+영상처리실습
+pip show numpy
+# numpy가설치되어있는지확인
+import numpy as np  #numpy import
+# 영상의배열정보확인
+img.shape
+# (480, 512, 3)
+img.ndim
+# 3
+img.size
+# 737280
+img.dtype
+# dtype(‘uint8')
+
+
+
+### [Page 16]
+•
+OpenCV에서의영상데이터구조
+영상처리실습
+print(img[0,0,0], img[0,0,1], img[0,0,2])
+# (0, 0) 픽셀값
+print(img[0,1,0], img[0,1,1], img[0,1,2])
+# (0, 1) 픽셀값
+※ OpenCV에서는BGR의순서로픽셀데이터를저장
+
+
+
+### [Page 17]
+•
+OpenCV에서의슬라이싱(Slicing)
+영상처리실습
+B_channel = img[ :,  :, 0]
+# blue channel
+G_channel = img[ :,  :, 1]
+# green channel
+R_channel = img[ :,  :, 2]
+# red channel
+cv2_imshow(R_channel)
+cv2_imshow(G_channel)
+cv2_imshow(B_channel)
+roi = img[100:300, 200:400]
+cv2_imshow(roi)
+downsampled = img[::2, ::2]
+cv2_imshow(downsampled)
+
+
+|  | B channel = img[ :, :, 0] # blue channel _ G channel = img[ :, :, 1] # green channel _ R channel = img[ :, :, 2] # red channel _ cv2 imshow(R channel) _ _ cv2 imshow(G channel) _ _ cv2 imshow(B channel) _ _ | roi = img[100:300, 200:400] cv2 imshow(roi) _ downsampled = img[::2, ::2] cv2 imshow(downsampled) _ |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 18]
+•
+2D 영상의특성및영상처리기술
+•
+영상의품질측정지표
+•
+OpenCV 소개및영상데이터구조
+내용정리
+
+
+
+### [Page 19]
+•
+영상의변환(Transform) 및필터링
+•
+에지및코너탐지
+•
+영상의품질측정지표
+다음주강의내용
+

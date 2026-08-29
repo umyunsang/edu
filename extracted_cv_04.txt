@@ -1,0 +1,488 @@
+### [Page 1]
+Homography(호모그래피)
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+
+
+
+### [Page 2]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+𝐇
+
+
+
+### [Page 3]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+𝐇
+𝐇a = b
+𝐇c ≠d
+a
+b
+c
+d
+
+
+
+### [Page 4]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+Homography(호모그래피)
+𝐇ABa1 = b1
+𝐇ABa2 = b2
+𝐇AB =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+
+
+
+### [Page 5]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+Homography(호모그래피)
+𝐇AB =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+a1 = (xa1, ya1, 1)T, b1 = (xb1, yb1, 1)T 이라고하면
+𝐇ABa1 =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+xa1
+ya1
+1
+=
+ℎ11xa1 + ℎ21ya1 + ℎ31
+ℎ12xa1 + ℎ22ya1 + ℎ32
+ℎ13xa1 + ℎ23ya1 + ℎ33
+= b1
+
+
+
+### [Page 6]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+Homography(호모그래피)
+𝐇AB =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+a1 = (xa1, ya1, 1)T, b1 = (xb1, yb1, 1)T 이라고하면
+𝐇ABa1 =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+xa1
+ya1
+1
+=
+ℎ11xa1 + ℎ21ya1 + ℎ31
+ℎ12xa1 + ℎ22ya1 + ℎ32
+ℎ13xa1 + ℎ23ya1 + ℎ33
+= b1
+= 
+௛ଵଵxa1ା௛ଶଵya1ା௛ଷଵ
+௛ଵଷxa1ା௛ଶଷya1ା௛ଷଷ
+௛ଵଶxa1ା௛ଶଶya1ା௛ଷଶ
+௛ଵଷxa1ା௛ଶଷya1ା௛ଷଷ
+1
+= b1 (homogeneous coordinates)
+
+
+
+### [Page 7]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+Homography(호모그래피) 추정
+Homography(호모그래피)
+𝐇AB =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+xb1=
+௛ଵଵxa1ା௛ଶଵya1ା௛ଷଵ
+௛ଵଷxa1ା௛ଶଷya1ା௛ଷଷ
+yb1=
+௛ଵଶxa1ା௛ଶଶya1ା௛ଷଶ
+௛ଵଷxa1ା௛ଶଷya1ା௛ଷଷ
+a1 = (xa1, ya1, 1)T, b1 = (xb1, yb1, 1)T 이라고하면
+𝐇ABa1 =
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+xa1
+ya1
+1
+= 
+௛ଵଵxa1ା௛ଶଵya1ା௛ଷଵ
+௛ଵଷxa1ା௛ଶଷya1ା௛ଷଷ
+௛ଵଶxa1ା௛ଶଶya1ା௛ଷଶ
+௛ଵଷxa1ା௛ଶଷya1ା௛ଷଷ
+1
+= b1 (homogeneous coordinates)
+
+
+
+### [Page 8]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+• Homography를결정하는최소한의매칭점들(matching points, correspondences)의수는4개임
+• 한||b1 - Ha1|| = 0
+Homography(호모그래피) 추정
+𝐇
+a1
+a2
+a3
+a4
+b1
+b2
+b3
+b4
+a1 = (xa1, ya1, 1)T, b1 = (xb1, yb1, 1)T 이라고하면
+b1 = Ha1
+즉||b1 - Ha1|| = 0
+b1 × Ha1 = 0
+
+
+
+### [Page 9]
+• 벡터(Vector)
+• 벡터의외적(cross product)
+• a×b = 
+a2 b3 − a3 b2
+a2 b3 − a3 b2
+a2 b3 − a3 b2
+• ∣a×b∣=∣a∣∣b∣sinθ
+ a×a = 0 
+Homography(호모그래피) 추정
+
+
+
+### [Page 10]
+• Homography(호모그래피) 구하기0
+Homography(호모그래피) 추정
+a1 = (xa1, ya1, 1)T, b1 = (xb1, yb1, 1)T 이라고하면
+0 
+0
+  0
+−xa1
+−ya1
+−1
+xa1yb1     
+ya1yb1   
+yb1
+xa1
+ya1
+1
+    0   
+   0     
+0
+−xa1xb1
+−ya1xb1
+−xb1
+ℎ11
+ℎ12
+ℎ13
+ℎ21
+ℎ22
+ℎ23
+ℎ31
+ℎ32
+= 0
+0
+b1 × Ha1 = 0
+xb1
+yb1
+1
+ ×
+ℎ11xa1 + ℎ21ya1 + ℎ31
+ℎ12xa1 + ℎ22ya1 + ℎ32
+ℎ13xa1 + ℎ23ya1 + ℎ33
+= 0
+a×b = 
+a2 b3 − a3 b2
+a2 b3 − a3 b2
+a2 b3 − a3 b2
+: 하나의매칭점으로2개의방정식얻음
+A
+h
+
+
+
+### [Page 11]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+• Homography를결정하는최소한의매칭점들(matching points, correspondences)의수는4개임
+• 한
+Homography(호모그래피) 추정
+𝐇
+a1
+a2
+a3
+a4
+b1
+b2
+b3
+b4
+일치점4개를안다면
+b1 = Ha1
+b2 = Ha1
+b3 = Ha1
+b4 = Ha1
+8개의방정식
+Ah = 0
+
+
+
+### [Page 12]
+• Homography(호모그래피)의개념
+• 평면형물체(planar object)를카메라로찍었을때원래의물체와영상평면에투영된물체사이에성립
+되는기하학적변환관계
+• homogeneous coordinates에서3x3 행렬H로표현
+• Homography를결정하는최소한의매칭점들(matching points, correspondences)의수는4개임
+• 한
+Homography(호모그래피) 추정
+𝐇
+a1
+a2
+a3
+a4
+b1
+b2
+b3
+b4
+일치점4개를안다면
+b1 = Ha1
+b2 = Ha1
+b3 = Ha1
+b4 = Ha1
+8개의방정식
+ℎ11
+ℎ21
+ℎ31
+ℎ12
+ℎ22
+ℎ32
+ℎ13
+ℎ23
+ℎ33
+8개의변수결정
+( ℎ33 는scale factor)
+Ah = 0
+SVD(least squares)
+
+
+
+### [Page 13]
+• Least squares(최소자승법)
+• 오차의제곱합을최소화하여최적의해를찾는방법
+• 아래와같은명확한해가존재
+• 수학적으로미분/최적화가편리함
+• Outlier에매우취약
+• 오차2 의합들이라서큰오차(outlier)가결과에큰
+영향을미침
+Homography(호모그래피) 추정
+
+
+
+### [Page 14]
+• Least squares(최소자승법)
+• 오차의제곱합을최소화하여최적의해를찾는방법
+• 아래와같은명확한해가존재
+• 수학적으로미분/최적화가편리함
+• Outlier에매우취약
+• 오차2 의합들이라서큰오차(outlier)가결과에큰
+영향을미침
+Homography(호모그래피) 추정
+
+
+
+### [Page 15]
+• 소수의깨끗한샘플만무작위로골라가설을세우고, 가장많은지지를받는가설을선택하는
+알고리즘
+• 전체순서
+1. 가설설정(Hypothesis): 데이터중아주적은수의샘플(예: 직선의경우2개, homography의경우매칭
+점4개)을무작위로뽑음
+2. 모델생성: 뽑은샘플들로임시모델을계산
+3. 검증(Verification): 나머지모든데이터가이모델과얼마나가까운지확인하고정해진오차범위내에
+들어오면인라이어(Inlier, 올바른데이터)로인정
+4. 최적모델선택: 위과정을여러번반복하여, 가장많은인라이어(Inlier)를확보한모델을최종정답으
+로채택
+RANSAC(RANdom Sample Consensus)
+
+
+
+### [Page 16]
+• Homography 추정을위한RANSAC 
+RANSAC(RANdom Sample Consensus)
+입력: 매칭쌍집합X={(a1, b1), (a2, b2),…, an, bn), }
+출력: 최적homography Hopt
+X에서네쌍을랜덤하게선택하고homography H 계산
+X의모든매칭쌍에대해아래와같이inlier 여부판별
+||bi - Hai|| < t 이면inlier 아니면outlier
+
+
+
+### [Page 17]
+• RANSAC 알고리즘의특징
+• 이상치(Outliers)에매우강함(Robustness)
+• Least Squares은모든데이터의오차제곱합을최소화하려다보니단하나의아주큰노이즈만있어도모
+델이노이즈쪽으로크게휘어버릴수있음
+• RANSAC은전체중아주일부만무작위로뽑아서모델을만든뒤얼마나많은데이터가이모델에동의
+하는지(Consensus) 판단하기때문에데이터의절반이상이Outliers여도진짜모델을찾아낼수있음
+• 특정수학모델에국한되지않고다양한기하학적모델링에모두적용가능
+• 예) 직선은2개의점, 평면은3개의점, homography는4개의매칭점등모델을구성하는최소한의샘플
+을선택할수있으면적용가능
+• 샘플을적게뽑을수록그안에오염된데이터(Outlier)가섞여들어갈확률이적어지기때문에성
+공확률과연산효율이좋아짐
+• 예) 직선을모델링할때3개의점을뽑을때보다2개의점을뽑을때outlier가섞일확률이더적음
+RANSAC(RANdom Sample Consensus)
+
+
+
+### [Page 18]
+RANSAC 실습
+import cv2
+import numpy as np
+import faiss
+import urllib.request
+from google.colab.patches import cv2_imshow
+# 1. GPU 리소스초기화및이미지로드
+res = faiss.StandardGpuResources()
+# 서로다른시점에서촬영된이미지두장
+url1 = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/data/aloeL.jpg'
+url2 = 'https://raw.githubusercontent.com/opencv/opencv/master/samples/data/aloeR.jpg'
+urllib.request.urlretrieve(url1, 'aloeL.jpg')
+urllib.request.urlretrieve(url2, 'aloeR.jpg')
+img1_gray = cv2.imread('aloeL.jpg', cv2.IMREAD_GRAYSCALE)
+img2_gray = cv2.imread('aloeR.jpg', cv2.IMREAD_GRAYSCALE)
+# 2. SIFT 특징점추출(반복패턴이라특징점개수를충분히늘림)
+sift = cv2.SIFT_create(nfeatures=5000)
+kp1, des1 = sift.detectAndCompute(img1_gray, None)
+kp2, des2 = sift.detectAndCompute(img2_gray, None)
+des1_f32 = des1.astype('float32')
+des2_f32 = des2.astype('float32')
+print(f"특징점개수: Image1({len(kp1)}개), Image2({len(kp2)}개)\n")
+# 3. Faiss-GPU를이용한고속KNN 매칭(K=2)
+index = faiss.IndexFlatL2(128)
+gpu_index = faiss.index_cpu_to_gpu(res, 0, index)
+gpu_index.add(des2_f32)
+distances, indices = gpu_index.search(des1_f32, 2)
+# 4. Lowe's Ratio Test를통한1차필터링
+good_matches = []
+for i in range(len(des1)):
+if distances[i][0] < 0.5 * distances[i][1]:
+m = cv2.DMatch(_queryIdx=i, _trainIdx=int(indices[i][0]), 
+_distance=distances[i][0])
+good_matches.append(m)
+print(f"Faiss 매칭완료| Ratio Test 통과: {len(good_matches)}개")
+
+
+
+### [Page 19]
+RANSAC 실습
+# 5. RANSAC + Homography 계산및최종시각화
+if len(good_matches) > 4:
+src_pts = np.float32([kp1[m.queryIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+dst_pts = np.float32([kp2[m.trainIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+# RANSAC으로homography 행렬(M) 계산
+M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 3.0)
+matches_mask = mask.ravel().tolist()
+# Inliers만추출
+inlier_matches = [good_matches[i] for i in range(len(matches_mask)) if 
+matches_mask[i] == 1]
+print(f"RANSAC 검증완료| 최종인라이어(Inliers): {len(inlier_matches)}개")
+res_img = cv2.drawMatches(img1_gray, kp1, img2_gray, kp2, inlier_matches[:500], 
+None,
+flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
+print("\n[RANSAC 매칭결과]")
+cv2_imshow(res_img)
+else:
+print("매칭점이부족하여호모그래피를계산할수없습니다.")
+}
+ㅁㅁ
+
+
+
+### [Page 20]
+• 특징검출및기술알고리즘(SIFT, ORB) 
+• 매칭방법및관련library
+• 매칭의성능측정지표
+내용정리
+
+
+
+### [Page 21]
+• 스테레오영상의기하구조
+• 스테레오영상으로부터깊이추정방법
+다음주강의내용
+
