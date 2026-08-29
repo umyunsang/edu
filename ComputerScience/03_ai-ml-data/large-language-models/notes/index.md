@@ -11,6 +11,7 @@
 * [ChatGPT 모델 선택과 활용 한계](./40.%20ChatGPT%20%EB%AA%A8%EB%8D%B8%20%EC%84%A0%ED%83%9D%EA%B3%BC%20%ED%99%9C%EC%9A%A9%20%ED%95%9C%EA%B3%84.md) - 원본의 GPT-3.5-turbo·GPT-4o-mini 비교를 활용 조건과 연결하고, 적용 영역별 한계를 정리한다.
 * [Completion API 매개변수와 텍스트 생성](./62.%20Completion%20API%20%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80%20%ED%85%8D%EC%8A%A4%ED%8A%B8%20%EC%83%9D%EC%84%B1.md) - legacy Completion의 문자열 프롬프트, 생성 매개변수, 질의응답·요약·번역 사례와 응답 구조를 정리한다.
 * [GPT 구조와 학습 전략](./19.%20GPT%20%EA%B5%AC%EC%A1%B0%EC%99%80%20%ED%95%99%EC%8A%B5%20%EC%A0%84%EB%9E%B5.md) - GPT의 디코더 구조, 세대별 확장, 문맥 학습과 미세조정, RLHF의 역할을 원본 수치와 함께 정리한다.
+* [large-language-models 강의 흐름 지도](./00.%20large-language-models%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 2개의 순서·핵심 단서·검증 포인트를 연결한다.
 * [NLP 처리에서 어텐션까지](./01.%20NLP%20%EC%B2%98%EB%A6%AC%EC%97%90%EC%84%9C%20%EC%96%B4%ED%85%90%EC%85%98%EA%B9%8C%EC%A7%80.md) - 자연어 처리의 발전 흐름과 7단계 처리 과정, Seq2Seq의 병목 및 Attention의 해결 관점을 정리한다.
 * [OpenAI API 요청·응답과 도구 호출](./49.%20OpenAI%20API%20%EC%9A%94%EC%B2%AD%C2%B7%EC%9D%91%EB%8B%B5%EA%B3%BC%20%EB%8F%84%EA%B5%AC%20%ED%98%B8%EC%B6%9C.md) - OpenAI API의 요청 계약, 엔드포인트, 응답 구조, 스트리밍·이미지 입력·도구 호출을 하나의 실행 흐름으로 정리한다.
 * [OpenAI API 키·결제·환경변수](./144.%20OpenAI%20API%20%ED%82%A4%C2%B7%EA%B2%B0%EC%A0%9C%C2%B7%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98.md) - API 패키지 설치부터 결제·사용 한도·키 발급·환경변수 로딩까지의 흐름과 원문 UI·코드 경계를 정리한다.
