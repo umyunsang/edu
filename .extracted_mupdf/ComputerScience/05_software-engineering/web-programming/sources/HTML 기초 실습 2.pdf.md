@@ -1,0 +1,151 @@
+## --- [Page 1] ---
+1
+
+웹 프로그래밍
+
+6장 HTML 기초 실습 (2)
+
+동아대학교 컴퓨터•AI공학부
+
+양 선
+
+6장 HTML (2)
+
+## --- [Page 2] ---
+2
+
+➢<mark> 노란색 형광펜효과 </mark>
+
+▪
+style로 바탕색 노란색 설정하는 것과 같은 효과
+
+➢
+<sup>위첨자, <sub>아래첨자
+
+▪
+x<sup>2</sup> + y<sup>2</sup> = 1   ➔x2 + y2 = 1
+
+6장 HTML (2)
+
+1장에 이어 HTML 기초 실습
+
+## --- [Page 3] ---
+3
+
+<table border="1">
+
+<tr> <td colspan="3">여러 칸 셀 합치기
+
+<tr> <td>2행1열<td>2행2열<td>2행3열
+
+</table>
+
+<table border="1">
+
+<tr> <td rowspan="3">여러 행<br>셀 합치기<td>1행2열
+
+<tr> <td>2행2열
+
+<tr> <td>3행2열
+
+</table>
+
+6장 HTML (2)
+
+테이블 셀 병합
+
+## --- [Page 4] ---
+4
+
+-
+mark 해보고 안되면 배경색 yellow
+
+-
+소스 전체에 strong 태그 없음. font-weight:bold 도 없음
+
+- 전체 구조는 똑같이 하되, 과목명은 자유롭게
+
+- <style> ~ </style> 사이에 샵(#) 하나 점(.) 하나
+
+6장 HTML (2)
+
+실습#1
+
+## --- [Page 5] ---
+5
+
+<form method="post" action="/mybook">
+
+성명: <input type="text" name="person"> <p>
+회원여부: 
+<input type="radio" name="member" value="yes" checked>회원
+    <input type="radio" name="member" value="no">비회원<p>
+
+직업: <select name="job"  size="1">
+
+<option>학생 <option selected>창업CEO <option>예술가 <option>기타
+            </select> <p>
+
+<fieldset>
+<legend> 구입희망분야(복수선택 가능)</legend>
+
+<input type="checkbox" name="books" value="computer">컴퓨터
+              <input type="checkbox" name="books" value="economy">주식
+              <input type="checkbox" name="books" value="animation">애니메이션
+              <input type="checkbox" name="books" value="common">상식
+     </fieldset> <p>
+
+비고: <br>
+
+<textarea name="comments" rows="4" cols="40">...하고픈 말...</textarea> </p>
+<button>신청</button>        
+</form>
+
+6장 HTML (2)
+
+멀티선택 가능하며, 배열로 전송됨
+
+멀티 선택
+
+## --- [Page 6] ---
+6
+
+선호도: <br>
+
+별로이다<input type="range" name="favorite" min="1" max="5" value="3" > 너무좋다
+
+6장 HTML (2)
+
+range, number
+
+range 그림은
+브라우저마다 조금씩 달라요
+
+개수 : <input type="number" name="count" required>
+
+입력 안하고 submit하려고 하면 
+말풍선 등장
+
+## --- [Page 7] ---
+7
+6장 HTML (2)
+
+실습#2 첫 화면
+
+iam.html 첫화면
+
+## --- [Page 8] ---
+8
+6장 HTML (2)
+
+iam.html 자료입력 후
+
+V
+
+iamAnswer.html
+
+- 진한 파란색 부분은 class="blue" 
+- strong 태그 없음
+- 좋아하는 음식 부분은 테이블 사용
+
+실습#2 결과 화면
