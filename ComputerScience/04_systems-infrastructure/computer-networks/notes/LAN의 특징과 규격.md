@@ -2,13 +2,14 @@
 title: LAN의 특징과 규격
 description: IEEE 802의 LLC·MAC 구분과 이더넷 프레임·접근 제어를 정리한다
 type: lecture
-tags: [computer-networks, lan]
+tags: [ computer-networks, lan ]
 course: computer-networks
 semester: 2-2
 source: 7. LAN의 특징과 규격 추출 텍스트
 source_pages: 16
 status: draft
 aliases: []
+slides: true
 ---
 
 > [!abstract] 한 줄 요약
