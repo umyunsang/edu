@@ -3,7 +3,7 @@
 ## lecture
 
 * [CNN 기반 초해상도](./01.%20CNN%20%EA%B8%B0%EB%B0%98%20%EC%B4%88%ED%95%B4%EC%83%81%EB%8F%84.md) - 보간법과 SRCNN의 초해상도 입력·학습·평가 흐름을 정리한다.
-* [CNN과 LeNet-5 분류](./01.%20CNN%EA%B3%BC%20LeNet-5%20%EB%B6%84%EB%A5%98.md) - 이미지 평탄화의 한계에서 출발해 CNN의 특징 추출과 LeNet-5 분류 구조를 정리한다.
+* [CNN과 LeNet-5 분류](./01.%20CNN%EA%B3%BC%20LeNet-5%20%EB%B6%84%EB%A5%98.md) - 평탄화의 한계에서 출발해 CNN 특징 추출과 LeNet-5의 CIFAR-10 분류 구조를 정리한다.
 * [CNN과 U-Net 실습](./01.%20CNN%EA%B3%BC%20U-Net%20%EC%8B%A4%EC%8A%B5.md) - 이미지 분류의 공간 정보와 CNN·U-Net의 특징 추출 및 복원 흐름을 정리한다.
 * [KNN 분류·회귀와 직접 구현](./09.%20KNN%20%EB%B6%84%EB%A5%98%C2%B7%ED%9A%8C%EA%B7%80%EC%99%80%20%EC%A7%81%EC%A0%91%20%EA%B5%AC%ED%98%84.md) - KNN의 거리 계산, K 선택, 분류·회귀 집계와 직접 구현 평가를 정리한다.
 * [QP 기반 SVM과 마진](./01.%20QP%20%EA%B8%B0%EB%B0%98%20SVM%EA%B3%BC%20%EB%A7%88%EC%A7%84.md) - SVC 설정과 가중치 벡터 크기로 계산하는 선형 SVM 마진을 정리한다.
@@ -14,7 +14,7 @@
 * [RNN과 LSTM의 순환 구조](./01.%20RNN%EA%B3%BC%20LSTM%EC%9D%98%20%EC%88%9C%ED%99%98%20%EA%B5%AC%EC%A1%B0.md) - 순차 데이터의 hidden state, BPTT와 장기 의존성, LSTM cell state와 gate를 정리한다.
 * [SVM 구현 - GD와 QP](./21.%20SVM%20%EA%B5%AC%ED%98%84%20-%20GD%EC%99%80%20QP.md) - 수동 마진 갱신, 이차 계획법과 선형 SVC로 SVM 경계를 구현하는 절차를 비교한다.
 * [SVM 실습과 결정 경계](./01.%20SVM%20%EC%8B%A4%EC%8A%B5%EA%B3%BC%20%EA%B2%B0%EC%A0%95%20%EA%B2%BD%EA%B3%84.md) - 최대 마진 경계, 제약 조건, 경사 하강법과 이차 계획법의 SVM 학습 흐름을 정리한다.
-* [SVM 최대 마진과 힌지 손실](./02.%20SVM%20%EC%B5%9C%EB%8C%80%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%ED%9E%8C%EC%A7%80%20%EC%86%90%EC%8B%A4.md) - 선형 SVM의 결정 경계, 초평면 거리, 최대 마진과 힌지 손실의 관계를 정리한다.
+* [SVM 최대 마진과 힌지 손실](./02.%20SVM%20%EC%B5%9C%EB%8C%80%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%ED%9E%8C%EC%A7%80%20%EC%86%90%EC%8B%A4.md) - 선형 SVM의 결정 경계, 마진 조건, 위반 샘플 갱신과 구현 한계를 정리한다.
 * [SVM과 KNN 대비 문제](./01.%20SVM%EA%B3%BC%20KNN%20%EB%8C%80%EB%B9%84%20%EB%AC%B8%EC%A0%9C.md) - 정규화된 영화 선호도 데이터에서 다중 SVM과 KNN을 선택·평가하는 문제 해결 흐름을 정리한다.
 * [SVM의 마진과 경사 하강법](./01.%20SVM%EC%9D%98%20%EB%A7%88%EC%A7%84%EA%B3%BC%20%EA%B2%BD%EC%82%AC%20%ED%95%98%EA%B0%95%EB%B2%95.md) - 선형 SVM의 마진 조건, 힌지 손실 갱신, 결정 경계 해석을 정리한다.
 * [Transformer Self-Attention](./01.%20Transformer%20Self-Attention.md) - Transformer의 인코더·디코더와 self-attention, 잔차 연결·정규화의 역할을 정리한다.
