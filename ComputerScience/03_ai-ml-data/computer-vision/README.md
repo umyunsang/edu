@@ -16,6 +16,10 @@ updated: "2026-08-29"
 > [!abstract] 한 줄 요약
 > 컴퓨터 비전은 픽셀을 처리하고, 대응과 기하를 거쳐 장면의 구조를 추정하는 학습 흐름이다.
 
+## 강의 흐름 지도
+
+[00. computer-vision 강의 흐름 지도](<./notes/00. computer-vision 강의 흐름 지도.md>)
+
 ## 이 과정의 지도
 
 ```mermaid

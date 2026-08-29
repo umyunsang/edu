@@ -16,6 +16,10 @@ updated: "2026-08-29"
 > [!abstract] 한 줄 요약
 > 빅데이터 분석은 데이터의 규모와 불확실성, 실행 모델, 의사결정의 연결을 함께 다룬다.
 
+## 강의 흐름 지도
+
+[00. big-data-analysis 강의 흐름 지도](<./notes/00. big-data-analysis 강의 흐름 지도.md>)
+
 ## 이 과정의 지도
 
 ```mermaid

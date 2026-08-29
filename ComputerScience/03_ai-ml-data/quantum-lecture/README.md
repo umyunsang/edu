@@ -16,6 +16,10 @@ updated: "2026-08-29"
 > [!abstract] 한 줄 요약
 > 양자 강의는 상태 변화, 측정, 문제 매핑의 세 관점으로 읽는다.
 
+## 강의 흐름 지도
+
+[00. quantum-lecture 강의 흐름 지도](<./notes/00. quantum-lecture 강의 흐름 지도.md>)
+
 ## 이 과정의 지도
 
 ```mermaid

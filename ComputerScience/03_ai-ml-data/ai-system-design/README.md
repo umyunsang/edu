@@ -17,6 +17,10 @@ updated: "2026-08-29"
 > [!abstract] 한 줄 요약
 > 이 과정은 ==문제 정의==에서 출발해 요구사항·책임·계획·보호 전략으로 AI 시스템 설계를 연결한다.
 
+## 강의 흐름 지도
+
+[00. ai-system-design 강의 흐름 지도](<./notes/00. ai-system-design 강의 흐름 지도.md>)
+
 ## 학습 경로
 
 ```mermaid

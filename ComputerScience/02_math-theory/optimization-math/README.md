@@ -15,6 +15,10 @@ updated: "2026-08-29"
 > [!abstract] 강의 흐름
 > 1장 행렬 → 2장 미적분 → 3장 볼록 최적화·경사하강법 → Homework 2·리포트 순서로 읽는다.
 
+## 강의 흐름 지도
+
+[00. optimization-math 강의 흐름 지도](<./notes/00. optimization-math 강의 흐름 지도.md>)
+
 ## 정리문서
 
 | 순서 | 문서 | 원본 |

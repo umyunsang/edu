@@ -16,6 +16,10 @@ updated: '2026-08-29'
 > [!abstract] 학습 경로
 > 운영체제는 실행 단위, 공유 자원, 메모리 위치, 저장 장치의 순서로 연결해 공부한다.
 
+## 강의 흐름 지도
+
+[00. operating-systems 강의 흐름 지도](<./notes/00. operating-systems 강의 흐름 지도.md>)
+
 ## 과목 지도
 
 ```mermaid

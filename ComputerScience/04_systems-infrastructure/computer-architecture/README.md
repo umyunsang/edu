@@ -13,6 +13,10 @@ status: draft
 > [!abstract]
 > 컴퓨터구조는 비트 표현에서 논리 회로, 기억 장치, 제어와 중앙 처리 장치까지의 데이터·제어 흐름을 다룬다.
 
+## 강의 흐름 지도
+
+[00. computer-architecture 강의 흐름 지도](<./notes/00. computer-architecture 강의 흐름 지도.md>)
+
 ## 학습 노트
 
 - [01. 컴퓨터구조 서론](<./notes/01. 컴퓨터구조 서론.md>)

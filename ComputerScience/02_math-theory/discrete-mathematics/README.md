@@ -15,6 +15,10 @@ updated: "2026-08-29"
 > [!abstract] 강의 흐름
 > 이산수학·집합·논리 기초 → 관계와 함수 → 그래프 → 트리 → 지식그래프·알고리즘 → Homework I 순서로 읽는다.
 
+## 강의 흐름 지도
+
+[00. discrete-mathematics 강의 흐름 지도](<./notes/00. discrete-mathematics 강의 흐름 지도.md>)
+
 ## 정리문서
 
 | 순서 | 문서 | 원본 |

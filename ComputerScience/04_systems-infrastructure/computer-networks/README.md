@@ -10,6 +10,10 @@ semester: "2-2"
 status: draft
 ---
 
+## 강의 흐름 지도
+
+[00. computer-networks 강의 흐름 지도](<./notes/00. computer-networks 강의 흐름 지도.md>)
+
 ## 학습 노트
 
 통신의 기본 단위에서 시작해 계층별 역할, 주소와 경로, 전송 제어, 보안의 연결을 따라간다.

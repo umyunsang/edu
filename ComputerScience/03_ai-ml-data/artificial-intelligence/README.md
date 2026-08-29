@@ -10,6 +10,10 @@ tags:
 slides: true
 ---
 
+## 강의 흐름 지도
+
+[00. artificial-intelligence 강의 흐름 지도](<./notes/00. artificial-intelligence 강의 흐름 지도.md>)
+
 ## 인공지능 강의 흐름
 
 원본 PDF의 진행 순서를 따라 **퍼셉트론 → MLP → 최적화·일반화 → CNN → 응용·평가**로 읽습니다. 같은 PDF를 두 관점으로 나눈 노트는 번호를 유지해 강의 중 질문과 복습 위치를 빠르게 찾을 수 있습니다.

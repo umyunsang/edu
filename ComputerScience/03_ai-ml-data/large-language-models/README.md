@@ -26,6 +26,10 @@ updated: '2026-08-29'
 
 ---
 
+## 강의 흐름 지도
+
+[00. large-language-models 강의 흐름 지도](<./notes/00. large-language-models 강의 흐름 지도.md>)
+
 ## 학습 경로
 
 ```mermaid
