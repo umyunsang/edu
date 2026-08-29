@@ -3,7 +3,7 @@
 ## lecture
 
 * [04. RAG의 원리와 인덱싱](./04.%20RAG%EC%9D%98%20%EC%9B%90%EB%A6%AC%EC%99%80%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.md) - 외부 지식을 검색해 생성 입력을 보강하는 RAG의 목적과 로딩·분할·임베딩·저장 절차를 정리한다.
-* [109. 개발 환경·API 키와 보충 사례](./109.%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%C2%B7API%20%ED%82%A4%EC%99%80%20%EB%B3%B4%EC%B6%A9%20%EC%82%AC%EB%A1%80.md) - 환경 변수와 추적 설정을 안전하게 구분하고, 중복 부록과 고유 데이터·NLP·Gemma·Groq 사례를 분리해 정리한다.
+* [109. 개발 환경·API 키와 보충 사례](./109.%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%C2%B7API%20%ED%82%A4%EC%99%80%20%EB%B3%B4%EC%B6%A9%20%EC%82%AC%EB%A1%80.md) - 환경 변수와 추적 설정, 한국어 데이터·NLP 응용, Gemma·Groq 사례를 한 구간의 보충 내용으로 정리한다.
 * [19. 검색 최적화와 LlamaIndex·벡터 저장소](./19.%20%EA%B2%80%EC%83%89%20%EC%B5%9C%EC%A0%81%ED%99%94%EC%99%80%20LlamaIndex%C2%B7%EB%B2%A1%ED%84%B0%20%EC%A0%80%EC%9E%A5%EC%86%8C.md) - 검색기와 재순위화, LlamaIndex의 데이터 구조, Chroma·FAISS 벡터 저장소를 하나의 검색 설계로 연결한다.
 * [51. LangChain 체인·에이전트·메모리와 LCEL](./51.%20LangChain%20%EC%B2%B4%EC%9D%B8%C2%B7%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%C2%B7%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20LCEL.md) - LangChain의 체인, 에이전트, 메모리, 추적, Runnable과 LCEL을 실행 흐름과 상태 관리의 관점에서 정리한다.
 * [82. Few-shot 프롬프트·모델·출력 파서와 도구](./82.%20Few-shot%20%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8%C2%B7%EB%AA%A8%EB%8D%B8%C2%B7%EC%B6%9C%EB%A0%A5%20%ED%8C%8C%EC%84%9C%EC%99%80%20%EB%8F%84%EA%B5%AC.md) - Few-shot 예제 선택, 모델 인터페이스, 생성 파라미터, 출력 파서와 도구를 구조화된 LangChain 실행 단위로 정리한다.
