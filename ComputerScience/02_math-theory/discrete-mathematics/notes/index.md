@@ -2,7 +2,7 @@
 
 ## lecture
 
-* [discrete-mathematics 강의 흐름 지도](./00.%20discrete-mathematics%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 11개의 순서·핵심 단서·검증 포인트를 연결한다.
+* [discrete-mathematics 강의 흐름 지도](./00.%20discrete-mathematics%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md) - 원본 PDF 0개의 순서·핵심 단서·학습 점검을 연결한다.
 * [관계와 함수](./02.%20%EA%B4%80%EA%B3%84%EC%99%80%20%ED%95%A8%EC%88%98.md) - 관계의 정의와 함수의 대응, Python 함수 예시를 개념 순서대로 정리한다.
 * [그래프의 기본 개념과 평면성](./03.%20%EA%B7%B8%EB%9E%98%ED%94%84%EC%9D%98%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90%EA%B3%BC%20%ED%8F%89%EB%A9%B4%EC%84%B1.md) - 정점·간선에서 여러 그래프 유형과 평면 그래프까지 7장 절 순서를 정리한다.
 * [이산수학 과제 제출 점검](./06.%20%EC%9D%B4%EC%82%B0%EC%88%98%ED%95%99%20%EA%B3%BC%EC%A0%9C%20%EC%A0%9C%EC%B6%9C%20%EC%A0%90%EA%B2%80.md) - Homework I의 문항·답안 형식·파일명 규칙을 제출 전 체크리스트로 정리한다.
