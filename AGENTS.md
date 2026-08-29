@@ -83,7 +83,7 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 
 - **Project templates**: Start every lecture, course index, and practice note from the inherited root templates in `.ok/templates/`.
 - **Links**: Use standard Markdown relative links. Wikilinks and wiki embeds are prohibited in rewritten course notes.
-- **Source privacy**: Do not embed source-slide images, PDFs, or visible page citations in public study notes.
+- **Source privacy**: Do not embed full source-slide images or PDFs, and do not add visible page citations. A cropped region from a source PDF may be embedded only when the source-specific visual detail cannot be faithfully conveyed by the official HTML/SVG/Markdown components; keep the crop under the course's approved `assets/` folder, add a concise caption and source filename/page in frontmatter or a hidden provenance field, and never use crops as decorative filler.
 - **Math**: Use `$...$` or `$$...$$` only when the source actually contains the equation.
 - **Diagrams**: Use valid Mermaid code blocks for relationships, sequences, and workflows.
 - **Visual findings**: Re-query the OpenKnowledge palette while authoring. Use the official chart, stat-cards, custom-svg, or interactive-control starter whenever the source supplies the required data shape.
@@ -118,7 +118,7 @@ npx -y @inkeep/open-knowledge@latest lint "ComputerScience"
 - Never invent source values, interpolate missing values, fetch external data, or leave palette example values in a note.
 - Keep official HTML nodes, IDs, inline CSS, theme tokens, and JavaScript control flow intact; change only source-backed display text and data literals.
 - Preserve source errors in a warning instead of silently correcting them.
-- Do not use wikilinks, Dataview fields, hierarchical tags, original-PDF images, PDF links, or visible `p.N` citations in rewritten notes.
+- Do not use wikilinks, Dataview fields, hierarchical tags, full original-PDF images, PDF links, or visible `p.N` citations in rewritten notes. Cropped PDF regions are allowed only under the Source privacy exception above, with a meaningful caption and non-visible provenance.
 - Every lecture, course-index, and practice note keeps `slides: true` and uses `---` separators between logical slide units.
 - Run OpenKnowledge lint with fixes immediately after template instantiation, then a scoped audit whose `ran` includes `markdownlint`, `frontmatter`, `okf`, and `links`.
 - Use the pinned project-local Slidev toolchain and `slidev-addon-openknowledge`. Build/export success proves CLI compilation, component registration, static export, and the explicit test assertions only; viewport fit, visual fidelity, and interaction remain unverified. Never label them PASS without separately authorized visual testing.
