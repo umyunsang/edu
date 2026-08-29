@@ -93,8 +93,8 @@ flowchart LR
 
 - [RNN과 LSTM의 순환 구조](<./notes/01. RNN과 LSTM의 순환 구조.md>)
 - [RNN·LSTM 실습](<./notes/01. RNN·LSTM 실습.md>)
-- [Word2Vec와 단어 임베딩](<./notes/33. Word2Vec와 단어 임베딩.md>)
-- [Transformer Self-Attention과 블록 구성](<./notes/21. Transformer Self-Attention과 블록 구성.md>)
+- [Word2Vec와 단어 임베딩](<notes/15.%20Word2Vec%EC%99%80%20%EB%8B%A8%EC%96%B4%20%EC%9E%84%EB%B2%A0%EB%94%A9.md>)
+- [Transformer Self-Attention과 블록 구성](<notes/17.%20Transformer%20Self-Attention%EA%B3%BC%20%EB%B8%94%EB%A1%9D%20%EA%B5%AC%EC%84%B1.md>)
 - [Transformer 언어 모델링과 인코더-디코더](<./notes/01. Transformer 언어 모델링과 인코더-디코더.md>)
 
 > [!NOTE]
