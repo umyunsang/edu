@@ -2,6 +2,7 @@
 
 ## lecture
 
+* [01. 리눅스 개요와 디렉터리 계층 구조(FHS) - 유닉스 철학, 핵심 CLI 명령어와 경로 체계](./01.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B0%9C%EC%9A%94%EC%99%80%20%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%20%EA%B3%84%EC%B8%B5%20%EA%B5%AC%EC%A1%B0%28FHS%29.md) - 리눅스 OS 커널과 유닉스(Unix) 설계 철학('모든 것은 파일이다'), 파일 시스템 계층 표준(FHS: /, /bin, /etc, /var, /proc), 절대/상대 경로, 그리고 필수 CLI 명령어(ls, cd, pwd, cp, mv, rm, find)를 인터랙티브 FHS 탐색기로 학습한다.
 * [CLI와 리눅스 디렉터리](./02.%20CLI%EC%99%80%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC.md) - 문자열 명령으로 시스템과 상호작용하고 파일 계층을 탐색하는 기초
 * [Flask 회원 기능](./08.%20Flask%20%ED%9A%8C%EC%9B%90%20%EA%B8%B0%EB%8A%A5.md) - 회원 가입·로그인·세션·로그아웃 흐름을 구성하는 Flask 기초
 * [Flask와 REST](./07.%20Flask%EC%99%80%20REST.md) - Flask의 요청·응답 처리와 리소스·HTTP 메서드 중심 REST API 기초
