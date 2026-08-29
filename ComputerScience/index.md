@@ -2,7 +2,7 @@
 
 ## lecture
 
-* [ComputerScience/Untitled](./Untitled.md)
+* [Untitled](./Untitled.md)
 
 ## Subdirectories
 

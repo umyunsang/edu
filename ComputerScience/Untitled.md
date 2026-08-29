@@ -13,7 +13,7 @@ source_type: lecture-slides
 status: draft
 tags:
   - lecture
-title: ""
+title: "Untitled"
 type: lecture
 updated: 2026-08-28
 ---
@@ -41,8 +41,8 @@ mindmap
 ## 핵심 정리
 
 | 개념 | 한 줄 정의 | 왜 중요한가 |
-|:--|:--|:--|
-|  |  |  |
+| :--- | :--- | :--- |
+|      |      |      |
 
 > [!question]- 스스로 점검
 > **Q1.**
@@ -51,8 +51,8 @@ mindmap
 ## 슬라이드 근거
 
 | 섹션 | 슬라이드 |
-|:--|:--|
-| 1.  | p. |
+| :--- | :--- |
+| 1.   | p.   |
 
 ## 관련 노트
 
