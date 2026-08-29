@@ -1,0 +1,781 @@
+### [Page 1]
+
+
+
+
+### [Page 2]
+
+
+
+
+### [Page 3]
+
+
+
+
+
+
+
+
+### [Page 4]
+
+
+
+
+### [Page 5]
+
+
+
+〉
+〉
+
+
+
+### [Page 6]
+
+
+
+
+
+
+
+
+### [Page 7]
+
+
+
+
+### [Page 8]
+
+⏱
+
+
+⚠
+
+
+
+### [Page 9]
+⏱
+↔
+〉
+〉
+〉
+〉
+〉
+
+
+
+
+
+
+
+
+
+### [Page 10]
+⏱
+
+⚡
+
+
+⭐
+
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+|  | ⚡ |  |
+|  |  |  |
+| ⭐ |  |  |
+|  |  |  |
+
+
+### [Page 11]
+
+
+
+
+
+
+
+
+### [Page 12]
+
+
+
+.github/workflows/metrics.yml
+metrics.yml
+#.github/workflows/metrics.yml
+name:TrackLeadTime
+on:
+pull_request:
+types:[closed]
+jobs:
+track-lead-time:
+#PR이병합되었을때만실행
+if:github.event.pull_request.merged==true
+runs-on:ubuntu-latest
+steps:
+-name:CalculateLeadTime
+run:|
+FIRST_COMMIT_TIME="${{github.event.pull_request.created_at}}"
+MERGE_TIME="${{github.event.pull_request.merged_at}}"
+#시간차이계산(초단위)
+LEAD_TIME=$(($(date-d"$MERGE_TIME"+%s)-$(date-d"$FIRST_COMMIT_TIME"+%s)))
+echo"LeadTime:$LEAD_TIMEseconds"
+
+
+
+### [Page 13]
+
+→
+→
+
+
+
+
+
+
+### [Page 14]
+
+
+⚡
+
+
+⭐
+
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+|  | ⚡ |  |
+|  |  |  |
+| ⭐ |  |  |
+|  |  |  |
+
+
+### [Page 15]
+
+
+
+
+
+
+
+
+
+### [Page 16]
+
+
+
+deploy-tracker.yml
+#GitHubActions로배포빈도추적
+name:TrackDeployments
+on:
+deployment:
+jobs:
+track-deployment:
+runs-on:ubuntu-latest
+steps:
+-name:LogDeployment
+run:|
+echo"Deploymentat:$(date)"
+echo"Environment:${{github.event.deployment.environment}}"
+
+
+
+### [Page 17]
+⏱
+⚠
+
+
+
+
+
+
+
+
+
+### [Page 18]
+
+
+⚡
+
+
+⭐
+
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+|  ⚡ |  |  |
+|   |  |  |
+| ⭐  |  |  |
+|   |  |  |
+
+
+### [Page 19]
+
+
+
+
+
+
+
+
+
+### [Page 20]
+
+⏱
+
+health-check.yml
+#GitHubActions로헬스체크및알림
+name:HealthCheck
+on:
+schedule:
+-cron:'*/5****'#5분마다실행
+jobs:
+health-check:
+runs-on:ubuntu-latest
+steps:
+-name:CheckService
+run:|
+#서비스접속시도,실패시오류처리
+if!curl-fhttps://myapp.com/health;then
+echo"Serviceisdown!"
+
+
+
+### [Page 21]
+⚠
+
+
+→
+=
+
+
+
+### [Page 22]
+
+
+
+
+
+⭐
+⚠
+
+
+
+
+|  |  |  |
+| --- | --- | --- |
+|  |  |  |
+|  |  |  |
+| ⭐ | ⚠ |  |
+|  |  |  |
+
+
+### [Page 23]
+
+
+
+
+
+
+
+
+
+### [Page 24]
+
+
+deployment_status
+
+track-failure.yml
+#배포성공/실패결과추적
+name:TrackDeploymentResult
+on:
+deployment_status:
+jobs:
+track-result:
+runs-on:ubuntu-latest
+steps:
+-name:LogResult
+run:|
+STATUS="${{github.event.deployment_status.state}}"
+#상태에따른분기처리
+if["$STATUS"="success"];then
+echo"
+Deploymentsucceeded"
+
+
+
+### [Page 25]
+
+
+
+
+### [Page 26]
+
+
+
+
+
+
+
+### [Page 27]
+
+
+▶
+
+
+✓
+
+
+
+### [Page 28]
+⏱
+
+
+calculate_metrics.py
+importrequests
+fromdatetimeimportdatetime
+defcalculate_cycle_time(issue_number):
+#Issue정보가져오기
+url=f"https://api.github.com/repos/owner/repo/issues/{issue_number}"
+issue=requests.get(url)
+data=issue.json()
+#"InProgress"라벨추가시간찾기
+start_time=None
+foreventindata['events']:
+ifevent['label']['name']=='InProgress':
+start_time=event['created_at']
+break
+
+
+
+### [Page 29]
+
+
+
+
+⚠
+↓
+
+
+
+
+### [Page 30]
+⚖
+
+
+↓
+→
+↓
+
+
+
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  → ↓ ↓ |
+
+
+### [Page 31]
+
+
+⏩
+
+
+
+
+
+### [Page 32]
+
+
+
+PROJECT_RULES.md
+##WIPLimits(작업제한설정)
+-ToDo:Unlimited
+-InProgress:최대3개
+*팀원1인당1개+페어프로그래밍여유분
+-InReview:최대2개
+*리뷰적체시신규개발중단후리뷰우선
+-Done:Unlimited
+
+
+
+### [Page 33]
+
+
+
+
+
+
+Throughput = Items / Time
+
+
+
+### [Page 34]
+⏱
+
+schedule
+gh issue list
+
+throughput.yml
+#GitHubActions로주간처리량계산
+name:WeeklyThroughput
+on:
+schedule:
+-cron:'00**0'#매주일요일자정실행
+jobs:
+calculate-throughput:
+runs-on:ubuntu-latest
+steps:
+-name:GetClosedIssues
+run:|
+#GitHubCLI를사용하여닫힌이슈조회및카운트
+CLOSED_ISSUES=$(ghissuelist--stateclosed\
+--jsonclosedAt--jq'length')
+
+
+
+### [Page 35]
+
+
+
+
+### [Page 36]
+
+
+
+
+
+
+
+
+
+### [Page 37]
+
+
+⭐
+⚠
+
+
+
+### [Page 38]
+
+
+npm test --coverage
+
+coverage.yml
+#CodeCoverageCheckWorkflow
+name:CodeCoverage
+on:[push,pull_request]
+jobs:
+coverage:
+runs-on:ubuntu-latest
+steps:
+-uses:actions/checkout@v3
+-name:RunTestswithCoverage
+run:|
+npmtest----coverage
+-name:UploadCoverage
+uses:codecov/codecov-action@v3
+with:
+files:./coverage/coverage-final.json
+
+
+
+### [Page 39]
+
+
+
+
+
+
+
+
+|  |  |
+| --- | --- |
+|  |  |
+|  |  |
+|  |  |
+
+
+### [Page 40]
+⚖
+
+
+
+
+⛅
+
+
+
+
+
+
+
+
+
+
+### [Page 41]
+
+⚙
+
+code-quality.yml
+#.github/workflows/code-quality.yml
+name:CodeQuality
+on:[push,pull_request]
+jobs:
+sonarcloud:
+runs-on:ubuntu-latest
+steps:
+-uses:actions/checkout@v3
+with:
+#SonarCloud분석을위한전체히스토리가져오기
+fetch-depth:0
+-name:SonarCloudScan
+uses:SonarSource/sonarcloud-github-action@master
+
+
+
+### [Page 42]
+
+
+⚠
+
+→
+
+→
+
+
+
+
+### [Page 43]
+
+
+git log --numstat
+awk
+
+measure_churn.sh
+#!/bin/bash
+#지난주동안의CodeChurn계산
+gitlog--since="1weekago"--numstat--pretty=format:""|\
+awk'{
+added+=$1;
+removed+=$2
+}END{
+print"LinesAdded:",added
+print"LinesRemoved:",removed
+print"TotalChurn:",added+removed
+}'
+#실행권한부여:chmod+xmeasure_churn.sh
+#실행:./measure_churn.sh
+
+
+
+### [Page 44]
+
+
+
+
+### [Page 45]
+
+
+
+
+
+
+
+
+### [Page 46]
+
+
+
+
+
+
+
+
+### [Page 47]
+
+
+
+docker-compose.yml
+#docker-compose.yml
+version:'3'
+services:
+prometheus:
+image:prom/prometheus
+volumes:
+-./prometheus.yml:/etc/prometheus/prometheus.yml
+ports:
+-9090:9090
+grafana:
+image:grafana/grafana
+ports:
+-3000:3000
+environment:
+
+
+
+### [Page 48]
+
+
+cron
+gh api
+
+collect-metrics.yml
+name:CollectMetrics
+on:
+schedule:
+-cron:'00***'#매일자정
+jobs:
+collect:
+runs-on:ubuntu-latest
+steps:
+-name:CollectDORAMetrics
+run:|
+#GitHubAPI로메트릭수집
+ghapirepos/${{github.repository}}/stats/contributors\
+>metrics/contributors.json
+
+
+
+### [Page 49]
+
+
+
+
+### [Page 50]
+⏱
+Current Value:
+?
+
+Current Value:
+?
+
+Current Value:
+?
+⚠
+Current Value:
+?
+
+
+
+### [Page 51]
+
+⏱
+
+
+
+
+
+### [Page 52]
+
+
+〉
+〉
+〉
+
+
+
+
+
+
+
+### [Page 53]
+〉
+〉
+
+
+⚡
+
+
+
+### [Page 54]
+
+
+
+
+### [Page 55]
+
+.yml
+
+
+.github/workflows/metrics.yml
+
+
+
+### [Page 56]
+
+
+
+
+
+
+### [Page 57]
+
+
+
+IMPROVEMENT.md
+
+
+
+### [Page 58]
+
+
+
+
+### [Page 59]
+
+
+
+### [Page 60]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### [Page 61]
+
+
+
+### [Page 62]
+
+
+
+
+### [Page 63]
+
+
+
+
+### [Page 64]
+
+
+
+
+
+
+
+
+### [Page 65]
+
+

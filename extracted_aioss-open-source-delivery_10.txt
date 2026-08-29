@@ -1,0 +1,1594 @@
+### [Page 1]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå1åofå44
+AIåOPENåSOURCEåSOFTWAREéOSSêåìåWEEKå18
+Lean Product
+Development
+& Lean Startup
+ProfíåSejinåChun
+DongìAåUniversity
+
+
+
+### [Page 2]
+
+01
+SECTIONå01
+린 제품 개발과
+린 스타트업
+불확실한å시장å환경에서å낭비를å줄이고
+빠르게å학습하여å성공å확률을å높이는
+현대적å제품å개발å방법론
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå2åofå44
+
+
+
+### [Page 3]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå3åofå44
+학습 목표
+이å세션을å마치면å다음을å할å수å있습니다
+
+LeanåStartupå이해
+불확실성å속에서å혁신적å제품을å만드는
+핵심å방법론과å원칙å습득
+
+BMLå사이클å실천
+BuildìMeasureìLearn의
+빠른å피드백å루프å설계å및å실행
+
+MVPå구축
+최소å기능å제품éMinimumåViableåProductê을
+기획하고å빠르게å구현
+
+데이터å기반å의사결정
+허영å지표가å아닌å실행å가능한å지표를
+통해å객관적으로å판단
+
+PivotåvsåPersevere
+사업å방향å전환éPivotê과
+지속éPersevereê의å시점å결정
+
+
+|  |  데이터å기반å의사결정 허영å지표가å아닌å실행å가능한å지표를 통해å객관적으로å판단 |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  PivotåvsåPersevere 사업å방향å전환éPivotê과 지속éPersevereê의å시점å결정 |  |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 4]
+
+02
+SECTIONå02
+Lean Startup이란?
+불확실성å속에서å혁신적인å제품을å만들기å위한
+핵심å원칙과å방법론의å정의
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå4åofå44
+
+
+
+### [Page 5]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå5åofå44
+Lean Startup이란?
+불확실성å속에서å혁신적인å제품을å만드는å과학적å방법론
+핵심å개념
+lean_startup_manifestoíjs
+const LeanStartup = {
+  definition: "불확실성 속의 혁신 방법론",
+  
+  // 린 스타트업의 5가지 핵심 원칙
+  corePrinciples: [
+    "Build-Measure-Learn",   // 1. 만들고-측정하고-배운다
+    "Validated Learning",    // 2. 검증된 학습 (데이터 기반)
+    "MVP",                   // 3. 최소 존속 제품 (Minimum Viabl
+    "Innovation Accounting", // 4. 혁신 회계 (진척도 측정)
+    "Pivot or Persevere"     // 5. 방향 전환 또는 고수
+  ],
+  goal: function() {
+    return "Fail fast, Learn faster"; // 빠르게 실패하고 더 빨리 
+  }
+};
+불확실성å관리
+복잡한å계획보다는å빠른å실험을å통해å시장의å불확실성을
+줄여나갑니다í
+낭비å제거
+고객이å원하지å않는å기능을å만드는데å쓰는å시간과å자원
+을å최소화합니다í
+과학적å검증
+직감보다는å데이터와å실험å결과에å기반하여å의사결정을
+내립니다í
+
+
+| lean startup manifestoíjs _ _ const LeanStartup = { definition: "불확실성 속의 혁신 방법론", // 린 스타트업의 5가지 핵심 원칙 corePrinciples: [ "Build-Measure-Learn", // 1. 만들고-측정하고-배운다 "Validated Learning", // 2. 검증된 학습 (데이터 기반) "MVP", // 3. 최소 존속 제품 (Minimum Viabl "Innovation Accounting", // 4. 혁신 회계 (진척도 측정) "Pivot or Persevere" // 5. 방향 전환 또는 고수 ], goal: function() { return "Fail fast, Learn faster"; // 빠르게 실패하고 더 빨리 } AIåOpenåSourceåSoftware slideå5åofå44 }; |  |  |  |
+| --- | --- | --- | --- |
+|  |  | lean startup manifestoíjs _ _ |  |
+|  |  | const LeanStartup = { definition: "불확실성 속의 혁신 방법론", // 린 스타트업의 5가지 핵심 원칙 corePrinciples: [ "Build-Measure-Learn", // 1. 만들고-측정하고-배운다 "Validated Learning", // 2. 검증된 학습 (데이터 기반) "MVP", // 3. 최소 존속 제품 (Minimum Viabl "Innovation Accounting", // 4. 혁신 회계 (진척도 측정) "Pivot or Persevere" // 5. 방향 전환 또는 고수 ], goal: function() { return "Fail fast, Learn faster"; // 빠르게 실패하고 더 빨리 |  |
+|  |  | } AIåOpenåSourceåSoftware slideå5åofå44 }; |  |
+
+
+### [Page 6]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå6åofå44
+전통적 방식 vs Lean Startup
+폭포수å모델éWaterfallê과å린å스타트업의å접근å방식å차이å비교
+전통적å방식åéWaterfallê
+오랜å개발å기간åé6개월å이상ê
+출시å후å실패å발견åé큰å리스크ê
+시간과å예산å낭비å가능성å높음
+LeanåStartup
+빠른åMVPå출시åé1주å이내ê
+조기å검증å및å피드백
+반복적인å학습과å방향å수정åéPivotê
+comparison_strategyíjs
+const strategies = {
+  waterfall: {
+    approach: "Big Bang Release",
+    process: [
+      "Idea",
+      "Spec (2 months)",
+      "Build (6 months)",
+      "Launch",
+      "Fail " // 너무 늦게 발견됨
+    ],
+    risk: "High",
+    cost: "$$$$$"
+  },
+  leanStartup: {
+    approach: "Build-Measure-Learn",
+    process: [
+      "Idea",
+
+
+|  |  | comparison strategyíjs _ const strategies = { waterfall: { approach: "Big Bang Release", process: [ "Idea", "Spec (2 months)", "Build (6 months)", "Launch", "Fail " // 너무 늦게 발견됨  ], risk: "High", cost: "$$$$$" }, leanStartup: { approach: "Build-Measure-Learn", A I åO p epnråSoocurecseåsS:of tw[are slideå6åofå44 "Idea", |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  | comparison strategyíjs _ |  |
+|  |  |  |  | const strategies = { waterfall: { approach: "Big Bang Release", process: [ "Idea", "Spec (2 months)", "Build (6 months)", "Launch", "Fail " // 너무 늦게 발견됨  ], risk: "High", cost: "$$$$$" }, leanStartup: { |  |
+|  LeanåStartup  빠른åMVPå출시åé1주å이내ê |  |  |  |  |  |
+|  조기å검증å및å피드백 SejinåChunëå2026  반복적인å학습과å방향å수정åéPivotê |  |  |  | approach: "Build-Measure-Learn", A I åO p epnråSoocurecseåsS:of tw[are slideå6åofå44 "Idea", |  |
+
+
+### [Page 7]
+
+03
+SECTIONå03
+Build-Measure
+-Learn 사이클
+아이디어를å제품으로å구현하고ë
+데이터를å측정하여å학습하는
+린å스타트업의å핵심å피드백å순환å과정
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå7åofå44
+
+
+
+### [Page 8]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå8åofå44
+Build-Measure-Learn 사이클
+아이디어를å제품으로ëå데이터를å학습으로å전환하는å지속적인å피드백å루프
+순환å단계
+
+
+feedback_loopíjs
+async function leanStartupLoop() {
+  let hypothesis = "Initial Idea (초기 가정)";
+  // 지속적인 피드백 루프 실행
+  while (true) {
+    // 1. BUILD: 아이디어를 제품(MVP)으로 구현
+    const product = await build(hypothesis);
+    console.log("MVP Released Å", product);
+    // 2. MEASURE: 제품에서 데이터 측정
+    const data = await measure(product);
+    console.log("Customer Data ·", data);
+    // 3. LEARN: 데이터에서 통찰 학습
+    const insight = await learn(data);
+    // DECISION: Pivot or Persevere?
+    if (insight.validated === false) {
+      hypothesis = insight.newDirection; // Pivot (전환)
+      console.log("Strategy: PIVOT ì");
+    } else {
+      hypothesis = insight.improvement;  // Persevere (지속)
+1íåBUILDåé구축ê
+가설을å검증하기å위한å최소한의å기능éMVPê을å빠르게å구현합니다í
+éIdeaså→åProductê
+2íåMEASUREåé측정ê
+고객의å반응을å정량적å데이터로å수집하고å분석합니다íåéProductå→
+Dataê
+3íåLEARNåé학습ê
+데이터를å통해å가설의å참î거짓을å판별하고å방향을å결정합니다íåéData
+→åIdeasê
+
+
+|  | feedback loopíjs _ async function leanStartupLoop() { let hypothesis = "Initial Idea (초기 가정)"; // 지속적인 피드백 루프 실행 while (true) { // 1. BUILD: 아이디어를 제품(MVP)으로 구현 const product = await build(hypothesis); console.log("MVP Released ", product); Å // 2. MEASURE: 제품에서 데이터 측정 const data = await measure(product); console.log("Customer Data ", data); · // 3. LEARN: 데이터에서 통찰 학습 const insight = await learn(data); // DECISION: Pivot or Persevere? if (insight.validated === false) { hypothesis = insight.newDirection; // Pivot (전환) console.log("Strategy: PIVOT "); ì AIåOpenåSourceåSoftware slideå8åofå44 } else { hypothesis = insight.improvement; // Persevere (지속) |  |  |  |
+| --- | --- | --- | --- | --- |
+|  |  |  | feedback loopíjs _ |  |
+|  |  |  | async function leanStartupLoop() { let hypothesis = "Initial Idea (초기 가정)"; // 지속적인 피드백 루프 실행 while (true) { // 1. BUILD: 아이디어를 제품(MVP)으로 구현 const product = await build(hypothesis); console.log("MVP Released ", product); Å // 2. MEASURE: 제품에서 데이터 측정 const data = await measure(product); console.log("Customer Data ", data); · // 3. LEARN: 데이터에서 통찰 학습 const insight = await learn(data); // DECISION: Pivot or Persevere? if (insight.validated === false) { hypothesis = insight.newDirection; // Pivot (전환) |  |
+|  순환å단계 1íåBUILDåé구축ê 가설을å검증하기å위한å최소한의å기능éMVPê을å빠르게å구현합니다í éIdeaså→åProductê  2íåMEASUREåé측정ê 고객의å반응을å정량적å데이터로å수집하고å분석합니다íåéProductå→ Dataê  3íåLEARNåé학습ê 데이터를å통해å가설의å참î거짓을å판별하고å방향을å결정합니다íåéData →åIdeasê |  |  |  |  |
+| SejinåChunëå2026 |  |  | console.log("Strategy: PIVOT "); ì AIåOpenåSourceåSoftware slideå8åofå44 } else { hypothesis = insight.improvement; // Persevere (지속) |  |
+
+
+### [Page 9]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå9åofå44
+BML Cycle 1: 가정 검증
+실제å예시ïåç사용자들은å다크å모드를å원한다ç는å가설å검증å과정
+실험å요약å프로세스
+experiment_dark_modeíjs
+const cycle1 = {
+  hypothesis: "사용자들은 다크 모드를 원한다",
+  build: {
+    feature: "다크 모드 토글 버튼",
+    effort: "1 day",  // MVP: 최소 노력으로 구축
+    target: "10% users via Feature Flag"
+  },
+  measure: {
+    usageRate: 0.05,  // 결과: 5% 사용자만 활성화
+    timeSpent: "no change",
+    feedback: "별로 필요 없어요"
+  },
+  learn: function() {
+    return {
+      result: false, // 가정 거짓! (가설 기각)
+insight: "다크모드는현재우선순위아님"
+IDEASåé가정ê
+다크å모드가å핵심å기능일å것이다í
+1
+BUILDåé구축ê
+최소å기능é토글ê만å1일å만에å구현í
+2
+MEASUREåé측정ê
+실제å사용률이å5%로å저조함í
+3
+LEARNåé학습î결정ê
+가설å기각å→å다른å기능으로åPivotí
+4
+
+
+|  |  | experiment dark modeíjs _ _ const cycle1 = { hypothesis: "사용자들은 다크 모드를 원한다", build: { feature: "다크 모드 토글 버튼", effort: "1 day", // MVP: 최소 노력으로 구축 target: "10% users via Feature Flag" }, measure: { usageRate: 0.05, // 결과: 5% 사용자만 활성화 timeSpent: "no change", feedback: "별로 필요 없어요" }, learn: function() { return { AIåOpenåSourceåSoftware slideå9åofå44 result: false, // 가정 거짓! (가설 기각) |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| 실험å요약å프로세스 1 IDEASåé가정ê 다크å모드가å핵심å기능일å것이다í 2 BUILDåé구축ê 최소å기능é토글ê만å1일å만에å구현í 3 MEASUREåé측정ê 실제å사용률이å5%로å저조함í |  |  |  | experiment dark modeíjs _ _ |  |
+|  |  |  |  | const cycle1 = { hypothesis: "사용자들은 다크 모드를 원한다", build: { feature: "다크 모드 토글 버튼", effort: "1 day", // MVP: 최소 노력으로 구축 target: "10% users via Feature Flag" }, measure: { usageRate: 0.05, // 결과: 5% 사용자만 활성화 timeSpent: "no change", feedback: "별로 필요 없어요" }, learn: function() { |  |
+| 4 LEARNåé학습î결정ê SejinåChu가në설å20å기26각å→å다른å기능으로åPivotí |  |  |  | return { AIåOpenåSourceåSoftware slideå9åofå44 result: false, // 가정 거짓! (가설 기각) |  |
+
+
+### [Page 10]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå10åofå44
+BML Cycle 2 예시
+가정ïåç사용자들은å더å빠른å검색을å원한다çåé데이터å기반å검증å성공å사례ê
+실험å개요
+cycle2_search_optimizationíjs
+// Cycle 2: 새로운 가정 검증
+const hypothesis = "사용자들은 더 빠른 검색을 원한다";
+const experiment = {
+  build: [
+    "검색 알고리즘 최적화", 
+    "자동완성 도입"
+  ], // 3일 소요
+  
+  measure: {
+    searchUsage: "50% -> 80% (증가)",
+    avgSearchTime: "5s -> 1s (감소)",
+    npsScore: "70 -> 85 (상승)"
+  },
+  learn: function(data) {
+    // 데이터가 가정을 지지하는지 확인
+    if (data.searchUsage > 60 && data.npsScore > 80) {
+      return {
+        result: "Validated (참)",
+        insight: "검색 기능이 핵심 가치임"
+      };
+}
+Buildåé구축ê
+검색å엔진å최적화å및å자동완성å기능을å3일å만에å구현하여å배포
+Measureåé측정ê
+검색å사용률å30%å증가ëå검색å소요å시간å80%å단축ëåNPSå점수å상승å확인
+Learnåé학습êå&åDecisionåé결정ê
+검색이å서비스의å핵심å가치임을å확인
+6åPersevereåé방향å고수êå결정
+
+
+|  | cycle2 search optimizationíjs _ _ // Cycle 2: 새로운 가정 검증 const hypothesis = "사용자들은 더 빠른 검색을 원한다"; const experiment = { build: [ "검색 알고리즘 최적화", "자동완성 도입" ], // 3일 소요 measure: { searchUsage: "50% -> 80% (증가)", avgSearchTime: "5s -> 1s (감소)", npsScore: "70 -> 85 (상승)" }, learn: function(data) { // 데이터가 가정을 지지하는지 확인 if (data.searchUsage > 60 && data.npsScore > 80) { return { result: "Validated (참)", insight: "검색 기능이 핵심 가치임" AIåOpenåSourceåSoftware slideå10åofå44 }; } |  |  |  |
+| --- | --- | --- | --- | --- |
+|  실험å개요 Buildåé구축ê 검색å엔진å최적화å및å자동완성å기능을å3일å만에å구현하여å배포 Measureåé측정ê 검색å사용률å30%å증가ëå검색å소요å시간å80%å단축ëåNPSå점수å상승å확인 Learnåé학습êå&åDecisionåé결정ê 검색이å서비스의å핵심å가치임을å확인 åPersevereåé방향å고수êå결정 6 |  |  | cycle2 search optimizationíjs _ _ |  |
+|  |  |  | // Cycle 2: 새로운 가정 검증 const hypothesis = "사용자들은 더 빠른 검색을 원한다"; const experiment = { build: [ "검색 알고리즘 최적화", "자동완성 도입" ], // 3일 소요 measure: { searchUsage: "50% -> 80% (증가)", avgSearchTime: "5s -> 1s (감소)", npsScore: "70 -> 85 (상승)" }, learn: function(data) { // 데이터가 가정을 지지하는지 확인 if (data.searchUsage > 60 && data.npsScore > 80) { return { |  |
+| SejinåChunëå2026 |  |  | result: "Validated (참)", insight: "검색 기능이 핵심 가치임" AIåOpenåSourceåSoftware slideå10åofå44 }; } |  |
+
+
+### [Page 11]
+
+04
+SECTIONå04
+MVP
+Minimum Viable
+Product
+최소한의å노력과å비용으로
+고객에å대한å검증된å학습을å최대화하는
+핵심å제품å개발å전략
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå11åofå44
+
+
+
+### [Page 12]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå12åofå44
+MVP (Minimum Viable Product)
+최소한의å노력으로å최대한의å검증된å학습을å얻기å위한å제품å개발å전략
+MVP의å핵심å가치
+mvp_strategy_conÙgíjs
+const MVP_Strategy = {
+  definition: "Minimum Viable Product",
+  
+  // MVP 구축의 3가지 핵심 목표
+  objectives: [
+    {
+      goal: "Minimize Cost & Time",
+      desc: "최소 비용과 시간으로 출시",
+      priority: 1
+    },
+    {
+      goal: "Maximize Learning",
+      desc: "고객 피드백을 통한 최대 학습",
+가치å제안å검증
+완벽한å제품이å아닌ëå고객이å이å문제를
+겪고å있는지å확인하는å도구입니다í
+피드백å루프å시작
+얼리어답터éEarlyåAdoptersê로부터å실
+
+
+|  |  | mvp strategy conÙgíjs _ _ const MVP Strategy = { _ definition: "Minimum Viable Product", // MVP 구축의 3가지 핵심 목표 objectives: [ { goal: "Minimize Cost & Time", desc: "최소 비용과 시간으로 출시", priority: 1 }, { goal: "Maximize Learning", AIåOpenåSourceåSoftware slideå12åofå44 desc: "고객 피드백을 통한 최대 학습", |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  MVP의å핵심å가치 가치å제안å검증 완벽한å제품이å아닌ëå고객이å이å문제를 겪고å있는지å확인하는å도구입니다í |  |  |  | mvp strategy conÙgíjs _ _ |  |
+|  |  |  |  | const MVP Strategy = { _ definition: "Minimum Viable Product", // MVP 구축의 3가지 핵심 목표 objectives: [ { goal: "Minimize Cost & Time", desc: "최소 비용과 시간으로 출시", priority: 1 }, { |  |
+| 피드백å루프å시작 SejinåChunëå2026 얼리어답터éEarlyåAdoptersê로부터å실 |  |  |  | goal: "Maximize Learning", AIåOpenåSourceåSoftware slideå12åofå44 desc: "고객 피드백을 통한 최대 학습", |  |
+
+
+### [Page 13]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå13åofå44
+MVP vs 완제품 비교
+부품의å합이å아닌ëå각å단계별å가치éValueê의å전달
+접근å방식의å차이
+mvp_strategyíjs
+// Goal: 고객을 A지점에서 B지점으로 이동시키기
+class ProductDevelopment {
+  /* ❌ BAD Strategy: 부품 중심 (사용 불가 기간 6개월) */
+  runWaterfall() {
+    // 1~5개월차: 고객은 아무것도 할 수 없음
+    const month1 = " Wheel";      // 바퀴 하나로는 이동 불가
+    const month3 = " Chassis";    // 뼈대만으로는 이동 불가
+    const month6 = "🏎️ Car";        // 드디어 완성! (너무 늦음)
+    
+    return "Risk: 6개월 뒤 고객이 '배(Boat)'를 원했다면?";
+  }
+  /* ✅ GOOD Strategy: 가치 중심 (즉시 사용 및 학습) */
+  runLeanMVP() {
+    // Week 1: % Skateboard (MVP)
+    // → "이동 가능!" but "너무 느리고 중심 잡기 힘듦" (피드백)
+    
+    // Week 2: ! Scooter (Iterate)
+// →"핸들이있어편함" but "다리가아픔"
+나쁜åMVPåéWaterfallê
+완벽한å제품을å목표로å부품을å하나씩å개발합니다íå모든å부품
+이å모이기å전까지å고객은å사용할å수å없습니다í
+좋은åMVPåéAgileîLeanê
+가장å기본적인å핵심å가치é예ïå이동ê를å먼저å제공합니다íå스케
+이트보드에서å시작해å자동차로å진화합니다í
+핵심å질문
+ç제품이å구성되었는가ñç가å아니라åç지금å당장å고객에게å도
+움이되는가ñç를물어야합니다
+
+
+|  |  | mvp strategyíjs _ // Goal: 고객을 A지점에서 B지점으로 이동시키기 class ProductDevelopment { /* BAD Strategy: 부품 중심 (사용 불가 기간 6개월) */ ❌ runWaterfall() { // 1~5개월차: 고객은 아무것도 할 수 없음 const month1 = " Wheel"; // 바퀴 하나로는 이동 불가 const month3 = " Chassis"; // 뼈대만으로는 이동 불가  const month6 = " Car"; // 드디어 완성! (너무 늦음) 🏎️ return "Risk: 6개월 뒤 고객이 '배(Boat)'를 원했다면?"; } /* GOOD Strategy: 가치 중심 (즉시 사용 및 학습) */ ✅ runLeanMVP() { // Week 1: Skateboard (MVP) % // → "이동 가능!" but "너무 느리고 중심 잡기 힘듦" (피드백) AIåOpenåSourceåSoftware slideå13åofå44 // Week 2: Scooter (Iterate) ! // → "핸들이 있어 편함" but "다리가 아픔" |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  접근å방식의å차이 나쁜åMVPåéWaterfallê 완벽한å제품을å목표로å부품을å하나씩å개발합니다íå모든å부품 이å모이기å전까지å고객은å사용할å수å없습니다í 좋은åMVPåéAgileîLeanê 가장å기본적인å핵심å가치é예ïå이동ê를å먼저å제공합니다íå스케 이트보드에서å시작해å자동차로å진화합니다í |  |  |  | mvp strategyíjs _ |  |
+|  |  |  |  | // Goal: 고객을 A지점에서 B지점으로 이동시키기 class ProductDevelopment { /* BAD Strategy: 부품 중심 (사용 불가 기간 6개월) */ ❌ runWaterfall() { // 1~5개월차: 고객은 아무것도 할 수 없음 const month1 = " Wheel"; // 바퀴 하나로는 이동 불가 const month3 = " Chassis"; // 뼈대만으로는 이동 불가  const month6 = " Car"; // 드디어 완성! (너무 늦음) 🏎️ return "Risk: 6개월 뒤 고객이 '배(Boat)'를 원했다면?"; } /* GOOD Strategy: 가치 중심 (즉시 사용 및 학습) */ ✅ runLeanMVP() { // Week 1: Skateboard (MVP) % // → "이동 가능!" but "너무 느리고 중심 잡기 힘듦" (피드백) |  |
+| 핵심å질문 SejinåChunëå2026 ç제품이å구성되었는가ñç가å아니라åç지금å당장å고객에게å도 |  |  |  | AIåOpenåSourceåSoftware slideå13åofå44 // Week 2: Scooter (Iterate) ! // → "핸들이 있어 편함" but "다리가 아픔" |  |
+
+
+### [Page 14]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå14åofå44
+MVP 예시: Dropbox (2008)
+제품å개발å전ëå3분å데모å비디오로å시장å수요를å검증한å대표적å사례
+하지å않은å것åéTraditionalê
+
+완벽한å제품å개발
+복잡한å동기화å알고리즘å구현å생략
+
+인프라å구축
+고비용의å서버å아키텍처å구축å연기
+한å것åéLeanåApproachê
+
+3분å데모å비디오
+작동å방식을å보여주는å가짜éMockupêå영상
+
+베타å신청å페이지
+이메일å수집을å통한å관심도å측정
+dropbox_mvp_strategyíjs
+const DropboxMVP = {
+  year: 2008,
+  founder: "Drew Houston",
+  
+  // ❌ 전통적 방식 (Avoided)
+  avoided: [
+    "수년간의 완벽한 동기화 알고리즘 개발",
+    "MacOS, Windows, Linux 동시 지원",
+    "복잡한 클라우드 인프라 구축"
+  ],
+  // ✅ 린 스타트업 방식 (Executed)
+  executed: {
+    type: "Demo Video MVP",
+    content: "3분짜리 시연 영상 (유머 포함)",
+    target: "Digg 커뮤니티 (얼리어답터)",
+    action: "베타 대기 명단 등록 유도"
+  },
+  // µ 결과 (Validated Learning)
+  result: {
+    before: "5,000명 대기자",
+
+
+|  | dropbox mvp strategyíjs _ _ const DropboxMVP = { year: 2008, founder: "Drew Houston", // 전통적 방식 (Avoided) ❌ avoided: [ "수년간의 완벽한 동기화 알고리즘 개발", "MacOS, Windows, Linux 동시 지원", "복잡한 클라우드 인프라 구축" ], // 린 스타트업 방식 (Executed) ✅ executed: { type: "Demo Video MVP", content: "3분짜리 시연 영상 (유머 포함)", target: "Digg 커뮤니티 (얼리어답터)", action: "베타 대기 명단 등록 유도" }, // 결과 (Validated Learning) µ AIåOpenåSourceåSoftware slideå14åofå44 result: { before: "5,000명 대기자", |  |  |  |
+| --- | --- | --- | --- | --- |
+|  |  |  | dropbox mvp strategyíjs _ _ |  |
+|  |  |  | const DropboxMVP = { year: 2008, founder: "Drew Houston", // 전통적 방식 (Avoided) ❌ avoided: [ "수년간의 완벽한 동기화 알고리즘 개발", "MacOS, Windows, Linux 동시 지원", "복잡한 클라우드 인프라 구축" ], // 린 스타트업 방식 (Executed) ✅ executed: { type: "Demo Video MVP", content: "3분짜리 시연 영상 (유머 포함)", target: "Digg 커뮤니티 (얼리어답터)", action: "베타 대기 명단 등록 유도" }, |  |
+|  한å것åéLeanåApproachê  3분å데모å비디오 작동å방식을å보여주는å가짜éMockupêå영상  베타å신청å페이지 이메일å수집을å통한å관심도å측정 |  |  |  |  |
+| SejinåChunëå2026 |  |  | // 결과 (Validated Learning) µ AIåOpenåSourceåSoftware slideå14åofå44 result: { before: "5,000명 대기자", |  |
+
+
+### [Page 15]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå15åofå44
+MVP 예시: Zappos (1999)
+거대한å시스템å구축å전ëå수동å프로세스로å시장å수요å먼저å검증
+WizardåofåOzåMVP
+zappos_mvp_simulationíjs
+const ZapposMVP = {
+  year: 1999,
+  warehouse: null, // 창고 없음!
+  inventory: 0,    // 재고 없음!
+  // 주문 처리 프로세스 (완전 수동)
+  processOrder: function(order) {
+    
+    // 1. 동네 신발 가게로 달려감
+    const localStore = goTo("Local Shoe Store");
+    
+    // 2. 정가에 신발 구매 (마진 포기)
+    const shoe = localStore.buy(order.shoeId);
+    
+    // 3. 우체국 가서 직접 배송
+    const shipment = shipTo(order.address, shoe);
+    
+    return "학습 완료: 온라인 신발 판매 가능성 확인!";
+  },
+result: {
+하지å않은å것åéWasteê
+창고å구축ëå재고å선구매ëå물류å시스템å개발å등å큰å비용이å드는å작업은
+모두å생략했습니다í
+한å것åéActionê
+지역å신발å가게å사진을å찍어å웹사이트에å올리고ëå주문å시å직접å가서
+사서å배송했습니다í
+핵심å학습åéLearningê
+ç사람들이å온라인으로å신발을å구매할å의향이å있다ç는å가설을å저비용
+으로å검증했습니다í
+
+
+|  |  | zappos mvp simulationíjs _ _ const ZapposMVP = { year: 1999, warehouse: null, // 창고 없음! inventory: 0, // 재고 없음! // 주문 처리 프로세스 (완전 수동) processOrder: function(order) { // 1. 동네 신발 가게로 달려감 const localStore = goTo("Local Shoe Store"); // 2. 정가에 신발 구매 (마진 포기) const shoe = localStore.buy(order.shoeId); // 3. 우체국 가서 직접 배송 const shipment = shipTo(order.address, shoe); return "학습 완료: 온라인 신발 판매 가능성 확인!"; }, AIåOpenåSourceåSoftware slideå15åofå44 result: { |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  WizardåofåOzåMVP  하지å않은å것åéWasteê 창고å구축ëå재고å선구매ëå물류å시스템å개발å등å큰å비용이å드는å작업은 모두å생략했습니다í  한å것åéActionê 지역å신발å가게å사진을å찍어å웹사이트에å올리고ëå주문å시å직접å가서 사서å배송했습니다í  핵심å학습åéLearningê ç사람들이å온라인으로å신발을å구매할å의향이å있다ç는å가설을å저비용 |  |  |  | zappos mvp simulationíjs _ _ |  |
+|  |  |  |  | const ZapposMVP = { year: 1999, warehouse: null, // 창고 없음! inventory: 0, // 재고 없음! // 주문 처리 프로세스 (완전 수동) processOrder: function(order) { // 1. 동네 신발 가게로 달려감 const localStore = goTo("Local Shoe Store"); // 2. 정가에 신발 구매 (마진 포기) const shoe = localStore.buy(order.shoeId); // 3. 우체국 가서 직접 배송 const shipment = shipTo(order.address, shoe); return "학습 완료: 온라인 신발 판매 가능성 확인!"; |  |
+| 으로å검증했습니다í SejinåChunëå2026 |  |  |  | }, AIåOpenåSourceåSoftware slideå15åofå44 result: { |  |
+
+
+### [Page 16]
+
+05
+SECTIONå05
+Innovation
+Accounting
+혁신 회계
+전통적인å재무å지표가å아닌ë
+스타트업의å성장과å학습을å측정하는
+새로운å성과å지표å시스템
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå16åofå44
+
+
+
+### [Page 17]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå17åofå44
+Vanity vs Actionable Metrics
+멋져å보이지만å위험한åè허영å지표è와å실제å행동을å유도하는åè실행å가능å지표è의å차이
+metrics_analysisíjs
+// ❌ Vanity Metrics (피해야 할 지표)
+const vanityMetrics = {
+  totalUsers: 100000,     // 총 가입자 수 (탈퇴자 포함)
+  totalPageViews: "1M+",  // 단순 페이지 뷰
+  totalDownloads: 50000,  // 누적 다운로드 (삭제 미반영)
+  socialLikes: 5000       // 페이스북 좋아요
+};
+// ✅ Actionable Metrics (집중해야 할 지표)
+const actionableMetrics = {
+  engagement: {
+    dau_mau_ratio: "30%", // 실제 활성도
+    retention_d30: "45%"  // 30일 후 재방문율
+  },
+  
+  revenue: {
+    arpu: "$5.00",        // 사용자당 평균 수익
+    ltv: "$120.00"        // 고객 생애 가치
+  },
+  satisfaction: {
+누적å데이터로å항상å우상향하지만ëå실제å비즈니스å건전성을å왜곡할å수å있
+는å지표입니다í
+
+의사결정에å도움å안å됨
+
+단순히åè기분å좋은èå숫자
+인과å관계가å명확하고å다음에å무엇을å해야å할지å알려주는å지표입니다í
+행동å유도å가능
+실제å비즈니스å상태å반영
+
+Vanity Metrics (허영 지표)
+
+Actionable Metrics (실행 지표)
+
+
+|  | metrics analysisíjs _ // Vanity Metrics (피해야 할 지표) ❌ const vanityMetrics = { totalUsers: 100000, // 총 가입자 수 (탈퇴자 포함) totalPageViews: "1M+", // 단순 페이지 뷰 totalDownloads: 50000, // 누적 다운로드 (삭제 미반영) socialLikes: 5000 // 페이스북 좋아요 }; // Actionable Metrics (집중해야 할 지표) ✅ const actionableMetrics = { engagement: { dau mau ratio: "30%", // 실제 활성도 _ _ retention d30: "45%" // 30일 후 재방문율 _ }, revenue: { arpu: "$5.00", // 사용자당 평균 수익 ltv: "$120.00" // 고객 생애 가치 }, AIåOpenåSourceåSoftware slideå17åofå44 satisfaction: { |  |  |  |
+| --- | --- | --- | --- | --- |
+|  |  |  | metrics analysisíjs _ |  |
+|  |  |  | // Vanity Metrics (피해야 할 지표) ❌ const vanityMetrics = { totalUsers: 100000, // 총 가입자 수 (탈퇴자 포함) totalPageViews: "1M+", // 단순 페이지 뷰 totalDownloads: 50000, // 누적 다운로드 (삭제 미반영) socialLikes: 5000 // 페이스북 좋아요 }; // Actionable Metrics (집중해야 할 지표) ✅ const actionableMetrics = { engagement: { dau mau ratio: "30%", // 실제 활성도 _ _ retention d30: "45%" // 30일 후 재방문율 _ }, revenue: { arpu: "$5.00", // 사용자당 평균 수익 ltv: "$120.00" // 고객 생애 가치 |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+| Actionable Metrics (실행 지표)  인과å관계가å명확하고å다음에å무엇을å해야å할지å알려주는å지표입니다í  행동å유도å가능  실제å비즈니스å상태å반영 |  |  |  |  |
+|  |  |  | }, AIåOpenåSourceåSoftware slideå17åofå44 satisfaction: { |  |
+
+
+### [Page 18]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå18åofå44
+측정 프레임워크: AARRR
+ç해적å지표éPirateåMetricsêç라å불리는å스타트업å성장å단계별å핵심å지표
+
+Acquisitionåé획득ê
+사용자가å어떻게å우리å제품을å처음å접하는가ñ
+KPIïå방문자å수ëåCACåé고객å획득å비용ê
+
+Activationåé활성화ê
+사용자가å첫å방문에서å긍정적인å경험éAhaåMomentê을å했는가ñ
+KPIïå회원가입률ëå첫å주요å기능å사용
+
+Retentionåé유지ê
+사용자가å제품을å재사용하기å위해å다시å돌아오는가ñ
+KPIïå재방문율ëå이탈률éChurnåRateê
+
+Revenueåé수익ê
+사용자가å제품의å가치에å대해å돈을å지불하는가ñ
+KPIïåLTVåé생애å가치êëåMRRëå구매å전환율
+
+Referralåé추천ê
+사용자가å자발적으로å주변에å제품을å추천하는가ñ
+KPIïåNPSëå바이럴å계수éKìFactorê
+pirate_metrics_modelíjson
+const PirateMetrics = {
+  framework: "AARRR",
+  stages: [
+    {
+      stage: "Acquisition",
+      question: "어떻게 찾아오는가?",
+      metrics: ["Traffic", "CAC"]
+    },
+    {
+      stage: "Activation",
+      question: "첫 경험이 좋은가?",
+      metrics: ["Sign-up Rate", "Time on Site"]
+    },
+    {
+      stage: "Retention",
+      question: "다시 돌아오는가?",
+      metrics: ["Retention Rate", "DAU/MAU"]
+    },
+    {
+      stage: "Revenue",
+      question: "돈을 내는가?",
+      metrics: ["LTV", "MRR", "Conversion Rate"]
+}
+
+
+|  | pirate metrics modelíjson _ _ |
+| --- | --- |
+|  | const PirateMetrics = { framework: "AARRR", stages: [ { stage: "Acquisition", question: "어떻게 찾아오는가?", metrics: ["Traffic", "CAC"] }, { stage: "Activation", question: "첫 경험이 좋은가?", metrics: ["Sign-up Rate", "Time on Site"] }, { stage: "Retention", question: "다시 돌아오는가?", metrics: ["Retention Rate", "DAU/MAU"] }, { stage: "Revenue", question: "돈을 내는가?", |
+
+
+### [Page 19]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå19åofå44
+코호트 분석 (Cohort Analysis)
+시간å경과에å따른å사용자å그룹별å행동å패턴å분석å및å유지율éRetentionêå측정
+핵심å인사이트
+cohort_analysis_dataíjs
+// 코호트 분석: 2024년 1월 vs 2월 신규 가입자 유지율 비교
+const cohortAnalysis = {
+  "2024-01": {
+    users: 100,
+    retention: {
+      "Week 1": "100%", // 가입 직후
+      "Week 2": "60%",  // 급격한 이탈 발생 ⚠️
+      "Week 3": "40%",
+      "Week 4": "30%"
+    }
+  },
+  
+  "2024-02": { // Å 2월 1일: 온보딩 튜토리얼 기능 추가
+    users: 150,
+    retention: {
+      "Week 1": "100%",
+      "Week 2": "70%",  // 1월 대비 +10%p 개선!
+      "Week 3": "55%",  // +15%p 개선 (유지율 상승)
+      "Week 4": "45%"   // 장기 사용자 비율 증가 ✅
+    }
+  }
+동질å집단å추적
+가입å시기å등å특정å속성을å공유하는å그룹의å행동å변
+화를å관찰합니다í
+Retentionå개선å검증
+ç이번å달å가입자가å지난달å가입자보다å더å오래å남는
+가ñç를å확인합니다í
+원인å분석
+지표å변화의å원인é예ïå온보딩å튜토리얼å도입ê을å명확
+히å파악할å수å있습니다í
+
+
+|  |  | cohort analysis dataíjs _ _ // 코호트 분석: 2024년 1월 vs 2월 신규 가입자 유지율 비교 const cohortAnalysis = { "2024-01": { users: 100, retention: { "Week 1": "100%", // 가입 직후 "Week 2": "60%", // 급격한 이탈 발생 ⚠️ "Week 3": "40%", "Week 4": "30%" } }, "2024-02": { // 2월 1일: 온보딩 튜토리얼 기능 추가 Å users: 150, retention: { "Week 1": "100%", "Week 2": "70%", // 1월 대비 +10%p 개선! "Week 3": "55%", // +15%p 개선 (유지율 상승) "Week 4": "45%" // 장기 사용자 비율 증가 ✅ AIåOpenåSourceåSoftware slideå19åofå44 } } |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  핵심å인사이트 동질å집단å추적 가입å시기å등å특정å속성을å공유하는å그룹의å행동å변 화를å관찰합니다í Retentionå개선å검증 ç이번å달å가입자가å지난달å가입자보다å더å오래å남는 가ñç를å확인합니다í 원인å분석 지표å변화의å원인é예ïå온보딩å튜토리얼å도입ê을å명확 히å파악할å수å있습니다í |  |  |  | cohort analysis dataíjs _ _ |  |
+|  |  |  |  | // 코호트 분석: 2024년 1월 vs 2월 신규 가입자 유지율 비교 const cohortAnalysis = { "2024-01": { users: 100, retention: { "Week 1": "100%", // 가입 직후 "Week 2": "60%", // 급격한 이탈 발생 ⚠️ "Week 3": "40%", "Week 4": "30%" } }, "2024-02": { // 2월 1일: 온보딩 튜토리얼 기능 추가 Å users: 150, retention: { "Week 1": "100%", "Week 2": "70%", // 1월 대비 +10%p 개선! "Week 3": "55%", // +15%p 개선 (유지율 상승) |  |
+| SejinåChunëå2026 |  |  |  | "Week 4": "45%" // 장기 사용자 비율 증가 ✅ AIåOpenåSourceåSoftware slideå19åofå44 } } |  |
+
+
+### [Page 20]
+
+05
+SECTIONå05
+Pivot vs
+Persevere
+전략적å전환éPivotê과
+지속적å개선éPersevereêå사이의
+중요한å의사결정å프로세스
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå20åofå44
+
+
+
+### [Page 21]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå21åofå44
+Pivot (전환) 유형
+근본적인å가설을å수정하되ëå비전은å유지하는å전략적å방향å전환
+주요å피봇å유형å5가지
+pivot_strategiesíjs
+const executePivot = (product, strategy) => {
+  switch (strategy) {
+    case 'Zoom-in':
+      // 킬러 기능 하나만 남기고 나머지는 제거
+      return product.features.find(f => f.isKillerFeature);
+    case 'Zoom-out':
+      // 현재 제품을 더 큰 생태계의 일부로 확장
+      return new SuperApp({ includedFeature: product });
+    case 'CustomerSegment':
+      // B2C에서 B2B 엔터프라이즈로 타겟 변경
+      product.targetAudience = "Enterprise";
+      product.pricing = "Subscription/Seat";
+      break;
+    case 'Platform':
+      // 서드파티 개발자에게 API 개방
+      product.openAPI = true;
+      product.allowThirdPartyApps = true;
+1íåZoomìinåPivot
+단일å기능이å제품å전체가å됨åé예ïåInstagramê
+2íåZoomìoutåPivot
+제품이å더å큰å플랫폼의å일부å기능으로å통합됨
+3íåCustomeråSegmentåPivot
+해결하려는å문제는å같지만å타겟å고객을å변경åéB2Cå↔åB2Bê
+4íåPlatformåPivot
+애플리케이션에서å플랫폼으로ëå또는å그å반대로å전환
+5íåBusinessåArchitectureåPivot
+고마진î저수량å모델에서å저마진î대량å모델로å전환
+
+
+
+### [Page 22]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå22åofå44
+실제 Pivot 사례
+전설적인å기업들의å성공적인å방향å전환å스토리
+
+Slack
+2013åPivot
+GameåéGlitchê
+
+TeamåChat
+
+YouTube
+2005åPivot
+DatingåSite
+
+VideoåShare
+
+Twitter
+2006åPivot
+PodcaståéOdeoê
+
+Microblog
+pivot_historyíjson
+[
+  {
+    "company": "Slack",
+    "before": "Glitch (RPG Game)",
+    "pivot": "Internal Communication Tool",
+    "reason": "게임 실패, 내부 메신저 가치 발견",
+    "result": "$27B Valuation (Acquired by SF)"
+  },
+  {
+    "company": "YouTube",
+    "before": "Tune In Hook Up (Dating)",
+    "pivot": "General Video Sharing",
+    "reason": "데이팅 비디오 수요 부족",
+    "result": "Google Acquired ($1.65B)"
+  },
+  {
+    "company": "Twitter",
+    "before": "Odeo (Podcast Platform)",
+    "pivot": "Microblogging Service",
+    "reason": "iTunes의 팟캐스트 시장 장악",
+    "result": "Top Social Media Platform"
+  }
+]
+
+
+| pivot historyíjson _ [ { "company": "Slack", "before": "Glitch (RPG Game)", "pivot": "Internal Communication Tool", "reason": "게임 실패, 내부 메신저 가치 발견", "result": "$27B Valuation (Acquired by SF)" }, { "company": "YouTube", "before": "Tune In Hook Up (Dating)", "pivot": "General Video Sharing", "reason": "데이팅 비디오 수요 부족", "result": "Google Acquired ($1.65B)" }, { "company": "Twitter", "before": "Odeo (Podcast Platform)", "pivot": "Microblogging Service", "reason": "iTunes의 팟캐스트 시장 장악", "result": "Top Social Media Platform" } AIåOpenåSourceåSoftware slideå22åofå44 ] |  |  |
+| --- | --- | --- |
+|  |  | pivot historyíjson _ |
+|  |  | [ { "company": "Slack", "before": "Glitch (RPG Game)", "pivot": "Internal Communication Tool", "reason": "게임 실패, 내부 메신저 가치 발견", "result": "$27B Valuation (Acquired by SF)" }, { "company": "YouTube", "before": "Tune In Hook Up (Dating)", "pivot": "General Video Sharing", "reason": "데이팅 비디오 수요 부족", "result": "Google Acquired ($1.65B)" }, { "company": "Twitter", "before": "Odeo (Podcast Platform)", "pivot": "Microblogging Service", "reason": "iTunes의 팟캐스트 시장 장악", |
+|  |  |  |
+
+
+### [Page 23]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå23åofå44
+Pivot 결정 기준
+데이터에å기반한å객관적å전환å시점å판단åéPivotåvsåPersevereê
+주요å신호åéSignalsê
+pivot_logicíjs
+const metrics = {
+  pmf: false,         // 제품-시장 적합성 미달
+  growth: 'flat',     // 성장 곡선 정체
+  retention: 'low',   // 재방문율 10% 미만
+  expSuccess: 0.15    // 실험 성공률 < 20%
+};
+// 의사결정 로직 (Decision Logic)
+if (!metrics.pmf && metrics.growth === 'flat') {
+  
+  console.log('í Pivot Required');
+  pivot({
+    type: 'Zoom-in', // 핵심 기능 하나에 집중
+    reason: '시장 반응 없음'
+  });
+} else {
+console log('✅Persevere: 최적화지속');
+PMFå부족åéNoåPMFê
+낮은å재방문율éRetentionêëå고객å추천å부재
+성장å한계åéGrowthåCeilingê
+마케팅å비용éCACêå증가ëå사용자å수å정체
+실험å효율å저하
+기능å개선이å핵심å지표éKPIêå향상으로å이어지지å않음
+
+
+| pivot logicíjs _ const metrics = { pmf: false, // 제품-시장 적합성 미달 growth: 'flat', // 성장 곡선 정체 retention: 'low', // 재방문율 10% 미만 expSuccess: 0.15 // 실험 성공률 < 20% }; // 의사결정 로직 (Decision Logic) if (!metrics.pmf && metrics.growth === 'flat') { console.log(' Pivot Required'); í pivot({ type: 'Zoom-in', // 핵심 기능 하나에 집중 reason: '시장 반응 없음' }); AIåOpenåSourceåSoftware slideå23åofå44 } else { |  |  |  |
+| --- | --- | --- | --- |
+|  |  | pivot logicíjs _ |  |
+|  |  | const metrics = { pmf: false, // 제품-시장 적합성 미달 growth: 'flat', // 성장 곡선 정체 retention: 'low', // 재방문율 10% 미만 expSuccess: 0.15 // 실험 성공률 < 20% }; // 의사결정 로직 (Decision Logic) if (!metrics.pmf && metrics.growth === 'flat') { console.log(' Pivot Required'); í pivot({ type: 'Zoom-in', // 핵심 기능 하나에 집중 reason: '시장 반응 없음' }); |  |
+|  |  | AIåOpenåSourceåSoftware slideå23åofå44 } else { |  |
+
+
+### [Page 24]
+
+07
+SECTIONå07
+실험
+프레임워크
+가설을å검증하고å학습을å가속화하기å위한
+과학적å실험å설계å및åAîBå테스팅å방법론
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå24åofå44
+
+
+
+### [Page 25]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå25åofå44
+A/B 테스팅 (A/B Testing)
+데이터å기반å의사결정을å위한å실험å설계å및å검증å프로세스
+실험å프로세스
+ab_test_analysisíjs
+// 1. A/B 테스트 설정 (Experiment Setup)
+const experiment = {
+  name: 'new-onboarding-flow',
+  hypothesis: '새 온보딩이 활성화율을 20% 증가시킬 것',
+  variants: { A: 'control', B: 'treatment' },
+  minSampleSize: 1000
+};
+// 2. 결과 데이터 집계 (Data Collection)
+const results = {
+  A: { users: 5000, activations: 2000, rate: 0.40 }, // 40%
+  B: { users: 5000, activations: 2800, rate: 0.56 }, // 56%
+};
+// 3. 성과 분석 및 의사결정 (Analysis)
+const lift = ((results.B.rate - results.A.rate) / results.A.rate) * 100;
+console.log(`개선율(Lift): ${lift}%`); // Output: 40% 개선!
+// 통계적 유의성 및 목표 달성 여부 판단
+1íå실험å설계åéSetupê
+명확한å가설과å대조군éAêî실험군éBê을å정의합니다í
+2íå메트릭å측정åéMeasureê
+핵심å지표éActivationåRateå등ê를å수집하여å비교합니다í
+3íå통계적å검증åéAnalyzeê
+통계적å유의성을å확인å후å최종å의사결정을å내립니다í
+Insightïå40%å성능å개선å확인æ
+
+
+|  | ab test analysisíjs _ _ |
+| --- | --- |
+|  | // 1. A/B 테스트 설정 (Experiment Setup) const experiment = { name: 'new-onboarding-flow', hypothesis: '새 온보딩이 활성화율을 20% 증가시킬 것', variants: { A: 'control', B: 'treatment' }, minSampleSize: 1000 }; // 2. 결과 데이터 집계 (Data Collection) const results = { A: { users: 5000, activations: 2000, rate: 0.40 }, // 40% B: { users: 5000, activations: 2800, rate: 0.56 }, // 56% }; // 3. 성과 분석 및 의사결정 (Analysis) const lift = ((results.B.rate - results.A.rate) / results.A.rate) * 100; console.log(`개선율(Lift): ${lift}%`); // Output: 40% 개선! |
+
+
+### [Page 26]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå26åofå44
+실험 추적 (Tracking Experiments)
+실험의å전체å생명주기를åJSONå데이터로å기록하고å관리하는å체계
+데이터å구조å분석
+dataîexperimentsíjson
+{
+  "experiments": [
+    {
+      "id": "exp-001", "name": "new-pricing-page",
+      "status": "shipped", "shippedDate": "2024-01-15",
+      "hypothesis": "간소화된 가격 페이지가 전환율 15% 증가",
+      "results": {
+        "control": { "users": 1000, "conversionRate": 0.05 },
+        "variant": { "users": 1000, "conversionRate": 0.07 }
+      },
+      "decision": "ship" // 채택 (5% -> 7% 개선)
+    },
+    {
+      "id": "exp-002", "name": "gamification",
+      "status": "concluded",
+      "hypothesis": "게임화 요소가 DAU 30% 증가",
+      "results": {
+        "control": { "dau": 1000 },
+        "variant": { "dau": 980 }
+      },
+      "decision": "rollback", // 폐기
+      "reason": "참여도 증가 없음, 복잡도만 증가"
+    },
+    {
+      "id": "exp-003", "name": "dark-mode",
+"status": "running"
+Hypothesisåé가설ê
+실험을å통해å검증하고자å하는å명확한å가정과å예상å결과를å기록합
+니다í
+Statusåé상태ê
+running → concluded → shipped/killed
+실험의å현재å진행å단계를å상태값으로å추적å관리합니다í
+Decisionåé의사결정ê
+데이터å분석å결과에å따른å최종å행동é채택î폐기ê과å근거를å명시합
+니다í
+
+
+|  |  | dataîexperimentsíjson { "experiments": [ { "id": "exp-001", "name": "new-pricing-page", "status": "shipped", "shippedDate": "2024-01-15", "hypothesis": "간소화된 가격 페이지가 전환율 15% 증가", "results": { "control": { "users": 1000, "conversionRate": 0.05 }, "variant": { "users": 1000, "conversionRate": 0.07 } }, "decision": "ship" // 채택 (5% -> 7% 개선) }, { "id": "exp-002", "name": "gamification", "status": "concluded", "hypothesis": "게임화 요소가 DAU 30% 증가", "results": { "control": { "dau": 1000 }, "variant": { "dau": 980 } }, "decision": "rollback", // 폐기 "reason": "참여도 증가 없음, 복잡도만 증가" }, A Iå O p{enåSourceåSoftware slideå26åofå44 "id": "exp-003", "name": "dark-mode", |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  데이터å구조å분석 Hypothesisåé가설ê 실험을å통해å검증하고자å하는å명확한å가정과å예상å결과를å기록합 니다í Statusåé상태ê running → concluded → shipped/killed 실험의å현재å진행å단계를å상태값으로å추적å관리합니다í Decisionåé의사결정ê 데이터å분석å결과에å따른å최종å행동é채택î폐기ê과å근거를å명시합 니다í |  |  |  | dataîexperimentsíjson |  |
+|  |  |  |  | { "experiments": [ { "id": "exp-001", "name": "new-pricing-page", "status": "shipped", "shippedDate": "2024-01-15", "hypothesis": "간소화된 가격 페이지가 전환율 15% 증가", "results": { "control": { "users": 1000, "conversionRate": 0.05 }, "variant": { "users": 1000, "conversionRate": 0.07 } }, "decision": "ship" // 채택 (5% -> 7% 개선) }, { "id": "exp-002", "name": "gamification", "status": "concluded", "hypothesis": "게임화 요소가 DAU 30% 증가", "results": { "control": { "dau": 1000 }, "variant": { "dau": 980 } }, "decision": "rollback", // 폐기 "reason": "참여도 증가 없음, 복잡도만 증가" |  |
+| SejinåChunëå2026 |  |  |  | }, A Iå O p{enåSourceåSoftware slideå26åofå44 "id": "exp-003", "name": "dark-mode", |  |
+
+
+### [Page 27]
+
+08
+SECTIONå08
+GitHub를 활용한
+Lean Startup
+IssuesëåProjectsëåActionså등의å도구를å활용하여
+가설å관리부터å실험å추적ëå메트릭å수집까지
+개발å프로세스와å실험을å통합å관리하는å전략
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå27åofå44
+
+
+
+### [Page 28]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå28åofå44
+GitHub Issue Template
+구조화된å실험å설계를å위한å가설å관리å템플릿åéHypothesisåDrivenåDevelopmentê
+템플릿å구성å요소
+ígithubîISSUE_TEMPLATEîexperimentímd
+---
+name: Experiment Hypothesis
+about: Track product experiments and validated learning
+labels: experiment
+---
+## Hypothesis
+We believe that **[creating this feature]**
+for **[these users]**
+will achieve **[this outcome]**.
+## Success Metrics
+- **Primary**: [Key Metric, e.g., Conversion Rate > 5%]
+- **Secondary**: [Guardrail Metric, e.g., Latency < 200ms]
+## Experiment Design
+- **Type**: A/B Test / Feature Flag / Prototype
+- **Duration**: 2 weeks
+- **Sample Size**: 1,000 users
+## Results
+<!-- 실험 종료 후 데이터와 인사이트를 기록하세요 -->
+Hypothesisåé가설ê
+çò기능ó을å만들면åò결과ó가å나올å것이다ç라는å명확한å인과관계å정
+의
+SuccessåMetricsåé성공å지표ê
+실험의å성공å여부를å판단할å정량적å기준åéPrimaryîSecondaryê
+ExperimentåDesignåé실험å설계ê
+AîBå테스트ëå기능å플래그å등å실험å방법과å대상ëå기간å명시
+Decisionåé의사결정ê
+실험å종료å후å데이터에å기반한å다음å행동åé채택î반복î전환î폐기ê
+
+
+| ígithubîISSUE TEMPLATEîexperimentímd _ --- name: Experiment Hypothesis about: Track product experiments and validated learning labels: experiment --- ## Hypothesis We believe that **[creating this feature]** for **[these users]** will achieve **[this outcome]**. ## Success Metrics - **Primary**: [Key Metric, e.g., Conversion Rate > 5%] - **Secondary**: [Guardrail Metric, e.g., Latency < 200ms] ## Experiment Design - **Type**: A/B Test / Feature Flag / Prototype - **Duration**: 2 weeks - **Sample Size**: 1,000 users ## Results AIåOpenåSourceåSoftware slideå28åofå44 <!-- 실험 종료 후 데이터와 인사이트를 기록하세요 --> |  |  |  |
+| --- | --- | --- | --- |
+|  |  | ígithubîISSUE TEMPLATEîexperimentímd _ |  |
+|  |  | --- name: Experiment Hypothesis about: Track product experiments and validated learning labels: experiment --- ## Hypothesis We believe that **[creating this feature]** for **[these users]** will achieve **[this outcome]**. ## Success Metrics - **Primary**: [Key Metric, e.g., Conversion Rate > 5%] - **Secondary**: [Guardrail Metric, e.g., Latency < 200ms] ## Experiment Design - **Type**: A/B Test / Feature Flag / Prototype - **Duration**: 2 weeks - **Sample Size**: 1,000 users |  |
+|  |  | ## Results AIåOpenåSourceåSoftware slideå28åofå44 <!-- 실험 종료 후 데이터와 인사이트를 기록하세요 --> |  |
+
+
+### [Page 29]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå29åofå44
+Projects로 실험 추적
+GitHubåProjectsåBoard를å활용한å실험å파이프라인å시각화å및å관리
+Kanbanå관리å전략
+experiment_board_stateíjson
+{
+  "boardName": "Lean Experiment Pipeline",
+  "columns": [
+    {
+      "name": "² Running (진행 중)",
+      "items": [
+        { "id": "EXP-004", "hypothesis": "검색 최적화", "daysLeft": 3 },
+        { "id": "EXP-007", "hypothesis": "소셜 로그인", "daysLeft": 5 }
+      ]
+    },
+    {
+      "name": "· Analysis (분석 중)",
+      "items": [
+        { "id": "EXP-006", "status": "collecting_metrics" }
+      ]
+    },
+    {
+      "name": "✅ Shipped (채택)",
+      "items": [
+{ "id": "EXP-002", "feature": "다크모드", "retention": "+5%" },
+실험å상태å시각화
+Backlogé아이디어êå→åRunningé진행å중êå→
+Analysisé분석êå→åShippedîKilledå단계를å한눈에å파악
+합니다í
+WIPåéWorkåInåProgressêå제한
+èRunningèå칼럼의å카드를å제한하여å팀이å너무å많은å실험
+을å동시에å진행하지å않도록å조절합니다í
+데이터å기반å결정å기록
+
+
+|  |  | experiment board stateíjson _ _ { "boardName": "Lean Experiment Pipeline", "columns": [ { "name": " Running (진행 중)", ² "items": [ { "id": "EXP-004", "hypothesis": "검색 최적화", "daysLeft": 3 }, { "id": "EXP-007", "hypothesis": "소셜 로그인", "daysLeft": 5 } ] }, { "name": " Analysis (분석 중)", · "items": [ { "id": "EXP-006", "status": "collecting metrics" } _ ] }, { "name": " Shipped (채택)", AIåOpenåSourceåS✅oftware slideå29åofå44 "items": [ { "id": "EXP-002", "feature": "다크 모드", "retention": "+5%" }, |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  | experiment board stateíjson _ _ |  |
+|  |  |  |  | { "boardName": "Lean Experiment Pipeline", "columns": [ { "name": " Running (진행 중)", ² "items": [ { "id": "EXP-004", "hypothesis": "검색 최적화", "daysLeft": 3 }, { "id": "EXP-007", "hypothesis": "소셜 로그인", "daysLeft": 5 } ] }, { "name": " Analysis (분석 중)", · "items": [ { "id": "EXP-006", "status": "collecting metrics" } _ ] }, { |  |
+|  Kanbanå관리å전략 실험å상태å시각화 Backlogé아이디어êå→åRunningé진행å중êå→ Analysisé분석êå→åShippedîKilledå단계를å한눈에å파악 합니다í WIPåéWorkåInåProgressêå제한 èRunningèå칼럼의å카드를å제한하여å팀이å너무å많은å실험 |  |  |  |  |  |
+| 을å동시에å진행하지å않도록å조절합니다í SejinåChunëå2026 데이터å기반å결정å기록 |  |  |  | "name": " Shipped (채택)", AIåOpenåSourceåS✅oftware slideå29åofå44 "items": [ { "id": "EXP-002", "feature": "다크 모드", "retention": "+5%" }, |  |
+
+
+### [Page 30]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå30åofå44
+GitHub Actions로 메트릭 자동 수집
+CIîCDå파이프라인을å활용하여å제품å데이터를å주기적으로å수집하고å이상å징후를å감지합니다í
+자동화å워크플로우
+ígithubîworkÚowsîmetricsíyml
+name: Collect Metrics
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 00:00 실행
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch data
+        run: |
+          curl -X GET "https://api.analytics.com/metrics" \
+            -H "Authorization: Bearer ${{ secrets.TOKEN }}" \
+            -o metrics.json
+      - name: Calculate metrics
+        run: node scripts/calculate.js
+      - name: Alert on drop
+        if: env.METRICS_DROPPING == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+정기å실행åéScheduleê
+Cronå문법을å사용하여å매일å자정é00ï00ê에å스크립트가å자동
+으로å실행되도록å설정합니다í
+데이터å수집å및å계산
+외부åAPI에서å데이터를å가져오고éFetchêëåNodeíjså스크립트
+로å핵심å지표를å계산합니다í
+조건부å알림åéAlertê
+지표가å급락하거나å임계값å미만일å경우éifå조건êëå자동으로
+GitHubåIssue를å생성하여å팀에å알립니다í
+
+
+| ígithubîworkÚowsîmetricsíyml name: Collect Metrics on: schedule: - cron: '0 0 * * *' # 매일 00:00 실행 jobs: metrics: runs-on: ubuntu-latest steps: - name: Fetch data run: | curl -X GET "https://api.analytics.com/metrics" \ -H "Authorization: Bearer ${{ secrets.TOKEN }}" \ -o metrics.json - name: Calculate metrics run: node scripts/calculate.js - name: Alert on drop if: env.METRICS DROPPING == 'true' _ uses: actions/github-script@v7 with: script: | A Iå OgpietnhåSuobu.rrceesåSto.fitwssaurees.create({ slideå30åofå44 owner: context.repo.owner, repo: context.repo.repo, |  |  |  |
+| --- | --- | --- | --- |
+|  |  | ígithubîworkÚowsîmetricsíyml |  |
+|  |  | name: Collect Metrics on: schedule: - cron: '0 0 * * *' # 매일 00:00 실행 jobs: metrics: runs-on: ubuntu-latest steps: - name: Fetch data run: | curl -X GET "https://api.analytics.com/metrics" \ -H "Authorization: Bearer ${{ secrets.TOKEN }}" \ -o metrics.json - name: Calculate metrics run: node scripts/calculate.js - name: Alert on drop if: env.METRICS DROPPING == 'true' _ uses: actions/github-script@v7 with: |  |
+|  |  | script: | A Iå OgpietnhåSuobu.rrceesåSto.fitwssaurees.create({ slideå30åofå44 owner: context.repo.owner, repo: context.repo.repo, |  |
+
+
+### [Page 31]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå31åofå44
+Feature Flags로 실험
+배포éDeploymentê와å출시éReleaseê를å분리하여å안전하게å실험하는å방법
+제어å및å실험
+PricingPageíjsx
+import { useFeatureFlag } from './featureFlags';
+import { analytics } from './utils/analytics';
+function PricingPage() {
+  // 1. Feature Flag 상태 확인 (True/False)
+  const newPricingLayout = useFeatureFlag('new-pricing-layout');
+  
+  // 2. 실험 그룹 추적 (분석용)
+  useEffect(() => {
+    analytics.track('pricing_page_viewed', {
+      variant: newPricingLayout ? 'treatment' : 'control',
+      experiment_id: 'exp-pricing-001'
+    });
+  }, [newPricingLayout]);
+  // 3. 조건부 렌더링 (분기 처리)
+  if (newPricingLayout) {
+    return <NewPricingLayout />; // 새로운 디자인 (Variant B)
+  }
+  
+  return <OldPricingLayout />; // 기존 디자인 (Variant A)
+실시간å기능å제어
+코드를å다시å배포하지å않고도å특정å기능을å켜거나å끌å수
+있어ëå문제å발생å시å즉시å롤백이å가능합니다í
+타겟팅å배포åéTargetingê
+전체å사용자가å아닌å10%의å사용자å또는å특정å그룹é예ïå사
+내å직원ëå베타å테스터ê에게만å기능을å노출합니다í
+데이터å기반åAîBå테스트
+각å변형éVariantê에å노출된å사용자의å행동å데이터를å추적
+하여å실험의å승자를å결정합니다í
+
+
+|  |  | PricingPageíjsx import { useFeatureFlag } from './featureFlags'; import { analytics } from './utils/analytics'; function PricingPage() { // 1. Feature Flag 상태 확인 (True/False) const newPricingLayout = useFeatureFlag('new-pricing-layout'); // 2. 실험 그룹 추적 (분석용) useEffect(() => { analytics.track('pricing page viewed', { _ _ variant: newPricingLayout ? 'treatment' : 'control', experiment id: 'exp-pricing-001' _ }); }, [newPricingLayout]); // 3. 조건부 렌더링 (분기 처리) if (newPricingLayout) { return <NewPricingLayout />; // 새로운 디자인 (Variant B) } AIåOpenåSourceåSoftware slideå31åofå44 return <OldPricingLayout />; // 기존 디자인 (Variant A) |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  제어å및å실험 실시간å기능å제어 코드를å다시å배포하지å않고도å특정å기능을å켜거나å끌å수 있어ëå문제å발생å시å즉시å롤백이å가능합니다í 타겟팅å배포åéTargetingê 전체å사용자가å아닌å10%의å사용자å또는å특정å그룹é예ïå사 내å직원ëå베타å테스터ê에게만å기능을å노출합니다í 데이터å기반åAîBå테스트 각å변형éVariantê에å노출된å사용자의å행동å데이터를å추적 하여å실험의å승자를å결정합니다í |  |  |  | PricingPageíjsx |  |
+|  |  |  |  | import { useFeatureFlag } from './featureFlags'; import { analytics } from './utils/analytics'; function PricingPage() { // 1. Feature Flag 상태 확인 (True/False) const newPricingLayout = useFeatureFlag('new-pricing-layout'); // 2. 실험 그룹 추적 (분석용) useEffect(() => { analytics.track('pricing page viewed', { _ _ variant: newPricingLayout ? 'treatment' : 'control', experiment id: 'exp-pricing-001' _ }); }, [newPricingLayout]); // 3. 조건부 렌더링 (분기 처리) if (newPricingLayout) { return <NewPricingLayout />; // 새로운 디자인 (Variant B) |  |
+| SejinåChunëå2026 |  |  |  | } AIåOpenåSourceåSoftware slideå31åofå44 return <OldPricingLayout />; // 기존 디자인 (Variant A) |  |
+
+
+### [Page 32]
+
+09
+SECTIONå09
+Lean Analytics
+데이터 분석
+스타트업의å성장å단계에å맞는å핵심å지표를å선정하고
+데이터å기반으로å의사결정하는
+분석å프레임워크와åOMTMå전략
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå32åofå44
+
+
+
+### [Page 33]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå33åofå44
+North Star Metric (북극성 지표)
+제품의å핵심å가치éCoreåValueê를å가장å잘å나타내는å단å하나의å지표
+지표의å특징
+industry_examplesíjson
+{
+  "north_star_metrics": [
+    {
+      "company": "Airbnb",
+      "metric": "Nights Booked", // 예약된 숙박 일수
+      "why": "게스트와 호스트 간의 가치 교환 횟수"
+    },
+    {
+      "company": "Facebook",
+      "metric": "Daily Active Users (DAU)",
+      "why": "플랫폼 내 사용자 간 상호작용 활성도"
+    },
+    {
+      "company": "Spotify",
+      "metric": "Time Spent Listening", // 총 청취 시간
+      "why": "음악을 통한 즐거움과 체류 시간"
+    },
+    {
+      "company": "GitHub",
+      "metric": "Active Repositories", // 활성 저장소 수
+      "why": "개발자의 지속적 기여와 생태계 활성화"
+    }
+  ]
+}
+가치å중심åéValueìdrivenê
+단순å수익이å아닌ëå고객이å제품에서å얻는å실질적å가치를å반영합니
+다í
+방향성å제시åéAlignmentê
+조직å내å모든å팀이å하나의å목표를å향해å정렬되도록å돕습니다í
+장기å성장åéLongìtermåGrowthê
+단기적å성과éVanityåMetricê가å아닌å지속å가능한å성장을å견인합
+니다í
+
+
+|  |  | industry examplesíjson _ { "north star metrics": [ _ _ { "company": "Airbnb", "metric": "Nights Booked", // 예약된 숙박 일수 "why": "게스트와 호스트 간의 가치 교환 횟수" }, { "company": "Facebook", "metric": "Daily Active Users (DAU)", "why": "플랫폼 내 사용자 간 상호작용 활성도" }, { "company": "Spotify", "metric": "Time Spent Listening", // 총 청취 시간 "why": "음악을 통한 즐거움과 체류 시간" }, { "company": "GitHub", "metric": "Active Repositories", // 활성 저장소 수 "why": "개발자의 지속적 기여와 생태계 활성화" } AIåOpenåSourceåSoftware slideå33åofå44 ] } |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  지표의å특징 가치å중심åéValueìdrivenê 단순å수익이å아닌ëå고객이å제품에서å얻는å실질적å가치를å반영합니 다í 방향성å제시åéAlignmentê 조직å내å모든å팀이å하나의å목표를å향해å정렬되도록å돕습니다í 장기å성장åéLongìtermåGrowthê 단기적å성과éVanityåMetricê가å아닌å지속å가능한å성장을å견인합 니다í |  |  |  | industry examplesíjson _ |  |
+|  |  |  |  | { "north star metrics": [ _ _ { "company": "Airbnb", "metric": "Nights Booked", // 예약된 숙박 일수 "why": "게스트와 호스트 간의 가치 교환 횟수" }, { "company": "Facebook", "metric": "Daily Active Users (DAU)", "why": "플랫폼 내 사용자 간 상호작용 활성도" }, { "company": "Spotify", "metric": "Time Spent Listening", // 총 청취 시간 "why": "음악을 통한 즐거움과 체류 시간" }, { "company": "GitHub", "metric": "Active Repositories", // 활성 저장소 수 |  |
+| SejinåChunëå2026 |  |  |  | "why": "개발자의 지속적 기여와 생태계 활성화" } AIåOpenåSourceåSoftware slideå33åofå44 ] } |  |
+
+
+### [Page 34]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå34åofå44
+OKR 전략 예시
+Objectiveé목표êëåKeyåResultsé핵심å결과êëåInitiativesé실행å전략ê의å구조적å연결
+OKRå구조åéHierarchyê
+ObjectiveåéOê
+ç무엇을å달성할å것인가ñç
+→å정성적ëå영감을å주는å목표
+KeyåResultsåéKRê
+ç어떻게å달성å여부를å아는가ñç
+→å정량적ëå측정å가능한å수치åé3ö5개ê
+
+okr_strategy_Q1íjs
+const QuarterlyGoals = {
+  // North Star Metric: 장기적 성공 지표
+  northStar: "Daily Active Users (DAU)",
+  // Objective: 야심차고 명확한 목표
+  objective: "사용자 참여도(Engagement)의 획기적 증대",
+  // Key Results: 성공을 정의하는 숫자들
+  keyResults: [
+    { 
+      id: "KR-1",
+      metric: "DAU/MAU 비율 (고착도)", 
+      target: "30% → 40% 달성" 
+    },
+    { 
+      id: "KR-2",
+      metric: "주간 평균 세션 수", 
+      target: "3회 → 5회로 증가" 
+    },
+    { 
+      id: "KR-3",
+t i
+"NPS (순추천지수)"
+
+
+|  |  | okr strategy Q1íjs _ _ const QuarterlyGoals = { // North Star Metric: 장기적 성공 지표 northStar: "Daily Active Users (DAU)", // Objective: 야심차고 명확한 목표 objective: "사용자 참여도(Engagement)의 획기적 증대", // Key Results: 성공을 정의하는 숫자들 keyResults: [ { id: "KR-1", metric: "DAU/MAU 비율 (고착도)", target: "30% → 40% 달성" }, { id: "KR-2", metric: "주간 평균 세션 수", target: "3회 → 5회로 증가" }, AIåO p e n å{S ourceåSoftware slideå34åofå44 id: "KR-3", |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  OKRå구조åéHierarchyê  ObjectiveåéOê ç무엇을å달성할å것인가ñç →å정성적ëå영감을å주는å목표  KeyåResultsåéKRê ç어떻게å달성å여부를å아는가ñç |  |  |  | okr strategy Q1íjs _ _ |  |
+|  |  |  |  | const QuarterlyGoals = { // North Star Metric: 장기적 성공 지표 northStar: "Daily Active Users (DAU)", // Objective: 야심차고 명확한 목표 objective: "사용자 참여도(Engagement)의 획기적 증대", // Key Results: 성공을 정의하는 숫자들 keyResults: [ { id: "KR-1", metric: "DAU/MAU 비율 (고착도)", target: "30% → 40% 달성" }, { id: "KR-2", metric: "주간 평균 세션 수", target: "3회 → 5회로 증가" |  |
+| →å정량적ëå측정å가능한å수치åé3ö5개ê SejinåChunëå2026 |  |  |  | }, AIåO p e n å{S ourceåSoftware slideå34åofå44 id: "KR-3", |  |
+
+|  |  KeyåResultsåéKRê ç어떻게å달성å여부를å아는가ñç |
+| --- | --- |
+| →å정량적ëå측정å가능한å수치åé3ö5개ê inåChunëå2026 |  |
+
+
+### [Page 35]
+
+10
+SECTIONå10
+실습:
+Lean Startup 적용
+MVPå구축부터å메트릭å측정ëåPivotå결정까지
+실제å시나리오를å통한
+LeanåStartupå사이클å실습
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå35åofå44
+
+
+
+### [Page 36]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå36åofå44
+Week 1: MVP 구축
+가설ïåç사용자들은å간단한åTodoå리스트å관리å기능을å원한다ç
+MVPåv1å전략
+TodoApp_v1íjsx
+function TodoApp() {
+  // 상태 관리: 할 일 목록 배열
+  const [todos, setTodos] = useState([]);
+  return (
+    <div>
+      {/* 입력창: 엔터 키로 추가 */}
+      <input 
+        placeholder="할 일을 입력하세요"
+        onKeyPress={e => {
+          if (e.key === 'Enter') {
+            setTodos([...todos, e.target.value]);
+            e.target.value = ''; // 초기화
+          }
+        }} 
+      />
+      {/* 목록 표시: 단순 텍스트 렌더링 */}
+      <ul>
+        {todos.map((todo, i) => (
+          <li key={i}>{todo}</li>
+        ))}
+핵심å기능å집중
+입력éInputê과å목록å조회éListêå기능만å구현하여å기본å니
+즈를å확인합니다í
+빠른å실행åé1일å개발ê
+디자인ëå삭제ëå수정å기능은å과감히å생략하고å작동å가능한
+상태로å배포합니다í
+검증å및å측정å계획
+초기å사용자å10명을å대상으로å테스트를å진행하고å피드백
+é정성å데이터ê을å수집합니다í
+
+
+|  |  | TodoApp v1íjsx _ function TodoApp() { // 상태 관리: 할 일 목록 배열 const [todos, setTodos] = useState([]); return ( <div> {/* 입력창: 엔터 키로 추가 */} <input placeholder="할 일을 입력하세요" onKeyPress={e => { if (e.key === 'Enter') { setTodos([...todos, e.target.value]); e.target.value = ''; // 초기화 } }} /> {/* 목록 표시: 단순 텍스트 렌더링 */} <ul> {todos.map((todo, i) => ( AIåOpenåSourceåSoftware slideå36åofå44 <li key={i}>{todo}</li> ))} |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  | TodoApp v1íjsx _ |  |
+|  |  |  |  | function TodoApp() { // 상태 관리: 할 일 목록 배열 const [todos, setTodos] = useState([]); return ( <div> {/* 입력창: 엔터 키로 추가 */} <input placeholder="할 일을 입력하세요" onKeyPress={e => { if (e.key === 'Enter') { setTodos([...todos, e.target.value]); e.target.value = ''; // 초기화 } }} /> {/* 목록 표시: 단순 텍스트 렌더링 */} <ul> |  |
+|  MVPåv1å전략 핵심å기능å집중 입력éInputê과å목록å조회éListêå기능만å구현하여å기본å니 즈를å확인합니다í 빠른å실행åé1일å개발ê 디자인ëå삭제ëå수정å기능은å과감히å생략하고å작동å가능한 상태로å배포합니다í 검증å및å측정å계획 초기 사용자 명을 대상으로 테스트를 진행하고 피드백 |  |  |  |  |  |
+| å å10 å å å å SejinåChuén정 ëå성 20å2데 6이터ê을å수집합니다í |  |  |  | {todos.map((todo, i) => ( AIåOpenåSourceåSoftware slideå36åofå44 <li key={i}>{todo}</li> ))} |  |
+
+
+### [Page 37]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå37åofå44
+Week 2: 학습 및 개선
+MVPåv2å구축ïå완료å기능å추가å및å데이터å추적을å통한å가설å검증
+주요å변경å및å학습
+·å검증å결과åéLearnê
+완료율å80%ïå긍정적å지표æ
+피드백ïåç삭제å기능å필요ç
+TodoApp_v2íjs
+function TodoApp() {
+  const [todos, setTodos] = useState([]);
+  
+  const toggleTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos[index].completed = !newTodos[index].completed;
+    setTodos(newTodos);
+    
+    // 메트릭 추적: 완료 행동 기록
+    analytics.track('todo_completed', { todoIndex: index });
+  };
+  
+  return (
+    <div>
+      <input onKeyPress={e => {
+        if (e.key === 'Enter') {
+          setTodos([...todos, { 
+            text: e.target.value, 
+            completed: false 
+          }]);
+          analytics.track('todo_added');
+        }
+      }} />
+      <ul>
+        {todos.map((todo, i) => (
+          <li 
+            key={i}
+기능å확장åéBuildê
+사용자å피드백을å반영하여å할å일åè완료éToggleêèå기능을å추가했
+습니다í
+데이터å수집åéMeasureê
+analytics.track å코드로å사용å패턴을å정량적으로å수집합니
+다í
+
+
+|  |  | TodoApp v2íjs _ function TodoApp() { const [todos, setTodos] = useState([]); const toggleTodo = (index) => { const newTodos = [...todos]; newTodos[index].completed = !newTodos[index].completed; setTodos(newTodos); // 메트릭 추적: 완료 행동 기록 analytics.track('todo completed', { todoIndex: index }); _ }; return ( <div> <input onKeyPress={e => { if (e.key === 'Enter') { setTodos([...todos, { text: e.target.value, completed: false }]); analytics.track('todo added'); _ } }} /> <ul> A Iå O p e n å S{otuordceoåsS.omfatwp(a(retodo, i) => ( slideå37åofå44 <li key={i} |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+|  주요å변경å및å학습 기능å확장åéBuildê 사용자å피드백을å반영하여å할å일åè완료éToggleêèå기능을å추가했 습니다í 데이터å수집åéMeasureê analytics.track å코드로å사용å패턴을å정량적으로å수집합니 다í å검증å결과åéLearnê ·  완료율å80%ïå긍정적å지표æ  피드백ïåç삭제å기능å필요ç |  |  |  | TodoApp v2íjs _ |  |
+|  |  |  |  | function TodoApp() { const [todos, setTodos] = useState([]); const toggleTodo = (index) => { const newTodos = [...todos]; newTodos[index].completed = !newTodos[index].completed; setTodos(newTodos); // 메트릭 추적: 완료 행동 기록 analytics.track('todo completed', { todoIndex: index }); _ }; return ( <div> <input onKeyPress={e => { if (e.key === 'Enter') { setTodos([...todos, { text: e.target.value, completed: false }]); analytics.track('todo added'); _ } }} /> |  |
+| SejinåChunëå2026 |  |  |  | <ul> A Iå O p e n å S{otuordceoåsS.omfatwp(a(retodo, i) => ( slideå37åofå44 <li key={i} |  |
+
+
+### [Page 38]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå38åofå44
+Week 3: Pivot 또는 Persevere 결정
+데이터å분석과å사용자å피드백을å기반으로å한å의사결정å시뮬레이션
+현상å분석
+Pivotå옵션å검토
+Optå1ïå팀å협업å도구
+경쟁å치열ëå고비용
+Optå2ïåAIå우선순위å
+채택
+명확한å차별점ëå실현å가능
+Optå3ïå아이디어å폐기
+아직å시도å가치å있음
+analysis_and_decisioníjs
+// 1. 데이터 분석 (Data Analysis)
+const metrics = {
+  weeklyActiveUsers: 100,
+  completionRate: 0.80, // 80% (기능적 완성도 높음)
+  retention: {
+    week1: 1.0,
+    week2: 0.6,
+    week3: 0.3  // ⚠️ Critical: 30% is too low
+  },
+  nps: 50 // 중립적 (Net Promoter Score)
+};
+// 2. 사용자 피드백 요약 (Qualitative)
+const feedback = [
+  "기능은 잘 동작하지만 특별하지 않아요.",
+  "무엇을 먼저 해야 할지 알려주면 좋겠어요." // ✨ Insight!
+];
+// 3. 의사결정 로직 (Decision Logic)
+function makeDecision() {
+Retentionå급락ïåWeekå3å30%å
+위험
+피드백ïåç다른å앱과å비슷함çåé차별성åXê
+결론ïåPersevere는å실패å가능성å높음
+
+
+|  | analysis and decisioníjs _ _ |
+| --- | --- |
+|  | // 1. 데이터 분석 (Data Analysis) const metrics = { weeklyActiveUsers: 100, completionRate: 0.80, // 80% (기능적 완성도 높음) retention: { week1: 1.0, week2: 0.6, week3: 0.3 // Critical: 30% is too low ⚠️ }, nps: 50 // 중립적 (Net Promoter Score) }; // 2. 사용자 피드백 요약 (Qualitative) const feedback = [ "기능은 잘 동작하지만 특별하지 않아요.", "무엇을 먼저 해야 할지 알려주면 좋겠어요." // Insight! ✨ ]; // 3. 의사결정 로직 (Decision Logic) |
+
+
+### [Page 39]
+
+11
+SECTIONå11
+실습 과제
+Assignments
+LeanåStartupå방법론을å체화하기å위한
+4가지å핵심å실습å과제
+éMVPëåAîBåTestingëåMetricsëåPivotê
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå39åofå44
+
+
+
+### [Page 40]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå40åofå44
+실습 과제
+LeanåStartupå방법론을å체화하기å위한å4가지å핵심å과제
+
+과제å1ïåMVPå구축
+1
+해결하고자å하는å문제å정의ëå아이디어å선정å및å핵심å가설å작성
+2
+핵심å기능만å포함하여å1주일å안에å작동å가능한åMVPå구축
+3
+최소å10명의å잠재å고객을å대상으로å사용성å테스트å진행
+4
+사용자å피드백å수집å및å초기å가설å검증å결과å분석
+
+과제å2ïåAîBå테스팅
+1
+기존å앱이나å웹사이트에å개선을å위한å2가지å변형éVariantêå구현
+2
+FeatureåFlag를å사용하여å사용자å그룹별å노출å제어å설정
+3
+2주간å실제å트래픽을å통해å전환율å등å핵심å메트릭å데이터å수집
+4
+통계적å유의성å검증을å통해å승자å버전을å결정하고å배포
+
+과제å3ïåMetricsåDashboard
+1
+GitHubåIssues를å활용하여å실험å가설å및å성공å지표å체계적å관리
+2
+GitHubåProjectså보드로å실험의å진행å단계éBacklogöShippedêå추적
+3
+GitHubåActions를å연동하여å주요å메트릭å데이터å자동å수집å파이프라인å구축
+4
+매주å월요일å주요å지표å변화를å보여주는å주간å리포트å자동å생성
+
+과제å4ïåPivotå시뮬레이션
+1
+현재å제품이å시장å적합성을å찾지å못해å성장이å정체된å가상å실패å시나리오å작성
+2
+가상의å사용자å데이터와å피드백을å분석하여åPivotå여부를å데이터å기반으로å결정
+3
+ZoomìinëåZoomìoutå등å적절한åPivotå유형을å선택하여å새로운å방향å정의
+4
+변경된å방향에å맞춘å새로운å가설å수립å및å2주å단위å실행å계획å수립
+
+
+
+### [Page 41]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå41åofå44
+참고 자료
+더å깊은å학습을å위한å추천å도서ëå도구å및å템플릿
+
+필수 읽기
+çTheåLeanåStartupç
+ìåEricåRies
+çRunningåLeanç
+ìåAshåMaurya
+çLeanåAnalyticsç
+ìåAlistairåCroll
+
+도구 (Tools)
+Amplitudeåìå제품å분석
+httpsïîîamplitudeícomî
+Mixpanelåìå사용자å분석
+httpsïîîmixpanelícomî
+LaunchDarklyåìåFeatureåFlags
+httpsïîîlaunchdarklyícomî
+OptimizelyåìåAîBå테스팅
+httpsïîîwwwíoptimizelyícomî
+
+템플릿
+LeanåCanvas
+1페이지å사업å계획서
+leanstackícomîleanìcanvas
+BusinessåModelåCanvas
+비즈니스å모델å시각화
+strategyzerícomîcanvas
+
+
+|  |  필수 읽기  çTheåLeanåStartupç ìåEricåRies  çRunningåLeanç ìåAshåMaurya  çLeanåAnalyticsç ìåAlistairåCroll |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  도구 (Tools)  Amplitudeåìå제품å분석 httpsïîîamplitudeícomî  Mixpanelåìå사용자å분석 httpsïîîmixpanelícomî  LaunchDarklyåìåFeatureåFlags httpsïîîlaunchdarklyícomî  OptimizelyåìåAîBå테스팅 httpsïîîwwwíoptimizelyícomî |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  템플릿  LeanåCanvas 1페이지å사업å계획서 leanstackícomîleanìcanvas  BusinessåModelåCanvas 비즈니스å모델å시각화 strategyzerícomîcanvas |  |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 42]
+
+11
+SECTIONå11
+이번 주차
+핵심 요약
+LeanåStartup의å5가지å핵심å원칙과å성공å요소ë
+그리고å향후å실행å계획을å위한å주요å시사점을
+정리합니다í
+SejinåChunëå2026å | åAIåOpenåSourceåSoftware
+slideå42åofå44
+
+
+
+### [Page 43]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå43åofå44
+핵심 요약
+KeyåTakeawayså&åLeanåStartupåPrinciples
+기억해야å할å것
+
+BuildìMeasureìLearn
+멈추지å않는å빠른å피드백å사이클
+
+MVPåéMinimumåViableåProductê
+최소å기능으로å시작하여å학습å극대화
+
+ValidatedåLearning
+가정이å아닌å데이터å기반å의사결정
+
+PivotåoråPersevere
+데이터에å근거한å용기å있는å전환
+
+ActionableåMetrics
+실제å행동을å유도하는å실행å가능å지표
+LeanåStartupå원칙å비교
+원칙
+설명
+예시
+작게å시작
+완벽함보다å검증이å우선åéMVPê
+Dropboxå비디오
+빠른å학습
+짧은å주기의å실험å사이클
+2주å단위åAîBå테스트
+데이터å기반
+직관이å아닌åMetricså측정
+DAUëåRetention
+유연성
+필요시å과감한åPivotå준비
+SlackëåYouTube
+
+Insightïå성공적인å스타트업은å실패하지å않는å것이å아니라ëå실패로부터å가장å빨리å배우는å조직입니다í
+
+
+| 원칙 | 설명 | 예시 |
+| --- | --- | --- |
+| 작게å시작 | 완벽함보다å검증이å우선åéMVPê | Dropboxå비디오 |
+| 빠른å학습 | 짧은å주기의å실험å사이클 | 2주å단위åAîBå테스트 |
+| 데이터å기반 | 직관이å아닌åMetricså측정 | DAUëåRetention |
+| 유연성 | 필요시å과감한åPivotå준비 | SlackëåYouTube |
+
+
+### [Page 44]
+SejinåChunëå2026
+AIåOpenåSourceåSoftware
+slideå44åofå44
+성공 요소 및 다음 단계
+LeanåStartupå여정을å성공으로å이끄는å핵심å포인트와å액션å플랜
+
+성공 요소 Checklist
+명확한å가설åéClearåHypothesisê
+측정å가능한å메트릭åéActionableåMetricsê
+빠른å실험å사이클åéFaståIterationê
+사용자å피드백å경청åéListenåtoåUsersê
+데이터å기반å결정åéDataìDrivenê
+Pivotå용기åéCourageåtoåPivotê
+
+다음 단계 (Action Plan)
+1
+MVPå구축å시작
+핵심å기능å정의å및å빠른å프로토타이핑
+2
+메트릭å정의å및å추적
+성공å지표å설정å및å분석å도구å연동
+3
+실험å문화å구축
+가설å수립ì검증ì학습의å반복å루틴화
+"The only way to win is to learn faster than anyone else."
+ç이기는å유일한å방법은å다른å누구보다å빠르게å학습하는å것æç
+ùåERICåRIESëåTHEåLEANåSTARTUP
+
+

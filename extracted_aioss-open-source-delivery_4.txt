@@ -1,0 +1,1425 @@
+### [Page 1]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+AI OPEN SOURCE SOFTWARE (OSS) - WEEK 10
+Feature Flags
+and the Feature Lifecycle
+기능 플래그의 개념, 구현 방법, A/B 테스팅, Progressive Delivery 및 기능 생명주
+기 관리
+
+
+
+### [Page 2]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+학습 목표
+Learning Objectives
+
+Feature Flags 이해
+Feature Flags의 기본 개념과 시스템에서의 활용
+방법을 이해합니다.
+
+배포와 릴리스 분리
+코드 배포(Deployment)와 기능 출시(Release)
+를 분리하는 전략을 배웁니다.
+
+A/B 테스팅
+사용자 행동 데이터를 기반으로 실험을 실행하고
+분석하는 방법을 익힙니다.
+
+Progressive Delivery
+Canary 배포 등 점진적으로 기능을 사용자에게 노
+출하는 방법을 구현합니다.
+
+기능 생명주기 관리
+플래그의 생성부터 제거까지 전체 생명주기를 효과
+적으로 관리합니다.
+
+
+
+### [Page 3]
+SECTION 01
+Feature Flags
+Overview
+Feature Flags의 정의와 전통적인 배포 방식과의 차이점,
+그리고 도입 시 얻을 수 있는 주요 이점에 대해 알아봅니다.
+
+01
+Prof. Sejin Chun
+Week 10
+Page 3
+
+
+
+### [Page 4]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Feature Flags란?
+What are Feature Flags?
+DEFINITION
+"코드 배포 없이 런타임에
+기능을 켜고 끌 수 있는 메커니즘"
+
+동적 제어 (Dynamic Control)
+코드를 다시 배포하지 않고도 시스템의 동작을 즉시 변경할 수 있습니
+다.
+
+조건부 실행 (Conditional Execution)
+단순한 if/else 문을 통해 사용자 그룹별로 다른 경험을 제공합니
+다.
+feature_toggle_example.js
+// 기능 플래그를 확인하여 UI 분기 처리
+if (featureFlags.newUI) {
+// 플래그가 켜져 있으면 새로운 UI 표시
+showNewUI();
+} else {
+// 꺼져 있으면 기존 UI 유지
+showOldUI();
+}
+
+
+
+### [Page 5]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+전통적 방식 vs Feature Flags
+Traditional Deployment vs. Feature Flag Management
+
+전통적 방식
+Traditional Deployment
+
+배포(Deploy) = 릴리스(Release)
+
+코드 배포 시 모든 사용자에게 즉시 노출
+
+문제 발생 시 롤백 = 재배포 (느림/위험)
+
+버그가 운영 환경 전체에 영향을 줌
+
+Feature Flags
+Progressive Delivery
+
+배포(Deploy) ≠ 릴리스(Release)
+
+Flag로 제어하여 점진적 노출 (Canary)
+
+문제 발생 시 롤백 = Flag 끄기 (즉시!)
+
+운영 환경에서 안전하게 테스트 가능
+
+
+
+|  |  전통적 방식 Traditional Deployment  배포(Deploy) = 릴리스(Release)  코드 배포 시 모든 사용자에게 즉시 노출  문제 발생 시 롤백 = 재배포 (느림/위험)  버그가 운영 환경 전체에 영향을 줌 |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  Feature Flags Progressive Delivery  배포(Deploy) ≠ 릴리스(Release)  Flag로 제어하여 점진적 노출 (Canary)  문제 발생 시 롤백 = Flag 끄기 (즉시!)  운영 환경에서 안전하게 테스트 가능 |  |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 6]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Feature Flags의 이점
+Benefits of Feature Flags
+
+배포와 릴리스 분리
+코드를 배포하되 사용자에게는 기능을 숨
+김으로써 기술적 배포와 비즈니스 출시를
+분리합니다.
+
+즉시 롤백 가능
+문제 발생 시 재배포 없이 플래그를 끄는
+것만으로 즉각적인 롤백이 가능합니다.
+
+점진적 배포 (Canary)
+소수의 사용자에게 먼저 기능을 노출하고
+점차 비율을 늘려 위험을 최소화합니다.
+
+A/B 테스팅
+동일한 기능의 다른 버전을 사용자 그룹별
+로 제공하여 데이터 기반의 의사결정을 지
+원합니다.
+
+테스트 in Production
+실제 운영 환경에서 내부 사용자나 테스터에게
+만 기능을 노출하여 안전하게 검증합니다.
+
+Trunk-Based Dev
+긴 기능 브랜치 대신 메인 브랜치에 코드를 자
+주 병합하여 통합 문제를 줄입니다.
+
+비즈니스 의사결정 분리
+기능 출시 시점을 엔지니어링 팀이 아닌 비즈
+니스 팀이 주도적으로 결정할 수 있습니다.
+
+
+
+### [Page 7]
+SECTION 02
+Types of
+Feature Flags
+Release, Experiment, Ops, Permission 등 목적과 생
+명주기에 따른 4가지 주요 플래그 유형과 사용 사례를 살
+펴봅니다.
+
+02
+Prof. Sejin Chun
+Week 10
+Page 7
+
+
+
+### [Page 8]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Release Flags (릴리스 플래그)
+Safe deployment strategy for incomplete features
+PURPOSE
+SHORT-TERM
+"완성되지 않은 기능을 숨기고,
+안전하게 배포하기 위한 플래그"
+
+안전한 배포 (Safe Deployment)
+코드를 메인 브랜치에 병합하더라도 사용자에게는 노출되지 않도록 제
+어합니다.
+
+점진적 롤아웃 (Progressive Rollout)
+기능이 완성되면 소수의 사용자부터 시작하여 점진적으로 전체 사용자
+에게 공개합니다.
+
+짧은 생명주기 (Short Lifecycle)
+배포가 완료되고 안정화되면 며칠 내지 몇 주 안에 제거해야 합니다.
+PaymentController.jsx
+// 개발 중인 결제 시스템 V2 숨기기
+if (featureFlags.paymentV2) {
+// 플래그 활성화 시 새로운 흐름 반환
+return <NewPaymentFlow />;
+} else {
+// 기본적으로 기존 흐름 유지
+return <OldPaymentFlow />;
+}
+//  Note:
+// 릴리스가 100% 완료되면 이 분기문을
+// 제거하고 NewPaymentFlow만 남깁니다.
+
+
+|  | PaymentController.jsx |
+| --- | --- |
+|  | // 개발 중인 결제 시스템 V2 숨기기 if (featureFlags.paymentV2) { // 플래그 활성화 시 새로운 흐름 반환 return <NewPaymentFlow />; } else { // 기본적으로 기존 흐름 유지 return <OldPaymentFlow />; } // Note:  // 릴리스가 100% 완료되면 이 분기문을 |
+
+
+### [Page 9]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Experiment Flags (실험 플래그)
+A/B Testing & Multivariate Experiments
+USAGE & PURPOSE
+"사용자 경험을 비교 실험하기 위해
+데이터 기반으로 기능을 분기"
+생명주기: 중기 (몇 주 ~ 몇 달)
+
+A/B 테스팅 (A/B Testing)
+서로 다른 버전(Variant)을 사용자 그룹에 노출하여 효과를 측정합니
+다.
+
+데이터 기반 의사결정
+실험 결과를 분석하여 승자(Winner)를 결정하고, 실험 종료 후에는 플
+래그를 제거합니다.
+ab_test_example.js
+// A/B 테스팅을 위한 실험 플래그 확인
+const variant =
+experimentFlags.checkoutFlow;
+if (variant === 'A') {
+// A안: 기존 체크아웃 흐름
+return <CheckoutFlowA />;
+} else if (variant === 'B') {
+// B안: 새로운 간편 결제 흐름
+return <CheckoutFlowB />;
+}
+// 승자 결정 후 제거 (Cleanup)
+
+
+|  | ab test example.js _ _ |
+| --- | --- |
+|  | // A/B 테스팅을 위한 실험 플래그 확인 const variant = experimentFlags.checkoutFlow; if (variant === 'A') { // A안: 기존 체크아웃 흐름 return <CheckoutFlowA />; } else if (variant === 'B') { // B안: 새로운 간편 결제 흐름 return <CheckoutFlowB />; } |
+
+
+### [Page 10]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Ops Flags (운영 플래그)
+System Control & Operational Management
+PURPOSE
+장기 (Long-lived)
+"시스템의 동작을 제어하고 운영 이슈에 실시간으로 대
+응하기 위한 플래그"
+
+시스템 제어 (System Control)
+성능 최적화, 로깅 레벨 조정 등 시스템의 내부 동작을 런타임에 제어합
+니다.
+
+안전 장치 (Safety Mechanism)
+서킷 브레이커(Circuit Breaker)나 킬 스위치(Kill Switch)로 사용하
+여 장애 확산을 방지합니다.
+
+지속적 유지 (Permanent)
+릴리스 플래그와 달리 배포 후에도 제거되지 않고 시스템 구성의 일부
+로 영구적으로 유지됩니다.
+system_control.js
+// 시스템 부하가 높을 때 캐시 사용 활성화
+if (opsFlags.enableCache) {
+// 캐시된 데이터 반환 (DB 부하 감소)
+return getCachedData();
+} else {
+// 실시간 데이터베이스 조회
+return fetchFromDB();
+}
+// 사용 사례:
+// 1. 트래픽 폭주 시 DB 보호
+// 2. 서드파티 서비스 장애 시 우회
+// 3. 디버그 로깅 동적 활성화
+
+
+| system control.js _ // 시스템 부하가 높을 때 캐시 사용 활성화 if (opsFlags.enableCache) { // 캐시된 데이터 반환 (DB 부하 감소) return getCachedData(); } else { // 실시간 데이터베이스 조회 return fetchFromDB(); } // 사용 사례: // 1. 트래픽 폭주 시 DB 보호 // 2. 서드파티 서비스 장애 시 우회 g-A University Week 10 // 3. 디버그 로깅 동적 활성화 |  |  |  |
+| --- | --- | --- | --- |
+|  |  | system control.js _ |  |
+|  |  | // 시스템 부하가 높을 때 캐시 사용 활성화 if (opsFlags.enableCache) { // 캐시된 데이터 반환 (DB 부하 감소) return getCachedData(); } else { // 실시간 데이터베이스 조회 return fetchFromDB(); } // 사용 사례: // 1. 트래픽 폭주 시 DB 보호 |  |
+| g-A | U | // 2. 서드파티 서비스 장애 시 우회 niversity Week 10 // 3. 디버그 로깅 동적 활성화 |  |
+
+
+### [Page 11]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Permission Flags (권한 플래그)
+User Role & Tier Based Feature Control
+DEFINITION
+"특정 사용자 그룹(관리자, VIP 등)에게만
+기능을 노출하는 영구적 플래그"
+
+세밀한 타겟팅 (Targeting)
+사용자 ID, 이메일 도메인, 구독 등급(Tier) 등 속성을 기반으로 제어합
+니다.
+
+장기 생명주기 (Long-lived)
+일회성 배포용이 아니라, 시스템의 권한 관리 로직으로 계속 유지됩니
+다.
+
+사용 사례 (Use Cases)
+Premium 기능, Admin 패널, Beta 프로그램 참여자 한정 기능 등.
+permission_check.js
+// 사용자 권한 기반 기능 노출 제어
+if (permissionFlags.adminPanel(user)) {
+// 관리자 권한이 있는 경우 패널 표시
+return <AdminPanel />;
+}
+// 계속 유지 (Long-lived Flag)
+if (user.tier === 'premium') {
+return <PremiumFeature />;
+}
+
+
+|  | permission check.js _ |
+| --- | --- |
+|  | // 사용자 권한 기반 기능 노출 제어 if (permissionFlags.adminPanel(user)) { // 관리자 권한이 있는 경우 패널 표시 return <AdminPanel />; } // 계속 유지 (Long-lived Flag) if (user.tier === 'premium') { return <PremiumFeature />; } |
+
+
+### [Page 12]
+SECTION 03
+Feature Flags
+Implementation
+환경 변수부터 코드 기반 관리, SaaS(LaunchDarkly),
+오픈소스(Unleash) 활용까지 다양한 구현 방법을 다룹니
+다.
+
+03
+Prof. Sejin Chun
+Week 10
+Page 12
+
+
+
+### [Page 13]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Feature Flags 구현: 환경 변수
+Implementation 1: Environment Variables
+OVERVIEW
+애플리케이션의 구성 파일이나 환경 변수(Process
+Environment)를 사용하여 플래그 상태를 관리하는 가장 기초적
+인 방식입니다.
+
+간편한 설정 (Simple Setup)
+별도의 데이터베이스나 외부 서비스 연동 없이 코드 내에서 즉시 구현 가능합니
+다.
+
+제약 사항 (Limitations)
+플래그 값을 변경하려면 애플리케이션 재배포 또는 서버 재시작이 필요하여 동
+적 제어가 어렵습니다.
+
+적합한 용도
+변경이 잦지 않은 글로벌 기능 토글이나 베타 기능 활성화에 적합합니다.
+config.js & Component.jsx
+// 1. config.js - 환경 변수 매핑
+const featureFlags = { newUI:
+process.env.FEATURE_NEW_UI === 'true',
+betaFeatures: process.env.FEATURE_BETA ===
+'true', }; export default featureFlags;
+// 2. Component.jsx - 플래그 사용
+import featureFlags from './config'; function
+MyComponent() { if (featureFlags.newUI) { return
+<NewUI />; } return <OldUI />; }
+
+
+
+### [Page 14]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Feature Flags 구현
+2. Code-based Management (Rollout & Hashing)
+GRADUAL ROLLOUT
+"사용자 ID를 해싱하여
+일관된 비율로 기능을 노출"
+%
+롤아웃 비율 (Rollout %)
+0%에서 100%까지 점진적으로 노출 범위를 확대하여 리스크를 관리합니다.
+
+일관성 보장 (Consistency)
+단순 랜덤이 아닌 userId 해싱을 사용하여, 동일 사용자는 항상 같은 경험을 하
+게 됩니다.
+FeatureFlags.js
+class FeatureFlags {
+constructor() {
+this.flags = {
+newCheckout: { enabled: true, rollout: 20 }, // 20%만 노출
+};
+}
+isEnabled(flagName, userId) {
+const flag = this.flags[flagName];
+if (!flag || !flag.enabled) return false;
+// 사용자 해시값(0-99)이 롤아웃 비율보다 작으면 true
+if (userId) {
+const hash = this.hashUserId(userId);
+return hash < flag.rollout;
+}
+return flag.rollout === 100;
+}
+hashUserId(userId) {
+// 간단한 해싱 로직 (0-99 사이 정수 반환)
+let hash = 0;
+for (let i = 0; i < userId.length; i++) {
+hash = ((hash << 5) - hash) + userId.charCodeAt(i);
+}
+return Math.abs(hash % 100);
+}
+}
+
+
+
+### [Page 15]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+LaunchDarkly (SaaS)
+Enterprise Feature Management Platform
+OVERVIEW
+"SDK를 통해 실시간으로
+플래그 상태를 동기화하고 관리"
+
+실시간 스트리밍 (Real-time Streaming)
+폴링(Polling) 방식이 아닌 SSE 기반 스트리밍으로 변경 사항을 즉시
+수신합니다.
+
+컨텍스트 기반 타겟팅
+사용자 ID, 이메일, 속성 정보를 initialize 시 전달하여 정교하게
+제어합니다.
+client_integration.js
+// LaunchDarkly JS Client SDK 초기화
+import * as LDClient from 'launchdarkly-js-client-sdk';
+const ldClient = LDClient.initialize( 'YOUR_CLIENT_ID',
+{ key: userId, email: userEmail, } );
+ldClient.on('ready', () => {
+const showNewFeature = ldClient.variation('new-
+feature', false);
+if (showNewFeature) { renderNewFeature(); } });
+// Flag 변경 실시간 감지 (이벤트 리스너)
+ldClient.on('change:new-feature', (value) => {
+if (value) { renderNewFeature(); } else {
+renderOldFeature(); } });
+
+
+
+### [Page 16]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Unleash (오픈소스)
+Open Source Solution Implementation
+KEY FEATURES
+"자체 호스팅 가능한 엔터프라이즈급
+오픈소스 플래그 플랫폼"
+
+SDK 초기화
+Proxy URL과 Client Key로 클라이언트를 설정합니다.
+
+컨텍스트 기반 타겟팅
+ID 및 속성을 전달하여 정교한 플래그 제어가 가능합니다.
+
+플래그 평가
+isEnabled 메서드로 기능 활성화 여부를 확인합니다.
+unleash_client.js
+import { UnleashClient } from 'unleash-proxy-client';
+const unleash = new UnleashClient({
+url: 'https://unleash.example.com/api/frontend',
+clientKey: 'YOUR_CLIENT_KEY',
+appName: 'my-app',
+});
+// 초기화 시작
+unleash.start();
+// 1. 단순 Flag 체크
+const isEnabled = unleash.isEnabled('new-feature');
+// 2. Context 기반 (타겟팅)
+const isPremium = unleash.isEnabled('premium-
+feature', {
+userId: '123',
+properties: { tier: 'premium' },
+});
+
+
+| unleash client.js _ import { UnleashClient } from 'unleash-proxy-client'; const unleash = new UnleashClient({ url: 'https://unleash.example.com/api/frontend', clientKey: 'YOUR CLIENT KEY', _ _ appName: 'my-app', }); // 초기화 시작 unleash.start(); // 1. 단순 Flag 체크 const isEnabled = unleash.isEnabled('new-feature'); // 2. Context 기반 (타겟팅) const isPremium = unleash.isEnabled('premium- feature', { userId: '123', g-A Univerpsrityoperties: { tier: 'premium' }, Week 10 }); |  |  |  |
+| --- | --- | --- | --- |
+|  |  | unleash client.js _ |  |
+|  |  | import { UnleashClient } from 'unleash-proxy-client'; const unleash = new UnleashClient({ url: 'https://unleash.example.com/api/frontend', clientKey: 'YOUR CLIENT KEY', _ _ appName: 'my-app', }); // 초기화 시작 unleash.start(); // 1. 단순 Flag 체크 const isEnabled = unleash.isEnabled('new-feature'); // 2. Context 기반 (타겟팅) const isPremium = unleash.isEnabled('premium- feature', { |  |
+| g-A |  | userId: '123', Univerpsrityoperties: { tier: 'premium' }, Week 10 }); |  |
+
+
+### [Page 17]
+SECTION 04
+React & Vue
+Integration
+React Hook과 Context API 등 모던 프론트엔드 패턴을
+활용하여 Feature Flags를 효율적으로 구현하는 방법을
+알아봅니다.
+
+04
+Prof. Sejin Chun
+Week 10
+Page 17
+
+
+
+### [Page 18]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+React Hook 구현
+Implementing Feature Flags with Custom Hooks
+CUSTOM HOOK PATTERN
+"플래그 로직을 캡슐화하여 컴포넌트를 간결하게 유지합니다."
+
+상태 관리 (State)
+useState 로 플래그 상태를 관리합니다.
+
+실시간 구독 (Subscription)
+useEffect 로 변경사항을 즉시 반영합니다.
+
+간결성 (Simplicity)
+복잡한 로직은 Hook 내부에 숨깁니다.
+useFeatureFlag.js
+import { useState, useEffect } from 'react';
+import featureFlags from './featureFlags';
+export function useFeatureFlag(flagName) {
+const [enabled, setEnabled] = useState(false);
+useEffect(() => {
+// 초기 값 설정
+const isEnabled =
+featureFlags.isEnabled(flagName);
+setEnabled(isEnabled);
+// 실시간 업데이트 구독 (Optional)
+const unsubscribe = featureFlags.subscribe(
+flagName,
+setEnabled
+);
+return unsubscribe;
+}, [flagName]);
+return enabled;
+
+
+| useFeatureFlag.js import { useState, useEffect } from 'react'; import featureFlags from './featureFlags'; export function useFeatureFlag(flagName) { const [enabled, setEnabled] = useState(false); useEffect(() => { // 초기 값 설정 const isEnabled = featureFlags.isEnabled(flagName); setEnabled(isEnabled); // 실시간 업데이트 구독 (Optional) const unsubscribe = featureFlags.subscribe( flagName, setEnabled ); return unsubscribe; }, [flagName]); g-A University Week 10 return enabled; |  |  |  |
+| --- | --- | --- | --- |
+|  |  | useFeatureFlag.js |  |
+|  |  | import { useState, useEffect } from 'react'; import featureFlags from './featureFlags'; export function useFeatureFlag(flagName) { const [enabled, setEnabled] = useState(false); useEffect(() => { // 초기 값 설정 const isEnabled = featureFlags.isEnabled(flagName); setEnabled(isEnabled); // 실시간 업데이트 구독 (Optional) const unsubscribe = featureFlags.subscribe( flagName, setEnabled ); return unsubscribe; |  |
+| g-A |  | }, [flagName]); University Week 10 return enabled; |  |
+
+
+### [Page 19]
+React Context 활용
+Implementing Feature Flags with Context API
+CONCEPT
+"전역 상태 관리를 통해 앱 전체에 일관된 플래그 제공"
+
+Provider Pattern
+최상위 컴포넌트에서 플래그 상태를 주입하여 Props Drilling을 방지합니다.
+
+Custom Hook
+useFeatureFlags() 훅으로 컨텍스트 소비를 단순화합니다.
+
+Reactive Updates
+플래그 상태 변경 시 관련 컴포넌트만 자동으로 리렌더링됩니다.
+React Context Implementation
+// 1. FeatureFlagsContext.jsx
+export const FlagsCtx = createContext();
+export function FlagsProvider({ children }) {
+const [flags] = useState({ newUI: true });
+return (
+<FlagsCtx.Provider value={flags}>
+{children}
+</FlagsCtx.Provider>
+);
+}
+// 2. App.jsx: Provider 적용
+function App() {
+return (
+<FlagsProvider>
+<MyApp />
+</FlagsProvider>
+);
+}
+Prof. Sejin Chun
+Dong-A University
+Week 10
+
+
+
+### [Page 20]
+SECTION 05
+A/B Testing
+Implementation
+실험 설계, 사용자 할당 알고리즘, 그리고 결과 분석을 통해
+데이터 기반의 의사결정을 내리는 방법에 대해 학습합니
+다.
+
+05
+Prof. Sejin Chun
+Week 10
+Page 20
+
+
+
+### [Page 21]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+A/B 테스트 구현
+Implementation: User Allocation Logic
+KEY CONCEPT
+"사용자 ID 해싱을 통한
+결정론적(Deterministic) 그룹 할당"
+
+가중치 기반 분할 (Weighted Split)
+실험 그룹(Variant A/B)을 설정된 비율(예: 50:50)에 따라 정확하게 나눕니다.
+
+일관된 경험 (Consistency)
+같은 사용자는 언제나 같은 실험 그룹에 속해야 합니다. 랜덤 함수 대신 해시
+(Hash)를 사용합니다.
+
+누적 확률 계산
+해시 값(0-99)이 누적 가중치 범위 내에 있는지 확인하여 그룹을 결정합니다.
+ab_test_logic.js
+class ABTest { constructor() { this.experiments = {
+checkoutFlow: { variants: ['A', 'B'], weights: [50, 50]
+// 50-50 Split } }; } getVariant(experimentName, userId)
+{ const exp = this.experiments[experimentName]; if
+(!exp) return 'A'; // 사용자별 일관된 variant 할당 (0-99)
+const hash = this.hashUserId(userId); let cumulative =
+0; for (let i = 0; i < exp.variants.length; i++) {
+cumulative += exp.weights[i]; if (hash < cumulative) {
+return exp.variants[i]; } } return exp.variants[0]; }
+hashUserId(userId) { let hash = 0; for (let i = 0; i <
+userId.length; i++) { hash = ((hash << 5) - hash) +
+userId.charCodeAt(i); } return Math.abs(hash % 100); } }
+
+
+
+### [Page 22]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+A/B 테스트 사용 예시
+Implementation Example & Analytics Tracking
+USAGE PATTERN
+"사용자에게 Variant를 할당하고,
+노출 이벤트를 추적합니다."
+
+Variant 할당 (Allocation)
+getVariant 로 사용자 ID 기반의 일관된 그룹(A/B)을 할당받습니다.
+
+이벤트 추적 (Analytics)
+실험 분석을 위해 experiment_viewed 이벤트를 기록합니다.
+
+조건부 렌더링
+Variant 값(A/B)에 따라 서로 다른 컴포넌트를 렌더링합니다.
+CheckoutPage.jsx
+import
+abTest
+from
+'./abTest';
+function
+CheckoutPage({ userId }) {
+const variant = abTest.getVariant('checkoutFlow',
+userId);
+// 분석 이벤트 기록 (Side Effect)
+useEffect(() => {
+analytics.track('experiment_viewed', {
+experiment: 'checkoutFlow',
+variant: variant,
+userId: userId,
+});
+}, [variant, userId]);
+if (variant === 'A') {
+return <CheckoutFlowA />;
+
+
+| CheckoutPage.jsx import abTest from './abTest'; function CheckoutPage({ userId }) { const variant = abTest.getVariant('checkoutFlow', userId); // 분석 이벤트 기록 (Side Effect) useEffect(() => { analytics.track('experiment viewed', { _ experiment: 'checkoutFlow', variant: variant, userId: userId, }); }, [variant, userId]); g-A University Week 10 if (variant === 'A') { |  |  |  |
+| --- | --- | --- | --- |
+|  |  | CheckoutPage.jsx |  |
+|  |  | import abTest from './abTest'; function CheckoutPage({ userId }) { const variant = abTest.getVariant('checkoutFlow', userId); // 분석 이벤트 기록 (Side Effect) useEffect(() => { analytics.track('experiment viewed', { _ experiment: 'checkoutFlow', variant: variant, userId: userId, }); |  |
+| g-A |  | }, [variant, userId]); University Week 10 if (variant === 'A') { |  |
+
+
+### [Page 23]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+실험 결과 분석
+Analyzing Experiment Results
+KEY METRICS
+"데이터에 기반하여
+과학적으로 승자를 판별합니다"
+
+전환율 계산 (Conversion Rate)
+Variant별 전환 수 / 전체 사용자 수를 계산하여 성과를 측정
+합니다.
+
+개선율 (Improvement)
+기존(Control) 대비 실험군(Treatment)의 성과 향상 정도를 백분율
+로 산출합니다.
+
+승자 판정 (Winner Declaration)
+더 높은 전환율을 보인 Variant를 승자로 결정하고 배포를 진행합니다.
+analysis.js
+// 실험 데이터 분석 및 승자 판정 함수
+function analyzeExperiment(experimentData) {
+const variantA = experimentData.filter(d =>
+d.variant === 'A');
+const variantB = experimentData.filter(d =>
+d.variant === 'B');
+// 전환율 계산 (Conversion Rate)
+const convA = variantA.filter(d =>
+d.converted).length / variantA.length;
+const convB = variantB.filter(d =>
+d.converted).length / variantB.length;
+// 개선율 계산 (Improvement %)
+const improvement = ((convB - convA) / convA)
+* 100;
+
+
+| analysis.js // 실험 데이터 분석 및 승자 판정 함수 function analyzeExperiment(experimentData) { const variantA = experimentData.filter(d => d.variant === 'A'); const variantB = experimentData.filter(d => d.variant === 'B'); // 전환율 계산 (Conversion Rate) const convA = variantA.filter(d => d.converted).length / variantA.length; const convB = variantB.filter(d => d.converted).length / variantB.length; // 개선율 계산 (Improvement %) const improvement = ((convB - convA) / convA) g-A Unive*r sit1y00; Week 10 |  |  |  |
+| --- | --- | --- | --- |
+|  |  | analysis.js |  |
+|  |  | // 실험 데이터 분석 및 승자 판정 함수 function analyzeExperiment(experimentData) { const variantA = experimentData.filter(d => d.variant === 'A'); const variantB = experimentData.filter(d => d.variant === 'B'); // 전환율 계산 (Conversion Rate) const convA = variantA.filter(d => d.converted).length / variantA.length; const convB = variantB.filter(d => d.converted).length / variantB.length; // 개선율 계산 (Improvement %) |  |
+| g-A | U | const improvement = ((convB - convA) / convA) nive*r sit1y00; Week 10 |  |
+
+
+### [Page 24]
+SECTION 06
+Progressive
+Delivery
+Canary Release와 Ring Deployment 등 점진적인 배
+포 전략을 통해 리스크를 최소화하고 안정적인 릴리스를
+수행하는 방법을 학습합니다.
+
+06
+Prof. Sejin Chun
+Week 10
+Page 24
+
+
+
+### [Page 25]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Canary Release
+단계적 사용자 확대 배포 (Progressive Delivery)
+DEFINITION
+"새로운 기능을 소규모 그룹에 먼저 공개하여 안정성을 검증한 후,
+전체로 확대하는 전략"
+
+점진적 확장 (Gradual Rollout)
+1% → 5% → 25% → 100% 단계적 트래픽 증가로 위험 분산
+
+안전 장치 (Safety Net)
+버그 발견 시 즉시 롤백하여 대규모 장애 예방
+canary_release.js
+// Canary 배포: 점진적으로 사용자 증가
+class CanaryRelease {
+constructor() {
+this.stages = [
+{ pct: 1, dur: '1h' }, { pct: 5, dur: '2h' },
+{ pct: 25, dur: '4h' }, { pct: 100, dur: 'inf' }
+];
+this.currentStage = 0;
+}
+isEnabled(userId) {
+const stage = this.stages[this.currentStage];
+const hash = this.hashUserId(userId); // 0-100
+return hash < stage.pct;
+}
+promote() {
+if (this.currentStage < this.stages.length - 1) {
+this.currentStage++;
+console.log(`Stage:
+${this.stages[this.currentStage].pct}%`);
+}
+
+
+| canary release.js _ // Canary 배포: 점진적으로 사용자 증가 class CanaryRelease { constructor() { this.stages = [ { pct: 1, dur: '1h' }, { pct: 5, dur: '2h' }, { pct: 25, dur: '4h' }, { pct: 100, dur: 'inf' } ]; this.currentStage = 0; } isEnabled(userId) { const stage = this.stages[this.currentStage]; const hash = this.hashUserId(userId); // 0-100 return hash < stage.pct; } promote() { if (this.currentStage < this.stages.length - 1) { this.currentStage++; g-A University console.log(`Stage: Week 10 ${this.stages[this.currentStage].pct}%`); } |  |  |  |
+| --- | --- | --- | --- |
+|  |  | canary release.js _ |  |
+|  |  | // Canary 배포: 점진적으로 사용자 증가 class CanaryRelease { constructor() { this.stages = [ { pct: 1, dur: '1h' }, { pct: 5, dur: '2h' }, { pct: 25, dur: '4h' }, { pct: 100, dur: 'inf' } ]; this.currentStage = 0; } isEnabled(userId) { const stage = this.stages[this.currentStage]; const hash = this.hashUserId(userId); // 0-100 return hash < stage.pct; } promote() { if (this.currentStage < this.stages.length - 1) { |  |
+| g-A |  | this.currentStage++; University console.log(`Stage: Week 10 ${this.stages[this.currentStage].pct}%`); } |  |
+
+
+### [Page 26]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Ring Deployment
+User Group Based Progressive Delivery
+CONCEPT
+"사용자 그룹을 링(Ring)으로 계층화하여
+위험도가 낮은 그룹부터 순차 배포"
+
+배포 링(Rings) 구성
+내부 팀(Canary) → 베타 사용자(Early Adopters) → 일반 사용자
+(General) 순으로 확대합니다.
+
+사용자 기반 타겟팅
+사용자의 속성(이메일, 베타 참여 여부 등)을 기반으로 현재 속한 링을
+동적으로 판별합니다.
+ring_deployment.js
+// 배포 링 정의 및 사용자 할당 로직
+const deploymentRings = { canary: { percentage:
+1, users: ['internal@co.com'] }, earlyAdopters: {
+percentage: 10, users: ['beta-users'] }, general:
+{ percentage: 100, users: ['all'] }, }; function
+getUserRing(user) { if
+(deploymentRings.canary.users.includes(user.email))
+{ return 'canary'; } if (user.betaProgram) {
+return 'earlyAdopters'; } return 'general'; }
+function isFeatureEnabled(featureName, user) {
+const ring = getUserRing(user); const feature =
+features[featureName]; return
+feature.rings.includes(ring); }
+
+
+
+### [Page 27]
+SECTION 07
+Feature Flags
+Best Practices
+효과적인 기능 플래그 관리를 위한 명명 규칙, 주기적인 정
+리 전략, 모니터링 시스템 구축 및 테스팅 방법에 대해 알아
+봅니다.
+
+07
+Prof. Sejin Chun
+Week 10
+Page 27
+
+
+
+### [Page 28]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+명명 규칙 (Naming Conventions)
+Best Practices for Feature Flag Naming
+CORE PRINCIPLE
+"이름만 보고도 어떤 기능인지,
+동작을 알 수 있어야 합니다."
+권장 가이드라인
+Kebab-case 사용
+URL 친화적이며 가독성이 좋고 시스템 호환성이 높습니다.
+동사/명사 조합 (Verb-Noun)
+enable- , show- 등 동사를 사용하여 의도를 명확히 합니다.
+구체적 범위 명시
+영향 받는 기능이나 페이지 범위를 명시합니다. (예: pricing-page- )
+naming_examples.js
+// ✅ 좋은 예 (Good Examples)
+const goodFlags = {
+// 기능과 버전을 명확히 표기
+'checkout-flow-v2': true,
+// 동작(Verb)을 포함하여 의도 전달
+'enable-dark-mode': false,
+// 실험 대상과 성격을 명시
+'experiment-pricing-layout': 'variant-b'
+};
+// ❌ 나쁜 예 (Avoid These)
+const badFlags = {
+// 의미를 알 수 없는 모호한 이름
+'flag1': true,
+// 너무 일반적 / 일관성 없는 케이스
+'newFeature': false,
+// 범위나 목적이 불분명
+'test': 'a'
+};
+
+
+| naming examples.js _ // 좋은 예 (Good Examples) ✅ const goodFlags = { // 기능과 버전을 명확히 표기 'checkout-flow-v2': true, // 동작(Verb)을 포함하여 의도 전달 'enable-dark-mode': false, // 실험 대상과 성격을 명시 'experiment-pricing-layout': 'variant-b' }; // 나쁜 예 (Avoid These) ❌ const badFlags = { // 의미를 알 수 없는 모호한 이름 'flag1': true, // 너무 일반적 / 일관성 없는 케이스 'newFeature': false, g-A Univer/s/ity 범위나 목적이 불분명 Week 10 'test': 'a' |  |  |  |
+| --- | --- | --- | --- |
+|  |  | naming examples.js _ |  |
+|  |  | // 좋은 예 (Good Examples) ✅ const goodFlags = { // 기능과 버전을 명확히 표기 'checkout-flow-v2': true, // 동작(Verb)을 포함하여 의도 전달 'enable-dark-mode': false, // 실험 대상과 성격을 명시 'experiment-pricing-layout': 'variant-b' }; // 나쁜 예 (Avoid These) ❌ const badFlags = { // 의미를 알 수 없는 모호한 이름 'flag1': true, // 너무 일반적 / 일관성 없는 케이스 |  |
+| g-A |  | 'newFeature': false, Univer/s/ity 범위나 목적이 불분명 Week 10 'test': 'a' |  |
+
+
+### [Page 29]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+플래그 정리 전략
+Flag Cleanup Strategy: Managing Technical Debt
+CLEANUP POLICY
+"사용하지 않는 플래그는
+기술 부채의 주요 원인입니다."
+
+메타데이터 관리
+플래그 정의 시 removeBy 날짜와 대체 기능 정보를 함께 기록하여 수명을 관
+리합니다.
+
+자동 경고 시스템
+제거 기한이 임박한 플래그를 자동으로 감지하여 개발팀에 알림(Log/Slack)을
+발송합니다.
+
+정기적인 청소
+완전히 롤아웃된 기능의 플래그 코드를 삭제하는 것을 배포 프로세스의 일부로
+포함시킵니다.
+flag_cleanup.js
+// 오래된 플래그 및 메타데이터 정의
+const deprecatedFlags = { 'old-ui': { deprecated:
+'2024-01-01', removeBy: '2024-03-01', replacement:
+'new-ui-v2', }, };
+// 제거 기한 임박 자동 경고 함수
+function checkDeprecatedFlags() { const now = new
+Date(); for (const [flag, info] of
+Object.entries(deprecatedFlags)) { const removeDate
+= new Date(info.removeBy); // 남은 일수 계산 (밀리초 단
+위 변환) const daysLeft = Math.ceil( (removeDate -
+now) / (1000 * 60 * 60 * 24) ); if (daysLeft < 30) {
+console.warn( `Flag '${flag}' will be removed in
+${daysLeft} days` ); } } }
+
+
+
+### [Page 30]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Feature Flag 모니터링
+Monitoring & Observability
+OBSERVABILITY
+"기능 사용 현황을 투명하게 추적하고
+변경 이력을 감시합니다."
+
+사용 추적 (Evaluation Tracking)
+사용자별 플래그 적용 값을 기록하여, 디버깅 및 사용자 경험 분석에 활용합니
+다.
+
+변경 감지 (Change Alert)
+설정 변경 시 팀에 즉시 알림을 전송하여, 의도치 않은 변경을 방지하고 투명성
+을 확보합니다.
+monitoring.js
+// 1. 플래그 사용(평가) 추적
+function trackFlagUsage(flagName, value, userId) {
+analytics.track('feature_flag_evaluated', {
+flag: flagName,
+value: value,
+userId: userId,
+timestamp: Date.now(),
+});
+}
+// 2. 플래그 설정 변경 실시간 감지
+function onFlagChange(flagName, oldValue, newValue) {
+console.log(`Flag '${flagName}' changed`);
+// 운영 팀에 알림 전송 (Slack, Email 등)
+notifyTeam({
+message: `Flag '${flagName}' changed`,
+oldValue: oldValue,
+newValue: newValue,
+});
+}
+
+
+| monitoring.js // 1. 플래그 사용(평가) 추적 function trackFlagUsage(flagName, value, userId) { analytics.track('feature flag evaluated', { _ _ flag: flagName, value: value, userId: userId, timestamp: Date.now(), }); } // 2. 플래그 설정 변경 실시간 감지 function onFlagChange(flagName, oldValue, newValue) { console.log(`Flag '${flagName}' changed`); // 운영 팀에 알림 전송 (Slack, Email 등) notifyTeam({ message: `Flag '${flagName}' changed`, oldValue: oldValue, newValue: newValue, g-A University Week 10 }); } |  |  |  |
+| --- | --- | --- | --- |
+|  |  | monitoring.js |  |
+|  |  | // 1. 플래그 사용(평가) 추적 function trackFlagUsage(flagName, value, userId) { analytics.track('feature flag evaluated', { _ _ flag: flagName, value: value, userId: userId, timestamp: Date.now(), }); } // 2. 플래그 설정 변경 실시간 감지 function onFlagChange(flagName, oldValue, newValue) { console.log(`Flag '${flagName}' changed`); // 운영 팀에 알림 전송 (Slack, Email 등) notifyTeam({ message: `Flag '${flagName}' changed`, oldValue: oldValue, |  |
+| g-A | U | newValue: newValue, niversity Week 10 }); } |  |
+
+
+### [Page 31]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Feature Flags 테스팅
+Testing with Feature Flags
+TEST STRATEGY
+"플래그 상태를 강제(Mocking)하여
+모든 시나리오를 검증"
+
+상태별 시나리오 분리
+플래그가 ON/OFF일 때의 UI와 로직을
+각각 독립적인 테스트 케이스로 작성합니다.
+
+도구 활용 (Jest + RTL)
+테스트 환경(`beforeEach`)에서 값을 설정하여
+런타임과 동일한 조건에서 검증합니다.
+checkout.test.jsx
+// Feature: New Checkout 활성화 테스트
+describe('Feature: New Checkout', () => {
+beforeEach(() => {
+// 테스트 전 플래그 활성화 (Mocking)
+featureFlags.enable('newCheckout');
+});
+it('should render new checkout flow', () => {
+render(<CheckoutPage />);
+expect(screen.getByText('New Checkout'))
+.toBeInTheDocument();
+});
+});
+// Feature: Old Checkout 비활성화 테스트
+describe('Feature: Old Checkout', () => {
+beforeEach(() => {
+featureFlags.disable('newCheckout');
+});
+// ... test implementation
+});
+
+
+| checkout.test.jsx // Feature: New Checkout 활성화 테스트 describe('Feature: New Checkout', () => { beforeEach(() => { // 테스트 전 플래그 활성화 (Mocking) featureFlags.enable('newCheckout'); }); it('should render new checkout flow', () => { render(<CheckoutPage />); expect(screen.getByText('New Checkout')) .toBeInTheDocument(); }); }); // Feature: Old Checkout 비활성화 테스트 describe('Feature: Old Checkout', () => { beforeEach(() => { featureFlags.disable('newCheckout'); g-A Univer}s)ity; Week 10 // ... test implementation |  |  |  |
+| --- | --- | --- | --- |
+|  |  | checkout.test.jsx |  |
+|  |  | // Feature: New Checkout 활성화 테스트 describe('Feature: New Checkout', () => { beforeEach(() => { // 테스트 전 플래그 활성화 (Mocking) featureFlags.enable('newCheckout'); }); it('should render new checkout flow', () => { render(<CheckoutPage />); expect(screen.getByText('New Checkout')) .toBeInTheDocument(); }); }); // Feature: Old Checkout 비활성화 테스트 describe('Feature: Old Checkout', () => { beforeEach(() => { |  |
+| g-A |  | featureFlags.disable('newCheckout'); Univer}s)ity; Week 10 // ... test implementation |  |
+
+
+### [Page 32]
+SECTION 08
+Management
+Platforms
+LaunchDarkly, Unleash, GrowthBook 등 다양한
+Feature Flags 관리 도구의 특징과 장단점을 비교 분석합
+니다.
+
+08
+Prof. Sejin Chun
+Week 10
+Page 32
+
+
+
+### [Page 33]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+LaunchDarkly
+Leading Feature Management Platform (상용)
+
+핵심 기능
+직관적이고 강력한 UI/UX 대시보드
+모든 클라이언트에 실시간 플래그 업데이트
+다양한 언어 및 플랫폼을 지원하는 SDK
+
+장점 (Pros)
++ 세밀한 사용자 타겟팅 및 규칙 설정
++ A/B 테스팅 및 실험 기능 내장
++ 엔터프라이즈급 안정성 및 보안 지원
+
+단점 (Cons)
+비용 부담 (엔터프라이즈 규모)
+Vendor Lock-in (플랫폼 의존성)
+외부 네트워크 연결 필수 (SaaS)
+
+
+|  |  핵심 기능  직관적이고 강력한 UI/UX 대시보드  모든 클라이언트에 실시간 플래그 업데이트  다양한 언어 및 플랫폼을 지원하는 SDK |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  장점 (Pros) + 세밀한 사용자 타겟팅 및 규칙 설정 + A/B 테스팅 및 실험 기능 내장 + 엔터프라이즈급 안정성 및 보안 지원 |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  단점 (Cons)  비용 부담 (엔터프라이즈 규모)  Vendor Lock-in (플랫폼 의존성)  외부 네트워크 연결 필수 (SaaS) |  |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 34]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Unleash (오픈소스)
+Open Source Feature Management Platform
+
+플랫폼 개요
+개발자가 직접 호스팅하여 사용할 수 있는 오픈
+소스 기반의 기능 플래그 관리 시스템입니다.
+Self-Hosted
+Privacy
+Free
+
+주요 장점 (Pros)
+무료 & 오픈소스:
+셀프 호스팅 시 라이선스 비용이 없으며, 소
+스 코드를 자유롭게 커스터마이징 가능
+다양한 SDK 지원:
+Java, Node.js, Go, Python 등 주요 언
+어 및 프레임워크 완벽 지원
+데이터 주권:
+사내 인프라에 직접 구축하여 민감한 데이
+터의 외부 유출 방지
+
+고려 사항 (Cons)
+직접 관리 필요:
+서버 설치, 업데이트, DB 관리 등 인프라
+운영에 대한 리소스 투입 필요
+UI 단순성:
+LaunchDarkly 등 상용 서비스에 비해 관
+리자 UI 및 UX가 다소 단순함
+엔터프라이즈 기능:
+SSO, 감사 로그 등 고급 기능은 유료 플랜
+(Enterprise)에서만 제공됨
+
+
+|  |  플랫폼 개요 개발자가 직접 호스팅하여 사용할 수 있는 오픈 소스 기반의 기능 플래그 관리 시스템입니다. Self-Hosted Privacy Free |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  주요 장점 (Pros)  무료 & 오픈소스: 셀프 호스팅 시 라이선스 비용이 없으며, 소 스 코드를 자유롭게 커스터마이징 가능  다양한 SDK 지원: Java, Node.js, Go, Python 등 주요 언 어 및 프레임워크 완벽 지원  데이터 주권: 사내 인프라에 직접 구축하여 민감한 데이 터의 외부 유출 방지 |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  고려 사항 (Cons)  직접 관리 필요: 서버 설치, 업데이트, DB 관리 등 인프라 운영에 대한 리소스 투입 필요  UI 단순성: LaunchDarkly 등 상용 서비스에 비해 관 리자 UI 및 UX가 다소 단순함  엔터프라이즈 기능: SSO, 감사 로그 등 고급 기능은 유료 플랜 (Enterprise)에서만 제공됨 |  |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 35]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+GrowthBook (오픈소스)
+데이터 중심의 A/B 테스팅 특화 오픈소스 플랫폼
+
+A/B 테스팅 특화
+실험 설계부터 결과 분석까지 A/B 테스팅 워크
+플로우에 최적화된 기능을 제공합니다.
+베이지안/빈도주의 통계 엔진 내장
+시각적 실험 편집기 제공
+
+데이터 통합
+기존 데이터 인프라와 직접 연동하여 별도의 데
+이터 파이프라인 없이 분석이 가능합니다.
+BigQuery, Snowflake, Redshift 연동
+데이터 사일로(Silo) 방지
+
+장단점 요약
+PROS (장점)
+
+완전 무료 (Self-hosted)
+
+강력한 통계 분석 기능
+CONS (단점)
+
+상대적으로 신생 플랫폼
+
+커뮤니티 규모가 작음
+
+
+|  |  A/B 테스팅 특화 실험 설계부터 결과 분석까지 A/B 테스팅 워크 플로우에 최적화된 기능을 제공합니다.  베이지안/빈도주의 통계 엔진 내장  시각적 실험 편집기 제공 |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  데이터 통합 기존 데이터 인프라와 직접 연동하여 별도의 데 이터 파이프라인 없이 분석이 가능합니다.  BigQuery, Snowflake, Redshift 연동  데이터 사일로(Silo) 방지 |  |
+| --- | --- | --- |
+|  |  |  |
+
+|  |  장단점 요약 PROS (장점)  완전 무료 (Self-hosted)  강력한 통계 분석 기능 CONS (단점)  상대적으로 신생 플랫폼  커뮤니티 규모가 작음 |  |
+| --- | --- | --- |
+|  |  |  |
+
+
+### [Page 36]
+SECTION 09
+Practical
+Assignments
+Feature Flags 시스템 구축부터 A/B 테스팅,
+Progressive Delivery 구현까지 단계별 실습을 통해 학
+습한 내용을 체득합니다.
+
+09
+Prof. Sejin Chun
+Week 10
+Page 36
+
+
+
+### [Page 37]
+{"id": "tooluse_F3x9fX7w5xH8w19r8EwE9o", "type": "function", "function": {"name": "think", "arguments": "{\"thought\": \"사용자는 슬라이드 37번에 해당하는 '과제 슬라이드
+(assignment_slide)'를 생성하고 싶어합니다.\\nMarkdown 내용:\\n### 과제 1: Feature Flags 구현\\n1. React/Vue 프로젝트에 Feature Flags 시스템 구축\\n2. 최소 3개 플래그 구현\\n3. 환경
+변수로 제어\\n4. 컴포넌트에서 사용\\n\\n디자인 요구사항:\\n- 템플릿: 'assignment_slide'\\n- 역할: 마스터 템플릿 역할\\n- 디자인 스타일: DATA SCIENCE LABS 템플릿 스타일
+(Indigo/Purple, Pretendard)\\n- 구조:\\n - 상단: 제목 (과제 1: Feature Flags 구현)\\n - 본문: 과제 요구사항 리스트, 아이콘 강조\\n - 우측 상단: 로고\\n - 하단: 3단 푸터\\n\\n디자인 구성
+안:\\n1. **배경 및 레이아웃**: 흰색 배경, 고정된 헤더/푸터.\\n2. **제목 영역**: '실습 과제' (Learning Activity) 대제목과 '과제 1: Feature Flags 구현' 소제목.\\n3. **메인 콘텐츠 (카드 형
+태)**:\\n - 왼쪽: 과제 목표 및 설명 (아이콘과 함께).\\n - 오른쪽: 세부 요구사항 리스트 (체크리스트 스타일).\\n - 하단 또는 별도 영역: 힌트나 추가 가이드 (옵션).\\n4. **스타일링**:
+Tailwind CSS 사용. Indigo-600을 주조색으로 사용. 폰트는 Pretendard.\\n5. **아이콘**: FontAwesome 사용 (code, check-circle, server 등).\\n\\n구현 상세:\\n- 왼쪽 패널에는 과제의 큰 목
+표를 시각적으로 보여주는 아이콘과 설명.\\n- 오른쪽 패널에는 구체적인 Step-by-step 요구사항을 체크리스트로 나열.\\n- 코드 스니펫이나 팁을 보여줄 수 있는 작은 박스 추가 고
+려.\\n\\nHTML 구조:\\n- `slide-container` (1280x720)\\n- `brand-logo-img`\\n- `footer-container`\\n- `content-area` (flex)\\n - `header`\\n - `grid` (2 columns)\\n - `left-col`: 과제 개요
+(Overview)\\n - `right-col`: 요구사항 (Requirements)\\n\"}"}}
+
+
+
+### [Page 38]
+LEARNING ACTIVITY
+과제 2: A/B 테스팅 구현
+데이터 기반 의사결정을 위한 실험 설계 및 결과 분석 시스템 구축
+
+Experiment
+실제 사용자를 대상으로
+2개 이상의 변형(Variant)을
+실험하고 데이터를 수집합니다.
+A/B 테스트 구현 (2개 variant)
+대조군(Control)과 실험군(Treatment)을 나누어 서로 다른 UI/UX를 제공하는 컴포넌트 로직을 작성합니다.
+사용자별 일관된 할당
+User ID 해싱 등을 통해 동일한 사용자가 접속할 때마다 항상 같은 그룹에 할당되도록 보장합니다.
+분석 이벤트 기록
+실험 노출(Exposure) 및 목표 달성(Conversion) 이벤트를 로그 시스템이나 콘솔에 기록합니다.
+결과 분석 스크립트 작성
+수집된 데이터를 바탕으로 각 그룹의 성과를 비교하고 승자를 판정하는 간단한 분석 로직을 구현합니다.
+Sejin Chun, 2026
+Big Data Analytics
+slide 38 of 46
+
+
+
+### [Page 39]
+PRACTICAL ASSIGNMENT 03
+Progressive Rollout Implementation
+Canary 배포 전략을 적용하여 안전하고 점진적인 기능 출시 프로세스를 구축합니다.
+
+Assignment Overview
+실제 프로덕션 환경을 모방하여, 소규모 사용자 그룹
+(Canary)부터 시작해 전체 사용자에게 기능을 점진적으로
+노출시키는 자동화된 롤아웃 시스템을 설계하고 구현합니
+다.
+Key Requirements
+Canary 배포 시스템 구현
+사용자 해싱(Hashing) 또는 그룹 기반으로 기능 노출 여부를 결정하는 CanaryRelease 클래스를 작성하
+세요.
+단계적 롤아웃 자동화
+시간 경과에 따라 노출 비율을 1% → 10% → 50% → 100%로 자동 증가시키는 로직을 구현하세요.
+헬스 체크 및 자동 롤백
+에러율이 임계값을 초과할 경우 즉시 롤아웃을 중단하고 0%로 롤백하는 안전 장치를 추가하세요.
+모니터링 대시보드
+현재 배포 단계(Stage)와 활성 사용자 비율을 실시간으로 보여주는 간단한 상태 패널을 구성하세요.
+
+Tip: setInterval을 사용하여 배포 단계 승격(Promotion)을 시뮬레이션하고, 랜덤 에러 발생기를 통해 롤백 로직을
+테스트해보세요.
+Sejin Chun, 2026
+Big Data Analytics
+slide 39 of 46
+
+
+
+### [Page 40]
+LEARNING ACTIVITY 04
+과제 4: Feature Flags 플랫폼 통합
+
+플랫폼 통합
+상용/오픈소스 도구를 도입하여
+체계적인 관리 시스템을 구축하고
+실시간 제어를 경험합니다.
+
+Unleash 또는 GrowthBook 설치
+로컬/서버 환경에 솔루션을 설치하고 대시보드 접근 권한을 확보하세요.
+
+플래그 생성 및 관리
+대시보드에서 기능 플래그를 생성하고 활성화 전략(Strategy)을 설정하세요.
+
+프로젝트 통합
+제공되는 SDK를 활용하여 기존 React/Vue 프로젝트와 플랫폼을 연동하세요.
+
+실시간 변경 테스트
+대시보드에서 플래그 변경 시 애플리케이션에 즉시 반영되는지 검증하세요.
+Sejin Chun, 2026
+Big Data Analytics
+slide 40 of 46
+
+
+
+### [Page 41]
+SECTION 10
+References
+& Resources
+Feature Flags 도입과 관련된 필수 문헌, 관리 플랫폼 링
+크, 그리고 심화 학습을 위한 추천 자료들을 정리했습니다.
+
+10
+Prof. Sejin Chun
+Week 10
+Page 41
+
+
+
+### [Page 42]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+참고 자료
+Reference & Resources
+
+필수 읽기
+Feature Toggles
+- Martin Fowler
+Feature Flags Best Practices
+- LaunchDarkly Blog
+
+플랫폼
+LaunchDarkly (Enterprise)
+Unleash (Open Source)
+GrowthBook (A/B Testing Focused)
+Split.io (Feature Delivery Platform)
+
+도서
+"Feature Flag Best Practices"
+- LaunchDarkly (E-book)
+"Accelerate"
+- Nicole Forsgren (Progressive Delivery &
+DevOps)
+
+
+
+### [Page 43]
+SECTION 11
+Key
+Takeaways
+이번 강의의 핵심 요약과 Feature Flags 도입을 위한
+Best Practices를 정리하고 향후 학습 방향을 제시합니
+다.
+
+11
+Prof. Sejin Chun
+Week 10
+Page 43
+
+
+
+### [Page 44]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+핵심 요약
+Key Takeaways
+
+배포 ≠ 릴리스
+코드 배포와 기능 릴리스를 분리하여 리스크를 최
+소화하세요.
+
+즉시 롤백
+문제 발생 시 재배포 없이 Flag Off로 즉시 복구
+하세요.
+
+점진적 배포
+Canary, Ring 배포를 통해 안전하게 사용자 범위
+를 넓히세요.
+
+A/B 테스팅
+실제 사용자 데이터를 기반으로 비즈니스 의사결정
+을 내리세요.
+
+플래그 정리
+사용이 끝난 플래그는 반드시 제거하여 기술 부채
+를 방지하세요.
+
+
+
+### [Page 45]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+Best Practices
+6 Core Implementation Guidelines
+
+명명 규칙 (Naming)
+의미 있는 kebab-case를 사용하고, 버전 정보를 포
+함하여 명확히 식별하세요.
+
+생명주기 관리
+플래그의 유형과 목적에 따라 단기/장기 수명을 명확히
+정의하세요.
+
+오래된 플래그 제거
+기능이 완전히 릴리스되면 플래그를 즉시 삭제하여 코
+드를 깨끗이 유지하세요.
+
+모니터링 및 분석
+플래그 사용 현황과 변경 사항을 추적하여 운영 가시성
+을 확보하세요.
+
+테스트 커버리지
+플래그 On/Off 상태에 따른 시나리오를 모두 테스트하
+여 안정성을 보장하세요.
+
+문서화 (Documentation)
+플래그의 목적, 소유자, 만료일을 문서화하여 팀 내 공
+유를 강화하세요.
+
+
+
+### [Page 46]
+Prof. Sejin Chun
+Dong-A University
+Week 10
+다음 단계 및 마무리
+Next Steps & Conclusion
+
+시스템 구축
+Feature Flags 시스템을
+프로젝트에 도입하세요.
+
+점진적 배포
+Canary 릴리스를 통해
+배포 안정성을 높이세요.
+
+실험 실행
+A/B 테스팅으로
+가설을 검증하세요.
+
+문화 정착
+데이터 기반의
+의사결정 문화를 만드세요.
+"Deploy anytime, release when ready."
+언제든 배포하고, 준비되면 릴리스하세요! Å
+
