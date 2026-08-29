@@ -172,3 +172,10 @@
 - Course validation: OpenKnowledge audit scanned 21 documents with markdownlint/frontmatter/okf/links at 0 errors/0 warnings; all 21 documents passed individual lint; Mermaid parser checked 26 course blocks (25 note blocks) with 0 failures; pinned Slidev build/export succeeded for README plus all 18 notes. Exported deck sizes were 8 pages for README and 9/12/10/10/16/11/11/16/12/8/15/8/10/8/12/11/7/8 pages for the notes in validation order.
 - Final notes-only inventory: 18 documents, 87 callouts, 17 HTML previews, 32 details, 27 Tabs, 25 Mermaid blocks, and 0 source-slide/image embeds. Palette surfaces: 9 charts, 7 stat-card rows, 1 custom-SVG, 0 interactive-control. Including README: 19 authored documents, 90 callouts, 20 HTML previews, 33 details, 28 Tabs, 26 Mermaid blocks, and 0 source embeds.
 - `npm run test:slidev-compat` again passed source contract, raw-Slidev negative control, addon build, and export/static assertions. Visual/interaction compatibility remains unverified; no manual browser, DOM, screenshot, or rsvg validation was performed.
+
+## 2026-08-29 machine-learning source remap started
+
+- Reported the accepted `large-language-models` gate before advancing: 18 notes, 87 callouts, 17 HTML previews, 32 details, 27 Tabs, 25 Mermaid blocks, and 0 source-slide/image embeds. Ten rejected legacy-prefix notes were removed only after backlink review.
+- Started a fresh `machine-learning` source-only remap with three disjoint Sol xhigh lanes: exact inventory/duplicates, classical ML sources, and sequence/deep-learning sources. Prior notes, README prose, Git history, and all earlier lane maps/gates remain rejected authoring evidence.
+- Current filesystem inventory contains 21 source PDFs. This count is provisional until extract matching, duplicate-content analysis, sparse-source review, and assessment numbering are independently completed.
+- No `machine-learning` Markdown has been written in this phase. Browser, preview, DOM, screenshot, rsvg, commit, and push remain unused.
