@@ -1,9 +1,5 @@
 # Index
 
-## lecture
-
-* [Untitled](./Untitled.md)
-
 ## Subdirectories
 
 * [01_programming-foundations](./01_programming-foundations/index.md)
