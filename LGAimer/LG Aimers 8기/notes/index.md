@@ -1,55 +1,14 @@
----
-title: "LG Aimers 8기"
-type: "overview"
-tags:
-  - "lgaimer"
-  - "lg-aimers-8th"
-  - "overview"
-  - "index"
-course: "lg-aimers-8th"
-semester: "2026-summer"
-status: "stable"
-authority: "primary"
-created: "2026-08-29"
-updated: "2026-08-29"
----
+# Index
 
-# 📚 LG Aimers 8기 — 거대 언어 모델(LLM) 경량화 및 Agentic AI 엔지니어링 전체 로드맵
+## lecture
 
-인공지능 윤리와 신뢰성 거버넌스(기술결정론 비판, XAI 설명가능성, EU AI Act 위험 분류 체계), 거대 언어 모델(LLM)의 핵심 경량화 압축 알고리즘(구조화/비구조화 Pruning, Knowledge Distillation, W8A8/W4A16 AWQ·GPTQ Quantization), LG AI연구원의 글로벌 오픈소스 파운데이션 모델 EXAONE 3.0 아키텍처 및 해커톤 최적화 파이프라인(QLoRA, 지연시간 TTFT/TPOT 튜닝), 초경량 모델 서빙과 비용 최적화(스마트 라우터, 프롬프트 캐싱), Transformer Self-Attention 및 자율 행동(Tool-Use, ReAct) LLM Agent, 그리고 정밀 생성 제어 디코딩(Greedy, Beam, Top-p, Speculative Decoding)까지 체계적으로 다룹니다.
-
----
-
-## 🗺️ 강의 목차 (Curriculum Overview)
-
-```mermaid
-graph TD
-    N1["01~03. AI 윤리와 신뢰성 거버넌스<br/>Co-evolution & XAI Black-box & UNESCO & EU AI Act"] --> N4["04. LLM 경량화 압축 기법<br/>Pruning & Distillation & W4A16 Quantization"]
-    N4 --> N5["05~06. LG EXAONE & 경량화 해커톤<br/>MoE & QLoRA Finetuning & TTFT·TPOT Benchmark"]
-    N5 --> N7["07. 경량 서빙과 스마트 라우팅<br/>Smart Routing & Prompt Caching & Speculative Serving"]
-    N7 --> N8["08. NLP 기초와 LLM Agent<br/>Transformer Self-Attention & Tool Calling & ReAct"]
-    N8 --> N9["09. LLM 디코딩 전략<br/>Greedy & Beam & Top-p Nucleus & Speculative Decoding"]
-```
-
----
-
-## 📑 개별 정리 문서 목록
-
-1. [01. AI 윤리 — AI 시대, 미래는 오지 않는다](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/01.%20AI%20%EC%9C%A4%EB%A6%AC%20%E2%80%94%20AI%20%EC%8B%9C%EB%8C%80,%20%EB%AF%B8%EB%9E%98%EB%8A%94%20%EC%98%A4%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4.md)
-   - 기술결정론 비판, 기술과 사회의 공진화, 가치 지향적 설계(Value-Sensitive Design), 대화형 기술 수용 분석기
-2. [02. AI 윤리 — 낯선 지능과 함께 살아가기](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/02.%20AI%20%EC%9C%A4%EB%A6%AC%20%E2%80%94%20%EB%82%AF%EC%84%A0%20%EC%A7%80%EB%8A%A5%EA%B3%BC%20%ED%95%A8%EA%BB%98%20%EC%82%B4%EC%95%84%EA%B0%80%EA%B8%B0.md)
-   - 연결주의 신경망의 블랙박스 불투명성, 알고리즘 편향 증폭, XAI 설명가능성(SHAP/LIME), 대화형 SHAP 분석기
-3. [03. AI 윤리 — 원칙에서 행동으로](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/03.%20AI%20%EC%9C%A4%EB%A6%AC%20%E2%80%94%20%EC%9B%90%EC%B9%99%EC%97%90%EC%84%9C%20%ED%96%89%EB%8F%99%EC%9C%BC%EB%A1%9C.md)
-   - 유네스코 4대 가치와 10대 원칙, EU AI Act 위험 기반 4단계 분류 체계, 레드팀 검증, 대화형 위험 등급 판별기
-4. [04. LLM 경량화 — Pruning·Distillation·Quantization](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/04.%20LLM%20%EA%B2%BD%EB%9F%89%ED%99%94%20%E2%80%94%20Pruning%C2%B7Distillation%C2%B7Quantization.md)
-   - 메모리 바운드 병목, 구조적 가지치기, 지식 증류, AWQ/GPTQ INT4 양자화 공식, 대화형 VRAM 계산기
-5. [05. EXAONE — 전문가 AI와 Agentic AI](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/05.%20EXAONE%20%E2%80%94%20%EC%A0%84%EB%AC%B8%EA%B0%80%20AI%EC%99%80%20Agentic%20AI.md)
-   - LG EXAONE 파운데이션 모델 아키텍처, 전문 도메인 큐레이션, On-Device 라인업, 대화형 모델 추천기
-6. [06. EXAONE 경량화 해커톤 — 분석·압축·추론·평가](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/06.%20EXAONE%20%EA%B2%BD%EB%9F%89%ED%99%94%20%ED%95%B4%EC%BB%A4%ED%86%A4%20%E2%80%94%20%EB%B6%84%EC%84%9D%C2%B7%EC%95%95%EC%B6%95%C2%B7%EC%B6%94%EB%A1%A0%C2%B7%ED%8F%89%EA%B0%80.md)
-   - 해커톤 최적화 파이프라인, QLoRA 미세조정, TTFT/TPOT 지연시간 튜닝, 대화형 해커톤 종합 점수 산출기
-7. [07. Lightweight LLM — 비용·서빙·스마트 라우팅](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/07.%20Lightweight%20LLM%20%E2%80%94%20%EB%B9%84%EC%9 contemporary%C2%B7%EC%84%9C%EB%B9%99%C2%B7%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EB%9D%BC%EC%9A%B0%ED%8C%85.md)
-   - 스마트 캐스케이드 라우터, 프롬프트 프리픽스 캐싱, 대화형 추론 비용 절감 계산기
-8. [08. 딥러닝 자연어처리와 LLM Agent — 기초부터 응용까지](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/08.%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC%EC%99%80%20LLM%20Agent%20%E2%80%94%20%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EC%9D%91%EC%9A%A9%EA%B9%8C%EC%A7%80.md)
-   - Transformer Self-Attention 수식 유도, Tool Calling, ReAct 자율 에이전트 루프 시뮬레이터
-9. [09. LLM Decoding — Greedy·Beam·Sampling과 고급 추론](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%208%EA%B8%B0/notes/09.%20LLM%20Decoding%20%E2%80%94%20Greedy%C2%B7Beam%C2%B7Sampling%EA%B3%BC%20%EA%B3%A0%EA%B8%89%20%EC%B6%94%EB%A1%A0.md)
-   - Greedy, Beam Search, Temperature, Top-k/Top-p Nucleus, Speculative Decoding 가속기
+* [01. AI 윤리 — AI 시대, 미래는 오지 않는다: 디지털 기술관, 기술결정론 비판과 공진화](./01.%20AI%20%EC%9C%A4%EB%A6%AC%20%E2%80%94%20AI%20%EC%8B%9C%EB%8C%80%2C%20%EB%AF%B8%EB%9E%98%EB%8A%94%20%EC%98%A4%EC%A7%80%20%EC%95%8A%EB%8A%94%EB%8B%A4.md) - 인공지능과 디지털 기술을 바라보는 두 가지 상반된 시각(유토피아/디스토피아적 적극수용론 vs 극단적 거부론), 기술결정론(Technological Determinism)의 오류 비판, 기술과 사회의 상호작용 및 공진화(Co-evolution) 모델, AI 거버넌스에서 인간의 능동적 선택과 가치 지향적 설계의 중요성을 인터랙티브 기술 수용 태도 및 리스크 분석기로 학습한다.
+* [02. AI 윤리 — 낯선 지능과 함께 살아가기: 인공신경망 특성, 불투명성(Black-box)과 설명가능성(XAI)](./02.%20AI%20%EC%9C%A4%EB%A6%AC%20%E2%80%94%20%EB%82%AF%EC%84%A0%20%EC%A7%80%EB%8A%A5%EA%B3%BC%20%ED%95%A8%EA%BB%98%20%EC%82%B4%EC%95%84%EA%B0%80%EA%B8%B0.md) - 기존의 기호주의(Symbolic) AI와 현대 딥러닝 연결주의(Connectionist) 인공신경망의 근본적 차이, 다층 신경망의 복잡성에서 기인하는 블랙박스(Black-box) 불투명성과 비직관성, 데이터 편향의 학습 및 증폭 메커니즘, AI 판단에 대한 설명가능성(Explainability / XAI: LIME, SHAP), 그리고 인간-AI 협업 체계에서의 신뢰성(Trustworthiness) 확보 방안을 인터랙티브 XAI 피처 중요도 분석기로 학습한다.
+* [03. AI 윤리 — 원칙에서 행동으로: UNESCO 권고안, 글로벌 AI 규제(EU AI Act)와 신뢰성 검증](./03.%20AI%20%EC%9C%A4%EB%A6%AC%20%E2%80%94%20%EC%9B%90%EC%B9%99%EC%97%90%EC%84%9C%20%ED%96%89%EB%8F%99%EC%9C%BC%EB%A1%9C.md) - 유네스코(UNESCO) 인공지능 윤리 권고의 4대 핵심 가치 및 10대 행동 원칙, EU AI Act(유럽연합 인공지능법)의 위험 기반 4단계 분류 체계(금지된 위험 Unacceptable -> 고위험 High -> 제한적 위험 Limited -> 최소 위험 Minimal), 기업 수준의 AI 윤리 거버넌스 구축, 그리고 모델 라이프사이클 전반의 레드팀(Red Teaming) 검증을 인터랙티브 EU AI Act 위험 등급 판별기로 학습한다.
+* [04. LLM 경량화 기법 - Pruning(구조화·비구조화), Knowledge Distillation과 Quantization(W8A8·W4A16)](./04.%20LLM%20%EA%B2%BD%EB%9F%89%ED%99%94%20%E2%80%94%20Pruning%C2%B7Distillation%C2%B7Quantization.md) - 거대 언어 모델(LLM)의 천문학적인 메모리 대역폭(Memory Bandwidth) 및 연산 비용 문제를 해결하는 3대 핵심 압축 알고리즘, 중요도가 낮은 가중치를 제거하는 가지치기(Unstructured vs Structured Pruning: 2:4 Sparse GPU Acceleration), 교사 모델의 소프트 확률 분포를 학습하는 지식 증류(Knowledge Distillation: KL-Divergence), 32비트 부동소수점을 저비트 정수로 변환하는 양자화(Quantization: PTQ vs QAT, INT8/INT4, AWQ, GPTQ), 그리고 압축률-정확도 트레이드오프를 인터랙티브 LLM 메모리 절감 계산기로 학습한다.
+* [05. LG EXAONE 모델 아키텍처 - 전문가 도메인 특화 사전학습, MoE와 Agentic AI 프레임워크](./05.%20EXAONE%20%E2%80%94%20%EC%A0%84%EB%AC%B8%EA%B0%80%20AI%EC%99%80%20Agentic%20AI.md) - LG AI연구원의 글로벌 최상위 오픈소스 파운데이션 모델 EXAONE 3.0/3.5 시리즈의 아키텍처 혁신, 이중 언어(한국어·영어) 및 전문 도메인(화학·바이오·특허·코딩) 고품질 데이터 큐레이션, Mixture-of-Experts(MoE) 구조를 통한 연산 효율화, 하이브리드 온디바이스(7.8B/2.4B/1.2B) 최적화, 그리고 도구 활용(Tool-use) 및 멀티스텝 추론을 수행하는 Agentic AI 확장 체계를 인터랙티브 EXAONE 라인업 선택기로 학습한다.
+* [06. EXAONE 경량화 해커톤 - 모델 압축 파이프라인, 파라미터 프루닝, 양자화와 평가 메트릭](./06.%20EXAONE%20%EA%B2%BD%EB%9F%89%ED%99%94%20%ED%95%B4%EC%BB%A4%ED%86%A4%20%E2%80%94%20%EB%B6%84%EC%84%9D%C2%B7%EC%95%95%EC%B6%95%C2%B7%EC%B6%94%EB%A1%A0%C2%B7%ED%8F%89%EA%B0%80.md) - LG Aimers 경량화 해커톤의 핵심 과제와 엔지니어링 파이프라인, 사전학습된 EXAONE 모델의 레이어/헤드 중요도 분석을 통한 정밀 프루닝(Pruning), 양자화(PTQ/QAT) 및 파라미터 효율적 미세조정(PEFT: LoRA, QLoRA) 결합 전략, 추론 지연시간(Latency: TTFT Time-to-First-Token, TPOT Time-per-Output-Token) 최적화, 그리고 정량 평가 공식(BLEU, ROUGE-L, Perplexity vs VRAM 압축률)을 인터랙티브 해커톤 종합 점수 시뮬레이터로 학습한다.
+* [07. Lightweight LLM 서빙과 스마트 라우팅 - 추론 비용 최적화, 프롬프트 캐싱과 Speculative Serving](./07.%20Lightweight%20LLM%20%E2%80%94%20%EB%B9%84%EC%9A%A9%C2%B7%EC%84%9C%EB%B9%99%C2%B7%EC%8A%A4%EB%A7%88%ED%8A%B8%20%EB%9D%BC%EC%9A%B0%ED%8C%85.md) - 거대 언어 모델 상용 서비스의 천문학적 GPU 인프라 비용을 절감하기 위한 서빙 아키텍처, 쿼리 난이도에 따라 소형 경량 모델(SLM)과 초거대 모델(LLM)로 동적 분기하는 스마트 라우팅(Smart Model Routing / Cascade Routing), 공통 시스템 프롬프트의 중복 연산을 제거하는 프롬프트 프리픽스 캐싱(Prefix / KV Caching), 그리고 작은 드래프트 모델이 제안하고 큰 타깃 모델이 병렬 검증하는 추측 서빙(Speculative Serving)을 인터랙티브 추론 비용 절감 계산기로 학습한다.
+* [08. 딥러닝 자연어처리와 LLM Agent - Transformer 어텐션, Tool Use와 ReAct 자율 에이전트](./08.%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC%EC%99%80%20LLM%20Agent%20%E2%80%94%20%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EC%9D%91%EC%9A%A9%EA%B9%8C%EC%A7%80.md) - 전통적 NLP 임베딩(Word2Vec)에서 Transformer Self-Attention으로의 패러다임 전환, Query-Key-Value 행렬 스케일드 닷 프로덕트 연산, 사전학습-미세조정(Pretraining-Finetuning) 파이프라인, 거대 언어 모델이 외부 환경과 상호작용하는 LLM Agent 아키텍처, 도구 호출(Function / Tool Calling), 그리고 생각-행동-관찰(Thought-Action-Observation) 루프로 자율 문제를 해결하는 ReAct 프레임워크를 인터랙티브 Self-Attention 가중치 시뮬레이터로 학습한다.
+* [09. LLM 디코딩 전략과 고급 추론 - 탐욕적(Greedy)·빔 서치(Beam), 온도(Temperature)·Top-p 샘플링 및 Speculative Decoding](./09.%20LLM%20Decoding%20%E2%80%94%20Greedy%C2%B7Beam%C2%B7Sampling%EA%B3%BC%20%EA%B3%A0%EA%B8%89%20%EC%B6%94%EB%A1%A0.md) - 거대 언어 모델의 다음 토큰 확률 분포에서 텍스트를 생성하는 디코딩(Decoding) 알고리즘 체계, 결정론적 탐욕 탐색(Greedy Search)과 반복 루프 한계, 최적 경로를 탐색하는 빔 서치(Beam Search), 창의성과 다양성을 조율하는 온도(Temperature), Top-k 및 핵 샘플링(Top-p Nucleus Sampling), 그리고 소형 드래프트 모델의 제안과 대형 타깃 모델의 1회 검증으로 무손실 2~3배 속도 향상을 달성하는 추측 디코딩(Speculative Decoding)을 인터랙티브 디코딩 전략 시뮬레이터로 학습한다.
+* [LG Aimers 8기 강의 흐름 지도](./00.%20LG%20Aimers%208%EA%B8%B0%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md)

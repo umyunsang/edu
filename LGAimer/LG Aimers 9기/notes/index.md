@@ -1,62 +1,17 @@
----
-title: "LG Aimers 9기"
-type: "overview"
-tags:
-  - "lgaimer"
-  - "lg-aimers-9th"
-  - "overview"
-  - "index"
-course: "lg-aimers-9th"
-semester: "2026-summer"
-status: "stable"
-authority: "primary"
-created: "2026-08-29"
-updated: "2026-08-29"
----
+# Index
 
-# 📚 LG Aimers 9기 — 머신러닝 기초, 최적화, 시계열 및 정형 데이터(Tabular Foundation Models) 전체 로드맵
+## lecture
 
-머신러닝의 수학적 기초인 선형대수와 행렬 분해(Determinant, Trace, Eigendecomposition, SVD, Low-rank Approximation), 지도학습 핵심 원리와 일반화 오차(Bias-Variance Tradeoff, L1/L2 Regularization), 자연어처리 기초와 Transformer 어텐션 및 ReAct 에이전트, 볼록 최적화와 의사결정 중심 학습(Convex Sets/Functions, KKT 조건, End-to-End Decision-Focused Learning), 시계열 분석과 딥러닝 예측(정상성 ADF, ARIMA, GARCH, Temporal Transformer), 그리고 표 형식 데이터(Tabular ML)의 6단계 심화 분석(이종 피처 전처리, XGBoost/LightGBM/CatBoost 트리 앙상블, TabNet/FT-Transformer 딥러닝 아키텍처, VIME/SCARF 표현 학습, 직렬화 기반 LLM 표 추론 TabLLM, 사전 피팅 네트워크 TabPFN)과 RAG·Speculative Decoding까지 체계적으로 다룹니다.
-
----
-
-## 🗺️ 강의 목차 (Curriculum Overview)
-
-```mermaid
-graph TD
-    N1["01. 머신러닝 수학과 행렬 분해<br/>Determinant & Trace & Eigendecomposition & SVD"] --> N2["02. 지도학습과 일반화 원리<br/>Loss Functions & Bias-Variance & L1/L2 Regularization"]
-    N2 --> N3["03. NLP 기초와 LLM Agent<br/>Word2Vec & Transformer Self-Attention & ReAct"]
-    N3 --> N4["04. 볼록 최적화 & DFL<br/>Convexity & KKT Conditions & Decision-Focused Learning"]
-    N4 --> N5["05. 시계열 분석과 딥러닝<br/>Stationarity & ARIMA & GARCH & Temporal Transformer"]
-    N5 --> N6["06~11. Tabular ML 파운데이션<br/>Preprocessing & GBDT (XGB·LGB·Cat) & Deep Tabular & TabPFN"]
-    N6 --> N12["12. LLM 응용 & 디코딩<br/>RAG Pipeline & KV Cache & Speculative Decoding"]
-```
-
----
-
-## 📑 개별 정리 문서 목록
-
-1. [01. Mathematics for ML — 행렬 분해의 지도](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/01.%20Mathematics%20for%20ML%20%E2%80%94%20%ED%96%89%EB%A0%AC%20%EB%B6%84%ED%95%B4%EC%9D%98%20%EC%A7%80%EB%8F%84.md)
-   - 행렬식, 대각합, 고유값 분해, SVD, Eckart-Young-Mirsky 저계수 근사, 대화형 2D 행렬 변환기
-2. [02. 지도학습 — Supervised Learning Overview](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/02.%20%EC%A7%80%EB%8F%84%ED%95%99%EC%8A%B5%20%E2%80%94%20Supervised%20Learning%20Overview.md)
-   - 일반화 오차의 편향-분산 분해, L1 Lasso vs L2 Ridge 정규화, 대화형 모델 복잡도 오차 분석기
-3. [03. 딥러닝 자연어처리와 LLM Agent — AI 기초](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/03.%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC%EC%99%80%20LLM%20Agent%20%E2%80%94%20AI%20%EA%B8%B0%EC%B4%88.md)
-   - Transformer Self-Attention 수식 유도, ReAct 에이전트 루프, 대화형 Self-Attention 유사도 계산기
-4. [04. Optimization & Decision-Focused Learning — 볼록 최적화](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/04.%20Optimization%20&%20Decision-Focused%20Learning%20%E2%80%94%20%EB%B3%BC%EB%A1%9D%20%EC%B5%9C%EC%A0%81%ED%99%94.md)
-   - 볼록성 판정, 라그랑주 쌍대성, KKT 4대 조건, End-to-End DFL, 대화형 KKT 조건 분석기
-5. [05. Time-Series Analysis — 의존성·예측·딥러닝](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/05.%20Time-Series%20Analysis%20%E2%80%94%20%EC%9D%98%EC%A1%B4%EC%84%B1%C2%B7%EC%98%88%EC%B8%A1%C2%B7%EB%94%A5%EB%9F%AC%EB%8B%9D.md)
-   - 약정상성 ADF 검정, ARIMA 모델링, GARCH 변동성, 대화형 AR(1) ACF 감쇠 시뮬레이터
-6. [06. Tabular ML — 표 형식 데이터와 과업](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/06.%20Tabular%20ML%20%E2%80%94%20%ED%91%9C%20%ED%98%95%EC%8B%9D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80%20%EA%B3%BC%EC%97%85.md)
-   - 이종 피처 특성, 결측 메커니즘(MCAR/MAR/MNAR) 대체 기법, 고기수 타깃 인코딩, 대화형 결측치 선택기
-7. [07. Tabular ML — Classical Models](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/07.%20Tabular%20ML%20%E2%80%94%20Classical%20Models.md)
-   - GBDT 2차 테일러 전개 목적함수, XGBoost vs LightGBM vs CatBoost 비교, 대화형 GBDT 추천기
-8. [08. Tabular ML — Deep Architectures](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/08.%20Tabular%20ML%20%E2%80%94%20Deep%20Architectures.md)
-   - FT-Transformer 주기적 임베딩, TabNet 순차 어텐션 마스크, SAINT, 대화형 GBDT vs 딥러닝 비교기
-9. [09. Tabular ML — Representation Learning](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/09.%20Tabular%20ML%20%E2%80%94%20Representation%20Learning.md)
-   - 자기지도 학습 VIME, 대조 학습 SCARF 및 InfoNCE 손실, 대화형 대조 유사도 분석기
-10. [10. Tabular ML — LLM을 표 데이터에 연결하기](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/10.%20Tabular%20ML%20%E2%80%94%20LLM%EC%9D%84%20%ED%91%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%90%20%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0.md)
-    - 직렬화(Serialization) 템플릿, 퓨샷 인컨텍스트 표 학습, TabLLM, 대화형 직렬화 변환기
-11. [11. Tabular ML — TabPFN과 Prior-Fitted Networks](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/11.%20Tabular%20ML%20%E2%80%94%20TabPFN%EA%B3%BC%20Prior-Fitted%20Networks.md)
-    - 인공 사전 분포 생성, 단일 순전파 $O(1)$ 베이지안 사후 추론, 대화형 TabPFN 속도 비교기
-12. [12. LLM Decoding — 생성 제어·RAG·Speculative Decoding](file:///Users/um-yunsang/work/edu/LGAimer/LG%20Aimers%209%EA%B8%B0/notes/12.%20LLM%20Decoding%20%E2%80%94%20%EC%83%9D%EC%84%B1%20%EC%A0%9C%EC%96%B4%C2%B7RAG%C2%B7Speculative%20Decoding.md)
-    - RAG 지식 증강 파이프라인, KV 캐싱, Speculative Decoding 무손실 가속, 대화형 RAG 환각 억제기
+* [01. Mathematics for ML — 행렬 분해의 지도: 행렬식(Determinant), 대각합(Trace), 고유값 분해(Eigendecomposition)와 SVD](./01.%20Mathematics%20for%20ML%20%E2%80%94%20%ED%96%89%EB%A0%AC%20%EB%B6%84%ED%95%B4%EC%9D%98%20%EC%A7%80%EB%8F%84.md) - 머신러닝과 딥러닝의 수학적 기초가 되는 선형대수학 핵심 이론, 행렬의 기하학적 부피 변환과 행렬식(Determinant), 불변량 대각합(Trace), 대칭 행렬의 직교 대각화와 스펙트럴 정리(Spectral Theorem), 양의 정부호 행렬과 숄레스키 분해(Cholesky Decomposition), 임의의 직사각 행렬에 적용되는 특이값 분해(Singular Value Decomposition: SVD)와 주성분 분석(PCA), 최적 저계수 근사(Eckart-Young-Mirsky Theorem)를 인터랙티브 2D 고유벡터 변환 시뮬레이터로 학습한다.
+* [02. 지도학습 — Supervised Learning Overview: 손실 함수, 편향-분산 트레이드오프와 정규화(L1·L2)](./02.%20%EC%A7%80%EB%8F%84%ED%95%99%EC%8A%B5%20%E2%80%94%20Supervised%20Learning%20Overview.md) - 지도학습(Supervised Learning)의 핵심 수학적 모델링, 회귀(MSE 손실)와 분류(Cross-Entropy / Softmax 손실), 모델 일반화 오차의 편향-분산 분해(Bias-Variance Decomposition), 과적합(Overfitting) 억제를 위한 L1 라쏘(Lasso: 희소성 유도) 및 L2 릿지(Ridge: 가중치 감쇠) 정규화, 그리고 교차 검증(K-Fold Cross-Validation)을 인터랙티브 편향-분산 트레이드오프 곡선 시뮬레이터로 학습한다.
+* [03. 딥러닝 자연어처리와 LLM Agent — AI 기초: 단어 임베딩, Transformer 구조와 에이전트 ReAct 프레임워크](./03.%20%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EC%9E%90%EC%97%B0%EC%96%B4%EC%B2%98%EB%A6%AC%EC%99%80%20LLM%20Agent%20%E2%80%94%20AI%20%EA%B8%B0%EC%B4%88.md) - 텍스트 표현의 발전 과정(원-핫 인코딩 -> 분산 표상 Word2Vec/GloVe), RNN/LSTM 순차 모델의 기울기 소실 한계, Transformer의 Self-Attention 병렬 연산 아키텍처, 거대 사전학습 언어 모델의 지시어 정렬(Alignment: SFT + RLHF), 그리고 외부 도구(Tool-use)와 결합하여 환경을 관찰하고 행동하는 ReAct 기반 LLM Agent 워크플로우를 인터랙티브 멀티헤드 어텐션 시뮬레이터로 학습한다.
+* [04. Optimization & Decision-Focused Learning — 볼록 최적화: 볼록 집합·함수, 라그랑주 쌍대성과 KKT 조건](./04.%20Optimization%20%26%20Decision-Focused%20Learning%20%E2%80%94%20%EB%B3%BC%EB%A1%9D%20%EC%B5%9C%EC%A0%81%ED%99%94.md) - 기계학습 및 의사결정 시스템의 수학적 최적화 이론, 볼록 집합(Convex Set)과 볼록 함수(Convex Function)의 헤시안(Hessian) 양의 정부호 조건, 제약 최적화 문제와 라그랑주 승수법(Lagrange Multiplier), 슬레이터 조건(Slater's Condition)과 강한 쌍대성(Strong Duality), 최적해의 필요충분조건인 KKT(Karush-Kuhn-Tucker) 4대 조건, 그리고 예측 오차 최소화를 넘어 최종 의사결정 품질을 직접 최적화하는 Decision-Focused Learning(DFL / End-to-End Predict-then-Optimize)을 인터랙티브 KKT 상호보완 여유성 분석기로 학습한다.
+* [05. Time-Series Analysis — 시계열 분석과 딥러닝 예측: 정상성(Stationarity), ARMA·ARIMA, GARCH와 Temporal Transformer](./05.%20Time-Series%20Analysis%20%E2%80%94%20%EC%9D%98%EC%A1%B4%EC%84%B1%C2%B7%EC%98%88%EC%B8%A1%C2%B7%EB%94%A5%EB%9F%AC%EB%8B%9D.md) - 시계열 데이터의 통계적 본질과 의존 구조, 약정상성(Weak Stationarity: 일정 평균·자기공분산) 검정(ADF Test), 자기상관함수(ACF)와 편자기상관함수(PACF) 기반 모수 식별, 자기회귀이동평균 모델(ARMA / ARIMA 차분), 금융 시계열의 조건부 변동성 군집을 설명하는 ARCH/GARCH, 그리고 시계열 딥러닝 아키텍처(LSTM, N-BEATS, PatchTST, Temporal Transformer)를 인터랙티브 ACF 감쇠 시뮬레이터로 학습한다.
+* [06. Tabular ML — 표 형식 데이터와 과업: 이종 피처(Heterogeneous Features), 결측치 대체와 전처리 파이프라인](./06.%20Tabular%20ML%20%E2%80%94%20%ED%91%9C%20%ED%98%95%EC%8B%9D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%99%80%20%EA%B3%BC%EC%97%85.md) - 현업 산업 데이터의 80% 이상을 차지하는 표 형식 데이터(Tabular Data)의 본질적 특성, 이미지/텍스트와 구별되는 이종성(Heterogeneous Features: 수치형, 범주형, 텍스트 혼재), 결측치(Missing Values: MCAR, MAR, MNAR) 처리 알고리즘(MICE, KNN Imputation), 고기수(High-cardinality) 범주형 인코딩(Target Encoding, CatBoost Encoding), 그리고 데이터 누수(Data Leakage)를 방지하는 전처리 파이프라인을 인터랙티브 결측치 대체 방식 비교기로 학습한다.
+* [07. Tabular ML — Classical Models: 의사결정나무, 랜덤 포레스트, GBDT와 XGBoost·LightGBM·CatBoost 비교](./07.%20Tabular%20ML%20%E2%80%94%20Classical%20Models.md) - 표 형식 데이터에서 강력한 벤치마크 성능을 발휘하는 트리 앙상블(Tree Ensembles)의 수학적 원리, 정보 획득량(Information Gain: 지니 불순도, 엔트로피), 배깅(Bagging)과 랜덤 포레스트의 분산 감소 메커니즘, 순차적 잔차 학습 그래디언트 부스팅(GBDT), 2차 테일러 전개 기반 XGBoost 최적화, 히스토그램 기반 고속 분할 및 GOSS/EFB를 적용한 LightGBM, 그리고 범주형 타깃 인코딩의 타깃 누수를 해결한 CatBoost(Ordered Boosting)의 핵심 차이를 인터랙티브 GBDT 알고리즘 선택기로 학습한다.
+* [08. Tabular ML — Deep Architectures: TabNet, FT-Transformer, SAINT와 수치형 임베딩(Periodic Embeddings)](./08.%20Tabular%20ML%20%E2%80%94%20Deep%20Architectures.md) - 표 형식 데이터에서 트리 앙상블의 아성을 위협하는 딥러닝 아키텍처의 혁신, 수치형 피처의 연속성을 고차원 공간에 사상하는 수치형 토크나이저(Feature Tokenizer & Periodic Embeddings), 순차적 어텐션 마스크를 통해 중요한 피처를 희소하게 선택하는 TabNet(Sequential Attention Masking), 피처 간 상호작용과 샘플 간 상호작용을 동시에 어텐션하는 SAINT(Self-Attention and Intersample Attention), 그리고 표준 MLP/ResNet 딥러닝 모델의 정규화 기법을 인터랙티브 딥러닝 vs GBDT 아키텍처 비교기로 학습한다.
+* [09. Tabular ML — Representation Learning: 자기지도 사전학습(VIME), 대조 학습(SCARF)과 전이 학습](./09.%20Tabular%20ML%20%E2%80%94%20Representation%20Learning.md) - 레이블이 부족한 표 형식 데이터 환경에서 일반화 성능을 극대화하는 표현 학습(Representation Learning) 패러다임, 마스킹된 피처를 복원하고 마스크 벡터 자체를 추정하는 VIME(Variational Information Maximizing Self-Supervised Learning), 관측된 피처의 일부를 무작위 교체하여 대조 손실(InfoNCE)을 최적화하는 SCARF(Self-supervised Contrastive Learning for Tabular Data), 그리고 사전학습된 인코더의 다운스트림 미세조정(Fine-tuning)을 인터랙티브 표 데이터 대조 학습 시뮬레이터로 학습한다.
+* [10. Tabular ML — LLM을 표 데이터에 연결하기: 직렬화(Serialization), 인컨텍스트 표 학습과 TabLLM](./10.%20Tabular%20ML%20%E2%80%94%20LLM%EC%9D%84%20%ED%91%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%90%20%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0.md) - 거대 언어 모델(LLM)의 방대한 언어적 사전 지식과 상식 추론 능력을 표 데이터 분석에 활용하는 최신 패러다임, 정형 표 행을 자연어 문장으로 변환하는 직렬화 템플릿(Serialization: JSON, Text-Template, Markdown, Table-to-Text), 퓨샷 프롬프팅을 통한 인컨텍스트 표 학습(In-Context Tabular Learning), 소량의 레이블 데이터로 LLM을 미세조정하는 TabLLM, 그리고 LLM 표 추론의 한계와 실시간 비용-정확도 트레이드오프를 인터랙티브 표-텍스트 직렬화 변환기로 학습한다.
+* [11. Tabular ML — TabPFN과 Prior-Fitted Networks: 베이즈 사전 분포 학습, O(1) 초고속 인컨텍스트 추론 혁신](./11.%20Tabular%20ML%20%E2%80%94%20TabPFN%EA%B3%BC%20Prior-Fitted%20Networks.md) - 표 형식 머신러닝의 패러다임을 근본적으로 뒤흔든 사전 피팅 네트워크(Prior-Fitted Networks: PFN)와 TabPFN(Tabular Prior-Fitted Networks)의 혁신적 아키텍처, 수백만 개의 합성 인공 데이터셋(Synthetic Bayesian Priors)을 생성하여 사후 확률 분포(Posterior Predictive Distribution) 자체를 근사하도록 Transformer를 단 1회 사전 학습하는 원리, 테스트 시점의 파라미터 최적화(Gradient Descent)가 전무한 O(1) 포워드 패스 추론 메커니즘, 그리고 1,000개 미만 중소형 데이터셋에서의 1초 컷 벤치마크 압승 원리를 인터랙티브 TabPFN 인컨텍스트 추론 시뮬레이터로 학습한다.
+* [12. LLM Decoding & Application — 생성 제어·RAG·Speculative Decoding: 확률 분포 제어, 검색 증강 생성과 초고속 추론](./12.%20LLM%20Decoding%20%E2%80%94%20%EC%83%9D%EC%84%B1%20%EC%A0%9C%EC%96%B4%C2%B7RAG%C2%B7Speculative%20Decoding.md) - 거대 언어 모델(LLM) 응용 시스템 구축의 핵심 엔지니어링, 다음 토큰 디코딩 알고리즘(Greedy, Temperature, Top-k, Top-p Nucleus), 외부 지식 베이스를 실시간 검색하여 환각을 억제하는 RAG(Retrieval-Augmented Generation: Dense Retrieval, Reranking, HyDE), 반복 계산을 제거하는 KV 캐시(KV Caching), 그리고 무손실 2~3배 가속을 보장하는 추측 디코딩(Speculative Decoding)을 인터랙티브 RAG 검색 증강 파이프라인 시뮬레이터로 학습한다.
+* [LG Aimers 9기 강의 흐름 지도](./00.%20LG%20Aimers%209%EA%B8%B0%20%EA%B0%95%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%A7%80%EB%8F%84.md)
