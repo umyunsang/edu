@@ -1,41 +1,11 @@
----
-title: "인간환경과이해"
-type: "overview"
-tags:
-  - "humanities"
-  - "environmental-studies"
-  - "overview"
-  - "index"
-course: "인간환경과이해"
-semester: "2026-spring"
-status: "stable"
-authority: "primary"
-created: "2026-08-31"
-updated: "2026-08-31"
----
+# Index
 
-# 📚 인간환경과이해 (Human and Environment) 전체 로드맵
+## lecture
 
-생태계의 물질 순환과 환경오염(부영양화, 미세플라스틱 생물농축), 온실효과와 IPCC 1.5°C 기후위기 티핑포인트, 신재생에너지(태양광, 풍력, 그린수소)와 RE100/ESG 경영, 순환 경제(Circular Economy)와 제품 전과정평가(LCA), 그리고 환경 불평등과 환경 정의(Environmental Justice)까지 체계적으로 다룹니다.
-
----
-
-## 🗺️ 강의 목차 (Curriculum Overview)
-
-```mermaid
-graph TD
-    N1["01. 생태계 & 환경오염<br/>Material Cycle & Eutrophication & Bioaccumulation"] --> N2["02. 지구 온난화 & 기후 위기<br/>Greenhouse Effect & IPCC AR6 & 1.5°C Tipping Point"]
-    N2 --> N3["03. 에너지 전환 & 지속가능 발전<br/>Renewables & Smart Grid & RE100 & ESG"]
-    N3 --> N4["04. 자원 순환 & 환경 정책<br/>Circular Economy & 3R & LCA & EPR"]
-    N4 --> N5["05. 환경 불평등 & 환경정의<br/>Environmental Racism & NIMBY & Just Transition"]
-```
-
----
-
-## 📑 개별 정리 문서 목록
-
-1. [01. 생태계 원리와 환경오염](file:///Users/um-yunsang/work/edu/ComputerScience/07_professional-humanities/%EC%9D%B8%EA%B0%84%ED%99%98%EA%B2%BD%EA%B3%BC%EC%9D%B4%ED%95%B4/notes/01.%20%EC%83%9D%ED%83%9C%EA%B3%84%20%EC%9B%90%EB%A6%AC%EC%99%80%20%ED%99%98%EA%B2%BD%EC%98%A4%EC%97%BC.md)
-2. [02. 지구 온난화와 기후 위기](file:///Users/um-yunsang/work/edu/ComputerScience/07_professional-humanities/%EC%9D%B8%EA%B0%84%ED%99%98%EA%B2%BD%EA%B3%BC%EC%9D%B4%ED%95%B4/notes/02.%20%EC%A7%80%EA%B5%AC%20%EC%98%A8%EB%82%9C%ED%99%94%EC%99%80%20%EA%B8%B0%ED%98%84%20%EC%9C%84%EA%B8%B0.md)
-3. [03. 에너지 전환과 지속가능한 발전](file:///Users/um-yunsang/work/edu/ComputerScience/07_professional-humanities/%EC%9D%B8%EA%B0%84%ED%99%98%EA%B2%BD%EA%B3%BC%EC%9D%B4%ED%95%B4/notes/03.%20%EC%97%90%EB%84%88%EC%A7%80%20%EC%A0%84%ED%99%98%EA%B3%BC%20%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C%20%EB%B0%9C%EC%A0%84.md)
-4. [04. 자원 순환과 환경 정책](file:///Users/um-yunsang/work/edu/ComputerScience/07_professional-humanities/%EC%9D%B8%EA%B0%84%ED%99%98%EA%B2%BD%EA%B3%BC%EC%9D%B4%ED%95%B4/notes/04.%20%EC%9E%90%EC%9B%90%20%EC%88%9C%ED%99%98%EA%B3%BC%20%ED%99%98%EA%B2%BD%20%EC%A0%95%EC%B1%85.md)
-5. [05. 환경 불평등과 환경정의](file:///Users/um-yunsang/work/edu/ComputerScience/07_professional-humanities/%EC%9D%B8%EA%B0%84%ED%99%98%EA%B2%BD%EA%B3%BC%EC%9D%B4%ED%95%B4/notes/05.%20%ED%99%98%EA%B2%BD%20%EB%B6%88%ED%8F%89%EB%93%B1%EA%B3%BC%20%ED%99%98%EA%B2%BD%EC%A0%95%EC%9D%98.md)
+* [01. 생태 환경과 지구 온난화·기후 위기](./01.%20%EC%83%9D%ED%83%9C%20%ED%99%98%EA%B2%BD%EA%B3%BC%20%EC%A7%80%EA%B5%AC%20%EC%98%A8%EB%82%9C%ED%99%94%C2%B7%EA%B8%B0%ED%9B%84%20%EC%9C%84%EA%B8%B0.md) - 지구 생태계의 평형 메커니즘, 온실가스 농도 증가와 온실효과, 기후변화에 따른 생물다양성 위기 및 탄소중립 전략을 학습한다.
+* [01. 생태계 원리와 환경오염: 물질 순환, 부영양화, 미세플라스틱과 생물농축(Bioaccumulation)](./01.%20%EC%83%9D%ED%83%9C%EA%B3%84%20%EC%9B%90%EB%A6%AC%EC%99%80%20%ED%99%98%EA%B2%BD%EC%98%A4%EC%97%BC.md) - 지구 생태계를 구성하는 생물적·비생물적 구성요소와 에너지 흐름, 탄소·질소·인(P)의 물질 순환 메커니즘, 점오염원과 비점오염원에 의한 수질 오염, 호소의 부영양화(Eutrophication) 및 적조/녹조 현상, 런던형/LA형 광화학 스모그를 포함한 대기 오염, 그리고 난분해성 잔류성 유기오염물질(POPs)과 미세플라스틱의 영양단계별 생물농축(Biomagnification)을 인터랙티브 생물농축 배율 계산기로 학습한다.
+* [01. 생태환경 — 오염·기후·에너지·환경정의](./01.%20%EC%83%9D%ED%83%9C%ED%99%98%EA%B2%BD%20%E2%80%94%20%EC%98%A4%EC%97%BC%C2%B7%EA%B8%B0%ED%9B%84%C2%B7%EC%97%90%EB%84%88%EC%A7%80%C2%B7%ED%99%98%EA%B2%BD%EC%A0%95%EC%9D%98.md) - 환경과 오염에서 기후위기·에너지·공존·환경 불평등과 정의까지의 강의 흐름을 정리한다.
+* [02. 지구 온난화와 기후 위기: 온실효과 메커니즘, IPCC 6차 보고서와 1.5°C 티핑 포인트](./02.%20%EC%A7%80%EA%B5%AC%20%EC%98%A8%EB%82%9C%ED%99%94%EC%99%80%20%EA%B8%B0%ED%9B%84%20%EC%9C%84%EA%B8%B0.md) - 지구 복사평형과 온실기체(CO2, CH4, N2O, F-가스)에 의한 온실효과(Greenhouse Effect)의 열역학적 원리, 지구온난화지수(GWP), 산업혁명 이후 기온 상승 추세와 기후 피드백 루프(빙하 알베도 감소, 영구동토층 융해 메탄 방출), IPCC 제6차 평가보고서(AR6)의 공통사회경제경로(SSP) 시나리오, 1.5°C 임계점(Tipping Point) 초과의 위험, 그리고 글로벌 탄소중립(Net-Zero 2050) 정책을 인터랙티브 기후 티핑 포인트 시뮬레이터로 학습한다.
+* [03. 에너지 전환과 지속가능한 발전: 재생에너지(태양광·풍력·수소), 스마트그리드, RE100과 ESG 경영](./03.%20%EC%97%90%EB%84%88%EC%A7%80%20%EC%A0%84%ED%99%98%EA%B3%BC%20%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%9C%20%EB%B0%9C%EC%A0%84.md) - 화석연료 기반의 중앙집중형 에너지 시스템에서 분산형 청정에너지 시스템으로의 대전환, 태양광 발전의 광전효과와 풍력 터빈의 발전 원리, 재생에너지의 간헐성(Intermittency)을 극복하는 ESS(에너지저장장치)와 그린 수소(Green Hydrogen) 수전해 기술, 스마트그리드와 지능형 가상발전소(VPP), 글로벌 기업의 RE100(재생에너지 100%) 이니셔티브, 그리고 UN 지속가능발전목표(SDGs 17개)와 ESG 경영 체계를 인터랙티브 재생에너지 전력망 시뮬레이터로 학습한다.
+* [04. 자원 순환과 환경 정책: 선형 경제에서 순환 경제(Circular Economy)로, 폐기물 3R과 전과정평가(LCA)](./04.%20%EC%9E%90%EC%9B%90%20%EC%88%9C%ED%99%98%EA%B3%BC%20%ED%99%98%EA%B2%BD%20%EC%A0%95%EC%B1%85.md) - 채취-제조-소비-폐기의 전통적 선형 경제(Linear Economy) 모델의 한계와 자원 고갈 위기, 제품의 수명주기를 순환 폐루프(Closed-loop)로 설계하는 순환 경제(Circular Economy), 폐기물 감량 3R 원칙(Reduce, Reuse, Recycle)과 업사이클링(Upcycling), 원료 채취부터 폐기/재활용까지의 전 생애주기 환경 부하를 정량화하는 전과정평가(LCA: Life Cycle Assessment), 생산자책임재활용제도(EPR), 그리고 탄소국경조정제도(CBAM)를 인터랙티브 LCA 탄소발자국 계산기로 학습한다.
+* [05. 환경 불평등과 환경정의: 환경 인종주의, 님비(NIMBY)·바나나(BANANA) 현상과 정의로운 전환](./05.%20%ED%99%98%EA%B2%BD%20%EB%B6%88%ED%8F%89%EB%93%B1%EA%B3%BC%20%ED%99%98%EA%B2%BD%EC%A0%95%EC%9D%98.md) - 환경오염과 기후위기의 피해가 사회경제적 약자 및 취약 계층에 불균등하게 집중되는 환경 불평등(Environmental Inequality)과 환경 정의(Environmental Justice)의 법적·윤리적 담론, 미국의 환경 인종주의(Environmental Racism) 역사, 혐오시설 입지 갈등인 님비(NIMBY: Not In My Back Yard)와 바나나(BANANA: Build Absolutely Nothing Anywhere Near Anyone) 현상, 기후위기 피해국과 배출국의 글로벌 기후 부정의, 그리고 화석연료 노동자의 생존권을 보장하는 정의로운 전환(Just Transition)을 인터랙티브 환경 정의 영향도 분석기로 학습한다.
