@@ -1,0 +1,36 @@
+import base64
+import json
+import subprocess
+import sys
+import zlib
+
+subprocess.run(
+    [
+        sys.executable,
+        "-m",
+        "pip",
+        "install",
+        "-q",
+        "qiskit",
+        "qiskit-machine-learning",
+        "scikit-learn",
+        "pandas",
+        "matplotlib",
+    ],
+    check=True,
+)
+
+import matplotlib
+
+matplotlib.use("Agg")
+
+PAYLOAD = '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'
+
+sources = json.loads(zlib.decompress(base64.b64decode(PAYLOAD)))
+for name, code in sources.items():
+    print(f"COLAB_SOURCE_START {name}")
+    scope = {"__name__": "__main__", "__file__": name}
+    exec(compile(code, name, "exec"), scope, scope)
+    print(f"COLAB_SOURCE_OK {name}")
+
+print("COLAB_DAY26_SOURCE_EXECUTION_OK")
