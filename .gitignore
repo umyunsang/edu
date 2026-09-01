@@ -10,6 +10,7 @@ CLAUDE.md
 **/.DS_Store
 
 # Local tool/cache artifacts
+node_modules/
 .pytest_cache/
 **/__pycache__/
 scripts/pkm/.cache/
