@@ -204,16 +204,16 @@ graph TD
 *   **LGAimer**: LG AI 연구원 해커톤 및 교육 과정 ([[LGAimer/LG Aimers 9기 지원서 초안|지원서 초안]])
     *   [[LGAimer/LG Aimers 8기/LG_Aimers_Certificate.pdf|🏆 LG Aimers 8기 이수증 (LLM Compression)]]
     *   [[LGAimer/LG Aimers 8기/『LLM Application & Evaluation』 강의자료 Download.pdf|LLM Application & Evaluation 자료]]
-*   **치앙마이 NET-ZERO 해커톤**: 2026 Global Field 캠프(1차) · 동아대 글로컬대학추진단 (2026.08.09~08.16)
-    *   [[Hackathon/ChiangMai-NETZERO/ChiangMai_NETZERO_Certificate.pdf|🏆 치앙마이 탄소중립(NET-ZERO) 해커톤 이수증]]
+*   **치앙마이 NET-ZERO 해커톤**: K-CAMT 2026 · Chiang Mai University (70시간, 2026.08.09~08.15)
+    *   [[Hackathon/ChiangMai-NETZERO/ChiangMai_NETZERO_Certificate.pdf|🏆 K-CAMT 2026 Hackathon for NET-ZERO Carbon 수료증]]
 *   **QRC 2026**: Quantum Reframing Challenge · 메가존 클라우드 · KISTI · 한국양자융합센터 (예선 참가, 팀 부산사립대Goat)
     *   [[Hackathon/QRC2026/qrc2026_neutron_router.pdf|📄 NEUTRON ROUTER 예선 기획서 (QPE 기반 정밀 계산 라우팅)]]
 *   **AI융합(양자컴퓨팅)**: 수도권 ICT이노베이션스퀘어 · 정보통신산업진흥원 (160시간, 2026.06.22~08.18)
-    *   [[ComputerScience/03_ai-ml-data/quantum-ml/ICTIS_AI_Quantum_Computing_160H_Certificate.pdf|🏆 AI융합(양자컴퓨팅) 교육과정 수료증]]
+    *   [[ComputerScience/03_ai-ml-data/quantum-ml/sources/ICTIS_AI_Quantum_Computing_160H_Certificate.pdf|🏆 AI융합(양자컴퓨팅) 교육과정 수료증]]
 *   **양자컴퓨팅 특강**: 메가존 클라우드 · 동아대 G-LAMP 연구소 공동 진행 (2일 단기 과정)
-    *   [[ComputerScience/03_ai-ml-data/quantum-lecture/MEGAZONE_Quantum_Computing_Certificate.pdf|🏆 양자컴퓨팅 이론 및 실습 2일 단기 특강 과정 수료증]]
+    *   [[ComputerScience/03_ai-ml-data/quantum-lecture/sources/MEGAZONE_Quantum_Computing_Certificate.pdf|🏆 양자컴퓨팅 이론 및 실습 2일 단기 특강 과정 수료증]]
 *   **Python으로 시작하는 머신러닝**: AI·ML 개론, Python 프로그래밍 기초, 진로·산업체 특강 (58시간, 2024.07.29~08.16)
-    *   [[ComputerScience/03_ai-ml-data/ml-projects/Python_Machine_Learning_Certificate.pdf|🏆 Python으로 시작하는 머신러닝 이수증]]
+    *   [[ComputerScience/03_ai-ml-data/ml-projects/sources/Python_Machine_Learning_Certificate.pdf|🏆 Python으로 시작하는 머신러닝 이수증]]
 *   **자격증**: 데이터분석준전문가(ADsP), 정보처리기사 등 ([[certifications/체크리스트|체크리스트]])
     *   [[certifications/체크리스트|자격증 취득 체크리스트]]
 
