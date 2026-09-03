@@ -202,6 +202,7 @@ graph TD
 ## 🏆 대외 활동 & 자격증 (Extracurricular)
 
 *   **LGAimer**: LG AI 연구원 해커톤 및 교육 과정 ([[LGAimer/LG Aimers 9기 지원서 초안|지원서 초안]])
+    *   [[LGAimer/LG Aimers 9기/LG_Aimers_9th_Certificate.pdf|🏆 LG Aimers 9기 수료증 (Phase 1&2, 11주, 2026.06.22~09.02)]]
     *   [[LGAimer/LG Aimers 8기/LG_Aimers_Certificate.pdf|🏆 LG Aimers 8기 이수증 (LLM Compression)]]
     *   [[LGAimer/LG Aimers 8기/『LLM Application & Evaluation』 강의자료 Download.pdf|LLM Application & Evaluation 자료]]
 *   **치앙마이 NET-ZERO 해커톤**: K-CAMT 2026 · Chiang Mai University (70시간, 2026.08.09~08.15)
