@@ -10,6 +10,7 @@ CLAUDE.md
 **/.DS_Store
 
 # Local tool/cache artifacts
+**/.ok/local/
 node_modules/
 .pytest_cache/
 **/__pycache__/
