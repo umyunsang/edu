@@ -1,13 +1,38 @@
-# Index
+---
+title: 인공지능 — 정리문서 목록
+description: 원본 강의 PDF만을 근거로 재작성한 네 편(01~04)과, 아직 읽지 않은 열여섯 덱의 자리 표시(05). 2026-09-22 회차가 Perceptron 이론·실습과 MLP 이론 세 덱(92쪽)을 읽었다.
+type: index
+tags:
+  - artificial-intelligence
+  - index
+course: artificial-intelligence
+semester: 2024-1
+status: stable
+created: 2026-09-22
+updated: 2026-09-22
+---
 
-## lecture
+> [!warning] 진행 중인 과목이다
+> `sources/` 의 PDF 29편에서 중복 열 편을 걷어낸 **실제 19편 중 셋**을 읽었다. 남은 열여섯 편(약 533쪽)은 [05. 남은 열여섯 덱 (재작성 대기)](<./05. 남은 열여섯 덱 [재작성 대기].md>)에 목록으로 적어 두었다.
 
-* [01. 퍼셉트론과 인공신경망의 기원 - 단층 한계(XOR), 활성화 함수와 선형 분류](./01.%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%EA%B3%BC%20%EC%9D%B8%EA%B3%B5%EC%8B%A0%EA%B2%BD%EB%A7%9D%EC%9D%98%20%EA%B8%B0%EC%9B%90%20-%20%EB%8B%A8%EC%B8%B5%20%ED%95%9C%EA%B3%84%28XOR%29%2C%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%EC%99%80%20%EC%84%A0%ED%98%95%20%EB%B6%84%EB%A5%98.md) - 프랑크 로젠블랫의 단층 퍼셉트론(Single-Layer Perceptron), 가중치 합과 편향(z = w^T x + b), 계단 함수/시그모이드 활성화, AND/OR/NAND 선형 분리 가능성, 민스키-페퍼트의 XOR 비선형 분리 불가능성 증명, 그리고 다층 구조로의 확장을 인터랙티브 2D 퍼셉트론 결정 경계 시뮬레이터로 학습한다.
-* [02. 다층 퍼셉트론(MLP)과 표현력 - 은닉층, 범용 근사 정리와 순전파 연산](./02.%20%EB%8B%A4%EC%B8%B5%20%ED%8D%BC%EC%85%89%ED%8A%B8%EB%A1%A0%28MLP%29%EA%B3%BC%20%ED%91%9C%ED%98%84%EB%A0%A5%20-%20%EC%9D%80%EB%8B%89%EC%B8%B5%2C%20%EB%B2%94%EC%9A%A9%20%EA%B7%BC%EC%82%AC%20%EC%A0%95%EB%A6%AC%EC%99%80%20%EC%88%9C%EC%A0%84%ED%8C%8C%20%EC%97%B0%EC%82%B0.md) - 은닉층(Hidden Layer)을 통한 특징 공간 비선형 변환, 범용 근사 정리(Universal Approximation Theorem), 다층 퍼셉트론(MLP)의 행렬 기반 순전파(Forward Propagation) 연산(Z = WX + B, A = sigma(Z)), 그리고 다중 클래스 분류를 위한 소프트맥스(Softmax) 함수를 인터랙티브 2층 MLP 순전파 계산기로 학습한다.
-* [03. 오차역전파(Backpropagation)와 연쇄 법칙 - 가중치 그래디언트 유도와 계산 그래프](./03.%20%EC%98%A4%EC%B0%A8%EC%97%AD%EC%A0%84%ED%8C%8C%28Backpropagation%29%EC%99%80%20%EC%97%B0%EC%87%84%20%EB%B2%95%EC%B9%99%20-%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EA%B7%B8%EB%9E%98%EB%94%94%EC%96%B8%ED%8A%B8%20%EC%9C%A0%EB%8F%84%EC%99%80%20%EA%B3%84%EC%82%B0%20%EA%B7%B8%EB%9E%98%ED%94%84.md) - 다층 신경망 학습의 핵심인 오차역전파(Backpropagation) 알고리즘, 미분의 연쇄 법칙(Chain Rule), 계산 그래프(Computational Graph)를 통한 국소적 미분 전달, 가중치/편향에 대한 손실 함수의 편미분(dL/dW, dL/db) 유도, 그리고 에포크별 가중치 갱신을 인터랙티브 2노드 오차역전파 계산기로 학습한다.
-* [04. 손실 함수와 경사하강법 및 최적화(Optimizer) - SGD, 모멘텀, RMSProp, Adam](./04.%20%EC%86%90%EC%8B%A4%20%ED%95%A8%EC%88%98%EC%99%80%20%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95%20%EB%B0%8F%20%EC%B5%9C%EC%A0%81%ED%99%94%28Optimizer%29%20-%20SGD%2C%20%EB%AA%A8%EB%A9%98%ED%85%80%2C%20RMSProp%2C%20Adam.md) - 회귀(MSE/MAE) 및 분류(BCE/CCE) 손실 함수, 배치 경사하강법(BGD) vs 확률적 경사하강법(SGD) vs 미니배치 SGD, 관성을 이용한 Momentum, 지수이동평균 기반 학습률 감쇠 RMSProp, 그리고 1차·2차 모멘트를 결합한 Adam 옵티마이저의 수식 유도와 궤적을 인터랙티브 옵티마이저 수렴 시뮬레이터로 학습한다.
-* [05. 과적합(Overfitting)과 일반화 기법 - 편향-분산 트레이드오프, 드롭아웃, 배치 정규화, L1-L2 규제](./05.%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%92%E1%85%A1%E1%86%B8%28Overfitting%29%E1%84%80%E1%85%AA%20%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AA%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A5%E1%86%B8%20-%20%E1%84%91%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A3%E1%86%BC-%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A1%E1%86%AB%20%E1%84%90%E1%85%B3%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%2C%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%86%B8%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%BA%2C%20%E1%84%87%E1%85%A2%E1%84%8E%E1%85%B5%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%80%E1%85%B2%E1%84%92%E1%85%AA%2C%20L1-L2%20%E1%84%80%E1%85%B2%E1%84%8C.md) - 머신러닝의 핵심 과제인 과적합(Overfitting)과 과소적합(Underfitting) 진단, 편향-분산 트레이드오프(Bias-Variance Tradeoff), L1(라쏘)/L2(리지/가중치 감쇠) 정규화 수식, 앙상블 효과를 내는 드롭아웃(Dropout), 내부 공변량 변화를 해소하는 배치 정규화(Batch Normalization), 그리고 조기 종료(Early Stopping)를 인터랙티브 규제 강도 시뮬레이터로 학습한다.
-* [06. 기울기 소실(Vanishing Gradient)과 활성화 함수 진화 - Sigmoid의 한계, ReLU, LeakyReLU, GELU 및 가중치 초기화(Xavier-He)](./06.%20%EA%B8%B0%EC%9A%B8%EA%B8%B0%20%EC%86%8C%EC%8B%A4%28Vanishing%20Gradient%29%EA%B3%BC%20%ED%99%9C%EC%84%B1%ED%99%94%20%ED%95%A8%EC%88%98%20%EC%A7%84%ED%99%94%20-%20Sigmoid%EC%9D%98%20%ED%95%9C%EA%B3%84%2C%20ReLU%2C%20LeakyReLU%2C%20GELU%20%EB%B0%8F%20%EA%B0%80%EC%A4%91%EC%B9%98%20%EC%B4%88%EA%B8%B0%ED%99%94%28Xavier-He%29.md) - 심층 신경망에서 발생하는 기울기 소실(Vanishing Gradient) 및 폭주(Exploding Gradient)의 수학적 원인, 시그모이드(Sigmoid) 도함수의 최대값 0.25 한계, ReLU 계열(LeakyReLU, ELU, GELU)의 비포화성, 그리고 활성화 함수와 분산 보존을 위한 Xavier 및 He(Kaiming) 가중치 초기화 공식을 인터랙티브 기울기 감쇠 시뮬레이터로 학습한다.
-* [07. 합성곱 신경망(CNN)의 핵심 원리 - 합성곱 연산, 패딩·스트라이드 공간 차원 수식, 풀링과 채널](./07.%20%E1%84%92%E1%85%A1%E1%86%B8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%80%E1%85%A9%E1%86%B8%20%E1%84%89%E1%85%B5%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%E1%84%86%E1%85%A1%E1%86%BC%28CNN%29%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%86%A8%E1%84%89%E1%85%B5%E1%86%B7%20%E1%84%8B%E1%85%AF%E1%86%AB%E1%84%85%E1%85%B5%20-%20%E1%84%92%E1%85%A1%E1%86%B8%E1%84%89%E1%85%A5%E1%86%BC%E1%84%80%E1%85%A9%E1%86%B8%20%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%86%AB%2C%20%E1%84%91%E1%85%A2%E1%84%83%E1%85%B5%E1%86%BC%C2%B7%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%20%E1%84%80%E1%85%A9%E1%86%BC%E1%84%80%E1%85%A1%E1%86%AB%20%E1%84%8E%E1%85%A1%E1%84%8B%E1%85%AF%E1%86%AB%20%E1%84%89%E1%85%AE%E1%84%89%E1%85%B5.md) - 완전연결계층(FC)의 공간 구조 파괴 한계, 2D 합성곱(Convolution) 커널 필터링, 가중치 공유(Weight Sharing) 및 국소 수용장(Receptive Field), 패딩(Padding)과 스트라이드(Stride)에 따른 출력 텐서 공간 해상도 계산 수식, 그리고 최대 풀링(Max Pooling)을 인터랙티브 Conv2D 출력 차원 계산기로 학습한다.
-* [08. 심층 CNN 아키텍처와 잔차 연결 - AlexNet, VGGNet, ResNet의 잔차 블록과 특징 맵](./08.%20%EC%8B%AC%EC%B8%B5%20CNN%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%99%80%20%EC%9E%94%EC%B0%A8%20%EC%97%B0%EA%B2%B0%20-%20AlexNet%2C%20VGGNet%2C%20ResNet%EC%9D%98%20%EC%9E%94%EC%B0%A8%20%EB%B8%94%EB%A1%9D%EA%B3%BC%20%ED%8A%B9%EC%A7%95%20%EB%A7%B5.md) - 딥러닝 혁명을 촉발한 AlexNet(ReLU, Dropout, LRN), $3 x 3$ 소형 필터 중첩으로 유효 수용장을 확장한 VGGNet(16/19), 계층이 깊어질 때 발생하는 최적화 성능 저하를 스킵 연결(Skip Connection / Residual Block)로 극복한 ResNet의 수식 H(x) = F(x) + x 유도를 인터랙티브 ResNet 잔차 경로 시뮬레이터로 학습한다.
-* [09. 실전 컴퓨터 비전 파이프라인 - CIFAR-10 이미지 분류 모델 학습 및 생성형 AI 아바타 실습](./09.%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%B2%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%AB%20%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%91%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB%20-%20CIFAR-10%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%85%E1%85%B2%20%E1%84%86%E1%85%A9%E1%84%83%E1%85%A6%E1%86%AF%20%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC%20AI%20%E1%84%8B%E1%85%A1%E1%84%87%E1%85%A1%E1%84%90%E1%85%A1%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%B3.md) - CIFAR-10 10개 클래스 32x32 컬러 이미지 분류 데이터 파이프라인, PyTorch 기반 CNN 모델 설계, 훈련/검증 루프, Top-1 정확도 평가 메트릭, 그리고 확산 모델(Diffusion) 기반 생성형 AI 아바타 파이프라인(텍스트 인코더, U-Net, VAE)을 인터랙티브 CIFAR-10 분류기 데모로 학습한다.
+## 1회차 — 퍼셉트론과 MLP (2026-09-22)
+
+| 문서 | 원본 | 척추 |
+| --- | --- | --- |
+| [01. 빌려 온 그림이 양쪽을 다 찌른다](<./01. 빌려 온 그림이 양쪽을 다 찌른다.md>) | `Perceptron (이론)` 1~17 | 기호주의를 무너뜨리려고 빌려 온 CS231N 슬라이드의 네 난제가, 세 장 뒤에 나오는 퍼셉트론에도 그대로 해당한다 |
+| [02. 예측을 먼저 보여 주고, 그 예측이 나오지 않는 모델을 보여 준다](<./02. 예측을 먼저 보여 주고, 그 예측이 나오지 않는 모델을 보여 준다.md>) | `Perceptron (이론)` 18~40 | 22번이 65를 예측하고 23번의 $y=8x+10$ 은 50을 낸다. 29번과 30번의 학습 데이터도 한 장 만에 바뀐다 |
+| [03. 다섯 장에 걸쳐 XOR을 쌓는 동안 이름이 두 번 바뀌고 부호가 한 번 틀린다](<./03. 다섯 장에 걸쳐 XOR을 쌓는 동안 이름이 두 번 바뀌고 부호가 한 번 틀린다.md>) | `Perceptron (이론)` 41~61 + `Perceptron (실습)` | 58번이 NAND의 편향을 본문에 −0.7, 그림에 0.7로 인쇄한다. 본문 값을 쓰면 XOR이 네 입력 모두 0을 낸다 |
+| [04. 목록은 길고 고르는 기준은 한 줄이다](<./04. 목록은 길고 고르는 기준은 한 줄이다.md>) | `MLP (이론)` 전체 | 활성화 함수 여덟 개 중 용도가 적힌 것은 셋. 그리고 인쇄된 tanh 식은 tanh가 아니라 tanh(x/2)다 |
+| [05. 남은 열여섯 덱 [재작성 대기]](<./05. 남은 열여섯 덱 [재작성 대기].md>) | — | 남은 원본 목록과, 앞 네 노트가 넘긴 빚 |
+
+## 이 과목의 지도
+
+모든 덱의 두 번째 장이 같다 — `Overall Architecture of Deep Learning`. 그 한 장이 `sources/` 의 덱 목록과 거의 그대로 대응하고, 덱이 진행될수록 꼬리표가 조금씩 붙는다(`MLP (이론)` 판에는 `BN` 과 `(Activation Function)` 이 추가되어 있다).
+
+```text
+Training Input → Network(FC) → Activation(Step·Sigmoid·ReLU·PReLU) → Drop-Out
+              → Loss(MAE·MSE) → Optimization(GD·Momentum·Adam)
+              ↑ Backward (Backpropagation) ← Vanishing Gradient
+Test Input → Trained Network → Evaluation(PSNR·SSIM·Total Memory)
+Overfitting
+```
